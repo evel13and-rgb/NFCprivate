@@ -1,3 +1,5 @@
+import { createQuoteManager } from './quoteLogic.js';
+
 const QUOTES = [
   {
     t: "Siento como si me hubiesen robado algo esencial y no sé qué es.",
@@ -181,37 +183,17 @@ const QUOTES = [
   }
 ];
 
-const STORAGE_KEY = "paramo-literario-vistos-v2";
-
-function getVistos() {
-  try {
-    const arr = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return Array.isArray(arr) ? arr : [];
-  } catch { return []; }
-}
-
-function setVistos(arr) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
-}
-
-function pickRandomNoRepeat() {
-  let vistos = getVistos();
-  if (vistos.length >= QUOTES.length) {
-    vistos = [];
-  }
-  const disponibles = QUOTES.map((_, i) => i).filter(i => !vistos.includes(i));
-  const elegido = disponibles[Math.floor(Math.random() * disponibles.length)];
-  vistos.push(elegido);
-  setVistos(vistos);
-  return { ...QUOTES[elegido], idx: elegido };
-}
+const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
+const quoteManager = createQuoteManager(QUOTES, storage);
 
 let currentQuote = null;
-let voicesReady = false;
+const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
+let voicesReady = synth ? synth.getVoices().length > 0 : false;
 
 // Selecciona la voz más fluida disponible
 function getPreferredVoice() {
-  const voices = window.speechSynthesis.getVoices();
+  if (!synth) return null;
+  const voices = synth.getVoices();
   return (
     voices.find(v => v.lang.startsWith("es") && v.name.includes("Google")) ||
     voices.find(v => v.lang.startsWith("es") && v.name.includes("Microsoft Sabina")) ||
@@ -219,32 +201,16 @@ function getPreferredVoice() {
   );
 }
 
-function normalizeSentence(text, isLast) {
-  const trimmed = text.trim();
-  if (!trimmed) {
-    return "";
+function speakQuote(text) {
+  if (!synth) {
+    return;
   }
-  if (isLast || /[.!?…]$/.test(trimmed)) {
-    return trimmed;
-  }
-  return `${trimmed}.`;
-}
-
-function buildSpeechText(quote) {
-  const parts = [quote.t, quote.a, quote.obra].filter(Boolean);
-  return parts
-    .map((part, index) => normalizeSentence(part, index === parts.length - 1))
-    .filter(Boolean)
-    .join(" ");
-}
-
-function speakQuote(quote) {
   if (!voicesReady) {
     setTimeout(() => speakQuote(quote), 200);
     return;
   }
-  if (window.speechSynthesis.speaking) {
-    window.speechSynthesis.cancel();
+  if (synth.speaking) {
+    synth.cancel();
   }
   const utter = new window.SpeechSynthesisUtterance(buildSpeechText(quote));
   const preferred = getPreferredVoice();
@@ -256,51 +222,13 @@ function speakQuote(quote) {
   } else {
     utter.lang = "es-ES";
   }
-  window.speechSynthesis.speak(utter);
+  synth.speak(utter);
 }
 
 function renderQuote() {
-  currentQuote = pickRandomNoRepeat();
-  document.getElementById("quote").textContent = "“" + currentQuote.t + "”";
-  renderAttribution(currentQuote);
-}
-
-function renderAttribution(quote) {
-  const container = document.getElementById("author");
-  const nameEl = document.getElementById("author-name");
-  const workEl = document.getElementById("author-work");
-  const separatorEl = document.getElementById("author-separator");
-
-  if (!container || !nameEl || !workEl || !separatorEl) {
-    return;
-  }
-
-  const hasAuthor = Boolean(quote.a);
-  const hasWork = Boolean(quote.obra);
-
-  if (hasAuthor) {
-    nameEl.textContent = `— ${quote.a}`;
-    nameEl.style.display = "inline";
-  } else {
-    nameEl.textContent = "";
-    nameEl.style.display = "none";
-  }
-
-  if (hasWork) {
-    workEl.textContent = quote.obra;
-    workEl.style.display = "inline";
-  } else {
-    workEl.textContent = "";
-    workEl.style.display = "none";
-  }
-
-  separatorEl.style.display = hasAuthor && hasWork ? "inline" : "none";
-
-  if (!hasAuthor && !hasWork) {
-    container.setAttribute("aria-hidden", "true");
-  } else {
-    container.removeAttribute("aria-hidden");
-  }
+  currentQuote = quoteManager.next();
+  document.getElementById('quote').textContent = '“' + currentQuote.t + '”';
+  document.getElementById('author').textContent = '— ' + currentQuote.a;
 }
 
 function initApp() {
@@ -324,12 +252,14 @@ function initApp() {
 }
 
 // Espera a que las voces estén listas antes de permitir hablar
-window.speechSynthesis.onvoiceschanged = () => {
-  voicesReady = true;
-};
+if (synth) {
+  synth.onvoiceschanged = () => {
+    voicesReady = true;
+  };
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.speechSynthesis.getVoices().length > 0) {
+  if (synth && synth.getVoices().length > 0) {
     voicesReady = true;
   }
   initApp();
