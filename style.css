@@ -19,10 +19,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: var(--sand);
-  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 65%),
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 55%),
-    radial-gradient(circle at bottom, rgba(199, 179, 146, 0.08), rgba(199, 179, 146, 0) 60%);
+  background-color: var(--sand);
   color: var(--text);
   display: flex;
   align-items: center;
@@ -51,7 +48,7 @@ main.wrap {
   position: absolute;
   inset: 1.2rem;
   border-radius: 18px;
-  border: 1px dashed rgba(193, 176, 149, 0.4);
+  border: 1px dashed rgba(107, 103, 95, 0.25);
   pointer-events: none;
 }
 
@@ -103,7 +100,7 @@ blockquote::after {
   content: '\201C';
   position: absolute;
   font-size: 3.2rem;
-  color: rgba(86, 92, 51, 0.18);
+  color: rgba(86, 92, 51, 0.22);
   font-style: normal;
 }
 
@@ -138,7 +135,7 @@ blockquote::after {
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: rgba(107, 103, 95, 0.85);
+  color: var(--author);
 }
 
 .tiny::before {
