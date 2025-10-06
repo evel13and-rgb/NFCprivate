@@ -1,4 +1,6 @@
-export const STORAGE_KEY = 'paramo-literario-vistos';
+export const STORAGE_VERSION = 'v3';
+export const STORAGE_KEY = `paramo-literario-${STORAGE_VERSION}-vistos`;
+const LEGACY_KEYS = ['paramo-literario-vistos', 'paramo-literario-v2-vistos'];
 
 function sanitizeRandom(value) {
   if (typeof value !== 'number' || !Number.isFinite(value)) {
@@ -26,6 +28,32 @@ function writeSeenIndexes(storage, seen) {
   storage.setItem?.(STORAGE_KEY, JSON.stringify(seen));
 }
 
+function sanitizeSeenIndexes(seen, total) {
+  if (!Array.isArray(seen) || total <= 0) {
+    return [];
+  }
+  const filtered = [];
+  for (const value of seen) {
+    if (
+      Number.isInteger(value) &&
+      value >= 0 &&
+      value < total &&
+      !filtered.includes(value)
+    ) {
+      filtered.push(value);
+    }
+  }
+  return filtered;
+}
+
+function purgeLegacyKeys(storage) {
+  if (!storage) return;
+  for (const key of LEGACY_KEYS) {
+    if (key === STORAGE_KEY) continue;
+    storage.removeItem?.(key);
+  }
+}
+
 export function createMemoryStorage(initial = {}) {
   const data = { ...initial };
   return {
@@ -46,9 +74,10 @@ export function createQuoteManager(quotes, storage, rng = Math.random) {
     throw new Error('quotes must be a non-empty array');
   }
   const store = storage ?? createMemoryStorage();
+  purgeLegacyKeys(store);
 
   function next() {
-    let seen = readSeenIndexes(store);
+    let seen = sanitizeSeenIndexes(readSeenIndexes(store), quotes.length);
     if (seen.length >= quotes.length) {
       seen = [];
     }
@@ -74,7 +103,7 @@ export function createQuoteManager(quotes, storage, rng = Math.random) {
   }
 
   function getSeenIndexes() {
-    return [...readSeenIndexes(store)];
+    return sanitizeSeenIndexes(readSeenIndexes(store), quotes.length);
   }
 
   return { next, reset, getSeenIndexes };

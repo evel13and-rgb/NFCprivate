@@ -20,11 +20,15 @@ body {
   min-height: 100vh;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background-color: var(--sand);
+  background-image:
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.6), transparent 55%),
+    radial-gradient(circle at 80% -10%, rgba(255, 245, 230, 0.45), transparent 60%);
   color: var(--text);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem 1.5rem;
+  line-height: 1.6;
 }
 
 main.wrap {
@@ -35,12 +39,13 @@ main.wrap {
   position: relative;
   background: var(--paper);
   border-radius: 25px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(232, 222, 202, 0.85);
   box-shadow: var(--shadow);
   padding: clamp(2.5rem, 5vw, 3.2rem) clamp(2rem, 6vw, 3.4rem);
   text-align: center;
   cursor: pointer;
-  transition: transform 250ms ease, box-shadow 250ms ease;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  isolation: isolate;
 }
 
 .card::before {
@@ -48,7 +53,9 @@ main.wrap {
   position: absolute;
   inset: 1.2rem;
   border-radius: 18px;
-  border: 1px dashed rgba(107, 103, 95, 0.25);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 70%);
+  mix-blend-mode: screen;
+  opacity: 0.6;
   pointer-events: none;
 }
 
@@ -57,15 +64,14 @@ main.wrap {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 60%);
-  opacity: 0.35;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  opacity: 0.7;
   pointer-events: none;
-  mix-blend-mode: screen;
 }
 
 .card:hover,
 .card:focus-visible {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
 }
 
@@ -85,7 +91,7 @@ h1 {
 }
 
 blockquote {
-  margin: 0 0 2rem;
+  margin: 0 auto 2rem;
   font-family: 'Playfair Display', 'Times New Roman', serif;
   font-size: clamp(1.4rem, 3vw, 1.85rem);
   line-height: 1.7;
@@ -93,14 +99,15 @@ blockquote {
   color: var(--text);
   position: relative;
   padding: 0 1.5rem;
+  max-width: 46ch;
 }
 
 blockquote::before,
 blockquote::after {
   content: '\201C';
   position: absolute;
-  font-size: 3.2rem;
-  color: rgba(86, 92, 51, 0.22);
+  font-size: 3rem;
+  color: rgba(86, 92, 51, 0.18);
   font-style: normal;
 }
 
@@ -119,31 +126,9 @@ blockquote::after {
   margin: 0 0 1.2rem;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 1rem;
-  color: #5b5b5b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.author[aria-hidden="true"] {
-  display: none;
-}
-
-.author-name,
-.author-work,
-.author-separator {
-  display: none;
-}
-
-.author-name {
-  font-style: normal;
-}
-
-.author-work {
-  font-style: italic;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--author);
 }
 
 .row {
@@ -158,6 +143,7 @@ blockquote::after {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--author);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .tiny::before {

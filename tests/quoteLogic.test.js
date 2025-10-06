@@ -49,3 +49,28 @@ test('ignora datos corruptos en el almacenamiento', () => {
   });
   assert.equal(manager.getSeenIndexes().length, 1);
 });
+
+test('limpia índices fuera de rango y elimina duplicados', () => {
+  const storage = createMemoryStorage({ [STORAGE_KEY]: JSON.stringify([0, 2, 2, -1, 99, '3']) });
+  const manager = createQuoteManager(SAMPLE_QUOTES, storage, () => 0.5);
+  const quote = manager.next();
+  assert.equal(typeof quote.idx, 'number');
+  const seen = manager.getSeenIndexes();
+  assert.ok(seen.every(i => i >= 0 && i < SAMPLE_QUOTES.length));
+  const deduped = new Set(seen);
+  assert.equal(seen.length, deduped.size);
+});
+
+test('elimina claves antiguas para que reaparezcan las citas previas', () => {
+  const legacyKeyV1 = 'paramo-literario-vistos';
+  const legacyKeyV2 = 'paramo-literario-v2-vistos';
+  const storage = createMemoryStorage({
+    [legacyKeyV1]: JSON.stringify([0, 1]),
+    [legacyKeyV2]: JSON.stringify([1, 2])
+  });
+  assert.notEqual(storage.getItem(legacyKeyV1), null);
+  assert.notEqual(storage.getItem(legacyKeyV2), null);
+  createQuoteManager(SAMPLE_QUOTES, storage, () => 0);
+  assert.equal(storage.getItem(legacyKeyV1), null);
+  assert.equal(storage.getItem(legacyKeyV2), null);
+});
