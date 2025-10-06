@@ -183,8 +183,21 @@ const QUOTES = [
   }
 ];
 
-const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
-const quoteManager = createQuoteManager(QUOTES, storage);
+let lastQuoteIndex = null;
+
+function pickRandomQuote() {
+  if (QUOTES.length === 0) {
+    return null;
+  }
+
+  let index = Math.floor(Math.random() * QUOTES.length);
+  if (QUOTES.length > 1 && index === lastQuoteIndex) {
+    index = (index + 1 + Math.floor(Math.random() * (QUOTES.length - 1))) % QUOTES.length;
+  }
+
+  lastQuoteIndex = index;
+  return { ...QUOTES[index], idx: index };
+}
 
 let currentQuote = null;
 const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
@@ -201,10 +214,26 @@ function getPreferredVoice() {
   );
 }
 
-function speakQuote(text) {
-  if (!synth) {
-    return;
+function normalizeSentence(text, isLast) {
+  const trimmed = text.trim();
+  if (!trimmed) {
+    return "";
   }
+  if (isLast || /[.!?…]$/.test(trimmed)) {
+    return trimmed;
+  }
+  return `${trimmed}.`;
+}
+
+function buildSpeechText(quote) {
+  const parts = [quote.t, quote.a, quote.obra].filter(Boolean);
+  return parts
+    .map((part, index) => normalizeSentence(part, index === parts.length - 1))
+    .filter(Boolean)
+    .join(" ");
+}
+
+function speakQuote(quote) {
   if (!voicesReady) {
     setTimeout(() => speakQuote(quote), 200);
     return;
@@ -226,9 +255,52 @@ function speakQuote(text) {
 }
 
 function renderQuote() {
-  currentQuote = quoteManager.next();
-  document.getElementById('quote').textContent = '“' + currentQuote.t + '”';
-  document.getElementById('author').textContent = '— ' + currentQuote.a;
+  const nextQuote = pickRandomQuote();
+  if (!nextQuote) {
+    return;
+  }
+
+  currentQuote = nextQuote;
+  document.getElementById("quote").textContent = "“" + currentQuote.t + "”";
+  renderAttribution(currentQuote);
+}
+
+function renderAttribution(quote) {
+  const container = document.getElementById("author");
+  const nameEl = document.getElementById("author-name");
+  const workEl = document.getElementById("author-work");
+  const separatorEl = document.getElementById("author-separator");
+
+  if (!container || !nameEl || !workEl || !separatorEl) {
+    return;
+  }
+
+  const hasAuthor = Boolean(quote.a);
+  const hasWork = Boolean(quote.obra);
+
+  if (hasAuthor) {
+    nameEl.textContent = `— ${quote.a}`;
+    nameEl.style.display = "inline";
+  } else {
+    nameEl.textContent = "";
+    nameEl.style.display = "none";
+  }
+
+  if (hasWork) {
+    workEl.textContent = quote.obra;
+    workEl.style.display = "inline";
+  } else {
+    workEl.textContent = "";
+    workEl.style.display = "none";
+  }
+
+  separatorEl.style.display = hasAuthor && hasWork ? "inline" : "none";
+
+  if (!hasAuthor && !hasWork) {
+    container.setAttribute("aria-hidden", "true");
+  } else {
+    container.removeAttribute("aria-hidden");
+  }
 }
 
 function initApp() {
