@@ -1,6 +1,6 @@
-export const STORAGE_VERSION = 'v2';
+export const STORAGE_VERSION = 'v3';
 export const STORAGE_KEY = `paramo-literario-${STORAGE_VERSION}-vistos`;
-const LEGACY_KEYS = ['paramo-literario-vistos'];
+const LEGACY_KEYS = ['paramo-literario-vistos', 'paramo-literario-v2-vistos'];
 
 function sanitizeRandom(value) {
   if (typeof value !== 'number' || !Number.isFinite(value)) {

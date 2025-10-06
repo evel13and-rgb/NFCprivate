@@ -62,9 +62,15 @@ test('limpia índices fuera de rango y elimina duplicados', () => {
 });
 
 test('elimina claves antiguas para que reaparezcan las citas previas', () => {
-  const legacyKey = 'paramo-literario-vistos';
-  const storage = createMemoryStorage({ [legacyKey]: JSON.stringify([0, 1]) });
-  assert.notEqual(storage.getItem(legacyKey), null);
+  const legacyKeyV1 = 'paramo-literario-vistos';
+  const legacyKeyV2 = 'paramo-literario-v2-vistos';
+  const storage = createMemoryStorage({
+    [legacyKeyV1]: JSON.stringify([0, 1]),
+    [legacyKeyV2]: JSON.stringify([1, 2])
+  });
+  assert.notEqual(storage.getItem(legacyKeyV1), null);
+  assert.notEqual(storage.getItem(legacyKeyV2), null);
   createQuoteManager(SAMPLE_QUOTES, storage, () => 0);
-  assert.equal(storage.getItem(legacyKey), null);
+  assert.equal(storage.getItem(legacyKeyV1), null);
+  assert.equal(storage.getItem(legacyKeyV2), null);
 });

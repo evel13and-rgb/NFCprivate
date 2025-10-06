@@ -2,6 +2,30 @@ import { createQuoteManager } from './quoteLogic.js';
 
 const QUOTES = [
   {
+    t: "No soy nada. Nunca seré nada. No puedo querer ser nada. Aparte de esto, tengo en mí todos los sueños del mundo.",
+    a: "Fernando Pessoa, “Tabacaria”"
+  },
+  {
+    t: "La literatura es la prueba de que la vida no basta.",
+    a: "Fernando Pessoa"
+  },
+  {
+    t: "A veces escucho pasar el viento; y solo de oír pasar el viento, vale la pena haber nacido.",
+    a: "Fernando Pessoa"
+  },
+  {
+    t: "El valor de las cosas no está en el tiempo que duran, sino en la intensidad con que se viven.",
+    a: "Fernando Pessoa"
+  },
+  {
+    t: "La vida es lo que hacemos de ella. Los viajes son los viajeros. Lo que vemos no es lo que vemos, sino lo que somos.",
+    a: "Fernando Pessoa, Libro del desasosiego"
+  },
+  {
+    t: "La lengua portuguesa es mi patria, y la nostalgia, mi forma de estar.",
+    a: "Fernando Pessoa"
+  },
+  {
     t: "He soñado en mi vida sueños que han permanecido conmigo para siempre, y han cambiado mis ideas; han pasado a través de mí como el vino a través del agua, y han alterado el color de mi mente. Si me caso con Linton, podría ser muy feliz: él es tan apacible, y tan diferente de Heathcliff. Pero ¿cómo puedo vivir sin mi alma? Yo sé que Heathcliff no sabe cuánto lo amo, ni que no es porque sea guapo, Nelly, sino porque es más yo que yo misma. Sea lo que sea de lo que estén hechas nuestras almas, la suya y la mía son lo mismo, y Linton es tan diferente de mí como un rayo de luna de un relámpago, o el hielo del fuego. Mi amor por Linton es como el follaje del bosque: el tiempo lo cambiará, lo sé bien, como el invierno cambia los árboles. Mi amor por Heathcliff se parece a las rocas eternas que hay debajo: no es una fuente de placer visible, pero es necesario. Nelly, yo soy Heathcliff. Él está siempre, siempre en mi mente: no como un placer, sino como mi propio ser. Así que no hables de separarnos; eso es imposible.",
     a: "🕯️ Catherine Earnshaw, Capítulo IX. Cumbres Borrascosas."
   },
