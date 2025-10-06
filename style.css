@@ -46,6 +46,30 @@ blockquote {
   margin: 1rem 0 0.75rem 0;
   font-size: 1rem;
   color: #5b5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.author[aria-hidden="true"] {
+  display: none;
+}
+
+.author-name,
+.author-work,
+.author-separator {
+  display: none;
+}
+
+.author-name {
+  font-style: normal;
+}
+
+.author-work {
+  font-style: italic;
 }
 
 .row {

@@ -12,7 +12,11 @@
     <div class="card" id="card" tabindex="0" aria-label="Pulsa para oír la frase">
       <h1>Paramo Literario</h1>
       <blockquote id="quote">…</blockquote>
-      <div class="author" id="author"></div>
+      <div class="author" id="author" aria-live="polite">
+        <span class="author-name" id="author-name"></span>
+        <span class="author-separator" id="author-separator" aria-hidden="true">·</span>
+        <span class="author-work" id="author-work"></span>
+      </div>
       <div class="row">
         <span class="tiny" id="audio-tip">
           Toca la tarjeta o pulsa Enter para escuchar la frase.
