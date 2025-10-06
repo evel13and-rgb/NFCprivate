@@ -1,3 +1,5 @@
+import { createQuoteManager } from './quoteLogic.js';
+
 const QUOTES = [
   {
     t: "He soñado en mi vida sueños que han permanecido conmigo para siempre, y han cambiado mis ideas; han pasado a través de mí como el vino a través del agua, y han alterado el color de mi mente. Si me caso con Linton, podría ser muy feliz: él es tan apacible, y tan diferente de Heathcliff. Pero ¿cómo puedo vivir sin mi alma? Yo sé que Heathcliff no sabe cuánto lo amo, ni que no es porque sea guapo, Nelly, sino porque es más yo que yo misma. Sea lo que sea de lo que estén hechas nuestras almas, la suya y la mía son lo mismo, y Linton es tan diferente de mí como un rayo de luna de un relámpago, o el hielo del fuego. Mi amor por Linton es como el follaje del bosque: el tiempo lo cambiará, lo sé bien, como el invierno cambia los árboles. Mi amor por Heathcliff se parece a las rocas eternas que hay debajo: no es una fuente de placer visible, pero es necesario. Nelly, yo soy Heathcliff. Él está siempre, siempre en mi mente: no como un placer, sino como mi propio ser. Así que no hables de separarnos; eso es imposible.",
@@ -49,37 +51,17 @@ const QUOTES = [
   }
 ];
 
-const STORAGE_KEY = "paramo-literario-vistos";
-
-function getVistos() {
-  try {
-    const arr = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return Array.isArray(arr) ? arr : [];
-  } catch { return []; }
-}
-
-function setVistos(arr) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
-}
-
-function pickRandomNoRepeat() {
-  let vistos = getVistos();
-  if (vistos.length >= QUOTES.length) {
-    vistos = [];
-  }
-  const disponibles = QUOTES.map((_, i) => i).filter(i => !vistos.includes(i));
-  const elegido = disponibles[Math.floor(Math.random() * disponibles.length)];
-  vistos.push(elegido);
-  setVistos(vistos);
-  return { ...QUOTES[elegido], idx: elegido };
-}
+const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
+const quoteManager = createQuoteManager(QUOTES, storage);
 
 let currentQuote = null;
-let voicesReady = false;
+const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
+let voicesReady = synth ? synth.getVoices().length > 0 : false;
 
 // Selecciona la voz más fluida disponible
 function getPreferredVoice() {
-  const voices = window.speechSynthesis.getVoices();
+  if (!synth) return null;
+  const voices = synth.getVoices();
   return (
     voices.find(v => v.lang.startsWith("es") && v.name.includes("Google")) ||
     voices.find(v => v.lang.startsWith("es") && v.name.includes("Microsoft Sabina")) ||
@@ -88,12 +70,15 @@ function getPreferredVoice() {
 }
 
 function speakQuote(text) {
+  if (!synth) {
+    return;
+  }
   if (!voicesReady) {
     setTimeout(() => speakQuote(text), 200);
     return;
   }
-  if (window.speechSynthesis.speaking) {
-    window.speechSynthesis.cancel();
+  if (synth.speaking) {
+    synth.cancel();
   }
   const utter = new window.SpeechSynthesisUtterance(text);
   const preferred = getPreferredVoice();
@@ -103,11 +88,11 @@ function speakQuote(text) {
   } else {
     utter.lang = "es-ES";
   }
-  window.speechSynthesis.speak(utter);
+  synth.speak(utter);
 }
 
 function renderQuote() {
-  currentQuote = pickRandomNoRepeat();
+  currentQuote = quoteManager.next();
   document.getElementById('quote').textContent = '“' + currentQuote.t + '”';
   document.getElementById('author').textContent = '— ' + currentQuote.a;
 }
@@ -133,12 +118,14 @@ function initApp() {
 }
 
 // Espera a que las voces estén listas antes de permitir hablar
-window.speechSynthesis.onvoiceschanged = () => {
-  voicesReady = true;
-};
+if (synth) {
+  synth.onvoiceschanged = () => {
+    voicesReady = true;
+  };
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.speechSynthesis.getVoices().length > 0) {
+  if (synth && synth.getVoices().length > 0) {
     voicesReady = true;
   }
   initApp();
