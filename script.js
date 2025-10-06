@@ -1,3 +1,5 @@
+import { createQuoteManager } from './quoteLogic.js';
+
 const QUOTES = [
   {
     t: "Siento como si me hubiesen robado algo esencial y no sé qué es.",
@@ -198,11 +200,13 @@ function pickRandomQuote() {
 }
 
 let currentQuote = null;
-let voicesReady = false;
+const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
+let voicesReady = synth ? synth.getVoices().length > 0 : false;
 
 // Selecciona la voz más fluida disponible
 function getPreferredVoice() {
-  const voices = window.speechSynthesis.getVoices();
+  if (!synth) return null;
+  const voices = synth.getVoices();
   return (
     voices.find(v => v.lang.startsWith("es") && v.name.includes("Google")) ||
     voices.find(v => v.lang.startsWith("es") && v.name.includes("Microsoft Sabina")) ||
@@ -234,8 +238,8 @@ function speakQuote(quote) {
     setTimeout(() => speakQuote(quote), 200);
     return;
   }
-  if (window.speechSynthesis.speaking) {
-    window.speechSynthesis.cancel();
+  if (synth.speaking) {
+    synth.cancel();
   }
   const utter = new window.SpeechSynthesisUtterance(buildSpeechText(quote));
   const preferred = getPreferredVoice();
@@ -247,7 +251,7 @@ function speakQuote(quote) {
   } else {
     utter.lang = "es-ES";
   }
-  window.speechSynthesis.speak(utter);
+  synth.speak(utter);
 }
 
 function renderQuote() {
@@ -320,12 +324,14 @@ function initApp() {
 }
 
 // Espera a que las voces estén listas antes de permitir hablar
-window.speechSynthesis.onvoiceschanged = () => {
-  voicesReady = true;
-};
+if (synth) {
+  synth.onvoiceschanged = () => {
+    voicesReady = true;
+  };
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.speechSynthesis.getVoices().length > 0) {
+  if (synth && synth.getVoices().length > 0) {
     voicesReady = true;
   }
   initApp();
