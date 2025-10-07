@@ -9,6 +9,7 @@
   --shadow: 0 22px 42px rgba(120, 102, 77, 0.2);
   --shadow-hover: 0 28px 56px rgba(120, 102, 77, 0.24);
   --ink-soft: rgba(86, 92, 51, 0.24);
+  --paramo: #4f6f52;
 }
 
 * {
@@ -19,10 +20,10 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background-color: var(--sand);
+  background-color: var(--paramo);
   background-image:
-    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.6), transparent 55%),
-    radial-gradient(circle at 80% -10%, rgba(255, 245, 230, 0.45), transparent 60%);
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 80% -10%, rgba(79, 111, 82, 0.45), transparent 60%);
   color: var(--text);
   display: flex;
   align-items: center;
@@ -81,12 +82,12 @@ main.wrap {
 }
 
 h1 {
-  margin: 0 0 1.4rem;
+  margin: 0 0 1rem;
   font-family: 'Playfair Display', 'Times New Roman', serif;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: clamp(2.4rem, 5vw, 3rem);
+  font-size: clamp(2rem, 4.2vw, 2.6rem);
   color: var(--title);
 }
 
@@ -132,14 +133,14 @@ blockquote::after {
 }
 
 .row {
-  margin-top: 2.2rem;
+  margin-top: 1.4rem;
 }
 
 .tiny {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  font-size: 0.9rem;
+  gap: 0.5rem;
+  font-size: 0.72rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--author);
