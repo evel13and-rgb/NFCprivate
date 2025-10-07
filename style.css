@@ -93,10 +93,11 @@ h1 {
 
 blockquote {
   margin: 0 auto 2rem;
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: clamp(1.15rem, 2.9vw, 1.75rem);
   line-height: 1.7;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 400;
   color: var(--text);
   position: relative;
   padding: 0 1.5rem;
@@ -166,6 +167,7 @@ blockquote::after {
 
   blockquote {
     padding: 0 1rem;
+    font-size: clamp(1.05rem, 3.4vw, 1.45rem);
   }
 
   blockquote::before {
