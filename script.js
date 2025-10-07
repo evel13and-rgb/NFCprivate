@@ -18,33 +18,6 @@ const CUMBRES_BORRASCOSAS_QUOTES = [
 ];
 
 
-const FRANKENSTEIN_QUOTES = [
-  {
-    t: "¡Recuerda que soy tu criatura! Debería ser tu Adán, pero soy más bien el ángel caído, a quien privas de alegría sin culpa.",
-    a: "La criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Aprende de mí, si no de mis preceptos, al menos de mi ejemplo, lo peligroso que es adquirir conocimiento.",
-    a: "Victor Frankenstein",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Nada es tan doloroso para la mente humana como un gran y repentino cambio.",
-    a: "Victor Frankenstein",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "La vida, aunque sólo sea una acumulación de dolor, es querida para mí, y la defenderé.",
-    a: "La criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  }
-];
-
 const NUDO_DE_VIBORAS_QUOTES = [
   {
     t: "Isa, cuando leas estas páginas, yo habré muerto. He querido hablarte al fin sin odio, sin deseo de herirte, sin esa cólera fría que ha guiado toda mi vida.\nDurante cuarenta años he vivido junto a ti como un enemigo, y cada día he buscado nuevas razones para justificar mi odio. Pero lo cierto es que te odié porque te amé, porque esperaba de ti lo que tú no sabías darme. Te reproché haberme cerrado las puertas de tu alma, cuando en realidad era yo quien las había cerrado primero.",
@@ -120,7 +93,6 @@ const PEDRO_PARAMO_QUOTES = [
 const QUOTES = [
   ...PRE_RANDOM_QUOTES,
   ...CUMBRES_BORRASCOSAS_QUOTES,
-  ...FRANKENSTEIN_QUOTES,
   ...NUDO_DE_VIBORAS_QUOTES,
   ...PEDRO_PARAMO_QUOTES
 ];
