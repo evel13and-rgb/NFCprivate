@@ -1,41 +1,6 @@
 import { createQuoteManager } from './quoteLogic.js';
 
-const PRE_RANDOM_QUOTES = [
-  {
-    t: "No soy nada. Nunca seré nada. No puedo querer ser nada. Aparte de esto, tengo en mí todos los sueños del mundo.",
-    a: "Fernando Pessoa",
-    obra: "Tabacaria",
-    lang: "es"
-  },
-  {
-    t: "La literatura es la prueba de que la vida no basta.",
-    a: "Fernando Pessoa",
-    lang: "es"
-  },
-  {
-    t: "A veces escucho pasar el viento; y solo de oír pasar el viento, vale la pena haber nacido.",
-    a: "Fernando Pessoa",
-    obra: "Libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "El valor de las cosas no está en el tiempo que duran, sino en la intensidad con que se viven.",
-    a: "Fernando Pessoa",
-    obra: "Libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "La vida es lo que hacemos de ella. Los viajes son los viajeros. Lo que vemos no es lo que vemos, sino lo que somos.",
-    a: "Fernando Pessoa",
-    obra: "Libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "La lengua portuguesa es mi patria, y la nostalgia, mi forma de estar.",
-    a: "Fernando Pessoa",
-    lang: "es"
-  }
-];
+const PRE_RANDOM_QUOTES = [];
 
 const CUMBRES_BORRASCOSAS_QUOTES = [
   {
@@ -52,95 +17,6 @@ const CUMBRES_BORRASCOSAS_QUOTES = [
   }
 ];
 
-const PESSOA_QUOTES = [
-  {
-    t: "Hay un cansancio del alma más terrible que el del cuerpo: el cansancio de no querer nada.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "La monotonía del ser es un mar sin olas.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "El tedio es la sensación física del tiempo que pasa lentamente.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "Lo que en mí siente está pensando.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "El insomnio de mi alma tiene los ojos abiertos y ve siempre lo mismo.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "No sé quién soy: no sé qué alma tengo.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "Soy un paisaje de dentro.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "La lucidez me devora como una llama interior.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "La soledad no es estar solo, es estar vacío.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  },
-  {
-    t: "Hay momentos en que todo me parece un decorado; incluso yo.",
-    a: "Fernando Pessoa (Bernardo Soares)",
-    obra: "El libro del desasosiego",
-    lang: "es"
-  }
-];
-
-const FRANKENSTEIN_QUOTES = [
-  {
-    t: "¡Recuerda que soy tu criatura! Debería ser tu Adán, pero soy más bien el ángel caído, a quien privas de alegría sin culpa.",
-    a: "La criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Aprende de mí, si no de mis preceptos, al menos de mi ejemplo, lo peligroso que es adquirir conocimiento.",
-    a: "Victor Frankenstein",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Nada es tan doloroso para la mente humana como un gran y repentino cambio.",
-    a: "Victor Frankenstein",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "La vida, aunque sólo sea una acumulación de dolor, es querida para mí, y la defenderé.",
-    a: "La criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  }
-];
 
 const NUDO_DE_VIBORAS_QUOTES = [
   {
@@ -217,8 +93,6 @@ const PEDRO_PARAMO_QUOTES = [
 const QUOTES = [
   ...PRE_RANDOM_QUOTES,
   ...CUMBRES_BORRASCOSAS_QUOTES,
-  ...PESSOA_QUOTES,
-  ...FRANKENSTEIN_QUOTES,
   ...NUDO_DE_VIBORAS_QUOTES,
   ...PEDRO_PARAMO_QUOTES
 ];
