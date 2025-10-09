@@ -20,13 +20,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: clamp(4rem, 22vh, 8rem);
-  padding-inline: clamp(12px, 3vw, 36px);
+  padding-block: clamp(4rem, 24vh, 9rem);
+  padding-inline: clamp(12px, 2.8vw, 48px);
   line-height: 1.7;
 }
 
 main.wrap {
-  width: min(720px, 100%);
+  width: min(68ch, 100%);
 }
 
 
@@ -34,7 +34,7 @@ main.wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(1.5rem, 5vh, 2.6rem);
+  gap: clamp(1.5rem, 6vh, 2.8rem);
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -77,8 +77,8 @@ blockquote {
   font-weight: 400;
   color: var(--text);
   position: relative;
-  padding-inline: clamp(0.5rem, 3vw, 1.5rem);
-  max-width: 48ch;
+  padding-inline: 0;
+  max-width: 60ch;
 }
 
 blockquote::before,
@@ -92,13 +92,13 @@ blockquote::after {
 
 blockquote::before {
   top: -1.8rem;
-  left: clamp(-0.6rem, -0.8vw, 0.2rem);
+  left: clamp(-0.4rem, -0.6vw, 0.2rem);
 }
 
 blockquote::after {
   content: '\201D';
   bottom: -2rem;
-  right: clamp(-0.6rem, -0.8vw, 0.2rem);
+  right: clamp(-0.4rem, -0.6vw, 0.2rem);
 }
 
 .author {
@@ -108,6 +108,7 @@ blockquote::after {
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--author);
+  text-align: center;
 }
 
 .row {
