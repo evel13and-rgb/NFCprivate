@@ -1,15 +1,10 @@
 :root {
   color-scheme: light;
   --sand: #f2e9d0;
-  --paper: #f8f5ec;
   --title: #565c33;
   --text: #1c1a17;
   --author: #6b675f;
-  --border: #e8deca;
-  --shadow: 0 22px 42px rgba(120, 102, 77, 0.2);
-  --shadow-hover: 0 28px 56px rgba(120, 102, 77, 0.24);
   --ink-soft: rgba(86, 92, 51, 0.24);
-  --paramo: #4f6f52;
 }
 
 * {
@@ -20,69 +15,51 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background-color: var(--paramo);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.35), transparent 55%),
-    radial-gradient(circle at 80% -10%, rgba(79, 111, 82, 0.45), transparent 60%);
+  background-color: var(--sand);
   color: var(--text);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1.5rem;
-  line-height: 1.6;
+  padding-block: clamp(4rem, 22vh, 8rem);
+  padding-inline: clamp(12px, 3vw, 36px);
+  line-height: 1.7;
 }
 
 main.wrap {
   width: min(720px, 100%);
 }
 
-.card {
-  position: relative;
-  background: var(--paper);
-  border-radius: 25px;
-  border: 1px solid rgba(232, 222, 202, 0.85);
-  box-shadow: var(--shadow);
-  padding: clamp(2.5rem, 5vw, 3.2rem) clamp(2rem, 6vw, 3.4rem);
+
+.quote-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.5rem, 5vh, 2.6rem);
   text-align: center;
   cursor: pointer;
-  transition: transform 200ms ease, box-shadow 200ms ease;
-  isolation: isolate;
+  outline: none;
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  inset: 1.2rem;
-  border-radius: 18px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 70%);
-  mix-blend-mode: screen;
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.card:hover,
-.card:focus-visible {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-}
-
-.card:focus-visible {
+.quote-flow:focus-visible {
   outline: 3px solid rgba(86, 92, 51, 0.35);
-  outline-offset: 6px;
+  outline-offset: 10px;
+}
+
+.title-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.title-logo {
+  display: block;
+  width: clamp(2.4rem, 5vw, 3.2rem);
+  height: auto;
 }
 
 h1 {
-  margin: 0 0 1rem;
+  margin: 0;
   font-family: 'Playfair Display', 'Times New Roman', serif;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -92,16 +69,16 @@ h1 {
 }
 
 blockquote {
-  margin: 0 auto 2rem;
+  margin: 0;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: clamp(1.15rem, 2.9vw, 1.75rem);
-  line-height: 1.7;
+  line-height: 1.75;
   font-style: normal;
   font-weight: 400;
   color: var(--text);
   position: relative;
-  padding: 0 1.5rem;
-  max-width: 46ch;
+  padding-inline: clamp(0.5rem, 3vw, 1.5rem);
+  max-width: 48ch;
 }
 
 blockquote::before,
@@ -115,17 +92,17 @@ blockquote::after {
 
 blockquote::before {
   top: -1.8rem;
-  left: 0.2rem;
+  left: clamp(-0.6rem, -0.8vw, 0.2rem);
 }
 
 blockquote::after {
   content: '\201D';
   bottom: -2rem;
-  right: 0.2rem;
+  right: clamp(-0.6rem, -0.8vw, 0.2rem);
 }
 
 .author {
-  margin: 0 0 1.2rem;
+  margin: 0;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.02em;
@@ -134,7 +111,7 @@ blockquote::after {
 }
 
 .row {
-  margin-top: 1.4rem;
+  margin-top: 1.6rem;
 }
 
 .tiny {
@@ -157,24 +134,16 @@ blockquote::after {
 }
 
 @media (max-width: 600px) {
-  body {
-    padding: 3rem 1.25rem;
-  }
-
-  .card {
-    padding: 2.3rem 1.8rem;
-  }
-
   blockquote {
-    padding: 0 1rem;
-    font-size: clamp(1.05rem, 3.4vw, 1.45rem);
+    padding-inline: clamp(12px, 5vw, 1rem);
+    font-size: clamp(1.05rem, 4.4vw, 1.45rem);
   }
 
-  blockquote::before {
-    left: -0.1rem;
+  .title-row {
+    gap: clamp(0.75rem, 2vw, 1rem);
   }
 
-  blockquote::after {
-    right: -0.1rem;
+  .title-logo {
+    width: clamp(2.2rem, 9vw, 2.8rem);
   }
 }
