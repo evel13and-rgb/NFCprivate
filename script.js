@@ -724,14 +724,14 @@ function renderQuote() {
 
 function initApp() {
   renderQuote();
-  const card = document.getElementById("card");
-  if (card) {
-    card.addEventListener("click", () => {
+  const quotePanel = document.getElementById("quote-panel");
+  if (quotePanel) {
+    quotePanel.addEventListener("click", () => {
       if (currentQuote) {
         speakQuote(currentQuote);
       }
     });
-    card.addEventListener("keydown", (e) => {
+    quotePanel.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         if (currentQuote) {

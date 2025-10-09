@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>Páramo Literario logotipo</title>
+  <defs>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8f1dc" />
+      <stop offset="100%" stop-color="#e9d9b8" />
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="108" height="108" rx="16" fill="url(#paper)" stroke="#565c33" stroke-width="4" />
+  <g fill="#565c33" font-family="'Playfair Display', 'Times New Roman', serif" font-weight="600" text-anchor="middle">
+    <text x="60" y="72" font-size="52">PL</text>
+  </g>
+</svg>
