@@ -45,19 +45,6 @@ main.wrap {
   outline-offset: 10px;
 }
 
-.title-row {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(0.5rem, 1.5vw, 1rem);
-}
-
-.title-logo {
-  display: block;
-  width: clamp(2.4rem, 5vw, 3.2rem);
-  height: auto;
-}
-
 h1 {
   margin: 0;
   font-family: 'Playfair Display', 'Times New Roman', serif;
@@ -138,13 +125,5 @@ blockquote::after {
   blockquote {
     padding-inline: clamp(12px, 5vw, 1rem);
     font-size: clamp(1.05rem, 4.4vw, 1.45rem);
-  }
-
-  .title-row {
-    gap: clamp(0.75rem, 2vw, 1rem);
-  }
-
-  .title-logo {
-    width: clamp(2.2rem, 9vw, 2.8rem);
   }
 }
