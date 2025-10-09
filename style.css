@@ -1,10 +1,15 @@
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   --sand: #f2e9d0;
   --title: #565c33;
   --text: #1c1a17;
   --author: #6b675f;
   --ink-soft: rgba(86, 92, 51, 0.24);
+  --sand-night: #1f1a15;
+  --title-night: #f6eac7;
+  --text-night: #f4eddc;
+  --author-night: #c9c1aa;
+  --ink-soft-night: rgba(244, 237, 220, 0.18);
 }
 
 * {
@@ -27,6 +32,8 @@ body {
 
 main.wrap {
   width: min(68ch, 100%);
+  position: relative;
+  z-index: 2;
 }
 
 
@@ -38,6 +45,7 @@ main.wrap {
   text-align: center;
   cursor: pointer;
   outline: none;
+  position: relative;
 }
 
 .quote-flow:focus-visible {
@@ -120,6 +128,135 @@ blockquote::after {
   height: 1px;
   background: var(--ink-soft);
 }
+
+body.night-fall {
+  background-color: var(--sand-night);
+  color: var(--text-night);
+}
+
+body.night-fall h1 {
+  color: var(--title-night);
+}
+
+body.night-fall blockquote {
+  color: var(--text-night);
+}
+
+body.night-fall .author,
+body.night-fall .tiny {
+  color: var(--author-night);
+}
+
+body.night-fall .tiny::before {
+  background: var(--ink-soft-night);
+}
+
+body.night-fall blockquote::before,
+body.night-fall blockquote::after {
+  color: rgba(246, 234, 199, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--sand-night);
+    color: var(--text-night);
+  }
+
+  h1 {
+    color: var(--title-night);
+  }
+
+  blockquote {
+    color: var(--text-night);
+  }
+
+  .author,
+  .tiny {
+    color: var(--author-night);
+  }
+
+  .tiny::before {
+    background: var(--ink-soft-night);
+  }
+
+  blockquote::before,
+  blockquote::after {
+    color: rgba(246, 234, 199, 0.2);
+  }
+}
+
+.fireflies-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0;
+  animation: fireflies-layer-in var(--firefly-fade-in, 2400ms) ease-out forwards;
+}
+
+.firefly {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #f9e36b 0%, rgba(249, 227, 107, 0.3) 70%, rgba(249, 227, 107, 0) 100%);
+  box-shadow: 0 0 14px 6px rgba(249, 227, 107, 0.35), 0 0 28px 12px rgba(248, 231, 142, 0.18);
+  opacity: var(--firefly-base-opacity, 0.75);
+  transform: translate3d(0, 0, 0);
+  animation-name: firefly-drift, firefly-flicker;
+  animation-duration: var(--drift-duration, 12s), var(--flicker-duration, 1.2s);
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+  animation-delay: 0s, var(--flicker-delay, 0s);
+}
+
+.fireflies-layer[data-reduce-motion='true'] .firefly {
+  animation-name: firefly-flicker;
+  animation-duration: var(--flicker-duration, 1.2s);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: var(--flicker-delay, 0s);
+}
+
+@keyframes firefly-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  35% {
+    transform: translate3d(calc(var(--dx, 0px) * 0.35), calc(var(--dy, 0px) * 0.3), 0) scale(1.05);
+  }
+  70% {
+    transform: translate3d(calc(var(--dx, 0px) * 0.7), calc(var(--dy, 0px) * 0.65), 0) scale(0.95);
+  }
+  100% {
+    transform: translate3d(var(--dx, 0px), var(--dy, 0px), 0) scale(1);
+  }
+}
+
+@keyframes firefly-flicker {
+  0% {
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.6);
+  }
+  45% {
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 1.05);
+  }
+  70% {
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.5);
+  }
+  100% {
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.9);
+  }
+}
+
+@keyframes fireflies-layer-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 @media (max-width: 600px) {
   blockquote {
