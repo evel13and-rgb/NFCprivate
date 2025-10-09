@@ -1,4 +1,5 @@
 import { createQuoteManager } from './quoteLogic.js';
+import { initFireflyAura } from './fireflies.js';
 
 const PRE_RANDOM_QUOTES = [];
 
@@ -754,4 +755,5 @@ document.addEventListener("DOMContentLoaded", () => {
     voicesReady = true;
   }
   initApp();
+  initFireflyAura();
 });
