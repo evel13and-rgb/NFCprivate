@@ -613,6 +613,10 @@ const ANNE_DE_LAS_TEJAS_VERDES_QUOTES = [
   }
 ];
 
+const QUOTE_INTERVAL_HOURS = 2;
+const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
+const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
+
 const QUOTES = [
   ...PRE_RANDOM_QUOTES,
   ...CUMBRES_BORRASCOSAS_QUOTES,
@@ -632,6 +636,124 @@ const quoteManager = createQuoteManager(QUOTES, storage);
 let currentQuote = null;
 const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
 let voicesReady = synth ? synth.getVoices().length > 0 : false;
+
+function readQuoteState() {
+  if (!storage) return null;
+  try {
+    const raw = storage.getItem(QUOTE_STATE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object') return null;
+    return {
+      lastQuoteId: parsed.lastQuoteId,
+      lastShownAt: parsed.lastShownAt,
+      nextAllowedAt: parsed.nextAllowedAt
+    };
+  } catch {
+    return null;
+  }
+}
+
+function writeQuoteState(state) {
+  if (!storage) return;
+  try {
+    storage.setItem(QUOTE_STATE_KEY, JSON.stringify(state));
+  } catch {
+    // ignore storage errors silently
+  }
+}
+
+function isValidQuoteId(id) {
+  return Number.isInteger(id) && id >= 0 && id < QUOTES.length;
+}
+
+function toQuoteWithIndex(idx) {
+  if (!isValidQuoteId(idx)) {
+    return null;
+  }
+  const base = QUOTES[idx];
+  return base ? { ...base, idx } : null;
+}
+
+function getNavigationType() {
+  if (typeof performance === 'undefined' || typeof performance.getEntriesByType !== 'function') {
+    return 'navigate';
+  }
+  const entries = performance.getEntriesByType('navigation');
+  if (entries && entries.length > 0) {
+    return entries[0].type || 'navigate';
+  }
+  return 'navigate';
+}
+
+function storeNewQuote(quote, timestamp) {
+  if (!quote) return;
+  const shownAt = typeof timestamp === 'number' ? timestamp : Date.now();
+  writeQuoteState({
+    lastQuoteId: quote.idx,
+    lastShownAt: shownAt,
+    nextAllowedAt: shownAt + QUOTE_INTERVAL_MS
+  });
+}
+
+function pickNewQuote() {
+  const nextQuote = quoteManager.next();
+  storeNewQuote(nextQuote, Date.now());
+  return nextQuote;
+}
+
+function determineQuoteForDisplay() {
+  const navigationType = getNavigationType();
+  const storedState = readQuoteState();
+  const now = Date.now();
+  const storedQuote = storedState && isValidQuoteId(storedState.lastQuoteId)
+    ? toQuoteWithIndex(storedState.lastQuoteId)
+    : null;
+
+  if (navigationType === 'reload' || navigationType === 'back_forward') {
+    if (storedQuote) {
+      return { quote: storedQuote };
+    }
+    return { quote: pickNewQuote() };
+  }
+
+  if (storedQuote && typeof storedState?.nextAllowedAt === 'number' && now < storedState.nextAllowedAt) {
+    return {
+      quote: storedQuote,
+      message: 'Aún respira esta frase. Vuelve más tarde para otra.'
+    };
+  }
+
+  return { quote: pickNewQuote() };
+}
+
+function ensureMessageElement() {
+  let messageElement = document.getElementById('quote-message');
+  if (!messageElement) {
+    const row = document.querySelector('#quote-panel .row');
+    if (!row) {
+      return null;
+    }
+    messageElement = document.createElement('span');
+    messageElement.id = 'quote-message';
+    messageElement.className = 'tiny';
+    messageElement.hidden = true;
+    row.appendChild(messageElement);
+  }
+  return messageElement;
+}
+
+function setGentleMessage(message) {
+  const element = ensureMessageElement();
+  if (!element) return;
+  if (message) {
+    element.textContent = message;
+    element.hidden = false;
+  } else {
+    element.textContent = '';
+    element.hidden = true;
+  }
+}
 
 // Selecciona la voz más fluida disponible
 function getPreferredVoice() {
@@ -689,8 +811,11 @@ function speakQuote(quote) {
   synth.speak(utter);
 }
 
-function renderQuote() {
-  currentQuote = quoteManager.next();
+function renderQuote(quote) {
+  if (!quote) {
+    return;
+  }
+  currentQuote = quote;
   const quoteElement = document.getElementById('quote');
   if (quoteElement) {
     quoteElement.textContent = '“' + currentQuote.t + '”';
@@ -724,7 +849,11 @@ function renderQuote() {
 }
 
 function initApp() {
-  renderQuote();
+  const { quote, message } = determineQuoteForDisplay();
+  if (quote) {
+    renderQuote(quote);
+  }
+  setGentleMessage(message);
   const quotePanel = document.getElementById("quote-panel");
   if (quotePanel) {
     quotePanel.addEventListener("click", () => {
