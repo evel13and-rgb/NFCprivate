@@ -263,4 +263,9 @@ body.night-fall blockquote::after {
     padding-inline: clamp(12px, 5vw, 1rem);
     font-size: clamp(1.05rem, 4.4vw, 1.45rem);
   }
+
+  .firefly {
+    box-shadow: 0 0 10px 4px rgba(249, 227, 107, 0.26), 0 0 18px 8px rgba(248, 231, 142, 0.14);
+    background: radial-gradient(circle at center, rgba(249, 227, 107, 0.9) 0%, rgba(249, 227, 107, 0.25) 65%, rgba(249, 227, 107, 0) 100%);
+  }
 }
