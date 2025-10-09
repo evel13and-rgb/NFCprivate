@@ -195,10 +195,6 @@ body.night-fall blockquote::after {
   animation: fireflies-layer-in var(--firefly-fade-in, 2400ms) ease-out forwards;
 }
 
-.fireflies-layer.fireflies-fade-out {
-  animation: fireflies-layer-out var(--firefly-fade-out, 3500ms) ease-in forwards;
-}
-
 .firefly {
   position: absolute;
   border-radius: 50%;
@@ -261,14 +257,6 @@ body.night-fall blockquote::after {
   }
 }
 
-@keyframes fireflies-layer-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 @media (max-width: 600px) {
   blockquote {
