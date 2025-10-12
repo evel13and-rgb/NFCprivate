@@ -15,7 +15,15 @@
 </head>
 <body>
   <main class="wrap">
-    <section class="quote-flow" id="quote-panel" tabindex="0" aria-label="Pulsa para oír la frase">
+    <section
+      class="quote-flow"
+      id="quote-panel"
+      role="button"
+      tabindex="0"
+      aria-pressed="false"
+      aria-live="polite"
+      aria-label="Pulsa para oír la frase"
+    >
       <h1>Páramo Literario</h1>
       <blockquote id="quote">…</blockquote>
       <div class="author" id="author" aria-live="polite">
@@ -28,8 +36,10 @@
           Toca o pulsa Enter para oírla.
         </span>
       </div>
+      <div id="speech-status" class="sr-only" aria-live="polite"></div>
     </section>
   </main>
+  <div id="voice-overlay" class="voice-overlay" hidden></div>
   <script type="module" src="script.js"></script>
 </body>
 </html>
