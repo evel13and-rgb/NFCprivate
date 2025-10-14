@@ -1270,29 +1270,27 @@ function setGentleMessage(message) {
   }
 }
 
-function preprocessQuoteForSpeech(quote) {
-  if (!quote) return [];
-  const sentences = [];
-  let text = String(quote.t || '')
+function ensureTerminalPause(text) {
+  if (!text) return '';
+  return /[.!?…"]$/.test(text) ? text : `${text}.`;
+}
+
+function smoothNarrationText(text) {
+  return text
     .replace(/\r?\n+/g, ' ')
     .replace(/\.{3,}/g, '…')
-    .replace(/([;:—])\s*/g, '$1, ')
+    .replace(/\s*—\s*/g, ' — ')
+    .replace(/([;:])\s*/g, '$1 ')
+    .replace(/([!?])(\w)/g, '$1 $2')
     .replace(/\s{2,}/g, ' ')
     .trim();
+}
 
-  if (text) {
-    const fragments = text.match(/[^.!?…]+[.!?…]?/g);
-    if (fragments) {
-      fragments.forEach(fragment => {
-        const cleaned = fragment.trim();
-        if (cleaned) {
-          sentences.push(cleaned);
-        }
-      });
-    } else {
-      sentences.push(text);
-    }
-  }
+function preprocessQuoteForSpeech(quote) {
+  if (!quote) return '';
+
+  const rawText = String(quote.t || '');
+  const mainText = smoothNarrationText(rawText);
 
   const meta = [];
   if (quote.a) {
@@ -1301,11 +1299,12 @@ function preprocessQuoteForSpeech(quote) {
   if (quote.obra) {
     meta.push(quote.obra);
   }
-  if (meta.length > 0) {
-    sentences.push(`— ${meta.join(', ')}`);
-  }
 
-  return sentences;
+  const withMeta = meta.length > 0
+    ? `${ensureTerminalPause(mainText)} — ${meta.join(', ')}`
+    : ensureTerminalPause(mainText);
+
+  return smoothNarrationText(withMeta);
 }
 
 function handleSpeechEnd() {
@@ -1336,8 +1335,8 @@ async function speakQuote(quote) {
   const requestedLang = quote.lang ? canonicalLang(quote.lang) : canonicalLang(DEFAULT_LANG);
   lastRequestedLang = requestedLang;
 
-  const segments = preprocessQuoteForSpeech(quote);
-  if (!segments.length) {
+  const narration = preprocessQuoteForSpeech(quote);
+  if (!narration) {
     return;
   }
 
@@ -1353,35 +1352,27 @@ async function speakQuote(quote) {
     resetAudioTipMessage();
   }
 
-  activeUtterances = segments.map((segment, index) => {
-    const utter = new window.SpeechSynthesisUtterance(segment);
-    if (selectedVoice) {
-      utter.voice = selectedVoice;
-      if (selectedVoice.lang) {
-        utter.lang = canonicalLang(selectedVoice.lang);
-      } else {
-        utter.lang = voiceLang;
-      }
+  const utter = new window.SpeechSynthesisUtterance(narration);
+  if (selectedVoice) {
+    utter.voice = selectedVoice;
+    if (selectedVoice.lang) {
+      utter.lang = canonicalLang(selectedVoice.lang);
     } else {
       utter.lang = voiceLang;
     }
-    utter.rate = rate;
-    utter.pitch = pitch;
-    utter.volume = DEFAULT_VOLUME;
-    if (index === 0) {
-      utter.onstart = () => updateSpeakingState(true);
-    }
-    const finalize = () => handleSpeechEnd();
-    if (index === segments.length - 1) {
-      utter.onend = finalize;
-      utter.onerror = finalize;
-    } else {
-      utter.onerror = finalize;
-    }
-    return utter;
-  });
+  } else {
+    utter.lang = voiceLang;
+  }
+  utter.rate = rate;
+  utter.pitch = pitch;
+  utter.volume = DEFAULT_VOLUME;
+  utter.onstart = () => updateSpeakingState(true);
+  const finalize = () => handleSpeechEnd();
+  utter.onend = finalize;
+  utter.onerror = finalize;
 
-  activeUtterances.forEach(utter => synth.speak(utter));
+  activeUtterances = [utter];
+  synth.speak(utter);
 }
 
 function renderQuote(quote) {
