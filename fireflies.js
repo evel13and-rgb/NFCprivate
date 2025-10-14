@@ -1,4 +1,4 @@
-const NIGHT_START_HOUR = 19;
+const NIGHT_START_HOUR = 20;
 const NIGHT_END_HOUR = 6;
 const MIN_FIREFLIES = 10;
 const MAX_FIREFLIES = 12;
@@ -10,16 +10,11 @@ const MIN_OPACITY = 0.4;
 const MAX_OPACITY = 0.9;
 const MIN_DRIFT = 10;
 const MAX_DRIFT = 15;
-const FADE_IN_MS = 2400;
-const FADE_OUT_MS = 3500;
-const VISIBLE_MS = 10000;
-
 let darkSchemeMedia;
 let reduceMotionMedia;
 let nightTimerId = null;
 let cleanupCurrentLayer = null;
 let listenersBound = false;
-let hasDisplayedFireflies = false;
 
 function isNightByTime() {
   const now = new Date();
@@ -109,8 +104,6 @@ function createFirefliesLayer() {
   const layer = document.createElement('div');
   layer.className = 'fireflies-layer';
   layer.setAttribute('aria-hidden', 'true');
-  layer.style.setProperty('--firefly-fade-in', `${FADE_IN_MS}ms`);
-  layer.style.setProperty('--firefly-fade-out', `${FADE_OUT_MS}ms`);
   const reduceMotion = reduceMotionMedia?.matches ?? false;
   if (reduceMotion) {
     layer.dataset.reduceMotion = 'true';
@@ -160,12 +153,7 @@ function createFirefliesLayer() {
 
   document.body.appendChild(layer);
 
-  let fadeOutTimer;
-  let removeTimer;
-
   const release = () => {
-    window.clearTimeout(fadeOutTimer);
-    window.clearTimeout(removeTimer);
     if (layer.parentNode) {
       layer.remove();
     }
@@ -177,27 +165,17 @@ function createFirefliesLayer() {
     }
   };
 
-  fadeOutTimer = window.setTimeout(() => {
-    layer.classList.add('fireflies-fade-out');
-  }, VISIBLE_MS);
-
-  removeTimer = window.setTimeout(() => {
-    release();
-  }, VISIBLE_MS + FADE_OUT_MS);
-
   return release;
 }
 
 function evaluateNightState() {
   const shouldShow = shouldShowFireflies();
-  if (shouldShow && !cleanupCurrentLayer && !hasDisplayedFireflies) {
+  if (shouldShow && !cleanupCurrentLayer) {
     cleanupCurrentLayer = createFirefliesLayer();
-    hasDisplayedFireflies = true;
   } else if (!shouldShow) {
     if (cleanupCurrentLayer) {
       cleanupCurrentLayer();
     }
-    hasDisplayedFireflies = false;
   }
 }
 
@@ -208,7 +186,6 @@ function handleDarkSchemeChange() {
 function handleReduceMotionChange() {
   if (cleanupCurrentLayer) {
     cleanupCurrentLayer();
-    hasDisplayedFireflies = false;
     evaluateNightState();
   }
 }
@@ -253,5 +230,4 @@ export function teardownFireflyAura() {
     cleanupCurrentLayer = null;
   }
   listenersBound = false;
-  hasDisplayedFireflies = false;
 }
