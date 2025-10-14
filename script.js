@@ -631,11 +631,526 @@ const QUOTES = [
 ];
 
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
+const sessionStore = typeof window !== 'undefined' ? window.sessionStorage : undefined;
 const quoteManager = createQuoteManager(QUOTES, storage);
 
 let currentQuote = null;
 const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
-let voicesReady = synth ? synth.getVoices().length > 0 : false;
+
+const DEFAULT_LANG = 'es-ES';
+const PREMIUM_KEYWORDS = ['premium', 'enhanced', 'neural', 'high quality', 'siri', 'google', 'natural'];
+const RATE_STORAGE_KEY = 'pl_rate';
+const PITCH_STORAGE_KEY = 'pl_pitch';
+const DEFAULT_RATE = 0.93;
+const DEFAULT_PITCH = 0.98;
+const DEFAULT_VOLUME = 1;
+
+const voiceState = {
+  ready: false,
+  voices: [],
+  waiters: []
+};
+
+let isSpeaking = false;
+let activeUtterances = [];
+let quotePanelElement = null;
+let audioTipElement = null;
+let speechStatusElement = null;
+let voiceOverlayElement = null;
+let overlaySelect = null;
+let overlayRate = null;
+let overlayPitch = null;
+let overlayResetButton = null;
+let overlayActive = false;
+let audioTipDefaultMessage = '';
+let lastRequestedLang = DEFAULT_LANG;
+let hasAnnouncedPlayback = false;
+
+const VOICE_WARNING_SESSION_KEY = 'pl_voice_warning_shown';
+
+function normalizeLang(lang) {
+  if (!lang || typeof lang !== 'string') {
+    return DEFAULT_LANG.toLowerCase();
+  }
+  return lang.toLowerCase();
+}
+
+function voicePreferenceKey(lang) {
+  return `pl_voice_pref_${normalizeLang(lang)}`;
+}
+
+function getStoredNumber(key, fallback) {
+  if (!storage) return fallback;
+  try {
+    const raw = storage.getItem(key);
+    if (!raw) return fallback;
+    const parsed = Number.parseFloat(raw);
+    return Number.isFinite(parsed) ? parsed : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function storeNumber(key, value) {
+  if (!storage) return;
+  try {
+    storage.setItem(key, String(value));
+  } catch {
+    // ignore storage errors silently
+  }
+}
+
+function getStoredRate() {
+  return getStoredNumber(RATE_STORAGE_KEY, DEFAULT_RATE);
+}
+
+function setStoredRate(rate) {
+  storeNumber(RATE_STORAGE_KEY, rate);
+}
+
+function getStoredPitch() {
+  return getStoredNumber(PITCH_STORAGE_KEY, DEFAULT_PITCH);
+}
+
+function setStoredPitch(pitch) {
+  storeNumber(PITCH_STORAGE_KEY, pitch);
+}
+
+function getStoredVoiceURI(lang) {
+  if (!storage) return null;
+  try {
+    const key = voicePreferenceKey(lang);
+    return storage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function storeVoicePreference(lang, voice) {
+  if (!storage || !voice) return;
+  try {
+    storage.setItem(voicePreferenceKey(lang), voice.voiceURI);
+  } catch {
+    // ignore storage errors silently
+  }
+}
+
+function clearVoicePreference(lang) {
+  if (!storage) return;
+  try {
+    storage.removeItem(voicePreferenceKey(lang));
+  } catch {
+    // ignore
+  }
+}
+
+function isPremiumVoice(voice) {
+  if (!voice) return false;
+  const descriptor = `${voice.name || ''} ${voice.voiceURI || ''}`.toLowerCase();
+  return PREMIUM_KEYWORDS.some(keyword => descriptor.includes(keyword));
+}
+
+function updateVoiceList() {
+  if (!synth) {
+    voiceState.ready = false;
+    voiceState.voices = [];
+    return;
+  }
+  const voices = synth.getVoices();
+  voiceState.voices = voices.slice();
+  if (voices.length > 0) {
+    voiceState.ready = true;
+    const resolvers = voiceState.waiters.slice();
+    voiceState.waiters.length = 0;
+    resolvers.forEach(resolve => resolve(voiceState.voices));
+  }
+}
+
+function ensureVoicesReady() {
+  if (!synth) {
+    return Promise.resolve([]);
+  }
+  if (voiceState.ready && voiceState.voices.length > 0) {
+    return Promise.resolve(voiceState.voices);
+  }
+  return new Promise(resolve => {
+    voiceState.waiters.push(resolve);
+    // Trigger a retrieval attempt in case voices are now available
+    setTimeout(updateVoiceList, 0);
+    setTimeout(() => {
+      const index = voiceState.waiters.indexOf(resolve);
+      if (index !== -1) {
+        voiceState.waiters.splice(index, 1);
+        resolve(getAvailableVoices());
+      }
+    }, 800);
+  });
+}
+
+function getAvailableVoices() {
+  if (!voiceState.ready && synth) {
+    updateVoiceList();
+  }
+  return voiceState.voices;
+}
+
+function findVoiceByURI(uri) {
+  if (!uri) return null;
+  return getAvailableVoices().find(voice => voice.voiceURI === uri) || null;
+}
+
+function getVoiceLang(voice) {
+  return (voice?.lang || '').toLowerCase();
+}
+
+function baseLanguage(lang) {
+  if (!lang || typeof lang !== 'string') {
+    return '';
+  }
+  const [base] = lang.toLowerCase().split('-');
+  return base;
+}
+
+function canonicalLang(lang) {
+  const normalized = normalizeLang(lang);
+  const [base, region] = normalized.split('-');
+  if (region) {
+    return `${base}-${region.toUpperCase()}`;
+  }
+  return base;
+}
+
+function chooseVoiceForLang(lang) {
+  const targetLang = normalizeLang(lang);
+  const voices = getAvailableVoices();
+  if (!voices.length) {
+    return null;
+  }
+
+  const stored = getStoredVoiceURI(targetLang);
+  if (stored) {
+    const match = findVoiceByURI(stored);
+    if (match) {
+      return match;
+    }
+    clearVoicePreference(targetLang);
+  }
+
+  const sameLangVoices = voices.filter(voice => getVoiceLang(voice) === targetLang);
+  const sameLangPremium = sameLangVoices.filter(isPremiumVoice);
+  if (sameLangPremium.length > 0) {
+    const selected = sameLangPremium[0];
+    storeVoicePreference(targetLang, selected);
+    return selected;
+  }
+  if (sameLangVoices.length > 0) {
+    const selected = sameLangVoices[0];
+    storeVoicePreference(targetLang, selected);
+    return selected;
+  }
+
+  const base = baseLanguage(targetLang);
+  const sameBaseVoices = voices.filter(voice => baseLanguage(getVoiceLang(voice)) === base);
+  const sameBasePremium = sameBaseVoices.filter(isPremiumVoice);
+  if (sameBasePremium.length > 0) {
+    const selected = sameBasePremium[0];
+    storeVoicePreference(targetLang, selected);
+    return selected;
+  }
+  if (sameBaseVoices.length > 0) {
+    const selected = sameBaseVoices[0];
+    storeVoicePreference(targetLang, selected);
+    return selected;
+  }
+
+  const defaultVoice = voices.find(voice => voice.default);
+  if (defaultVoice) {
+    storeVoicePreference(targetLang, defaultVoice);
+    return defaultVoice;
+  }
+
+  const selected = voices[0];
+  storeVoicePreference(targetLang, selected);
+  return selected;
+}
+
+function getVoicesForLanguage(lang) {
+  const targetLang = normalizeLang(lang);
+  const base = baseLanguage(targetLang);
+  const voices = getAvailableVoices();
+  return voices.filter(voice => {
+    const voiceLang = getVoiceLang(voice);
+    if (!voiceLang) return false;
+    const voiceBase = baseLanguage(voiceLang);
+    return voiceLang === targetLang || voiceBase === base;
+  });
+}
+
+function setQuotePanelPressed(pressed) {
+  if (!quotePanelElement) return;
+  quotePanelElement.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+  quotePanelElement.classList.toggle('is-speaking', pressed);
+}
+
+function announceStatus(message) {
+  if (!speechStatusElement) return;
+  speechStatusElement.textContent = message || '';
+}
+
+function updateSpeakingState(playing) {
+  setQuotePanelPressed(playing);
+  isSpeaking = playing;
+  if (playing) {
+    hasAnnouncedPlayback = true;
+    announceStatus('Reproduciendo lectura');
+  } else if (hasAnnouncedPlayback) {
+    announceStatus('Lectura detenida');
+  } else {
+    announceStatus('');
+  }
+}
+
+function setAudioTipMessage(message) {
+  if (!audioTipElement || !message) return;
+  audioTipElement.textContent = message;
+}
+
+function resetAudioTipMessage() {
+  if (!audioTipElement || !audioTipDefaultMessage) return;
+  audioTipElement.textContent = audioTipDefaultMessage;
+}
+
+function getPlatformVoiceHint() {
+  if (typeof navigator === 'undefined') {
+    return '';
+  }
+  const ua = navigator.userAgent || '';
+  if (/iphone|ipad|ipod/i.test(ua)) {
+    return 'En iOS: Ajustes → Accesibilidad → Contenido hablado → Voces (Español) → Voces mejoradas.';
+  }
+  if (/android/i.test(ua)) {
+    return 'En Android: Ajustes → Accesibilidad → Texto a voz → Datos de voz de alta calidad (Google).';
+  }
+  return '';
+}
+
+function showVoiceWarning() {
+  if (!audioTipElement) return;
+  if (sessionStore && sessionStore.getItem(VOICE_WARNING_SESSION_KEY)) {
+    return;
+  }
+  const hint = getPlatformVoiceHint();
+  const message = `Para una voz más natural, descarga una voz mejorada en tu sistema (Ajustes → Texto a voz).${hint ? ` ${hint}` : ''}`;
+  setAudioTipMessage(message);
+  if (sessionStore) {
+    try {
+      sessionStore.setItem(VOICE_WARNING_SESSION_KEY, '1');
+    } catch {
+      // ignore session storage errors
+    }
+  }
+}
+
+function clampNumber(value, min, max, fallback) {
+  if (!Number.isFinite(value)) {
+    return fallback !== undefined ? fallback : min;
+  }
+  return Math.min(max, Math.max(min, value));
+}
+
+function formatVoiceLabel(voice) {
+  const name = voice?.name || voice?.voiceURI || 'Voz del sistema';
+  const locale = voice?.lang ? canonicalLang(voice.lang) : '';
+  const premiumTag = isPremiumVoice(voice) ? ' · Mejorada' : '';
+  return locale ? `${name} (${locale})${premiumTag}` : `${name}${premiumTag}`;
+}
+
+function populateVoiceOverlay(lang) {
+  if (!overlaySelect) return;
+  updateVoiceList();
+  const targetLang = lang || DEFAULT_LANG;
+  const voices = getVoicesForLanguage(targetLang);
+  overlaySelect.innerHTML = '';
+
+  const autoOption = document.createElement('option');
+  autoOption.value = 'auto';
+  autoOption.textContent = 'Automática (mejor disponible)';
+  overlaySelect.appendChild(autoOption);
+
+  voices.forEach(voice => {
+    const option = document.createElement('option');
+    option.value = voice.voiceURI;
+    option.textContent = formatVoiceLabel(voice);
+    overlaySelect.appendChild(option);
+  });
+
+  const storedURI = getStoredVoiceURI(targetLang);
+  const storedVoiceExists = storedURI ? findVoiceByURI(storedURI) : null;
+  overlaySelect.disabled = voices.length === 0;
+  if (storedVoiceExists) {
+    overlaySelect.value = storedURI;
+  } else {
+    overlaySelect.value = 'auto';
+  }
+}
+
+function syncOverlaySliders() {
+  if (overlayRate) {
+    const rate = clampNumber(getStoredRate(), 0.8, 1.1, DEFAULT_RATE);
+    overlayRate.value = String(rate);
+  }
+  if (overlayPitch) {
+    const pitch = clampNumber(getStoredPitch(), 0.9, 1.1, DEFAULT_PITCH);
+    overlayPitch.value = String(pitch);
+  }
+}
+
+function refreshOverlayControls() {
+  if (!voiceOverlayElement || voiceOverlayElement.hidden) {
+    return;
+  }
+  populateVoiceOverlay(lastRequestedLang);
+  syncOverlaySliders();
+}
+
+function openVoiceOverlay() {
+  if (!voiceOverlayElement) return;
+  populateVoiceOverlay(lastRequestedLang);
+  syncOverlaySliders();
+  voiceOverlayElement.hidden = false;
+  overlayActive = true;
+  if (overlaySelect) {
+    overlaySelect.focus();
+  }
+}
+
+function closeVoiceOverlay() {
+  if (!voiceOverlayElement || voiceOverlayElement.hidden) return;
+  voiceOverlayElement.hidden = true;
+  overlayActive = false;
+  if (quotePanelElement) {
+    quotePanelElement.focus();
+  }
+}
+
+function setupVoiceOverlay() {
+  voiceOverlayElement = document.getElementById('voice-overlay');
+  if (!voiceOverlayElement) {
+    return;
+  }
+
+  voiceOverlayElement.innerHTML = `
+    <div class="voice-overlay__backdrop" data-overlay-dismiss="true"></div>
+    <div class="voice-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="voice-overlay-title">
+      <h2 id="voice-overlay-title">Lectura en voz alta</h2>
+      <div class="voice-overlay__group">
+        <label for="voice-overlay-select">Voz</label>
+        <select id="voice-overlay-select" class="voice-overlay__select"></select>
+      </div>
+      <div class="voice-overlay__group">
+        <label for="voice-overlay-rate">Velocidad</label>
+        <input id="voice-overlay-rate" class="voice-overlay__slider" type="range" min="0.8" max="1.1" step="0.01" />
+      </div>
+      <div class="voice-overlay__group">
+        <label for="voice-overlay-pitch">Entonación</label>
+        <input id="voice-overlay-pitch" class="voice-overlay__slider" type="range" min="0.9" max="1.1" step="0.01" />
+      </div>
+      <div class="voice-overlay__actions">
+        <button type="button" class="voice-overlay__reset">Restablecer</button>
+      </div>
+    </div>
+  `;
+
+  overlaySelect = document.getElementById('voice-overlay-select');
+  overlayRate = document.getElementById('voice-overlay-rate');
+  overlayPitch = document.getElementById('voice-overlay-pitch');
+  overlayResetButton = voiceOverlayElement.querySelector('.voice-overlay__reset');
+
+  if (overlaySelect) {
+    overlaySelect.addEventListener('change', () => {
+      const value = overlaySelect.value;
+      if (value === 'auto') {
+        clearVoicePreference(lastRequestedLang);
+      } else {
+        const selected = findVoiceByURI(value);
+        if (selected) {
+          storeVoicePreference(lastRequestedLang, selected);
+        }
+      }
+    });
+  }
+
+  const handleRateInput = () => {
+    if (!overlayRate) return;
+    const value = clampNumber(Number.parseFloat(overlayRate.value), 0.8, 1.1, DEFAULT_RATE);
+    setStoredRate(value);
+    overlayRate.value = String(value);
+  };
+
+  const handlePitchInput = () => {
+    if (!overlayPitch) return;
+    const value = clampNumber(Number.parseFloat(overlayPitch.value), 0.9, 1.1, DEFAULT_PITCH);
+    setStoredPitch(value);
+    overlayPitch.value = String(value);
+  };
+
+  if (overlayRate) {
+    overlayRate.addEventListener('input', handleRateInput);
+    overlayRate.addEventListener('change', handleRateInput);
+  }
+  if (overlayPitch) {
+    overlayPitch.addEventListener('input', handlePitchInput);
+    overlayPitch.addEventListener('change', handlePitchInput);
+  }
+
+  if (overlayResetButton) {
+    overlayResetButton.addEventListener('click', () => {
+      clearVoicePreference(lastRequestedLang);
+      setStoredRate(DEFAULT_RATE);
+      setStoredPitch(DEFAULT_PITCH);
+      syncOverlaySliders();
+      populateVoiceOverlay(lastRequestedLang);
+    });
+  }
+
+  voiceOverlayElement.addEventListener('click', event => {
+    const target = event.target;
+    const isElement = typeof Element !== 'undefined' && target instanceof Element;
+    if (isElement && target.dataset.overlayDismiss) {
+      closeVoiceOverlay();
+    } else if (target === voiceOverlayElement) {
+      closeVoiceOverlay();
+    }
+  });
+}
+
+function handleGlobalKeydown(event) {
+  if (!event || typeof event.key !== 'string') {
+    return;
+  }
+
+  if (overlayActive && event.key === 'Escape') {
+    event.preventDefault();
+    closeVoiceOverlay();
+    return;
+  }
+
+  if (event.metaKey || event.ctrlKey || event.altKey) {
+    return;
+  }
+
+  if (!overlayActive && event.key.toLowerCase() === 'v') {
+    const target = event.target;
+    if (typeof HTMLElement !== 'undefined' && target instanceof HTMLElement) {
+      const tag = target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || target.isContentEditable) {
+        return;
+      }
+    }
+    event.preventDefault();
+    openVoiceOverlay();
+  }
+}
 
 function readQuoteState() {
   if (!storage) return null;
@@ -755,25 +1270,30 @@ function setGentleMessage(message) {
   }
 }
 
-// Selecciona la voz más fluida disponible
-function getPreferredVoice() {
-  if (!synth) return null;
-  const voices = synth.getVoices();
-  return (
-    voices.find(v => v.lang.startsWith("es") && v.name.includes("Google")) ||
-    voices.find(v => v.lang.startsWith("es") && v.name.includes("Microsoft Sabina")) ||
-    voices.find(v => v.lang.startsWith("es"))
-  );
-}
+function preprocessQuoteForSpeech(quote) {
+  if (!quote) return [];
+  const sentences = [];
+  let text = String(quote.t || '')
+    .replace(/\r?\n+/g, ' ')
+    .replace(/\.{3,}/g, '…')
+    .replace(/([;:—])\s*/g, '$1, ')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
 
-function buildSpeechText(quote) {
-  if (!quote) {
-    return '';
+  if (text) {
+    const fragments = text.match(/[^.!?…]+[.!?…]?/g);
+    if (fragments) {
+      fragments.forEach(fragment => {
+        const cleaned = fragment.trim();
+        if (cleaned) {
+          sentences.push(cleaned);
+        }
+      });
+    } else {
+      sentences.push(text);
+    }
   }
-  const parts = [];
-  if (quote.t) {
-    parts.push(quote.t);
-  }
+
   const meta = [];
   if (quote.a) {
     meta.push(quote.a);
@@ -782,33 +1302,86 @@ function buildSpeechText(quote) {
     meta.push(quote.obra);
   }
   if (meta.length > 0) {
-    parts.push(meta.join(', '));
+    sentences.push(`— ${meta.join(', ')}`);
   }
-  return parts.join('. ');
+
+  return sentences;
 }
 
-function speakQuote(quote) {
+function handleSpeechEnd() {
+  activeUtterances = [];
+  updateSpeakingState(false);
+}
+
+function cancelSpeech() {
+  if (!synth) return;
+  if (synth.speaking || synth.pending) {
+    synth.cancel();
+  }
+  activeUtterances = [];
+  updateSpeakingState(false);
+}
+
+async function speakQuote(quote) {
   if (!synth || !quote) {
     return;
   }
-  if (!voicesReady) {
-    setTimeout(() => speakQuote(quote), 200);
+
+  if (isSpeaking || synth.speaking || synth.pending) {
+    cancelSpeech();
     return;
   }
-  if (synth.speaking) {
-    synth.cancel();
+
+  await ensureVoicesReady();
+  const requestedLang = quote.lang ? canonicalLang(quote.lang) : canonicalLang(DEFAULT_LANG);
+  lastRequestedLang = requestedLang;
+
+  const segments = preprocessQuoteForSpeech(quote);
+  if (!segments.length) {
+    return;
   }
-  const utter = new window.SpeechSynthesisUtterance(buildSpeechText(quote));
-  const preferred = getPreferredVoice();
-  if (preferred) {
-    utter.voice = preferred;
-    utter.lang = preferred.lang;
-  } else if (quote.lang) {
-    utter.lang = quote.lang.startsWith("es") ? "es-ES" : quote.lang;
+
+  const selectedVoice = chooseVoiceForLang(requestedLang);
+  const rate = getStoredRate();
+  const pitch = getStoredPitch();
+  const voiceLang = selectedVoice ? (selectedVoice.lang || requestedLang) : requestedLang;
+
+  const voicesForLang = getVoicesForLanguage(requestedLang);
+  if (!selectedVoice && voicesForLang.length === 0) {
+    showVoiceWarning();
   } else {
-    utter.lang = "es-ES";
+    resetAudioTipMessage();
   }
-  synth.speak(utter);
+
+  activeUtterances = segments.map((segment, index) => {
+    const utter = new window.SpeechSynthesisUtterance(segment);
+    if (selectedVoice) {
+      utter.voice = selectedVoice;
+      if (selectedVoice.lang) {
+        utter.lang = canonicalLang(selectedVoice.lang);
+      } else {
+        utter.lang = voiceLang;
+      }
+    } else {
+      utter.lang = voiceLang;
+    }
+    utter.rate = rate;
+    utter.pitch = pitch;
+    utter.volume = DEFAULT_VOLUME;
+    if (index === 0) {
+      utter.onstart = () => updateSpeakingState(true);
+    }
+    const finalize = () => handleSpeechEnd();
+    if (index === segments.length - 1) {
+      utter.onend = finalize;
+      utter.onerror = finalize;
+    } else {
+      utter.onerror = finalize;
+    }
+    return utter;
+  });
+
+  activeUtterances.forEach(utter => synth.speak(utter));
 }
 
 function renderQuote(quote) {
@@ -816,6 +1389,8 @@ function renderQuote(quote) {
     return;
   }
   currentQuote = quote;
+  lastRequestedLang = quote.lang ? canonicalLang(quote.lang) : canonicalLang(DEFAULT_LANG);
+  refreshOverlayControls();
   const quoteElement = document.getElementById('quote');
   if (quoteElement) {
     quoteElement.textContent = '“' + currentQuote.t + '”';
@@ -850,18 +1425,25 @@ function renderQuote(quote) {
 
 function initApp() {
   const { quote, message } = determineQuoteForDisplay();
+  quotePanelElement = document.getElementById("quote-panel");
+  audioTipElement = document.getElementById('audio-tip');
+  if (audioTipElement && !audioTipDefaultMessage) {
+    audioTipDefaultMessage = audioTipElement.textContent?.trim() || '';
+  }
+  speechStatusElement = document.getElementById('speech-status');
+  setupVoiceOverlay();
+  resetAudioTipMessage();
   if (quote) {
     renderQuote(quote);
   }
   setGentleMessage(message);
-  const quotePanel = document.getElementById("quote-panel");
-  if (quotePanel) {
-    quotePanel.addEventListener("click", () => {
+  if (quotePanelElement) {
+    quotePanelElement.addEventListener("click", () => {
       if (currentQuote) {
         speakQuote(currentQuote);
       }
     });
-    quotePanel.addEventListener("keydown", (e) => {
+    quotePanelElement.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         if (currentQuote) {
@@ -869,20 +1451,36 @@ function initApp() {
         }
       }
     });
+    setQuotePanelPressed(false);
   }
+  announceStatus('');
 }
 
-// Espera a que las voces estén listas antes de permitir hablar
 if (synth) {
-  synth.onvoiceschanged = () => {
-    voicesReady = true;
+  const onVoicesChanged = () => {
+    updateVoiceList();
+    refreshOverlayControls();
   };
+  if (typeof synth.addEventListener === 'function') {
+    synth.addEventListener('voiceschanged', onVoicesChanged);
+  } else {
+    synth.onvoiceschanged = onVoicesChanged;
+  }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  if (synth && synth.getVoices().length > 0) {
-    voicesReady = true;
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  updateVoiceList();
   initApp();
   initFireflyAura();
+  document.addEventListener('keydown', handleGlobalKeydown);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      cancelSpeech();
+    }
+  });
+  if (typeof window !== 'undefined') {
+    window.addEventListener('blur', () => {
+      cancelSpeech();
+    });
+  }
 });

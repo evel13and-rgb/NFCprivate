@@ -51,6 +51,7 @@ function isOutsideProtectedArea(x, y, protectedRect, margin = 36) {
 function createTrajectory(protectedRect) {
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  const allowOverlay = viewportWidth <= 600;
   let attempts = 0;
 
   while (attempts < 30) {
@@ -70,12 +71,13 @@ function createTrajectory(protectedRect) {
       endX >= -120 && endX <= viewportWidth + 120 &&
       endY >= -120 && endY <= viewportHeight + 120;
 
-    if (
-      withinViewport &&
-      isOutsideProtectedArea(startX, startY, protectedRect) &&
-      isOutsideProtectedArea(midX, midY, protectedRect) &&
-      isOutsideProtectedArea(endX, endY, protectedRect)
-    ) {
+    const clearOfQuote =
+      allowOverlay ||
+      (isOutsideProtectedArea(startX, startY, protectedRect) &&
+        isOutsideProtectedArea(midX, midY, protectedRect) &&
+        isOutsideProtectedArea(endX, endY, protectedRect));
+
+    if (withinViewport && clearOfQuote) {
       return {
         startX,
         startY,
@@ -90,8 +92,14 @@ function createTrajectory(protectedRect) {
     attempts += 1;
   }
 
-  const fallbackX = protectedRect ? clamp(protectedRect.left - 60, 12, viewportWidth - 12) : randomBetween(12, viewportWidth - 12);
-  const fallbackY = protectedRect ? clamp(protectedRect.top - 60, 12, viewportHeight - 12) : randomBetween(12, viewportHeight - 12);
+  const fallbackX =
+    allowOverlay || !protectedRect
+      ? randomBetween(12, viewportWidth - 12)
+      : clamp(protectedRect.left - 60, 12, viewportWidth - 12);
+  const fallbackY =
+    allowOverlay || !protectedRect
+      ? randomBetween(12, viewportHeight - 12)
+      : clamp(protectedRect.top - 60, 12, viewportHeight - 12);
   return {
     startX: fallbackX,
     startY: fallbackY,
@@ -112,6 +120,9 @@ function createFirefliesLayer() {
   const quotePanel = document.getElementById('quote-panel');
   const protectedRect = quotePanel ? quotePanel.getBoundingClientRect() : null;
   const total = pickCount();
+  const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  const compactViewport = viewportWidth <= 600;
+  const maxOpacityForViewport = compactViewport ? Math.min(MAX_OPACITY, 0.7) : MAX_OPACITY;
 
   for (let i = 0; i < total; i += 1) {
     const firefly = document.createElement('span');
@@ -120,7 +131,7 @@ function createFirefliesLayer() {
     firefly.style.width = `${size.toFixed(2)}px`;
     firefly.style.height = `${size.toFixed(2)}px`;
 
-    const opacity = randomBetween(MIN_OPACITY, MAX_OPACITY);
+    const opacity = randomBetween(MIN_OPACITY, maxOpacityForViewport);
     firefly.style.setProperty('--firefly-base-opacity', opacity.toFixed(2));
 
     const flickerDuration = randomBetween(MIN_FLICKER, MAX_FLICKER);
