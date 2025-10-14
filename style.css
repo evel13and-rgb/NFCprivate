@@ -5,11 +5,11 @@
   --text: #1c1a17;
   --author: #6b675f;
   --ink-soft: rgba(86, 92, 51, 0.24);
-  --sand-night: #1f1a15;
-  --title-night: #f6eac7;
-  --text-night: #f4eddc;
-  --author-night: #c9c1aa;
-  --ink-soft-night: rgba(244, 237, 220, 0.18);
+  --sand-night: #0d0a10;
+  --title-night: #f9f3da;
+  --text-night: #f6efd9;
+  --author-night: #d3cab0;
+  --ink-soft-night: rgba(246, 234, 199, 0.26);
 }
 
 * {
@@ -165,7 +165,7 @@ body.night-fall .tiny::before {
 
 body.night-fall blockquote::before,
 body.night-fall blockquote::after {
-  color: rgba(246, 234, 199, 0.2);
+  color: rgba(246, 234, 199, 0.28);
 }
 
 .voice-overlay[hidden] {
@@ -301,7 +301,7 @@ body.night-fall blockquote::after {
 
   blockquote::before,
   blockquote::after {
-    color: rgba(246, 234, 199, 0.2);
+    color: rgba(246, 234, 199, 0.28);
   }
 }
 

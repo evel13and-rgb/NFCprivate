@@ -1,4 +1,4 @@
-const NIGHT_START_HOUR = 19;
+const NIGHT_START_HOUR = 20;
 const NIGHT_END_HOUR = 6;
 const MIN_FIREFLIES = 10;
 const MAX_FIREFLIES = 12;
@@ -10,8 +10,6 @@ const MIN_OPACITY = 0.4;
 const MAX_OPACITY = 0.9;
 const MIN_DRIFT = 10;
 const MAX_DRIFT = 15;
-const FADE_IN_MS = 2400;
-
 let darkSchemeMedia;
 let reduceMotionMedia;
 let nightTimerId = null;
@@ -114,7 +112,6 @@ function createFirefliesLayer() {
   const layer = document.createElement('div');
   layer.className = 'fireflies-layer';
   layer.setAttribute('aria-hidden', 'true');
-  layer.style.setProperty('--firefly-fade-in', `${FADE_IN_MS}ms`);
   const reduceMotion = reduceMotionMedia?.matches ?? false;
   if (reduceMotion) {
     layer.dataset.reduceMotion = 'true';
