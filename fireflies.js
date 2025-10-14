@@ -1,4 +1,4 @@
-const NIGHT_START_HOUR = 19;
+const NIGHT_START_HOUR = 20;
 const NIGHT_END_HOUR = 6;
 const MIN_FIREFLIES = 10;
 const MAX_FIREFLIES = 12;
@@ -10,9 +10,6 @@ const MIN_OPACITY = 0.4;
 const MAX_OPACITY = 0.9;
 const MIN_DRIFT = 10;
 const MAX_DRIFT = 15;
-const FADE_IN_MS = 2400;
-
-let darkSchemeMedia;
 let reduceMotionMedia;
 let nightTimerId = null;
 let cleanupCurrentLayer = null;
@@ -25,7 +22,7 @@ function isNightByTime() {
 }
 
 function shouldShowFireflies() {
-  return isNightByTime() || (darkSchemeMedia && darkSchemeMedia.matches);
+  return isNightByTime();
 }
 
 function clamp(value, min, max) {
@@ -114,7 +111,6 @@ function createFirefliesLayer() {
   const layer = document.createElement('div');
   layer.className = 'fireflies-layer';
   layer.setAttribute('aria-hidden', 'true');
-  layer.style.setProperty('--firefly-fade-in', `${FADE_IN_MS}ms`);
   const reduceMotion = reduceMotionMedia?.matches ?? false;
   if (reduceMotion) {
     layer.dataset.reduceMotion = 'true';
@@ -193,10 +189,6 @@ function evaluateNightState() {
   }
 }
 
-function handleDarkSchemeChange() {
-  evaluateNightState();
-}
-
 function handleReduceMotionChange() {
   if (cleanupCurrentLayer) {
     cleanupCurrentLayer();
@@ -209,9 +201,6 @@ export function initFireflyAura() {
     return;
   }
 
-  if (!darkSchemeMedia) {
-    darkSchemeMedia = window.matchMedia('(prefers-color-scheme: dark)');
-  }
   if (!reduceMotionMedia) {
     reduceMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
   }
@@ -219,7 +208,6 @@ export function initFireflyAura() {
   evaluateNightState();
 
   if (!listenersBound) {
-    darkSchemeMedia.addEventListener('change', handleDarkSchemeChange);
     reduceMotionMedia.addEventListener('change', handleReduceMotionChange);
     nightTimerId = window.setInterval(() => {
       evaluateNightState();
@@ -232,9 +220,6 @@ export function teardownFireflyAura() {
   if (nightTimerId) {
     window.clearInterval(nightTimerId);
     nightTimerId = null;
-  }
-  if (darkSchemeMedia) {
-    darkSchemeMedia.removeEventListener('change', handleDarkSchemeChange);
   }
   if (reduceMotionMedia) {
     reduceMotionMedia.removeEventListener('change', handleReduceMotionChange);

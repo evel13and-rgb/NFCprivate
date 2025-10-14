@@ -1,15 +1,15 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --sand: #f2e9d0;
   --title: #565c33;
   --text: #1c1a17;
   --author: #6b675f;
   --ink-soft: rgba(86, 92, 51, 0.24);
-  --sand-night: #1f1a15;
-  --title-night: #f6eac7;
-  --text-night: #f4eddc;
-  --author-night: #c9c1aa;
-  --ink-soft-night: rgba(244, 237, 220, 0.18);
+  --sand-night: #0d0a10;
+  --title-night: #f9f3da;
+  --text-night: #f6efd9;
+  --author-night: #d3cab0;
+  --ink-soft-night: rgba(246, 234, 199, 0.26);
 }
 
 * {
@@ -142,6 +142,7 @@ blockquote::after {
 }
 
 body.night-fall {
+  color-scheme: dark;
   background-color: var(--sand-night);
   color: var(--text-night);
 }
@@ -165,7 +166,7 @@ body.night-fall .tiny::before {
 
 body.night-fall blockquote::before,
 body.night-fall blockquote::after {
-  color: rgba(246, 234, 199, 0.2);
+  color: rgba(246, 234, 199, 0.28);
 }
 
 .voice-overlay[hidden] {
@@ -282,26 +283,103 @@ body.night-fall blockquote::after {
     color: var(--text-night);
   }
 
-  h1 {
-    color: var(--title-night);
-  }
+.voice-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(16, 12, 8, 0.35);
+  backdrop-filter: blur(2px);
+  z-index: 8;
+}
 
-  blockquote {
-    color: var(--text-night);
-  }
+.voice-overlay__backdrop {
+  position: absolute;
+  inset: 0;
+}
 
-  .author,
-  .tiny {
-    color: var(--author-night);
-  }
+.voice-overlay__panel {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: min(320px, 90vw);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+}
 
-  .tiny::before {
-    background: var(--ink-soft-night);
-  }
+body.night-fall .voice-overlay__panel {
+  background: rgba(33, 28, 21, 0.94);
+  color: var(--text-night);
+}
 
-  blockquote::before,
-  blockquote::after {
-    color: rgba(246, 234, 199, 0.2);
+.voice-overlay__panel h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.voice-overlay__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.voice-overlay__group label {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.voice-overlay__select,
+.voice-overlay__slider {
+  width: 100%;
+  font-size: 0.95rem;
+  font-family: inherit;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  border: 1px solid rgba(86, 92, 51, 0.25);
+  background: rgba(255, 255, 255, 0.75);
+  color: inherit;
+}
+
+body.night-fall .voice-overlay__select,
+body.night-fall .voice-overlay__slider {
+  background: rgba(31, 26, 21, 0.75);
+  border-color: rgba(246, 234, 199, 0.25);
+}
+
+.voice-overlay__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.voice-overlay__reset {
+  border: none;
+  background: rgba(86, 92, 51, 0.15);
+  color: inherit;
+  font-size: 0.8rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.voice-overlay__reset:focus-visible,
+.voice-overlay__select:focus-visible,
+.voice-overlay__slider:focus-visible {
+  outline: 2px solid rgba(86, 92, 51, 0.35);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-overlay {
+    backdrop-filter: none;
   }
 }
 
