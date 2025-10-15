@@ -684,6 +684,7 @@ function applyDayNightMode() {
 
   const shouldUseNightMode = isNightTime();
   body.classList.toggle('night-fall', shouldUseNightMode);
+  body.setAttribute('data-mode', shouldUseNightMode ? 'night' : 'day');
 }
 
 function scheduleDayNightModeUpdates() {

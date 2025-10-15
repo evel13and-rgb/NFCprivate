@@ -30,6 +30,12 @@ body {
   line-height: 1.7;
 }
 
+body[data-mode='day'] {
+  background-color: var(--sand);
+  color: var(--text);
+  color-scheme: light;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
