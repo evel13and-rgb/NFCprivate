@@ -668,6 +668,32 @@ let hasAnnouncedPlayback = false;
 
 const VOICE_WARNING_SESSION_KEY = 'pl_voice_warning_shown';
 
+const DAY_MODE_START_HOUR = 6;
+const NIGHT_MODE_START_HOUR = 20;
+
+function isNightTime(date = new Date()) {
+  const hour = date.getHours();
+  return hour < DAY_MODE_START_HOUR || hour >= NIGHT_MODE_START_HOUR;
+}
+
+function applyDayNightMode() {
+  const body = document.body;
+  if (!body) {
+    return;
+  }
+
+  const shouldUseNightMode = isNightTime();
+  body.classList.toggle('night-fall', shouldUseNightMode);
+}
+
+function scheduleDayNightModeUpdates() {
+  applyDayNightMode();
+  const scheduler = typeof window !== 'undefined' ? window : globalThis;
+  if (scheduler && typeof scheduler.setInterval === 'function') {
+    scheduler.setInterval(applyDayNightMode, 60 * 1000);
+  }
+}
+
 function normalizeLang(lang) {
   if (!lang || typeof lang !== 'string') {
     return DEFAULT_LANG.toLowerCase();
@@ -1463,6 +1489,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateVoiceList();
   initApp();
   initFireflyAura();
+  scheduleDayNightModeUpdates();
   document.addEventListener('keydown', handleGlobalKeydown);
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
