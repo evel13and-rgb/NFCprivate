@@ -613,7 +613,7 @@ const ANNE_DE_LAS_TEJAS_VERDES_QUOTES = [
   }
 ];
 
-const QUOTE_INTERVAL_HOURS = 2;
+const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
 
