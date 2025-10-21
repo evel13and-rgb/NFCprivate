@@ -297,6 +297,66 @@ body.night-fall .voice-overlay__slider {
   }
 }
 
+.day-motes-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 2s ease;
+  background: transparent;
+}
+
+.day-motes-layer--visible {
+  opacity: 0.6;
+}
+
+.day-mote {
+  position: absolute;
+  bottom: -24px;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  opacity: var(--mote-opacity, 0.26);
+  pointer-events: none;
+  box-shadow: 0 0 6px #fff5c8;
+  transform: translate3d(0, 0, 0);
+  animation-name: day-mote-ascend;
+  animation-duration: var(--mote-duration, 16s);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.day-mote--primary {
+  background: radial-gradient(circle, rgba(248, 227, 179, 0.85) 0%, rgba(248, 227, 179, 0) 70%);
+}
+
+.day-mote--secondary {
+  background: radial-gradient(circle, rgba(239, 220, 165, 0.85) 0%, rgba(239, 220, 165, 0) 70%);
+}
+
+.day-motes-layer[data-reduce-motion='true'] .day-mote {
+  animation: none;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+@keyframes day-mote-ascend {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: var(--mote-opacity, 0.26);
+  }
+  45% {
+    transform: translate3d(calc(var(--mote-drift-x, 0px) * 0.35), -80px, 0) scale(1.08);
+    opacity: calc(var(--mote-opacity, 0.26) * 1.1);
+  }
+  100% {
+    transform: translate3d(var(--mote-drift-x, 0px), -150px, 0) scale(1.2);
+    opacity: 0;
+  }
+}
+
 .fireflies-layer {
   position: fixed;
   inset: 0;

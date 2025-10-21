@@ -1,5 +1,7 @@
 import { createQuoteManager } from './quoteLogic.js';
 import { initFireflyAura } from './fireflies.js';
+import { isNightTime } from './dayNight.js';
+import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
 
 const PRE_RANDOM_QUOTES = [];
 
@@ -668,14 +670,6 @@ let hasAnnouncedPlayback = false;
 
 const VOICE_WARNING_SESSION_KEY = 'pl_voice_warning_shown';
 
-const DAY_MODE_START_HOUR = 6;
-const NIGHT_MODE_START_HOUR = 20;
-
-function isNightTime(date = new Date()) {
-  const hour = date.getHours();
-  return hour < DAY_MODE_START_HOUR || hour >= NIGHT_MODE_START_HOUR;
-}
-
 function applyDayNightMode() {
   const body = document.body;
   if (!body) {
@@ -685,6 +679,7 @@ function applyDayNightMode() {
   const shouldUseNightMode = isNightTime();
   body.classList.toggle('night-fall', shouldUseNightMode);
   body.setAttribute('data-mode', shouldUseNightMode ? 'night' : 'day');
+  setDaylightMotesActive(!shouldUseNightMode);
 }
 
 function scheduleDayNightModeUpdates() {
@@ -1489,6 +1484,7 @@ if (synth) {
 document.addEventListener('DOMContentLoaded', () => {
   updateVoiceList();
   initApp();
+  initDaylightMotes();
   initFireflyAura();
   scheduleDayNightModeUpdates();
   document.addEventListener('keydown', handleGlobalKeydown);
