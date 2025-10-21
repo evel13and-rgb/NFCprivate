@@ -1,5 +1,5 @@
-const NIGHT_START_HOUR = 20;
-const NIGHT_END_HOUR = 6;
+import { isNightTime } from './dayNight.js';
+
 const MIN_FIREFLIES = 10;
 const MAX_FIREFLIES = 12;
 const MIN_SIZE = 6;
@@ -15,14 +15,8 @@ let nightTimerId = null;
 let cleanupCurrentLayer = null;
 let listenersBound = false;
 
-function isNightByTime() {
-  const now = new Date();
-  const hour = now.getHours();
-  return hour >= NIGHT_START_HOUR || hour < NIGHT_END_HOUR;
-}
-
 function shouldShowFireflies() {
-  return isNightByTime();
+  return isNightTime();
 }
 
 function clamp(value, min, max) {
