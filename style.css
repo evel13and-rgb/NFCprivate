@@ -114,6 +114,72 @@ blockquote::after {
   right: clamp(-0.4rem, -0.6vw, 0.2rem);
 }
 
+.word {
+  display: inline-block;
+  will-change: transform, color;
+  transition: transform var(--word-return-duration, 0.75s) cubic-bezier(0.22, 0.61, 0.36, 1),
+    color 0.25s ease,
+    text-shadow 0.25s ease;
+  transform-origin: center;
+  transform: translate3d(0, 0, 0);
+}
+
+.word--quote-open,
+.word--quote-close {
+  font-style: normal;
+}
+
+.word--fall {
+  transition: transform var(--word-fall-duration, 0.65s) cubic-bezier(0.24, 0.82, 0.34, 1);
+  transform: translate3d(0, var(--word-fall-translate, 240px), 0)
+    rotate(var(--word-fall-rotate, 0deg));
+}
+
+.word--returning {
+  transition: transform var(--word-return-duration, 1s) cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.word--pulse {
+  animation: word-beat 0.8s ease-in-out forwards;
+}
+
+.word--soft-glow {
+  color: #b38b46;
+  text-shadow: 0 0 6px rgba(243, 212, 130, 0.6);
+}
+
+@keyframes word-beat {
+  0% {
+    transform: scale3d(1, 1, 1);
+    color: inherit;
+    text-shadow: none;
+  }
+  50% {
+    transform: scale3d(1.25, 1.25, 1);
+    color: #b38b46;
+    text-shadow: 0 0 8px rgba(243, 212, 130, 0.7);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    color: inherit;
+    text-shadow: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word {
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+    transform: none;
+  }
+  .word--fall,
+  .word--returning {
+    transform: none;
+  }
+  .word--pulse {
+    animation: none;
+  }
+}
+
 .author {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

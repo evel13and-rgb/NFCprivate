@@ -668,7 +668,360 @@ let audioTipDefaultMessage = '';
 let lastRequestedLang = DEFAULT_LANG;
 let hasAnnouncedPlayback = false;
 
+let quoteElementRef = null;
+let allWordElements = [];
+let animatedWordElements = [];
+let dayHandlersAttached = false;
+let dayDoubleTapHandler = null;
+let deviceMotionHandler = null;
+let fallOnCooldown = false;
+let fallResetTimeoutId = null;
+let fallCooldownTimeoutId = null;
+let fallCleanupTimeoutId = null;
+let prefersReducedMotion = false;
+let reduceMotionQuery = null;
+let motionPermissionStatus =
+  typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission !== 'function'
+    ? 'granted'
+    : 'unknown';
+let esNoche = isNightTime();
+
+const MOTION_SHAKE_THRESHOLD = 16;
+const FALL_RECOMPOSE_DELAY = 3000;
+const FALL_COOLDOWN_DURATION = 6000;
+const FALL_MIN_TRANSLATE = 200;
+const FALL_MAX_TRANSLATE = 320;
+const FALL_MIN_ROTATE = -18;
+const FALL_MAX_ROTATE = 18;
+
 const VOICE_WARNING_SESSION_KEY = 'pl_voice_warning_shown';
+
+function initMotionPreferenceWatcher() {
+  if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+    prefersReducedMotion = false;
+    return;
+  }
+  reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  prefersReducedMotion = reduceMotionQuery.matches;
+  const listener = (event) => {
+    prefersReducedMotion = event.matches;
+    resetWordEffects();
+    updateWordModeBindings();
+  };
+  if (typeof reduceMotionQuery.addEventListener === 'function') {
+    reduceMotionQuery.addEventListener('change', listener);
+  } else if (typeof reduceMotionQuery.addListener === 'function') {
+    reduceMotionQuery.addListener(listener);
+  }
+}
+
+function createWordSpan(content, extraClass = '') {
+  const span = document.createElement('span');
+  span.className = extraClass ? `word ${extraClass}` : 'word';
+  span.textContent = content;
+  return span;
+}
+
+function clearWordHighlight(word) {
+  if (!word) return;
+  const timerId = word._highlightTimerId;
+  if (typeof timerId === 'number') {
+    clearTimeout(timerId);
+    delete word._highlightTimerId;
+  }
+  word.classList.remove('word--soft-glow');
+}
+
+function resetWordEffects() {
+  if (fallResetTimeoutId) {
+    clearTimeout(fallResetTimeoutId);
+    fallResetTimeoutId = null;
+  }
+  if (fallCooldownTimeoutId) {
+    clearTimeout(fallCooldownTimeoutId);
+    fallCooldownTimeoutId = null;
+  }
+  if (fallCleanupTimeoutId) {
+    clearTimeout(fallCleanupTimeoutId);
+    fallCleanupTimeoutId = null;
+  }
+  fallOnCooldown = false;
+  for (const word of allWordElements) {
+    if (!word) continue;
+    clearWordHighlight(word);
+    word.classList.remove('word--fall', 'word--returning', 'word--pulse');
+    word.style.removeProperty('--word-fall-translate');
+    word.style.removeProperty('--word-fall-rotate');
+    word.style.removeProperty('--word-fall-duration');
+    word.style.removeProperty('--word-return-duration');
+  }
+}
+
+function detachNightHandlers() {
+  for (const word of allWordElements) {
+    if (!word) continue;
+    const pointerHandler = word._nightPointerHandler;
+    if (pointerHandler) {
+      word.removeEventListener('pointerdown', pointerHandler);
+      delete word._nightPointerHandler;
+    }
+    const animationHandler = word._nightAnimationHandler;
+    if (animationHandler) {
+      word.removeEventListener('animationend', animationHandler);
+      word.removeEventListener('animationcancel', animationHandler);
+      delete word._nightAnimationHandler;
+    }
+  }
+}
+
+function attachNightHandlers() {
+  if (!esNoche || !animatedWordElements.length) {
+    return;
+  }
+  for (const word of animatedWordElements) {
+    if (!word) continue;
+    const onPulse = () => {
+      triggerWordPulse(word);
+    };
+    word.addEventListener('pointerdown', onPulse);
+    word._nightPointerHandler = onPulse;
+    const onAnimationDone = () => {
+      word.classList.remove('word--pulse');
+    };
+    word.addEventListener('animationend', onAnimationDone);
+    word.addEventListener('animationcancel', onAnimationDone);
+    word._nightAnimationHandler = onAnimationDone;
+  }
+}
+
+function requestMotionPermissionIfNeeded() {
+  if (
+    typeof DeviceMotionEvent === 'undefined' ||
+    typeof DeviceMotionEvent.requestPermission !== 'function'
+  ) {
+    motionPermissionStatus = 'unsupported';
+    return;
+  }
+  if (motionPermissionStatus === 'granted' || motionPermissionStatus === 'denied') {
+    return;
+  }
+  motionPermissionStatus = 'pending';
+  DeviceMotionEvent.requestPermission()
+    .then((result) => {
+      motionPermissionStatus = result === 'granted' ? 'granted' : 'denied';
+    })
+    .catch(() => {
+      motionPermissionStatus = 'denied';
+    });
+}
+
+function triggerWordPulse(word) {
+  if (!word) return;
+  if (prefersReducedMotion) {
+    applySoftHighlight([word], 900);
+    return;
+  }
+  word.classList.remove('word--pulse');
+  // force reflow to restart animation when needed
+  void word.offsetWidth; // eslint-disable-line no-unused-expressions
+  word.classList.add('word--pulse');
+}
+
+function detachDayHandlers() {
+  if (!dayHandlersAttached) {
+    return;
+  }
+  dayHandlersAttached = false;
+  if (quoteElementRef && dayDoubleTapHandler) {
+    quoteElementRef.removeEventListener('dblclick', dayDoubleTapHandler);
+  }
+  dayDoubleTapHandler = null;
+  if (typeof window !== 'undefined' && deviceMotionHandler) {
+    window.removeEventListener('devicemotion', deviceMotionHandler);
+  }
+  deviceMotionHandler = null;
+}
+
+function applySoftHighlight(words, duration = 600) {
+  if (!words || !words.length) {
+    return;
+  }
+  for (const word of words) {
+    if (!word) continue;
+    clearWordHighlight(word);
+    word.classList.add('word--soft-glow');
+    const timeoutId = setTimeout(() => {
+      word.classList.remove('word--soft-glow');
+      delete word._highlightTimerId;
+    }, duration);
+    word._highlightTimerId = timeoutId;
+  }
+}
+
+function beginFallReturn() {
+  if (!animatedWordElements.length) {
+    return;
+  }
+  for (const word of animatedWordElements) {
+    word.classList.add('word--returning');
+  }
+  requestAnimationFrame(() => {
+    for (const word of animatedWordElements) {
+      word.classList.remove('word--fall');
+    }
+  });
+  fallCleanupTimeoutId = setTimeout(() => {
+    for (const word of animatedWordElements) {
+      word.classList.remove('word--returning');
+      word.style.removeProperty('--word-fall-translate');
+      word.style.removeProperty('--word-fall-rotate');
+      word.style.removeProperty('--word-fall-duration');
+      word.style.removeProperty('--word-return-duration');
+    }
+    fallCleanupTimeoutId = null;
+  }, 1100);
+}
+
+function applyFallEffect() {
+  if (!animatedWordElements.length) {
+    return;
+  }
+  const totalWords = animatedWordElements.length;
+  const chunkSize = totalWords > 100 ? Math.ceil(totalWords / 3) : totalWords;
+  const applyChunk = (startIndex) => {
+    const slice = animatedWordElements.slice(startIndex, startIndex + chunkSize);
+    for (const word of slice) {
+      const translate = FALL_MIN_TRANSLATE + Math.random() * (FALL_MAX_TRANSLATE - FALL_MIN_TRANSLATE);
+      const rotate = FALL_MIN_ROTATE + Math.random() * (FALL_MAX_ROTATE - FALL_MIN_ROTATE);
+      const fallDuration = 0.55 + Math.random() * 0.35;
+      const returnDuration = 0.9 + Math.random() * 0.45;
+      word.style.setProperty('--word-fall-translate', `${translate.toFixed(1)}px`);
+      word.style.setProperty('--word-fall-rotate', `${rotate.toFixed(2)}deg`);
+      word.style.setProperty('--word-fall-duration', `${fallDuration.toFixed(2)}s`);
+      word.style.setProperty('--word-return-duration', `${returnDuration.toFixed(2)}s`);
+      word.classList.add('word--fall');
+    }
+    const nextIndex = startIndex + chunkSize;
+    if (nextIndex < totalWords) {
+      requestAnimationFrame(() => applyChunk(nextIndex));
+    }
+  };
+  requestAnimationFrame(() => applyChunk(0));
+}
+
+function triggerDayEffect() {
+  if (!animatedWordElements.length) {
+    return;
+  }
+  if (fallOnCooldown) {
+    return;
+  }
+  fallOnCooldown = true;
+  if (prefersReducedMotion) {
+    applySoftHighlight(animatedWordElements, 900);
+    fallCooldownTimeoutId = setTimeout(() => {
+      fallOnCooldown = false;
+      fallCooldownTimeoutId = null;
+    }, FALL_COOLDOWN_DURATION);
+    return;
+  }
+  applyFallEffect();
+  fallResetTimeoutId = setTimeout(() => {
+    beginFallReturn();
+    fallResetTimeoutId = null;
+  }, FALL_RECOMPOSE_DELAY);
+  fallCooldownTimeoutId = setTimeout(() => {
+    fallOnCooldown = false;
+    fallCooldownTimeoutId = null;
+  }, FALL_COOLDOWN_DURATION);
+}
+
+function handleDeviceMotion(event) {
+  if (!event || esNoche || !animatedWordElements.length) {
+    return;
+  }
+  const acceleration = event.accelerationIncludingGravity || event.acceleration;
+  if (!acceleration) {
+    return;
+  }
+  const total =
+    Math.abs(acceleration.x ?? 0) +
+    Math.abs(acceleration.y ?? 0) +
+    Math.abs(acceleration.z ?? 0);
+  if (total > MOTION_SHAKE_THRESHOLD) {
+    triggerDayEffect();
+  }
+}
+
+function attachDayHandlers() {
+  if (dayHandlersAttached || !quoteElementRef) {
+    return;
+  }
+  dayHandlersAttached = true;
+  dayDoubleTapHandler = () => {
+    triggerDayEffect();
+    requestMotionPermissionIfNeeded();
+  };
+  quoteElementRef.addEventListener('dblclick', dayDoubleTapHandler);
+  if (typeof window !== 'undefined' && 'DeviceMotionEvent' in window) {
+    deviceMotionHandler = handleDeviceMotion;
+    window.addEventListener('devicemotion', deviceMotionHandler, { passive: true });
+  }
+}
+
+function updateWordModeBindings() {
+  if (!quoteElementRef) {
+    return;
+  }
+  if (esNoche) {
+    detachDayHandlers();
+    detachNightHandlers();
+    attachNightHandlers();
+  } else {
+    detachNightHandlers();
+    attachDayHandlers();
+  }
+}
+
+function setNightModeState(isNight) {
+  const changed = esNoche !== isNight;
+  esNoche = isNight;
+  if (changed) {
+    resetWordEffects();
+  }
+  updateWordModeBindings();
+}
+
+function setQuoteTextContent(text, { includeQuotes = true } = {}) {
+  if (!quoteElementRef) {
+    return;
+  }
+  if (allWordElements.length) {
+    resetWordEffects();
+    detachNightHandlers();
+  }
+  const fragment = document.createDocumentFragment();
+  if (includeQuotes) {
+    fragment.appendChild(createWordSpan('“', 'word--quote-open'));
+  }
+  const content = typeof text === 'string' ? text : '';
+  const tokens = content.split(/(\s+)/);
+  for (const token of tokens) {
+    if (!token) continue;
+    if (/^\s+$/.test(token)) {
+      fragment.appendChild(document.createTextNode(token));
+    } else {
+      fragment.appendChild(createWordSpan(token));
+    }
+  }
+  if (includeQuotes) {
+    fragment.appendChild(createWordSpan('”', 'word--quote-close'));
+  }
+  quoteElementRef.replaceChildren(fragment);
+  allWordElements = Array.from(quoteElementRef.querySelectorAll('.word'));
+  animatedWordElements = allWordElements;
+  updateWordModeBindings();
+}
 
 function applyDayNightMode() {
   const body = document.body;
@@ -680,6 +1033,7 @@ function applyDayNightMode() {
   body.classList.toggle('night-fall', shouldUseNightMode);
   body.setAttribute('data-mode', shouldUseNightMode ? 'night' : 'day');
   setDaylightMotesActive(!shouldUseNightMode);
+  setNightModeState(shouldUseNightMode);
 }
 
 function scheduleDayNightModeUpdates() {
@@ -1404,13 +1758,12 @@ function renderQuote(quote) {
   currentQuote = quote;
   lastRequestedLang = quote.lang ? canonicalLang(quote.lang) : canonicalLang(DEFAULT_LANG);
   refreshOverlayControls();
-  const quoteElement = document.getElementById('quote');
-  if (quoteElement) {
-    quoteElement.textContent = '“' + currentQuote.t + '”';
+  if (quoteElementRef) {
+    setQuoteTextContent(currentQuote.t ?? '', { includeQuotes: true });
     if (currentQuote.lang) {
-      quoteElement.setAttribute('lang', currentQuote.lang);
+      quoteElementRef.setAttribute('lang', currentQuote.lang);
     } else {
-      quoteElement.removeAttribute('lang');
+      quoteElementRef.removeAttribute('lang');
     }
   }
 
@@ -1439,6 +1792,11 @@ function renderQuote(quote) {
 function initApp() {
   const { quote, message } = determineQuoteForDisplay();
   quotePanelElement = document.getElementById("quote-panel");
+  quoteElementRef = document.getElementById('quote');
+  initMotionPreferenceWatcher();
+  if (quoteElementRef) {
+    setQuoteTextContent(quoteElementRef.textContent ?? '', { includeQuotes: false });
+  }
   audioTipElement = document.getElementById('audio-tip');
   if (audioTipElement && !audioTipDefaultMessage) {
     audioTipDefaultMessage = audioTipElement.textContent?.trim() || '';
