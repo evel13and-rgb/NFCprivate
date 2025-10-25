@@ -673,20 +673,14 @@ let allWordElements = [];
 let animatedWordElements = [];
 let dayHandlersAttached = false;
 let dayDoubleTapHandler = null;
-let deviceMotionHandler = null;
 let fallOnCooldown = false;
 let fallResetTimeoutId = null;
 let fallCooldownTimeoutId = null;
 let fallCleanupTimeoutId = null;
 let prefersReducedMotion = false;
 let reduceMotionQuery = null;
-let motionPermissionStatus =
-  typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission !== 'function'
-    ? 'granted'
-    : 'unknown';
 let esNoche = isNightTime();
 
-const MOTION_SHAKE_THRESHOLD = 16;
 const FALL_RECOMPOSE_DELAY = 3000;
 const FALL_COOLDOWN_DURATION = 6000;
 const FALL_MIN_TRANSLATE = 200;
@@ -794,27 +788,6 @@ function attachNightHandlers() {
   }
 }
 
-function requestMotionPermissionIfNeeded() {
-  if (
-    typeof DeviceMotionEvent === 'undefined' ||
-    typeof DeviceMotionEvent.requestPermission !== 'function'
-  ) {
-    motionPermissionStatus = 'unsupported';
-    return;
-  }
-  if (motionPermissionStatus === 'granted' || motionPermissionStatus === 'denied') {
-    return;
-  }
-  motionPermissionStatus = 'pending';
-  DeviceMotionEvent.requestPermission()
-    .then((result) => {
-      motionPermissionStatus = result === 'granted' ? 'granted' : 'denied';
-    })
-    .catch(() => {
-      motionPermissionStatus = 'denied';
-    });
-}
-
 function triggerWordPulse(word) {
   if (!word) return;
   if (prefersReducedMotion) {
@@ -836,10 +809,20 @@ function detachDayHandlers() {
     quoteElementRef.removeEventListener('dblclick', dayDoubleTapHandler);
   }
   dayDoubleTapHandler = null;
-  if (typeof window !== 'undefined' && deviceMotionHandler) {
-    window.removeEventListener('devicemotion', deviceMotionHandler);
+  for (const word of allWordElements) {
+    if (!word) continue;
+    const pointerHandler = word._dayPointerHandler;
+    if (pointerHandler) {
+      word.removeEventListener('pointerdown', pointerHandler);
+      delete word._dayPointerHandler;
+    }
+    const animationHandler = word._dayAnimationHandler;
+    if (animationHandler) {
+      word.removeEventListener('animationend', animationHandler);
+      word.removeEventListener('animationcancel', animationHandler);
+      delete word._dayAnimationHandler;
+    }
   }
-  deviceMotionHandler = null;
 }
 
 function applySoftHighlight(words, duration = 600) {
@@ -936,23 +919,6 @@ function triggerDayEffect() {
   }, FALL_COOLDOWN_DURATION);
 }
 
-function handleDeviceMotion(event) {
-  if (!event || esNoche || !animatedWordElements.length) {
-    return;
-  }
-  const acceleration = event.accelerationIncludingGravity || event.acceleration;
-  if (!acceleration) {
-    return;
-  }
-  const total =
-    Math.abs(acceleration.x ?? 0) +
-    Math.abs(acceleration.y ?? 0) +
-    Math.abs(acceleration.z ?? 0);
-  if (total > MOTION_SHAKE_THRESHOLD) {
-    triggerDayEffect();
-  }
-}
-
 function attachDayHandlers() {
   if (dayHandlersAttached || !quoteElementRef) {
     return;
@@ -960,12 +926,21 @@ function attachDayHandlers() {
   dayHandlersAttached = true;
   dayDoubleTapHandler = () => {
     triggerDayEffect();
-    requestMotionPermissionIfNeeded();
   };
   quoteElementRef.addEventListener('dblclick', dayDoubleTapHandler);
-  if (typeof window !== 'undefined' && 'DeviceMotionEvent' in window) {
-    deviceMotionHandler = handleDeviceMotion;
-    window.addEventListener('devicemotion', deviceMotionHandler, { passive: true });
+  for (const word of animatedWordElements) {
+    if (!word) continue;
+    const onPulse = () => {
+      triggerWordPulse(word);
+    };
+    word.addEventListener('pointerdown', onPulse);
+    word._dayPointerHandler = onPulse;
+    const onAnimationDone = () => {
+      word.classList.remove('word--pulse');
+    };
+    word.addEventListener('animationend', onAnimationDone);
+    word.addEventListener('animationcancel', onAnimationDone);
+    word._dayAnimationHandler = onAnimationDone;
   }
 }
 
@@ -999,6 +974,7 @@ function setQuoteTextContent(text, { includeQuotes = true } = {}) {
   if (allWordElements.length) {
     resetWordEffects();
     detachNightHandlers();
+    detachDayHandlers();
   }
   const fragment = document.createDocumentFragment();
   if (includeQuotes) {
