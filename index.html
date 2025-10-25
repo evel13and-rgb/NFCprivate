@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Páramo Literario · Frase aleatoria</title>
-  <meta name="description" content="Cada vez que abras esta página te mostrará y leerá una frase literaria aleatoria." />
+  <meta name="description" content="Cada vez que abras esta página te mostrará una frase literaria aleatoria." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -18,11 +18,7 @@
     <section
       class="quote-flow"
       id="quote-panel"
-      role="button"
-      tabindex="0"
-      aria-pressed="false"
       aria-live="polite"
-      aria-label="Pulsa para oír la frase"
     >
       <h1>Páramo Literario</h1>
       <blockquote id="quote">…</blockquote>
@@ -32,14 +28,10 @@
         <span class="author-work" id="author-work"></span>
       </div>
       <div class="row">
-        <span class="tiny" id="audio-tip">
-          Toca o pulsa Enter para oírla.
-        </span>
+        
       </div>
-      <div id="speech-status" class="sr-only" aria-live="polite"></div>
     </section>
   </main>
-  <div id="voice-overlay" class="voice-overlay" hidden></div>
   <script type="module" src="script.js"></script>
 </body>
 </html>
