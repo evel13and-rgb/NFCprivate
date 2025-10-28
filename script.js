@@ -641,21 +641,9 @@ let quoteElementRef = null;
 let allWordElements = [];
 let animatedWordElements = [];
 let dayHandlersAttached = false;
-let dayDoubleTapHandler = null;
-let fallOnCooldown = false;
-let fallResetTimeoutId = null;
-let fallCooldownTimeoutId = null;
-let fallCleanupTimeoutId = null;
 let prefersReducedMotion = false;
 let reduceMotionQuery = null;
 let esNoche = isNightTime();
-
-const FALL_RECOMPOSE_DELAY = 3000;
-const FALL_COOLDOWN_DURATION = 6000;
-const FALL_MIN_TRANSLATE = 200;
-const FALL_MAX_TRANSLATE = 320;
-const FALL_MIN_ROTATE = -18;
-const FALL_MAX_ROTATE = 18;
 
 function initMotionPreferenceWatcher() {
   if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
@@ -694,19 +682,6 @@ function clearWordHighlight(word) {
 }
 
 function resetWordEffects() {
-  if (fallResetTimeoutId) {
-    clearTimeout(fallResetTimeoutId);
-    fallResetTimeoutId = null;
-  }
-  if (fallCooldownTimeoutId) {
-    clearTimeout(fallCooldownTimeoutId);
-    fallCooldownTimeoutId = null;
-  }
-  if (fallCleanupTimeoutId) {
-    clearTimeout(fallCleanupTimeoutId);
-    fallCleanupTimeoutId = null;
-  }
-  fallOnCooldown = false;
   for (const word of allWordElements) {
     if (!word) continue;
     clearWordHighlight(word);
@@ -772,10 +747,6 @@ function detachDayHandlers() {
     return;
   }
   dayHandlersAttached = false;
-  if (quoteElementRef && dayDoubleTapHandler) {
-    quoteElementRef.removeEventListener('dblclick', dayDoubleTapHandler);
-  }
-  dayDoubleTapHandler = null;
   for (const word of allWordElements) {
     if (!word) continue;
     const pointerHandler = word._dayPointerHandler;
@@ -808,93 +779,11 @@ function applySoftHighlight(words, duration = 600) {
   }
 }
 
-function beginFallReturn() {
-  if (!animatedWordElements.length) {
-    return;
-  }
-  for (const word of animatedWordElements) {
-    word.classList.add('word--returning');
-  }
-  requestAnimationFrame(() => {
-    for (const word of animatedWordElements) {
-      word.classList.remove('word--fall');
-    }
-  });
-  fallCleanupTimeoutId = setTimeout(() => {
-    for (const word of animatedWordElements) {
-      word.classList.remove('word--returning');
-      word.style.removeProperty('--word-fall-translate');
-      word.style.removeProperty('--word-fall-rotate');
-      word.style.removeProperty('--word-fall-duration');
-      word.style.removeProperty('--word-return-duration');
-    }
-    fallCleanupTimeoutId = null;
-  }, 1100);
-}
-
-function applyFallEffect() {
-  if (!animatedWordElements.length) {
-    return;
-  }
-  const totalWords = animatedWordElements.length;
-  const chunkSize = totalWords > 100 ? Math.ceil(totalWords / 3) : totalWords;
-  const applyChunk = (startIndex) => {
-    const slice = animatedWordElements.slice(startIndex, startIndex + chunkSize);
-    for (const word of slice) {
-      const translate = FALL_MIN_TRANSLATE + Math.random() * (FALL_MAX_TRANSLATE - FALL_MIN_TRANSLATE);
-      const rotate = FALL_MIN_ROTATE + Math.random() * (FALL_MAX_ROTATE - FALL_MIN_ROTATE);
-      const fallDuration = 0.55 + Math.random() * 0.35;
-      const returnDuration = 0.9 + Math.random() * 0.45;
-      word.style.setProperty('--word-fall-translate', `${translate.toFixed(1)}px`);
-      word.style.setProperty('--word-fall-rotate', `${rotate.toFixed(2)}deg`);
-      word.style.setProperty('--word-fall-duration', `${fallDuration.toFixed(2)}s`);
-      word.style.setProperty('--word-return-duration', `${returnDuration.toFixed(2)}s`);
-      word.classList.add('word--fall');
-    }
-    const nextIndex = startIndex + chunkSize;
-    if (nextIndex < totalWords) {
-      requestAnimationFrame(() => applyChunk(nextIndex));
-    }
-  };
-  requestAnimationFrame(() => applyChunk(0));
-}
-
-function triggerDayEffect() {
-  if (!animatedWordElements.length) {
-    return;
-  }
-  if (fallOnCooldown) {
-    return;
-  }
-  fallOnCooldown = true;
-  if (prefersReducedMotion) {
-    applySoftHighlight(animatedWordElements, 900);
-    fallCooldownTimeoutId = setTimeout(() => {
-      fallOnCooldown = false;
-      fallCooldownTimeoutId = null;
-    }, FALL_COOLDOWN_DURATION);
-    return;
-  }
-  applyFallEffect();
-  fallResetTimeoutId = setTimeout(() => {
-    beginFallReturn();
-    fallResetTimeoutId = null;
-  }, FALL_RECOMPOSE_DELAY);
-  fallCooldownTimeoutId = setTimeout(() => {
-    fallOnCooldown = false;
-    fallCooldownTimeoutId = null;
-  }, FALL_COOLDOWN_DURATION);
-}
-
 function attachDayHandlers() {
   if (dayHandlersAttached || !quoteElementRef) {
     return;
   }
   dayHandlersAttached = true;
-  dayDoubleTapHandler = () => {
-    triggerDayEffect();
-  };
-  quoteElementRef.addEventListener('dblclick', dayDoubleTapHandler);
   for (const word of animatedWordElements) {
     if (!word) continue;
     const onPulse = () => {
