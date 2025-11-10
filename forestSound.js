@@ -62,8 +62,10 @@ function ensureNoiseLayers() {
   if (!audioCtx || noiseLayers.length) {
     return;
   }
-  noiseLayers.push(addNoiseLayer(420, 0.18));
-  noiseLayers.push(addNoiseLayer(1800, 0.12));
+  // A soft bed of nighttime ambience with a warm low layer
+  noiseLayers.push(addNoiseLayer(260, 0.16));
+  noiseLayers.push(addNoiseLayer(1100, 0.1));
+  noiseLayers.push(addNoiseLayer(3200, 0.035));
 }
 
 function ensureShimmer() {
@@ -72,20 +74,20 @@ function ensureShimmer() {
   }
   shimmerOsc = audioCtx.createOscillator();
   shimmerOsc.type = 'sine';
-  shimmerOsc.frequency.value = 940;
+  shimmerOsc.frequency.value = 420;
 
   const shimmerGain = audioCtx.createGain();
-  shimmerGain.gain.value = 0.015;
+  shimmerGain.gain.value = 0.012;
 
   shimmerOsc.connect(shimmerGain);
   shimmerGain.connect(masterGain);
 
   shimmerLfo = audioCtx.createOscillator();
   shimmerLfo.type = 'sine';
-  shimmerLfo.frequency.value = 0.18;
+  shimmerLfo.frequency.value = 0.12;
 
   const lfoGain = audioCtx.createGain();
-  lfoGain.gain.value = 120;
+  lfoGain.gain.value = 35;
 
   shimmerLfo.connect(lfoGain);
   lfoGain.connect(shimmerOsc.frequency);
@@ -98,29 +100,41 @@ function scheduleChirp() {
   if (!enabled || !audioCtx) {
     return;
   }
-  const delay = 7000 + Math.random() * 5000;
+  const delay = 5000 + Math.random() * 4000;
   chirpTimeoutId = setTimeout(() => {
     if (!enabled || !audioCtx) {
       return;
     }
     const now = audioCtx.currentTime;
-    const osc = audioCtx.createOscillator();
-    osc.type = 'triangle';
-    const freqBase = 1300 + Math.random() * 220;
-    osc.frequency.setValueAtTime(freqBase, now);
+    const chirpCount = 2 + Math.floor(Math.random() * 3);
+    const chirpSpacing = 0.18 + Math.random() * 0.04;
+    for (let i = 0; i < chirpCount; i += 1) {
+      const startTime = now + i * chirpSpacing;
+      const osc = audioCtx.createOscillator();
+      osc.type = 'sine';
+      const freqBase = 2600 + Math.random() * 420;
+      osc.frequency.setValueAtTime(freqBase, startTime);
+      osc.frequency.exponentialRampToValueAtTime(freqBase * 0.7, startTime + 0.09);
 
-    const gain = audioCtx.createGain();
-    gain.gain.setValueAtTime(0, now);
-    gain.gain.linearRampToValueAtTime(0.035, now + 0.25);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + 1.2);
+      const filter = audioCtx.createBiquadFilter();
+      filter.type = 'bandpass';
+      filter.frequency.setValueAtTime(freqBase, startTime);
+      filter.Q.value = 6;
 
-    osc.connect(gain);
-    gain.connect(masterGain);
-    osc.start(now);
-    osc.stop(now + 1.4);
-    osc.onended = () => {
-      gain.disconnect();
-    };
+      const gain = audioCtx.createGain();
+      gain.gain.setValueAtTime(0.0001, startTime);
+      gain.gain.linearRampToValueAtTime(0.02, startTime + 0.03);
+      gain.gain.exponentialRampToValueAtTime(0.0003, startTime + 0.22);
+
+      osc.connect(filter);
+      filter.connect(gain);
+      gain.connect(masterGain);
+      osc.start(startTime);
+      osc.stop(startTime + 0.26);
+      osc.onended = () => {
+        gain.disconnect();
+      };
+    }
 
     scheduleChirp();
   }, delay);
