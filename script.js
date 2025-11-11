@@ -2,6 +2,7 @@ import { createQuoteManager } from './quoteLogic.js';
 import { initFireflyAura } from './fireflies.js';
 import { isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
+import { initDayMycelium, setDayMyceliumActive } from './mycelium.js';
 import { initForestSound, setForestSoundActive } from './forestSound.js';
 
 const PRE_RANDOM_QUOTES = [];
@@ -864,6 +865,7 @@ function applyDayNightMode() {
   const shouldUseNightMode = isNightTime();
   body.classList.toggle('night-fall', shouldUseNightMode);
   body.setAttribute('data-mode', shouldUseNightMode ? 'night' : 'day');
+  setDayMyceliumActive(!shouldUseNightMode);
   setDaylightMotesActive(!shouldUseNightMode);
   setForestSoundActive(shouldUseNightMode);
   setNightModeState(shouldUseNightMode);
@@ -1046,6 +1048,7 @@ function initApp() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
+  initDayMycelium();
   initDaylightMotes();
   initFireflyAura();
   initForestSound();
