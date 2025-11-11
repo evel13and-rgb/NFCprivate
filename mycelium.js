@@ -105,6 +105,64 @@ const PATH_DEFINITIONS = [
     delay: 1.8,
     accent: false,
     pulse: false
+  },
+  {
+    d: 'M212 566 C244 540 274 520 304 496 C332 474 354 450 374 426',
+    width: 0.62,
+    opacity: 0.29,
+    duration: 6.7,
+    delay: 2.0,
+    accent: true,
+    pulse: false
+  },
+  {
+    d: 'M168 652 C202 620 234 590 260 556 C282 526 304 498 322 468',
+    width: 0.58,
+    opacity: 0.27,
+    duration: 6.5,
+    delay: 1.95,
+    accent: false,
+    pulse: true,
+    pulseDuration: 16,
+    pulseAmplitude: 0.05
+  },
+  {
+    d: 'M292 742 C320 708 348 678 378 650 C402 628 426 604 446 576',
+    width: 0.55,
+    opacity: 0.28,
+    duration: 6.9,
+    delay: 2.2,
+    accent: true,
+    pulse: false
+  },
+  {
+    d: 'M818 534 C782 506 746 478 714 450 C684 424 654 400 624 374',
+    width: 0.6,
+    opacity: 0.3,
+    duration: 6.8,
+    delay: 2.05,
+    accent: true,
+    pulse: false
+  },
+  {
+    d: 'M864 616 C826 586 792 554 758 524 C730 500 704 470 676 444',
+    width: 0.57,
+    opacity: 0.28,
+    duration: 6.6,
+    delay: 2.1,
+    accent: false,
+    pulse: true,
+    pulseDuration: 17,
+    pulseAmplitude: 0.05
+  },
+  {
+    d: 'M716 706 C686 676 656 646 630 618 C604 590 582 562 560 534',
+    width: 0.54,
+    opacity: 0.27,
+    duration: 7.0,
+    delay: 2.3,
+    accent: true,
+    pulse: false
   }
 ];
 
