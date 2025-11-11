@@ -241,6 +241,7 @@ body.night-fall blockquote::after {
   color: rgba(246, 234, 199, 0.28);
 }
 
+
 .mycelium-layer {
   position: fixed;
   inset: 0;
@@ -248,15 +249,15 @@ body.night-fall blockquote::after {
   z-index: 0;
   opacity: 0;
   transition: opacity 2.4s ease;
-  background: transparent;
+  background: var(--sand);
 }
 
 .mycelium-layer--visible {
-  opacity: 0.52;
+  opacity: 1;
 }
 
 .mycelium-layer--resting {
-  opacity: 0.55;
+  opacity: 1;
 }
 
 .mycelium-layer[data-reduce-motion='true'] {
@@ -272,10 +273,11 @@ body.night-fall blockquote::after {
 .mycelium-canvas {
   width: 100%;
   height: 100%;
+  transition: opacity 2s ease;
 }
 
 .mycelium-path {
-  stroke: #c7b998;
+  stroke: rgba(196, 176, 145, 0.6);
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -283,11 +285,15 @@ body.night-fall blockquote::after {
 }
 
 .mycelium-path--accent {
-  stroke: #b09a74;
+  stroke: rgba(181, 156, 122, 0.66);
 }
 
 .mycelium-layer--resting .mycelium-path[data-pulse='true'] {
   animation: mycelium-breathe var(--mycelium-pulse-duration, 18s) ease-in-out infinite;
+}
+
+.mycelium-layer--resting .mycelium-canvas {
+  opacity: 0;
 }
 
 @keyframes mycelium-breathe {
@@ -298,6 +304,43 @@ body.night-fall blockquote::after {
   50% {
     opacity: var(--mycelium-pulse-max-opacity, 0.48);
   }
+}
+
+.paramo-illustration {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.mycelium-layer--resting .paramo-illustration {
+  opacity: 0.48;
+}
+
+.mycelium-layer__clearing {
+  position: absolute;
+  inset: min(12vh, 18%);
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 45%,
+    rgba(242, 233, 208, 0.55) 0%,
+    rgba(242, 233, 208, 0.45) 35%,
+    rgba(242, 233, 208, 0.18) 62%,
+    rgba(242, 233, 208, 0) 82%
+  );
+  mix-blend-mode: lighten;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.mycelium-layer--visible .mycelium-layer__clearing {
+  opacity: 0.35;
+}
+
+.mycelium-layer--resting .mycelium-layer__clearing {
+  opacity: 0.28;
 }
 
 .day-motes-layer {
