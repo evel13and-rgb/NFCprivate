@@ -241,6 +241,65 @@ body.night-fall blockquote::after {
   color: rgba(246, 234, 199, 0.28);
 }
 
+.mycelium-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 2.4s ease;
+  background: transparent;
+}
+
+.mycelium-layer--visible {
+  opacity: 0.52;
+}
+
+.mycelium-layer--resting {
+  opacity: 0.55;
+}
+
+.mycelium-layer[data-reduce-motion='true'] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mycelium-layer {
+    display: none;
+  }
+}
+
+.mycelium-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.mycelium-path {
+  stroke: #c7b998;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.mycelium-path--accent {
+  stroke: #b09a74;
+}
+
+.mycelium-layer--resting .mycelium-path[data-pulse='true'] {
+  animation: mycelium-breathe var(--mycelium-pulse-duration, 18s) ease-in-out infinite;
+}
+
+@keyframes mycelium-breathe {
+  0%,
+  100% {
+    opacity: var(--mycelium-pulse-min-opacity, 0.4);
+  }
+  50% {
+    opacity: var(--mycelium-pulse-max-opacity, 0.48);
+  }
+}
+
 .day-motes-layer {
   position: fixed;
   inset: 0;
