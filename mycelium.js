@@ -218,15 +218,6 @@ function ensureLayer() {
         <stop offset="0%" stop-color="#c1ac84" stop-opacity="0.4" />
         <stop offset="100%" stop-color="#af9974" stop-opacity="0.35" />
       </linearGradient>
-      <linearGradient id="paramo-cactus-body" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#bcc89e" stop-opacity="0.78" />
-        <stop offset="100%" stop-color="#8f9f73" stop-opacity="0.88" />
-      </linearGradient>
-      <linearGradient id="paramo-cactus-highlight" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="rgba(255, 255, 255, 0.4)" />
-        <stop offset="55%" stop-color="rgba(255, 255, 255, 0.18)" />
-        <stop offset="100%" stop-color="rgba(122, 146, 94, 0)" />
-      </linearGradient>
     </defs>
     <rect x="0" y="0" width="1000" height="1000" fill="url(#paramo-sky)" />
     <path d="M0 640 C120 620 220 612 320 620 C430 630 520 664 640 660 C760 656 860 610 1000 588 L1000 1000 L0 1000 Z" fill="url(#paramo-hill)" />
@@ -237,20 +228,6 @@ function ensureLayer() {
     <path d="M240 840 L280 790" stroke="#b18f63" stroke-width="4" stroke-linecap="round" stroke-opacity="0.2" />
     <path d="M780 840 L820 790" stroke="#b18f63" stroke-width="4" stroke-linecap="round" stroke-opacity="0.18" />
     <path d="M700 820 L736 772" stroke="#b18f63" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.18" />
-    <g opacity="0.42">
-      <path d="M168 840 C166 780 168 738 188 738 C208 738 214 782 214 822 L214 840 Z" fill="url(#paramo-cactus-body)" />
-      <path d="M182 806 C182 770 172 754 154 754 C136 754 128 774 128 798 L128 840 L146 840 L146 802 C146 790 152 780 162 780 C174 780 182 792 182 806 Z" fill="url(#paramo-cactus-body)" />
-      <path d="M202 792 C202 760 214 742 230 742 C246 742 254 764 254 792 L254 840 L238 840 L238 796 C238 782 232 772 220 772 C210 772 202 782 202 792 Z" fill="url(#paramo-cactus-body)" />
-      <path d="M170 840 C168 788 170 752 186 752 C200 752 206 786 206 818 L206 840 Z" fill="url(#paramo-cactus-highlight)" />
-      <path d="M140 816 L140 840 L152 840 L152 808 C152 794 158 786 168 786 C178 786 184 798 184 812 L184 840 L194 840 L194 812 C194 780 182 762 162 762 C146 762 134 778 134 800 C134 816 136 828 140 816 Z" fill="url(#paramo-cactus-highlight)" opacity="0.35" />
-    </g>
-    <g opacity="0.38">
-      <path d="M776 840 C774 780 778 736 800 736 C822 736 828 780 828 824 L828 840 Z" fill="url(#paramo-cactus-body)" />
-      <path d="M792 800 C792 768 804 746 822 746 C840 746 848 770 848 798 L848 840 L832 840 L832 800 C832 786 826 776 816 776 C804 776 796 788 796 804 L796 840 L784 840 Z" fill="url(#paramo-cactus-body)" />
-      <path d="M756 840 L756 796 C756 770 766 754 782 754 C798 754 806 772 806 798 L806 840 Z" fill="url(#paramo-cactus-body)" />
-      <path d="M780 840 C778 792 780 758 796 758 C812 758 818 790 818 822 L818 840 Z" fill="url(#paramo-cactus-highlight)" />
-      <path d="M756 840 L756 808 C756 786 764 772 778 772 C792 772 800 786 800 808 L800 840 Z" fill="url(#paramo-cactus-highlight)" opacity="0.32" />
-    </g>
   `;
 
   svgElement = document.createElementNS(SVG_NS, 'svg');
