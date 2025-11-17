@@ -3,7 +3,6 @@ import { initFireflyAura } from './fireflies.js';
 import { isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
 import { initDayMycelium, setDayMyceliumActive } from './mycelium.js';
-import { initForestSound, setForestSoundActive } from './forestSound.js';
 
 const PRE_RANDOM_QUOTES = [];
 
@@ -867,7 +866,6 @@ function applyDayNightMode() {
   body.setAttribute('data-mode', shouldUseNightMode ? 'night' : 'day');
   setDayMyceliumActive(!shouldUseNightMode);
   setDaylightMotesActive(!shouldUseNightMode);
-  setForestSoundActive(shouldUseNightMode);
   setNightModeState(shouldUseNightMode);
 }
 
@@ -1051,6 +1049,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initDayMycelium();
   initDaylightMotes();
   initFireflyAura();
-  initForestSound();
   scheduleDayNightModeUpdates();
 });
