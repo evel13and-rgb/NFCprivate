@@ -1008,6 +1008,28 @@ function slugify(value) {
     .replace(/(^-|-$)/g, '');
 }
 
+function splitWorkMetadata(work) {
+  if (!work || typeof work !== 'string') {
+    return { title: '', author: '' };
+  }
+  const parts = work.split(',');
+  if (parts.length === 1) {
+    const only = parts[0].trim();
+    return { title: only, author: '' };
+  }
+  const title = parts.shift()?.trim() ?? '';
+  const author = parts.join(',').trim();
+  return { title, author };
+}
+
+function getQuoteMetadata(quote) {
+  const { title, author: inferredAuthor } = splitWorkMetadata(quote.obra ?? '');
+  const workTitle = quote.obraTitulo ?? title || quote.obra ?? '';
+  const character = quote.personaje ?? quote.character ?? quote.a ?? '';
+  const author = quote.autor ?? quote.author ?? inferredAuthor;
+  return { character, author, workTitle };
+}
+
 function getModalElements(type) {
   const baseId = type === 'author' ? 'author' : 'work';
   const modal = document.getElementById(`${baseId}-modal`);
@@ -1124,37 +1146,50 @@ function renderQuote(quote) {
   }
 
   const authorContainer = document.getElementById('author');
+  const characterName = document.getElementById('character-name');
   const authorName = document.getElementById('author-name');
   const authorWork = document.getElementById('author-work');
+  const characterSeparator = document.getElementById('character-separator');
   const authorSeparator = document.getElementById('author-separator');
   const metaPrefix = document.querySelector('.meta-prefix');
 
-  const hasAuthor = Boolean(currentQuote.a);
-  const hasWork = Boolean(currentQuote.obra);
+  const { character, author, workTitle } = getQuoteMetadata(currentQuote);
 
-  const authorId = currentQuote.authorId || slugify(currentQuote.a || '');
-  const workId = currentQuote.workId || slugify(currentQuote.obra || '');
+  const hasCharacter = Boolean(character);
+  const hasAuthor = Boolean(author);
+  const hasWork = Boolean(workTitle);
 
+  const authorId = currentQuote.authorId || slugify(author || '');
+  const workId = currentQuote.workId || slugify(workTitle || '');
+
+  if (characterName) {
+    characterName.textContent = character ?? '';
+    characterName.hidden = !hasCharacter;
+    characterName.setAttribute('aria-label', hasCharacter ? `Personaje: ${character}` : '');
+  }
   if (authorName) {
-    authorName.textContent = currentQuote.a ?? '';
+    authorName.textContent = author ?? '';
     authorName.hidden = !hasAuthor;
     authorName.dataset.authorId = authorId;
-    authorName.setAttribute('aria-label', hasAuthor ? `Abrir información sobre ${currentQuote.a}` : '');
+    authorName.setAttribute('aria-label', hasAuthor ? `Abrir información sobre ${author}` : '');
   }
   if (authorWork) {
-    authorWork.textContent = currentQuote.obra ?? '';
+    authorWork.textContent = workTitle ?? '';
     authorWork.hidden = !hasWork;
     authorWork.dataset.workId = workId;
-    authorWork.setAttribute('aria-label', hasWork ? `Abrir información sobre ${currentQuote.obra}` : '');
+    authorWork.setAttribute('aria-label', hasWork ? `Abrir información sobre ${workTitle}` : '');
+  }
+  if (characterSeparator) {
+    characterSeparator.hidden = !(hasCharacter && (hasAuthor || hasWork));
   }
   if (authorSeparator) {
     authorSeparator.hidden = !(hasAuthor && hasWork);
   }
   if (metaPrefix) {
-    metaPrefix.hidden = !(hasAuthor || hasWork);
+    metaPrefix.hidden = !(hasCharacter || hasAuthor || hasWork);
   }
   if (authorContainer) {
-    const metaParts = [currentQuote.a, currentQuote.obra].filter(Boolean);
+    const metaParts = [character, author, workTitle].filter(Boolean);
     authorContainer.setAttribute('data-full-text', metaParts.join(' · '));
   }
 }

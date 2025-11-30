@@ -211,6 +211,10 @@ blockquote::after {
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
+.meta-label {
+  color: color-mix(in srgb, var(--author) 90%, var(--text) 10%);
+}
+
 .meta-link:hover,
 .meta-link:focus-visible {
   color: var(--title);
@@ -221,6 +225,7 @@ blockquote::after {
 
 .meta-separator[hidden],
 .meta-link[hidden],
+.meta-label[hidden],
 .meta-prefix[hidden] {
   display: none;
 }
