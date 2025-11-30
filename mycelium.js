@@ -206,17 +206,17 @@ function ensureLayer() {
   paramoElement.innerHTML = `
     <defs>
       <linearGradient id="paramo-sky" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#f8f0df" stop-opacity="0.65" />
-        <stop offset="55%" stop-color="#f5ead7" stop-opacity="0.55" />
-        <stop offset="100%" stop-color="#f2e9d0" stop-opacity="0.35" />
+        <stop offset="0%" stop-color="#fbf6ea" stop-opacity="0.72" />
+        <stop offset="55%" stop-color="#f3e6cf" stop-opacity="0.6" />
+        <stop offset="100%" stop-color="#e7d6b5" stop-opacity="0.42" />
       </linearGradient>
       <linearGradient id="paramo-hill" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#d8c49a" stop-opacity="0.55" />
-        <stop offset="100%" stop-color="#c1ac84" stop-opacity="0.65" />
+        <stop offset="0%" stop-color="#d8c39a" stop-opacity="0.6" />
+        <stop offset="100%" stop-color="#c3ad83" stop-opacity="0.68" />
       </linearGradient>
       <linearGradient id="paramo-hill-shadow" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#c1ac84" stop-opacity="0.4" />
-        <stop offset="100%" stop-color="#af9974" stop-opacity="0.35" />
+        <stop offset="0%" stop-color="#c5af85" stop-opacity="0.42" />
+        <stop offset="100%" stop-color="#b3956c" stop-opacity="0.36" />
       </linearGradient>
     </defs>
     <rect x="0" y="0" width="1000" height="1000" fill="url(#paramo-sky)" />
