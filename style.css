@@ -223,6 +223,40 @@ blockquote::after {
   font-weight: 500;
   color: var(--author);
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.meta-prefix {
+  color: inherit;
+}
+
+.meta-link {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: color-mix(in srgb, var(--author) 90%, var(--text) 10%);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.meta-link:hover,
+.meta-link:focus-visible {
+  color: var(--title);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  outline: none;
+}
+
+.meta-separator[hidden],
+.meta-link[hidden],
+.meta-prefix[hidden] {
+  display: none;
 }
 
 .row {
@@ -277,6 +311,15 @@ body.night-fall blockquote {
 body.night-fall .author,
 body.night-fall .tiny {
   color: var(--author-night);
+}
+
+body.night-fall .meta-link {
+  color: color-mix(in srgb, var(--author-night) 92%, var(--text-night) 8%);
+}
+
+body.night-fall .meta-link:hover,
+body.night-fall .meta-link:focus-visible {
+  color: var(--title-night);
 }
 
 body.night-fall .tiny::before {
@@ -523,6 +566,127 @@ body.night-fall blockquote::after {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 2.5rem);
+  z-index: 12;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.modal:not(.is-hidden) {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal.is-hidden {
+  display: none;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 18, 11, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.modal__dialog {
+  position: relative;
+  background: linear-gradient(145deg, rgba(242, 233, 208, 0.96), rgba(248, 238, 216, 0.94));
+  border-radius: 18px;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  width: min(600px, 90vw);
+  box-shadow: 0 18px 38px rgba(66, 46, 22, 0.18), 0 3px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(166, 132, 82, 0.2);
+}
+
+.modal__header {
+  margin-bottom: 0.75rem;
+}
+
+.modal__title {
+  margin: 0;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 3.4vw, 1.8rem);
+  color: var(--title);
+}
+
+.modal__subtitle {
+  margin: 0.15rem 0 0;
+  color: var(--author);
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+}
+
+.modal__content {
+  margin-top: 0.85rem;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.65rem;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  color: var(--author);
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.modal__close:hover,
+.modal__close:focus-visible {
+  color: var(--title);
+  outline: none;
+}
+
+.modal__dialog:focus-visible {
+  outline: 3px solid rgba(86, 92, 51, 0.35);
+}
+
+body.night-fall .modal__dialog {
+  background: linear-gradient(145deg, rgba(13, 10, 16, 0.94), rgba(21, 16, 26, 0.94));
+  color: var(--text-night);
+  border-color: rgba(246, 234, 199, 0.16);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.night-fall .modal__title {
+  color: var(--title-night);
+}
+
+body.night-fall .modal__subtitle,
+body.night-fall .modal__close,
+body.night-fall .modal__content {
+  color: var(--author-night);
+}
+
+body.night-fall .modal__close:hover,
+body.night-fall .modal__close:focus-visible {
+  color: var(--title-night);
+}
+
+.modal__dialog {
+  max-width: 60vw;
+}
+
+@media (max-width: 960px) {
+  .modal__dialog {
+    max-width: 80vw;
   }
 }
 

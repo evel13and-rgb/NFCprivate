@@ -644,6 +644,8 @@ let dayHandlersAttached = false;
 let prefersReducedMotion = false;
 let reduceMotionQuery = null;
 let esNoche = isNightTime();
+let activeModal = null;
+let lastModalTrigger = null;
 
 function initMotionPreferenceWatcher() {
   if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
@@ -995,6 +997,118 @@ function setGentleMessage(message) {
   }
 }
 
+function slugify(value) {
+  if (!value) return '';
+  return value
+    .toString()
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+function getModalElements(type) {
+  const baseId = type === 'author' ? 'author' : 'work';
+  const modal = document.getElementById(`${baseId}-modal`);
+  if (!modal) return null;
+  return {
+    root: modal,
+    overlay: modal.querySelector('.modal__overlay'),
+    dialog: modal.querySelector('.modal__dialog'),
+    title: modal.querySelector('.modal__title'),
+    content: modal.querySelector(type === 'author' ? '.author-content' : '.work-content'),
+    close: modal.querySelector('.modal__close')
+  };
+}
+
+function closeActiveModal() {
+  if (!activeModal) return;
+  const { root } = activeModal;
+  root.classList.add('is-hidden');
+  root.setAttribute('aria-hidden', 'true');
+  document.removeEventListener('keydown', handleEscapeKey, true);
+  if (lastModalTrigger && typeof lastModalTrigger.focus === 'function') {
+    lastModalTrigger.focus({ preventScroll: true });
+  }
+  activeModal = null;
+}
+
+function handleEscapeKey(event) {
+  if (event.key === 'Escape') {
+    closeActiveModal();
+  }
+}
+
+function openModal(type, triggerElement, titleText) {
+  const elements = getModalElements(type);
+  if (!elements) return;
+
+  const placeholder =
+    type === 'author'
+      ? 'Aquí irá la información sobre el autor. (Pendiente de completar).'
+      : 'Aquí irá la información sobre la obra. (Pendiente de completar).';
+
+  elements.root.classList.remove('is-hidden');
+  elements.root.setAttribute('aria-hidden', 'false');
+  if (elements.title) {
+    elements.title.textContent = titleText || '';
+  }
+  if (elements.content) {
+    elements.content.textContent = placeholder;
+  }
+  if (elements.close) {
+    elements.close.focus({ preventScroll: true });
+  }
+
+  activeModal = { type, ...elements };
+  lastModalTrigger = triggerElement;
+  document.addEventListener('keydown', handleEscapeKey, true);
+}
+
+function bindModal(type) {
+  const elements = getModalElements(type);
+  if (!elements) return;
+  if (elements.overlay) {
+    elements.overlay.addEventListener('click', closeActiveModal);
+  }
+  if (elements.close) {
+    elements.close.addEventListener('click', closeActiveModal);
+  }
+  if (elements.dialog) {
+    elements.dialog.addEventListener('click', (event) => event.stopPropagation());
+  }
+  if (elements.root) {
+    elements.root.addEventListener('click', (event) => {
+      if (event.target === elements.root) {
+        closeActiveModal();
+      }
+    });
+  }
+}
+
+function initMetadataInteractions() {
+  const authorLink = document.getElementById('author-name');
+  const workLink = document.getElementById('author-work');
+
+  bindModal('author');
+  bindModal('work');
+
+  if (authorLink) {
+    authorLink.addEventListener('click', () => {
+      if (authorLink.hidden) return;
+      openModal('author', authorLink, authorLink.textContent);
+    });
+  }
+
+  if (workLink) {
+    workLink.addEventListener('click', () => {
+      if (workLink.hidden) return;
+      openModal('work', workLink, workLink.textContent);
+    });
+  }
+}
+
 function renderQuote(quote) {
   if (!quote) {
     return;
@@ -1013,17 +1127,31 @@ function renderQuote(quote) {
   const authorName = document.getElementById('author-name');
   const authorWork = document.getElementById('author-work');
   const authorSeparator = document.getElementById('author-separator');
+  const metaPrefix = document.querySelector('.meta-prefix');
+
+  const hasAuthor = Boolean(currentQuote.a);
+  const hasWork = Boolean(currentQuote.obra);
+
+  const authorId = currentQuote.authorId || slugify(currentQuote.a || '');
+  const workId = currentQuote.workId || slugify(currentQuote.obra || '');
 
   if (authorName) {
-    authorName.textContent = currentQuote.a ? '— ' + currentQuote.a : '';
-    authorName.hidden = !currentQuote.a;
+    authorName.textContent = currentQuote.a ?? '';
+    authorName.hidden = !hasAuthor;
+    authorName.dataset.authorId = authorId;
+    authorName.setAttribute('aria-label', hasAuthor ? `Abrir información sobre ${currentQuote.a}` : '');
   }
   if (authorWork) {
     authorWork.textContent = currentQuote.obra ?? '';
-    authorWork.hidden = !currentQuote.obra;
+    authorWork.hidden = !hasWork;
+    authorWork.dataset.workId = workId;
+    authorWork.setAttribute('aria-label', hasWork ? `Abrir información sobre ${currentQuote.obra}` : '');
   }
   if (authorSeparator) {
-    authorSeparator.hidden = !(currentQuote.a && currentQuote.obra);
+    authorSeparator.hidden = !(hasAuthor && hasWork);
+  }
+  if (metaPrefix) {
+    metaPrefix.hidden = !(hasAuthor || hasWork);
   }
   if (authorContainer) {
     const metaParts = [currentQuote.a, currentQuote.obra].filter(Boolean);
@@ -1042,6 +1170,7 @@ function initApp() {
     renderQuote(quote);
   }
   setGentleMessage(message);
+  initMetadataInteractions();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
