@@ -645,6 +645,31 @@ let prefersReducedMotion = false;
 let reduceMotionQuery = null;
 let esNoche = isNightTime();
 
+function slugify(value) {
+  return String(value ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '') || 'referencia';
+}
+
+function setMetaLink(element, text, slugPrefix, displayText) {
+  if (!element) return;
+  if (text) {
+    const slug = slugify(text);
+    element.textContent = displayText ?? text;
+    element.href = `#${slugPrefix}-${slug}`;
+    element.dataset.linkSlug = slug;
+    element.hidden = false;
+  } else {
+    element.textContent = '';
+    element.removeAttribute('href');
+    element.removeAttribute('data-link-slug');
+    element.hidden = true;
+  }
+}
+
 function initMotionPreferenceWatcher() {
   if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
     prefersReducedMotion = false;
@@ -1014,14 +1039,8 @@ function renderQuote(quote) {
   const authorWork = document.getElementById('author-work');
   const authorSeparator = document.getElementById('author-separator');
 
-  if (authorName) {
-    authorName.textContent = currentQuote.a ? '— ' + currentQuote.a : '';
-    authorName.hidden = !currentQuote.a;
-  }
-  if (authorWork) {
-    authorWork.textContent = currentQuote.obra ?? '';
-    authorWork.hidden = !currentQuote.obra;
-  }
+  setMetaLink(authorName, currentQuote.a, 'autor', currentQuote.a ? `— ${currentQuote.a}` : '');
+  setMetaLink(authorWork, currentQuote.obra, 'obra');
   if (authorSeparator) {
     authorSeparator.hidden = !(currentQuote.a && currentQuote.obra);
   }
