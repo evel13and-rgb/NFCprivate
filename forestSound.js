@@ -5,7 +5,9 @@ let masterGain = null;
 let noiseLayers = [];
 let shimmerOsc = null;
 let shimmerLfo = null;
+let breezeLayer = null;
 let chirpTimeoutId = null;
+let owlTimeoutId = null;
 let enabled = false;
 let interactionArmed = false;
 
@@ -63,9 +65,9 @@ function ensureNoiseLayers() {
     return;
   }
   // A soft bed of nighttime ambience with a warm low layer
-  noiseLayers.push(addNoiseLayer(260, 0.16));
-  noiseLayers.push(addNoiseLayer(1100, 0.1));
-  noiseLayers.push(addNoiseLayer(3200, 0.035));
+  noiseLayers.push(addNoiseLayer(220, 0.13));
+  noiseLayers.push(addNoiseLayer(860, 0.11));
+  noiseLayers.push(addNoiseLayer(2400, 0.05));
 }
 
 function ensureShimmer() {
@@ -94,6 +96,52 @@ function ensureShimmer() {
 
   shimmerOsc.start();
   shimmerLfo.start();
+}
+
+function ensureBreezeLayer() {
+  if (!audioCtx || breezeLayer) {
+    return;
+  }
+  const source = audioCtx.createBufferSource();
+  source.buffer = createNoiseBuffer(audioCtx, 7);
+  source.loop = true;
+
+  const highpass = audioCtx.createBiquadFilter();
+  highpass.type = 'highpass';
+  highpass.frequency.value = 90;
+
+  const bandpass = audioCtx.createBiquadFilter();
+  bandpass.type = 'bandpass';
+  bandpass.frequency.value = 420;
+  bandpass.Q.value = 0.5;
+
+  const gain = audioCtx.createGain();
+  gain.gain.value = 0.08;
+
+  const lfo = audioCtx.createOscillator();
+  lfo.type = 'sine';
+  lfo.frequency.value = 0.02 + Math.random() * 0.015;
+
+  const lfoGain = audioCtx.createGain();
+  lfoGain.gain.value = 0.05;
+
+  const lfoOffset = audioCtx.createConstantSource();
+  lfoOffset.offset.value = 0.07;
+
+  source.connect(highpass);
+  highpass.connect(bandpass);
+  bandpass.connect(gain);
+  gain.connect(masterGain);
+
+  lfo.connect(lfoGain);
+  lfoGain.connect(gain.gain);
+  lfoOffset.connect(gain.gain);
+
+  source.start();
+  lfo.start();
+  lfoOffset.start();
+
+  breezeLayer = { source, lfo, lfoOffset };
 }
 
 function scheduleChirp() {
@@ -147,6 +195,50 @@ function cancelChirp() {
   }
 }
 
+function scheduleOwl() {
+  if (!enabled || !audioCtx) {
+    return;
+  }
+  const delay = 16000 + Math.random() * 18000;
+  owlTimeoutId = setTimeout(() => {
+    if (!enabled || !audioCtx) {
+      return;
+    }
+    const now = audioCtx.currentTime + 0.4;
+    const hootCount = 2 + Math.floor(Math.random() * 2);
+    for (let i = 0; i < hootCount; i += 1) {
+      const startTime = now + i * 0.55;
+      const osc = audioCtx.createOscillator();
+      osc.type = 'sine';
+      const freqBase = 360 + Math.random() * 30;
+      osc.frequency.setValueAtTime(freqBase, startTime);
+      osc.frequency.exponentialRampToValueAtTime(freqBase * 0.92, startTime + 0.35);
+
+      const gain = audioCtx.createGain();
+      gain.gain.setValueAtTime(0.0001, startTime);
+      gain.gain.linearRampToValueAtTime(0.03, startTime + 0.15);
+      gain.gain.exponentialRampToValueAtTime(0.0001, startTime + 0.65);
+
+      osc.connect(gain);
+      gain.connect(masterGain);
+      osc.start(startTime);
+      osc.stop(startTime + 0.7);
+      osc.onended = () => {
+        gain.disconnect();
+      };
+    }
+
+    scheduleOwl();
+  }, delay);
+}
+
+function cancelOwl() {
+  if (owlTimeoutId) {
+    clearTimeout(owlTimeoutId);
+    owlTimeoutId = null;
+  }
+}
+
 function armInteractionResume() {
   if (interactionArmed || typeof document === 'undefined') {
     return;
@@ -184,15 +276,19 @@ export function setForestSoundActive(active) {
   }
   ensureNoiseLayers();
   ensureShimmer();
+  ensureBreezeLayer();
   ctx.resume?.().catch(() => {});
   const now = ctx.currentTime;
   masterGain.gain.cancelScheduledValues(now);
   if (enabled) {
     masterGain.gain.setTargetAtTime(0.16, now, 2.8);
     cancelChirp();
+    cancelOwl();
     scheduleChirp();
+    scheduleOwl();
   } else {
     masterGain.gain.setTargetAtTime(0.0001, now, 1.6);
     cancelChirp();
+    cancelOwl();
   }
 }
