@@ -324,7 +324,7 @@ body.night-fall blockquote::after {
 }
 
 .mycelium-path {
-  stroke: rgba(196, 176, 145, 0.6);
+  stroke: rgba(192, 164, 118, 0.62);
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -332,7 +332,7 @@ body.night-fall blockquote::after {
 }
 
 .mycelium-path--accent {
-  stroke: rgba(181, 156, 122, 0.66);
+  stroke: rgba(167, 137, 96, 0.68);
 }
 
 .mycelium-layer--resting .mycelium-path[data-pulse='true'] {
@@ -362,8 +362,12 @@ body.night-fall blockquote::after {
   transition: opacity 2s ease;
 }
 
+.mycelium-layer--visible .paramo-illustration {
+  opacity: 0.3;
+}
+
 .mycelium-layer--resting .paramo-illustration {
-  opacity: 0.48;
+  opacity: 0.5;
 }
 
 .mycelium-layer__clearing {
