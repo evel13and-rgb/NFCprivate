@@ -98,6 +98,7 @@ main.wrap {
   cursor: pointer;
   outline: none;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .quote-flow:focus-visible {
