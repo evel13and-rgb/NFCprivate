@@ -31,15 +31,66 @@
       <h1>Páramo Literario</h1>
       <blockquote id="quote">…</blockquote>
       <div class="author" id="author" aria-live="polite">
-        <span class="author-name" id="author-name"></span>
-        <span class="author-separator" id="author-separator" aria-hidden="true">·</span>
-        <span class="author-work" id="author-work"></span>
+        <span class="meta-prefix" aria-hidden="true">—</span>
+        <button
+          type="button"
+          class="meta-link meta-author"
+          id="author-name"
+          data-author-id=""
+        ></button>
+        <span class="meta-separator" id="author-separator" aria-hidden="true">·</span>
+        <button
+          type="button"
+          class="meta-link meta-work"
+          id="author-work"
+          data-work-id=""
+        ></button>
       </div>
       <div class="row">
-        
+
       </div>
     </section>
   </main>
+
+  <div
+    class="modal is-hidden"
+    id="author-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="author-modal-title"
+  >
+    <div class="modal__overlay" data-modal-dismiss="author"></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Cerrar">×</button>
+      <div class="modal__header">
+        <h2 class="modal__title" id="author-modal-title"></h2>
+        <p class="modal__subtitle">Sobre el autor</p>
+      </div>
+      <div class="modal__content">
+        <div class="author-content" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal is-hidden"
+    id="work-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="work-modal-title"
+  >
+    <div class="modal__overlay" data-modal-dismiss="work"></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Cerrar">×</button>
+      <div class="modal__header">
+        <h2 class="modal__title" id="work-modal-title"></h2>
+        <p class="modal__subtitle">Sobre la obra</p>
+      </div>
+      <div class="modal__content">
+        <div class="work-content" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
   <script type="module" src="script.js"></script>
 </body>
 </html>
