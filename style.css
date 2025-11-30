@@ -54,40 +54,6 @@ main.wrap {
   z-index: 2;
 }
 
-.info-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: clamp(1rem, 4vh, 1.5rem);
-  gap: clamp(0.75rem, 2vw, 1.25rem);
-}
-
-.info-button {
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--ink-soft);
-  background: transparent;
-  color: var(--title);
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-.info-button:hover,
-.info-button:focus-visible {
-  background: rgba(86, 92, 51, 0.08);
-  border-color: rgba(86, 92, 51, 0.32);
-  outline: none;
-}
-
-.info-button:focus-visible {
-  box-shadow: 0 0 0 3px rgba(86, 92, 51, 0.2);
-}
-
 
 .quote-flow {
   display: flex;
@@ -225,6 +191,27 @@ blockquote::after {
   text-align: center;
 }
 
+.author a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.4rem;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.author a:hover,
+.author a:focus-visible {
+  color: var(--title);
+  background: rgba(86, 92, 51, 0.08);
+  outline: none;
+}
+
+body.night-fall .author a:hover,
+body.night-fall .author a:focus-visible {
+  color: var(--title-night);
+  background: rgba(211, 202, 176, 0.12);
+}
+
 .row {
   margin-top: 1.6rem;
 }
@@ -252,18 +239,6 @@ body.night-fall {
   color-scheme: dark;
   background-color: var(--sand-night);
   color: var(--text-night);
-}
-
-body.night-fall .info-button {
-  border-color: var(--ink-soft-night);
-  color: var(--title-night);
-}
-
-body.night-fall .info-button:hover,
-body.night-fall .info-button:focus-visible {
-  background: rgba(246, 234, 199, 0.08);
-  border-color: rgba(246, 234, 199, 0.36);
-  box-shadow: 0 0 0 3px rgba(246, 234, 199, 0.18);
 }
 
 body.night-fall h1 {
