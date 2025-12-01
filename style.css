@@ -82,6 +82,19 @@ h1 {
   color: var(--title);
 }
 
+#quote-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(0.5rem, 2vw, 1.25rem) clamp(0.25rem, 2vw, 1rem);
+  border-radius: 10px;
+}
+
+body.night-fall #quote-card {
+  background: transparent;
+}
+
 blockquote {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -113,6 +126,18 @@ blockquote::after {
   content: '\201D';
   bottom: -2rem;
   right: clamp(-0.4rem, -0.6vw, 0.2rem);
+}
+
+.watermark {
+  font-size: 0.85rem;
+  color: var(--author);
+  opacity: 0.32;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+}
+
+body.night-fall .watermark {
+  color: var(--author-night);
 }
 
 .word {
@@ -234,6 +259,51 @@ blockquote::after {
   margin-top: 1.6rem;
 }
 
+.share-image-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--ink-soft);
+  background: transparent;
+  color: var(--title);
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.share-image-button:hover,
+.share-image-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--title) 25%, var(--ink-soft) 75%);
+  box-shadow: 0 10px 28px rgba(86, 92, 51, 0.16);
+  outline: none;
+}
+
+.share-image-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.share-image-button[disabled] {
+  opacity: 0.5;
+  cursor: progress;
+  box-shadow: none;
+  transform: none;
+}
+
+body.night-fall .share-image-button {
+  color: var(--title-night);
+  border-color: var(--ink-soft-night);
+}
+
+body.night-fall .share-image-button:hover,
+body.night-fall .share-image-button:focus-visible {
+  border-color: color-mix(in srgb, var(--title-night) 20%, var(--ink-soft-night) 80%);
+  box-shadow: 0 10px 28px rgba(246, 234, 199, 0.16);
+}
+
 .tiny {
   display: inline-flex;
   align-items: center;
@@ -295,6 +365,14 @@ body.night-fall .meta-link:focus-visible {
 
 body.night-fall .tiny::before {
   background: var(--ink-soft-night);
+}
+
+#quote-card.quote-card--capturing,
+#quote-card.quote-card--capturing * {
+  transition: none !important;
+  animation: none !important;
+  box-shadow: none !important;
+  filter: none !important;
 }
 
 body.night-fall blockquote::before,
