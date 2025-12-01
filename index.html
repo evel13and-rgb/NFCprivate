@@ -21,25 +21,36 @@
       aria-live="polite"
     >
       <h1>Páramo Literario</h1>
-      <blockquote id="quote">…</blockquote>
-      <div class="author" id="author" aria-live="polite">
-        <span class="meta-prefix" aria-hidden="true">—</span>
-        <button
-          type="button"
-          class="meta-link meta-author"
-          id="author-name"
-          data-author-id=""
-        ></button>
-        <span class="meta-separator" id="author-separator" aria-hidden="true">·</span>
-        <button
-          type="button"
-          class="meta-link meta-work"
-          id="author-work"
-          data-work-id=""
-        ></button>
+      <div id="quote-card">
+        <blockquote id="quote">…</blockquote>
+        <div class="author" id="author" aria-live="polite">
+          <span class="meta-prefix" aria-hidden="true">—</span>
+          <button
+            type="button"
+            class="meta-link meta-author"
+            id="author-name"
+            data-author-id=""
+          ></button>
+          <span class="meta-separator" id="author-separator" aria-hidden="true">·</span>
+          <button
+            type="button"
+            class="meta-link meta-work"
+            id="author-work"
+            data-work-id=""
+          ></button>
+        </div>
+        <div class="watermark" aria-hidden="true">paramoliterario.com</div>
       </div>
       <div class="row">
-
+        <button
+          type="button"
+          class="share-image-button"
+          aria-label="Compartir esta frase como imagen"
+          aria-description="Generar imagen compartible de este fragmento"
+        >
+          Compartir como imagen
+          <span class="sr-only">Generar imagen compartible de este fragmento</span>
+        </button>
       </div>
     </section>
   </main>
