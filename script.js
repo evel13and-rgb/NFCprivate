@@ -1028,7 +1028,7 @@ function splitWorkMetadata(work) {
 function getQuoteMetadata(quote) {
   const { title, author: inferredAuthor } = splitWorkMetadata(quote.obra ?? '');
   const workTitle = quote.obraTitulo ?? title ?? quote.obra ?? '';
-  const author = quote.autor ?? quote.author ?? quote.personaje ?? quote.character ?? quote.a ?? inferredAuthor;
+  const author = quote.autor ?? quote.author ?? inferredAuthor;
   return { author, workTitle };
 }
 
