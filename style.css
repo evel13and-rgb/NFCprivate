@@ -36,6 +36,11 @@ body[data-mode='day'] {
   color-scheme: light;
 }
 
+body[data-mode='day'] .mycelium-layer,
+body[data-mode='day'] .day-motes-layer {
+  display: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
