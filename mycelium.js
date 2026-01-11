@@ -78,50 +78,6 @@ const PATH_DEFINITIONS = [
     pulse: false
   },
   {
-    d: 'M120 0 C150 180 190 360 240 520 C292 692 340 856 360 1000',
-    width: 0.78,
-    opacity: 0.31,
-    duration: 7.4,
-    delay: 1.2,
-    accent: true,
-    pulse: true,
-    pulseDuration: 19,
-    pulseAmplitude: 0.05
-  },
-  {
-    d: 'M260 0 C300 180 360 360 420 520 C480 688 520 840 540 1000',
-    width: 0.72,
-    opacity: 0.3,
-    duration: 7.2,
-    delay: 1.55,
-    accent: false,
-    pulse: true,
-    pulseDuration: 18,
-    pulseAmplitude: 0.05
-  },
-  {
-    d: 'M740 0 C720 180 680 360 640 520 C600 688 560 844 540 1000',
-    width: 0.74,
-    opacity: 0.3,
-    duration: 7.3,
-    delay: 1.65,
-    accent: true,
-    pulse: true,
-    pulseDuration: 18,
-    pulseAmplitude: 0.05
-  },
-  {
-    d: 'M880 0 C850 200 810 380 760 540 C712 692 660 846 640 1000',
-    width: 0.82,
-    opacity: 0.31,
-    duration: 7.7,
-    delay: 1.85,
-    accent: false,
-    pulse: true,
-    pulseDuration: 19,
-    pulseAmplitude: 0.05
-  },
-  {
     d: 'M0 460 C160 480 320 506 480 548 C640 592 820 652 1000 720',
     width: 0.68,
     opacity: 0.28,
@@ -465,4 +421,3 @@ export function setDayMyceliumActive(active) {
   desiredActive = next;
   applyActiveState();
 }
-
