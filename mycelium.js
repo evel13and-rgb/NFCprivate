@@ -1,5 +1,3 @@
-import { isNightTime } from './dayNight.js';
-
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const PATH_LENGTH_KEY = Symbol('myceliumPathLength');
 
@@ -406,18 +404,16 @@ export function initDayMycelium() {
     reduceMotionEnabled = reduceMotionMedia?.matches ?? false;
   }
 
-  desiredActive = !isNightTime();
+  desiredActive = false;
   applyActiveState();
 }
 
 export function setDayMyceliumActive(active) {
-  const next = !!active;
-  if (next === desiredActive && layer) {
-    if (reduceMotionEnabled) {
-      hideLayer(true);
-    }
-    return;
+  if (layer) {
+    hideLayer(true);
   }
-  desiredActive = next;
-  applyActiveState();
+  desiredActive = false;
+  if (active && layer) {
+    applyActiveState();
+  }
 }
