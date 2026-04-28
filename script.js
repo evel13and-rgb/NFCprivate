@@ -3,6 +3,20 @@ import { initFireflyAura } from './fireflies.js';
 import { isNightTime } from './dayNight.js';
 
 const PRE_RANDOM_QUOTES = [];
+const E_A_FRAGMENTOS_QUOTES = [
+  {
+    t: "Esa sensación de extrañeza tan profunda que casi me pone de revés en el mundo",
+    a: "E.A",
+    obra: "fragmentos",
+    lang: "es"
+  },
+  {
+    t: "Quería hurgar en mi cuerpo, con mis dedos dentro de mi carne, hasta encontrar eso que desquicia",
+    a: "E.A",
+    obra: "fragmentos",
+    lang: "es"
+  }
+];
 
 const CUMBRES_BORRASCOSAS_QUOTES = [
   {
@@ -620,6 +634,7 @@ const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
 
 const QUOTES = [
   ...PRE_RANDOM_QUOTES,
+  ...E_A_FRAGMENTOS_QUOTES,
   ...CUMBRES_BORRASCOSAS_QUOTES,
   ...NUDO_DE_VIBORAS_QUOTES,
   ...PEDRO_PARAMO_QUOTES,
