@@ -985,15 +985,15 @@ function determineQuoteForDisplay() {
 function ensureMessageElement() {
   let messageElement = document.getElementById('quote-message');
   if (!messageElement) {
-    const row = document.querySelector('#quote-panel .row');
-    if (!row) {
+    const panel = document.getElementById('quote-panel');
+    if (!panel) {
       return null;
     }
-    messageElement = document.createElement('span');
+    messageElement = document.createElement('p');
     messageElement.id = 'quote-message';
     messageElement.className = 'tiny';
     messageElement.hidden = true;
-    row.appendChild(messageElement);
+    panel.appendChild(messageElement);
   }
   return messageElement;
 }
