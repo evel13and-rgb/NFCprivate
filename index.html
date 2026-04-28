@@ -44,6 +44,7 @@
       </div>
       <div class="row">
         <button
+          id="share-image-btn"
           type="button"
           class="share-image-button"
           aria-label="Compartir esta frase como imagen"
@@ -53,6 +54,7 @@
           <span class="sr-only">Generar imagen compartible de este fragmento</span>
         </button>
       </div>
+      <p class="tiny" id="share-feedback" hidden aria-live="polite"></p>
       <p class="tiny" id="quote-message" hidden aria-live="polite"></p>
     </section>
   </main>
@@ -96,6 +98,7 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <script type="module" src="script.js"></script>
 </body>
 </html>
