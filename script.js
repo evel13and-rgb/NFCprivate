@@ -661,7 +661,6 @@ let reduceMotionQuery = null;
 let esNoche = isNightTime();
 let activeModal = null;
 let lastModalTrigger = null;
-let html2CanvasLoader = null;
 
 function initMotionPreferenceWatcher() {
   if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
@@ -1154,40 +1153,118 @@ function getQuoteIdentifier() {
   return 'actual';
 }
 
-async function getHtml2Canvas() {
-  if (typeof window === 'undefined') {
-    throw new Error('Captura no disponible fuera del navegador');
-  }
-  if (typeof window.html2canvas === 'function') {
-    return window.html2canvas;
-  }
-  if (!html2CanvasLoader) {
-    html2CanvasLoader = import('https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.esm.js')
-      .then((module) => module.default ?? module)
-      .catch((error) => {
-        html2CanvasLoader = null;
-        throw error;
-      });
-  }
-  return html2CanvasLoader;
+function getQuoteShareText() {
+  const quoteText = (currentQuote?.t ?? '').trim();
+  const { author, workTitle } = getQuoteMetadata(currentQuote);
+  const details = [author, workTitle].filter(Boolean).join(' · ');
+  if (!quoteText) return 'Páramo Literario';
+  return details ? `“${quoteText}”\n— ${details}` : `“${quoteText}”`;
 }
 
-async function canvasFromQuoteCard() {
-  if (!quoteCardRef) return null;
-  const html2canvas = await getHtml2Canvas();
-  quoteCardRef.classList.add('quote-card--capturing');
-  try {
-    return await html2canvas(quoteCardRef, {
-      backgroundColor: null,
-      scale: window.devicePixelRatio || 1,
-      useCORS: true
-    });
-  } finally {
-    quoteCardRef.classList.remove('quote-card--capturing');
-  }
+function getShareImageTheme() {
+  const nightMode = Boolean(document.body?.classList.contains('night-fall'));
+  return nightMode
+    ? {
+        backgroundTop: '#0d0a10',
+        backgroundBottom: '#1e1525',
+        frameBorder: 'rgba(246, 234, 199, 0.2)',
+        text: '#f6efd9',
+        author: '#d3cab0',
+        watermark: 'rgba(211, 202, 176, 0.6)'
+      }
+    : {
+        backgroundTop: '#ffffff',
+        backgroundBottom: '#f3efe6',
+        frameBorder: 'rgba(86, 92, 51, 0.2)',
+        text: '#2f2f2f',
+        author: '#6b675f',
+        watermark: 'rgba(107, 103, 95, 0.55)'
+      };
 }
 
-function canvasToBlob(canvas) {
+function wrapTextToLines(ctx, text, maxWidth) {
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  const lines = [];
+  let line = '';
+  for (const word of words) {
+    const probe = line ? `${line} ${word}` : word;
+    if (!line || ctx.measureText(probe).width <= maxWidth) {
+      line = probe;
+      continue;
+    }
+    lines.push(line);
+    line = word;
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+function canvasFromQuoteCard() {
+  const canvas = document.createElement('canvas');
+  const width = 1080;
+  const height = 1350;
+  const paddingX = 96;
+  const maxTextWidth = width - paddingX * 2;
+  const quoteFontSize = 54;
+  const quoteLineHeight = Math.round(quoteFontSize * 1.32);
+  const authorFontSize = 34;
+  const quoteText = (currentQuote?.t ?? '').replace(/\s+/g, ' ').trim();
+  if (!quoteText) {
+    return null;
+  }
+
+  const { author, workTitle } = getQuoteMetadata(currentQuote);
+  const authorText = [author, workTitle].filter(Boolean).join(' · ');
+  const theme = getShareImageTheme();
+
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return null;
+
+  const gradient = ctx.createLinearGradient(0, 0, 0, height);
+  gradient.addColorStop(0, theme.backgroundTop);
+  gradient.addColorStop(1, theme.backgroundBottom);
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = theme.frameBorder;
+  ctx.strokeRect(46, 46, width - 92, height - 92);
+
+  ctx.fillStyle = theme.text;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+  ctx.font = `${quoteFontSize}px "Playfair Display", serif`;
+
+  const quoteLines = wrapTextToLines(ctx, `“${quoteText}”`, maxTextWidth);
+  const quoteBlockHeight = quoteLines.length * quoteLineHeight;
+  const authorLineHeight = Math.round(authorFontSize * 1.35);
+  const authorBlockHeight = authorText ? authorLineHeight : 0;
+  const blockGap = authorText ? 72 : 0;
+  const totalBlockHeight = quoteBlockHeight + blockGap + authorBlockHeight;
+  let cursorY = Math.round((height - totalBlockHeight) / 2);
+
+  for (const line of quoteLines) {
+    ctx.fillText(line, width / 2, cursorY);
+    cursorY += quoteLineHeight;
+  }
+
+  if (authorText) {
+    cursorY += blockGap;
+    ctx.fillStyle = theme.author;
+    ctx.font = `${authorFontSize}px "Inter", sans-serif`;
+    ctx.fillText(`— ${authorText}`, width / 2, cursorY);
+  }
+
+  ctx.fillStyle = theme.watermark;
+  ctx.font = '500 28px "Inter", sans-serif';
+  ctx.fillText('paramoliterario.com', width / 2, height - 116);
+
+  return canvas;
+}
+
+function canvasToBlob(canvas, mimeType = 'image/png', quality = 0.92) {
   return new Promise((resolve, reject) => {
     if (!canvas?.toBlob) {
       reject(new Error('No se pudo generar la imagen'));
@@ -1199,8 +1276,25 @@ function canvasToBlob(canvas) {
       } else {
         reject(new Error('No se pudo crear el archivo de imagen'));
       }
-    }, 'image/png');
+    }, mimeType, quality);
   });
+}
+
+async function createShareImageFromCanvas(canvas) {
+  const id = getQuoteIdentifier();
+  try {
+    const pngBlob = await canvasToBlob(canvas, 'image/png');
+    return {
+      blob: pngBlob,
+      file: new File([pngBlob], `paramo_frase_${id}.png`, { type: 'image/png' })
+    };
+  } catch {
+    const jpegBlob = await canvasToBlob(canvas, 'image/jpeg', 0.94);
+    return {
+      blob: jpegBlob,
+      file: new File([jpegBlob], `paramo_frase_${id}.jpg`, { type: 'image/jpeg' })
+    };
+  }
 }
 
 function triggerImageDownload(blob, fileName) {
@@ -1215,30 +1309,35 @@ function triggerImageDownload(blob, fileName) {
 }
 
 async function shareQuoteAsImage() {
-  if (!quoteCardRef) return;
-  const fileName = `paramo_frase_${getQuoteIdentifier()}.png`;
+  if (!quoteCardRef || !currentQuote) return;
   if (shareButtonRef) {
     shareButtonRef.disabled = true;
   }
   let blob = null;
+  let file = null;
   try {
-    const canvas = await canvasFromQuoteCard();
+    const canvas = canvasFromQuoteCard();
     if (!canvas) return;
-    blob = await canvasToBlob(canvas);
-    const file = new File([blob], fileName, { type: 'image/png' });
+    const renderedImage = await createShareImageFromCanvas(canvas);
+    blob = renderedImage.blob;
+    file = renderedImage.file;
+    const quoteText = getQuoteShareText();
     const shareData = {
       files: [file],
-      text: 'Compartido desde Páramo Literario',
+      text: quoteText,
       title: 'Páramo Literario'
     };
     if (navigator.canShare?.(shareData)) {
       await navigator.share(shareData);
+    } else if (typeof navigator.share === 'function') {
+      await navigator.share({ text: quoteText, title: 'Páramo Literario' });
+      triggerImageDownload(blob, file.name);
     } else {
-      triggerImageDownload(blob, fileName);
+      triggerImageDownload(blob, file.name);
     }
   } catch (error) {
     if (blob) {
-      triggerImageDownload(blob, fileName);
+      triggerImageDownload(blob, file?.name ?? `paramo_frase_${getQuoteIdentifier()}.png`);
     }
     console.error('No se pudo generar la imagen', error);
   } finally {
