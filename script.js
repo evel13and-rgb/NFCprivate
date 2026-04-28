@@ -653,6 +653,7 @@ let currentQuote = null;
 let quoteElementRef = null;
 let quoteCardRef = null;
 let shareButtonRef = null;
+let shareFeedbackRef = null;
 let allWordElements = [];
 let animatedWordElements = [];
 let dayHandlersAttached = false;
@@ -1161,109 +1162,6 @@ function getQuoteShareText() {
   return details ? `“${quoteText}”\n— ${details}` : `“${quoteText}”`;
 }
 
-function getShareImageTheme() {
-  const nightMode = Boolean(document.body?.classList.contains('night-fall'));
-  return nightMode
-    ? {
-        backgroundTop: '#0d0a10',
-        backgroundBottom: '#1e1525',
-        frameBorder: 'rgba(246, 234, 199, 0.2)',
-        text: '#f6efd9',
-        author: '#d3cab0',
-        watermark: 'rgba(211, 202, 176, 0.6)'
-      }
-    : {
-        backgroundTop: '#ffffff',
-        backgroundBottom: '#f3efe6',
-        frameBorder: 'rgba(86, 92, 51, 0.2)',
-        text: '#2f2f2f',
-        author: '#6b675f',
-        watermark: 'rgba(107, 103, 95, 0.55)'
-      };
-}
-
-function wrapTextToLines(ctx, text, maxWidth) {
-  const words = text.trim().split(/\s+/).filter(Boolean);
-  const lines = [];
-  let line = '';
-  for (const word of words) {
-    const probe = line ? `${line} ${word}` : word;
-    if (!line || ctx.measureText(probe).width <= maxWidth) {
-      line = probe;
-      continue;
-    }
-    lines.push(line);
-    line = word;
-  }
-  if (line) lines.push(line);
-  return lines;
-}
-
-function canvasFromQuoteCard() {
-  const canvas = document.createElement('canvas');
-  const width = 1080;
-  const height = 1350;
-  const paddingX = 96;
-  const maxTextWidth = width - paddingX * 2;
-  const quoteFontSize = 54;
-  const quoteLineHeight = Math.round(quoteFontSize * 1.32);
-  const authorFontSize = 34;
-  const quoteText = (currentQuote?.t ?? '').replace(/\s+/g, ' ').trim();
-  if (!quoteText) {
-    return null;
-  }
-
-  const { author, workTitle } = getQuoteMetadata(currentQuote);
-  const authorText = [author, workTitle].filter(Boolean).join(' · ');
-  const theme = getShareImageTheme();
-
-  canvas.width = width;
-  canvas.height = height;
-  const ctx = canvas.getContext('2d');
-  if (!ctx) return null;
-
-  const gradient = ctx.createLinearGradient(0, 0, 0, height);
-  gradient.addColorStop(0, theme.backgroundTop);
-  gradient.addColorStop(1, theme.backgroundBottom);
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, width, height);
-
-  ctx.lineWidth = 2;
-  ctx.strokeStyle = theme.frameBorder;
-  ctx.strokeRect(46, 46, width - 92, height - 92);
-
-  ctx.fillStyle = theme.text;
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'top';
-  ctx.font = `${quoteFontSize}px "Playfair Display", serif`;
-
-  const quoteLines = wrapTextToLines(ctx, `“${quoteText}”`, maxTextWidth);
-  const quoteBlockHeight = quoteLines.length * quoteLineHeight;
-  const authorLineHeight = Math.round(authorFontSize * 1.35);
-  const authorBlockHeight = authorText ? authorLineHeight : 0;
-  const blockGap = authorText ? 72 : 0;
-  const totalBlockHeight = quoteBlockHeight + blockGap + authorBlockHeight;
-  let cursorY = Math.round((height - totalBlockHeight) / 2);
-
-  for (const line of quoteLines) {
-    ctx.fillText(line, width / 2, cursorY);
-    cursorY += quoteLineHeight;
-  }
-
-  if (authorText) {
-    cursorY += blockGap;
-    ctx.fillStyle = theme.author;
-    ctx.font = `${authorFontSize}px "Inter", sans-serif`;
-    ctx.fillText(`— ${authorText}`, width / 2, cursorY);
-  }
-
-  ctx.fillStyle = theme.watermark;
-  ctx.font = '500 28px "Inter", sans-serif';
-  ctx.fillText('paramoliterario.com', width / 2, height - 116);
-
-  return canvas;
-}
-
 function canvasToBlob(canvas, mimeType = 'image/png', quality = 0.92) {
   return new Promise((resolve, reject) => {
     if (!canvas?.toBlob) {
@@ -1280,23 +1178,6 @@ function canvasToBlob(canvas, mimeType = 'image/png', quality = 0.92) {
   });
 }
 
-async function createShareImageFromCanvas(canvas) {
-  const id = getQuoteIdentifier();
-  try {
-    const pngBlob = await canvasToBlob(canvas, 'image/png');
-    return {
-      blob: pngBlob,
-      file: new File([pngBlob], `paramo_frase_${id}.png`, { type: 'image/png' })
-    };
-  } catch {
-    const jpegBlob = await canvasToBlob(canvas, 'image/jpeg', 0.94);
-    return {
-      blob: jpegBlob,
-      file: new File([jpegBlob], `paramo_frase_${id}.jpg`, { type: 'image/jpeg' })
-    };
-  }
-}
-
 function triggerImageDownload(blob, fileName) {
   const downloadUrl = URL.createObjectURL(blob);
   const link = document.createElement('a');
@@ -1308,52 +1189,82 @@ function triggerImageDownload(blob, fileName) {
   URL.revokeObjectURL(downloadUrl);
 }
 
+function showShareFeedback(message) {
+  if (!shareFeedbackRef) return;
+  if (!message) {
+    shareFeedbackRef.hidden = true;
+    shareFeedbackRef.textContent = '';
+    return;
+  }
+  shareFeedbackRef.hidden = false;
+  shareFeedbackRef.textContent = message;
+}
+
 async function shareQuoteAsImage() {
   if (!quoteCardRef || !currentQuote) return;
+  console.log('click detectado');
   if (shareButtonRef) {
     shareButtonRef.disabled = true;
+    shareButtonRef.dataset.originalText = shareButtonRef.textContent ?? 'Compartir como imagen';
+    shareButtonRef.textContent = 'Generando…';
   }
-  let blob = null;
-  let file = null;
+  showShareFeedback('');
   try {
-    const canvas = canvasFromQuoteCard();
-    if (!canvas) return;
-    const renderedImage = await createShareImageFromCanvas(canvas);
-    blob = renderedImage.blob;
-    file = renderedImage.file;
-    const quoteText = getQuoteShareText();
+    if (typeof window.html2canvas !== 'function') {
+      throw new Error('html2canvas no está disponible');
+    }
+    const quoteCard = document.querySelector('#quote-card');
+    if (!quoteCard) {
+      throw new Error('No se encontró #quote-card');
+    }
+    console.log('quote-card encontrado');
+    const canvas = await window.html2canvas(quoteCard, {
+      backgroundColor: null,
+      scale: 2,
+      useCORS: true,
+      logging: true
+    });
+    console.log('canvas generado');
+    const blob = await canvasToBlob(canvas, 'image/png');
+    console.log('blob creado');
+
+    const fileName = `paramo-literario-frase-${getQuoteIdentifier()}.png`;
+    const file = new File([blob], fileName, { type: 'image/png' });
     const shareData = {
-      files: [file],
-      text: quoteText,
-      title: 'Páramo Literario'
+      title: 'Páramo Literario',
+      text: 'Fragmento compartido desde Páramo Literario',
+      files: [file]
     };
-    if (navigator.canShare?.(shareData)) {
+
+    if (typeof navigator.share === 'function' && navigator.canShare?.({ files: [file] })) {
       await navigator.share(shareData);
-    } else if (typeof navigator.share === 'function') {
-      await navigator.share({ text: quoteText, title: 'Páramo Literario' });
-      triggerImageDownload(blob, file.name);
-    } else {
-      triggerImageDownload(blob, file.name);
+      console.log('compartido');
+      return;
     }
+
+    triggerImageDownload(blob, 'paramo-literario-frase.png');
+    console.log('descargado');
   } catch (error) {
-    if (blob) {
-      triggerImageDownload(blob, file?.name ?? `paramo_frase_${getQuoteIdentifier()}.png`);
-    }
     console.error('No se pudo generar la imagen', error);
+    showShareFeedback('No se pudo generar la imagen. Inténtalo de nuevo.');
   } finally {
     if (shareButtonRef) {
       shareButtonRef.disabled = false;
+      shareButtonRef.textContent = shareButtonRef.dataset.originalText ?? 'Compartir como imagen';
+      delete shareButtonRef.dataset.originalText;
     }
   }
 }
 
 function initShareButton() {
   quoteCardRef = document.getElementById('quote-card');
-  shareButtonRef = document.querySelector('.share-image-button');
+  shareButtonRef = document.getElementById('share-image-btn');
+  shareFeedbackRef = document.getElementById('share-feedback');
   if (shareButtonRef) {
     shareButtonRef.addEventListener('click', () => {
       shareQuoteAsImage();
     });
+    console.log('Share button ready');
   }
 }
 
