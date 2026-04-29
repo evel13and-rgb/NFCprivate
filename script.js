@@ -1208,8 +1208,6 @@ async function shareQuoteAsImage() {
 
   if (shareButtonRef) {
     shareButtonRef.disabled = true;
-    shareButtonRef.dataset.originalText = shareButtonRef.textContent ?? 'Compartir como imagen';
-    shareButtonRef.textContent = 'Generando…';
   }
 
   showShareFeedback('');
@@ -1273,8 +1271,6 @@ async function shareQuoteAsImage() {
     isSharingImage = false;
     if (shareButtonRef) {
       shareButtonRef.disabled = false;
-      shareButtonRef.textContent = shareButtonRef.dataset.originalText ?? 'Compartir como imagen';
-      delete shareButtonRef.dataset.originalText;
     }
   }
 }
