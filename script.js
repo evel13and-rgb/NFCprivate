@@ -1202,6 +1202,7 @@ function showShareFeedback(message) {
 }
 
 async function shareQuoteAsImage() {
+  console.log('1. Click detectado');
   if (!quoteCardRef || !currentQuote || isSharingImage) return;
   isSharingImage = true;
 
@@ -1219,6 +1220,7 @@ async function shareQuoteAsImage() {
     }
 
     const quoteCard = document.querySelector('#quote-card');
+    console.log('2. Card encontrado', quoteCard);
     if (!quoteCard) {
       throw new Error('No se encontró #quote-card');
     }
@@ -1230,7 +1232,9 @@ async function shareQuoteAsImage() {
       logging: false
     });
 
+    console.log('3. Canvas generado', canvas);
     const blob = await canvasToBlob(canvas, 'image/png');
+    console.log('4. Blob generado', blob);
     const fileName = `paramo-literario-frase-${getQuoteIdentifier()}.png`;
     const canBuildFile = typeof File === 'function';
     const file = canBuildFile ? new File([blob], fileName, { type: 'image/png' }) : null;
@@ -1242,18 +1246,27 @@ async function shareQuoteAsImage() {
       navigator.canShare({ files: [file] })
     );
 
+    console.log('5. Intentando compartir/descargar');
     if (canShareFile) {
-      await navigator.share({
-        title: 'Páramo Literario',
-        text: getQuoteShareText(),
-        files: [file]
-      });
-      return;
+      try {
+        await navigator.share({
+          title: 'Páramo Literario',
+          text: getQuoteShareText(),
+          files: [file]
+        });
+        return;
+      } catch (error) {
+        console.error(error);
+        triggerImageDownload(blob, fileName);
+        showShareFeedback('No se pudo abrir el menú de compartir. Descargamos la imagen automáticamente.');
+        return;
+      }
     }
 
     triggerImageDownload(blob, fileName);
     showShareFeedback('Tu dispositivo no permite compartir archivos directo. Descargamos la imagen para que la compartas.');
   } catch (error) {
+    console.error(error);
     console.error('No se pudo generar la imagen', error);
     showShareFeedback('No se pudo generar la imagen. Inténtalo de nuevo.');
   } finally {
@@ -1267,9 +1280,13 @@ async function shareQuoteAsImage() {
 }
 
 function initShareButton() {
+  console.log('DOM cargado');
+  console.log('html2canvas:', typeof window.html2canvas);
   quoteCardRef = document.getElementById('quote-card');
   shareButtonRef = document.getElementById('share-image-btn');
   shareFeedbackRef = document.getElementById('share-feedback');
+  console.log('Botón compartir:', shareButtonRef);
+  console.log('Quote card:', quoteCardRef);
   if (shareButtonRef) {
     shareButtonRef.addEventListener('click', (event) => {
       event.preventDefault();
