@@ -654,6 +654,7 @@ let quoteElementRef = null;
 let quoteCardRef = null;
 let shareButtonRef = null;
 let shareFeedbackRef = null;
+let isSharingImage = false;
 let allWordElements = [];
 let animatedWordElements = [];
 let dayHandlersAttached = false;
@@ -1201,53 +1202,62 @@ function showShareFeedback(message) {
 }
 
 async function shareQuoteAsImage() {
-  if (!quoteCardRef || !currentQuote) return;
-  console.log('click detectado');
+  if (!quoteCardRef || !currentQuote || isSharingImage) return;
+  isSharingImage = true;
+
   if (shareButtonRef) {
     shareButtonRef.disabled = true;
     shareButtonRef.dataset.originalText = shareButtonRef.textContent ?? 'Compartir como imagen';
     shareButtonRef.textContent = 'Generando…';
   }
+
   showShareFeedback('');
+
   try {
     if (typeof window.html2canvas !== 'function') {
       throw new Error('html2canvas no está disponible');
     }
+
     const quoteCard = document.querySelector('#quote-card');
     if (!quoteCard) {
       throw new Error('No se encontró #quote-card');
     }
-    console.log('quote-card encontrado');
+
     const canvas = await window.html2canvas(quoteCard, {
       backgroundColor: null,
       scale: 2,
       useCORS: true,
-      logging: true
+      logging: false
     });
-    console.log('canvas generado');
+
     const blob = await canvasToBlob(canvas, 'image/png');
-    console.log('blob creado');
-
     const fileName = `paramo-literario-frase-${getQuoteIdentifier()}.png`;
-    const file = new File([blob], fileName, { type: 'image/png' });
-    const shareData = {
-      title: 'Páramo Literario',
-      text: 'Fragmento compartido desde Páramo Literario',
-      files: [file]
-    };
+    const canBuildFile = typeof File === 'function';
+    const file = canBuildFile ? new File([blob], fileName, { type: 'image/png' }) : null;
 
-    if (typeof navigator.share === 'function' && navigator.canShare?.({ files: [file] })) {
-      await navigator.share(shareData);
-      console.log('compartido');
+    const canShareFile = Boolean(
+      file &&
+      typeof navigator.share === 'function' &&
+      typeof navigator.canShare === 'function' &&
+      navigator.canShare({ files: [file] })
+    );
+
+    if (canShareFile) {
+      await navigator.share({
+        title: 'Páramo Literario',
+        text: getQuoteShareText(),
+        files: [file]
+      });
       return;
     }
 
-    triggerImageDownload(blob, 'paramo-literario-frase.png');
-    console.log('descargado');
+    triggerImageDownload(blob, fileName);
+    showShareFeedback('Tu dispositivo no permite compartir archivos directo. Descargamos la imagen para que la compartas.');
   } catch (error) {
     console.error('No se pudo generar la imagen', error);
     showShareFeedback('No se pudo generar la imagen. Inténtalo de nuevo.');
   } finally {
+    isSharingImage = false;
     if (shareButtonRef) {
       shareButtonRef.disabled = false;
       shareButtonRef.textContent = shareButtonRef.dataset.originalText ?? 'Compartir como imagen';
@@ -1261,10 +1271,11 @@ function initShareButton() {
   shareButtonRef = document.getElementById('share-image-btn');
   shareFeedbackRef = document.getElementById('share-feedback');
   if (shareButtonRef) {
-    shareButtonRef.addEventListener('click', () => {
+    shareButtonRef.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
       shareQuoteAsImage();
     });
-    console.log('Share button ready');
   }
 }
 
