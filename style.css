@@ -49,6 +49,8 @@ body.splash-done main.wrap {
 #splash-screen {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100dvh;
   min-height: 100dvh;
   z-index: 9999;
   overflow: hidden;
@@ -57,8 +59,8 @@ body.splash-done main.wrap {
   background: linear-gradient(
     to bottom,
     #f7f6f1 0%,
-    #eeeeea 66%,
-    #343434 84%,
+    #eeeeea 68%,
+    #2f2f2f 76%,
     #1f1f1f 100%
   );
   transition: opacity 0.38s ease;
@@ -79,7 +81,7 @@ body.splash-done main.wrap {
   height: clamp(28px, 7vw, 36px);
   transform: translateX(-50%);
   color: rgba(43, 43, 43, 0.75);
-  z-index: 3;
+  z-index: 4;
 }
 
 .figure-head,
@@ -96,14 +98,14 @@ body.splash-done main.wrap {
 
 .splash-shadow {
   left: 50%;
-  top: calc(70% + clamp(28px, 7vw, 36px) - 3px);
+  top: calc(70% + clamp(28px, 7vw, 36px) - 2px);
   width: 70px;
   height: 180px;
-  transform: translateX(-50%) scale(1);
+  transform: translateX(-50%);
   transform-origin: top center;
   z-index: 2;
-  opacity: 0.3;
-  background: radial-gradient(ellipse at 50% 4%, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.18) 28%, rgba(0, 0, 0, 0.08) 56%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.24;
+  background: radial-gradient(ellipse at 50% 4%, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.2) 26%, rgba(0, 0, 0, 0.1) 55%, rgba(0, 0, 0, 0) 100%);
   animation: shadow-grow 2s 0.4s ease-out forwards;
 }
 
@@ -111,40 +113,44 @@ body.splash-done main.wrap {
   left: 50%;
   top: 80%;
   width: min(300px, 84vw);
-  height: 18dvh;
+  height: 20dvh;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 3;
 }
 
 .murmur {
+  --drift-x: 8px;
+  --rise-y: -100px;
   position: absolute;
+  bottom: 0;
   font-size: clamp(8px, 2vw, 12px);
   color: rgba(60, 60, 60, 0.18);
   font-family: 'Playfair Display', 'Times New Roman', serif;
   opacity: 0;
-  animation: murmur-float 2.4s ease-out forwards;
+  animation: murmur-float 2.3s ease-out forwards;
 }
-.murmur--1 { left: 14%; animation-delay: 0.8s; }
-.murmur--2 { left: 24%; animation-delay: 0.9s; }
-.murmur--3 { left: 33%; animation-delay: 1s; }
-.murmur--4 { left: 42%; animation-delay: 1.1s; }
-.murmur--5 { left: 51%; animation-delay: 0.95s; }
-.murmur--6 { left: 60%; animation-delay: 1.15s; }
-.murmur--7 { left: 68%; animation-delay: 1.05s; }
-.murmur--8 { left: 75%; animation-delay: 0.85s; }
-.murmur--9 { left: 82%; animation-delay: 1.2s; }
-.murmur--10 { left: 89%; animation-delay: 1.25s; }
+.murmur--1 { left: 14%; --drift-x: -6px; --rise-y: -84px; animation-delay: 0.8s; }
+.murmur--2 { left: 24%; --drift-x: 5px; --rise-y: -96px; animation-delay: 0.9s; }
+.murmur--3 { left: 33%; --drift-x: -10px; --rise-y: -108px; animation-delay: 1s; }
+.murmur--4 { left: 42%; --drift-x: 8px; --rise-y: -88px; animation-delay: 1.1s; }
+.murmur--5 { left: 51%; --drift-x: -4px; --rise-y: -102px; animation-delay: 0.95s; }
+.murmur--6 { left: 60%; --drift-x: 10px; --rise-y: -116px; animation-delay: 1.15s; }
+.murmur--7 { left: 68%; --drift-x: -12px; --rise-y: -92px; animation-delay: 1.05s; }
+.murmur--8 { left: 75%; --drift-x: 7px; --rise-y: -106px; animation-delay: 0.85s; }
+.murmur--9 { left: 82%; --drift-x: -8px; --rise-y: -98px; animation-delay: 1.2s; }
+.murmur--10 { left: 89%; --drift-x: 6px; --rise-y: -112px; animation-delay: 1.25s; }
 
 .splash-title {
   left: 50%;
-  top: 84%;
+  top: auto;
+  bottom: max(5dvh, calc(22px + env(safe-area-inset-bottom)));
   transform: translateX(-50%);
   text-align: center;
   font-family: 'Playfair Display', 'Times New Roman', serif;
   letter-spacing: 0.26em;
   color: rgba(245, 245, 240, 0.55);
   opacity: 0;
-  z-index: 4;
+  z-index: 5;
   animation: title-appear 0.8s 2.2s ease forwards;
 }
 
@@ -152,15 +158,15 @@ body.splash-done main.wrap {
 .splash-title-sub { display: block; margin-top: 0.3rem; font-size: clamp(12px, 3.4vw, 15px); line-height: 1; }
 
 @keyframes shadow-grow {
-  from { width: 70px; height: 180px; opacity: 0.16; }
-  to { width: min(72vw, 280px); height: min(54dvh, 430px); opacity: 0.36; }
+  from { width: 70px; height: 180px; opacity: 0.18; }
+  to { width: min(72vw, 280px); height: min(52dvh, 430px); opacity: 0.36; }
 }
 
 @keyframes murmur-float {
   0% { transform: translate3d(0, 0, 0); opacity: 0; }
-  20% { opacity: 0.14; }
+  20% { opacity: 0.12; }
   55% { opacity: 0.18; }
-  100% { transform: translate3d(8px, -110px, 0); opacity: 0; }
+  100% { transform: translate3d(var(--drift-x), var(--rise-y), 0); opacity: 0; }
 }
 
 @keyframes title-appear {
