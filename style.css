@@ -185,6 +185,53 @@ body.splash-done main.wrap {
   .murmur { opacity: 0.1; }
 }
 
+@media (max-width: 768px) {
+  #splash-screen {
+    background:
+      radial-gradient(120% 48% at 50% 35%, rgba(245, 245, 240, 0.34) 0%, rgba(245, 245, 240, 0) 74%),
+      linear-gradient(to bottom, rgba(236, 236, 232, 0.42) 0%, rgba(236, 236, 232, 0.1) 36%, rgba(0, 0, 0, 0) 60%),
+      repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.015) 0 2px,
+        rgba(0, 0, 0, 0.012) 2px 4px
+      ),
+      linear-gradient(
+        to bottom,
+        #f5f4ef 0%,
+        #eae9e4 52%,
+        #343434 58%,
+        #1d1d1d 100%
+      );
+  }
+
+  .splash-figure {
+    top: 52%;
+    width: clamp(12px, 3.4vw, 18px);
+    height: clamp(42px, 10.5vw, 54px);
+    color: rgba(36, 36, 36, 0.82);
+  }
+
+  .figure-head { width: 8px; height: 8px; }
+  .figure-body { width: 5px; height: 20px; top: 9px; }
+  .figure-legs { height: 18px; }
+  .figure-legs::before,
+  .figure-legs::after { width: 2.5px; height: 16px; }
+
+  .splash-shadow {
+    top: calc(52% + clamp(42px, 10.5vw, 54px) - 4px);
+    width: clamp(74px, 25vw, 120px);
+    height: min(34dvh, 320px);
+    opacity: 0.34;
+    background: radial-gradient(
+      ellipse at 50% 4%,
+      rgba(0, 0, 0, 0.36) 0%,
+      rgba(0, 0, 0, 0.28) 24%,
+      rgba(0, 0, 0, 0.15) 54%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
 body[data-mode='day'] {
   background-color: var(--sand);
   color: var(--text);
