@@ -1372,11 +1372,11 @@ function runSplashScreen() {
     splash.classList.add('is-leaving');
     body.classList.remove('splash-active');
     body.classList.add('splash-done');
-  }, 3000);
+  }, 6000);
 
   window.setTimeout(() => {
     splash.classList.add('is-hidden');
-  }, 3400);
+  }, 6900);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
