@@ -1359,8 +1359,29 @@ function initApp() {
   initShareButton();
 }
 
+function runSplashScreen() {
+  const splash = document.getElementById('splash-screen');
+  const body = document.body;
+  if (!splash || !body) {
+    return;
+  }
+
+  body.classList.add('splash-active');
+
+  window.setTimeout(() => {
+    splash.classList.add('is-leaving');
+    body.classList.remove('splash-active');
+    body.classList.add('splash-done');
+  }, 3000);
+
+  window.setTimeout(() => {
+    splash.classList.add('is-hidden');
+  }, 3400);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
   initFireflyAura();
   scheduleDayNightModeUpdates();
+  runSplashScreen();
 });
