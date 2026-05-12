@@ -88,28 +88,22 @@ body.splash-done main.wrap {
 .splash-figure {
   left: 50%;
   top: 70%;
-  width: clamp(8px, 2.3vw, 12px);
-  height: clamp(28px, 7vw, 36px);
+  width: clamp(10px, 2.4vw, 14px);
+  height: clamp(34px, 7.4vw, 42px);
   transform: translateX(-50%);
-  color: rgba(43, 43, 43, 0.75);
+  opacity: 0.62;
+  filter: blur(0.6px);
+  background:
+    radial-gradient(80% 32% at 50% 10%, rgba(46, 46, 46, 0.62) 0%, rgba(46, 46, 46, 0.5) 58%, rgba(46, 46, 46, 0.18) 100%),
+    linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(36, 36, 36, 0.46) 66%, rgba(28, 28, 28, 0.08) 100%);
+  clip-path: polygon(30% 0%, 70% 0%, 84% 22%, 86% 45%, 78% 72%, 66% 92%, 56% 100%, 44% 100%, 34% 92%, 22% 72%, 14% 45%, 16% 22%);
+  border-radius: 44% 44% 40% 40% / 18% 18% 44% 44%;
   z-index: 4;
 }
 
-.figure-head,
-.figure-body,
-.figure-legs,
-.figure-legs::before,
-.figure-legs::after { position: absolute; display: block; content: ''; background: currentColor; }
-
-.figure-head { width: 6px; height: 6px; border-radius: 50%; left: 50%; top: 0; transform: translateX(-50%); }
-.figure-body { width: 4px; height: 14px; border-radius: 3px; left: 50%; top: 7px; transform: translateX(-50%); }
-.figure-legs { inset: auto auto 0 0; width: 100%; height: 13px; background: transparent; }
-.figure-legs::before { width: 2px; height: 12px; left: 3px; bottom: 0; border-radius: 2px; }
-.figure-legs::after { width: 2px; height: 12px; right: 3px; bottom: 0; border-radius: 2px; }
-
 .splash-shadow {
   left: 50%;
-  top: calc(70% + clamp(28px, 7vw, 36px) - 2px);
+  top: calc(70% + clamp(34px, 7.4vw, 42px) - 6px);
   width: 70px;
   height: 180px;
   transform: translateX(-50%);
@@ -224,19 +218,14 @@ body.splash-done main.wrap {
 
   .splash-figure {
     top: 52%;
-    width: clamp(12px, 3.4vw, 18px);
-    height: clamp(42px, 10.5vw, 54px);
-    color: rgba(36, 36, 36, 0.82);
+    width: clamp(11px, 3.1vw, 14px);
+    height: clamp(36px, 9.4vw, 44px);
+    opacity: 0.66;
+    filter: blur(0.7px);
   }
 
-  .figure-head { width: 8px; height: 8px; }
-  .figure-body { width: 5px; height: 20px; top: 9px; }
-  .figure-legs { height: 18px; }
-  .figure-legs::before,
-  .figure-legs::after { width: 2.5px; height: 16px; }
-
   .splash-shadow {
-    top: calc(52% + clamp(42px, 10.5vw, 54px) - 4px);
+    top: calc(52% + clamp(36px, 9.4vw, 44px) - 7px);
     width: clamp(74px, 25vw, 120px);
     height: min(34dvh, 320px);
     opacity: 0.34;
