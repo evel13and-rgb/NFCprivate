@@ -2,16 +2,6 @@ import { createQuoteManager } from './quoteLogic.js';
 import { initFireflyAura } from './fireflies.js';
 import { isNightTime } from './dayNight.js';
 
-initCinematicSplash();
-
-function initCinematicSplash() {
-  const splash = document.getElementById('splash-screen');
-  if (!splash) return;
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const durationMs = reduceMotion ? 800 : 7000;
-  window.setTimeout(() => splash.remove(), durationMs);
-}
-
 const PRE_RANDOM_QUOTES = [];
 const E_A_FRAGMENTOS_QUOTES = [
   {
