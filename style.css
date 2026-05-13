@@ -1,10 +1,13 @@
 :root {
-  color-scheme: light;
-  --sand: #ffffff;
-  --title: #565c33;
-  --text: #2f2f2f;
-  --author: #6b675f;
-  --ink-soft: rgba(86, 92, 51, 0.24);
+  color-scheme: dark;
+  --sand: #121212;
+  --sand-soft: #1a1a1a;
+  --card: #232323;
+  --title: #c8a25a;
+  --title-soft: #a88445;
+  --text: #f2efe8;
+  --author: #b8b2a8;
+  --ink-soft: rgba(200, 162, 90, 0.25);
   --sand-night: #0d0a10;
   --title-night: #f9f3da;
   --text-night: #f6efd9;
@@ -33,13 +36,9 @@ body {
 body[data-mode='day'] {
   background-color: var(--sand);
   color: var(--text);
-  color-scheme: light;
+  color-scheme: dark;
 }
 
-body[data-mode='day'] .mycelium-layer,
-body[data-mode='day'] .day-motes-layer {
-  display: none;
-}
 
 .sr-only {
   position: absolute;
@@ -61,6 +60,7 @@ main.wrap {
 
 
 .quote-flow {
+  transition: color 0.9s ease, opacity 0.9s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,15 +73,15 @@ main.wrap {
 }
 
 .quote-flow:focus-visible {
-  outline: 3px solid rgba(86, 92, 51, 0.35);
+  outline: 2px solid rgba(200, 162, 90, 0.3);
   outline-offset: 10px;
 }
 
 h1 {
   margin: 0;
   font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: clamp(2rem, 4.2vw, 2.6rem);
   color: var(--title);
@@ -93,8 +93,11 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 0;
-  padding: clamp(0.5rem, 2vw, 1.25rem) clamp(0.25rem, 2vw, 1rem);
+  padding: clamp(0.9rem, 2.4vw, 1.4rem) clamp(0.6rem, 2.4vw, 1.2rem);
   border-radius: 10px;
+  background: var(--sand-soft);
+  border: 1px solid rgba(200, 162, 90, 0.12);
+  transition: background-color 0.9s ease, border-color 0.9s ease;
 }
 
 body.night-fall #quote-card {
@@ -119,7 +122,7 @@ blockquote::after {
   content: '\201C';
   position: absolute;
   font-size: 3rem;
-  color: rgba(86, 92, 51, 0.18);
+  color: rgba(200, 162, 90, 0.25);
   font-style: normal;
 }
 
@@ -248,7 +251,7 @@ body.night-fall .watermark {
   color: color-mix(in srgb, var(--author) 90%, var(--text) 10%);
   cursor: pointer;
   text-decoration: none;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  transition: color 0.8s ease, text-decoration-color 0.8s ease;
 }
 
 .meta-author {
@@ -296,7 +299,7 @@ body.night-fall .watermark {
   color: var(--title);
   font: inherit;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.8s ease, border-color 0.8s ease, color 0.8s ease;
 }
 
 .share-image-icon {
@@ -307,15 +310,14 @@ body.night-fall .watermark {
 
 .share-image-button:hover,
 .share-image-button:focus-visible {
-  transform: translateY(-1px);
-  border-color: color-mix(in srgb, var(--title) 25%, var(--ink-soft) 75%);
-  box-shadow: 0 10px 28px rgba(86, 92, 51, 0.16);
+  background: rgba(200, 162, 90, 0.1);
+  border-color: rgba(200, 162, 90, 0.34);
+  color: color-mix(in srgb, var(--title) 88%, var(--text) 12%);
   outline: none;
 }
 
 .share-image-button:active {
-  transform: translateY(0);
-  box-shadow: none;
+  background: rgba(200, 162, 90, 0.12);
 }
 
 .share-image-button[disabled] {
@@ -418,7 +420,7 @@ body.night-fall blockquote::after {
   pointer-events: none;
   z-index: 0;
   opacity: 0;
-  transition: opacity 2.4s ease;
+  transition: opacity 1.2s ease;
   background: var(--sand);
 }
 
@@ -447,7 +449,7 @@ body.night-fall blockquote::after {
 }
 
 .mycelium-path {
-  stroke: rgba(192, 164, 118, 0.62);
+  stroke: rgba(200, 162, 90, 0.05);
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -455,15 +457,20 @@ body.night-fall blockquote::after {
 }
 
 .mycelium-path--accent {
-  stroke: rgba(167, 137, 96, 0.68);
+  stroke: rgba(200, 162, 90, 0.08);
 }
+
+body[data-mode='day'] .mycelium-layer {
+  background: linear-gradient(180deg, #121212 0%, #171717 100%);
+}
+
 
 .mycelium-layer--resting .mycelium-path[data-pulse='true'] {
   animation: mycelium-breathe var(--mycelium-pulse-duration, 18s) ease-in-out infinite;
 }
 
 .mycelium-layer--resting .mycelium-canvas {
-  opacity: 0;
+  opacity: 0.82;
 }
 
 @keyframes mycelium-breathe {
@@ -499,10 +506,10 @@ body.night-fall blockquote::after {
   pointer-events: none;
   background: radial-gradient(
     circle at 50% 45%,
-    rgba(242, 233, 208, 0.55) 0%,
-    rgba(242, 233, 208, 0.45) 35%,
-    rgba(242, 233, 208, 0.18) 62%,
-    rgba(242, 233, 208, 0) 82%
+    rgba(200, 162, 90, 0.1) 0%,
+    rgba(200, 162, 90, 0.06) 35%,
+    rgba(200, 162, 90, 0.03) 62%,
+    rgba(200, 162, 90, 0) 82%
   );
   mix-blend-mode: lighten;
   opacity: 0;
@@ -529,18 +536,19 @@ body.night-fall blockquote::after {
 }
 
 .day-motes-layer--visible {
-  opacity: 0.6;
+  opacity: 0.35;
 }
 
 .day-mote {
   position: absolute;
+  filter: blur(0.2px);
   bottom: -24px;
   border-radius: 50%;
   width: 3px;
   height: 3px;
   opacity: var(--mote-opacity, 0.26);
   pointer-events: none;
-  box-shadow: 0 0 6px #fff5c8;
+  box-shadow: 0 0 4px rgba(200, 162, 90, 0.2);
   transform: translate3d(0, 0, 0);
   animation-name: day-mote-ascend;
   animation-duration: var(--mote-duration, 16s);
@@ -550,11 +558,11 @@ body.night-fall blockquote::after {
 }
 
 .day-mote--primary {
-  background: radial-gradient(circle, rgba(248, 227, 179, 0.85) 0%, rgba(248, 227, 179, 0) 70%);
+  background: radial-gradient(circle, rgba(200, 162, 90, 0.2) 0%, rgba(200, 162, 90, 0) 72%);
 }
 
 .day-mote--secondary {
-  background: radial-gradient(circle, rgba(239, 220, 165, 0.85) 0%, rgba(239, 220, 165, 0) 70%);
+  background: radial-gradient(circle, rgba(168, 132, 69, 0.18) 0%, rgba(168, 132, 69, 0) 72%);
 }
 
 .day-motes-layer[data-reduce-motion='true'] .day-mote {
@@ -650,6 +658,7 @@ body.night-fall blockquote::after {
 }
 
 .modal {
+  transition: opacity 0.8s ease;
   position: fixed;
   inset: 0;
   display: flex;
@@ -659,7 +668,6 @@ body.night-fall blockquote::after {
   z-index: 12;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.25s ease;
 }
 
 .modal:not(.is-hidden) {
@@ -680,13 +688,20 @@ body.night-fall blockquote::after {
 
 .modal__dialog {
   position: relative;
-  background: linear-gradient(145deg, rgba(242, 233, 208, 0.96), rgba(248, 238, 216, 0.94));
+  background: linear-gradient(145deg, rgba(31, 31, 31, 0.96), rgba(26, 26, 26, 0.94));
   border-radius: 18px;
   padding: clamp(1rem, 3vw, 1.6rem);
   width: min(600px, 90vw);
-  box-shadow: 0 18px 38px rgba(66, 46, 22, 0.18), 0 3px 16px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(166, 132, 82, 0.2);
+  box-shadow: 0 16px 32px rgba(12, 10, 7, 0.36), 0 2px 8px rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(200, 162, 90, 0.2);
 }
+
+body[data-mode='day'] .modal__subtitle,
+body[data-mode='day'] .modal__close,
+body[data-mode='day'] .modal__content {
+  color: var(--author);
+}
+
 
 .modal__header {
   margin-bottom: 0.75rem;
