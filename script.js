@@ -628,6 +628,87 @@ const ANNE_DE_LAS_TEJAS_VERDES_QUOTES = [
   }
 ];
 
+const LA_VIDA_ES_SUENO_QUOTES = [
+  {
+    t: "¿Qué es la vida? Un frenesí.\n¿Qué es la vida? Una ilusión,\nuna sombra, una ficción;\ny el mayor bien es pequeño;\nque toda la vida es sueño,\ny los sueños, sueños son.",
+    a: "Segismundo — Jornada Segunda",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Yo sueño que estoy aquí\ndestas prisiones cargado,\ny soñé que en otro estado\nmás lisonjero me vi.",
+    a: "Segismundo — Jornada Segunda",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Sueña el rey que es rey, y vive\ncon este engaño mandando,\ndisponiendo y gobernando;\ny este aplauso, que recibe\nprestado, en el viento escribe,\ny en cenizas le convierte\nla muerte, ¡desdicha fuerte!\n¿Que hay quien intente reinar,\nviendo que ha de despertar\nen el sueño de la muerte?",
+    a: "Segismundo — Jornada Segunda",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Sueña el rico en su riqueza,\nque más cuidados le ofrece;\nsueña el pobre que padece\nsu miseria y su pobreza;\nsueña el que a medrar empieza,\nsueña el que afana y pretende,\nsueña el que agravia y ofende;\ny en el mundo, en conclusión,\ntodos sueñan lo que son,\naunque ninguno lo entiende.",
+    a: "Segismundo — Jornada Segunda",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "¡Ay mísero de mí, y ay infelice!\nApurar, cielos, pretendo,\nya que me tratáis así,\nqué delito cometí\ncontra vosotros naciendo;\naunque si nací, ya entiendo\nqué delito he cometido;\nbastante causa ha tenido\nvuestra justicia y rigor,\npues el delito mayor\ndel hombre es haber nacido.",
+    a: "Segismundo — Jornada Primera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Nace el ave, y con las galas\nque le dan belleza suma,\napenas es flor de pluma,\no ramillete con alas,\ncuando las etéreas salas\ncorta con velocidad,\nnegándose a la piedad\ndel nido que deja en calma;\n¿y teniendo yo más alma,\ntengo menos libertad?",
+    a: "Segismundo — Jornada Primera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Nace el bruto, y con la piel\nque dibujan manchas bellas,\napenas signo es de estrellas,\ngracias al docto pincel,\ncuando, atrevido y cruel,\nla humana necesidad\nle enseña a tener crueldad,\nmonstruo de su laberinto;\n¿y yo, con mejor instinto,\ntengo menos libertad?",
+    a: "Segismundo — Jornada Primera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Obrar bien es lo que importa;\nsi fuere verdad, por serlo;\nsi no, por ganar amigos\npara cuando despertemos.",
+    a: "Segismundo — Jornada Tercera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Que estoy soñando, y que quiero\nobrar bien, pues no se pierde\nobrar bien, aun entre sueños.",
+    a: "Segismundo — Jornada Tercera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "A reinar, fortuna, vamos;\nno me despiertes si duermo,\ny si es verdad, no me duermas.",
+    a: "Segismundo — Jornada Tercera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Mal, Polonia, recibes\na un extranjero, pues con sangre escribes\nsu entrada en tus arenas.",
+    a: "Rosaura — Jornada Primera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Venció el amor, venció el honor.",
+    a: "Segismundo — Jornada Tercera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  },
+  {
+    t: "Que cuando el valor se humilla,\nse engrandece más.",
+    a: "Segismundo — Jornada Tercera",
+    obra: "La vida es sueño, Pedro Calderón de la Barca",
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -643,7 +724,8 @@ const QUOTES = [
   ...TENGO_MIEDO_TORERO_QUOTES,
   ...FIRMIN_QUOTES,
   ...EL_COLOR_PURPURA_QUOTES,
-  ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES
+  ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES,
+  ...LA_VIDA_ES_SUENO_QUOTES
 ];
 
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
