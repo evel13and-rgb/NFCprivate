@@ -2,15 +2,6 @@ import { createQuoteManager } from './quoteLogic.js';
 import { initFireflyAura } from './fireflies.js';
 import { isNightTime } from './dayNight.js';
 
-const PRE_PAGE_DURATION_MS = 7000;
-const prePageElement = document.getElementById('pre-page');
-if (prePageElement) {
-  window.setTimeout(() => {
-    prePageElement.setAttribute('aria-hidden', 'true');
-    prePageElement.remove();
-  }, PRE_PAGE_DURATION_MS);
-}
-
 const PRE_RANDOM_QUOTES = [];
 const E_A_FRAGMENTOS_QUOTES = [
   {
