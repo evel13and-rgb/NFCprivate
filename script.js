@@ -735,8 +735,10 @@ let currentQuote = null;
 let quoteElementRef = null;
 let quoteCardRef = null;
 let shareButtonRef = null;
+let listenVoiceButtonRef = null;
 let shareFeedbackRef = null;
 let isSharingImage = false;
+let currentSpeechUtterance = null;
 let allWordElements = [];
 let animatedWordElements = [];
 let dayHandlersAttached = false;
@@ -1212,14 +1214,14 @@ function initMetadataInteractions() {
   bindModal('author');
   bindModal('work');
 
-  if (authorLink) {
+  if (authorLink?.tagName === 'BUTTON') {
     authorLink.addEventListener('click', () => {
       if (authorLink.hidden) return;
       openModal('author', authorLink, authorLink.textContent);
     });
   }
 
-  if (workLink) {
+  if (workLink?.tagName === 'BUTTON') {
     workLink.addEventListener('click', () => {
       if (workLink.hidden) return;
       openModal('work', workLink, workLink.textContent);
@@ -1243,6 +1245,65 @@ function getQuoteShareText() {
   const details = [author, workTitle].filter(Boolean).join(' · ');
   if (!quoteText) return 'Páramo Literario';
   return details ? `“${quoteText}”\n— ${details}` : `“${quoteText}”`;
+}
+
+function getQuoteVoiceText() {
+  const quoteText = (currentQuote?.t ?? '').trim();
+  const { author, workTitle } = getQuoteMetadata(currentQuote);
+  const details = [author, workTitle].filter(Boolean).join(', ');
+  return [quoteText, details].filter(Boolean).join('. ');
+}
+
+function updateListenVoiceButton(isSpeaking = false) {
+  if (!listenVoiceButtonRef) return;
+  listenVoiceButtonRef.classList.toggle('is-speaking', isSpeaking);
+  listenVoiceButtonRef.setAttribute('aria-pressed', String(isSpeaking));
+  const label = listenVoiceButtonRef.querySelector('span:last-child');
+  if (label) {
+    label.textContent = isSpeaking ? 'Detener voz' : 'Escuchar voz';
+  }
+}
+
+function stopQuoteVoice() {
+  if (typeof window !== 'undefined' && window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  currentSpeechUtterance = null;
+  updateListenVoiceButton(false);
+}
+
+function speakQuote() {
+  if (typeof window === 'undefined' || !window.speechSynthesis || typeof SpeechSynthesisUtterance !== 'function') {
+    showShareFeedback('Tu navegador no permite escuchar la frase en voz alta.');
+    return;
+  }
+
+  if (currentSpeechUtterance) {
+    stopQuoteVoice();
+    return;
+  }
+
+  const voiceText = getQuoteVoiceText();
+  if (!voiceText) return;
+
+  const utterance = new SpeechSynthesisUtterance(voiceText);
+  utterance.lang = currentQuote?.lang || 'es-ES';
+  utterance.rate = 0.92;
+  utterance.pitch = 0.9;
+  utterance.onend = () => {
+    currentSpeechUtterance = null;
+    updateListenVoiceButton(false);
+  };
+  utterance.onerror = () => {
+    currentSpeechUtterance = null;
+    updateListenVoiceButton(false);
+    showShareFeedback('No se pudo reproducir la voz. Inténtalo de nuevo.');
+  };
+
+  currentSpeechUtterance = utterance;
+  updateListenVoiceButton(true);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utterance);
 }
 
 function canvasToBlob(canvas, mimeType = 'image/png', quality = 0.92) {
@@ -1284,7 +1345,6 @@ function showShareFeedback(message) {
 }
 
 async function shareQuoteAsImage() {
-  console.log('1. Click detectado');
   if (!quoteCardRef || !currentQuote || isSharingImage) return;
   isSharingImage = true;
 
@@ -1300,7 +1360,6 @@ async function shareQuoteAsImage() {
     }
 
     const quoteCard = document.querySelector('#quote-card');
-    console.log('2. Card encontrado', quoteCard);
     if (!quoteCard) {
       throw new Error('No se encontró #quote-card');
     }
@@ -1312,9 +1371,7 @@ async function shareQuoteAsImage() {
       logging: false
     });
 
-    console.log('3. Canvas generado', canvas);
     const blob = await canvasToBlob(canvas, 'image/png');
-    console.log('4. Blob generado', blob);
     const fileName = `paramo-literario-frase-${getQuoteIdentifier()}.png`;
     const canBuildFile = typeof File === 'function';
     const file = canBuildFile ? new File([blob], fileName, { type: 'image/png' }) : null;
@@ -1326,7 +1383,6 @@ async function shareQuoteAsImage() {
       navigator.canShare({ files: [file] })
     );
 
-    console.log('5. Intentando compartir/descargar');
     if (canShareFile) {
       try {
         await navigator.share({
@@ -1357,14 +1413,20 @@ async function shareQuoteAsImage() {
   }
 }
 
-function initShareButton() {
-  console.log('DOM cargado');
-  console.log('html2canvas:', typeof window.html2canvas);
+function initQuoteActionButtons() {
   quoteCardRef = document.getElementById('quote-card');
   shareButtonRef = document.getElementById('share-image-btn');
+  listenVoiceButtonRef = document.getElementById('listen-voice-btn');
   shareFeedbackRef = document.getElementById('share-feedback');
-  console.log('Botón compartir:', shareButtonRef);
-  console.log('Quote card:', quoteCardRef);
+
+  if (listenVoiceButtonRef) {
+    listenVoiceButtonRef.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      speakQuote();
+    });
+  }
+
   if (shareButtonRef) {
     shareButtonRef.addEventListener('click', (event) => {
       event.preventDefault();
@@ -1379,6 +1441,7 @@ function renderQuote(quote) {
     return;
   }
   currentQuote = quote;
+  stopQuoteVoice();
   if (quoteElementRef) {
     setQuoteTextContent(currentQuote.t ?? '', { includeQuotes: true });
     if (currentQuote.lang) {
@@ -1438,7 +1501,7 @@ function initApp() {
   }
   setGentleMessage(message);
   initMetadataInteractions();
-  initShareButton();
+  initQuoteActionButtons();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
