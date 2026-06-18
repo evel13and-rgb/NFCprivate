@@ -690,7 +690,7 @@ body[data-mode='day'] .mycelium-layer {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  z-index: 0;
+  z-index: 6;
   opacity: 0;
   animation: fireflies-layer-in var(--firefly-fade-in, 2400ms) ease-out forwards;
 }
