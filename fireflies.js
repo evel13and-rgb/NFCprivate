@@ -31,73 +31,22 @@ function pickCount() {
   return Math.floor(randomBetween(MIN_FIREFLIES, MAX_FIREFLIES + 1));
 }
 
-function isOutsideProtectedArea(x, y, protectedRect, margin = 36) {
-  if (!protectedRect) return true;
-  return (
-    x < protectedRect.left - margin ||
-    x > protectedRect.right + margin ||
-    y < protectedRect.top - margin ||
-    y > protectedRect.bottom + margin
-  );
-}
-
-function createTrajectory(protectedRect) {
+function createTrajectory() {
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-  const allowOverlay = viewportWidth <= 600;
-  let attempts = 0;
 
-  while (attempts < 30) {
-    const startX = randomBetween(0, viewportWidth);
-    const startY = randomBetween(0, viewportHeight);
-    const travelX = randomBetween(-viewportWidth * 0.45, viewportWidth * 0.45);
-    const travelY = randomBetween(-viewportHeight * 0.4, viewportHeight * 0.4);
+  const startX = randomBetween(0, viewportWidth);
+  const startY = randomBetween(0, viewportHeight);
+  const travelX = randomBetween(-viewportWidth * 0.55, viewportWidth * 0.55);
+  const travelY = randomBetween(-viewportHeight * 0.5, viewportHeight * 0.5);
+  const endX = clamp(startX + travelX, -120, viewportWidth + 120);
+  const endY = clamp(startY + travelY, -120, viewportHeight + 120);
 
-    const midX = startX + travelX * 0.5;
-    const midY = startY + travelY * 0.5;
-    const endX = startX + travelX;
-    const endY = startY + travelY;
-
-    const withinViewport =
-      startX >= -80 && startX <= viewportWidth + 80 &&
-      startY >= -80 && startY <= viewportHeight + 80 &&
-      endX >= -120 && endX <= viewportWidth + 120 &&
-      endY >= -120 && endY <= viewportHeight + 120;
-
-    const clearOfQuote =
-      allowOverlay ||
-      (isOutsideProtectedArea(startX, startY, protectedRect) &&
-        isOutsideProtectedArea(midX, midY, protectedRect) &&
-        isOutsideProtectedArea(endX, endY, protectedRect));
-
-    if (withinViewport && clearOfQuote) {
-      return {
-        startX,
-        startY,
-        travelX,
-        travelY,
-        midX,
-        midY,
-        endX,
-        endY
-      };
-    }
-    attempts += 1;
-  }
-
-  const fallbackX =
-    allowOverlay || !protectedRect
-      ? randomBetween(12, viewportWidth - 12)
-      : clamp(protectedRect.left - 60, 12, viewportWidth - 12);
-  const fallbackY =
-    allowOverlay || !protectedRect
-      ? randomBetween(12, viewportHeight - 12)
-      : clamp(protectedRect.top - 60, 12, viewportHeight - 12);
   return {
-    startX: fallbackX,
-    startY: fallbackY,
-    travelX: randomBetween(-120, 120),
-    travelY: randomBetween(-90, 90)
+    startX,
+    startY,
+    travelX: endX - startX,
+    travelY: endY - startY
   };
 }
 
@@ -110,8 +59,6 @@ function createFirefliesLayer() {
     layer.dataset.reduceMotion = 'true';
   }
 
-  const quotePanel = document.getElementById('quote-panel');
-  const protectedRect = quotePanel ? quotePanel.getBoundingClientRect() : null;
   const total = pickCount();
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const compactViewport = viewportWidth <= 600;
@@ -136,7 +83,7 @@ function createFirefliesLayer() {
       firefly.style.setProperty('--drift-duration', `${driftDuration.toFixed(2)}s`);
     }
 
-    const trajectory = createTrajectory(protectedRect);
+    const trajectory = createTrajectory();
     firefly.style.left = `${trajectory.startX}px`;
     firefly.style.top = `${trajectory.startY}px`;
 
