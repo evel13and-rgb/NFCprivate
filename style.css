@@ -172,7 +172,7 @@ h1 {
   padding-right: clamp(1.2rem, 4.2vw, 3.2rem);
   border-radius: 14px;
   background:
-    linear-gradient(180deg, rgba(40, 29, 20, 0.86), rgba(24, 18, 13, 0.9)),
+    linear-gradient(180deg, rgba(40, 29, 20, 0.45), rgba(24, 18, 13, 0.52)),
     radial-gradient(circle at 50% 0%, rgba(200, 162, 90, 0.12), transparent 42%);
   border: 1px solid rgba(200, 162, 90, 0.42);
   box-shadow: 0 28px 72px rgba(0, 0, 0, 0.42), inset 0 0 54px rgba(200, 162, 90, 0.035);
@@ -182,7 +182,7 @@ h1 {
 
 body.night-fall #quote-card {
   background:
-    linear-gradient(180deg, rgba(26, 18, 15, 0.88), rgba(13, 10, 16, 0.92)),
+    linear-gradient(180deg, rgba(26, 18, 15, 0.5), rgba(13, 10, 16, 0.58)),
     radial-gradient(circle at 50% 0%, rgba(246, 234, 199, 0.1), transparent 42%);
 }
 
