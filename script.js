@@ -712,6 +712,7 @@ const LA_VIDA_ES_SUENO_QUOTES = [
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
+const SHARE_IMAGE_FILE_NAME = 'paramo-literario.png';
 
 const QUOTES = [
   ...PRE_RANDOM_QUOTES,
@@ -738,6 +739,9 @@ let shareButtonRef = null;
 let listenVoiceButtonRef = null;
 let shareFeedbackRef = null;
 let isSharingImage = false;
+let quoteImageCache = null;
+let quoteImageGenerationPromise = null;
+let shareFallbackImageUrl = null;
 let currentSpeechUtterance = null;
 let allWordElements = [];
 let animatedWordElements = [];
@@ -1239,11 +1243,43 @@ function getQuoteIdentifier() {
   return 'actual';
 }
 
-function getQuoteShareText() {
+function getVisibleElementText(id) {
+  const element = document.getElementById(id);
+  if (!element || element.hidden) return '';
+  return (element.textContent ?? '').replace(/\s+/g, ' ').trim();
+}
+
+function getShareImageTheme() {
+  return document.body?.classList.contains('night-fall') ? 'night' : 'day';
+}
+
+function getQuoteCardSnapshot() {
   const quoteText = (currentQuote?.t ?? '').trim();
-  const { author, workTitle } = getQuoteMetadata(currentQuote);
-  const details = [author, workTitle].filter(Boolean).join(' · ');
-  if (!quoteText) return 'Páramo Literario';
+  const author = getVisibleElementText('author-name');
+  const workTitle = getVisibleElementText('author-work');
+  const title = getVisibleElementText('quote-card-title') || 'Páramo Literario';
+  const theme = getShareImageTheme();
+
+  return {
+    key: [
+      getQuoteIdentifier(),
+      theme,
+      quoteText,
+      author,
+      workTitle
+    ].join('|'),
+    quoteText,
+    author,
+    workTitle,
+    title,
+    theme
+  };
+}
+
+function getSnapshotShareText(snapshot) {
+  const quoteText = (snapshot?.quoteText ?? '').trim();
+  const details = [snapshot?.author, snapshot?.workTitle].filter(Boolean).join(' · ');
+  if (!quoteText) return snapshot?.title || 'Páramo Literario';
   return details ? `“${quoteText}”\n— ${details}` : `“${quoteText}”`;
 }
 
@@ -1322,6 +1358,320 @@ function canvasToBlob(canvas, mimeType = 'image/png', quality = 0.92) {
   });
 }
 
+function drawRoundedRect(ctx, x, y, width, height, radius) {
+  const safeRadius = Math.min(radius, width / 2, height / 2);
+  ctx.beginPath();
+  ctx.moveTo(x + safeRadius, y);
+  ctx.lineTo(x + width - safeRadius, y);
+  ctx.quadraticCurveTo(x + width, y, x + width, y + safeRadius);
+  ctx.lineTo(x + width, y + height - safeRadius);
+  ctx.quadraticCurveTo(x + width, y + height, x + width - safeRadius, y + height);
+  ctx.lineTo(x + safeRadius, y + height);
+  ctx.quadraticCurveTo(x, y + height, x, y + height - safeRadius);
+  ctx.lineTo(x, y + safeRadius);
+  ctx.quadraticCurveTo(x, y, x + safeRadius, y);
+  ctx.closePath();
+}
+
+function measureLetterSpacedText(ctx, text, letterSpacing) {
+  if (!text) return 0;
+  return Array.from(text).reduce((width, character, index) => {
+    return width + ctx.measureText(character).width + (index > 0 ? letterSpacing : 0);
+  }, 0);
+}
+
+function drawLetterSpacedText(ctx, text, centerX, y, letterSpacing) {
+  const characters = Array.from(text);
+  let x = centerX - measureLetterSpacedText(ctx, text, letterSpacing) / 2;
+  for (const character of characters) {
+    ctx.fillText(character, x, y);
+    x += ctx.measureText(character).width + letterSpacing;
+  }
+}
+
+function splitLongWord(ctx, word, maxWidth) {
+  const chunks = [];
+  let current = '';
+  for (const character of Array.from(word)) {
+    const next = `${current}${character}`;
+    if (current && ctx.measureText(next).width > maxWidth) {
+      chunks.push(current);
+      current = character;
+    } else {
+      current = next;
+    }
+  }
+  if (current) {
+    chunks.push(current);
+  }
+  return chunks;
+}
+
+function wrapCanvasText(ctx, text, maxWidth) {
+  const normalized = String(text ?? '')
+    .replace(/\r\n/g, '\n')
+    .split('\n')
+    .map(line => line.trim().replace(/\s+/g, ' '));
+  const lines = [];
+
+  for (const paragraph of normalized) {
+    if (!paragraph) {
+      if (lines.length && lines[lines.length - 1] !== '') {
+        lines.push('');
+      }
+      continue;
+    }
+
+    const words = paragraph.split(' ');
+    let current = '';
+    for (const word of words) {
+      const candidate = current ? `${current} ${word}` : word;
+      if (ctx.measureText(candidate).width <= maxWidth) {
+        current = candidate;
+        continue;
+      }
+
+      if (current) {
+        lines.push(current);
+        current = '';
+      }
+
+      if (ctx.measureText(word).width > maxWidth) {
+        const chunks = splitLongWord(ctx, word, maxWidth);
+        lines.push(...chunks.slice(0, -1));
+        current = chunks[chunks.length - 1] ?? '';
+      } else {
+        current = word;
+      }
+    }
+
+    if (current) {
+      lines.push(current);
+    }
+  }
+
+  return lines.length ? lines : [''];
+}
+
+function getShareQuoteFontSize(quoteText) {
+  const length = quoteText.length;
+  if (length > 1100) return 30;
+  if (length > 850) return 32;
+  if (length > 650) return 35;
+  if (length > 460) return 38;
+  if (length > 280) return 42;
+  return 50;
+}
+
+function getShareImagePalette(theme) {
+  if (theme === 'night') {
+    return {
+      backgroundTop: '#120f15',
+      backgroundBottom: '#0d0a10',
+      glow: 'rgba(246, 234, 199, 0.16)',
+      border: 'rgba(246, 234, 199, 0.28)',
+      title: '#f9f3da',
+      text: '#f6efd9',
+      author: '#d3cab0',
+      shadow: 'rgba(0, 0, 0, 0.48)'
+    };
+  }
+
+  return {
+    backgroundTop: '#181612',
+    backgroundBottom: '#14120f',
+    glow: 'rgba(200, 162, 90, 0.17)',
+    border: 'rgba(200, 162, 90, 0.42)',
+    title: '#c8a25a',
+    text: '#f2efe8',
+    author: '#b8b2a8',
+    shadow: 'rgba(0, 0, 0, 0.44)'
+  };
+}
+
+function createQuoteImageCanvas(snapshot) {
+  const width = 1080;
+  const minHeight = 1350;
+  const paddingX = 96;
+  const maxTextWidth = width - paddingX * 2;
+  const palette = getShareImagePalette(snapshot.theme);
+  const quoteFontSize = getShareQuoteFontSize(snapshot.quoteText);
+  const lineHeight = Math.round(quoteFontSize * 1.36);
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+
+  if (!ctx) {
+    throw new Error('No se pudo crear el canvas');
+  }
+
+  ctx.font = `500 ${quoteFontSize}px "Playfair Display", Georgia, serif`;
+  const quoteLines = wrapCanvasText(ctx, `“${snapshot.quoteText}”`, maxTextWidth);
+  const quoteBlockHeight = quoteLines.reduce((height, line) => {
+    return height + (line ? lineHeight : Math.round(lineHeight * 0.55));
+  }, 0);
+  const metadataHeight = (snapshot.author ? 44 : 0) + (snapshot.workTitle ? 48 : 0);
+  const naturalHeight = 360 + quoteBlockHeight + 84 + metadataHeight + 160;
+  const height = Math.max(minHeight, naturalHeight);
+
+  canvas.width = width;
+  canvas.height = height;
+
+  const background = ctx.createLinearGradient(0, 0, 0, height);
+  background.addColorStop(0, palette.backgroundTop);
+  background.addColorStop(1, palette.backgroundBottom);
+  ctx.fillStyle = background;
+  ctx.fillRect(0, 0, width, height);
+
+  const glow = ctx.createRadialGradient(width / 2, 0, 0, width / 2, 0, width * 0.78);
+  glow.addColorStop(0, palette.glow);
+  glow.addColorStop(0.58, 'rgba(0, 0, 0, 0)');
+  ctx.fillStyle = glow;
+  ctx.fillRect(0, 0, width, height);
+
+  drawRoundedRect(ctx, 28, 28, width - 56, height - 56, 32);
+  ctx.strokeStyle = palette.border;
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'alphabetic';
+  ctx.shadowColor = palette.shadow;
+  ctx.shadowBlur = 22;
+  ctx.shadowOffsetY = 4;
+
+  ctx.fillStyle = palette.title;
+  ctx.font = '500 40px "Playfair Display", Georgia, serif';
+  drawLetterSpacedText(ctx, snapshot.title.toLocaleUpperCase('es'), width / 2, 132, 10);
+
+  ctx.font = '500 132px "Playfair Display", Georgia, serif';
+  ctx.globalAlpha = 0.9;
+  ctx.fillText('“', width / 2, 252);
+  ctx.globalAlpha = 1;
+
+  const ruleY = 304;
+  const ruleWidth = 330;
+  const diamondSize = 13;
+  ctx.shadowBlur = 0;
+  ctx.strokeStyle = palette.border;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(width / 2 - ruleWidth / 2, ruleY);
+  ctx.lineTo(width / 2 - 26, ruleY);
+  ctx.moveTo(width / 2 + 26, ruleY);
+  ctx.lineTo(width / 2 + ruleWidth / 2, ruleY);
+  ctx.stroke();
+  ctx.save();
+  ctx.translate(width / 2, ruleY);
+  ctx.rotate(Math.PI / 4);
+  ctx.fillStyle = palette.title;
+  ctx.fillRect(-diamondSize / 2, -diamondSize / 2, diamondSize, diamondSize);
+  ctx.restore();
+
+  const contentHeight = quoteBlockHeight + 70 + metadataHeight;
+  const availableHeight = height - 420 - 170;
+  let y = 392 + Math.max(0, (availableHeight - contentHeight) * 0.32);
+
+  ctx.fillStyle = palette.text;
+  ctx.font = `500 ${quoteFontSize}px "Playfair Display", Georgia, serif`;
+  ctx.shadowColor = palette.shadow;
+  ctx.shadowBlur = 18;
+  ctx.shadowOffsetY = 3;
+  for (const line of quoteLines) {
+    if (!line) {
+      y += Math.round(lineHeight * 0.55);
+      continue;
+    }
+    ctx.fillText(line, width / 2, y);
+    y += lineHeight;
+  }
+
+  y += 56;
+  ctx.shadowBlur = 0;
+  ctx.fillStyle = palette.title;
+  if (snapshot.author) {
+    ctx.font = '600 28px Inter, Arial, sans-serif';
+    drawLetterSpacedText(ctx, `— ${snapshot.author.toLocaleUpperCase('es')}`, width / 2, y, 6);
+    y += 46;
+  }
+
+  if (snapshot.workTitle) {
+    ctx.fillStyle = palette.author;
+    ctx.font = 'italic 30px "Playfair Display", Georgia, serif';
+    const workLines = wrapCanvasText(ctx, snapshot.workTitle, maxTextWidth * 0.72);
+    for (const line of workLines.slice(0, 2)) {
+      ctx.fillText(line, width / 2, y);
+      y += 38;
+    }
+  }
+
+  ctx.globalAlpha = 0.34;
+  ctx.fillStyle = palette.author;
+  ctx.font = '500 22px Inter, Arial, sans-serif';
+  drawLetterSpacedText(ctx, 'paramoliterario.com', width / 2, height - 82, 4);
+  ctx.globalAlpha = 1;
+
+  return canvas;
+}
+
+async function waitForShareImageFonts() {
+  if (!document.fonts?.ready) return;
+  try {
+    await Promise.race([
+      document.fonts.ready,
+      new Promise(resolve => setTimeout(resolve, 800))
+    ]);
+  } catch {
+    // The canvas can still be generated with fallback fonts.
+  }
+}
+
+async function createQuoteImageBlob(snapshot) {
+  await waitForShareImageFonts();
+  const canvas = createQuoteImageCanvas(snapshot);
+  return canvasToBlob(canvas, 'image/png');
+}
+
+function prepareQuoteImage() {
+  if (!currentQuote) {
+    return Promise.resolve(null);
+  }
+
+  const snapshot = getQuoteCardSnapshot();
+  if (!snapshot.quoteText) {
+    return Promise.resolve(null);
+  }
+
+  if (quoteImageCache?.key === snapshot.key) {
+    return Promise.resolve(quoteImageCache);
+  }
+
+  if (quoteImageGenerationPromise?.key === snapshot.key) {
+    return quoteImageGenerationPromise;
+  }
+
+  const fileName = SHARE_IMAGE_FILE_NAME;
+  const generation = createQuoteImageBlob(snapshot)
+    .then(blob => {
+      const result = {
+        key: snapshot.key,
+        blob,
+        fileName,
+        text: getSnapshotShareText(snapshot)
+      };
+      quoteImageCache = result;
+      return result;
+    })
+    .finally(() => {
+      if (quoteImageGenerationPromise === generation) {
+        quoteImageGenerationPromise = null;
+      }
+    });
+
+  generation.key = snapshot.key;
+  quoteImageGenerationPromise = generation;
+  return generation;
+}
+
 function triggerImageDownload(blob, fileName) {
   const downloadUrl = URL.createObjectURL(blob);
   const link = document.createElement('a');
@@ -1331,6 +1681,90 @@ function triggerImageDownload(blob, fileName) {
   link.click();
   link.remove();
   URL.revokeObjectURL(downloadUrl);
+}
+
+function isMobileShareDevice() {
+  const userAgent = navigator.userAgent || '';
+  return /Android|iPhone|iPad|iPod/i.test(userAgent) || (
+    /Macintosh/i.test(userAgent) &&
+    Number(navigator.maxTouchPoints || 0) > 1
+  );
+}
+
+function createShareImageFile(blob) {
+  if (!blob || typeof File !== 'function') return null;
+  return new File([blob], SHARE_IMAGE_FILE_NAME, { type: 'image/png' });
+}
+
+function openImageInNewTab(blob) {
+  const imageUrl = URL.createObjectURL(blob);
+  const openedWindow = window.open(imageUrl, '_blank');
+
+  if (!openedWindow) {
+    URL.revokeObjectURL(imageUrl);
+    return false;
+  }
+
+  openedWindow.opener = null;
+
+  window.setTimeout(() => {
+    URL.revokeObjectURL(imageUrl);
+  }, 60000);
+
+  return true;
+}
+
+function hideShareImageFallback() {
+  const fallback = document.getElementById('share-image-fallback');
+  if (fallback) {
+    const image = fallback.querySelector('img');
+    if (image) {
+      image.removeAttribute('src');
+    }
+    fallback.hidden = true;
+  }
+
+  if (shareFallbackImageUrl) {
+    URL.revokeObjectURL(shareFallbackImageUrl);
+    shareFallbackImageUrl = null;
+  }
+}
+
+function showInlineShareImageFallback(blob) {
+  hideShareImageFallback();
+
+  const imageUrl = URL.createObjectURL(blob);
+  shareFallbackImageUrl = imageUrl;
+
+  let fallback = document.getElementById('share-image-fallback');
+  if (!fallback) {
+    fallback = document.createElement('figure');
+    fallback.id = 'share-image-fallback';
+    fallback.className = 'share-image-fallback';
+
+    const image = document.createElement('img');
+    image.alt = 'Imagen generada de P\u00e1ramo Literario';
+    fallback.appendChild(image);
+
+    const anchor = shareFeedbackRef || quoteCardRef;
+    anchor?.insertAdjacentElement('afterend', fallback);
+  }
+
+  const image = fallback.querySelector('img');
+  if (image) {
+    image.src = imageUrl;
+  }
+  fallback.hidden = false;
+}
+
+function showMobileImageFallback(blob) {
+  if (openImageInNewTab(blob)) {
+    showShareFeedback('Imagen abierta en una nueva pesta\u00f1a. Mant\u00e9n pulsada la imagen para guardarla.');
+    return;
+  }
+
+  showInlineShareImageFallback(blob);
+  showShareFeedback('Mant\u00e9n pulsada la imagen para guardarla.');
 }
 
 function showShareFeedback(message) {
@@ -1344,6 +1778,26 @@ function showShareFeedback(message) {
   shareFeedbackRef.textContent = message;
 }
 
+function wasShareCancelled(error) {
+  return error?.name === 'AbortError';
+}
+
+function canShareImageFile(file) {
+  if (
+    !file ||
+    typeof navigator.share !== 'function' ||
+    typeof navigator.canShare !== 'function'
+  ) {
+    return false;
+  }
+
+  try {
+    return navigator.canShare({ files: [file] });
+  } catch {
+    return false;
+  }
+}
+
 async function shareQuoteAsImage() {
   if (!quoteCardRef || !currentQuote || isSharingImage) return;
   isSharingImage = true;
@@ -1352,59 +1806,59 @@ async function shareQuoteAsImage() {
     shareButtonRef.disabled = true;
   }
 
-  showShareFeedback('');
+  showShareFeedback('Preparando imagen...');
 
   try {
-    if (typeof window.html2canvas !== 'function') {
-      throw new Error('html2canvas no está disponible');
+    hideShareImageFallback();
+    const snapshot = getQuoteCardSnapshot();
+    let image = quoteImageCache?.key === snapshot.key ? quoteImageCache : null;
+    if (!image) {
+      image = await prepareQuoteImage();
     }
 
-    const quoteCard = document.querySelector('#quote-card');
-    if (!quoteCard) {
-      throw new Error('No se encontró #quote-card');
+    if (!image?.blob) {
+      throw new Error('No se pudo preparar la imagen');
     }
 
-    const canvas = await window.html2canvas(quoteCard, {
-      backgroundColor: null,
-      scale: 2,
-      useCORS: true,
-      logging: false
-    });
+    const file = createShareImageFile(image.blob);
 
-    const blob = await canvasToBlob(canvas, 'image/png');
-    const fileName = `paramo-literario-frase-${getQuoteIdentifier()}.png`;
-    const canBuildFile = typeof File === 'function';
-    const file = canBuildFile ? new File([blob], fileName, { type: 'image/png' }) : null;
-
-    const canShareFile = Boolean(
-      file &&
-      typeof navigator.share === 'function' &&
-      typeof navigator.canShare === 'function' &&
-      navigator.canShare({ files: [file] })
-    );
-
-    if (canShareFile) {
+    if (canShareImageFile(file)) {
       try {
         await navigator.share({
           title: 'Páramo Literario',
-          text: getQuoteShareText(),
+          text: 'Una frase de Páramo Literario',
           files: [file]
         });
+        showShareFeedback('');
         return;
       } catch (error) {
-        console.error(error);
-        triggerImageDownload(blob, fileName);
+        if (wasShareCancelled(error)) {
+          showShareFeedback('');
+          return;
+        }
+        console.error('Error al compartir imagen:', error);
+        if (isMobileShareDevice()) {
+          showMobileImageFallback(image.blob);
+          alert('No se pudo compartir la imagen. Mantén pulsada la imagen para guardarla.');
+          return;
+        }
+        triggerImageDownload(image.blob, image.fileName);
         showShareFeedback('No se pudo abrir el menú de compartir. Descargamos la imagen automáticamente.');
         return;
       }
     }
 
-    triggerImageDownload(blob, fileName);
+    if (isMobileShareDevice()) {
+      showMobileImageFallback(image.blob);
+      return;
+    }
+
+    triggerImageDownload(image.blob, image.fileName);
     showShareFeedback('Tu dispositivo no permite compartir archivos directo. Descargamos la imagen para que la compartas.');
   } catch (error) {
-    console.error(error);
-    console.error('No se pudo generar la imagen', error);
-    showShareFeedback('No se pudo generar la imagen. Inténtalo de nuevo.');
+    console.error('Error al compartir imagen:', error);
+    showShareFeedback('No se pudo compartir la imagen. Mantén pulsada la imagen para guardarla.');
+    alert('No se pudo compartir la imagen. Mantén pulsada la imagen para guardarla.');
   } finally {
     isSharingImage = false;
     if (shareButtonRef) {
@@ -1487,6 +1941,12 @@ function renderQuote(quote) {
     const metaParts = [author, workTitle].filter(Boolean);
     authorContainer.setAttribute('data-full-text', metaParts.join(' · '));
   }
+
+  quoteImageCache = null;
+  hideShareImageFallback();
+  prepareQuoteImage().catch(error => {
+    console.error('No se pudo preparar la imagen compartible', error);
+  });
 }
 
 function initApp() {

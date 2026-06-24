@@ -197,7 +197,8 @@ blockquote {
   padding-inline: 0;
   overflow-wrap: normal;
   word-break: normal;
-  text-wrap: balance;
+  /* text-wrap: pretty; -- nonstandard, limited browser support. Use overflow-wrap as a compatible fallback */
+  overflow-wrap: anywhere;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
 }
 
@@ -338,7 +339,7 @@ body.night-fall .watermark {
 }
 
 .meta-label {
-  color: color-mix(in srgb, var(--author) 90%, var(--text) 10%);
+  color: #beb8ae;
 }
 
 
@@ -390,6 +391,12 @@ body.night-fall .watermark {
   transition: background-color 0.35s ease, color 0.35s ease, opacity 0.35s ease;
 }
 
+.share-button {
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
+}
+
 .quote-action-icon {
   display: inline-flex;
   align-items: center;
@@ -411,7 +418,7 @@ body.night-fall .watermark {
 .quote-action-button:hover,
 .quote-action-button:focus-visible {
   background: rgba(200, 162, 90, 0.09);
-  color: color-mix(in srgb, var(--title) 86%, var(--text) 14%);
+  color: #cead6e;
   outline: none;
 }
 
@@ -456,6 +463,25 @@ body.night-fall .quote-action-icon {
   content: none;
 }
 
+.share-image-fallback {
+  width: min(360px, 100%);
+  margin: 1rem auto 0;
+  position: relative;
+  z-index: 20;
+}
+
+.share-image-fallback[hidden] {
+  display: none;
+}
+
+.share-image-fallback img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(200, 162, 90, 0.42);
+  border-radius: 10px;
+}
+
 body.night-fall {
   color-scheme: dark;
   background-color: var(--sand-night);
@@ -488,7 +514,7 @@ body.night-fall .tiny {
 }
 
 body.night-fall .meta-link {
-  color: color-mix(in srgb, var(--author-night) 92%, var(--text-night) 8%);
+  color: #d6cdb3;
 }
 
 body.night-fall .meta-link:hover,
