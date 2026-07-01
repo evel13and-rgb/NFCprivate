@@ -15,7 +15,22 @@ let nightTimerId = null;
 let cleanupCurrentLayer = null;
 let listenersBound = false;
 
+const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
+const CALM_NIGHT_WEATHER = 'night-clear';
+const RAINY_NIGHT_WEATHER = 'night-rain';
+
 function shouldShowFireflies() {
+  const weather = document.body?.dataset.weather;
+  if (weather === CALM_NIGHT_WEATHER) {
+    return true;
+  }
+  if (weather === RAINY_NIGHT_WEATHER) {
+    return false;
+  }
+  if (weather) {
+    return false;
+  }
+
   return isNightTime();
 }
 
@@ -137,6 +152,10 @@ function handleReduceMotionChange() {
   }
 }
 
+function handleWeatherStateChange() {
+  evaluateNightState();
+}
+
 export function initFireflyAura() {
   if (typeof window === 'undefined' || typeof document === 'undefined') {
     return;
@@ -150,6 +169,7 @@ export function initFireflyAura() {
 
   if (!listenersBound) {
     reduceMotionMedia.addEventListener('change', handleReduceMotionChange);
+    document.addEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
     nightTimerId = window.setInterval(() => {
       evaluateNightState();
     }, 60 * 1000);
@@ -165,6 +185,7 @@ export function teardownFireflyAura() {
   if (reduceMotionMedia) {
     reduceMotionMedia.removeEventListener('change', handleReduceMotionChange);
   }
+  document.removeEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
   if (cleanupCurrentLayer) {
     cleanupCurrentLayer();
     cleanupCurrentLayer = null;

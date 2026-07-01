@@ -746,6 +746,7 @@ const FALLBACK_WEATHER_STATE = Object.freeze({
   intensity: 'soft',
   timeOfDay: 'day',
 });
+const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
 
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 const quoteManager = createQuoteManager(QUOTES, storage);
@@ -816,6 +817,9 @@ function applyWeatherStateToDocument(weatherState) {
   document.body.dataset.weather = normalizedState.weather;
   document.body.dataset.weatherIntensity = normalizedState.intensity;
   document.body.dataset.timeOfDay = normalizedState.timeOfDay;
+  document.dispatchEvent(new CustomEvent(WEATHER_CHANGE_EVENT, {
+    detail: normalizedState,
+  }));
 }
 
 async function initGlobalWeatherState() {
