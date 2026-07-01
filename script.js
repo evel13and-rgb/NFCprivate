@@ -778,6 +778,37 @@ function createWordSpan(content, extraClass = '') {
   return span;
 }
 
+function clampNumber(value, min, max) {
+  return Math.min(Math.max(value, min), max);
+}
+
+function interpolateNumber(from, to, amount) {
+  return from + (to - from) * amount;
+}
+
+function applyQuoteLengthSizing(text) {
+  if (!quoteElementRef) {
+    return;
+  }
+
+  const normalizedText = typeof text === 'string' ? text.replace(/\s+/g, ' ').trim() : '';
+  const characterCount = Array.from(normalizedText).length;
+  const wordCount = normalizedText ? normalizedText.split(' ').length : 0;
+  const effectiveLength = characterCount + Math.max(wordCount - 18, 0) * 2;
+  const lengthAmount = clampNumber((effectiveLength - 70) / 170, 0, 1);
+
+  const desktopSize = interpolateNumber(1.9, 1.38, lengthAmount);
+  const mobileSize = interpolateNumber(1.46, 1.08, lengthAmount);
+  const desktopLineHeight = interpolateNumber(1.3, 1.24, lengthAmount);
+  const mobileLineHeight = interpolateNumber(1.23, 1.17, lengthAmount);
+
+  quoteElementRef.style.setProperty('--quote-font-size', `${desktopSize.toFixed(2)}rem`);
+  quoteElementRef.style.setProperty('--quote-mobile-font-size', `${mobileSize.toFixed(2)}rem`);
+  quoteElementRef.style.setProperty('--quote-line-height', desktopLineHeight.toFixed(2));
+  quoteElementRef.style.setProperty('--quote-mobile-line-height', mobileLineHeight.toFixed(2));
+  quoteElementRef.dataset.quoteLength = lengthAmount < 0.33 ? 'short' : lengthAmount < 0.72 ? 'medium' : 'long';
+}
+
 function clearWordHighlight(word) {
   if (!word) return;
   const timerId = word._highlightTimerId;
@@ -944,6 +975,7 @@ function setQuoteTextContent(text, { includeQuotes = true } = {}) {
     fragment.appendChild(createWordSpan('“', 'word--quote-open'));
   }
   const content = typeof text === 'string' ? text : '';
+  applyQuoteLengthSizing(content);
   const tokens = content.split(/(\s+)/);
   for (const token of tokens) {
     if (!token) continue;
