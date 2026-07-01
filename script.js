@@ -729,6 +729,24 @@ const QUOTES = [
   ...LA_VIDA_ES_SUENO_QUOTES
 ];
 
+const ALLOWED_WEATHER_STATES = new Set([
+  'sunny',
+  'cloudy',
+  'overcast',
+  'light-rain',
+  'heavy-rain',
+  'mist',
+  'night-clear',
+  'night-rain',
+]);
+const ALLOWED_WEATHER_INTENSITIES = new Set(['soft', 'medium', 'strong']);
+const ALLOWED_WEATHER_TIMES = new Set(['day', 'night']);
+const FALLBACK_WEATHER_STATE = Object.freeze({
+  weather: 'cloudy',
+  intensity: 'soft',
+  timeOfDay: 'day',
+});
+
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 const quoteManager = createQuoteManager(QUOTES, storage);
 
@@ -768,6 +786,59 @@ function initMotionPreferenceWatcher() {
     reduceMotionQuery.addEventListener('change', listener);
   } else if (typeof reduceMotionQuery.addListener === 'function') {
     reduceMotionQuery.addListener(listener);
+  }
+}
+
+function normalizeWeatherState(input = {}) {
+  const weather = ALLOWED_WEATHER_STATES.has(input.weather)
+    ? input.weather
+    : FALLBACK_WEATHER_STATE.weather;
+  const intensity = ALLOWED_WEATHER_INTENSITIES.has(input.intensity)
+    ? input.intensity
+    : FALLBACK_WEATHER_STATE.intensity;
+  const timeOfDay = ALLOWED_WEATHER_TIMES.has(input.timeOfDay)
+    ? input.timeOfDay
+    : FALLBACK_WEATHER_STATE.timeOfDay;
+
+  return {
+    weather,
+    intensity,
+    timeOfDay,
+  };
+}
+
+function applyWeatherStateToDocument(weatherState) {
+  if (!document.body) {
+    return;
+  }
+
+  const normalizedState = normalizeWeatherState(weatherState);
+  document.body.dataset.weather = normalizedState.weather;
+  document.body.dataset.weatherIntensity = normalizedState.intensity;
+  document.body.dataset.timeOfDay = normalizedState.timeOfDay;
+}
+
+async function initGlobalWeatherState() {
+  applyWeatherStateToDocument(FALLBACK_WEATHER_STATE);
+
+  try {
+    const response = await fetch('/api/weather-state', {
+      method: 'GET',
+      cache: 'no-store',
+      headers: {
+        Accept: 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`weather endpoint responded with ${response.status}`);
+    }
+
+    const weatherState = await response.json();
+    applyWeatherStateToDocument(weatherState);
+  } catch (error) {
+    console.warn('No se pudo cargar el clima global; usando cloudy.', error);
+    applyWeatherStateToDocument(FALLBACK_WEATHER_STATE);
   }
 }
 
@@ -1984,6 +2055,7 @@ function renderQuote(quote) {
 function initApp() {
   const { quote, message } = determineQuoteForDisplay();
   quoteElementRef = document.getElementById('quote');
+  initGlobalWeatherState();
   initMotionPreferenceWatcher();
   if (quoteElementRef) {
     setQuoteTextContent(quoteElementRef.textContent ?? '', { includeQuotes: false });
