@@ -1,0 +1,8 @@
+{
+  "weather": "cloudy",
+  "intensity": "soft",
+  "timeOfDay": "day",
+  "source": "server",
+  "updatedAt": "2026-07-01T14:54:32.564Z",
+  "expiresAt": "2026-07-01T15:54:32.564Z"
+}

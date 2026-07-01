@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "weather:start": "node server/index.js",
     "test": "node --test"
   }
 }
