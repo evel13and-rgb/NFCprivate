@@ -109,15 +109,6 @@ h1 {
   text-wrap: balance;
 }
 
-.quote-mark {
-  height: 2.9rem;
-  color: var(--title);
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-size: clamp(3.2rem, 8vw, 4.7rem);
-  line-height: 0.8;
-  opacity: 0.9;
-}
-
 .quote-rule {
   display: flex;
   align-items: center;
@@ -958,11 +949,6 @@ body.night-fall .modal__close:focus-visible {
     margin-bottom: 0.45rem;
     font-size: clamp(1.3rem, 6.6vw, 1.85rem);
     letter-spacing: 0.18em;
-  }
-
-  .quote-mark {
-    height: 1.85rem;
-    font-size: clamp(2.45rem, 11vw, 3.2rem);
   }
 
   .quote-rule {
