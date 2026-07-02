@@ -108,7 +108,6 @@ body::after {
   transition: opacity 1.2s ease;
 }
 
-body[data-weather='clear'],
 body[data-weather='sunny'] {
   --weather-tone:
     radial-gradient(circle at 48% 34%, rgba(255, 217, 147, 0.22), transparent 30%),
@@ -117,7 +116,6 @@ body[data-weather='sunny'] {
   --weather-tone-opacity: 0.72;
 }
 
-body[data-time-of-day='sunset'][data-weather='clear'],
 body[data-time-of-day='sunset'][data-weather='sunny'] {
   --weather-tone:
     radial-gradient(circle at 48% 34%, rgba(255, 196, 105, 0.22), transparent 34%),
@@ -175,7 +173,7 @@ body[data-weather='light-rain'] {
 }
 
 body[data-weather='heavy-rain'],
-body[data-visual-scene='night-rain'] {
+body[data-weather='night-rain'] {
   --paramo-base-veil: linear-gradient(rgba(0, 8, 12, 0.38), rgba(0, 0, 0, 0.48));
   --weather-tone:
     linear-gradient(180deg, rgba(32, 47, 55, 0.55), rgba(6, 8, 10, 0.46)),
@@ -189,7 +187,7 @@ body[data-visual-scene='night-rain'] {
   --weather-particles-size: 110px 110px, 170px 170px;
 }
 
-body[data-visual-scene='night-clear'] {
+body[data-weather='night-clear'] {
   --paramo-base-image: var(--paramo-bg-night);
   --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.34));
   --weather-tone:
@@ -198,7 +196,7 @@ body[data-visual-scene='night-clear'] {
   --weather-tone-opacity: 0.92;
 }
 
-body[data-visual-scene='night-rain'] {
+body[data-weather='night-rain'] {
   --paramo-base-image: var(--paramo-bg-night);
 }
 
@@ -232,7 +230,7 @@ body[data-visual-scene='night-rain'] {
 
   body[data-weather='light-rain'],
   body[data-weather='heavy-rain'],
-  body[data-visual-scene='night-rain'] {
+  body[data-weather='night-rain'] {
     --weather-particles-opacity: 0.22;
   }
 }
@@ -253,7 +251,7 @@ body[data-visual-scene='night-rain'] {
 main.wrap {
   width: min(720px, 100%);
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 
@@ -285,15 +283,7 @@ h1 {
   line-height: 1.1;
   color: var(--title);
   text-shadow: 0 0 22px rgba(200, 162, 90, 0.12);
-}
-
-.quote-mark {
-  height: 2.9rem;
-  color: var(--title);
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-size: clamp(3.2rem, 8vw, 4.7rem);
-  line-height: 0.8;
-  opacity: 0.9;
+  text-wrap: balance;
 }
 
 .quote-rule {
@@ -338,6 +328,8 @@ h1 {
 }
 
 #quote-card {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,7 +341,7 @@ h1 {
   padding-right: clamp(1.2rem, 4.2vw, 3.2rem);
   border-radius: 14px;
   background:
-    linear-gradient(180deg, rgba(24, 22, 18, 0.9), rgba(20, 18, 15, 0.92)),
+    linear-gradient(180deg, rgba(10, 8, 6, 0.68), rgba(18, 12, 8, 0.72)),
     radial-gradient(circle at 50% 0%, rgba(200, 162, 90, 0.12), transparent 42%);
   border: 1px solid rgba(200, 162, 90, 0.42);
   box-shadow: 0 28px 72px rgba(0, 0, 0, 0.42), inset 0 0 54px rgba(200, 162, 90, 0.035);
@@ -365,7 +357,7 @@ body[data-time-of-day='sunset'] #quote-card {
 
 body.night-fall #quote-card {
   background:
-    linear-gradient(180deg, rgba(18, 15, 20, 0.88), rgba(13, 10, 16, 0.92)),
+    linear-gradient(180deg, rgba(10, 8, 6, 0.7), rgba(18, 12, 8, 0.74)),
     radial-gradient(circle at 50% 0%, rgba(246, 234, 199, 0.1), transparent 42%);
 }
 
@@ -380,7 +372,7 @@ body[data-weather='light-rain'] #quote-card {
 }
 
 body[data-weather='heavy-rain'] #quote-card,
-body[data-visual-scene='night-rain'] #quote-card {
+body[data-weather='night-rain'] #quote-card {
   background:
     linear-gradient(180deg, rgba(5, 6, 7, 0.8), rgba(9, 9, 10, 0.84)),
     radial-gradient(circle at 50% 0%, rgba(214, 226, 232, 0.08), transparent 42%);
@@ -392,19 +384,19 @@ blockquote {
   margin: 0 auto;
   width: 100%;
   max-width: 88%;
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-size: clamp(1.35rem, 5vw, 2.1rem);
-  line-height: 1.28;
+  font-family: Georgia, 'Libre Baskerville', 'Times New Roman', serif;
+  font-size: clamp(1.38rem, var(--quote-font-size, 1.78rem), 1.92rem);
+  line-height: var(--quote-line-height, 1.3);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--text);
   position: relative;
   padding-inline: 0;
   overflow-wrap: normal;
   word-break: normal;
-  /* text-wrap: pretty; -- nonstandard, limited browser support. Use overflow-wrap as a compatible fallback */
-  overflow-wrap: anywhere;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 blockquote::before,
@@ -505,6 +497,7 @@ body.night-fall .watermark {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
+  text-wrap: balance;
 }
 
 .author-line {
@@ -544,8 +537,9 @@ body.night-fall .watermark {
 }
 
 .meta-label {
-  color: color-mix(in srgb, var(--author) 90%, var(--text) 10%);
+  color: #beb8ae;
 }
+
 
 .meta-separator[hidden],
 .meta-link[hidden],
@@ -622,7 +616,7 @@ body.night-fall .watermark {
 .quote-action-button:hover,
 .quote-action-button:focus-visible {
   background: rgba(200, 162, 90, 0.09);
-  color: color-mix(in srgb, var(--title) 86%, var(--text) 14%);
+  color: #cead6e;
   outline: none;
 }
 
@@ -718,7 +712,7 @@ body.night-fall .tiny {
 }
 
 body.night-fall .meta-link {
-  color: color-mix(in srgb, var(--author-night) 92%, var(--text-night) 8%);
+  color: #d6cdb3;
 }
 
 body.night-fall .meta-link:hover,
@@ -920,7 +914,7 @@ body[data-mode='day'] .mycelium-layer {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  z-index: 6;
+  z-index: 1;
   opacity: 0;
   animation: fireflies-layer-in var(--firefly-fade-in, 2400ms) ease-out forwards;
 }
@@ -1013,8 +1007,7 @@ body[data-mode='day'] .mycelium-layer {
   position: absolute;
   inset: 0;
   background: rgba(24, 18, 11, 0.45);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(2px);
 }
 
 .modal__dialog {
@@ -1128,8 +1121,8 @@ body.night-fall .modal__close:focus-visible {
 @media (max-width: 600px) {
   body {
     min-height: 100dvh;
-    padding-inline: 24px;
-    padding-block: clamp(1.8rem, 7vh, 3rem);
+    padding-inline: 18px;
+    padding-block: clamp(0.75rem, 2.8dvh, 1.35rem);
     align-items: center;
   }
 
@@ -1138,62 +1131,100 @@ body.night-fall .modal__close:focus-visible {
   }
 
   .quote-flow {
-    gap: 1rem;
+    min-height: calc(100dvh - clamp(1.5rem, 5.6dvh, 2.7rem));
+    justify-content: center;
+    gap: 0.6rem;
   }
 
   #quote-card {
     width: 100%;
-    padding: 1.15rem 1rem 0;
+    padding: 0.85rem 0.9rem 0;
   }
 
   h1 {
-    font-size: clamp(1.5rem, 8vw, 2.25rem);
-    letter-spacing: 0.22em;
+    margin-bottom: 0.45rem;
+    max-width: 100%;
+    font-size: clamp(1.05rem, 5vw, 1.36rem);
+    letter-spacing: 0.12em;
+  }
+
+  .quote-rule {
+    width: min(220px, 52%);
+    height: 0.7rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .quote-rule span {
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-inline: 0.25rem;
+  }
+
+  .quote-rule--short {
+    width: min(72px, 22%);
+    height: 0.55rem;
+    margin: 0.75rem 0 0.35rem;
+  }
+
+  .quote-rule--short span {
+    width: 0.32rem;
+    height: 0.32rem;
   }
 
   blockquote {
     padding-inline: 0;
-    font-size: clamp(1.25rem, 4.8vw, 1.75rem);
-    max-width: 90%;
-    line-height: 1.3;
+    font-size: clamp(1.08rem, var(--quote-mobile-font-size, 1.32rem), 1.46rem);
+    max-width: 92%;
+    line-height: var(--quote-mobile-line-height, 1.22);
   }
 
   .author {
-    margin-top: 1.5rem;
-    gap: 0.3rem;
+    margin-top: 0.4rem;
+    gap: 0.18rem;
   }
 
   .meta-author {
-    font-size: 1.02rem;
+    font-size: 0.94rem;
   }
 
   .meta-work {
-    font-size: 0.96rem;
+    font-size: 0.88rem;
   }
 
   .watermark {
-    font-size: 0.84rem;
+    margin-top: 0.45rem;
+    font-size: 0.72rem;
     opacity: 0.3;
   }
 
   .quote-actions {
     width: calc(100% + 2rem);
+    margin-top: 0.85rem;
   }
 
   .quote-actions__divider {
-    height: 3.5rem;
+    height: 2.45rem;
   }
 
   .quote-action-button {
-    flex-direction: column;
-    gap: 0.45rem;
-    min-height: 5.25rem;
-    letter-spacing: 0.11em;
+    gap: 0;
+    min-height: 3.35rem;
+    padding: 0.45rem 0.4rem;
+    letter-spacing: 0;
+  }
+
+  .quote-action-button > span:not(.quote-action-icon) {
+    display: none;
   }
 
   .quote-action-icon {
-    width: 2.55rem;
-    height: 2.55rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .quote-action-icon svg {
+    width: 1.16rem;
+    height: 1.16rem;
   }
 
   .tiny {
