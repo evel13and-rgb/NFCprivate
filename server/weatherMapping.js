@@ -10,7 +10,7 @@ export const ALLOWED_WEATHER_STATES = Object.freeze([
 ]);
 
 const ALLOWED_INTENSITIES = Object.freeze(['soft', 'medium', 'strong']);
-const ALLOWED_TIMES_OF_DAY = Object.freeze(['day', 'night']);
+const ALLOWED_TIMES_OF_DAY = Object.freeze(['day', 'sunset', 'night']);
 
 export const DEFAULT_WEATHER_STATE = Object.freeze({
   weather: 'cloudy',
@@ -28,10 +28,10 @@ export function normalizeWeatherFields(input = {}) {
   const intensity = ALLOWED_INTENSITIES.includes(input.intensity)
     ? input.intensity
     : DEFAULT_WEATHER_STATE.intensity;
-  const timeOfDay = ALLOWED_TIMES_OF_DAY.includes(input.timeOfDay)
-    ? input.timeOfDay
-    : weather.startsWith('night-')
-      ? 'night'
+  const timeOfDay = weather.startsWith('night-')
+    ? 'night'
+    : ALLOWED_TIMES_OF_DAY.includes(input.timeOfDay)
+      ? input.timeOfDay
       : DEFAULT_WEATHER_STATE.timeOfDay;
 
   return {

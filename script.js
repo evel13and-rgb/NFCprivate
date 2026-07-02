@@ -1,6 +1,7 @@
 import { createQuoteManager } from './quoteLogic.js';
 import { initFireflyAura } from './fireflies.js';
-import { isNightTime } from './dayNight.js';
+import { getTimeOfDay, isNightTime } from './dayNight.js';
+import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
 
 const PRE_RANDOM_QUOTES = [];
 const E_A_FRAGMENTOS_QUOTES = [
@@ -740,7 +741,7 @@ const ALLOWED_WEATHER_STATES = new Set([
   'night-rain',
 ]);
 const ALLOWED_WEATHER_INTENSITIES = new Set(['soft', 'medium', 'strong']);
-const ALLOWED_WEATHER_TIMES = new Set(['day', 'night']);
+const ALLOWED_WEATHER_TIMES = new Set(['day', 'sunset', 'night']);
 const FALLBACK_WEATHER_STATE = Object.freeze({
   weather: 'cloudy',
   intensity: 'soft',
@@ -797,9 +798,11 @@ function normalizeWeatherState(input = {}) {
   const intensity = ALLOWED_WEATHER_INTENSITIES.has(input.intensity)
     ? input.intensity
     : FALLBACK_WEATHER_STATE.intensity;
-  const timeOfDay = ALLOWED_WEATHER_TIMES.has(input.timeOfDay)
-    ? input.timeOfDay
-    : FALLBACK_WEATHER_STATE.timeOfDay;
+  const timeOfDay = weather.startsWith('night-')
+    ? 'night'
+    : ALLOWED_WEATHER_TIMES.has(input.timeOfDay)
+      ? input.timeOfDay
+      : getTimeOfDay();
 
   return {
     weather,
@@ -808,22 +811,64 @@ function normalizeWeatherState(input = {}) {
   };
 }
 
+function getFallbackWeatherState() {
+  return {
+    ...FALLBACK_WEATHER_STATE,
+    timeOfDay: getTimeOfDay(),
+  };
+}
+
+function getEffectiveTimeOfDay(weather, timeOfDay) {
+  if (weather?.startsWith('night-')) {
+    return 'night';
+  }
+  return ALLOWED_WEATHER_TIMES.has(timeOfDay) ? timeOfDay : getTimeOfDay();
+}
+
+function updateAtmosphericParticles(weatherState) {
+  const shouldShowDaylightMotes =
+    weatherState.timeOfDay !== 'night'
+    && (weatherState.weather === 'sunny' || weatherState.weather === 'cloudy');
+
+  setDaylightMotesActive(shouldShowDaylightMotes);
+}
+
+function applyTimeOfDayToDocument(timeOfDay) {
+  const body = document.body;
+  if (!body) {
+    return;
+  }
+
+  const isNight = timeOfDay === 'night';
+  body.classList.toggle('night-fall', isNight);
+  body.setAttribute('data-mode', timeOfDay);
+  body.dataset.timeOfDay = timeOfDay;
+  setNightModeState(isNight);
+}
+
 function applyWeatherStateToDocument(weatherState) {
   if (!document.body) {
     return;
   }
 
   const normalizedState = normalizeWeatherState(weatherState);
+  const effectiveTimeOfDay = getEffectiveTimeOfDay(normalizedState.weather, normalizedState.timeOfDay);
+  const visualState = {
+    ...normalizedState,
+    timeOfDay: effectiveTimeOfDay,
+  };
+
   document.body.dataset.weather = normalizedState.weather;
   document.body.dataset.weatherIntensity = normalizedState.intensity;
-  document.body.dataset.timeOfDay = normalizedState.timeOfDay;
+  applyTimeOfDayToDocument(effectiveTimeOfDay);
+  updateAtmosphericParticles(visualState);
   document.dispatchEvent(new CustomEvent(WEATHER_CHANGE_EVENT, {
-    detail: normalizedState,
+    detail: visualState,
   }));
 }
 
 async function initGlobalWeatherState() {
-  applyWeatherStateToDocument(FALLBACK_WEATHER_STATE);
+  applyWeatherStateToDocument(getFallbackWeatherState());
 
   try {
     const response = await fetch('/api/weather-state', {
@@ -842,7 +887,7 @@ async function initGlobalWeatherState() {
     applyWeatherStateToDocument(weatherState);
   } catch (error) {
     console.warn('No se pudo cargar el clima global; usando cloudy.', error);
-    applyWeatherStateToDocument(FALLBACK_WEATHER_STATE);
+    applyWeatherStateToDocument(getFallbackWeatherState());
   }
 }
 
@@ -1075,10 +1120,14 @@ function applyDayNightMode() {
     return;
   }
 
-  const shouldUseNightMode = isNightTime();
-  body.classList.toggle('night-fall', shouldUseNightMode);
-  body.setAttribute('data-mode', shouldUseNightMode ? 'night' : 'day');
-  setNightModeState(shouldUseNightMode);
+  const weather = body.dataset.weather || FALLBACK_WEATHER_STATE.weather;
+  const timeOfDay = getEffectiveTimeOfDay(weather, getTimeOfDay());
+  applyTimeOfDayToDocument(timeOfDay);
+  updateAtmosphericParticles({
+    weather,
+    intensity: body.dataset.weatherIntensity || FALLBACK_WEATHER_STATE.intensity,
+    timeOfDay,
+  });
 }
 
 function scheduleDayNightModeUpdates() {
@@ -2059,6 +2108,7 @@ function renderQuote(quote) {
 function initApp() {
   const { quote, message } = determineQuoteForDisplay();
   quoteElementRef = document.getElementById('quote');
+  initDaylightMotes();
   initGlobalWeatherState();
   initMotionPreferenceWatcher();
   if (quoteElementRef) {

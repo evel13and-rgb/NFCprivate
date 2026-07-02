@@ -13,6 +13,21 @@
   --text-night: #f6efd9;
   --author-night: #d3cab0;
   --ink-soft-night: rgba(246, 234, 199, 0.26);
+  --paramo-bg-day: url("backgrounds/paramodia.png");
+  --paramo-bg-sunset: url("backgrounds/paramoatardecer.png");
+  --paramo-bg-night: url("backgrounds/paramonoche.png");
+  --paramo-base-image: var(--paramo-bg-day);
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  --weather-tone:
+    linear-gradient(90deg, transparent 0 7%, rgba(200, 162, 90, 0.08) 7.1%, transparent 7.35% 92.65%, rgba(200, 162, 90, 0.08) 92.9%, transparent 93.2%),
+    radial-gradient(circle at 50% 78%, rgba(244, 225, 184, 0.24), transparent 18%),
+    radial-gradient(circle at 50% 50%, transparent 0 42%, rgba(0, 0, 0, 0.28) 78%);
+  --weather-tone-opacity: 0.55;
+  --weather-particles: none;
+  --weather-particles-opacity: 0;
+  --weather-particles-animation: none;
+  --weather-particles-filter: none;
+  --weather-particles-size: auto;
 }
 
 * {
@@ -23,9 +38,10 @@ body {
   margin: 0;
   min-height: 100dvh;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
-    url("backgrounds/paramodia.png");
+  background-color: var(--sand);
+  background-image:
+    var(--paramo-base-veil),
+    var(--paramo-base-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,26 +52,187 @@ body {
   padding-block: clamp(2.75rem, 10vh, 6rem);
   padding-inline: clamp(12px, 2.8vw, 48px);
   line-height: 1.7;
+  transition: background-color 1.2s ease, color 1.2s ease;
 }
 
-body[data-mode='day'] {
+body[data-mode='day'],
+body[data-time-of-day='day'] {
+  --paramo-base-image: var(--paramo-bg-day);
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.2));
   background-color: var(--sand);
   color: var(--text);
   color-scheme: dark;
 }
 
-body::before {
+body[data-mode='sunset'],
+body[data-time-of-day='sunset'] {
+  --paramo-base-image: var(--paramo-bg-sunset);
+  --paramo-base-veil: linear-gradient(rgba(34, 17, 10, 0.22), rgba(8, 6, 4, 0.26));
+  background-color: #17100c;
+  color: var(--text);
+  color-scheme: dark;
+}
+
+body[data-time-of-day='night'],
+body.night-fall {
+  --paramo-base-image: var(--paramo-bg-night);
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.36));
+  background-color: var(--sand-night);
+  color: var(--text-night);
+  color-scheme: dark;
+}
+
+body::before,
+body::after {
   content: '';
   position: fixed;
   inset: 0;
   pointer-events: none;
+}
+
+body::before {
   z-index: 0;
-  background:
-    linear-gradient(90deg, transparent 0 7%, rgba(200, 162, 90, 0.08) 7.1%, transparent 7.35% 92.65%, rgba(200, 162, 90, 0.08) 92.9%, transparent 93.2%),
-    radial-gradient(circle at 50% 78%, rgba(244, 225, 184, 0.24), transparent 18%),
-    radial-gradient(circle at 50% 50%, transparent 0 42%, rgba(0, 0, 0, 0.28) 78%);
-  mix-blend-mode: screen;
-  opacity: 0.55;
+  background: var(--weather-tone);
+  opacity: var(--weather-tone-opacity);
+  transition: opacity 1.2s ease, background 1.2s ease;
+}
+
+body::after {
+  z-index: 1;
+  background: var(--weather-particles);
+  background-size: var(--weather-particles-size);
+  filter: var(--weather-particles-filter);
+  opacity: var(--weather-particles-opacity);
+  animation: var(--weather-particles-animation);
+  transform: translate3d(0, 0, 0);
+  transition: opacity 1.2s ease;
+}
+
+body[data-weather='sunny'] {
+  --weather-tone:
+    radial-gradient(circle at 48% 34%, rgba(255, 217, 147, 0.22), transparent 30%),
+    linear-gradient(180deg, rgba(240, 195, 111, 0.08), rgba(18, 13, 8, 0.18)),
+    radial-gradient(circle at 50% 50%, transparent 0 46%, rgba(0, 0, 0, 0.24) 80%);
+  --weather-tone-opacity: 0.72;
+}
+
+body[data-time-of-day='sunset'][data-weather='sunny'] {
+  --weather-tone:
+    radial-gradient(circle at 48% 34%, rgba(255, 196, 105, 0.22), transparent 34%),
+    linear-gradient(180deg, rgba(184, 91, 50, 0.18), rgba(18, 10, 7, 0.24)),
+    radial-gradient(circle at 50% 52%, transparent 0 46%, rgba(0, 0, 0, 0.3) 82%);
+  --weather-tone-opacity: 0.82;
+}
+
+body[data-weather='cloudy'] {
+  --weather-tone:
+    linear-gradient(180deg, rgba(116, 124, 124, 0.24), rgba(24, 24, 22, 0.19)),
+    radial-gradient(circle at 50% 28%, rgba(230, 230, 220, 0.08), transparent 34%),
+    radial-gradient(circle at 50% 50%, transparent 0 44%, rgba(0, 0, 0, 0.28) 82%);
+  --weather-tone-opacity: 0.86;
+}
+
+body[data-weather='overcast'] {
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.31));
+  --weather-tone:
+    linear-gradient(180deg, rgba(42, 48, 49, 0.5), rgba(18, 18, 17, 0.36)),
+    radial-gradient(circle at 50% 16%, rgba(32, 34, 35, 0.38), transparent 46%),
+    radial-gradient(circle at 50% 50%, transparent 0 38%, rgba(0, 0, 0, 0.44) 82%);
+  --weather-tone-opacity: 0.95;
+}
+
+body[data-weather='mist'] {
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.24));
+  --weather-tone:
+    linear-gradient(180deg, rgba(198, 203, 196, 0.2), rgba(78, 84, 80, 0.14)),
+    radial-gradient(circle at 52% 48%, rgba(235, 234, 218, 0.18), transparent 38%),
+    radial-gradient(circle at 50% 50%, transparent 0 48%, rgba(0, 0, 0, 0.28) 84%);
+  --weather-tone-opacity: 0.9;
+  --weather-particles:
+    radial-gradient(ellipse at 22% 62%, rgba(224, 224, 214, 0.28), transparent 42%),
+    radial-gradient(ellipse at 78% 55%, rgba(213, 218, 214, 0.22), transparent 38%),
+    linear-gradient(90deg, transparent, rgba(226, 226, 216, 0.18), transparent);
+  --weather-particles-opacity: 0.52;
+  --weather-particles-animation: paramo-mist-drift 28s ease-in-out infinite alternate;
+  --weather-particles-filter: blur(10px);
+  --weather-particles-size: 120% 100%, 120% 100%, 160% 100%;
+}
+
+body[data-weather='light-rain'] {
+  --paramo-base-veil: linear-gradient(rgba(10, 17, 20, 0.28), rgba(0, 0, 0, 0.34));
+  --weather-tone:
+    linear-gradient(180deg, rgba(74, 91, 98, 0.36), rgba(12, 15, 16, 0.28)),
+    radial-gradient(circle at 50% 50%, transparent 0 42%, rgba(0, 0, 0, 0.34) 82%);
+  --weather-tone-opacity: 0.9;
+  --weather-particles:
+    repeating-linear-gradient(105deg, transparent 0 18px, rgba(200, 218, 226, 0.34) 18px 19px, transparent 19px 34px),
+    repeating-linear-gradient(105deg, transparent 0 36px, rgba(185, 206, 216, 0.2) 36px 37px, transparent 37px 62px);
+  --weather-particles-opacity: 0.34;
+  --weather-particles-animation: paramo-rain-fall 0.9s linear infinite;
+  --weather-particles-size: 120px 120px, 180px 180px;
+}
+
+body[data-weather='heavy-rain'],
+body[data-weather='night-rain'] {
+  --paramo-base-veil: linear-gradient(rgba(0, 8, 12, 0.38), rgba(0, 0, 0, 0.48));
+  --weather-tone:
+    linear-gradient(180deg, rgba(32, 47, 55, 0.55), rgba(6, 8, 10, 0.46)),
+    radial-gradient(circle at 50% 50%, transparent 0 38%, rgba(0, 0, 0, 0.52) 82%);
+  --weather-tone-opacity: 0.96;
+  --weather-particles:
+    repeating-linear-gradient(104deg, transparent 0 12px, rgba(205, 222, 232, 0.42) 12px 14px, transparent 14px 25px),
+    repeating-linear-gradient(104deg, transparent 0 28px, rgba(190, 210, 222, 0.28) 28px 30px, transparent 30px 48px);
+  --weather-particles-opacity: 0.52;
+  --weather-particles-animation: paramo-rain-fall 0.55s linear infinite;
+  --weather-particles-size: 110px 110px, 170px 170px;
+}
+
+body[data-weather='night-clear'] {
+  --paramo-base-image: var(--paramo-bg-night);
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.34));
+  --weather-tone:
+    radial-gradient(circle at 43% 13%, rgba(186, 210, 255, 0.16), transparent 23%),
+    radial-gradient(circle at 50% 54%, transparent 0 44%, rgba(0, 0, 0, 0.45) 84%);
+  --weather-tone-opacity: 0.92;
+}
+
+body[data-weather='night-rain'] {
+  --paramo-base-image: var(--paramo-bg-night);
+}
+
+@keyframes paramo-rain-fall {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: -56px 160px, -92px 220px;
+  }
+}
+
+@keyframes paramo-mist-drift {
+  from {
+    transform: translate3d(-2.5%, 0, 0) scale(1.03);
+  }
+  to {
+    transform: translate3d(2.5%, -1.5%, 0) scale(1.07);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+    transform: none;
+  }
+
+  body[data-weather='mist'] {
+    --weather-particles-opacity: 0.34;
+  }
+
+  body[data-weather='light-rain'],
+  body[data-weather='heavy-rain'],
+  body[data-weather='night-rain'] {
+    --weather-particles-opacity: 0.22;
+  }
 }
 
 
@@ -74,7 +251,7 @@ body::before {
 main.wrap {
   width: min(720px, 100%);
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 
@@ -169,13 +346,38 @@ h1 {
   border: 1px solid rgba(200, 162, 90, 0.42);
   box-shadow: 0 28px 72px rgba(0, 0, 0, 0.42), inset 0 0 54px rgba(200, 162, 90, 0.035);
   overflow: hidden;
-  transition: background-color 0.9s ease, border-color 0.9s ease;
+  transition: background 0.9s ease, border-color 0.9s ease, box-shadow 0.9s ease;
+}
+
+body[data-time-of-day='sunset'] #quote-card {
+  background:
+    linear-gradient(180deg, rgba(13, 8, 5, 0.7), rgba(20, 11, 7, 0.75)),
+    radial-gradient(circle at 50% 0%, rgba(215, 142, 72, 0.13), transparent 42%);
 }
 
 body.night-fall #quote-card {
   background:
     linear-gradient(180deg, rgba(10, 8, 6, 0.7), rgba(18, 12, 8, 0.74)),
     radial-gradient(circle at 50% 0%, rgba(246, 234, 199, 0.1), transparent 42%);
+}
+
+body[data-weather='overcast'] #quote-card,
+body[data-weather='mist'] #quote-card,
+body[data-weather='light-rain'] #quote-card {
+  background:
+    linear-gradient(180deg, rgba(7, 7, 6, 0.74), rgba(13, 11, 9, 0.78)),
+    radial-gradient(circle at 50% 0%, rgba(200, 162, 90, 0.09), transparent 42%);
+  border-color: rgba(220, 190, 136, 0.44);
+  box-shadow: 0 30px 76px rgba(0, 0, 0, 0.5), inset 0 0 54px rgba(200, 162, 90, 0.035);
+}
+
+body[data-weather='heavy-rain'] #quote-card,
+body[data-weather='night-rain'] #quote-card {
+  background:
+    linear-gradient(180deg, rgba(5, 6, 7, 0.8), rgba(9, 9, 10, 0.84)),
+    radial-gradient(circle at 50% 0%, rgba(214, 226, 232, 0.08), transparent 42%);
+  border-color: rgba(226, 218, 194, 0.38);
+  box-shadow: 0 32px 82px rgba(0, 0, 0, 0.58), inset 0 0 54px rgba(246, 234, 199, 0.025);
 }
 
 blockquote {
@@ -480,12 +682,6 @@ body.night-fall .quote-action-icon {
 
 body.night-fall {
   color-scheme: dark;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
-    url("backgrounds/paramonoche.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: var(--sand-night);
   color: var(--text-night);
 }
@@ -718,7 +914,7 @@ body[data-mode='day'] .mycelium-layer {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  z-index: 6;
+  z-index: 1;
   opacity: 0;
   animation: fireflies-layer-in var(--firefly-fade-in, 2400ms) ease-out forwards;
 }
@@ -947,8 +1143,9 @@ body.night-fall .modal__close:focus-visible {
 
   h1 {
     margin-bottom: 0.45rem;
-    font-size: clamp(1.3rem, 6.6vw, 1.85rem);
-    letter-spacing: 0.18em;
+    max-width: 100%;
+    font-size: clamp(1.05rem, 5vw, 1.36rem);
+    letter-spacing: 0.12em;
   }
 
   .quote-rule {
