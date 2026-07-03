@@ -19,7 +19,7 @@
   --paramo-base-image: var(--paramo-bg-day);
   --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   --weather-tone:
-    linear-gradient(90deg, transparent 0 7%, rgba(200, 162, 90, 0.08) 7.1%, transparent 7.35% 92.65%, rgba(200, 162, 90, 0.08) 92.9%, transparent 93.2%),
+    linear-gradient(180deg, rgba(200, 162, 90, 0.05), transparent 42%, rgba(0, 0, 0, 0.16)),
     radial-gradient(circle at 50% 78%, rgba(244, 225, 184, 0.24), transparent 18%),
     radial-gradient(circle at 50% 50%, transparent 0 42%, rgba(0, 0, 0, 0.28) 78%);
   --weather-tone-opacity: 0.55;
@@ -1103,6 +1103,33 @@ body.night-fall .modal__close:focus-visible {
 
 .modal__dialog {
   max-width: 60vw;
+}
+
+@media (min-width: 961px) {
+  main.wrap {
+    width: min(780px, 100%);
+  }
+
+  #quote-card {
+    width: min(780px, 100%);
+    padding-left: clamp(2.7rem, 4.8vw, 3.7rem);
+    padding-right: clamp(2.7rem, 4.8vw, 3.7rem);
+  }
+
+  blockquote {
+    max-width: 92%;
+    font-size: clamp(1.55rem, var(--quote-font-size, 1.92rem), 2.12rem);
+    line-height: var(--quote-line-height, 1.34);
+  }
+
+  .author,
+  .meta-author {
+    font-size: 1.12rem;
+  }
+
+  .meta-work {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 960px) {
