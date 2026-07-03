@@ -923,40 +923,28 @@ body[data-mode='day'] .mycelium-layer {
 
 .firefly {
   position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   background: radial-gradient(circle at center, #f9e36b 0%, rgba(249, 227, 107, 0.3) 70%, rgba(249, 227, 107, 0) 100%);
   box-shadow: 0 0 14px 6px rgba(249, 227, 107, 0.35), 0 0 28px 12px rgba(248, 231, 142, 0.18);
   opacity: var(--firefly-base-opacity, 0.75);
   transform: translate3d(0, 0, 0);
-  animation-name: firefly-drift, firefly-flicker;
-  animation-duration: var(--drift-duration, 12s), var(--flicker-duration, 1.2s);
-  animation-timing-function: ease-in-out, ease-in-out;
-  animation-iteration-count: infinite, infinite;
-  animation-direction: alternate, alternate;
-  animation-delay: 0s, var(--flicker-delay, 0s);
-}
-
-.fireflies-layer[data-reduce-motion='true'] .firefly {
+  will-change: transform, opacity;
   animation-name: firefly-flicker;
-  animation-duration: var(--flicker-duration, 1.2s);
+  animation-duration: var(--flicker-duration, 2.6s);
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: var(--flicker-delay, 0s);
 }
 
-@keyframes firefly-drift {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  35% {
-    transform: translate3d(calc(var(--dx, 0px) * 0.35), calc(var(--dy, 0px) * 0.3), 0) scale(1.05);
-  }
-  70% {
-    transform: translate3d(calc(var(--dx, 0px) * 0.7), calc(var(--dy, 0px) * 0.65), 0) scale(0.95);
-  }
-  100% {
-    transform: translate3d(var(--dx, 0px), var(--dy, 0px), 0) scale(1);
-  }
+.fireflies-layer[data-reduce-motion='true'] .firefly {
+  animation-name: firefly-flicker;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: var(--flicker-delay, 0s);
 }
 
 @keyframes firefly-flicker {

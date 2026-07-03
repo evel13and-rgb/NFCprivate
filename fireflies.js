@@ -1,37 +1,41 @@
-import { isNightTime } from './dayNight.js';
-
-const MIN_FIREFLIES = 10;
-const MAX_FIREFLIES = 12;
-const MIN_SIZE = 6;
-const MAX_SIZE = 8;
-const MIN_FLICKER = 0.8;
-const MAX_FLICKER = 1.6;
+const MIN_FIREFLIES = 14;
+const MAX_FIREFLIES = 18;
+const COMPACT_MIN_FIREFLIES = 9;
+const COMPACT_MAX_FIREFLIES = 12;
+const MIN_SIZE = 4.5;
+const MAX_SIZE = 7.5;
+const MIN_FLICKER = 1.8;
+const MAX_FLICKER = 3.8;
 const MIN_OPACITY = 0.4;
 const MAX_OPACITY = 0.9;
-const MIN_DRIFT = 10;
-const MAX_DRIFT = 15;
+const MIN_SPEED = 2.5;
+const MAX_SPEED = 7;
+const REDUCED_MOTION_SPEED_FACTOR = 0.08;
+const SCREEN_EDGE_BUFFER = 140;
 let reduceMotionMedia;
 let nightTimerId = null;
+let animationFrameId = null;
 let cleanupCurrentLayer = null;
 let listenersBound = false;
+let activeFireflies = [];
+let lastAnimationTime = 0;
+let viewportWidth = 0;
+let viewportHeight = 0;
 
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
-const CALM_NIGHT_SCENE = 'night-clear';
-const RAINY_NIGHT_SCENE = 'night-rain';
+const RAIN_WEATHER_STATES = new Set(['light-rain', 'heavy-rain', 'night-rain']);
 
 function shouldShowFireflies() {
-  const visualScene = document.body?.dataset.visualScene || document.body?.dataset.weather;
-  if (visualScene === CALM_NIGHT_SCENE) {
-    return true;
-  }
-  if (visualScene === RAINY_NIGHT_SCENE) {
-    return false;
-  }
-  if (visualScene) {
-    return false;
-  }
+  const timeOfDay = document.body?.dataset.timeOfDay;
+  const weather = document.body?.dataset.weather;
+  const visualScene = document.body?.dataset.visualScene;
 
-  return isNightTime();
+  const isNight = timeOfDay === 'night';
+  const isRain =
+    RAIN_WEATHER_STATES.has(weather)
+    || visualScene === 'night-rain';
+
+  return isNight && !isRain;
 }
 
 function clamp(value, min, max) {
@@ -43,29 +47,106 @@ function randomBetween(min, max) {
 }
 
 function pickCount() {
-  return Math.floor(randomBetween(MIN_FIREFLIES, MAX_FIREFLIES + 1));
+  const compactViewport = viewportWidth <= 600;
+  const min = compactViewport ? COMPACT_MIN_FIREFLIES : MIN_FIREFLIES;
+  const max = compactViewport ? COMPACT_MAX_FIREFLIES : MAX_FIREFLIES;
+  return Math.floor(randomBetween(min, max + 1));
 }
 
-function createTrajectory() {
-  const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+function updateViewportSize() {
+  viewportWidth = window.innerWidth || document.documentElement.clientWidth || 0;
+  viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+}
 
-  const startX = randomBetween(0, viewportWidth);
-  const startY = randomBetween(0, viewportHeight);
-  const travelX = randomBetween(-viewportWidth * 0.55, viewportWidth * 0.55);
-  const travelY = randomBetween(-viewportHeight * 0.5, viewportHeight * 0.5);
-  const endX = clamp(startX + travelX, -120, viewportWidth + 120);
-  const endY = clamp(startY + travelY, -120, viewportHeight + 120);
+function createFireflyState(element, reduceMotion) {
+  const angle = randomBetween(0, Math.PI * 2);
+  const speed = randomBetween(MIN_SPEED, MAX_SPEED);
+  const reducedScale = reduceMotion ? 0.2 : 1;
 
   return {
-    startX,
-    startY,
-    travelX: endX - startX,
-    travelY: endY - startY
+    element,
+    x: randomBetween(-SCREEN_EDGE_BUFFER, viewportWidth + SCREEN_EDGE_BUFFER),
+    y: randomBetween(-SCREEN_EDGE_BUFFER, viewportHeight + SCREEN_EDGE_BUFFER),
+    vx: Math.cos(angle) * speed,
+    vy: Math.sin(angle) * speed * 0.72,
+    phase: randomBetween(0, Math.PI * 2),
+    swayAmplitude: randomBetween(14, 42) * reducedScale,
+    swaySpeed: randomBetween(0.12, 0.34),
+    floatAmplitude: randomBetween(10, 32) * reducedScale,
+    floatSpeed: randomBetween(0.18, 0.42),
+    scale: randomBetween(0.86, 1.18),
   };
 }
 
+function wrapFireflyPosition(firefly) {
+  const minX = -SCREEN_EDGE_BUFFER;
+  const maxX = viewportWidth + SCREEN_EDGE_BUFFER;
+  const minY = -SCREEN_EDGE_BUFFER;
+  const maxY = viewportHeight + SCREEN_EDGE_BUFFER;
+
+  if (firefly.x < minX) {
+    firefly.x = maxX;
+  } else if (firefly.x > maxX) {
+    firefly.x = minX;
+  }
+
+  if (firefly.y < minY) {
+    firefly.y = maxY;
+  } else if (firefly.y > maxY) {
+    firefly.y = minY;
+  }
+}
+
+function renderFirefly(firefly, timestamp) {
+  const seconds = timestamp / 1000;
+  const organicX = Math.sin(seconds * firefly.swaySpeed + firefly.phase) * firefly.swayAmplitude;
+  const organicY = Math.cos(seconds * firefly.floatSpeed + firefly.phase) * firefly.floatAmplitude;
+  const x = clamp(firefly.x + organicX, -SCREEN_EDGE_BUFFER, viewportWidth + SCREEN_EDGE_BUFFER);
+  const y = clamp(firefly.y + organicY, -SCREEN_EDGE_BUFFER, viewportHeight + SCREEN_EDGE_BUFFER);
+
+  firefly.element.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${firefly.scale.toFixed(2)})`;
+}
+
+function animateFireflies(timestamp) {
+  if (!lastAnimationTime) {
+    lastAnimationTime = timestamp;
+  }
+
+  const deltaSeconds = Math.min((timestamp - lastAnimationTime) / 1000, 0.08);
+  const reduceMotion = reduceMotionMedia?.matches ?? false;
+  const speedFactor = reduceMotion ? REDUCED_MOTION_SPEED_FACTOR : 1;
+  lastAnimationTime = timestamp;
+
+  activeFireflies.forEach((firefly) => {
+    firefly.x += firefly.vx * deltaSeconds * speedFactor;
+    firefly.y += firefly.vy * deltaSeconds * speedFactor;
+    wrapFireflyPosition(firefly);
+    renderFirefly(firefly, timestamp);
+  });
+
+  animationFrameId = window.requestAnimationFrame(animateFireflies);
+}
+
+function startFireflyAnimation() {
+  if (animationFrameId !== null) {
+    return;
+  }
+
+  lastAnimationTime = 0;
+  animationFrameId = window.requestAnimationFrame(animateFireflies);
+}
+
+function stopFireflyAnimation() {
+  if (animationFrameId !== null) {
+    window.cancelAnimationFrame(animationFrameId);
+    animationFrameId = null;
+  }
+  lastAnimationTime = 0;
+}
+
 function createFirefliesLayer() {
+  updateViewportSize();
+  activeFireflies = [];
   const layer = document.createElement('div');
   layer.className = 'fireflies-layer';
   layer.setAttribute('aria-hidden', 'true');
@@ -75,7 +156,6 @@ function createFirefliesLayer() {
   }
 
   const total = pickCount();
-  const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const compactViewport = viewportWidth <= 600;
   const maxOpacityForViewport = compactViewport ? Math.min(MAX_OPACITY, 0.7) : MAX_OPACITY;
 
@@ -93,20 +173,7 @@ function createFirefliesLayer() {
     firefly.style.setProperty('--flicker-duration', `${flickerDuration.toFixed(2)}s`);
     firefly.style.setProperty('--flicker-delay', `${(-Math.random() * flickerDuration).toFixed(2)}s`);
 
-    if (!reduceMotion) {
-      const driftDuration = randomBetween(MIN_DRIFT, MAX_DRIFT);
-      firefly.style.setProperty('--drift-duration', `${driftDuration.toFixed(2)}s`);
-    }
-
-    const trajectory = createTrajectory();
-    firefly.style.left = `${trajectory.startX}px`;
-    firefly.style.top = `${trajectory.startY}px`;
-
-    if (!reduceMotion) {
-      firefly.style.setProperty('--dx', `${trajectory.travelX.toFixed(2)}px`);
-      firefly.style.setProperty('--dy', `${trajectory.travelY.toFixed(2)}px`);
-    }
-
+    activeFireflies.push(createFireflyState(firefly, reduceMotion));
     layer.appendChild(firefly);
   }
 
@@ -118,11 +185,17 @@ function createFirefliesLayer() {
   }
 
   document.body.appendChild(layer);
+  activeFireflies.forEach((firefly) => {
+    renderFirefly(firefly, performance.now());
+  });
+  startFireflyAnimation();
 
   const release = () => {
+    stopFireflyAnimation();
     if (layer.parentNode) {
       layer.remove();
     }
+    activeFireflies = [];
     if (nightClassAdded) {
       document.body.classList.remove('night-fall');
     }
@@ -138,6 +211,8 @@ function evaluateNightState() {
   const shouldShow = shouldShowFireflies();
   if (shouldShow && !cleanupCurrentLayer) {
     cleanupCurrentLayer = createFirefliesLayer();
+  } else if (shouldShow) {
+    startFireflyAnimation();
   } else if (!shouldShow) {
     if (cleanupCurrentLayer) {
       cleanupCurrentLayer();
@@ -156,6 +231,10 @@ function handleWeatherStateChange() {
   evaluateNightState();
 }
 
+function handleResize() {
+  updateViewportSize();
+}
+
 export function initFireflyAura() {
   if (typeof window === 'undefined' || typeof document === 'undefined') {
     return;
@@ -170,6 +249,7 @@ export function initFireflyAura() {
   if (!listenersBound) {
     reduceMotionMedia.addEventListener('change', handleReduceMotionChange);
     document.addEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
+    window.addEventListener('resize', handleResize);
     nightTimerId = window.setInterval(() => {
       evaluateNightState();
     }, 60 * 1000);
@@ -185,6 +265,7 @@ export function teardownFireflyAura() {
   if (reduceMotionMedia) {
     reduceMotionMedia.removeEventListener('change', handleReduceMotionChange);
   }
+  window.removeEventListener('resize', handleResize);
   document.removeEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
   if (cleanupCurrentLayer) {
     cleanupCurrentLayer();
