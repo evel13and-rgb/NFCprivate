@@ -285,7 +285,6 @@ h1 {
   line-height: 1.1;
   color: var(--title);
   text-shadow: 0 0 22px rgba(200, 162, 90, 0.12);
-  text-wrap: balance;
 }
 
 .quote-rule {
@@ -396,7 +395,6 @@ blockquote {
   padding-inline: 0;
   overflow-wrap: normal;
   word-break: normal;
-  text-wrap: pretty;
   overflow-wrap: break-word;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
@@ -499,7 +497,6 @@ body.night-fall .watermark {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  text-wrap: balance;
 }
 
 .author-line {
@@ -1000,6 +997,7 @@ body[data-mode='day'] .mycelium-layer {
   position: absolute;
   inset: 0;
   background: rgba(24, 18, 11, 0.45);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 
