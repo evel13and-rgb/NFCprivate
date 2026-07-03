@@ -108,6 +108,7 @@ body::after {
   transition: opacity 1.2s ease;
 }
 
+body[data-weather='clear'],
 body[data-weather='sunny'] {
   --weather-tone:
     radial-gradient(circle at 48% 34%, rgba(255, 217, 147, 0.22), transparent 30%),
@@ -116,6 +117,7 @@ body[data-weather='sunny'] {
   --weather-tone-opacity: 0.72;
 }
 
+body[data-time-of-day='sunset'][data-weather='clear'],
 body[data-time-of-day='sunset'][data-weather='sunny'] {
   --weather-tone:
     radial-gradient(circle at 48% 34%, rgba(255, 196, 105, 0.22), transparent 34%),
@@ -173,7 +175,7 @@ body[data-weather='light-rain'] {
 }
 
 body[data-weather='heavy-rain'],
-body[data-weather='night-rain'] {
+body[data-visual-scene='night-rain'] {
   --paramo-base-veil: linear-gradient(rgba(0, 8, 12, 0.38), rgba(0, 0, 0, 0.48));
   --weather-tone:
     linear-gradient(180deg, rgba(32, 47, 55, 0.55), rgba(6, 8, 10, 0.46)),
@@ -187,7 +189,7 @@ body[data-weather='night-rain'] {
   --weather-particles-size: 110px 110px, 170px 170px;
 }
 
-body[data-weather='night-clear'] {
+body[data-visual-scene='night-clear'] {
   --paramo-base-image: var(--paramo-bg-night);
   --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.34));
   --weather-tone:
@@ -196,7 +198,7 @@ body[data-weather='night-clear'] {
   --weather-tone-opacity: 0.92;
 }
 
-body[data-weather='night-rain'] {
+body[data-visual-scene='night-rain'] {
   --paramo-base-image: var(--paramo-bg-night);
 }
 
@@ -230,7 +232,7 @@ body[data-weather='night-rain'] {
 
   body[data-weather='light-rain'],
   body[data-weather='heavy-rain'],
-  body[data-weather='night-rain'] {
+  body[data-visual-scene='night-rain'] {
     --weather-particles-opacity: 0.22;
   }
 }
@@ -372,7 +374,7 @@ body[data-weather='light-rain'] #quote-card {
 }
 
 body[data-weather='heavy-rain'] #quote-card,
-body[data-weather='night-rain'] #quote-card {
+body[data-visual-scene='night-rain'] #quote-card {
   background:
     linear-gradient(180deg, rgba(5, 6, 7, 0.8), rgba(9, 9, 10, 0.84)),
     radial-gradient(circle at 50% 0%, rgba(214, 226, 232, 0.08), transparent 42%);

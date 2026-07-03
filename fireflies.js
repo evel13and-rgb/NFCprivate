@@ -16,18 +16,18 @@ let cleanupCurrentLayer = null;
 let listenersBound = false;
 
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
-const CALM_NIGHT_WEATHER = 'night-clear';
-const RAINY_NIGHT_WEATHER = 'night-rain';
+const CALM_NIGHT_SCENE = 'night-clear';
+const RAINY_NIGHT_SCENE = 'night-rain';
 
 function shouldShowFireflies() {
-  const weather = document.body?.dataset.weather;
-  if (weather === CALM_NIGHT_WEATHER) {
+  const visualScene = document.body?.dataset.visualScene || document.body?.dataset.weather;
+  if (visualScene === CALM_NIGHT_SCENE) {
     return true;
   }
-  if (weather === RAINY_NIGHT_WEATHER) {
+  if (visualScene === RAINY_NIGHT_SCENE) {
     return false;
   }
-  if (weather) {
+  if (visualScene) {
     return false;
   }
 
