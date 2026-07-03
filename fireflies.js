@@ -1,17 +1,67 @@
-const MIN_FIREFLIES = 14;
-const MAX_FIREFLIES = 18;
-const COMPACT_MIN_FIREFLIES = 9;
-const COMPACT_MAX_FIREFLIES = 12;
-const MIN_SIZE = 4.5;
-const MAX_SIZE = 7.5;
-const MIN_FLICKER = 1.8;
-const MAX_FLICKER = 3.8;
-const MIN_OPACITY = 0.4;
-const MAX_OPACITY = 0.9;
-const MIN_SPEED = 2.5;
-const MAX_SPEED = 7;
-const REDUCED_MOTION_SPEED_FACTOR = 0.08;
-const SCREEN_EDGE_BUFFER = 140;
+const MIN_FIREFLIES = 35;
+const MAX_FIREFLIES = 55;
+const COMPACT_MIN_FIREFLIES = 18;
+const COMPACT_MAX_FIREFLIES = 26;
+const REDUCED_MIN_FIREFLIES = 12;
+const REDUCED_MAX_FIREFLIES = 18;
+const REDUCED_COMPACT_MIN_FIREFLIES = 7;
+const REDUCED_COMPACT_MAX_FIREFLIES = 11;
+const MIN_FLICKER = 1.9;
+const MAX_FLICKER = 4.4;
+const MIN_SPEED = 8;
+const MAX_SPEED = 18;
+const REDUCED_MOTION_SPEED_FACTOR = 0.04;
+const SCREEN_EDGE_BUFFER = 180;
+const FIREFLY_PROFILES = Object.freeze([
+  {
+    weight: 0.66,
+    minSize: 2.4,
+    maxSize: 4.4,
+    minOpacity: 0.3,
+    maxOpacity: 0.52,
+    coreAlpha: 0.3,
+    glowAlpha: 0.22,
+    haloAlpha: 0.1,
+    tightGlow: '10px',
+    tightSpread: '3px',
+    wideGlow: '22px',
+    wideSpread: '8px',
+    blur: '0.1px',
+    speedScale: 1.1,
+  },
+  {
+    weight: 0.28,
+    minSize: 4.2,
+    maxSize: 7.1,
+    minOpacity: 0.46,
+    maxOpacity: 0.76,
+    coreAlpha: 0.42,
+    glowAlpha: 0.32,
+    haloAlpha: 0.16,
+    tightGlow: '14px',
+    tightSpread: '5px',
+    wideGlow: '30px',
+    wideSpread: '12px',
+    blur: '0.16px',
+    speedScale: 1,
+  },
+  {
+    weight: 0.06,
+    minSize: 7.2,
+    maxSize: 9.4,
+    minOpacity: 0.62,
+    maxOpacity: 0.9,
+    coreAlpha: 0.52,
+    glowAlpha: 0.42,
+    haloAlpha: 0.22,
+    tightGlow: '18px',
+    tightSpread: '7px',
+    wideGlow: '42px',
+    wideSpread: '16px',
+    blur: '0.22px',
+    speedScale: 0.78,
+  },
+]);
 let reduceMotionMedia;
 let nightTimerId = null;
 let animationFrameId = null;
@@ -46,11 +96,29 @@ function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function pickCount() {
+function pickCount(reduceMotion) {
   const compactViewport = viewportWidth <= 600;
+  if (reduceMotion) {
+    const min = compactViewport ? REDUCED_COMPACT_MIN_FIREFLIES : REDUCED_MIN_FIREFLIES;
+    const max = compactViewport ? REDUCED_COMPACT_MAX_FIREFLIES : REDUCED_MAX_FIREFLIES;
+    return Math.floor(randomBetween(min, max + 1));
+  }
+
   const min = compactViewport ? COMPACT_MIN_FIREFLIES : MIN_FIREFLIES;
   const max = compactViewport ? COMPACT_MAX_FIREFLIES : MAX_FIREFLIES;
   return Math.floor(randomBetween(min, max + 1));
+}
+
+function pickFireflyProfile() {
+  const roll = Math.random();
+  let threshold = 0;
+  for (const profile of FIREFLY_PROFILES) {
+    threshold += profile.weight;
+    if (roll <= threshold) {
+      return profile;
+    }
+  }
+  return FIREFLY_PROFILES[FIREFLY_PROFILES.length - 1];
 }
 
 function updateViewportSize() {
@@ -58,10 +126,10 @@ function updateViewportSize() {
   viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
 }
 
-function createFireflyState(element, reduceMotion) {
+function createFireflyState(element, reduceMotion, profile) {
   const angle = randomBetween(0, Math.PI * 2);
-  const speed = randomBetween(MIN_SPEED, MAX_SPEED);
-  const reducedScale = reduceMotion ? 0.2 : 1;
+  const speed = randomBetween(MIN_SPEED, MAX_SPEED) * profile.speedScale;
+  const reducedScale = reduceMotion ? 0.08 : 1;
 
   return {
     element,
@@ -70,10 +138,10 @@ function createFireflyState(element, reduceMotion) {
     vx: Math.cos(angle) * speed,
     vy: Math.sin(angle) * speed * 0.72,
     phase: randomBetween(0, Math.PI * 2),
-    swayAmplitude: randomBetween(14, 42) * reducedScale,
-    swaySpeed: randomBetween(0.12, 0.34),
-    floatAmplitude: randomBetween(10, 32) * reducedScale,
-    floatSpeed: randomBetween(0.18, 0.42),
+    swayAmplitude: randomBetween(24, 78) * reducedScale,
+    swaySpeed: randomBetween(0.18, 0.48),
+    floatAmplitude: randomBetween(16, 58) * reducedScale,
+    floatSpeed: randomBetween(0.22, 0.58),
     scale: randomBetween(0.86, 1.18),
   };
 }
@@ -155,25 +223,32 @@ function createFirefliesLayer() {
     layer.dataset.reduceMotion = 'true';
   }
 
-  const total = pickCount();
-  const compactViewport = viewportWidth <= 600;
-  const maxOpacityForViewport = compactViewport ? Math.min(MAX_OPACITY, 0.7) : MAX_OPACITY;
+  const total = pickCount(reduceMotion);
 
   for (let i = 0; i < total; i += 1) {
+    const profile = pickFireflyProfile();
     const firefly = document.createElement('span');
     firefly.className = 'firefly';
-    const size = randomBetween(MIN_SIZE, MAX_SIZE);
+    const size = randomBetween(profile.minSize, profile.maxSize);
     firefly.style.width = `${size.toFixed(2)}px`;
     firefly.style.height = `${size.toFixed(2)}px`;
 
-    const opacity = randomBetween(MIN_OPACITY, maxOpacityForViewport);
+    const opacity = randomBetween(profile.minOpacity, profile.maxOpacity);
     firefly.style.setProperty('--firefly-base-opacity', opacity.toFixed(2));
+    firefly.style.setProperty('--firefly-core-alpha', profile.coreAlpha.toFixed(2));
+    firefly.style.setProperty('--firefly-glow-alpha', profile.glowAlpha.toFixed(2));
+    firefly.style.setProperty('--firefly-halo-alpha', profile.haloAlpha.toFixed(2));
+    firefly.style.setProperty('--firefly-tight-glow', profile.tightGlow);
+    firefly.style.setProperty('--firefly-tight-spread', profile.tightSpread);
+    firefly.style.setProperty('--firefly-wide-glow', profile.wideGlow);
+    firefly.style.setProperty('--firefly-wide-spread', profile.wideSpread);
+    firefly.style.setProperty('--firefly-blur', profile.blur);
 
     const flickerDuration = randomBetween(MIN_FLICKER, MAX_FLICKER);
     firefly.style.setProperty('--flicker-duration', `${flickerDuration.toFixed(2)}s`);
     firefly.style.setProperty('--flicker-delay', `${(-Math.random() * flickerDuration).toFixed(2)}s`);
 
-    activeFireflies.push(createFireflyState(firefly, reduceMotion));
+    activeFireflies.push(createFireflyState(firefly, reduceMotion, profile));
     layer.appendChild(firefly);
   }
 
