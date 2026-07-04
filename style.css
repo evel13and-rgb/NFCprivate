@@ -190,7 +190,6 @@ body[data-visual-scene='night-rain'] {
 }
 
 body[data-visual-scene='night-clear'] {
-  --paramo-base-image: var(--paramo-bg-night);
   --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.34));
   --weather-tone:
     radial-gradient(circle at 43% 13%, rgba(186, 210, 255, 0.16), transparent 23%),
@@ -199,7 +198,6 @@ body[data-visual-scene='night-clear'] {
 }
 
 body[data-visual-scene='night-rain'] {
-  --paramo-base-image: var(--paramo-bg-night);
 }
 
 @keyframes paramo-rain-fall {
