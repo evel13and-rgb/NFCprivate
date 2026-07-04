@@ -28,6 +28,9 @@
   --weather-particles-animation: none;
   --weather-particles-filter: none;
   --weather-particles-size: auto;
+  --rain-card-droplet-color: rgba(218, 232, 232, 0.3);
+  --rain-card-highlight-color: rgba(255, 255, 255, 0.2);
+  --rain-card-sheen-color: rgba(224, 236, 238, 0.14);
 }
 
 * {
@@ -160,22 +163,26 @@ body[data-weather='mist'] {
   --weather-particles-size: 120% 100%, 120% 100%, 160% 100%;
 }
 
-body[data-weather='light-rain'] {
+body[data-weather='light-rain'],
+body[data-visual-scene='day-rain'],
+body[data-visual-scene='sunset-rain'],
+body[data-visual-scene='night-rain'] {
   --paramo-base-veil: linear-gradient(rgba(10, 17, 20, 0.28), rgba(0, 0, 0, 0.34));
   --weather-tone:
-    linear-gradient(180deg, rgba(74, 91, 98, 0.36), rgba(12, 15, 16, 0.28)),
-    radial-gradient(circle at 50% 50%, transparent 0 42%, rgba(0, 0, 0, 0.34) 82%);
-  --weather-tone-opacity: 0.9;
+    linear-gradient(180deg, rgba(90, 107, 111, 0.28), rgba(14, 17, 17, 0.26)),
+    radial-gradient(circle at 48% 26%, rgba(218, 224, 218, 0.08), transparent 36%),
+    radial-gradient(circle at 50% 50%, transparent 0 43%, rgba(0, 0, 0, 0.34) 82%);
+  --weather-tone-opacity: 0.86;
   --weather-particles:
-    repeating-linear-gradient(105deg, transparent 0 18px, rgba(200, 218, 226, 0.34) 18px 19px, transparent 19px 34px),
-    repeating-linear-gradient(105deg, transparent 0 36px, rgba(185, 206, 216, 0.2) 36px 37px, transparent 37px 62px);
-  --weather-particles-opacity: 0.34;
-  --weather-particles-animation: paramo-rain-fall 0.9s linear infinite;
-  --weather-particles-size: 120px 120px, 180px 180px;
+    repeating-linear-gradient(102deg, transparent 0 24px, rgba(206, 224, 230, 0.24) 24px 25px, transparent 25px 54px),
+    repeating-linear-gradient(102deg, transparent 0 62px, rgba(232, 238, 235, 0.13) 62px 63px, transparent 63px 116px),
+    radial-gradient(ellipse at 50% 12%, rgba(220, 226, 220, 0.09), transparent 48%);
+  --weather-particles-opacity: 0.3;
+  --weather-particles-animation: paramo-light-rain-fall 1.28s linear infinite;
+  --weather-particles-size: 140px 190px, 240px 280px, 100% 100%;
 }
 
-body[data-weather='heavy-rain'],
-body[data-visual-scene='night-rain'] {
+body[data-weather='heavy-rain'] {
   --paramo-base-veil: linear-gradient(rgba(0, 8, 12, 0.38), rgba(0, 0, 0, 0.48));
   --weather-tone:
     linear-gradient(180deg, rgba(32, 47, 55, 0.55), rgba(6, 8, 10, 0.46)),
@@ -189,6 +196,28 @@ body[data-visual-scene='night-rain'] {
   --weather-particles-size: 110px 110px, 170px 170px;
 }
 
+body[data-visual-scene='day-rain'] {
+  --paramo-base-veil: linear-gradient(rgba(18, 24, 24, 0.24), rgba(0, 0, 0, 0.3));
+  --weather-tone:
+    linear-gradient(180deg, rgba(124, 140, 142, 0.26), rgba(24, 28, 27, 0.21)),
+    radial-gradient(circle at 50% 20%, rgba(230, 232, 224, 0.08), transparent 34%),
+    radial-gradient(circle at 50% 52%, transparent 0 46%, rgba(0, 0, 0, 0.3) 82%);
+  --rain-card-droplet-color: rgba(214, 230, 230, 0.28);
+  --rain-card-highlight-color: rgba(255, 255, 255, 0.18);
+  --rain-card-sheen-color: rgba(220, 234, 236, 0.12);
+}
+
+body[data-visual-scene='sunset-rain'] {
+  --paramo-base-veil: linear-gradient(rgba(42, 25, 14, 0.26), rgba(8, 6, 4, 0.34));
+  --weather-tone:
+    linear-gradient(180deg, rgba(174, 118, 70, 0.18), rgba(24, 18, 14, 0.3)),
+    radial-gradient(circle at 48% 24%, rgba(236, 181, 115, 0.1), transparent 34%),
+    radial-gradient(circle at 50% 54%, transparent 0 44%, rgba(0, 0, 0, 0.36) 82%);
+  --rain-card-droplet-color: rgba(238, 214, 174, 0.24);
+  --rain-card-highlight-color: rgba(255, 232, 190, 0.16);
+  --rain-card-sheen-color: rgba(226, 173, 108, 0.1);
+}
+
 body[data-visual-scene='night-clear'] {
   --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.34));
   --weather-tone:
@@ -198,6 +227,24 @@ body[data-visual-scene='night-clear'] {
 }
 
 body[data-visual-scene='night-rain'] {
+  --paramo-base-veil: linear-gradient(rgba(0, 7, 12, 0.32), rgba(0, 0, 0, 0.43));
+  --weather-tone:
+    linear-gradient(180deg, rgba(22, 38, 50, 0.46), rgba(5, 7, 10, 0.4)),
+    radial-gradient(circle at 46% 14%, rgba(176, 205, 238, 0.11), transparent 28%),
+    radial-gradient(circle at 50% 54%, transparent 0 42%, rgba(0, 0, 0, 0.5) 84%);
+  --weather-tone-opacity: 0.94;
+  --rain-card-droplet-color: rgba(196, 220, 236, 0.28);
+  --rain-card-highlight-color: rgba(232, 244, 255, 0.18);
+  --rain-card-sheen-color: rgba(168, 204, 232, 0.12);
+}
+
+@keyframes paramo-light-rain-fall {
+  from {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  to {
+    background-position: -42px 160px, -68px 224px, 0 0;
+  }
 }
 
 @keyframes paramo-rain-fall {
@@ -230,6 +277,8 @@ body[data-visual-scene='night-rain'] {
 
   body[data-weather='light-rain'],
   body[data-weather='heavy-rain'],
+  body[data-visual-scene='day-rain'],
+  body[data-visual-scene='sunset-rain'],
   body[data-visual-scene='night-rain'] {
     --weather-particles-opacity: 0.22;
   }
@@ -348,6 +397,38 @@ h1 {
   transition: background 0.9s ease, border-color 0.9s ease, box-shadow 0.9s ease;
 }
 
+#quote-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(ellipse at 18% 22%, var(--rain-card-highlight-color) 0 1px, transparent 2.8px),
+    radial-gradient(ellipse at 72% 18%, var(--rain-card-droplet-color) 0 1.2px, transparent 3.2px),
+    radial-gradient(ellipse at 38% 72%, var(--rain-card-highlight-color) 0 1px, transparent 2.9px),
+    radial-gradient(ellipse at 86% 64%, var(--rain-card-droplet-color) 0 1.2px, transparent 3px),
+    linear-gradient(112deg, transparent 0 43%, var(--rain-card-sheen-color) 47%, transparent 51%);
+  background-size: 132px 118px, 170px 146px, 150px 170px, 210px 180px, 100% 100%;
+  background-position: 0 0, 34px 18px, -20px 32px, 18px -28px, 0 0;
+  mix-blend-mode: screen;
+  transition: opacity 0.9s ease;
+}
+
+#quote-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+body[data-weather='light-rain'] #quote-card::before,
+body[data-visual-scene='day-rain'] #quote-card::before,
+body[data-visual-scene='sunset-rain'] #quote-card::before,
+body[data-visual-scene='night-rain'] #quote-card::before {
+  opacity: 0.34;
+  animation: quote-card-rain-glass 14s linear infinite;
+}
+
 body[data-time-of-day='sunset'] #quote-card {
   background:
     linear-gradient(180deg, rgba(13, 8, 5, 0.7), rgba(20, 11, 7, 0.75)),
@@ -377,6 +458,36 @@ body[data-visual-scene='night-rain'] #quote-card {
     radial-gradient(circle at 50% 0%, rgba(214, 226, 232, 0.08), transparent 42%);
   border-color: rgba(226, 218, 194, 0.38);
   box-shadow: 0 32px 82px rgba(0, 0, 0, 0.58), inset 0 0 54px rgba(246, 234, 199, 0.025);
+}
+
+@keyframes quote-card-rain-glass {
+  from {
+    background-position: 0 0, 34px 18px, -20px 32px, 18px -28px, 0 0;
+  }
+  to {
+    background-position: 18px 96px, 16px 130px, -6px 142px, 4px 104px, 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-weather='light-rain'] #quote-card::before,
+  body[data-visual-scene='day-rain'] #quote-card::before,
+  body[data-visual-scene='sunset-rain'] #quote-card::before,
+  body[data-visual-scene='night-rain'] #quote-card::before {
+    opacity: 0.24;
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  body[data-weather='light-rain'] #quote-card::before,
+  body[data-visual-scene='day-rain'] #quote-card::before,
+  body[data-visual-scene='sunset-rain'] #quote-card::before,
+  body[data-visual-scene='night-rain'] #quote-card::before {
+    opacity: 0.26;
+    background-size: 170px 150px, 210px 180px, 190px 210px, 250px 220px, 100% 100%;
+    animation-duration: 18s;
+  }
 }
 
 blockquote {
