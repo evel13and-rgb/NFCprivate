@@ -6,7 +6,7 @@ import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
 const PRE_RANDOM_QUOTES = [];
 const E_A_FRAGMENTOS_QUOTES = [
   {
-    t: "Esa sensación de extrañeza tan profunda que casi me pone de revés en el mundo",
+    t: "Esa sensación de extrañeza tan profunda, una otredad convexa que casi me pone del revés en el mundo",
     a: "E.A",
     obra: "fragmentos",
     lang: "es"
