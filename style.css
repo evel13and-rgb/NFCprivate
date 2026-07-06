@@ -121,6 +121,22 @@ body::after {
   transition: opacity 1.2s ease;
 }
 
+.rain-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.1s ease;
+}
+
+.rain-canvas.is-active {
+  opacity: 1;
+}
+
 body[data-weather='clear'],
 body[data-weather='sunny'] {
   --weather-tone:
@@ -323,7 +339,7 @@ body[data-visual-scene='night-rain'] {
 }
 
 body[data-time-of-day='day'][data-weather='light-rain'],
-body:not([data-weather='heavy-rain'])[data-visual-scene='day-rain'] {
+body[data-visual-scene='day-rain'] {
   --light-rain-streak-strong: rgba(210, 228, 230, 0.17);
   --light-rain-streak-soft: rgba(228, 238, 238, 0.11);
   --light-rain-streak-faint: rgba(192, 210, 214, 0.08);
@@ -337,7 +353,7 @@ body:not([data-weather='heavy-rain'])[data-visual-scene='day-rain'] {
 }
 
 body[data-time-of-day='sunset'][data-weather='light-rain'],
-body:not([data-weather='heavy-rain'])[data-visual-scene='sunset-rain'] {
+body[data-visual-scene='sunset-rain'] {
   --light-rain-streak-strong: rgba(230, 206, 168, 0.15);
   --light-rain-streak-soft: rgba(242, 220, 184, 0.1);
   --light-rain-streak-faint: rgba(196, 172, 136, 0.08);
@@ -352,7 +368,7 @@ body:not([data-weather='heavy-rain'])[data-visual-scene='sunset-rain'] {
 
 body[data-time-of-day='night'][data-weather='light-rain'],
 body.night-fall[data-weather='light-rain'],
-body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain'] {
+body[data-visual-scene='night-rain'] {
   --light-rain-streak-strong: rgba(178, 208, 228, 0.14);
   --light-rain-streak-soft: rgba(210, 230, 242, 0.09);
   --light-rain-streak-faint: rgba(138, 170, 194, 0.08);
@@ -460,6 +476,28 @@ body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain'] {
     --weather-particles-size: 220px 330px, 290px 390px, 260px 350px, 340px 430px, 190px 300px, 100% 100%;
     --rain-glass-opacity: 0.32;
   }
+}
+
+body[data-weather='light-rain'],
+body[data-weather='heavy-rain'],
+body[data-visual-scene='day-rain'],
+body[data-visual-scene='sunset-rain'],
+body[data-visual-scene='night-rain'] {
+  --weather-particles: none;
+  --weather-particles-opacity: 0;
+  --weather-particles-animation: none;
+  --weather-particles-filter: none;
+  --weather-particles-size: auto;
+}
+
+body[data-weather='light-rain']::after,
+body[data-weather='heavy-rain']::after,
+body[data-visual-scene='day-rain']::after,
+body[data-visual-scene='sunset-rain']::after,
+body[data-visual-scene='night-rain']::after {
+  inset: 0;
+  mix-blend-mode: normal;
+  transform: none;
 }
 
 
@@ -639,9 +677,10 @@ body[data-visual-scene='night-rain'] #quote-card::before {
 }
 
 body[data-weather='light-rain'] #quote-card::after,
-body:not([data-weather='heavy-rain'])[data-visual-scene='day-rain'] #quote-card::after,
-body:not([data-weather='heavy-rain'])[data-visual-scene='sunset-rain'] #quote-card::after,
-body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain'] #quote-card::after {
+body[data-weather='heavy-rain'] #quote-card::after,
+body[data-visual-scene='day-rain'] #quote-card::after,
+body[data-visual-scene='sunset-rain'] #quote-card::after,
+body[data-visual-scene='night-rain'] #quote-card::after {
   opacity: var(--rain-glass-opacity);
 }
 
@@ -706,9 +745,10 @@ body[data-visual-scene='night-rain'] #quote-card {
   }
 
   body[data-weather='light-rain'] #quote-card::after,
-  body:not([data-weather='heavy-rain'])[data-visual-scene='day-rain'] #quote-card::after,
-  body:not([data-weather='heavy-rain'])[data-visual-scene='sunset-rain'] #quote-card::after,
-  body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain'] #quote-card::after {
+  body[data-weather='heavy-rain'] #quote-card::after,
+  body[data-visual-scene='day-rain'] #quote-card::after,
+  body[data-visual-scene='sunset-rain'] #quote-card::after,
+  body[data-visual-scene='night-rain'] #quote-card::after {
     filter: drop-shadow(0 0 3px var(--rain-glass-shadow-color));
   }
 }
