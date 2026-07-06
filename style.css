@@ -146,21 +146,82 @@ body[data-weather='overcast'] {
   --weather-tone-opacity: 0.95;
 }
 
-body[data-weather='mist'] {
-  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.24));
+body[data-weather='mist'],
+body[data-visual-scene='day-mist'],
+body[data-visual-scene='sunset-mist'],
+body[data-visual-scene='night-mist'] {
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.24));
   --weather-tone:
-    linear-gradient(180deg, rgba(198, 203, 196, 0.2), rgba(78, 84, 80, 0.14)),
-    radial-gradient(circle at 52% 48%, rgba(235, 234, 218, 0.18), transparent 38%),
+    linear-gradient(180deg, rgba(198, 203, 196, 0.18), rgba(78, 84, 80, 0.12)),
+    radial-gradient(circle at 52% 48%, rgba(235, 234, 218, 0.16), transparent 40%),
     radial-gradient(circle at 50% 50%, transparent 0 48%, rgba(0, 0, 0, 0.28) 84%);
+  --weather-tone-opacity: 0.86;
+  --weather-particles:
+    radial-gradient(ellipse at 16% 64%, rgba(226, 226, 214, 0.26), transparent 44%),
+    radial-gradient(ellipse at 82% 54%, rgba(210, 216, 212, 0.2), transparent 40%),
+    radial-gradient(ellipse at 48% 78%, rgba(238, 237, 222, 0.14), transparent 46%),
+    linear-gradient(94deg, transparent 0 16%, rgba(226, 226, 216, 0.14) 46%, transparent 74%),
+    linear-gradient(86deg, transparent 0 22%, rgba(214, 218, 212, 0.1) 58%, transparent 86%);
+  --weather-particles-opacity: 0.5;
+  --weather-particles-animation: paramo-mist-drift 46s ease-in-out infinite alternate;
+  --weather-particles-filter: blur(16px) saturate(0.78);
+  --weather-particles-size: 136% 108%, 128% 112%, 150% 110%, 180% 100%, 170% 100%;
+}
+
+body[data-time-of-day='day'][data-weather='mist'],
+body[data-weather='mist']:not([data-time-of-day='sunset']):not([data-time-of-day='night']),
+body[data-visual-scene='day-mist'] {
+  --paramo-base-veil: linear-gradient(rgba(255, 255, 255, 0.08), rgba(22, 24, 22, 0.2));
+  --weather-tone:
+    linear-gradient(180deg, rgba(225, 225, 214, 0.18), rgba(95, 103, 97, 0.1)),
+    radial-gradient(circle at 50% 32%, rgba(241, 240, 224, 0.16), transparent 36%),
+    radial-gradient(circle at 50% 54%, transparent 0 48%, rgba(0, 0, 0, 0.2) 84%);
+  --weather-tone-opacity: 0.82;
+  --weather-particles:
+    radial-gradient(ellipse at 18% 66%, rgba(238, 238, 226, 0.28), transparent 45%),
+    radial-gradient(ellipse at 82% 56%, rgba(218, 224, 218, 0.2), transparent 42%),
+    radial-gradient(ellipse at 48% 80%, rgba(246, 244, 228, 0.15), transparent 48%),
+    linear-gradient(94deg, transparent 0 18%, rgba(232, 232, 220, 0.13) 46%, transparent 74%),
+    linear-gradient(86deg, transparent 0 24%, rgba(210, 216, 210, 0.09) 58%, transparent 86%);
+  --weather-particles-opacity: 0.46;
+  --weather-particles-filter: blur(17px) saturate(0.62);
+}
+
+body[data-time-of-day='sunset'][data-weather='mist'],
+body[data-visual-scene='sunset-mist'] {
+  --paramo-base-veil: linear-gradient(rgba(55, 29, 10, 0.18), rgba(15, 11, 8, 0.28));
+  --weather-tone:
+    linear-gradient(180deg, rgba(211, 154, 76, 0.16), rgba(74, 55, 39, 0.16)),
+    radial-gradient(circle at 50% 30%, rgba(232, 186, 111, 0.14), transparent 38%),
+    radial-gradient(circle at 50% 54%, transparent 0 46%, rgba(0, 0, 0, 0.32) 84%);
   --weather-tone-opacity: 0.9;
   --weather-particles:
-    radial-gradient(ellipse at 22% 62%, rgba(224, 224, 214, 0.28), transparent 42%),
-    radial-gradient(ellipse at 78% 55%, rgba(213, 218, 214, 0.22), transparent 38%),
-    linear-gradient(90deg, transparent, rgba(226, 226, 216, 0.18), transparent);
-  --weather-particles-opacity: 0.52;
-  --weather-particles-animation: paramo-mist-drift 28s ease-in-out infinite alternate;
-  --weather-particles-filter: blur(10px);
-  --weather-particles-size: 120% 100%, 120% 100%, 160% 100%;
+    radial-gradient(ellipse at 20% 66%, rgba(226, 194, 143, 0.22), transparent 45%),
+    radial-gradient(ellipse at 80% 55%, rgba(194, 176, 143, 0.2), transparent 42%),
+    radial-gradient(ellipse at 50% 79%, rgba(236, 207, 158, 0.13), transparent 48%),
+    linear-gradient(94deg, transparent 0 18%, rgba(221, 180, 116, 0.12) 46%, transparent 74%),
+    linear-gradient(86deg, transparent 0 24%, rgba(190, 164, 124, 0.1) 58%, transparent 86%);
+  --weather-particles-opacity: 0.48;
+  --weather-particles-filter: blur(18px) saturate(0.74);
+}
+
+body[data-time-of-day='night'][data-weather='mist'],
+body.night-fall[data-weather='mist'],
+body[data-visual-scene='night-mist'] {
+  --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+  --weather-tone:
+    linear-gradient(180deg, rgba(66, 80, 88, 0.22), rgba(9, 12, 15, 0.3)),
+    radial-gradient(circle at 52% 34%, rgba(176, 198, 208, 0.12), transparent 38%),
+    radial-gradient(circle at 50% 54%, transparent 0 43%, rgba(0, 0, 0, 0.48) 84%);
+  --weather-tone-opacity: 0.9;
+  --weather-particles:
+    radial-gradient(ellipse at 18% 65%, rgba(172, 193, 204, 0.18), transparent 44%),
+    radial-gradient(ellipse at 82% 56%, rgba(138, 160, 174, 0.16), transparent 42%),
+    radial-gradient(ellipse at 50% 80%, rgba(191, 207, 211, 0.1), transparent 48%),
+    linear-gradient(94deg, transparent 0 18%, rgba(156, 180, 193, 0.1) 46%, transparent 74%),
+    linear-gradient(86deg, transparent 0 24%, rgba(116, 138, 154, 0.08) 58%, transparent 86%);
+  --weather-particles-opacity: 0.42;
+  --weather-particles-filter: blur(18px) saturate(0.68);
 }
 
 body[data-weather='light-rain'],
@@ -257,11 +318,14 @@ body[data-visual-scene='night-rain'] {
 }
 
 @keyframes paramo-mist-drift {
-  from {
-    transform: translate3d(-2.5%, 0, 0) scale(1.03);
+  0% {
+    transform: translate3d(-3%, 0.8%, 0) scale(1.04);
   }
-  to {
-    transform: translate3d(2.5%, -1.5%, 0) scale(1.07);
+  48% {
+    transform: translate3d(1.5%, -0.9%, 0) scale(1.065);
+  }
+  100% {
+    transform: translate3d(3.2%, -1.4%, 0) scale(1.08);
   }
 }
 
@@ -271,7 +335,10 @@ body[data-visual-scene='night-rain'] {
     transform: none;
   }
 
-  body[data-weather='mist'] {
+  body[data-weather='mist'],
+  body[data-visual-scene='day-mist'],
+  body[data-visual-scene='sunset-mist'],
+  body[data-visual-scene='night-mist'] {
     --weather-particles-opacity: 0.34;
   }
 
@@ -281,6 +348,17 @@ body[data-visual-scene='night-rain'] {
   body[data-visual-scene='sunset-rain'],
   body[data-visual-scene='night-rain'] {
     --weather-particles-opacity: 0.22;
+  }
+}
+
+@media (max-width: 640px) {
+  body[data-weather='mist'],
+  body[data-visual-scene='day-mist'],
+  body[data-visual-scene='sunset-mist'],
+  body[data-visual-scene='night-mist'] {
+    --weather-particles-opacity: 0.32;
+    --weather-particles-filter: blur(13px) saturate(0.7);
+    --weather-particles-size: 160% 110%, 150% 112%, 170% 110%, 220% 100%, 210% 100%;
   }
 }
 
