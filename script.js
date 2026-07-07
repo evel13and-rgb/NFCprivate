@@ -1344,6 +1344,399 @@ Y ahora vio Félix que asomaba la mujer en los ojos de su prima, y que se le ale
   }
 ];
 
+const NIEBLA_QUOTES = [
+  {
+    id: "niebla-001",
+    t: `Al aparecer Augusto a la puerta de su casa extendió el brazo derecho, con la mano palma abajo y abierta, y dirigiendo los ojos al cielo quedóse un momento parado en esta actitud estatuaria y augusta.
+
+No era que tomaba posesión del mundo exterior, sino era que observaba si llovía.
+
+Y al recibir en el dorso de la mano el frescor del lento orvallo frunció el sobrecejo.
+
+Y no era tampoco que le molestase la llovizna, sino el tener que abrir el paraguas.`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "No era que tomaba posesión del mundo exterior, sino era que observaba si llovía.",
+    tags: ["niebla", "lluvia", "vida", "ironía", "cotidiano"],
+    lang: "es"
+  },
+  {
+    id: "niebla-002",
+    t: `¡Estaba tan elegante, tan esbelto, plegado y dentro de su funda!
+
+Un paraguas cerrado es tan elegante como es feo un paraguas abierto.
+
+«Es una desgracia esto de tener que servirse uno de las cosas —pensó Augusto—; tener que usarlas. El uso estropea y hasta destruye toda belleza.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "El uso estropea y hasta destruye toda belleza.",
+    tags: ["belleza", "uso", "paraguas", "pensamiento", "vida"],
+    lang: "es"
+  },
+  {
+    id: "niebla-003",
+    t: `Abrió el paraguas por fin y se quedó un momento suspenso y pensando:
+
+«Y ahora, ¿hacia dónde voy? ¿Tiro a la derecha o a la izquierda?»
+
+Porque Augusto no era un caminante, sino un paseante de la vida.
+
+«Esperaré a que pase un perro —se dijo— y tomaré la dirección inicial que él tome.»
+
+En esto pasó por la calle no un perro, sino una garrida moza, y tras de sus ojos se fue, como imantado y sin darse de ello cuenta, Augusto.
+
+Y así una calle y otra y otra.`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Augusto no era un caminante, sino un paseante de la vida.",
+    tags: ["vida", "camino", "azar", "Eugenia", "amor", "mirada"],
+    lang: "es"
+  },
+  {
+    id: "niebla-004",
+    t: `¿Y quién es Eugenia?
+
+Ah, caigo en la cuenta de que hace tiempo la andaba buscando.
+
+Y mientras yo la buscaba ella me ha salido al paso.
+
+¿No es esto acaso encontrar algo?
+
+Cuando uno descubre una aparición que buscaba, ¿no es que la aparición, compadecida de su busca, se le viene al encuentro?`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Mientras yo la buscaba ella me ha salido al paso.",
+    tags: ["Eugenia", "aparición", "amor", "destino", "búsqueda"],
+    lang: "es"
+  },
+  {
+    id: "niebla-005",
+    t: `—¿Y por qué te llamas Domingo?
+
+—Porque así me llaman.
+
+«Bien, muy bien —se dijo Augusto—; nos llamamos como nos llaman.
+
+En los tiempos homéricos tenían las personas y las cosas dos nombres, el que les daban los hombres y el que les daban los dioses.
+
+¿Cómo me llamará Dios?»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Nos llamamos como nos llaman.",
+    tags: ["nombre", "identidad", "Dios", "Augusto", "existencia"],
+    lang: "es"
+  },
+  {
+    id: "niebla-006",
+    t: `Tomó la pluma y se puso a escribir:
+
+«Señorita: Esta misma mañana, bajo la dulce llovizna del cielo, cruzó usted, aparición fortuita, por delante de la puerta de la casa donde aún vivo y ya no tengo hogar.
+
+Me habían llevado allí sus ojos, sus ojos, que son refulgentes estrellas mellizas en la nebulosa de mi mundo.
+
+Perdóneme, Eugenia, y deje que le dé familiarmente este dulce nombre; perdóneme la lírica.
+
+Yo vivo en perpetua lírica infinitesimal.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Yo vivo en perpetua lírica infinitesimal.",
+    tags: ["Eugenia", "amor", "carta", "lírica", "niebla"],
+    lang: "es"
+  },
+  {
+    id: "niebla-007",
+    t: `«¡Enamorado yo! ¡Yo enamorado! ¡Quién había de decirlo...!
+
+Tal vez mi amor ha precedido a su objeto.
+
+Es más, es este amor el que lo ha suscitado, el que lo ha extraído de la niebla de la creación.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Tal vez mi amor ha precedido a su objeto.",
+    tags: ["amor", "creación", "niebla", "Eugenia", "deseo"],
+    lang: "es"
+  },
+  {
+    id: "niebla-008",
+    t: `«¿Y cómo me he enamorado si en rigor no puedo decir que la conozco?
+
+Bah, el conocimiento vendrá después.
+
+El amor precede al conocimiento, y éste mata a aquél.
+
+Conocer es perdonar, dicen.
+
+No, perdonar es conocer.
+
+Primero el amor, el conocimiento después.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "El amor precede al conocimiento, y éste mata a aquél.",
+    tags: ["amor", "conocimiento", "Eugenia", "pensamiento", "filosofía"],
+    lang: "es"
+  },
+  {
+    id: "niebla-009",
+    t: `«¿Y para amar algo, qué basta?
+
+¡Vislumbrarlo!
+
+El vislumbre; he aquí la intuición amorosa, el vislumbre en la niebla.
+
+Luego viene el precisarse, la visión perfecta, el resolverse la niebla en gotas de agua o en granizo, o en nieve, o en piedra.
+
+La ciencia es una pedrea.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "El vislumbre; he aquí la intuición amorosa, el vislumbre en la niebla.",
+    tags: ["amor", "vislumbre", "niebla", "ciencia", "intuición"],
+    lang: "es"
+  },
+  {
+    id: "niebla-010",
+    t: `«¡No, no, niebla, niebla!
+
+¡Quién fuera águila para pasearse por los senos de las nubes!
+
+Y ver al sol a través de ellas, como lumbre nebulosa también.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "¡No, no, niebla, niebla!",
+    tags: ["niebla", "nubes", "sol", "deseo", "existencia"],
+    lang: "es"
+  },
+  {
+    id: "niebla-011",
+    t: `«¿Sabes lo que es dar un paso decisivo?
+
+Los vientos de la fortuna nos empujan y nuestros pasos son decisivos todos.
+
+¿Nuestros? ¿Son nuestros esos pasos?
+
+Caminamos, Orfeo mío, por una selva enmarañada y bravía, sin senderos.
+
+El sendero nos lo hacemos con los pies según caminamos a la ventura.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "El sendero nos lo hacemos con los pies según caminamos a la ventura.",
+    tags: ["camino", "destino", "Orfeo", "vida", "azar"],
+    lang: "es"
+  },
+  {
+    id: "niebla-012",
+    t: `«¿De dónde ha brotado Eugenia?
+
+¿Es ella una creación mía o soy creación suya yo?
+
+¿O somos los dos creaciones mutuas, ella de mí y yo de ella?
+
+¿No es acaso todo creación de cada cosa y cada cosa creación de todo?
+
+¿Y qué es creación?
+
+¿Qué eres tú, Orfeo?
+
+¿Qué soy yo?»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "¿Es ella una creación mía o soy creación suya yo?",
+    tags: ["creación", "identidad", "Eugenia", "Orfeo", "existencia"],
+    lang: "es"
+  },
+  {
+    id: "niebla-013",
+    t: `«Muchas veces se me ha ocurrido pensar, Orfeo, que yo no soy, e iba por la calle antojándoseme que los demás no me veían.
+
+Y otras veces he fantaseado que no me veían como me veía yo, y que mientras yo me creía ir formalmente, con toda compostura, estaba, sin saberlo, haciendo el payaso, y los demás riéndose y burlándose de mí.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Muchas veces se me ha ocurrido pensar, Orfeo, que yo no soy.",
+    tags: ["identidad", "Orfeo", "existencia", "mirada", "extrañeza"],
+    lang: "es"
+  },
+  {
+    id: "niebla-014",
+    t: `«¡Qué vida ésta, Orfeo, qué vida, sobre todo desde que murió mi madre!
+
+Cada hora me llega empujada por las horas que le precedieron; no he conocido el porvenir.
+
+Y ahora que empiezo a vislumbrarlo me parece se me va a convertir en pasado.
+
+Eugenia es ya casi un recuerdo para mí.
+
+Estos días que pasan... este día, este eterno día que pasa... deslizándose en niebla de aburrimiento.
+
+Hoy como ayer, mañana como hoy.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Este día, este eterno día que pasa... deslizándose en niebla de aburrimiento.",
+    tags: ["tiempo", "madre", "aburrimiento", "niebla", "Orfeo"],
+    lang: "es"
+  },
+  {
+    id: "niebla-015",
+    t: `«Y ahora me brillan en el cielo de mi soledad los dos ojos de Eugenia.
+
+Me brillan con el resplandor de las lágrimas de mi madre.
+
+Y me hacen creer que existo, ¡dulce ilusión!
+
+Amo, ergo sum.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Amo, ergo sum.",
+    tags: ["amor", "existencia", "Eugenia", "madre", "soledad"],
+    lang: "es"
+  },
+  {
+    id: "niebla-016",
+    t: `«Este amor, Orfeo, es como lluvia bienhechora en que se deshace y concreta la niebla de la existencia.
+
+Gracias al amor siento al alma de bulto, la toco.
+
+Empieza a dolerme en su cogollo mismo el alma, gracias al amor, Orfeo.
+
+Y el alma misma ¿qué es sino amor, sino dolor encarnado?»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "El alma misma ¿qué es sino amor, sino dolor encarnado?",
+    tags: ["alma", "amor", "dolor", "Orfeo", "existencia"],
+    lang: "es"
+  },
+  {
+    id: "niebla-017",
+    t: `«Vienen los días y van los días y el amor queda.
+
+Allá dentro, muy dentro, en las entrañas de las cosas se rozan y friegan la corriente de este mundo con la contraria corriente del otro.
+
+Y de este roce y friega viene el más triste y el más dulce de los dolores: el de vivir.»`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "El más triste y el más dulce de los dolores: el de vivir.",
+    tags: ["vivir", "dolor", "amor", "existencia", "alma"],
+    lang: "es"
+  },
+  {
+    id: "niebla-018",
+    t: `Parecíale respirar oscuridad, olor a vejez, a tradición sahumada en incienso, a hogar de siglos.
+
+Cerró los ojos y volvió a soñar aquella casa dulce y tibia, en que la luz entraba por entre las blancas flores bordadas en los visillos.
+
+Volvió a ver a su madre, yendo y viniendo sin ruido, siempre de negro, con aquella su sonrisa que era poso de lágrimas.`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Volvió a ver a su madre, yendo y viniendo sin ruido, siempre de negro.",
+    tags: ["madre", "casa", "recuerdo", "vejez", "hogar"],
+    lang: "es"
+  },
+  {
+    id: "niebla-019",
+    t: `—¡Don Avito! —exclamó Augusto.
+
+—¡El mismo, Augustito, el mismo!
+
+—Pero ¿usted por aquí?
+
+—Sí, yo por aquí; enseña mucho la vida, y más la muerte; enseñan más, mucho más que la ciencia.`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Enseña mucho la vida, y más la muerte.",
+    tags: ["vida", "muerte", "ciencia", "aprendizaje", "Don Avito"],
+    lang: "es"
+  },
+  {
+    id: "niebla-020",
+    t: `—Sí, Augusto, sí —prosiguió don Avito—; la vida es la única maestra de la vida; no hay pedagogía que valga.
+
+Sólo se aprende a vivir viviendo, y cada hombre tiene que recomenzar el aprendizaje de la vida de nuevo.`,
+    a: "Miguel de Unamuno",
+    author: "Miguel de Unamuno",
+    obra: "Niebla",
+    obraTitulo: "Niebla",
+    work: "Niebla",
+    type: "fragmento",
+    highlight: "Sólo se aprende a vivir viviendo.",
+    tags: ["vida", "aprendizaje", "Don Avito", "experiencia", "existencia"],
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -1363,7 +1756,8 @@ const QUOTES = [
   ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES,
   ...LA_VIDA_ES_SUENO_QUOTES,
   ...BARTLEBY_QUOTES,
-  ...CEREZAS_DEL_CEMENTERIO_QUOTES
+  ...CEREZAS_DEL_CEMENTERIO_QUOTES,
+  ...NIEBLA_QUOTES
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
