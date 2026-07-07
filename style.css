@@ -860,14 +860,30 @@ body.night-fall .watermark {
 }
 
 .meta-link {
+  -webkit-appearance: none;
+  appearance: none;
   border: none;
   background: none;
   padding: 0;
   margin: 0;
   font: inherit;
+  line-height: inherit;
   color: inherit;
+  cursor: pointer;
   text-decoration: none;
-  transition: color 0.8s ease, text-decoration-color 0.8s ease;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition: color 0.8s ease, text-decoration-color 0.8s ease, text-shadow 0.3s ease;
+}
+
+.meta-link:hover,
+.meta-link:focus-visible {
+  color: var(--title);
+  text-decoration-color: rgba(200, 162, 90, 0.52);
+  text-shadow: 0 0 14px rgba(200, 162, 90, 0.18);
+  outline: none;
 }
 
 .meta-author {
@@ -1391,6 +1407,19 @@ body[data-mode='day'] .modal__content {
   font-size: 1rem;
   color: var(--text);
   line-height: 1.7;
+}
+
+.modal__content p {
+  margin: 0 0 0.75rem;
+}
+
+.modal__content p:last-child {
+  margin-bottom: 0;
+}
+
+.modal__field-label {
+  color: var(--title);
+  font-weight: 600;
 }
 
 .modal__close {

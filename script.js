@@ -1389,6 +1389,153 @@ Sólo se aprende a vivir viviendo, y cada hombre tiene que recomenzar el aprendi
   }
 ];
 
+const CANAS_Y_BARRO_QUOTES = [
+  {
+    id: "canas-barro-001",
+    t: `Afluían las mujeres al canal, semejante á una calle de Venecia, con las márgenes cubiertas de barracas y viveros donde los pescadores guardaban las anguilas. En el agua muerta, de una brillantez de estaño, permanecía inmóvil la barca-correo: un gran ataúd cargado de personas y paquetes, con la borda casi á flor de agua.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "En el agua muerta, de una brillantez de estaño, permanecía inmóvil la barca-correo.",
+    tags: ["Albufera", "canal", "barca", "agua", "pueblo"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-002",
+    t: `Entró á empujones, sin que la masa egoísta le abriera paso, y no encontrando sitio se deslizó entre las piernas de los pasajeros, tendiéndose en el fondo, con el rostro pegado á las alpargatas sucias y los zapatos llenos de barro, en un ambiente nauseabundo. La gente parecía acostumbrada á estas escenas. Aquella embarcación servía para todo; era el vehículo de la comida, del hospital y del cementerio.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Aquella embarcación servía para todo; era el vehículo de la comida, del hospital y del cementerio.",
+    tags: ["barca", "pobreza", "barro", "cementerio", "Albufera"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-003",
+    t: `Los altos ribazos ocultaban la red de canales, las anchas _carreras_ por donde navegaban los barcos de vela cargados de arroz. Sus cascos permanecían invisibles y las grandes velas triangulares se deslizaban sobre el verde de los campos, en el silencio de la tarde, como fantasmas que caminasen en tierra firme.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Las grandes velas triangulares se deslizaban sobre el verde de los campos, en el silencio de la tarde, como fantasmas que caminasen en tierra firme.",
+    tags: ["arrozales", "barcos", "fantasmas", "tarde", "Albufera"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-004",
+    t: `Era el _lluent_, la verdadera Albufera, el lago libre, con sus bosquecillos de cañas esparcidos á grandes distancias, donde se refugiaban las aves del lago, tan perseguidas por los cazadores de la ciudad.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Era el _lluent_, la verdadera Albufera, el lago libre.",
+    tags: ["Albufera", "lluent", "lago", "cañas", "aves"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-005",
+    t: `Ya estaban en la verdadera Albufera, en el inmenso _lluent_, azul y terso como un espejo veneciano, que retrataba invertidos los barcos y las lejanas orillas con el contorno ligeramente serpenteado.
+
+Las nubes parecían rodar por el fondo del lago como vedijas de blanca lana; en la playa de la Dehesa unos cazadores seguidos de perros duplicaban su imagen en el agua, andando cabeza abajo.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Las nubes parecían rodar por el fondo del lago como vedijas de blanca lana.",
+    tags: ["Albufera", "lago", "nubes", "espejo", "Dehesa"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-006",
+    t: `La barca deslizábase á lo largo de la Dehesa y pasaban rápidamente ante ella las colinas areniscas, con las chozas de los guardas en su cumbre; las espesas cortinas de matorrales; los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados.",
+    tags: ["Dehesa", "pinos", "naturaleza", "terror", "paisaje"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-007",
+    t: `Era milagroso que no apareciera su cadáver en el fondo de un canal después de tantos viajes á pie, por el lago, en plena embriaguez, siguiendo las lindes de los arrozales, estrechas como un filo de hacha, atravesando los portillos de las acequias con agua al pecho y pasando por lugares de barro movedizo donde nadie osaba aventurarse como no fuese en barca. La Albufera era su casa.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "La Albufera era su casa.",
+    tags: ["Sangonera", "Albufera", "barro", "lago", "embriaguez"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-008",
+    t: `Y los dos hicieron un viaje á la ciudad, trayendo de allá una niña de seis años, una bestezuela tímida, arisca y fea, que sacaron de la casa de expósitos. Se llamaba Visanteta; pero todos, para que no olvidase su origen, con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_.",
+    tags: ["Borda", "infancia", "crueldad", "pueblo", "origen"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-009",
+    t: `Y tranquilo por la posesión de Neleta, que crecía en la miseria como una flor rara, contrastando su hermosura con la pobreza física de las otras hijas del Palmar, no la atendía gran cosa, y la trataba con la misma confianza que si ya fuesen esposos.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Neleta, que crecía en la miseria como una flor rara.",
+    tags: ["Neleta", "miseria", "belleza", "Palmar", "deseo"],
+    lang: "es"
+  },
+  {
+    id: "canas-barro-010",
+    t: `Los dos barquitos entraron en un callejón de agua entre los altos carrizos. La anea crecía á manojos entre los _senills_; las cañas se confundían con los juncos, y las plantas trepadoras, con sus campanillas blancas y azules, se enredaban en esta selva acuática formando guirnaldas.
+
+En el callejón, el agua mostraba en su fondo extrañas vegetaciones que subían hasta la superficie, no sabiéndose en ciertos momentos si navegaban los barquitos ó se arrastraban sobre campos verdosos cubiertos por un débil cristal.`,
+    a: "Vicente Blasco Ibáñez",
+    author: "Vicente Blasco Ibáñez",
+    obra: "Cañas y barro",
+    obraTitulo: "Cañas y barro",
+    work: "Cañas y barro",
+    type: "fragmento",
+    language: "es",
+    highlight: "Esta selva acuática formando guirnaldas.",
+    tags: ["Albufera", "selva acuática", "cañas", "agua", "naturaleza"],
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -1406,6 +1553,7 @@ const QUOTES = [
   ...BARTLEBY_QUOTES,
   ...CEREZAS_DEL_CEMENTERIO_QUOTES,
   ...NIEBLA_QUOTES,
+  ...CANAS_Y_BARRO_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
@@ -1431,6 +1579,25 @@ const FALLBACK_WEATHER_STATE = Object.freeze({
   intensity: 'soft',
 });
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
+
+const AUTHORS_INFO = Object.freeze({
+  // "gabriel-miro": {
+  //   name: "Gabriel Miró",
+  //   dates: "",
+  //   country: "",
+  //   description: ""
+  // }
+});
+
+const WORKS_INFO = Object.freeze({
+  // "las-cerezas-del-cementerio": {
+  //   title: "Las cerezas del cementerio",
+  //   author: "Gabriel Miró",
+  //   year: "",
+  //   type: "",
+  //   description: ""
+  // }
+});
 
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 const quoteManager = createQuoteManager(QUOTES, storage);
@@ -1972,9 +2139,56 @@ function splitWorkMetadata(work) {
 
 function getQuoteMetadata(quote) {
   const { title, author: inferredAuthor } = splitWorkMetadata(quote.obra ?? '');
-  const workTitle = quote.obraTitulo ?? title ?? quote.obra ?? '';
+  const workTitle = quote.work ?? quote.obraTitulo ?? title ?? quote.obra ?? '';
   const author = quote.autor ?? quote.author ?? inferredAuthor;
   return { author, workTitle };
+}
+
+function getCatalogEntry(type, id) {
+  if (!id) return null;
+  const catalog = type === 'author' ? AUTHORS_INFO : WORKS_INFO;
+  return catalog[id] ?? null;
+}
+
+function appendInfoLine(fragment, label, value) {
+  if (!value) return;
+  const paragraph = document.createElement('p');
+  const prefix = document.createElement('span');
+  prefix.className = 'modal__field-label';
+  prefix.textContent = `${label}: `;
+  paragraph.appendChild(prefix);
+  paragraph.appendChild(document.createTextNode(value));
+  fragment.appendChild(paragraph);
+}
+
+function renderInfoContent(type, contentElement, entry) {
+  if (!contentElement) return;
+  const fragment = document.createDocumentFragment();
+
+  if (entry) {
+    if (type === 'author') {
+      appendInfoLine(fragment, 'Nombre', entry.name);
+      appendInfoLine(fragment, 'Fechas', entry.dates);
+      appendInfoLine(fragment, 'País', entry.country);
+      appendInfoLine(fragment, 'Descripción', entry.description);
+    } else {
+      appendInfoLine(fragment, 'Título', entry.title);
+      appendInfoLine(fragment, 'Autor', entry.author);
+      appendInfoLine(fragment, 'Año', entry.year);
+      appendInfoLine(fragment, 'Tipo', entry.type);
+      appendInfoLine(fragment, 'Descripción', entry.description);
+    }
+  }
+
+  if (!fragment.childNodes.length) {
+    const pending = document.createElement('p');
+    pending.textContent = type === 'author'
+      ? 'Ficha de autor pendiente.'
+      : 'Ficha de obra pendiente.';
+    fragment.appendChild(pending);
+  }
+
+  contentElement.replaceChildren(fragment);
 }
 
 function getModalElements(type) {
@@ -2012,20 +2226,17 @@ function handleEscapeKey(event) {
 function openModal(type, triggerElement, titleText) {
   const elements = getModalElements(type);
   if (!elements) return;
-
-  const placeholder =
-    type === 'author'
-      ? 'Aquí irá la información sobre el autor. (Pendiente de completar).'
-      : 'Aquí irá la información sobre la obra. (Pendiente de completar).';
+  const catalogId = type === 'author'
+    ? triggerElement?.dataset?.authorId
+    : triggerElement?.dataset?.workId;
+  const entry = getCatalogEntry(type, catalogId || slugify(titleText || ''));
 
   elements.root.classList.remove('is-hidden');
   elements.root.setAttribute('aria-hidden', 'false');
   if (elements.title) {
     elements.title.textContent = titleText || '';
   }
-  if (elements.content) {
-    elements.content.textContent = placeholder;
-  }
+  renderInfoContent(type, elements.content, entry);
   if (elements.close) {
     elements.close.focus({ preventScroll: true });
   }

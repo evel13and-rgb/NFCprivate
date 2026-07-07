@@ -29,17 +29,19 @@
         <div class="author" id="author" aria-live="polite">
           <div class="author-line">
             <span class="meta-prefix" aria-hidden="true">—</span>
-            <span
+            <button
+              type="button"
               class="meta-link meta-author"
               id="author-name"
               data-author-id=""
-            ></span>
+            ></button>
           </div>
-          <span
+          <button
+            type="button"
             class="meta-link meta-work"
             id="author-work"
             data-work-id=""
-          ></span>
+          ></button>
         </div>
         <div class="watermark" aria-hidden="true">paramoliterario.com</div>
         <div class="quote-actions" aria-label="Acciones de la frase">
@@ -105,6 +107,7 @@
     id="author-modal"
     role="dialog"
     aria-modal="true"
+    aria-hidden="true"
     aria-labelledby="author-modal-title"
   >
     <div class="modal__overlay" data-modal-dismiss="author"></div>
@@ -125,6 +128,7 @@
     id="work-modal"
     role="dialog"
     aria-modal="true"
+    aria-hidden="true"
     aria-labelledby="work-modal-title"
   >
     <div class="modal__overlay" data-modal-dismiss="work"></div>
