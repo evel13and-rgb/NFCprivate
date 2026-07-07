@@ -725,10 +725,27 @@ blockquote {
   color: var(--text);
   position: relative;
   padding-inline: 0;
+  white-space: pre-line;
   overflow-wrap: normal;
   word-break: normal;
   overflow-wrap: break-word;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quote-highlight {
+  width: min(92%, 620px);
+  margin: 0 auto clamp(0.85rem, 2.1vh, 1.35rem);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1rem, 2.35vw, 1.28rem);
+  line-height: 1.35;
+  color: var(--title);
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  text-shadow: 0 0 18px rgba(200, 162, 90, 0.18);
+}
+
+.quote-highlight[hidden] {
+  display: none;
 }
 
 blockquote::before,

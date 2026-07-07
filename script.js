@@ -907,6 +907,443 @@ const BARTLEBY_QUOTES = [
   }
 ];
 
+const CEREZAS_DEL_CEMENTERIO_QUOTES = [
+  {
+    id: "cerezas-cementerio-001",
+    t: `Desde el primer puente del buque contemplaba Félix la lenta ascensión de la luna, luna enorme, ancha y encendida como el llameante ruedo de un horno.
+
+Y miraba con tan devoto recogimiento, que todo lo sentía en un santo remanso de silencio, todo quietecito y maravillado mientras emergía y se alzaba la roja luna.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Todo lo sentía en un santo remanso de silencio.",
+    tags: ["luna", "silencio", "mar", "contemplación", "lirismo"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-002",
+    t: `Ya tarde, después de la comida, hicieron los tres un apartado grupo; y se asomaron a la noche para verse caminar sobre las aguas de luna.
+
+La noche era inmensa, clara, de paz santísima, de inocencia de creación reciente.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "La noche era inmensa, clara, de paz santísima.",
+    tags: ["noche", "luna", "mar", "paz", "belleza"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-003",
+    t: `Ellas le vieron inmóvil, escultórico, lleno de luna. Y la señora, sonriéndole como a un hijo, murmuró:
+
+—¡Cuán impresionable es usted!... ¿Félix? ¿Se llama usted Félix, verdad? ¡Deben emocionarle mucho los viajes!
+
+—¡Oh, sí! Soy muy nervioso. Siempre creo que va a sucederme algo grande y... no me sucede nada; siempre estoy contento, y contento y todo... yo no sé qué tengo que siento el latido de mi corazón en toda mi carne y... lloraría.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Siempre creo que va a sucederme algo grande y no me sucede nada.",
+    tags: ["espera", "sensibilidad", "ansiedad", "juventud", "viaje"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-004",
+    t: `Y esta noche, por serme ustedes desconocidas, y viéndolas entre ese bello misterio de velos y de luna, me traen la ilusión de la distancia, de lo remoto; se me figura que vamos muy lejos, muy lejos, sin acordarme de que llegaremos pasado mañana a nuestro pueblo, ni de que aquí cerca está paseando el señor Ripoll.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Se me figura que vamos muy lejos, muy lejos.",
+    tags: ["distancia", "viaje", "luna", "misterio", "deseo"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-005",
+    t: `Félix siguió ardientemente:
+
+—¡Yo siempre codicio estar donde no estoy! ¡Verdaderamente es dichoso el Señor estando en todas partes!... Pero cuando llego al sitio apetecido, no hallo toda la hermosura deseada, y es que lo que antes miraba lo dejo, lo pierdo acercándome.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Yo siempre codicio estar donde no estoy.",
+    tags: ["deseo", "distancia", "melancolía", "búsqueda", "insatisfacción"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-006",
+    t: `Félix, tendiendo su brazo, exclamó:
+
+—Ahora me impresionan esas torres blancas y solitarias lo mismo que me emocionó ayer este barco, mirado desde el muelle. Me parecía nave sagrada.
+
+Pues ahora es la paz de los faros lo que me ilusiona y atrae, los faros que son pedazos de humanidad desamparada dentro del silencio de los cielos y de las aguas.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Los faros son pedazos de humanidad desamparada.",
+    tags: ["faros", "soledad", "mar", "humanidad", "silencio"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-007",
+    t: `Todo el barco sosegaba. Félix y doña Beatriz contemplaban la noche.
+
+Lejos, las aguas se iban llenando de luna de color vieja y muy triste.
+
+Se asomaron sobre la hélice que despedazaba al mar, dejándole un hondo rugido de espumas que parecían hechas de luciérnagas.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "El mar dejaba un hondo rugido de espumas que parecían hechas de luciérnagas.",
+    tags: ["mar", "luciérnagas", "noche", "luna", "belleza"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-008",
+    t: `—De frío, no. Temblé porque sin apurarme con tristezas o melancolías de poeta, que no soy, se me mezclan muy raros pensamientos.
+
+En cada faceta de luz de las aguas miraba o se me aparecía un rostro, una cabeza de mujer ahogada... ¿No habrá sucedido aquí algún naufragio? ¿Verdad? ¡Se imagina, ve usted los náufragos tendidos entre el mar, mirándonos con ojos devorados, mirándonos!`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "En cada faceta de luz de las aguas miraba una cabeza de mujer ahogada.",
+    tags: ["muerte", "mar", "visión", "naufragio", "angustia"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-009",
+    t: `Y es que sentía en los profundos de su ánima la levadura del recuerdo de la silueta y de la voz de doña Beatriz, que le eran amigas a su corazón, y no lograba llegar al claro origen de este sentimiento.
+
+Nada más descubría que el atraerse ahora de modo tan efusivo y repentino, sin tropezar en violencia ni sorpresa, vendría de la escondida virtud de esa amistad de antaño.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Le eran amigas a su corazón.",
+    tags: ["recuerdo", "Beatriz", "corazón", "amistad", "pasado"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-010",
+    t: `Este primer día de reposo hogareño pareciole de demasiada lentitud; y, al confesárselo, se reconvenía y exaltaba por su sequedad de corazón.
+
+¡Si es que sólo gustaba de hablar y saber de doña Beatriz y Julia; estaba hechizado, estaba poseído de la fragancia de sus palabras y de toda su hermosura!`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Estoy hechizado, estoy poseído de la fragancia de sus palabras.",
+    tags: ["hechizo", "Beatriz", "deseo", "palabras", "hermosura"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-011",
+    t: `Sentose Félix en un rubio sillón de mimbres, y doña Beatriz alzose y le enjugó la frente y los cabellos con su primoroso delantal de randas.
+
+—¡Su cabeza es una tempestad de oro! —le dijo maternalmente.
+
+Y Félix entornaba los ojos bajo la caricia del fino lenzuelo y de las manos de la hermosa señora, fragante de primavera.
+
+—¡Doña Beatriz, usted no se perfuma como las demás mujeres; usted huele a naturaleza gloriosa, a mañana y a tarde de los huertos!...`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Usted huele a naturaleza gloriosa.",
+    tags: ["Beatriz", "huerto", "olor", "naturaleza", "deseo"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-012",
+    t: `Julia era tan alta como la madre, pero más delgada, con palidez mística de novicia y donaires y alborozos de rapaza; su carne y su alma daban la sensación y fragancia de la fruta en agraz.
+
+Beatriz era la fruta dorada que destila la primera lágrima de su miel.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Su carne y su alma daban la sensación y fragancia de la fruta en agraz.",
+    tags: ["Julia", "Beatriz", "fruta", "juventud", "madurez"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-013",
+    t: `Su alma era como una delgada ánfora llena de melancolías, abierta por una mano invisible, y el encerrado vino de la cepa madre de la ilusión se vertía, mezclando su ranciedad, fuerte y dulcísima, entre la sangre y los nervios de Félix.
+
+Imaginaba lo pasado y el mañana en bella esfumación de horizonte vago y callado de cuadro antiguo; y ya no se rio, no hizo burla de su quimera.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Su alma era como una delgada ánfora llena de melancolías.",
+    tags: ["alma", "melancolía", "ilusión", "pasado", "Félix"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-014",
+    t: `Muchas tardes os tuve a Julita y a ti juntos en mi regazo, mientras él me contaba sus andanzas, su nomadismo genial, sus juegos con la muerte...
+
+Hablaba mucho de la muerte siendo él llama de amor y de vida. Como tú, la veía en el reflejo de la luna, dentro de los estanques y del mar, en las nubes de los ocasos, en las siluetas de las montañas y de los árboles.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Hablaba mucho de la muerte siendo él llama de amor y de vida.",
+    tags: ["muerte", "vida", "luna", "Guillermo", "destino"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-015",
+    t: `Entonces, Félix sintió un apresuramiento helado de su sangre y escuchó los pasos de otra vida, llegada del misterio, caminando encima de su alma.
+
+¡Señor, él también padecía la visión de la muerte en los vivos...! Niños, viejos, mujeres placenteras, Julia, doña Beatriz, a todos se los representaba muertos, con las manos cruzadas sobre el vientre.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Padecía la visión de la muerte en los vivos.",
+    tags: ["muerte", "visión", "angustia", "alma", "Félix"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-016",
+    t: `Los demás, ¡cuán distintos habían sido en vida y muerte!
+
+Pedro, el primogénito, el heredero de «La Olmeda», adornado de raras virtudes, dejó, al morir, fragancia de santidad.
+
+Luis, un químico audaz, hosco y sabio, se abrasó los ojos y las manos en su infernal estudio.
+
+Y Guillermo, el predilecto de todos, corazón aventurero, ascua de ideales, acabó asesinado en misterioso y espantable lance de amor.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Corazón aventurero, ascua de ideales.",
+    tags: ["Guillermo", "muerte", "amor", "ideal", "tragedia"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-017",
+    t: `Desde las abiertas ventanas estuvo Félix contemplando el jardín, dormido bajo cendales de luna.
+
+Vino doña Beatriz, que había dejado la cena para cuidar del atavío de Julia y mirarla desde los balcones.
+
+—¿Me perdona, «madrina», esta visita? La luna me ha sacado de casa, y me ha guiado hasta aquí como a un niñito de cuento que se pierde en medio de un bosque.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "La luna me ha sacado de casa.",
+    tags: ["luna", "jardín", "Beatriz", "cuento", "noche"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-018",
+    t: `Inmóviles, callados, contemplaban Beatriz y Félix la santa noche.
+
+Creíanse subidos y asomados en la orilla de una estrella. Juzgábanse venturosos, y se sonreían con entristecimiento.
+
+Se miraron, y vieron, dentro de sus retinas, luna, noche, inmensidad.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Creíanse subidos y asomados en la orilla de una estrella.",
+    tags: ["Beatriz", "Félix", "noche", "estrella", "amor"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-019",
+    t: `Los ojos de la señora recorrieron la dorada cabeza del hombre. Y de súbito se conmovió de dichoso y amargo desfallecimiento.
+
+Había sentido humedad y brasa de labios. Pareciole besado todo su cuerpo.
+
+Y fue esforzada: suavemente retiró su brazo de la caricia. Alzó los ojos y balbució:
+
+—¡Qué altos, qué cerca del cielo! ¡Como si el cielo fuese un mar que nos sorbiera!`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Como si el cielo fuese un mar que nos sorbiera.",
+    tags: ["cielo", "mar", "Beatriz", "deseo", "vértigo"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-020",
+    t: `Abrió las vidrieras, y apareció religiosamente la azulada palidez del espacio.
+
+Los fastuosos colores que vestían a la mujer se deshicieron, y quedó vestida de luz y blancura nupcial.
+
+Entonces los brazos de Félix la ciñeron. Pareciole que estaban en el templo solitario de un astro, alumbrado suavemente para ellos.
+
+Y tuvo la divina sensación de que abrazaba un alma desnuda, alma hecha de luna y de jazmines.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Abrazaba un alma desnuda, alma hecha de luna y de jazmines.",
+    tags: ["amor", "alma", "luna", "jazmines", "Beatriz"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-021",
+    t: `Extenuados y delirantes, se reclinaron sobre los amplios asientos de seda. Un rayo lunar los envolvía...
+
+Toda la honda y clara noche fue lámpara y estrado de su amor.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Toda la honda y clara noche fue lámpara y estrado de su amor.",
+    tags: ["amor", "noche", "luna", "delirio", "Beatriz"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-022",
+    t: `Después, al levantarse, todavía abrazados, vieron una nube blanca y resplandeciente de figura de Ángel terrible como el que arrojó a Adán y Eva del Paraíso.
+
+Y los dos sollozaron.
+
+—¡Madrina mía! ¡Beatriz!
+
+Salieron, y se besaron castamente delante de toda la tierra y de todo el cielo, y delante del Ángel que se desvaneció entre nieblas y luna.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Los dos sollozaron.",
+    tags: ["culpa", "amor", "paraíso", "ángel", "luna"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-023",
+    t: `Y doña Beatriz le hablaba y le miraba como antes, como su «madrina», sin que sus ojos, su sonrisa, su palabra descubriesen y recordasen a la mujer poseída, a la amante sabida en todos los deliciosos misterios.
+
+Y Félix, que, viéndola al lado de la hija, tuvo miedo de creerla descendida, desvelada porque la conociera en su secreto de excelsitud y pecado, comprendió entonces cuan inagotable es Amor.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Cuán inagotable es Amor.",
+    tags: ["amor", "Beatriz", "secreto", "pecado", "deseo"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-024",
+    t: `Ésta era la adorable y gustosa reliquia que ahora tocaba con ardimiento y voluptuoso fetichismo.
+
+Y, al contemplarla y besarla mucho, notó que sabía a pan viejo, y que la menuda y perfumada huella de los blanquísimos dientes estaba ya seca y rugosa.
+
+Y entonces se cumplieron en Félix los avisos del abrasado carmelita Juan de la Cruz, y probó los malos dejos del apetito satisfecho.
+
+Pesadez de hartura y comezón de hambre tejían su mal.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Pesadez de hartura y comezón de hambre tejían su mal.",
+    tags: ["deseo", "fetichismo", "hambre", "amor", "reliquia"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-025",
+    t: `¡Cuánta lástima florecía en el corazón de Félix mirando a la mujer desventurada!
+
+Que así la juzgaba fingiéndose el constante suplicio de la beldad triste y lacia.
+
+Y como todo sentimiento, hasta el de la compasión, tenía en Félix algo de voluptuosidad por lo intensísimo, se conmovió de alegría, de la generosa alegría que Adath dice a Lucifer: «El goce de esparcir la alegría, de comunicarla a los otros»; y quiso mitigar, alborozar, siquiera en el breve discurso del viaje, esas dos vidas hundidas en el hastío de la nada de emociones.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Dos vidas hundidas en el hastío de la nada de emociones.",
+    tags: ["compasión", "hastío", "Félix", "emociones", "viaje"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-026",
+    t: `El camino era largo y estaba arbolado. Lejos, las anchas copas de los olmos subían y se cerraban en bóveda negral.
+
+Llegaban las huertas hasta las orillas de la calzada, y el manso aire llevaba un grato olor de hierba recién segada, de establos calientes y mieses espesas y maduras.
+
+La quietud y suavidad del crepúsculo, la campesina fragancia, la santa y alada sinfonía de los campanarios que tañían el Ángelus, todo emblandeció a Félix.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "La quietud y suavidad del crepúsculo todo emblandeció a Félix.",
+    tags: ["campo", "crepúsculo", "huertas", "Ángelus", "Félix"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-027",
+    t: `Cerca del asiento de la portera comenzó a removerse una tortuga.
+
+Félix quiso verla. Y la mujer se la mostró, murmurando:
+
+—Es mi compaña. ¡Ella y los señores me quedan en el mundo!
+
+Arriba sonaban puertas y rumor de voces.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Es mi compaña. Ella y los señores me quedan en el mundo.",
+    tags: ["soledad", "vejez", "tortuga", "compañía", "casa"],
+    lang: "es"
+  },
+  {
+    id: "cerezas-cementerio-028",
+    t: `De nuevo contemplábala Félix: veía las trenzas de sus cabellos recogidos, subidos en peinado de señorita; reparaba en su larga falda, por cuya fimbria salían descuidadamente dos zapatitos rubios.
+
+Halláronse sus miradas; sorprendió la doncella la fina sonrisa de su primo; examinose toda y recató sus pies.
+
+Y ahora vio Félix que asomaba la mujer en los ojos de su prima, y que se le alejaba, se hacía misteriosa; y advirtió toda la transfiguración de la carne y del alma de la amiga de su mocedad.`,
+    a: "Gabriel Miró",
+    author: "Gabriel Miró",
+    obra: "Las cerezas del cementerio",
+    obraTitulo: "Las cerezas del cementerio",
+    type: "fragmento",
+    highlight: "Asomaba la mujer en los ojos de su prima.",
+    tags: ["Isabel", "mujer", "mirada", "transfiguración", "juventud"],
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -925,7 +1362,8 @@ const QUOTES = [
   ...EL_COLOR_PURPURA_QUOTES,
   ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES,
   ...LA_VIDA_ES_SUENO_QUOTES,
-  ...BARTLEBY_QUOTES
+  ...BARTLEBY_QUOTES,
+  ...CEREZAS_DEL_CEMENTERIO_QUOTES
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
@@ -957,6 +1395,7 @@ const quoteManager = createQuoteManager(QUOTES, storage);
 
 let currentQuote = null;
 let quoteElementRef = null;
+let quoteHighlightRef = null;
 let quoteCardRef = null;
 let shareButtonRef = null;
 let listenVoiceButtonRef = null;
@@ -2269,6 +2708,14 @@ function renderQuote(quote) {
     }
   }
 
+  if (quoteHighlightRef) {
+    const highlight = typeof currentQuote.highlight === 'string'
+      ? currentQuote.highlight.trim()
+      : '';
+    quoteHighlightRef.textContent = highlight;
+    quoteHighlightRef.hidden = !highlight;
+  }
+
   const authorContainer = document.getElementById('author');
   const authorName = document.getElementById('author-name');
   const authorWork = document.getElementById('author-work');
@@ -2316,6 +2763,7 @@ function renderQuote(quote) {
 function initApp() {
   const { quote, message } = determineQuoteForDisplay();
   quoteElementRef = document.getElementById('quote');
+  quoteHighlightRef = document.getElementById('quote-highlight');
   initDaylightMotes();
   initGlobalWeatherState();
   initMotionPreferenceWatcher();
