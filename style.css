@@ -1278,9 +1278,22 @@ body[data-mode='day'] .mycelium-layer {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
+  mix-blend-mode: screen;
+  contain: layout paint;
+  --fireflies-layer-opacity: 1;
   opacity: 0;
   animation: fireflies-layer-in var(--firefly-fade-in, 2400ms) ease-out forwards;
+}
+
+.fireflies-back {
+  z-index: 2;
+}
+
+.fireflies-front {
+  z-index: 4;
+  --firefly-fade-in: 3200ms;
+  --fireflies-layer-opacity: 0.88;
 }
 
 .firefly {
@@ -1288,11 +1301,11 @@ body[data-mode='day'] .mycelium-layer {
   top: 0;
   left: 0;
   border-radius: 50%;
-  background: radial-gradient(circle at center, rgba(255, 241, 138, 0.96) 0%, rgba(249, 227, 107, var(--firefly-core-alpha, 0.36)) 62%, rgba(249, 227, 107, 0) 100%);
+  background: radial-gradient(circle at center, rgba(255, 246, 177, 1) 0%, rgba(252, 218, 96, var(--firefly-core-alpha, 0.48)) 56%, rgba(248, 187, 70, 0) 100%);
   box-shadow:
-    0 0 var(--firefly-tight-glow, 14px) var(--firefly-tight-spread, 5px) rgba(249, 227, 107, var(--firefly-glow-alpha, 0.32)),
-    0 0 var(--firefly-wide-glow, 30px) var(--firefly-wide-spread, 12px) rgba(248, 231, 142, var(--firefly-halo-alpha, 0.16));
-  filter: blur(var(--firefly-blur, 0.14px));
+    0 0 var(--firefly-tight-glow, 19px) var(--firefly-tight-spread, 6px) rgba(255, 220, 93, var(--firefly-glow-alpha, 0.42)),
+    0 0 var(--firefly-wide-glow, 46px) var(--firefly-wide-spread, 16px) rgba(255, 202, 82, var(--firefly-halo-alpha, 0.24));
+  filter: blur(var(--firefly-blur, 0.16px)) saturate(1.12);
   opacity: var(--firefly-base-opacity, 0.75);
   transform: translate3d(0, 0, 0);
   will-change: transform, opacity;
@@ -1304,9 +1317,17 @@ body[data-mode='day'] .mycelium-layer {
   animation-delay: var(--flicker-delay, 0s);
 }
 
+.fireflies-front .firefly {
+  filter: blur(var(--firefly-blur, 0.16px)) saturate(1.22) drop-shadow(0 0 10px rgba(255, 217, 108, 0.28));
+}
+
+.fireflies-layer[data-reduce-motion='true'] {
+  --fireflies-layer-opacity: 0.68;
+}
+
 .fireflies-layer[data-reduce-motion='true'] .firefly {
   animation-name: firefly-flicker;
-  animation-duration: 5.5s;
+  animation-duration: 7.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: var(--flicker-delay, 0s);
@@ -1332,7 +1353,7 @@ body[data-mode='day'] .mycelium-layer {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: var(--fireflies-layer-opacity, 1);
   }
 }
 
@@ -1630,7 +1651,13 @@ body.night-fall .modal__close:focus-visible {
   }
 
   .firefly {
-    box-shadow: 0 0 10px 4px rgba(249, 227, 107, 0.26), 0 0 18px 8px rgba(248, 231, 142, 0.14);
-    background: radial-gradient(circle at center, rgba(249, 227, 107, 0.9) 0%, rgba(249, 227, 107, 0.25) 65%, rgba(249, 227, 107, 0) 100%);
+    background: radial-gradient(circle at center, rgba(255, 246, 177, 0.96) 0%, rgba(252, 218, 96, var(--firefly-core-alpha, 0.46)) 58%, rgba(248, 187, 70, 0) 100%);
+    box-shadow:
+      0 0 var(--firefly-tight-glow, 16px) var(--firefly-tight-spread, 5px) rgba(255, 220, 93, var(--firefly-glow-alpha, 0.34)),
+      0 0 var(--firefly-wide-glow, 34px) var(--firefly-wide-spread, 12px) rgba(255, 202, 82, var(--firefly-halo-alpha, 0.2));
+  }
+
+  .fireflies-front {
+    --fireflies-layer-opacity: 0.76;
   }
 }
