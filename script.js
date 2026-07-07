@@ -710,6 +710,203 @@ const LA_VIDA_ES_SUENO_QUOTES = [
   }
 ];
 
+const BARTLEBY_TAGS = ["literatura", "soledad", "negativa", "oficina", "muro", "alienación", "clásicos"];
+
+const BARTLEBY_QUOTES = [
+  {
+    id: "bartleby-001",
+    t: "A la tercera llamada apareció Bartleby.\n\n—Tome —le dije—, quiero que me ayude a revisar esta copia.\n\nBartleby permaneció inmóvil un instante, como si no hubiera oído. Después, con una voz singularmente suave y firme, respondió:\n\n—Preferiría no hacerlo.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Preferiría no hacerlo.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-002",
+    t: "Me quedé sentado, por un momento, en perfecto silencio. La respuesta era tan extraña, tan inesperada, dicha además sin la menor insolencia, que no supe si enfadarme o dudar de mis propios oídos.\n\n—¿Preferiría no hacerlo? —repetí.\n\n—Preferiría no hacerlo —contestó Bartleby.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Preferiría no hacerlo.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-003",
+    t: "Si hubiera habido en su actitud algo de ira, de impaciencia o de desafío, lo habría despedido al instante. Pero no había nada de eso.\n\nBartleby estaba de pie, pálido, pulcro, respetuoso, abandonado.\n\nSu misma mansedumbre me desarmaba.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Su misma mansedumbre me desarmaba.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-004",
+    t: "Coloqué su mesa cerca de una pequeña ventana lateral. Desde allí no se veía el cielo ni la calle, sino únicamente un muro oscuro, alto, inmóvil.\n\nAllí trabajaba Bartleby.\n\nPrimero por la mañana, todo el día, y el último por la noche: era un centinela perpetuo en su rincón.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Era un centinela perpetuo en su rincón.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-005",
+    t: "A veces, cuando yo levantaba la vista, lo encontraba de pie junto a la ventana, sin escribir, sin leer, sin moverse.\n\nNo miraba nada vivo.\n\nSe había abandonado a una de sus profundas ensoñaciones frente al muro muerto.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Se había abandonado a una de sus profundas ensoñaciones frente al muro muerto.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-006",
+    t: "Pasaron los días. Bartleby ya no copiaba. Ya no revisaba. Ya no obedecía ninguna petición.\n\n—¿Por qué no escribe? —le pregunté.\n\nNo hubo violencia en su respuesta, ni tristeza visible, ni justificación.\n\n—He decidido no escribir más.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "He decidido no escribir más.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-007",
+    t: "—Bartleby —le dije—, ¿quiere decirme algo de usted? ¿De dónde viene? ¿Quién es? ¿Qué le ha traído aquí?\n\nÉl se retiró un poco más hacia su rincón, como si la pregunta lo hubiera tocado físicamente.\n\n—Por ahora preferiría no dar ninguna respuesta.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Por ahora preferiría no dar ninguna respuesta.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-008",
+    t: "Había intentado razonar con él, intimidarlo, compadecerlo, liberarme de él. Nada servía. Seguía allí, sereno, inmóvil, irreductible.\n\nEntonces me pregunté, no sin cierto horror:\n\n¿Qué debo hacer con este hombre, o más bien con este fantasma?",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "¿Qué debo hacer con este hombre, o más bien con este fantasma?",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-009",
+    t: "Al acercarnos todos a su espacio, Bartleby pareció ofendido, no con violencia, sino con una especie de dignidad herida.\n\nNos miró como si hubiéramos invadido una habitación interior.\n\n—Preferiría que me dejaran solo aquí.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Preferiría que me dejaran solo aquí.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-010",
+    t: "Le propuse otros trabajos, otros destinos, alguna salida posible. Un empleo en una tienda. Un puesto de mensajero. Cualquier ocupación que lo sacara de aquel rincón.\n\nBartleby no se alteró.\n\n—No me gustaría nada de eso. No soy exigente, pero me gusta estar quieto.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "No soy exigente, pero me gusta estar quieto.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-011",
+    t: "—¿Quiere volver a copiar para alguien?\n\n—No. Preferiría no hacer ningún cambio.\n\n—¿Quiere viajar?\n\n—No.\n\n—¿Quiere ir a otra oficina?\n\nBartleby permaneció igual, como si cualquier forma de movimiento fuera una violencia.\n\n—Preferiría no hacer ningún cambio.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Preferiría no hacer ningún cambio.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-012",
+    t: "Lo encontré en el patio, rodeado de muros altos. No parecía más preso allí que en mi oficina. Quizá, pensé, siempre había vivido entre muros.\n\n—Bartleby —le dije—, ¿me reconoce?\n\nÉl volvió lentamente la cabeza.\n\n—Sé dónde estoy.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Sé dónde estoy.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-013",
+    t: "El encargado le ofreció comida. Bartleby no la tomó. Tampoco hizo gesto alguno de desprecio; simplemente se apartó de ella, como si el alimento perteneciera a otro orden del mundo.\n\n—Hoy preferiría no cenar. No estoy acostumbrado a las cenas.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Hoy preferiría no cenar. No estoy acostumbrado a las cenas.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-014",
+    t: "Me acerqué después y lo vi tendido junto al muro, extrañamente quieto. Lo llamé. No respondió.\n\nEntonces comprendí que Bartleby dormía de una manera definitiva.\n\nDormía con reyes y consejeros.",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Dormía con reyes y consejeros.",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-015",
+    t: "Mucho después oí un rumor sobre él. Decían que había trabajado en la oficina de cartas muertas, cartas que nunca llegan a nadie, cartas enviadas a personas desaparecidas, mudadas, enterradas.\n\nPensé entonces en Bartleby.\n\nCartas muertas: ¿no suenan como hombres muertos?",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "Cartas muertas: ¿no suenan como hombres muertos?",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  },
+  {
+    id: "bartleby-016",
+    t: "A veces esas cartas llevaban dinero, perdón, esperanza, noticias de vida. Pero llegaban tarde. Sus destinatarios ya no estaban.\n\nEnviadas con amor, con auxilio, con promesas, corrían hacia la nada.\n\n¡Ah, Bartleby! ¡Ah, humanidad!",
+    a: "Herman Melville",
+    author: "Herman Melville",
+    obra: "Bartleby, el escribiente",
+    obraTitulo: "Bartleby, el escribiente",
+    type: "fragmento",
+    highlight: "¡Ah, Bartleby! ¡Ah, humanidad!",
+    tags: BARTLEBY_TAGS,
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -727,7 +924,8 @@ const QUOTES = [
   ...FIRMIN_QUOTES,
   ...EL_COLOR_PURPURA_QUOTES,
   ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES,
-  ...LA_VIDA_ES_SUENO_QUOTES
+  ...LA_VIDA_ES_SUENO_QUOTES,
+  ...BARTLEBY_QUOTES
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
