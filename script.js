@@ -2014,6 +2014,10 @@ let quoteImageCache = null;
 let quoteImageGenerationPromise = null;
 let shareFallbackImageUrl = null;
 let currentSpeechUtterance = null;
+let currentSpeechTimerId = null;
+let cachedSpeechVoices = [];
+let speechVoicesInitialized = false;
+let speechPlaybackToken = 0;
 let allWordElements = [];
 let animatedWordElements = [];
 let dayHandlersAttached = false;
@@ -2739,11 +2743,162 @@ function getSnapshotShareText(snapshot) {
   return details ? `“${quoteText}”\n— ${details}` : `“${quoteText}”`;
 }
 
-function getQuoteVoiceText() {
-  const quoteText = (currentQuote?.t ?? '').trim();
+const LITERARY_SPEECH_RATE = 0.86;
+const LITERARY_SPEECH_PITCH = 0.98;
+const LITERARY_SPEECH_VOLUME = 1;
+const STANZA_SPEECH_PAUSE_MS = 430;
+const METADATA_SPEECH_PAUSE_MS = 650;
+const AUTHOR_WORK_SPEECH_PAUSE_MS = 320;
+
+function normalizeSpeechText(value) {
+  return String(value ?? '')
+    .replace(/\r\n/g, '\n')
+    .split('\n')
+    .map(line => line.trim())
+    .join('\n')
+    .trim();
+}
+
+function splitSpeechParagraphs(value) {
+  const text = normalizeSpeechText(value);
+  if (!text) return [];
+  return text
+    .split(/\n{2,}/)
+    .map(paragraph => paragraph.trim())
+    .filter(Boolean);
+}
+
+function punctuateSpeechText(value) {
+  const text = normalizeSpeechText(value);
+  if (!text || /[.!?;:]$/.test(text)) {
+    return text;
+  }
+  return `${text}.`;
+}
+
+function getQuoteVoiceSegments() {
+  const quoteSegments = splitSpeechParagraphs(currentQuote?.t);
   const { author, workTitle } = getQuoteMetadata(currentQuote);
-  const details = [author, workTitle].filter(Boolean).join(', ');
-  return [quoteText, details].filter(Boolean).join('. ');
+  const segments = quoteSegments.map((text, index) => ({
+    text,
+    pauseAfter: index === quoteSegments.length - 1
+      ? METADATA_SPEECH_PAUSE_MS
+      : STANZA_SPEECH_PAUSE_MS
+  }));
+
+  const spokenAuthor = punctuateSpeechText(author ? `Por ${author}` : '');
+  const spokenWork = punctuateSpeechText(workTitle);
+
+  if (spokenAuthor) {
+    segments.push({
+      text: spokenAuthor,
+      pauseAfter: spokenWork ? AUTHOR_WORK_SPEECH_PAUSE_MS : 0
+    });
+  }
+
+  if (spokenWork) {
+    segments.push({
+      text: spokenWork,
+      pauseAfter: 0
+    });
+  }
+
+  return segments;
+}
+
+function getSpeechSynthesisController() {
+  if (typeof window === 'undefined' || !window.speechSynthesis) {
+    return null;
+  }
+  return window.speechSynthesis;
+}
+
+function refreshSpeechVoices() {
+  const synth = getSpeechSynthesisController();
+  if (!synth || typeof synth.getVoices !== 'function') {
+    cachedSpeechVoices = [];
+    return cachedSpeechVoices;
+  }
+  cachedSpeechVoices = synth.getVoices();
+  return cachedSpeechVoices;
+}
+
+function initSpeechVoiceLoading() {
+  const synth = getSpeechSynthesisController();
+  if (!synth || speechVoicesInitialized) return;
+
+  speechVoicesInitialized = true;
+  refreshSpeechVoices();
+
+  if (typeof synth.addEventListener === 'function') {
+    synth.addEventListener('voiceschanged', refreshSpeechVoices);
+    return;
+  }
+
+  const previousHandler = synth.onvoiceschanged;
+  synth.onvoiceschanged = (event) => {
+    if (typeof previousHandler === 'function') {
+      previousHandler.call(synth, event);
+    }
+    refreshSpeechVoices();
+  };
+}
+
+function getAvailableSpeechVoices() {
+  initSpeechVoiceLoading();
+  return cachedSpeechVoices.length ? cachedSpeechVoices : refreshSpeechVoices();
+}
+
+function isSpanishVoice(voice) {
+  return typeof voice?.lang === 'string' && voice.lang.toLowerCase().startsWith('es');
+}
+
+function isLikelyRoboticVoice(voice) {
+  const voiceLabel = `${voice?.name ?? ''} ${voice?.voiceURI ?? ''}`.toLowerCase();
+  return /\b(desktop|legacy|compact|basic|robot|monotone)\b/.test(voiceLabel);
+}
+
+function isPreferredSpeechVoice(voice) {
+  const voiceLabel = `${voice?.name ?? ''} ${voice?.voiceURI ?? ''}`.toLowerCase();
+  const hasNaturalMarker = /\b(natural|neural|premium|enhanced|online)\b/.test(voiceLabel);
+  if (isLikelyRoboticVoice(voice) && !hasNaturalMarker) {
+    return false;
+  }
+
+  return (
+    /\b(microsoft|google|apple|siri)\b/.test(voiceLabel) ||
+    hasNaturalMarker ||
+    (voice?.localService && !isLikelyRoboticVoice(voice))
+  );
+}
+
+function scoreSpeechVoice(voice) {
+  const voiceLabel = `${voice?.name ?? ''} ${voice?.voiceURI ?? ''}`.toLowerCase();
+  let score = 0;
+
+  if (/\b(natural|neural)\b/.test(voiceLabel)) score += 36;
+  if (/\b(premium|enhanced|online)\b/.test(voiceLabel)) score += 22;
+  if (/\b(microsoft|google|apple|siri)\b/.test(voiceLabel)) score += 18;
+  if (voice?.localService) score += 10;
+  if (voice?.default) score += 4;
+  if (isLikelyRoboticVoice(voice)) score -= 34;
+
+  return score;
+}
+
+function selectPreferredSpeechVoice() {
+  const voices = getAvailableSpeechVoices();
+  const spanishVoices = voices.filter(isSpanishVoice);
+
+  if (!spanishVoices.length) {
+    return null;
+  }
+
+  const preferredVoices = spanishVoices
+    .filter(isPreferredSpeechVoice)
+    .sort((left, right) => scoreSpeechVoice(right) - scoreSpeechVoice(left));
+
+  return preferredVoices[0] ?? spanishVoices[0];
 }
 
 function updateListenVoiceButton(isSpeaking = false) {
@@ -2756,12 +2911,86 @@ function updateListenVoiceButton(isSpeaking = false) {
   }
 }
 
+function isQuoteVoiceActive() {
+  return Boolean(currentSpeechUtterance || currentSpeechTimerId);
+}
+
 function stopQuoteVoice() {
-  if (typeof window !== 'undefined' && window.speechSynthesis) {
-    window.speechSynthesis.cancel();
+  speechPlaybackToken += 1;
+
+  if (currentSpeechTimerId) {
+    window.clearTimeout(currentSpeechTimerId);
+    currentSpeechTimerId = null;
   }
+
+  const synth = getSpeechSynthesisController();
+  if (synth) {
+    synth.cancel();
+  }
+
   currentSpeechUtterance = null;
   updateListenVoiceButton(false);
+}
+
+function finishQuoteVoice(token) {
+  if (token !== speechPlaybackToken) return;
+  currentSpeechUtterance = null;
+  currentSpeechTimerId = null;
+  updateListenVoiceButton(false);
+}
+
+function createQuoteSpeechUtterance(text, voice) {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = voice?.lang || currentQuote?.lang || 'es-ES';
+  if (voice) {
+    utterance.voice = voice;
+  }
+  utterance.rate = LITERARY_SPEECH_RATE;
+  utterance.pitch = LITERARY_SPEECH_PITCH;
+  utterance.volume = LITERARY_SPEECH_VOLUME;
+  return utterance;
+}
+
+function speakVoiceSegment(segments, voice, token, index = 0) {
+  if (token !== speechPlaybackToken) return;
+
+  const synth = getSpeechSynthesisController();
+  const segment = segments[index];
+  if (!synth || !segment) {
+    finishQuoteVoice(token);
+    return;
+  }
+
+  const utterance = createQuoteSpeechUtterance(segment.text, voice);
+  utterance.onend = () => {
+    if (token !== speechPlaybackToken) return;
+
+    currentSpeechUtterance = null;
+
+    if (index >= segments.length - 1) {
+      finishQuoteVoice(token);
+      return;
+    }
+
+    currentSpeechTimerId = window.setTimeout(() => {
+      currentSpeechTimerId = null;
+      speakVoiceSegment(segments, voice, token, index + 1);
+    }, segment.pauseAfter ?? STANZA_SPEECH_PAUSE_MS);
+  };
+  utterance.onerror = (event) => {
+    if (token !== speechPlaybackToken) return;
+
+    const wasStopped = event?.error === 'canceled' || event?.error === 'interrupted';
+    currentSpeechUtterance = null;
+    finishQuoteVoice(token);
+
+    if (!wasStopped) {
+      showShareFeedback('No se pudo reproducir la voz. Inténtalo de nuevo.');
+    }
+  };
+
+  currentSpeechUtterance = utterance;
+  synth.speak(utterance);
 }
 
 function speakQuote() {
@@ -2770,32 +2999,23 @@ function speakQuote() {
     return;
   }
 
-  if (currentSpeechUtterance) {
+  if (isQuoteVoiceActive()) {
     stopQuoteVoice();
     return;
   }
 
-  const voiceText = getQuoteVoiceText();
-  if (!voiceText) return;
+  const segments = getQuoteVoiceSegments();
+  if (!segments.length) return;
 
-  const utterance = new SpeechSynthesisUtterance(voiceText);
-  utterance.lang = currentQuote?.lang || 'es-ES';
-  utterance.rate = 0.92;
-  utterance.pitch = 0.9;
-  utterance.onend = () => {
-    currentSpeechUtterance = null;
-    updateListenVoiceButton(false);
-  };
-  utterance.onerror = () => {
-    currentSpeechUtterance = null;
-    updateListenVoiceButton(false);
-    showShareFeedback('No se pudo reproducir la voz. Inténtalo de nuevo.');
-  };
+  const synth = window.speechSynthesis;
+  const voice = selectPreferredSpeechVoice();
+  const token = speechPlaybackToken + 1;
 
-  currentSpeechUtterance = utterance;
+  speechPlaybackToken = token;
+  currentSpeechUtterance = null;
+  synth.cancel();
   updateListenVoiceButton(true);
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(utterance);
+  speakVoiceSegment(segments, voice, token);
 }
 
 function canvasToBlob(canvas, mimeType = 'image/png', quality = 0.92) {
@@ -3328,6 +3548,7 @@ function initQuoteActionButtons() {
   shareButtonRef = document.getElementById('share-image-btn');
   listenVoiceButtonRef = document.getElementById('listen-voice-btn');
   shareFeedbackRef = document.getElementById('share-feedback');
+  initSpeechVoiceLoading();
 
   if (listenVoiceButtonRef) {
     listenVoiceButtonRef.addEventListener('click', (event) => {
