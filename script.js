@@ -2,6 +2,7 @@ import { createQuoteManager } from './quoteLogic.js';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
+import rayoQueNoCesaTexts from './src/data/rayoQueNoCesaTexts.js';
 
 const PRE_RANDOM_QUOTES = [];
 const E_A_FRAGMENTOS_QUOTES = [
@@ -1919,6 +1920,25 @@ const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
 const SHARE_IMAGE_FILE_NAME = 'paramo-literario.png';
 
+const RAYO_QUE_NO_CESA_QUOTES = rayoQueNoCesaTexts.map(({
+  author,
+  work,
+  language,
+  text,
+  ...entry
+}) => ({
+  ...entry,
+  author,
+  work,
+  language,
+  text,
+  a: author,
+  t: text,
+  obra: work,
+  obraTitulo: work,
+  lang: language
+}));
+
 const QUOTES = [
   ...PRE_RANDOM_QUOTES,
   ...E_A_FRAGMENTOS_QUOTES,
@@ -1933,6 +1953,7 @@ const QUOTES = [
   ...NIEBLA_QUOTES,
   ...CANAS_Y_BARRO_QUOTES,
   ...ORLANDO_QUOTES,
+  ...RAYO_QUE_NO_CESA_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
