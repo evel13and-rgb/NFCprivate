@@ -2740,62 +2740,147 @@ function getSnapshotShareText(snapshot) {
 }
 
 function getQuoteVoiceText() {
-  const quoteText = (currentQuote?.t ?? '').trim();
-  const { author, workTitle } = getQuoteMetadata(currentQuote);
-  const details = [author, workTitle].filter(Boolean).join(', ');
-  return [quoteText, details].filter(Boolean).join('. ');
+  try {
+    const quoteText = (currentQuote?.t ?? '').trim();
+    const { author, workTitle } = getQuoteMetadata(currentQuote);
+    const details = [author, workTitle].filter(Boolean).join(', ');
+    return [quoteText, details].filter(Boolean).join('. ');
+  } catch (error) {
+    console.warn('No se pudo preparar el texto para lectura de voz.', error);
+    return (currentQuote?.t ?? '').trim();
+  }
+}
+
+function getSpeechSynthesisApi() {
+  try {
+    if (typeof window === 'undefined') return null;
+    const synth = window.speechSynthesis;
+    const Utterance = window.SpeechSynthesisUtterance;
+    if (!synth || typeof synth.speak !== 'function' || typeof Utterance !== 'function') {
+      return null;
+    }
+    return { synth, Utterance };
+  } catch (error) {
+    console.warn('La API de lectura de voz no está disponible.', error);
+    return null;
+  }
 }
 
 function updateListenVoiceButton(isSpeaking = false) {
-  if (!listenVoiceButtonRef) return;
-  listenVoiceButtonRef.classList.toggle('is-speaking', isSpeaking);
-  listenVoiceButtonRef.setAttribute('aria-pressed', String(isSpeaking));
-  const label = listenVoiceButtonRef.querySelector('span:last-child');
-  if (label) {
-    label.textContent = isSpeaking ? 'Detener voz' : 'Escuchar voz';
+  try {
+    if (!listenVoiceButtonRef) return;
+    listenVoiceButtonRef.classList.toggle('is-speaking', isSpeaking);
+    listenVoiceButtonRef.setAttribute('aria-pressed', String(isSpeaking));
+    const label = listenVoiceButtonRef.querySelector('span:last-child');
+    if (label) {
+      label.textContent = isSpeaking ? 'Detener voz' : 'Escuchar voz';
+    }
+  } catch (error) {
+    console.warn('No se pudo actualizar el botón de voz.', error);
+  }
+}
+
+function disableListenVoiceButton() {
+  try {
+    if (!listenVoiceButtonRef) return;
+    listenVoiceButtonRef.disabled = true;
+    listenVoiceButtonRef.classList.remove('is-speaking');
+    listenVoiceButtonRef.setAttribute('aria-disabled', 'true');
+    listenVoiceButtonRef.setAttribute('aria-pressed', 'false');
+  } catch (error) {
+    console.warn('No se pudo desactivar el botón de voz.', error);
   }
 }
 
 function stopQuoteVoice() {
-  if (typeof window !== 'undefined' && window.speechSynthesis) {
-    window.speechSynthesis.cancel();
+  try {
+    const speechApi = getSpeechSynthesisApi();
+    if (speechApi?.synth && typeof speechApi.synth.cancel === 'function') {
+      speechApi.synth.cancel();
+    }
+  } catch (error) {
+    console.warn('No se pudo detener la lectura de voz.', error);
+  } finally {
+    currentSpeechUtterance = null;
+    updateListenVoiceButton(false);
   }
-  currentSpeechUtterance = null;
-  updateListenVoiceButton(false);
 }
 
 function speakQuote() {
-  if (typeof window === 'undefined' || !window.speechSynthesis || typeof SpeechSynthesisUtterance !== 'function') {
-    showShareFeedback('Tu navegador no permite escuchar la frase en voz alta.');
-    return;
-  }
+  try {
+    const speechApi = getSpeechSynthesisApi();
+    if (!speechApi) {
+      disableListenVoiceButton();
+      return;
+    }
 
-  if (currentSpeechUtterance) {
-    stopQuoteVoice();
-    return;
-  }
+    if (currentSpeechUtterance) {
+      stopQuoteVoice();
+      return;
+    }
 
-  const voiceText = getQuoteVoiceText();
-  if (!voiceText) return;
+    const voiceText = getQuoteVoiceText();
+    if (!voiceText) return;
 
-  const utterance = new SpeechSynthesisUtterance(voiceText);
-  utterance.lang = currentQuote?.lang || 'es-ES';
-  utterance.rate = 0.92;
-  utterance.pitch = 0.9;
-  utterance.onend = () => {
+    const utterance = new speechApi.Utterance(voiceText);
+    utterance.lang = currentQuote?.lang || 'es-ES';
+    utterance.rate = 0.92;
+    utterance.pitch = 0.9;
+    utterance.onend = () => {
+      currentSpeechUtterance = null;
+      updateListenVoiceButton(false);
+    };
+    utterance.onerror = (event) => {
+      const wasStopped = event?.error === 'canceled' || event?.error === 'interrupted';
+      if (!wasStopped) {
+        console.warn('La lectura de voz terminó con error.', event);
+      }
+      currentSpeechUtterance = null;
+      updateListenVoiceButton(false);
+    };
+
+    if (typeof speechApi.synth.cancel === 'function') {
+      speechApi.synth.cancel();
+    }
+    currentSpeechUtterance = null;
+    currentSpeechUtterance = utterance;
+    updateListenVoiceButton(true);
+    speechApi.synth.speak(utterance);
+  } catch (error) {
+    console.warn('No se pudo reproducir la voz.', error);
     currentSpeechUtterance = null;
     updateListenVoiceButton(false);
-  };
-  utterance.onerror = () => {
-    currentSpeechUtterance = null;
-    updateListenVoiceButton(false);
-    showShareFeedback('No se pudo reproducir la voz. Inténtalo de nuevo.');
-  };
+  }
+}
 
-  currentSpeechUtterance = utterance;
-  updateListenVoiceButton(true);
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(utterance);
+function initSpeechControls() {
+  try {
+    if (typeof document === 'undefined') return;
+    listenVoiceButtonRef = listenVoiceButtonRef || document.getElementById('listen-voice-btn');
+    if (!listenVoiceButtonRef) return;
+
+    if (!getSpeechSynthesisApi()) {
+      disableListenVoiceButton();
+      return;
+    }
+
+    listenVoiceButtonRef.disabled = false;
+    listenVoiceButtonRef.removeAttribute('aria-disabled');
+    if (listenVoiceButtonRef.dataset.speechControlsReady === 'true') return;
+    listenVoiceButtonRef.dataset.speechControlsReady = 'true';
+    listenVoiceButtonRef.addEventListener('click', (event) => {
+      try {
+        event.preventDefault();
+        event.stopPropagation();
+        speakQuote();
+      } catch (error) {
+        console.warn('No se pudo gestionar el botón de voz.', error);
+      }
+    });
+  } catch (error) {
+    console.warn('No se pudo inicializar el botón de voz.', error);
+    disableListenVoiceButton();
+  }
 }
 
 function canvasToBlob(canvas, mimeType = 'image/png', quality = 0.92) {
@@ -3329,13 +3414,7 @@ function initQuoteActionButtons() {
   listenVoiceButtonRef = document.getElementById('listen-voice-btn');
   shareFeedbackRef = document.getElementById('share-feedback');
 
-  if (listenVoiceButtonRef) {
-    listenVoiceButtonRef.addEventListener('click', (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      speakQuote();
-    });
-  }
+  initSpeechControls();
 
   if (shareButtonRef) {
     shareButtonRef.addEventListener('click', (event) => {
