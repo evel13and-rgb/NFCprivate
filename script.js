@@ -537,6 +537,67 @@ const PEDRO_PARAMO_QUOTES = [
   }
 ];
 
+const RABELAIS_QUOTES = [
+  {
+    t: `Amigos lectores que leéis este libro,
+despojaos de toda prevención.
+Y al leerlo no os escandalicéis:
+no contiene mal ni infección.
+Cierto es que aquí poca perfección
+aprenderéis, salvo en materia de risa.
+Otro argumento no puede elegir mi corazón,
+viendo el duelo que os mina y consume:
+mejor es escribir de risa que de lágrimas,
+porque la risa es lo propio del hombre.`,
+    a: "François Rabelais",
+    obra: "Gargantúa, François Rabelais",
+    highlight: "Mejor es escribir de risa que de lágrimas.",
+    lang: "es"
+  },
+  {
+    t: `No conviene estimar con tanta ligereza las obras humanas. Porque vosotros mismos decís que el hábito no hace al monje; y tal va vestido con hábito monacal que por dentro nada tiene de monje. Por eso hay que abrir el libro y pesar cuidadosamente lo que en él se desarrolla. Entonces conoceréis que la droga contenida dentro es de un valor muy distinto del que prometía la caja.`,
+    a: "François Rabelais",
+    obra: "Gargantúa, François Rabelais",
+    highlight: "El hábito no hace al monje.",
+    lang: "es"
+  },
+  {
+    t: `No hay que quedarse ahí, como ante el canto de las sirenas, sino interpretar en sentido más alto lo que acaso creíais dicho por simple alegría de corazón. ¿Habéis visto alguna vez a un perro encontrando un hueso con tuétano? Es, como dice Platón, la bestia más filósofa del mundo: con qué devoción lo acecha, con qué cuidado lo guarda, con qué fervor lo sostiene, con qué prudencia lo abre, con qué afecto lo rompe y con qué diligencia lo chupa.`,
+    a: "François Rabelais",
+    obra: "Gargantúa, François Rabelais",
+    highlight: "La bestia más filósofa del mundo.",
+    lang: "es"
+  },
+  {
+    t: `A ejemplo de ese perro, os conviene ser sabios para olfatear, sentir y estimar estos hermosos libros de alta sustancia, ligeros en la apariencia y audaces al encuentro. Después, mediante lectura curiosa y meditación frecuente, romped el hueso y chupad la sustantífica médula.`,
+    a: "François Rabelais",
+    obra: "Gargantúa, François Rabelais",
+    highlight: "Romped el hueso y chupad la sustantífica médula.",
+    lang: "es"
+  },
+  {
+    t: `Toda su vida se ordenaba no por leyes, estatutos o reglas, sino según su voluntad y libre albedrío. Se levantaban de la cama cuando les parecía bien; bebían, comían, trabajaban y dormían cuando les venía el deseo. Nadie los despertaba, nadie los obligaba a beber, ni a comer, ni a hacer ninguna otra cosa. Así lo había establecido Gargantúa. En su regla no había más que esta cláusula: HAZ LO QUE QUIERAS.`,
+    a: "François Rabelais",
+    obra: "Gargantúa, François Rabelais",
+    highlight: "Haz lo que quieras.",
+    lang: "es"
+  },
+  {
+    t: `Porque las gentes libres, bien nacidas, bien instruidas y que tratan en compañías honestas tienen por naturaleza un instinto y aguijón que siempre las empuja hacia actos virtuosos y las aparta del vicio; a eso lo llamaban honor.`,
+    a: "François Rabelais",
+    obra: "Gargantúa, François Rabelais",
+    highlight: "A eso lo llamaban honor.",
+    lang: "es"
+  },
+  {
+    t: `Cuando son oprimidos y esclavizados por vil sujeción y coacción, desvían la noble inclinación por la que tendían libremente a las virtudes, para deponer y quebrantar ese yugo de servidumbre; porque siempre emprendemos las cosas prohibidas y codiciamos lo que se nos niega.`,
+    a: "François Rabelais",
+    obra: "Gargantúa, François Rabelais",
+    highlight: "Codiciamos lo que se nos niega.",
+    lang: "es"
+  }
+];
+
 const FRANKENSTEIN_QUOTES = [
   {
     t: "Después de días y noches de increíble trabajo y fatiga, logré descubrir la causa de la generación y de la vida; más aún, me vi en posesión del poder de infundir vida a la materia inanimada. Era como si un velo se me hubiese caído de los ojos. Una luz tan intensa y deslumbradora se desplegó ante mí, que tuve que cerrar los párpados. El entusiasmo que me embargó entonces fue casi divino. ¡Qué sublime secreto poseía yo! Pensaba que si lograba animar la materia muerta, podría crear un nuevo género de seres que me bendijeran como su creador. Ningún padre podría reclamar el mérito de la vida de su hijo con tanto fervor como yo el de aquella criatura que iba a modelar.",
@@ -1785,6 +1846,7 @@ const QUOTES = [
   ...CUMBRES_BORRASCOSAS_QUOTES,
   ...NUDO_DE_VIBORAS_QUOTES,
   ...PEDRO_PARAMO_QUOTES,
+  ...RABELAIS_QUOTES,
   ...FRANKENSTEIN_QUOTES,
   ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES,
   ...LA_VIDA_ES_SUENO_QUOTES,
