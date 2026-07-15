@@ -1835,6 +1835,172 @@ const ORLANDO_QUOTES = [
   }
 ];
 
+const DORIAN_GRAY_QUOTES = [
+  {
+    t: `—Harry —dijo Basil Hallward, mirándolo directamente a la cara—, todo retrato pintado con sentimiento es un retrato del artista, no del modelo. El modelo no es más que el accidente, la ocasión. No es él quien queda revelado por el pintor; es, más bien, el pintor quien se revela a sí mismo sobre el lienzo. La razón por la que no expondré este cuadro es que temo haber mostrado en él el secreto de mi propia alma.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "El secreto de mi propia alma.",
+    lang: "es"
+  },
+  {
+    t: `Al girar el pomo de la puerta, su mirada cayó sobre el retrato que Basil Hallward había pintado de él. Retrocedió como sorprendido. Después entró en su habitación, algo perplejo. Tras quitarse la flor del ojal, pareció vacilar. Finalmente regresó, se acercó al cuadro y lo examinó. En la luz tenue e inmóvil que se filtraba a duras penas por las persianas de seda color crema, el rostro le pareció ligeramente cambiado. La expresión era distinta. Se habría dicho que había un matiz de crueldad en la boca. Era, ciertamente, extraño.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Un matiz de crueldad en la boca.",
+    lang: "es"
+  },
+  {
+    t: `Su amor irreal y egoísta cedería ante alguna influencia más elevada, se transformaría en una pasión más noble, y el retrato que Basil Hallward había pintado de él sería su guía a lo largo de la vida: sería para él lo que la santidad es para algunos, la conciencia para otros y el temor de Dios para todos. Había opiáceos para el remordimiento, drogas capaces de adormecer el sentido moral. Pero allí tenía un símbolo visible de la degradación del pecado; una señal siempre presente de la ruina que los hombres causan en sus propias almas.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "La ruina que los hombres causan en sus propias almas.",
+    lang: "es"
+  },
+  {
+    t: `A menudo, al regresar de una de aquellas misteriosas y prolongadas ausencias que despertaban conjeturas tan extrañas entre quienes eran sus amigos, o creían serlo, subía sigilosamente hasta la habitación cerrada, abría la puerta con la llave que ya nunca se separaba de él y, sosteniendo un espejo, se colocaba frente al retrato que Basil Hallward había pintado: miraba unas veces el rostro maligno y envejecido del lienzo, y otras el rostro joven y hermoso que le devolvía la risa desde el cristal pulido.
+
+La intensidad misma del contraste agudizaba su placer. Se enamoraba cada vez más de su propia belleza y se interesaba cada vez más por la corrupción de su propia alma. Examinaba con minucioso cuidado —y a veces con un deleite monstruoso y terrible— las líneas horribles que abrasaban la frente arrugada o reptaban alrededor de la boca pesada y sensual, preguntándose en ocasiones qué era más espantoso: las señales del pecado o las señales de la edad.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "La corrupción de su propia alma.",
+    lang: "es"
+  },
+  {
+    t: `—Es el rostro de mi alma.
+
+—¡Cristo! ¡Qué cosa debo de haber adorado! Tiene los ojos de un demonio.
+
+—Cada uno de nosotros lleva dentro el cielo y el infierno, Basil —exclamó Dorian, con un gesto desesperado y violento.
+
+Hallward se volvió de nuevo hacia el retrato y lo contempló. La superficie parecía completamente intacta, tal como él la había dejado. Al parecer, la inmundicia y el horror habían surgido desde dentro. Por alguna extraña intensificación de su vida interior, las lepras del pecado estaban devorándolo lentamente. Ni la descomposición de un cadáver en una tumba bajo el agua habría sido tan espantosa.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "El cielo y el infierno.",
+    lang: "es"
+  },
+  {
+    t: `—No, Harry. El alma es una realidad terrible. Puede comprarse, venderse y entregarse a cambio de otra cosa. Puede ser envenenada o perfeccionada. Hay un alma en cada uno de nosotros. Yo lo sé.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "El alma es una realidad terrible.",
+    lang: "es"
+  },
+  {
+    t: `Pero aquel asesinato, ¿había de perseguirlo durante toda su vida? ¿Estaría siempre cargando con su pasado? ¿Debía realmente confesar? Nunca. Solo quedaba una prueba contra él. El propio cuadro: esa era la prueba. Lo destruiría. ¿Por qué lo había conservado durante tanto tiempo? En otro tiempo le había proporcionado placer contemplarlo mientras cambiaba y envejecía. Últimamente ya no sentía ese placer. Lo había mantenido despierto por las noches. Cuando estaba lejos, el terror de que otros ojos pudieran contemplarlo no lo abandonaba.
+
+Había extendido la melancolía sobre sus pasiones. Su mero recuerdo había estropeado muchos momentos de alegría. Había sido como una conciencia para él. Sí, había sido su conciencia. La destruiría.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Había sido su conciencia.",
+    lang: "es"
+  },
+  {
+    t: `—No existe tal cosa como una buena influencia, señor Gray. Toda influencia es inmoral, inmoral desde el punto de vista científico.
+
+—¿Por qué?
+
+—Porque influir en una persona es darle la propia alma. Ya no piensa sus pensamientos naturales ni arde con sus pasiones naturales. Sus virtudes no son realmente suyas. Sus pecados, si es que existen los pecados, son prestados. Se convierte en eco de la música de otro, en actor de un papel que no fue escrito para él. El propósito de la vida es el desarrollo de uno mismo: realizar perfectamente la propia naturaleza. Para eso estamos aquí.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Influir es darle a otro la propia alma.",
+    lang: "es"
+  },
+  {
+    t: `—Ese es uno de los grandes secretos de la vida: curar el alma mediante los sentidos, y los sentidos mediante el alma. Eres una creación maravillosa. Sabes más de lo que crees saber, del mismo modo que sabes menos de lo que deseas saber.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Curar el alma mediante los sentidos.",
+    lang: "es"
+  },
+  {
+    t: `—¡Qué triste es! —murmuró Dorian Gray, con los ojos todavía fijos en su retrato—. Yo envejeceré y me volveré horrible y espantoso. Pero este cuadro permanecerá siempre joven. Nunca tendrá más edad que la de este preciso día de junio. Si pudiera suceder al contrario; si fuera yo quien permaneciese siempre joven y el cuadro quien envejeciera… Por eso lo daría todo. Sí, no hay nada en el mundo entero que no entregaría. ¡Daría mi alma por ello!`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Daría mi alma por ello.",
+    lang: "es"
+  },
+  {
+    t: `—Antes de conocerte, la interpretación era la única realidad de mi vida. Solo vivía en el teatro. Pensaba que todo aquello era verdadero. Una noche era Rosalinda y, a la siguiente, Porcia. La alegría de Beatriz era mi alegría, y las penas de Cordelia también eran mías. Creía en todo. Los actores vulgares que trabajaban conmigo me parecían seres divinos. Los decorados pintados eran mi mundo. No conocía más que sombras, y creía que eran reales.
+
+Tú llegaste —¡oh, mi hermoso amor!— y liberaste mi alma de su prisión. Me enseñaste qué es verdaderamente la realidad. Me trajiste algo más elevado, algo de lo que todo arte no es sino un reflejo. Me hiciste comprender qué es realmente el amor. Estoy harta de sombras.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "No conocía más que sombras.",
+    lang: "es"
+  },
+  {
+    t: `Cubrió página tras página con palabras desenfrenadas de tristeza y palabras todavía más desenfrenadas de dolor. Hay un lujo en el reproche dirigido contra uno mismo. Cuando nos culpamos, sentimos que nadie más tiene derecho a culparnos. Es la confesión, y no el sacerdote, la que nos concede la absolución. Cuando Dorian terminó la carta, sintió que había sido perdonado.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Hay un lujo en culparse a uno mismo.",
+    lang: "es"
+  },
+  {
+    t: `La posición y la riqueza no lo son todo. Ten presente que no creo esos rumores. Al menos, no puedo creerlos cuando te miro. El pecado es algo que se escribe en el rostro de un hombre. No puede ocultarse. A veces la gente habla de vicios secretos. No existen tales cosas. Si un desgraciado tiene un vicio, este se manifiesta en las líneas de su boca, en la caída de sus párpados, incluso en la forma de sus manos.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "El pecado se escribe en el rostro.",
+    lang: "es"
+  },
+  {
+    t: `Uno tiene derecho a juzgar a un hombre por el efecto que ejerce sobre sus amigos. Los tuyos parecen perder todo sentido del honor, de la bondad y de la pureza. Los has llenado de una locura por el placer. Han descendido hasta las profundidades. Tú los condujiste allí. Sí: tú los condujiste, y aun así puedes sonreír como estás sonriendo ahora.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "El efecto que ejerce sobre sus amigos.",
+    lang: "es"
+  },
+  {
+    t: `—¡Dios mío, Dorian, qué lección! ¡Qué espantosa lección! Reza, Dorian, reza. ¿Qué nos enseñaron a decir cuando éramos niños? “No nos dejes caer en la tentación. Perdona nuestros pecados. Límpianos de nuestras iniquidades.” Digámoslo juntos. La oración de tu orgullo ha sido escuchada. También será escuchada la oración de tu arrepentimiento. Yo te adoré demasiado, y por ello soy castigado. Tú te adoraste demasiado. Los dos somos castigados.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Tú te adoraste demasiado.",
+    lang: "es"
+  },
+  {
+    t: `Había en todos ellos una fascinación horrible. Los veía por la noche, y durante el día perturbaban su imaginación. Dorian Gray había sido envenenado por un libro. Había momentos en los que contemplaba el mal únicamente como un medio mediante el cual podía realizar su concepción de la belleza.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "El mal como forma de realizar la belleza.",
+    lang: "es"
+  },
+  {
+    t: `La tragedia de la vejez no consiste en ser viejo, sino en seguir siendo joven. A veces me asombra mi propia sinceridad. ¡Ah, Dorian, qué feliz eres! Qué vida tan exquisita has tenido. Has bebido profundamente de todo. Has aplastado las uvas contra el paladar. Nada se te ha ocultado. Y todo ello no ha sido para ti más que el sonido de la música. No te ha marcado. Sigues siendo el mismo.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "La tragedia de la vejez.",
+    lang: "es"
+  },
+  {
+    t: `Me alegra que nunca hayas hecho nada: que nunca hayas esculpido una estatua, pintado un cuadro ni producido nada fuera de ti mismo. La vida ha sido tu arte. Te has puesto a ti mismo en música. Tus días son tus sonetos.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "La vida ha sido tu arte.",
+    lang: "es"
+  },
+  {
+    t: `¡En qué monstruoso momento de orgullo y pasión había rogado que el retrato soportara el peso de sus días, mientras él conservaba intacto el esplendor de la juventud eterna! Todo su fracaso había nacido de aquello. Habría sido mejor que cada pecado de su vida hubiese llevado consigo su castigo seguro e inmediato. Había purificación en el castigo. La oración del hombre a un Dios justo no debería ser “perdona nuestros pecados”, sino “castíganos por nuestras iniquidades”.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Había purificación en el castigo.",
+    lang: "es"
+  },
+  {
+    t: `Entonces aborreció su propia belleza y, arrojando el espejo al suelo, lo aplastó bajo el talón hasta convertirlo en astillas de plata. Habían sido su belleza y la juventud que había suplicado conservar las que lo habían destruido. Sin esas dos cosas, su vida quizá habría quedado libre de toda mancha. Su belleza no había sido para él más que una máscara; su juventud, una burla. ¿Qué era la juventud, en el mejor de los casos? Un tiempo verde e inmaduro, una época de emociones superficiales y pensamientos enfermizos. La juventud lo había echado a perder.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "Su belleza no había sido más que una máscara.",
+    lang: "es"
+  },
+  {
+    t: `No era realmente la muerte de Basil Hallward lo que más pesaba sobre su mente. Lo atormentaba la muerte viva de su propia alma. Basil había pintado el retrato que había arruinado su vida, y no podía perdonárselo. El asesinato había sido simplemente la locura de un instante. En cuanto a Alan Campbell, su suicidio había sido decisión suya. Él había elegido hacerlo. Para Dorian, aquello no significaba nada.`,
+    a: "Oscar Wilde",
+    obra: "El retrato de Dorian Gray, Oscar Wilde",
+    highlight: "La muerte viva de su propia alma.",
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -1857,6 +2023,7 @@ const QUOTES = [
   ...ORLANDO_QUOTES,
   ...RAYO_QUE_NO_CESA_QUOTES,
   ...PAPA_GORIOT_QUOTES,
+  ...DORIAN_GRAY_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
