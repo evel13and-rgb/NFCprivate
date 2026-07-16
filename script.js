@@ -2001,6 +2001,209 @@ Tú llegaste —¡oh, mi hermoso amor!— y liberaste mi alma de su prisión. Me
   }
 ];
 
+const IVAN_ILICH_QUOTES = [
+  {
+    t: `Al enterarse de la muerte de Iván Ilich, el primer pensamiento de cada uno fue qué consecuencias tendría aquella muerte para los traslados o ascensos propios y de sus conocidos.
+
+«Mira, él ha muerto; yo, en cambio, sigo aquí», pensó o sintió cada uno.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "yo, en cambio, sigo aquí",
+    lang: "es"
+  },
+  {
+    t: `La historia pasada de la vida de Iván Ilich había sido la más sencilla, la más corriente y la más terrible.
+
+Murió a los cuarenta y cinco años, siendo miembro de la Audiencia. Había sido un hombre inteligente, vivo, agradable y decoroso.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "la más sencilla, la más corriente y la más terrible",
+    lang: "es"
+  },
+  {
+    t: `La conciencia de su poder, la importancia de su entrada en el tribunal, el éxito ante superiores e inferiores y, sobre todo, la maestría con que llevaba los asuntos: todo aquello lo alegraba.
+
+Junto con las conversaciones, las comidas y las partidas de cartas, llenaba su vida. Y así continuaba discurriendo como él consideraba que debía discurrir: agradable y decorosamente.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "agradable y decorosamente",
+    lang: "es"
+  },
+  {
+    t: `Así como él fingía solemnidad ante los acusados, el célebre médico fingía ahora solemnidad ante él.
+
+Para Iván Ilich solo había una pregunta importante: ¿era peligrosa su situación? Pero el médico ignoraba aquella pregunta inoportuna. Desde su punto de vista, no se trataba de la vida de Iván Ilich, sino de decidir entre un riñón flotante y una afección del intestino ciego.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "no se trataba de la vida de Iván Ilich",
+    lang: "es"
+  },
+  {
+    t: `«¿El intestino ciego? ¿El riñón? No se trata del intestino ni del riñón, sino de la vida y de la muerte. Sí, la vida estaba aquí y ahora se va, se va, y yo no puedo retenerla.
+
+¿Acaso no es evidente para todos, salvo para mí, que estoy muriendo y que la única cuestión es cuántas semanas o días faltan, quizá solo este instante?»`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "la vida estaba aquí y ahora se va",
+    lang: "es"
+  },
+  {
+    t: `En el fondo de su alma, Iván Ilich sabía que estaba muriendo; pero no solo no se había acostumbrado a ello, sino que no lo comprendía, no podía comprenderlo de ningún modo.
+
+El ejemplo de silogismo que había estudiado en lógica —Cayo es un hombre, los hombres son mortales, por tanto Cayo es mortal— le había parecido correcto durante toda su vida únicamente con relación a Cayo, pero nunca con relación a él mismo.
+
+[…]
+
+Cayo era mortal y estaba bien que muriera; pero él, Vania, Iván Ilich, con todos sus sentimientos y pensamientos, era otra cosa. No podía ser que él tuviera que morir. Sería demasiado terrible.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "él, Vania, Iván Ilich, con todos sus sentimientos y pensamientos, era otra cosa",
+    lang: "es"
+  },
+  {
+    t: `Al tercer mes de la enfermedad, su mujer, su hija, su hijo, los criados, los conocidos, los médicos y, sobre todo, él mismo sabían que todo el interés que despertaba en los demás se reducía a una sola cuestión:
+
+cuándo dejaría por fin vacante su puesto, libraría a los vivos de la molestia que su presencia les causaba y se libraría él mismo de sus sufrimientos.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "cuándo dejaría por fin vacante su puesto",
+    lang: "es"
+  },
+  {
+    t: `Solo Guerásim no mentía. Era evidente que comprendía lo que sucedía y que no consideraba necesario ocultarlo; simplemente sentía compasión por su señor debilitado y consumido.
+
+Una vez, cuando Iván Ilich quiso despedirlo, le dijo:
+
+—Todos moriremos. ¿Por qué no habría de ayudarte?`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "Todos moriremos. ¿Por qué no habría de ayudarte?",
+    lang: "es"
+  },
+  {
+    t: `El principal tormento de Iván Ilich era la mentira: aquella mentira, aceptada por todos, según la cual él solo estaba enfermo, pero no se estaba muriendo.
+
+Lo atormentaba que no quisieran reconocer aquello que todos sabían y que él sabía; que quisieran mentirle acerca de su terrible situación y lo obligaran a participar en la mentira.
+
+Muchas veces estuvo a punto de gritarles: «¡Dejad de mentir! Vosotros sabéis, y yo sé, que estoy muriendo».`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "Vosotros sabéis, y yo sé, que estoy muriendo",
+    lang: "es"
+  },
+  {
+    t: `En algunos momentos, después de largos sufrimientos, lo que más deseaba, por vergonzoso que le pareciera reconocerlo, era que alguien sintiera lástima de él como se siente lástima de un niño enfermo. Quería que lo acariciaran, que lo besaran, que lloraran por él, como se acaricia y consuela a los niños.
+
+Sabía que era un hombre importante, que su barba empezaba a encanecer y que, por tanto, aquello era imposible; pero aun así lo deseaba.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "Quería que lo acariciaran, que lo besaran, que lloraran por él",
+    lang: "es"
+  },
+  {
+    t: `Le parecía que lo introducían con sufrimiento en un saco negro, estrecho y profundo; que lo empujaban cada vez más hacia el fondo, pero no conseguían hacerlo pasar.
+
+Tenía miedo y, al mismo tiempo, quería caer dentro; se resistía y ayudaba a que lo empujaran.
+
+Después lloró como un niño: por su impotencia, por su terrible soledad, por la crueldad de los hombres, por la crueldad de Dios, por la ausencia de Dios.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "lo empujaban cada vez más hacia el fondo",
+    lang: "es"
+  },
+  {
+    t: `Cuanto más se alejaba de la infancia y más se acercaba al presente, más insignificantes y dudosas eran sus alegrías.
+
+El matrimonio, la decepción, la sensualidad, la falsedad; después aquel servicio muerto, las preocupaciones por el dinero: siempre lo mismo. Cuanto más avanzaba, más muerto estaba todo.
+
+Era como si hubiese descendido uniformemente por una pendiente mientras imaginaba que ascendía.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "mientras imaginaba que ascendía",
+    lang: "es"
+  },
+  {
+    t: `«Tal vez no he vivido como debía», se le ocurrió de pronto.
+
+«¿Pero cómo iba a haber vivido mal, si siempre hice todo como correspondía?», se respondió, y enseguida apartó de sí aquella solución única del enigma de la vida y de la muerte como si fuera algo completamente imposible.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "Tal vez no he vivido como debía",
+    lang: "es"
+  },
+  {
+    t: `Sus sufrimientos físicos eran terribles, pero aún más terribles eran sus sufrimientos morales, y en ellos residía su verdadero tormento.
+
+«¿Y si, en realidad, toda mi vida consciente no hubiera sido lo que debía?»
+
+Pensó que aquello que antes le había parecido completamente imposible —que no hubiese vivido como debía— podía ser cierto. Sus leves intentos de resistirse a lo que las personas de posición más elevada consideraban bueno quizá habían sido lo verdadero; y todo lo demás podía haber sido falso.
+
+Su trabajo, la organización de su vida, su familia, sus intereses sociales y profesionales: todo podía haber sido falso.
+
+Trató de defenderlo, pero de pronto comprendió toda la debilidad de aquello que defendía. No había nada que defender.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "No había nada que defender",
+    lang: "es"
+  },
+  {
+    t: `Su tormento consistía en que lo introducían en aquel agujero negro y, todavía más, en que no conseguía atravesarlo.
+
+Lo que le impedía atravesarlo era reconocer que su vida había sido buena. Aquella justificación de su vida lo sujetaba, no lo dejaba avanzar y lo atormentaba más que ninguna otra cosa.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "Aquella justificación de su vida lo sujetaba",
+    lang: "es"
+  },
+  {
+    t: `Al final del agujero empezó a brillar algo.
+
+—Sí, todo había sido falso —se dijo—, pero no importa. Todavía es posible hacer lo correcto.
+
+En aquel momento su hijo se acercó a la cama. La mano del moribundo cayó sobre su cabeza. El muchacho la tomó, la apretó contra los labios y se echó a llorar.
+
+Iván Ilich vio la luz y sintió compasión por su hijo y por su mujer.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "Todavía es posible hacer lo correcto",
+    lang: "es"
+  },
+  {
+    t: `«Qué bien y qué sencillo», pensó.
+
+«¿Y el dolor? ¿Dónde está? Vamos, dolor, ¿dónde estás?»
+
+Prestó atención.
+
+«Sí, ahí está. Bueno, que esté».
+
+«¿Y la muerte? ¿Dónde está?»
+
+Buscó su antiguo y habitual miedo a la muerte y no lo encontró. ¿Dónde estaba? ¿Qué muerte? No había miedo alguno porque tampoco había muerte.
+
+En lugar de la muerte estaba la luz.
+
+—¡Así que era esto! —dijo de pronto en voz alta—. ¡Qué alegría!`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "En lugar de la muerte estaba la luz",
+    lang: "es"
+  },
+  {
+    t: `—Se acabó —dijo alguien sobre él.
+
+Iván Ilich oyó aquellas palabras y las repitió dentro de su alma:
+
+«La muerte ha terminado. Ya no existe».
+
+Aspiró aire, se detuvo en mitad del suspiro, se estiró y murió.`,
+    a: "León Tolstói",
+    obra: "La muerte de Iván Ilich, León Tolstói",
+    highlight: "La muerte ha terminado. Ya no existe",
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -2024,6 +2227,7 @@ const QUOTES = [
   ...RAYO_QUE_NO_CESA_QUOTES,
   ...PAPA_GORIOT_QUOTES,
   ...DORIAN_GRAY_QUOTES,
+  ...IVAN_ILICH_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
