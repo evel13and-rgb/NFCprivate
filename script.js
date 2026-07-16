@@ -304,7 +304,7 @@ disputando tu novia y las abejas.`,
     highlight: "Escarbar la tierra con los dientes.",
     lang: "es"
   }
-];
+].map(quote => ({ ...quote, type: "poem" }));
 
 const PAPA_GORIOT_QUOTES = [
   {
@@ -815,7 +815,7 @@ const LA_VIDA_ES_SUENO_QUOTES = [
     obra: "La vida es sueño, Pedro Calderón de la Barca",
     lang: "es"
   }
-];
+].map(quote => ({ ...quote, type: "poem" }));
 
 const BARTLEBY_TAGS = ["literatura", "soledad", "negativa", "oficina", "muro", "alienación", "clásicos"];
 
@@ -3611,6 +3611,9 @@ function renderQuote(quote) {
   currentQuote = quote;
   stopQuoteVoice();
   if (quoteElementRef) {
+    const isPoem = currentQuote.type === 'poem';
+    quoteElementRef.classList.toggle('quote-text--poem', isPoem);
+    quoteElementRef.classList.toggle('quote-text--prose', !isPoem);
     setQuoteTextContent(currentQuote.t ?? '', { includeQuotes: true });
     if (currentQuote.lang) {
       quoteElementRef.setAttribute('lang', currentQuote.lang);
