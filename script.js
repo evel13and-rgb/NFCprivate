@@ -2425,6 +2425,23 @@ function interpolateNumber(from, to, amount) {
   return from + (to - from) * amount;
 }
 
+const QUOTE_LENGTH_CLASSES = [
+  'quote-text--short',
+  'quote-text--medium',
+  'quote-text--long',
+  'quote-text--very-long',
+];
+
+function getQuoteLengthClass(text) {
+  const content = typeof text === 'string' ? text.trim() : '';
+  const characterCount = Array.from(content).length;
+
+  if (characterCount < 260) return 'quote-text--short';
+  if (characterCount <= 520) return 'quote-text--medium';
+  if (characterCount <= 900) return 'quote-text--long';
+  return 'quote-text--very-long';
+}
+
 function applyQuoteLengthSizing(text) {
   if (!quoteElementRef) {
     return;
@@ -3612,8 +3629,11 @@ function renderQuote(quote) {
   stopQuoteVoice();
   if (quoteElementRef) {
     const isPoem = currentQuote.type === 'poem';
+    const quoteLengthClass = getQuoteLengthClass(currentQuote.t);
     quoteElementRef.classList.toggle('quote-text--poem', isPoem);
     quoteElementRef.classList.toggle('quote-text--prose', !isPoem);
+    quoteElementRef.classList.remove(...QUOTE_LENGTH_CLASSES);
+    quoteElementRef.classList.add(quoteLengthClass);
     setQuoteTextContent(currentQuote.t ?? '', { includeQuotes: true });
     if (currentQuote.lang) {
       quoteElementRef.setAttribute('lang', currentQuote.lang);

@@ -743,9 +743,40 @@ blockquote {
 }
 
 .quote-text--poem {
-  max-width: 88%;
+  width: 100%;
+  max-width: min(100%, 36rem);
+  font-size: clamp(1.25rem, 3vw, 1.72rem);
+  line-height: 1.18;
   text-align: center;
   white-space: pre-line;
+}
+
+.quote-text--poem.quote-text--medium {
+  font-size: clamp(1.16rem, 2.6vw, 1.44rem);
+  line-height: 1.16;
+}
+
+.quote-text--poem.quote-text--long {
+  font-size: clamp(1.1rem, 2.35vw, 1.34rem);
+  line-height: 1.14;
+}
+
+.quote-text--poem.quote-text--very-long {
+  font-size: clamp(1.04rem, 2.15vw, 1.24rem);
+  line-height: 1.12;
+}
+
+.quote-highlight:not([hidden]) + .quote-text--poem.quote-text--medium,
+.quote-highlight:not([hidden]) + .quote-text--poem.quote-text--long,
+.quote-highlight:not([hidden]) + .quote-text--poem.quote-text--very-long {
+  margin-top: -0.25rem;
+}
+
+.quote-text--poem.quote-text--medium + .quote-rule--short,
+.quote-text--poem.quote-text--long + .quote-rule--short,
+.quote-text--poem.quote-text--very-long + .quote-rule--short {
+  margin-top: 0.9rem;
+  margin-bottom: 0.55rem;
 }
 
 .quote-highlight {
@@ -1533,7 +1564,24 @@ body.night-fall .modal__close:focus-visible {
   }
 
   .quote-text--poem {
-    max-width: 92%;
+    max-width: min(100%, 36rem);
+    font-size: clamp(1.32rem, 2.2vw, 1.72rem);
+    line-height: 1.18;
+  }
+
+  .quote-text--poem.quote-text--medium {
+    font-size: clamp(1.18rem, 1.8vw, 1.42rem);
+    line-height: 1.16;
+  }
+
+  .quote-text--poem.quote-text--long {
+    font-size: clamp(1.12rem, 1.65vw, 1.32rem);
+    line-height: 1.14;
+  }
+
+  .quote-text--poem.quote-text--very-long {
+    font-size: clamp(1.06rem, 1.5vw, 1.2rem);
+    line-height: 1.12;
   }
 
   .author,
@@ -1628,7 +1676,31 @@ body.night-fall .modal__close:focus-visible {
   }
 
   .quote-text--poem {
-    max-width: 92%;
+    max-width: calc(100% - 0.4rem);
+    font-size: clamp(1.12rem, 4.4vw, 1.36rem);
+    line-height: 1.18;
+  }
+
+  .quote-text--poem.quote-text--medium {
+    font-size: clamp(1.06rem, 4vw, 1.2rem);
+    line-height: 1.16;
+  }
+
+  .quote-text--poem.quote-text--long {
+    font-size: clamp(1.02rem, 3.8vw, 1.12rem);
+    line-height: 1.14;
+  }
+
+  .quote-text--poem.quote-text--very-long {
+    font-size: clamp(1rem, 3.6vw, 1.08rem);
+    line-height: 1.12;
+  }
+
+  .quote-text--poem.quote-text--medium + .quote-rule--short,
+  .quote-text--poem.quote-text--long + .quote-rule--short,
+  .quote-text--poem.quote-text--very-long + .quote-rule--short {
+    margin-top: 0.55rem;
+    margin-bottom: 0.25rem;
   }
 
   .author {
