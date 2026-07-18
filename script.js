@@ -2204,6 +2204,246 @@ Aspiró aire, se detuvo en mitad del suspiro, se estiró y murió.`,
   }
 ];
 
+const MEMORIAS_SUBSUELO_QUOTES = [
+  {
+    t: `Soy un hombre enfermo… Soy un hombre malo. Un hombre nada atractivo. Creo que me duele el hígado. Aunque, en realidad, no entiendo ni pizca de mi enfermedad ni sé con certeza qué es lo que me duele. No me curo y nunca me he curado, aunque respeto la medicina y a los médicos. Además, soy supersticioso hasta el extremo; bueno, hasta el extremo de respetar la medicina. (Soy lo bastante instruido para no ser supersticioso, pero lo soy).
+
+No, señores, no quiero curarme por puro despecho. Esto, seguramente, no se dignarán ustedes a comprenderlo. Yo sí lo comprendo.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "No quiero curarme por puro despecho.",
+    lang: "es"
+  },
+  {
+    t: `No solo no supe hacerme malvado, sino que tampoco supe hacerme nada: ni malo ni bueno, ni canalla ni honrado, ni héroe ni insecto.
+
+Ahora acabo mis días en mi rincón, provocándome con el consuelo maligno y completamente inútil de que un hombre inteligente no puede seriamente convertirse en nada, y de que solo el necio llega a convertirse en algo.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Tampoco supe hacerme nada.",
+    lang: "es"
+  },
+  {
+    t: `Ahora me apetece contarles, señores —les apetezca o no oírlo—, por qué ni siquiera supe convertirme en insecto. Les diré solemnemente que muchas veces quise convertirme en insecto. Pero ni siquiera de eso fui digno.
+
+Les juro, señores, que ser demasiado consciente es una enfermedad, una enfermedad verdadera, completa. Para el uso cotidiano del hombre habría bastado de sobra una conciencia humana ordinaria: la mitad, incluso la cuarta parte de la porción que le toca al hombre desarrollado de nuestro desgraciado siglo.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Ser demasiado consciente es una enfermedad.",
+    lang: "es"
+  },
+  {
+    t: `Díganme esto: ¿por qué ocurría que, como adrede, precisamente en esos mismos, sí, en esos mismos minutos en que era más capaz de comprender todas las sutilezas de «todo lo bello y lo sublime», me sucedía ya no comprender, sino cometer acciones tan indecorosas, acciones que… bueno, sí, que quizá todos cometen, pero que, como adrede, se me ocurrían justamente cuando más comprendía que de ningún modo debía cometerlas?
+
+Cuanto más consciente era del bien y de todo eso «bello y sublime», más profundamente descendía a mi cieno y más capaz era de atascarme por completo en él.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Más profundamente descendía a mi cieno.",
+    lang: "es"
+  },
+  {
+    t: `Llegaba a sentir cierto placercillo secreto, anormal y mezquino cuando regresaba a mi rincón en alguna asquerosísima noche de Petersburgo y me obligaba a reconocer que aquel día había vuelto a cometer una vileza, que lo hecho, una vez más, ya no podía deshacerse; y, por dentro, en secreto, roerme, roerme por ello con los dientes, serrarme y chuparme hasta que la amargura terminaba convirtiéndose en una dulzura vergonzosa, maldita, y finalmente en un placer decidido, serio.
+
+¡Sí, en placer, en placer! Insisto en ello.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "La amargura terminaba convirtiéndose en una dulzura vergonzosa.",
+    lang: "es"
+  },
+  {
+    t: `Pues colmadlo de todos los bienes terrenales, hundidlo en felicidad hasta la coronilla, de manera que en la superficie de la felicidad solo suban burbujitas, como sobre el agua; dadle tal bienestar económico que ya no le quede absolutamente nada que hacer salvo dormir, comer pan de especias y preocuparse de que la historia universal no se interrumpa; y aun así, el hombre, aun así, solo por ingratitud, por pura maledicencia, cometerá alguna vileza.
+
+Arriesgará incluso sus panes de especias y deseará adrede el disparate más pernicioso, el absurdo menos económico.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Hundidlo en felicidad hasta la coronilla.",
+    lang: "es"
+  },
+  {
+    t: `Precisamente sus sueños fantásticos, su estupidez más vulgar, querrá conservarlos para sí, únicamente para confirmarse —como si eso fuera tan terriblemente necesario— que los hombres siguen siendo hombres y no teclas de piano sobre las que tocan con sus propias manos las leyes de la naturaleza.
+
+Y aunque resultara realmente una tecla de piano, aunque se lo demostraran mediante las ciencias naturales y las matemáticas, ni entonces entraría en razón: haría adrede alguna cosa contraria, únicamente por ingratitud, propiamente para salirse con la suya.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Los hombres siguen siendo hombres y no teclas de piano.",
+    lang: "es"
+  },
+  {
+    t: `¿Y quién sabe —no puede garantizarse— si toda la finalidad hacia la que tiende la humanidad en la tierra consiste únicamente en esa continuidad ininterrumpida del proceso de alcanzar; dicho de otro modo, en la vida misma, y no propiamente en la meta?
+
+Porque la meta, naturalmente, no puede ser otra cosa que dos por dos son cuatro, es decir, una fórmula; y dos por dos son cuatro ya no es vida, señores, sino el principio de la muerte. Por lo menos, el hombre siempre ha sentido cierto miedo ante ese dos por dos son cuatro, y yo todavía lo siento.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Dos por dos son cuatro ya no es vida, señores, sino el principio de la muerte.",
+    lang: "es"
+  },
+  {
+    t: `¿Y por qué están ustedes tan firme, tan solemnemente convencidos de que solo lo normal y positivo —en una palabra, solo el bienestar— resulta ventajoso para el hombre? ¿No se equivocará la razón acerca de las ventajas? Quizá el hombre no ame únicamente el bienestar. Quizá ame exactamente en la misma medida el sufrimiento. Quizá el sufrimiento le resulte tan ventajoso como el bienestar.
+
+Yo no defiendo propiamente el sufrimiento, ni tampoco el bienestar. Defiendo… mi capricho y que se me garantice cuando me haga falta.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Defiendo… mi capricho.",
+    lang: "es"
+  },
+  {
+    t: `Verán ustedes: si en lugar de un palacio hubiera un gallinero y empezara a llover, quizá me metería en el gallinero para no mojarme; pero aun así no tomaría el gallinero por un palacio, solo por agradecimiento porque me hubiese protegido de la lluvia.
+
+Ustedes se ríen; incluso dicen que, en ese caso, el gallinero y las mansiones dan lo mismo. Sí —respondo yo—, si solo hubiera que vivir para no mojarse.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "No tomaría el gallinero por un palacio.",
+    lang: "es"
+  },
+  {
+    t: `Destruyan mis deseos, borren mis ideales, muéstrenme algo mejor y los seguiré. Quizá digan ustedes que no merece la pena meterse conmigo; pero, en ese caso, yo puedo responderles lo mismo. Estamos razonando seriamente; y si no quieren dignarse prestarme atención, no voy a inclinarme ante ustedes. Tengo el subsuelo.
+
+Y mientras todavía viva y desee, ¡que se me seque la mano si llevo siquiera un ladrillito para semejante edificio sólido!`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Tengo el subsuelo.",
+    lang: "es"
+  },
+  {
+    t: `Yo tenía entonces solo veinticuatro años. Mi vida era ya en aquella época sombría, desordenada y solitaria hasta el salvajismo. No me trataba con nadie, evitaba incluso hablar y me iba metiendo cada vez más en mi rincón.
+
+En el trabajo, en la oficina, procuraba incluso no mirar a nadie; y advertía perfectamente que mis compañeros no solo me consideraban un excéntrico, sino que —también esto me parecía— me miraban como con cierta repugnancia.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Solitaria hasta el salvajismo.",
+    lang: "es"
+  },
+  {
+    t: `Ahora me resulta completamente claro que yo mismo, a causa de mi ilimitada vanidad y, por consiguiente, de las exigencias que me imponía, me miraba muy a menudo con un descontento furioso que llegaba hasta la repugnancia; y por eso atribuía mentalmente mi propia mirada a cada uno de los demás.
+
+Odiaba, por ejemplo, mi rostro; lo encontraba repugnante y hasta sospechaba que había en él cierta expresión ruin.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Atribuía mentalmente mi propia mirada a cada uno de los demás.",
+    lang: "es"
+  },
+  {
+    t: `Sonreía con desprecio y caminaba al otro lado de la habitación, justo frente al sofá, junto a la pared, desde la mesa hasta la estufa y de regreso. Con todas mis fuerzas quería mostrar que podía arreglármelas sin ellos; pero, mientras tanto, golpeaba adrede el suelo con las botas, dejándome caer sobre los tacones.
+
+Tuve paciencia para caminar así, justo delante de ellos, desde las ocho hasta las once, siempre por el mismo sitio, de la mesa a la estufa y de la estufa otra vez a la mesa.
+
+Era ya imposible humillarse a sí mismo de una manera más descarada y voluntaria. Yo lo comprendía plenamente, plenamente, y aun así continuaba caminando.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Lo comprendía plenamente, plenamente, y aun así continuaba caminando.",
+    lang: "es"
+  },
+  {
+    t: `De pronto se me presentó con toda claridad la idea absurda, repugnante, semejante a una araña, del libertinaje que, sin amor, grosera y desvergonzadamente, empieza directamente por aquello con lo que el verdadero amor se corona.
+
+Nos miramos así durante mucho tiempo; pero ella no bajaba los ojos ante los míos ni cambiaba la mirada, de manera que al final, no sé por qué, sentí miedo.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "La idea absurda, repugnante, semejante a una araña.",
+    lang: "es"
+  },
+  {
+    t: `—¡Eh, basta, Liza! ¿Qué libro ni qué libro, si a mí mismo me repugna desde fuera? Aunque tampoco desde fuera. Todo esto se ha despertado ahora dentro de mi alma… ¿De verdad, de verdad no te repugna estar aquí? No, está claro que el hábito significa mucho. ¡El diablo sabe lo que el hábito puede llegar a hacer de una persona!
+
+¿De verdad piensas seriamente que nunca envejecerás, que serás hermosa para siempre y que te conservarán aquí por los siglos de los siglos?`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "¡El diablo sabe lo que el hábito puede llegar a hacer de una persona!",
+    lang: "es"
+  },
+  {
+    t: `Hasta el último campesino que se contrata como jornalero no se entrega entero a la esclavitud y sabe que su plazo terminará. Pero ¿dónde está tu plazo? Piénsalo solamente: ¿qué entregas aquí?, ¿qué esclavizas?
+
+¡El alma, el alma, sobre la que no tienes poder, la esclavizas junto con el cuerpo! Entregas tu amor para que cualquier borracho lo profane. ¡El amor! Pero si eso lo es todo; es un diamante, un tesoro de doncella, ¡el amor! Para merecer ese amor, otro estaría dispuesto a entregar el alma, a ir a la muerte.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "¡El alma, el alma, sobre la que no tienes poder, la esclavizas junto con el cuerpo!",
+    lang: "es"
+  },
+  {
+    t: `Algo no moría dentro de mí, en lo profundo del corazón y de la conciencia; no quería morir y se manifestaba mediante una angustia abrasadora.
+
+«¡Vendrá! ¡Vendrá sin falta! —exclamaba, corriendo por la habitación—. Si no hoy, vendrá mañana; ¡acabará encontrándome!»
+
+Pero, ante ese pensamiento, se alzaba en mí tal maldad que, me parece, habría aplastado allí mismo a aquella «maldita» Liza si hubiera aparecido de repente a mi lado; la habría insultado, escupido, echado, golpeado.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Algo no moría dentro de mí.",
+    lang: "es"
+  },
+  {
+    t: `Pasaron, sin embargo, un día, otro, un tercero: ella no venía, y yo empezaba a tranquilizarme. Después de las nueve me animaba especialmente y hasta comenzaba a soñar, y con bastante dulzura:
+
+«Yo, por ejemplo, salvo a Liza precisamente porque viene a verme y yo le hablo… Yo la desarrollo, la instruyo. Finalmente advierto que me ama, que me ama apasionadamente. Finjo que no lo comprendo —aunque no sé para qué lo finjo; probablemente para embellecer la escena—».`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Yo, por ejemplo, salvo a Liza.",
+    lang: "es"
+  },
+  {
+    t: `Ella se sentó de inmediato y obedientemente, mirándome con los ojos muy abiertos y esperando, evidentemente, algo de mí en aquel mismo instante. Precisamente aquella ingenuidad de la espera me hizo montar en cólera, pero me contuve.
+
+En ese momento habría debido esforzarme por no notar nada, como si todo fuese corriente, pero ella… Y sentí vagamente que pagaría muy caro por todo aquello.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Pagaría muy caro por todo aquello.",
+    lang: "es"
+  },
+  {
+    t: `—Liza, ¿me desprecias? —dije, mirándola fijamente, temblando de impaciencia por saber qué pensaba.
+
+Se turbó y no supo responder nada.
+
+—¡Bebe el té! —dije con maldad.
+
+Estaba enfadado conmigo mismo, pero, naturalmente, quien debía pagarlo era ella. De pronto hirvió en mi corazón una rabia terrible contra ella; me parece que habría podido matarla. Para vengarme, me juré mentalmente no decirle una sola palabra en todo aquel tiempo.
+
+«Ella tiene la culpa de todo», pensaba.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Estaba enfadado conmigo mismo, pero, naturalmente, quien debía pagarlo era ella.",
+    lang: "es"
+  },
+  {
+    t: `Yo ya no podía amar porque, repito, amar significaba para mí tiranizar y mantener una superioridad moral. Durante toda mi vida no pude siquiera imaginarme otro amor; y he llegado hasta el punto de pensar algunas veces, ahora, que el amor consiste precisamente en el derecho a tiranizar concedido voluntariamente por el ser amado.
+
+Tampoco en mis sueños del subsuelo imaginaba el amor de otra forma que como una lucha: siempre lo empezaba por el odio y lo terminaba mediante el sometimiento moral; y después ya no podía imaginar qué hacer con el ser sometido.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Amar significaba para mí tiranizar.",
+    lang: "es"
+  },
+  {
+    t: `Me resultaba insoportablemente penoso que ella estuviese allí. Quería que desapareciera. Deseaba «tranquilidad»; deseaba quedarme solo en el subsuelo.
+
+La «vida viva», por falta de costumbre, me aplastó hasta tal punto que incluso se me hizo difícil respirar.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "La «vida viva», por falta de costumbre, me aplastó.",
+    lang: "es"
+  },
+  {
+    t: `Todos hemos perdido la costumbre de vivir; todos cojeamos, unos más y otros menos. Hasta tal punto la hemos perdido que a veces sentimos cierta repugnancia hacia la verdadera «vida viva», y por eso no soportamos que nos la recuerden.
+
+Hemos llegado al extremo de considerar la verdadera «vida viva» casi como un trabajo, casi como un servicio, y todos estamos interiormente de acuerdo en que es mejor según los libros.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Todos hemos perdido la costumbre de vivir.",
+    lang: "es"
+  },
+  {
+    t: `Déjennos solos, sin libros, e inmediatamente nos enredaremos, nos perderemos; no sabremos a qué adherirnos, qué sostener, qué amar y qué odiar, qué respetar y qué despreciar.
+
+Nos pesa incluso ser hombres: hombres con un cuerpo verdadero, propio, y con sangre; nos avergonzamos de ello, lo consideramos una deshonra y procuramos ser una especie de inexistentes hombres universales.
+
+Somos nacidos muertos, y desde hace mucho ya ni siquiera nacemos de padres vivos; y eso nos gusta cada vez más. Le estamos tomando el gusto. Pronto inventaremos algún modo de nacer de una idea.`,
+    a: "Fiódor Dostoievski",
+    obra: "Memorias del subsuelo, Fiódor Dostoievski",
+    highlight: "Somos nacidos muertos.",
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -2228,6 +2468,7 @@ const QUOTES = [
   ...PAPA_GORIOT_QUOTES,
   ...DORIAN_GRAY_QUOTES,
   ...IVAN_ILICH_QUOTES,
+  ...MEMORIAS_SUBSUELO_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
