@@ -2444,6 +2444,255 @@ Somos nacidos muertos, y desde hace mucho ya ni siquiera nacemos de padres vivos
   }
 ];
 
+const EL_HORLA_QUOTES = [
+  {
+    t: `¡Qué día admirable! He pasado toda la mañana tendido sobre la hierba, delante de mi casa, bajo el enorme plátano que la cubre, la protege y la sombrea por entero.
+
+Amo este país y amo vivir en él porque aquí tengo mis raíces, esas raíces profundas y delicadas que atan a un hombre a la tierra donde nacieron y murieron sus antepasados; que lo atan a lo que se piensa y a lo que se come, a los usos como a los alimentos, a las expresiones del lugar, a las entonaciones de los campesinos, a los olores del suelo, de los pueblos y del aire mismo.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Aquí tengo mis raíces.",
+    lang: "es"
+  },
+  {
+    t: `¿De dónde vienen esas influencias misteriosas que transforman nuestra felicidad en desaliento y nuestra confianza en angustia? Se diría que el aire, el aire invisible, está lleno de Potencias desconocidas cuyas misteriosas cercanías padecemos.
+
+Despierto lleno de alegría, con deseos de cantar en la garganta. ¿Por qué? Bajo junto al agua; y de pronto, después de un breve paseo, regreso desolado, como si alguna desgracia me esperara en casa.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "El aire invisible está lleno de Potencias desconocidas.",
+    lang: "es"
+  },
+  {
+    t: `¡Qué profundo es este misterio de lo Invisible! No podemos sondearlo con nuestros miserables sentidos, con nuestros ojos, que no saben percibir ni lo demasiado pequeño ni lo demasiado grande, ni lo demasiado cercano ni lo demasiado lejano, ni los habitantes de una estrella ni los habitantes de una gota de agua…
+
+¡Ah! Si tuviéramos otros órganos que realizaran para nosotros otros milagros, ¡cuántas cosas descubriríamos todavía a nuestro alrededor!`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "¡Qué profundo es este misterio de lo Invisible!",
+    lang: "es"
+  },
+  {
+    t: `Apenas entro, doy dos vueltas a la llave y echo los cerrojos; tengo miedo… ¿de qué?… Hasta ahora no temía nada… abro los armarios, miro debajo de la cama; escucho… escucho… ¿qué?…
+
+Después me acuesto y espero el sueño como se esperaría al verdugo. Lo espero con el espanto de su llegada; y mi corazón late, y mis piernas tiemblan; y todo mi cuerpo se estremece en el calor de las sábanas.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Espero el sueño como se esperaría al verdugo.",
+    lang: "es"
+  },
+  {
+    t: `Duermo —mucho tiempo— dos o tres horas; después un sueño —no— una pesadilla me oprime. Siento perfectamente que estoy acostado y que duermo… lo siento y lo sé… y siento también que alguien se acerca a mí, me mira, me toca, sube a mi cama, se arrodilla sobre mi pecho, me toma el cuello entre las manos y aprieta… aprieta… con todas sus fuerzas para estrangularme.
+
+Yo me debato, atado por esa impotencia atroz que nos paraliza en los sueños; quiero gritar —no puedo—; quiero moverme —no puedo—.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Quiero gritar —no puedo—.",
+    lang: "es"
+  },
+  {
+    t: `Aceleré el paso, inquieto por estar solo en aquel bosque, asustado sin razón, estúpidamente, por la profunda soledad. De pronto me pareció que me seguían, que caminaban sobre mis talones, muy cerca, hasta tocarme.
+
+Me volví bruscamente. Estaba solo. No vi detrás de mí más que la avenida recta y ancha, vacía, alta, terriblemente vacía; y al otro lado se extendía también hasta perderse de vista, idéntica, espantosa.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Asustado por la profunda soledad.",
+    lang: "es"
+  },
+  {
+    t: `—Si existieran sobre la tierra otros seres distintos de nosotros, ¿cómo no los conoceríamos desde hace mucho tiempo? ¿Cómo no los habría visto usted? ¿Cómo no los habría visto yo?
+
+Él respondió:
+
+—¿Acaso vemos la cienmilésima parte de lo que existe? Mire el viento, que derriba hombres, abate edificios, arranca árboles, levanta el mar en montañas de agua, mata, silba, gime, ruge… ¿lo ha visto usted?, ¿puede verlo? Existe, sin embargo.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "¿Puede verlo? Existe, sin embargo.",
+    lang: "es"
+  },
+  {
+    t: `Esta noche he sentido a alguien agazapado sobre mí, que, con la boca sobre la mía, bebía mi vida entre mis labios. Sí, la extraía de mi garganta como lo habría hecho una sanguijuela.
+
+Después se levantó, saciado, y yo desperté tan magullado, quebrantado, aniquilado, que ya no podía moverme.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Bebía mi vida entre mis labios.",
+    lang: "es"
+  },
+  {
+    t: `¿Habían bebido aquella agua? ¿Quién? ¿Yo? ¿Yo, sin duda? No podía haber sido más que yo. Entonces era sonámbulo; vivía, sin saberlo, esa doble vida misteriosa que hace dudar de si existen dos seres en nosotros, o de si un ser extraño, incognoscible e invisible anima por momentos, cuando nuestra alma está adormecida, nuestro cuerpo cautivo, que obedece a ese otro como a nosotros mismos, más que a nosotros mismos.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Vivía, sin saberlo, esa doble vida misteriosa.",
+    lang: "es"
+  },
+  {
+    t: `Me vuelvo loco. Han vuelto a beber toda mi jarra esta noche; o, más bien, ¡la he bebido yo!
+
+Pero ¿soy yo? ¿Soy yo? ¿Quién sería? ¿Quién? ¡Oh, Dios mío! ¿Me vuelvo loco? ¿Quién me salvará?`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Pero ¿soy yo? ¿Soy yo?",
+    lang: "es"
+  },
+  {
+    t: `La soledad es peligrosa para las inteligencias que trabajan. Necesitamos a nuestro alrededor hombres que piensen y que hablen. Cuando permanecemos solos durante mucho tiempo, poblamos el vacío de fantasmas.
+
+¡Qué débil es nuestra cabeza, cómo se asusta y cómo se extravía rápidamente en cuanto un pequeño hecho incomprensible nos golpea!`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Poblamos el vacío de fantasmas.",
+    lang: "es"
+  },
+  {
+    t: `Muchas personas a quienes he contado esta aventura se han burlado de mí. Ya no sé qué pensar.
+
+El sabio dice: ¿quizá?`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "El sabio dice: ¿quizá?",
+    lang: "es"
+  },
+  {
+    t: `Esta vez no estoy loco. He visto… he visto… ¡he visto!… Ya no puedo dudar… ¡he visto!… Todavía tengo frío hasta en las uñas… todavía tengo miedo hasta en la médula… ¡he visto!…`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "He visto… he visto… ¡he visto!",
+    lang: "es"
+  },
+  {
+    t: `Vi, vi claramente, muy cerca de mí, el tallo de una de aquellas rosas inclinarse, como si una mano invisible lo hubiera torcido; después quebrarse, como si aquella mano la hubiese cortado.
+
+Luego la flor se elevó, siguiendo la curva que habría descrito un brazo al llevarla hacia una boca, y permaneció suspendida en el aire transparente, sola, inmóvil, espantosa mancha roja a tres pasos de mis ojos.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Suspendida en el aire transparente, sola, inmóvil.",
+    lang: "es"
+  },
+  {
+    t: `Me creería loco, completamente loco, si no fuese consciente, si no conociera perfectamente mi estado, si no lo sondeara analizándolo con absoluta lucidez.
+
+No sería, pues, en definitiva, más que un alucinado que razona. Un trastorno desconocido se habría producido en mi cerebro; y ese trastorno habría abierto en mi espíritu, en el orden y la lógica de mis ideas, una grieta profunda.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Un alucinado que razona.",
+    lang: "es"
+  },
+  {
+    t: `He visto locos; he conocido algunos que permanecían inteligentes, lúcidos, clarividentes incluso en todas las cosas de la vida, salvo en un punto.
+
+Hablaban de todo con claridad, con flexibilidad, con profundidad, y de pronto su pensamiento, al tocar el escollo de su locura, se desgarraba en pedazos, se dispersaba y se hundía en ese océano espantoso y furioso, lleno de olas saltarinas, de nieblas y de borrascas, al que llaman «la demencia».`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "El océano espantoso y furioso de la demencia.",
+    lang: "es"
+  },
+  {
+    t: `Ya no tengo fuerza alguna, ningún valor, ningún dominio sobre mí, ni siquiera poder para poner en movimiento mi voluntad.
+
+Ya no puedo querer; pero alguien quiere por mí; y yo obedezco.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Alguien quiere por mí; y yo obedezco.",
+    lang: "es"
+  },
+  {
+    t: `¡Estoy perdido! ¡Alguien posee mi alma y la gobierna! Alguien ordena todos mis actos, todos mis movimientos, todos mis pensamientos.
+
+Ya no soy nada dentro de mí, nada más que un espectador esclavo y aterrorizado de todas las cosas que realizo. Deseo salir. No puedo. Él no quiere; y permanezco, enloquecido, temblando, en el sillón donde me mantiene sentado.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Ya no soy nada dentro de mí.",
+    lang: "es"
+  },
+  {
+    t: `Después, de pronto, es preciso, es preciso, es preciso que vaya al fondo de mi jardín a recoger fresas y a comerlas. Y voy. Recojo fresas y me las como.
+
+¡Oh, Dios mío! ¡Dios mío! ¡Dios mío! ¿Existe Dios? Si existe, libéreme, sálveme, socórrame. ¡Perdón! ¡Piedad! ¡Gracia! ¡Sálveme! ¡Oh, qué sufrimiento! ¡Qué tortura! ¡Qué horror!`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Es preciso, es preciso, es preciso.",
+    lang: "es"
+  },
+  {
+    t: `Sufría una voluntad extraña introducida en ella, como otra alma, como otra alma parásita y dominadora. ¿Va a acabarse el mundo?
+
+Pero quien me gobierna, ¿quién es, ese invisible? ¿Ese incognoscible, ese merodeador de una raza sobrenatural?`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Como otra alma parásita y dominadora.",
+    lang: "es"
+  },
+  {
+    t: `Pude escapar hoy durante dos horas, como un prisionero que encuentra abierta, por casualidad, la puerta de su calabozo. Sentí de pronto que era libre y que él estaba lejos.
+
+Pero, al volver a subir al coche, quise decir: «¡A la estación!», y grité —no dije, grité— con una voz tan fuerte que los transeúntes se volvieron: «¡A casa!», y caí, enloquecido de angustia, sobre el asiento de mi carruaje.
+
+Me había encontrado y recuperado.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Me había encontrado y recuperado.",
+    lang: "es"
+  },
+  {
+    t: `Se diría que el hombre, desde que piensa, ha presentido y temido a un ser nuevo, más fuerte que él, su sucesor en este mundo; y que, sintiéndolo cercano y no pudiendo prever la naturaleza de ese amo, ha creado, dentro de su terror, todo el pueblo fantástico de los seres ocultos, vagos fantasmas nacidos del miedo.
+
+Somos tan débiles, tan desarmados, tan ignorantes, tan pequeños, nosotros, sobre este grano de barro que gira diluido en una gota de agua.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Vagos fantasmas nacidos del miedo.",
+    lang: "es"
+  },
+  {
+    t: `De pronto me pareció que una página del libro que había quedado abierto sobre mi mesa acababa de volverse sola. Ninguna ráfaga de aire había entrado por la ventana. Me sorprendí y esperé.
+
+Al cabo de unos cuatro minutos vi, vi, sí, vi con mis propios ojos otra página levantarse y caer sobre la anterior, como si un dedo la hojeara. Mi sillón estaba vacío, parecía vacío; pero comprendí que él estaba allí, él, sentado en mi lugar, y que leía.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Mi sillón estaba vacío, parecía vacío.",
+    lang: "es"
+  },
+  {
+    t: `De un salto furioso, de un salto de bestia rebelada que va a destripar a su domador, atravesé la habitación para agarrarlo, para estrecharlo, para matarlo…
+
+Pero mi asiento, antes de que pudiera alcanzarlo, se volcó como si alguien hubiese huido delante de mí; mi mesa osciló, mi lámpara cayó y se apagó, y mi ventana se cerró como si un malhechor sorprendido se hubiera lanzado a la noche.
+
+Por tanto, había huido; había tenido miedo, ¡miedo de mí, él!`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Había tenido miedo, ¡miedo de mí, él!",
+    lang: "es"
+  },
+  {
+    t: `Me incorporé con las manos extendidas, volviéndome tan deprisa que estuve a punto de caer. ¿Y bien?… Se veía como a plena luz, ¡y yo no me vi en el espejo!… Estaba vacío, claro, profundo, lleno de luz. Mi imagen no estaba dentro… ¡y yo estaba delante!
+
+No me atrevía a avanzar, no me atrevía a hacer un movimiento, aunque sentía perfectamente que él estaba allí, él, cuyo cuerpo imperceptible había devorado mi reflejo.`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "Su cuerpo imperceptible había devorado mi reflejo.",
+    lang: "es"
+  },
+  {
+    t: `La casa ya no era más que una hoguera horrible y magnífica, una hoguera monstruosa que iluminaba toda la tierra, una hoguera en la que ardían hombres y en la que también ardía Él, Él, mi prisionero, el Ser nuevo, el nuevo amo, ¡el Horla!
+
+¿Muerto? Quizá… ¿Su cuerpo? ¿Aquel cuerpo atravesado por la luz no sería indestructible por los medios que matan los nuestros?`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "El Ser nuevo, el nuevo amo, el Horla.",
+    lang: "es"
+  },
+  {
+    t: `No… no… sin ninguna duda, sin ninguna duda… no ha muerto…
+
+Entonces… entonces… ¡tendré que matarme yo!…`,
+    a: "Guy de Maupassant",
+    obra: "El Horla, Guy de Maupassant",
+    highlight: "¡Tendré que matarme yo!",
+    lang: "es"
+  }
+];
+
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -2469,6 +2718,7 @@ const QUOTES = [
   ...DORIAN_GRAY_QUOTES,
   ...IVAN_ILICH_QUOTES,
   ...MEMORIAS_SUBSUELO_QUOTES,
+  ...EL_HORLA_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
