@@ -3221,6 +3221,449 @@ Sus ojos se oscurecieron: estaba cerca; e, instintivamente, volviéndose en su a
   }
 ];
 
+const EL_PAPEL_PINTADO_DE_AMARILLO_QUOTES = [
+  {
+    t: `Es muy raro que simples personas corrientes como John y yo consigamos para el verano una residencia ancestral.
+
+Una mansión colonial, una propiedad hereditaria; yo diría una casa encantada y alcanzaría la cima de la dicha romántica, ¡pero eso sería pedir demasiado al destino!
+
+Aun así, declararé orgullosamente que hay algo extraño en ella.
+
+Si no, ¿por qué se alquila tan barata? ¿Y por qué ha permanecido tanto tiempo deshabitada?
+
+John se ríe de mí, por supuesto, pero una espera eso en el matrimonio.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "hay algo extraño en ella.",
+    lang: "es"
+  },
+  {
+    t: `John es práctico hasta el extremo. No tiene paciencia con la fe, siente un horror intenso por la superstición y se burla abiertamente de cualquier cosa que no pueda sentirse y verse y reducirse a cifras.
+
+John es médico, y quizá —no se lo diría a un alma viviente, por supuesto, pero este es papel muerto y supone un gran alivio para mi mente— quizá esa sea una de las razones por las que no mejoro más deprisa.
+
+Verán: ¡él no cree que esté enferma!`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "este es papel muerto y supone un gran alivio para mi mente",
+    lang: "es"
+  },
+  {
+    t: `¿Y qué puede hacer una?
+
+Si un médico de gran reputación, que además es el propio marido de una, asegura a amigos y parientes que en realidad no le ocurre nada salvo una depresión nerviosa pasajera —una ligera tendencia histérica—, ¿qué puede hacer una?
+
+Mi hermano también es médico, y también de gran reputación, y dice lo mismo.
+
+Así que tomo fosfatos o fosfitos —lo que sea—, y tónicos, y hago viajes, y tomo el aire, y hago ejercicio, y tengo absolutamente prohibido «trabajar» hasta que vuelva a estar bien.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "¿Y qué puede hacer una?",
+    lang: "es"
+  },
+  {
+    t: `Personalmente, no estoy de acuerdo con sus ideas.
+
+Personalmente, creo que un trabajo que me agradara, con estímulo y cambio, me haría bien.
+
+Pero ¿qué puede hacer una?
+
+Escribí durante un tiempo a pesar de ellos; pero me agota bastante tener que hacerlo con tanto disimulo o, de lo contrario, encontrar una fuerte oposición.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Personalmente, no estoy de acuerdo con sus ideas.",
+    lang: "es"
+  },
+  {
+    t: `A veces imagino que, en mi estado, si tuviera menos oposición y más compañía y estímulo… Pero John dice que lo peor que puedo hacer es pensar en mi estado, y confieso que siempre me hace sentir mal.
+
+Así que lo dejaré y hablaré de la casa.
+
+A veces me enfado con John sin ninguna razón. Estoy segura de que antes no era tan sensible. Creo que se debe a este estado nervioso.
+
+Pero John dice que, si me siento así, descuidaré el debido dominio de mí misma; de modo que me esfuerzo por controlarme —delante de él, al menos—, y eso me cansa muchísimo.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "me esfuerzo por controlarme —delante de él, al menos—",
+    lang: "es"
+  },
+  {
+    t: `Es una habitación grande y ventilada, casi todo el piso, con ventanas que miran en todas direcciones y aire y sol en abundancia. Primero debió de ser cuarto de niños, y después sala de juegos y gimnasio, supongo; porque las ventanas tienen barrotes para los niños pequeños y hay anillas y cosas en las paredes.
+
+La pintura y el papel parecen haber sido utilizados por una escuela de muchachos. El papel está arrancado en grandes trozos alrededor de la cabecera de mi cama, hasta donde alcanza mi mano, y también abajo, al otro lado de la habitación.
+
+Nunca vi un papel peor en mi vida.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "hay anillas y cosas en las paredes.",
+    lang: "es"
+  },
+  {
+    t: `Uno de esos dibujos desparramados y extravagantes que cometen todos los pecados artísticos.
+
+Es lo bastante apagado para confundir al ojo cuando intenta seguirlo, lo bastante marcado para irritar constantemente y provocar su estudio; y, cuando se siguen durante un trecho sus curvas cojas e inciertas, de pronto se suicidan: se precipitan en ángulos escandalosos, se destruyen en contradicciones nunca oídas.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "cometen todos los pecados artísticos.",
+    lang: "es"
+  },
+  {
+    t: `Cuando se siguen durante un trecho sus curvas cojas e inciertas, de pronto se suicidan: se precipitan en ángulos escandalosos, se destruyen en contradicciones nunca oídas.
+
+El color es repelente, casi repugnante: un amarillo humeante, impuro, extrañamente desteñido por la luz del sol que gira lentamente.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "de pronto se suicidan",
+    lang: "es"
+  },
+  {
+    t: `El color es repelente, casi repugnante: un amarillo humeante, impuro, extrañamente desteñido por la luz del sol que gira lentamente.
+
+En algunos lugares es de un naranja apagado y, sin embargo, chillón; en otros, de un enfermizo tono de azufre.
+
+¡No es extraño que los niños lo odiaran! Yo misma lo odiaría si tuviera que vivir mucho tiempo en esta habitación.
+
+Ahí viene John, y tengo que guardar esto: odia verme escribir una sola palabra.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "un amarillo humeante, impuro",
+    lang: "es"
+  },
+  {
+    t: `Estos trastornos nerviosos son terriblemente deprimentes.
+
+John no sabe cuánto sufro realmente. Sabe que no existe ninguna razón para que sufra, y eso lo satisface.
+
+Por supuesto, solo son los nervios. ¡Me pesa tanto no cumplir con mi deber de ninguna manera!
+
+Quería ser una ayuda tan grande para John, un verdadero descanso y consuelo; y aquí estoy, convertida ya, comparativamente, en una carga.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Sabe que no existe ninguna razón para que sufra, y eso lo satisface.",
+    lang: "es"
+  },
+  {
+    t: `Quería ser una ayuda tan grande para John, un verdadero descanso y consuelo; y aquí estoy, convertida ya, comparativamente, en una carga.
+
+Nadie creería el esfuerzo que supone hacer lo poco que puedo: vestirme y recibir gente y disponer las cosas.
+
+Es una suerte que Mary se ocupe tan bien del bebé. ¡Un bebé tan querido!
+
+Y, sin embargo, no puedo estar con él; me pone muy nerviosa.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "aquí estoy, convertida ya, comparativamente, en una carga.",
+    lang: "es"
+  },
+  {
+    t: `Siempre imagino que veo personas caminando por esos numerosos senderos y emparrados, pero John me ha advertido que no me entregue en absoluto a la imaginación.
+
+Dice que, con mi poder imaginativo y mi costumbre de inventar historias, una debilidad nerviosa como la mía conduce con toda seguridad a toda clase de fantasías excitadas, y que debo emplear mi voluntad y mi buen juicio para contener esa tendencia.
+
+Así que lo intento.
+
+A veces pienso que, si estuviera lo bastante bien para escribir un poco, aliviaría la presión de las ideas y me permitiría descansar.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "mi poder imaginativo y mi costumbre de inventar historias",
+    lang: "es"
+  },
+  {
+    t: `Hay un punto que se repite donde el dibujo se ladea flácidamente como un cuello roto y dos ojos bulbosos lo miran a uno cabeza abajo.
+
+Me enfurecen positivamente su impertinencia y su eternidad. Arriba y abajo y hacia los lados se arrastran, y aquellos ojos absurdos, que no parpadean, están en todas partes.
+
+Hay un lugar donde dos paños no coinciden, y los ojos suben y bajan por toda la juntura, uno un poco más alto que el otro.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "como un cuello roto",
+    lang: "es"
+  },
+  {
+    t: `Nunca vi antes tanta expresión en una cosa inanimada, ¡y todos sabemos cuánta expresión tienen!
+
+De niña solía permanecer despierta y encontraba más diversión y terror en paredes desnudas y muebles corrientes que la mayoría de los niños en una tienda de juguetes.
+
+Recuerdo el guiño bondadoso que tenían los tiradores de nuestra vieja y gran cómoda, y había una silla que siempre parecía una amiga fuerte.
+
+Sentía que, si alguna de las otras cosas parecía demasiado feroz, siempre podía saltar sobre aquella silla y estar a salvo.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Nunca vi antes tanta expresión en una cosa inanimada",
+    lang: "es"
+  },
+  {
+    t: `Este papel pintado tiene una especie de subdibujo de otro tono, particularmente irritante, porque solo puede verse bajo ciertas luces, y ni siquiera entonces con claridad.
+
+Pero en los lugares donde no está desteñido, y cuando el sol cae justamente de cierta manera, puedo ver una figura extraña, provocadora, sin forma, que parece enfurruñarse detrás de ese dibujo exterior, absurdo y llamativo.
+
+¡Ahí está la hermana en la escalera!`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "una figura extraña, provocadora, sin forma",
+    lang: "es"
+  },
+  {
+    t: `Mirado de una manera, cada paño permanece aislado: las curvas hinchadas y los adornos —una especie de «románico degenerado» con delirium tremens— suben y bajan bamboleándose en columnas aisladas de fatuidad.
+
+Pero, por otra parte, se conectan diagonalmente, y los contornos desparramados se alejan en grandes ondas oblicuas de horror óptico, como un montón de algas que se revolcaran en plena persecución.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "«románico degenerado» con delirium tremens",
+    lang: "es"
+  },
+  {
+    t: `No sé por qué escribo esto.
+
+No quiero.
+
+No me siento capaz.
+
+Y sé que John lo consideraría absurdo. Pero tengo que decir de alguna manera lo que siento y pienso: ¡supone un alivio tan grande!
+
+Pero el esfuerzo está empezando a ser mayor que el alivio.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "el esfuerzo está empezando a ser mayor que el alivio.",
+    lang: "es"
+  },
+  {
+    t: `Hay cosas en ese papel que nadie conoce salvo yo, ni conocerá jamás.
+
+Detrás del dibujo exterior, las formas borrosas se vuelven cada día más claras.
+
+Siempre es la misma forma, solo que muy numerosa.
+
+Y se parece a una mujer que se agacha y se arrastra detrás de ese dibujo. No me gusta nada. Me pregunto… empiezo a pensar… ¡quisiera que John me sacara de aquí!
+
+Es tan difícil hablar con John acerca de mi estado, porque es muy sabio y porque me ama tanto.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Hay cosas en ese papel que nadie conoce salvo yo",
+    lang: "es"
+  },
+  {
+    t: `Era una noche de luna. La luna entra por todas partes, igual que el sol.
+
+A veces odio verla: se arrastra muy lentamente y siempre entra por una ventana u otra.
+
+John dormía y yo no quería despertarlo, así que permanecí quieta y observé la luz de la luna sobre aquel papel ondulante hasta que empecé a sentir escalofríos.
+
+La tenue figura de detrás parecía sacudir el dibujo, exactamente como si quisiera salir.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "exactamente como si quisiera salir.",
+    lang: "es"
+  },
+  {
+    t: `En un dibujo como este, a la luz del día, hay una falta de secuencia, un desafío a la ley, que constituye una irritación constante para una mente normal.
+
+El color es bastante horrible, bastante inconstante y bastante exasperante, pero el dibujo es una tortura.
+
+Uno cree haberlo dominado, pero, justo cuando avanza bien siguiéndolo, da una voltereta hacia atrás y ahí queda una. Le da una bofetada, la derriba y la pisotea.
+
+Es como un mal sueño.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "el dibujo es una tortura.",
+    lang: "es"
+  },
+  {
+    t: `A la luz de la luna —la luna brilla toda la noche cuando hay luna— no reconocería que es el mismo papel.
+
+Por la noche, bajo cualquier clase de luz, al crepúsculo, a la luz de las velas, a la luz de las lámparas y, peor que nada, a la luz de la luna, ¡se convierte en barrotes! Me refiero al dibujo exterior, y la mujer que está detrás se distingue con toda claridad.
+
+Durante mucho tiempo no comprendí qué era aquello que aparecía detrás —aquel tenue subdibujo—, pero ahora estoy completamente segura de que es una mujer.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "¡se convierte en barrotes!",
+    lang: "es"
+  },
+  {
+    t: `De día está sometida, quieta. Imagino que es el dibujo lo que la mantiene tan inmóvil. Es tan desconcertante. Me mantiene quieta durante horas.
+
+Ahora permanezco acostada muchísimo tiempo. John dice que me hace bien y que debo dormir cuanto pueda.
+
+De hecho, él inició la costumbre obligándome a acostarme durante una hora después de cada comida.
+
+Estoy convencida de que es una costumbre muy mala porque, como ven, no duermo.
+
+Y eso cultiva el engaño, porque no les digo que estoy despierta. ¡Oh, no!
+
+La verdad es que estoy empezando a tenerle un poco de miedo a John.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Y eso cultiva el engaño",
+    lang: "es"
+  },
+  {
+    t: `¿No sonaba aquello inocente? Pero sé que estaba estudiando el dibujo, y estoy decidida a que nadie lo descubra salvo yo.
+
+La vida es mucho más emocionante ahora que antes. Verán, tengo algo más que esperar, algo que aguardar, algo que vigilar. Realmente como mejor y estoy más tranquila que antes.
+
+¡John está encantado de verme mejorar! Se rio un poco el otro día y dijo que parecía estar prosperando a pesar de mi papel pintado.
+
+Lo desvié con una risa. No tenía intención de decirle que era gracias al papel pintado.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "La vida es mucho más emocionante ahora que antes.",
+    lang: "es"
+  },
+  {
+    t: `¡Es el amarillo más extraño, ese papel! Me hace pensar en todas las cosas amarillas que he visto en mi vida: no en las hermosas, como los ranúnculos, sino en cosas amarillas viejas, inmundas, malas.
+
+Pero hay algo más en ese papel: ¡el olor!
+
+Se arrastra por toda la casa.
+
+Lo encuentro flotando en el comedor, acechando en el salón, escondido en el vestíbulo, aguardándome en las escaleras.
+
+Se mete en mi pelo.
+
+La única cosa a la que puedo comparar ese olor es al color del papel.
+
+Un olor amarillo.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Un olor amarillo.",
+    lang: "es"
+  },
+  {
+    t: `Hay una marca muy curiosa en esta pared, abajo, cerca del zócalo. Una franja que da la vuelta a la habitación. Pasa por detrás de todos los muebles salvo la cama: un manchón largo, recto y uniforme, como si lo hubieran frotado una y otra vez.
+
+Me pregunto cómo se hizo y quién lo hizo y para qué lo hizo.
+
+Vuelta y vuelta y vuelta; vuelta y vuelta y vuelta: ¡me marea!`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Vuelta y vuelta y vuelta",
+    lang: "es"
+  },
+  {
+    t: `Por fin he descubierto algo.
+
+De tanto vigilar por la noche, cuando cambia de aquella manera, finalmente lo he averiguado.
+
+El dibujo exterior se mueve; ¡y no es extraño! La mujer de detrás lo sacude.
+
+A veces creo que hay muchísimas mujeres detrás, y a veces solo una, y se arrastra deprisa, y su manera de arrastrarse sacude todo el dibujo.
+
+En los lugares muy iluminados permanece quieta, y en los muy sombríos agarra los barrotes y los sacude con fuerza.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "La mujer de detrás lo sacude.",
+    lang: "es"
+  },
+  {
+    t: `Está intentando atravesarlo todo el tiempo. Pero nadie podría atravesar ese dibujo: estrangula tanto; creo que por eso tiene tantas cabezas.
+
+Consiguen atravesarlo, y entonces el dibujo las estrangula, las vuelve cabeza abajo y les pone los ojos blancos.
+
+Si aquellas cabezas estuvieran cubiertas o se las arrancara, no sería ni la mitad de malo.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "el dibujo las estrangula",
+    lang: "es"
+  },
+  {
+    t: `¡Creo que esa mujer sale durante el día!
+
+Y les diré por qué —en privado—: ¡la he visto!
+
+¡Puedo verla desde cada una de mis ventanas!
+
+Es la misma mujer, lo sé, porque siempre se arrastra, y la mayoría de las mujeres no se arrastran a plena luz del día.
+
+La veo en aquel largo sendero sombreado, arrastrándose arriba y abajo. La veo en los oscuros emparrados, arrastrándose por todo el jardín.
+
+No la culpo en absoluto. ¡Debe de ser muy humillante que la sorprendan arrastrándose a plena luz del día!`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "la mayoría de las mujeres no se arrastran a plena luz del día.",
+    lang: "es"
+  },
+  {
+    t: `Siempre cierro la puerta con llave cuando me arrastro durante el día. No puedo hacerlo por la noche, porque sé que John sospecharía algo inmediatamente.
+
+Y John está ahora tan extraño que no quiero irritarlo. ¡Ojalá ocupara otra habitación! Además, no quiero que nadie saque a esa mujer por la noche salvo yo.
+
+A menudo me pregunto si podría verla desde todas las ventanas a la vez.
+
+Pero, por muy deprisa que gire, solo puedo mirar por una cada vez.
+
+Y, aunque siempre la veo, ¡quizá pueda arrastrarse más deprisa de lo que yo puedo girar!`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Siempre cierro la puerta con llave cuando me arrastro durante el día.",
+    lang: "es"
+  },
+  {
+    t: `¡Ojalá pudiera arrancar el dibujo de arriba del que está debajo! Pienso intentarlo poco a poco.
+
+He descubierto otra cosa curiosa, pero esta vez no la contaré. No conviene confiar demasiado en la gente.
+
+Solo quedan dos días para arrancar este papel, y creo que John empieza a darse cuenta. No me gusta la expresión de sus ojos.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "No conviene confiar demasiado en la gente.",
+    lang: "es"
+  },
+  {
+    t: `¡Hurra! Este es el último día, pero basta. John pasará la noche en la ciudad y no regresará hasta esta tarde.
+
+Jennie quería dormir conmigo —¡qué astuta!—, pero le dije que, sin duda, descansaría mejor pasando una noche completamente sola.
+
+Aquello fue inteligente, porque en realidad ¡no estaba sola en absoluto! En cuanto salió la luna y aquella pobre criatura empezó a arrastrarse y a sacudir el dibujo, me levanté y corrí a ayudarla.
+
+Yo tiraba y ella sacudía; yo sacudía y ella tiraba; y antes de que amaneciera habíamos arrancado metros de aquel papel.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Yo tiraba y ella sacudía; yo sacudía y ella tiraba",
+    lang: "es"
+  },
+  {
+    t: `Jennie miró la pared con asombro, pero le dije alegremente que lo había hecho por puro despecho contra aquella cosa malvada.
+
+Se rio y dijo que a ella tampoco le importaría hacerlo, pero que yo no debía cansarme.
+
+¡Cómo se traicionó entonces!
+
+Pero yo estoy aquí, y nadie toca este papel salvo yo: ¡nadie vivo!
+
+Intentó sacarme de la habitación; ¡era demasiado evidente! Pero le dije que ahora estaba tan tranquila, vacía y limpia que creía que volvería a acostarme y dormiría cuanto pudiera.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "nadie toca este papel salvo yo: ¡nadie vivo!",
+    lang: "es"
+  },
+  {
+    t: `Ni siquiera me gusta mirar por las ventanas: hay tantas de esas mujeres que se arrastran, y se arrastran tan deprisa.
+
+Me pregunto si salieron todas de ese papel pintado, como yo.
+
+Pero ahora estoy firmemente atada con mi cuerda bien escondida: ¡no conseguirán sacarme ahí fuera, al camino!
+
+Supongo que tendré que volver detrás del dibujo cuando llegue la noche, ¡y eso es difícil!
+
+Es tan agradable estar fuera, en esta gran habitación, y arrastrarme cuanto me plazca.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "Me pregunto si salieron todas de ese papel pintado, como yo.",
+    lang: "es"
+  },
+  {
+    t: `Seguí arrastrándome igual, pero lo miré por encima del hombro.
+
+—He salido por fin —dije—, ¡a pesar de ti y de Jane! Y he arrancado casi todo el papel, de modo que no podéis volver a meterme detrás.
+
+¿Y por qué iba a desmayarse ese hombre? Pero se desmayó, y justo atravesado en mi camino junto a la pared, de manera que tuve que arrastrarme por encima de él cada vez.`,
+    a: "Charlotte Perkins Gilman",
+    obra: "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    highlight: "He salido por fin",
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -3249,6 +3692,7 @@ const QUOTES = [
   ...EL_HORLA_QUOTES,
   ...SALA_NUMERO_SEIS_QUOTES,
   ...LA_BESTIA_EN_LA_JUNGLA_QUOTES,
+  ...EL_PAPEL_PINTADO_DE_AMARILLO_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
