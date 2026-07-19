@@ -2903,6 +2903,324 @@ Por el dolor mordió la almohada y apretó los dientes; y de pronto, en medio de
   }
 ];
 
+const LA_BESTIA_EN_LA_JUNGLA_QUOTES = [
+  {
+    t: `Su rostro, un recordatorio, aunque no exactamente un recuerdo, había empezado simplemente por turbarlo de una manera bastante agradable. Lo afectaba como la continuación de algo cuyo comienzo había perdido. Lo reconocía, y por el momento casi lo acogía, como una continuación, pero no sabía qué continuaba.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "la continuación de algo cuyo comienzo había perdido.",
+    lang: "es"
+  },
+  {
+    t: `—Usted dijo que había tenido desde sus primeros años, como la cosa más profunda dentro de usted, la sensación de estar reservado para algo raro y extraño, posiblemente prodigioso y terrible, que tarde o temprano habría de sucederle; que llevaba en los huesos su presentimiento y su convicción, y que quizá lo arrollaría.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "la sensación de estar reservado para algo raro y extraño",
+    lang: "es"
+  },
+  {
+    t: `—Bueno, digamos que esperarlo: tener que encontrarlo, afrontarlo, verlo irrumpir de pronto en mi vida; posiblemente destruyendo toda conciencia ulterior, posiblemente aniquilándome; posiblemente, por otra parte, alterándolo únicamente todo, golpeando la raíz de todo mi mundo y dejándome entregado a las consecuencias, adopten estas la forma que adopten.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "verlo irrumpir de pronto en mi vida",
+    lang: "es"
+  },
+  {
+    t: `—¿No será lo que describe simplemente la expectativa —o, en cualquier caso, esa sensación de peligro tan familiar para tantas personas— de caer enamorado?
+
+John Marcher pensó.
+
+—¿Me preguntó eso antes?
+
+—No; entonces no me tomaba tantas libertades. Pero es lo que ahora se me ocurre.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "esa sensación de peligro tan familiar para tantas personas",
+    lang: "es"
+  },
+  {
+    t: `—Quiere decir que ha estado enamorado —y, como él se limitó a mirarla en silencio—: ha estado enamorado, y no ha significado semejante cataclismo, ¿no ha resultado ser el gran acontecimiento?
+
+—Aquí me tiene, como ve. No ha sido arrollador.
+
+—Entonces no ha sido amor —dijo May Bartram.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Entonces no ha sido amor",
+    lang: "es"
+  },
+  {
+    t: `—No es cuestión de lo que yo «quiera»: Dios sabe que no quiero nada. Solo es cuestión de la aprensión que me persigue, con la que vivo día tras día.
+
+—¿Es la sensación de una violencia que se aproxima?
+
+—No pienso que, cuando llegue, haya de ser necesariamente violenta. Solo pienso que será natural y, sobre todo, inconfundible. Pienso en ella simplemente como la cosa. La cosa parecerá natural por sí misma.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "la aprensión que me persigue",
+    lang: "es"
+  },
+  {
+    t: `—Entonces, ¿yo estaré presente?
+
+—Pero si ya está presente, puesto que lo sabe.
+
+—Comprendo. Pero quiero decir cuando llegue la catástrofe.
+
+Ante esto, por un minuto, la ligereza de ambos cedió a la gravedad; fue como si la larga mirada que intercambiaron los mantuviera unidos.
+
+—Dependerá únicamente de usted: de que quiera vigilar conmigo.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "de que quiera vigilar conmigo.",
+    lang: "es"
+  },
+  {
+    t: `Había pensado durante tanto tiempo en sí mismo como abominablemente solo, y he aquí que no estaba solo en absoluto. Al parecer, no lo había estado durante una hora: desde aquellos momentos en la embarcación de Sorrento.
+
+Había sido ella, según le pareció ver al mirarla, quien había estado sola; ella, a quien había dejado así el ingrato hecho de que él faltara a su fidelidad.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "no estaba solo en absoluto.",
+    lang: "es"
+  },
+  {
+    t: `Estaban literalmente a flote juntos; para nuestro caballero esto era patente, tan patente como que la causa afortunada de ello era precisamente el tesoro enterrado del conocimiento de ella. Con sus propias manos había desenterrado aquel pequeño depósito, había sacado a la luz —es decir, había puesto al alcance de la tenue claridad constituida por sus discreciones y reservas— el objeto valioso cuyo escondite, después de haberlo enterrado él mismo, había olvidado durante tanto tiempo y de una manera tan extraña.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "el tesoro enterrado del conocimiento de ella.",
+    lang: "es"
+  },
+  {
+    t: `Mientras nadie lo supo, se había considerado la persona más desinteresada del mundo: llevaba su carga concentrada, su perpetua espera, con toda tranquilidad; callaba sobre ella, no dejaba que los demás vislumbraran ni la carga ni su efecto sobre su vida, no les pedía consideración alguna y concedía, por su parte, todas las que le pedían.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "su carga concentrada, su perpetua espera",
+    lang: "es"
+  },
+  {
+    t: `Algo lo aguardaba, entre las vueltas y revueltas de los meses y los años, como una Bestia agazapada en la Jungla. Poco importaba que la Bestia agazapada estuviese destinada a matarlo o a ser muerta. El punto preciso era el salto inevitable de la criatura; y la lección precisa de aquello era que un hombre de sentimientos no hacía que una dama lo acompañase a una cacería de tigres.
+
+Tal era la imagen bajo la cual había acabado por representarse su vida.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "como una Bestia agazapada en la Jungla.",
+    lang: "es"
+  },
+  {
+    t: `Semejante particularidad en la perspectiva de uno era realmente como una joroba en la espalda. La diferencia que introducía en cada minuto del día existía con total independencia de que se hablara de ella. Se conversaba, desde luego, como conversa un jorobado, pues siempre quedaba, aunque no hubiera otra cosa, el rostro del jorobado.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "como una joroba en la espalda.",
+    lang: "es"
+  },
+  {
+    t: `Mientras envejecían juntos, ella vigilaba con él, y permitió que aquella asociación diera forma y color a su propia existencia. También bajo las formas de ella había aprendido a instalarse el desprendimiento, y su conducta se había convertido, en el sentido social, en una falsa relación de sí misma.
+
+Solo había una relación de ella que habría sido verdadera durante todo aquel tiempo, y no podía ofrecérsela directamente a nadie, menos que a nadie a John Marcher.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "una falsa relación de sí misma.",
+    lang: "es"
+  },
+  {
+    t: `—Nuestro hábito lo salva a usted, por lo menos, ¿no lo ve?, porque a los ojos del vulgo acaba haciéndolo indistinguible de los demás hombres. ¿Cuál es la señal más inveterada de los hombres en general? Pues la capacidad de pasar un tiempo interminable con mujeres aburridas: pasarlo, no diré sin aburrirse, sino sin importarles que ellas lo sean, sin que eso los lance en otra dirección; que viene a ser lo mismo. Yo soy su mujer aburrida, una parte del pan nuestro de cada día que pide usted en la iglesia. Eso cubre sus huellas mejor que ninguna otra cosa.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Yo soy su mujer aburrida",
+    lang: "es"
+  },
+  {
+    t: `—A veces me pregunto si es del todo justo. Justo, quiero decir, haberla implicado tanto y —puesto que puede decirse— haberla interesado. Casi siento como si en realidad no hubiera tenido tiempo para hacer ninguna otra cosa.
+
+—¿Ninguna otra cosa que interesarme? ¡Ah!, ¿qué otra cosa desea nunca uno ser? Si he estado «vigilando» con usted, como acordamos hace mucho tiempo que haría, vigilar es ya, por sí mismo, una absorción.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "vigilar es ya, por sí mismo, una absorción.",
+    lang: "es"
+  },
+  {
+    t: `—Lo que veo, según consigo entenderlo, es que ha logrado algo casi sin precedentes en materia de acostumbrarse al peligro. De vivir con él durante tanto tiempo y tan íntimamente, ha perdido la sensación de su presencia; sabe que está ahí, pero permanece indiferente, e incluso ha dejado, como hacía antes, de necesitar silbar en la oscuridad. Teniendo en cuenta qué peligro es —concluyó May Bartram—, debo decir que no creo que su actitud pudiera ser superada fácilmente.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "ha perdido la sensación de su presencia",
+    lang: "es"
+  },
+  {
+    t: `—Usted sabe algo que yo no sé.
+
+Entonces su voz, para ser la de un hombre valeroso, tembló un poco.
+
+—Sabe lo que va a suceder.
+
+El silencio de ella, unido al rostro que mostraba, era casi una confesión: lo hizo estar seguro.
+
+—Lo sabe, y tiene miedo de decírmelo. Es tan malo que teme que llegue a descubrirlo.
+
+—Nunca llegará a descubrirlo.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Usted sabe algo que yo no sé.",
+    lang: "es"
+  },
+  {
+    t: `—La ayuda a hacerme pasar por un hombre como los demás. De modo que, si lo soy, tal como la entiendo, usted no queda comprometida. ¿Es eso?
+
+Ella hizo otra de sus pausas, pero habló con bastante claridad:
+
+—Eso es. Es todo cuanto me importa: ayudarlo a pasar por un hombre como los demás.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "ayudarlo a pasar por un hombre como los demás.",
+    lang: "es"
+  },
+  {
+    t: `No habría sido un fracaso quedar arruinado, deshonrado, expuesto a la picota, ahorcado; el fracaso era no ser nada. Y así, en el valle oscuro hacia el cual su senda había dado aquel giro imprevisto, tanteaba y se preguntaba no poco.
+
+Ya no le quedaba más que un deseo: no descubrir que lo habían engañado.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "el fracaso era no ser nada.",
+    lang: "es"
+  },
+  {
+    t: `Casi tan blanca como la cera, con las marcas y signos del rostro tan numerosos y finos como si una aguja los hubiera grabado, envuelta en suaves paños blancos realzados por una bufanda verde desvaída, sobre cuyo tono delicado los años habían obrado un refinamiento ulterior, era la imagen de una esfinge serena y exquisita, pero impenetrable, cuya cabeza —o, en realidad, toda cuya persona— podía haber sido espolvoreada de plata.
+
+Era una esfinge; sin embargo, con sus pétalos blancos y sus frondas verdes, también podía ser un lirio, solo que un lirio artificial, maravillosamente imitado y conservado siempre, sin polvo ni mancha, bajo una transparente campana de cristal.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "una esfinge serena y exquisita, pero impenetrable",
+    lang: "es"
+  },
+  {
+    t: `—Sería lo peor —se permitió decir finalmente—. Quiero decir la cosa que nunca he dicho.
+
+Esto lo hizo callar por un momento.
+
+—¿Más monstruosa que todas las monstruosidades que hemos nombrado?
+
+—Más monstruosa. ¿No es eso lo que expresa suficientemente al llamarla la peor?
+
+—Sin duda, si quiere decir, como yo, algo que incluya toda la pérdida y toda la vergüenza concebibles.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "la cosa que nunca he dicho.",
+    lang: "es"
+  },
+  {
+    t: `—La puerta no está cerrada. La puerta está abierta —dijo May Bartram.
+
+—¿Entonces todavía ha de venir algo?
+
+Ella volvió a esperar, siempre con sus ojos fríos y dulces puestos en él.
+
+—Nunca es demasiado tarde.
+
+Con su paso deslizante había reducido la distancia entre ambos, y durante un minuto permaneció más cerca de él, junto a él, como si todavía estuviera cargada de lo no dicho.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Nunca es demasiado tarde.",
+    lang: "es"
+  },
+  {
+    t: `—¿Qué ha sucedido entonces?
+
+Con ayuda de su acompañante, ella volvía a estar en pie; y él, sintiendo que se le imponía la retirada, había encontrado sin saber cómo su sombrero y sus guantes y alcanzado la puerta. Sin embargo, esperó la respuesta.
+
+—Lo que tenía que suceder —dijo ella.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Lo que tenía que suceder",
+    lang: "es"
+  },
+  {
+    t: `—Pero, si no he tenido conciencia de ello y no me ha tocado…
+
+—¡Ah, que no haya tenido conciencia de ello! —y pareció vacilar un instante ante la manera de abordar aquello—. Que no haya tenido conciencia es la extrañeza dentro de la extrañeza. Es la maravilla de la maravilla.
+
+Hablaba con una dulzura casi de niña enferma, pero ahora, al fin, al término de todo, con la perfecta rectitud de una sibila.
+
+—Lo ha tocado —prosiguió—. Ha cumplido su función. Lo ha hecho enteramente suyo.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "la extrañeza dentro de la extrañeza.",
+    lang: "es"
+  },
+  {
+    t: `—¿Tan absolutamente sin que yo lo supiera?
+
+—Tan absolutamente sin que lo supiera.
+
+La mano de él, mientras se inclinaba hacia ella, descansaba sobre el brazo de la silla, y ella, aún con aquella débil sonrisa, puso encima la suya.
+
+—Es suficiente que yo lo sepa.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Es suficiente que yo lo sepa.",
+    lang: "es"
+  },
+  {
+    t: `—Nada, para mí, ha pasado; nada pasará hasta que yo mismo pase, lo cual ruego a mis estrellas que suceda lo antes posible. Pero digamos —añadió— que, como usted sostiene, me he comido el pastel hasta la última miga: ¿cómo puede la cosa que nunca he sentido en absoluto ser la cosa que estaba señalado para sentir?
+
+Ella le respondió quizá de manera menos directa, pero sin turbarse:
+
+—Da usted por supuestos sus «sentimientos». Estaba destinado a sufrir su destino. No necesariamente a conocerlo.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Estaba destinado a sufrir su destino.",
+    lang: "es"
+  },
+  {
+    t: `—¿Es de eso, entonces, de lo que está muriendo?
+
+Ella se limitó a observarlo, al principio gravemente, como para ver dónde se encontraba él ahora; y quizá vio algo, o temió algo, que movió su compasión.
+
+—Viviría todavía para usted, si pudiera.
+
+Cerró los ojos por un momento, como si, retirada dentro de sí misma, lo intentara por última vez.
+
+—¡Pero no puedo! —dijo, alzándolos de nuevo para despedirse de él.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "Viviría todavía para usted, si pudiera.",
+    lang: "es"
+  },
+  {
+    t: `Marcher avanzaba por la hierba abatida, donde ninguna vida se movía, donde ningún aliento sonaba, donde ningún ojo maligno parecía brillar desde una posible guarida, casi como si buscase vagamente a la Bestia, y aún más como si la echara dolorosamente de menos.
+
+Caminaba por una existencia que se había vuelto extrañamente más espaciosa.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "como si la echara dolorosamente de menos.",
+    lang: "es"
+  },
+  {
+    t: `La salida habría sido amarla; entonces, entonces habría vivido. Ella había vivido —¿quién podía decir ahora con qué pasión?—, puesto que lo había amado por él mismo; mientras que él nunca había pensado en ella —¡ah, con qué enormidad resplandecía esto ante él!— sino en el frío de su egoísmo y a la luz de la utilidad de ella.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "La salida habría sido amarla",
+    lang: "es"
+  },
+  {
+    t: `Este horror del despertar: esto era el conocimiento, un conocimiento bajo cuyo aliento hasta las lágrimas de sus ojos parecían helarse. A pesar de ellas, trató de fijarlo y retenerlo; lo mantuvo ante sí para poder sentir el dolor.
+
+Eso, por lo menos, tardío y amargo, tenía algo del sabor de la vida.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "tenía algo del sabor de la vida.",
+    lang: "es"
+  },
+  {
+    t: `Vio la Jungla de su vida y vio a la Bestia agazapada; entonces, mientras miraba, percibió que, como por una agitación del aire, se alzaba, enorme y horrible, para el salto que acabaría con él.
+
+Sus ojos se oscurecieron: estaba cerca; e, instintivamente, volviéndose en su alucinación para evitarla, se arrojó de bruces sobre la tumba.`,
+    a: "Henry James",
+    obra: "La bestia en la jungla, Henry James",
+    highlight: "el salto que acabaría con él.",
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -2930,6 +3248,7 @@ const QUOTES = [
   ...MEMORIAS_SUBSUELO_QUOTES,
   ...EL_HORLA_QUOTES,
   ...SALA_NUMERO_SEIS_QUOTES,
+  ...LA_BESTIA_EN_LA_JUNGLA_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
