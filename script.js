@@ -2693,6 +2693,216 @@ Entonces… entonces… ¡tendré que matarme yo!…`,
 ];
 
 
+const SALA_NUMERO_SEIS_QUOTES = [
+  {
+    t: `En el patio del hospital se alza un pequeño pabellón, rodeado por todo un bosque de bardanas, ortigas y cáñamo silvestre. El tejado está oxidado, la chimenea se ha derrumbado a medias, los escalones del porche se han podrido y están cubiertos de hierba, y del enlucido no quedan más que huellas. La fachada delantera mira al hospital; la trasera, al campo, del que la separa la cerca gris del hospital, con clavos.
+
+Esos clavos, con las puntas vueltas hacia arriba, la cerca y el propio pabellón tienen ese particular aspecto lúgubre y maldito que entre nosotros solo tienen los edificios de hospitales y prisiones.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "ese particular aspecto lúgubre y maldito",
+    lang: "es"
+  },
+  {
+    t: `Pertenece a esa clase de hombres ingenuos, positivos, cumplidores y estúpidos que, más que ninguna otra cosa en el mundo, aman el orden y, por eso, están convencidos de que hay que pegarles.
+
+Golpea en la cara, en el pecho, en la espalda, donde caiga, y está seguro de que sin eso no habría aquí orden.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "sin eso no habría aquí orden.",
+    lang: "es"
+  },
+  {
+    t: `Me gusta su rostro ancho, de pómulos salientes, siempre pálido y desdichado, que refleja en sí, como en un espejo, un alma atormentada por la lucha y por un miedo prolongado. Sus muecas son extrañas y enfermizas, pero los rasgos delicados que un sufrimiento profundo y sincero ha trazado sobre su rostro son sensatos e inteligentes, y en sus ojos hay un brillo cálido y sano.
+
+Me gusta él mismo: cortés, servicial y extraordinariamente delicado en su trato con todos, salvo con Nikita.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "un alma atormentada por la lucha y por un miedo prolongado.",
+    lang: "es"
+  },
+  {
+    t: `Pero pronto el deseo de hablar se impone a cualquier consideración, y él se abandona y habla con ardor y apasionadamente. Su discurso es desordenado, febril como un delirio, impetuoso y no siempre comprensible; pero, en cambio, se oye en él —tanto en las palabras como en la voz— algo extraordinariamente bueno.
+
+Cuando habla, se reconocen en él al loco y al hombre. Es difícil trasladar al papel su discurso demente. Habla de la bajeza humana, de la violencia que pisotea la verdad, de la hermosa vida que habrá algún día sobre la tierra, de las rejas de las ventanas, que a cada instante le recuerdan la estupidez y la crueldad de los violentos. Resulta un popurrí desordenado y desmañado de canciones antiguas, pero aún no terminadas de cantar.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "se reconocen en él al loco y al hombre.",
+    lang: "es"
+  },
+  {
+    t: `Las personas que mantienen una relación profesional, de trabajo, con el sufrimiento ajeno —por ejemplo, jueces, policías y médicos—, con el tiempo, por la fuerza de la costumbre, se endurecen hasta tal punto que, aunque quisieran, no podrían tratar a sus clientes de otro modo que formalmente; en este sentido no se diferencian en nada del campesino que degüella carneros y terneros en el patio trasero y no repara en la sangre.
+
+Con un trato formal y desalmado hacia la persona, para privar a un inocente de todos sus derechos y condenarlo a trabajos forzados, el juez solo necesita una cosa: tiempo. Solo tiempo para cumplir ciertas formalidades por las que recibe un salario; después, todo ha terminado.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "Solo tiempo para cumplir ciertas formalidades",
+    lang: "es"
+  },
+  {
+    t: `Después de inspeccionar el hospital, Andréi Yefímich llegó a la conclusión de que aquella institución era inmoral y extremadamente perjudicial para la salud de los habitantes. A su juicio, lo más sensato que podía hacerse era poner en libertad a los enfermos y cerrar el hospital.
+
+Pero razonó que para ello no bastaba únicamente su voluntad y que sería inútil: si se expulsaba de un lugar la suciedad física y moral, pasaría a otro; había que esperar a que se disipara por sí sola.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "había que esperar a que se disipara por sí sola.",
+    lang: "es"
+  },
+  {
+    t: `Andréi Yefímich ama extraordinariamente la inteligencia y la honradez; pero, para organizar a su alrededor una vida inteligente y honrada, le faltan carácter y fe en su propio derecho. Es decididamente incapaz de ordenar, prohibir e insistir. Parece como si hubiera hecho voto de no elevar nunca la voz ni emplear el modo imperativo. Le cuesta decir «dame» o «trae»; cuando tiene hambre, tose indeciso y dice a la cocinera: «Como si me apeteciera un poco de té…» o «Como si me apeteciera comer».
+
+Decirle al administrador que deje de robar, expulsarlo o suprimir por completo aquel cargo innecesario y parasitario supera totalmente sus fuerzas. Cuando los enfermos se quejan de hambre o de la rudeza de los cuidadores, se turba y murmura con sentimiento de culpa:
+
+—Bien, bien, luego lo investigaré… Probablemente haya aquí algún malentendido…`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "Probablemente haya aquí algún malentendido…",
+    lang: "es"
+  },
+  {
+    t: `—Es verdad, tenemos libros, pero no son en absoluto lo mismo que la conversación viva y el trato humano. Si me permite una comparación no del todo afortunada, los libros son las notas, y la conversación, el canto.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "los libros son las notas, y la conversación, el canto.",
+    lang: "es"
+  },
+  {
+    t: `La vida es una trampa irritante. Cuando un hombre que piensa alcanza la madurez y llega a una conciencia madura, se siente involuntariamente como en una trampa de la que no hay salida.
+
+En efecto, contra su voluntad, ciertas casualidades lo han llamado desde la nada a la vida… ¿Para qué? Quiere conocer el sentido y la finalidad de su existencia; no se lo dicen o le dicen absurdos. Llama: no le abren. La muerte viene a buscarlo, también contra su voluntad.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "La vida es una trampa irritante.",
+    lang: "es"
+  },
+  {
+    t: `¿Por qué los centros y las circunvoluciones cerebrales, por qué la vista, el habla, la conciencia de sí, el genio, si todo ello está destinado a irse a la tierra y, finalmente, a enfriarse junto con la corteza terrestre y después, durante millones de años, a dar vueltas con la Tierra alrededor del Sol, sin sentido ni finalidad?
+
+Para enfriarse y después dar vueltas no hacía ninguna falta extraer de la nada al hombre, con su inteligencia elevada, casi divina, y luego, como por burla, convertirlo en arcilla.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "como por burla, convertirlo en arcilla.",
+    lang: "es"
+  },
+  {
+    t: `«Sirvo a una causa perjudicial y recibo un salario de las personas a quienes engaño; no soy honrado. Pero yo, por mí mismo, no soy nada: solo soy una partícula de un mal social necesario; todos los funcionarios de distrito son perjudiciales y reciben gratuitamente su salario…
+
+Por tanto, no soy yo el culpable de mi falta de honradez, sino la época… Si hubiera nacido doscientos años más tarde, sería otro».`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "no soy yo el culpable de mi falta de honradez, sino la época…",
+    lang: "es"
+  },
+  {
+    t: `—Sí, estoy enfermo. Pero decenas, centenares de locos pasean en libertad porque vuestra ignorancia es incapaz de distinguirlos de los sanos. ¿Por qué yo y estos desgraciados tenemos que permanecer aquí por todos los demás, como chivos expiatorios? Usted, el practicante, el administrador y toda vuestra chusma hospitalaria están moralmente a una distancia inconmensurablemente inferior a cada uno de nosotros; ¿por qué, entonces, nosotros estamos encerrados y ustedes no? ¿Dónde está la lógica?
+
+—La moral y la lógica no tienen nada que ver con esto. Todo depende de la casualidad. A quien encerraron, está encerrado; a quien no encerraron, pasea. Eso es todo. En que yo sea médico y usted un enfermo mental no hay ni moral ni lógica, sino únicamente una casualidad vacía.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "únicamente una casualidad vacía.",
+    lang: "es"
+  },
+  {
+    t: `—Usted no cree, pero yo sí. En Dostoievski o en Voltaire alguien dice que, si Dios no existiera, los hombres lo inventarían. Y yo creo profundamente que, si no existe la inmortalidad, tarde o temprano la gran inteligencia humana la inventará.
+
+—Bien dicho —pronunció Andréi Yefímich, sonriendo de placer—. Está bien que crea. Con una fe semejante se puede vivir cantando incluso emparedado.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "la gran inteligencia humana la inventará.",
+    lang: "es"
+  },
+  {
+    t: `—¡Su Diógenes era un imbécil! —pronunció sombríamente Iván Dmítrich—. ¿Por qué me habla de Diógenes y de no sé qué comprensión? —se enfureció de pronto y se levantó de un salto—. ¡Amo la vida, la amo apasionadamente! Sufro manía persecutoria, un miedo constante y atormentador, pero hay momentos en que se apodera de mí una sed de vida, y entonces temo volverme loco. ¡Deseo vivir terriblemente, terriblemente!
+
+Recorrió la sala agitado y dijo, bajando la voz:
+
+—Cuando sueño, me visitan fantasmas. Vienen a verme ciertas personas, oigo voces, música, y me parece que paseo por ciertos bosques, por la orilla del mar, y deseo tan apasionadamente el bullicio, las preocupaciones… Dígame, ¿qué hay de nuevo allí? ¿Qué hay allí?`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "¡Deseo vivir terriblemente, terriblemente!",
+    lang: "es"
+  },
+  {
+    t: `—Comprensión… —Iván Dmítrich hizo una mueca—. Lo exterior, lo interior… Discúlpeme, no entiendo nada de eso. Solo sé —dijo, levantándose y mirando airadamente al médico—, sé que Dios me creó de sangre caliente y nervios, ¡sí, señor! Y el tejido orgánico, si posee capacidad para vivir, debe reaccionar a toda irritación. ¡Y yo reacciono!
+
+Al dolor respondo con gritos y lágrimas; a la bajeza, con indignación; a la abominación, con repugnancia. A mi juicio, eso es propiamente lo que se llama vida. Cuanto más bajo es un organismo, menos sensible es y más débilmente responde a la irritación; cuanto más elevado, más receptivo es y con mayor energía reacciona a la realidad.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "eso es propiamente lo que se llama vida.",
+    lang: "es"
+  },
+  {
+    t: `Una doctrina que predica la indiferencia hacia la riqueza y las comodidades de la vida, el desprecio por el sufrimiento y la muerte, resulta completamente incomprensible para la inmensa mayoría, porque esa mayoría nunca ha conocido ni la riqueza ni las comodidades de la vida.
+
+Despreciar el sufrimiento significaría para ella despreciar la vida misma, pues todo el ser humano se compone de las sensaciones del hambre, el frío, las ofensas, las pérdidas y el miedo hamletiano a la muerte. En esas sensaciones está toda la vida: se puede estar cansado de ella, odiarla, pero no despreciarla.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "se puede estar cansado de ella, odiarla, pero no despreciarla.",
+    lang: "es"
+  },
+  {
+    t: `—¿Y Cristo? Cristo respondió a la realidad llorando, sonriendo, entristeciéndose, encolerizándose, incluso angustiándose; no salió al encuentro del sufrimiento con una sonrisa ni despreció la muerte, sino que rezó en el jardín de Getsemaní para que aquella copa pasara de él.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "Cristo respondió a la realidad",
+    lang: "es"
+  },
+  {
+    t: `—Y usted desprecia el sufrimiento y no se asombra de nada por una razón muy sencilla: vanidad de vanidades, lo exterior y lo interior, desprecio de la vida, del sufrimiento y de la muerte, comprensión, verdadero bien… Todo eso es la filosofía más apropiada para el holgazán ruso.
+
+Ve usted, por ejemplo, que un campesino pega a su mujer. ¿Para qué intervenir? Que le pegue; de todos modos, ambos morirán tarde o temprano; y, además, el que pega no ofende con los golpes a quien recibe los golpes, sino a sí mismo. Emborracharse es estúpido e indecoroso, pero beber es morir y no beber es morir.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "la filosofía más apropiada para el holgazán ruso.",
+    lang: "es"
+  },
+  {
+    t: `—Nos mantienen aquí tras las rejas, nos dejan pudrirnos, nos torturan; pero eso es hermoso y razonable, porque entre esta sala y un despacho cálido y confortable no existe diferencia alguna.
+
+Una filosofía cómoda: no hay que hacer nada, la conciencia queda limpia y uno se siente sabio… No, señor, eso no es filosofía, ni pensamiento, ni amplitud de miras, sino pereza, faquirismo, estupor somnoliento… ¡Sí! —Iván Dmítrich volvió a enfurecerse—. Desprecia usted el sufrimiento, pero seguro que, si una puerta le atrapara un dedo, gritaría a pleno pulmón.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "Una filosofía cómoda",
+    lang: "es"
+  },
+  {
+    t: `Andréi Yefímich se acercó a la ventana y miró al campo. Ya estaba oscureciendo, y a la derecha del horizonte ascendía una luna fría, de color púrpura. No lejos de la cerca del hospital, a unas cien brazas, no más, se alzaba un edificio blanco y alto, rodeado por un muro de piedra. Era la prisión.
+
+«¡Ahí está la realidad!», pensó Andréi Yefímich, y sintió miedo.
+
+Le daban miedo la luna, la prisión, los clavos de la cerca y la llama lejana de la fábrica de huesos.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "¡Ahí está la realidad!",
+    lang: "es"
+  },
+  {
+    t: `—No se puede ir a ninguna parte, a ninguna. Somos débiles, amigo mío… Yo era indiferente, razonaba animosa y sensatamente, pero bastó que la vida me tocara rudamente para que me viniera abajo… postración… Somos débiles, somos miserables…
+
+Y usted también, amigo mío. Es inteligente, noble, mamó con la leche materna buenos impulsos; pero apenas entró en la vida, se cansó y enfermó… ¡Débiles, débiles!`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "bastó que la vida me tocara",
+    lang: "es"
+  },
+  {
+    t: `Después todo quedó en silencio. La luz líquida de la luna atravesaba las rejas, y sobre el suelo había una sombra semejante a una red. Daba miedo. Andréi Yefímich se tendió y contuvo la respiración; esperaba con horror que volvieran a golpearlo. Era como si alguien hubiera cogido una hoz, se la hubiera clavado y la hiciera girar varias veces dentro del pecho y de las entrañas.
+
+Por el dolor mordió la almohada y apretó los dientes; y de pronto, en medio del caos, cruzó claramente por su cabeza una idea terrible e insoportable: aquellos hombres, que ahora parecían sombras negras bajo la luz de la luna, debían de haber sentido durante años, día tras día, exactamente el mismo dolor. ¿Cómo había podido suceder que durante más de veinte años no lo supiera ni quisiera saberlo?`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "no lo supiera ni quisiera saberlo",
+    lang: "es"
+  },
+  {
+    t: `Al atardecer, Andréi Yefímich murió de un ataque de apoplejía. Primero sintió un escalofrío estremecedor y náuseas; algo repugnante, según le pareció, penetró en todo su cuerpo, incluso en los dedos, ascendió del estómago hacia la cabeza y le inundó los ojos y los oídos. Todo se volvió verde ante sus ojos. Andréi Yefímich comprendió que había llegado su final y recordó que Iván Dmítrich, Mijaíl Averyánich y millones de personas creían en la inmortalidad. ¿Y si existiera? Pero no deseaba la inmortalidad, y solo pensó en ella durante un instante.`,
+    a: "Antón Chéjov",
+    obra: "La sala número seis, Antón Chéjov",
+    highlight: "No deseaba la inmortalidad.",
+    lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -2719,6 +2929,7 @@ const QUOTES = [
   ...IVAN_ILICH_QUOTES,
   ...MEMORIAS_SUBSUELO_QUOTES,
   ...EL_HORLA_QUOTES,
+  ...SALA_NUMERO_SEIS_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([
