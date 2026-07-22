@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sources.schema.json",
+  "title": "Fuentes editoriales provisionales de Páramo Literario",
+  "description": "Estructura de sources.draft.json. Una entrada identifica una fuente provisional, no una verificación bibliográfica ni jurídica.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/source" },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "work_id",
+        "source_type",
+        "citation_label",
+        "edition",
+        "publisher",
+        "publication_year",
+        "translator_name",
+        "source_url",
+        "accessed_at",
+        "language",
+        "rights_status",
+        "rights_notes",
+        "verification_status",
+        "notes"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "work_id": { "type": "string", "minLength": 1 },
+        "source_type": {
+          "type": "string",
+          "enum": ["unknown", "print", "ebook", "website", "manuscript", "other"]
+        },
+        "citation_label": { "type": ["string", "null"], "minLength": 1 },
+        "edition": { "type": ["string", "null"], "minLength": 1 },
+        "publisher": { "type": ["string", "null"], "minLength": 1 },
+        "publication_year": { "type": ["integer", "null"], "minimum": 1 },
+        "translator_name": { "type": ["string", "null"], "minLength": 1 },
+        "source_url": { "type": ["string", "null"], "format": "uri" },
+        "accessed_at": { "type": ["string", "null"], "format": "date-time" },
+        "language": { "type": ["string", "null"], "minLength": 1 },
+        "rights_status": {
+          "type": "string",
+          "enum": ["unchecked", "review_in_progress", "permission_required", "cleared", "restricted"]
+        },
+        "rights_notes": { "type": ["string", "null"], "minLength": 1 },
+        "verification_status": {
+          "type": "string",
+          "enum": ["pending", "in_review", "verified", "rejected"]
+        },
+        "notes": { "type": ["string", "null"], "minLength": 1 }
+      }
+    }
+  }
+}
