@@ -1,0 +1,200 @@
+[
+  {
+    "id": "work-fragmentos",
+    "title": "fragmentos",
+    "slug": "fragmentos",
+    "author_id": null,
+    "legacy_work": "fragmentos",
+    "status": "draft",
+    "notes": "Revisión pendiente: legacy_work sin coma final clara para separar autor."
+  },
+  {
+    "id": "work-cumbres-borrascosas",
+    "title": "Cumbres borrascosas",
+    "slug": "cumbres-borrascosas",
+    "author_id": "author-emily-bronte",
+    "legacy_work": "Cumbres borrascosas, Emily Brontë",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-nudo-de-viboras",
+    "title": "Nudo de víboras",
+    "slug": "nudo-de-viboras",
+    "author_id": "author-francois-mauriac",
+    "legacy_work": "Nudo de víboras, François Mauriac",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-pedro-paramo",
+    "title": "Pedro Páramo",
+    "slug": "pedro-paramo",
+    "author_id": "author-juan-rulfo",
+    "legacy_work": "Pedro Páramo, Juan Rulfo",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-gargantua",
+    "title": "Gargantúa",
+    "slug": "gargantua",
+    "author_id": "author-francois-rabelais",
+    "legacy_work": "Gargantúa, François Rabelais",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-frankenstein-o-el-moderno-prometeo",
+    "title": "Frankenstein o el moderno Prometeo",
+    "slug": "frankenstein-o-el-moderno-prometeo",
+    "author_id": "author-mary-shelley",
+    "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-anne-de-las-tejas-verdes",
+    "title": "Anne de las Tejas Verdes",
+    "slug": "anne-de-las-tejas-verdes",
+    "author_id": "author-lucy-maud-montgomery",
+    "legacy_work": "Anne de las Tejas Verdes, Lucy Maud Montgomery",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-la-vida-es-sueno",
+    "title": "La vida es sueño",
+    "slug": "la-vida-es-sueno",
+    "author_id": "author-pedro-calderon-de-la-barca",
+    "legacy_work": "La vida es sueño, Pedro Calderón de la Barca",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-bartleby-el-escribiente",
+    "title": "Bartleby, el escribiente",
+    "slug": "bartleby-el-escribiente",
+    "author_id": "author-herman-melville",
+    "legacy_work": "Bartleby, el escribiente, Herman Melville",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-las-cerezas-del-cementerio",
+    "title": "Las cerezas del cementerio",
+    "slug": "las-cerezas-del-cementerio",
+    "author_id": "author-gabriel-miro",
+    "legacy_work": "Las cerezas del cementerio, Gabriel Miró",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-niebla",
+    "title": "Niebla",
+    "slug": "niebla",
+    "author_id": "author-miguel-de-unamuno",
+    "legacy_work": "Niebla, Miguel de Unamuno",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-canas-y-barro",
+    "title": "Cañas y barro",
+    "slug": "canas-y-barro",
+    "author_id": "author-vicente-blasco-ibanez",
+    "legacy_work": "Cañas y barro, Vicente Blasco Ibáñez",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-orlando",
+    "title": "Orlando",
+    "slug": "orlando",
+    "author_id": "author-virginia-woolf",
+    "legacy_work": "Orlando, Virginia Woolf",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-el-rayo-que-no-cesa",
+    "title": "El rayo que no cesa",
+    "slug": "el-rayo-que-no-cesa",
+    "author_id": "author-miguel-hernandez",
+    "legacy_work": "El rayo que no cesa, Miguel Hernández",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-papa-goriot",
+    "title": "Papá Goriot",
+    "slug": "papa-goriot",
+    "author_id": "author-honore-de-balzac",
+    "legacy_work": "Papá Goriot, Honoré de Balzac",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-el-retrato-de-dorian-gray",
+    "title": "El retrato de Dorian Gray",
+    "slug": "el-retrato-de-dorian-gray",
+    "author_id": "author-oscar-wilde",
+    "legacy_work": "El retrato de Dorian Gray, Oscar Wilde",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-la-muerte-de-ivan-ilich",
+    "title": "La muerte de Iván Ilich",
+    "slug": "la-muerte-de-ivan-ilich",
+    "author_id": "author-leon-tolstoi",
+    "legacy_work": "La muerte de Iván Ilich, León Tolstói",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-memorias-del-subsuelo",
+    "title": "Memorias del subsuelo",
+    "slug": "memorias-del-subsuelo",
+    "author_id": "author-fiodor-dostoievski",
+    "legacy_work": "Memorias del subsuelo, Fiódor Dostoievski",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-el-horla",
+    "title": "El Horla",
+    "slug": "el-horla",
+    "author_id": "author-guy-de-maupassant",
+    "legacy_work": "El Horla, Guy de Maupassant",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-la-sala-numero-seis",
+    "title": "La sala número seis",
+    "slug": "la-sala-numero-seis",
+    "author_id": "author-anton-chejov",
+    "legacy_work": "La sala número seis, Antón Chéjov",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-la-bestia-en-la-jungla",
+    "title": "La bestia en la jungla",
+    "slug": "la-bestia-en-la-jungla",
+    "author_id": "author-henry-james",
+    "legacy_work": "La bestia en la jungla, Henry James",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-el-papel-pintado-de-amarillo",
+    "title": "El papel pintado de amarillo",
+    "slug": "el-papel-pintado-de-amarillo",
+    "author_id": "author-charlotte-perkins-gilman",
+    "legacy_work": "El papel pintado de amarillo, Charlotte Perkins Gilman",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  }
+]

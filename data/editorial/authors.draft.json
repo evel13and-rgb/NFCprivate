@@ -1,0 +1,233 @@
+[
+  {
+    "id": "author-emily-bronte",
+    "canonical_name": "Emily Brontë",
+    "slug": "emily-bronte",
+    "sort_name": "Emily Brontë",
+    "inferred_from": [
+      "Cumbres borrascosas, Emily Brontë"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-francois-mauriac",
+    "canonical_name": "François Mauriac",
+    "slug": "francois-mauriac",
+    "sort_name": "François Mauriac",
+    "inferred_from": [
+      "Nudo de víboras, François Mauriac"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-juan-rulfo",
+    "canonical_name": "Juan Rulfo",
+    "slug": "juan-rulfo",
+    "sort_name": "Juan Rulfo",
+    "inferred_from": [
+      "Pedro Páramo, Juan Rulfo"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-francois-rabelais",
+    "canonical_name": "François Rabelais",
+    "slug": "francois-rabelais",
+    "sort_name": "François Rabelais",
+    "inferred_from": [
+      "Gargantúa, François Rabelais"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-mary-shelley",
+    "canonical_name": "Mary Shelley",
+    "slug": "mary-shelley",
+    "sort_name": "Mary Shelley",
+    "inferred_from": [
+      "Frankenstein o el moderno Prometeo, Mary Shelley"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-lucy-maud-montgomery",
+    "canonical_name": "Lucy Maud Montgomery",
+    "slug": "lucy-maud-montgomery",
+    "sort_name": "Lucy Maud Montgomery",
+    "inferred_from": [
+      "Anne de las Tejas Verdes, Lucy Maud Montgomery"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-pedro-calderon-de-la-barca",
+    "canonical_name": "Pedro Calderón de la Barca",
+    "slug": "pedro-calderon-de-la-barca",
+    "sort_name": "Pedro Calderón de la Barca",
+    "inferred_from": [
+      "La vida es sueño, Pedro Calderón de la Barca"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-herman-melville",
+    "canonical_name": "Herman Melville",
+    "slug": "herman-melville",
+    "sort_name": "Herman Melville",
+    "inferred_from": [
+      "Bartleby, el escribiente, Herman Melville"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-gabriel-miro",
+    "canonical_name": "Gabriel Miró",
+    "slug": "gabriel-miro",
+    "sort_name": "Gabriel Miró",
+    "inferred_from": [
+      "Las cerezas del cementerio, Gabriel Miró"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-miguel-de-unamuno",
+    "canonical_name": "Miguel de Unamuno",
+    "slug": "miguel-de-unamuno",
+    "sort_name": "Miguel de Unamuno",
+    "inferred_from": [
+      "Niebla, Miguel de Unamuno"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-vicente-blasco-ibanez",
+    "canonical_name": "Vicente Blasco Ibáñez",
+    "slug": "vicente-blasco-ibanez",
+    "sort_name": "Vicente Blasco Ibáñez",
+    "inferred_from": [
+      "Cañas y barro, Vicente Blasco Ibáñez"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-virginia-woolf",
+    "canonical_name": "Virginia Woolf",
+    "slug": "virginia-woolf",
+    "sort_name": "Virginia Woolf",
+    "inferred_from": [
+      "Orlando, Virginia Woolf"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-miguel-hernandez",
+    "canonical_name": "Miguel Hernández",
+    "slug": "miguel-hernandez",
+    "sort_name": "Miguel Hernández",
+    "inferred_from": [
+      "El rayo que no cesa, Miguel Hernández"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-honore-de-balzac",
+    "canonical_name": "Honoré de Balzac",
+    "slug": "honore-de-balzac",
+    "sort_name": "Honoré de Balzac",
+    "inferred_from": [
+      "Papá Goriot, Honoré de Balzac"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-oscar-wilde",
+    "canonical_name": "Oscar Wilde",
+    "slug": "oscar-wilde",
+    "sort_name": "Oscar Wilde",
+    "inferred_from": [
+      "El retrato de Dorian Gray, Oscar Wilde"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-leon-tolstoi",
+    "canonical_name": "León Tolstói",
+    "slug": "leon-tolstoi",
+    "sort_name": "León Tolstói",
+    "inferred_from": [
+      "La muerte de Iván Ilich, León Tolstói"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-fiodor-dostoievski",
+    "canonical_name": "Fiódor Dostoievski",
+    "slug": "fiodor-dostoievski",
+    "sort_name": "Fiódor Dostoievski",
+    "inferred_from": [
+      "Memorias del subsuelo, Fiódor Dostoievski"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-guy-de-maupassant",
+    "canonical_name": "Guy de Maupassant",
+    "slug": "guy-de-maupassant",
+    "sort_name": "Guy de Maupassant",
+    "inferred_from": [
+      "El Horla, Guy de Maupassant"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-anton-chejov",
+    "canonical_name": "Antón Chéjov",
+    "slug": "anton-chejov",
+    "sort_name": "Antón Chéjov",
+    "inferred_from": [
+      "La sala número seis, Antón Chéjov"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-henry-james",
+    "canonical_name": "Henry James",
+    "slug": "henry-james",
+    "sort_name": "Henry James",
+    "inferred_from": [
+      "La bestia en la jungla, Henry James"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-charlotte-perkins-gilman",
+    "canonical_name": "Charlotte Perkins Gilman",
+    "slug": "charlotte-perkins-gilman",
+    "sort_name": "Charlotte Perkins Gilman",
+    "inferred_from": [
+      "El papel pintado de amarillo, Charlotte Perkins Gilman"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  }
+]
