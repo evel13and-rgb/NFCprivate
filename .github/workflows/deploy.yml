@@ -1,38 +1,37 @@
-name: Deploy to VPS
+# El despliegue real se ejecuta desde el VPS mediante deploy-local.sh.
+# GitHub Actions ya no publica la web en producción.
+# Este workflow sirve únicamente como comprobación manual y no destructiva.
+name: Deploy disabled - VPS first
 
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  deploy:
+  repository-check:
+    name: Comprobaciones seguras del repositorio
     runs-on: ubuntu-latest
 
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
 
-      - name: Preparar clave SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
 
-      - name: Subir archivos al VPS
-        run: |
-          rsync -avz --delete \
-            --exclude='.git' \
-            --exclude='.github' \
-            --exclude='.vscode' \
-            --exclude='node_modules' \
-            --exclude='*.tar.gz' \
-            -e "ssh -i ~/.ssh/deploy_key" \
-            ./ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/paramo-literario/
+      - name: Ejecutar tests
+        run: npm test
 
-      - name: Ajustar permisos y recargar Nginx
+      - name: Comprobar sintaxis de JavaScript versionado
+        shell: bash
         run: |
-          ssh -i ~/.ssh/deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
-            chown -R www-data:www-data /var/www/paramo-literario &&
-            nginx -t &&
-            systemctl reload nginx
-          "
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(git ls-files -z -- '*.js' '*.mjs' '*.cjs')
+
+      - name: Comprobar errores de whitespace en el diff
+        run: git diff --check
