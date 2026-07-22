@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "weather:start": "node server/index.js",
+    "validate:editorial": "node scripts/validate-editorial-catalog.mjs",
     "test": "node --test"
   }
 }

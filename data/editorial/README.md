@@ -22,3 +22,15 @@ node scripts/validate-editorial-decisions.mjs
 ```
 
 Las decisiones se mantienen aparte para conservar trazabilidad, permitir revisión y aceptación, y evitar que una corrección humana quede mezclada con resultados reproducibles de extracción o normalización. La validación no aplica las decisiones a ningún JSON generado.
+
+## Validación global del catálogo
+
+Para revisar en un único paso la extracción, la normalización, las decisiones manuales y las fuentes y derechos, ejecuta:
+
+```sh
+npm run validate:editorial
+```
+
+El comando genera `catalog-validation-report.json`. Un **error bloqueante** indica una incoherencia estructural o una pérdida de integridad —por ejemplo, una referencia inexistente, un texto vacío o una alteración del texto extraído— y hace que el comando termine con error. Una **advertencia editorial** identifica información válida para trabajar pero todavía pendiente de revisión humana, como derechos sin comprobar o posibles textos duplicados; por sí sola no invalida el catálogo.
+
+Los archivos de `data/editorial/` son artefactos internos de extracción, revisión y control. No forman parte de los datos que se publican en la web y no deben exponerse mediante el proceso de publicación.
