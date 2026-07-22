@@ -1,0 +1,21 @@
+{
+  "_notes": [
+    "Registrar las decisiones humanas en decisions; no editar para ello los JSON generados automáticamente.",
+    "legacy_index debe ser un índice existente de quotes.normalized.draft.json, o null si la decisión no corresponde a una cita concreta.",
+    "Los objetos de _examples son solo documentación y no se aplican ni se validan como decisiones activas."
+  ],
+  "_examples": [
+    {
+      "legacy_index": 2,
+      "decision_type": "attribution_type",
+      "field": "attribution_type",
+      "old_value": "ambiguous",
+      "new_value": "character",
+      "reason": "Ejemplo: la voz está identificada explícitamente como personaje en la obra.",
+      "reviewer": "nombre-del-revisor",
+      "reviewed_at": "2026-07-22T00:00:00Z",
+      "status": "proposed"
+    }
+  ],
+  "decisions": []
+}

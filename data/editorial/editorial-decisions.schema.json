@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "editorial-decisions.schema.json",
+  "title": "Decisiones editoriales manuales de Páramo Literario",
+  "description": "Registro separado de decisiones humanas. Este archivo no modifica ni reemplaza los datos editoriales generados automáticamente.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["_notes", "_examples", "decisions"],
+  "properties": {
+    "_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "_examples": {
+      "type": "array",
+      "description": "Ejemplos de documentación; no son decisiones activas.",
+      "items": { "$ref": "#/$defs/decision" }
+    },
+    "decisions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/decision" }
+    }
+  },
+  "$defs": {
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "legacy_index",
+        "decision_type",
+        "field",
+        "old_value",
+        "new_value",
+        "reason",
+        "reviewer",
+        "reviewed_at",
+        "status"
+      ],
+      "properties": {
+        "legacy_index": {
+          "description": "Índice de la cita heredada; null para una decisión que no se refiera a una cita concreta.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "decision_type": {
+          "type": "string",
+          "enum": [
+            "attribution_type",
+            "speaker_name",
+            "author_correction",
+            "work_correction",
+            "highlight_correction",
+            "source_note",
+            "rights_note",
+            "exclude_quote",
+            "other"
+          ]
+        },
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "old_value": {
+          "description": "Valor observado antes de la decisión; puede ser null."
+        },
+        "new_value": {
+          "description": "Valor propuesto por la decisión; puede ser null."
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewer": {
+          "description": "Nombre o identificador de quien revisa; null mientras no haya revisor asignado.",
+          "type": ["string", "null"],
+          "minLength": 1
+        },
+        "reviewed_at": {
+          "description": "Fecha y hora ISO 8601; null mientras la decisión no haya sido revisada.",
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["proposed", "accepted", "rejected", "needs_review"]
+        }
+      }
+    }
+  }
+}
