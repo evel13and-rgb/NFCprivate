@@ -1,0 +1,32 @@
+[
+  {
+    "author_id": "author-leon-tolstoi",
+    "name": "León Tolstói",
+    "birth_year": 1828,
+    "death_year": 1910,
+    "country": "Imperio ruso —actual Rusia—",
+    "language": "Ruso",
+    "period": "Segunda mitad del siglo XIX y comienzos del siglo XX",
+    "movement": "Realismo ruso; en su obra tardía, realismo moral, psicológico y espiritual.",
+    "short_biography": "León Tolstói fue un novelista, ensayista y pensador ruso, considerado una de las figuras centrales de la literatura universal. Nació en el seno de una familia aristocrática y participó como oficial en la guerra de Crimea. Tras alcanzar reconocimiento con obras como Guerra y paz y Anna Karénina, atravesó una profunda crisis espiritual que transformó su pensamiento y su escritura. Desde entonces desarrolló una literatura más austera y crítica, centrada en la moral, la muerte, la desigualdad y la búsqueda de una vida auténtica.",
+    "themes": [
+      "La muerte",
+      "El sentido de la existencia",
+      "La conciencia moral",
+      "La vida auténtica",
+      "La hipocresía social",
+      "La desigualdad",
+      "La culpa",
+      "La compasión",
+      "La familia",
+      "La fe",
+      "La transformación espiritual"
+    ],
+    "sources": [
+      "Encyclopedia.com, «Count Leo Tolstoy».",
+      "University of Minnesota, The Death of Ivan Ilich: An Electronic Study Edition of the Russian Text."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  }
+]

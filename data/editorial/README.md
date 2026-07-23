@@ -23,6 +23,16 @@ node scripts/validate-editorial-decisions.mjs
 
 Las decisiones se mantienen aparte para conservar trazabilidad, permitir revisión y aceptación, y evitar que una corrección humana quede mezclada con resultados reproducibles de extracción o normalización. La validación no aplica las decisiones a ningún JSON generado.
 
+## Fichas literarias manuales
+
+`author-profiles.manual.json` y `work-profiles.manual.json` contienen información literaria revisable añadida manualmente, separada de los borradores automáticos. Sus campos y estados se documentan en `profiles.schema.json`.
+
+Durante la fase piloto estas colecciones pueden estar incompletas: no es necesario que cada autor u obra tenga ya una ficha. Se rellenarán progresivamente y la falta de fichas se informa como advertencia no bloqueante. Para validar las fichas existentes, sus identificadores y la cobertura actual, ejecuta:
+
+```sh
+node scripts/validate-editorial-profiles.mjs
+```
+
 ## Validación global del catálogo
 
 Para revisar en un único paso la extracción, la normalización, las decisiones manuales y las fuentes y derechos, ejecuta:

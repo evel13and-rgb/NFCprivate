@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "profiles.schema.json",
+  "title": "Fichas literarias manuales",
+  "description": "Definiciones para los elementos de author-profiles.manual.json y work-profiles.manual.json. La cobertura puede ser parcial durante la fase piloto.",
+  "$defs": {
+    "verificationStatus": {
+      "enum": ["pending", "partially_verified", "verified", "rejected"]
+    },
+    "profileStatus": {
+      "enum": ["empty", "draft", "reviewed", "ready", "hidden"]
+    },
+    "nullableString": {
+      "type": ["string", "null"]
+    },
+    "themes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sources": {
+      "type": ["array", "null"],
+      "items": { "type": "string" }
+    },
+    "authorProfile": {
+      "type": "object",
+      "required": ["author_id", "profile_status", "verification_status"],
+      "properties": {
+        "author_id": { "type": "string", "minLength": 1 },
+        "display_name": { "type": "string", "minLength": 1 },
+        "name": { "$ref": "#/$defs/nullableString" },
+        "birth_year": { "type": ["integer", "null"] },
+        "death_year": { "type": ["integer", "null"] },
+        "country": { "$ref": "#/$defs/nullableString" },
+        "language": { "$ref": "#/$defs/nullableString" },
+        "period": { "$ref": "#/$defs/nullableString" },
+        "movement": { "$ref": "#/$defs/nullableString" },
+        "short_biography": { "$ref": "#/$defs/nullableString" },
+        "themes": { "$ref": "#/$defs/themes" },
+        "sources": { "$ref": "#/$defs/sources" },
+        "profile_status": { "$ref": "#/$defs/profileStatus" },
+        "verification_status": { "$ref": "#/$defs/verificationStatus" }
+      }
+    },
+    "workProfile": {
+      "type": "object",
+      "required": ["work_id", "profile_status", "verification_status"],
+      "properties": {
+        "work_id": { "type": "string", "minLength": 1 },
+        "author_id": { "type": ["string", "null"] },
+        "display_title": { "type": "string", "minLength": 1 },
+        "title": { "$ref": "#/$defs/nullableString" },
+        "original_title": { "$ref": "#/$defs/nullableString" },
+        "publication_year": { "type": ["integer", "null"] },
+        "genre": { "$ref": "#/$defs/nullableString" },
+        "short_summary": { "$ref": "#/$defs/nullableString" },
+        "context": { "$ref": "#/$defs/nullableString" },
+        "themes": { "$ref": "#/$defs/themes" },
+        "tone": { "$ref": "#/$defs/nullableString" },
+        "sources": { "$ref": "#/$defs/sources" },
+        "profile_status": { "$ref": "#/$defs/profileStatus" },
+        "verification_status": { "$ref": "#/$defs/verificationStatus" }
+      }
+    },
+    "authorProfilesDocument": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/authorProfile" }
+    },
+    "workProfilesDocument": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/workProfile" }
+    }
+  }
+}

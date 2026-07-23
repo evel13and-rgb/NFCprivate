@@ -1,0 +1,29 @@
+[
+  {
+    "work_id": "work-la-muerte-de-ivan-ilich",
+    "author_id": "author-leon-tolstoi",
+    "title": "La muerte de Iván Ilich",
+    "original_title": "Смерть Ивана Ильича —Smert Ivana Ilicha—",
+    "publication_year": 1886,
+    "genre": "Novela corta; narrativa psicológica, filosófica y moral.",
+    "short_summary": "Iván Ilich es un funcionario judicial que ha construido una vida respetable siguiendo las convenciones de su clase social. Cuando una enfermedad progresiva lo enfrenta a la muerte, comienza a cuestionar su matrimonio, su carrera y todas las decisiones que había considerado correctas. Su agonía se convierte así en una búsqueda dolorosa de la verdad sobre su propia existencia.",
+    "context": "La obra pertenece a la etapa posterior a la crisis espiritual de Tolstói, cuando el autor abandonó parcialmente la gran novela realista para concentrarse en relatos más breves, austeros y moralmente incisivos. Fue escrita entre 1885 y 1886, en una Rusia marcada por la reacción política del reinado de Alejandro III. El origen del personaje se ha relacionado con Iván Ilich Méchnikov, un fiscal cuya muerte Tolstói conoció en 1881.",
+    "themes": [
+      "La conciencia de la muerte",
+      "El miedo",
+      "El aislamiento del enfermo",
+      "La falsedad de las convenciones sociales",
+      "La incomunicación",
+      "El sufrimiento",
+      "La compasión",
+      "La revisión de la propia vida",
+      "La posibilidad de una transformación interior"
+    ],
+    "tone": "Sobrio, contenido y progresivamente angustioso. La ironía social de los primeros capítulos da paso a una narración íntima y opresiva, concentrada en la conciencia de Iván Ilich. En el desenlace aparece una breve apertura hacia la compasión y la liberación espiritual.",
+    "sources": [
+      "University of Minnesota, The Death of Ivan Ilich: An Electronic Study Edition of the Russian Text."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  }
+]
