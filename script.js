@@ -3719,9 +3719,44 @@ const FALLBACK_WEATHER_STATE = Object.freeze({
 });
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
 
-const AUTHORS_INFO = Object.freeze({});
+const AUTHORS_INFO = {};
 
-const WORKS_INFO = Object.freeze({});
+const WORKS_INFO = {};
+
+async function fetchPublicProfiles(relativePath) {
+  const response = await fetch(new URL(relativePath, import.meta.url), { cache: 'no-store' });
+  if (!response.ok) {
+    throw new Error(`${relativePath}: HTTP ${response.status}`);
+  }
+  const profiles = await response.json();
+  if (!profiles || typeof profiles !== 'object' || Array.isArray(profiles)) {
+    throw new Error(`${relativePath}: se esperaba un objeto`);
+  }
+  return profiles;
+}
+
+async function loadPublicProfiles() {
+  try {
+    const profiles = await fetchPublicProfiles('./public/data/literary-profiles.json');
+    const authorProfiles = Array.isArray(profiles?.authors) ? profiles.authors : [];
+    const workProfiles = Array.isArray(profiles?.works) ? profiles.works : [];
+
+    for (const profile of authorProfiles) {
+      if (profile?.author_id) {
+        AUTHORS_INFO[profile.author_id] = profile;
+      }
+    }
+    for (const profile of workProfiles) {
+      if (profile?.work_id) {
+        WORKS_INFO[profile.work_id] = profile;
+      }
+    }
+  } catch (error) {
+    console.error('No se pudieron cargar las fichas literarias manuales', error);
+  }
+}
+
+const publicProfilesReady = loadPublicProfiles();
 
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 const quoteManager = createQuoteManager(QUOTES, storage);
@@ -4301,22 +4336,67 @@ function appendInfoLine(fragment, label, value) {
   fragment.appendChild(paragraph);
 }
 
+function appendInfoList(fragment, label, values) {
+  if (!Array.isArray(values) || !values.length) return;
+  const section = document.createElement('div');
+  const heading = document.createElement('p');
+  const prefix = document.createElement('span');
+  prefix.className = 'modal__field-label';
+  prefix.textContent = `${label}:`;
+  heading.appendChild(prefix);
+  section.appendChild(heading);
+  const list = document.createElement('ul');
+  for (const value of values) {
+    if (typeof value !== 'string' || !value.trim()) continue;
+    const item = document.createElement('li');
+    item.textContent = value;
+    list.appendChild(item);
+  }
+  if (list.childNodes.length) {
+    section.appendChild(list);
+    fragment.appendChild(section);
+  }
+}
+
 function renderInfoContent(type, contentElement, entry) {
   if (!contentElement) return;
   const fragment = document.createDocumentFragment();
 
   if (entry) {
     if (type === 'author') {
-      appendInfoLine(fragment, 'Nombre', entry.name);
-      appendInfoLine(fragment, 'Fechas', entry.dates);
+      const dates = entry.birth_year && entry.death_year
+        ? `${entry.birth_year}-${entry.death_year}`
+        : entry.birth_year || entry.death_year || null;
+      appendInfoLine(fragment, 'Nombre', entry.display_name || entry.name);
+      appendInfoLine(fragment, 'Fechas', dates);
       appendInfoLine(fragment, 'País', entry.country);
-      appendInfoLine(fragment, 'Descripción', entry.description);
+      appendInfoLine(fragment, 'Lengua', entry.language);
+      appendInfoLine(fragment, 'Época', entry.period);
+      appendInfoLine(fragment, 'Movimiento o corriente', entry.movement);
+      appendInfoLine(fragment, 'Biografía', entry.bio_short);
+      if (entry.bio_long && entry.bio_long !== entry.bio_short) {
+        appendInfoLine(fragment, 'Biografía ampliada', entry.bio_long);
+      }
+      appendInfoList(fragment, 'Temas', entry.themes);
+      appendInfoLine(fragment, 'Notas de tono', entry.tone_notes);
+      appendInfoLine(fragment, 'Por qué está en Páramo', entry.why_in_paramo);
     } else {
-      appendInfoLine(fragment, 'Título', entry.title);
-      appendInfoLine(fragment, 'Autor', entry.author);
-      appendInfoLine(fragment, 'Año', entry.year);
-      appendInfoLine(fragment, 'Tipo', entry.type);
-      appendInfoLine(fragment, 'Descripción', entry.description);
+      const authorEntry = getCatalogEntry('author', entry.author_id);
+      appendInfoLine(fragment, 'Título', entry.display_title || entry.title);
+      appendInfoLine(fragment, 'Título original', entry.original_title);
+      appendInfoLine(fragment, 'Autor', authorEntry?.display_name);
+      appendInfoLine(fragment, 'Año', entry.publication_year);
+      appendInfoLine(fragment, 'Género', entry.genre);
+      appendInfoLine(fragment, 'Lengua', entry.language);
+      appendInfoLine(fragment, 'Resumen', entry.summary_short);
+      if (entry.summary_long && entry.summary_long !== entry.summary_short) {
+        appendInfoLine(fragment, 'Resumen ampliado', entry.summary_long);
+      }
+      appendInfoLine(fragment, 'Contexto', entry.context_notes);
+      appendInfoList(fragment, 'Temas', entry.themes);
+      appendInfoLine(fragment, 'Tono', entry.tone_notes);
+      appendInfoLine(fragment, 'Notas sobre los fragmentos', entry.fragment_notes);
+      appendInfoLine(fragment, 'Por qué está en Páramo', entry.why_in_paramo);
     }
   }
 
@@ -4363,19 +4443,20 @@ function handleEscapeKey(event) {
   }
 }
 
-function openModal(type, triggerElement, titleText) {
+async function openModal(type, triggerElement, titleText) {
   const elements = getModalElements(type);
   if (!elements) return;
   const catalogId = type === 'author'
     ? triggerElement?.dataset?.authorId
     : triggerElement?.dataset?.workId;
-  const entry = getCatalogEntry(type, catalogId || slugify(titleText || ''));
 
   elements.root.classList.remove('is-hidden');
   elements.root.setAttribute('aria-hidden', 'false');
   if (elements.title) {
     elements.title.textContent = titleText || '';
   }
+  await publicProfilesReady;
+  const entry = getCatalogEntry(type, catalogId || slugify(titleText || ''));
   renderInfoContent(type, elements.content, entry);
   if (elements.close) {
     elements.close.focus({ preventScroll: true });
@@ -5126,8 +5207,8 @@ function renderQuote(quote) {
   const hasAuthor = Boolean(author);
   const hasWork = Boolean(workTitle);
 
-  const authorId = currentQuote.authorId || slugify(author || '');
-  const workId = currentQuote.workId || slugify(workTitle || '');
+  const authorId = currentQuote.authorId || `author-${slugify(author || '')}`;
+  const workId = currentQuote.workId || `work-${slugify(workTitle || '')}`;
 
   if (authorName) {
     authorName.textContent = author ?? '';
