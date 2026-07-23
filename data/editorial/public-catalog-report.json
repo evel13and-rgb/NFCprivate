@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-07-23T21:23:47.058Z",
+  "preview": true,
+  "publication_status": "internal_preview",
+  "total_quotes_exported": 366,
+  "omitted_quotes": [],
+  "private_fields_excluded": [
+    "rights_notes",
+    "notes",
+    "editorial_notes"
+  ],
+  "quotes_missing_author_id": [
+    "quote-0",
+    "quote-1"
+  ],
+  "quotes_missing_work_id": [],
+  "ambiguous_attributions": [
+    "quote-0",
+    "quote-1",
+    "quote-2",
+    "quote-3",
+    "quote-4",
+    "quote-5",
+    "quote-6",
+    "quote-7",
+    "quote-8",
+    "quote-9",
+    "quote-10",
+    "quote-11",
+    "quote-13",
+    "quote-15",
+    "quote-16",
+    "quote-17",
+    "quote-18",
+    "quote-19",
+    "quote-20",
+    "quote-28",
+    "quote-29",
+    "quote-30",
+    "quote-31",
+    "quote-32",
+    "quote-33",
+    "quote-34",
+    "quote-35",
+    "quote-36",
+    "quote-37",
+    "quote-38",
+    "quote-39",
+    "quote-40",
+    "quote-41",
+    "quote-42",
+    "quote-43",
+    "quote-44",
+    "quote-45",
+    "quote-46",
+    "quote-47",
+    "quote-48",
+    "quote-49",
+    "quote-50",
+    "quote-51",
+    "quote-52",
+    "quote-53",
+    "quote-54",
+    "quote-55",
+    "quote-56",
+    "quote-57",
+    "quote-58",
+    "quote-59",
+    "quote-60",
+    "quote-61",
+    "quote-62"
+  ],
+  "works_without_verified_source": [
+    "work-fragmentos",
+    "work-cumbres-borrascosas",
+    "work-nudo-de-viboras",
+    "work-pedro-paramo",
+    "work-gargantua",
+    "work-frankenstein-o-el-moderno-prometeo",
+    "work-anne-de-las-tejas-verdes",
+    "work-la-vida-es-sueno",
+    "work-bartleby-el-escribiente",
+    "work-las-cerezas-del-cementerio",
+    "work-niebla",
+    "work-canas-y-barro",
+    "work-orlando",
+    "work-el-rayo-que-no-cesa",
+    "work-papa-goriot",
+    "work-el-retrato-de-dorian-gray",
+    "work-la-muerte-de-ivan-ilich",
+    "work-memorias-del-subsuelo",
+    "work-el-horla",
+    "work-la-sala-numero-seis",
+    "work-la-bestia-en-la-jungla",
+    "work-el-papel-pintado-de-amarillo"
+  ],
+  "unverified_rights": [
+    {
+      "source_id": "source-fragmentos",
+      "work_id": "work-fragmentos",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-cumbres-borrascosas",
+      "work_id": "work-cumbres-borrascosas",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-nudo-de-viboras",
+      "work_id": "work-nudo-de-viboras",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-pedro-paramo",
+      "work_id": "work-pedro-paramo",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-gargantua",
+      "work_id": "work-gargantua",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-frankenstein-o-el-moderno-prometeo",
+      "work_id": "work-frankenstein-o-el-moderno-prometeo",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-anne-de-las-tejas-verdes",
+      "work_id": "work-anne-de-las-tejas-verdes",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-la-vida-es-sueno",
+      "work_id": "work-la-vida-es-sueno",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-bartleby-el-escribiente",
+      "work_id": "work-bartleby-el-escribiente",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-las-cerezas-del-cementerio",
+      "work_id": "work-las-cerezas-del-cementerio",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-niebla",
+      "work_id": "work-niebla",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-canas-y-barro",
+      "work_id": "work-canas-y-barro",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-orlando",
+      "work_id": "work-orlando",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-el-rayo-que-no-cesa",
+      "work_id": "work-el-rayo-que-no-cesa",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-papa-goriot",
+      "work_id": "work-papa-goriot",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-el-retrato-de-dorian-gray",
+      "work_id": "work-el-retrato-de-dorian-gray",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-la-muerte-de-ivan-ilich",
+      "work_id": "work-la-muerte-de-ivan-ilich",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-memorias-del-subsuelo",
+      "work_id": "work-memorias-del-subsuelo",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-el-horla",
+      "work_id": "work-el-horla",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-la-sala-numero-seis",
+      "work_id": "work-la-sala-numero-seis",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-la-bestia-en-la-jungla",
+      "work_id": "work-la-bestia-en-la-jungla",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-el-papel-pintado-de-amarillo",
+      "work_id": "work-el-papel-pintado-de-amarillo",
+      "rights_status": "unchecked"
+    }
+  ],
+  "production_ready": false,
+  "production_blockers": [
+    "unverified_sources",
+    "unverified_rights"
+  ],
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

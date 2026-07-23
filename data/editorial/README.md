@@ -34,3 +34,15 @@ npm run validate:editorial
 El comando genera `catalog-validation-report.json`. Un **error bloqueante** indica una incoherencia estructural o una pérdida de integridad —por ejemplo, una referencia inexistente, un texto vacío o una alteración del texto extraído— y hace que el comando termine con error. Una **advertencia editorial** identifica información válida para trabajar pero todavía pendiente de revisión humana, como derechos sin comprobar o posibles textos duplicados; por sí sola no invalida el catálogo.
 
 Los archivos de `data/editorial/` son artefactos internos de extracción, revisión y control. No forman parte de los datos que se publican en la web y no deben exponerse mediante el proceso de publicación.
+
+## Vista previa del futuro catálogo público
+
+`public-catalog.preview.json` es una transformación interna y reproducible de los borradores editoriales, con una estructura cercana a la que podrá consumir la web en el futuro. Se genera con:
+
+```sh
+node scripts/build-public-catalog-preview.mjs
+```
+
+Su estructura se documenta en `public-catalog.schema.json` y las incidencias de cada generación quedan en `public-catalog-report.json`. El generador excluye notas editoriales y campos privados, y marca explícitamente el resultado como `internal_preview`.
+
+Esta vista previa **no está publicada**, no debe conectarse todavía al frontend ni consumirse en producción. Las fuentes y los derechos siguen pendientes de verificación. Cuando termine la revisión editorial y jurídica, esta estructura servirá como base del futuro JSON público versionado.

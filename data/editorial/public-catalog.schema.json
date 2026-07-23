@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "public-catalog.schema.json",
+  "title": "Vista previa interna del catálogo público",
+  "description": "Estructura prevista para el futuro catálogo público. Mientras publication_status sea internal_preview, no debe publicarse ni consumirse en producción.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["metadata", "quotes"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generated_at",
+        "total_quotes",
+        "total_authors",
+        "total_works",
+        "source",
+        "preview",
+        "publication_status",
+        "warning"
+      ],
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "total_quotes": { "type": "integer", "minimum": 0 },
+        "total_authors": { "type": "integer", "minimum": 0 },
+        "total_works": { "type": "integer", "minimum": 0 },
+        "source": { "const": "editorial_draft" },
+        "preview": { "const": true },
+        "publication_status": { "const": "internal_preview" },
+        "warning": { "type": "string", "minLength": 1 }
+      }
+    },
+    "quotes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/quote" }
+    }
+  },
+  "$defs": {
+    "nullableNonEmptyString": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1 }
+      ]
+    },
+    "quote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text",
+        "highlight",
+        "language",
+        "type",
+        "author",
+        "author_id",
+        "work",
+        "work_id",
+        "speaker_name",
+        "attribution_type",
+        "source_collection",
+        "legacy_index",
+        "text_hash"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "highlight": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "language": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "author": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "author_id": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "work": { "type": "string", "minLength": 1 },
+        "work_id": { "type": "string", "minLength": 1 },
+        "speaker_name": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "attribution_type": { "type": "string", "minLength": 1 },
+        "source_collection": { "type": "string", "minLength": 1 },
+        "legacy_index": { "type": "integer", "minimum": 0 },
+        "text_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    }
+  }
+}
