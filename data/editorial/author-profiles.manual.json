@@ -28,5 +28,69 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-fiodor-dostoievski",
+    "name": "Fiódor Mijáilovich Dostoievski",
+    "birth_year": 1821,
+    "death_year": 1881,
+    "country": "Imperio ruso —actual Rusia—",
+    "language": "Ruso",
+    "period": "Siglo XIX",
+    "movement": "Realismo ruso; realismo psicológico y filosófico. Su obra está considerada un antecedente fundamental de la literatura existencialista, aunque Dostoievski no perteneció propiamente a ese movimiento, surgido después de su muerte.",
+    "short_biography": "Fiódor Dostoievski fue un novelista, cuentista, ensayista y periodista ruso. Alcanzó un temprano reconocimiento literario con Pobres gentes, pero en 1849 fue detenido por su relación con el Círculo Petrashevski, un grupo intelectual interesado en las reformas sociales. Fue condenado a muerte y sometido a un simulacro de ejecución antes de que la pena fuera sustituida por trabajos forzados y servicio militar en Siberia. Regresó a San Petersburgo en 1859. Aquella experiencia transformó profundamente su pensamiento y su literatura, que desde entonces se concentró en la libertad, la culpa, el sufrimiento, la fe y las contradicciones del ser humano.",
+    "themes": [
+      "La libertad y sus límites",
+      "La culpa",
+      "El sufrimiento",
+      "La fe y la duda",
+      "El aislamiento",
+      "La humillación",
+      "El resentimiento",
+      "La pobreza",
+      "La responsabilidad moral",
+      "La irracionalidad",
+      "La autodestrucción",
+      "El conflicto entre razón y deseo"
+    ],
+    "sources": [
+      "Cambridge University Press, Dostoevsky in Context.",
+      "Encyclopedia.com, «Fyodor Mikhailovich Dostoevsky».",
+      "Stanford Encyclopedia of Philosophy, «Existentialism»."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "author_id": "author-guy-de-maupassant",
+    "name": "Guy de Maupassant",
+    "birth_year": 1850,
+    "death_year": 1893,
+    "country": "Francia",
+    "language": "Francés",
+    "period": "Segunda mitad del siglo XIX",
+    "movement": "Realismo y naturalismo. En una parte de su producción cultivó también el relato fantástico y psicológico.",
+    "short_biography": "Guy de Maupassant fue un novelista, cuentista y periodista francés, reconocido especialmente por su dominio del relato breve. Discípulo literario de Gustave Flaubert y cercano al círculo naturalista de Émile Zola, alcanzó notoriedad en 1880 con Bola de sebo. Su escritura retrató con precisión e ironía la sociedad francesa, las relaciones de poder, la guerra, el deseo y la fragilidad psicológica. En sus relatos fantásticos, la observación realista se abre hacia la angustia, la percepción alterada y la duda sobre aquello que puede considerarse verdadero.",
+    "themes": [
+      "La soledad",
+      "El miedo",
+      "La locura",
+      "La muerte",
+      "La guerra",
+      "El deseo",
+      "La hipocresía social",
+      "El egoísmo",
+      "La crueldad",
+      "La percepción",
+      "La enfermedad",
+      "La pérdida de control sobre uno mismo"
+    ],
+    "sources": [
+      "Bibliothèque nationale de France, «Maupassant, une vie au fil de la plume».",
+      "Encyclopédie Larousse, «Guy de Maupassant».",
+      "Bibliothèque nationale de France, ficha de autoridad de Guy de Maupassant."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

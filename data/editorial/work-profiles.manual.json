@@ -25,5 +25,67 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-memorias-del-subsuelo",
+    "author_id": "author-fiodor-dostoievski",
+    "title": "Memorias del subsuelo",
+    "original_title": "Записки из подполья —Zapiski iz podpolia—",
+    "publication_year": 1864,
+    "genre": "Novela corta; narrativa psicológica, filosófica y confesional.",
+    "short_summary": "Un antiguo funcionario, aislado de la sociedad, escribe desde su particular «subsuelo»: un espacio mental dominado por la conciencia excesiva, el resentimiento y la contradicción. En la primera parte expone sus ideas contra la confianza absoluta en la razón y el progreso. En la segunda recuerda varios episodios de su juventud, en los que su necesidad de reconocimiento, su orgullo y su miedo a la intimidad lo conducen a la humillación y a la crueldad.",
+    "context": "La obra apareció en 1864 en la revista Epokha, dirigida por Dostoievski y su hermano Mijaíl. Fue escrita en una Rusia atravesada por intensos debates sobre el progreso, el materialismo y la posibilidad de organizar racionalmente la sociedad. El hombre del subsuelo se rebela contra la idea de que la conducta humana pueda reducirse a leyes científicas o al cálculo del propio beneficio: sostiene que el ser humano puede actuar deliberadamente contra sus intereses con tal de demostrar que continúa siendo libre.",
+    "themes": [
+      "La conciencia excesiva",
+      "La libertad",
+      "La irracionalidad",
+      "El aislamiento",
+      "El resentimiento",
+      "La humillación",
+      "La necesidad de reconocimiento",
+      "La incapacidad de actuar",
+      "El miedo a la intimidad",
+      "La crueldad",
+      "La autodestrucción",
+      "La crítica del racionalismo utópico"
+    ],
+    "tone": "Amargo, provocador, irónico y profundamente confesional. La voz del narrador es agresiva y vulnerable a la vez: se acusa, se contradice, desafía al lector y convierte el relato en una lucha continua contra sí mismo. El resultado es una atmósfera asfixiante, incómoda y ferozmente lúcida.",
+    "sources": [
+      "Stanford Encyclopedia of Philosophy, «Existentialism».",
+      "Cambridge University Press, «Dostoevsky’s Criticism of Modern Rationalism and Materialism».",
+      "Encyclopedia.com, «Notes from Underground»."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "work_id": "work-el-horla",
+    "author_id": "author-guy-de-maupassant",
+    "title": "El Horla",
+    "original_title": "Le Horla",
+    "publication_year": 1887,
+    "genre": "Relato fantástico y psicológico, escrito en forma de diario.",
+    "short_summary": "Un hombre comienza a registrar en su diario una serie de sensaciones y acontecimientos inexplicables. Se siente enfermo, pierde energía y sospecha que una presencia invisible entra en su casa, bebe durante la noche y domina progresivamente su voluntad. Mientras intenta demostrar la existencia de ese ser, al que llama el Horla, también se enfrenta a la posibilidad de estar perdiendo la razón.",
+    "context": "La versión definitiva de El Horla apareció en mayo de 1887 dentro del libro del mismo título. Maupassant había publicado anteriormente una versión distinta en 1886, narrada como el testimonio de un paciente ante varios médicos. Existe además un antecedente titulado Carta de un loco, aparecido en 1885. En la versión de 1887, el diario íntimo encierra al lector en la conciencia del protagonista y mantiene abierta la duda entre una presencia sobrenatural y una alteración de la percepción.",
+    "themes": [
+      "La locura",
+      "La percepción de lo invisible",
+      "La pérdida de voluntad",
+      "El aislamiento",
+      "El miedo",
+      "La identidad",
+      "La sugestión",
+      "Los límites de la razón",
+      "La vulnerabilidad del ser humano",
+      "La posibilidad de una fuerza desconocida superior a él"
+    ],
+    "tone": "Inquietante, íntimo, obsesivo y progresivamente asfixiante. El relato comienza con una aparente serenidad, pero las anotaciones del narrador se vuelven cada vez más fragmentarias y desesperadas. La ambigüedad entre lucidez y delirio sostiene la tensión hasta el final.",
+    "sources": [
+      "Bibliothèque nationale de France, edición original de Le Horla, publicada por Paul Ollendorff en 1887.",
+      "Bibliothèque nationale de France, «Le Horla» y «Le Horla dans le texte».",
+      "Encyclopædia Universalis, «Le Horla»."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]
