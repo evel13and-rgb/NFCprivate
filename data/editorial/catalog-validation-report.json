@@ -1,33 +1,33 @@
 {
   "valid": true,
-  "validated_at": "2026-07-24T16:22:35.333Z",
+  "validated_at": "2026-07-24T18:41:52.598Z",
   "summary": {
-    "expected_quotes": 393,
-    "intermediate_quotes": 393,
-    "normalized_quotes": 393,
-    "authors": 22,
-    "works": 23,
-    "sources": 23,
+    "expected_quotes": 422,
+    "intermediate_quotes": 422,
+    "normalized_quotes": 422,
+    "authors": 23,
+    "works": 24,
+    "sources": 24,
     "editorial_decisions": 0,
     "poems": 26,
-    "quotes_with_line_breaks": 265,
+    "quotes_with_line_breaks": 292,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
     "editorial_decisions": {
       "valid": true,
-      "message": "Decisiones editoriales válidas: 0 decisión(es), 393 cita(s) de referencia."
+      "message": "Decisiones editoriales válidas: 0 decisión(es), 422 cita(s) de referencia."
     },
     "editorial_sources": {
       "valid": true,
-      "message": "Fuentes editoriales válidas: 23 fuente(s) para 23 obra(s)."
+      "message": "Fuentes editoriales válidas: 24 fuente(s) para 24 obra(s)."
     }
   },
   "blocking_errors": [],
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "23 fuente(s) conservan derechos sin revisar.",
+      "message": "24 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -51,12 +51,13 @@
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
-        "source-vera"
+        "source-vera",
+        "source-precioso-veneno"
       ]
     },
     {
       "code": "source_verification_pending",
-      "message": "23 fuente(s) esperan verificación bibliográfica.",
+      "message": "24 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -80,7 +81,8 @@
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
-        "source-vera"
+        "source-vera",
+        "source-precioso-veneno"
       ]
     }
   ],
@@ -93,11 +95,11 @@
     },
     {
       "code": "rights_review_pending",
-      "count": 23
+      "count": 24
     },
     {
       "code": "source_verification_pending",
-      "count": 23
+      "count": 24
     }
   ],
   "reviewed_files": [

@@ -332,5 +332,35 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-precioso-veneno",
+    "author_id": "author-mary-webb",
+    "title": "Precioso veneno",
+    "original_title": "Precious Bane",
+    "publication_year": 1924,
+    "genre": "Novela histórica, rural y lírica; romance de formación con elementos trágicos.",
+    "short_summary": "Prue Sarn es una joven campesina de Shropshire que vive marcada por una malformación en el labio y por los prejuicios de una comunidad dominada por la superstición. Mientras su hermano Gideon sacrifica afectos y vínculos familiares en su obsesión por enriquecerse, Prue intenta encontrar un lugar propio y aceptar la posibilidad de ser amada. Su relación con el tejedor Kester Woodseaves abre una esperanza frente a la crueldad y el aislamiento que la rodean.",
+    "context": "La novela está ambientada en la zona rural de Shropshire durante las guerras napoleónicas y los años inmediatamente posteriores. Webb recrea una sociedad campesina todavía regida por antiguos relatos, creencias mágicas y jerarquías familiares, pero ya amenazada por el cambio económico y la búsqueda moderna de beneficios. La obra recibió el premio Femina–Vie Heureuse y fue la novela que dio a la autora su mayor reconocimiento.",
+    "themes": [
+      "La belleza interior",
+      "El estigma físico",
+      "La superstición",
+      "La exclusión",
+      "La ambición",
+      "La codicia",
+      "El sacrificio",
+      "La violencia colectiva",
+      "El amor",
+      "La dignidad",
+      "La relación entre el ser humano y la naturaleza",
+      "La posibilidad de convertir una desgracia en una forma de conocimiento"
+    ],
+    "tone": "Lírico, melancólico, telúrico y profundamente sensorial. La contemplación casi mística del paisaje convive con una representación áspera de la pobreza, los prejuicios y la violencia rural. La narración mantiene una oscuridad trágica, pero también una poderosa confianza en la dignidad y la capacidad de amar de su protagonista.",
+    "sources": [
+      "Mary Webb, Precious Bane, texto original inglés; edición digital de Project Gutenberg."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

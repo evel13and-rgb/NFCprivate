@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-24T16:22:34.554Z",
+  "generated_at": "2026-07-24T18:41:51.822Z",
   "preview": true,
   "publication_status": "internal_preview",
-  "total_quotes_exported": 393,
+  "total_quotes_exported": 422,
   "omitted_quotes": [],
   "private_fields_excluded": [
     "rights_notes",
@@ -93,7 +93,8 @@
     "work-la-sala-numero-seis",
     "work-la-bestia-en-la-jungla",
     "work-el-papel-pintado-de-amarillo",
-    "work-vera"
+    "work-vera",
+    "work-precioso-veneno"
   ],
   "unverified_rights": [
     {
@@ -209,6 +210,11 @@
     {
       "source_id": "source-vera",
       "work_id": "work-vera",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-precioso-veneno",
+      "work_id": "work-precioso-veneno",
       "rights_status": "unchecked"
     }
   ],

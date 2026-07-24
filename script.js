@@ -3874,6 +3874,294 @@ Ahora, a la cama y con su pequeño Amor. Qué cosas tan sencillas necesitaba un 
   }
 ];
 
+const PRECIOSO_VENENO_QUOTES = [
+  {
+    t: `Kester dice que todas las historias, historias verdaderas o invenciones, empiezan mucho antes de los días del niño; sí, incluso antes del pequeño recién nacido en su cuna de juncos. Tal vez tú nunca durmieras en una cuna de juncos, pero en Sarn todos lo hicimos.
+
+Eran cunas limpias, blandas y verdes, donde el niño podía sentirse tan bien acomodado como una pequeña oruga —«mariposa pintada que aún ha de ser», las llama Kester— dormida en su capullo. Kester es muy particular con estas cosas. Nunca dirá «oruga». Dirá:
+
+—Hay muchas futuras mariposas entre nuestras coles, Prue.
+
+No dirá:
+
+—Es invierno.
+
+Dirá:
+
+—El verano duerme.
+
+Y no hay capullo tan pequeño ni de color tan triste que Kester no llame el comienzo de la floración.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "El verano duerme.", lang: "es"
+  },
+  {
+    t: `Éramos pocos allí, y quizá siempre lo seamos, porque hay algo desalentador en aquel lugar. Puede que sea el agua lamiendo, año tras año —mires donde mires, escuches donde escuches, agua—; o los grandes árboles, esperando y considerando a derecha e izquierda; o la quietud sin respiración del lugar, como si hubiese sido creado apenas una hora antes, y no creado para nosotros.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "no creado para nosotros.", lang: "es"
+  },
+  {
+    t: `Solo en nuestro robledal había siempre un aspecto de final de año, porque las hojas nuevas eran muy pardas. De modo que siempre había un soplo de octubre en nuestro mayo.
+
+Pero era agradable sentarse en los prados y mirar hacia las colinas lejanas. Los alerces se alzaban como agujas en su verde vivo, y el oro de las prímulas parecía metérsele a una en el corazón, y hasta el lago de Sarn no era más que una niebla azul dentro de una niebla amarilla de copas de abedul.
+
+Había tal sueño sobre el lugar que, si pasaba una abeja silvestre —no digamos ya un abejorro—, sobresaltaba como un grito.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "un soplo de octubre en nuestro mayo.", lang: "es"
+  },
+  {
+    t: `Fue en Plash, en casa de los Beguildy, mitad casa de piedra y mitad cueva, donde recibí mi enseñanza de libros. Tal vez te parezca extraño que una mujer de mi humilde condición sea capaz de escribir y deletrear y poner todas estas cosas en un libro.
+
+Y lo cierto es que, cuando yo era muchacha, ni siquiera muchas grandes damas sabían escribir mucho más que una carta de amor. Algunas apenas podían poner «esto es membrillo y manzana» en sus jaleas, y otras pasaban trabajos para firmar en el registro matrimonial.
+
+Muchas vinieron a mí, una y otra vez, para que les escribiera sus cartas de amor; y es una tarea vieja y amarga escribir las cartas de amor de otras mujeres desde el propio corazón ardiente.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "desde el propio corazón ardiente.", lang: "es"
+  },
+  {
+    t: `Una vez le pregunté a Beguildy dónde estaba el futuro, puesto que podía verlo con tanta claridad.
+
+—Está junto al pasado, niña, detrás del Tiempo —respondió.
+
+Nunca se podía ganar una discusión con el señor Beguildy. Pero cuando le conté a Kester lo que había dicho, Kester no quiso admitirlo. Dijo que el pasado y el futuro eran dos lanzaderas en manos del Señor, tejiendo la Eternidad. Él mismo era tejedor, lo cual quizá le hizo pensarlo así.
+
+Pero creo que no podemos saber qué son el pasado y el futuro. Somos tan pequeños y desvalidos sobre la tierra, que es como una cuna verde de juncos donde yace la humanidad, mirando las estrellas sin saber qué son.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "dos lanzaderas en manos del Señor", lang: "es"
+  },
+  {
+    t: `Eran como una lluvia tranquila después de la sequía. Solo que empecé a preguntarme cómo volveríamos en la resurrección. ¿Volveríamos claros o borrosos, como en el agua?
+
+¿Volvería Padre en el arrebato de cólera en que murió, o como un niño pequeño corriendo hacia la abuela con un ramillete de prímulas? ¿Sonreiría Madre con la misma sonrisa, o habría encontrado una luz en el pasadizo oscuro?
+
+¿Seguiría yo encerrada en un cuerpo que no deseaba, o nos permitirían tejer cuerpos a nuestro gusto con las hilazas de nuestras almas?`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "tejer cuerpos a nuestro gusto", lang: "es"
+  },
+  {
+    t: `—Y en la muerte no me importará —dije—. Porque, si obro bien y voy al cielo, me harán enteramente nueva y seré tan hermosa como una azucena sobre el lago. Y si obro mal y voy al infierno, venderé mi alma mil veces, pero compraré un rostro hermoso y me alegraré de tenerlo aunque esté condenada.
+
+Y corrí al desván y lloré durante mucho tiempo.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "compraré un rostro hermoso", lang: "es"
+  },
+  {
+    t: `La quietud y la soledad del lugar acabaron por consolarme. Abrí el postigo que daba al huerto, alrededor del cual habían guiado un gran peral, y saqué el tejido de mi bolsa.
+
+Sentada allí, mirando los árboles verdes, con el olor de nuestro heno llegando fresco en la brisa, mezclado con el de las rosas silvestres y la reina de los prados de la cuneta, escuché cantar a los mirlos cerca y lejos.
+
+Cuando estaban muy lejos apenas se los podía separar de los demás pájaros, pues había un verdadero encantamiento de ellos: zorzales, mosquiteros, pardillos de siete colores, pinzones y escribanos. Era un tejido de muchos hilos, con un hilo maestro de oro puro, y resultaba muy consolador escucharlo.
+
+Pensé que quizá el amor fuera así: muchos hilos de colores y un hilo maestro de oro puro.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "Pensé que quizá el amor fuera así", lang: "es"
+  },
+  {
+    t: `El desván estaba muy cerca del techo de paja, y había muchos nidos bajo los aleros y un gorjeo continuo de golondrinas. Entre sus vigas había un nido de abejas silvestres; se las oía producir un murmullo blando y soñoliento y, por la mañana y al anochecer, se las veía ir en fila al lago a buscar agua.
+
+Estando todo tan quieto, con las hermosas sombras de los manzanos poblando el huerto vacío, vino a mí —no puedo decir de dónde— una dulzura poderosísima que nunca había sentido.
+
+No era religiosa, como la bondad de un versículo escuchado durante un sermón. Estaba más allá de eso. Era como si una criatura hecha enteramente de luz hubiera llegado de pronto desde muy lejos y se hubiese acurrucado en mi pecho.
+
+Sobre todas las cosas apareció una belleza amable, como si un aire diferente reposara sobre ellas.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "una criatura hecha enteramente de luz", lang: "es"
+  },
+  {
+    t: `Me puse a pensar que toda aquella dicha del desván me había llegado por estar maldita. Si no hubiese tenido el labio partido, que me ahuyentaba hacia mi propia alma solitaria, aquello nunca habría venido a mí.
+
+Las manzanas se habrían amontonado en vano para contemplar un prodigio, porque yo nunca habría conocido la gloria que llegaba desde el otro lado del silencio.
+
+Mientras lo pensaba, surgió de ninguna parte aquella cosa hermosa y se acomodó en mi corazón como una semilla del núcleo mismo del amor.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "el otro lado del silencio.", lang: "es"
+  },
+  {
+    t: `Al contar esta historia hago poco caso del tiempo. Porque cuando el corazón sufre, ¿qué es el tiempo? Nada.
+
+¿Escucha la voz del vigilante contando las horas que se apresuran el novio que ha pasado tanta hambre de su amor? ¿Le importa al que muere al amanecer hacia qué hora apunta el reloj cuando sale el sol, un sol que ya no sale para él?
+
+Y cuando nosotros, pobres criaturas, nos levantamos contra todo el poder de las cosas que existen, luchando por abrirnos camino hacia nuestra paz —o hacia lo que creemos que es nuestra paz—, cuando quedamos aturdidos como un animal acosado en el ruedo, olvidamos el tiempo.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "¿qué es el tiempo?", lang: "es"
+  },
+  {
+    t: `Abajo, en el granero oscuro, cantó el gallo, fino y dulce, y pensé que no sonaba como un ave terrenal; aunque quizá fuese porque yo estaba en el desván, donde las cosas siempre eran nuevas.
+
+Tal vez te parezca extraño que una mujer como yo pensara tales cosas, pues siempre trabajé con las manos en tareas pobres y ásperas, mientras que una esperaría esos pensamientos de grandes damas sentadas ante sus tapices.
+
+Pero estaba tan sola y tenía tanto tiempo para pensar, y con aquello y el saber de los libros que iba adquiriendo, toda clase de pensamientos crecieron en mi mente como juncos floridos y nomeolvides que brotan en un terreno pobre y pantanoso donde, de otro modo, no habría nada.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "como juncos floridos y nomeolvides que brotan en un terreno pobre", lang: "es"
+  },
+  {
+    t: `Entonces volvía en mí y solo veía las altas nubes, que no se habían movido; los altos setos con reina de los prados debajo; los bosques, las colinas y el dulce aire azul, con alondras suspendidas como si los de arriba las hubieran dejado caer de unos hilos.
+
+Temblaban tanto con su canto alegre que amenazaban con romperlos. No les importaba en absoluto quién ganaba el premio ni cuál cantaba mejor o más alto, mientras todas cantaran, mientras a ninguna le faltara un nido, el buche lleno, un trago de rocío y espacio donde cantar.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "espacio donde cantar.", lang: "es"
+  },
+  {
+    t: `¿Cómo era su aspecto? ¿Qué apariencia tenía? ¿Era hermoso? Es difícil decirlo. En el amor no hay rostros, ni apariencia exterior, ni recuento de facciones.
+
+Cuando una no es más que una polilla en la llama de sus ojos, ¿puede decir cuál es su estatura o si es moreno o rubio?
+
+¿Sabremos, cuando lleguemos a la presencia de quien nos creó, qué apariencia exterior tiene su majestad? No. Solo nuestros corazones temblarán en la luz.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "nuestros corazones temblarán en la luz.", lang: "es"
+  },
+  {
+    t: `Muchas veces es más fácil morir por amor que hacer el ridículo por amor.
+
+Eso pensé mientras me izaban hasta la habitación oscura dentro de una nube de humo que me hacía jadear, con las manos extendidas para no golpearme contra los lados de la trampilla, sin saber si reírme de la necedad de todo aquello o llorar por la tristeza de aquella representación que tanto se burlaba de mí.
+
+Porque allí estaba yo, fingiendo ser la mujer más hermosa que jamás había existido y, además, una diosa, cuando en realidad estaba maldita, como ya sabes.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "hacer el ridículo por amor.", lang: "es"
+  },
+  {
+    t: `Me cubrí el rostro con la muselina y miré de soslayo a través de ella hacia aquel prodigio.
+
+Porque para mí era entonces, y fue siempre, un prodigio; no por su aspecto ni por nada que hiciera, sino por el poder silencioso de lo que era, el poder reunido dentro de él, tremendo como una gran montaña sobre el cielo, que una no podía medir ni nombrar, sino únicamente sentir.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "el poder silencioso de lo que era", lang: "es"
+  },
+  {
+    t: `Aquello, sin embargo, no pertenecía al día, sino a algo que estaba más allá. No quise preguntarme qué era. Porque, cuando el trepador azul llega a su propio árbol, no pregunta quién lo plantó ni qué nombre le dan los hombres. El árbol lo es todo para el trepador, y aquello lo era todo para mí.
+
+Más tarde, cuando ya había aprendido a leer el Libro, leí:
+
+—Su bandera sobre mí fue amor.
+
+De pronto, por el camino quieto, entre las sombras y la niebla de mis propias pestañas, vi venir a alguien. Era un hombre. Y, si existe en esa palabra algún significado en el que yo no haya pensado, que quienes lean lo pongan en ella. Que pongan la fuerza y el poder, la bondad y la paciencia, la severidad y la majestuosa rectitud de todos los hombres buenos dentro de esa palabra, y que él la lleve. Porque era él mismo: Kester Woodseaves, el maestro.
+
+Venía sin prisa, como quien tiene algún gran asunto que atender.
+
+¿Qué hice yo, que sabía que su sonrisa era mi verano? Pues me levanté con tanta prisa que volqué los narcisos.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "su sonrisa era mi verano", lang: "es"
+  },
+  {
+    t: `Siempre tuvo una voz fuera de lo común. Era como si, cuando hablaba, el sonido de su voz hiciera nuevo el mundo, sin importarle el mundo anterior.
+
+Era como un espino ancho y florido en un día sofocante de principios de junio. Una podía sentarse debajo y descansar.
+
+Y era como el fuego quieto del hogar en una noche de invierno, cuando Edric el Salvaje anda por el bosque, las cortinas están cerradas, las velas despabiladas, todo asegurado y el dueño de la casa ha regresado al hogar.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "hiciera nuevo el mundo", lang: "es"
+  },
+  {
+    t: `Y cuando miré atrás me pareció —aunque me dije que debía de ser imaginación— que aquellos ojos, tan vivos y brillantes, descansaban sobre mí, me sonreían, me acogían como amiga y me suplicaban.
+
+Eran como los ojos de un hombre cuando contempla largamente a su querida compañera, que le ha entregado su paz a cambio de la suya, su alma para que la guarde y su cuerpo para su alegría.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "le ha entregado su paz", lang: "es"
+  },
+  {
+    t: `Me convenían aquella quietud y aquella melancolía, porque yo también estaba triste y callada. El hombre al que amaba estaba herido y no podía llegar hasta él.
+
+Olvidaba que la señora Callard, con seis hijos, sabía muy bien cómo cuidar de seres desvalidos, porque los enamorados creen que nadie puede bendecir ni socorrer a su amor salvo ellos mismos. Y quizá haya algo de verdad en eso, quizá más que algo.
+
+Seguimos y seguimos por un territorio que no era montañoso ni llano, en una noche que no era oscura ni luminosa, sintiéndonos ni alegres ni apenados. Pensé que parecíamos personas destinadas a algún lugar más allá del mundo que no era ni el infierno ni el cielo.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "algún lugar más allá del mundo", lang: "es"
+  },
+  {
+    t: `El lago estaba rodeado tres veces, como si tres veces hubieran pronunciado un hechizo sobre él.
+
+Primero estaba el círculo de robles y alerces, sauces, alisos y hayas, solemnes y fuertes, para mantener fuera al mundo. Después estaba el círculo de juncos, que suspiraban débilmente, frágiles y dispersos, pero bastantes, con sus largas sombras temblorosas, para mantener dentro los hechizos.
+
+Luego estaba el círculo de azucenas, tendidas allí como si Jesús, caminando sobre el agua, las hubiese colocado con sus manos frescas antes de volverse hacia la multitud y decir:
+
+—Mirad las azucenas.
+
+Y como si ellas no fueran suficientes para sacudirte el alma, debajo de cada azucena —blanca y verde o de oro pálido— estaba su sombra luminosa, como si fuese su ángel.
+
+Durante el largo día imperturbable, las azucenas y sus ángeles se miraban unas a otros y estaban contentos.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "las azucenas y sus ángeles", lang: "es"
+  },
+  {
+    t: `En un junco alto, junto a la orilla, encontré una libélula que apenas empezaba a salir de su cuerpo, y me incliné muy cerca, conteniendo casi la respiración, para contemplar el milagro.
+
+La vieja piel se abrió y consiguió sacar la cabeza. Entonces empezó la lucha, el trabajo de quedar libre: primero las patas, luego los hombros y las alas blandas y arrugadas. Parecía una criatura poseída; unas veces sufría convulsiones y otras quedaba rígida como un cadáver.
+
+Poco antes del final permaneció inmóvil durante mucho tiempo, como si se preguntara si se atrevía a quedar completamente libre en un mundo enteramente nuevo. Después dio un gran impulso, un tirón como de estallido, y salió.
+
+Subió un poco más por el junco, soñolienta y agotada como un niño después de un largo día de feria, y se quedó adormecida mientras empezaban a crecerle las alas.
+
+—Bueno —le dije, entre una pequeña risa y algo muy parecido a un sollozo—, lo has conseguido. Te ha costado algo, pero has conseguido quedar libre.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "has conseguido quedar libre.", lang: "es"
+  },
+  {
+    t: `—Bueno —dijo—, hay dos o tres personas que te conocen, Prue. Y pocas te conocen y no te quieren. Supongo que he ido espigando un poco en sus corazones. Y creo que no hay mucho de ti que yo no conozca, Prue.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "pocas te conocen y no te quieren.", lang: "es"
+  },
+  {
+    t: `¡Qué día fue aquel! ¿Oro? Claro que era oro. Espigué y espigué, y cada brazada parecía un tesoro precioso y celestial.
+
+Casi todos los campos estaban limpios y desnudos cuando tomamos el té bajo la sombra del seto, porque no refrescó al alargarse las sombras. Era uno de esos días de mediados de septiembre en que todo el calor reunido durante el verano parece gastarse y derrocharse por amor al grano dorado.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "por amor al grano dorado.", lang: "es"
+  },
+  {
+    t: `La mañana llegó fresca y dulce, y los grajos salieron en torrente por el cielo ventoso hacia nuestros rastrojos, dejando caer aquí y allá sus graznidos soñolientos y satisfechos.
+
+De camino al ordeño me detuve junto a las parvas para dar gracias por el cereal.
+
+¿Por qué pensé entonces en aquellas palabras: «el precioso veneno»? ¿Por qué pensé en aquello que los hombres recogen con la cosecha y atesoran, aunque sea como hierba de fuego dentro de un almiar?
+
+¿Por qué se agitó un frío presagio de horror en mi corazón, donde todo era alegre y cálido, como una helada repentina que cae sobre el jardín una tarde de otoño, cuando las dalias están en lo más alto de su orgullo —color de vino y oro claro, cada pétalo en su sitio, floreciendo por encima del muro con las abejas alrededor—, de modo que por la mañana todo aparece entristecido por el invierno?`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "el precioso veneno", lang: "es"
+  },
+  {
+    t: `Todos aquellos pensamientos, confusos y aturdidos, vinieron a mí mientras me aferraba a la verja con el viento abrasador en la cara, demasiado paralizada para moverme.
+
+Hay desgracias que hacen que una se levante de un salto y corra para salvarse; pero hay otras demasiado terribles para eso, porque no dejan nada que hacer.
+
+Entonces una quietud cae sobre el alma, como la quietud del conejo cuando la comadreja lo contempla con ardor y él sabe que ya no queda nada que hacer.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "una quietud cae sobre el alma", lang: "es"
+  },
+  {
+    t: `Omitieron la parte de los terrones a la cabeza y a los pies, porque el agua era su sepultura.
+
+¡Ah! Toda aquella gran extensión de agua no era demasiado para formar la tumba de un hombre tan fuerte. La niebla de una milla que reposaba sobre el lugar no era un sudario demasiado grandioso.
+
+Porque, aunque se equivocó, hizo el mal y dañó a otros con su fuerza, nunca obró con mezquindad, ni entregó un trabajo mal hecho, ni mintió. No podía ceder, del mismo modo que el granito no puede deshacerse como la arenisca.
+
+Y ahora había jugado su última partida de Conquistar, y aquello con lo que jugó no fue una de las grandes caracolas rosadas y blancas, sino su propia vida.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "el agua era su sepultura.", lang: "es"
+  },
+  {
+    t: `Allí, mirándome desde su caballo con una mirada tan detenida y tan ardiente de vida que, si no hubiese estado segura de lo contrario, habría pensado que me amaba, estaba nada menos que Kester Woodseaves.
+
+Parecía un poco mayor, y su rostro estaba aún más limpiamente trazado que antes, como si el alma hubiera estado ocupada cincelándolo. En cuanto a sus ojos, toda la luz del cielo estaba en ellos, además de un toque muy agradable del viejo Adán.
+
+Me recorrieron de la cabeza a los pies, y descansé.
+
+¡Ah! Atada al taburete de inmersión, en un estado tan lamentable que ninguna mujer respetable elegiría que la viera hombre alguno —y mucho menos el hombre al que amaba—, descansé.
+
+Ya nada me importaba. Nada me preocupaba. Kester estaba allí. Kester había tomado las cosas en sus manos. ¿Qué podía sucederme?
+
+Tal era mi fe que, aunque hubiera trescientas personas, más o menos, contra mí y solo Kester a mi favor, sabía que estaba a salvo. Podría haberme vuelto de lado y dormido en aquel viejo taburete como si fuese una cama de plumas, tan tranquila estaba mi mente.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "Kester estaba allí.", lang: "es"
+  },
+  {
+    t: `Se inclinó. Puso los brazos a mi alrededor. Me alzó hasta la silla. Fue exactamente como en el sueño que había tenido.
+
+Y, como en el sueño, Felena levantó la mirada suplicante y él no reparó en ella, y el ruido de la gente fue apagándose: las risas, las maldiciones de Huglet y Grimble, las palmadas de los niños Callard y la voz aguda del abuelo Callard contando un combate de lucha ocurrido casi un siglo antes.
+
+Todo descendió, todo se desvaneció en el aire quieto. Solo quedó el viento de la tarde levantando las ramas, como un amante que levanta el largo cabello de su amada.`,
+    a: "Mary Webb", obra: "Precioso veneno, Mary Webb",
+    highlight: "el viento de la tarde levantando las ramas", lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -3904,6 +4192,7 @@ const QUOTES = [
   ...LA_BESTIA_EN_LA_JUNGLA_QUOTES,
   ...EL_PAPEL_PINTADO_DE_AMARILLO_QUOTES,
   ...VERA_QUOTES,
+  ...PRECIOSO_VENENO_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([

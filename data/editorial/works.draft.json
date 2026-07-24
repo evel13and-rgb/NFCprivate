@@ -205,5 +205,14 @@
     "legacy_work": "Vera, Elizabeth von Arnim",
     "status": "draft",
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-precioso-veneno",
+    "title": "Precioso veneno",
+    "slug": "precioso-veneno",
+    "author_id": "author-mary-webb",
+    "legacy_work": "Precioso veneno, Mary Webb",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   }
 ]

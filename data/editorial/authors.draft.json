@@ -240,5 +240,16 @@
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-mary-webb",
+    "canonical_name": "Mary Webb",
+    "slug": "mary-webb",
+    "sort_name": "Mary Webb",
+    "inferred_from": [
+      "Precioso veneno, Mary Webb"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   }
 ]

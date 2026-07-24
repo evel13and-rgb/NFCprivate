@@ -334,5 +334,36 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-mary-webb",
+    "name": "Mary Gladys Webb",
+    "birth_year": 1881,
+    "death_year": 1927,
+    "country": "Reino Unido —Inglaterra—",
+    "language": "Inglés",
+    "period": "Comienzos del siglo XX; periodo eduardiano y años de entreguerras",
+    "movement": "Narrativa rural y regional inglesa; novela lírica de sensibilidad romántica y mística.",
+    "short_biography": "Mary Gladys Webb —nacida Mary Gladys Meredith— fue una novelista y poeta inglesa estrechamente vinculada a Shropshire, región cuyos paisajes, tradiciones y formas de vida atraviesan toda su obra. Su escritura combina una observación minuciosa de la naturaleza con el folclore rural, la espiritualidad y la exploración de personajes marginados. Aunque durante su vida obtuvo un reconocimiento limitado, Precioso veneno consolidó posteriormente su reputación como autora.",
+    "themes": [
+      "La naturaleza",
+      "El mundo rural",
+      "La superstición",
+      "El deseo",
+      "La marginación",
+      "Los prejuicios sociales",
+      "La violencia",
+      "La ambición",
+      "La condición femenina",
+      "El amor",
+      "La búsqueda de una dimensión espiritual en la vida cotidiana"
+    ],
+    "sources": [
+      "Mary Webb Society.",
+      "Shropshire Council.",
+      "Oxford Reference."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]
