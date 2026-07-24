@@ -179,5 +179,97 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-las-cerezas-del-cementerio",
+    "author_id": "author-gabriel-miro",
+    "title": "Las cerezas del cementerio",
+    "original_title": "Las cerezas del cementerio",
+    "publication_year": 1910,
+    "genre": "Novela lírica; narrativa psicológica, amorosa y simbólica.",
+    "short_summary": "Félix Valdivia, un joven enfermizo, sensible e imaginativo, regresa a la comarca levantina de sus antepasados. Allí se enamora de Beatriz, una mujer casada y mayor que él, vinculada además al pasado de su familia. La relación se desarrolla bajo el peso del deseo, los recuerdos, la enfermedad y una sensación constante de fatalidad. Más que avanzar mediante una trama convencional, la novela sigue la conciencia de Félix y su forma intensamente sensorial de percibir el amor, el paisaje y la proximidad de la muerte.",
+    "context": "Publicada en 1910, la obra marca el comienzo de la madurez literaria de Gabriel Miró. La primera edición apareció en Barcelona, publicada por E. Domenech. La Biblioteca Nacional la considera su primera gran novela y señala en ella la influencia del misticismo y el decadentismo. También es una de las principales manifestaciones españolas de la novela lírica: el lenguaje, la percepción y la conciencia del protagonista tienen tanta importancia como los acontecimientos narrados.",
+    "themes": [
+      "El amor imposible",
+      "El deseo",
+      "La transgresión",
+      "La enfermedad",
+      "La muerte",
+      "La memoria familiar",
+      "La ausencia",
+      "La represión social y religiosa",
+      "La juventud amenazada",
+      "La sensualidad del paisaje",
+      "La unión entre belleza y destrucción"
+    ],
+    "tone": "Lírico, sensual, melancólico y fatalista. La belleza luminosa del paisaje mediterráneo convive con una presencia continua de la enfermedad y la muerte. La prosa es densa, musical y profundamente sensorial: los colores, olores, sabores y texturas no sirven únicamente para describir el mundo, sino para expresar la conciencia emocional de Félix.",
+    "sources": [
+      "Biblioteca Virtual Miguel de Cervantes, edición digital basada en las Obras completas de Gabriel Miró y facsímil de la edición original de 1910."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "work_id": "work-el-papel-pintado-de-amarillo",
+    "author_id": "author-charlotte-perkins-gilman",
+    "title": "El papel pintado amarillo",
+    "original_title": "The Yellow Wall-Paper",
+    "publication_year": 1892,
+    "genre": "Relato breve; narrativa gótica, psicológica y feminista.",
+    "short_summary": "Una mujer que acaba de ser madre es llevada por su marido, que también es médico, a una casa de campo para recuperarse de una alteración nerviosa. Allí permanece recluida en una habitación y tiene prohibido trabajar, escribir o tomar decisiones sobre su tratamiento. Aislada y privada de estímulos, comienza a obsesionarse con el desagradable papel amarillo de las paredes, en cuyo dibujo cree descubrir la figura de una mujer atrapada que intenta escapar.",
+    "context": "Gilman escribió el relato en 1890 y lo publicó en enero de 1892 en The New England Magazine, bajo el nombre de Charlotte Perkins Stetson. La historia está relacionada con la grave depresión que sufrió después del nacimiento de su hija y con la llamada «cura de reposo» que le fue prescrita: aislamiento, inactividad y abandono casi completo del trabajo intelectual. Gilman transformó esa experiencia en una crítica tanto de ciertos tratamientos médicos como de una sociedad que anulaba la voz y la autonomía de las mujeres. La escritura secreta de la protagonista es esencial: mientras su marido interpreta su conducta y decide qué le conviene, el diario le permite conservar una voz propia. Sin embargo, el encierro termina deformando esa voz hasta confundir la liberación con la ruptura psicológica.",
+    "themes": [
+      "El encierro",
+      "La salud mental",
+      "La pérdida de autonomía",
+      "La autoridad médica",
+      "El control dentro del matrimonio",
+      "La represión de la creatividad",
+      "La maternidad",
+      "La identidad",
+      "La percepción",
+      "La locura",
+      "El deseo de liberación"
+    ],
+    "tone": "Íntimo, claustrofóbico, inquietante y progresivamente alucinado. La voz comienza siendo razonable e irónica, pero se vuelve cada vez más fragmentaria y obsesiva. La ambigüedad final une horror y liberación: la protagonista parece escapar de una forma de sometimiento al mismo tiempo que pierde definitivamente el contacto con la realidad.",
+    "sources": [
+      "National Library of Medicine, edición digital de la publicación original de The Yellow Wall-Paper y exposición The Literature of Prescription.",
+      "Project Gutenberg, texto completo de The Yellow Wallpaper.",
+      "National Endowment for the Humanities, «Beyond “The Yellow Wallpaper”»."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "work_id": "work-el-retrato-de-dorian-gray",
+    "author_id": "author-oscar-wilde",
+    "title": "El retrato de Dorian Gray",
+    "original_title": "The Picture of Dorian Gray",
+    "publication_year": 1891,
+    "genre": "Novela gótica, filosófica y decadentista; única novela publicada por Oscar Wilde.",
+    "short_summary": "Dorian Gray es un joven de extraordinaria belleza que contempla el retrato que ha pintado su amigo Basil Hallward y desea permanecer siempre joven mientras el cuadro envejece en su lugar. Su deseo se cumple: Dorian conserva intacto su aspecto, pero el retrato comienza a reflejar el paso del tiempo, sus actos crueles y la degradación de su conciencia. Influido por las ideas hedonistas de lord Henry Wotton, se entrega a una vida de placer mientras oculta el cuadro como testimonio de su verdadera naturaleza.",
+    "context": "La primera versión apareció en julio de 1890 en Lippincott’s Monthly Magazine y provocó una fuerte controversia por su tratamiento del deseo, la corrupción moral y la doble vida. Wilde revisó y amplió el texto, y en abril de 1891 publicó la versión que se considera definitiva. Esta edición incorporó nuevos capítulos y el célebre prefacio sobre la independencia del arte respecto de los juicios morales. La novela pertenece al gótico victoriano tardío y explora las tensiones del fin de siècle: bajo la respetabilidad social existen deseos, secretos y formas de corrupción que no pueden mostrarse públicamente. El retrato funciona como una conciencia visible y como la prueba de la distancia entre la belleza exterior de Dorian y su progresivo deterioro interior.",
+    "themes": [
+      "La juventud y el envejecimiento",
+      "La belleza",
+      "El narcisismo",
+      "La influencia",
+      "El hedonismo",
+      "La culpa",
+      "La corrupción moral",
+      "La doble vida",
+      "La conciencia",
+      "La identidad",
+      "El deseo",
+      "La relación entre arte y realidad",
+      "La hipocresía de la sociedad victoriana"
+    ],
+    "tone": "Elegante, irónico, sensual y progresivamente oscuro. Los diálogos de lord Henry aportan ingenio, provocación y ligereza, mientras que la evolución del retrato introduce una atmósfera gótica cada vez más inquietante. La belleza verbal de la novela convive con una sensación constante de decadencia, secreto y destrucción.",
+    "sources": [
+      "British Library, «Oscar Wilde’s The Picture of Dorian Gray», con información sobre sus dos versiones, su contexto gótico y sus principales temas.",
+      "Poetry Foundation, ficha biográfica y literaria de Oscar Wilde."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

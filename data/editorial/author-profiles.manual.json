@@ -182,5 +182,97 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-gabriel-miro",
+    "name": "Gabriel Miró Ferrer",
+    "birth_year": 1879,
+    "death_year": 1930,
+    "country": "España",
+    "language": "Español",
+    "period": "Finales del siglo XIX y primer tercio del siglo XX",
+    "movement": "Modernismo; novela lírica. Su escritura incorpora elementos simbolistas, decadentistas e impresionistas, aunque mantiene una trayectoria literaria muy personal.",
+    "short_biography": "Gabriel Miró fue un novelista y prosista español nacido en Alicante. Estudió con los jesuitas en Orihuela y se licenció en Derecho, aunque orientó pronto su actividad hacia la literatura y el periodismo. Alcanzó reconocimiento nacional en 1908 al ganar el concurso de El Cuento Semanal con Nómada. Su obra se distingue por una prosa de gran elaboración verbal, riqueza sensorial, musicalidad y precisión descriptiva. Las cerezas del cementerio, publicada en 1910, está considerada su primera gran novela y una obra decisiva en la maduración de su estilo.",
+    "themes": [
+      "El deseo",
+      "La muerte",
+      "La enfermedad",
+      "La memoria",
+      "El paisaje mediterráneo",
+      "La sensualidad",
+      "El paso del tiempo",
+      "La frustración amorosa",
+      "La religiosidad",
+      "La represión moral",
+      "La relación entre conciencia y mundo exterior"
+    ],
+    "sources": [
+      "Biblioteca Nacional de España, «Miró, Gabriel».",
+      "Biblioteca Virtual Miguel de Cervantes, portal dedicado a Gabriel Miró y apunte biobibliográfico de Miguel Ángel Lozano Marco."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "author_id": "author-charlotte-perkins-gilman",
+    "name": "Charlotte Perkins Gilman",
+    "birth_year": 1860,
+    "death_year": 1935,
+    "country": "Estados Unidos",
+    "language": "Inglés",
+    "period": "Finales del siglo XIX y comienzos del siglo XX",
+    "movement": "Literatura feminista estadounidense; realismo social, narrativa utópica y reformismo progresista.",
+    "short_biography": "Charlotte Perkins Gilman fue escritora, ensayista, conferenciante y pensadora social. Defendió la independencia económica de las mujeres y cuestionó la división tradicional entre la vida doméstica y la actividad intelectual. Escribió narrativa, poesía y numerosos ensayos, entre ellos Women and Economics. También fundó y dirigió la revista The Forerunner. Aunque durante su vida fue conocida principalmente como teórica y reformadora social, su recuperación crítica desde la década de 1970 convirtió El papel pintado amarillo en su obra más reconocida.",
+    "themes": [
+      "La autonomía de las mujeres",
+      "La dependencia económica",
+      "El matrimonio",
+      "La maternidad",
+      "El encierro doméstico",
+      "La creación intelectual",
+      "La salud mental",
+      "Las relaciones de poder",
+      "La crítica de las convenciones sociales"
+    ],
+    "sources": [
+      "National Endowment for the Humanities, «Charlotte Perkins Gilman Did More Than Write One Classic Short Story».",
+      "Harvard Radcliffe Institute, «The Evolution of Charlotte Perkins Gilman».",
+      "Poetry Foundation, ficha biográfica de Charlotte Perkins Gilman."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "author_id": "author-oscar-wilde",
+    "name": "Oscar Fingal O’Flahertie Wills Wilde",
+    "birth_year": 1854,
+    "death_year": 1900,
+    "country": "Irlanda —entonces integrada en el Reino Unido de Gran Bretaña e Irlanda—",
+    "language": "Inglés",
+    "period": "Segunda mitad del siglo XIX; época victoriana y fin de siècle",
+    "movement": "Esteticismo y decadentismo; literatura victoriana. Wilde fue una de las figuras más representativas de la defensa de la belleza, el individualismo y la autonomía del arte frente a la moral convencional.",
+    "short_biography": "Oscar Wilde fue un escritor, dramaturgo, poeta y ensayista irlandés. Estudió en el Trinity College de Dublín y en la Universidad de Oxford, donde recibió la influencia de Walter Pater y John Ruskin. Se convirtió en una figura célebre de la vida cultural londinense gracias a su ingenio, su estilo provocador y sus comedias teatrales. En 1895 fue condenado a prisión bajo las leyes que criminalizaban las relaciones entre hombres. Tras salir de la cárcel vivió principalmente en Francia y murió en París en 1900.",
+    "themes": [
+      "La belleza",
+      "El arte",
+      "El deseo",
+      "La identidad",
+      "La máscara social",
+      "La hipocresía",
+      "La moral",
+      "La culpa",
+      "El placer",
+      "La juventud",
+      "La decadencia",
+      "El individualismo",
+      "El conflicto entre apariencia y verdad"
+    ],
+    "sources": [
+      "Poetry Foundation, «Oscar Wilde».",
+      "Library of Congress, cronología de Oscar Wilde.",
+      "The Metropolitan Museum of Art, retrato y ficha biográfica de Oscar Wilde."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

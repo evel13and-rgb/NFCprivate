@@ -189,6 +189,101 @@
         "Virginia Woolf Society of Great Britain, «Virginia Woolf: A Short Biography».",
         "Tate, «Lifestyle and Legacy of the Bloomsbury Group»."
       ]
+    },
+    {
+      "author_id": "author-gabriel-miro",
+      "display_name": "Gabriel Miró Ferrer",
+      "birth_year": 1879,
+      "death_year": 1930,
+      "country": "España",
+      "language": "Español",
+      "period": "Finales del siglo XIX y primer tercio del siglo XX",
+      "movement": "Modernismo; novela lírica. Su escritura incorpora elementos simbolistas, decadentistas e impresionistas, aunque mantiene una trayectoria literaria muy personal.",
+      "bio_short": "Gabriel Miró fue un novelista y prosista español nacido en Alicante. Estudió con los jesuitas en Orihuela y se licenció en Derecho, aunque orientó pronto su actividad hacia la literatura y el periodismo. Alcanzó reconocimiento nacional en 1908 al ganar el concurso de El Cuento Semanal con Nómada. Su obra se distingue por una prosa de gran elaboración verbal, riqueza sensorial, musicalidad y precisión descriptiva. Las cerezas del cementerio, publicada en 1910, está considerada su primera gran novela y una obra decisiva en la maduración de su estilo.",
+      "bio_long": null,
+      "themes": [
+        "El deseo",
+        "La muerte",
+        "La enfermedad",
+        "La memoria",
+        "El paisaje mediterráneo",
+        "La sensualidad",
+        "El paso del tiempo",
+        "La frustración amorosa",
+        "La religiosidad",
+        "La represión moral",
+        "La relación entre conciencia y mundo exterior"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Biblioteca Nacional de España, «Miró, Gabriel».",
+        "Biblioteca Virtual Miguel de Cervantes, portal dedicado a Gabriel Miró y apunte biobibliográfico de Miguel Ángel Lozano Marco."
+      ]
+    },
+    {
+      "author_id": "author-charlotte-perkins-gilman",
+      "display_name": "Charlotte Perkins Gilman",
+      "birth_year": 1860,
+      "death_year": 1935,
+      "country": "Estados Unidos",
+      "language": "Inglés",
+      "period": "Finales del siglo XIX y comienzos del siglo XX",
+      "movement": "Literatura feminista estadounidense; realismo social, narrativa utópica y reformismo progresista.",
+      "bio_short": "Charlotte Perkins Gilman fue escritora, ensayista, conferenciante y pensadora social. Defendió la independencia económica de las mujeres y cuestionó la división tradicional entre la vida doméstica y la actividad intelectual. Escribió narrativa, poesía y numerosos ensayos, entre ellos Women and Economics. También fundó y dirigió la revista The Forerunner. Aunque durante su vida fue conocida principalmente como teórica y reformadora social, su recuperación crítica desde la década de 1970 convirtió El papel pintado amarillo en su obra más reconocida.",
+      "bio_long": null,
+      "themes": [
+        "La autonomía de las mujeres",
+        "La dependencia económica",
+        "El matrimonio",
+        "La maternidad",
+        "El encierro doméstico",
+        "La creación intelectual",
+        "La salud mental",
+        "Las relaciones de poder",
+        "La crítica de las convenciones sociales"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "National Endowment for the Humanities, «Charlotte Perkins Gilman Did More Than Write One Classic Short Story».",
+        "Harvard Radcliffe Institute, «The Evolution of Charlotte Perkins Gilman».",
+        "Poetry Foundation, ficha biográfica de Charlotte Perkins Gilman."
+      ]
+    },
+    {
+      "author_id": "author-oscar-wilde",
+      "display_name": "Oscar Fingal O’Flahertie Wills Wilde",
+      "birth_year": 1854,
+      "death_year": 1900,
+      "country": "Irlanda —entonces integrada en el Reino Unido de Gran Bretaña e Irlanda—",
+      "language": "Inglés",
+      "period": "Segunda mitad del siglo XIX; época victoriana y fin de siècle",
+      "movement": "Esteticismo y decadentismo; literatura victoriana. Wilde fue una de las figuras más representativas de la defensa de la belleza, el individualismo y la autonomía del arte frente a la moral convencional.",
+      "bio_short": "Oscar Wilde fue un escritor, dramaturgo, poeta y ensayista irlandés. Estudió en el Trinity College de Dublín y en la Universidad de Oxford, donde recibió la influencia de Walter Pater y John Ruskin. Se convirtió en una figura célebre de la vida cultural londinense gracias a su ingenio, su estilo provocador y sus comedias teatrales. En 1895 fue condenado a prisión bajo las leyes que criminalizaban las relaciones entre hombres. Tras salir de la cárcel vivió principalmente en Francia y murió en París en 1900.",
+      "bio_long": null,
+      "themes": [
+        "La belleza",
+        "El arte",
+        "El deseo",
+        "La identidad",
+        "La máscara social",
+        "La hipocresía",
+        "La moral",
+        "La culpa",
+        "El placer",
+        "La juventud",
+        "La decadencia",
+        "El individualismo",
+        "El conflicto entre apariencia y verdad"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Poetry Foundation, «Oscar Wilde».",
+        "Library of Congress, cronología de Oscar Wilde.",
+        "The Metropolitan Museum of Art, retrato y ficha biográfica de Oscar Wilde."
+      ]
     }
   ],
   "works": [
@@ -396,6 +491,110 @@
         "Oxford University Press, edición de Orlando: A Biography."
       ],
       "fragment_count": 25
+    },
+    {
+      "work_id": "work-las-cerezas-del-cementerio",
+      "title": "Las cerezas del cementerio",
+      "display_title": "Las cerezas del cementerio",
+      "original_title": "Las cerezas del cementerio",
+      "author_id": "author-gabriel-miro",
+      "publication_year": 1910,
+      "genre": "Novela lírica; narrativa psicológica, amorosa y simbólica.",
+      "language": null,
+      "summary_short": "Félix Valdivia, un joven enfermizo, sensible e imaginativo, regresa a la comarca levantina de sus antepasados. Allí se enamora de Beatriz, una mujer casada y mayor que él, vinculada además al pasado de su familia. La relación se desarrolla bajo el peso del deseo, los recuerdos, la enfermedad y una sensación constante de fatalidad. Más que avanzar mediante una trama convencional, la novela sigue la conciencia de Félix y su forma intensamente sensorial de percibir el amor, el paisaje y la proximidad de la muerte.",
+      "summary_long": null,
+      "context_notes": "Publicada en 1910, la obra marca el comienzo de la madurez literaria de Gabriel Miró. La primera edición apareció en Barcelona, publicada por E. Domenech. La Biblioteca Nacional la considera su primera gran novela y señala en ella la influencia del misticismo y el decadentismo. También es una de las principales manifestaciones españolas de la novela lírica: el lenguaje, la percepción y la conciencia del protagonista tienen tanta importancia como los acontecimientos narrados.",
+      "themes": [
+        "El amor imposible",
+        "El deseo",
+        "La transgresión",
+        "La enfermedad",
+        "La muerte",
+        "La memoria familiar",
+        "La ausencia",
+        "La represión social y religiosa",
+        "La juventud amenazada",
+        "La sensualidad del paisaje",
+        "La unión entre belleza y destrucción"
+      ],
+      "tone_notes": "Lírico, sensual, melancólico y fatalista. La belleza luminosa del paisaje mediterráneo convive con una presencia continua de la enfermedad y la muerte. La prosa es densa, musical y profundamente sensorial: los colores, olores, sabores y texturas no sirven únicamente para describir el mundo, sino para expresar la conciencia emocional de Félix.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Biblioteca Virtual Miguel de Cervantes, edición digital basada en las Obras completas de Gabriel Miró y facsímil de la edición original de 1910."
+      ],
+      "fragment_count": 28
+    },
+    {
+      "work_id": "work-el-papel-pintado-de-amarillo",
+      "title": "El papel pintado amarillo",
+      "display_title": "El papel pintado amarillo",
+      "original_title": "The Yellow Wall-Paper",
+      "author_id": "author-charlotte-perkins-gilman",
+      "publication_year": 1892,
+      "genre": "Relato breve; narrativa gótica, psicológica y feminista.",
+      "language": null,
+      "summary_short": "Una mujer que acaba de ser madre es llevada por su marido, que también es médico, a una casa de campo para recuperarse de una alteración nerviosa. Allí permanece recluida en una habitación y tiene prohibido trabajar, escribir o tomar decisiones sobre su tratamiento. Aislada y privada de estímulos, comienza a obsesionarse con el desagradable papel amarillo de las paredes, en cuyo dibujo cree descubrir la figura de una mujer atrapada que intenta escapar.",
+      "summary_long": null,
+      "context_notes": "Gilman escribió el relato en 1890 y lo publicó en enero de 1892 en The New England Magazine, bajo el nombre de Charlotte Perkins Stetson. La historia está relacionada con la grave depresión que sufrió después del nacimiento de su hija y con la llamada «cura de reposo» que le fue prescrita: aislamiento, inactividad y abandono casi completo del trabajo intelectual. Gilman transformó esa experiencia en una crítica tanto de ciertos tratamientos médicos como de una sociedad que anulaba la voz y la autonomía de las mujeres. La escritura secreta de la protagonista es esencial: mientras su marido interpreta su conducta y decide qué le conviene, el diario le permite conservar una voz propia. Sin embargo, el encierro termina deformando esa voz hasta confundir la liberación con la ruptura psicológica.",
+      "themes": [
+        "El encierro",
+        "La salud mental",
+        "La pérdida de autonomía",
+        "La autoridad médica",
+        "El control dentro del matrimonio",
+        "La represión de la creatividad",
+        "La maternidad",
+        "La identidad",
+        "La percepción",
+        "La locura",
+        "El deseo de liberación"
+      ],
+      "tone_notes": "Íntimo, claustrofóbico, inquietante y progresivamente alucinado. La voz comienza siendo razonable e irónica, pero se vuelve cada vez más fragmentaria y obsesiva. La ambigüedad final une horror y liberación: la protagonista parece escapar de una forma de sometimiento al mismo tiempo que pierde definitivamente el contacto con la realidad.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "National Library of Medicine, edición digital de la publicación original de The Yellow Wall-Paper y exposición The Literature of Prescription.",
+        "Project Gutenberg, texto completo de The Yellow Wallpaper.",
+        "National Endowment for the Humanities, «Beyond “The Yellow Wallpaper”»."
+      ],
+      "fragment_count": 34
+    },
+    {
+      "work_id": "work-el-retrato-de-dorian-gray",
+      "title": "El retrato de Dorian Gray",
+      "display_title": "El retrato de Dorian Gray",
+      "original_title": "The Picture of Dorian Gray",
+      "author_id": "author-oscar-wilde",
+      "publication_year": 1891,
+      "genre": "Novela gótica, filosófica y decadentista; única novela publicada por Oscar Wilde.",
+      "language": null,
+      "summary_short": "Dorian Gray es un joven de extraordinaria belleza que contempla el retrato que ha pintado su amigo Basil Hallward y desea permanecer siempre joven mientras el cuadro envejece en su lugar. Su deseo se cumple: Dorian conserva intacto su aspecto, pero el retrato comienza a reflejar el paso del tiempo, sus actos crueles y la degradación de su conciencia. Influido por las ideas hedonistas de lord Henry Wotton, se entrega a una vida de placer mientras oculta el cuadro como testimonio de su verdadera naturaleza.",
+      "summary_long": null,
+      "context_notes": "La primera versión apareció en julio de 1890 en Lippincott’s Monthly Magazine y provocó una fuerte controversia por su tratamiento del deseo, la corrupción moral y la doble vida. Wilde revisó y amplió el texto, y en abril de 1891 publicó la versión que se considera definitiva. Esta edición incorporó nuevos capítulos y el célebre prefacio sobre la independencia del arte respecto de los juicios morales. La novela pertenece al gótico victoriano tardío y explora las tensiones del fin de siècle: bajo la respetabilidad social existen deseos, secretos y formas de corrupción que no pueden mostrarse públicamente. El retrato funciona como una conciencia visible y como la prueba de la distancia entre la belleza exterior de Dorian y su progresivo deterioro interior.",
+      "themes": [
+        "La juventud y el envejecimiento",
+        "La belleza",
+        "El narcisismo",
+        "La influencia",
+        "El hedonismo",
+        "La culpa",
+        "La corrupción moral",
+        "La doble vida",
+        "La conciencia",
+        "La identidad",
+        "El deseo",
+        "La relación entre arte y realidad",
+        "La hipocresía de la sociedad victoriana"
+      ],
+      "tone_notes": "Elegante, irónico, sensual y progresivamente oscuro. Los diálogos de lord Henry aportan ingenio, provocación y ligereza, mientras que la evolución del retrato introduce una atmósfera gótica cada vez más inquietante. La belleza verbal de la novela convive con una sensación constante de decadencia, secreto y destrucción.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "British Library, «Oscar Wilde’s The Picture of Dorian Gray», con información sobre sus dos versiones, su contexto gótico y sus principales temas.",
+        "Poetry Foundation, ficha biográfica y literaria de Oscar Wilde."
+      ],
+      "fragment_count": 21
     }
   ]
 }
