@@ -126,7 +126,8 @@
     "slug": "virginia-woolf",
     "sort_name": "Virginia Woolf",
     "inferred_from": [
-      "Orlando, Virginia Woolf"
+      "Orlando, Virginia Woolf",
+      "Una habitación propia, Virginia Woolf"
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."

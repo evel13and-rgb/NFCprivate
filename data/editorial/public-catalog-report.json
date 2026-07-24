@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-24T18:41:51.822Z",
+  "generated_at": "2026-07-24T23:45:17.730Z",
   "preview": true,
   "publication_status": "internal_preview",
-  "total_quotes_exported": 422,
+  "total_quotes_exported": 455,
   "omitted_quotes": [],
   "private_fields_excluded": [
     "rights_notes",
@@ -84,6 +84,7 @@
     "work-niebla",
     "work-canas-y-barro",
     "work-orlando",
+    "work-una-habitacion-propia",
     "work-el-rayo-que-no-cesa",
     "work-papa-goriot",
     "work-el-retrato-de-dorian-gray",
@@ -215,6 +216,11 @@
     {
       "source_id": "source-precioso-veneno",
       "work_id": "work-precioso-veneno",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-una-habitacion-propia",
+      "work_id": "work-una-habitacion-propia",
       "rights_status": "unchecked"
     }
   ],

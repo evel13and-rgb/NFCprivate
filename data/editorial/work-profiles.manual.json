@@ -362,5 +362,37 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-una-habitacion-propia",
+    "author_id": "author-virginia-woolf",
+    "title": "Una habitación propia",
+    "original_title": "A Room of One’s Own",
+    "publication_year": 1929,
+    "genre": "Ensayo literario y feminista; reflexión sobre las mujeres, la escritura y las condiciones materiales de la creación.",
+    "short_summary": "Virginia Woolf examina por qué las mujeres han tenido una presencia mucho menor que los hombres en la historia de la literatura. A través de una narradora ficticia, combina reflexión, escenas narrativas, ironía e imaginación para mostrar que la creación artística no depende únicamente del talento: también exige independencia económica, educación, tiempo y un espacio propio.\n\nLa figura imaginaria de Judith Shakespeare —una hermana de Shakespeare dotada del mismo talento, pero privada de sus oportunidades— representa a todas las escritoras cuya obra nunca pudo existir. De esta reflexión surge la tesis central del ensayo: para escribir, una mujer necesita dinero y una habitación propia.",
+    "context": "El ensayo nació de dos conferencias sobre «las mujeres y la ficción» que Woolf pronunció en octubre de 1928 ante estudiantes de Newnham College y Girton College, dos instituciones femeninas de la Universidad de Cambridge. Woolf reelaboró y amplió aquellas intervenciones hasta convertirlas en A Room of One’s Own, publicada en 1929 por Hogarth Press, la editorial que había fundado junto con Leonard Woolf.\n\nLa obra parte de una desigualdad histórica concreta: mientras los hombres habían dispuesto de educación, patrimonio, bibliotecas y libertad para escribir, muchas mujeres permanecían sometidas a la dependencia económica y al trabajo doméstico. Woolf no busca construir una exposición académica convencional, sino revelar cómo esas condiciones sociales determinan qué voces pueden entrar en la literatura y cuáles quedan excluidas.",
+    "themes": [
+      "La independencia económica",
+      "El espacio propio",
+      "Las mujeres y la creación literaria",
+      "La desigualdad educativa",
+      "La exclusión del canon",
+      "El anonimato femenino",
+      "La libertad intelectual",
+      "La tradición literaria",
+      "La relación entre género y escritura",
+      "Las condiciones materiales necesarias para crear"
+    ],
+    "tone": "Reflexivo, irónico, imaginativo y combativo. Woolf aborda una desigualdad profunda sin recurrir a una exposición rígida: alterna razonamientos, escenas cotidianas, invenciones literarias y observaciones mordaces. Su aparente ligereza permite que la crítica avance con claridad y revele la violencia silenciosa de las limitaciones impuestas a las mujeres.",
+    "sources": [
+      "Virginia Woolf Society of Great Britain, relación de las obras principales de Virginia Woolf y biografía de la autora.",
+      "Girton College, Universidad de Cambridge, historia de las conferencias pronunciadas por Woolf en Newnham y Girton en 1928.",
+      "Procedencia del texto original: Project Gutenberg Australia, edición inglesa de 1929.",
+      "Comprobación textual: Wikisource, primera edición de Hogarth Press de 1929.",
+      "Traducción propia del inglés para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

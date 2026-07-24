@@ -1835,6 +1835,282 @@ const ORLANDO_QUOTES = [
   }
 ];
 
+const UNA_HABITACION_PROPIA_QUOTES = [
+  {
+    t: "Todo lo que podía hacer era ofreceros una opinión sobre un punto menor: una mujer debe tener dinero y una habitación propia si ha de escribir ficción; y eso, como veréis, deja sin resolver el gran problema de la verdadera naturaleza de la mujer y de la verdadera naturaleza de la ficción.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "una mujer debe tener dinero y una habitación propia",
+    lang: "es"
+  },
+  {
+    t: `Cuando un asunto es sumamente controvertido —y cualquier cuestión relativa al sexo lo es—, no cabe esperar que una diga la verdad. Solo puede mostrar cómo llegó a sostener la opinión que sostiene.
+
+Aquí es probable que la ficción contenga más verdad que los hechos.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "cualquier cuestión relativa al sexo lo es",
+    lang: "es"
+  },
+  {
+    t: `De mis labios brotarán mentiras, pero quizá haya alguna verdad mezclada con ellas; a vosotras os corresponde buscar esa verdad y decidir si alguna parte merece conservarse.
+
+De no ser así, naturalmente, arrojaréis todo a la papelera y lo olvidaréis.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "quizá haya alguna verdad mezclada con ellas",
+    lang: "es"
+  },
+  {
+    t: `El pensamiento —por darle un nombre más orgulloso del que merecía— había dejado caer su sedal en la corriente.
+
+Se mecía, minuto tras minuto, de aquí para allá entre los reflejos y las hierbas, dejando que el agua lo alzara y lo hundiera.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "El pensamiento",
+    lang: "es"
+  },
+  {
+    t: "Depositado sobre la hierba, qué pequeño, qué insignificante parecía aquel pensamiento mío: la clase de pez que un buen pescador devuelve al agua para que engorde y algún día merezca ser cocinado y comido.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "algún día",
+    lang: "es"
+  },
+  {
+    t: "Era esa hora entre dos luces en que los colores aumentan de intensidad y los púrpuras y los dorados arden en los cristales como el latido de un corazón excitable; cuando la belleza del mundo, revelada y, sin embargo, pronta a perecer, tiene dos filos: uno de risa y otro de angustia, que parten el corazón.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "uno de risa y otro de angustia",
+    lang: "es"
+  },
+  {
+    t: `Una no puede pensar bien, amar bien, dormir bien, si no ha cenado bien.
+
+La lámpara de la columna vertebral no se enciende con carne de vaca y ciruelas pasas.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "La lámpara de la columna vertebral",
+    lang: "es"
+  },
+  {
+    t: `Regresé, pues, a mi posada y, mientras caminaba por las calles oscuras, medité sobre esto y aquello, como suele hacerse al final de una jornada de trabajo.
+
+Pensé por qué la señora Seton no había tenido dinero que dejarnos; y qué efecto produce la pobreza sobre la mente, y qué efecto produce la riqueza sobre la mente. Recordé el órgano retumbando en la capilla y las puertas cerradas de la biblioteca; y pensé en lo desagradable que resulta quedarse encerrada fuera; y pensé que quizá sea peor quedarse encerrada dentro.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "quizá sea peor quedarse encerrada dentro.",
+    lang: "es"
+  },
+  {
+    t: `Al fin pensé que era hora de enrollar la piel arrugada del día, con sus argumentos y sus impresiones, su ira y su risa, y arrojarla al seto.
+
+Mil estrellas centelleaban sobre las extensiones azules del cielo.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "la piel arrugada del día",
+    lang: "es"
+  },
+  {
+    t: `¿Tenéis idea de cuántos libros se escriben acerca de las mujeres en el transcurso de un año? ¿Tenéis idea de cuántos están escritos por hombres?
+
+¿Sois conscientes de que quizá seáis el animal más discutido del universo?`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "el animal más discutido del universo",
+    lang: "es"
+  },
+  {
+    t: "Era angustioso, desconcertante, humillante. La verdad se me había escurrido entre los dedos. Se había escapado hasta la última gota.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "hasta la última gota",
+    lang: "es"
+  },
+  {
+    t: "Dibujar era una manera ociosa de concluir una mañana de trabajo infructuoso. Sin embargo, es en nuestra ociosidad, en nuestros sueños, cuando la verdad sumergida sale algunas veces a la superficie.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "en nuestros sueños",
+    lang: "es"
+  },
+  {
+    t: "Durante todos estos siglos, las mujeres han servido de espejos dotados del mágico y delicioso poder de reflejar la figura del hombre al doble de su tamaño natural.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "han servido de espejos",
+    lang: "es"
+  },
+  {
+    t: `Imaginativamente, la mujer es de la mayor importancia; en la práctica, es completamente insignificante. Impregna la poesía de principio a fin; está casi ausente de la historia.
+
+Domina las vidas de reyes y conquistadores en la ficción; en la realidad, era esclava de cualquier muchacho cuyos padres le impusieran un anillo.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "en la ficción; en la realidad",
+    lang: "es"
+  },
+  {
+    t: `Imaginemos, puesto que los hechos son tan difíciles de encontrar, que Shakespeare tuvo una hermana maravillosamente dotada, llamada Judith. Era tan aventurera, tan imaginativa y estaba tan ansiosa por conocer el mundo como él. Pero no la enviaron a la escuela. De vez en cuando tomaba un libro, quizá uno de su hermano, y leía unas páginas; entonces entraban sus padres y le ordenaban que remendara las medias, vigilara el guiso y dejara de perder el tiempo con libros y papeles.
+
+Antes de cumplir diecisiete años la prometieron en matrimonio. La fuerza de su propio don la impulsó a huir. Reunió unas pocas pertenencias, bajó por una cuerda una noche de verano y tomó el camino de Londres. Los pájaros que cantaban en los setos no eran más musicales que ella. Tenía la imaginación más veloz, un don, como su hermano, para la música de las palabras. Como él, sentía inclinación por el teatro.
+
+Se presentó en la entrada de artistas y dijo que quería actuar. Los hombres se rieron en su cara. El director soltó una carcajada. Ninguna mujer, dijo, podía ser actriz. No podía recibir formación en su oficio. ¿Podía siquiera cenar en una taberna o vagar por las calles a medianoche? Y, sin embargo, su genio era para la ficción y ansiaba alimentarse abundantemente de las vidas de hombres y mujeres y del estudio de sus costumbres.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "Los hombres se rieron en su cara.",
+    lang: "es"
+  },
+  {
+    t: "¿Quién podrá medir el calor y la violencia del corazón de un poeta cuando queda atrapado y enredado en el cuerpo de una mujer?",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "el corazón de un poeta",
+    lang: "es"
+  },
+  {
+    t: `Cuando una lee que una bruja era sumergida en el agua, que una mujer estaba poseída por demonios, que una curandera vendía hierbas, o incluso que un hombre muy notable tuvo una madre, entonces me parece que seguimos la pista de una novelista perdida, una poeta reprimida; de alguna Jane Austen muda y sin gloria, de alguna Emily Brontë que se destrozó la cabeza en el páramo o vagó enloquecida por los caminos bajo la tortura que su don le imponía.
+
+Me atrevería a aventurar que Anónimo, que escribió tantos poemas sin firmarlos, fue a menudo una mujer. Fue una mujer, según sugirió Edward Fitzgerald, quien compuso las baladas y las canciones populares, canturreándolas a sus hijos, acompañando con ellas el hilado o la larga noche de invierno.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "fue a menudo una mujer",
+    lang: "es"
+  },
+  {
+    t: `Escribir una obra de genio es casi siempre una hazaña de dificultad prodigiosa. Todo se opone a que salga de la mente del escritor entera y completa.
+
+Si algo consigue atravesarlo todo, es un milagro; y probablemente ningún libro nace entero e ileso tal como fue concebido.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "ningún libro nace entero e ileso",
+    lang: "es"
+  },
+  {
+    t: `No pueden comprar también la literatura. La literatura está abierta a todo el mundo.
+
+Cerrad vuestras bibliotecas si queréis; pero no hay puerta, cerradura ni cerrojo que podáis imponer a la libertad de mi mente.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "no hay puerta, cerradura ni cerrojo",
+    lang: "es"
+  },
+  {
+    t: `Es inútil acudir a los grandes escritores varones en busca de ayuda, por mucho que acudamos a ellos en busca de placer.
+
+Porque, si somos mujeres, pensamos hacia atrás a través de nuestras madres.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "pensamos hacia atrás a través de nuestras madres.",
+    lang: "es"
+  },
+  {
+    t: "Las obras maestras no son nacimientos únicos y solitarios; son el resultado de muchos años de pensamiento en común, del pensamiento del conjunto de las personas, de modo que tras la voz individual se encuentra la experiencia de la multitud.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "Las obras maestras no son nacimientos únicos y solitarios",
+    lang: "es"
+  },
+  {
+    t: `Aquella era una mujer que escribía sin odio, sin amargura, sin miedo, sin protesta, sin predicar.
+
+Su mente había consumido todos los obstáculos; y por eso Jane Austen impregna cada palabra que escribió, como Shakespeare impregna cada una de las suyas.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "sin odio, sin amargura, sin miedo",
+    lang: "es"
+  },
+  {
+    t: `La naturaleza, de manera muy extraña, parece habernos proporcionado una luz interior mediante la cual juzgamos la integridad del novelista.
+
+Quizá haya trazado con tinta invisible, sobre las paredes de la mente, un presentimiento que los grandes artistas confirman.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "con tinta invisible, sobre las paredes de la mente",
+    lang: "es"
+  },
+  {
+    t: "Los libros se continúan unos a otros, pese a nuestra costumbre de juzgarlos por separado. Y también debemos considerar a una mujer desconocida como descendiente de todas las mujeres anteriores a ella.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "Los libros se continúan unos a otros",
+    lang: "es"
+  },
+  {
+    t: `Todas esas vidas infinitamente oscuras permanecen aún sin registrar.
+
+Sentí en mi imaginación la presión de lo mudo, la acumulación de vida no escrita: las vendedoras de violetas, las vendedoras de cerillas, las ancianas bajo los portales y las muchachas errantes cuyas caras cambian como olas bajo el sol y las nubes.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "la acumulación de vida no escrita",
+    lang: "es"
+  },
+  {
+    t: "Quizá la mente andrógina sea resonante y porosa; quizá transmita la emoción sin impedimentos; quizá sea creadora por naturaleza, incandescente e indivisa.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "creadora por naturaleza, incandescente e indivisa.",
+    lang: "es"
+  },
+  {
+    t: `Cuando se introduce una frase en la mente, puede caer pesadamente al suelo, muerta; pero otra frase estalla y da nacimiento a toda clase de ideas.
+
+Solo de esa escritura puede decirse que posee el secreto de la vida perpetua.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "el secreto de la vida perpetua.",
+    lang: "es"
+  },
+  {
+    t: "Mientras escribáis lo que deseáis escribir, eso es lo único que importa; y nadie puede decir si importará durante siglos o solamente durante unas horas.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "es lo único que importa",
+    lang: "es"
+  },
+  {
+    t: `¿Qué significa «realidad»? Parece ser algo muy errático, muy poco fiable: se encuentra ahora en un camino polvoriento, ahora en un pedazo de periódico tirado en la calle, ahora en un narciso bajo el sol.
+
+Abruma a una mientras vuelve a casa bajo las estrellas y hace que el mundo silencioso sea más real que el mundo de las palabras.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "¿Qué significa «realidad»?",
+    lang: "es"
+  },
+  {
+    t: "La lectura de ciertos libros parece realizar una curiosa operación sobre los sentidos: después vemos con mayor intensidad; el mundo parece despojado de su cubierta y dotado de una vida más intensa.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "una vida más intensa.",
+    lang: "es"
+  },
+  {
+    t: `Cuando rebusco en mi propia mente, no encuentro nobles sentimientos acerca de ser compañeras e iguales ni de influir sobre el mundo para conducirlo hacia fines más elevados.
+
+Me descubro diciendo, breve y prosaicamente, que es mucho más importante ser una misma que cualquier otra cosa.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "es mucho más importante ser una misma",
+    lang: "es"
+  },
+  {
+    t: `La poeta que nunca escribió una palabra y fue enterrada en una encrucijada continúa viva. Vive en vosotras y en mí, y en muchas otras mujeres que no están aquí esta noche porque están lavando los platos y acostando a los niños.
+
+Los grandes poetas no mueren: son presencias que continúan.`,
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "Los grandes poetas no mueren",
+    lang: "es"
+  },
+  {
+    t: "Si adquirimos el hábito de la libertad y el valor de escribir exactamente lo que pensamos; si afrontamos el hecho de que no hay brazo al que aferrarse, sino que avanzamos solas y nuestra relación es con el mundo de la realidad, entonces la poeta muerta que fue la hermana de Shakespeare recobrará el cuerpo que tantas veces ha abandonado.",
+    a: "Virginia Woolf",
+    obra: "Una habitación propia, Virginia Woolf",
+    highlight: "no hay brazo al que aferrarse",
+    lang: "es"
+  }
+];
+
 const DORIAN_GRAY_QUOTES = [
   {
     t: `—Harry —dijo Basil Hallward, mirándolo directamente a la cara—, todo retrato pintado con sentimiento es un retrato del artista, no del modelo. El modelo no es más que el accidente, la ocasión. No es él quien queda revelado por el pintor; es, más bien, el pintor quien se revela a sí mismo sobre el lienzo. La razón por la que no expondré este cuadro es que temo haber mostrado en él el secreto de mi propia alma.`,
@@ -4182,6 +4458,7 @@ const QUOTES = [
   ...NIEBLA_QUOTES,
   ...CANAS_Y_BARRO_QUOTES,
   ...ORLANDO_QUOTES,
+  ...UNA_HABITACION_PROPIA_QUOTES,
   ...RAYO_QUE_NO_CESA_QUOTES,
   ...PAPA_GORIOT_QUOTES,
   ...DORIAN_GRAY_QUOTES,

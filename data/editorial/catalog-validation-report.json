@@ -1,33 +1,33 @@
 {
   "valid": true,
-  "validated_at": "2026-07-24T18:41:52.598Z",
+  "validated_at": "2026-07-24T23:45:18.498Z",
   "summary": {
-    "expected_quotes": 422,
-    "intermediate_quotes": 422,
-    "normalized_quotes": 422,
+    "expected_quotes": 455,
+    "intermediate_quotes": 455,
+    "normalized_quotes": 455,
     "authors": 23,
-    "works": 24,
-    "sources": 24,
+    "works": 25,
+    "sources": 25,
     "editorial_decisions": 0,
     "poems": 26,
-    "quotes_with_line_breaks": 292,
+    "quotes_with_line_breaks": 312,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
     "editorial_decisions": {
       "valid": true,
-      "message": "Decisiones editoriales válidas: 0 decisión(es), 422 cita(s) de referencia."
+      "message": "Decisiones editoriales válidas: 0 decisión(es), 455 cita(s) de referencia."
     },
     "editorial_sources": {
       "valid": true,
-      "message": "Fuentes editoriales válidas: 24 fuente(s) para 24 obra(s)."
+      "message": "Fuentes editoriales válidas: 25 fuente(s) para 25 obra(s)."
     }
   },
   "blocking_errors": [],
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "24 fuente(s) conservan derechos sin revisar.",
+      "message": "25 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -52,12 +52,13 @@
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
-        "source-precioso-veneno"
+        "source-precioso-veneno",
+        "source-una-habitacion-propia"
       ]
     },
     {
       "code": "source_verification_pending",
-      "message": "24 fuente(s) esperan verificación bibliográfica.",
+      "message": "25 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -82,7 +83,8 @@
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
-        "source-precioso-veneno"
+        "source-precioso-veneno",
+        "source-una-habitacion-propia"
       ]
     }
   ],
@@ -95,11 +97,11 @@
     },
     {
       "code": "rights_review_pending",
-      "count": 24
+      "count": 25
     },
     {
       "code": "source_verification_pending",
-      "count": 24
+      "count": 25
     }
   ],
   "reviewed_files": [

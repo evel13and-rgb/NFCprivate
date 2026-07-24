@@ -1,14 +1,14 @@
 {
-  "total_quotes_processed": 422,
+  "total_quotes_processed": 455,
   "total_authors_generated": 23,
-  "total_works_generated": 24,
+  "total_works_generated": 25,
   "quotes_without_author_id": [
     0,
     1
   ],
   "quotes_without_work_id": [],
   "attributions_by_type": {
-    "author": 366,
+    "author": 399,
     "character": 0,
     "narrator": 0,
     "collective_voice": 2,
@@ -44,7 +44,7 @@
     }
   ],
   "legacy_attribution_matches_author": {
-    "count": 366,
+    "count": 399,
     "legacy_indexes": [
       21,
       22,
@@ -411,7 +411,40 @@
       418,
       419,
       420,
-      421
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454
     ]
   },
   "legacy_attribution_looks_like_character_or_narrator": {

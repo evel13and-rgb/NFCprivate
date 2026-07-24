@@ -117,6 +117,15 @@
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
   },
   {
+    "id": "work-una-habitacion-propia",
+    "title": "Una habitación propia",
+    "slug": "una-habitacion-propia",
+    "author_id": "author-virginia-woolf",
+    "legacy_work": "Una habitación propia, Virginia Woolf",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
     "id": "work-el-rayo-que-no-cesa",
     "title": "El rayo que no cesa",
     "slug": "el-rayo-que-no-cesa",
