@@ -4325,37 +4325,68 @@ function getCatalogEntry(type, id) {
   return catalog[id] ?? null;
 }
 
-function appendInfoLine(fragment, label, value) {
-  if (!value) return;
-  const paragraph = document.createElement('p');
-  const prefix = document.createElement('span');
-  prefix.className = 'modal__field-label';
-  prefix.textContent = `${label}: `;
-  paragraph.appendChild(prefix);
-  paragraph.appendChild(document.createTextNode(value));
-  fragment.appendChild(paragraph);
+function hasProfileValue(value) {
+  if (Array.isArray(value)) {
+    return value.some(item => typeof item === 'string' && item.trim());
+  }
+  return value !== null
+    && value !== undefined
+    && (typeof value !== 'string' || Boolean(value.trim()));
 }
 
-function appendInfoList(fragment, label, values) {
-  if (!Array.isArray(values) || !values.length) return;
-  const section = document.createElement('div');
-  const heading = document.createElement('p');
-  const prefix = document.createElement('span');
-  prefix.className = 'modal__field-label';
-  prefix.textContent = `${label}:`;
-  heading.appendChild(prefix);
-  section.appendChild(heading);
-  const list = document.createElement('ul');
-  for (const value of values) {
-    if (typeof value !== 'string' || !value.trim()) continue;
-    const item = document.createElement('li');
-    item.textContent = value;
+function appendProfileMeta(container, items) {
+  const values = items.filter(([, value]) => hasProfileValue(value));
+  if (!values.length) return;
+  const list = document.createElement('dl');
+  list.className = 'profile-meta';
+  for (const [label, value] of values) {
+    const item = document.createElement('div');
+    item.className = 'profile-meta__item';
+    const term = document.createElement('dt');
+    term.textContent = label;
+    const description = document.createElement('dd');
+    description.textContent = value;
+    item.append(term, description);
     list.appendChild(item);
   }
-  if (list.childNodes.length) {
+  container.appendChild(list);
+}
+
+function appendProfileSection(container, title, value, options = {}) {
+  if (!hasProfileValue(value)) return;
+  const section = document.createElement('section');
+  section.className = `profile-section${options.compact ? ' profile-section--compact' : ''}`;
+  const heading = document.createElement('h3');
+  heading.className = 'profile-section__title';
+  heading.textContent = title;
+  section.appendChild(heading);
+
+  if (Array.isArray(value)) {
+    const list = document.createElement('ul');
+    list.className = options.chips ? 'profile-themes' : 'profile-list';
+    for (const text of value) {
+      if (typeof text !== 'string' || !text.trim()) continue;
+      const item = document.createElement('li');
+      item.textContent = text;
+      list.appendChild(item);
+    }
     section.appendChild(list);
-    fragment.appendChild(section);
+  } else {
+    const paragraph = document.createElement('p');
+    paragraph.className = 'profile-section__text';
+    paragraph.textContent = value;
+    section.appendChild(paragraph);
   }
+  container.appendChild(section);
+}
+
+function getProfileStatusLabel(status) {
+  const labels = {
+    draft: 'Borrador editorial',
+    reviewed: 'Revisada',
+    published: 'Publicada',
+  };
+  return labels[status] || status;
 }
 
 function renderInfoContent(type, contentElement, entry) {
@@ -4367,36 +4398,54 @@ function renderInfoContent(type, contentElement, entry) {
       const dates = entry.birth_year && entry.death_year
         ? `${entry.birth_year}-${entry.death_year}`
         : entry.birth_year || entry.death_year || null;
-      appendInfoLine(fragment, 'Nombre', entry.display_name || entry.name);
-      appendInfoLine(fragment, 'Fechas', dates);
-      appendInfoLine(fragment, 'País', entry.country);
-      appendInfoLine(fragment, 'Lengua', entry.language);
-      appendInfoLine(fragment, 'Época', entry.period);
-      appendInfoLine(fragment, 'Movimiento o corriente', entry.movement);
-      appendInfoLine(fragment, 'Biografía', entry.bio_short);
+      appendProfileMeta(fragment, [
+        ['Fechas', dates],
+        ['País', entry.country],
+        ['Lengua', entry.language],
+        ['Época', entry.period],
+        ['Movimiento o corriente', entry.movement],
+      ]);
+      appendProfileSection(fragment, 'Biografía', entry.bio_short);
       if (entry.bio_long && entry.bio_long !== entry.bio_short) {
-        appendInfoLine(fragment, 'Biografía ampliada', entry.bio_long);
+        appendProfileSection(fragment, 'Biografía ampliada', entry.bio_long);
       }
-      appendInfoList(fragment, 'Temas', entry.themes);
-      appendInfoLine(fragment, 'Notas de tono', entry.tone_notes);
-      appendInfoLine(fragment, 'Por qué está en Páramo', entry.why_in_paramo);
+      appendProfileSection(fragment, 'Temas', entry.themes, { chips: true });
+      appendProfileSection(fragment, 'Tono / notas de estilo', entry.tone_notes);
+      appendProfileSection(
+        fragment,
+        'Por qué encaja en Páramo Literario',
+        entry.why_in_paramo,
+      );
+      appendProfileSection(fragment, 'Fuentes', entry.sources, { compact: true });
     } else {
       const authorEntry = getCatalogEntry('author', entry.author_id);
-      appendInfoLine(fragment, 'Título', entry.display_title || entry.title);
-      appendInfoLine(fragment, 'Título original', entry.original_title);
-      appendInfoLine(fragment, 'Autor', authorEntry?.display_name);
-      appendInfoLine(fragment, 'Año', entry.publication_year);
-      appendInfoLine(fragment, 'Género', entry.genre);
-      appendInfoLine(fragment, 'Lengua', entry.language);
-      appendInfoLine(fragment, 'Resumen', entry.summary_short);
+      appendProfileMeta(fragment, [
+        ['Título original', entry.original_title],
+        ['Autor', authorEntry?.display_name],
+        ['Año', entry.publication_year],
+        ['Género', entry.genre],
+        ['Lengua', entry.language],
+      ]);
+      appendProfileSection(fragment, 'Resumen', entry.summary_short);
       if (entry.summary_long && entry.summary_long !== entry.summary_short) {
-        appendInfoLine(fragment, 'Resumen ampliado', entry.summary_long);
+        appendProfileSection(fragment, 'Resumen ampliado', entry.summary_long);
       }
-      appendInfoLine(fragment, 'Contexto', entry.context_notes);
-      appendInfoList(fragment, 'Temas', entry.themes);
-      appendInfoLine(fragment, 'Tono', entry.tone_notes);
-      appendInfoLine(fragment, 'Notas sobre los fragmentos', entry.fragment_notes);
-      appendInfoLine(fragment, 'Por qué está en Páramo', entry.why_in_paramo);
+      appendProfileSection(fragment, 'Contexto', entry.context_notes);
+      appendProfileSection(fragment, 'Temas', entry.themes, { chips: true });
+      appendProfileSection(fragment, 'Tono', entry.tone_notes);
+      appendProfileSection(fragment, 'Notas sobre los fragmentos', entry.fragment_notes);
+      appendProfileSection(
+        fragment,
+        'Por qué encaja en Páramo Literario',
+        entry.why_in_paramo,
+      );
+      appendProfileSection(fragment, 'Fuente', entry.source, { compact: true });
+      appendProfileSection(
+        fragment,
+        'Estado',
+        getProfileStatusLabel(entry.profile_status),
+        { compact: true },
+      );
     }
   }
 
@@ -4431,6 +4480,7 @@ function closeActiveModal() {
   root.classList.add('is-hidden');
   root.setAttribute('aria-hidden', 'true');
   document.removeEventListener('keydown', handleEscapeKey, true);
+  document.body.classList.remove('modal-open');
   if (lastModalTrigger && typeof lastModalTrigger.focus === 'function') {
     lastModalTrigger.focus({ preventScroll: true });
   }
@@ -4452,12 +4502,16 @@ async function openModal(type, triggerElement, titleText) {
 
   elements.root.classList.remove('is-hidden');
   elements.root.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
   if (elements.title) {
     elements.title.textContent = titleText || '';
   }
   await publicProfilesReady;
   const entry = getCatalogEntry(type, catalogId || slugify(titleText || ''));
   renderInfoContent(type, elements.content, entry);
+  if (elements.content) {
+    elements.content.scrollTop = 0;
+  }
   if (elements.close) {
     elements.close.focus({ preventScroll: true });
   }
