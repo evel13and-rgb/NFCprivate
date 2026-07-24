@@ -3664,6 +3664,216 @@ Es tan agradable estar fuera, en esta gran habitación, y arrastrarme cuanto me 
   }
 ];
 
+const VERA_QUOTES = [
+  {
+    t: `Lucy miraba fijamente el mar, pensando en aquellas cosas, examinando la situación como algo curioso, pero sin relación con ella, contemplándola con una especie de comprensión fría. Su mente estaba completamente clara. Cada detalle de lo ocurrido se encontraba nítidamente ante ella.
+
+Lo sabía todo y no sentía nada; como Dios, se dijo; sí, exactamente como Dios.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Lo sabía todo y no sentía nada", lang: "es"
+  },
+  {
+    t: `Lo que le había sucedido a aquel hombre —se llamaba Wemyss— era que la opinión pública lo obligaba a retirarse y permanecer inactivo precisamente cuando más necesitaba compañía y distracción. Tenía que marcharse solo, tenía que apartarse durante una semana, como mínimo, de su vida habitual, porque la opinión pública había decidido que debía permanecer un tiempo a solas con su pena.
+
+¡A solas con la pena, de todas las cosas espantosas con las que un hombre podía quedarse a solas! Condenar a un hombre a aquello era un ultraje, pensaba; la forma más cruel de reclusión en solitario.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "A solas con la pena", lang: "es"
+  },
+  {
+    t: `Ella pendía de sus palabras, con los ojos fijos en su rostro, los labios entreabiertos, el cuerpo entero convertido en una agonía de compasión. La vida: qué terrible era, y qué insospechada. Una seguía y seguía, sin imaginar nunca el súbito día espantoso en que caerían las cubiertas y se vería que, después de todo, era la muerte; que había sido la muerte durante todo aquel tiempo, la muerte fingiendo, la muerte esperando.
+
+Su padre, tan lleno de amor, intereses y proyectos: ido, acabado, barrido como si no importara más que algún insecto que una pisa sin verlo mientras camina.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "la muerte fingiendo, la muerte esperando.", lang: "es"
+  },
+  {
+    t: `—¿Cómo iba a ser? Era mi esposa, no tenía una sola preocupación en el mundo, todo se hacía por ella, no tenía dificultades, nada que le pesara en la mente, nada malo en su salud. Llevábamos quince años casados y yo sentía devoción por ella: devoción.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "todo se hacía por ella", lang: "es"
+  },
+  {
+    t: `Que le estuvieran haciendo el amor, que estuviera prometida —como insistía Wemyss— antes de que hubiera transcurrido una semana desde la muerte de su padre no podía calificarse, pensaba ella, de nada peor que una posible, y como máximo, falta de pertinencia.
+
+Pero Wemyss encontraba irritante que su compromiso tuviera que mantenerse en secreto. Lucy, completamente abrumada, primero por sus lágrimas y después por su alegría, ya no podía juzgar nada. Ya no sabía si hacerse el amor en medio de la muerte era algo terrible o si era, como decía Wemyss, la natural y gloriosa afirmación de la vida.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "la natural y gloriosa afirmación de la vida.", lang: "es"
+  },
+  {
+    t: `Lucy ya no sabía nada, excepto que él y ella, náufragos, se habían salvado mutuamente y que, por el momento, no se le exigía nada: ningún esfuerzo, absolutamente nada, salvo permanecer pasiva con la cabeza apoyada en su pecho mientras él la llamaba su bebé y besaba suave, maravillosamente, sus ojos cerrados.
+
+No podía pensar; no necesitaba pensar. Oh, estaba cansada, y aquello era descanso.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "No podía pensar; no necesitaba pensar.", lang: "es"
+  },
+  {
+    t: `Mientras tanto, la señorita Entwhistle pasaba una tarde laboriosa en la sala de periódicos del Museo Británico. Estaba leyendo en The Times la información sobre el accidente y la investigación judicial de Wemyss. Lucy no había mencionado aquella sugerencia de suicidio. Quizá él no se lo hubiera contado.
+
+Suicidio. Bueno, no había pruebas. Se había dictado un veredicto abierto. Lo había sugerido una sirvienta, quizá una sirvienta resentida.
+
+La señorita Entwhistle volvió a casa lentamente, deteniéndose ante los escaparates, mirando sombreros y blusas que no veía, intentando pensar. Suicidio. Qué desolado sonaba en aquella hermosa tarde. Una renuncia semejante. Una derrota semejante.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Suicidio. Qué desolado sonaba", lang: "es"
+  },
+  {
+    t: `Tenía una vieja amiga que vivía en Chesham Street, una viuda llena de esa madura sabiduría que a veces llega al final a quienes han sobrevivido al matrimonio; y, cuando el otoño la llevó de vuelta a Londres, la señorita Entwhistle acudía de vez en cuando a ella en busca de consuelo.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "han sobrevivido al matrimonio", lang: "es"
+  },
+  {
+    t: `El compromiso Wemyss-Entwhistle avanzó por las etapas ordinarias de todos los compromisos: secreto completo, secreto parcial, semipublicidad e, inmediatamente después, publicidad total, con su inevitable acompañamiento de estrépito. El estrépito, siempre más o menos audible para los protagonistas, fue en este caso de desaprobación unánime.
+
+Los amigos del padre de Lucy protestaron uno por uno. La atmósfera de Eaton Terrace se convulsionó; y Lucy, que como siempre corría a esconderse de todo lo perturbador en los brazos de Wemyss, solo quedó más convencida que nunca de que allí solo había paz.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "allí solo había paz.", lang: "es"
+  },
+  {
+    t: `Lucy también estaba indignada, pero su indignación procedía de que los amigos de su padre, siempre buenos, amables, inteligentes y razonables, se mostraran unánimemente hostiles a que se casara con Everard sin conocer de él más que la historia del accidente.
+
+¡Y luego la manera en que todos hablaban! Argumentos, razonamientos y sutilezas interminables; tan inteligentes, tan imposibles de refutar y, sin embargo, tan equivocados. Todos aquellos numerosos puntos de vista… Pero solo había un punto de vista sobre una cosa, decía Everard, y era el correcto.
+
+Ah, pero una mujer no quería aquello; no quería aquel pensar, examinar, diseccionar y considerar sin fin. Una mujer —hasta sus pensamientos aparecían ahora vestidos con las palabras de Wemyss— solo quería a su hombre.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "solo quería a su hombre.", lang: "es"
+  },
+  {
+    t: `Wemyss, que primero hacía sus planes y después hablaba de ellos, ni siquiera había mencionado a Lucy la Navidad. Era costumbre suya decidir qué deseaba hacer, disponer todos los detalles y, cuando todo estaba preparado, informar a quienes iban a participar.
+
+No se le había ocurrido que pudiera haber dificultades con la cuestión de la Navidad. Naturalmente, había dado por sentado que la pasaría con su pequeña, y puesto que él siempre la pasaba en Los Sauces, ella también la pasaría allí.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "primero hacía sus planes y después hablaba de ellos", lang: "es"
+  },
+  {
+    t: `—Esto es morboso —dijo cuando, en respuesta a sus preguntas, ella por fin le explicó que no podía ir por la terrible muerte de la pobre Vera allí.
+
+Y le explicó, sosteniéndola entre sus brazos, lo absurdo que era ser morbosa y que su pequeña, que iba a casarse con un hombre sano y sensato que, Dios sabía, había tenido que luchar bastante para seguir siéndolo —ella se apretó más contra él— y, sin embargo, lo había conseguido, también tenía que ser sana y sensata.
+
+De otro modo, si no podía hacer esto o aquello porque le recordaba algo triste, y no podía ir aquí o allá porque alguien había muerto, temía que acabara haciéndolos muy infelices tanto a él como a sí misma.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "—Esto es morboso", lang: "es"
+  },
+  {
+    t: `Habiendo terminado sus preparativos y fijado la boda para el primer sábado de marzo, Wemyss pensó que ya era hora de decírselo a Lucy; y así lo hizo, aunque no sin un ligero temor, al final, de que ella pudiera plantear dificultades.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "pensó que ya era hora de decírselo a Lucy", lang: "es"
+  },
+  {
+    t: `El matrimonio, descubrió Lucy, era diferente de lo que había supuesto; Everard era diferente; todo era diferente. Para empezar, siempre tenía sueño. Para continuar, nunca estaba sola.
+
+No había comprendido hasta qué punto nunca estaría sola o, si lo estaba, nunca tendría la certeza, de un minuto al siguiente, de continuar estándolo. Siempre había habido en su vida intervalos durante los cuales se recuperaba en soledad de cualquier tensión; ahora no había ninguno. Siempre había habido lugares a los que podía retirarse y descansar tranquilamente, a salvo de interrupciones; ahora no había ninguno.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "El matrimonio, descubrió Lucy, era diferente", lang: "es"
+  },
+  {
+    t: `Sí, era un bebé, un bebé querido y lleno de vitalidad, pero un bebé ahora visto muy de cerca y que no paraba nunca. No se podía meterlo en una cuna, darle un biberón, decirle: «Ya está», y después sentarse tranquilamente a coser un poco; no se tenían domingos libres; nunca se estaba, ni de día ni de noche, un solo instante fuera de servicio.
+
+Lucy no podía contar el número de veces al día que tenía que responder a la pregunta:
+
+—¿Quién es mi mujercita, toda mía?`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "nunca se estaba, ni de día ni de noche, un solo instante fuera de servicio.", lang: "es"
+  },
+  {
+    t: `Al principio respondía con un éxtasis risueño, corriendo hacia sus brazos abiertos; pero muy pronto apareció aquel sueño fatal que permaneció con ella durante toda la luna de miel, y algunas veces se sentía realmente demasiado cansada para introducir en su voz el éxtasis que pronto comprendió que se esperaba de ella.
+
+Si había una sombra de vacilación antes de responder, la más mínima demora porque sus pensamientos se hubieran extraviado momentáneamente, Wemyss se disgustaba y ella tenía que pasar bastante tiempo tranquilizándolo con los susurros y las caricias más tiernos.
+
+Sus pensamientos no debían extraviarse, había descubierto; sus pensamientos debían ser de él, igual que todo lo demás de ella.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "sus pensamientos debían ser de él", lang: "es"
+  },
+  {
+    t: `Al principio de su compromiso Wemyss había expuesto a Lucy su teoría de que entre enamorados debía existir la más perfecta franqueza, mientras que, en el caso del marido y la mujer, no debía haber en ninguno de los dos rincón alguno —de la mente, del cuerpo o del alma— que no pudiera revelarse al otro.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "no debía haber en ninguno de los dos rincón alguno", lang: "es"
+  },
+  {
+    t: `Lucy tenía una opinión tan elevada de aquello que no encontraba palabras con las que expresar su admiración y, en su lugar, se puso a besarlo. Qué felicidad ideal, quedar apartada para siempre del miedo a la soledad mediante el sencillo procedimiento de ser dos; y quién podía ser tan feliz como ella, que había encontrado exactamente a la persona adecuada para aquella duplicación, una persona con la que podía coincidir y entenderse tan perfectamente.
+
+Su mente era un cáliz lleno únicamente de amor, y el amor era tan claro y luminoso que ni siquiera en el fondo, cuando lo agitaba para mirar, había rastro alguno de sedimento.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Su mente era un cáliz lleno únicamente de amor", lang: "es"
+  },
+  {
+    t: `Sí, se había vuelto sumamente abyecta, reflexionaba, despierta durante la noche, considerando su comportamiento a lo largo del día. El amor la había vuelto así. El amor volvía abyecta a una, porque estaba lleno del miedo a herir al ser amado.
+
+La afirmación de las Escrituras de que el amor perfecto expulsa el miedo solo demostraba, puesto que su amor por Everard era sin duda perfecto, lo poco que las Escrituras sabían realmente de aquello de lo que hablaban.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "El amor volvía abyecta a una", lang: "es"
+  },
+  {
+    t: `Así que aquella era Vera. Por supuesto. Había sabido, aunque nunca hubiera construido una imagen suya en la mente —había evitado cuidadosamente hacerlo—, que sería así.
+
+Aquella Vera era sin duda inteligente. No se podían tener aquellos ojos y ser necia. Y la expresión de su boca: ¿de qué había estado intentando no reírse aquel día?
+
+Quizá se reía, pensó Lucy, porque, de otro modo, habría llorado; solo que eso habría sido una tontería, y ella no podía haber sido tonta: no con aquellos ojos, no con aquellas cejas rectas y finas.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Quizá se reía, pensó Lucy, porque, de otro modo, habría llorado", lang: "es"
+  },
+  {
+    t: `Tenía miedo de él, y tenía miedo de sí misma en relación con él. Parecía encontrarse fuera de todo cuanto ella conocía por experiencia. Parecía no ser —al menos no lo había sido aquel día— generoso. No parecía haber ningún punto por el que pudiera alcanzárselo.
+
+¿Cómo era él realmente? ¿Cuánto tiempo tardaría en conocerlo realmente? ¿Años?
+
+Y ella misma sabía ahora que no podía soportar las escenas. Ninguna escena. No podía soportarlas mientras sucedían ni podía soportar el agotamiento de la larga reconciliación posterior.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Tenía miedo de él, y tenía miedo de sí misma en relación con él.", lang: "es"
+  },
+  {
+    t: `Él le había apartado la blusa y le estaba besando el hombro y preguntándole de quién era enteramente aquella esposa.
+
+Pero ¿de qué servían las caricias si inmediatamente antes o después había ira, o si la ira las interrumpía? Tenía miedo de él. Ella no estaba en aquellos besos.
+
+Quizá llevara mucho tiempo sintiendo miedo de él sin saberlo. ¿Qué había sido aquella abyección durante la luna de miel, aquel deseo angustiado de agradar, de evitar ofender, sino miedo? Era amor con miedo; miedo de recibir daño, de no poder creer de todo corazón, de no poder —esto era lo peor— sentirse orgullosa del ser amado.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Era amor con miedo", lang: "es"
+  },
+  {
+    t: `Atravesó el vestíbulo corriendo, convertida toda ella en una confusión de penitencia angustiada, deseo y amor, y cuando llegó a la puerta y giró el picaporte estaba cerrada con llave.
+
+La había dejado fuera, con la puerta cerrada.
+
+Su mano resbaló lentamente del picaporte. Permaneció completamente inmóvil. ¿Cómo podía…? Y ahora sabía que él había echado el cerrojo de la puerta principal sabiendo que ella seguía fuera, bajo la lluvia. ¿Cómo podía?
+
+¿Quién era aquel hombre, despiadado, cruel? No Everard. No su amante. ¿Dónde estaba él, su amante y marido?`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "La había dejado fuera, con la puerta cerrada.", lang: "es"
+  },
+  {
+    t: `Se apartó el pelo mojado de los ojos mientras subía las escaleras. Seguía metiéndosele en ellos y haciéndola tropezar. Vera la ayudaría. Vera nunca había sido vencida. Vera había pasado quince años sin ser vencida antes de… antes de sufrir aquel accidente.
+
+Debía de haber habido montones de días exactamente iguales a aquel, con el viento gritando, Vera arriba en su habitación y Everard abajo en la suya —quizá encerrado—, y, sin embargo, Vera había resistido y no habían conseguido arrancarle el espíritu.
+
+Oh, si Vera no estuviera muerta. ¡Si Vera, Vera, no estuviera muerta!`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Vera nunca había sido vencida.", lang: "es"
+  },
+  {
+    t: `Lucy permaneció completamente quieta, envuelta en la colcha de Vera. Obedientemente no se movió, sino que miró directamente al fuego, sentada tan cerca que el resto de la habitación quedó excluido.
+
+No veía la ventana ni la triste lluvia deslizándose por ella. No veía más que el fuego, que ardía alegremente.
+
+Qué amable era Lizzie. Qué consoladora era la bondad. Era algo que comprendía, algo normal, natural, y estar junto a ella la hacía sentirse también normal y natural.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Qué consoladora era la bondad.", lang: "es"
+  },
+  {
+    t: `La verdad era que, para cuando la señorita Entwhistle entró en la biblioteca, estaba muy enfadada. Hasta el gusano más cortés, se dijo, el gusano más conciliador y sensato, plenamente consciente de que la sabiduría aconseja paciencia, acaba revolviéndose contra el marido de su sobrina si lo pisan con demasiada fuerza.
+
+La manera en que Wemyss le había ordenado que no subiera a ver a Lucy… Lo que más la enfurecía era conocer la debilidad de su posición: se encontraba en su casa sin haber sido invitada.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "Hasta el gusano más cortés, se dijo, el gusano más conciliador y sensato, plenamente consciente de que la sabiduría aconseja paciencia, acaba revolviéndose", lang: "es"
+  },
+  {
+    t: `Qué alivio, qué alivio extraordinario, haberse librado de ella; y no solo por aquella vez, sino para siempre. Además, era la única pariente de Lucy, de modo que ya no quedaban más que pudieran acudir e intentar interponerse entre marido y mujer.
+
+Wemyss dio cuerda a su reloj ante los últimos resplandores del fuego y volvió a sentirse de excelente humor. Más que de excelente humor: renovado y vigorizado, como si hubiera tomado un baño frío y recibido una vigorosa fricción.
+
+Ahora, a la cama y con su pequeño Amor. Qué cosas tan sencillas necesitaba un hombre: solo su mujer y la paz.`,
+    a: "Elizabeth von Arnim", obra: "Vera, Elizabeth von Arnim",
+    highlight: "solo su mujer y la paz.", lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -3693,6 +3903,7 @@ const QUOTES = [
   ...SALA_NUMERO_SEIS_QUOTES,
   ...LA_BESTIA_EN_LA_JUNGLA_QUOTES,
   ...EL_PAPEL_PINTADO_DE_AMARILLO_QUOTES,
+  ...VERA_QUOTES,
 ];
 
 const ALLOWED_WEATHER_STATES = new Set([

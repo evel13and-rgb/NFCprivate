@@ -274,5 +274,65 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-elizabeth-von-arnim",
+    "name": "Elizabeth von Arnim",
+    "birth_year": 1866,
+    "death_year": 1941,
+    "country": "Reino Unido; nació en Sídney, Australia",
+    "language": "Inglés",
+    "period": "Finales del siglo XIX y primera mitad del siglo XX",
+    "movement": "Narrativa británica de comienzos del siglo XX; sátira social, comedia doméstica y literatura de mujeres, con elementos próximos al modernismo.",
+    "short_biography": "Elizabeth von Arnim —seudónimo literario de Mary Annette Beauchamp— fue una novelista británica nacida en Australia. Alcanzó un gran éxito con Elizabeth y su jardín alemán, publicado anónimamente en 1898, y desarrolló una obra marcada por el humor irónico, la observación de las relaciones entre hombres y mujeres y la búsqueda de autonomía femenina. Vivió en Alemania, Suiza, Reino Unido y Estados Unidos, y publicó veintiún libros. Su experiencia matrimonial aparece transformada, con distintos grados de ficción, en varias de sus novelas.",
+    "themes": [
+      "El matrimonio",
+      "La autonomía de las mujeres",
+      "El poder doméstico",
+      "La desigualdad entre los sexos",
+      "El deseo de libertad",
+      "La soledad",
+      "El autoengaño",
+      "La manipulación emocional",
+      "Las convenciones sociales",
+      "La distancia entre el amor idealizado y la experiencia real"
+    ],
+    "sources": [
+      "Elizabeth von Arnim Society, biografía y presentación de la autora.",
+      "Oxford Reference, ficha de Elizabeth von Arnim.",
+      "Penguin, perfil biográfico de la autora."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "author_id": "author-henry-james",
+    "name": "Henry James",
+    "birth_year": 1843,
+    "death_year": 1916,
+    "country": "Estados Unidos / Reino Unido. Nació en Nueva York y adquirió la ciudadanía británica en 1915.",
+    "language": "Inglés",
+    "period": "Segunda mitad del siglo XIX y comienzos del siglo XX; periodo victoriano y fin de siècle.",
+    "movement": "Realismo psicológico; literatura transatlántica. Su obra tardía anticipa procedimientos propios del modernismo, especialmente por su atención a la conciencia, la percepción y los puntos de vista limitados.",
+    "short_biography": "Henry James fue un novelista, cuentista, ensayista y crítico literario estadounidense que desarrolló gran parte de su carrera en Europa. Su obra exploró especialmente el encuentro entre la cultura estadounidense y la europea, así como los conflictos entre inocencia, experiencia, deseo y convenciones sociales. Con el tiempo desarrolló una prosa cada vez más compleja e introspectiva, centrada menos en la acción exterior que en aquello que los personajes perciben, ocultan o son incapaces de comprender.",
+    "themes": [
+      "La conciencia",
+      "La percepción",
+      "La soledad",
+      "El deseo reprimido",
+      "Las oportunidades perdidas",
+      "La incomunicación",
+      "La identidad",
+      "Las convenciones sociales",
+      "La culpa",
+      "La renuncia",
+      "La distancia entre lo vivido y lo imaginado"
+    ],
+    "sources": [
+      "Poetry Foundation, ficha biográfica de Henry James.",
+      "Cambridge University Press, estudios sobre la narrativa tardía de Henry James."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

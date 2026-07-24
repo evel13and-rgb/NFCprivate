@@ -1,33 +1,33 @@
 {
   "valid": true,
-  "validated_at": "2026-07-23T22:27:48.381Z",
+  "validated_at": "2026-07-24T16:22:35.333Z",
   "summary": {
-    "expected_quotes": 366,
-    "intermediate_quotes": 366,
-    "normalized_quotes": 366,
-    "authors": 21,
-    "works": 22,
-    "sources": 22,
+    "expected_quotes": 393,
+    "intermediate_quotes": 393,
+    "normalized_quotes": 393,
+    "authors": 22,
+    "works": 23,
+    "sources": 23,
     "editorial_decisions": 0,
     "poems": 26,
-    "quotes_with_line_breaks": 242,
+    "quotes_with_line_breaks": 265,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
     "editorial_decisions": {
       "valid": true,
-      "message": "Decisiones editoriales válidas: 0 decisión(es), 366 cita(s) de referencia."
+      "message": "Decisiones editoriales válidas: 0 decisión(es), 393 cita(s) de referencia."
     },
     "editorial_sources": {
       "valid": true,
-      "message": "Fuentes editoriales válidas: 22 fuente(s) para 22 obra(s)."
+      "message": "Fuentes editoriales válidas: 23 fuente(s) para 23 obra(s)."
     }
   },
   "blocking_errors": [],
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "22 fuente(s) conservan derechos sin revisar.",
+      "message": "23 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -50,12 +50,13 @@
         "source-el-horla",
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
-        "source-el-papel-pintado-de-amarillo"
+        "source-el-papel-pintado-de-amarillo",
+        "source-vera"
       ]
     },
     {
       "code": "source_verification_pending",
-      "message": "22 fuente(s) esperan verificación bibliográfica.",
+      "message": "23 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -78,7 +79,8 @@
         "source-el-horla",
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
-        "source-el-papel-pintado-de-amarillo"
+        "source-el-papel-pintado-de-amarillo",
+        "source-vera"
       ]
     }
   ],
@@ -91,11 +93,11 @@
     },
     {
       "code": "rights_review_pending",
-      "count": 22
+      "count": 23
     },
     {
       "code": "source_verification_pending",
-      "count": 22
+      "count": 23
     }
   ],
   "reviewed_files": [

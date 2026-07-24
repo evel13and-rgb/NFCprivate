@@ -284,6 +284,68 @@
         "Library of Congress, cronología de Oscar Wilde.",
         "The Metropolitan Museum of Art, retrato y ficha biográfica de Oscar Wilde."
       ]
+    },
+    {
+      "author_id": "author-elizabeth-von-arnim",
+      "display_name": "Elizabeth von Arnim",
+      "birth_year": 1866,
+      "death_year": 1941,
+      "country": "Reino Unido; nació en Sídney, Australia",
+      "language": "Inglés",
+      "period": "Finales del siglo XIX y primera mitad del siglo XX",
+      "movement": "Narrativa británica de comienzos del siglo XX; sátira social, comedia doméstica y literatura de mujeres, con elementos próximos al modernismo.",
+      "bio_short": "Elizabeth von Arnim —seudónimo literario de Mary Annette Beauchamp— fue una novelista británica nacida en Australia. Alcanzó un gran éxito con Elizabeth y su jardín alemán, publicado anónimamente en 1898, y desarrolló una obra marcada por el humor irónico, la observación de las relaciones entre hombres y mujeres y la búsqueda de autonomía femenina. Vivió en Alemania, Suiza, Reino Unido y Estados Unidos, y publicó veintiún libros. Su experiencia matrimonial aparece transformada, con distintos grados de ficción, en varias de sus novelas.",
+      "bio_long": null,
+      "themes": [
+        "El matrimonio",
+        "La autonomía de las mujeres",
+        "El poder doméstico",
+        "La desigualdad entre los sexos",
+        "El deseo de libertad",
+        "La soledad",
+        "El autoengaño",
+        "La manipulación emocional",
+        "Las convenciones sociales",
+        "La distancia entre el amor idealizado y la experiencia real"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Elizabeth von Arnim Society, biografía y presentación de la autora.",
+        "Oxford Reference, ficha de Elizabeth von Arnim.",
+        "Penguin, perfil biográfico de la autora."
+      ]
+    },
+    {
+      "author_id": "author-henry-james",
+      "display_name": "Henry James",
+      "birth_year": 1843,
+      "death_year": 1916,
+      "country": "Estados Unidos / Reino Unido. Nació en Nueva York y adquirió la ciudadanía británica en 1915.",
+      "language": "Inglés",
+      "period": "Segunda mitad del siglo XIX y comienzos del siglo XX; periodo victoriano y fin de siècle.",
+      "movement": "Realismo psicológico; literatura transatlántica. Su obra tardía anticipa procedimientos propios del modernismo, especialmente por su atención a la conciencia, la percepción y los puntos de vista limitados.",
+      "bio_short": "Henry James fue un novelista, cuentista, ensayista y crítico literario estadounidense que desarrolló gran parte de su carrera en Europa. Su obra exploró especialmente el encuentro entre la cultura estadounidense y la europea, así como los conflictos entre inocencia, experiencia, deseo y convenciones sociales. Con el tiempo desarrolló una prosa cada vez más compleja e introspectiva, centrada menos en la acción exterior que en aquello que los personajes perciben, ocultan o son incapaces de comprender.",
+      "bio_long": null,
+      "themes": [
+        "La conciencia",
+        "La percepción",
+        "La soledad",
+        "El deseo reprimido",
+        "Las oportunidades perdidas",
+        "La incomunicación",
+        "La identidad",
+        "Las convenciones sociales",
+        "La culpa",
+        "La renuncia",
+        "La distancia entre lo vivido y lo imaginado"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Poetry Foundation, ficha biográfica de Henry James.",
+        "Cambridge University Press, estudios sobre la narrativa tardía de Henry James."
+      ]
     }
   ],
   "works": [
@@ -595,6 +657,75 @@
         "Poetry Foundation, ficha biográfica y literaria de Oscar Wilde."
       ],
       "fragment_count": 21
+    },
+    {
+      "work_id": "work-vera",
+      "title": "Vera",
+      "display_title": "Vera",
+      "original_title": "Vera",
+      "author_id": "author-elizabeth-von-arnim",
+      "publication_year": 1921,
+      "genre": "Novela psicológica; sátira matrimonial, comedia negra y narrativa doméstica con elementos góticos.",
+      "language": null,
+      "summary_short": "Tras la muerte de su padre, la joven Lucy Entwhistle conoce a Everard Wemyss, un viudo mayor que ella cuya primera esposa, Vera, murió en circunstancias inquietantes. Lucy interpreta su autoridad y sus atenciones como signos de amor, pero, una vez casados, comienza a descubrir su carácter posesivo, controlador y emocionalmente cruel. La presencia ausente de Vera se convierte en una advertencia sobre el destino que podría aguardar a la nueva esposa.",
+      "summary_long": null,
+      "context_notes": "La novela fue publicada en 1921 sin el nombre explícito de von Arnim: la portada la atribuía a «la autora de Elizabeth and Her German Garden». Está inspirada parcialmente en su conflictivo segundo matrimonio con Francis Russell, hermano del filósofo Bertrand Russell. Frente al tono luminoso de algunas de sus obras más conocidas, Vera ofrece una visión mucho más oscura del matrimonio y desmonta la estructura convencional del romance: el supuesto desenlace feliz se convierte en el comienzo del encierro.",
+      "themes": [
+        "El abuso psicológico",
+        "El control coercitivo",
+        "La manipulación",
+        "La idealización amorosa",
+        "La sumisión",
+        "La culpa",
+        "El aislamiento",
+        "El matrimonio como espacio de poder",
+        "La memoria de la primera esposa",
+        "La dificultad para reconocer la violencia cuando se presenta como amor"
+      ],
+      "tone_notes": "Irónico, inquietante, claustrofóbico y progresivamente siniestro. La narración conserva una apariencia de comedia social, pero bajo los modales, las conversaciones domésticas y los gestos aparentemente afectuosos crece una amenaza constante. El horror no depende de acontecimientos sobrenaturales, sino de la normalidad con la que se instala el dominio de Everard.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Elizabeth von Arnim, Vera, edición original de 1921 reproducida por Project Gutenberg.",
+        "Penguin, edición y presentación de Vera.",
+        "Cambridge University Press, estudio sobre la comedia matrimonial y la estructura del romance en la novela."
+      ],
+      "fragment_count": 27
+    },
+    {
+      "work_id": "work-la-bestia-en-la-jungla",
+      "title": "La bestia en la jungla",
+      "display_title": "La bestia en la jungla",
+      "original_title": "The Beast in the Jungle",
+      "author_id": "author-henry-james",
+      "publication_year": 1903,
+      "genre": "Novela corta o relato largo; narrativa psicológica y simbólica.",
+      "language": null,
+      "summary_short": "John Marcher vive convencido de que su existencia está reservada para un acontecimiento extraordinario y terrible, una amenaza escondida como una bestia agazapada en la jungla. May Bartram, la única persona que conoce su secreto, permanece a su lado mientras él espera obsesivamente la llegada de ese destino. Su atención al futuro le impide reconocer lo que está ocurriendo en el presente y comprender la naturaleza de la relación que ambos comparten.",
+      "summary_long": null,
+      "context_notes": "El relato apareció en 1903 dentro de la colección The Better Sort y posteriormente fue revisado por James para la edición neoyorquina de sus obras, publicada en 1909. Pertenece a su etapa tardía, caracterizada por una narración más introspectiva, una sintaxis compleja y personajes cuya tragedia surge de su incapacidad para interpretar su propia experiencia. Más que presentar una amenaza sobrenatural, James utiliza la imagen de la bestia como símbolo de una vida dominada por la espera. La catástrofe de Marcher no consiste en que suceda aquello que temía, sino en descubrir que su obsesión por un destino excepcional le ha impedido amar y participar verdaderamente en la vida. El núcleo del relato es, así, el de una «vida no vivida».",
+      "themes": [
+        "La vida no vivida",
+        "La espera",
+        "El miedo al futuro",
+        "El aislamiento",
+        "El egocentrismo",
+        "El amor no reconocido",
+        "La pérdida",
+        "La ceguera emocional",
+        "El paso del tiempo",
+        "El destino",
+        "La revelación tardía"
+      ],
+      "tone_notes": "Melancólico, introspectivo, contenido y progresivamente trágico. La narración avanza mediante insinuaciones, silencios y conversaciones ambiguas. La amenaza parece permanecer siempre fuera de escena, hasta que la revelación final transforma retrospectivamente toda la historia.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Henry James, The Beast in the Jungle, texto original disponible en Project Gutenberg.",
+        "Cambridge University Press, estudios sobre The Beast in the Jungle y los relatos tardíos de Henry James.",
+        "Wikisource, The Beast in the Jungle."
+      ],
+      "fragment_count": 31
     }
   ]
 }

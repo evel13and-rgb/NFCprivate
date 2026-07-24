@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-23T21:23:47.058Z",
+  "generated_at": "2026-07-24T16:22:34.554Z",
   "preview": true,
   "publication_status": "internal_preview",
-  "total_quotes_exported": 366,
+  "total_quotes_exported": 393,
   "omitted_quotes": [],
   "private_fields_excluded": [
     "rights_notes",
@@ -92,7 +92,8 @@
     "work-el-horla",
     "work-la-sala-numero-seis",
     "work-la-bestia-en-la-jungla",
-    "work-el-papel-pintado-de-amarillo"
+    "work-el-papel-pintado-de-amarillo",
+    "work-vera"
   ],
   "unverified_rights": [
     {
@@ -203,6 +204,11 @@
     {
       "source_id": "source-el-papel-pintado-de-amarillo",
       "work_id": "work-el-papel-pintado-de-amarillo",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-vera",
+      "work_id": "work-vera",
       "rights_status": "unchecked"
     }
   ],

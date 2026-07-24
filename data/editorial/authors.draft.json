@@ -229,5 +229,16 @@
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-elizabeth-von-arnim",
+    "canonical_name": "Elizabeth von Arnim",
+    "slug": "elizabeth-von-arnim",
+    "sort_name": "Elizabeth von Arnim",
+    "inferred_from": [
+      "Vera, Elizabeth von Arnim"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   }
 ]

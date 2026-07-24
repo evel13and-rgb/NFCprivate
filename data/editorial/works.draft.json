@@ -196,5 +196,14 @@
     "legacy_work": "El papel pintado de amarillo, Charlotte Perkins Gilman",
     "status": "draft",
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-vera",
+    "title": "Vera",
+    "slug": "vera",
+    "author_id": "author-elizabeth-von-arnim",
+    "legacy_work": "Vera, Elizabeth von Arnim",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   }
 ]

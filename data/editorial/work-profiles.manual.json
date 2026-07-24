@@ -271,5 +271,66 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-vera",
+    "author_id": "author-elizabeth-von-arnim",
+    "title": "Vera",
+    "original_title": "Vera",
+    "publication_year": 1921,
+    "genre": "Novela psicológica; sátira matrimonial, comedia negra y narrativa doméstica con elementos góticos.",
+    "short_summary": "Tras la muerte de su padre, la joven Lucy Entwhistle conoce a Everard Wemyss, un viudo mayor que ella cuya primera esposa, Vera, murió en circunstancias inquietantes. Lucy interpreta su autoridad y sus atenciones como signos de amor, pero, una vez casados, comienza a descubrir su carácter posesivo, controlador y emocionalmente cruel. La presencia ausente de Vera se convierte en una advertencia sobre el destino que podría aguardar a la nueva esposa.",
+    "context": "La novela fue publicada en 1921 sin el nombre explícito de von Arnim: la portada la atribuía a «la autora de Elizabeth and Her German Garden». Está inspirada parcialmente en su conflictivo segundo matrimonio con Francis Russell, hermano del filósofo Bertrand Russell. Frente al tono luminoso de algunas de sus obras más conocidas, Vera ofrece una visión mucho más oscura del matrimonio y desmonta la estructura convencional del romance: el supuesto desenlace feliz se convierte en el comienzo del encierro.",
+    "themes": [
+      "El abuso psicológico",
+      "El control coercitivo",
+      "La manipulación",
+      "La idealización amorosa",
+      "La sumisión",
+      "La culpa",
+      "El aislamiento",
+      "El matrimonio como espacio de poder",
+      "La memoria de la primera esposa",
+      "La dificultad para reconocer la violencia cuando se presenta como amor"
+    ],
+    "tone": "Irónico, inquietante, claustrofóbico y progresivamente siniestro. La narración conserva una apariencia de comedia social, pero bajo los modales, las conversaciones domésticas y los gestos aparentemente afectuosos crece una amenaza constante. El horror no depende de acontecimientos sobrenaturales, sino de la normalidad con la que se instala el dominio de Everard.",
+    "sources": [
+      "Elizabeth von Arnim, Vera, edición original de 1921 reproducida por Project Gutenberg.",
+      "Penguin, edición y presentación de Vera.",
+      "Cambridge University Press, estudio sobre la comedia matrimonial y la estructura del romance en la novela."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "work_id": "work-la-bestia-en-la-jungla",
+    "author_id": "author-henry-james",
+    "title": "La bestia en la jungla",
+    "original_title": "The Beast in the Jungle",
+    "publication_year": 1903,
+    "genre": "Novela corta o relato largo; narrativa psicológica y simbólica.",
+    "short_summary": "John Marcher vive convencido de que su existencia está reservada para un acontecimiento extraordinario y terrible, una amenaza escondida como una bestia agazapada en la jungla. May Bartram, la única persona que conoce su secreto, permanece a su lado mientras él espera obsesivamente la llegada de ese destino. Su atención al futuro le impide reconocer lo que está ocurriendo en el presente y comprender la naturaleza de la relación que ambos comparten.",
+    "context": "El relato apareció en 1903 dentro de la colección The Better Sort y posteriormente fue revisado por James para la edición neoyorquina de sus obras, publicada en 1909. Pertenece a su etapa tardía, caracterizada por una narración más introspectiva, una sintaxis compleja y personajes cuya tragedia surge de su incapacidad para interpretar su propia experiencia. Más que presentar una amenaza sobrenatural, James utiliza la imagen de la bestia como símbolo de una vida dominada por la espera. La catástrofe de Marcher no consiste en que suceda aquello que temía, sino en descubrir que su obsesión por un destino excepcional le ha impedido amar y participar verdaderamente en la vida. El núcleo del relato es, así, el de una «vida no vivida».",
+    "themes": [
+      "La vida no vivida",
+      "La espera",
+      "El miedo al futuro",
+      "El aislamiento",
+      "El egocentrismo",
+      "El amor no reconocido",
+      "La pérdida",
+      "La ceguera emocional",
+      "El paso del tiempo",
+      "El destino",
+      "La revelación tardía"
+    ],
+    "tone": "Melancólico, introspectivo, contenido y progresivamente trágico. La narración avanza mediante insinuaciones, silencios y conversaciones ambiguas. La amenaza parece permanecer siempre fuera de escena, hasta que la revelación final transforma retrospectivamente toda la historia.",
+    "sources": [
+      "Henry James, The Beast in the Jungle, texto original disponible en Project Gutenberg.",
+      "Cambridge University Press, estudios sobre The Beast in the Jungle y los relatos tardíos de Henry James.",
+      "Wikisource, The Beast in the Jungle."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]
