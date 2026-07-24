@@ -4380,15 +4380,6 @@ function appendProfileSection(container, title, value, options = {}) {
   container.appendChild(section);
 }
 
-function getProfileStatusLabel(status) {
-  const labels = {
-    draft: 'Borrador editorial',
-    reviewed: 'Revisada',
-    published: 'Publicada',
-  };
-  return labels[status] || status;
-}
-
 function renderInfoContent(type, contentElement, entry) {
   if (!contentElement) return;
   const fragment = document.createDocumentFragment();
@@ -4416,7 +4407,12 @@ function renderInfoContent(type, contentElement, entry) {
         'Por qué encaja en Páramo Literario',
         entry.why_in_paramo,
       );
-      appendProfileSection(fragment, 'Fuentes', entry.sources, { compact: true });
+      appendProfileSection(
+        fragment,
+        'Fuentes de información',
+        entry.information_sources,
+        { compact: true },
+      );
     } else {
       const authorEntry = getCatalogEntry('author', entry.author_id);
       appendProfileMeta(fragment, [
@@ -4425,6 +4421,7 @@ function renderInfoContent(type, contentElement, entry) {
         ['Año', entry.publication_year],
         ['Género', entry.genre],
         ['Lengua', entry.language],
+        ['Fragmentos incluidos', entry.fragment_count],
       ]);
       appendProfileSection(fragment, 'Resumen', entry.summary_short);
       if (entry.summary_long && entry.summary_long !== entry.summary_short) {
@@ -4439,11 +4436,10 @@ function renderInfoContent(type, contentElement, entry) {
         'Por qué encaja en Páramo Literario',
         entry.why_in_paramo,
       );
-      appendProfileSection(fragment, 'Fuente', entry.source, { compact: true });
       appendProfileSection(
         fragment,
-        'Estado',
-        getProfileStatusLabel(entry.profile_status),
+        'Fuentes de información',
+        entry.information_sources,
         { compact: true },
       );
     }

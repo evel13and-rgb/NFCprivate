@@ -26,7 +26,10 @@
       ],
       "tone_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Encyclopedia.com, «Count Leo Tolstoy».",
+        "University of Minnesota, The Death of Ivan Ilich: An Electronic Study Edition of the Russian Text."
+      ]
     },
     {
       "author_id": "author-fiodor-dostoievski",
@@ -55,7 +58,11 @@
       ],
       "tone_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Cambridge University Press, Dostoevsky in Context.",
+        "Encyclopedia.com, «Fyodor Mikhailovich Dostoevsky».",
+        "Stanford Encyclopedia of Philosophy, «Existentialism»."
+      ]
     },
     {
       "author_id": "author-guy-de-maupassant",
@@ -84,7 +91,11 @@
       ],
       "tone_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Bibliothèque nationale de France, «Maupassant, une vie au fil de la plume».",
+        "Encyclopédie Larousse, «Guy de Maupassant».",
+        "Bibliothèque nationale de France, ficha de autoridad de Guy de Maupassant."
+      ]
     },
     {
       "author_id": "author-anton-chejov",
@@ -113,7 +124,10 @@
       ],
       "tone_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Encyclopedia.com, «Anton Pavlovich Chekhov».",
+        "Encyclopedia.com, «Chekhov, Anton (Pavlovich)»."
+      ]
     },
     {
       "author_id": "author-miguel-de-unamuno",
@@ -140,7 +154,11 @@
       ],
       "tone_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Casa-Museo Unamuno de la Universidad de Salamanca, «Biografía».",
+        "Biblioteca Virtual Miguel de Cervantes.",
+        "Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado —INTEF—, «Miguel de Unamuno»."
+      ]
     },
     {
       "author_id": "author-virginia-woolf",
@@ -167,7 +185,10 @@
       ],
       "tone_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Virginia Woolf Society of Great Britain, «Virginia Woolf: A Short Biography».",
+        "Tate, «Lifestyle and Legacy of the Bloomsbury Group»."
+      ]
     }
   ],
   "works": [
@@ -197,7 +218,10 @@
       "tone_notes": "Sobrio, contenido y progresivamente angustioso. La ironía social de los primeros capítulos da paso a una narración íntima y opresiva, concentrada en la conciencia de Iván Ilich. En el desenlace aparece una breve apertura hacia la compasión y la liberación espiritual.",
       "fragment_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "University of Minnesota, The Death of Ivan Ilich: An Electronic Study Edition of the Russian Text."
+      ],
+      "fragment_count": 18
     },
     {
       "work_id": "work-memorias-del-subsuelo",
@@ -228,7 +252,12 @@
       "tone_notes": "Amargo, provocador, irónico y profundamente confesional. La voz del narrador es agresiva y vulnerable a la vez: se acusa, se contradice, desafía al lector y convierte el relato en una lucha continua contra sí mismo. El resultado es una atmósfera asfixiante, incómoda y ferozmente lúcida.",
       "fragment_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Stanford Encyclopedia of Philosophy, «Existentialism».",
+        "Cambridge University Press, «Dostoevsky’s Criticism of Modern Rationalism and Materialism».",
+        "Encyclopedia.com, «Notes from Underground»."
+      ],
+      "fragment_count": 25
     },
     {
       "work_id": "work-el-horla",
@@ -257,7 +286,12 @@
       "tone_notes": "Inquietante, íntimo, obsesivo y progresivamente asfixiante. El relato comienza con una aparente serenidad, pero las anotaciones del narrador se vuelven cada vez más fragmentarias y desesperadas. La ambigüedad entre lucidez y delirio sostiene la tensión hasta el final.",
       "fragment_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Bibliothèque nationale de France, edición original de Le Horla, publicada por Paul Ollendorff en 1887.",
+        "Bibliothèque nationale de France, «Le Horla» y «Le Horla dans le texte».",
+        "Encyclopædia Universalis, «Le Horla»."
+      ],
+      "fragment_count": 27
     },
     {
       "work_id": "work-la-sala-numero-seis",
@@ -288,7 +322,12 @@
       "tone_notes": "Sombrío, sobrio, opresivo e irónico. Chéjov narra los hechos con aparente distancia, sin recurrir al dramatismo excesivo, pero la degradación del hospital y el progresivo encierro de Raguin generan una sensación creciente de asfixia. La ironía final es cruel: el protagonista solo comprende plenamente el sufrimiento cuando ya no puede escapar de él.",
       "fragment_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Texto ruso de Палата № 6, incluido en las obras completas de Chéjov publicadas por la editorial Naúka.",
+        "Primera publicación documentada en Rússkaya Mysl, número 11, noviembre de 1892.",
+        "P. Crichton, «Ward No. 6», Medical Classics / BMJ."
+      ],
+      "fragment_count": 23
     },
     {
       "work_id": "work-niebla",
@@ -318,7 +357,12 @@
       "tone_notes": "Irónico, filosófico, lúdico y tragicómico. Bajo su aparente ligereza y sus diálogos humorísticos, la obra mantiene una profunda inquietud existencial. La narración oscila entre la comedia sentimental, la reflexión abstracta y la angustia de un personaje que descubre la fragilidad de su propia existencia.",
       "fragment_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Biblioteca Virtual Miguel de Cervantes, edición digital basada en la primera edición de Renacimiento de 1914.",
+        "Biblioteca Nacional de España, catálogo bibliográfico.",
+        "Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado —INTEF—, recurso educativo dedicado a Niebla."
+      ],
+      "fragment_count": 20
     },
     {
       "work_id": "work-orlando",
@@ -347,7 +391,11 @@
       "tone_notes": "Lúdico, irónico, poético y cambiante. La obra combina el humor y la fantasía con una reflexión profunda sobre la identidad. Frente al tono más opresivo de otras novelas de Woolf, Orlando posee una energía libre, exuberante y deliberadamente irreverente.",
       "fragment_notes": null,
       "why_in_paramo": null,
-      "profile_status": "draft"
+      "information_sources": [
+        "Virginia Woolf Society of Great Britain, «Virginia Woolf: A Short Biography» e «Illustrations in the First Editions of Orlando: A Biography».",
+        "Oxford University Press, edición de Orlando: A Biography."
+      ],
+      "fragment_count": 25
     }
   ]
 }

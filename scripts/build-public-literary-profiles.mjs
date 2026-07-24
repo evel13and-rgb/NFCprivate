@@ -21,7 +21,7 @@ const authorFields = [
   'themes',
   'tone_notes',
   'why_in_paramo',
-  'profile_status',
+  'information_sources',
 ];
 const workFields = [
   'work_id',
@@ -39,11 +39,13 @@ const workFields = [
   'tone_notes',
   'fragment_notes',
   'why_in_paramo',
-  'profile_status',
+  'information_sources',
+  'fragment_count',
 ];
 const forbiddenFields = new Set([
   'source_notes',
   'sources',
+  'profile_status',
   'rights_notes',
   'verification_status',
   'updated_at',
@@ -62,6 +64,25 @@ async function loadArray(filename) {
 
 function nullable(value) {
   return value === undefined ? null : value;
+}
+
+function publicInformationSources(profile) {
+  const value = profile.information_sources ?? profile.sources ?? profile.source_notes;
+  const items = Array.isArray(value) ? value : [value];
+  const sources = items
+    .filter(item => typeof item === 'string')
+    .map(item => item.trim())
+    .filter(Boolean);
+  return sources.length ? sources : null;
+}
+
+function countFragmentsByWork(quotes) {
+  const counts = new Map();
+  for (const quote of quotes) {
+    if (typeof quote?.work_id !== 'string' || !quote.work_id.trim()) continue;
+    counts.set(quote.work_id, (counts.get(quote.work_id) ?? 0) + 1);
+  }
+  return counts;
 }
 
 function assertPublicDocument(document) {
@@ -87,6 +108,10 @@ function assertPublicDocument(document) {
       if (ids.has(record[idField])) throw new Error(`${label}: id duplicado (${record[idField]})`);
       ids.add(record[idField]);
       if (!Array.isArray(record.themes)) throw new Error(`${label}.themes debe ser un array`);
+      if (collection === 'works'
+        && (!Number.isInteger(record.fragment_count) || record.fragment_count < 0)) {
+        throw new Error(`${label}.fragment_count debe ser un entero no negativo`);
+      }
       for (const key of keys) {
         if (forbiddenFields.has(key)) throw new Error(`${label}: contiene el campo privado ${key}`);
       }
@@ -94,10 +119,12 @@ function assertPublicDocument(document) {
   }
 }
 
-const [manualAuthors, manualWorks] = await Promise.all([
+const [manualAuthors, manualWorks, normalizedQuotes] = await Promise.all([
   loadArray('author-profiles.manual.json'),
   loadArray('work-profiles.manual.json'),
+  loadArray('quotes.normalized.draft.json'),
 ]);
+const fragmentCounts = countFragmentsByWork(normalizedQuotes);
 
 const publicDocument = {
   authors: manualAuthors.map(profile => ({
@@ -114,7 +141,7 @@ const publicDocument = {
     themes: Array.isArray(profile.themes) ? profile.themes : [],
     tone_notes: nullable(profile.tone_notes),
     why_in_paramo: nullable(profile.why_in_paramo),
-    profile_status: nullable(profile.profile_status),
+    information_sources: publicInformationSources(profile),
   })),
   works: manualWorks.map(profile => ({
     work_id: profile.work_id,
@@ -132,7 +159,8 @@ const publicDocument = {
     tone_notes: nullable(profile.tone_notes ?? profile.tone),
     fragment_notes: nullable(profile.fragment_notes),
     why_in_paramo: nullable(profile.why_in_paramo),
-    profile_status: nullable(profile.profile_status),
+    information_sources: publicInformationSources(profile),
+    fragment_count: fragmentCounts.get(profile.work_id) ?? 0,
   })),
 };
 
