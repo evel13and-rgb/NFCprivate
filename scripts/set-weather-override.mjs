@@ -14,20 +14,48 @@ const PRESETS = Object.freeze({
   rainbow: { weather: 'rainbow', intensity: 'soft', timeOfDay: 'day' },
   mist: { weather: 'mist', intensity: 'soft', timeOfDay: 'day' },
   clear: { weather: 'clear', intensity: 'strong', timeOfDay: 'day' },
+  cloudy: { weather: 'cloudy', intensity: 'soft', timeOfDay: 'day' },
   'light-rain': { weather: 'light-rain', intensity: 'soft', timeOfDay: 'day' },
   'heavy-rain': { weather: 'heavy-rain', intensity: 'strong', timeOfDay: 'day' },
 });
+const DISPLAYED_PRESETS = Object.freeze([
+  'sunny',
+  'rainbow',
+  'mist',
+  'clear',
+  'cloudy',
+  'light-rain',
+  'heavy-rain',
+  'off',
+]);
+const VALID_PRESET_NAMES = [...Object.keys(PRESETS), 'off'];
 const VALID_WEATHER = new Set(Object.values(PRESETS).map(({ weather }) => weather));
 const VALID_INTENSITIES = new Set(['soft', 'medium', 'strong']);
 const VALID_TIMES_OF_DAY = new Set(['dawn', 'day', 'sunset', 'night']);
 
-function usage() {
+export function getHelpText() {
   return [
     'Uso: node scripts/set-weather-override.mjs <preset|off> [--production|--file RUTA]',
-    `Presets: ${Object.keys(PRESETS).join(', ')}, off`,
     '',
-    `Sin opciones escribe solo en ${REPOSITORY_OVERRIDE}`,
-    `--production selecciona ${PRODUCTION_OVERRIDE}; nunca ejecuta sudo automáticamente.`,
+    'Presets disponibles:',
+    ...DISPLAYED_PRESETS.map((preset) => `  ${preset}`),
+    '  dawn          (amanecer; preset adicional)',
+    '',
+    'Prueba local o temporal:',
+    '  node scripts/set-weather-override.mjs sunny',
+    '  node scripts/set-weather-override.mjs rainbow --file /tmp/weather-override.json',
+    `  Sin opciones escribe solo en ${REPOSITORY_OVERRIDE}`,
+    '',
+    'Preparar producción:',
+    '  node scripts/set-weather-override.mjs sunny --production',
+    `  El override real de producción es ${PRODUCTION_OVERRIDE}`,
+    '  El script prepara el JSON y muestra los comandos sudo; no escribe directamente en /etc.',
+    '',
+    'Desactivar el override:',
+    '  node scripts/set-weather-override.mjs off',
+    '  node scripts/set-weather-override.mjs off --production',
+    '',
+    'ADVERTENCIA: desactiva el override al terminar para no dejar un clima de prueba activo.',
   ].join('\n');
 }
 
@@ -43,7 +71,13 @@ export function buildOverride(preset, current = {}) {
 
   const fields = PRESETS[preset];
   if (!fields) {
-    throw new Error(`Preset desconocido: ${preset}`);
+    throw new Error(
+      [
+        `Preset desconocido: ${preset}`,
+        `Presets válidos: ${VALID_PRESET_NAMES.join(', ')}`,
+        'Usa --help para ver ejemplos y opciones.',
+      ].join('\n'),
+    );
   }
   return { manualOverride: true, ...fields };
 }
@@ -80,9 +114,12 @@ async function stageProductionPayload(payload) {
   return stagedPath;
 }
 
-function parseArguments(args) {
+export function parseArguments(args) {
   const [preset, ...options] = args;
-  if (!preset) throw new Error(usage());
+  if (['--help', '-h'].includes(preset)) {
+    return { help: true };
+  }
+  if (!preset) throw new Error(getHelpText());
 
   let filePath = REPOSITORY_OVERRIDE;
   for (let index = 0; index < options.length; index += 1) {
@@ -93,14 +130,20 @@ function parseArguments(args) {
       filePath = resolve(options[index + 1]);
       index += 1;
     } else {
-      throw new Error(`Opción desconocida: ${option}\n\n${usage()}`);
+      throw new Error(`Opción desconocida: ${option}\n\n${getHelpText()}`);
     }
   }
-  return { preset, filePath };
+  return { help: false, preset, filePath };
 }
 
 async function main() {
-  const { preset, filePath } = parseArguments(process.argv.slice(2));
+  const parsedArguments = parseArguments(process.argv.slice(2));
+  if (parsedArguments.help) {
+    console.log(getHelpText());
+    return;
+  }
+
+  const { preset, filePath } = parsedArguments;
   const payload = buildOverride(preset, await readCurrent(filePath));
 
   if (filePath === PRODUCTION_OVERRIDE) {
