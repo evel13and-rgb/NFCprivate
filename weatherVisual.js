@@ -20,6 +20,20 @@ const LEGACY_WEATHER_STATE_MAP = Object.freeze({
 });
 const CLEAR_WEATHER_STATES = new Set(['clear', 'sunny']);
 const RAIN_WEATHER_STATES = new Set(['light-rain', 'heavy-rain']);
+const VISUAL_SCENES = new Set([
+  'dawn',
+  'sunny-day',
+  'rainbow-after-rain',
+  'sunset',
+  'night',
+  'night-clear',
+  'night-rain',
+  'day-rain',
+  'sunset-rain',
+  'day-cloudy',
+  'day-overcast',
+  'day-mist',
+]);
 
 export const FALLBACK_WEATHER_STATE = Object.freeze({
   weather: 'cloudy',
@@ -36,6 +50,10 @@ export function normalizeVisualWeatherState(input = {}) {
     weather: WEATHER_STATES.has(legacyWeather) ? legacyWeather : FALLBACK_WEATHER_STATE.weather,
     intensity: INTENSITIES.has(input.intensity) ? input.intensity : FALLBACK_WEATHER_STATE.intensity,
     timeOfDay: TIMES_OF_DAY.has(input.timeOfDay) ? input.timeOfDay : null,
+    visualScene: VISUAL_SCENES.has(input.visualScene) ? input.visualScene : null,
+    source: typeof input.source === 'string' ? input.source : null,
+    provider: typeof input.provider === 'string' ? input.provider : null,
+    expiresAt: typeof input.expiresAt === 'string' ? input.expiresAt : null,
     legacyVisualScene,
   };
 }
@@ -62,6 +80,23 @@ export function deriveVisualScene(weather, timeOfDay) {
     return 'day-rain';
   }
   return `day-${weather}`;
+}
+
+export function resolveVisualWeatherState(input = {}, fallbackTimeOfDay = 'day') {
+  const normalized = normalizeVisualWeatherState(input);
+  const serverIsAuthoritative = ['open-meteo', 'manual-override'].includes(normalized.source);
+  const timeOfDay = serverIsAuthoritative && normalized.timeOfDay
+    ? normalized.timeOfDay
+    : fallbackTimeOfDay;
+  const visualScene = serverIsAuthoritative && normalized.visualScene
+    ? normalized.visualScene
+    : normalized.legacyVisualScene || deriveVisualScene(normalized.weather, timeOfDay);
+
+  return {
+    ...normalized,
+    timeOfDay,
+    visualScene,
+  };
 }
 
 export function supportsDaylightMotes({ weather, timeOfDay, visualScene }) {

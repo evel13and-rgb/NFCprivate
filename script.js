@@ -5,8 +5,8 @@ import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
 import {
   ALLOWED_TIMES_OF_DAY,
   FALLBACK_WEATHER_STATE,
-  deriveVisualScene,
   normalizeVisualWeatherState,
+  resolveVisualWeatherState,
   supportsDaylightMotes,
 } from './weatherVisual.js';
 const RAYO_QUE_NO_CESA_QUOTES = [
@@ -4482,6 +4482,9 @@ const QUOTES = [
 const ALLOWED_WEATHER_TIMES = new Set(ALLOWED_TIMES_OF_DAY);
 const FALLBACK_TIME_OF_DAY = 'day';
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
+const MIN_WEATHER_REFRESH_MS = 5 * 60 * 1000;
+const MAX_WEATHER_REFRESH_MS = 60 * 60 * 1000;
+const FAILED_WEATHER_REFRESH_MS = 15 * 60 * 1000;
 
 const AUTHORS_INFO = {};
 
@@ -4545,6 +4548,8 @@ let reduceMotionQuery = null;
 let esNoche = isNightTime();
 let activeModal = null;
 let lastModalTrigger = null;
+let authoritativeWeatherState = null;
+let weatherRefreshTimerId = null;
 
 function initMotionPreferenceWatcher() {
   if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
@@ -4603,27 +4608,30 @@ function applyWeatherStateToDocument(weatherState) {
   }
 
   const normalizedState = normalizeWeatherState(weatherState);
-  const { legacyVisualScene, ...globalWeatherState } = normalizedState;
-  const localTimeOfDay = normalizedState.timeOfDay || getLocalTimeOfDay();
-  const visualState = {
-    ...globalWeatherState,
-    timeOfDay: localTimeOfDay,
-    visualScene: legacyVisualScene || deriveVisualScene(globalWeatherState.weather, localTimeOfDay),
-  };
+  const visualState = resolveVisualWeatherState(normalizedState, getLocalTimeOfDay());
 
-  document.body.dataset.weather = globalWeatherState.weather;
-  document.body.dataset.weatherIntensity = globalWeatherState.intensity;
+  document.body.dataset.weather = visualState.weather;
+  document.body.dataset.weatherIntensity = visualState.intensity;
   document.body.dataset.visualScene = visualState.visualScene;
-  applyTimeOfDayToDocument(localTimeOfDay);
+  applyTimeOfDayToDocument(visualState.timeOfDay);
   updateAtmosphericParticles(visualState);
   document.dispatchEvent(new CustomEvent(WEATHER_CHANGE_EVENT, {
     detail: visualState,
   }));
 }
 
-async function initGlobalWeatherState() {
-  applyWeatherStateToDocument(getFallbackWeatherState());
+function scheduleWeatherRefresh(expiresAt, fallbackDelay = MAX_WEATHER_REFRESH_MS) {
+  const scheduler = typeof window !== 'undefined' ? window : globalThis;
+  if (!scheduler || typeof scheduler.setTimeout !== 'function') return;
+  if (weatherRefreshTimerId) scheduler.clearTimeout(weatherRefreshTimerId);
 
+  const expiresMs = Date.parse(expiresAt);
+  const requestedDelay = Number.isFinite(expiresMs) ? expiresMs - Date.now() + 1000 : fallbackDelay;
+  const delay = Math.min(MAX_WEATHER_REFRESH_MS, Math.max(MIN_WEATHER_REFRESH_MS, requestedDelay));
+  weatherRefreshTimerId = scheduler.setTimeout(refreshGlobalWeatherState, delay);
+}
+
+async function refreshGlobalWeatherState() {
   try {
     const response = await fetch('/api/weather-state', {
       method: 'GET',
@@ -4639,10 +4647,20 @@ async function initGlobalWeatherState() {
 
     const weatherState = await response.json();
     applyWeatherStateToDocument(weatherState);
+    authoritativeWeatherState = ['open-meteo', 'manual-override'].includes(weatherState.source)
+      ? weatherState
+      : null;
+    scheduleWeatherRefresh(weatherState.expiresAt);
   } catch (error) {
-    console.warn('No se pudo cargar el clima global; usando cloudy.', error);
-    applyWeatherStateToDocument(getFallbackWeatherState());
+    console.warn('No se pudo refrescar el clima global; conservando el estado anterior.', error);
+    if (!authoritativeWeatherState) applyWeatherStateToDocument(getFallbackWeatherState());
+    scheduleWeatherRefresh(null, FAILED_WEATHER_REFRESH_MS);
   }
+}
+
+function initGlobalWeatherState() {
+  applyWeatherStateToDocument(getFallbackWeatherState());
+  refreshGlobalWeatherState();
 }
 
 function createWordSpan(content, extraClass = '') {
@@ -4888,6 +4906,10 @@ function setQuoteTextContent(text, { includeQuotes = true } = {}) {
 function applyDayNightMode() {
   const body = document.body;
   if (!body) {
+    return;
+  }
+
+  if (authoritativeWeatherState) {
     return;
   }
 

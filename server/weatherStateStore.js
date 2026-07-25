@@ -1,15 +1,16 @@
 import { mkdir, readFile, rename, stat, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { deriveVisualScene } from '../weatherVisual.js';
 import {
   buildWeatherState,
   hasSameWeatherFields,
   isValidWeatherState,
   normalizeWeatherFields,
 } from './weatherMapping.js';
-import { getWeatherFromProvider } from './weatherProvider.js';
+import { getWeatherFromProvider, getWeatherProviderConfig } from './weatherProvider.js';
 
-const DEFAULT_TTL_MS = Number.parseInt(process.env.PARAMO_WEATHER_TTL_MS || '', 10) || 60 * 60 * 1000;
+const DEFAULT_TTL_MS = getWeatherProviderConfig().ttlMinutes * 60 * 1000;
 const SERVER_DIR = dirname(fileURLToPath(import.meta.url));
 
 const WEATHER_STATE_FILE = process.env.PARAMO_WEATHER_STATE_FILE
@@ -19,6 +20,7 @@ const WEATHER_STATE_FILE = process.env.PARAMO_WEATHER_STATE_FILE
 const WEATHER_OVERRIDE_FILE = process.env.PARAMO_WEATHER_OVERRIDE_FILE
   ? resolve(process.env.PARAMO_WEATHER_OVERRIDE_FILE)
   : resolve(SERVER_DIR, 'weather-override.json');
+let activeWeatherRequest = null;
 
 async function readJsonFile(filePath) {
   try {
@@ -51,8 +53,24 @@ async function getFileUpdatedAt(filePath, fallbackDate) {
   }
 }
 
-function isExpired(state, now) {
+export function isWeatherStateExpired(state, now) {
   return Date.parse(state.expiresAt) <= now.getTime();
+}
+
+export function canReusePersistedWeatherState(state, now, config = getWeatherProviderConfig()) {
+  if (!state || isWeatherStateExpired(state, now) || state.source === 'manual-override') {
+    return false;
+  }
+  if (
+    state.source === 'fallback'
+    && state.diagnostics?.reason === 'missing-coordinates'
+    && config.provider === 'open-meteo'
+    && config.latitude !== null
+    && config.longitude !== null
+  ) {
+    return false;
+  }
+  return true;
 }
 
 async function readPersistedWeatherState() {
@@ -61,16 +79,31 @@ async function readPersistedWeatherState() {
 }
 
 async function readManualOverride(now) {
-  const override = await readJsonFile(WEATHER_OVERRIDE_FILE);
+  let override;
+  try {
+    override = await readJsonFile(WEATHER_OVERRIDE_FILE);
+  } catch (error) {
+    if (['EACCES', 'EPERM'].includes(error?.code)) {
+      console.warn(`Override no legible en ${WEATHER_OVERRIDE_FILE}; se usará el proveedor.`);
+      return null;
+    }
+    throw error;
+  }
   if (!override?.manualOverride) {
     return null;
   }
 
   const overrideUpdatedAt = await getFileUpdatedAt(WEATHER_OVERRIDE_FILE, now);
-  return buildWeatherState(normalizeWeatherFields(override), overrideUpdatedAt, DEFAULT_TTL_MS);
+  const normalizedOverride = normalizeWeatherFields(override);
+  return buildWeatherState({
+    ...normalizedOverride,
+    visualScene: deriveVisualScene(normalizedOverride.weather, normalizedOverride.timeOfDay),
+    source: 'manual-override',
+    provider: 'manual',
+  }, overrideUpdatedAt, DEFAULT_TTL_MS);
 }
 
-export async function getGlobalWeatherState({ now = new Date() } = {}) {
+async function resolveGlobalWeatherState(now) {
   const [persistedState, manualOverrideState] = await Promise.all([
     readPersistedWeatherState(),
     readManualOverride(now),
@@ -80,7 +113,7 @@ export async function getGlobalWeatherState({ now = new Date() } = {}) {
     if (
       persistedState
       && hasSameWeatherFields(persistedState, manualOverrideState)
-      && !isExpired(persistedState, now)
+      && !isWeatherStateExpired(persistedState, now)
     ) {
       return persistedState;
     }
@@ -90,13 +123,22 @@ export async function getGlobalWeatherState({ now = new Date() } = {}) {
     return nextState;
   }
 
-  if (persistedState && !isExpired(persistedState, now)) {
+  if (canReusePersistedWeatherState(persistedState, now)) {
     return persistedState;
   }
 
   const providerState = await getWeatherFromProvider({ now, ttlMs: DEFAULT_TTL_MS });
   await writeJsonFile(WEATHER_STATE_FILE, providerState);
   return providerState;
+}
+
+export function getGlobalWeatherState({ now = new Date() } = {}) {
+  if (activeWeatherRequest) return activeWeatherRequest;
+  activeWeatherRequest = resolveGlobalWeatherState(now)
+    .finally(() => {
+      activeWeatherRequest = null;
+    });
+  return activeWeatherRequest;
 }
 
 export const weatherStatePaths = Object.freeze({

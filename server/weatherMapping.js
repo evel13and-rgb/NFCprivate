@@ -13,12 +13,15 @@ export const ALLOWED_WEATHER_STATES = Object.freeze([
 
 const ALLOWED_INTENSITIES = Object.freeze(['soft', 'medium', 'strong']);
 const ALLOWED_TIMES_OF_DAY = Object.freeze(['dawn', 'day', 'sunset', 'night']);
+const ALLOWED_SOURCES = Object.freeze(['open-meteo', 'fallback', 'manual-override']);
+const STATE_SCHEMA_VERSION = 2;
 
 export const DEFAULT_WEATHER_STATE = Object.freeze({
   weather: 'cloudy',
   intensity: 'soft',
   timeOfDay: 'day',
-  source: 'server',
+  source: 'fallback',
+  provider: 'none',
 });
 
 export function isAllowedWeather(weather) {
@@ -36,11 +39,17 @@ export function normalizeWeatherFields(input = {}) {
       ? input.timeOfDay
       : DEFAULT_WEATHER_STATE.timeOfDay;
 
+  const source = ALLOWED_SOURCES.includes(input.source) ? input.source : DEFAULT_WEATHER_STATE.source;
   return {
     weather,
     intensity,
     timeOfDay,
-    source: 'server',
+    source,
+    provider: typeof input.provider === 'string' ? input.provider : DEFAULT_WEATHER_STATE.provider,
+    visualScene: typeof input.visualScene === 'string' ? input.visualScene : null,
+    diagnostics: input.diagnostics && typeof input.diagnostics === 'object'
+      ? input.diagnostics
+      : {},
   };
 }
 
@@ -50,6 +59,7 @@ export function buildWeatherState(input = {}, now = new Date(), ttlMs = 60 * 60 
   const expiresAt = new Date(now.getTime() + ttlMs).toISOString();
 
   return {
+    schemaVersion: STATE_SCHEMA_VERSION,
     ...fields,
     updatedAt,
     expiresAt,
@@ -65,7 +75,10 @@ export function isValidWeatherState(input) {
     isAllowedWeather(input.weather)
     && ALLOWED_INTENSITIES.includes(input.intensity)
     && ALLOWED_TIMES_OF_DAY.includes(input.timeOfDay)
-    && input.source === 'server'
+    && input.schemaVersion === STATE_SCHEMA_VERSION
+    && ALLOWED_SOURCES.includes(input.source)
+    && typeof input.provider === 'string'
+    && (input.visualScene === null || typeof input.visualScene === 'string')
     && typeof input.updatedAt === 'string'
     && typeof input.expiresAt === 'string'
     && !Number.isNaN(Date.parse(input.updatedAt))
