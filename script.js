@@ -5111,22 +5111,19 @@ function hasProfileValue(value) {
     && (typeof value !== 'string' || Boolean(value.trim()));
 }
 
-function appendProfileMeta(container, items) {
+function appendProfileMetaLine(container, items, options = {}) {
   const values = items.filter(([, value]) => hasProfileValue(value));
   if (!values.length) return;
-  const list = document.createElement('dl');
-  list.className = 'profile-meta';
-  for (const [label, value] of values) {
-    const item = document.createElement('div');
+  const line = document.createElement('p');
+  line.className = `profile-meta${options.secondary ? ' profile-meta--secondary' : ''}`;
+  for (const [label, value, suffix] of values) {
+    const item = document.createElement('span');
     item.className = 'profile-meta__item';
-    const term = document.createElement('dt');
-    term.textContent = label;
-    const description = document.createElement('dd');
-    description.textContent = value;
-    item.append(term, description);
-    list.appendChild(item);
+    item.setAttribute('aria-label', `${label}: ${value}${suffix || ''}`);
+    item.textContent = `${value}${suffix || ''}`;
+    line.appendChild(item);
   }
-  container.appendChild(list);
+  container.appendChild(line);
 }
 
 function appendProfileSection(container, title, value, options = {}) {
@@ -5138,7 +5135,7 @@ function appendProfileSection(container, title, value, options = {}) {
   heading.textContent = title;
   section.appendChild(heading);
 
-  if (Array.isArray(value)) {
+  if (Array.isArray(value) && !options.paragraphs) {
     const list = document.createElement('ul');
     list.className = options.chips ? 'profile-themes' : 'profile-list';
     for (const text of value) {
@@ -5149,10 +5146,14 @@ function appendProfileSection(container, title, value, options = {}) {
     }
     section.appendChild(list);
   } else {
-    const paragraph = document.createElement('p');
-    paragraph.className = 'profile-section__text';
-    paragraph.textContent = value;
-    section.appendChild(paragraph);
+    const paragraphs = options.paragraphs ? value : [value];
+    for (const text of paragraphs) {
+      if (!hasProfileValue(text)) continue;
+      const paragraph = document.createElement('p');
+      paragraph.className = 'profile-section__text';
+      paragraph.textContent = text;
+      section.appendChild(paragraph);
+    }
   }
   container.appendChild(section);
 }
@@ -5164,24 +5165,25 @@ function renderInfoContent(type, contentElement, entry) {
   if (entry) {
     if (type === 'author') {
       const dates = entry.birth_year && entry.death_year
-        ? `${entry.birth_year}-${entry.death_year}`
+        ? `${entry.birth_year}–${entry.death_year}`
         : entry.birth_year || entry.death_year || null;
-      appendProfileMeta(fragment, [
+      appendProfileMetaLine(fragment, [
         ['Fechas', dates],
         ['País', entry.country],
         ['Lengua', entry.language],
+      ]);
+      appendProfileMetaLine(fragment, [
         ['Época', entry.period],
         ['Movimiento o corriente', entry.movement],
-      ]);
-      appendProfileSection(fragment, 'Biografía', entry.bio_short);
-      if (entry.bio_long && entry.bio_long !== entry.bio_short) {
-        appendProfileSection(fragment, 'Biografía ampliada', entry.bio_long);
-      }
+      ], { secondary: true });
+      const biographies = [entry.bio_short];
+      if (entry.bio_long && entry.bio_long !== entry.bio_short) biographies.push(entry.bio_long);
+      appendProfileSection(fragment, 'Biografía', biographies, { paragraphs: true });
       appendProfileSection(fragment, 'Temas', entry.themes, { chips: true });
-      appendProfileSection(fragment, 'Tono / notas de estilo', entry.tone_notes);
+      appendProfileSection(fragment, 'Estilo y tono', entry.tone_notes);
       appendProfileSection(
         fragment,
-        'Por qué encaja en Páramo Literario',
+        'En Páramo Literario',
         entry.why_in_paramo,
       );
       appendProfileSection(
@@ -5192,25 +5194,26 @@ function renderInfoContent(type, contentElement, entry) {
       );
     } else {
       const authorEntry = getCatalogEntry('author', entry.author_id);
-      appendProfileMeta(fragment, [
-        ['Título original', entry.original_title],
-        ['Autor', authorEntry?.display_name],
+      appendProfileMetaLine(fragment, [
         ['Año', entry.publication_year],
         ['Género', entry.genre],
-        ['Lengua', entry.language],
-        ['Fragmentos incluidos', entry.fragment_count],
+        ['Fragmentos incluidos', entry.fragment_count, ' fragmentos incluidos'],
       ]);
-      appendProfileSection(fragment, 'Resumen', entry.summary_short);
-      if (entry.summary_long && entry.summary_long !== entry.summary_short) {
-        appendProfileSection(fragment, 'Resumen ampliado', entry.summary_long);
-      }
+      appendProfileMetaLine(fragment, [
+        ['Título original', entry.original_title],
+        ['Autor', authorEntry?.display_name],
+        ['Lengua', entry.language],
+      ], { secondary: true });
+      const summaries = [entry.summary_short];
+      if (entry.summary_long && entry.summary_long !== entry.summary_short) summaries.push(entry.summary_long);
+      appendProfileSection(fragment, 'Resumen', summaries, { paragraphs: true });
       appendProfileSection(fragment, 'Contexto', entry.context_notes);
       appendProfileSection(fragment, 'Temas', entry.themes, { chips: true });
       appendProfileSection(fragment, 'Tono', entry.tone_notes);
-      appendProfileSection(fragment, 'Notas sobre los fragmentos', entry.fragment_notes);
+      appendProfileSection(fragment, 'Fragmentos', entry.fragment_notes);
       appendProfileSection(
         fragment,
-        'Por qué encaja en Páramo Literario',
+        'En Páramo Literario',
         entry.why_in_paramo,
       );
       appendProfileSection(
