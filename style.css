@@ -1502,26 +1502,31 @@ body[data-mode='day'] .mycelium-layer {
 .modal__overlay {
   position: fixed;
   inset: 0;
-  background: rgba(18, 13, 9, 0.55);
-  -webkit-backdrop-filter: blur(5px) saturate(0.8);
-  backdrop-filter: blur(5px) saturate(0.8);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(37, 29, 22, 0.18), rgba(8, 7, 6, 0.72) 72%),
+    rgba(12, 10, 8, 0.58);
+  -webkit-backdrop-filter: blur(9px) saturate(0.62);
+  backdrop-filter: blur(9px) saturate(0.62);
 }
 
 .modal__dialog {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: min(88dvh, 820px);
+  max-height: min(90dvh, 850px);
   overflow: hidden;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background:
-    linear-gradient(105deg, rgba(200, 162, 90, 0.035), transparent 18%),
-    linear-gradient(155deg, rgba(33, 30, 26, 0.975), rgba(22, 21, 20, 0.965));
-  border-radius: 7px 18px 18px 7px;
+    linear-gradient(180deg, rgba(211, 184, 133, 0.035), transparent 24%),
+    linear-gradient(145deg, rgba(31, 27, 23, 0.985), rgba(20, 18, 16, 0.98));
+  border-radius: 3px;
   padding: 0;
-  width: min(720px, calc(100vw - 2rem));
-  box-shadow: 0 30px 75px rgba(8, 6, 4, 0.48), -8px 0 28px rgba(8, 6, 4, 0.2);
-  border: 1px solid rgba(218, 187, 127, 0.16);
-  border-left-color: rgba(218, 187, 127, 0.34);
+  width: min(700px, calc(100vw - 2rem));
+  box-shadow:
+    0 36px 90px rgba(5, 4, 3, 0.58),
+    0 2px 12px rgba(5, 4, 3, 0.28);
+  border: 1px solid rgba(221, 199, 157, 0.12);
+  border-top-color: rgba(221, 199, 157, 0.24);
 }
 
 body[data-mode='day'] .modal__subtitle,
@@ -1533,35 +1538,38 @@ body[data-mode='day'] .modal__content {
 
 .modal__header {
   flex: 0 0 auto;
-  padding: clamp(1.7rem, 4vw, 2.6rem) clamp(3.7rem, 7vw, 5rem)
-    clamp(1.2rem, 3vw, 1.7rem) clamp(1.35rem, 5vw, 3.4rem);
-  background: linear-gradient(180deg, rgba(218, 187, 127, 0.045), transparent);
+  padding: clamp(2.25rem, 5vw, 3.35rem) clamp(4.25rem, 8vw, 5.3rem)
+    clamp(1.65rem, 4vw, 2.25rem) clamp(1.5rem, 6vw, 4rem);
+  background: none;
 }
 
 .modal__title {
   margin: 0;
   font-family: 'Playfair Display', 'Times New Roman', serif;
-  max-width: 18ch;
+  max-width: 20ch;
   font-weight: 500;
-  font-size: clamp(1.85rem, 5vw, 2.85rem);
-  line-height: 1.06;
-  letter-spacing: -0.018em;
-  color: var(--title);
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  color: #d7b978;
+  text-wrap: balance;
 }
 
 .modal__subtitle {
-  margin: 0 0 0.6rem;
-  color: var(--author);
-  letter-spacing: 0.16em;
-  font-size: 0.67rem;
-  font-weight: 600;
+  margin: 0 0 0.85rem;
+  color: rgba(205, 195, 177, 0.58);
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.23em;
+  font-size: 0.62rem;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
 .modal__content {
-  font-size: clamp(0.98rem, 1.7vw, 1.04rem);
-  color: var(--text);
-  line-height: 1.65;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(0.94rem, 1.6vw, 1rem);
+  color: #ddd6c9;
+  line-height: 1.8;
 }
 
 .modal__body {
@@ -1570,8 +1578,14 @@ body[data-mode='day'] .modal__content {
   overflow-y: auto;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
-  padding: 0 clamp(1.35rem, 5vw, 3.4rem) clamp(2rem, 5vw, 3.2rem);
+  padding: 0 clamp(1.5rem, 6vw, 4rem) clamp(2.6rem, 6vw, 4rem);
   scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(200, 173, 118, 0.28) transparent;
+}
+
+.modal__dialog .modal__content {
+  color: #ddd6c9;
 }
 
 body.modal-open {
@@ -1582,12 +1596,15 @@ body.modal-open {
 .profile-meta {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 0;
   margin: 0;
-  color: var(--title);
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-size: 0.95rem;
-  line-height: 1.55;
+  color: rgba(221, 214, 201, 0.72);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
 }
 
 .profile-meta__item {
@@ -1596,39 +1613,43 @@ body.modal-open {
 
 .profile-meta__item + .profile-meta__item::before {
   content: '·';
-  margin: 0 0.55em;
-  color: rgba(200, 162, 90, 0.58);
+  margin: 0 0.62em;
+  color: rgba(200, 174, 119, 0.48);
 }
 
 .profile-meta--secondary {
-  margin-top: 0.22rem;
-  color: var(--author);
-  font-family: inherit;
-  font-size: 0.78rem;
-  letter-spacing: 0.035em;
+  margin-top: 0.12rem;
+  color: rgba(198, 190, 176, 0.52);
+  font-size: 0.74rem;
+  letter-spacing: 0.025em;
 }
 
 .profile-meta + .profile-section {
-  margin-top: clamp(1.7rem, 4vw, 2.45rem);
+  margin-top: clamp(2.25rem, 5vw, 3.2rem);
 }
 
 .profile-section + .profile-section {
-  margin-top: clamp(1.65rem, 4vw, 2.25rem);
+  margin-top: clamp(2rem, 4.5vw, 2.75rem);
 }
 
 .profile-section__title {
-  margin: 0 0 0.72rem;
-  color: rgba(218, 187, 127, 0.82);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  margin: 0 0 0.9rem;
+  color: rgba(205, 175, 116, 0.7);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .profile-section__text {
-  max-width: 61ch;
+  max-width: 64ch;
   margin: 0;
-  line-height: 1.82;
+  color: #ddd6c9;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.88;
   white-space: pre-line;
   text-wrap: pretty;
 }
@@ -1638,20 +1659,21 @@ body.modal-open {
 }
 
 .profile-section--compact .profile-section__text {
-  font-size: 0.76rem;
-  line-height: 1.62;
-  color: var(--author);
+  font-size: 0.74rem;
+  line-height: 1.72;
+  color: rgba(198, 190, 176, 0.58);
 }
 
 .profile-section--compact {
-  margin-top: clamp(2.2rem, 5vw, 3rem) !important;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(200, 162, 90, 0.13);
+  margin-top: clamp(2.8rem, 6vw, 3.8rem) !important;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(205, 179, 126, 0.09);
 }
 
 .profile-section--compact .profile-section__title {
-  color: var(--author);
-  font-size: 0.61rem;
+  margin-bottom: 0.65rem;
+  color: rgba(198, 181, 149, 0.5);
+  font-size: 0.58rem;
 }
 
 .profile-themes,
@@ -1661,56 +1683,72 @@ body.modal-open {
 }
 
 .profile-themes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.42rem 0.5rem;
+  display: block;
   list-style: none;
+  max-width: 64ch;
+  color: rgba(218, 209, 193, 0.76);
+  font-size: 0.82rem;
+  line-height: 1.85;
 }
 
 .profile-themes li {
-  padding: 0.25rem 0.58rem;
-  border: 1px solid rgba(200, 162, 90, 0.16);
-  border-radius: 999px;
-  background: rgba(200, 162, 90, 0.035);
-  color: var(--author);
-  font-size: 0.74rem;
-  line-height: 1.35;
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+.profile-themes li + li::before {
+  content: ' · ';
+  color: rgba(200, 174, 119, 0.5);
 }
 
 .profile-list {
-  padding-left: 1.15rem;
+  list-style: none;
+  max-width: 64ch;
+  color: rgba(198, 190, 176, 0.58);
+  font-size: 0.74rem;
+  line-height: 1.72;
 }
 
-.profile-list li + li {
-  margin-top: 0.35rem;
+.profile-list li {
+  display: inline;
+}
+
+.profile-list li + li::before {
+  content: '; ';
 }
 
 .modal__close {
   position: absolute;
   z-index: 2;
-  top: 1rem;
-  right: 1rem;
+  top: 1.15rem;
+  right: 1.15rem;
   display: grid;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
   place-items: center;
   border: 1px solid transparent;
-  border-radius: 50%;
-  background: rgba(15, 14, 13, 0.12);
-  font-size: 1.35rem;
-  color: var(--author);
+  border-radius: 0;
+  background: transparent;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(213, 204, 188, 0.55);
   cursor: pointer;
-  padding: 0.25rem;
+  padding: 0;
   line-height: 1;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .modal__close:hover,
 .modal__close:focus-visible {
-  color: var(--title);
-  border-color: rgba(200, 162, 90, 0.5);
-  outline: 2px solid rgba(200, 162, 90, 0.35);
-  outline-offset: 2px;
+  color: #d7b978;
+  border-color: transparent;
+  outline: 1px solid rgba(200, 174, 119, 0.28);
+  outline-offset: 0;
 }
 
 .modal__dialog:focus-visible {
@@ -1719,11 +1757,12 @@ body.modal-open {
 
 body.night-fall .modal__dialog {
   background:
-    linear-gradient(105deg, rgba(200, 162, 90, 0.025), transparent 18%),
-    linear-gradient(155deg, rgba(15, 12, 18, 0.975), rgba(20, 15, 24, 0.965));
+    linear-gradient(180deg, rgba(216, 198, 160, 0.025), transparent 24%),
+    linear-gradient(145deg, rgba(18, 15, 20, 0.988), rgba(12, 11, 15, 0.982));
   color: var(--text-night);
-  border-color: rgba(246, 234, 199, 0.16);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35), 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: rgba(235, 220, 185, 0.12);
+  border-top-color: rgba(235, 220, 185, 0.22);
+  box-shadow: 0 36px 90px rgba(0, 0, 0, 0.62);
 }
 
 body.night-fall .modal__title {
@@ -1817,35 +1856,58 @@ body.night-fall .modal__close:focus-visible {
 @media (max-width: 600px) {
   .modal {
     align-items: flex-end;
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
 
   .modal__dialog {
     width: 100%;
     max-width: none;
-    max-height: 86dvh;
-    border-radius: 6px 16px 16px 6px;
+    max-height: 91dvh;
+    border-radius: 3px;
   }
 
   .modal__header {
-    padding: 1.45rem 3.6rem 1rem 1.25rem;
+    padding: 2rem 3.65rem 1.35rem 1.4rem;
   }
 
   .modal__title {
-    font-size: clamp(1.75rem, 8vw, 2.25rem);
-    line-height: 1.08;
+    max-width: 16ch;
+    font-size: clamp(1.85rem, 8.6vw, 2.45rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
   }
 
   .modal__body {
-    padding: 0 1.25rem 2rem;
+    padding: 0 1.4rem 2.5rem;
+    scrollbar-gutter: auto;
+  }
+
+  .modal__close {
+    top: 0.85rem;
+    right: 0.75rem;
   }
 
   .profile-section + .profile-section {
-    margin-top: 1.6rem;
+    margin-top: 1.9rem;
   }
 
   .profile-section__text {
-    line-height: 1.68;
+    font-size: 0.92rem;
+    line-height: 1.82;
+  }
+
+  .profile-meta {
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .profile-meta--secondary {
+    font-size: 0.7rem;
+  }
+
+  .profile-themes {
+    font-size: 0.78rem;
+    line-height: 1.8;
   }
 
   body {

@@ -5169,13 +5169,13 @@ function renderInfoContent(type, contentElement, entry) {
     } else {
       const authorEntry = getCatalogEntry('author', entry.author_id);
       appendProfileMetaLine(fragment, [
+        ['Autor', authorEntry?.display_name],
         ['Año', entry.publication_year],
         ['Género', entry.genre],
         ['Fragmentos incluidos', entry.fragment_count, ' fragmentos incluidos'],
       ]);
       appendProfileMetaLine(fragment, [
         ['Título original', entry.original_title],
-        ['Autor', authorEntry?.display_name],
         ['Lengua', entry.language],
       ], { secondary: true });
       const summaries = [entry.summary_short];
