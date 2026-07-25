@@ -4548,7 +4548,7 @@ let reduceMotionQuery = null;
 let esNoche = isNightTime();
 let activeModal = null;
 let lastModalTrigger = null;
-let authoritativeWeatherState = null;
+let latestServerWeatherState = null;
 let weatherRefreshTimerId = null;
 
 function initMotionPreferenceWatcher() {
@@ -4646,14 +4646,12 @@ async function refreshGlobalWeatherState() {
     }
 
     const weatherState = await response.json();
+    latestServerWeatherState = weatherState;
     applyWeatherStateToDocument(weatherState);
-    authoritativeWeatherState = ['open-meteo', 'manual-override'].includes(weatherState.source)
-      ? weatherState
-      : null;
     scheduleWeatherRefresh(weatherState.expiresAt);
   } catch (error) {
     console.warn('No se pudo refrescar el clima global; conservando el estado anterior.', error);
-    if (!authoritativeWeatherState) applyWeatherStateToDocument(getFallbackWeatherState());
+    if (!latestServerWeatherState) applyWeatherStateToDocument(getFallbackWeatherState());
     scheduleWeatherRefresh(null, FAILED_WEATHER_REFRESH_MS);
   }
 }
@@ -4909,11 +4907,7 @@ function applyDayNightMode() {
     return;
   }
 
-  if (authoritativeWeatherState) {
-    return;
-  }
-
-  applyWeatherStateToDocument({
+  applyWeatherStateToDocument(latestServerWeatherState || {
     weather: body.dataset.weather || FALLBACK_WEATHER_STATE.weather,
     intensity: body.dataset.weatherIntensity || FALLBACK_WEATHER_STATE.intensity,
   });

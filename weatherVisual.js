@@ -59,6 +59,11 @@ export function normalizeVisualWeatherState(input = {}) {
 }
 
 export function deriveVisualScene(weather, timeOfDay) {
+  if (timeOfDay === 'night') {
+    if (RAIN_WEATHER_STATES.has(weather)) return 'night-rain';
+    if (CLEAR_WEATHER_STATES.has(weather)) return 'night-clear';
+    return 'night';
+  }
   if (weather === 'rainbow') {
     return 'rainbow-after-rain';
   }
@@ -71,26 +76,16 @@ export function deriveVisualScene(weather, timeOfDay) {
   if (timeOfDay === 'sunset') {
     return RAIN_WEATHER_STATES.has(weather) ? 'sunset-rain' : 'sunset';
   }
-  if (timeOfDay === 'night') {
-    if (RAIN_WEATHER_STATES.has(weather)) return 'night-rain';
-    if (CLEAR_WEATHER_STATES.has(weather)) return 'night-clear';
-    return 'night';
-  }
   if (RAIN_WEATHER_STATES.has(weather)) {
     return 'day-rain';
   }
   return `day-${weather}`;
 }
 
-export function resolveVisualWeatherState(input = {}, fallbackTimeOfDay = 'day') {
+export function resolveVisualWeatherState(input = {}, localTimeOfDay = 'day') {
   const normalized = normalizeVisualWeatherState(input);
-  const serverIsAuthoritative = ['open-meteo', 'manual-override'].includes(normalized.source);
-  const timeOfDay = serverIsAuthoritative && normalized.timeOfDay
-    ? normalized.timeOfDay
-    : fallbackTimeOfDay;
-  const visualScene = serverIsAuthoritative && normalized.visualScene
-    ? normalized.visualScene
-    : normalized.legacyVisualScene || deriveVisualScene(normalized.weather, timeOfDay);
+  const timeOfDay = TIMES_OF_DAY.has(localTimeOfDay) ? localTimeOfDay : 'day';
+  const visualScene = deriveVisualScene(normalized.weather, timeOfDay);
 
   return {
     ...normalized,

@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import {
   deriveVisualScene,
   normalizeVisualWeatherState,
@@ -28,7 +29,7 @@ test('mantiene fallback cloudy + soft', () => {
   );
 });
 
-test('el cliente respeta timeOfDay y visualScene de Open-Meteo', () => {
+test('el cliente ignora timeOfDay y visualScene de Open-Meteo', () => {
   const state = resolveVisualWeatherState({
     weather: 'rainbow',
     intensity: 'soft',
@@ -37,8 +38,27 @@ test('el cliente respeta timeOfDay y visualScene de Open-Meteo', () => {
     source: 'open-meteo',
     provider: 'open-meteo',
   }, 'night');
-  assert.equal(state.timeOfDay, 'sunset');
-  assert.equal(state.visualScene, 'rainbow-after-rain');
+  assert.equal(state.timeOfDay, 'night');
+  assert.equal(state.visualScene, 'night');
+});
+
+test('combina clima del servidor con hora local del visitante', () => {
+  assert.equal(resolveVisualWeatherState({ weather: 'sunny' }, 'day').visualScene, 'sunny-day');
+  assert.equal(resolveVisualWeatherState({ weather: 'sunny' }, 'night').visualScene, 'night-clear');
+  assert.equal(
+    resolveVisualWeatherState({ weather: 'rainbow' }, 'day').visualScene,
+    'rainbow-after-rain',
+  );
+  assert.equal(resolveVisualWeatherState({ weather: 'rainbow' }, 'night').visualScene, 'night');
+  assert.equal(resolveVisualWeatherState({ weather: 'light-rain' }, 'sunset').visualScene, 'sunset-rain');
+});
+
+test('el cliente no solicita geolocalización del visitante', () => {
+  const clientSource = [
+    readFileSync(new URL('../script.js', import.meta.url), 'utf8'),
+    readFileSync(new URL('../weatherVisual.js', import.meta.url), 'utf8'),
+  ].join('\n');
+  assert.doesNotMatch(clientSource, /navigator\.geolocation|getCurrentPosition|watchPosition/);
 });
 
 test('el cliente usa la hora local como fallback no autoritativo', () => {
@@ -62,6 +82,7 @@ test('normaliza estados nocturnos heredados', () => {
   ['sunny', 'day', 'sunny-day'],
   ['clear', 'day', 'sunny-day'],
   ['rainbow', 'day', 'rainbow-after-rain'],
+  ['rainbow', 'night', 'night'],
   ['cloudy', 'sunset', 'sunset'],
   ['cloudy', 'night', 'night'],
 ].forEach(([weather, timeOfDay, expected]) => {

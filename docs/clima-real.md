@@ -1,5 +1,15 @@
 # Clima real con Open-Meteo
 
+## Modelo A
+
+Páramo Literario utiliza definitivamente el Modelo A:
+
+- la hora visual procede exclusivamente del reloj local del dispositivo visitante;
+- el clima atmosférico es único para todo el sitio y procede del backend;
+- el backend consulta unas coordenadas fijas y simbólicas de Páramo Literario;
+- el navegador no solicita geolocalización, permisos de ubicación ni coordenadas;
+- no existe un clima diferente por visitante y no se guarda ubicación personal.
+
 ## Proveedor y comportamiento seguro
 
 El backend consulta la API Forecast de [Open-Meteo](https://open-meteo.com/en/docs).
@@ -30,8 +40,9 @@ PARAMO_WEATHER_TTL_MINUTES=30
 ```
 
 `PARAMO_WEATHER_TIMEZONE` es opcional; sin ella se usa `auto`. El TTL válido está
-limitado a 5–180 minutos y por defecto es 30. La ubicación no está fijada en el código:
-hay que elegir explícitamente las coordenadas que represente Páramo Literario.
+limitado a 5–180 minutos y por defecto es 30. Estas son coordenadas simbólicas, fijas
+y globales de Páramo Literario: no pertenecen al visitante y nunca se obtienen desde
+el navegador. Hay que elegirlas explícitamente en el servidor.
 
 En la revisión del 25 de julio de 2026, el entorno instalado todavía no contenía
 `PARAMO_WEATHER_LATITUDE`, `PARAMO_WEATHER_LONGITUDE` ni las demás variables nuevas.
@@ -51,14 +62,17 @@ ninguna dependencia.
 
 ## Contrato de `/api/weather-state`
 
-La respuesta incluye:
+La respuesta incluye principalmente:
 
-- `weather`, `intensity`, `timeOfDay` y `visualScene`;
+- `weather` e `intensity`;
 - `source` (`open-meteo`, `fallback` o `manual-override`);
 - `provider`;
 - `updatedAt`, `expiresAt` y `schemaVersion`;
 - `diagnostics` básicos: código WMO, nubosidad, precipitación, probabilidad cercana,
   zona horaria y disponibilidad de datos solares. No contiene coordenadas.
+
+El contrato puede conservar `timeOfDay` y `visualScene` como diagnóstico del proveedor
+por compatibilidad. El cliente los ignora para escoger la escena principal.
 
 Los estados cacheados usan una versión de esquema. Los JSON antiguos —incluidos
 estados manuales antiguos como `rainbow`— se invalidan automáticamente. Cuando se
@@ -80,17 +94,23 @@ inmediato y se vuelve al proveedor, sin esperar al TTL.
 - Precipitación, tasa de lluvia/chubascos y probabilidad horaria cercana ajustan
   `soft`, `medium` o `strong`.
 
-### Amanecer y puesta de sol
+### Hora y escena visual en el cliente
 
-Con datos solares válidos:
+El navegador calcula `timeOfDay` con su propio reloj, sin ubicación:
 
-- `dawn`: desde `sunrise` hasta 90 minutos después;
-- `sunset`: desde 90 minutos antes de `sunset` hasta 30 minutos después;
-- `night`: antes del amanecer y después del margen de puesta;
-- `day`: el resto.
+- `night`: 20:00–05:59;
+- `dawn`: 06:00–07:29;
+- `day`: 07:30–17:59;
+- `sunset`: 18:00–19:59.
 
-Si faltan esos datos se conserva el horario anterior: noche 20:00–05:59, amanecer
-06:00–07:29, día 07:30–17:59 y atardecer 18:00–19:59.
+Después combina esa franja local con `weather` e `intensity` del servidor para derivar
+`visualScene`. Por ejemplo, `sunny` produce `sunny-day` al mediodía local y
+`night-clear` por la noche local. `light-rain` durante el atardecer produce
+`sunset-rain`.
+
+Open-Meteo puede seguir proporcionando sunrise/sunset para diagnósticos y para
+interpretar la atmósfera de las coordenadas fijas, pero esos valores no controlan la
+hora visual del visitante.
 
 ### Arcoíris
 
@@ -104,12 +124,17 @@ Si faltan esos datos se conserva el horario anterior: noche 20:00–05:59, amane
 
 Sin evidencia suficiente se conserva `sunny`, `clear` o `cloudy`.
 
+Aunque el backend devuelva `weather: "rainbow"`, el cliente solo deriva
+`rainbow-after-rain` durante `dawn`, `day` o `sunset` locales. Durante `night` local
+deriva una escena nocturna sin arcoíris.
+
 ## Refresco y fallback
 
-El cliente respeta `timeOfDay` y `visualScene` cuando `source` es `open-meteo`. Programa
-la siguiente consulta según `expiresAt`, con límites de 5 a 60 minutos. Ante un fallo
-conserva el último estado real y reintenta sin polling agresivo. Cuando el servidor
-está en fallback, el cliente conserva su cálculo horario local.
+El cliente respeta `weather`, `intensity` y `expiresAt` del backend, pero ignora
+`timeOfDay` y `visualScene` recibidos al decidir la escena principal. Programa la
+siguiente consulta según `expiresAt`, con límites de 5 a 60 minutos. Ante un fallo
+conserva el último clima real y reintenta sin polling agresivo. El cálculo horario
+local continúa actualizándose cada minuto y no queda sobrescrito por un refresco.
 
 Para volver deliberadamente al fallback, elimina o comenta las coordenadas y reinicia
 el servicio. La respuesta indicará `source: "fallback"` y
