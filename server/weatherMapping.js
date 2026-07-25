@@ -1,16 +1,18 @@
 export const ALLOWED_WEATHER_STATES = Object.freeze([
   'sunny',
+  'clear',
   'cloudy',
   'overcast',
   'light-rain',
   'heavy-rain',
   'mist',
+  'rainbow',
   'night-clear',
   'night-rain',
 ]);
 
 const ALLOWED_INTENSITIES = Object.freeze(['soft', 'medium', 'strong']);
-const ALLOWED_TIMES_OF_DAY = Object.freeze(['day', 'sunset', 'night']);
+const ALLOWED_TIMES_OF_DAY = Object.freeze(['dawn', 'day', 'sunset', 'night']);
 
 export const DEFAULT_WEATHER_STATE = Object.freeze({
   weather: 'cloudy',

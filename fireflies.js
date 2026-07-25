@@ -114,8 +114,11 @@ function shouldShowFireflies() {
   const isRain =
     RAIN_WEATHER_STATES.has(weather)
     || visualScene === 'night-rain';
+  const excludesFireflies =
+    visualScene === 'dawn'
+    || visualScene === 'rainbow-after-rain';
 
-  return isNight && !isRain;
+  return isNight && !isRain && !excludesFireflies;
 }
 
 function clamp(value, min, max) {

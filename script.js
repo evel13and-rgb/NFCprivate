@@ -2,6 +2,13 @@ import { createQuoteManager } from './quoteLogic.js';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
+import {
+  ALLOWED_TIMES_OF_DAY,
+  FALLBACK_WEATHER_STATE,
+  deriveVisualScene,
+  normalizeVisualWeatherState,
+  supportsDaylightMotes,
+} from './weatherVisual.js';
 const RAYO_QUE_NO_CESA_QUOTES = [
   {
     t: `¿No cesará este rayo que me habita
@@ -4472,28 +4479,8 @@ const QUOTES = [
   ...PRECIOSO_VENENO_QUOTES,
 ];
 
-const ALLOWED_WEATHER_STATES = new Set([
-  'clear',
-  'sunny',
-  'cloudy',
-  'overcast',
-  'light-rain',
-  'heavy-rain',
-  'mist',
-]);
-const ALLOWED_WEATHER_INTENSITIES = new Set(['soft', 'medium', 'strong']);
-const ALLOWED_WEATHER_TIMES = new Set(['day', 'sunset', 'night']);
-const LEGACY_WEATHER_STATE_MAP = Object.freeze({
-  'night-clear': 'clear',
-  'night-rain': 'light-rain',
-});
-const CLEAR_WEATHER_STATES = new Set(['clear', 'sunny']);
-const RAIN_WEATHER_STATES = new Set(['light-rain', 'heavy-rain']);
+const ALLOWED_WEATHER_TIMES = new Set(ALLOWED_TIMES_OF_DAY);
 const FALLBACK_TIME_OF_DAY = 'day';
-const FALLBACK_WEATHER_STATE = Object.freeze({
-  weather: 'cloudy',
-  intensity: 'soft',
-});
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
 
 const AUTHORS_INFO = {};
@@ -4579,22 +4566,7 @@ function initMotionPreferenceWatcher() {
 }
 
 function normalizeWeatherState(input = {}) {
-  const legacyVisualScene = Object.prototype.hasOwnProperty.call(LEGACY_WEATHER_STATE_MAP, input.weather)
-    ? input.weather
-    : null;
-  const normalizedLegacyWeather = LEGACY_WEATHER_STATE_MAP[input.weather] || input.weather;
-  const weather = ALLOWED_WEATHER_STATES.has(normalizedLegacyWeather)
-    ? normalizedLegacyWeather
-    : FALLBACK_WEATHER_STATE.weather;
-  const intensity = ALLOWED_WEATHER_INTENSITIES.has(input.intensity)
-    ? input.intensity
-    : FALLBACK_WEATHER_STATE.intensity;
-
-  return {
-    weather,
-    intensity,
-    legacyVisualScene,
-  };
+  return normalizeVisualWeatherState(input);
 }
 
 function getFallbackWeatherState() {
@@ -4608,22 +4580,8 @@ function getLocalTimeOfDay() {
   return ALLOWED_WEATHER_TIMES.has(timeOfDay) ? timeOfDay : FALLBACK_TIME_OF_DAY;
 }
 
-function deriveVisualScene(weather, timeOfDay) {
-  if (CLEAR_WEATHER_STATES.has(weather)) {
-    return `${timeOfDay}-clear`;
-  }
-  if (RAIN_WEATHER_STATES.has(weather)) {
-    return `${timeOfDay}-rain`;
-  }
-  return `${timeOfDay}-${weather}`;
-}
-
 function updateAtmosphericParticles(weatherState) {
-  const shouldShowDaylightMotes =
-    weatherState.timeOfDay !== 'night'
-    && (CLEAR_WEATHER_STATES.has(weatherState.weather) || weatherState.weather === 'cloudy');
-
-  setDaylightMotesActive(shouldShowDaylightMotes);
+  setDaylightMotesActive(supportsDaylightMotes(weatherState));
 }
 
 function applyTimeOfDayToDocument(timeOfDay) {
@@ -4646,7 +4604,7 @@ function applyWeatherStateToDocument(weatherState) {
 
   const normalizedState = normalizeWeatherState(weatherState);
   const { legacyVisualScene, ...globalWeatherState } = normalizedState;
-  const localTimeOfDay = getLocalTimeOfDay();
+  const localTimeOfDay = normalizedState.timeOfDay || getLocalTimeOfDay();
   const visualState = {
     ...globalWeatherState,
     timeOfDay: localTimeOfDay,
