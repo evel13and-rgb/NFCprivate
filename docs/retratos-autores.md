@@ -19,17 +19,34 @@ en la página de cada archivo de Wikimedia Commons en la fecha de consulta.
 | Elizabeth von Arnim | `public/images/authors/elizabeth-von-arnim.webp` | [Elizabeth von Arnim, 1896](https://commons.wikimedia.org/wiki/File:Elizabeth_von_Arnim-1896.jpg) | Autor desconocido; imagen procedente de Éditions Claire Paulhan | Dominio público; Public Domain Mark 1.0 | Añadido |
 | Henry James | — | [Portrait of Henry James, 1913](https://commons.wikimedia.org/wiki/File:Portrait_of_Henry_James_1913.jpg) | John Singer Sargent | Dominio público; Public Domain Mark 1.0 | Omitido: Commons confirmó los derechos, pero el servidor rechazó repetidamente la descarga con HTTP 429 |
 | Mary Webb | — | [Mary Webb](https://commons.wikimedia.org/wiki/File:Mary_webb.jpg) | Autor desconocido | La página declara dominio público en el país de origen, pero advierte que falta una etiqueta que justifique el dominio público en Estados Unidos | Omitido por documentación de derechos incompleta |
-| Vicente Blasco Ibáñez | — | [Vicente Blasco Ibáñez, 1919](https://commons.wikimedia.org/wiki/File:Vicente_Blasco_Ib%C3%A1%C3%B1ez_in_1919_(cropped).jpg) | No evaluado para incorporación | No evaluado para incorporación | Omitido: no existe ficha manual de autor |
-| Herman Melville | — | [Herman Melville](https://commons.wikimedia.org/wiki/File:Herman_Melville_by_Joseph_O_Eaton.jpg) | No evaluado para incorporación | No evaluado para incorporación | Omitido: no existe ficha manual de autor |
-| Miguel Hernández | — | [Miguel Hernández](https://commons.wikimedia.org/wiki/File:Miguel_hernandez.jpg) | No evaluado para incorporación | No evaluado para incorporación | Omitido: no existe ficha manual de autor |
-| Honoré de Balzac | — | [Honoré de Balzac, 1842](https://commons.wikimedia.org/wiki/File:Honor%C3%A9_de_Balzac_(1842).jpg) | No evaluado para incorporación | No evaluado para incorporación | Omitido: no existe ficha manual de autor |
-| François Rabelais | — | [François Rabelais](https://commons.wikimedia.org/wiki/File:Francois_Rabelais_-_Portrait.jpg) | No evaluado para incorporación | No evaluado para incorporación | Omitido: no existe ficha manual de autor |
 | Pío Baroja | — | [Pío Baroja](https://commons.wikimedia.org/wiki/File:Portrait_of_P%C3%ADo_Baroja.jpg) | No evaluado para incorporación | No evaluado para incorporación | Omitido: no existe ficha manual de autor |
+
+## Segunda tanda
+
+Antes de evaluar o descargar los archivos candidatos se comprobó la existencia
+de cada autor en `data/editorial/author-profiles.manual.json`. Ninguno de los
+diez autores de esta tanda tiene actualmente ficha manual, por lo que todos se
+omitieron conforme al criterio de no crear fichas nuevas. Al no ser elegibles
+para incorporación, no se atribuyen aquí créditos ni declaraciones de derechos
+sin una verificación destinada a uso efectivo.
+
+| Autor | Archivo candidato en Commons | Estado |
+| --- | --- | --- |
+| Emily Brontë | [Emily Brontë](https://commons.wikimedia.org/wiki/File:Emily_Bront%C3%AB.jpg) | Omitido: no existe ficha manual de autor |
+| François Mauriac | [François Mauriac, 1933](https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Mauriac,_1933.jpg) | Omitido: no existe ficha manual de autor |
+| François Rabelais | [François Rabelais](https://commons.wikimedia.org/wiki/File:Francois_Rabelais_-_Portrait.jpg) | Omitido: no existe ficha manual de autor |
+| Mary Shelley | [Mary Shelley](https://commons.wikimedia.org/wiki/File:Mary_Shelley.jpeg) | Omitido: no existe ficha manual de autor |
+| Lucy Maud Montgomery | [Lucy Maud Montgomery](https://commons.wikimedia.org/wiki/File:Lucy_Maud_Montgomery.jpg) | Omitido: no existe ficha manual de autor |
+| Pedro Calderón de la Barca | [Pedro Calderón de la Barca](https://commons.wikimedia.org/wiki/File:Retrato_de_Pedro_Calder%C3%B3n_de_la_Barca.jpg) | Omitido: no existe ficha manual de autor |
+| Herman Melville | [Herman Melville](https://commons.wikimedia.org/wiki/File:Herman_Melville_by_Joseph_O_Eaton.jpg) | Omitido: no existe ficha manual de autor |
+| Vicente Blasco Ibáñez | [Vicente Blasco Ibáñez, 1919](https://commons.wikimedia.org/wiki/File:Vicente_Blasco_Ib%C3%A1%C3%B1ez_in_1919.jpg) | Omitido: no existe ficha manual de autor |
+| Miguel Hernández | [Miguel Hernández](https://commons.wikimedia.org/wiki/File:Miguel_hernandez.jpg) | Omitido: no existe ficha manual de autor |
+| Honoré de Balzac | [Honoré de Balzac, 1842](https://commons.wikimedia.org/wiki/File:Honor%C3%A9_de_Balzac_(1842)_detail.jpg) | Omitido: no existe ficha manual de autor |
 
 ## Tratamiento de los archivos
 
 Los originales se descargaron desde el enlace de archivo ofrecido por Commons.
 Se convirtieron a WebP con calidad 85, sin metadatos incrustados. Se mantuvo la
-proporción original y se limitó el ancho a 800 px; el encuadre editorial 4:5 se
-aplica de forma no destructiva en la interfaz mediante `object-fit: cover` y el
-valor `object_position` de cada ficha.
+proporción original y se limitó el ancho a 800 px. La interfaz muestra ahora la
+imagen completa con altura automática y `object-fit: contain`, sin imponer una
+relación de aspecto que recorte el retrato.
