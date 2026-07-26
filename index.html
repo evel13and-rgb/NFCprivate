@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Páramo Literario · Frase aleatoria</title>
   <meta name="description" content="Cada vez que abras esta página te mostrará una frase literaria aleatoria." />
+  <script>
+    try {
+      if (sessionStorage.getItem('paramo-loader-seen')) {
+        document.documentElement.classList.add('app-loader-returning');
+      }
+    } catch {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=18" />
+  <link rel="stylesheet" href="style.css?v=19" />
 </head>
 <body class="app-loading" data-mode="day">
   <div
@@ -22,13 +29,6 @@
     aria-label="Cargando Páramo Literario"
   >
     <div class="app-loader__mist" aria-hidden="true"></div>
-    <div class="app-loader__content">
-      <p class="app-loader__title">Páramo Literario</p>
-      <p class="app-loader__message">
-        cargando el páramo<span class="app-loader__ellipsis" aria-hidden="true">…</span>
-      </p>
-      <span class="app-loader__glow" aria-hidden="true"></span>
-    </div>
   </div>
   <main class="wrap">
     <section
@@ -159,6 +159,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=20"></script>
+  <script type="module" src="script.js?v=21"></script>
 </body>
 </html>

@@ -4970,27 +4970,48 @@ function preloadCurrentSceneBackground() {
   });
 }
 
-function dismissAppLoader() {
+function waitForLoaderDelay(delay) {
+  return new Promise(resolve => window.setTimeout(resolve, delay));
+}
+
+function getAppLoaderTiming() {
+  const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  const returningVisit = document.documentElement.classList.contains('app-loader-returning');
+
+  if (reducedMotion) {
+    return { minimum: 0, maximum: 160, removal: 100 };
+  }
+  if (returningVisit) {
+    return { minimum: 60, maximum: 450, removal: 300 };
+  }
+  return { minimum: 300, maximum: 1400, removal: 470 };
+}
+
+function dismissAppLoader(removalDelay) {
   const loader = document.getElementById('app-loader');
   document.body?.classList.remove('app-loading');
   if (!loader) return;
 
   loader.classList.add('is-leaving');
   loader.setAttribute('aria-hidden', 'true');
-  const removalDelay = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-    ? 150
-    : 650;
   window.setTimeout(() => loader.remove(), removalDelay);
 }
 
 async function revealAppWhenReady(initialWeatherReady) {
+  const timing = getAppLoaderTiming();
   const ready = Promise.resolve(initialWeatherReady)
     .catch(() => undefined)
     .then(preloadCurrentSceneBackground);
-  const safetyTimeout = new Promise(resolve => window.setTimeout(resolve, 3000));
+  const readyAfterMinimum = Promise.all([ready, waitForLoaderDelay(timing.minimum)]);
+  const safetyTimeout = waitForLoaderDelay(timing.maximum);
 
-  await Promise.race([ready, safetyTimeout]);
-  dismissAppLoader();
+  await Promise.race([readyAfterMinimum, safetyTimeout]);
+  try {
+    sessionStorage.setItem('paramo-loader-seen', '1');
+  } catch {
+    // La transición funciona igualmente si el almacenamiento está desactivado.
+  }
+  dismissAppLoader(timing.removal);
 }
 
 function createWordSpan(content, extraClass = '') {
