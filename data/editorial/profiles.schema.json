@@ -21,6 +21,20 @@
       "type": ["array", "null"],
       "items": { "type": "string" }
     },
+    "portrait": {
+      "type": "object",
+      "required": ["path", "alt", "caption", "credit", "source_url", "rights", "object_position"],
+      "additionalProperties": false,
+      "properties": {
+        "path": { "type": "string", "pattern": "^public/images/authors/.+\\.webp$" },
+        "alt": { "type": "string", "minLength": 1 },
+        "caption": { "type": "string", "minLength": 1 },
+        "credit": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string", "pattern": "^https://commons\\.wikimedia\\.org/wiki/File:" },
+        "rights": { "type": "string", "minLength": 1 },
+        "object_position": { "type": "string", "pattern": "^[0-9]{1,3}% [0-9]{1,3}%$" }
+      }
+    },
     "authorProfile": {
       "type": "object",
       "required": ["author_id", "profile_status", "verification_status"],
@@ -35,6 +49,7 @@
         "period": { "$ref": "#/$defs/nullableString" },
         "movement": { "$ref": "#/$defs/nullableString" },
         "short_biography": { "$ref": "#/$defs/nullableString" },
+        "portrait": { "$ref": "#/$defs/portrait" },
         "themes": { "$ref": "#/$defs/themes" },
         "sources": { "$ref": "#/$defs/sources" },
         "profile_status": { "$ref": "#/$defs/profileStatus" },

@@ -1593,6 +1593,38 @@ body.modal-open {
   overscroll-behavior: none;
 }
 
+.author-portrait {
+  width: clamp(140px, 32%, 185px);
+  max-width: 40%;
+  margin: 0.35rem auto 1.25rem;
+}
+
+.author-portrait__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid rgba(205, 179, 126, 0.12);
+  border-radius: 18px;
+  background: rgba(20, 18, 16, 0.34);
+  box-shadow: 0 0.45rem 1.35rem rgba(0, 0, 0, 0.13);
+}
+
+.author-portrait__caption {
+  margin-top: 0.45rem;
+  color: rgba(198, 190, 176, 0.44);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.58rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.author-portrait__caption a {
+  color: inherit;
+  text-decoration-color: rgba(205, 179, 126, 0.24);
+  text-underline-offset: 0.18em;
+}
+
 .profile-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1899,6 +1931,13 @@ body.night-fall .modal__close:focus-visible {
   .profile-meta {
     font-size: 0.78rem;
     line-height: 1.7;
+  }
+
+  .author-portrait {
+    width: clamp(140px, 42vw, 165px);
+    max-width: 52%;
+    margin-top: 0.2rem;
+    margin-bottom: 1.1rem;
   }
 
   .profile-meta--secondary {

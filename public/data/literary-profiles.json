@@ -29,7 +29,16 @@
       "information_sources": [
         "Encyclopedia.com, «Count Leo Tolstoy».",
         "University of Minnesota, The Death of Ivan Ilich: An Electronic Study Edition of the Russian Text."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/leon-tolstoi.webp",
+        "alt": "Retrato de León Tolstói",
+        "caption": "León Tolstói, 1908",
+        "credit": "Serguéi Prokudin-Gorski",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1908_Portrait_(3x4_cropped).jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-fiodor-dostoievski",
@@ -62,7 +71,16 @@
         "Cambridge University Press, Dostoevsky in Context.",
         "Encyclopedia.com, «Fyodor Mikhailovich Dostoevsky».",
         "Stanford Encyclopedia of Philosophy, «Existentialism»."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/fiodor-dostoievski.webp",
+        "alt": "Retrato de Fiódor Dostoievski",
+        "caption": "Fiódor Dostoievski, 1872",
+        "credit": "В. Я. Лауфферт",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Fyodor_Dostoyevsky_(Laufert,_1872)_(cropped).jpg",
+        "rights": "Dominio público en el país de origen y en países con un plazo de vida del autor más 70 años o menos",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-guy-de-maupassant",
@@ -95,7 +113,16 @@
         "Bibliothèque nationale de France, «Maupassant, une vie au fil de la plume».",
         "Encyclopédie Larousse, «Guy de Maupassant».",
         "Bibliothèque nationale de France, ficha de autoridad de Guy de Maupassant."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/guy-de-maupassant.webp",
+        "alt": "Retrato de Guy de Maupassant",
+        "caption": "Guy de Maupassant, fecha desconocida",
+        "credit": "Fotógrafo original no identificado; digitalización de Dmitry Makeev, 2020",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Photograph_of_Guy_de_Maupassant.jpg",
+        "rights": "Dominio público en el país de origen y en países con un plazo de vida del autor más 70 años o menos",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-anton-chejov",
@@ -127,7 +154,16 @@
       "information_sources": [
         "Encyclopedia.com, «Anton Pavlovich Chekhov».",
         "Encyclopedia.com, «Chekhov, Anton (Pavlovich)»."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/anton-chejov.webp",
+        "alt": "Retrato de Antón Chéjov",
+        "caption": "Antón Chéjov, 5 de mayo de 1889",
+        "credit": "V. Chekhovskii, Moscú",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Anton_Chekhov_1889.jpg",
+        "rights": "Dominio público en Estados Unidos",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-miguel-de-unamuno",
@@ -158,7 +194,16 @@
         "Casa-Museo Unamuno de la Universidad de Salamanca, «Biografía».",
         "Biblioteca Virtual Miguel de Cervantes.",
         "Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado —INTEF—, «Miguel de Unamuno»."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/miguel-de-unamuno.webp",
+        "alt": "Retrato de Miguel de Unamuno",
+        "caption": "Miguel de Unamuno, hacia 1925",
+        "credit": "Agence de presse Meurisse; Gallica, Bibliothèque nationale de France",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Miguel_de_Unamuno_Meurisse_c_1925.JPG",
+        "rights": "Dominio público como obra anónima cuyo copyright ha expirado",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-virginia-woolf",
@@ -188,7 +233,16 @@
       "information_sources": [
         "Virginia Woolf Society of Great Britain, «Virginia Woolf: A Short Biography».",
         "Tate, «Lifestyle and Legacy of the Bloomsbury Group»."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/virginia-woolf.webp",
+        "alt": "Retrato de Virginia Woolf",
+        "caption": "Virginia Woolf, 1902",
+        "credit": "George Charles Beresford",
+        "source_url": "https://commons.wikimedia.org/wiki/File:George_Charles_Beresford_-_Virginia_Woolf_in_1902.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-gabriel-miro",
@@ -219,7 +273,16 @@
       "information_sources": [
         "Biblioteca Nacional de España, «Miró, Gabriel».",
         "Biblioteca Virtual Miguel de Cervantes, portal dedicado a Gabriel Miró y apunte biobibliográfico de Miguel Ángel Lozano Marco."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/gabriel-miro.webp",
+        "alt": "Retrato de Gabriel Miró",
+        "caption": "Gabriel Miró",
+        "credit": "Autor no indicado en Commons; imagen extraída de El ángel, el molino, el caracol del faro",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gabriel_Mir%C3%B3.jpg",
+        "rights": "Dominio público; reproducción mecánica de un original en dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-charlotte-perkins-gilman",
@@ -249,7 +312,16 @@
         "National Endowment for the Humanities, «Charlotte Perkins Gilman Did More Than Write One Classic Short Story».",
         "Harvard Radcliffe Institute, «The Evolution of Charlotte Perkins Gilman».",
         "Poetry Foundation, ficha biográfica de Charlotte Perkins Gilman."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/charlotte-perkins-gilman.webp",
+        "alt": "Retrato de Charlotte Perkins Gilman",
+        "caption": "Charlotte Perkins Gilman, hacia 1900",
+        "credit": "Charles Fletcher Lummis; Library of Congress",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Charlotte_Perkins_Gilman_c._1900.jpg",
+        "rights": "Dominio público en el país de origen y en países con un plazo de vida del autor más 95 años o menos",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-oscar-wilde",
@@ -283,7 +355,16 @@
         "Poetry Foundation, «Oscar Wilde».",
         "Library of Congress, cronología de Oscar Wilde.",
         "The Metropolitan Museum of Art, retrato y ficha biográfica de Oscar Wilde."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/oscar-wilde.webp",
+        "alt": "Retrato de Oscar Wilde",
+        "caption": "Oscar Wilde, 1882",
+        "credit": "Napoleon Sarony",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Napoleon_Sarony_-_Oscar_Wilde.JPG",
+        "rights": "Dominio público en el país de origen y en países con un plazo de vida del autor más 100 años o menos",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-elizabeth-von-arnim",
@@ -314,7 +395,16 @@
         "Elizabeth von Arnim Society, biografía y presentación de la autora.",
         "Oxford Reference, ficha de Elizabeth von Arnim.",
         "Penguin, perfil biográfico de la autora."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/elizabeth-von-arnim.webp",
+        "alt": "Retrato de Elizabeth von Arnim",
+        "caption": "Elizabeth von Arnim, 1896",
+        "credit": "Autor desconocido; imagen procedente de Éditions Claire Paulhan",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Elizabeth_von_Arnim-1896.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-henry-james",
@@ -345,7 +435,8 @@
       "information_sources": [
         "Poetry Foundation, ficha biográfica de Henry James.",
         "Cambridge University Press, estudios sobre la narrativa tardía de Henry James."
-      ]
+      ],
+      "portrait": null
     },
     {
       "author_id": "author-mary-webb",
@@ -377,7 +468,8 @@
         "Mary Webb Society.",
         "Shropshire Council.",
         "Oxford Reference."
-      ]
+      ],
+      "portrait": null
     },
     {
       "author_id": "author-franz-kafka",
@@ -410,7 +502,16 @@
         "Museo Franz Kafka, biografía y cronología del autor.",
         "YIVO Encyclopedia of Jews in Eastern Europe, «Kafka, Franz».",
         "Routledge Encyclopedia of Modernism, «Expressionism»."
-      ]
+      ],
+      "portrait": {
+        "path": "public/images/authors/franz-kafka.webp",
+        "alt": "Retrato de Franz Kafka",
+        "caption": "Franz Kafka, 1923–1924",
+        "credit": "Fotógrafo desconocido",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Franz_Kafka,_1923.jpg",
+        "rights": "Dominio público como obra anónima; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
     }
   ],
   "works": [

@@ -1,6 +1,6 @@
 {
   "valid": true,
-  "validated_at": "2026-07-26T12:08:41.151Z",
+  "validated_at": "2026-07-26T12:32:43.671Z",
   "summary": {
     "expected_quotes": 487,
     "intermediate_quotes": 487,
@@ -16,11 +16,11 @@
   "integrated_checks": {
     "editorial_decisions": {
       "valid": true,
-      "message": "Decisiones editoriales válidas: 0 decisión(es), 487 cita(s) de referencia."
+      "message": ""
     },
     "editorial_sources": {
       "valid": true,
-      "message": "Fuentes editoriales válidas: 26 fuente(s) para 26 obra(s)."
+      "message": ""
     }
   },
   "blocking_errors": [],

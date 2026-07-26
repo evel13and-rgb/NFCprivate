@@ -5406,12 +5406,47 @@ function appendProfileSection(container, title, value, options = {}) {
   container.appendChild(section);
 }
 
+function appendAuthorPortrait(container, portrait) {
+  if (!portrait?.path || !portrait?.alt) return;
+  const figure = document.createElement('figure');
+  figure.className = 'author-portrait';
+  const image = document.createElement('img');
+  image.className = 'author-portrait__image';
+  image.src = `./${portrait.path}`;
+  image.alt = portrait.alt;
+  image.loading = 'lazy';
+  image.decoding = 'async';
+  image.width = 800;
+  image.height = 1000;
+  image.style.objectPosition = portrait.object_position || '50% 35%';
+  figure.appendChild(image);
+
+  const details = [portrait.caption, portrait.credit, portrait.rights].filter(hasProfileValue);
+  if (details.length) {
+    const caption = document.createElement('figcaption');
+    caption.className = 'author-portrait__caption';
+    if (portrait.source_url) {
+      const link = document.createElement('a');
+      link.href = portrait.source_url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = details.join(' · ');
+      caption.appendChild(link);
+    } else {
+      caption.textContent = details.join(' · ');
+    }
+    figure.appendChild(caption);
+  }
+  container.appendChild(figure);
+}
+
 function renderInfoContent(type, contentElement, entry) {
   if (!contentElement) return;
   const fragment = document.createDocumentFragment();
 
   if (entry) {
     if (type === 'author') {
+      appendAuthorPortrait(fragment, entry.portrait);
       const dates = entry.birth_year && entry.death_year
         ? `${entry.birth_year}–${entry.death_year}`
         : entry.birth_year || entry.death_year || null;

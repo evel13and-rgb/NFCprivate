@@ -62,6 +62,33 @@ function validateCommonFields(profile, label) {
   }
 }
 
+function validatePortrait(portrait, label) {
+  if (!isObject(portrait)) {
+    blockingErrors.push(`${label}.portrait debe ser un objeto`);
+    return;
+  }
+  const required = [
+    'path', 'alt', 'caption', 'credit', 'source_url', 'rights', 'object_position',
+  ];
+  for (const field of required) {
+    if (typeof portrait[field] !== 'string' || !portrait[field].trim()) {
+      blockingErrors.push(`${label}.portrait.${field} debe ser un texto no vacío`);
+    }
+  }
+  if (typeof portrait.path === 'string'
+    && !/^public\/images\/authors\/.+\.webp$/u.test(portrait.path)) {
+    blockingErrors.push(`${label}.portrait.path debe apuntar a public/images/authors/*.webp`);
+  }
+  if (typeof portrait.source_url === 'string'
+    && !portrait.source_url.startsWith('https://commons.wikimedia.org/wiki/File:')) {
+    blockingErrors.push(`${label}.portrait.source_url debe ser una página de archivo de Commons`);
+  }
+  if (typeof portrait.object_position === 'string'
+    && !/^[0-9]{1,3}% [0-9]{1,3}%$/u.test(portrait.object_position)) {
+    blockingErrors.push(`${label}.portrait.object_position debe tener el formato «50% 35%»`);
+  }
+}
+
 const [authors, works, authorProfiles, workProfiles] = await Promise.all([
   loadJson('authors.draft.json', []),
   loadJson('works.draft.json', []),
@@ -111,6 +138,7 @@ for (const [position, profile] of safeAuthorProfiles.entries()) {
     blockingErrors.push(`${label}.display_name debe ser un texto no vacío si está informado`);
   }
   validateCommonFields(profile, label);
+  if (Object.hasOwn(profile, 'portrait')) validatePortrait(profile.portrait, label);
 }
 
 for (const [position, profile] of safeWorkProfiles.entries()) {

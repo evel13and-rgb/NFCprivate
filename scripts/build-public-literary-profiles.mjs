@@ -22,6 +22,7 @@ const authorFields = [
   'tone_notes',
   'why_in_paramo',
   'information_sources',
+  'portrait',
 ];
 const workFields = [
   'work_id',
@@ -102,12 +103,27 @@ function assertPublicDocument(document) {
       const missing = fields.filter(key => !keys.includes(key));
       if (unexpected.length) throw new Error(`${label}: campos no públicos (${unexpected.join(', ')})`);
       if (missing.length) throw new Error(`${label}: faltan campos (${missing.join(', ')})`);
-      if (typeof record[idField] !== 'string' || !record[idField].startsWith(idPrefix)) {
+    if (typeof record[idField] !== 'string' || !record[idField].startsWith(idPrefix)) {
         throw new Error(`${label}.${idField} debe comenzar por ${idPrefix}`);
       }
       if (ids.has(record[idField])) throw new Error(`${label}: id duplicado (${record[idField]})`);
       ids.add(record[idField]);
       if (!Array.isArray(record.themes)) throw new Error(`${label}.themes debe ser un array`);
+      if (collection === 'authors' && record.portrait !== null) {
+        const portrait = record.portrait;
+        const portraitFields = [
+          'path', 'alt', 'caption', 'credit', 'source_url', 'rights', 'object_position',
+        ];
+        if (!portrait || typeof portrait !== 'object' || Array.isArray(portrait)) {
+          throw new Error(`${label}.portrait debe ser un objeto o null`);
+        }
+        const portraitKeys = Object.keys(portrait);
+        const missingPortraitFields = portraitFields.filter(key => !portraitKeys.includes(key));
+        const unexpectedPortraitFields = portraitKeys.filter(key => !portraitFields.includes(key));
+        if (missingPortraitFields.length || unexpectedPortraitFields.length) {
+          throw new Error(`${label}.portrait tiene una estructura pública inválida`);
+        }
+      }
       if (collection === 'works'
         && (!Number.isInteger(record.fragment_count) || record.fragment_count < 0)) {
         throw new Error(`${label}.fragment_count debe ser un entero no negativo`);
@@ -142,6 +158,7 @@ const publicDocument = {
     tone_notes: nullable(profile.tone_notes),
     why_in_paramo: nullable(profile.why_in_paramo),
     information_sources: publicInformationSources(profile),
+    portrait: nullable(profile.portrait),
   })),
   works: manualWorks.map(profile => ({
     work_id: profile.work_id,
