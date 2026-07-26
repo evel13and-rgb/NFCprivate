@@ -223,5 +223,14 @@
     "legacy_work": "Precioso veneno, Mary Webb",
     "status": "draft",
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-la-metamorfosis",
+    "title": "La metamorfosis",
+    "slug": "la-metamorfosis",
+    "author_id": "author-franz-kafka",
+    "legacy_work": "La metamorfosis, Franz Kafka",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   }
 ]

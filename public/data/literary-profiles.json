@@ -378,6 +378,39 @@
         "Shropshire Council.",
         "Oxford Reference."
       ]
+    },
+    {
+      "author_id": "author-franz-kafka",
+      "display_name": "Franz Kafka",
+      "birth_year": 1883,
+      "death_year": 1924,
+      "country": "Imperio austrohúngaro —nació en Praga, actual República Checa—",
+      "language": "Alemán",
+      "period": "Finales del siglo XIX y comienzos del siglo XX",
+      "movement": "Modernismo centroeuropeo y literatura alemana de Praga, con afinidades con el expresionismo.",
+      "bio_short": "Franz Kafka fue un escritor en lengua alemana nacido en una familia judía de Praga. Estudió Derecho y trabajó durante años en el Instituto de Seguros de Accidentes de Trabajo del Reino de Bohemia, empleo que compaginó con la escritura. Su obra explora individuos sometidos a poderes familiares, sociales o burocráticos que no consiguen comprender ni combatir. Publicó relativamente poco durante su vida; buena parte de sus manuscritos se conservó porque su amigo Max Brod desobedeció su petición de destruirlos. Enfermo de tuberculosis desde 1917, Kafka murió en 1924.",
+      "bio_long": null,
+      "themes": [
+        "La alienación",
+        "La culpa",
+        "La autoridad",
+        "La incomunicación",
+        "La identidad",
+        "La familia",
+        "La burocracia",
+        "El trabajo",
+        "La exclusión",
+        "La vergüenza",
+        "La transformación del cuerpo",
+        "La imposibilidad de comprender las reglas que gobiernan la existencia"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Museo Franz Kafka, biografía y cronología del autor.",
+        "YIVO Encyclopedia of Jews in Eastern Europe, «Kafka, Franz».",
+        "Routledge Encyclopedia of Modernism, «Expressionism»."
+      ]
     }
   ],
   "works": [
@@ -828,6 +861,46 @@
         "Traducción propia del inglés para Páramo Literario."
       ],
       "fragment_count": 33
+    },
+    {
+      "work_id": "work-la-metamorfosis",
+      "title": "La metamorfosis",
+      "display_title": "La metamorfosis",
+      "original_title": "Die Verwandlung",
+      "author_id": "author-franz-kafka",
+      "publication_year": 1915,
+      "genre": "Novela corta o relato largo; narrativa modernista, fantástica, psicológica y existencial.",
+      "language": null,
+      "summary_short": "Gregor Samsa, un viajante de comercio que mantiene económicamente a su familia, despierta una mañana transformado en una criatura monstruosa. Incapaz de acudir al trabajo y de comunicarse con quienes lo rodean, queda encerrado en su habitación. Mientras intenta adaptarse a su nuevo cuerpo, su familia pasa gradualmente de la preocupación y la dependencia al rechazo, hasta tratarlo como una carga cuya desaparición permitiría recuperar la normalidad.",
+      "summary_long": null,
+      "context_notes": "Kafka escribió La metamorfosis a finales de 1912, aunque la obra no se publicó hasta octubre de 1915 en la revista Die weißen Blätter. Poco después apareció como libro en la editorial Kurt Wolff. El relato pertenece a una sociedad urbana e industrial en la que el individuo se encuentra sometido al trabajo, la deuda familiar y las exigencias de productividad. La transformación de Gregor hace visible una deshumanización que ya existía antes de que su cuerpo cambiara.\n\nKafka emplea en alemán la palabra Ungeziefer, que no identifica una especie concreta, sino una criatura repulsiva o una alimaña. Además, pidió expresamente que el ser no apareciera representado en la cubierta: lo importante no es determinar qué animal es Gregor, sino observar cómo cambia la mirada de los demás sobre él.",
+      "themes": [
+        "La alienación laboral",
+        "La deshumanización",
+        "La incomunicación",
+        "La pérdida de identidad",
+        "El rechazo familiar",
+        "La dependencia económica",
+        "La vergüenza",
+        "La transformación corporal",
+        "La enfermedad",
+        "La culpa",
+        "La utilidad social",
+        "La exclusión de quien deja de cumplir la función que los demás esperaban de él"
+      ],
+      "tone_notes": "Sobrio, absurdo, claustrofóbico e inquietante, con momentos de ironía y humor negro. Kafka narra el acontecimiento imposible con una naturalidad casi administrativa: Gregor se preocupa inicialmente más por llegar tarde al trabajo que por su transformación. Esa frialdad vuelve todavía más perturbadora la violencia progresiva del relato.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "FranzKafka.de, ficha bibliográfica de Die Verwandlung.",
+        "Museo Franz Kafka, cronología de la escritura y publicación de la obra.",
+        "Cambridge University Press, análisis de la alienación, la incomunicación y el rechazo en La metamorfosis.",
+        "The New Yorker, «On Translating Kafka’s The Metamorphosis».",
+        "Procedencia del texto original: Project Gutenberg, texto alemán de Die Verwandlung.",
+        "Comprobación textual: Wikisource, edición alemana publicada en 1915.",
+        "Traducción propia del alemán para Páramo Literario."
+      ],
+      "fragment_count": 32
     }
   ]
 }

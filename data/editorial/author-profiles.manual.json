@@ -365,5 +365,37 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-franz-kafka",
+    "name": "Franz Kafka",
+    "birth_year": 1883,
+    "death_year": 1924,
+    "country": "Imperio austrohúngaro —nació en Praga, actual República Checa—",
+    "language": "Alemán",
+    "period": "Finales del siglo XIX y comienzos del siglo XX",
+    "movement": "Modernismo centroeuropeo y literatura alemana de Praga, con afinidades con el expresionismo.",
+    "short_biography": "Franz Kafka fue un escritor en lengua alemana nacido en una familia judía de Praga. Estudió Derecho y trabajó durante años en el Instituto de Seguros de Accidentes de Trabajo del Reino de Bohemia, empleo que compaginó con la escritura. Su obra explora individuos sometidos a poderes familiares, sociales o burocráticos que no consiguen comprender ni combatir. Publicó relativamente poco durante su vida; buena parte de sus manuscritos se conservó porque su amigo Max Brod desobedeció su petición de destruirlos. Enfermo de tuberculosis desde 1917, Kafka murió en 1924.",
+    "themes": [
+      "La alienación",
+      "La culpa",
+      "La autoridad",
+      "La incomunicación",
+      "La identidad",
+      "La familia",
+      "La burocracia",
+      "El trabajo",
+      "La exclusión",
+      "La vergüenza",
+      "La transformación del cuerpo",
+      "La imposibilidad de comprender las reglas que gobiernan la existencia"
+    ],
+    "sources": [
+      "Museo Franz Kafka, biografía y cronología del autor.",
+      "YIVO Encyclopedia of Jews in Eastern Europe, «Kafka, Franz».",
+      "Routledge Encyclopedia of Modernism, «Expressionism»."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

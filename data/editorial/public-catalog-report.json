@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-24T23:45:17.730Z",
+  "generated_at": "2026-07-26T12:08:40.351Z",
   "preview": true,
   "publication_status": "internal_preview",
-  "total_quotes_exported": 455,
+  "total_quotes_exported": 487,
   "omitted_quotes": [],
   "private_fields_excluded": [
     "rights_notes",
@@ -95,7 +95,8 @@
     "work-la-bestia-en-la-jungla",
     "work-el-papel-pintado-de-amarillo",
     "work-vera",
-    "work-precioso-veneno"
+    "work-precioso-veneno",
+    "work-la-metamorfosis"
   ],
   "unverified_rights": [
     {
@@ -221,6 +222,11 @@
     {
       "source_id": "source-una-habitacion-propia",
       "work_id": "work-una-habitacion-propia",
+      "rights_status": "unchecked"
+    },
+    {
+      "source_id": "source-la-metamorfosis",
+      "work_id": "work-la-metamorfosis",
       "rights_status": "unchecked"
     }
   ],

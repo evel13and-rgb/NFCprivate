@@ -252,5 +252,16 @@
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-franz-kafka",
+    "canonical_name": "Franz Kafka",
+    "slug": "franz-kafka",
+    "sort_name": "Franz Kafka",
+    "inferred_from": [
+      "La metamorfosis, Franz Kafka"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   }
 ]

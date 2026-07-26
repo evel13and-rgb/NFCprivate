@@ -4445,6 +4445,279 @@ Todo descendió, todo se desvaneció en el aire quieto. Solo quedó el viento de
   }
 ];
 
+const LA_METAMORFOSIS_QUOTES = [
+  {
+    t: `Al despertar Gregor Samsa una mañana de sueños intranquilos, se encontró en su cama transformado en un monstruoso insecto.
+
+Estaba tendido sobre su espalda, dura como una coraza, y, al levantar un poco la cabeza, vio su vientre abombado y pardo, dividido por endurecimientos arqueados, sobre cuya altura apenas podía sostenerse la colcha, ya dispuesta a resbalar por completo.
+
+Sus muchas patas, lastimosamente delgadas en comparación con el volumen del resto de su cuerpo, se agitaban desvalidas ante sus ojos.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "transformado en un monstruoso insecto.", lang: "es"
+  },
+  {
+    t: `La mirada de Gregor se dirigió entonces hacia la ventana, y el tiempo sombrío —se oían las gotas de lluvia golpear la chapa del alféizar— lo volvió completamente melancólico.
+
+—¿Qué ocurriría si durmiera un poco más y olvidara todas estas tonterías? —pensó.
+
+Pero aquello era del todo imposible, pues estaba acostumbrado a dormir sobre el lado derecho y, en su estado actual, no podía colocarse en esa posición.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "olvidara todas estas tonterías", lang: "es"
+  },
+  {
+    t: `—Dios mío —pensó—, ¡qué profesión tan agotadora he elegido! Un día tras otro, siempre de viaje. Las preocupaciones comerciales son mucho mayores que en el propio establecimiento, y además se me impone esta tortura de viajar: la inquietud por los enlaces de los trenes, la comida irregular y mala, un trato humano siempre cambiante, nunca duradero, nunca cordial.
+
+¡Que el diablo se lo lleve todo!`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "nunca duradero, nunca cordial.", lang: "es"
+  },
+  {
+    t: `—Si no me contuviera por mis padres, hace mucho que habría renunciado. Me habría plantado ante el jefe y le habría dicho desde el fondo del corazón lo que pienso. ¡Se habría caído del pupitre!
+
+También es una manera muy extraña de sentarse sobre el pupitre y hablar desde las alturas con el empleado, que, además, tiene que acercarse muchísimo a causa de la sordera del jefe.
+
+Pero la esperanza todavía no está completamente perdida. En cuanto haya reunido el dinero necesario para pagarle la deuda de mis padres —aún tardaré cinco o seis años—, lo haré sin falta. Entonces daré el gran corte.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Entonces daré el gran corte.", lang: "es"
+  },
+  {
+    t: `Sin duda, el jefe acudiría con el médico del seguro, reprocharía a sus padres que tuvieran un hijo holgazán y cortaría cualquier objeción remitiéndose al médico, para quien solo existían personas completamente sanas, pero enemigas del trabajo.
+
+Y, después de todo, ¿estaría en este caso tan equivocado? Gregor se sentía realmente bien, aparte de una somnolencia que, después de haber dormido tanto, resultaba innecesaria, y hasta tenía un hambre especialmente intensa.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "personas completamente sanas, pero enemigas del trabajo.", lang: "es"
+  },
+  {
+    t: `—Gregor —llamaron; era su madre—, son las siete menos cuarto. ¿No tenías que marcharte?
+
+¡Aquella voz suave! Gregor se sobresaltó al oír la suya cuando respondió. Su antigua voz seguía siendo inconfundiblemente la misma, pero desde abajo se mezclaba con ella un piar doloroso e incontenible que solo dejaba a las palabras su claridad durante el primer instante, para destruirlas después de tal manera en su resonancia que nadie podía saber si había oído correctamente.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Su antigua voz seguía siendo inconfundiblemente la misma", lang: "es"
+  },
+  {
+    t: `Cuando volvió a encontrarse, después del mismo esfuerzo y suspirando, tendido como antes, y vio otra vez sus pequeñas patas combatiendo entre sí, quizá con mayor violencia todavía, sin descubrir manera alguna de introducir calma y orden en aquella arbitrariedad, se dijo de nuevo que era imposible permanecer en la cama y que lo más sensato sería sacrificarlo todo si existía siquiera la más pequeña esperanza de liberarse de ella.
+
+Pero, al mismo tiempo, no olvidaba recordarse que la reflexión tranquila, la más tranquila de todas, era mucho mejor que las decisiones desesperadas.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "la reflexión tranquila, la más tranquila de todas", lang: "es"
+  },
+  {
+    t: `—Ya son las siete —se dijo cuando el despertador volvió a dar la hora—, las siete, y todavía esta niebla.
+
+Y permaneció un momento quieto, respirando débilmente, como si esperara que del silencio completo surgiera el regreso de las circunstancias reales y naturales.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "el regreso de las circunstancias reales y naturales.", lang: "es"
+  },
+  {
+    t: `¿Por qué estaba Gregor condenado a trabajar en una empresa donde, ante la menor falta, se concebía inmediatamente la mayor sospecha?
+
+¿Eran todos los empleados, sin excepción, unos canallas? ¿No había entre ellos un solo hombre fiel y entregado que, aunque hubiera desaprovechado para la empresa apenas unas horas de la mañana, enloqueciera de remordimiento y fuera verdaderamente incapaz de abandonar la cama?`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "ante la menor falta, se concebía inmediatamente la mayor sospecha", lang: "es"
+  },
+  {
+    t: `—Bien —dijo Gregor, plenamente consciente de que era el único que había conservado la calma—, enseguida me vestiré, empaquetaré el muestrario y me marcharé. ¿Me permitirán marcharme?
+
+Señor apoderado, ya ve que no soy obstinado y que trabajo con gusto. Viajar es fatigoso, pero no podría vivir sin viajar.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "era el único que había conservado la calma", lang: "es"
+  },
+  {
+    t: `—Uno puede ser momentáneamente incapaz de trabajar, pero precisamente entonces es cuando debe recordarse su rendimiento anterior y considerar que, una vez eliminado el obstáculo, trabajará después con mayor diligencia y concentración.
+
+Estoy en una situación difícil, pero saldré de ella. No me lo ponga más difícil de lo que ya es. ¡Póngase de mi parte en la empresa!`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Estoy en una situación difícil, pero saldré de ella.", lang: "es"
+  },
+  {
+    t: `Ninguna súplica de Gregor sirvió; ninguna súplica fue tampoco comprendida. Por mucho que inclinara humildemente la cabeza, el padre no hacía más que golpear el suelo con los pies con mayor fuerza.
+
+La madre había abierto una ventana a pesar del frío y, asomada, hundía el rostro entre las manos. Entre la calle y la escalera surgió una corriente intensa: las cortinas volaron, los periódicos de la mesa crujieron y algunas hojas fueron arrastradas por el suelo.
+
+El padre avanzaba inexorablemente y emitía silbidos, como un salvaje.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "ninguna súplica fue tampoco comprendida.", lang: "es"
+  },
+  {
+    t: `Un lado de su cuerpo se alzó; quedó atravesado en el hueco de la puerta, con un costado completamente desollado. En la puerta blanca quedaron manchas desagradables.
+
+Pronto quedó atascado y ya no habría podido moverse por sí mismo: las patas de un lado colgaban temblando en el aire; las del otro estaban dolorosamente apretadas contra el suelo.
+
+Entonces el padre le dio desde atrás un empujón fuerte, ahora verdaderamente liberador, y Gregor salió volando, sangrando copiosamente, hacia el interior de su habitación.
+
+La puerta fue cerrada con el bastón. Entonces, por fin, quedó todo en silencio.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Entonces, por fin, quedó todo en silencio.", lang: "es"
+  },
+  {
+    t: `Junto a la puerta había un cuenco lleno de leche dulce en el que flotaban pequeños trozos de pan blanco. Casi se echó a reír de alegría, pues tenía aún más hambre que por la mañana, e inmediatamente sumergió la cabeza en la leche casi hasta los ojos.
+
+Pero pronto la retiró, decepcionado. No solo le resultaba difícil comer a causa de su dolorido costado izquierdo —solo podía hacerlo si el cuerpo entero colaboraba jadeando—, sino que la leche, que antes había sido su bebida predilecta y que su hermana seguramente había dejado allí por esa razón, ya no le gustaba en absoluto.
+
+Incluso se apartó del cuenco casi con repugnancia.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "ya no le gustaba en absoluto", lang: "es"
+  },
+  {
+    t: `Durante aquella larga tarde se abrió una de las puertas laterales hasta dejar una pequeña rendija y después la otra, pero ambas volvieron a cerrarse enseguida. Alguien había sentido la necesidad de entrar, pero también demasiados reparos.
+
+Gregor se detuvo inmediatamente junto a la puerta del salón, decidido a atraer de algún modo al visitante vacilante o, por lo menos, a averiguar quién era. Pero la puerta ya no volvió a abrirse y Gregor esperó en vano.
+
+Por la mañana, cuando las puertas estaban cerradas, todos habían querido entrar. Ahora que él había abierto una y las otras habían permanecido abiertas durante el día, no entraba nadie; además, las llaves estaban metidas desde fuera.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "ahora no entraba nadie", lang: "es"
+  },
+  {
+    t: `Permaneció bajo el sofá toda la noche, que pasó en parte en un sueño ligero, del cual el hambre lo despertaba una y otra vez, y en parte entre preocupaciones y esperanzas imprecisas.
+
+Todas ellas lo llevaban a la conclusión de que, por el momento, debía comportarse con calma y hacer soportables a la familia, mediante la paciencia y la mayor consideración, las molestias que, en su estado actual, estaba obligado a causarles.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "la paciencia y la mayor consideración", lang: "es"
+  },
+  {
+    t: `¿Advertiría ella que había dejado la leche y que no había sido por falta de hambre? ¿Traería otra comida que le sentara mejor?
+
+Si no lo hacía por sí misma, preferiría morir de hambre antes que llamar su atención, aunque sentía un impulso enorme de salir disparado de debajo del sofá, arrojarse a los pies de su hermana y suplicarle algo bueno para comer.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "preferiría morir de hambre", lang: "es"
+  },
+  {
+    t: `Gregor nunca pudo averiguar con qué excusas habían conseguido sacar de la casa al médico y al cerrajero aquella primera mañana.
+
+Como no se le entendía, a nadie se le ocurrió —ni siquiera a su hermana— que él pudiera comprender a los demás; por eso, cuando ella estaba en su habitación, Gregor tenía que conformarse con escuchar de vez en cuando sus suspiros y sus invocaciones a los santos.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "a nadie se le ocurrió —ni siquiera a su hermana— que él pudiera comprender a los demás", lang: "es"
+  },
+  {
+    t: `A menudo permanecía allí durante noches enteras, sin dormir un solo instante, arañando el cuero durante horas. O no evitaba el gran esfuerzo de empujar una silla hasta la ventana, trepar al alféizar y, apoyado en la silla, asomarse, evidentemente por algún recuerdo de la sensación liberadora que antes encontraba al mirar por la ventana.
+
+Pero, en realidad, cada día veía con menor claridad incluso las cosas situadas a poca distancia. Ya no podía distinguir el hospital de enfrente, cuya visión demasiado frecuente había maldecido antes.
+
+De no haber sabido con exactitud que vivía en la tranquila pero completamente urbana Charlottenstrasse, habría podido creer que desde su ventana contemplaba un desierto donde el cielo gris y la tierra gris se unían sin distinguirse.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "el cielo gris y la tierra gris se unían sin distinguirse.", lang: "es"
+  },
+  {
+    t: `Para ahorrarle incluso aquella visión, Gregor transportó un día sobre su espalda —necesitó cuatro horas para hacerlo— la sábana hasta el sofá y la dispuso de tal modo que quedó completamente cubierto y su hermana no podría verlo ni siquiera si se agachaba.
+
+Si ella hubiera considerado innecesaria aquella sábana, habría podido retirarla, pues era suficientemente evidente que aislarse por completo no podía constituir un placer para Gregor.
+
+Pero la dejó como estaba, y Gregor creyó incluso captar una mirada de agradecimiento cuando levantó con cautela la sábana para comprobar cómo recibía su hermana la nueva disposición.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Para ahorrarle incluso aquella visión", lang: "es"
+  },
+  {
+    t: `¿Deseaba realmente que su habitación cálida, amueblada confortablemente con muebles heredados, se transformara en una cueva donde podría, desde luego, arrastrarse sin obstáculos en todas direcciones, pero al precio de olvidar rápida y completamente su pasado humano?
+
+Ya estaba cerca de olvidarlo, y solo la voz de su madre, que hacía tanto tiempo que no escuchaba, lo había sacudido.
+
+No debía retirarse nada. Todo tenía que permanecer.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "olvidar rápida y completamente su pasado humano", lang: "es"
+  },
+  {
+    t: `—¿No es como si, al retirar los muebles, demostráramos que abandonamos toda esperanza de mejoría y lo dejamos despiadadamente entregado a sí mismo? —concluyó la madre en voz muy baja—. Creo que lo mejor sería conservar la habitación exactamente en el estado en que estaba antes, para que Gregor, cuando vuelva con nosotros, lo encuentre todo intacto y pueda olvidar con mayor facilidad este tiempo intermedio.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "cuando vuelva con nosotros", lang: "es"
+  },
+  {
+    t: `La madre vio la enorme mancha parda sobre el papel floreado de la pared y, antes de comprender realmente que aquello que veía era Gregor, gritó con voz áspera:
+
+—¡Dios mío! ¡Dios mío!
+
+Y cayó sobre el sofá con los brazos extendidos, como si renunciara a todo, y quedó inmóvil.
+
+—¡Tú, Gregor! —gritó la hermana, levantando el puño y dirigiéndole una mirada penetrante.
+
+Eran las primeras palabras que le dirigía directamente desde la transformación.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "las primeras palabras que le dirigía directamente", lang: "es"
+  },
+  {
+    t: `La grave herida de Gregor, que lo hizo sufrir durante más de un mes —la manzana permaneció incrustada en su carne como recuerdo visible, pues nadie se atrevió a retirarla—, pareció recordar incluso al padre que Gregor, pese a su actual aspecto triste y repugnante, era un miembro de la familia.
+
+No se lo podía tratar como a un enemigo. El deber familiar exigía tragarse la repugnancia y soportar, nada más que soportar.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "soportar, nada más que soportar.", lang: "es"
+  },
+  {
+    t: `El padre se negaba obstinadamente a quitarse el uniforme de ordenanza incluso en casa. Mientras la bata colgaba inútilmente de la percha, dormía completamente vestido en su sitio, como si estuviera siempre dispuesto a prestar servicio y aguardara también allí la voz de un superior.
+
+Cuando las dos mujeres conseguían por fin levantarlo, apoyado en ellas abría los ojos, miraba alternativamente a la madre y a la hermana y acostumbraba a decir:
+
+—Esto es vida. Esta es la tranquilidad de mis años de vejez.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Esto es vida.", lang: "es"
+  },
+  {
+    t: `Se habían acostumbrado a introducir en aquella habitación los objetos que no podían guardar en ningún otro lugar. Y ahora eran muchos, pues habían alquilado una habitación de la vivienda a tres huéspedes.
+
+Todo lo que era inútil o incluso estaba sucio resultaba intolerable para aquellos hombres. Por eso muchas cosas habían quedado sobrantes: no podían venderse, pero tampoco querían tirarlas. Todas emigraron a la habitación de Gregor.
+
+También el cajón de las cenizas y el cubo de los desperdicios de la cocina.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Todo lo que era inútil", lang: "es"
+  },
+  {
+    t: `La hermana empezó a tocar. Su rostro estaba inclinado hacia un lado, y sus ojos seguían las líneas de la partitura con expresión atenta y triste.
+
+Gregor, atraído por la música, avanzó un poco más y ya tenía la cabeza dentro del salón. Apenas le extrañó haberse vuelto últimamente tan poco considerado con los demás; antes, aquella consideración había sido su orgullo.
+
+Y, sin embargo, precisamente ahora habría tenido más motivos para ocultarse. Cubierto de polvo, arrastrando sobre la espalda y los costados hilos, cabellos y restos de comida, avanzó un poco más sobre el suelo inmaculado.
+
+¿Era un animal, puesto que la música lo conmovía tanto? Le parecía que se le mostraba el camino hacia el alimento desconocido que anhelaba.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "el alimento desconocido que anhelaba.", lang: "es"
+  },
+  {
+    t: `—Queridos padres —dijo la hermana, golpeando la mesa con la mano a modo de introducción—, esto no puede continuar. Quizá vosotros no lo comprendáis, pero yo sí. No quiero pronunciar el nombre de mi hermano ante este monstruo; por eso solo digo: debemos intentar deshacernos de él.
+
+Hemos hecho todo lo humanamente posible para cuidarlo y soportarlo. Creo que nadie podría hacernos el menor reproche.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "debemos intentar deshacernos de él.", lang: "es"
+  },
+  {
+    t: `—Tienes que intentar abandonar la idea de que eso es Gregor. Que lo hayamos creído durante tanto tiempo es precisamente nuestra verdadera desgracia. Pero ¿cómo podría ser Gregor?
+
+Si fuera Gregor, hace mucho que habría comprendido que la convivencia entre seres humanos y semejante animal es imposible, y se habría marchado voluntariamente. Entonces ya no tendríamos hermano, pero podríamos seguir viviendo y conservar honradamente su recuerdo.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "Si fuera Gregor", lang: "es"
+  },
+  {
+    t: `La manzana podrida de su espalda y la zona inflamada que la rodeaba, completamente cubierta de un polvo suave, apenas le producían ya sensación alguna.
+
+Pensó en su familia con ternura y amor. Su convicción de que debía desaparecer era quizá aún más firme que la de su hermana.
+
+Permaneció en aquel estado de reflexión vacía y pacífica hasta que el reloj de la torre dio las tres de la madrugada. Todavía presenció el comienzo de la claridad general al otro lado de la ventana.
+
+Después, su cabeza descendió involuntariamente por completo y de sus orificios nasales salió débilmente su último aliento.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "debía desaparecer", lang: "es"
+  },
+  {
+    t: `—¿Muerto? —preguntó la señora Samsa, mirando a la asistenta, aunque podía comprobarlo por sí misma e incluso reconocerlo sin necesidad de comprobar nada.
+
+—Eso creo yo —respondió la mujer, y empujó con la escoba el cadáver de Gregor un buen trecho hacia un lado para demostrarlo.
+
+La señora Samsa hizo un gesto como si quisiera detener la escoba, pero no lo hizo.
+
+—Bueno —dijo el señor Samsa—, ahora podemos dar gracias a Dios.
+
+Se santiguó, y las tres mujeres siguieron su ejemplo.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "ahora podemos dar gracias a Dios.", lang: "es"
+  },
+  {
+    t: `La asistenta cerró la puerta y abrió la ventana por completo. A pesar de lo temprano de la mañana, en el aire fresco había ya cierta tibieza. Era, después de todo, finales de marzo.
+
+Los tres salieron juntos de la vivienda, cosa que no habían hecho desde hacía meses, y tomaron el tranvía hacia las afueras. El vagón, donde estaban solos, aparecía completamente atravesado por el cálido sol.
+
+Cómodamente recostados en sus asientos, hablaron de sus perspectivas de futuro y descubrieron que, examinadas con mayor atención, no eran en absoluto malas.`,
+    a: "Franz Kafka", obra: "La metamorfosis, Franz Kafka",
+    highlight: "el cálido sol.", lang: "es"
+  }
+];
+
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -4477,6 +4750,7 @@ const QUOTES = [
   ...EL_PAPEL_PINTADO_DE_AMARILLO_QUOTES,
   ...VERA_QUOTES,
   ...PRECIOSO_VENENO_QUOTES,
+  ...LA_METAMORFOSIS_QUOTES,
 ];
 
 const ALLOWED_WEATHER_TIMES = new Set(ALLOWED_TIMES_OF_DAY);

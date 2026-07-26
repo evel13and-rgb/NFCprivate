@@ -1,11 +1,11 @@
 {
-  "total_quotes": 455,
-  "detected_works": 25,
-  "inferred_authors": 23,
+  "total_quotes": 487,
+  "detected_works": 26,
+  "inferred_authors": 24,
   "poems": 26,
-  "prose": 429,
-  "quotes_with_line_breaks": 312,
-  "highlights_present": 399,
+  "prose": 461,
+  "quotes_with_line_breaks": 343,
+  "highlights_present": 431,
   "highlights_absent": 56,
   "highlights_not_literal": [
     {
@@ -619,6 +619,10 @@
     {
       "legacy_index": 333,
       "highlight": "No deseaba la inmortalidad."
+    },
+    {
+      "legacy_index": 469,
+      "highlight": "ahora no entraba nadie"
     }
   ],
   "exact_duplicates": [],

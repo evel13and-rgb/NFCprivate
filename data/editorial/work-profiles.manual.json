@@ -394,5 +394,41 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-la-metamorfosis",
+    "author_id": "author-franz-kafka",
+    "title": "La metamorfosis",
+    "original_title": "Die Verwandlung",
+    "publication_year": 1915,
+    "genre": "Novela corta o relato largo; narrativa modernista, fantástica, psicológica y existencial.",
+    "short_summary": "Gregor Samsa, un viajante de comercio que mantiene económicamente a su familia, despierta una mañana transformado en una criatura monstruosa. Incapaz de acudir al trabajo y de comunicarse con quienes lo rodean, queda encerrado en su habitación. Mientras intenta adaptarse a su nuevo cuerpo, su familia pasa gradualmente de la preocupación y la dependencia al rechazo, hasta tratarlo como una carga cuya desaparición permitiría recuperar la normalidad.",
+    "context": "Kafka escribió La metamorfosis a finales de 1912, aunque la obra no se publicó hasta octubre de 1915 en la revista Die weißen Blätter. Poco después apareció como libro en la editorial Kurt Wolff. El relato pertenece a una sociedad urbana e industrial en la que el individuo se encuentra sometido al trabajo, la deuda familiar y las exigencias de productividad. La transformación de Gregor hace visible una deshumanización que ya existía antes de que su cuerpo cambiara.\n\nKafka emplea en alemán la palabra Ungeziefer, que no identifica una especie concreta, sino una criatura repulsiva o una alimaña. Además, pidió expresamente que el ser no apareciera representado en la cubierta: lo importante no es determinar qué animal es Gregor, sino observar cómo cambia la mirada de los demás sobre él.",
+    "themes": [
+      "La alienación laboral",
+      "La deshumanización",
+      "La incomunicación",
+      "La pérdida de identidad",
+      "El rechazo familiar",
+      "La dependencia económica",
+      "La vergüenza",
+      "La transformación corporal",
+      "La enfermedad",
+      "La culpa",
+      "La utilidad social",
+      "La exclusión de quien deja de cumplir la función que los demás esperaban de él"
+    ],
+    "tone": "Sobrio, absurdo, claustrofóbico e inquietante, con momentos de ironía y humor negro. Kafka narra el acontecimiento imposible con una naturalidad casi administrativa: Gregor se preocupa inicialmente más por llegar tarde al trabajo que por su transformación. Esa frialdad vuelve todavía más perturbadora la violencia progresiva del relato.",
+    "sources": [
+      "FranzKafka.de, ficha bibliográfica de Die Verwandlung.",
+      "Museo Franz Kafka, cronología de la escritura y publicación de la obra.",
+      "Cambridge University Press, análisis de la alienación, la incomunicación y el rechazo en La metamorfosis.",
+      "The New Yorker, «On Translating Kafka’s The Metamorphosis».",
+      "Procedencia del texto original: Project Gutenberg, texto alemán de Die Verwandlung.",
+      "Comprobación textual: Wikisource, edición alemana publicada en 1915.",
+      "Traducción propia del alemán para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

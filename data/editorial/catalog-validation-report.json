@@ -1,33 +1,33 @@
 {
   "valid": true,
-  "validated_at": "2026-07-24T23:45:18.498Z",
+  "validated_at": "2026-07-26T12:08:41.151Z",
   "summary": {
-    "expected_quotes": 455,
-    "intermediate_quotes": 455,
-    "normalized_quotes": 455,
-    "authors": 23,
-    "works": 25,
-    "sources": 25,
+    "expected_quotes": 487,
+    "intermediate_quotes": 487,
+    "normalized_quotes": 487,
+    "authors": 24,
+    "works": 26,
+    "sources": 26,
     "editorial_decisions": 0,
     "poems": 26,
-    "quotes_with_line_breaks": 312,
+    "quotes_with_line_breaks": 343,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
     "editorial_decisions": {
       "valid": true,
-      "message": "Decisiones editoriales válidas: 0 decisión(es), 455 cita(s) de referencia."
+      "message": "Decisiones editoriales válidas: 0 decisión(es), 487 cita(s) de referencia."
     },
     "editorial_sources": {
       "valid": true,
-      "message": "Fuentes editoriales válidas: 25 fuente(s) para 25 obra(s)."
+      "message": "Fuentes editoriales válidas: 26 fuente(s) para 26 obra(s)."
     }
   },
   "blocking_errors": [],
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "25 fuente(s) conservan derechos sin revisar.",
+      "message": "26 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -53,12 +53,13 @@
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
         "source-precioso-veneno",
-        "source-una-habitacion-propia"
+        "source-una-habitacion-propia",
+        "source-la-metamorfosis"
       ]
     },
     {
       "code": "source_verification_pending",
-      "message": "25 fuente(s) esperan verificación bibliográfica.",
+      "message": "26 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
@@ -84,7 +85,8 @@
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
         "source-precioso-veneno",
-        "source-una-habitacion-propia"
+        "source-una-habitacion-propia",
+        "source-la-metamorfosis"
       ]
     }
   ],
@@ -97,11 +99,11 @@
     },
     {
       "code": "rights_review_pending",
-      "count": 25
+      "count": 26
     },
     {
       "code": "source_verification_pending",
-      "count": 25
+      "count": 26
     }
   ],
   "reviewed_files": [
