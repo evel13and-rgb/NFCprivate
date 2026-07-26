@@ -11,9 +11,25 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=17" />
+  <link rel="stylesheet" href="style.css?v=18" />
 </head>
-<body data-mode="day">
+<body class="app-loading" data-mode="day">
+  <div
+    class="app-loader"
+    id="app-loader"
+    role="status"
+    aria-live="polite"
+    aria-label="Cargando Páramo Literario"
+  >
+    <div class="app-loader__mist" aria-hidden="true"></div>
+    <div class="app-loader__content">
+      <p class="app-loader__title">Páramo Literario</p>
+      <p class="app-loader__message">
+        cargando el páramo<span class="app-loader__ellipsis" aria-hidden="true">…</span>
+      </p>
+      <span class="app-loader__glow" aria-hidden="true"></span>
+    </div>
+  </div>
   <main class="wrap">
     <section
       class="quote-flow"
@@ -143,6 +159,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=19"></script>
+  <script type="module" src="script.js?v=20"></script>
 </body>
 </html>

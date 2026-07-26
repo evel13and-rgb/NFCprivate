@@ -4932,7 +4932,65 @@ async function refreshGlobalWeatherState() {
 
 function initGlobalWeatherState() {
   applyWeatherStateToDocument(getFallbackWeatherState());
-  refreshGlobalWeatherState();
+  return refreshGlobalWeatherState();
+}
+
+function getCurrentSceneBackgroundUrl() {
+  if (!document.body || typeof window.getComputedStyle !== 'function') {
+    return '';
+  }
+
+  const backgroundImage = window.getComputedStyle(document.body).backgroundImage;
+  const match = backgroundImage.match(/url\(["']?([^"')]+)["']?\)/);
+  return match?.[1] || '';
+}
+
+function preloadCurrentSceneBackground() {
+  const backgroundUrl = getCurrentSceneBackgroundUrl();
+  if (!backgroundUrl) {
+    return Promise.resolve();
+  }
+
+  return new Promise((resolve) => {
+    const image = new Image();
+    const finish = () => resolve();
+
+    image.addEventListener('load', async () => {
+      if (typeof image.decode === 'function') {
+        try {
+          await image.decode();
+        } catch {
+          // La imagen ya terminó de cargar; el navegador puede revelarla con seguridad.
+        }
+      }
+      finish();
+    }, { once: true });
+    image.addEventListener('error', finish, { once: true });
+    image.src = backgroundUrl;
+  });
+}
+
+function dismissAppLoader() {
+  const loader = document.getElementById('app-loader');
+  document.body?.classList.remove('app-loading');
+  if (!loader) return;
+
+  loader.classList.add('is-leaving');
+  loader.setAttribute('aria-hidden', 'true');
+  const removalDelay = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    ? 150
+    : 650;
+  window.setTimeout(() => loader.remove(), removalDelay);
+}
+
+async function revealAppWhenReady(initialWeatherReady) {
+  const ready = Promise.resolve(initialWeatherReady)
+    .catch(() => undefined)
+    .then(preloadCurrentSceneBackground);
+  const safetyTimeout = new Promise(resolve => window.setTimeout(resolve, 3000));
+
+  await Promise.race([ready, safetyTimeout]);
+  dismissAppLoader();
 }
 
 function createWordSpan(content, extraClass = '') {
@@ -6358,7 +6416,7 @@ function initApp() {
   quoteElementRef = document.getElementById('quote');
   quoteHighlightRef = document.getElementById('quote-highlight');
   initDaylightMotes();
-  initGlobalWeatherState();
+  const initialWeatherReady = initGlobalWeatherState();
   initMotionPreferenceWatcher();
   if (quoteElementRef) {
     setQuoteTextContent(quoteElementRef.textContent ?? '', { includeQuotes: false });
@@ -6369,10 +6427,12 @@ function initApp() {
   setGentleMessage(message);
   initMetadataInteractions();
   initQuoteActionButtons();
+  return initialWeatherReady;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initApp();
+  const initialWeatherReady = initApp();
   initFireflyAura();
   scheduleDayNightModeUpdates();
+  revealAppWhenReady(initialWeatherReady);
 });
