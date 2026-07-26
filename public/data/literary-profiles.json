@@ -469,7 +469,15 @@
         "Shropshire Council.",
         "Oxford Reference."
       ],
-      "portrait": null
+      "portrait": {
+        "path": "public/images/authors/mary-webb.webp",
+        "alt": "Retrato de Mary Webb",
+        "caption": "Mary Webb, hacia 1910–1920",
+        "credit": "Autor desconocido",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mary_webb.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
     },
     {
       "author_id": "author-franz-kafka",
