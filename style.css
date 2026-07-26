@@ -51,16 +51,17 @@
 }
 
 .app-loader {
-  --loader-fade-duration: 420ms;
+  --loader-fade-duration: 480ms;
   position: fixed;
   inset: 0;
   z-index: 10000;
+  display: grid;
+  place-items: center;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 48% 45%, rgba(206, 201, 185, 0.16), transparent 48%),
-    linear-gradient(155deg, rgba(21, 23, 23, 0.7), rgba(35, 32, 28, 0.52));
-  -webkit-backdrop-filter: blur(7px) saturate(0.78);
-  backdrop-filter: blur(7px) saturate(0.78);
+    radial-gradient(ellipse at 50% 110%, rgba(116, 103, 77, 0.18), transparent 55%),
+    radial-gradient(ellipse at 18% 20%, rgba(82, 91, 89, 0.13), transparent 45%),
+    linear-gradient(145deg, #111515, #171613 58%, #0d1010);
   opacity: 1;
   visibility: visible;
   transition:
@@ -75,19 +76,49 @@
   inset: -18%;
   pointer-events: none;
   background:
-    radial-gradient(ellipse at 25% 46%, rgba(228, 225, 213, 0.25), transparent 39%),
-    radial-gradient(ellipse at 73% 58%, rgba(197, 200, 190, 0.2), transparent 42%);
-  filter: blur(30px);
+    radial-gradient(ellipse at 24% 48%, rgba(218, 218, 207, 0.1), transparent 39%),
+    radial-gradient(ellipse at 76% 57%, rgba(178, 184, 177, 0.09), transparent 42%);
+  filter: blur(34px);
 }
 
 .app-loader::before {
-  opacity: 0.72;
-  animation: loader-mist-drift 7s ease-in-out infinite alternate;
+  opacity: 0.65;
+  animation: loader-mist-drift 9s ease-in-out infinite alternate;
 }
 
 .app-loader__mist {
-  opacity: 0.58;
-  animation: loader-mist-drift 9s ease-in-out -2s infinite alternate-reverse;
+  opacity: 0.46;
+  animation: loader-mist-drift 12s ease-in-out -4s infinite alternate-reverse;
+}
+
+.app-loader__mark {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr clamp(2.6rem, 8vw, 4.5rem) 1fr;
+  align-items: center;
+  width: min(88vw, 31rem);
+  color: rgba(237, 230, 213, 0.82);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.app-loader__name {
+  font-size: clamp(1.05rem, 3.3vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.app-loader__name--lower {
+  text-align: left;
+}
+
+.app-loader__rule {
+  width: clamp(1.6rem, 5vw, 2.8rem);
+  height: 1px;
+  justify-self: center;
+  background: rgba(200, 162, 90, 0.62);
 }
 
 .app-loader.is-leaving {
@@ -97,26 +128,20 @@
 }
 
 html.app-loader-returning .app-loader {
-  --loader-fade-duration: 260ms;
-  background:
-    radial-gradient(ellipse at 48% 45%, rgba(206, 201, 185, 0.1), transparent 48%),
-    linear-gradient(155deg, rgba(21, 23, 23, 0.48), rgba(35, 32, 28, 0.34));
-  -webkit-backdrop-filter: blur(4px) saturate(0.86);
-  backdrop-filter: blur(4px) saturate(0.86);
+  --loader-fade-duration: 360ms;
 }
 
-html.app-loader-returning .app-loader::before,
-html.app-loader-returning .app-loader__mist {
-  opacity: 0.34;
+html.app-loader-returning .app-loader__mark {
+  opacity: 0;
 }
 
 body.app-loading main.wrap {
-  opacity: 0.82;
+  opacity: 0;
 }
 
 main.wrap {
   opacity: 1;
-  transition: opacity 420ms ease;
+  transition: opacity 480ms ease 60ms;
 }
 
 @keyframes loader-mist-drift {
@@ -153,17 +178,16 @@ body {
   }
 
   .app-loader {
-    --loader-fade-duration: 80ms;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
+    --loader-fade-duration: 100ms;
   }
 
   body.app-loading main.wrap {
-    opacity: 1;
+    opacity: 0;
   }
 
   main.wrap {
-    transition-duration: 80ms;
+    transition-duration: 100ms;
+    transition-delay: 0ms;
   }
 }
 

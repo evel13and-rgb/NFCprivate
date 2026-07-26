@@ -4974,17 +4974,24 @@ function waitForLoaderDelay(delay) {
   return new Promise(resolve => window.setTimeout(resolve, delay));
 }
 
+function waitForInitialFonts() {
+  if (!document.fonts?.ready) {
+    return Promise.resolve();
+  }
+  return document.fonts.ready.catch(() => undefined);
+}
+
 function getAppLoaderTiming() {
   const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   const returningVisit = document.documentElement.classList.contains('app-loader-returning');
 
   if (reducedMotion) {
-    return { minimum: 0, maximum: 160, removal: 100 };
+    return { minimum: 0, maximum: 1800, removal: 120 };
   }
   if (returningVisit) {
-    return { minimum: 60, maximum: 450, removal: 300 };
+    return { minimum: 0, maximum: 1800, removal: 400 };
   }
-  return { minimum: 300, maximum: 1400, removal: 470 };
+  return { minimum: 380, maximum: 2400, removal: 520 };
 }
 
 function dismissAppLoader(removalDelay) {
@@ -4999,9 +5006,10 @@ function dismissAppLoader(removalDelay) {
 
 async function revealAppWhenReady(initialWeatherReady) {
   const timing = getAppLoaderTiming();
-  const ready = Promise.resolve(initialWeatherReady)
+  const sceneReady = Promise.resolve(initialWeatherReady)
     .catch(() => undefined)
     .then(preloadCurrentSceneBackground);
+  const ready = Promise.all([sceneReady, waitForInitialFonts()]);
   const readyAfterMinimum = Promise.all([ready, waitForLoaderDelay(timing.minimum)]);
   const safetyTimeout = waitForLoaderDelay(timing.maximum);
 
