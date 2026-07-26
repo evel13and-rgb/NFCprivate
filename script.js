@@ -4445,6 +4445,213 @@ Todo descendió, todo se desvaneció en el aire quieto. Solo quedó el viento de
   }
 ];
 
+const ORGULLO_Y_PREJUICIO_QUOTES = [
+  {
+    t: `Es una verdad universalmente reconocida que un hombre soltero, poseedor de una buena fortuna, ha de necesitar esposa.
+
+Por poco que se conozcan los sentimientos o las intenciones de semejante hombre cuando llega por primera vez a una comarca, esta verdad se encuentra tan firmemente asentada en la mente de las familias vecinas que se lo considera la legítima propiedad de alguna de sus hijas.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "la legítima propiedad de alguna de sus hijas", lang: "es"
+  },
+  {
+    t: `—No tienes compasión de mis pobres nervios.
+
+—Te equivocas, querida. Siento un profundo respeto por tus nervios. Son viejos amigos míos. Te he oído mencionarlos con consideración durante al menos estos últimos veinte años.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Son viejos amigos míos", lang: "es"
+  },
+  {
+    t: `—¿A cuál te refieres? —Y, volviéndose, miró un instante a Elizabeth hasta que, al encontrarse con sus ojos, apartó los suyos y dijo fríamente—: Es pasable, pero no lo bastante hermosa para tentarme; y ahora mismo no estoy de humor para dar importancia a jóvenes a quienes otros hombres desdeñan.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "no lo bastante hermosa para tentarme", lang: "es"
+  },
+  {
+    t: `—Su conjetura es completamente equivocada, se lo aseguro. Mi mente estaba ocupada de una manera mucho más agradable. Estaba meditando sobre el enorme placer que puede proporcionar un par de ojos hermosos en el rostro de una mujer bonita.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "un par de ojos hermosos", lang: "es"
+  },
+  {
+    t: `—La vanidad y el orgullo son cosas distintas, aunque las palabras se empleen a menudo como sinónimas. Una persona puede ser orgullosa sin ser vanidosa. El orgullo se refiere más a la opinión que tenemos de nosotros mismos; la vanidad, a lo que quisiéramos que los demás pensaran de nosotros.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "La vanidad y el orgullo son cosas distintas", lang: "es"
+  },
+  {
+    t: `—Su orgullo —dijo la señorita Lucas— no me ofende tanto como suele hacerlo el orgullo, porque en su caso tiene una excusa. No puede sorprender que un joven tan distinguido, con familia, fortuna, todo a su favor, tenga una opinión elevada de sí mismo. Si se me permite expresarlo así, tiene derecho a ser orgulloso.
+
+—Eso es muy cierto —respondió Elizabeth—, y podría perdonarle fácilmente su orgullo si no hubiera mortificado el mío.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "si no hubiera mortificado el mío", lang: "es"
+  },
+  {
+    t: `—La felicidad en el matrimonio es enteramente cuestión de azar. Aunque las disposiciones de ambos sean perfectamente conocidas o muy semejantes de antemano, eso no aumenta en lo más mínimo su felicidad.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "cuestión de azar", lang: "es"
+  },
+  {
+    t: `—Todos podemos empezar con facilidad: una ligera inclinación es bastante natural; pero son muy pocos los que tienen corazón suficiente para enamorarse de verdad sin estímulo. En nueve casos de cada diez, a una mujer le conviene mostrar más afecto del que siente. Sin duda Bingley siente inclinación por tu hermana; pero quizá nunca pase de eso si ella no lo ayuda a avanzar.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "enamorarse de verdad sin estímulo", lang: "es"
+  },
+  {
+    t: `—Nada es más engañoso —dijo Darcy— que la apariencia de humildad. A menudo no es más que despreocupación por la opinión ajena y, a veces, una jactancia indirecta.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "la apariencia de humildad", lang: "es"
+  },
+  {
+    t: `—Creo que en toda disposición existe una tendencia hacia algún mal particular, un defecto natural que ni siquiera la mejor educación puede vencer.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "un defecto natural", lang: "es"
+  },
+  {
+    t: `—Una vez perdida mi buena opinión, se pierde para siempre.
+
+—Ese sí es un defecto —exclamó Elizabeth—. El resentimiento implacable es una sombra en el carácter. Pero ha escogido bien su falta. En verdad no puedo reírme de ella. Está usted a salvo de mí.
+
+—Creo que en todo carácter existe una tendencia hacia algún mal particular, un defecto natural que ni siquiera la mejor educación puede vencer.
+
+—Y el defecto de usted es la propensión a odiar a todo el mundo.
+
+—Y el de usted —replicó él, sonriendo— es empeñarse deliberadamente en malinterpretarlos.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "empeñarse deliberadamente en malinterpretarlos", lang: "es"
+  },
+  {
+    t: `—Espero no ridiculizar jamás lo sabio o lo bueno. Las necedades y los disparates, los caprichos y las inconsecuencias sí me divierten, lo confieso, y me río de ellos siempre que puedo.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Las necedades y los disparates", lang: "es"
+  },
+  {
+    t: `—Una alternativa desdichada se presenta ante ti, Elizabeth. Desde hoy tendrás que ser una extraña para uno de tus padres. Tu madre no volverá a verte si no te casas con él… si te casas con él, yo no volveré a verte.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "si no te casas con él… si te casas con él", lang: "es"
+  },
+  {
+    t: `—No soy romántica, ya lo sabes. Nunca lo fui. Solo pido un hogar confortable; y, considerando el carácter, las relaciones y la posición del señor Collins, estoy convencida de que mis probabilidades de ser feliz con él son tan buenas como las de la mayoría de quienes se casan.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Solo pido un hogar confortable", lang: "es"
+  },
+  {
+    t: `Hay pocas personas a quienes ame de verdad y todavía menos de quienes piense bien.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "todavía menos de quienes piense bien", lang: "es"
+  },
+  {
+    t: `Cuanto más veo el mundo, más descontenta estoy de él; y cada día confirma mi creencia en la inconsistencia de todos los caracteres humanos y en lo poco que puede confiarse en la apariencia, sea de mérito o de juicio.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "la inconsistencia de todos los caracteres humanos", lang: "es"
+  },
+  {
+    t: `—Hay en mí una obstinación que jamás soporta ser asustada por voluntad ajena. Mi valor se eleva con cada intento de intimidarme.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Mi valor se eleva con cada intento de intimidarme", lang: "es"
+  },
+  {
+    t: `Tras varios minutos de silencio, se acercó a ella visiblemente agitado y comenzó:
+
+—En vano he luchado. No sirve de nada. Mis sentimientos no pueden ser reprimidos. Debe permitirme decirle con cuánto ardor la admiro y la amo.
+
+El asombro de Elizabeth estaba más allá de toda expresión. Lo miró fijamente, se sonrojó, dudó y guardó silencio. Él tomó aquello por suficiente estímulo, y de inmediato siguió la confesión de todo cuanto sentía y había sentido por ella desde hacía mucho tiempo. Habló bien; pero había sentimientos, además de los del corazón, que exponer, y no fue más elocuente al hablar de ternura que de orgullo. Se extendió con calor sobre la inferioridad de ella —sobre la degradación que suponía— y sobre los obstáculos familiares que el juicio había opuesto siempre a la inclinación: un calor que parecía debido a la importancia que estaba hiriendo, pero muy poco apropiado para favorecer su pretensión.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "no fue más elocuente al hablar de ternura que de orgullo", lang: "es"
+  },
+  {
+    t: `—También podría preguntarle por qué, con un propósito tan evidente de ofenderme e insultarme, eligió decirme que le gustaba contra su voluntad, contra su razón e incluso contra su carácter.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "contra su voluntad, contra su razón e incluso contra su carácter", lang: "es"
+  },
+  {
+    t: `—No hacía un mes que lo conocía cuando comprendí que era usted el último hombre del mundo con quien podrían persuadirme de casarme.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "el último hombre del mundo", lang: "es"
+  },
+  {
+    t: `—¡Qué humillante es este descubrimiento! Y, sin embargo, ¡qué justa humillación! De haber estado enamorada, no habría podido estar más miserablemente ciega.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "miserablemente ciega", lang: "es"
+  },
+  {
+    t: `Nunca había visto un lugar por el cual la naturaleza hubiera hecho más, ni donde la belleza natural hubiera sido tan poco contrariada por un gusto torpe.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "la belleza natural hubiera sido tan poco contrariada por un gusto torpe", lang: "es"
+  },
+  {
+    t: `Lo respetaba, lo estimaba, le estaba agradecida, sentía un verdadero interés por su bienestar; y solo quería saber hasta qué punto deseaba que ese bienestar dependiera de ella.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "deseaba que ese bienestar dependiera de ella", lang: "es"
+  },
+  {
+    t: `—Recuerdo que, cuando la conocimos en Hertfordshire, todos nos asombramos mucho al descubrir que se la tenía por una belleza; y recuerdo particularmente que una noche, después de que cenaran en Netherfield, usted dijo: «¿Ella, una belleza? Antes llamaría ingeniosa a su madre». Pero después pareció mejorar ante sus ojos, y creo que durante algún tiempo llegó a considerarla bastante bonita.
+
+Convencida como estaba la señorita Bingley de que Darcy admiraba a Elizabeth, aquel no era el mejor modo de recomendarse a sí misma; pero las personas airadas no siempre son prudentes. Al verlo por fin algo irritado, obtuvo todo el éxito que esperaba.
+
+—Sí —respondió Darcy, que ya no pudo contenerse—, pero eso fue únicamente cuando la conocí; porque hace ya muchos meses que la considero una de las mujeres más hermosas de cuantas conozco.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "las personas airadas no siempre son prudentes", lang: "es"
+  },
+  {
+    t: `Darcy no respondió. Parecía apenas oírla y caminaba de un lado a otro de la habitación, sumido en una seria meditación, con el ceño contraído y el aire sombrío. Elizabeth no tardó en advertirlo y lo comprendió al instante. Su poder se desvanecía; todo debía desvanecerse ante semejante prueba de debilidad familiar, ante semejante certeza de la más profunda deshonra. No podía sorprenderse ni condenarlo; pero la convicción de que él se había dominado no le daba consuelo ni mitigaba su aflicción.
+
+Al contrario, aquello estaba calculado precisamente para hacerle comprender sus propios deseos; y nunca había sentido con tanta sinceridad que podría haberlo amado como ahora, cuando todo amor debía ser vano.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "cuando todo amor debía ser vano", lang: "es"
+  },
+  {
+    t: `—Al casarme con su sobrino, no consideraría que abandono esa esfera. Él es un caballero; yo soy hija de un caballero; hasta ahí somos iguales.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "hasta ahí somos iguales", lang: "es"
+  },
+  {
+    t: `—Sean cuales sean mis parientes —dijo Elizabeth—, si su sobrino no pone reparos, nada tienen que ver con usted.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "nada tienen que ver con usted", lang: "es"
+  },
+  {
+    t: `—Solo estoy resuelta a actuar de la manera que, en mi propia opinión, constituya mi felicidad, sin referencia a usted ni a ninguna persona tan enteramente ajena a mí.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "constituya mi felicidad", lang: "es"
+  },
+  {
+    t: `—Si insiste en darme las gracias —respondió él—, désmelas únicamente por usted. No intentaré negar que el deseo de hacerla feliz pudo añadir fuerza a los demás motivos que me impulsaron. Pero su familia no me debe nada. Por mucho que los respete, creo que pensé únicamente en usted.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "creo que pensé únicamente en usted", lang: "es"
+  },
+  {
+    t: `—Si sus sentimientos siguen siendo los mismos que el pasado abril, dígamelo de inmediato. Mis afectos y mis deseos no han cambiado; pero una sola palabra suya me hará guardar silencio sobre este asunto para siempre.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Mis afectos y mis deseos no han cambiado", lang: "es"
+  },
+  {
+    t: `—Usted me dio una lección, dura al principio, pero sumamente provechosa. Por usted fui debidamente humillado. Llegué a su lado sin dudar de cómo sería recibido. Usted me mostró cuán insuficientes eran todas mis pretensiones para agradar a una mujer digna de ser agradada.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Por usted fui debidamente humillado", lang: "es"
+  },
+  {
+    t: `—Debe aprender un poco de mi filosofía. Piense solo en el pasado cuando su recuerdo le proporcione placer.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Piense solo en el pasado cuando su recuerdo le proporcione placer", lang: "es"
+  },
+  {
+    t: `—No puedo fijar la hora, ni el lugar, ni la mirada, ni las palabras que pusieron los cimientos. Fue hace demasiado tiempo. Ya estaba en medio antes de saber que había empezado.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Ya estaba en medio antes de saber que había empezado", lang: "es"
+  },
+  {
+    t: `—Quizá no siempre lo amé tanto como ahora. Pero, en casos como este, una buena memoria es imperdonable. Esta es la última vez que yo misma lo recordaré.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "una buena memoria es imperdonable", lang: "es"
+  },
+  {
+    t: `—Sí, sí lo quiero —respondió ella, con lágrimas en los ojos—; lo amo. En verdad no tiene un orgullo impropio. Es enteramente amable. Usted no sabe lo que realmente es; así que, por favor, no me haga daño hablando de él en esos términos.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "Usted no sabe lo que realmente es", lang: "es"
+  },
+  {
+    t: `Soy la criatura más feliz del mundo. Quizá otras personas lo hayan dicho antes, pero ninguna con tanta justicia. Soy incluso más feliz que Jane; ella solo sonríe, yo río.`,
+    a: "Jane Austen", obra: "Orgullo y prejuicio, Jane Austen",
+    highlight: "ella solo sonríe, yo río", lang: "es"
+  }
+];
+
 const LA_METAMORFOSIS_QUOTES = [
   {
     t: `Al despertar Gregor Samsa una mañana de sueños intranquilos, se encontró en su cama transformado en un monstruoso insecto.
@@ -4751,6 +4958,7 @@ const QUOTES = [
   ...VERA_QUOTES,
   ...PRECIOSO_VENENO_QUOTES,
   ...LA_METAMORFOSIS_QUOTES,
+  ...ORGULLO_Y_PREJUICIO_QUOTES,
 ];
 
 const ALLOWED_WEATHER_TIMES = new Set(ALLOWED_TIMES_OF_DAY);

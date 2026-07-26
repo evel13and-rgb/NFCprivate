@@ -364,6 +364,41 @@
     "verification_status": "pending"
   },
   {
+    "work_id": "work-orgullo-y-prejuicio",
+    "author_id": "author-jane-austen",
+    "title": "Orgullo y prejuicio",
+    "original_title": "Pride and Prejudice",
+    "publication_year": 1813,
+    "genre": "Novela de costumbres, romántica y de formación; sátira social.",
+    "short_summary": "Elizabeth Bennet es una joven inteligente, independiente y poco dispuesta a aceptar un matrimonio sin afecto ni respeto. Cuando conoce al rico y reservado Fitzwilliam Darcy, interpreta su comportamiento como una muestra de arrogancia y lo rechaza. Darcy, por su parte, observa a Elizabeth a través de sus propios prejuicios sociales.\n\nLos errores, revelaciones y cambios de perspectiva obligan a ambos a revisar sus juicios. Su relación avanza no solo mediante el enamoramiento, sino a través de un proceso de autoconocimiento en el que cada uno debe reconocer sus defectos y modificar su manera de mirar al otro.",
+    "context": "Austen escribió una primera versión entre 1796 y 1797, titulada First Impressions —Primeras impresiones—. Su padre ofreció el manuscrito a un editor, pero fue rechazado. La autora lo revisó profundamente entre 1811 y 1812 y cambió el título porque ya se había publicado otra novela llamada First Impressions. Pride and Prejudice apareció el 28 de enero de 1813, firmada únicamente como obra «de la autora de Sentido y sensibilidad».\n\nLa situación de las hermanas Bennet está condicionada por una realidad material: ninguna puede heredar la propiedad familiar, que pasará a un pariente varón. El matrimonio constituye, por tanto, una elección afectiva, pero también una cuestión de supervivencia y seguridad económica. Austen contrapone distintas uniones para examinar el amor, la conveniencia, la dependencia y el respeto mutuo.",
+    "themes": [
+      "El orgullo",
+      "Los prejuicios",
+      "Las primeras impresiones",
+      "El amor",
+      "El matrimonio",
+      "La posición social",
+      "El dinero",
+      "La herencia",
+      "La reputación",
+      "La educación moral",
+      "La familia",
+      "El autoconocimiento",
+      "La diferencia entre apariencia y carácter"
+    ],
+    "tone": "Irónico, ingenioso, vivaz y crítico. La narración combina ligereza, humor y tensión romántica con una observación precisa de las jerarquías sociales. Los diálogos revelan tanto la inteligencia de los personajes como sus vanidades, malentendidos y estrategias de poder.",
+    "sources": [
+      "Jane Austen’s House, historia de la escritura, revisión y publicación de Orgullo y prejuicio.",
+      "British Library, primera edición y presentación crítica de la novela.",
+      "Procedencia del texto original: Project Gutenberg, texto inglés de Pride and Prejudice.",
+      "Comprobación textual: Wikisource, primera edición inglesa de 1813.",
+      "Traducción propia del inglés para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
     "work_id": "work-una-habitacion-propia",
     "author_id": "author-virginia-woolf",
     "title": "Una habitación propia",

@@ -1,11 +1,11 @@
 {
-  "total_quotes": 487,
-  "detected_works": 26,
-  "inferred_authors": 24,
+  "total_quotes": 523,
+  "detected_works": 27,
+  "inferred_authors": 25,
   "poems": 26,
-  "prose": 461,
-  "quotes_with_line_breaks": 343,
-  "highlights_present": 431,
+  "prose": 497,
+  "quotes_with_line_breaks": 350,
+  "highlights_present": 467,
   "highlights_absent": 56,
   "highlights_not_literal": [
     {

@@ -480,6 +480,47 @@
       }
     },
     {
+      "author_id": "author-jane-austen",
+      "display_name": "Jane Austen",
+      "birth_year": 1775,
+      "death_year": 1817,
+      "country": "Reino Unido —Inglaterra—",
+      "language": "Inglés",
+      "period": "Finales del siglo XVIII y comienzos del siglo XIX; periodo georgiano y Regencia inglesa",
+      "movement": "Novela de costumbres, sátira social y transición hacia el realismo moderno.",
+      "bio_short": "Jane Austen fue una novelista inglesa nacida en Steventon, Hampshire. Creció en una familia vinculada al clero rural y comenzó a escribir desde muy joven. En 1809 se instaló con su madre y su hermana Cassandra en Chawton, donde revisó y preparó para su publicación sus principales novelas. Durante su vida publicó de forma anónima: su nombre no apareció asociado públicamente a sus obras hasta la edición póstuma de Persuasión y La abadía de Northanger. Murió en Winchester en 1817, a los cuarenta y un años.\n\nSu narrativa combina ironía, precisión psicológica y una observación aguda de las relaciones sociales. A través de familias, visitas, bailes, herencias y matrimonios, Austen examinó las limitadas posibilidades económicas y vitales de las mujeres de su tiempo. También contribuyó al desarrollo del estilo indirecto libre, que permite acercarse al pensamiento de los personajes sin abandonar la voz del narrador.",
+      "bio_long": null,
+      "themes": [
+        "El matrimonio",
+        "El amor",
+        "La independencia económica",
+        "La posición social",
+        "La educación",
+        "La familia",
+        "La reputación",
+        "El autoconocimiento",
+        "Los prejuicios",
+        "Las apariencias",
+        "Las restricciones impuestas a las mujeres"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Jane Austen’s House, biografía, cronología y presentación de la obra de la autora.",
+        "National Portrait Gallery, retrato y ficha de Jane Austen.",
+        "British Library, estudios y materiales sobre Jane Austen."
+      ],
+      "portrait": {
+        "path": "public/images/authors/jane-austen.webp",
+        "alt": "Retrato de Jane Austen",
+        "caption": "Jane Austen, hacia 1810",
+        "credit": "Cassandra Austen",
+        "source_url": "https://commons.wikimedia.org/wiki/File:CassandraAusten-JaneAusten_(c.1810).jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
+    },
+    {
       "author_id": "author-franz-kafka",
       "display_name": "Franz Kafka",
       "birth_year": 1883,
@@ -934,6 +975,45 @@
         "Mary Webb, Precious Bane, texto original inglés; edición digital de Project Gutenberg."
       ],
       "fragment_count": 29
+    },
+    {
+      "work_id": "work-orgullo-y-prejuicio",
+      "title": "Orgullo y prejuicio",
+      "display_title": "Orgullo y prejuicio",
+      "original_title": "Pride and Prejudice",
+      "author_id": "author-jane-austen",
+      "publication_year": 1813,
+      "genre": "Novela de costumbres, romántica y de formación; sátira social.",
+      "language": null,
+      "summary_short": "Elizabeth Bennet es una joven inteligente, independiente y poco dispuesta a aceptar un matrimonio sin afecto ni respeto. Cuando conoce al rico y reservado Fitzwilliam Darcy, interpreta su comportamiento como una muestra de arrogancia y lo rechaza. Darcy, por su parte, observa a Elizabeth a través de sus propios prejuicios sociales.\n\nLos errores, revelaciones y cambios de perspectiva obligan a ambos a revisar sus juicios. Su relación avanza no solo mediante el enamoramiento, sino a través de un proceso de autoconocimiento en el que cada uno debe reconocer sus defectos y modificar su manera de mirar al otro.",
+      "summary_long": null,
+      "context_notes": "Austen escribió una primera versión entre 1796 y 1797, titulada First Impressions —Primeras impresiones—. Su padre ofreció el manuscrito a un editor, pero fue rechazado. La autora lo revisó profundamente entre 1811 y 1812 y cambió el título porque ya se había publicado otra novela llamada First Impressions. Pride and Prejudice apareció el 28 de enero de 1813, firmada únicamente como obra «de la autora de Sentido y sensibilidad».\n\nLa situación de las hermanas Bennet está condicionada por una realidad material: ninguna puede heredar la propiedad familiar, que pasará a un pariente varón. El matrimonio constituye, por tanto, una elección afectiva, pero también una cuestión de supervivencia y seguridad económica. Austen contrapone distintas uniones para examinar el amor, la conveniencia, la dependencia y el respeto mutuo.",
+      "themes": [
+        "El orgullo",
+        "Los prejuicios",
+        "Las primeras impresiones",
+        "El amor",
+        "El matrimonio",
+        "La posición social",
+        "El dinero",
+        "La herencia",
+        "La reputación",
+        "La educación moral",
+        "La familia",
+        "El autoconocimiento",
+        "La diferencia entre apariencia y carácter"
+      ],
+      "tone_notes": "Irónico, ingenioso, vivaz y crítico. La narración combina ligereza, humor y tensión romántica con una observación precisa de las jerarquías sociales. Los diálogos revelan tanto la inteligencia de los personajes como sus vanidades, malentendidos y estrategias de poder.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Jane Austen’s House, historia de la escritura, revisión y publicación de Orgullo y prejuicio.",
+        "British Library, primera edición y presentación crítica de la novela.",
+        "Procedencia del texto original: Project Gutenberg, texto inglés de Pride and Prejudice.",
+        "Comprobación textual: Wikisource, primera edición inglesa de 1813.",
+        "Traducción propia del inglés para Páramo Literario."
+      ],
+      "fragment_count": 36
     },
     {
       "work_id": "work-una-habitacion-propia",

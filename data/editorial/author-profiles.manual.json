@@ -428,6 +428,15 @@
   {
     "author_id": "author-mary-webb",
     "name": "Mary Gladys Webb",
+    "portrait": {
+      "path": "public/images/authors/mary-webb.webp",
+      "alt": "Retrato de Mary Webb",
+      "caption": "Mary Webb, hacia 1910–1920",
+      "credit": "Autor desconocido",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mary_webb.jpg",
+      "rights": "Dominio público; Public Domain Mark 1.0",
+      "object_position": "50% 35%"
+    },
     "birth_year": 1881,
     "death_year": 1927,
     "country": "Reino Unido —Inglaterra—",
@@ -452,6 +461,46 @@
       "Mary Webb Society.",
       "Shropshire Council.",
       "Oxford Reference."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "author_id": "author-jane-austen",
+    "name": "Jane Austen",
+    "portrait": {
+      "path": "public/images/authors/jane-austen.webp",
+      "alt": "Retrato de Jane Austen",
+      "caption": "Jane Austen, hacia 1810",
+      "credit": "Cassandra Austen",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CassandraAusten-JaneAusten_(c.1810).jpg",
+      "rights": "Dominio público; Public Domain Mark 1.0",
+      "object_position": "50% 35%"
+    },
+    "birth_year": 1775,
+    "death_year": 1817,
+    "country": "Reino Unido —Inglaterra—",
+    "language": "Inglés",
+    "period": "Finales del siglo XVIII y comienzos del siglo XIX; periodo georgiano y Regencia inglesa",
+    "movement": "Novela de costumbres, sátira social y transición hacia el realismo moderno.",
+    "short_biography": "Jane Austen fue una novelista inglesa nacida en Steventon, Hampshire. Creció en una familia vinculada al clero rural y comenzó a escribir desde muy joven. En 1809 se instaló con su madre y su hermana Cassandra en Chawton, donde revisó y preparó para su publicación sus principales novelas. Durante su vida publicó de forma anónima: su nombre no apareció asociado públicamente a sus obras hasta la edición póstuma de Persuasión y La abadía de Northanger. Murió en Winchester en 1817, a los cuarenta y un años.\n\nSu narrativa combina ironía, precisión psicológica y una observación aguda de las relaciones sociales. A través de familias, visitas, bailes, herencias y matrimonios, Austen examinó las limitadas posibilidades económicas y vitales de las mujeres de su tiempo. También contribuyó al desarrollo del estilo indirecto libre, que permite acercarse al pensamiento de los personajes sin abandonar la voz del narrador.",
+    "themes": [
+      "El matrimonio",
+      "El amor",
+      "La independencia económica",
+      "La posición social",
+      "La educación",
+      "La familia",
+      "La reputación",
+      "El autoconocimiento",
+      "Los prejuicios",
+      "Las apariencias",
+      "Las restricciones impuestas a las mujeres"
+    ],
+    "sources": [
+      "Jane Austen’s House, biografía, cronología y presentación de la obra de la autora.",
+      "National Portrait Gallery, retrato y ficha de Jane Austen.",
+      "British Library, estudios y materiales sobre Jane Austen."
     ],
     "profile_status": "draft",
     "verification_status": "pending"

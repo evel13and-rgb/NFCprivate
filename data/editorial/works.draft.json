@@ -232,5 +232,14 @@
     "legacy_work": "La metamorfosis, Franz Kafka",
     "status": "draft",
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-orgullo-y-prejuicio",
+    "title": "Orgullo y prejuicio",
+    "slug": "orgullo-y-prejuicio",
+    "author_id": "author-jane-austen",
+    "legacy_work": "Orgullo y prejuicio, Jane Austen",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   }
 ]

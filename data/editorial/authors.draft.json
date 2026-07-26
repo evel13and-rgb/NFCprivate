@@ -263,5 +263,16 @@
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-jane-austen",
+    "canonical_name": "Jane Austen",
+    "slug": "jane-austen",
+    "sort_name": "Jane Austen",
+    "inferred_from": [
+      "Orgullo y prejuicio, Jane Austen"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   }
 ]
