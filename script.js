@@ -4863,7 +4863,7 @@ const AUTHORS_INFO = {};
 const WORKS_INFO = {};
 
 async function fetchPublicProfiles(relativePath) {
-  const response = await fetch(new URL(relativePath, import.meta.url), { cache: 'no-store' });
+  const response = await fetch(new URL(relativePath, import.meta.url));
   if (!response.ok) {
     throw new Error(`${relativePath}: HTTP ${response.status}`);
   }
@@ -5033,50 +5033,16 @@ function initGlobalWeatherState() {
   return refreshGlobalWeatherState();
 }
 
-function getCurrentSceneBackgroundUrl() {
-  if (!document.body || typeof window.getComputedStyle !== 'function') {
-    return '';
-  }
-
-  const backgroundImage = window.getComputedStyle(document.body).backgroundImage;
-  const match = backgroundImage.match(/url\(["']?([^"')]+)["']?\)/);
-  return match?.[1] || '';
-}
-
-function preloadCurrentSceneBackground() {
-  const backgroundUrl = getCurrentSceneBackgroundUrl();
-  if (!backgroundUrl) {
-    return Promise.resolve();
-  }
-
-  return new Promise((resolve) => {
-    const image = new Image();
-    const finish = () => resolve();
-
-    image.addEventListener('load', async () => {
-      if (typeof image.decode === 'function') {
-        try {
-          await image.decode();
-        } catch {
-          // La imagen ya terminó de cargar; el navegador puede revelarla con seguridad.
-        }
-      }
-      finish();
-    }, { once: true });
-    image.addEventListener('error', finish, { once: true });
-    image.src = backgroundUrl;
-  });
-}
-
 function waitForLoaderDelay(delay) {
   return new Promise(resolve => window.setTimeout(resolve, delay));
 }
 
-function waitForInitialFonts() {
-  if (!document.fonts?.ready) {
-    return Promise.resolve();
-  }
-  return document.fonts.ready.catch(() => undefined);
+function waitForInitialPaint() {
+  return new Promise((resolve) => {
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(resolve);
+    });
+  });
 }
 
 function getAppLoaderTiming() {
@@ -5084,12 +5050,12 @@ function getAppLoaderTiming() {
   const returningVisit = document.documentElement.classList.contains('app-loader-returning');
 
   if (reducedMotion) {
-    return { minimum: 0, maximum: 20, removal: 140 };
+    return { maximum: 50, removal: 140 };
   }
   if (returningVisit) {
-    return { minimum: 30, maximum: 380, removal: 220 };
+    return { maximum: 100, removal: 220 };
   }
-  return { minimum: 600, maximum: 1500, removal: 300 };
+  return { maximum: 180, removal: 300 };
 }
 
 function dismissAppLoader(removalDelay) {
@@ -5102,16 +5068,11 @@ function dismissAppLoader(removalDelay) {
   window.setTimeout(() => loader.remove(), removalDelay);
 }
 
-async function revealAppWhenReady(initialWeatherReady) {
+async function revealAppWhenReady() {
   const timing = getAppLoaderTiming();
-  const sceneReady = Promise.resolve(initialWeatherReady)
-    .catch(() => undefined)
-    .then(preloadCurrentSceneBackground);
-  const ready = Promise.all([sceneReady, waitForInitialFonts()]);
-  const readyAfterMinimum = Promise.all([ready, waitForLoaderDelay(timing.minimum)]);
   const safetyTimeout = waitForLoaderDelay(timing.maximum);
 
-  await Promise.race([readyAfterMinimum, safetyTimeout]);
+  await Promise.race([waitForInitialPaint(), safetyTimeout]);
   try {
     sessionStorage.setItem('paramo-loader-seen', '1');
   } catch {
@@ -6533,9 +6494,6 @@ function renderQuote(quote) {
 
   quoteImageCache = null;
   hideShareImageFallback();
-  prepareQuoteImage().catch(error => {
-    console.error('No se pudo preparar la imagen compartible', error);
-  });
 }
 
 function initApp() {
@@ -6543,7 +6501,7 @@ function initApp() {
   quoteElementRef = document.getElementById('quote');
   quoteHighlightRef = document.getElementById('quote-highlight');
   initDaylightMotes();
-  const initialWeatherReady = initGlobalWeatherState();
+  initGlobalWeatherState();
   initMotionPreferenceWatcher();
   if (quoteElementRef) {
     setQuoteTextContent(quoteElementRef.textContent ?? '', { includeQuotes: false });
@@ -6554,12 +6512,11 @@ function initApp() {
   setGentleMessage(message);
   initMetadataInteractions();
   initQuoteActionButtons();
-  return initialWeatherReady;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const initialWeatherReady = initApp();
+  initApp();
   initFireflyAura();
   scheduleDayNightModeUpdates();
-  revealAppWhenReady(initialWeatherReady);
+  revealAppWhenReady();
 });

@@ -14,11 +14,35 @@
   --author-night: #d3cab0;
   --ink-soft-night: rgba(246, 234, 199, 0.26);
   --paramo-bg-day: url("backgrounds/paramodia.png");
-  --paramo-bg-dawn: url("backgrounds/paramoamanecer.png"), var(--paramo-bg-day);
-  --paramo-bg-sunny-day: url("backgrounds/paramosol.png"), var(--paramo-bg-day);
-  --paramo-bg-rainbow: url("backgrounds/paramoarcoiris.png"), var(--paramo-bg-day);
+  --paramo-bg-day: image-set(
+    url("backgrounds/paramodia.webp") type("image/webp"),
+    url("backgrounds/paramodia.png") type("image/png")
+  );
+  --paramo-bg-dawn: url("backgrounds/paramoamanecer.png");
+  --paramo-bg-dawn: image-set(
+    url("backgrounds/paramoamanecer.webp") type("image/webp"),
+    url("backgrounds/paramoamanecer.png") type("image/png")
+  );
+  --paramo-bg-sunny-day: url("backgrounds/paramosol.png");
+  --paramo-bg-sunny-day: image-set(
+    url("backgrounds/paramosol.webp") type("image/webp"),
+    url("backgrounds/paramosol.png") type("image/png")
+  );
+  --paramo-bg-rainbow: url("backgrounds/paramoarcoiris.png");
+  --paramo-bg-rainbow: image-set(
+    url("backgrounds/paramoarcoiris.webp") type("image/webp"),
+    url("backgrounds/paramoarcoiris.png") type("image/png")
+  );
   --paramo-bg-sunset: url("backgrounds/paramoatardecer.png");
+  --paramo-bg-sunset: image-set(
+    url("backgrounds/paramoatardecer.webp") type("image/webp"),
+    url("backgrounds/paramoatardecer.png") type("image/png")
+  );
   --paramo-bg-night: url("backgrounds/paramonoche.png");
+  --paramo-bg-night: image-set(
+    url("backgrounds/paramonoche.webp") type("image/webp"),
+    url("backgrounds/paramonoche.png") type("image/png")
+  );
   --paramo-base-image: var(--paramo-bg-day);
   --paramo-base-veil: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   --weather-tone:
