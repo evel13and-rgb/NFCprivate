@@ -18,24 +18,6 @@
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
   },
   {
-    "id": "work-nudo-de-viboras",
-    "title": "Nudo de víboras",
-    "slug": "nudo-de-viboras",
-    "author_id": "author-francois-mauriac",
-    "legacy_work": "Nudo de víboras, François Mauriac",
-    "status": "draft",
-    "notes": "Título y autor inferidos separando legacy_work por la última coma."
-  },
-  {
-    "id": "work-pedro-paramo",
-    "title": "Pedro Páramo",
-    "slug": "pedro-paramo",
-    "author_id": "author-juan-rulfo",
-    "legacy_work": "Pedro Páramo, Juan Rulfo",
-    "status": "draft",
-    "notes": "Título y autor inferidos separando legacy_work por la última coma."
-  },
-  {
     "id": "work-gargantua",
     "title": "Gargantúa",
     "slug": "gargantua",

@@ -1,7 +1,7 @@
 {
-  "total_quotes_processed": 523,
-  "total_authors_generated": 25,
-  "total_works_generated": 27,
+  "total_quotes_processed": 506,
+  "total_authors_generated": 23,
+  "total_works_generated": 25,
   "quotes_without_author_id": [
     0,
     1
@@ -11,8 +11,8 @@
     "author": 467,
     "character": 0,
     "narrator": 0,
-    "collective_voice": 2,
-    "ambiguous": 54
+    "collective_voice": 0,
+    "ambiguous": 39
   },
   "ambiguous_works": [
     {
@@ -46,13 +46,30 @@
   "legacy_attribution_matches_author": {
     "count": 467,
     "legacy_indexes": [
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
       63,
       64,
       65,
@@ -495,28 +512,11 @@
       502,
       503,
       504,
-      505,
-      506,
-      507,
-      508,
-      509,
-      510,
-      511,
-      512,
-      513,
-      514,
-      515,
-      516,
-      517,
-      518,
-      519,
-      520,
-      521,
-      522
+      505
     ]
   },
   "legacy_attribution_looks_like_character_or_narrator": {
-    "count": 56,
+    "count": 39,
     "cases": [
       {
         "legacy_index": 0,
@@ -543,313 +543,211 @@
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 4,
-        "legacy_attribution": "Louis",
-        "author_id": "author-francois-mauriac",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 5,
-        "legacy_attribution": "Louis",
-        "author_id": "author-francois-mauriac",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 6,
-        "legacy_attribution": "Louis",
-        "author_id": "author-francois-mauriac",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 7,
-        "legacy_attribution": "Louis",
-        "author_id": "author-francois-mauriac",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 8,
-        "legacy_attribution": "Louis",
-        "author_id": "author-francois-mauriac",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 9,
-        "legacy_attribution": "Louis",
-        "author_id": "author-francois-mauriac",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 10,
-        "legacy_attribution": "Louis",
-        "author_id": "author-francois-mauriac",
-        "provisional_type": "ambiguous"
-      },
-      {
         "legacy_index": 11,
-        "legacy_attribution": "Juan Preciado",
-        "author_id": "author-juan-rulfo",
+        "legacy_attribution": "Víctor Frankenstein",
+        "author_id": "author-mary-shelley",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 12,
-        "legacy_attribution": "Susurros del páramo",
-        "author_id": "author-juan-rulfo",
-        "provisional_type": "collective_voice"
+        "legacy_attribution": "La Criatura",
+        "author_id": "author-mary-shelley",
+        "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 13,
-        "legacy_attribution": "Susana San Juan",
-        "author_id": "author-juan-rulfo",
+        "legacy_attribution": "La Criatura",
+        "author_id": "author-mary-shelley",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 14,
-        "legacy_attribution": "Voces del pueblo",
-        "author_id": "author-juan-rulfo",
-        "provisional_type": "collective_voice"
+        "legacy_attribution": "La Criatura",
+        "author_id": "author-mary-shelley",
+        "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 15,
-        "legacy_attribution": "Abundio Martínez",
-        "author_id": "author-juan-rulfo",
+        "legacy_attribution": "La Criatura",
+        "author_id": "author-mary-shelley",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 16,
-        "legacy_attribution": "Dolores Preciado",
-        "author_id": "author-juan-rulfo",
+        "legacy_attribution": "Víctor Frankenstein",
+        "author_id": "author-mary-shelley",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 17,
-        "legacy_attribution": "Juan Preciado",
-        "author_id": "author-juan-rulfo",
+        "legacy_attribution": "La Criatura",
+        "author_id": "author-mary-shelley",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 18,
-        "legacy_attribution": "Susana San Juan",
-        "author_id": "author-juan-rulfo",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 19,
-        "legacy_attribution": "Susana San Juan",
-        "author_id": "author-juan-rulfo",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 20,
-        "legacy_attribution": "Fulgor Sedano",
-        "author_id": "author-juan-rulfo",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 28,
-        "legacy_attribution": "Víctor Frankenstein",
-        "author_id": "author-mary-shelley",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 29,
-        "legacy_attribution": "La Criatura",
-        "author_id": "author-mary-shelley",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 30,
-        "legacy_attribution": "La Criatura",
-        "author_id": "author-mary-shelley",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 31,
-        "legacy_attribution": "La Criatura",
-        "author_id": "author-mary-shelley",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 32,
-        "legacy_attribution": "La Criatura",
-        "author_id": "author-mary-shelley",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 33,
-        "legacy_attribution": "Víctor Frankenstein",
-        "author_id": "author-mary-shelley",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 34,
-        "legacy_attribution": "La Criatura",
-        "author_id": "author-mary-shelley",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 35,
         "legacy_attribution": "Robert Walton",
         "author_id": "author-mary-shelley",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 36,
+        "legacy_index": 19,
         "legacy_attribution": "Anne Shirley",
         "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 20,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 21,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 22,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 23,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 24,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 25,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 26,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 27,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 28,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 29,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 30,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 31,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 32,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 33,
+        "legacy_attribution": "Segismundo — Jornada Segunda",
+        "author_id": "author-pedro-calderon-de-la-barca",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 34,
+        "legacy_attribution": "Segismundo — Jornada Segunda",
+        "author_id": "author-pedro-calderon-de-la-barca",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 35,
+        "legacy_attribution": "Segismundo — Jornada Segunda",
+        "author_id": "author-pedro-calderon-de-la-barca",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 36,
+        "legacy_attribution": "Segismundo — Jornada Segunda",
+        "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 37,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
+        "legacy_attribution": "Segismundo — Jornada Primera",
+        "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 38,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
+        "legacy_attribution": "Segismundo — Jornada Primera",
+        "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 39,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
+        "legacy_attribution": "Segismundo — Jornada Primera",
+        "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 40,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
+        "legacy_attribution": "Segismundo — Jornada Tercera",
+        "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 41,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
+        "legacy_attribution": "Segismundo — Jornada Tercera",
+        "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 42,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
+        "legacy_attribution": "Segismundo — Jornada Tercera",
+        "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 43,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 44,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 45,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 46,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 47,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 48,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 49,
-        "legacy_attribution": "Anne Shirley",
-        "author_id": "author-lucy-maud-montgomery",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 50,
-        "legacy_attribution": "Segismundo — Jornada Segunda",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 51,
-        "legacy_attribution": "Segismundo — Jornada Segunda",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 52,
-        "legacy_attribution": "Segismundo — Jornada Segunda",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 53,
-        "legacy_attribution": "Segismundo — Jornada Segunda",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 54,
-        "legacy_attribution": "Segismundo — Jornada Primera",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 55,
-        "legacy_attribution": "Segismundo — Jornada Primera",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 56,
-        "legacy_attribution": "Segismundo — Jornada Primera",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 57,
-        "legacy_attribution": "Segismundo — Jornada Tercera",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 58,
-        "legacy_attribution": "Segismundo — Jornada Tercera",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 59,
-        "legacy_attribution": "Segismundo — Jornada Tercera",
-        "author_id": "author-pedro-calderon-de-la-barca",
-        "provisional_type": "ambiguous"
-      },
-      {
-        "legacy_index": 60,
         "legacy_attribution": "Rosaura — Jornada Primera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 61,
+        "legacy_index": 44,
         "legacy_attribution": "Segismundo — Jornada Tercera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 62,
+        "legacy_index": 45,
         "legacy_attribution": "Segismundo — Jornada Tercera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
@@ -892,301 +790,211 @@
     },
     {
       "scope": "attribution",
-      "legacy_index": 4,
-      "legacy_attribution": "Louis",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 5,
-      "legacy_attribution": "Louis",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 6,
-      "legacy_attribution": "Louis",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 7,
-      "legacy_attribution": "Louis",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 8,
-      "legacy_attribution": "Louis",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 9,
-      "legacy_attribution": "Louis",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 10,
-      "legacy_attribution": "Louis",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
       "legacy_index": 11,
-      "legacy_attribution": "Juan Preciado",
+      "legacy_attribution": "Víctor Frankenstein",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 12,
+      "legacy_attribution": "La Criatura",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 13,
-      "legacy_attribution": "Susana San Juan",
+      "legacy_attribution": "La Criatura",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 14,
+      "legacy_attribution": "La Criatura",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 15,
-      "legacy_attribution": "Abundio Martínez",
+      "legacy_attribution": "La Criatura",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 16,
-      "legacy_attribution": "Dolores Preciado",
+      "legacy_attribution": "Víctor Frankenstein",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 17,
-      "legacy_attribution": "Juan Preciado",
+      "legacy_attribution": "La Criatura",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 18,
-      "legacy_attribution": "Susana San Juan",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 19,
-      "legacy_attribution": "Susana San Juan",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 20,
-      "legacy_attribution": "Fulgor Sedano",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 28,
-      "legacy_attribution": "Víctor Frankenstein",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 29,
-      "legacy_attribution": "La Criatura",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 30,
-      "legacy_attribution": "La Criatura",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 31,
-      "legacy_attribution": "La Criatura",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 32,
-      "legacy_attribution": "La Criatura",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 33,
-      "legacy_attribution": "Víctor Frankenstein",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 34,
-      "legacy_attribution": "La Criatura",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 35,
       "legacy_attribution": "Robert Walton",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
-      "legacy_index": 36,
+      "legacy_index": 19,
       "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 20,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 21,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 22,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 23,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 24,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 25,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 26,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 27,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 28,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 29,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 30,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 31,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 32,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 33,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 34,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 35,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 36,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 37,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Segismundo — Jornada Primera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 38,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Segismundo — Jornada Primera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 39,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Segismundo — Jornada Primera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 40,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Segismundo — Jornada Tercera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 41,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Segismundo — Jornada Tercera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 42,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Segismundo — Jornada Tercera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 43,
-      "legacy_attribution": "Anne Shirley",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 44,
-      "legacy_attribution": "Anne Shirley",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 45,
-      "legacy_attribution": "Anne Shirley",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 46,
-      "legacy_attribution": "Anne Shirley",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 47,
-      "legacy_attribution": "Anne Shirley",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 48,
-      "legacy_attribution": "Anne Shirley",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 49,
-      "legacy_attribution": "Anne Shirley",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 50,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 51,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 52,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 53,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 54,
-      "legacy_attribution": "Segismundo — Jornada Primera",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 55,
-      "legacy_attribution": "Segismundo — Jornada Primera",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 56,
-      "legacy_attribution": "Segismundo — Jornada Primera",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 57,
-      "legacy_attribution": "Segismundo — Jornada Tercera",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 58,
-      "legacy_attribution": "Segismundo — Jornada Tercera",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 59,
-      "legacy_attribution": "Segismundo — Jornada Tercera",
-      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
-    },
-    {
-      "scope": "attribution",
-      "legacy_index": 60,
       "legacy_attribution": "Rosaura — Jornada Primera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
-      "legacy_index": 61,
+      "legacy_index": 44,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
-      "legacy_index": 62,
+      "legacy_index": 45,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     }

@@ -104,18 +104,18 @@ if (!Array.isArray(decisionsDocument?.decisions)) {
   blockingErrors.push('editorial-decisions.json: decisions debe contener un array');
 }
 
-if (safeIntermediate.length !== 523) {
-  blockingErrors.push(`quotes.intermediate.json: se esperaban 523 frases y hay ${safeIntermediate.length}`);
+if (safeIntermediate.length !== 506) {
+  blockingErrors.push(`quotes.intermediate.json: se esperaban 506 frases y hay ${safeIntermediate.length}`);
 }
-if (safeNormalized.length !== 523) {
-  blockingErrors.push(`quotes.normalized.draft.json: se esperaban 523 frases y hay ${safeNormalized.length}`);
+if (safeNormalized.length !== 506) {
+  blockingErrors.push(`quotes.normalized.draft.json: se esperaban 506 frases y hay ${safeNormalized.length}`);
 }
-if (migrationReport?.total_quotes !== 523) {
-  blockingErrors.push(`migration-report.json: total_quotes debe ser 523 y es ${migrationReport?.total_quotes}`);
+if (migrationReport?.total_quotes !== 506) {
+  blockingErrors.push(`migration-report.json: total_quotes debe ser 506 y es ${migrationReport?.total_quotes}`);
 }
-if (normalizationReport?.total_quotes_processed !== 523) {
+if (normalizationReport?.total_quotes_processed !== 506) {
   blockingErrors.push(
-    `normalization-report.json: total_quotes_processed debe ser 523 y es ${normalizationReport?.total_quotes_processed}`,
+    `normalization-report.json: total_quotes_processed debe ser 506 y es ${normalizationReport?.total_quotes_processed}`,
   );
 }
 
@@ -306,7 +306,7 @@ const report = {
   valid: blockingErrors.length === 0,
   validated_at: new Date().toISOString(),
   summary: {
-    expected_quotes: 523,
+    expected_quotes: 506,
     intermediate_quotes: safeIntermediate.length,
     normalized_quotes: safeNormalized.length,
     authors: safeAuthors.length,

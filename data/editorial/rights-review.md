@@ -4,9 +4,9 @@
 
 ## Resumen
 
-- Obras detectadas: 22.
-- Frases asociadas: 366.
-- Fuentes provisionales: 22, una por obra detectada.
+- Obras detectadas: 20.
+- Frases asociadas: 349.
+- Fuentes provisionales: 20, una por obra detectada.
 - Estado inicial de derechos para todas las fuentes: `unchecked`.
 - Estado inicial de verificación para todas las fuentes: `pending`.
 
@@ -16,8 +16,6 @@ Los nombres de autor indicados abajo son inferencias ya presentes en los borrado
 | --- | --- | ---: | --- | --- |
 | fragmentos (`work-fragmentos`) | Sin autor inferido | 2 | `source-fragmentos` | `unchecked` |
 | Cumbres borrascosas (`work-cumbres-borrascosas`) | Emily Brontë | 2 | `source-cumbres-borrascosas` | `unchecked` |
-| Nudo de víboras (`work-nudo-de-viboras`) | François Mauriac | 7 | `source-nudo-de-viboras` | `unchecked` |
-| Pedro Páramo (`work-pedro-paramo`) | Juan Rulfo | 10 | `source-pedro-paramo` | `unchecked` |
 | Gargantúa (`work-gargantua`) | François Rabelais | 7 | `source-gargantua` | `unchecked` |
 | Frankenstein o el moderno Prometeo (`work-frankenstein-o-el-moderno-prometeo`) | Mary Shelley | 8 | `source-frankenstein-o-el-moderno-prometeo` | `unchecked` |
 | Anne de las Tejas Verdes (`work-anne-de-las-tejas-verdes`) | Lucy Maud Montgomery | 14 | `source-anne-de-las-tejas-verdes` | `unchecked` |

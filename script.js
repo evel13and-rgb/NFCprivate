@@ -436,114 +436,6 @@ const CUMBRES_BORRASCOSAS_QUOTES = [
 ];
 
 
-const NUDO_DE_VIBORAS_QUOTES = [
-  {
-    t: "Isa, cuando leas estas páginas, yo habré muerto. He querido hablarte al fin sin odio, sin deseo de herirte, sin esa cólera fría que ha guiado toda mi vida.\nDurante cuarenta años he vivido junto a ti como un enemigo, y cada día he buscado nuevas razones para justificar mi odio. Pero lo cierto es que te odié porque te amé, porque esperaba de ti lo que tú no sabías darme. Te reproché haberme cerrado las puertas de tu alma, cuando en realidad era yo quien las había cerrado primero.",
-    a: "Louis",
-    obra: "Nudo de víboras, François Mauriac",
-    lang: "es"
-  },
-  {
-    t: "Durante años viví en tu presencia como un animal en una jaula, y tú, con tu dulzura que me exasperaba, no sabías que tus silencios eran mi tortura. No pedía ternura, Isa, pedía simplemente que me reconocieras como un ser que sufre. Me casé contigo con la esperanza de ser salvado, y tú, sin saberlo, fuiste mi condena. Entre nosotros no hubo odio al principio; hubo miedo. Yo temía necesitarte, y tú temías mi necesidad.",
-    a: "Louis",
-    obra: "Nudo de víboras, François Mauriac",
-    lang: "es"
-  },
-  {
-    t: "Cuando era niño, me enseñaron a desconfiar de la vida, a no esperar nada. Aprendí que la ternura es debilidad, que la pobreza es vergüenza y que amar es exponerse al desprecio. Así se formó el nudo de víboras en mi corazón. Lo he alimentado durante toda mi existencia, hasta que se confundió con mi propia sangre. ¿Cómo podía darte lo que nunca recibí?",
-    a: "Louis",
-    obra: "Nudo de víboras, François Mauriac",
-    lang: "es"
-  },
-  {
-    t: "Mis hijos no me aman. Los he alimentado, vestido, educado, pero nunca me miraron con gratitud. Y, sin embargo, ¿qué les di yo? ¿Un padre o un enemigo? Tal vez sintieron mi desconfianza desde que nacieron. Yo temía que se apoderaran de mi herencia, de mis bienes, de mi vida. Y ellos, al ver mi mirada endurecida, me rehusaron su amor. El amor no se impone: se mendiga o se pierde.",
-    a: "Louis",
-    obra: "Nudo de víboras, François Mauriac",
-    lang: "es"
-  },
-  {
-    t: "He vivido rodeado de gente, y sin embargo no he tenido nunca un solo amigo. Me consideraban inteligente, respetable, temible incluso. Pero en el fondo, Isa, me he sentido siempre solo como un niño perdido. Hay un momento en la vida en que uno comprende que la soledad no proviene de los demás, sino de uno mismo. Yo soy mi propio exilio.",
-    a: "Louis",
-    obra: "Nudo de víboras, François Mauriac",
-    lang: "es"
-  },
-  {
-    t: "Creía que la bondad era una palabra vacía, una máscara de los débiles. Pero he visto morir a mi hija, y en su mirada había algo que nunca entendí: perdón. Por primera vez sentí que alguien me amaba sin esperar nada, y ese amor, tan suave, me ha vencido más que todos mis odios. He pasado la vida despreciando a los que amaban, y ahora sé que solo ellos vivían.",
-    a: "Louis",
-    obra: "Nudo de víboras, François Mauriac",
-    lang: "es"
-  },
-  {
-    t: "He buscado a Dios en los libros, en los dogmas, en los templos, y nunca lo encontré. Lo hallo ahora, al final, en la mirada de los que perdoné tarde, y en el perdón que nunca pedí. Dios no me ha hablado con relámpagos ni con milagros: me ha hablado con la paciencia de los que me amaron. He comprendido que Dios no estaba fuera, sino dentro del corazón que había convertido en piedra.",
-    a: "Louis",
-    obra: "Nudo de víboras, François Mauriac",
-    lang: "es"
-  }
-];
-
-const PEDRO_PARAMO_QUOTES = [
-  {
-    t: "Vine a Comala porque me dijeron que acá vivía mi padre, un tal Pedro Páramo. Mi madre me lo dijo. Y yo le prometí que vendría a verlo en cuanto ella muriera. Le apreté las manos en señal de que lo haría; pues ella estaba por morirse y yo en un plan de prometerlo todo.",
-    a: "Juan Preciado",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "La tierra está llena de memorias. Oyen nuestros pasos y responden con ecos viejos, con voces que creíamos perdidas. Basta cerrar los ojos para sentir el temblor de los muertos, la respiración de quienes alguna vez amamos.",
-    a: "Susurros del páramo",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "Se oye el rumor de la lluvia como si la noche estuviera llena de almas. Cada gota golpea con un dolor antiguo, como si el cielo llorara por nosotros. Y sin embargo, hay una paz en esa tristeza, una tregua que nos deja respirar.",
-    a: "Susana San Juan",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "El páramo es una página en blanco. Cada paso escribe una palabra que el viento borra. Pero el corazón recuerda las historias que el aire se lleva, porque están hechas del mismo polvo que nos creó.",
-    a: "Voces del pueblo",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "Yo maté a Pedro Páramo. Fue como si hubiera destruido a mi propio padre, porque de él dependía mi mundo. Pero también fue como quitar una piedra del camino para que corriera el agua. Desde entonces oigo el murmullo de la vida que vuelve.",
-    a: "Abundio Martínez",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "No vayas a pedirle nada. Exígele lo nuestro. Lo demás es cosa tuya. Eso me dijo mi madre mientras me apretaba las manos antes de morir, y con esas palabras cargué el camino entero hasta Comala.",
-    a: "Dolores Preciado",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "El pueblo estaba lleno de ecos. Cada vez que pronunciaba el nombre de Pedro Páramo, me contestaban murmullos que venían del suelo, como si la tierra misma lo repitiera.",
-    a: "Juan Preciado",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "Sentí que el aire olía a humedad envejecida, a tierra recién abierta. Era un olor triste, como si de las paredes brotara la voz de los muertos que no terminan de irse.",
-    a: "Susana San Juan",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "Yo estaba hecha para soñar, para caminar entre recuerdos. Por eso Pedro Páramo me buscaba: sabía que mis pensamientos eran el único lugar donde todavía podía encontrar consuelo.",
-    a: "Susana San Juan",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  },
-  {
-    t: "En la Media Luna todo tenía dueño, hasta el silencio. Y sin embargo, cuando él murió, entendimos que el poder de Pedro Páramo era sólo un polvo que se deshacía en el aire caliente.",
-    a: "Fulgor Sedano",
-    obra: "Pedro Páramo, Juan Rulfo",
-    lang: "es"
-  }
-];
-
 const RABELAIS_QUOTES = [
   {
     t: `Amigos lectores que leéis este libro,
@@ -4934,8 +4826,6 @@ const QUOTES = [
   ...PRE_RANDOM_QUOTES,
   ...E_A_FRAGMENTOS_QUOTES,
   ...CUMBRES_BORRASCOSAS_QUOTES,
-  ...NUDO_DE_VIBORAS_QUOTES,
-  ...PEDRO_PARAMO_QUOTES,
   ...RABELAIS_QUOTES,
   ...FRANKENSTEIN_QUOTES,
   ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES,

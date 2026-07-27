@@ -1,16 +1,16 @@
 {
   "valid": true,
-  "validated_at": "2026-07-26T22:35:08.334Z",
+  "validated_at": "2026-07-27T08:18:14.277Z",
   "summary": {
-    "expected_quotes": 523,
-    "intermediate_quotes": 523,
-    "normalized_quotes": 523,
-    "authors": 25,
-    "works": 27,
-    "sources": 27,
+    "expected_quotes": 506,
+    "intermediate_quotes": 506,
+    "normalized_quotes": 506,
+    "authors": 23,
+    "works": 25,
+    "sources": 25,
     "editorial_decisions": 0,
     "poems": 26,
-    "quotes_with_line_breaks": 350,
+    "quotes_with_line_breaks": 349,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
@@ -27,12 +27,10 @@
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "26 fuente(s) conservan derechos sin revisar.",
+      "message": "24 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
-        "source-nudo-de-viboras",
-        "source-pedro-paramo",
         "source-gargantua",
         "source-frankenstein-o-el-moderno-prometeo",
         "source-anne-de-las-tejas-verdes",
@@ -59,12 +57,10 @@
     },
     {
       "code": "source_verification_pending",
-      "message": "26 fuente(s) esperan verificación bibliográfica.",
+      "message": "24 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
-        "source-nudo-de-viboras",
-        "source-pedro-paramo",
         "source-gargantua",
         "source-frankenstein-o-el-moderno-prometeo",
         "source-anne-de-las-tejas-verdes",
@@ -99,11 +95,11 @@
     },
     {
       "code": "rights_review_pending",
-      "count": 26
+      "count": 24
     },
     {
       "code": "source_verification_pending",
-      "count": 26
+      "count": 24
     }
   ],
   "reviewed_files": [

@@ -6,16 +6,16 @@
 
 | Métrica | Total |
 |---|---:|
-| Frases | 366 |
-| Autores generados | 21 |
-| Obras generadas | 22 |
+| Frases | 349 |
+| Autores generados | 19 |
+| Obras generadas | 20 |
 | Poemas | 26 |
-| Prosa | 340 |
-| Incidencias pendientes | 55 |
+| Prosa | 323 |
+| Incidencias pendientes | 40 |
 | Frases sin author_id | 2 |
 | Frases sin work_id | 0 |
-| Atribuciones ambiguas | 54 |
-| Atribuciones colectivas | 2 |
+| Atribuciones ambiguas | 39 |
+| Atribuciones colectivas | 0 |
 | Highlights no literales | 153 |
 
 ## B. Autores generados
@@ -23,8 +23,6 @@
 | ID | Nombre canónico | Obras asociadas | Posibles dudas |
 |---|---|---|---|
 | author-emily-bronte | Emily Brontë | Cumbres borrascosas | Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial. |
-| author-francois-mauriac | François Mauriac | Nudo de víboras | Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial. |
-| author-juan-rulfo | Juan Rulfo | Pedro Páramo | Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial. |
 | author-francois-rabelais | François Rabelais | Gargantúa | Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial. |
 | author-mary-shelley | Mary Shelley | Frankenstein o el moderno Prometeo | Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial. |
 | author-lucy-maud-montgomery | Lucy Maud Montgomery | Anne de las Tejas Verdes | Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial. |
@@ -50,8 +48,6 @@
 |---|---|---|---:|---|
 | work-fragmentos | fragmentos | — | 2 | Revisión pendiente: legacy_work sin coma final clara para separar autor. |
 | work-cumbres-borrascosas | Cumbres borrascosas | Emily Brontë | 2 | Título y autor inferidos separando legacy_work por la última coma. |
-| work-nudo-de-viboras | Nudo de víboras | François Mauriac | 7 | Título y autor inferidos separando legacy_work por la última coma. |
-| work-pedro-paramo | Pedro Páramo | Juan Rulfo | 10 | Título y autor inferidos separando legacy_work por la última coma. |
 | work-gargantua | Gargantúa | François Rabelais | 7 | Título y autor inferidos separando legacy_work por la última coma. |
 | work-frankenstein-o-el-moderno-prometeo | Frankenstein o el moderno Prometeo | Mary Shelley | 8 | Título y autor inferidos separando legacy_work por la última coma. |
 | work-anne-de-las-tejas-verdes | Anne de las Tejas Verdes | Lucy Maud Montgomery | 14 | Título y autor inferidos separando legacy_work por la última coma. |
@@ -88,21 +84,6 @@ Estas propuestas son instrucciones de revisión, no reclasificaciones.
 | 1 | fragmentos | — | E.A | E.A | ambiguous | Quería hurgar en mi cuerpo, con mis dedos dentro de mi carne, hasta encontrar eso que desquicia | Identificar primero autor y obra; después comprobar si la atribución es autor, personaje o narrador. |
 | 2 | Cumbres borrascosas | Emily Brontë | Catherine Earnshaw | Catherine Earnshaw | ambiguous | He soñado en mi vida sueños que han permanecido conmigo para siempre y han cambiado mis ideas. Han pasado a través de mí como el vino a través del agua, y han alterado e… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
 | 3 | Cumbres borrascosas | Emily Brontë | Catherine Earnshaw | Catherine Earnshaw | ambiguous | Si todo pereciera y él permaneciera, yo seguiría existiendo; y si todo permaneciera y él fuese aniquilado, el universo se convertiría en algo extraño y terrible: yo no s… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 4 | Nudo de víboras | François Mauriac | Louis | Louis | ambiguous | Isa, cuando leas estas páginas, yo habré muerto. He querido hablarte al fin sin odio, sin deseo de herirte, sin esa cólera fría que ha guiado toda mi vida. Durante cuare… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 5 | Nudo de víboras | François Mauriac | Louis | Louis | ambiguous | Durante años viví en tu presencia como un animal en una jaula, y tú, con tu dulzura que me exasperaba, no sabías que tus silencios eran mi tortura. No pedía ternura, Isa… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 6 | Nudo de víboras | François Mauriac | Louis | Louis | ambiguous | Cuando era niño, me enseñaron a desconfiar de la vida, a no esperar nada. Aprendí que la ternura es debilidad, que la pobreza es vergüenza y que amar es exponerse al des… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 7 | Nudo de víboras | François Mauriac | Louis | Louis | ambiguous | Mis hijos no me aman. Los he alimentado, vestido, educado, pero nunca me miraron con gratitud. Y, sin embargo, ¿qué les di yo? ¿Un padre o un enemigo? Tal vez sintieron… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 8 | Nudo de víboras | François Mauriac | Louis | Louis | ambiguous | He vivido rodeado de gente, y sin embargo no he tenido nunca un solo amigo. Me consideraban inteligente, respetable, temible incluso. Pero en el fondo, Isa, me he sentid… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 9 | Nudo de víboras | François Mauriac | Louis | Louis | ambiguous | Creía que la bondad era una palabra vacía, una máscara de los débiles. Pero he visto morir a mi hija, y en su mirada había algo que nunca entendí: perdón. Por primera ve… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 10 | Nudo de víboras | François Mauriac | Louis | Louis | ambiguous | He buscado a Dios en los libros, en los dogmas, en los templos, y nunca lo encontré. Lo hallo ahora, al final, en la mirada de los que perdoné tarde, y en el perdón que… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 11 | Pedro Páramo | Juan Rulfo | Juan Preciado | Juan Preciado | ambiguous | Vine a Comala porque me dijeron que acá vivía mi padre, un tal Pedro Páramo. Mi madre me lo dijo. Y yo le prometí que vendría a verlo en cuanto ella muriera. Le apreté l… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 13 | Pedro Páramo | Juan Rulfo | Susana San Juan | Susana San Juan | ambiguous | Se oye el rumor de la lluvia como si la noche estuviera llena de almas. Cada gota golpea con un dolor antiguo, como si el cielo llorara por nosotros. Y sin embargo, hay… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 15 | Pedro Páramo | Juan Rulfo | Abundio Martínez | Abundio Martínez | ambiguous | Yo maté a Pedro Páramo. Fue como si hubiera destruido a mi propio padre, porque de él dependía mi mundo. Pero también fue como quitar una piedra del camino para que corr… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 16 | Pedro Páramo | Juan Rulfo | Dolores Preciado | Dolores Preciado | ambiguous | No vayas a pedirle nada. Exígele lo nuestro. Lo demás es cosa tuya. Eso me dijo mi madre mientras me apretaba las manos antes de morir, y con esas palabras cargué el cam… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 17 | Pedro Páramo | Juan Rulfo | Juan Preciado | Juan Preciado | ambiguous | El pueblo estaba lleno de ecos. Cada vez que pronunciaba el nombre de Pedro Páramo, me contestaban murmullos que venían del suelo, como si la tierra misma lo repitiera. | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 18 | Pedro Páramo | Juan Rulfo | Susana San Juan | Susana San Juan | ambiguous | Sentí que el aire olía a humedad envejecida, a tierra recién abierta. Era un olor triste, como si de las paredes brotara la voz de los muertos que no terminan de irse. | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 19 | Pedro Páramo | Juan Rulfo | Susana San Juan | Susana San Juan | ambiguous | Yo estaba hecha para soñar, para caminar entre recuerdos. Por eso Pedro Páramo me buscaba: sabía que mis pensamientos eran el único lugar donde todavía podía encontrar c… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
-| 20 | Pedro Páramo | Juan Rulfo | Fulgor Sedano | Fulgor Sedano | ambiguous | En la Media Luna todo tenía dueño, hasta el silencio. Y sin embargo, cuando él murió, entendimos que el poder de Pedro Páramo era sólo un polvo que se deshacía en el air… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
 | 28 | Frankenstein o el moderno Prometeo | Mary Shelley | Víctor Frankenstein | Víctor Frankenstein | ambiguous | Después de días y noches de increíble trabajo y fatiga, logré descubrir la causa de la generación y de la vida; más aún, me vi en posesión del poder de infundir vida a l… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
 | 29 | Frankenstein o el moderno Prometeo | Mary Shelley | La Criatura | La Criatura | ambiguous | Fue una noche espantosa aquella en que cobré vida. Un frío helado me recorrió; una luz deslumbrante hirió mis ojos, y un ruido confuso me ensordeció. Poco a poco disting… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
 | 30 | Frankenstein o el moderno Prometeo | Mary Shelley | La Criatura | La Criatura | ambiguous | Observaba a la familia y aprendía de ellos. Me maravillaba la suavidad de sus costumbres, el amor que se profesaban y la armonía de su hogar. Al principio ignoraba las p… | Comprobar en la fuente si la voz corresponde a personaje o narrador; mantener ambiguous hasta confirmación. |
@@ -143,8 +124,6 @@ Estas propuestas son instrucciones de revisión, no reclasificaciones.
 
 | legacy_index | Obra | Autor inferido | legacy_attribution | speaker_name | Tipo actual | Texto abreviado |
 |---:|---|---|---|---|---|---|
-| 12 | Pedro Páramo | Juan Rulfo | Susurros del páramo | Susurros del páramo | collective_voice | La tierra está llena de memorias. Oyen nuestros pasos y responden con ecos viejos, con voces que creíamos perdidas. Basta cerrar los ojos para sentir el temblor de los m… |
-| 14 | Pedro Páramo | Juan Rulfo | Voces del pueblo | Voces del pueblo | collective_voice | El páramo es una página en blanco. Cada paso escribe una palabra que el viento borra. Pero el corazón recuerda las historias que el aire se lleva, porque están hechas de… |
 
 ## G. Highlights problemáticos
 

@@ -33,7 +33,6 @@ sin una verificación destinada a uso efectivo.
 | Autor | Archivo candidato en Commons | Estado |
 | --- | --- | --- |
 | Emily Brontë | [Emily Brontë](https://commons.wikimedia.org/wiki/File:Emily_Bront%C3%AB.jpg) | Omitido: no existe ficha manual de autor |
-| François Mauriac | [François Mauriac, 1933](https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Mauriac,_1933.jpg) | Omitido: no existe ficha manual de autor |
 | François Rabelais | [François Rabelais](https://commons.wikimedia.org/wiki/File:Francois_Rabelais_-_Portrait.jpg) | Omitido: no existe ficha manual de autor |
 | Mary Shelley | [Mary Shelley](https://commons.wikimedia.org/wiki/File:Mary_Shelley.jpeg) | Omitido: no existe ficha manual de autor |
 | Lucy Maud Montgomery | [Lucy Maud Montgomery](https://commons.wikimedia.org/wiki/File:Lucy_Maud_Montgomery.jpg) | Omitido: no existe ficha manual de autor |

@@ -11,28 +11,6 @@
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   },
   {
-    "id": "author-francois-mauriac",
-    "canonical_name": "François Mauriac",
-    "slug": "francois-mauriac",
-    "sort_name": "François Mauriac",
-    "inferred_from": [
-      "Nudo de víboras, François Mauriac"
-    ],
-    "status": "draft",
-    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
-  },
-  {
-    "id": "author-juan-rulfo",
-    "canonical_name": "Juan Rulfo",
-    "slug": "juan-rulfo",
-    "sort_name": "Juan Rulfo",
-    "inferred_from": [
-      "Pedro Páramo, Juan Rulfo"
-    ],
-    "status": "draft",
-    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
-  },
-  {
     "id": "author-francois-rabelais",
     "canonical_name": "François Rabelais",
     "slug": "francois-rabelais",
