@@ -18,9 +18,26 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=23" />
+  <link rel="stylesheet" href="style.css?v=24" />
 </head>
 <body class="app-loading" data-mode="day">
+  <div
+    class="scene-background"
+    id="scene-background"
+    data-active-scene="day"
+    aria-hidden="true"
+  >
+    <div
+      class="scene-background__layer is-visible"
+      data-scene-layer="0"
+      data-scene-id="day"
+    ></div>
+    <div
+      class="scene-background__layer"
+      data-scene-layer="1"
+      data-scene-id=""
+    ></div>
+  </div>
   <div class="app-loader" id="app-loader" aria-hidden="true">
     <div class="app-loader__panel">
       <span class="app-loader__mark">¿</span>
@@ -153,6 +170,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=24"></script>
+  <script type="module" src="script.js?v=25"></script>
 </body>
 </html>

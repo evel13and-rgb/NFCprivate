@@ -9,6 +9,7 @@ import {
   resolveVisualWeatherState,
   supportsDaylightMotes,
 } from './weatherVisual.js';
+import { createSceneBackgroundController } from './sceneBackground.js?v=1';
 const RAYO_QUE_NO_CESA_QUOTES = [
   {
     t: `¿No cesará este rayo que me habita
@@ -4922,6 +4923,7 @@ let activeModal = null;
 let lastModalTrigger = null;
 let latestServerWeatherState = null;
 let weatherRefreshTimerId = null;
+let sceneBackgroundController = null;
 
 function initMotionPreferenceWatcher() {
   if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
@@ -4986,6 +4988,7 @@ function applyWeatherStateToDocument(weatherState) {
   document.body.dataset.weatherIntensity = visualState.intensity;
   document.body.dataset.visualScene = visualState.visualScene;
   applyTimeOfDayToDocument(visualState.timeOfDay);
+  sceneBackgroundController?.setScene(visualState);
   updateAtmosphericParticles(visualState);
   document.dispatchEvent(new CustomEvent(WEATHER_CHANGE_EVENT, {
     detail: visualState,
@@ -6500,6 +6503,7 @@ function initApp() {
   const { quote, message } = determineQuoteForDisplay();
   quoteElementRef = document.getElementById('quote');
   quoteHighlightRef = document.getElementById('quote-highlight');
+  sceneBackgroundController = createSceneBackgroundController();
   initDaylightMotes();
   initGlobalWeatherState();
   initMotionPreferenceWatcher();
