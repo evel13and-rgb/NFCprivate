@@ -5194,12 +5194,12 @@ function getAppLoaderTiming() {
   const returningVisit = document.documentElement.classList.contains('app-loader-returning');
 
   if (reducedMotion) {
-    return { minimum: 0, maximum: 1800, removal: 120 };
+    return { minimum: 0, maximum: 20, removal: 140 };
   }
   if (returningVisit) {
-    return { minimum: 0, maximum: 1800, removal: 400 };
+    return { minimum: 0, maximum: 40, removal: 280 };
   }
-  return { minimum: 380, maximum: 2400, removal: 520 };
+  return { minimum: 40, maximum: 480, removal: 620 };
 }
 
 function dismissAppLoader(removalDelay) {
