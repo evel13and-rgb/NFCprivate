@@ -5087,9 +5087,9 @@ function getAppLoaderTiming() {
     return { minimum: 0, maximum: 20, removal: 140 };
   }
   if (returningVisit) {
-    return { minimum: 0, maximum: 40, removal: 280 };
+    return { minimum: 30, maximum: 380, removal: 220 };
   }
-  return { minimum: 40, maximum: 480, removal: 620 };
+  return { minimum: 600, maximum: 1500, removal: 300 };
 }
 
 function dismissAppLoader(removalDelay) {
