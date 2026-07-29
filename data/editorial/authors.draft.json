@@ -252,5 +252,16 @@
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-edith-wharton",
+    "canonical_name": "Edith Wharton",
+    "slug": "edith-wharton",
+    "sort_name": "Edith Wharton",
+    "inferred_from": [
+      "La edad de la inocencia, Edith Wharton"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   }
 ]

@@ -3840,6 +3840,257 @@ Es tan agradable estar fuera, en esta gran habitación, y arrastrarme cuanto me 
   }
 ];
 
+const LA_EDAD_DE_LA_INOCENCIA_QUOTES = [
+  {
+    t: `Si hubiera sondeado hasta el fondo de su vanidad —como a veces estuvo a punto de hacer—, habría encontrado allí el deseo de que su esposa fuera tan conocedora del mundo y tan ávida de agradar como la mujer casada cuyos encantos habían retenido su fantasía durante dos años moderadamente agitados; sin, por supuesto, asomo alguno de la fragilidad que casi había echado a perder la vida de aquella desdichada criatura y había trastornado los planes de él durante todo un invierno.
+
+Nunca se había tomado el trabajo de pensar cómo habría de crearse aquel milagro de fuego y hielo, ni cómo podría sostenerse en un mundo áspero.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "aquel milagro de fuego y hielo", lang: "es"
+  },
+  {
+    t: `En cuestiones intelectuales y artísticas, Newland Archer se consideraba claramente superior a aquellos ejemplares escogidos de la vieja aristocracia neoyorquina: probablemente había leído más, pensado más y visto bastante más mundo que cualquiera de ellos. Por separado, revelaban su inferioridad; pero, agrupados, representaban a «Nueva York», y el hábito de la solidaridad masculina le hacía aceptar su doctrina en todas las cuestiones llamadas morales. Intuía instintivamente que, en este aspecto, apartarse por su cuenta resultaría molesto y, además, de bastante mal gusto.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "el hábito de la solidaridad masculina", lang: "es"
+  },
+  {
+    t: `La señora Archer, aficionada a condensar su filosofía social en axiomas, había dicho una vez: «Todos tenemos nuestra gente vulgar predilecta»; y, aunque la frase era atrevida, su verdad se admitía en secreto en muchos pechos exclusivos. Pero los Beaufort no eran exactamente vulgares; algunas personas decían que eran algo aún peor. La señora Beaufort pertenecía, en efecto, a una de las familias más honradas de Estados Unidos: había sido la hermosa Regina Dallas, de la rama de Carolina del Sur, una belleza sin un céntimo presentada en la sociedad neoyorquina por su prima, la imprudente Medora Manson, que siempre hacía lo incorrecto por el motivo correcto.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "siempre hacía lo incorrecto por el motivo correcto", lang: "es"
+  },
+  {
+    t: `Nada de su prometida le agradaba más que su resuelta determinación de llevar hasta el último extremo aquel ritual de ignorar «lo desagradable» en el que ambos habían sido educados.
+
+«Conoce tan bien como yo la verdadera razón de que su prima no haya venido —reflexionó—; pero jamás le permitiré advertir, ni por el menor signo, que sé que una sombra de sombra pesa sobre la reputación de la pobre Ellen Olenska».`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "aquel ritual de ignorar «lo desagradable»", lang: "es"
+  },
+  {
+    t: `—¿Por qué no habría de llamar la atención si así lo desea? ¿Por qué tendría que esconderse como si fuera ella quien se hubiera deshonrado? Es «la pobre Ellen», ciertamente, porque tuvo la desgracia de contraer un matrimonio desdichado; pero no veo que esa sea razón para ocultar la cabeza como si fuera la culpable.
+
+—Supongo —dijo el señor Jackson, pensativo— que esa es la postura que los Mingott se proponen adoptar.
+
+El joven se sonrojó.
+
+—No tuve que esperar a que ellos dieran la pauta, si es eso lo que quiere decir, señor. Madame Olenska ha tenido una vida desdichada: eso no la convierte en una marginada.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "eso no la convierte en una marginada", lang: "es"
+  },
+  {
+    t: `—¿Viviendo juntos? Bueno, ¿y por qué no? ¿Quién tenía derecho a rehacer su vida, si no ella misma? Estoy harto de la hipocresía que enterraría viva a una mujer de su edad porque su marido prefiere vivir con prostitutas.
+
+Se interrumpió y se volvió, irritado, para encender el cigarro.
+
+—Las mujeres deberían ser libres: tan libres como nosotros.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "tan libres como nosotros", lang: "es"
+  },
+  {
+    t: `¿Qué podían saber realmente el uno del otro, si el deber de él, como hombre «decente», era ocultarle su pasado, y el de ella, como joven casadera, no tener ningún pasado que ocultar?`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "no tener ningún pasado que ocultar", lang: "es"
+  },
+  {
+    t: `En realidad, todos vivían en una especie de mundo jeroglífico, donde la realidad nunca se decía ni se hacía ni siquiera se pensaba, sino que solo se representaba mediante una serie de signos arbitrarios.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "mundo jeroglífico", lang: "es"
+  },
+  {
+    t: `La condesa Olenska era la única mujer joven de la cena; sin embargo, cuando Archer recorrió con la mirada los rostros tersos y rellenos de las damas mayores, entre sus collares de diamantes y sus altísimas plumas de avestruz, le parecieron curiosamente inmaduros comparados con el de ella. Le asustaba pensar en todo lo que había hecho falta para formar aquellos ojos.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "formar aquellos ojos", lang: "es"
+  },
+  {
+    t: `Ella negó con la cabeza y suspiró.
+
+—Oh, lo sé, lo sé. Pero con la condición de no oír nada desagradable. ¿Aquí nadie quiere conocer la verdad, señor Archer? La verdadera soledad es vivir entre toda esta gente amable que solo le pide a una que finja.
+
+Se llevó las manos al rostro, y él vio sus delgados hombros sacudidos por un sollozo.
+
+—¡Madame Olenska! Oh, no, Ellen —exclamó, levantándose y acercándose a ella.
+
+Le bajó una de las manos, la apretó y la frotó como si fuera la de una niña mientras murmuraba palabras tranquilizadoras; pero enseguida ella se soltó y lo miró con las pestañas húmedas.
+
+—¿Aquí tampoco llora nadie? Supongo que en el cielo no hace falta.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "La verdadera soledad", lang: "es"
+  },
+  {
+    t: `—Quiero desprenderme de toda mi vida anterior y volverme exactamente igual que todos los de aquí.
+
+Archer se sonrojó.
+
+—Nunca serás igual que los demás.
+
+Ella alzó un poco las cejas rectas.
+
+—Ah, no digas eso. ¡Si supieras cuánto odio ser diferente!`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "¡Si supieras cuánto odio ser diferente!", lang: "es"
+  },
+  {
+    t: `—Todo esto es estúpido, estrecho e injusto; pero no se puede rehacer la sociedad.
+
+—No —asintió ella.
+
+Su tono fue tan débil y desolado que él sintió un súbito remordimiento.
+
+—El individuo, en esos casos, casi siempre es sacrificado a lo que se supone que es el interés colectivo.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "El individuo, en esos casos, casi siempre es sacrificado", lang: "es"
+  },
+  {
+    t: `—Te lo contaré; pero ¿dónde, dónde, dónde? En ese gran seminario de casa no se puede estar a solas ni un minuto, con todas las puertas abiertas y siempre un criado que trae el té, un leño para el fuego o el periódico. ¿No existe en una casa estadounidense ningún lugar donde una pueda estar consigo misma? Sois tan tímidos y, sin embargo, tan públicos. Siempre me parece estar otra vez en el convento, o sobre un escenario, ante un público espantosamente cortés que nunca aplaude.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "un público espantosamente cortés que nunca aplaude", lang: "es"
+  },
+  {
+    t: `—May cree que mi impaciencia es una mala señal. Cree que significa que no confío en seguir queriéndola. En suma, piensa que deseo casarme con ella inmediatamente para escapar de alguien a quien quiero más.
+
+Madame Olenska lo examinó con curiosidad.
+
+—Pero, si piensa eso, ¿por qué no tiene ella también prisa?
+
+—Porque no es así; es mucho más noble. Insiste aún más en un compromiso largo, para darme tiempo...
+
+—¿Tiempo para que renuncies a la otra mujer?
+
+—Si quiero hacerlo.
+
+Madame Olenska se inclinó hacia el fuego y lo contempló con mirada fija. Por la calle silenciosa Archer oyó acercarse el trote de sus caballos.
+
+—Eso sí que es noble —dijo ella, con una leve fractura en la voz.
+
+—Sí. Pero es ridículo.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "¿Tiempo para que renuncies a la otra mujer?", lang: "es"
+  },
+  {
+    t: `—La gente muy buena no me convencía; sentía que nunca había sido tentada. Pero tú sabías, comprendías; habías sentido al mundo exterior tirar de uno con todas sus manos de oro y, aun así, odiabas lo que exige; odiabas la felicidad comprada con deslealtad, crueldad e indiferencia. Eso era algo que yo nunca había conocido, y es mejor que todo lo que he conocido.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "la felicidad comprada con deslealtad, crueldad e indiferencia", lang: "es"
+  },
+  {
+    t: `Ella se inclinó sobre él, le puso las manos en los hombros y lo miró con unos ojos tan profundos que él permaneció inmóvil bajo su mirada.
+
+—Ah, no deshagamos lo que has hecho. Ya no puedo volver a aquella otra manera de pensar. No puedo amarte si no renuncio a ti.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "No puedo amarte si no renuncio a ti", lang: "es"
+  },
+  {
+    t: `Ella sonrió un poco bajo las pestañas húmedas.
+
+—Ya no estaré sola. Estaba sola; tenía miedo. Pero el vacío y la oscuridad han desaparecido. Cuando ahora regreso a mí misma, soy como una niña que entra de noche en una habitación donde siempre hay una luz.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "una habitación donde siempre hay una luz", lang: "es"
+  },
+  {
+    t: `—Después de todo —continuó May—, me pregunto si no sería más feliz con su marido.
+
+Él se echó a reír.
+
+—¡Sancta simplicitas! —exclamó; y, al ver que ella lo miraba con el ceño fruncido, añadió—: No creo haberte oído decir nunca algo cruel.
+
+—¿Cruel?
+
+—Se supone que contemplar las contorsiones de los condenados es uno de los pasatiempos favoritos de los ángeles; pero creo que ni siquiera ellos piensan que la gente sea más feliz en el infierno.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "más feliz en el infierno", lang: "es"
+  },
+  {
+    t: `—Fuiste tú quien me hizo comprender que, bajo el tedio, hay cosas tan finas, sensibles y delicadas que hasta las personas que más me importaban en mi otra vida parecen baratas en comparación. No sé cómo explicarlo, pero es como si nunca hubiera comprendido con cuánto de duro, mezquino y bajo pueden pagarse los placeres más exquisitos.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "los placeres más exquisitos", lang: "es"
+  },
+  {
+    t: `—Me diste mi primera visión de una vida real y, en el mismo momento, me pediste que continuara con una falsa. Está más allá de lo que un ser humano puede soportar.
+
+—No digas eso, cuando yo lo estoy soportando —estalló ella, con los ojos llenos de lágrimas.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "Me diste mi primera visión de una vida real", lang: "es"
+  },
+  {
+    t: `Había conocido el amor que se alimenta de caricias y que las alimenta; pero aquella pasión, más cercana que sus huesos, no podía satisfacerse en la superficie. Su único temor era hacer algo que borrara el sonido y la impresión de las palabras de ella; su único pensamiento, que nunca volvería a sentirse del todo solo.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "aquella pasión, más cercana que sus huesos", lang: "es"
+  },
+  {
+    t: `—¿Sabes? Apenas te recordaba.
+
+—¿Apenas me recordabas?
+
+—Quiero decir... ¿cómo explicarlo? Siempre es así. Cada vez vuelves a sucederme por completo.
+
+—Sí, lo sé. Lo sé.
+
+—¿También yo te sucedo así?
+
+Ella asintió, mirando por la ventanilla.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "Cada vez vuelves a sucederme por completo", lang: "es"
+  },
+  {
+    t: `—Quiero escapar contigo a un mundo donde no existan palabras así, categorías así; donde seamos simplemente dos seres humanos que se aman, que son toda la vida el uno para el otro, y nada más en la tierra importe.
+
+Ella dejó escapar un profundo suspiro que terminó en otra risa.
+
+—Oh, querido mío, ¿dónde está ese país? ¿Has estado alguna vez allí? Conozco a tantos que han intentado encontrarlo... y todos se bajaron por error en estaciones secundarias: Boulogne, Pisa o Montecarlo. No era en absoluto distinto del viejo mundo que habían abandonado; solo un poco más pequeño, más sombrío y más promiscuo.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "¿dónde está ese país?", lang: "es"
+  },
+  {
+    t: `—Entonces, ¿cuál es exactamente tu plan para nosotros?
+
+—¿Para nosotros? Pero no existe un «nosotros» en ese sentido. Solo estamos cerca si permanecemos lejos. Entonces podemos ser nosotros mismos. De otro modo, solo somos Newland Archer, el marido de la prima de Ellen Olenska, y Ellen Olenska, la prima de la esposa de Newland Archer, intentando ser felices a espaldas de quienes confían en ellos.
+
+—Yo ya he estado más allá de eso.
+
+—No, no has estado. Nunca has estado más allá. Yo sí, y sé qué aspecto tiene.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "Solo estamos cerca si permanecemos lejos", lang: "es"
+  },
+  {
+    t: `—¿Qué ocurre? —preguntó May.
+
+—La habitación está sofocante. Quiero un poco de aire.
+
+Archer apartó las cortinas, abrió la ventana y se inclinó hacia la noche helada. El mero hecho de no mirar a May, sentada junto a su mesa, bajo su lámpara; el hecho de ver otras casas, tejados y chimeneas, de sentir otras vidas fuera de la suya, otras ciudades más allá de Nueva York y todo un mundo más allá de su mundo, le despejó la mente y le facilitó respirar.
+
+Después de que llevara unos minutos inclinado hacia la oscuridad, la oyó decir:
+
+—¡Newland! Cierra la ventana. Vas a matarte de frío.
+
+Él bajó la hoja y se volvió.
+
+—¿Matarme? —repitió; y tuvo ganas de añadir—: Pero si ya estoy muerto. Llevo meses y meses muerto.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "Llevo meses y meses muerto", lang: "es"
+  },
+  {
+    t: `Era la vieja manera neoyorquina de afrontar la vida «sin derramamiento de sangre»: la manera de quienes temían el escándalo más que la enfermedad, colocaban la decencia por encima del valor y consideraban que nada era de peor educación que las «escenas», salvo el comportamiento de quienes las provocaban.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "temían el escándalo más que la enfermedad", lang: "es"
+  },
+  {
+    t: `Sus días estaban llenos, y los llenaba decorosamente. Suponía que eso era cuanto un hombre debía pedir.
+
+Sabía que se había perdido algo: la flor de la vida. Pero ahora la consideraba algo tan inalcanzable e improbable que lamentarse habría sido como desesperarse por no haber obtenido el primer premio de una lotería. En su lotería había cien millones de billetes y un solo premio; las probabilidades habían estado demasiado decididamente en su contra. Cuando pensaba en Ellen Olenska, lo hacía abstracta y serenamente, como se piensa en una amada imaginaria de un libro o de un cuadro: ella se había convertido en la visión compuesta de todo cuanto se había perdido.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "la flor de la vida", lang: "es"
+  },
+  {
+    t: `—Mamá dijo que sabía que con nosotros estarías a salvo, y que siempre lo estaríamos, porque una vez, cuando ella te lo pidió, renunciaste a lo que más deseabas.
+
+Archer recibió aquella extraña revelación en silencio.
+
+—Ella nunca me lo pidió —dijo al fin en voz baja.
+
+—No. Lo había olvidado. Nunca os pedisteis nada, ¿verdad? Y nunca os dijisteis nada. Os limitabais a observaros y a adivinar lo que ocurría debajo. Un asilo de sordomudos, en realidad.`,
+    a: "Edith Wharton", obra: "La edad de la inocencia, Edith Wharton",
+    highlight: "Nunca os pedisteis nada", lang: "es"
+  }
+];
+
 const VERA_QUOTES = [
   {
     t: `Lucy miraba fijamente el mar, pensando en aquellas cosas, examinando la situación como algo curioso, pero sin relación con ella, contemplándola con una especie de comprensión fría. Su mente estaba completamente clara. Cada detalle de lo ocurrido se encontraba nítidamente ante ella.
@@ -4850,6 +5101,7 @@ const QUOTES = [
   ...PRECIOSO_VENENO_QUOTES,
   ...LA_METAMORFOSIS_QUOTES,
   ...ORGULLO_Y_PREJUICIO_QUOTES,
+  ...LA_EDAD_DE_LA_INOCENCIA_QUOTES,
 ];
 
 const ALLOWED_WEATHER_TIMES = new Set(ALLOWED_TIMES_OF_DAY);

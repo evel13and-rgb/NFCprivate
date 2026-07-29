@@ -223,5 +223,14 @@
     "legacy_work": "Orgullo y prejuicio, Jane Austen",
     "status": "draft",
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-la-edad-de-la-inocencia",
+    "title": "La edad de la inocencia",
+    "slug": "la-edad-de-la-inocencia",
+    "author_id": "author-edith-wharton",
+    "legacy_work": "La edad de la inocencia, Edith Wharton",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   }
 ]

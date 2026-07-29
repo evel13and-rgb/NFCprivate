@@ -465,5 +465,40 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-la-edad-de-la-inocencia",
+    "author_id": "author-edith-wharton",
+    "title": "La edad de la inocencia",
+    "original_title": "The Age of Innocence",
+    "publication_year": 1920,
+    "genre": "Novela de costumbres, histórica, psicológica y social.",
+    "short_summary": "Newland Archer es un joven abogado perteneciente a la alta sociedad neoyorquina y comprometido con May Welland, una muchacha que representa los valores tradicionales de su clase. Su vida aparentemente ordenada se altera con la llegada de Ellen Olenska, prima de May, que ha regresado de Europa huyendo de un matrimonio desdichado.\n\nNewland se enamora de Ellen y comienza a reconocer el carácter asfixiante de las normas sociales que hasta entonces había aceptado. Sin embargo, tanto él como Ellen deben decidir entre sus deseos y las obligaciones impuestas por la familia, la reputación y el mundo al que pertenecen.",
+    "context": "Publicada en octubre de 1920, la novela está ambientada en la alta sociedad de Nueva York durante los primeros años de la década de 1870. Wharton reconstruye el mundo de su infancia desde la distancia temporal y desde una sociedad profundamente transformada por la Primera Guerra Mundial. La descripción de vestidos, casas, rituales, visitas y celebraciones sirve para mostrar un sistema social regido por reglas casi invisibles, pero extremadamente eficaces.\n\nEn 1921 recibió el Premio Pulitzer de novela. Bajo la apariencia de una historia de amor, la obra examina el precio de la respetabilidad y la capacidad de una comunidad para controlar a sus miembros sin necesidad de prohibiciones explícitas.",
+    "themes": [
+      "El amor imposible",
+      "El deseo y la renuncia",
+      "El matrimonio",
+      "La libertad individual",
+      "La presión social",
+      "La reputación",
+      "La doble moral",
+      "Las apariencias",
+      "La condición femenina",
+      "El paso del tiempo",
+      "La nostalgia",
+      "La vida no vivida"
+    ],
+    "tone": "Elegante, irónico, contenido y melancólico. Wharton observa a sus personajes con lucidez crítica, pero sin reducirlos a simples víctimas o culpables. La pasión se expresa principalmente mediante gestos, silencios y decisiones aplazadas, lo que intensifica la sensación de pérdida.",
+    "sources": [
+      "The Mount, historia de la escritura y publicación de The Age of Innocence.",
+      "The Edith Wharton Society, estudio y presentación de la novela.",
+      "The Pulitzer Prizes, registro del premio de 1921.",
+      "Procedencia del texto original: Project Gutenberg, texto inglés de The Age of Innocence.",
+      "Comprobación textual: edición de D. Appleton and Company de 1920, cotejada mediante Wikisource e Internet Archive.",
+      "Traducción propia del inglés para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

@@ -561,6 +561,46 @@
         "rights": "Dominio público como obra anónima; Public Domain Mark 1.0",
         "object_position": "50% 35%"
       }
+    },
+    {
+      "author_id": "author-edith-wharton",
+      "display_name": "Edith Wharton",
+      "birth_year": 1862,
+      "death_year": 1937,
+      "country": "Estados Unidos",
+      "language": "Inglés",
+      "period": "Finales del siglo XIX y primeras décadas del siglo XX; Edad Dorada estadounidense, Era Progresista y periodo de entreguerras.",
+      "movement": "Realismo psicológico, novela de costumbres y sátira social estadounidense.",
+      "bio_short": "Edith Wharton —nacida Edith Newbold Jones— fue una novelista, cuentista, ensayista y diseñadora estadounidense. Nació en una familia acomodada de Nueva York, cuyo ambiente social conocería desde dentro y convertiría en materia literaria. Su obra analiza con ironía y precisión las reglas de la alta sociedad, especialmente aquellas que limitaban la libertad de las mujeres y subordinaban los sentimientos individuales a la reputación, el dinero y las convenciones.\n\nVivió durante muchos años en Europa y desarrolló una producción extensa que también abarcó la arquitectura, los jardines, los viajes y el diseño de interiores. En 1921 se convirtió en la primera mujer en recibir el Premio Pulitzer de novela por La edad de la inocencia.",
+      "bio_long": null,
+      "themes": [
+        "Las convenciones sociales",
+        "El matrimonio",
+        "La libertad individual",
+        "El deseo reprimido",
+        "La posición económica",
+        "La condición femenina",
+        "La reputación",
+        "El conflicto entre individuo y sociedad",
+        "Las oportunidades perdidas",
+        "La distancia entre apariencia y verdad"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "The Mount, biografía de Edith Wharton.",
+        "The Edith Wharton Society, biografía y presentación de la autora.",
+        "The Pulitzer Prizes, ficha de Edith Wharton y registro del premio de 1921."
+      ],
+      "portrait": {
+        "path": "public/images/authors/edith-wharton.webp",
+        "alt": "Retrato de Edith Wharton",
+        "caption": "Edith Wharton, 1915",
+        "credit": "Fotógrafo desconocido",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Edith_Wharton.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 35%"
+      }
     }
   ],
   "works": [
@@ -1090,6 +1130,45 @@
         "Traducción propia del alemán para Páramo Literario."
       ],
       "fragment_count": 32
+    },
+    {
+      "work_id": "work-la-edad-de-la-inocencia",
+      "title": "La edad de la inocencia",
+      "display_title": "La edad de la inocencia",
+      "original_title": "The Age of Innocence",
+      "author_id": "author-edith-wharton",
+      "publication_year": 1920,
+      "genre": "Novela de costumbres, histórica, psicológica y social.",
+      "language": null,
+      "summary_short": "Newland Archer es un joven abogado perteneciente a la alta sociedad neoyorquina y comprometido con May Welland, una muchacha que representa los valores tradicionales de su clase. Su vida aparentemente ordenada se altera con la llegada de Ellen Olenska, prima de May, que ha regresado de Europa huyendo de un matrimonio desdichado.\n\nNewland se enamora de Ellen y comienza a reconocer el carácter asfixiante de las normas sociales que hasta entonces había aceptado. Sin embargo, tanto él como Ellen deben decidir entre sus deseos y las obligaciones impuestas por la familia, la reputación y el mundo al que pertenecen.",
+      "summary_long": null,
+      "context_notes": "Publicada en octubre de 1920, la novela está ambientada en la alta sociedad de Nueva York durante los primeros años de la década de 1870. Wharton reconstruye el mundo de su infancia desde la distancia temporal y desde una sociedad profundamente transformada por la Primera Guerra Mundial. La descripción de vestidos, casas, rituales, visitas y celebraciones sirve para mostrar un sistema social regido por reglas casi invisibles, pero extremadamente eficaces.\n\nEn 1921 recibió el Premio Pulitzer de novela. Bajo la apariencia de una historia de amor, la obra examina el precio de la respetabilidad y la capacidad de una comunidad para controlar a sus miembros sin necesidad de prohibiciones explícitas.",
+      "themes": [
+        "El amor imposible",
+        "El deseo y la renuncia",
+        "El matrimonio",
+        "La libertad individual",
+        "La presión social",
+        "La reputación",
+        "La doble moral",
+        "Las apariencias",
+        "La condición femenina",
+        "El paso del tiempo",
+        "La nostalgia",
+        "La vida no vivida"
+      ],
+      "tone_notes": "Elegante, irónico, contenido y melancólico. Wharton observa a sus personajes con lucidez crítica, pero sin reducirlos a simples víctimas o culpables. La pasión se expresa principalmente mediante gestos, silencios y decisiones aplazadas, lo que intensifica la sensación de pérdida.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "The Mount, historia de la escritura y publicación de The Age of Innocence.",
+        "The Edith Wharton Society, estudio y presentación de la novela.",
+        "The Pulitzer Prizes, registro del premio de 1921.",
+        "Procedencia del texto original: Project Gutenberg, texto inglés de The Age of Innocence.",
+        "Comprobación textual: edición de D. Appleton and Company de 1920, cotejada mediante Wikisource e Internet Archive.",
+        "Traducción propia del inglés para Páramo Literario."
+      ],
+      "fragment_count": 28
     }
   ]
 }
