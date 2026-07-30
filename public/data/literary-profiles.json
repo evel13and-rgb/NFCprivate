@@ -643,6 +643,90 @@
         "rights": "Dominio público en Estados Unidos por haber sido publicada antes de 1930",
         "object_position": "50% 35%"
       }
+    },
+    {
+      "author_id": "author-miguel-hernandez",
+      "display_name": "Miguel Hernández Gilabert",
+      "birth_year": 1910,
+      "death_year": 1942,
+      "country": "España",
+      "language": "Español",
+      "period": "Primer tercio del siglo XX; Segunda República, Guerra Civil y primera posguerra",
+      "movement": "Generación del 36, con fuertes vínculos con la Generación del 27 y con la tradición poética española. Su obra evoluciona desde el neogongorismo y la poesía amorosa hacia la poesía social, bélica y carcelaria.",
+      "bio_short": "Miguel Hernández fue un poeta y dramaturgo español nacido en Orihuela. Procedía de una familia humilde y abandonó pronto la educación reglada para trabajar, pero se formó de manera autodidacta mediante la lectura de los clásicos españoles. En su juventud participó en la vida literaria de Orihuela, donde entabló una estrecha amistad con Ramón Sijé, y posteriormente se trasladó a Madrid, donde se relacionó con algunos de los principales escritores de su tiempo.\n\nDurante la Guerra Civil se comprometió activamente con el bando republicano. Al finalizar la contienda fue detenido, condenado a muerte y después sentenciado a treinta años de prisión. Murió de tuberculosis en la cárcel de Alicante en 1942, con treinta y un años.",
+      "bio_long": null,
+      "themes": [
+        "El amor",
+        "El deseo",
+        "La muerte",
+        "La ausencia",
+        "El dolor",
+        "La naturaleza",
+        "El mundo rural",
+        "La amistad",
+        "La pobreza",
+        "La guerra",
+        "La injusticia",
+        "La paternidad",
+        "La libertad",
+        "La resistencia"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Instituto Cervantes, «Miguel Hernández. Biografía».",
+        "Biblioteca Virtual Miguel de Cervantes, portal dedicado a Miguel Hernández.",
+        "Centro Virtual Cervantes, cronología y estudios sobre el poeta."
+      ],
+      "portrait": {
+        "path": "public/images/authors/miguel-hernandez.webp",
+        "alt": "Retrato de Miguel Hernández",
+        "caption": "Miguel Hernández en prisión, 1939",
+        "credit": "Fotógrafo desconocido; UNED Universidad Nacional de Educación a Distancia / Flickr",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Miguel_hernandez.jpg",
+        "rights": "CC BY 2.0; dominio público en España y Estados Unidos según Wikimedia Commons",
+        "object_position": "50% 35%"
+      }
+    },
+    {
+      "author_id": "author-pedro-calderon-de-la-barca",
+      "display_name": "Pedro Calderón de la Barca",
+      "birth_year": 1600,
+      "death_year": 1681,
+      "country": "España",
+      "language": "Español",
+      "period": "Siglo XVII; Siglo de Oro español",
+      "movement": "Barroco; teatro del Siglo de Oro. Su dramaturgia culmina y profundiza el modelo de la comedia nueva desarrollado por Lope de Vega.",
+      "bio_short": "Pedro Calderón de la Barca fue un dramaturgo y poeta nacido en Madrid. Recibió una sólida formación con los jesuitas y en la universidad, y llegó a convertirse en uno de los principales autores teatrales de la corte española. Cultivó comedias de enredo, dramas de honor, tragedias filosóficas, teatro mitológico y autos sacramentales. En 1651 fue ordenado sacerdote, y durante sus últimos años se dedicó especialmente al teatro cortesano y religioso. Su obra destaca por la precisión estructural, la densidad filosófica, el simbolismo y el dominio del lenguaje poético.",
+      "bio_long": null,
+      "themes": [
+        "La libertad y el destino",
+        "El honor",
+        "El poder",
+        "La identidad",
+        "La apariencia y la realidad",
+        "La fe",
+        "La culpa",
+        "Los celos",
+        "La educación",
+        "El sentido de la vida",
+        "La fragilidad de la experiencia humana"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Centro Virtual Cervantes, Calderón y el Siglo de Oro.",
+        "Biblioteca Virtual Miguel de Cervantes, portal dedicado a Pedro Calderón de la Barca."
+      ],
+      "portrait": {
+        "path": "public/images/authors/pedro-calderon-de-la-barca.webp",
+        "alt": "Retrato de Pedro Calderón de la Barca",
+        "caption": "Pedro Calderón de la Barca, 1676",
+        "credit": "Pedro de Villafranca; Biblioteca Nacional de España",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Retrato_de_Pedro_Calder%C3%B3n_de_la_Barca.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 38%"
+      }
     }
   ],
   "works": [
@@ -1249,6 +1333,78 @@
         "Traducción propia del inglés para Páramo Literario."
       ],
       "fragment_count": 29
+    },
+    {
+      "work_id": "work-el-rayo-que-no-cesa",
+      "title": "El rayo que no cesa",
+      "display_title": "El rayo que no cesa",
+      "original_title": "El rayo que no cesa",
+      "author_id": "author-miguel-hernandez",
+      "publication_year": 1936,
+      "genre": "Poemario lírico; poesía amorosa, elegíaca y de tradición clásica.",
+      "language": null,
+      "summary_short": "El libro presenta el amor como una fuerza inevitable que hiere, persigue y transforma al sujeto poético. El deseo aparece enfrentado a la distancia, el rechazo, la culpa y la imposibilidad de alcanzar plenamente a la persona amada. El «rayo» del título simboliza esa pasión constante que atraviesa la existencia y convierte el amor en herida, condena y destino.\n\nLa mayor parte del poemario está formada por sonetos amorosos. Entre ellos destaca la «Elegía a Ramón Sijé», escrita tras la muerte repentina del amigo de juventud de Hernández, donde el dolor amoroso del conjunto se abre hacia el duelo, la amistad y la rebelión contra la muerte.",
+      "summary_long": null,
+      "context_notes": "Los poemas fueron compuestos principalmente entre 1934 y 1935. La primera edición apareció en Madrid, publicada por Ediciones Héroe en enero de 1936, pocos meses antes del comienzo de la Guerra Civil. El poemario marca la madurez lírica de Hernández y recoge materiales procedentes de proyectos anteriores como El silbo vulnerado e Imagen de tu huella.\n\nLa obra muestra la asimilación de la poesía clásica española, especialmente de Garcilaso y Quevedo, pero también una voz propia de enorme intensidad corporal. La métrica rigurosa y la elaboración formal contienen una emoción violenta expresada mediante símbolos como el rayo, el cuchillo, el toro, la sangre, el barro y la herida.",
+      "themes": [
+        "El amor no correspondido",
+        "El deseo",
+        "La herida amorosa",
+        "La fatalidad",
+        "La frustración",
+        "El cuerpo",
+        "La sexualidad",
+        "La pena",
+        "La muerte",
+        "La amistad",
+        "El duelo",
+        "La lucha entre impulso vital y sufrimiento"
+      ],
+      "tone_notes": "Apasionado, doloroso, sensual y trágico. La emoción es intensa, pero está sometida a una construcción formal muy precisa. Los sonetos combinan musicalidad, imágenes físicas y una sensación constante de persecución: el amor no aparece como refugio sereno, sino como una fuerza que hiere y no concede descanso.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Miguel Hernández, El rayo que no cesa, edición digital basada en la primera edición de Madrid, Héroe, 1936, Biblioteca Virtual Miguel de Cervantes.",
+        "Biblioteca Virtual Miguel de Cervantes, presentación crítica del autor y su obra.",
+        "Centro Virtual Cervantes, cronología y estudio de El rayo que no cesa."
+      ],
+      "fragment_count": 13
+    },
+    {
+      "work_id": "work-la-vida-es-sueno",
+      "title": "La vida es sueño",
+      "display_title": "La vida es sueño",
+      "original_title": "La vida es sueño",
+      "author_id": "author-pedro-calderon-de-la-barca",
+      "publication_year": 1636,
+      "genre": "Drama filosófico y barroco escrito en verso; tragicomedia del Siglo de Oro.",
+      "language": null,
+      "summary_short": "El príncipe Segismundo ha permanecido encerrado desde su nacimiento por orden de su padre, el rey Basilio, quien teme el cumplimiento de un horóscopo que anuncia que su hijo será un gobernante cruel y violento. Para comprobar la profecía, Basilio lo conduce dormido al palacio y le permite ejercer temporalmente como príncipe. Segismundo, desorientado y dominado por la ira, actúa con brutalidad, por lo que vuelve a ser encerrado y se le hace creer que todo lo vivido fue un sueño.\n\nCuando el pueblo lo libera y se rebela contra Basilio, Segismundo recibe una segunda oportunidad. Consciente de que la realidad puede ser tan incierta como un sueño, decide dominar sus impulsos, actuar con prudencia y escoger el bien. La historia de Rosaura, que busca recuperar su honor, acompaña y completa el aprendizaje del protagonista.",
+      "summary_long": null,
+      "context_notes": "La obra pertenece al teatro barroco español y plantea algunos de los grandes debates filosóficos y religiosos de su época: la tensión entre predestinación y libre albedrío, la responsabilidad moral y la capacidad del ser humano para vencer sus inclinaciones. También examina el ejercicio del poder y las consecuencias de intentar evitar el destino mediante la violencia y el encierro.\n\nLa fecha tradicional de la obra es 1635. Se representó probablemente durante los primeros años de la década de 1630 y apareció impresa en 1636 dentro de la Primera parte de comedias de don Pedro Calderón de la Barca. Ese mismo año circuló otra versión en Zaragoza con diferencias importantes respecto al texto madrileño.",
+      "themes": [
+        "El libre albedrío",
+        "El destino",
+        "La educación",
+        "El poder",
+        "La identidad",
+        "La violencia",
+        "La prisión",
+        "La apariencia y la realidad",
+        "El sueño",
+        "El honor",
+        "La responsabilidad moral",
+        "El conflicto entre padres e hijos",
+        "La posibilidad de transformación"
+      ],
+      "tone_notes": "Filosófico, solemne, poético y simbólico. La obra combina violencia, intriga política y conflictos de honor con largos momentos de introspección. El lenguaje está construido mediante contrastes, paradojas e imágenes barrocas que refuerzan la incertidumbre entre sueño y realidad.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Biblioteca Virtual Miguel de Cervantes, edición y estudio crítico de La vida es sueño.",
+        "Centro Virtual Cervantes, Calderón y el Siglo de Oro."
+      ],
+      "fragment_count": 13
     }
   ]
 }

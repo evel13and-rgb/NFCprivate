@@ -626,5 +626,87 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-miguel-hernandez",
+    "name": "Miguel Hernández Gilabert",
+    "portrait": {
+      "path": "public/images/authors/miguel-hernandez.webp",
+      "alt": "Retrato de Miguel Hernández",
+      "caption": "Miguel Hernández en prisión, 1939",
+      "credit": "Fotógrafo desconocido; UNED Universidad Nacional de Educación a Distancia / Flickr",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Miguel_hernandez.jpg",
+      "rights": "CC BY 2.0; dominio público en España y Estados Unidos según Wikimedia Commons",
+      "object_position": "50% 35%"
+    },
+    "birth_year": 1910,
+    "death_year": 1942,
+    "country": "España",
+    "language": "Español",
+    "period": "Primer tercio del siglo XX; Segunda República, Guerra Civil y primera posguerra",
+    "movement": "Generación del 36, con fuertes vínculos con la Generación del 27 y con la tradición poética española. Su obra evoluciona desde el neogongorismo y la poesía amorosa hacia la poesía social, bélica y carcelaria.",
+    "short_biography": "Miguel Hernández fue un poeta y dramaturgo español nacido en Orihuela. Procedía de una familia humilde y abandonó pronto la educación reglada para trabajar, pero se formó de manera autodidacta mediante la lectura de los clásicos españoles. En su juventud participó en la vida literaria de Orihuela, donde entabló una estrecha amistad con Ramón Sijé, y posteriormente se trasladó a Madrid, donde se relacionó con algunos de los principales escritores de su tiempo.\n\nDurante la Guerra Civil se comprometió activamente con el bando republicano. Al finalizar la contienda fue detenido, condenado a muerte y después sentenciado a treinta años de prisión. Murió de tuberculosis en la cárcel de Alicante en 1942, con treinta y un años.",
+    "themes": [
+      "El amor",
+      "El deseo",
+      "La muerte",
+      "La ausencia",
+      "El dolor",
+      "La naturaleza",
+      "El mundo rural",
+      "La amistad",
+      "La pobreza",
+      "La guerra",
+      "La injusticia",
+      "La paternidad",
+      "La libertad",
+      "La resistencia"
+    ],
+    "sources": [
+      "Instituto Cervantes, «Miguel Hernández. Biografía».",
+      "Biblioteca Virtual Miguel de Cervantes, portal dedicado a Miguel Hernández.",
+      "Centro Virtual Cervantes, cronología y estudios sobre el poeta."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
+  },
+  {
+    "author_id": "author-pedro-calderon-de-la-barca",
+    "name": "Pedro Calderón de la Barca",
+    "portrait": {
+      "path": "public/images/authors/pedro-calderon-de-la-barca.webp",
+      "alt": "Retrato de Pedro Calderón de la Barca",
+      "caption": "Pedro Calderón de la Barca, 1676",
+      "credit": "Pedro de Villafranca; Biblioteca Nacional de España",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Retrato_de_Pedro_Calder%C3%B3n_de_la_Barca.jpg",
+      "rights": "Dominio público; Public Domain Mark 1.0",
+      "object_position": "50% 38%"
+    },
+    "birth_year": 1600,
+    "death_year": 1681,
+    "country": "España",
+    "language": "Español",
+    "period": "Siglo XVII; Siglo de Oro español",
+    "movement": "Barroco; teatro del Siglo de Oro. Su dramaturgia culmina y profundiza el modelo de la comedia nueva desarrollado por Lope de Vega.",
+    "short_biography": "Pedro Calderón de la Barca fue un dramaturgo y poeta nacido en Madrid. Recibió una sólida formación con los jesuitas y en la universidad, y llegó a convertirse en uno de los principales autores teatrales de la corte española. Cultivó comedias de enredo, dramas de honor, tragedias filosóficas, teatro mitológico y autos sacramentales. En 1651 fue ordenado sacerdote, y durante sus últimos años se dedicó especialmente al teatro cortesano y religioso. Su obra destaca por la precisión estructural, la densidad filosófica, el simbolismo y el dominio del lenguaje poético.",
+    "themes": [
+      "La libertad y el destino",
+      "El honor",
+      "El poder",
+      "La identidad",
+      "La apariencia y la realidad",
+      "La fe",
+      "La culpa",
+      "Los celos",
+      "La educación",
+      "El sentido de la vida",
+      "La fragilidad de la experiencia humana"
+    ],
+    "sources": [
+      "Centro Virtual Cervantes, Calderón y el Siglo de Oro.",
+      "Biblioteca Virtual Miguel de Cervantes, portal dedicado a Pedro Calderón de la Barca."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]
