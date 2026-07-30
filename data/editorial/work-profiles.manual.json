@@ -599,5 +599,45 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-bartleby-el-escribiente",
+    "author_id": "author-herman-melville",
+    "title": "Bartleby, el escribiente",
+    "original_title": "Bartleby, the Scrivener: A Story of Wall-Street",
+    "publication_year": 1853,
+    "genre": "Relato largo, próximo a la novela corta; narrativa psicológica, social, filosófica y simbólica.",
+    "short_summary": "Un abogado de Wall Street contrata a Bartleby como escribiente para copiar y revisar documentos legales. Al principio, el nuevo empleado trabaja con una intensidad extraordinaria, pero un día se niega a participar en la revisión de un texto mediante una respuesta cortés e inexplicable: «preferiría no hacerlo».\n\nA partir de entonces, Bartleby extiende progresivamente su negativa a todas las tareas, pero tampoco abandona la oficina. El abogado intenta comprenderlo, ayudarlo, convencerlo o librarse de él, oscilando entre la compasión, la irritación y el miedo a que la presencia del escribiente perjudique su reputación. La resistencia de Bartleby termina desbordando las reglas del trabajo, la propiedad y la convivencia, hasta dejarlo completamente excluido de la sociedad.",
+    "context": "El relato apareció anónimamente en dos entregas de Putnam’s Monthly Magazine, en noviembre y diciembre de 1853. Melville lo revisó ligeramente y lo incluyó después en la colección The Piazza Tales, publicada en 1856. Fue escrito durante la etapa en que, tras la recepción negativa de Moby-Dick y Pierre, el autor recurrió a las revistas como fuente de ingresos y como un nuevo espacio para su narrativa breve.\n\nLa acción se sitúa en Wall Street, cuyo carácter financiero y comercial ya estaba consolidado hacia mediados del siglo XIX. Antes de la mecanización de las oficinas, los escribientes copiaban a mano contratos, escrituras y otros documentos: una labor repetitiva que exigía exactitud, disciplina y largas horas de inmovilidad. Este contexto permite leer la historia como una reflexión sobre el trabajo moderno y sobre una sociedad que mide el valor de las personas mediante su productividad.\n\nLa obra también cuestiona los límites de la caridad. El narrador se considera prudente, tolerante y humano, pero su compasión está condicionada por la comodidad, la propiedad y la reputación profesional. El relato evita decidir si Bartleby representa una protesta contra el capitalismo, una depresión extrema, un aislamiento psicológico, una figura espiritual o una renuncia absoluta: su fuerza procede precisamente de que ninguna interpretación consigue explicarlo por completo.",
+    "themes": [
+      "La alienación laboral",
+      "La resistencia pasiva",
+      "La libertad",
+      "La obediencia",
+      "La productividad",
+      "La deshumanización",
+      "El aislamiento",
+      "La incomunicación",
+      "La soledad",
+      "La pobreza",
+      "La compasión",
+      "Los límites de la responsabilidad",
+      "La propiedad",
+      "La exclusión social",
+      "La identidad",
+      "El lenguaje",
+      "La muerte",
+      "La imposibilidad de comprender al otro"
+    ],
+    "tone": "Sobrio, irónico, claustrofóbico, absurdo y melancólico. La voz razonable y ordenada del abogado contrasta con el silencio y la negativa inexplicable de Bartleby. El humor inicial se vuelve progresivamente inquietante, hasta desembocar en una profunda sensación de abandono. Los muros, las ventanas cerradas y los espacios estrechos convierten la oficina en una imagen material del aislamiento de los personajes.",
+    "sources": [
+      "Herman Melville, Bartleby, the Scrivener: A Story of Wall-Street, texto original en Project Gutenberg.",
+      "Primera publicación en Putnam’s Monthly Magazine, noviembre y diciembre de 1853.",
+      "The Piazza Tales, 1856.",
+      "Melville Electronic Library.",
+      "The New Cambridge Companion to Herman Melville."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

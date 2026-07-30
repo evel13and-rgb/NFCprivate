@@ -708,5 +708,54 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-herman-melville",
+    "name": "Herman Melville",
+    "portrait": {
+      "path": "public/images/authors/herman-melville.webp",
+      "alt": "Retrato de Herman Melville",
+      "caption": "Herman Melville, mayo de 1870",
+      "credit": "Joseph Oriel Eaton; Houghton Library, Harvard University",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Herman_Melville_by_Joseph_O_Eaton.jpg",
+      "rights": "Dominio público en el país de origen y en Estados Unidos; Public Domain Mark 1.0",
+      "object_position": "50% 32%"
+    },
+    "birth_year": 1819,
+    "death_year": 1891,
+    "country": "Estados Unidos",
+    "language": "Inglés",
+    "period": "Siglo XIX; Estados Unidos anterior a la Guerra de Secesión, Guerra Civil y primeras décadas de la posguerra",
+    "movement": "Renacimiento estadounidense; romanticismo oscuro, narrativa marítima y ficción filosófica y simbólica. Su experimentación con la voz narrativa, la ambigüedad y la mezcla de géneros anticipa ciertos rasgos de la literatura moderna.",
+    "short_biography": "Herman Melville nació en Nueva York en una familia vinculada al comercio. La muerte de su padre y las dificultades económicas familiares interrumpieron su educación y lo obligaron a desempeñar distintos trabajos. En 1839 se embarcó por primera vez como marinero mercante y, en 1841, partió desde New Bedford a bordo del ballenero Acushnet. Sus años de navegación por el Atlántico y el Pacífico le permitieron conocer directamente la disciplina, la violencia y las jerarquías del trabajo marítimo, experiencias que proporcionarían la materia de sus primeros libros y de buena parte de su imaginario literario.\n\nAlcanzó un rápido éxito con Typee y Omoo, pero su escritura se volvió progresivamente más compleja, filosófica y experimental. En obras como Moby-Dick, Pierre, Bartleby, el escribiente y Benito Cereno, la aventura exterior deja paso a interrogaciones sobre la autoridad, la libertad, el conocimiento, la violencia y la imposibilidad de comprender plenamente a los demás. Su prosa combina narración, ensayo, alegoría, sátira, lenguaje bíblico, referencias a Shakespeare, explicaciones técnicas y momentos de humor absurdo.\n\nTras la recepción desfavorable y las escasas ventas de Moby-Dick y Pierre, Melville se orientó hacia los relatos publicados en revistas. Las dificultades económicas lo acompañaron durante buena parte de su vida y en 1866 comenzó a trabajar como inspector de aduanas en Nueva York, empleo que mantuvo durante más de veinte años. En su última etapa se dedicó principalmente a la poesía. Murió en 1891 con gran parte de su obra olvidada; su recuperación crítica comenzó varias décadas después.",
+    "themes": [
+      "La autoridad y la obediencia",
+      "La libertad",
+      "La resistencia",
+      "La obsesión",
+      "El trabajo",
+      "La deshumanización",
+      "La soledad",
+      "La incomunicación",
+      "La identidad",
+      "La violencia institucional",
+      "La ley y la justicia",
+      "La fe y la duda",
+      "El mal",
+      "La esclavitud",
+      "El colonialismo",
+      "La desigualdad",
+      "Los límites del conocimiento",
+      "La imposibilidad de alcanzar una verdad definitiva"
+    ],
+    "sources": [
+      "PBS, American Experience, «The Life of Herman Melville».",
+      "National Park Service, New Bedford Whaling National Historical Park.",
+      "Berkshire County Historical Society, archivo de Arrowhead.",
+      "Melville Electronic Library.",
+      "Poetry Foundation, perfil biográfico de Herman Melville."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

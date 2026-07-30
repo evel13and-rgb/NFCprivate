@@ -727,6 +727,56 @@
         "rights": "Dominio público; Public Domain Mark 1.0",
         "object_position": "50% 38%"
       }
+    },
+    {
+      "author_id": "author-herman-melville",
+      "display_name": "Herman Melville",
+      "birth_year": 1819,
+      "death_year": 1891,
+      "country": "Estados Unidos",
+      "language": "Inglés",
+      "period": "Siglo XIX; Estados Unidos anterior a la Guerra de Secesión, Guerra Civil y primeras décadas de la posguerra",
+      "movement": "Renacimiento estadounidense; romanticismo oscuro, narrativa marítima y ficción filosófica y simbólica. Su experimentación con la voz narrativa, la ambigüedad y la mezcla de géneros anticipa ciertos rasgos de la literatura moderna.",
+      "bio_short": "Herman Melville nació en Nueva York en una familia vinculada al comercio. La muerte de su padre y las dificultades económicas familiares interrumpieron su educación y lo obligaron a desempeñar distintos trabajos. En 1839 se embarcó por primera vez como marinero mercante y, en 1841, partió desde New Bedford a bordo del ballenero Acushnet. Sus años de navegación por el Atlántico y el Pacífico le permitieron conocer directamente la disciplina, la violencia y las jerarquías del trabajo marítimo, experiencias que proporcionarían la materia de sus primeros libros y de buena parte de su imaginario literario.\n\nAlcanzó un rápido éxito con Typee y Omoo, pero su escritura se volvió progresivamente más compleja, filosófica y experimental. En obras como Moby-Dick, Pierre, Bartleby, el escribiente y Benito Cereno, la aventura exterior deja paso a interrogaciones sobre la autoridad, la libertad, el conocimiento, la violencia y la imposibilidad de comprender plenamente a los demás. Su prosa combina narración, ensayo, alegoría, sátira, lenguaje bíblico, referencias a Shakespeare, explicaciones técnicas y momentos de humor absurdo.\n\nTras la recepción desfavorable y las escasas ventas de Moby-Dick y Pierre, Melville se orientó hacia los relatos publicados en revistas. Las dificultades económicas lo acompañaron durante buena parte de su vida y en 1866 comenzó a trabajar como inspector de aduanas en Nueva York, empleo que mantuvo durante más de veinte años. En su última etapa se dedicó principalmente a la poesía. Murió en 1891 con gran parte de su obra olvidada; su recuperación crítica comenzó varias décadas después.",
+      "bio_long": null,
+      "themes": [
+        "La autoridad y la obediencia",
+        "La libertad",
+        "La resistencia",
+        "La obsesión",
+        "El trabajo",
+        "La deshumanización",
+        "La soledad",
+        "La incomunicación",
+        "La identidad",
+        "La violencia institucional",
+        "La ley y la justicia",
+        "La fe y la duda",
+        "El mal",
+        "La esclavitud",
+        "El colonialismo",
+        "La desigualdad",
+        "Los límites del conocimiento",
+        "La imposibilidad de alcanzar una verdad definitiva"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "PBS, American Experience, «The Life of Herman Melville».",
+        "National Park Service, New Bedford Whaling National Historical Park.",
+        "Berkshire County Historical Society, archivo de Arrowhead.",
+        "Melville Electronic Library.",
+        "Poetry Foundation, perfil biográfico de Herman Melville."
+      ],
+      "portrait": {
+        "path": "public/images/authors/herman-melville.webp",
+        "alt": "Retrato de Herman Melville",
+        "caption": "Herman Melville, mayo de 1870",
+        "credit": "Joseph Oriel Eaton; Houghton Library, Harvard University",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Herman_Melville_by_Joseph_O_Eaton.jpg",
+        "rights": "Dominio público en el país de origen y en Estados Unidos; Public Domain Mark 1.0",
+        "object_position": "50% 32%"
+      }
     }
   ],
   "works": [
@@ -1405,6 +1455,50 @@
         "Centro Virtual Cervantes, Calderón y el Siglo de Oro."
       ],
       "fragment_count": 13
+    },
+    {
+      "work_id": "work-bartleby-el-escribiente",
+      "title": "Bartleby, el escribiente",
+      "display_title": "Bartleby, el escribiente",
+      "original_title": "Bartleby, the Scrivener: A Story of Wall-Street",
+      "author_id": "author-herman-melville",
+      "publication_year": 1853,
+      "genre": "Relato largo, próximo a la novela corta; narrativa psicológica, social, filosófica y simbólica.",
+      "language": null,
+      "summary_short": "Un abogado de Wall Street contrata a Bartleby como escribiente para copiar y revisar documentos legales. Al principio, el nuevo empleado trabaja con una intensidad extraordinaria, pero un día se niega a participar en la revisión de un texto mediante una respuesta cortés e inexplicable: «preferiría no hacerlo».\n\nA partir de entonces, Bartleby extiende progresivamente su negativa a todas las tareas, pero tampoco abandona la oficina. El abogado intenta comprenderlo, ayudarlo, convencerlo o librarse de él, oscilando entre la compasión, la irritación y el miedo a que la presencia del escribiente perjudique su reputación. La resistencia de Bartleby termina desbordando las reglas del trabajo, la propiedad y la convivencia, hasta dejarlo completamente excluido de la sociedad.",
+      "summary_long": null,
+      "context_notes": "El relato apareció anónimamente en dos entregas de Putnam’s Monthly Magazine, en noviembre y diciembre de 1853. Melville lo revisó ligeramente y lo incluyó después en la colección The Piazza Tales, publicada en 1856. Fue escrito durante la etapa en que, tras la recepción negativa de Moby-Dick y Pierre, el autor recurrió a las revistas como fuente de ingresos y como un nuevo espacio para su narrativa breve.\n\nLa acción se sitúa en Wall Street, cuyo carácter financiero y comercial ya estaba consolidado hacia mediados del siglo XIX. Antes de la mecanización de las oficinas, los escribientes copiaban a mano contratos, escrituras y otros documentos: una labor repetitiva que exigía exactitud, disciplina y largas horas de inmovilidad. Este contexto permite leer la historia como una reflexión sobre el trabajo moderno y sobre una sociedad que mide el valor de las personas mediante su productividad.\n\nLa obra también cuestiona los límites de la caridad. El narrador se considera prudente, tolerante y humano, pero su compasión está condicionada por la comodidad, la propiedad y la reputación profesional. El relato evita decidir si Bartleby representa una protesta contra el capitalismo, una depresión extrema, un aislamiento psicológico, una figura espiritual o una renuncia absoluta: su fuerza procede precisamente de que ninguna interpretación consigue explicarlo por completo.",
+      "themes": [
+        "La alienación laboral",
+        "La resistencia pasiva",
+        "La libertad",
+        "La obediencia",
+        "La productividad",
+        "La deshumanización",
+        "El aislamiento",
+        "La incomunicación",
+        "La soledad",
+        "La pobreza",
+        "La compasión",
+        "Los límites de la responsabilidad",
+        "La propiedad",
+        "La exclusión social",
+        "La identidad",
+        "El lenguaje",
+        "La muerte",
+        "La imposibilidad de comprender al otro"
+      ],
+      "tone_notes": "Sobrio, irónico, claustrofóbico, absurdo y melancólico. La voz razonable y ordenada del abogado contrasta con el silencio y la negativa inexplicable de Bartleby. El humor inicial se vuelve progresivamente inquietante, hasta desembocar en una profunda sensación de abandono. Los muros, las ventanas cerradas y los espacios estrechos convierten la oficina en una imagen material del aislamiento de los personajes.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Herman Melville, Bartleby, the Scrivener: A Story of Wall-Street, texto original en Project Gutenberg.",
+        "Primera publicación en Putnam’s Monthly Magazine, noviembre y diciembre de 1853.",
+        "The Piazza Tales, 1856.",
+        "Melville Electronic Library.",
+        "The New Cambridge Companion to Herman Melville."
+      ],
+      "fragment_count": 16
     }
   ]
 }
