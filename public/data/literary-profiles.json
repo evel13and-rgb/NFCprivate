@@ -601,6 +601,48 @@
         "rights": "Dominio público; Public Domain Mark 1.0",
         "object_position": "50% 35%"
       }
+    },
+    {
+      "author_id": "author-lucy-maud-montgomery",
+      "display_name": "L. M. Montgomery",
+      "birth_year": 1874,
+      "death_year": 1942,
+      "country": "Canadá",
+      "language": "Inglés",
+      "period": "Finales del siglo XIX y primera mitad del siglo XX",
+      "movement": "Literatura canadiense de comienzos del siglo XX; narrativa regional, novela de formación y literatura juvenil.",
+      "bio_short": "Lucy Maud Montgomery fue una novelista, poeta, periodista y diarista canadiense nacida en la Isla del Príncipe Eduardo. Su madre murió cuando ella tenía veintiún meses y fue criada por sus abuelos maternos en Cavendish, cuyo paisaje rural inspiraría gran parte de su obra. Estudió para ser maestra, trabajó en distintas escuelas y publicó poemas, relatos y artículos en periódicos antes de alcanzar el éxito internacional con Ana de las Tejas Verdes en 1908. A lo largo de su carrera escribió numerosas novelas, cuentos, poemas, diarios y varias continuaciones protagonizadas por Ana Shirley.",
+      "bio_long": null,
+      "themes": [
+        "La imaginación",
+        "La infancia",
+        "La identidad",
+        "El deseo de pertenencia",
+        "La amistad",
+        "La familia elegida",
+        "La educación",
+        "La naturaleza",
+        "La vida rural",
+        "La condición femenina",
+        "La pérdida",
+        "La memoria",
+        "La transformación personal"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "The Anne of Green Gables Manuscript, «The Life and Work of L. M. Montgomery», proyecto del Confederation Centre of the Arts, el L. M. Montgomery Institute y la Universidad de la Isla del Príncipe Eduardo.",
+        "Gobierno de Canadá, «Lucy Maud Montgomery»."
+      ],
+      "portrait": {
+        "path": "public/images/authors/lucy-maud-montgomery.webp",
+        "alt": "Retrato de Lucy Maud Montgomery",
+        "caption": "Lucy Maud Montgomery, hacia 1900",
+        "credit": "Fotógrafo desconocido",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lucy_Maud_Montgomery.jpg",
+        "rights": "Dominio público en Estados Unidos por haber sido publicada antes de 1930",
+        "object_position": "50% 35%"
+      }
     }
   ],
   "works": [
@@ -1169,6 +1211,44 @@
         "Traducción propia del inglés para Páramo Literario."
       ],
       "fragment_count": 28
+    },
+    {
+      "work_id": "work-ana-de-las-tejas-verdes",
+      "title": "Ana de las Tejas Verdes",
+      "display_title": "Ana de las Tejas Verdes",
+      "original_title": "Anne of Green Gables",
+      "author_id": "author-lucy-maud-montgomery",
+      "publication_year": 1908,
+      "genre": "Novela de formación; narrativa juvenil, familiar y regional.",
+      "language": null,
+      "summary_short": "Matthew y Marilla Cuthbert, dos hermanos solteros que viven en la granja de Tejas Verdes, esperan adoptar a un niño que pueda ayudarlos en las labores domésticas. Sin embargo, por error reciben a Ana Shirley, una niña huérfana, pelirroja, imaginativa y extraordinariamente habladora.\n\nAunque Marilla pretende devolverla, Ana termina encontrando un hogar en Tejas Verdes. La novela sigue su crecimiento en la comunidad de Avonlea, sus amistades, sus errores, su rivalidad con Gilbert Blythe y su esfuerzo por convertir un lugar inicialmente ajeno en el espacio al que pertenece.",
+      "summary_long": null,
+      "context_notes": "Montgomery escribió la novela en Cavendish, inspirándose en los paisajes, las casas y la vida cotidiana de la Isla del Príncipe Eduardo. Tras ser rechazada por varios editores, guardó el manuscrito durante un tiempo y posteriormente decidió enviarlo de nuevo. En 1907 firmó un contrato con la editorial estadounidense L. C. Page & Company y la novela apareció en 1908, alcanzando un éxito inmediato.\n\nEl Avonlea ficticio está estrechamente relacionado con el Cavendish en el que Montgomery creció: una comunidad rural formada por granjas, caminos de tierra roja, escuelas, iglesias y relaciones vecinales muy próximas. El paisaje no funciona únicamente como escenario, sino como parte de la imaginación y la identidad de Ana.",
+      "themes": [
+        "La búsqueda de un hogar",
+        "La adopción",
+        "La imaginación",
+        "La amistad",
+        "El crecimiento",
+        "La identidad",
+        "El sentimiento de pertenencia",
+        "La educación",
+        "Los prejuicios",
+        "La rivalidad",
+        "La familia elegida",
+        "La belleza de la naturaleza",
+        "La capacidad de transformar la adversidad"
+      ],
+      "tone_notes": "Luminoso, humorístico, afectuoso y profundamente imaginativo, aunque atravesado por momentos de soledad y melancolía. La intensidad emocional y verbal de Ana convierte los acontecimientos cotidianos en experiencias extraordinarias, mientras la narración observa con ironía tanto sus excesos como la rigidez del mundo adulto.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "L. M. Montgomery, Anne of Green Gables, texto original de 1908 conservado en dominio público por Project Gutenberg.",
+        "The Anne of Green Gables Manuscript, edición digital y estudio del manuscrito original.",
+        "Comprobación textual: Wikisource y primera edición de L. C. Page & Company de 1908, digitalizada por Internet Archive.",
+        "Traducción propia del inglés para Páramo Literario."
+      ],
+      "fragment_count": 29
     }
   ]
 }

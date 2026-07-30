@@ -1,5 +1,5 @@
 {
-  "total_quotes_processed": 534,
+  "total_quotes_processed": 549,
   "total_authors_generated": 24,
   "total_works_generated": 26,
   "quotes_without_author_id": [
@@ -12,7 +12,7 @@
     "character": 0,
     "narrator": 0,
     "collective_voice": 0,
-    "ambiguous": 39
+    "ambiguous": 54
   },
   "ambiguous_works": [
     {
@@ -53,21 +53,6 @@
       8,
       9,
       10,
-      46,
-      47,
-      48,
-      49,
-      50,
-      51,
-      52,
-      53,
-      54,
-      55,
-      56,
-      57,
-      58,
-      59,
-      60,
       61,
       62,
       63,
@@ -540,11 +525,26 @@
       530,
       531,
       532,
-      533
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548
     ]
   },
   "legacy_attribution_looks_like_character_or_narrator": {
-    "count": 39,
+    "count": 54,
     "cases": [
       {
         "legacy_index": 0,
@@ -620,7 +620,7 @@
       },
       {
         "legacy_index": 19,
-        "legacy_attribution": "Anne Shirley",
+        "legacy_attribution": "Jefe de estación",
         "author_id": "author-lucy-maud-montgomery",
         "provisional_type": "ambiguous"
       },
@@ -704,78 +704,168 @@
       },
       {
         "legacy_index": 33,
-        "legacy_attribution": "Segismundo — Jornada Segunda",
-        "author_id": "author-pedro-calderon-de-la-barca",
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 34,
-        "legacy_attribution": "Segismundo — Jornada Segunda",
-        "author_id": "author-pedro-calderon-de-la-barca",
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 35,
-        "legacy_attribution": "Segismundo — Jornada Segunda",
-        "author_id": "author-pedro-calderon-de-la-barca",
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
         "provisional_type": "ambiguous"
       },
       {
         "legacy_index": 36,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 37,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 38,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 39,
+        "legacy_attribution": "Matthew Cuthbert",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 40,
+        "legacy_attribution": "Narrador",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 41,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 42,
+        "legacy_attribution": "Marilla Cuthbert",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 43,
+        "legacy_attribution": "Señora Allan",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 44,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 45,
+        "legacy_attribution": "Anne Shirley",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 46,
+        "legacy_attribution": "Narrador",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 47,
+        "legacy_attribution": "Narrador",
+        "author_id": "author-lucy-maud-montgomery",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 48,
         "legacy_attribution": "Segismundo — Jornada Segunda",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 37,
+        "legacy_index": 49,
+        "legacy_attribution": "Segismundo — Jornada Segunda",
+        "author_id": "author-pedro-calderon-de-la-barca",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 50,
+        "legacy_attribution": "Segismundo — Jornada Segunda",
+        "author_id": "author-pedro-calderon-de-la-barca",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 51,
+        "legacy_attribution": "Segismundo — Jornada Segunda",
+        "author_id": "author-pedro-calderon-de-la-barca",
+        "provisional_type": "ambiguous"
+      },
+      {
+        "legacy_index": 52,
         "legacy_attribution": "Segismundo — Jornada Primera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 38,
+        "legacy_index": 53,
         "legacy_attribution": "Segismundo — Jornada Primera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 39,
+        "legacy_index": 54,
         "legacy_attribution": "Segismundo — Jornada Primera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 40,
+        "legacy_index": 55,
         "legacy_attribution": "Segismundo — Jornada Tercera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 41,
+        "legacy_index": 56,
         "legacy_attribution": "Segismundo — Jornada Tercera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 42,
+        "legacy_index": 57,
         "legacy_attribution": "Segismundo — Jornada Tercera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 43,
+        "legacy_index": 58,
         "legacy_attribution": "Rosaura — Jornada Primera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 44,
+        "legacy_index": 59,
         "legacy_attribution": "Segismundo — Jornada Tercera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
       },
       {
-        "legacy_index": 45,
+        "legacy_index": 60,
         "legacy_attribution": "Segismundo — Jornada Tercera",
         "author_id": "author-pedro-calderon-de-la-barca",
         "provisional_type": "ambiguous"
@@ -867,7 +957,7 @@
     {
       "scope": "attribution",
       "legacy_index": 19,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Jefe de estación",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
@@ -951,78 +1041,168 @@
     {
       "scope": "attribution",
       "legacy_index": 33,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 34,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 35,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 36,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 37,
-      "legacy_attribution": "Segismundo — Jornada Primera",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 38,
-      "legacy_attribution": "Segismundo — Jornada Primera",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 39,
-      "legacy_attribution": "Segismundo — Jornada Primera",
+      "legacy_attribution": "Matthew Cuthbert",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 40,
-      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "legacy_attribution": "Narrador",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 41,
-      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 42,
-      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "legacy_attribution": "Marilla Cuthbert",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 43,
-      "legacy_attribution": "Rosaura — Jornada Primera",
+      "legacy_attribution": "Señora Allan",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 44,
-      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "legacy_attribution": "Anne Shirley",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     },
     {
       "scope": "attribution",
       "legacy_index": 45,
+      "legacy_attribution": "Anne Shirley",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 46,
+      "legacy_attribution": "Narrador",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 47,
+      "legacy_attribution": "Narrador",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 48,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 49,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 50,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 51,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 52,
+      "legacy_attribution": "Segismundo — Jornada Primera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 53,
+      "legacy_attribution": "Segismundo — Jornada Primera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 54,
+      "legacy_attribution": "Segismundo — Jornada Primera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 55,
+      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 56,
+      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 57,
+      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 58,
+      "legacy_attribution": "Rosaura — Jornada Primera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 59,
+      "legacy_attribution": "Segismundo — Jornada Tercera",
+      "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
+    },
+    {
+      "scope": "attribution",
+      "legacy_index": 60,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "issue": "Decidir editorialmente si la atribución corresponde a personaje o narrador."
     }

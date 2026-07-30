@@ -36,11 +36,11 @@
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
   },
   {
-    "id": "work-anne-de-las-tejas-verdes",
-    "title": "Anne de las Tejas Verdes",
-    "slug": "anne-de-las-tejas-verdes",
+    "id": "work-ana-de-las-tejas-verdes",
+    "title": "Ana de las Tejas Verdes",
+    "slug": "ana-de-las-tejas-verdes",
     "author_id": "author-lucy-maud-montgomery",
-    "legacy_work": "Anne de las Tejas Verdes, Lucy Maud Montgomery",
+    "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
     "status": "draft",
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
   },

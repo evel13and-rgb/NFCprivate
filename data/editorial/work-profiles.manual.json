@@ -500,5 +500,40 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-ana-de-las-tejas-verdes",
+    "author_id": "author-lucy-maud-montgomery",
+    "display_title": "Ana de las Tejas Verdes",
+    "title": "Ana de las Tejas Verdes",
+    "original_title": "Anne of Green Gables",
+    "publication_year": 1908,
+    "genre": "Novela de formación; narrativa juvenil, familiar y regional.",
+    "short_summary": "Matthew y Marilla Cuthbert, dos hermanos solteros que viven en la granja de Tejas Verdes, esperan adoptar a un niño que pueda ayudarlos en las labores domésticas. Sin embargo, por error reciben a Ana Shirley, una niña huérfana, pelirroja, imaginativa y extraordinariamente habladora.\n\nAunque Marilla pretende devolverla, Ana termina encontrando un hogar en Tejas Verdes. La novela sigue su crecimiento en la comunidad de Avonlea, sus amistades, sus errores, su rivalidad con Gilbert Blythe y su esfuerzo por convertir un lugar inicialmente ajeno en el espacio al que pertenece.",
+    "context": "Montgomery escribió la novela en Cavendish, inspirándose en los paisajes, las casas y la vida cotidiana de la Isla del Príncipe Eduardo. Tras ser rechazada por varios editores, guardó el manuscrito durante un tiempo y posteriormente decidió enviarlo de nuevo. En 1907 firmó un contrato con la editorial estadounidense L. C. Page & Company y la novela apareció en 1908, alcanzando un éxito inmediato.\n\nEl Avonlea ficticio está estrechamente relacionado con el Cavendish en el que Montgomery creció: una comunidad rural formada por granjas, caminos de tierra roja, escuelas, iglesias y relaciones vecinales muy próximas. El paisaje no funciona únicamente como escenario, sino como parte de la imaginación y la identidad de Ana.",
+    "themes": [
+      "La búsqueda de un hogar",
+      "La adopción",
+      "La imaginación",
+      "La amistad",
+      "El crecimiento",
+      "La identidad",
+      "El sentimiento de pertenencia",
+      "La educación",
+      "Los prejuicios",
+      "La rivalidad",
+      "La familia elegida",
+      "La belleza de la naturaleza",
+      "La capacidad de transformar la adversidad"
+    ],
+    "tone": "Luminoso, humorístico, afectuoso y profundamente imaginativo, aunque atravesado por momentos de soledad y melancolía. La intensidad emocional y verbal de Ana convierte los acontecimientos cotidianos en experiencias extraordinarias, mientras la narración observa con ironía tanto sus excesos como la rigidez del mundo adulto.",
+    "sources": [
+      "L. M. Montgomery, Anne of Green Gables, texto original de 1908 conservado en dominio público por Project Gutenberg.",
+      "The Anne of Green Gables Manuscript, edición digital y estudio del manuscrito original.",
+      "Comprobación textual: Wikisource y primera edición de L. C. Page & Company de 1908, digitalizada por Internet Archive.",
+      "Traducción propia del inglés para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

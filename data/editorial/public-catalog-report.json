@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-29T20:54:49.072Z",
+  "generated_at": "2026-07-30T21:32:10.308Z",
   "preview": true,
   "publication_status": "internal_preview",
-  "total_quotes_exported": 534,
+  "total_quotes_exported": 549,
   "omitted_quotes": [],
   "private_fields_excluded": [
     "rights_notes",
@@ -53,14 +53,28 @@
     "quote-42",
     "quote-43",
     "quote-44",
-    "quote-45"
+    "quote-45",
+    "quote-46",
+    "quote-47",
+    "quote-48",
+    "quote-49",
+    "quote-50",
+    "quote-51",
+    "quote-52",
+    "quote-53",
+    "quote-54",
+    "quote-55",
+    "quote-56",
+    "quote-57",
+    "quote-58",
+    "quote-59",
+    "quote-60"
   ],
   "works_without_verified_source": [
     "work-fragmentos",
     "work-cumbres-borrascosas",
     "work-gargantua",
     "work-frankenstein-o-el-moderno-prometeo",
-    "work-anne-de-las-tejas-verdes",
     "work-la-vida-es-sueno",
     "work-bartleby-el-escribiente",
     "work-las-cerezas-del-cementerio",
@@ -100,11 +114,6 @@
     {
       "source_id": "source-frankenstein-o-el-moderno-prometeo",
       "work_id": "work-frankenstein-o-el-moderno-prometeo",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-anne-de-las-tejas-verdes",
-      "work_id": "work-anne-de-las-tejas-verdes",
       "rights_status": "unchecked"
     },
     {

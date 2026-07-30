@@ -584,5 +584,47 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-lucy-maud-montgomery",
+    "display_name": "L. M. Montgomery",
+    "name": "Lucy Maud Montgomery",
+    "portrait": {
+      "path": "public/images/authors/lucy-maud-montgomery.webp",
+      "alt": "Retrato de Lucy Maud Montgomery",
+      "caption": "Lucy Maud Montgomery, hacia 1900",
+      "credit": "Fotógrafo desconocido",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lucy_Maud_Montgomery.jpg",
+      "rights": "Dominio público en Estados Unidos por haber sido publicada antes de 1930",
+      "object_position": "50% 35%"
+    },
+    "birth_year": 1874,
+    "death_year": 1942,
+    "country": "Canadá",
+    "language": "Inglés",
+    "period": "Finales del siglo XIX y primera mitad del siglo XX",
+    "movement": "Literatura canadiense de comienzos del siglo XX; narrativa regional, novela de formación y literatura juvenil.",
+    "short_biography": "Lucy Maud Montgomery fue una novelista, poeta, periodista y diarista canadiense nacida en la Isla del Príncipe Eduardo. Su madre murió cuando ella tenía veintiún meses y fue criada por sus abuelos maternos en Cavendish, cuyo paisaje rural inspiraría gran parte de su obra. Estudió para ser maestra, trabajó en distintas escuelas y publicó poemas, relatos y artículos en periódicos antes de alcanzar el éxito internacional con Ana de las Tejas Verdes en 1908. A lo largo de su carrera escribió numerosas novelas, cuentos, poemas, diarios y varias continuaciones protagonizadas por Ana Shirley.",
+    "themes": [
+      "La imaginación",
+      "La infancia",
+      "La identidad",
+      "El deseo de pertenencia",
+      "La amistad",
+      "La familia elegida",
+      "La educación",
+      "La naturaleza",
+      "La vida rural",
+      "La condición femenina",
+      "La pérdida",
+      "La memoria",
+      "La transformación personal"
+    ],
+    "sources": [
+      "The Anne of Green Gables Manuscript, «The Life and Work of L. M. Montgomery», proyecto del Confederation Centre of the Arts, el L. M. Montgomery Institute y la Universidad de la Isla del Príncipe Eduardo.",
+      "Gobierno de Canadá, «Lucy Maud Montgomery»."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]
