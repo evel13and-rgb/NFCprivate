@@ -5930,6 +5930,8 @@ function appendAuthorPortrait(container, portrait) {
   if (!portrait?.path || !portrait?.alt) return;
   const figure = document.createElement('figure');
   figure.className = 'author-portrait';
+  const frame = document.createElement('div');
+  frame.className = 'author-portrait__frame';
   const image = document.createElement('img');
   image.className = 'author-portrait__image';
   image.src = `./${portrait.path}`;
@@ -5938,8 +5940,17 @@ function appendAuthorPortrait(container, portrait) {
   image.decoding = 'async';
   image.width = 800;
   image.height = 1000;
-  image.style.objectPosition = portrait.object_position || '50% 35%';
-  figure.appendChild(image);
+  const portraitPosition = typeof portrait.object_position === 'string'
+    && /^[0-9]{1,3}% [0-9]{1,3}%$/.test(portrait.object_position)
+    ? portrait.object_position
+    : '50% 38%';
+  image.style.setProperty('--portrait-fit', 'cover');
+  image.style.setProperty('--portrait-position', portraitPosition);
+  image.style.setProperty('--portrait-scale', '1');
+  image.style.setProperty('--portrait-translate-x', '0%');
+  image.style.setProperty('--portrait-translate-y', '0%');
+  frame.appendChild(image);
+  figure.appendChild(frame);
 
   const details = [portrait.caption, portrait.credit, portrait.rights].filter(hasProfileValue);
   if (details.length) {

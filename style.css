@@ -1810,29 +1810,43 @@ body.modal-open {
 }
 
 .author-portrait {
-  width: clamp(115px, 24%, 150px);
-  margin: 0.35rem auto 1.25rem;
+  width: clamp(130px, 30%, 170px);
+  max-width: 170px;
+  margin: 0.45rem auto 1.1rem;
+}
+
+.author-portrait__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid rgba(205, 179, 126, 0.14);
+  border-radius: 18px;
+  background: rgba(20, 18, 16, 0.38);
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.12);
 }
 
 .author-portrait__image {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 175px;
-  margin-inline: auto;
-  object-fit: contain;
-  border: 1px solid rgba(205, 179, 126, 0.12);
-  border-radius: 16px;
-  background: rgba(20, 18, 16, 0.34);
-  box-shadow: 0 0.45rem 1.35rem rgba(0, 0, 0, 0.13);
+  height: 100%;
+  object-fit: var(--portrait-fit, cover);
+  object-position: var(--portrait-position, 50% 38%);
+  transform:
+    translate(
+      var(--portrait-translate-x, 0%),
+      var(--portrait-translate-y, 0%)
+    )
+    scale(var(--portrait-scale, 1));
+  transform-origin: center center;
 }
 
 .author-portrait__caption {
-  margin-top: 0.45rem;
-  color: rgba(198, 190, 176, 0.44);
+  margin-top: 0.35rem;
+  color: rgba(198, 190, 176, 0.42);
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.58rem;
-  line-height: 1.45;
+  font-size: 0.56rem;
+  line-height: 1.35;
   text-align: center;
 }
 
@@ -2151,13 +2165,8 @@ body.night-fall .modal__close:focus-visible {
   }
 
   .author-portrait {
-    width: clamp(105px, 34vw, 135px);
-    margin-top: 0.2rem;
-    margin-bottom: 1.1rem;
-  }
-
-  .author-portrait__image {
-    max-height: 155px;
+    width: clamp(125px, 34vw, 155px);
+    max-width: 155px;
   }
 
   .profile-meta--secondary {
