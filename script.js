@@ -5292,6 +5292,7 @@ let reduceMotionQuery = null;
 let esNoche = isNightTime();
 let activeModal = null;
 let lastModalTrigger = null;
+let activePortraitLightbox = null;
 let latestServerWeatherState = null;
 let weatherRefreshTimerId = null;
 let sceneBackgroundController = null;
@@ -5926,12 +5927,130 @@ function appendProfileSection(container, title, value, options = {}) {
   container.appendChild(section);
 }
 
+function getPortraitLightboxFocusableElements(root) {
+  return [...root.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])')]
+    .filter(element => !element.hidden && !element.hasAttribute('disabled'));
+}
+
+function closePortraitLightbox() {
+  if (!activePortraitLightbox || activePortraitLightbox.closing) return;
+  const lightbox = activePortraitLightbox;
+  lightbox.closing = true;
+  lightbox.root.classList.add('is-closing');
+  lightbox.root.classList.remove('is-open');
+  document.removeEventListener('keydown', handlePortraitLightboxKeydown, true);
+
+  const finishClosing = () => {
+    if (activePortraitLightbox !== lightbox) return;
+    lightbox.root.remove();
+    if (activeModal?.root) activeModal.root.inert = false;
+    activePortraitLightbox = null;
+    if (typeof lightbox.trigger.focus === 'function') {
+      lightbox.trigger.focus({ preventScroll: true });
+    }
+  };
+
+  window.setTimeout(finishClosing, prefersReducedMotion ? 120 : 320);
+}
+
+function handlePortraitLightboxKeydown(event) {
+  if (!activePortraitLightbox) return;
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    event.stopPropagation();
+    closePortraitLightbox();
+    return;
+  }
+  if (event.key !== 'Tab') return;
+
+  const focusable = getPortraitLightboxFocusableElements(activePortraitLightbox.root);
+  if (!focusable.length) {
+    event.preventDefault();
+    return;
+  }
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+}
+
+function openPortraitLightbox(portrait, trigger) {
+  if (activePortraitLightbox || !portrait?.path || !portrait?.alt) return;
+
+  const root = document.createElement('div');
+  root.className = 'portrait-lightbox';
+  root.setAttribute('role', 'dialog');
+  root.setAttribute('aria-modal', 'true');
+  root.setAttribute('aria-label', portrait.alt);
+
+  const backdrop = document.createElement('div');
+  backdrop.className = 'portrait-lightbox__backdrop';
+  backdrop.addEventListener('click', closePortraitLightbox);
+
+  const figure = document.createElement('figure');
+  figure.className = 'portrait-lightbox__figure';
+
+  const image = document.createElement('img');
+  image.className = 'portrait-lightbox__image';
+  image.src = `./${portrait.path}`;
+  image.alt = portrait.alt;
+  image.decoding = 'async';
+  figure.appendChild(image);
+
+  const details = [portrait.caption, portrait.credit, portrait.rights].filter(hasProfileValue);
+  if (details.length || portrait.source_url) {
+    const caption = document.createElement('figcaption');
+    caption.className = 'portrait-lightbox__caption';
+    caption.id = 'portrait-lightbox-caption';
+    if (details.length) {
+      const text = document.createElement('span');
+      text.textContent = details.join(' · ');
+      caption.appendChild(text);
+    }
+    if (portrait.source_url) {
+      const source = document.createElement('a');
+      source.href = portrait.source_url;
+      source.target = '_blank';
+      source.rel = 'noopener noreferrer';
+      source.textContent = 'Ver fuente';
+      caption.appendChild(source);
+    }
+    figure.appendChild(caption);
+    root.setAttribute('aria-describedby', caption.id);
+  }
+
+  const close = document.createElement('button');
+  close.className = 'portrait-lightbox__close';
+  close.type = 'button';
+  close.setAttribute('aria-label', 'Cerrar retrato ampliado');
+  close.textContent = '×';
+  close.addEventListener('click', closePortraitLightbox);
+
+  root.append(backdrop, figure, close);
+  document.body.appendChild(root);
+  if (activeModal?.root) activeModal.root.inert = true;
+  activePortraitLightbox = { root, trigger, closing: false };
+  document.addEventListener('keydown', handlePortraitLightboxKeydown, true);
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => root.classList.add('is-open'));
+  });
+  close.focus({ preventScroll: true });
+}
+
 function appendAuthorPortrait(container, portrait) {
   if (!portrait?.path || !portrait?.alt) return;
   const figure = document.createElement('figure');
   figure.className = 'author-portrait';
-  const frame = document.createElement('div');
+  const frame = document.createElement('button');
   frame.className = 'author-portrait__frame';
+  frame.type = 'button';
+  frame.setAttribute('aria-label', `Ampliar ${portrait.alt.toLocaleLowerCase('es')}`);
+  frame.addEventListener('click', () => openPortraitLightbox(portrait, frame));
   const image = document.createElement('img');
   image.className = 'author-portrait__image';
   image.src = `./${portrait.path}`;
@@ -6078,6 +6197,7 @@ function closeActiveModal() {
 }
 
 function handleEscapeKey(event) {
+  if (activePortraitLightbox) return;
   if (event.key === 'Escape') {
     closeActiveModal();
   }
