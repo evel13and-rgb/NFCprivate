@@ -6042,6 +6042,19 @@ function openPortraitLightbox(portrait, trigger) {
   close.focus({ preventScroll: true });
 }
 
+function getVisiblePortraitAttribution(portrait) {
+  const details = [portrait?.caption, portrait?.credit].filter(hasProfileValue);
+  return details.filter((detail, index) => {
+    const normalizedDetail = detail.trim().toLocaleLowerCase('es');
+    return !details.slice(0, index).some(previous => {
+      const normalizedPrevious = previous.trim().toLocaleLowerCase('es');
+      return normalizedPrevious === normalizedDetail
+        || normalizedPrevious.includes(normalizedDetail)
+        || normalizedDetail.includes(normalizedPrevious);
+    });
+  });
+}
+
 function appendAuthorPortrait(container, portrait) {
   if (!portrait?.path || !portrait?.alt) return;
   const figure = document.createElement('figure');
@@ -6071,7 +6084,7 @@ function appendAuthorPortrait(container, portrait) {
   frame.appendChild(image);
   figure.appendChild(frame);
 
-  const details = [portrait.caption, portrait.credit, portrait.rights].filter(hasProfileValue);
+  const details = getVisiblePortraitAttribution(portrait);
   if (details.length) {
     const caption = document.createElement('figcaption');
     caption.className = 'author-portrait__caption';
