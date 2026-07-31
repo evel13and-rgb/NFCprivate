@@ -757,5 +757,50 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-frances-hodgson-burnett",
+    "name": "Frances Hodgson Burnett",
+    "portrait": {
+      "path": "public/images/authors/frances-hodgson-burnett.webp",
+      "alt": "Retrato de Frances Hodgson Burnett",
+      "caption": "Frances Hodgson Burnett, 1890",
+      "credit": "Frances Benjamin Johnston; Library of Congress",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frances_(Hodgson)_Burnett,_1849-1924_LCCN2002697460.jpg",
+      "rights": "Dominio público en el país de origen y en Estados Unidos; Public Domain Mark 1.0",
+      "object_position": "50% 32%"
+    },
+    "birth_year": 1849,
+    "death_year": 1924,
+    "country": "Reino Unido / Estados Unidos",
+    "language": "Inglés",
+    "period": "Segunda mitad del siglo XIX y comienzos del siglo XX; periodos victoriano y eduardiano",
+    "movement": "Narrativa victoriana y eduardiana; literatura infantil, novela doméstica y social, realismo sentimental y relato de formación. Su producción combina elementos realistas con imaginación, simbolismo, espiritualidad y una intensa presencia de la naturaleza.",
+    "short_biography": "Frances Hodgson Burnett fue una novelista y dramaturga angloestadounidense. Nació en Manchester en una familia de comerciantes relativamente acomodada, pero la muerte de su padre provocó un progresivo deterioro económico. En 1865, cuando tenía quince años, emigró con su familia a Tennessee, poco después de la Guerra de Secesión estadounidense. La precariedad la llevó a comenzar a publicar relatos en revistas para contribuir al mantenimiento familiar, convirtiendo la escritura en una profesión y en una vía de independencia económica.\n\nLlegó a ser una escritora muy conocida y comercialmente exitosa, autora de más de cuarenta novelas y obras teatrales. Aunque actualmente se la recuerda sobre todo por sus libros infantiles, una parte considerable de su producción estuvo dirigida a lectores adultos y abordó el matrimonio, la posición social, la pobreza, la autonomía femenina y las diferencias entre las sociedades británica y estadounidense.\n\nSu experiencia transatlántica aparece en sus historias mediante personajes desplazados entre países y clases sociales, niños privados de un hogar estable y espacios domésticos que pueden funcionar tanto como lugares de encierro como de transformación. Su escritura concede una importancia especial a la imaginación y a la capacidad infantil para modificar el mundo adulto. Los jardines, las casas, los objetos y el paisaje no son simples escenarios: reflejan el estado emocional de los personajes y participan en su evolución.",
+    "themes": [
+      "La infancia",
+      "La orfandad",
+      "La búsqueda de un hogar",
+      "La imaginación",
+      "La naturaleza",
+      "La transformación personal",
+      "La soledad",
+      "La enfermedad",
+      "El duelo",
+      "La amistad",
+      "La familia elegida",
+      "Las diferencias de clase",
+      "La independencia",
+      "La educación emocional",
+      "La recuperación de aquello que parecía perdido"
+    ],
+    "sources": [
+      "Library of America, «The Children’s Literature of Frances Hodgson Burnett: Values That We Need and Can Relate to Today».",
+      "Library of Congress, materiales bibliográficos y documentales de Frances Hodgson Burnett.",
+      "Project Gutenberg, textos originales de Frances Hodgson Burnett.",
+      "Gretchen Holbrook Gerzina, estudios biográficos y críticos sobre Burnett."
+    ],
+    "profile_status": "draft",
+    "verification_status": "pending"
   }
 ]

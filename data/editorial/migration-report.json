@@ -1,11 +1,11 @@
 {
-  "total_quotes": 549,
-  "detected_works": 26,
-  "inferred_authors": 24,
+  "total_quotes": 572,
+  "detected_works": 27,
+  "inferred_authors": 25,
   "poems": 26,
-  "prose": 523,
-  "quotes_with_line_breaks": 384,
-  "highlights_present": 524,
+  "prose": 546,
+  "quotes_with_line_breaks": 400,
+  "highlights_present": 547,
   "highlights_absent": 25,
   "highlights_not_literal": [
     {
@@ -45,583 +45,591 @@
       "highlight": "Era un centinela perpetuo en su rincón."
     },
     {
-      "legacy_index": 77,
-      "highlight": "Todo lo sentía en un santo remanso de silencio."
-    },
-    {
-      "legacy_index": 78,
-      "highlight": "La noche era inmensa, clara, de paz santísima."
-    },
-    {
-      "legacy_index": 79,
-      "highlight": "Siempre creo que va a sucederme algo grande y no me sucede nada."
-    },
-    {
-      "legacy_index": 80,
-      "highlight": "Se me figura que vamos muy lejos, muy lejos."
-    },
-    {
-      "legacy_index": 81,
-      "highlight": "Yo siempre codicio estar donde no estoy."
-    },
-    {
-      "legacy_index": 82,
-      "highlight": "Los faros son pedazos de humanidad desamparada."
-    },
-    {
-      "legacy_index": 83,
-      "highlight": "El mar dejaba un hondo rugido de espumas que parecían hechas de luciérnagas."
-    },
-    {
-      "legacy_index": 84,
-      "highlight": "En cada faceta de luz de las aguas miraba una cabeza de mujer ahogada."
-    },
-    {
-      "legacy_index": 85,
-      "highlight": "Le eran amigas a su corazón."
-    },
-    {
-      "legacy_index": 86,
-      "highlight": "Estoy hechizado, estoy poseído de la fragancia de sus palabras."
-    },
-    {
-      "legacy_index": 87,
-      "highlight": "Usted huele a naturaleza gloriosa."
-    },
-    {
-      "legacy_index": 88,
-      "highlight": "Su carne y su alma daban la sensación y fragancia de la fruta en agraz."
-    },
-    {
-      "legacy_index": 89,
-      "highlight": "Su alma era como una delgada ánfora llena de melancolías."
-    },
-    {
       "legacy_index": 91,
-      "highlight": "Padecía la visión de la muerte en los vivos."
-    },
-    {
-      "legacy_index": 92,
-      "highlight": "Corazón aventurero, ascua de ideales."
-    },
-    {
-      "legacy_index": 93,
-      "highlight": "La luna me ha sacado de casa."
-    },
-    {
-      "legacy_index": 95,
-      "highlight": "Como si el cielo fuese un mar que nos sorbiera."
-    },
-    {
-      "legacy_index": 96,
-      "highlight": "Abrazaba un alma desnuda, alma hecha de luna y de jazmines."
+      "highlight": "¿podría tener un poco de tierra?"
     },
     {
       "legacy_index": 98,
-      "highlight": "Los dos sollozaron."
+      "highlight": "los meros pensamientos son tan poderosos como las baterías eléctricas"
     },
     {
-      "legacy_index": 99,
-      "highlight": "Cuán inagotable es Amor."
+      "legacy_index": 100,
+      "highlight": "Todo lo sentía en un santo remanso de silencio."
     },
     {
       "legacy_index": 101,
-      "highlight": "Dos vidas hundidas en el hastío de la nada de emociones."
+      "highlight": "La noche era inmensa, clara, de paz santísima."
     },
     {
       "legacy_index": 102,
-      "highlight": "La quietud y suavidad del crepúsculo todo emblandeció a Félix."
+      "highlight": "Siempre creo que va a sucederme algo grande y no me sucede nada."
     },
     {
       "legacy_index": 103,
-      "highlight": "Es mi compaña. Ella y los señores me quedan en el mundo."
+      "highlight": "Se me figura que vamos muy lejos, muy lejos."
     },
     {
       "legacy_index": 104,
-      "highlight": "Asomaba la mujer en los ojos de su prima."
+      "highlight": "Yo siempre codicio estar donde no estoy."
+    },
+    {
+      "legacy_index": 105,
+      "highlight": "Los faros son pedazos de humanidad desamparada."
+    },
+    {
+      "legacy_index": 106,
+      "highlight": "El mar dejaba un hondo rugido de espumas que parecían hechas de luciérnagas."
+    },
+    {
+      "legacy_index": 107,
+      "highlight": "En cada faceta de luz de las aguas miraba una cabeza de mujer ahogada."
     },
     {
       "legacy_index": 108,
-      "highlight": "Mientras yo la buscaba ella me ha salido al paso."
+      "highlight": "Le eran amigas a su corazón."
     },
     {
       "legacy_index": 109,
-      "highlight": "Nos llamamos como nos llaman."
+      "highlight": "Estoy hechizado, estoy poseído de la fragancia de sus palabras."
     },
     {
-      "legacy_index": 117,
-      "highlight": "Muchas veces se me ha ocurrido pensar, Orfeo, que yo no soy."
+      "legacy_index": 110,
+      "highlight": "Usted huele a naturaleza gloriosa."
+    },
+    {
+      "legacy_index": 111,
+      "highlight": "Su carne y su alma daban la sensación y fragancia de la fruta en agraz."
+    },
+    {
+      "legacy_index": 112,
+      "highlight": "Su alma era como una delgada ánfora llena de melancolías."
+    },
+    {
+      "legacy_index": 114,
+      "highlight": "Padecía la visión de la muerte en los vivos."
+    },
+    {
+      "legacy_index": 115,
+      "highlight": "Corazón aventurero, ascua de ideales."
+    },
+    {
+      "legacy_index": 116,
+      "highlight": "La luna me ha sacado de casa."
     },
     {
       "legacy_index": 118,
-      "highlight": "Este día, este eterno día que pasa... deslizándose en niebla de aburrimiento."
+      "highlight": "Como si el cielo fuese un mar que nos sorbiera."
     },
     {
-      "legacy_index": 120,
-      "highlight": "El alma misma ¿qué es sino amor, sino dolor encarnado?"
+      "legacy_index": 119,
+      "highlight": "Abrazaba un alma desnuda, alma hecha de luna y de jazmines."
     },
     {
       "legacy_index": 121,
-      "highlight": "El más triste y el más dulce de los dolores: el de vivir."
+      "highlight": "Los dos sollozaron."
     },
     {
       "legacy_index": 122,
-      "highlight": "Volvió a ver a su madre, yendo y viniendo sin ruido, siempre de negro."
-    },
-    {
-      "legacy_index": 123,
-      "highlight": "Enseña mucho la vida, y más la muerte."
+      "highlight": "Cuán inagotable es Amor."
     },
     {
       "legacy_index": 124,
-      "highlight": "Sólo se aprende a vivir viviendo."
+      "highlight": "Dos vidas hundidas en el hastío de la nada de emociones."
     },
     {
       "legacy_index": 125,
-      "highlight": "En el agua muerta, de una brillantez de estaño, permanecía inmóvil la barca-correo."
+      "highlight": "La quietud y suavidad del crepúsculo todo emblandeció a Félix."
+    },
+    {
+      "legacy_index": 126,
+      "highlight": "Es mi compaña. Ella y los señores me quedan en el mundo."
     },
     {
       "legacy_index": 127,
-      "highlight": "Las grandes velas triangulares se deslizaban sobre el verde de los campos, en el silencio de la tarde, como fantasmas que caminasen en tierra firme."
+      "highlight": "Asomaba la mujer en los ojos de su prima."
     },
     {
-      "legacy_index": 128,
-      "highlight": "Era el _lluent_, la verdadera Albufera, el lago libre."
-    },
-    {
-      "legacy_index": 129,
-      "highlight": "Las nubes parecían rodar por el fondo del lago como vedijas de blanca lana."
-    },
-    {
-      "legacy_index": 130,
-      "highlight": "Los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados."
+      "legacy_index": 131,
+      "highlight": "Mientras yo la buscaba ella me ha salido al paso."
     },
     {
       "legacy_index": 132,
-      "highlight": "Con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_."
+      "highlight": "Nos llamamos como nos llaman."
     },
     {
-      "legacy_index": 133,
-      "highlight": "Neleta, que crecía en la miseria como una flor rara."
+      "legacy_index": 140,
+      "highlight": "Muchas veces se me ha ocurrido pensar, Orfeo, que yo no soy."
     },
     {
-      "legacy_index": 134,
-      "highlight": "Esta selva acuática formando guirnaldas."
-    },
-    {
-      "legacy_index": 135,
-      "highlight": "La naturaleza y las letras parecen tener una antipatía natural."
-    },
-    {
-      "legacy_index": 136,
-      "highlight": "Sentir bajo él la espina dorsal de la tierra."
-    },
-    {
-      "legacy_index": 137,
-      "highlight": "Una figura que, fuera de muchacho o de mujer, lo llenó de la más alta curiosidad."
-    },
-    {
-      "legacy_index": 138,
-      "highlight": "No sabía si la había oído, saboreado, visto, o las tres cosas a la vez."
+      "legacy_index": 141,
+      "highlight": "Este día, este eterno día que pasa... deslizándose en niebla de aburrimiento."
     },
     {
       "legacy_index": 143,
-      "highlight": "Una vez que el mal de leer se apodera del organismo, lo deja expuesto al azote de escribir."
+      "highlight": "El alma misma ¿qué es sino amor, sino dolor encarnado?"
+    },
+    {
+      "legacy_index": 144,
+      "highlight": "El más triste y el más dulce de los dolores: el de vivir."
     },
     {
       "legacy_index": 145,
-      "highlight": "Orlando se miró de arriba abajo en un largo espejo sin mostrar señal alguna de turbación."
+      "highlight": "Volvió a ver a su madre, yendo y viniendo sin ruido, siempre de negro."
     },
     {
       "legacy_index": 146,
-      "highlight": "El cambio de sexo no alteró en absoluto su identidad."
+      "highlight": "Enseña mucho la vida, y más la muerte."
     },
     {
       "legacy_index": 147,
-      "highlight": "El placer de no tener documentos que sellar ni firmar era suficiente."
+      "highlight": "Sólo se aprende a vivir viviendo."
     },
     {
       "legacy_index": 148,
-      "highlight": "La ropa cambia nuestra visión del mundo y la visión que el mundo tiene de nosotros."
+      "highlight": "En el agua muerta, de una brillantez de estaño, permanecía inmóvil la barca-correo."
     },
     {
-      "legacy_index": 149,
-      "highlight": "Es la ropa la que nos lleva a nosotros, y no nosotros a ella."
+      "legacy_index": 150,
+      "highlight": "Las grandes velas triangulares se deslizaban sobre el verde de los campos, en el silencio de la tarde, como fantasmas que caminasen en tierra firme."
+    },
+    {
+      "legacy_index": 151,
+      "highlight": "Era el _lluent_, la verdadera Albufera, el lago libre."
+    },
+    {
+      "legacy_index": 152,
+      "highlight": "Las nubes parecían rodar por el fondo del lago como vedijas de blanca lana."
     },
     {
       "legacy_index": 153,
-      "highlight": "Escribiré lo que disfruto escribiendo."
-    },
-    {
-      "legacy_index": 154,
-      "highlight": "La sociedad lo es todo y no es nada."
+      "highlight": "Los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados."
     },
     {
       "legacy_index": 155,
-      "highlight": "Los hombres sentían el frío en el corazón; la humedad en la mente."
+      "highlight": "Con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_."
     },
     {
       "legacy_index": 156,
-      "highlight": "La verdadera duración de una vida siempre es materia de disputa."
+      "highlight": "Neleta, que crecía en la miseria como una flor rara."
     },
     {
       "legacy_index": 157,
-      "highlight": "Hay setenta y seis tiempos distintos latiendo a la vez en la mente."
+      "highlight": "Esta selva acuática formando guirnaldas."
     },
     {
       "legacy_index": 158,
-      "highlight": "El yo verdadero está compuesto por todos los yos que podemos llegar a ser."
+      "highlight": "La naturaleza y las letras parecen tener una antipatía natural."
     },
     {
       "legacy_index": 159,
+      "highlight": "Sentir bajo él la espina dorsal de la tierra."
+    },
+    {
+      "legacy_index": 160,
+      "highlight": "Una figura que, fuera de muchacho o de mujer, lo llenó de la más alta curiosidad."
+    },
+    {
+      "legacy_index": 161,
+      "highlight": "No sabía si la había oído, saboreado, visto, o las tres cosas a la vez."
+    },
+    {
+      "legacy_index": 166,
+      "highlight": "Una vez que el mal de leer se apodera del organismo, lo deja expuesto al azote de escribir."
+    },
+    {
+      "legacy_index": 168,
+      "highlight": "Orlando se miró de arriba abajo en un largo espejo sin mostrar señal alguna de turbación."
+    },
+    {
+      "legacy_index": 169,
+      "highlight": "El cambio de sexo no alteró en absoluto su identidad."
+    },
+    {
+      "legacy_index": 170,
+      "highlight": "El placer de no tener documentos que sellar ni firmar era suficiente."
+    },
+    {
+      "legacy_index": 171,
+      "highlight": "La ropa cambia nuestra visión del mundo y la visión que el mundo tiene de nosotros."
+    },
+    {
+      "legacy_index": 172,
+      "highlight": "Es la ropa la que nos lleva a nosotros, y no nosotros a ella."
+    },
+    {
+      "legacy_index": 176,
+      "highlight": "Escribiré lo que disfruto escribiendo."
+    },
+    {
+      "legacy_index": 177,
+      "highlight": "La sociedad lo es todo y no es nada."
+    },
+    {
+      "legacy_index": 178,
+      "highlight": "Los hombres sentían el frío en el corazón; la humedad en la mente."
+    },
+    {
+      "legacy_index": 179,
+      "highlight": "La verdadera duración de una vida siempre es materia de disputa."
+    },
+    {
+      "legacy_index": 180,
+      "highlight": "Hay setenta y seis tiempos distintos latiendo a la vez en la mente."
+    },
+    {
+      "legacy_index": 181,
+      "highlight": "El yo verdadero está compuesto por todos los yos que podemos llegar a ser."
+    },
+    {
+      "legacy_index": 182,
       "highlight": "Siempre le arrojo palabras como redes."
     },
     {
-      "legacy_index": 193,
+      "legacy_index": 216,
       "highlight": "Este rayo ni cesa ni se agota."
     },
     {
-      "legacy_index": 194,
+      "legacy_index": 217,
       "highlight": "Un girasol sumiso y amarillo."
     },
     {
-      "legacy_index": 195,
+      "legacy_index": 218,
       "highlight": "Se me durmió la sangre."
     },
     {
-      "legacy_index": 196,
+      "legacy_index": 219,
       "highlight": "Pena es mi paz."
     },
     {
-      "legacy_index": 197,
+      "legacy_index": 220,
       "highlight": "Entre pena y pena sonriendo."
     },
     {
-      "legacy_index": 198,
+      "legacy_index": 221,
       "highlight": "Me muero sobre mayo."
     },
     {
-      "legacy_index": 199,
+      "legacy_index": 222,
       "highlight": "Me voy, pero me quedo."
     },
     {
-      "legacy_index": 200,
+      "legacy_index": 223,
       "highlight": "Un enterrado vivo por el llanto."
     },
     {
-      "legacy_index": 201,
+      "legacy_index": 224,
       "highlight": "Recuerdo y no recuerdo."
     },
     {
-      "legacy_index": 202,
+      "legacy_index": 225,
       "highlight": "Me crezco en el castigo."
     },
     {
-      "legacy_index": 203,
+      "legacy_index": 226,
       "highlight": "Me duele hasta el aliento."
     },
     {
-      "legacy_index": 204,
+      "legacy_index": 227,
       "highlight": "No perdono a la muerte."
     },
     {
-      "legacy_index": 205,
+      "legacy_index": 228,
       "highlight": "Escarbar la tierra con los dientes."
     },
     {
-      "legacy_index": 206,
+      "legacy_index": 229,
       "highlight": "Comeréis con apetito."
     },
     {
-      "legacy_index": 207,
+      "legacy_index": 230,
       "highlight": "La vejez moribunda, la alegre juventud encerrada."
     },
     {
-      "legacy_index": 208,
+      "legacy_index": 231,
       "highlight": "Un decreto de vida o de muerte."
     },
     {
-      "legacy_index": 209,
+      "legacy_index": 232,
       "highlight": "La virtud no se divide."
     },
     {
-      "legacy_index": 210,
+      "legacy_index": 233,
       "highlight": "Un crimen que se olvida."
     },
     {
-      "legacy_index": 211,
+      "legacy_index": 234,
       "highlight": "Querer ser grande o rico."
     },
     {
-      "legacy_index": 212,
+      "legacy_index": 235,
       "highlight": "Yo vivo de los placeres de ellas."
     },
     {
-      "legacy_index": 213,
+      "legacy_index": 236,
       "highlight": "No vivirá dos días."
     },
     {
-      "legacy_index": 214,
+      "legacy_index": 237,
       "highlight": "Toda la oración fúnebre."
     },
     {
-      "legacy_index": 215,
+      "legacy_index": 238,
       "highlight": "Buscó vanamente a las dos hijas."
     },
     {
-      "legacy_index": 216,
+      "legacy_index": 239,
       "highlight": "La religión no es bastante rica."
     },
     {
-      "legacy_index": 217,
+      "legacy_index": 240,
       "highlight": "Ahora todo para los dos."
     },
     {
-      "legacy_index": 218,
+      "legacy_index": 241,
       "highlight": "El secreto de mi propia alma."
     },
     {
-      "legacy_index": 219,
+      "legacy_index": 242,
       "highlight": "Un matiz de crueldad en la boca."
     },
     {
-      "legacy_index": 220,
+      "legacy_index": 243,
       "highlight": "La ruina que los hombres causan en sus propias almas."
     },
     {
-      "legacy_index": 221,
+      "legacy_index": 244,
       "highlight": "La corrupción de su propia alma."
     },
     {
-      "legacy_index": 222,
+      "legacy_index": 245,
       "highlight": "El cielo y el infierno."
     },
     {
-      "legacy_index": 224,
+      "legacy_index": 247,
       "highlight": "Había sido su conciencia."
     },
     {
-      "legacy_index": 225,
+      "legacy_index": 248,
       "highlight": "Influir es darle a otro la propia alma."
     },
     {
-      "legacy_index": 226,
+      "legacy_index": 249,
       "highlight": "Curar el alma mediante los sentidos."
     },
     {
-      "legacy_index": 227,
+      "legacy_index": 250,
       "highlight": "Daría mi alma por ello."
     },
     {
-      "legacy_index": 228,
+      "legacy_index": 251,
       "highlight": "No conocía más que sombras."
     },
     {
-      "legacy_index": 229,
+      "legacy_index": 252,
       "highlight": "Hay un lujo en culparse a uno mismo."
     },
     {
-      "legacy_index": 230,
+      "legacy_index": 253,
       "highlight": "El pecado se escribe en el rostro."
     },
     {
-      "legacy_index": 231,
+      "legacy_index": 254,
       "highlight": "El efecto que ejerce sobre sus amigos."
     },
     {
-      "legacy_index": 233,
+      "legacy_index": 256,
       "highlight": "El mal como forma de realizar la belleza."
     },
     {
-      "legacy_index": 234,
+      "legacy_index": 257,
       "highlight": "La tragedia de la vejez."
     },
     {
-      "legacy_index": 237,
+      "legacy_index": 260,
       "highlight": "Su belleza no había sido más que una máscara."
     },
     {
-      "legacy_index": 238,
+      "legacy_index": 261,
       "highlight": "La muerte viva de su propia alma."
     },
     {
-      "legacy_index": 257,
+      "legacy_index": 280,
       "highlight": "No quiero curarme por puro despecho."
     },
     {
-      "legacy_index": 258,
+      "legacy_index": 281,
       "highlight": "Tampoco supe hacerme nada."
     },
     {
-      "legacy_index": 259,
+      "legacy_index": 282,
       "highlight": "Ser demasiado consciente es una enfermedad."
     },
     {
-      "legacy_index": 260,
+      "legacy_index": 283,
       "highlight": "Más profundamente descendía a mi cieno."
     },
     {
-      "legacy_index": 261,
+      "legacy_index": 284,
       "highlight": "La amargura terminaba convirtiéndose en una dulzura vergonzosa."
     },
     {
-      "legacy_index": 262,
+      "legacy_index": 285,
       "highlight": "Hundidlo en felicidad hasta la coronilla."
     },
     {
-      "legacy_index": 263,
+      "legacy_index": 286,
       "highlight": "Los hombres siguen siendo hombres y no teclas de piano."
     },
     {
-      "legacy_index": 264,
+      "legacy_index": 287,
       "highlight": "Dos por dos son cuatro ya no es vida, señores, sino el principio de la muerte."
     },
     {
-      "legacy_index": 265,
+      "legacy_index": 288,
       "highlight": "Defiendo… mi capricho."
     },
     {
-      "legacy_index": 266,
+      "legacy_index": 289,
       "highlight": "No tomaría el gallinero por un palacio."
     },
     {
-      "legacy_index": 268,
+      "legacy_index": 291,
       "highlight": "Solitaria hasta el salvajismo."
     },
     {
-      "legacy_index": 269,
+      "legacy_index": 292,
       "highlight": "Atribuía mentalmente mi propia mirada a cada uno de los demás."
     },
     {
-      "legacy_index": 270,
+      "legacy_index": 293,
       "highlight": "Lo comprendía plenamente, plenamente, y aun así continuaba caminando."
     },
     {
-      "legacy_index": 271,
+      "legacy_index": 294,
       "highlight": "La idea absurda, repugnante, semejante a una araña."
     },
     {
-      "legacy_index": 274,
+      "legacy_index": 297,
       "highlight": "Algo no moría dentro de mí."
     },
     {
-      "legacy_index": 275,
+      "legacy_index": 298,
       "highlight": "Yo, por ejemplo, salvo a Liza."
     },
     {
-      "legacy_index": 276,
+      "legacy_index": 299,
       "highlight": "Pagaría muy caro por todo aquello."
     },
     {
-      "legacy_index": 278,
+      "legacy_index": 301,
       "highlight": "Amar significaba para mí tiranizar."
     },
     {
-      "legacy_index": 279,
+      "legacy_index": 302,
       "highlight": "La «vida viva», por falta de costumbre, me aplastó."
     },
     {
-      "legacy_index": 280,
+      "legacy_index": 303,
       "highlight": "Todos hemos perdido la costumbre de vivir."
     },
     {
-      "legacy_index": 281,
+      "legacy_index": 304,
       "highlight": "Somos nacidos muertos."
     },
     {
-      "legacy_index": 282,
+      "legacy_index": 305,
       "highlight": "Aquí tengo mis raíces."
     },
     {
-      "legacy_index": 283,
+      "legacy_index": 306,
       "highlight": "El aire invisible está lleno de Potencias desconocidas."
     },
     {
-      "legacy_index": 285,
+      "legacy_index": 308,
       "highlight": "Espero el sueño como se esperaría al verdugo."
     },
     {
-      "legacy_index": 286,
+      "legacy_index": 309,
       "highlight": "Quiero gritar —no puedo—."
     },
     {
-      "legacy_index": 287,
+      "legacy_index": 310,
       "highlight": "Asustado por la profunda soledad."
     },
     {
-      "legacy_index": 288,
+      "legacy_index": 311,
       "highlight": "¿Puede verlo? Existe, sin embargo."
     },
     {
-      "legacy_index": 289,
+      "legacy_index": 312,
       "highlight": "Bebía mi vida entre mis labios."
     },
     {
-      "legacy_index": 290,
+      "legacy_index": 313,
       "highlight": "Vivía, sin saberlo, esa doble vida misteriosa."
     },
     {
-      "legacy_index": 292,
+      "legacy_index": 315,
       "highlight": "Poblamos el vacío de fantasmas."
     },
     {
-      "legacy_index": 295,
+      "legacy_index": 318,
       "highlight": "Suspendida en el aire transparente, sola, inmóvil."
     },
     {
-      "legacy_index": 296,
+      "legacy_index": 319,
       "highlight": "Un alucinado que razona."
     },
     {
-      "legacy_index": 297,
+      "legacy_index": 320,
       "highlight": "El océano espantoso y furioso de la demencia."
     },
     {
-      "legacy_index": 298,
+      "legacy_index": 321,
       "highlight": "Alguien quiere por mí; y yo obedezco."
     },
     {
-      "legacy_index": 299,
+      "legacy_index": 322,
       "highlight": "Ya no soy nada dentro de mí."
     },
     {
-      "legacy_index": 300,
+      "legacy_index": 323,
       "highlight": "Es preciso, es preciso, es preciso."
     },
     {
-      "legacy_index": 301,
+      "legacy_index": 324,
       "highlight": "Como otra alma parásita y dominadora."
     },
     {
-      "legacy_index": 303,
+      "legacy_index": 326,
       "highlight": "Vagos fantasmas nacidos del miedo."
     },
     {
-      "legacy_index": 304,
+      "legacy_index": 327,
       "highlight": "Mi sillón estaba vacío, parecía vacío."
     },
     {
-      "legacy_index": 305,
+      "legacy_index": 328,
       "highlight": "Había tenido miedo, ¡miedo de mí, él!"
     },
     {
-      "legacy_index": 306,
+      "legacy_index": 329,
       "highlight": "Su cuerpo imperceptible había devorado mi reflejo."
     },
     {
-      "legacy_index": 307,
+      "legacy_index": 330,
       "highlight": "El Ser nuevo, el nuevo amo, el Horla."
     },
     {
-      "legacy_index": 308,
+      "legacy_index": 331,
       "highlight": "¡Tendré que matarme yo!"
     },
     {
-      "legacy_index": 331,
+      "legacy_index": 354,
       "highlight": "No deseaba la inmortalidad."
     },
     {
-      "legacy_index": 467,
+      "legacy_index": 490,
       "highlight": "ahora no entraba nadie"
     }
   ],

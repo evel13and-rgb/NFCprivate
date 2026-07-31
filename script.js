@@ -1029,6 +1029,181 @@ Enviadas con amor, con auxilio, con promesas, corrían hacia la nada.
   }
 ];
 
+const EL_JARDIN_SECRETO_QUOTES = [
+  {
+    t: `Había empezado a preguntarse por qué nunca había parecido pertenecer a nadie, ni siquiera cuando sus padres estaban vivos. Los demás niños parecían pertenecer a sus padres y a sus madres, pero ella nunca había parecido ser realmente la niña de nadie. Había tenido criados, comida y ropa, pero nadie le había prestado atención.
+
+No sabía que aquello se debía a que era una niña desagradable; pero, naturalmente, tampoco sabía que lo era. A menudo pensaba que los demás eran desagradables, pero nunca supo que ella también lo era.`,
+    highlight: "la niña de nadie",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Sí que me gusta —respondió Martha alegremente—. No está desnudo. Está cubierto de cosas que crecen y huelen bien. Es precioso en primavera y en verano, cuando florecen la aulaga, la retama y el brezo. Huele a miel, hay muchísimo aire fresco, el cielo parece muy alto y las abejas y las alondras hacen un ruido hermoso, zumbando y cantando. Yo no viviría lejos del páramo por nada del mundo.`,
+    highlight: "el cielo parece muy alto",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Se detuvo y lo escuchó; y, de algún modo, aquel silbido pequeño, alegre y amistoso le produjo una sensación agradable. Hasta una niña desagradable puede sentirse sola, y la enorme casa cerrada, el páramo desnudo y los grandes jardines vacíos habían hecho que aquella niña sintiera que no quedaba nadie en el mundo salvo ella.
+
+Aunque era «Mary, Mary, siempre al contrario», estaba desolada; y el pajarillo de pecho encendido hizo aparecer en su rostro agrio algo que casi era una sonrisa.`,
+    highlight: "Hasta una niña desagradable puede sentirse sola",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Él no me querría —dijo Mary con su rígida y fría vocecilla—. Nadie me quiere.
+
+Martha volvió a adoptar una expresión pensativa.
+
+—¿Y tú cómo te gustas a ti misma? —preguntó, como si sintiera verdadera curiosidad.
+
+Mary vaciló un momento y lo pensó.
+
+—Nada, en realidad —respondió—. Pero nunca se me había ocurrido.`,
+    highlight: "¿Y tú cómo te gustas a ti misma?",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Yo no tengo ningún amigo —dijo Mary—. Nunca lo he tenido. Mi aya no me quería y nunca jugué con nadie.
+
+Ben Weatherstaff era un hombre del páramo de Yorkshire, y allí se acostumbraba a decir lo que se pensaba con franca brusquedad.
+
+—Tú y yo nos parecemos bastante —dijo—. Nos cortaron de la misma tela. Ninguno de los dos es hermoso y ambos somos tan agrios como parecemos. Y apostaría a que tenemos el mismo mal genio.`,
+    highlight: "Nos cortaron de la misma tela",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Mary se acercó sigilosamente para mirar. Los ojos brillantes pertenecían a una ratoncilla gris que había roído un agujero en el cojín y construido allí un nido confortable. Seis ratoncillos dormían acurrucados junto a ella.
+
+Aunque no hubiera nadie más vivo en las cien habitaciones, había siete ratones que no parecían sentirse solos en absoluto.`,
+    highlight: "siete ratones que no parecían sentirse solos",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—¿Querrías hacerte amigo mío? —le dijo al petirrojo, como si hablara con una persona—. ¿Querrías?
+
+No lo dijo con su vocecilla dura ni con su tono autoritario de la India, sino con una voz tan suave, ansiosa y persuasiva que Ben Weatherstaff se sorprendió tanto como ella se había sorprendido al oírlo silbar.`,
+    highlight: "¿Querrías hacerte amigo mío?",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Todo era extraño y silencioso, y parecía encontrarse a cientos de kilómetros de cualquier persona; sin embargo, de algún modo, Mary no se sentía sola.
+
+Solo la inquietaba no saber si todos los rosales estaban muertos o si alguno había sobrevivido y podría producir hojas y capullos cuando el tiempo se volviera más cálido. No quería que fuese un jardín completamente muerto. Si estuviera enteramente vivo, sería maravilloso; crecerían miles de rosas por todas partes.`,
+    highlight: "No quería que fuese un jardín completamente muerto",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Le gustaba llamarlo el Jardín Secreto, y le gustaba aún más sentir que, cuando sus hermosos muros la encerraban, nadie sabía dónde estaba. Era casi como quedar fuera del mundo, recluida en algún lugar encantado.
+
+En los pocos cuentos de hadas que había leído aparecían jardines secretos, y a veces las personas se dormían en ellos durante cien años, cosa que a ella siempre le había parecido bastante estúpida. No tenía intención de quedarse dormida allí. En realidad, cada día estaba más despierta.`,
+    highlight: "Era casi como quedar fuera del mundo",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Mary nunca había sentido lástima por sí misma; solo se había sentido cansada y enfadada, porque le disgustaban mucho las personas y las cosas. Pero ahora el mundo parecía estar cambiando y volviéndose más amable.
+
+Si nadie descubría el jardín secreto, podría disfrutar para siempre.`,
+    highlight: "el mundo parecía estar cambiando y volviéndose más amable",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Nuestro Dickon puede hacer que crezca una flor en un camino de ladrillos —dijo Martha—. Mi madre dice que se limita a susurrarles a las cosas para sacarlas de la tierra.`,
+    highlight: "susurrarles a las cosas para sacarlas de la tierra",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—No hay nada tan agradable como el olor de la tierra limpia —dijo Dickon, asintiendo sabiamente—, salvo el olor de las cosas nuevas que crecen cuando la lluvia cae sobre ellas. Muchos días salgo al páramo cuando llueve, me tumbo bajo un arbusto, escucho el suave roce de las gotas sobre el brezo y me limito a oler y oler. Mi madre dice que la punta de mi nariz tiembla como la de un conejo.`,
+    highlight: "el olor de las cosas nuevas que crecen cuando la lluvia cae sobre ellas",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—No parece que haga falta que nadie sea desagradable cuando hay flores y cosas así, y tantos animales silvestres amistosos corriendo de un lado para otro, construyendo sus hogares o sus nidos, cantando y silbando, ¿verdad?
+
+Mary, arrodillada junto a él y sosteniendo las semillas, lo miró y dejó de fruncir el ceño.`,
+    highlight: "No parece que haga falta que nadie sea desagradable",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—He robado un jardín —dijo Mary muy deprisa—. No es mío. No es de nadie. Nadie lo quiere, a nadie le importa y nadie entra nunca. Quizá todo esté ya muerto; no lo sé.
+
+Empezó a acalorarse y a sentirse tan obstinada como se había sentido jamás.
+
+—¡No me importa, no me importa! Nadie tiene derecho a quitármelo cuando a mí sí me importa y a ellos no. Están dejándolo morir, completamente encerrado.`,
+    highlight: "Nadie tiene derecho a quitármelo cuando a mí sí me importa",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—¿Hay algo que quieras? —preguntó el señor Craven—. ¿Juguetes, libros, muñecas?
+
+—¿Podría… podría tener un poco de tierra? —balbuceó Mary.
+
+En su entusiasmo no comprendió lo extrañas que sonarían aquellas palabras ni que no eran las que había pensado pronunciar.
+
+—¿Tierra? —repitió él—. ¿Qué quieres decir?
+
+—Para plantar semillas, hacer que crezcan cosas, verlas cobrar vida.`,
+    highlight: "¿podría tener un poco de tierra?",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Puedes tener toda la tierra que quieras —dijo el señor Craven—. Me recuerdas a otra persona que amaba la tierra y las cosas que crecen. Cuando encuentres un pedazo de tierra que quieras, tómalo, niña, y haz que cobre vida.`,
+    highlight: "haz que cobre vida",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Mi madre dice que las dos peores cosas que pueden ocurrirle a un niño son no salirse nunca con la suya o salirse siempre con la suya. No sabe cuál de las dos es peor.`,
+    highlight: "salirse siempre con la suya",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Tienes que hablarle así, para hacerlo reír —dijo Dickon entre risas—. No hay nada tan bueno para los enfermos como reírse. Mi madre dice que media hora de buena risa cada mañana curaría incluso a alguien que estuviera preparándose para contraer unas fiebres.`,
+    highlight: "media hora de buena risa cada mañana",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `—Escucha a los pájaros: el mundo parece lleno de ellos, silbando y cantando —dijo Dickon—. Míralos volar de un lado para otro y escucha cómo se llaman. Cuando llega la primavera, parece que el mundo entero llama. Las hojas se están desenrollando y ya pueden verse; y ¡qué olores hay por todas partes!
+
+Aspiró el aire con su nariz respingona y feliz.
+
+—Tenemos que sacarlo aquí, hacer que mire, escuche y aspire el aire hasta quedar completamente empapado de sol.`,
+    highlight: "parece que el mundo entero llama",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Una de las cosas extrañas de vivir en el mundo es que solo de vez en cuando uno está completamente seguro de que vivirá para siempre.`,
+    highlight: "cosas extrañas de vivir",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `El jardín secreto florecía y florecía, y cada mañana revelaba nuevos milagros. En el nido del petirrojo había huevos, y su compañera se sentaba sobre ellos, manteniéndolos calientes con su pechito emplumado y sus cuidadosas alas.
+
+En el jardín no había nada que no comprendiera la maravilla de lo que les estaba ocurriendo: la inmensa, tierna, terrible, desgarradora belleza y solemnidad de los huevos. Si hubiese habido allí una sola persona que no supiera, en lo más profundo de su ser, que, si un huevo era arrebatado o dañado, el mundo entero giraría, se estrellaría en el espacio y llegaría a su fin, no habría podido existir felicidad ni siquiera en aquel aire dorado de primavera.
+
+Pero todos lo sabían y lo sentían; y el petirrojo y su compañera sabían que ellos lo sabían.`,
+    highlight: "la inmensa, tierna, terrible, desgarradora belleza y solemnidad de los huevos",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Al principio, las personas se niegan a creer que pueda hacerse algo nuevo y extraño; después empiezan a esperar que pueda hacerse; luego ven que puede hacerse; entonces se hace, y todo el mundo se pregunta por qué no se hizo siglos atrás.
+
+Una de las cosas que las personas empezaron a descubrir fue que los pensamientos —los meros pensamientos— son tan poderosos como las baterías eléctricas: pueden ser tan beneficiosos como la luz del sol o tan perjudiciales como el veneno. Dejar que un pensamiento triste o maligno entre en la mente es tan peligroso como dejar que el germen de una fiebre escarlata penetre en el cuerpo. Si permites que permanezca allí, quizá no llegues a superarlo mientras vivas.`,
+    highlight: "los meros pensamientos son tan poderosos como las baterías eléctricas",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  },
+  {
+    t: `Cuando los nuevos pensamientos hermosos empezaron a expulsar los antiguos pensamientos horribles, la vida regresó, la sangre corrió sana por las venas y la fuerza entró como una inundación.
+
+Pueden suceder cosas mucho más sorprendentes a quien, cuando aparece en su mente un pensamiento desagradable o desalentador, posee el juicio suficiente para recordarlo a tiempo y expulsarlo introduciendo deliberadamente otro agradable y valiente.
+
+Dos cosas no pueden ocupar el mismo lugar.
+
+«Donde cuidas una rosa, muchacho,
+no puede crecer un cardo».`,
+    highlight: "Dos cosas no pueden ocupar el mismo lugar",
+    a: "Frances Hodgson Burnett", obra: "El jardín secreto, Frances Hodgson Burnett", lang: "es"
+  }
+];
+
 const CEREZAS_DEL_CEMENTERIO_QUOTES = [
   {
     t: `Desde el primer puente del buque contemplaba Félix la lenta ascensión de la luna, luna enorme, ancha y encendida como el llameante ruedo de un horno.
@@ -5202,6 +5377,7 @@ const QUOTES = [
   ...ANNE_DE_LAS_TEJAS_VERDES_QUOTES,
   ...LA_VIDA_ES_SUENO_QUOTES,
   ...BARTLEBY_QUOTES,
+  ...EL_JARDIN_SECRETO_QUOTES,
   ...CEREZAS_DEL_CEMENTERIO_QUOTES,
   ...NIEBLA_QUOTES,
   ...CANAS_Y_BARRO_QUOTES,

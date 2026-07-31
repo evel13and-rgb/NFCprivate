@@ -66,6 +66,17 @@
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   },
   {
+    "id": "author-frances-hodgson-burnett",
+    "canonical_name": "Frances Hodgson Burnett",
+    "slug": "frances-hodgson-burnett",
+    "sort_name": "Frances Hodgson Burnett",
+    "inferred_from": [
+      "El jardín secreto, Frances Hodgson Burnett"
+    ],
+    "status": "draft",
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
     "id": "author-gabriel-miro",
     "canonical_name": "Gabriel Miró",
     "slug": "gabriel-miro",

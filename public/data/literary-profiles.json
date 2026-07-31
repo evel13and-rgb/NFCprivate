@@ -777,6 +777,52 @@
         "rights": "Dominio público en el país de origen y en Estados Unidos; Public Domain Mark 1.0",
         "object_position": "50% 32%"
       }
+    },
+    {
+      "author_id": "author-frances-hodgson-burnett",
+      "display_name": "Frances Hodgson Burnett",
+      "birth_year": 1849,
+      "death_year": 1924,
+      "country": "Reino Unido / Estados Unidos",
+      "language": "Inglés",
+      "period": "Segunda mitad del siglo XIX y comienzos del siglo XX; periodos victoriano y eduardiano",
+      "movement": "Narrativa victoriana y eduardiana; literatura infantil, novela doméstica y social, realismo sentimental y relato de formación. Su producción combina elementos realistas con imaginación, simbolismo, espiritualidad y una intensa presencia de la naturaleza.",
+      "bio_short": "Frances Hodgson Burnett fue una novelista y dramaturga angloestadounidense. Nació en Manchester en una familia de comerciantes relativamente acomodada, pero la muerte de su padre provocó un progresivo deterioro económico. En 1865, cuando tenía quince años, emigró con su familia a Tennessee, poco después de la Guerra de Secesión estadounidense. La precariedad la llevó a comenzar a publicar relatos en revistas para contribuir al mantenimiento familiar, convirtiendo la escritura en una profesión y en una vía de independencia económica.\n\nLlegó a ser una escritora muy conocida y comercialmente exitosa, autora de más de cuarenta novelas y obras teatrales. Aunque actualmente se la recuerda sobre todo por sus libros infantiles, una parte considerable de su producción estuvo dirigida a lectores adultos y abordó el matrimonio, la posición social, la pobreza, la autonomía femenina y las diferencias entre las sociedades británica y estadounidense.\n\nSu experiencia transatlántica aparece en sus historias mediante personajes desplazados entre países y clases sociales, niños privados de un hogar estable y espacios domésticos que pueden funcionar tanto como lugares de encierro como de transformación. Su escritura concede una importancia especial a la imaginación y a la capacidad infantil para modificar el mundo adulto. Los jardines, las casas, los objetos y el paisaje no son simples escenarios: reflejan el estado emocional de los personajes y participan en su evolución.",
+      "bio_long": null,
+      "themes": [
+        "La infancia",
+        "La orfandad",
+        "La búsqueda de un hogar",
+        "La imaginación",
+        "La naturaleza",
+        "La transformación personal",
+        "La soledad",
+        "La enfermedad",
+        "El duelo",
+        "La amistad",
+        "La familia elegida",
+        "Las diferencias de clase",
+        "La independencia",
+        "La educación emocional",
+        "La recuperación de aquello que parecía perdido"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Library of America, «The Children’s Literature of Frances Hodgson Burnett: Values That We Need and Can Relate to Today».",
+        "Library of Congress, materiales bibliográficos y documentales de Frances Hodgson Burnett.",
+        "Project Gutenberg, textos originales de Frances Hodgson Burnett.",
+        "Gretchen Holbrook Gerzina, estudios biográficos y críticos sobre Burnett."
+      ],
+      "portrait": {
+        "path": "public/images/authors/frances-hodgson-burnett.webp",
+        "alt": "Retrato de Frances Hodgson Burnett",
+        "caption": "Frances Hodgson Burnett, 1890",
+        "credit": "Frances Benjamin Johnston; Library of Congress",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Frances_(Hodgson)_Burnett,_1849-1924_LCCN2002697460.jpg",
+        "rights": "Dominio público en el país de origen y en Estados Unidos; Public Domain Mark 1.0",
+        "object_position": "50% 32%"
+      }
     }
   ],
   "works": [
@@ -1499,6 +1545,50 @@
         "The New Cambridge Companion to Herman Melville."
       ],
       "fragment_count": 16
+    },
+    {
+      "work_id": "work-el-jardin-secreto",
+      "title": "El jardín secreto",
+      "display_title": "El jardín secreto",
+      "original_title": "The Secret Garden",
+      "author_id": "author-frances-hodgson-burnett",
+      "publication_year": 1911,
+      "genre": "Novela infantil y de formación; narrativa familiar, psicológica y simbólica, con elementos de misterio y tradición gótica.",
+      "language": null,
+      "summary_short": "Mary Lennox es una niña inglesa nacida en la India colonial, donde ha crecido desatendida y rodeada de sirvientes. Tras la muerte de sus padres durante una epidemia de cólera, es enviada a vivir con su tío Archibald Craven en Misselthwaite Manor, una enorme y sombría mansión situada en los páramos de Yorkshire.\n\nAislada y acostumbrada a tratar a los demás con desprecio, Mary comienza a explorar la propiedad. Allí descubre la existencia de un jardín cerrado desde hace diez años, tras la muerte de la esposa de su tío. Con la ayuda de Dickon, un muchacho especialmente próximo a los animales y a la naturaleza, Mary consigue entrar en él y devolverlo lentamente a la vida.\n\nTambién descubre que en la mansión vive oculto Colin, su primo, un niño enfermizo convencido de que morirá joven. El cuidado del jardín, el contacto con el exterior y la relación entre los tres niños provocan una transformación física y emocional. Mientras el espacio abandonado vuelve a florecer, Mary y Colin dejan atrás parte de su aislamiento, y la familia comienza a enfrentarse al duelo que había mantenido cerrada la casa.",
+      "summary_long": null,
+      "context_notes": "La novela apareció inicialmente en diez entregas de The American Magazine, entre noviembre de 1910 y agosto de 1911, y fue publicada como libro ese mismo año. Su serialización en una revista destinada principalmente a adultos muestra que inicialmente no fue concebida únicamente como una obra infantil, aunque terminó convirtiéndose en uno de los títulos fundamentales de la literatura para niños.\n\nFue escrita durante los últimos años del periodo eduardiano, en una sociedad marcada por el Imperio británico, las diferencias rígidas entre clases y el creciente interés por la salud infantil, el ejercicio, el aire libre y los efectos beneficiosos de la naturaleza. La oposición entre la mansión cerrada y el jardín vivo refleja también una oposición entre una educación basada en el aislamiento y otra construida mediante la exploración, la actividad y el contacto con los demás.\n\nEl comienzo en la India sitúa la historia dentro del mundo colonial británico. Mary ha sido educada para considerar natural que los sirvientes indios obedezcan sus deseos, y la narración reproduce algunas jerarquías y prejuicios propios de su época. Su traslado a Inglaterra puede leerse como una regeneración personal, pero también como un regreso simbólico desde el territorio colonial al centro del imperio.\n\nLa novela refleja además una sociedad profundamente jerarquizada. Misselthwaite Manor pertenece a una familia terrateniente y funciona gracias al trabajo de criados, jardineros y familias rurales. Sin embargo, Burnett concede a personajes como Martha, Dickon y Susan Sowerby una inteligencia práctica y emocional que contrasta con la incapacidad de los propietarios para cuidar de sus propios hijos y afrontar el sufrimiento.\n\nEl jardín es un espacio abandonado a causa del duelo, pero también un lugar secreto en el que los niños pueden actuar sin la vigilancia de los adultos. Su recuperación representa el retorno de la vida, la reconstrucción de los vínculos y la posibilidad de transformar una herencia dolorosa mediante el cuidado. Desde una perspectiva contemporánea, la recuperación de Colin puede resultar problemática cuando relaciona la discapacidad con el aislamiento, la actitud mental o la falta de voluntad; estas ideas deben situarse dentro de las concepciones médicas y culturales de su tiempo.",
+      "themes": [
+        "La soledad",
+        "El abandono infantil",
+        "El duelo",
+        "La búsqueda de un hogar",
+        "La amistad",
+        "La familia elegida",
+        "La naturaleza",
+        "El cuidado",
+        "La recuperación",
+        "La imaginación",
+        "La enfermedad",
+        "La discapacidad",
+        "La autonomía",
+        "Las diferencias de clase",
+        "La educación",
+        "El colonialismo",
+        "La transformación de los espacios y de las personas"
+      ],
+      "tone_notes": "Comienza con un tono frío, sombrío y cercano al misterio gótico: una niña huérfana llega a una mansión llena de habitaciones cerradas, silencios y secretos familiares. A medida que Mary descubre el jardín y establece vínculos con otros personajes, el tono se vuelve más luminoso, vital y esperanzador. La narración combina humor, ternura, observación psicológica y una visión casi mágica de la naturaleza, aunque esa «magia» procede principalmente del crecimiento, el cuidado y la renovación de la vida.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Frances Hodgson Burnett, The Secret Garden, texto original de 1911 disponible en Project Gutenberg.",
+        "Comprobación textual: Wikisource y edición de Frederick A. Stokes Company de 1911.",
+        "Library of Congress, historia de la publicación por entregas y edición original digitalizada.",
+        "Library of America, edición crítica y estudios sobre las novelas infantiles de Burnett.",
+        "Estudios de Oxford University Press y Cambridge University Press sobre colonialismo, naturaleza y convalecencia en la obra.",
+        "Traducción propia del inglés para Páramo Literario."
+      ],
+      "fragment_count": 23
     }
   ]
 }

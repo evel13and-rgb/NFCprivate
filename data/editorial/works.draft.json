@@ -63,6 +63,15 @@
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
   },
   {
+    "id": "work-el-jardin-secreto",
+    "title": "El jardín secreto",
+    "slug": "el-jardin-secreto",
+    "author_id": "author-frances-hodgson-burnett",
+    "legacy_work": "El jardín secreto, Frances Hodgson Burnett",
+    "status": "draft",
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
     "id": "work-las-cerezas-del-cementerio",
     "title": "Las cerezas del cementerio",
     "slug": "las-cerezas-del-cementerio",
