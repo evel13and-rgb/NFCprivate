@@ -500,51 +500,229 @@ porque la risa es lo propio del hombre.`,
 
 const FRANKENSTEIN_QUOTES = [
   {
-    t: "Después de días y noches de increíble trabajo y fatiga, logré descubrir la causa de la generación y de la vida; más aún, me vi en posesión del poder de infundir vida a la materia inanimada. Era como si un velo se me hubiese caído de los ojos. Una luz tan intensa y deslumbradora se desplegó ante mí, que tuve que cerrar los párpados. El entusiasmo que me embargó entonces fue casi divino. ¡Qué sublime secreto poseía yo! Pensaba que si lograba animar la materia muerta, podría crear un nuevo género de seres que me bendijeran como su creador. Ningún padre podría reclamar el mérito de la vida de su hijo con tanto fervor como yo el de aquella criatura que iba a modelar.",
-    a: "Víctor Frankenstein",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Fue una noche espantosa aquella en que cobré vida. Un frío helado me recorrió; una luz deslumbrante hirió mis ojos, y un ruido confuso me ensordeció. Poco a poco distinguí las formas que me rodeaban, y una sensación de calor, de hambre, de cansancio me abrumó. No sabía quién era ni qué era. Vagaba por los bosques sin rumbo, estremecido por la lluvia y el viento, con los sentidos confusos pero llenos de una curiosidad inexplicable. Aprendí que el fuego daba calor y luz, pero también que quemaba; y que el agua calmaba la sed, pero podía ahogar. Así, paso a paso, fui descubriendo el mundo.",
-    a: "La Criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Observaba a la familia y aprendía de ellos. Me maravillaba la suavidad de sus costumbres, el amor que se profesaban y la armonía de su hogar. Al principio ignoraba las palabras que pronunciaban, pero poco a poco fui comprendiendo que existía un modo de comunicación más elevado que los gestos. Me esforcé por imitar sus sonidos, y con el tiempo logré entenderlos. Así, en mi corazón nacieron emociones desconocidas: admiración, ternura, deseo de afecto. Comprendí que ellos se amaban mutuamente, y que yo no tenía a nadie. Cada día que pasaba aumentaba mi conocimiento y mi desesperanza.",
-    a: "La Criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Un día, mientras contemplaba mi reflejo en un estanque, me sobrecogió el espanto. No podía creer que aquel rostro deformado y espantoso me perteneciera. Cuando veía a los demás hombres, tan bellos y armoniosos, sentía que entre ellos yo no tenía lugar. La desesperación me invadió. ¡Oh, cuánto hubiera dado por borrar esa fealdad, por tener un amigo que no huyera al verme! Pero comprendí que mi destino era la soledad.",
-    a: "La Criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "¡Créame una compañera, igual que yo, con la que pueda vivir en la mutua comprensión! Exijo este derecho, que no se me niegue por compasión o por justicia. He sido bueno; he sufrido; he sido abandonado. La soledad me consume. Recuerde que soy su obra: usted me debe felicidad, o al menos la ausencia del tormento. Si concede mi petición, me alejaré para siempre de los hombres, y usted no volverá a saber de mí.",
-    a: "La Criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Comencé a pensar que si creaba una segunda criatura, ambos podrían multiplicarse, y la raza humana sería aniquilada. En un instante la destruí: la obra de mis manos se convirtió en polvo. Miré al monstruo que me observaba a través de la ventana, y vi en su rostro un gesto que me heló la sangre. A partir de ese momento, juró venganza contra mí, y contra todos los que yo amaba.",
-    a: "Víctor Frankenstein",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Él está muerto, y yo también lo estaré pronto. Pero antes de irme quiero que sepa que no era mi deseo hacer el mal. Todo empezó con el abandono. Quería amor y recibí odio. Quería compañía y recibí soledad. Si los hombres hubieran sido justos conmigo, habría sido su amigo; pero el sufrimiento convirtió mi corazón en hiel. Aun así, no puedo odiar a quien me dio la vida; he sentido dolor por su muerte. No me queda más que desaparecer entre los hielos, donde el fuego de mis remordimientos se extinguirá para siempre.",
-    a: "La Criatura",
-    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
-    lang: "es"
-  },
-  {
-    t: "Mientras observaba cómo se alejaba sobre el mar helado, su figura se hizo cada vez más pequeña hasta perderse en la niebla. Un resplandor rojizo iluminó un instante el horizonte, y comprendí que había cumplido su palabra. El ser desgraciado, el más solitario de todos los que han vivido, había desaparecido, dejando tras de sí un mundo más vacío.",
+    t: "Nada contribuye tanto a serenar la mente como un propósito firme: un punto en el que el alma pueda fijar su mirada intelectual.",
     a: "Robert Walton",
     obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "un propósito firme",
+    lang: "es"
+  },
+  {
+    t: `Hay una necesidad que nunca he logrado satisfacer, y ahora siento su ausencia como un mal muy grave. No tengo ningún amigo. Cuando arda en mí el entusiasmo del éxito, no habrá nadie que comparta mi alegría; si me asalta la decepción, nadie intentará sostenerme en mi abatimiento.
+
+Escribiré mis pensamientos, desde luego; pero el papel es un medio pobre para comunicar los sentimientos. Deseo la compañía de alguien capaz de comprenderme, cuyos ojos respondan a los míos.`,
+    a: "Robert Walton",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "No tengo ningún amigo",
+    lang: "es"
+  },
+  {
+    t: "Yo me deleitaba investigando los hechos del mundo real; ella se ocupaba de seguir las creaciones aéreas de los poetas. El mundo era para mí un secreto que deseaba descubrir; para ella, un espacio vacío que trataba de poblar con imaginaciones propias.",
+    a: "Víctor Frankenstein",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "El mundo era para mí un secreto",
+    lang: "es"
+  },
+  {
+    t: "Aprende de mí —si no de mis preceptos, al menos de mi ejemplo— cuán peligrosa es la adquisición del conocimiento y cuánto más feliz es el hombre que cree que su ciudad natal es el mundo que aquel que aspira a ser más grande de lo que su naturaleza le permite.",
+    a: "Víctor Frankenstein",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "cuán peligrosa es la adquisición del conocimiento",
+    lang: "es"
+  },
+  {
+    t: `La vida y la muerte me parecían límites ideales que yo sería el primero en atravesar, para derramar después un torrente de luz sobre nuestro mundo oscuro. Una nueva especie me bendeciría como a su creador y origen; muchas naturalezas felices y excelentes me deberían la existencia.
+
+Ningún padre podría reclamar tan completamente la gratitud de sus hijos como yo merecería la de los míos.`,
+    a: "Víctor Frankenstein",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "un torrente de luz sobre nuestro mundo oscuro",
+    lang: "es"
+  },
+  {
+    t: `¿Cómo podría describir mis emociones ante aquella catástrofe o retratar al desdichado ser que, con tanto esfuerzo y cuidado, había tratado de formar? Sus miembros estaban proporcionados y yo había escogido sus rasgos para que fueran hermosos.
+
+¡Hermosos! ¡Dios mío! Su piel amarilla apenas cubría el entramado de músculos y arterias que había debajo; su cabello era negro, lustroso y abundante; sus dientes, de una blancura nacarada. Pero aquellas cualidades solo formaban un contraste más horrible con sus ojos acuosos, casi del mismo color que las cuencas blancuzcas en las que estaban encajados, con su tez marchita y sus labios rectos y negros.`,
+    a: "Víctor Frankenstein",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "¡Hermosos! ¡Dios mío!",
+    lang: "es"
+  },
+  {
+    t: "Había trabajado duramente durante casi dos años con el único propósito de infundir vida en un cuerpo inanimado. Para conseguirlo me había privado del descanso y de la salud. Lo había deseado con un ardor que excedía con mucho toda moderación; pero, ahora que había terminado, la belleza del sueño se desvaneció y un horror y una repugnancia sin aliento llenaron mi corazón.",
+    a: "Víctor Frankenstein",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "la belleza del sueño se desvaneció",
+    lang: "es"
+  },
+  {
+    t: `Nada es más doloroso para la mente humana que, después de que los sentimientos hayan sido agitados por una rápida sucesión de acontecimientos, la calma muerta de la inacción y la certeza que sigue, y que priva al alma tanto de la esperanza como del miedo.
+
+Justine había muerto; descansaba; y yo seguía vivo. La sangre fluía libremente por mis venas, pero sobre mi corazón pesaba una carga de desesperación y remordimiento que nada podía apartar.`,
+    a: "Víctor Frankenstein",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "la calma muerta de la inacción y la certeza",
+    lang: "es"
+  },
+  {
+    t: `—Esperaba este recibimiento —dijo el ser—. Todos los hombres odian al desdichado; ¡cuánto más deben odiarme a mí, que soy más miserable que cualquier criatura viva! Sin embargo, tú, mi creador, me detestas y me rechazas, aunque estás unido a mí por lazos que solo pueden disolverse con la aniquilación de uno de los dos.
+
+Pretendes matarme. ¿Cómo te atreves a jugar así con la vida?`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "Todos los hombres odian al desdichado",
+    lang: "es"
+  },
+  {
+    t: `—Recuerda que soy tu criatura. Debería ser tu Adán, pero soy más bien el ángel caído, a quien expulsas de la dicha sin que haya cometido falta alguna. Por todas partes veo felicidad, de la que solo yo estoy irrevocablemente excluido.
+
+Yo era benévolo y bueno; la desgracia me convirtió en un demonio. Hazme feliz y volveré a ser virtuoso.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "la desgracia me convirtió en un demonio",
+    lang: "es"
+  },
+  {
+    t: `Un día, abrumado por el frío, encontré una hoguera que habían abandonado unos mendigos errantes y quedé maravillado por el placer de su calor. En mi alegría introduje la mano entre las brasas vivas, pero la retiré de inmediato con un grito de dolor.
+
+«¡Qué extraño —pensé— que una misma causa produzca efectos tan opuestos!»`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "una misma causa produzca efectos tan opuestos",
+    lang: "es"
+  },
+  {
+    t: "—¡Qué extraña es la naturaleza del conocimiento! Una vez que se apodera de la mente, se aferra a ella como el liquen a la roca. A veces deseaba liberarme de todo pensamiento y sentimiento; pero aprendí que solo existía un medio para vencer la sensación de dolor: la muerte, un estado que temía y que, sin embargo, no comprendía.",
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "se aferra a ella como el liquen a la roca",
+    lang: "es"
+  },
+  {
+    t: `—¿Y qué era yo? Ignoraba por completo quién me había creado y cómo había nacido; pero sabía que no poseía dinero, amigos ni propiedad de ninguna clase. Además, estaba dotado de una figura horriblemente deforme y repulsiva; ni siquiera pertenecía a la misma naturaleza que el hombre.
+
+Cuando miraba a mi alrededor, no veía ni oía hablar de nadie semejante a mí. ¿Era entonces un monstruo, una mancha sobre la tierra de la que todos los hombres huían y a la que todos repudiaban?`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "¿Y qué era yo?",
+    lang: "es"
+  },
+  {
+    t: `Me encontraba semejante y, al mismo tiempo, extrañamente distinto de los seres sobre los que leía. Simpatizaba con ellos y los comprendía en parte, pero mi mente aún carecía de forma; no dependía de nadie ni estaba relacionado con nadie.
+
+Nadie lamentaría mi aniquilación. Mi cuerpo era horrible y mi estatura gigantesca. ¿Qué significaba aquello? ¿Quién era yo? ¿Qué era yo? ¿De dónde había venido? ¿Cuál era mi destino?`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "Nadie lamentaría mi aniquilación",
+    lang: "es"
+  },
+  {
+    t: `A veces permitía que mis pensamientos, libres de la razón, vagaran por los campos del Paraíso, y me atrevía a imaginar criaturas amables y hermosas que comprendían mis sentimientos y consolaban mi tristeza; sus rostros angelicales respiraban sonrisas de consuelo.
+
+Pero todo era un sueño: ninguna Eva aliviaba mis penas ni compartía mis pensamientos. Estaba solo.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "Estaba solo",
+    lang: "es"
+  },
+  {
+    t: "El aumento de mis conocimientos solo me reveló con mayor claridad qué miserable marginado era. Conservaba la esperanza, es cierto; pero desaparecía cuando veía mi figura reflejada en el agua o mi sombra bajo la luz de la luna, tan frágil como aquella imagen y tan inconstante como aquella sombra.",
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "qué miserable marginado era",
+    lang: "es"
+  },
+  {
+    t: `—Soy malicioso porque soy miserable. ¿Acaso no me rehúye y me odia toda la humanidad? Tú, mi creador, me despedazarías y celebrarías haberlo hecho; recuerda eso y dime por qué habría de compadecer al hombre más de lo que él se compadece de mí.
+
+Si viviera conmigo en un intercambio de bondad, en vez de hacerle daño le concedería todos los beneficios, con lágrimas de gratitud porque los aceptara. Pero eso no puede ser: los sentidos humanos constituyen barreras insuperables para nuestra unión.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "Soy malicioso porque soy miserable",
+    lang: "es"
+  },
+  {
+    t: `—No me someteré como un esclavo abyecto. Vengaré mis agravios: si no puedo inspirar amor, causaré miedo; y contra ti, mi archienemigo precisamente porque eres mi creador, juro un odio inextinguible.
+
+Ten cuidado: trabajaré por tu destrucción y no terminaré hasta haber desolado tu corazón, para que maldigas la hora en que naciste.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "si no puedo inspirar amor, causaré miedo",
+    lang: "es"
+  },
+  {
+    t: `—Si algún ser sintiera benevolencia hacia mí, yo se la devolvería cien veces multiplicada; por esa única criatura haría las paces con toda la especie.
+
+Pero ahora me entrego a sueños de felicidad que no pueden realizarse. Lo que te pido es razonable y moderado: reclamo una criatura del otro sexo, tan horrible como yo. La satisfacción será pequeña, pero es la única que puedo recibir y me bastará.
+
+Seremos monstruos, apartados del mundo entero; pero, precisamente por eso, estaremos más unidos el uno al otro. Nuestras vidas no serán felices, pero serán inofensivas y estarán libres de la desgracia que ahora padezco.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "por esa única criatura haría las paces con toda la especie",
+    lang: "es"
+  },
+  {
+    t: `—Si no tengo vínculos ni afectos, el odio y el vicio han de ser mi porción. El amor de otro ser destruirá la causa de mis crímenes y me convertiré en algo cuya existencia todos ignorarán.
+
+Mis vicios son los hijos de una soledad forzada que aborrezco; mis virtudes surgirán necesariamente cuando viva en comunión con un igual.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "Mis vicios son los hijos de una soledad forzada",
+    lang: "es"
+  },
+  {
+    t: `—¿Ha de encontrar cada hombre una esposa junto a su pecho, y cada animal una compañera, mientras yo permanezco solo? Tuve sentimientos de afecto y me respondieron con odio y desprecio.
+
+Tú puedes odiarme, pero ¡ten cuidado! Tus horas transcurrirán entre el miedo y la desgracia, y pronto caerá el rayo que te arrebatará para siempre la felicidad. ¿Has de ser feliz mientras yo me arrastro en la intensidad de mi desdicha?
+
+Puedes destruir mis otras pasiones, pero la venganza permanece: una venganza que desde ahora me será más querida que la luz o el alimento.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "mientras yo permanezco solo",
+    lang: "es"
+  },
+  {
+    t: `—Puedo morir; pero antes tú, mi tirano y verdugo, maldecirás el sol que ilumine tu desgracia. Ten cuidado, porque no tengo miedo y, por tanto, soy poderoso. Vigilaré con la astucia de una serpiente para poder clavarte su veneno.
+
+Hombre, te arrepentirás de los daños que me has causado.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "no tengo miedo y, por tanto, soy poderoso",
+    lang: "es"
+  },
+  {
+    t: `—Esclavo, antes razoné contigo, pero has demostrado ser indigno de mi condescendencia. Recuerda que tengo poder: tú te crees miserable, pero puedo hacerte tan desdichado que la luz del día te resulte odiosa.
+
+Tú eres mi creador, pero yo soy tu amo. Obedece.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "Tú eres mi creador, pero yo soy tu amo",
+    lang: "es"
+  },
+  {
+    t: `Poco a poco hice un descubrimiento de importancia aún mayor. Comprendí que aquellas personas poseían un medio de comunicarse entre sí sus experiencias y sentimientos mediante sonidos articulados. Advertí que las palabras que pronunciaban producían placer o dolor, sonrisas o tristeza en la mente y el rostro de quienes las escuchaban.
+
+Aquello era, en verdad, una ciencia divina, y deseé ardientemente conocerla.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "una ciencia divina",
+    lang: "es"
+  },
+  {
+    t: `Al principio, aquella lectura me había desconcertado profundamente; pero poco a poco descubrí que él pronunciaba al leer muchos de los mismos sonidos que empleaba al hablar.
+
+Supuse, por tanto, que encontraba sobre el papel signos para el habla que comprendía, y deseé ardientemente entenderlos también. Pero ¿cómo iba a ser posible, cuando ni siquiera comprendía todavía los sonidos que aquellos signos representaban?`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "signos para el habla",
+    lang: "es"
+  },
+  {
+    t: `Cada conversación de los habitantes de la cabaña abría ante mí nuevas maravillas. Mientras escuchaba las lecciones que Felix daba a la joven árabe, se me explicó el extraño sistema de la sociedad humana.
+
+Oí hablar de la división de la propiedad, de riquezas inmensas y pobreza miserable; de rango, linaje y sangre noble.`,
+    a: "La Criatura",
+    obra: "Frankenstein o el moderno Prometeo, Mary Shelley",
+    highlight: "el extraño sistema de la sociedad humana",
     lang: "es"
   }
 ];

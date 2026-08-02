@@ -79,9 +79,15 @@ function validatePortrait(portrait, label) {
     && !/^public\/images\/authors\/.+\.webp$/u.test(portrait.path)) {
     blockingErrors.push(`${label}.portrait.path debe apuntar a public/images/authors/*.webp`);
   }
+  const allowedPortraitSources = [
+    'https://commons.wikimedia.org/wiki/File:',
+    'https://www.metmuseum.org/art/collection/search/',
+  ];
   if (typeof portrait.source_url === 'string'
-    && !portrait.source_url.startsWith('https://commons.wikimedia.org/wiki/File:')) {
-    blockingErrors.push(`${label}.portrait.source_url debe ser una página de archivo de Commons`);
+    && !allowedPortraitSources.some(prefix => portrait.source_url.startsWith(prefix))) {
+    blockingErrors.push(
+      `${label}.portrait.source_url debe ser una página documental de Commons o The Met`,
+    );
   }
   if (typeof portrait.object_position === 'string'
     && !/^[0-9]{1,3}% [0-9]{1,3}%$/u.test(portrait.object_position)) {

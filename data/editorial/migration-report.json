@@ -1,12 +1,12 @@
 {
-  "total_quotes": 572,
+  "total_quotes": 590,
   "detected_works": 27,
   "inferred_authors": 25,
   "poems": 26,
-  "prose": 546,
-  "quotes_with_line_breaks": 400,
-  "highlights_present": 547,
-  "highlights_absent": 25,
+  "prose": 564,
+  "quotes_with_line_breaks": 420,
+  "highlights_present": 573,
+  "highlights_absent": 17,
   "highlights_not_literal": [
     {
       "legacy_index": 4,
@@ -37,599 +37,599 @@
       "highlight": "Codiciamos lo que se nos niega."
     },
     {
-      "legacy_index": 62,
+      "legacy_index": 80,
       "highlight": "Preferiría no hacerlo."
     },
     {
-      "legacy_index": 64,
+      "legacy_index": 82,
       "highlight": "Era un centinela perpetuo en su rincón."
     },
     {
-      "legacy_index": 91,
+      "legacy_index": 109,
       "highlight": "¿podría tener un poco de tierra?"
     },
     {
-      "legacy_index": 98,
+      "legacy_index": 116,
       "highlight": "los meros pensamientos son tan poderosos como las baterías eléctricas"
     },
     {
-      "legacy_index": 100,
+      "legacy_index": 118,
       "highlight": "Todo lo sentía en un santo remanso de silencio."
     },
     {
-      "legacy_index": 101,
+      "legacy_index": 119,
       "highlight": "La noche era inmensa, clara, de paz santísima."
     },
     {
-      "legacy_index": 102,
+      "legacy_index": 120,
       "highlight": "Siempre creo que va a sucederme algo grande y no me sucede nada."
     },
     {
-      "legacy_index": 103,
+      "legacy_index": 121,
       "highlight": "Se me figura que vamos muy lejos, muy lejos."
     },
     {
-      "legacy_index": 104,
+      "legacy_index": 122,
       "highlight": "Yo siempre codicio estar donde no estoy."
     },
     {
-      "legacy_index": 105,
+      "legacy_index": 123,
       "highlight": "Los faros son pedazos de humanidad desamparada."
     },
     {
-      "legacy_index": 106,
+      "legacy_index": 124,
       "highlight": "El mar dejaba un hondo rugido de espumas que parecían hechas de luciérnagas."
     },
     {
-      "legacy_index": 107,
+      "legacy_index": 125,
       "highlight": "En cada faceta de luz de las aguas miraba una cabeza de mujer ahogada."
     },
     {
-      "legacy_index": 108,
+      "legacy_index": 126,
       "highlight": "Le eran amigas a su corazón."
     },
     {
-      "legacy_index": 109,
+      "legacy_index": 127,
       "highlight": "Estoy hechizado, estoy poseído de la fragancia de sus palabras."
     },
     {
-      "legacy_index": 110,
+      "legacy_index": 128,
       "highlight": "Usted huele a naturaleza gloriosa."
     },
     {
-      "legacy_index": 111,
+      "legacy_index": 129,
       "highlight": "Su carne y su alma daban la sensación y fragancia de la fruta en agraz."
     },
     {
-      "legacy_index": 112,
+      "legacy_index": 130,
       "highlight": "Su alma era como una delgada ánfora llena de melancolías."
     },
     {
-      "legacy_index": 114,
+      "legacy_index": 132,
       "highlight": "Padecía la visión de la muerte en los vivos."
     },
     {
-      "legacy_index": 115,
+      "legacy_index": 133,
       "highlight": "Corazón aventurero, ascua de ideales."
     },
     {
-      "legacy_index": 116,
+      "legacy_index": 134,
       "highlight": "La luna me ha sacado de casa."
     },
     {
-      "legacy_index": 118,
+      "legacy_index": 136,
       "highlight": "Como si el cielo fuese un mar que nos sorbiera."
     },
     {
-      "legacy_index": 119,
+      "legacy_index": 137,
       "highlight": "Abrazaba un alma desnuda, alma hecha de luna y de jazmines."
     },
     {
-      "legacy_index": 121,
+      "legacy_index": 139,
       "highlight": "Los dos sollozaron."
     },
     {
-      "legacy_index": 122,
+      "legacy_index": 140,
       "highlight": "Cuán inagotable es Amor."
     },
     {
-      "legacy_index": 124,
+      "legacy_index": 142,
       "highlight": "Dos vidas hundidas en el hastío de la nada de emociones."
     },
     {
-      "legacy_index": 125,
+      "legacy_index": 143,
       "highlight": "La quietud y suavidad del crepúsculo todo emblandeció a Félix."
     },
     {
-      "legacy_index": 126,
+      "legacy_index": 144,
       "highlight": "Es mi compaña. Ella y los señores me quedan en el mundo."
     },
     {
-      "legacy_index": 127,
+      "legacy_index": 145,
       "highlight": "Asomaba la mujer en los ojos de su prima."
     },
     {
-      "legacy_index": 131,
+      "legacy_index": 149,
       "highlight": "Mientras yo la buscaba ella me ha salido al paso."
     },
     {
-      "legacy_index": 132,
+      "legacy_index": 150,
       "highlight": "Nos llamamos como nos llaman."
     },
     {
-      "legacy_index": 140,
+      "legacy_index": 158,
       "highlight": "Muchas veces se me ha ocurrido pensar, Orfeo, que yo no soy."
     },
     {
-      "legacy_index": 141,
+      "legacy_index": 159,
       "highlight": "Este día, este eterno día que pasa... deslizándose en niebla de aburrimiento."
     },
     {
-      "legacy_index": 143,
+      "legacy_index": 161,
       "highlight": "El alma misma ¿qué es sino amor, sino dolor encarnado?"
     },
     {
-      "legacy_index": 144,
+      "legacy_index": 162,
       "highlight": "El más triste y el más dulce de los dolores: el de vivir."
     },
     {
-      "legacy_index": 145,
+      "legacy_index": 163,
       "highlight": "Volvió a ver a su madre, yendo y viniendo sin ruido, siempre de negro."
     },
     {
-      "legacy_index": 146,
+      "legacy_index": 164,
       "highlight": "Enseña mucho la vida, y más la muerte."
     },
     {
-      "legacy_index": 147,
+      "legacy_index": 165,
       "highlight": "Sólo se aprende a vivir viviendo."
     },
     {
-      "legacy_index": 148,
+      "legacy_index": 166,
       "highlight": "En el agua muerta, de una brillantez de estaño, permanecía inmóvil la barca-correo."
     },
     {
-      "legacy_index": 150,
+      "legacy_index": 168,
       "highlight": "Las grandes velas triangulares se deslizaban sobre el verde de los campos, en el silencio de la tarde, como fantasmas que caminasen en tierra firme."
     },
     {
-      "legacy_index": 151,
+      "legacy_index": 169,
       "highlight": "Era el _lluent_, la verdadera Albufera, el lago libre."
     },
     {
-      "legacy_index": 152,
+      "legacy_index": 170,
       "highlight": "Las nubes parecían rodar por el fondo del lago como vedijas de blanca lana."
     },
     {
-      "legacy_index": 153,
+      "legacy_index": 171,
       "highlight": "Los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados."
     },
     {
-      "legacy_index": 155,
+      "legacy_index": 173,
       "highlight": "Con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_."
     },
     {
-      "legacy_index": 156,
+      "legacy_index": 174,
       "highlight": "Neleta, que crecía en la miseria como una flor rara."
     },
     {
-      "legacy_index": 157,
+      "legacy_index": 175,
       "highlight": "Esta selva acuática formando guirnaldas."
     },
     {
-      "legacy_index": 158,
+      "legacy_index": 176,
       "highlight": "La naturaleza y las letras parecen tener una antipatía natural."
     },
     {
-      "legacy_index": 159,
+      "legacy_index": 177,
       "highlight": "Sentir bajo él la espina dorsal de la tierra."
     },
     {
-      "legacy_index": 160,
+      "legacy_index": 178,
       "highlight": "Una figura que, fuera de muchacho o de mujer, lo llenó de la más alta curiosidad."
     },
     {
-      "legacy_index": 161,
+      "legacy_index": 179,
       "highlight": "No sabía si la había oído, saboreado, visto, o las tres cosas a la vez."
     },
     {
-      "legacy_index": 166,
+      "legacy_index": 184,
       "highlight": "Una vez que el mal de leer se apodera del organismo, lo deja expuesto al azote de escribir."
     },
     {
-      "legacy_index": 168,
+      "legacy_index": 186,
       "highlight": "Orlando se miró de arriba abajo en un largo espejo sin mostrar señal alguna de turbación."
     },
     {
-      "legacy_index": 169,
+      "legacy_index": 187,
       "highlight": "El cambio de sexo no alteró en absoluto su identidad."
     },
     {
-      "legacy_index": 170,
+      "legacy_index": 188,
       "highlight": "El placer de no tener documentos que sellar ni firmar era suficiente."
     },
     {
-      "legacy_index": 171,
+      "legacy_index": 189,
       "highlight": "La ropa cambia nuestra visión del mundo y la visión que el mundo tiene de nosotros."
     },
     {
-      "legacy_index": 172,
+      "legacy_index": 190,
       "highlight": "Es la ropa la que nos lleva a nosotros, y no nosotros a ella."
     },
     {
-      "legacy_index": 176,
+      "legacy_index": 194,
       "highlight": "Escribiré lo que disfruto escribiendo."
     },
     {
-      "legacy_index": 177,
+      "legacy_index": 195,
       "highlight": "La sociedad lo es todo y no es nada."
     },
     {
-      "legacy_index": 178,
+      "legacy_index": 196,
       "highlight": "Los hombres sentían el frío en el corazón; la humedad en la mente."
     },
     {
-      "legacy_index": 179,
+      "legacy_index": 197,
       "highlight": "La verdadera duración de una vida siempre es materia de disputa."
     },
     {
-      "legacy_index": 180,
+      "legacy_index": 198,
       "highlight": "Hay setenta y seis tiempos distintos latiendo a la vez en la mente."
     },
     {
-      "legacy_index": 181,
+      "legacy_index": 199,
       "highlight": "El yo verdadero está compuesto por todos los yos que podemos llegar a ser."
     },
     {
-      "legacy_index": 182,
+      "legacy_index": 200,
       "highlight": "Siempre le arrojo palabras como redes."
     },
     {
-      "legacy_index": 216,
+      "legacy_index": 234,
       "highlight": "Este rayo ni cesa ni se agota."
     },
     {
-      "legacy_index": 217,
+      "legacy_index": 235,
       "highlight": "Un girasol sumiso y amarillo."
     },
     {
-      "legacy_index": 218,
+      "legacy_index": 236,
       "highlight": "Se me durmió la sangre."
     },
     {
-      "legacy_index": 219,
+      "legacy_index": 237,
       "highlight": "Pena es mi paz."
     },
     {
-      "legacy_index": 220,
+      "legacy_index": 238,
       "highlight": "Entre pena y pena sonriendo."
     },
     {
-      "legacy_index": 221,
+      "legacy_index": 239,
       "highlight": "Me muero sobre mayo."
     },
     {
-      "legacy_index": 222,
+      "legacy_index": 240,
       "highlight": "Me voy, pero me quedo."
     },
     {
-      "legacy_index": 223,
+      "legacy_index": 241,
       "highlight": "Un enterrado vivo por el llanto."
     },
     {
-      "legacy_index": 224,
+      "legacy_index": 242,
       "highlight": "Recuerdo y no recuerdo."
     },
     {
-      "legacy_index": 225,
+      "legacy_index": 243,
       "highlight": "Me crezco en el castigo."
     },
     {
-      "legacy_index": 226,
+      "legacy_index": 244,
       "highlight": "Me duele hasta el aliento."
     },
     {
-      "legacy_index": 227,
+      "legacy_index": 245,
       "highlight": "No perdono a la muerte."
     },
     {
-      "legacy_index": 228,
+      "legacy_index": 246,
       "highlight": "Escarbar la tierra con los dientes."
     },
     {
-      "legacy_index": 229,
+      "legacy_index": 247,
       "highlight": "Comeréis con apetito."
     },
     {
-      "legacy_index": 230,
+      "legacy_index": 248,
       "highlight": "La vejez moribunda, la alegre juventud encerrada."
     },
     {
-      "legacy_index": 231,
+      "legacy_index": 249,
       "highlight": "Un decreto de vida o de muerte."
     },
     {
-      "legacy_index": 232,
+      "legacy_index": 250,
       "highlight": "La virtud no se divide."
     },
     {
-      "legacy_index": 233,
+      "legacy_index": 251,
       "highlight": "Un crimen que se olvida."
     },
     {
-      "legacy_index": 234,
+      "legacy_index": 252,
       "highlight": "Querer ser grande o rico."
     },
     {
-      "legacy_index": 235,
+      "legacy_index": 253,
       "highlight": "Yo vivo de los placeres de ellas."
     },
     {
-      "legacy_index": 236,
+      "legacy_index": 254,
       "highlight": "No vivirá dos días."
     },
     {
-      "legacy_index": 237,
+      "legacy_index": 255,
       "highlight": "Toda la oración fúnebre."
     },
     {
-      "legacy_index": 238,
+      "legacy_index": 256,
       "highlight": "Buscó vanamente a las dos hijas."
     },
     {
-      "legacy_index": 239,
+      "legacy_index": 257,
       "highlight": "La religión no es bastante rica."
     },
     {
-      "legacy_index": 240,
+      "legacy_index": 258,
       "highlight": "Ahora todo para los dos."
     },
     {
-      "legacy_index": 241,
+      "legacy_index": 259,
       "highlight": "El secreto de mi propia alma."
     },
     {
-      "legacy_index": 242,
+      "legacy_index": 260,
       "highlight": "Un matiz de crueldad en la boca."
     },
     {
-      "legacy_index": 243,
+      "legacy_index": 261,
       "highlight": "La ruina que los hombres causan en sus propias almas."
     },
     {
-      "legacy_index": 244,
+      "legacy_index": 262,
       "highlight": "La corrupción de su propia alma."
     },
     {
-      "legacy_index": 245,
+      "legacy_index": 263,
       "highlight": "El cielo y el infierno."
     },
     {
-      "legacy_index": 247,
+      "legacy_index": 265,
       "highlight": "Había sido su conciencia."
     },
     {
-      "legacy_index": 248,
+      "legacy_index": 266,
       "highlight": "Influir es darle a otro la propia alma."
     },
     {
-      "legacy_index": 249,
+      "legacy_index": 267,
       "highlight": "Curar el alma mediante los sentidos."
     },
     {
-      "legacy_index": 250,
+      "legacy_index": 268,
       "highlight": "Daría mi alma por ello."
     },
     {
-      "legacy_index": 251,
+      "legacy_index": 269,
       "highlight": "No conocía más que sombras."
     },
     {
-      "legacy_index": 252,
+      "legacy_index": 270,
       "highlight": "Hay un lujo en culparse a uno mismo."
     },
     {
-      "legacy_index": 253,
+      "legacy_index": 271,
       "highlight": "El pecado se escribe en el rostro."
     },
     {
-      "legacy_index": 254,
+      "legacy_index": 272,
       "highlight": "El efecto que ejerce sobre sus amigos."
     },
     {
-      "legacy_index": 256,
+      "legacy_index": 274,
       "highlight": "El mal como forma de realizar la belleza."
     },
     {
-      "legacy_index": 257,
+      "legacy_index": 275,
       "highlight": "La tragedia de la vejez."
     },
     {
-      "legacy_index": 260,
+      "legacy_index": 278,
       "highlight": "Su belleza no había sido más que una máscara."
     },
     {
-      "legacy_index": 261,
+      "legacy_index": 279,
       "highlight": "La muerte viva de su propia alma."
     },
     {
-      "legacy_index": 280,
+      "legacy_index": 298,
       "highlight": "No quiero curarme por puro despecho."
     },
     {
-      "legacy_index": 281,
+      "legacy_index": 299,
       "highlight": "Tampoco supe hacerme nada."
     },
     {
-      "legacy_index": 282,
+      "legacy_index": 300,
       "highlight": "Ser demasiado consciente es una enfermedad."
     },
     {
-      "legacy_index": 283,
+      "legacy_index": 301,
       "highlight": "Más profundamente descendía a mi cieno."
     },
     {
-      "legacy_index": 284,
+      "legacy_index": 302,
       "highlight": "La amargura terminaba convirtiéndose en una dulzura vergonzosa."
     },
     {
-      "legacy_index": 285,
+      "legacy_index": 303,
       "highlight": "Hundidlo en felicidad hasta la coronilla."
     },
     {
-      "legacy_index": 286,
+      "legacy_index": 304,
       "highlight": "Los hombres siguen siendo hombres y no teclas de piano."
     },
     {
-      "legacy_index": 287,
+      "legacy_index": 305,
       "highlight": "Dos por dos son cuatro ya no es vida, señores, sino el principio de la muerte."
     },
     {
-      "legacy_index": 288,
+      "legacy_index": 306,
       "highlight": "Defiendo… mi capricho."
     },
     {
-      "legacy_index": 289,
+      "legacy_index": 307,
       "highlight": "No tomaría el gallinero por un palacio."
     },
     {
-      "legacy_index": 291,
+      "legacy_index": 309,
       "highlight": "Solitaria hasta el salvajismo."
     },
     {
-      "legacy_index": 292,
+      "legacy_index": 310,
       "highlight": "Atribuía mentalmente mi propia mirada a cada uno de los demás."
     },
     {
-      "legacy_index": 293,
+      "legacy_index": 311,
       "highlight": "Lo comprendía plenamente, plenamente, y aun así continuaba caminando."
     },
     {
-      "legacy_index": 294,
+      "legacy_index": 312,
       "highlight": "La idea absurda, repugnante, semejante a una araña."
     },
     {
-      "legacy_index": 297,
+      "legacy_index": 315,
       "highlight": "Algo no moría dentro de mí."
     },
     {
-      "legacy_index": 298,
+      "legacy_index": 316,
       "highlight": "Yo, por ejemplo, salvo a Liza."
     },
     {
-      "legacy_index": 299,
+      "legacy_index": 317,
       "highlight": "Pagaría muy caro por todo aquello."
     },
     {
-      "legacy_index": 301,
+      "legacy_index": 319,
       "highlight": "Amar significaba para mí tiranizar."
     },
     {
-      "legacy_index": 302,
+      "legacy_index": 320,
       "highlight": "La «vida viva», por falta de costumbre, me aplastó."
     },
     {
-      "legacy_index": 303,
+      "legacy_index": 321,
       "highlight": "Todos hemos perdido la costumbre de vivir."
     },
     {
-      "legacy_index": 304,
+      "legacy_index": 322,
       "highlight": "Somos nacidos muertos."
     },
     {
-      "legacy_index": 305,
+      "legacy_index": 323,
       "highlight": "Aquí tengo mis raíces."
     },
     {
-      "legacy_index": 306,
+      "legacy_index": 324,
       "highlight": "El aire invisible está lleno de Potencias desconocidas."
     },
     {
-      "legacy_index": 308,
+      "legacy_index": 326,
       "highlight": "Espero el sueño como se esperaría al verdugo."
     },
     {
-      "legacy_index": 309,
+      "legacy_index": 327,
       "highlight": "Quiero gritar —no puedo—."
     },
     {
-      "legacy_index": 310,
+      "legacy_index": 328,
       "highlight": "Asustado por la profunda soledad."
     },
     {
-      "legacy_index": 311,
+      "legacy_index": 329,
       "highlight": "¿Puede verlo? Existe, sin embargo."
     },
     {
-      "legacy_index": 312,
+      "legacy_index": 330,
       "highlight": "Bebía mi vida entre mis labios."
     },
     {
-      "legacy_index": 313,
+      "legacy_index": 331,
       "highlight": "Vivía, sin saberlo, esa doble vida misteriosa."
     },
     {
-      "legacy_index": 315,
+      "legacy_index": 333,
       "highlight": "Poblamos el vacío de fantasmas."
     },
     {
-      "legacy_index": 318,
+      "legacy_index": 336,
       "highlight": "Suspendida en el aire transparente, sola, inmóvil."
     },
     {
-      "legacy_index": 319,
+      "legacy_index": 337,
       "highlight": "Un alucinado que razona."
     },
     {
-      "legacy_index": 320,
+      "legacy_index": 338,
       "highlight": "El océano espantoso y furioso de la demencia."
     },
     {
-      "legacy_index": 321,
+      "legacy_index": 339,
       "highlight": "Alguien quiere por mí; y yo obedezco."
     },
     {
-      "legacy_index": 322,
+      "legacy_index": 340,
       "highlight": "Ya no soy nada dentro de mí."
     },
     {
-      "legacy_index": 323,
+      "legacy_index": 341,
       "highlight": "Es preciso, es preciso, es preciso."
     },
     {
-      "legacy_index": 324,
+      "legacy_index": 342,
       "highlight": "Como otra alma parásita y dominadora."
     },
     {
-      "legacy_index": 326,
+      "legacy_index": 344,
       "highlight": "Vagos fantasmas nacidos del miedo."
     },
     {
-      "legacy_index": 327,
+      "legacy_index": 345,
       "highlight": "Mi sillón estaba vacío, parecía vacío."
     },
     {
-      "legacy_index": 328,
+      "legacy_index": 346,
       "highlight": "Había tenido miedo, ¡miedo de mí, él!"
     },
     {
-      "legacy_index": 329,
+      "legacy_index": 347,
       "highlight": "Su cuerpo imperceptible había devorado mi reflejo."
     },
     {
-      "legacy_index": 330,
+      "legacy_index": 348,
       "highlight": "El Ser nuevo, el nuevo amo, el Horla."
     },
     {
-      "legacy_index": 331,
+      "legacy_index": 349,
       "highlight": "¡Tendré que matarme yo!"
     },
     {
-      "legacy_index": 354,
+      "legacy_index": 372,
       "highlight": "No deseaba la inmortalidad."
     },
     {
-      "legacy_index": 490,
+      "legacy_index": 508,
       "highlight": "ahora no entraba nadie"
     }
   ],
@@ -672,31 +672,31 @@
     },
     {
       "legacy_index": 11,
-      "legacy_attribution": "Víctor Frankenstein",
+      "legacy_attribution": "Robert Walton",
       "inferred_author": "Mary Shelley",
       "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 12,
-      "legacy_attribution": "La Criatura",
+      "legacy_attribution": "Robert Walton",
       "inferred_author": "Mary Shelley",
       "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 13,
-      "legacy_attribution": "La Criatura",
+      "legacy_attribution": "Víctor Frankenstein",
       "inferred_author": "Mary Shelley",
       "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 14,
-      "legacy_attribution": "La Criatura",
+      "legacy_attribution": "Víctor Frankenstein",
       "inferred_author": "Mary Shelley",
       "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 15,
-      "legacy_attribution": "La Criatura",
+      "legacy_attribution": "Víctor Frankenstein",
       "inferred_author": "Mary Shelley",
       "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
@@ -708,127 +708,127 @@
     },
     {
       "legacy_index": 17,
-      "legacy_attribution": "La Criatura",
+      "legacy_attribution": "Víctor Frankenstein",
       "inferred_author": "Mary Shelley",
       "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 18,
-      "legacy_attribution": "Robert Walton",
+      "legacy_attribution": "Víctor Frankenstein",
       "inferred_author": "Mary Shelley",
       "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 19,
-      "legacy_attribution": "Jefe de estación",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 20,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 21,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 22,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 23,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 24,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 25,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 26,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 27,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 28,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 29,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 30,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 31,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 32,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 33,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 34,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 35,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 36,
-      "legacy_attribution": "Anne Shirley",
-      "inferred_author": "Lucy Maud Montgomery",
-      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+      "legacy_attribution": "La Criatura",
+      "inferred_author": "Mary Shelley",
+      "legacy_work": "Frankenstein o el moderno Prometeo, Mary Shelley"
     },
     {
       "legacy_index": 37,
-      "legacy_attribution": "Anne Shirley",
+      "legacy_attribution": "Jefe de estación",
       "inferred_author": "Lucy Maud Montgomery",
       "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
@@ -840,13 +840,13 @@
     },
     {
       "legacy_index": 39,
-      "legacy_attribution": "Matthew Cuthbert",
+      "legacy_attribution": "Anne Shirley",
       "inferred_author": "Lucy Maud Montgomery",
       "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
     {
       "legacy_index": 40,
-      "legacy_attribution": "Narrador",
+      "legacy_attribution": "Anne Shirley",
       "inferred_author": "Lucy Maud Montgomery",
       "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
@@ -858,13 +858,13 @@
     },
     {
       "legacy_index": 42,
-      "legacy_attribution": "Marilla Cuthbert",
+      "legacy_attribution": "Anne Shirley",
       "inferred_author": "Lucy Maud Montgomery",
       "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
     {
       "legacy_index": 43,
-      "legacy_attribution": "Señora Allan",
+      "legacy_attribution": "Anne Shirley",
       "inferred_author": "Lucy Maud Montgomery",
       "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
@@ -882,90 +882,198 @@
     },
     {
       "legacy_index": 46,
-      "legacy_attribution": "Narrador",
+      "legacy_attribution": "Anne Shirley",
       "inferred_author": "Lucy Maud Montgomery",
       "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
     {
       "legacy_index": 47,
-      "legacy_attribution": "Narrador",
+      "legacy_attribution": "Anne Shirley",
       "inferred_author": "Lucy Maud Montgomery",
       "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
     {
       "legacy_index": 48,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
-      "inferred_author": "Pedro Calderón de la Barca",
-      "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
     {
       "legacy_index": 49,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
-      "inferred_author": "Pedro Calderón de la Barca",
-      "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
     {
       "legacy_index": 50,
-      "legacy_attribution": "Segismundo — Jornada Segunda",
-      "inferred_author": "Pedro Calderón de la Barca",
-      "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
     },
     {
       "legacy_index": 51,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 52,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 53,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 54,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 55,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 56,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 57,
+      "legacy_attribution": "Matthew Cuthbert",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 58,
+      "legacy_attribution": "Narrador",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 59,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 60,
+      "legacy_attribution": "Marilla Cuthbert",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 61,
+      "legacy_attribution": "Señora Allan",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 62,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 63,
+      "legacy_attribution": "Anne Shirley",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 64,
+      "legacy_attribution": "Narrador",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 65,
+      "legacy_attribution": "Narrador",
+      "inferred_author": "Lucy Maud Montgomery",
+      "legacy_work": "Ana de las Tejas Verdes, Lucy Maud Montgomery"
+    },
+    {
+      "legacy_index": 66,
       "legacy_attribution": "Segismundo — Jornada Segunda",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 52,
+      "legacy_index": 67,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "inferred_author": "Pedro Calderón de la Barca",
+      "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
+    },
+    {
+      "legacy_index": 68,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "inferred_author": "Pedro Calderón de la Barca",
+      "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
+    },
+    {
+      "legacy_index": 69,
+      "legacy_attribution": "Segismundo — Jornada Segunda",
+      "inferred_author": "Pedro Calderón de la Barca",
+      "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
+    },
+    {
+      "legacy_index": 70,
       "legacy_attribution": "Segismundo — Jornada Primera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 53,
+      "legacy_index": 71,
       "legacy_attribution": "Segismundo — Jornada Primera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 54,
+      "legacy_index": 72,
       "legacy_attribution": "Segismundo — Jornada Primera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 55,
+      "legacy_index": 73,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 56,
+      "legacy_index": 74,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 57,
+      "legacy_index": 75,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 58,
+      "legacy_index": 76,
       "legacy_attribution": "Rosaura — Jornada Primera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 59,
+      "legacy_index": 77,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"
     },
     {
-      "legacy_index": 60,
+      "legacy_index": 78,
       "legacy_attribution": "Segismundo — Jornada Tercera",
       "inferred_author": "Pedro Calderón de la Barca",
       "legacy_work": "La vida es sueño, Pedro Calderón de la Barca"

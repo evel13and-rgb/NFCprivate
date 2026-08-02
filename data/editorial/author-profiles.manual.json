@@ -802,5 +802,52 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "author_id": "author-mary-shelley",
+    "name": "Mary Wollstonecraft Shelley",
+    "portrait": {
+      "path": "public/images/authors/mary-shelley.webp",
+      "alt": "Busto de Mary Shelley realizado por Camillo Pistrucci",
+      "caption": "Mary Shelley, 1843",
+      "credit": "Camillo Pistrucci; The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/830891",
+      "rights": "Dominio público; Open Access de The Metropolitan Museum of Art",
+      "object_position": "50% 35%"
+    },
+    "birth_year": 1797,
+    "death_year": 1851,
+    "country": "Reino Unido —Inglaterra—",
+    "language": "Inglés",
+    "period": "Finales del siglo XVIII y primera mitad del siglo XIX; periodo de las revoluciones políticas, la industrialización y el Romanticismo europeo.",
+    "movement": "Romanticismo inglés y literatura gótica. Su obra combina la imaginación romántica, la novela filosófica, la crítica social y la especulación científica. Frankenstein está considerada además una obra precursora de la ciencia ficción moderna.",
+    "short_biography": "Mary Shelley fue una novelista, ensayista, biógrafa y editora británica. Nació en Londres, hija de dos figuras fundamentales del pensamiento radical de su tiempo: la escritora feminista Mary Wollstonecraft, autora de Vindicación de los derechos de la mujer, y el filósofo político William Godwin. Su madre murió pocos días después del parto, y Mary creció rodeada de libros, escritores y debates sobre educación, libertad, igualdad y transformación social. Esta formación intelectual poco habitual para una mujer de su época influyó profundamente en su obra.\n\nA los dieciséis años inició una relación con el poeta Percy Bysshe Shelley, que entonces estaba casado, y huyó con él a Europa. La pareja sufrió dificultades económicas, rechazo social y numerosas pérdidas familiares. Mary vivió la muerte de varios de sus hijos y, en 1822, quedó viuda cuando Percy Shelley murió ahogado. Estas experiencias de nacimiento, duelo, abandono y supervivencia atraviesan buena parte de su literatura. Tras la muerte de su marido, sostuvo económicamente a su único hijo superviviente mediante la escritura y trabajó para conservar, editar y publicar la obra poética de Percy Shelley.\n\nShelley escribió durante una época marcada por la Revolución francesa, las guerras napoleónicas, el avance de la industrialización y el debate sobre los límites del progreso. La generación de sus padres había confiado en que la razón, la educación y la reforma política podrían mejorar radicalmente la sociedad; Mary heredó esas aspiraciones, pero también observó sus fracasos y contradicciones. Sus novelas suelen examinar qué ocurre cuando los ideales de libertad, conocimiento o perfección se separan de la responsabilidad hacia los demás.\n\nSu obra se distingue por la combinación de elementos góticos —paisajes extremos, secretos, persecuciones, muerte y transgresión— con preguntas filosóficas sobre la identidad, la creación, el poder y la exclusión. Sus personajes suelen producir o perseguir algo que termina desbordándolos: conocimiento, vida artificial, utopías políticas o vínculos afectivos. Frente a la imagen de Shelley como autora de una única novela, escribió también obras históricas, relatos, libros de viajes y El último hombre, una temprana ficción apocalíptica sobre una epidemia que destruye a la humanidad.",
+    "themes": [
+      "La creación y la responsabilidad",
+      "La maternidad y el abandono",
+      "La ambición intelectual",
+      "Los límites de la ciencia",
+      "La soledad",
+      "La exclusión",
+      "La identidad",
+      "La educación",
+      "El prejuicio",
+      "La muerte",
+      "El duelo",
+      "El poder",
+      "La libertad",
+      "La violencia",
+      "La desigualdad",
+      "La supervivencia",
+      "Las consecuencias imprevistas del deseo de transformar el mundo"
+    ],
+    "sources": [
+      "Bodleian Libraries, Universidad de Oxford, cronología y manuscritos de Mary Shelley.",
+      "Poetry Foundation, biografía de Mary Wollstonecraft Shelley.",
+      "British Library, materiales sobre Frankenstein y su contexto científico.",
+      "National Portrait Gallery y Metropolitan Museum of Art, documentación biográfica y retratos de la autora."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

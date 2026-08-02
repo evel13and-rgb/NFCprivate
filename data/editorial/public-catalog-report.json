@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-31T12:20:23.126Z",
+  "generated_at": "2026-08-02T12:27:08.132Z",
   "preview": true,
   "publication_status": "internal_preview",
-  "total_quotes_exported": 572,
+  "total_quotes_exported": 590,
   "omitted_quotes": [],
   "private_fields_excluded": [
     "rights_notes",
@@ -68,13 +68,30 @@
     "quote-57",
     "quote-58",
     "quote-59",
-    "quote-60"
+    "quote-60",
+    "quote-61",
+    "quote-62",
+    "quote-63",
+    "quote-64",
+    "quote-65",
+    "quote-66",
+    "quote-67",
+    "quote-68",
+    "quote-69",
+    "quote-70",
+    "quote-71",
+    "quote-72",
+    "quote-73",
+    "quote-74",
+    "quote-75",
+    "quote-76",
+    "quote-77",
+    "quote-78"
   ],
   "works_without_verified_source": [
     "work-fragmentos",
     "work-cumbres-borrascosas",
     "work-gargantua",
-    "work-frankenstein-o-el-moderno-prometeo",
     "work-la-vida-es-sueno",
     "work-bartleby-el-escribiente",
     "work-las-cerezas-del-cementerio",
@@ -109,11 +126,6 @@
     {
       "source_id": "source-gargantua",
       "work_id": "work-gargantua",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-frankenstein-o-el-moderno-prometeo",
-      "work_id": "work-frankenstein-o-el-moderno-prometeo",
       "rights_status": "unchecked"
     },
     {

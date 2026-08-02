@@ -679,5 +679,45 @@
     ],
     "profile_status": "draft",
     "verification_status": "pending"
+  },
+  {
+    "work_id": "work-frankenstein-o-el-moderno-prometeo",
+    "author_id": "author-mary-shelley",
+    "title": "Frankenstein o el moderno Prometeo",
+    "original_title": "Frankenstein; or, The Modern Prometheus",
+    "publication_year": 1818,
+    "genre": "Novela gótica, filosófica y epistolar; obra precursora de la ciencia ficción. También incorpora elementos de la novela de formación, el relato de viajes y la literatura romántica.",
+    "short_summary": "Robert Walton, un explorador que intenta alcanzar el Polo Norte, encuentra en el hielo a Víctor Frankenstein, un científico suizo gravemente enfermo. Víctor le relata cómo su deseo de descubrir el principio de la vida lo llevó a construir un ser a partir de restos humanos y a devolverle la vida. Horrorizado ante el resultado, abandona inmediatamente a la criatura.\n\nEl ser despierta solo, sin nombre, protección ni guía. Aprende a hablar y a leer observando en secreto a una familia, y desarrolla una intensa necesidad de afecto y pertenencia. Sin embargo, su aspecto provoca miedo y violencia en cuantos lo encuentran. Cuando comprende que su creador también lo rechaza, reclama a Víctor una compañera y comienza a vengarse de él. La historia se convierte así en una persecución entre creador y criatura, unidos por la culpa, el odio y una soledad que ambos han contribuido a producir.",
+    "context": "Mary Shelley comenzó la historia durante el verano de 1816, cuando se encontraba cerca de Ginebra con Percy Shelley, Lord Byron, Claire Clairmont y John Polidori. El mal tiempo los mantuvo durante largos periodos en el interior y Byron propuso que cada uno escribiera una historia de fantasmas. A partir de una imagen soñada —un estudiante contemplando al ser que había fabricado— Mary desarrolló el relato que acabaría convirtiéndose en Frankenstein. El manuscrito fue terminado en 1817 y la primera edición apareció anónimamente en Londres en enero de 1818, dividida en tres volúmenes.\n\nLa novela surgió en un momento en el que la frontera entre la vida y la muerte era objeto de intensos debates científicos. Los experimentos con electricidad y galvanismo habían demostrado que las descargas podían provocar movimientos en músculos de animales y cadáveres, mientras anatomistas, médicos y filósofos discutían si la vida dependía de una fuerza especial o podía explicarse mediante procesos materiales. Shelley no describe con precisión el método de Víctor: utiliza estas investigaciones como punto de partida para examinar las consecuencias éticas de producir vida sin asumir después ninguna responsabilidad por ella.\n\nEl subtítulo alude a Prometeo, figura mitológica que desafía a los dioses y entrega el fuego a los seres humanos. Víctor es un «Prometeo moderno» porque intenta apropiarse de un poder reservado a la naturaleza, pero su transgresión no consiste únicamente en crear vida: consiste, sobre todo, en abandonar lo creado. La novela dialoga también con El paraíso perdido de John Milton. La criatura se reconoce alternativamente en Adán, creado y protegido por su dios, y en Satanás, expulsado y convertido en enemigo de su creador.\n\nEl contexto social y político resulta igualmente importante. La novela apareció en una sociedad que celebraba los descubrimientos científicos, la expansión industrial y la capacidad humana para dominar la naturaleza, pero que también temía las consecuencias de cambios imposibles de controlar. Shelley cuestiona la idea de que el conocimiento sea beneficioso por sí mismo: el problema no es la investigación científica, sino una ambición aislada de la empatía, la comunidad y la responsabilidad.\n\nLa obra refleja también la posición de las mujeres dentro del mundo intelectual y editorial. La edición de 1818 apareció sin el nombre de Mary Shelley, y algunos lectores atribuyeron la novela a Percy Shelley, autor del prólogo. La edición de 1823 ya reconoció explícitamente a Mary como autora. En 1831 publicó una versión revisada y añadió una introducción en la que explicó el origen de la historia. Las versiones de 1818 y 1831 presentan diferencias de lenguaje, estructura y concepción del destino: la primera suele resultar más radical y concede mayor responsabilidad a las decisiones de Víctor, mientras que la segunda insiste más en la fatalidad.",
+    "themes": [
+      "La creación y la responsabilidad",
+      "El abandono",
+      "La soledad",
+      "La necesidad de afecto",
+      "El rechazo de quien es diferente",
+      "La identidad",
+      "La educación",
+      "La ambición científica",
+      "Los límites del conocimiento",
+      "La apariencia",
+      "El prejuicio",
+      "La violencia",
+      "La venganza",
+      "La culpa",
+      "La maternidad ausente",
+      "La relación entre creador y criatura",
+      "La naturaleza frente a la técnica",
+      "La imposibilidad de reparar completamente el daño causado"
+    ],
+    "tone": "Oscuro, trágico, filosófico y profundamente melancólico. La narración combina el terror gótico con extensos momentos de introspección, paisajes sublimes y confesiones personales. La criatura no aparece únicamente como una amenaza: su inteligencia, su sufrimiento y su deseo de ser amada obligan al lector a desplazar continuamente su compasión entre ella y Víctor. Esta ambigüedad impide reducir la novela a una sencilla advertencia contra la ciencia.",
+    "sources": [
+      "Mary Shelley, Frankenstein; or, The Modern Prometheus, primera edición inglesa de 1818 reproducida textualmente por Project Gutenberg, eBook 41445.",
+      "Comprobación textual: Wikisource, primera edición de Lackington, Hughes, Harding, Mavor & Jones, publicada en tres volúmenes.",
+      "Manuscritos originales conservados por las Bodleian Libraries, Universidad de Oxford.",
+      "Edición revisada de 1831 y materiales críticos de la British Library y la Universidad de Oxford.",
+      "Traducción propia del inglés para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

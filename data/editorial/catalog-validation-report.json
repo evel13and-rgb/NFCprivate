@@ -1,16 +1,16 @@
 {
   "valid": true,
-  "validated_at": "2026-07-31T12:20:23.746Z",
+  "validated_at": "2026-08-02T12:27:38.343Z",
   "summary": {
-    "expected_quotes": 572,
-    "intermediate_quotes": 572,
-    "normalized_quotes": 572,
+    "expected_quotes": 590,
+    "intermediate_quotes": 590,
+    "normalized_quotes": 590,
     "authors": 25,
     "works": 27,
     "sources": 27,
     "editorial_decisions": 0,
     "poems": 26,
-    "quotes_with_line_breaks": 400,
+    "quotes_with_line_breaks": 420,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
@@ -27,12 +27,11 @@
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "23 fuente(s) conservan derechos sin revisar.",
+      "message": "22 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
         "source-gargantua",
-        "source-frankenstein-o-el-moderno-prometeo",
         "source-la-vida-es-sueno",
         "source-bartleby-el-escribiente",
         "source-las-cerezas-del-cementerio",
@@ -56,12 +55,11 @@
     },
     {
       "code": "source_verification_pending",
-      "message": "23 fuente(s) esperan verificación bibliográfica.",
+      "message": "22 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
         "source-fragmentos",
         "source-cumbres-borrascosas",
         "source-gargantua",
-        "source-frankenstein-o-el-moderno-prometeo",
         "source-la-vida-es-sueno",
         "source-bartleby-el-escribiente",
         "source-las-cerezas-del-cementerio",
@@ -93,11 +91,11 @@
     },
     {
       "code": "rights_review_pending",
-      "count": 23
+      "count": 22
     },
     {
       "code": "source_verification_pending",
-      "count": 23
+      "count": 22
     }
   ],
   "reviewed_files": [

@@ -30,7 +30,10 @@
         "alt": { "type": "string", "minLength": 1 },
         "caption": { "type": "string", "minLength": 1 },
         "credit": { "type": "string", "minLength": 1 },
-        "source_url": { "type": "string", "pattern": "^https://commons\\.wikimedia\\.org/wiki/File:" },
+        "source_url": {
+          "type": "string",
+          "pattern": "^https://(commons\\.wikimedia\\.org/wiki/File:|www\\.metmuseum\\.org/art/collection/search/)"
+        },
         "rights": { "type": "string", "minLength": 1 },
         "object_position": { "type": "string", "pattern": "^[0-9]{1,3}% [0-9]{1,3}%$" }
       }
