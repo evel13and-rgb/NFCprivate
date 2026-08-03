@@ -101,11 +101,18 @@ let activeFireflies = [];
 let lastAnimationTime = 0;
 let viewportWidth = 0;
 let viewportHeight = 0;
+let constrainedAtmosphereMedia;
 
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
 const RAIN_WEATHER_STATES = new Set(['light-rain', 'heavy-rain', 'night-rain']);
+const CONSTRAINED_ATMOSPHERE_QUERY = '(max-width: 768px), (pointer: coarse), (prefers-reduced-motion: reduce)';
 
 function shouldShowFireflies() {
+  // Evita decenas de sombras y escrituras por frame en móviles y con movimiento reducido.
+  if (constrainedAtmosphereMedia?.matches || document.hidden) {
+    return false;
+  }
+
   const timeOfDay = document.body?.dataset.timeOfDay;
   const weather = document.body?.dataset.weather;
   const visualScene = document.body?.dataset.visualScene;
@@ -368,6 +375,10 @@ function handleWeatherStateChange() {
   evaluateNightState();
 }
 
+function handleVisibilityChange() {
+  evaluateNightState();
+}
+
 function handleResize() {
   updateViewportSize();
 }
@@ -380,12 +391,17 @@ export function initFireflyAura() {
   if (!reduceMotionMedia) {
     reduceMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
   }
+  if (!constrainedAtmosphereMedia) {
+    constrainedAtmosphereMedia = window.matchMedia(CONSTRAINED_ATMOSPHERE_QUERY);
+  }
 
   evaluateNightState();
 
   if (!listenersBound) {
     reduceMotionMedia.addEventListener('change', handleReduceMotionChange);
+    constrainedAtmosphereMedia.addEventListener('change', handleWeatherStateChange);
     document.addEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
     window.addEventListener('resize', handleResize);
     nightTimerId = window.setInterval(() => {
       evaluateNightState();
@@ -402,8 +418,12 @@ export function teardownFireflyAura() {
   if (reduceMotionMedia) {
     reduceMotionMedia.removeEventListener('change', handleReduceMotionChange);
   }
+  if (constrainedAtmosphereMedia) {
+    constrainedAtmosphereMedia.removeEventListener('change', handleWeatherStateChange);
+  }
   window.removeEventListener('resize', handleResize);
   document.removeEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
+  document.removeEventListener('visibilitychange', handleVisibilityChange);
   if (cleanupCurrentLayer) {
     cleanupCurrentLayer();
     cleanupCurrentLayer = null;

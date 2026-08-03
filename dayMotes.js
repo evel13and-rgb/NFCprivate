@@ -20,6 +20,12 @@ let reduceMotionEnabled = false;
 let resizeBound = false;
 let hideTimerId = null;
 
+const MOBILE_ATMOSPHERE_QUERY = '(max-width: 768px), (pointer: coarse)';
+
+function shouldDisableMotes() {
+  return reduceMotionEnabled || window.matchMedia(MOBILE_ATMOSPHERE_QUERY).matches;
+}
+
 function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
@@ -237,6 +243,12 @@ export function initDaylightMotes() {
     reduceMotionEnabled = reduceMotionMedia.matches;
   }
 
+  // Las motas casi imperceptibles no justifican su coste de composición en móvil.
+  if (shouldDisableMotes()) {
+    setLayerVisibility(false);
+    return;
+  }
+
   if (!layer) {
     ensureLayer();
   }
@@ -266,6 +278,11 @@ export function initDaylightMotes() {
 }
 
 export function setDaylightMotesActive(active) {
+  if (typeof window !== 'undefined' && shouldDisableMotes()) {
+    setLayerVisibility(false);
+    return;
+  }
+
   if (!layer) {
     if (!active) {
       return;

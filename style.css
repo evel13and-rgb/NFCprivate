@@ -685,14 +685,17 @@ body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain'] {
   }
 
   body[data-visual-scene='rainbow-after-rain'] {
-    --weather-particles-opacity: 0.22;
+    --weather-particles: none;
+    --weather-particles-opacity: 0;
   }
 
   body[data-weather='mist'],
   body[data-visual-scene='day-mist'],
   body[data-visual-scene='sunset-mist'],
   body[data-visual-scene='night-mist'] {
-    --weather-particles-opacity: 0.34;
+    --weather-particles: none;
+    --weather-particles-opacity: 0;
+    --weather-particles-filter: none;
   }
 
   body[data-weather='light-rain'],
@@ -715,6 +718,25 @@ body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain'] {
   body:not([data-weather='heavy-rain'])[data-visual-scene='sunset-rain']::after,
   body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain']::after {
     transform: none;
+  }
+}
+
+/* En móvil/táctil se eliminan motas, luciérnagas y bruma animada para mantener fluido el scroll. */
+@media (max-width: 768px), (pointer: coarse) {
+  .day-motes-layer,
+  .fireflies-layer {
+    display: none !important;
+  }
+
+  body[data-visual-scene='rainbow-after-rain'],
+  body[data-weather='mist'],
+  body[data-visual-scene='day-mist'],
+  body[data-visual-scene='sunset-mist'],
+  body[data-visual-scene='night-mist'] {
+    --weather-particles: none;
+    --weather-particles-opacity: 0;
+    --weather-particles-animation: none;
+    --weather-particles-filter: none;
   }
 }
 
