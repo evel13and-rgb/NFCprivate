@@ -7,6 +7,14 @@ Esta carpeta mantiene separadas tres capas de trabajo:
 - `migration-report.json`, `normalization-report.json` y `editorial-review.md` son informes generados para revisar esos procesos.
 - `editorial-decisions.json` es el registro manual de decisiones humanas. Su estructura está documentada en `editorial-decisions.schema.json`.
 
+Esta carpeta es la fuente interna y canónica del catálogo de frases. `script.js` ya no
+contiene el catálogo completo. El runtime que consume la web se genera en
+`public/data/quotes.json` mediante `node scripts/build-public-quotes.mjs`.
+
+`scripts/extract-editorial-quotes.mjs` se conserva únicamente como herramienta legacy
+de la migración original desde `script.js`; no debe usarse para regenerar la fuente
+editorial actual.
+
 ## Qué no se edita a mano
 
 No se deben corregir directamente los archivos de extracción, los borradores normalizados ni los informes generados. Una nueva ejecución de los scripts podría sobrescribir esos cambios y, además, se perdería la diferencia entre lo inferido automáticamente y lo decidido por una persona.

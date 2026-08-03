@@ -1,4 +1,46 @@
 export const PUBLIC_QUOTES_SCHEMA_VERSION = 1;
+export const EXPECTED_PUBLIC_QUOTE_COUNT = 590;
+
+// Último recurso para que un fallo de red o de validación nunca deje la portada sin frase.
+// El catálogo runtime completo vive exclusivamente en public/data/quotes.json.
+export const EMERGENCY_QUOTES = Object.freeze([
+  Object.freeze({
+    id: 'quote-77',
+    legacy_index: 77,
+    t: 'Venció el amor, venció el honor.',
+    a: 'Segismundo — Jornada Tercera',
+    obra: 'La vida es sueño, Pedro Calderón de la Barca',
+    highlight: null,
+    lang: 'es',
+    type: 'poem',
+    authorId: 'author-pedro-calderon-de-la-barca',
+    workId: 'work-la-vida-es-sueno',
+  }),
+  Object.freeze({
+    id: 'quote-78',
+    legacy_index: 78,
+    t: 'Que cuando el valor se humilla,\nse engrandece más.',
+    a: 'Segismundo — Jornada Tercera',
+    obra: 'La vida es sueño, Pedro Calderón de la Barca',
+    highlight: null,
+    lang: 'es',
+    type: 'poem',
+    authorId: 'author-pedro-calderon-de-la-barca',
+    workId: 'work-la-vida-es-sueno',
+  }),
+  Object.freeze({
+    id: 'quote-540',
+    legacy_index: 540,
+    t: 'Hay pocas personas a quienes ame de verdad y todavía menos de quienes piense bien.',
+    a: 'Jane Austen',
+    obra: 'Orgullo y prejuicio, Jane Austen',
+    highlight: 'todavía menos de quienes piense bien',
+    lang: 'es',
+    type: 'prose',
+    authorId: 'author-jane-austen',
+    workId: 'work-orgullo-y-prejuicio',
+  }),
+]);
 
 export function validatePublicQuotesDocument(document, expectedCount) {
   if (!document || typeof document !== 'object' || Array.isArray(document)) {
@@ -36,19 +78,24 @@ export function validatePublicQuotesDocument(document, expectedCount) {
   return document.quotes;
 }
 
-export async function loadPublicQuotes(relativePath, embeddedQuotes, fetchImpl = globalThis.fetch) {
+export async function loadPublicQuotes(
+  relativePath,
+  fallbackQuotes = EMERGENCY_QUOTES,
+  fetchImpl = globalThis.fetch,
+  expectedCount = EXPECTED_PUBLIC_QUOTE_COUNT,
+) {
   try {
     if (typeof fetchImpl !== 'function') throw new Error('fetch no está disponible');
     const response = await fetchImpl(relativePath);
     if (!response?.ok) throw new Error(`HTTP ${response?.status ?? 'desconocido'}`);
     const document = await response.json();
     return {
-      quotes: validatePublicQuotesDocument(document, embeddedQuotes.length),
+      quotes: validatePublicQuotesDocument(document, expectedCount),
       source: 'public-json',
       error: null,
     };
   } catch (error) {
-    return { quotes: embeddedQuotes, source: 'embedded-fallback', error };
+    return { quotes: fallbackQuotes, source: 'emergency-fallback', error };
   }
 }
 

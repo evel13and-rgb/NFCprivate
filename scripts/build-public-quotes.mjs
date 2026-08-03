@@ -109,9 +109,20 @@ const quotes = intermediateQuotes.map((source, position) => {
   };
 });
 
+let generatedAt = new Date().toISOString();
+try {
+  const existing = JSON.parse(await readFile(outputPath, 'utf8'));
+  const unchanged = existing?.schema_version === 1
+    && existing?.quote_count === quotes.length
+    && JSON.stringify(existing?.quotes) === JSON.stringify(quotes);
+  if (unchanged && typeof existing.generated_at === 'string') generatedAt = existing.generated_at;
+} catch {
+  // La primera generación no tiene un runtime previo cuya fecha conservar.
+}
+
 const document = {
   schema_version: 1,
-  generated_at: new Date().toISOString(),
+  generated_at: generatedAt,
   quote_count: quotes.length,
   quotes,
 };
