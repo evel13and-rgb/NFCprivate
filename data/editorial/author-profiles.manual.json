@@ -398,6 +398,15 @@
   {
     "author_id": "author-henry-james",
     "name": "Henry James",
+    "portrait": {
+      "path": "public/images/authors/henry-james.webp",
+      "alt": "Retrato de Henry James",
+      "caption": "Henry James, 1913",
+      "credit": "John Singer Sargent",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Henry_James_1913.jpg",
+      "rights": "Dominio público; Public Domain Mark 1.0",
+      "object_position": "50% 35%"
+    },
     "birth_year": 1843,
     "death_year": 1916,
     "country": "Estados Unidos / Reino Unido. Nació en Nueva York y adquirió la ciudadanía británica en 1915.",
