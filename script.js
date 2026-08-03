@@ -1,4 +1,5 @@
 import { createQuoteManager } from './quoteLogic.js';
+import { findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
@@ -5624,7 +5625,9 @@ async function loadPublicProfiles() {
 const publicProfilesReady = loadPublicProfiles();
 
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
-const quoteManager = createQuoteManager(QUOTES, storage);
+let activeQuotes = QUOTES;
+let quoteManager = createQuoteManager(activeQuotes, storage);
+const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json', QUOTES);
 
 let currentQuote = null;
 let quoteElementRef = null;
@@ -6079,6 +6082,7 @@ function readQuoteState() {
     if (!parsed || typeof parsed !== 'object') return null;
     return {
       lastQuoteId: parsed.lastQuoteId,
+      stableQuoteId: parsed.stableQuoteId,
       lastShownAt: parsed.lastShownAt,
       nextAllowedAt: parsed.nextAllowedAt
     };
@@ -6096,15 +6100,11 @@ function writeQuoteState(state) {
   }
 }
 
-function isValidQuoteId(id) {
-  return Number.isInteger(id) && id >= 0 && id < QUOTES.length;
-}
-
 function toQuoteWithIndex(idx) {
-  if (!isValidQuoteId(idx)) {
+  if (!Number.isInteger(idx) || idx < 0 || idx >= activeQuotes.length) {
     return null;
   }
-  const base = QUOTES[idx];
+  const base = activeQuotes[idx];
   return base ? { ...base, idx } : null;
 }
 
@@ -6123,7 +6123,8 @@ function storeNewQuote(quote, timestamp) {
   if (!quote) return;
   const shownAt = typeof timestamp === 'number' ? timestamp : Date.now();
   writeQuoteState({
-    lastQuoteId: quote.idx,
+    lastQuoteId: Number.isInteger(quote.legacy_index) ? quote.legacy_index : quote.idx,
+    stableQuoteId: typeof quote.id === 'string' ? quote.id : null,
     lastShownAt: shownAt,
     nextAllowedAt: shownAt + QUOTE_INTERVAL_MS
   });
@@ -6139,9 +6140,8 @@ function determineQuoteForDisplay() {
   const navigationType = getNavigationType();
   const storedState = readQuoteState();
   const now = Date.now();
-  const storedQuote = storedState && isValidQuoteId(storedState.lastQuoteId)
-    ? toQuoteWithIndex(storedState.lastQuoteId)
-    : null;
+  const storedQuoteIndex = findStoredQuoteIndex(activeQuotes, storedState);
+  const storedQuote = toQuoteWithIndex(storedQuoteIndex);
 
   if (navigationType === 'reload' || navigationType === 'back_forward') {
     if (storedQuote) {
@@ -7368,7 +7368,13 @@ function renderQuote(quote) {
   hideShareImageFallback();
 }
 
-function initApp() {
+async function initApp() {
+  const publicQuotes = await publicQuotesReady;
+  activeQuotes = publicQuotes.quotes;
+  quoteManager = createQuoteManager(activeQuotes, storage);
+  if (publicQuotes.error) {
+    console.warn('No se pudo cargar el runtime público de frases; se usa el fallback embebido', publicQuotes.error);
+  }
   const { quote, message } = determineQuoteForDisplay();
   quoteElementRef = document.getElementById('quote');
   quoteHighlightRef = document.getElementById('quote-highlight');
@@ -7387,8 +7393,8 @@ function initApp() {
   initQuoteActionButtons();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  initApp();
+document.addEventListener('DOMContentLoaded', async () => {
+  await initApp();
   initFireflyAura();
   scheduleDayNightModeUpdates();
   revealAppWhenReady();
