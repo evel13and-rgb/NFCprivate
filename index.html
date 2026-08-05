@@ -73,31 +73,6 @@
           ></button>
         </div>
         <div class="watermark" aria-hidden="true">paramoliterario.com</div>
-        <div class="quote-actions" aria-label="Acciones de la frase">
-          <button
-            id="listen-voice-btn"
-            type="button"
-            class="quote-action-button"
-            aria-label="Escuchar voz"
-          >
-            <span class="quote-action-icon" aria-hidden="true">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
-                <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
-                <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
-              </svg>
-            </span>
-            <span>Escuchar voz</span>
-          </button>
-        </div>
       </div>
       <p class="tiny" id="share-feedback" hidden aria-live="polite"></p>
       <p class="tiny" id="quote-message" hidden aria-live="polite"></p>
@@ -105,9 +80,34 @@
   </main>
 
   <button
+    id="listen-voice-btn"
+    type="button"
+    class="floating-action floating-action--voice"
+    aria-label="Escuchar fragmento"
+    aria-pressed="false"
+    title="Escuchar fragmento"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.7"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
+      <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+      <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+    </svg>
+    <span class="sr-only">Escuchar voz</span>
+  </button>
+
+  <button
     id="share-image-btn"
     type="button"
-    class="floating-share-button"
+    class="floating-action floating-action--share"
     aria-label="Compartir fragmento"
     title="Compartir fragmento"
   >

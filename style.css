@@ -1117,7 +1117,7 @@ blockquote::after {
   opacity: 0.22;
   letter-spacing: 0.14em;
   text-transform: lowercase;
-  margin-top: 0.7rem;
+  margin: 0.7rem 0 clamp(1rem, 2.4vw, 1.4rem);
 }
 
 body.night-fall .watermark {
@@ -1274,90 +1274,8 @@ body.night-fall .watermark {
   display: none;
 }
 
-.quote-actions {
-  display: flex;
-  align-items: stretch;
-  width: calc(100% + clamp(2.2rem, 8.4vw, 6.4rem));
-  margin-top: clamp(1.6rem, 4vh, 2.3rem);
-  border-top: 1px solid rgba(200, 162, 90, 0.22);
-  background: linear-gradient(180deg, rgba(200, 162, 90, 0.025), rgba(0, 0, 0, 0.08));
-}
-
-.quote-action-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(0.75rem, 2vw, 1.05rem);
-  min-height: 5.7rem;
-  padding: 1rem clamp(0.6rem, 3vw, 1.45rem);
-  border: none;
-  background: transparent;
-  color: var(--title);
-  font: inherit;
-  font-size: clamp(0.72rem, 1.9vw, 0.9rem);
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  line-height: 1.2;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.35s ease, color 0.35s ease, opacity 0.35s ease;
-}
-
-.quote-actions .quote-action-button {
-  width: 100%;
-}
-
-.quote-action-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 auto;
-  width: 3.15rem;
-  height: 3.15rem;
-  border: 1px solid rgba(200, 162, 90, 0.64);
-  border-radius: 999px;
-  color: var(--title);
-}
-
-.quote-action-icon svg {
-  width: 1.45rem;
-  height: 1.45rem;
-  display: block;
-}
-
-.quote-action-button:hover,
-.quote-action-button:focus-visible {
-  background: rgba(200, 162, 90, 0.09);
-  color: #cead6e;
-  outline: none;
-}
-
-.quote-action-button:focus-visible .quote-action-icon {
-  box-shadow: 0 0 0 3px rgba(200, 162, 90, 0.18);
-}
-
-.quote-action-button[disabled],
-.quote-action-button.is-speaking {
-  opacity: 0.62;
-}
-
-.quote-action-button[disabled] {
-  cursor: progress;
-}
-
-.quote-action-button.is-speaking {
-  background: rgba(200, 162, 90, 0.11);
-}
-
-body.night-fall .quote-action-button,
-body.night-fall .quote-action-icon {
-  color: var(--title-night);
-  border-color: var(--ink-soft-night);
-}
-
-.floating-share-button {
+.floating-action {
   position: fixed;
-  right: calc(clamp(1rem, 2.5vw, 1.75rem) + env(safe-area-inset-right));
   bottom: calc(clamp(1.25rem, 3vw, 1.75rem) + env(safe-area-inset-bottom));
   z-index: 11;
   display: grid;
@@ -1365,46 +1283,110 @@ body.night-fall .quote-action-icon {
   width: 3.25rem;
   height: 3.25rem;
   padding: 0;
-  border: 1px solid rgba(200, 162, 90, 0.72);
-  border-radius: 52% 48% 50% 46%;
-  background: rgba(24, 22, 19, 0.9);
-  color: #d0ad67;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(205, 168, 96, 0.78);
+  border-radius: 50%;
+  background: rgba(25, 22, 18, 0.93);
+  color: #d7b56f;
+  box-shadow:
+    inset 0 0 0 3px rgba(200, 162, 90, 0.055),
+    0 5px 15px rgba(0, 0, 0, 0.26);
   cursor: pointer;
-  transition: border-color 0.25s ease, color 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
+  isolation: isolate;
+  transition:
+    transform 0.2s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease;
 }
 
-.floating-share-button svg {
-  width: 1.35rem;
-  height: 1.35rem;
+.floating-action::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  z-index: 0;
+  border: 1px solid rgba(224, 194, 132, 0.16);
+  border-radius: inherit;
+  pointer-events: none;
 }
 
-.floating-share-button:hover {
-  border-color: rgba(220, 183, 111, 0.94);
-  color: #e0bd77;
+.floating-action--voice {
+  left: calc(clamp(1rem, 2.5vw, 1.75rem) + env(safe-area-inset-left));
 }
 
-.floating-share-button:focus-visible {
-  border-color: rgba(220, 183, 111, 0.96);
-  outline: 3px solid rgba(200, 162, 90, 0.24);
+.floating-action--share {
+  right: calc(clamp(1rem, 2.5vw, 1.75rem) + env(safe-area-inset-right));
+}
+
+.floating-action svg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.floating-action:hover {
+  transform: translateY(-2px);
+  border-color: rgba(229, 194, 124, 0.96);
+  background: rgba(31, 27, 21, 0.96);
+  color: #e4c17c;
+  box-shadow:
+    inset 0 0 0 3px rgba(217, 180, 107, 0.08),
+    0 7px 17px rgba(0, 0, 0, 0.28);
+}
+
+.floating-action:active {
+  transform: scale(0.95);
+}
+
+.floating-action:focus-visible {
+  border-color: rgba(231, 198, 133, 0.98);
+  outline: 3px solid rgba(200, 162, 90, 0.25);
   outline-offset: 3px;
 }
 
-.floating-share-button[disabled] {
+.floating-action[disabled] {
   cursor: progress;
-  opacity: 0.58;
+  opacity: 0.56;
 }
 
-body.night-fall .floating-share-button {
-  border-color: var(--ink-soft-night);
-  background: rgba(15, 12, 16, 0.9);
+.floating-action.is-speaking {
+  border-color: rgba(229, 194, 124, 0.96);
+  background: rgba(64, 50, 29, 0.94);
+  color: #efd196;
+  box-shadow:
+    inset 0 0 0 3px rgba(225, 188, 116, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.26);
+}
+
+.floating-action.is-speaking::before {
+  border-color: rgba(239, 209, 150, 0.28);
+}
+
+body.night-fall .floating-action {
+  border-color: rgba(246, 234, 199, 0.4);
+  background: rgba(15, 12, 16, 0.93);
   color: var(--title-night);
 }
 
-body.modal-open .floating-share-button {
+body.modal-open .floating-action {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-action {
+    transition: border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  .floating-action:hover,
+  .floating-action:active {
+    transform: none;
+  }
 }
 
 .tiny {
@@ -2479,42 +2461,23 @@ body.night-fall .modal__close:focus-visible {
   }
 
   .watermark {
-    margin-top: 0.45rem;
+    margin: 0.45rem 0 0.8rem;
     font-size: 0.72rem;
     opacity: 0.3;
   }
 
-  .quote-actions {
-    width: calc(100% + 2rem);
-    margin-top: 0.85rem;
-  }
-
-  .quote-action-button {
-    gap: 0;
-    min-height: 3.35rem;
-    padding: 0.45rem 0.4rem;
-    letter-spacing: 0;
-  }
-
-  .quote-action-button > span:not(.quote-action-icon) {
-    display: none;
-  }
-
-  .quote-action-icon {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
-
-  .quote-action-icon svg {
-    width: 1.16rem;
-    height: 1.16rem;
-  }
-
-  .floating-share-button {
-    right: calc(1rem + env(safe-area-inset-right));
-    bottom: calc(1.25rem + env(safe-area-inset-bottom));
+  .floating-action {
+    bottom: calc(1.35rem + env(safe-area-inset-bottom));
     width: 2.875rem;
     height: 2.875rem;
+  }
+
+  .floating-action--voice {
+    left: calc(1rem + env(safe-area-inset-left));
+  }
+
+  .floating-action--share {
+    right: calc(1rem + env(safe-area-inset-right));
   }
 
   .tiny {
