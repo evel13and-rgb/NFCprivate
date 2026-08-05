@@ -1275,20 +1275,12 @@ body.night-fall .watermark {
 }
 
 .quote-actions {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  display: flex;
   align-items: stretch;
   width: calc(100% + clamp(2.2rem, 8.4vw, 6.4rem));
   margin-top: clamp(1.6rem, 4vh, 2.3rem);
   border-top: 1px solid rgba(200, 162, 90, 0.22);
   background: linear-gradient(180deg, rgba(200, 162, 90, 0.025), rgba(0, 0, 0, 0.08));
-}
-
-.quote-actions__divider {
-  align-self: center;
-  width: 1px;
-  height: 4.1rem;
-  background: rgba(222, 194, 135, 0.38);
 }
 
 .quote-action-button {
@@ -1311,10 +1303,8 @@ body.night-fall .watermark {
   transition: background-color 0.35s ease, color 0.35s ease, opacity 0.35s ease;
 }
 
-.share-button {
-  position: relative;
-  z-index: 20;
-  pointer-events: auto;
+.quote-actions .quote-action-button {
+  width: 100%;
 }
 
 .quote-action-icon {
@@ -1363,6 +1353,58 @@ body.night-fall .quote-action-button,
 body.night-fall .quote-action-icon {
   color: var(--title-night);
   border-color: var(--ink-soft-night);
+}
+
+.floating-share-button {
+  position: fixed;
+  right: calc(clamp(1rem, 2.5vw, 1.75rem) + env(safe-area-inset-right));
+  bottom: calc(clamp(1.25rem, 3vw, 1.75rem) + env(safe-area-inset-bottom));
+  z-index: 11;
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0;
+  border: 1px solid rgba(200, 162, 90, 0.72);
+  border-radius: 52% 48% 50% 46%;
+  background: rgba(24, 22, 19, 0.9);
+  color: #d0ad67;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition: border-color 0.25s ease, color 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.floating-share-button svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.floating-share-button:hover {
+  border-color: rgba(220, 183, 111, 0.94);
+  color: #e0bd77;
+}
+
+.floating-share-button:focus-visible {
+  border-color: rgba(220, 183, 111, 0.96);
+  outline: 3px solid rgba(200, 162, 90, 0.24);
+  outline-offset: 3px;
+}
+
+.floating-share-button[disabled] {
+  cursor: progress;
+  opacity: 0.58;
+}
+
+body.night-fall .floating-share-button {
+  border-color: var(--ink-soft-night);
+  background: rgba(15, 12, 16, 0.9);
+  color: var(--title-night);
+}
+
+body.modal-open .floating-share-button {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .tiny {
@@ -2447,10 +2489,6 @@ body.night-fall .modal__close:focus-visible {
     margin-top: 0.85rem;
   }
 
-  .quote-actions__divider {
-    height: 2.45rem;
-  }
-
   .quote-action-button {
     gap: 0;
     min-height: 3.35rem;
@@ -2470,6 +2508,13 @@ body.night-fall .modal__close:focus-visible {
   .quote-action-icon svg {
     width: 1.16rem;
     height: 1.16rem;
+  }
+
+  .floating-share-button {
+    right: calc(1rem + env(safe-area-inset-right));
+    bottom: calc(1.25rem + env(safe-area-inset-bottom));
+    width: 2.875rem;
+    height: 2.875rem;
   }
 
   .tiny {
