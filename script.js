@@ -1783,13 +1783,27 @@ function renderQuote(quote) {
     authorName.textContent = author ?? '';
     authorName.hidden = !hasAuthor;
     authorName.dataset.authorId = authorId;
-    authorName.setAttribute('aria-label', hasAuthor ? `Abrir información sobre ${author}` : '');
+    if (hasAuthor) {
+      const authorLabel = `Ver ficha de autor: ${author}`;
+      authorName.setAttribute('aria-label', authorLabel);
+      authorName.setAttribute('title', authorLabel);
+    } else {
+      authorName.removeAttribute('aria-label');
+      authorName.removeAttribute('title');
+    }
   }
   if (authorWork) {
     authorWork.textContent = workTitle ?? '';
     authorWork.hidden = !hasWork;
     authorWork.dataset.workId = workId;
-    authorWork.setAttribute('aria-label', hasWork ? `Abrir información sobre ${workTitle}` : '');
+    if (hasWork) {
+      const workLabel = `Ver ficha de obra: ${workTitle}`;
+      authorWork.setAttribute('aria-label', workLabel);
+      authorWork.setAttribute('title', workLabel);
+    } else {
+      authorWork.removeAttribute('aria-label');
+      authorWork.removeAttribute('title');
+    }
   }
   if (authorSeparator) {
     authorSeparator.hidden = !(hasAuthor && hasWork);
