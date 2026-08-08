@@ -107,5 +107,5 @@ test('script.js ya no contiene el catálogo completo ni colecciones literarias',
   const source = await readFile(new URL('../script.js', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);
   assert.doesNotMatch(source, /const\s+QUOTES\s*=\s*\[/);
-  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json'\)/);
+  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=2'\)/);
 });

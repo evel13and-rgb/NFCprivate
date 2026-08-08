@@ -1,5 +1,5 @@
 import { createQuoteManager } from './quoteLogic.js';
-import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js';
+import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=2';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
@@ -65,7 +65,7 @@ const publicProfilesReady = loadPublicProfiles();
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 let activeQuotes = EMERGENCY_QUOTES;
 let quoteManager = createQuoteManager(activeQuotes, storage);
-const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json');
+const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=2');
 
 let currentQuote = null;
 let quoteElementRef = null;
