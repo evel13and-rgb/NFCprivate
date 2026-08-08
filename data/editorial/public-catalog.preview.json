@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T12:27:08.132Z",
-    "total_quotes": 590,
+    "generated_at": "2026-08-08T11:32:44.328Z",
+    "total_quotes": 588,
     "total_authors": 25,
     "total_works": 27,
     "source": "editorial_draft",
@@ -10,38 +10,6 @@
     "warning": "VISTA PREVIA INTERNA: los derechos y las fuentes aún requieren verificación. No consumir en producción ni conectar al frontend."
   },
   "quotes": [
-    {
-      "id": "quote-0",
-      "text": "Esa sensación de extrañeza tan profunda, una otredad convexa que casi me pone del revés en el mundo",
-      "highlight": null,
-      "language": "es",
-      "type": "prose",
-      "author": null,
-      "author_id": null,
-      "work": "fragmentos",
-      "work_id": "work-fragmentos",
-      "speaker_name": "E.A",
-      "attribution_type": "ambiguous",
-      "source_collection": "E_A_FRAGMENTOS_QUOTES",
-      "legacy_index": 0,
-      "text_hash": "9eb83376eecede5ad0559218210b40dada4fcca61e0b89004887d8eaf55130c6"
-    },
-    {
-      "id": "quote-1",
-      "text": "Quería hurgar en mi cuerpo, con mis dedos dentro de mi carne, hasta encontrar eso que desquicia",
-      "highlight": null,
-      "language": "es",
-      "type": "prose",
-      "author": null,
-      "author_id": null,
-      "work": "fragmentos",
-      "work_id": "work-fragmentos",
-      "speaker_name": "E.A",
-      "attribution_type": "ambiguous",
-      "source_collection": "E_A_FRAGMENTOS_QUOTES",
-      "legacy_index": 1,
-      "text_hash": "d72db59fb04b071970e266e66318d26dd7255b65a7b4ab0e1468d910c1a7ad9c"
-    },
     {
       "id": "quote-2",
       "text": "He soñado en mi vida sueños que han permanecido conmigo para siempre y han cambiado mis ideas. Han pasado a través de mí como el vino a través del agua, y han alterado el color de mi mente. Si me caso con Linton, podría ser muy feliz: él es tan apacible y tan diferente de Heathcliff. Pero ¿cómo puedo vivir sin mi alma? Sea lo que sea de lo que estén hechas nuestras almas, la suya y la mía son lo mismo, y Linton es tan diferente de mí como un rayo de luna de un relámpago, o el hielo del fuego. Mi amor por Linton es como el follaje del bosque: el tiempo lo cambiará, lo sé bien, como el invierno cambia los árboles. Mi amor por Heathcliff se parece a las rocas eternas que hay debajo: no es una fuente de placer visible, pero es necesario. Nelly, yo soy Heathcliff. Él está siempre, siempre en mi mente: no como un placer, sino como mi propio ser. Así que no hables de separarnos; eso es imposible.",

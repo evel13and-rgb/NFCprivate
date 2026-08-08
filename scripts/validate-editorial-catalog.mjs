@@ -8,6 +8,8 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const editorialDirectory = path.join(projectRoot, 'data', 'editorial');
 const reportPath = path.join(editorialDirectory, 'catalog-validation-report.json');
+const EXPECTED_ACTIVE_QUOTE_COUNT = 588;
+const HISTORICAL_MIGRATION_QUOTE_COUNT = 590;
 
 const reviewedFiles = [
   'data/editorial/quotes.intermediate.json',
@@ -104,18 +106,25 @@ if (!Array.isArray(decisionsDocument?.decisions)) {
   blockingErrors.push('editorial-decisions.json: decisions debe contener un array');
 }
 
-if (safeIntermediate.length !== 590) {
-  blockingErrors.push(`quotes.intermediate.json: se esperaban 590 frases y hay ${safeIntermediate.length}`);
-}
-if (safeNormalized.length !== 590) {
-  blockingErrors.push(`quotes.normalized.draft.json: se esperaban 590 frases y hay ${safeNormalized.length}`);
-}
-if (migrationReport?.total_quotes !== 590) {
-  blockingErrors.push(`migration-report.json: total_quotes debe ser 590 y es ${migrationReport?.total_quotes}`);
-}
-if (normalizationReport?.total_quotes_processed !== 590) {
+if (safeIntermediate.length !== EXPECTED_ACTIVE_QUOTE_COUNT) {
   blockingErrors.push(
-    `normalization-report.json: total_quotes_processed debe ser 590 y es ${normalizationReport?.total_quotes_processed}`,
+    `quotes.intermediate.json: se esperaban ${EXPECTED_ACTIVE_QUOTE_COUNT} frases y hay ${safeIntermediate.length}`,
+  );
+}
+if (safeNormalized.length !== EXPECTED_ACTIVE_QUOTE_COUNT) {
+  blockingErrors.push(
+    `quotes.normalized.draft.json: se esperaban ${EXPECTED_ACTIVE_QUOTE_COUNT} frases y hay ${safeNormalized.length}`,
+  );
+}
+if (migrationReport?.total_quotes !== HISTORICAL_MIGRATION_QUOTE_COUNT) {
+  blockingErrors.push(
+    `migration-report.json: total_quotes debe ser ${HISTORICAL_MIGRATION_QUOTE_COUNT} y es ${migrationReport?.total_quotes}`,
+  );
+}
+if (normalizationReport?.total_quotes_processed !== HISTORICAL_MIGRATION_QUOTE_COUNT) {
+  blockingErrors.push(
+    'normalization-report.json: total_quotes_processed debe conservar el total histórico '
+    + `${HISTORICAL_MIGRATION_QUOTE_COUNT} y es ${normalizationReport?.total_quotes_processed}`,
   );
 }
 
@@ -306,7 +315,7 @@ const report = {
   valid: blockingErrors.length === 0,
   validated_at: new Date().toISOString(),
   summary: {
-    expected_quotes: 590,
+    expected_quotes: EXPECTED_ACTIVE_QUOTE_COUNT,
     intermediate_quotes: safeIntermediate.length,
     normalized_quotes: safeNormalized.length,
     authors: safeAuthors.length,

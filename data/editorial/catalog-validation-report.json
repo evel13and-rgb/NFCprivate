@@ -1,10 +1,10 @@
 {
   "valid": true,
-  "validated_at": "2026-08-02T12:27:38.343Z",
+  "validated_at": "2026-08-08T11:34:05.652Z",
   "summary": {
-    "expected_quotes": 590,
-    "intermediate_quotes": 590,
-    "normalized_quotes": 590,
+    "expected_quotes": 588,
+    "intermediate_quotes": 588,
+    "normalized_quotes": 588,
     "authors": 25,
     "works": 27,
     "sources": 27,

@@ -1,22 +1,17 @@
 {
-  "generated_at": "2026-08-02T12:27:08.132Z",
+  "generated_at": "2026-08-08T11:32:44.328Z",
   "preview": true,
   "publication_status": "internal_preview",
-  "total_quotes_exported": 590,
+  "total_quotes_exported": 588,
   "omitted_quotes": [],
   "private_fields_excluded": [
     "rights_notes",
     "notes",
     "editorial_notes"
   ],
-  "quotes_missing_author_id": [
-    "quote-0",
-    "quote-1"
-  ],
+  "quotes_missing_author_id": [],
   "quotes_missing_work_id": [],
   "ambiguous_attributions": [
-    "quote-0",
-    "quote-1",
     "quote-2",
     "quote-3",
     "quote-11",

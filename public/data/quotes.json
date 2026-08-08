@@ -1,32 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-03T10:04:19.446Z",
-  "quote_count": 590,
+  "generated_at": "2026-08-08T11:32:40.727Z",
+  "quote_count": 588,
   "quotes": [
-    {
-      "id": "quote-0",
-      "legacy_index": 0,
-      "t": "Esa sensación de extrañeza tan profunda, una otredad convexa que casi me pone del revés en el mundo",
-      "a": "E.A",
-      "obra": "fragmentos",
-      "highlight": null,
-      "lang": "es",
-      "type": "prose",
-      "authorId": null,
-      "workId": "work-fragmentos"
-    },
-    {
-      "id": "quote-1",
-      "legacy_index": 1,
-      "t": "Quería hurgar en mi cuerpo, con mis dedos dentro de mi carne, hasta encontrar eso que desquicia",
-      "a": "E.A",
-      "obra": "fragmentos",
-      "highlight": null,
-      "lang": "es",
-      "type": "prose",
-      "authorId": null,
-      "workId": "work-fragmentos"
-    },
     {
       "id": "quote-2",
       "legacy_index": 2,
