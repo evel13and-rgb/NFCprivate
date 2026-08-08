@@ -8,7 +8,7 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const editorialDirectory = path.join(projectRoot, 'data', 'editorial');
 const reportPath = path.join(editorialDirectory, 'catalog-validation-report.json');
-const EXPECTED_ACTIVE_QUOTE_COUNT = 588;
+const EXPECTED_ACTIVE_QUOTE_COUNT = 598;
 const HISTORICAL_MIGRATION_QUOTE_COUNT = 590;
 
 const reviewedFiles = [

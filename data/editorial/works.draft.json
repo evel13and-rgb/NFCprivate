@@ -241,5 +241,14 @@
     "legacy_work": "La edad de la inocencia, Edith Wharton",
     "status": "draft",
     "notes": "Título y autor inferidos separando legacy_work por la última coma."
+  },
+  {
+    "id": "work-el-despertar",
+    "title": "El despertar",
+    "slug": "el-despertar",
+    "author_id": "author-kate-chopin",
+    "legacy_work": "El despertar, Kate Chopin",
+    "status": "draft",
+    "notes": "Título, autoría y publicación comprobados en la primera edición de The Awakening (1899)."
   }
 ]

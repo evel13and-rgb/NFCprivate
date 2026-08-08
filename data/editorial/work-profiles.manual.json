@@ -719,5 +719,44 @@
     ],
     "profile_status": "draft",
     "verification_status": "partially_verified"
+  },
+  {
+    "work_id": "work-el-despertar",
+    "author_id": "author-kate-chopin",
+    "title": "El despertar",
+    "original_title": "The Awakening",
+    "publication_year": 1899,
+    "genre": "Novela psicológica y social; realismo, naturalismo y regionalismo, con rasgos que anticipan la narrativa modernista.",
+    "short_summary": "Edna Pontellier es una mujer casada y madre de dos hijos que pasa el verano con su familia en Grand Isle, una zona de vacaciones de la costa de Luisiana frecuentada por la comunidad criolla acomodada de Nueva Orleans. Allí comienza a experimentar una transformación interior: descubre deseos, emociones y capacidades que había mantenido subordinados a su papel de esposa y madre.\n\nSu relación con Robert Lebrun, el descubrimiento de su propia sensualidad, su acercamiento al arte y una creciente necesidad de independencia hacen que empiece a cuestionar las obligaciones que hasta entonces había aceptado como naturales. De regreso a Nueva Orleans, Edna intenta construir una existencia propia, pero descubre hasta qué punto su libertad entra en conflicto con el matrimonio, la maternidad y las estructuras sociales que la rodean.",
+    "context": "The Awakening fue publicada en Chicago y Nueva York por Herbert S. Stone & Company en 1899. Está ambientada en la Luisiana de finales del siglo XIX, principalmente entre Grand Isle y Nueva Orleans, dentro de una sociedad criolla acomodada cuyas costumbres matrimoniales, familiares y sociales proporcionan el marco contra el que se desarrolla la rebelión de Edna.\n\nLa posición económica de Edna le proporciona una comodidad de la que muchas mujeres carecían, pero no la libra de las expectativas asociadas a su sexo. Chopin la contrapone a Adèle Ratignolle, que encarna el ideal de dedicación maternal, y a Mademoiselle Reisz, una artista independiente que vive fuera del modelo matrimonial convencional. La novela plantea así algo especialmente incómodo para su época: una mujer con bienestar económico puede seguir sintiéndose privada de una existencia propia.\n\nLa sociedad de Luisiana representada en la obra sigue atravesada por jerarquías raciales y de clase apenas unas décadas después de la esclavitud. Personajes afroamericanos y trabajadores aparecen en el entorno doméstico de familias blancas privilegiadas, y la comodidad de estas depende de relaciones profundamente desiguales.\n\nLa novela resultó provocadora por tratar abiertamente el deseo sexual femenino, el adulterio, la insatisfacción matrimonial y la maternidad sin idealización. Recibió críticas muy duras y Chopin encontró después mayores dificultades para publicar parte de su obra. Su valoración cambió durante el siglo XX: desde su recuperación crítica en las décadas de 1950 y 1960, El despertar ocupa un lugar central en los estudios sobre literatura escrita por mujeres. También se ha destacado la modernidad de su representación de la conciencia, precursora de procedimientos asociados posteriormente a la narrativa modernista.",
+    "themes": [
+      "La autonomía femenina",
+      "El despertar sexual y emocional",
+      "La identidad",
+      "El matrimonio",
+      "La maternidad",
+      "El deseo",
+      "El adulterio",
+      "La independencia económica",
+      "La creación artística",
+      "El cuerpo",
+      "La soledad",
+      "La presión social",
+      "La tensión entre individuo y comunidad",
+      "El mar",
+      "La libertad",
+      "La muerte"
+    ],
+    "tone": "Íntimo, sensual, introspectivo y progresivamente melancólico. Chopin evita convertir la historia de Edna en un manifiesto explícito: observa su transformación con una prosa contenida, irónica y sensorial. El mar, la música, el calor, el cuerpo y el paisaje acompañan sus cambios internos. La aparente luminosidad del comienzo adquiere una dimensión cada vez más solitaria y trágica, pero la narración conserva hasta el final una ambigüedad esencial sobre Edna y el significado de sus decisiones.",
+    "sources": [
+      "Kate Chopin, The Awakening, primera edición de Herbert S. Stone & Company, Chicago y Nueva York, 1899.",
+      "Project Gutenberg, eBook 160, texto inglés de The Awakening.",
+      "Wikisource, transcripción de la primera edición estadounidense de 1899.",
+      "Library of Congress, America Reads, documentación sobre publicación y recepción crítica.",
+      "Kate Chopin International Society / KateChopin.org, documentación histórica y estudios de la novela.",
+      "Traducción propia del inglés para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

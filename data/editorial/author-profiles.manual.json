@@ -858,5 +858,51 @@
     ],
     "profile_status": "draft",
     "verification_status": "partially_verified"
+  },
+  {
+    "author_id": "author-kate-chopin",
+    "name": "Kate Chopin",
+    "portrait": {
+      "path": "public/images/authors/kate-chopin.webp",
+      "alt": "Retrato fotográfico de Kate Chopin",
+      "caption": "Kate Chopin, hacia finales de la década de 1890",
+      "credit": "Fotógrafo no identificado; Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kate_Chopin_portrait_T-P.jpg",
+      "rights": "Dominio público en Estados Unidos",
+      "object_position": "50% 32%"
+    },
+    "birth_year": 1850,
+    "death_year": 1904,
+    "country": "Estados Unidos",
+    "language": "Inglés; creció en un entorno familiar influido por la lengua y la cultura francesas.",
+    "period": "Segunda mitad del siglo XIX; Guerra de Secesión, Reconstrucción y transformación social y económica de Estados Unidos tras la abolición de la esclavitud.",
+    "movement": "Realismo y naturalismo estadounidense; regionalismo o local color del sur de Estados Unidos. Su exploración de la conciencia, el deseo y la autonomía femenina la convirtió más tarde en una figura central de la tradición literaria feminista y en precursora de procedimientos modernistas.",
+    "short_biography": "Kate Chopin —nacida Catherine O’Flaherty— nació en San Luis, Misuri, en una familia de ascendencia irlandesa y francesa. La muerte de su padre cuando ella tenía cinco años hizo que creciera principalmente rodeada de mujeres: su madre, su abuela y su bisabuela. Su infancia coincidió con la Guerra de Secesión y transcurrió en una ciudad políticamente dividida; el contacto temprano con la muerte, la guerra y una sociedad atravesada por tensiones raciales y políticas reaparecería indirectamente en su literatura.\n\nEn 1870 se casó con Oscar Chopin y se trasladó a Luisiana. Vivieron primero en Nueva Orleans, durante la inestable etapa de la Reconstrucción, y después en Cloutierville, una comunidad rural culturalmente heterogénea. Allí convivió con criollos, acadianos, afroamericanos y descendientes de distintos grupos europeos. Esa diversidad lingüística y social se convirtió en una de las características más reconocibles de sus relatos, en los que las jerarquías de clase, raza y género determinan las posibilidades de vida de los personajes.\n\nEntre 1871 y 1879 tuvo seis hijos. Cuando Oscar murió en 1882, Chopin quedó viuda con treinta y dos años y asumió responsabilidades familiares y económicas poco habituales para una mujer de su posición. Regresó a San Luis y, después de la muerte de su madre en 1885, un médico y amigo de la familia la animó a escribir. Comenzó su carrera literaria relativamente tarde, pero durante la década de 1890 publicó cerca de un centenar de relatos en revistas como Vogue, The Atlantic Monthly y The Century.\n\nLa influyeron especialmente Guy de Maupassant y Gustave Flaubert. De la literatura francesa tomó una economía narrativa, una mirada irónica y una forma de observar a los personajes sin dictar al lector un juicio moral. Chopin no fue activista sufragista ni reformadora política, pero su ficción examinó con una libertad extraordinaria qué ocurría cuando los deseos individuales de una mujer entraban en conflicto con el matrimonio, la maternidad y los papeles sociales construidos para ella.",
+    "themes": [
+      "La autonomía femenina",
+      "El deseo",
+      "La sexualidad",
+      "El matrimonio",
+      "La maternidad",
+      "La identidad",
+      "La libertad individual",
+      "La soledad",
+      "El despertar de la conciencia",
+      "Las convenciones sociales",
+      "La desigualdad entre hombres y mujeres",
+      "Las relaciones de clase y raza",
+      "La tensión entre vida interior y apariencia pública",
+      "El cuerpo",
+      "La naturaleza",
+      "Las consecuencias de vivir fuera de las normas establecidas"
+    ],
+    "sources": [
+      "Kate Chopin International Society / KateChopin.org, biografía y documentación histórica de la autora.",
+      "Library of Congress, America Reads: Kate Chopin, The Awakening (1899).",
+      "Encyclopedia.com, estudios sobre el realismo, el regionalismo y las influencias literarias de Chopin.",
+      "Wikimedia Commons, retrato fotográfico de Kate Chopin de finales de la década de 1890."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

@@ -274,5 +274,16 @@
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
+  },
+  {
+    "id": "author-kate-chopin",
+    "canonical_name": "Kate Chopin",
+    "slug": "kate-chopin",
+    "sort_name": "Kate Chopin",
+    "inferred_from": [
+      "El despertar, Kate Chopin"
+    ],
+    "status": "draft",
+    "notes": "Nombre y atribución comprobados en la primera edición de The Awakening (1899)."
   }
 ]

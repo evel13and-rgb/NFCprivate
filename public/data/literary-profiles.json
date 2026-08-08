@@ -879,6 +879,53 @@
         "rights": "Dominio público; Open Access de The Metropolitan Museum of Art",
         "object_position": "50% 35%"
       }
+    },
+    {
+      "author_id": "author-kate-chopin",
+      "display_name": "Kate Chopin",
+      "birth_year": 1850,
+      "death_year": 1904,
+      "country": "Estados Unidos",
+      "language": "Inglés; creció en un entorno familiar influido por la lengua y la cultura francesas.",
+      "period": "Segunda mitad del siglo XIX; Guerra de Secesión, Reconstrucción y transformación social y económica de Estados Unidos tras la abolición de la esclavitud.",
+      "movement": "Realismo y naturalismo estadounidense; regionalismo o local color del sur de Estados Unidos. Su exploración de la conciencia, el deseo y la autonomía femenina la convirtió más tarde en una figura central de la tradición literaria feminista y en precursora de procedimientos modernistas.",
+      "bio_short": "Kate Chopin —nacida Catherine O’Flaherty— nació en San Luis, Misuri, en una familia de ascendencia irlandesa y francesa. La muerte de su padre cuando ella tenía cinco años hizo que creciera principalmente rodeada de mujeres: su madre, su abuela y su bisabuela. Su infancia coincidió con la Guerra de Secesión y transcurrió en una ciudad políticamente dividida; el contacto temprano con la muerte, la guerra y una sociedad atravesada por tensiones raciales y políticas reaparecería indirectamente en su literatura.\n\nEn 1870 se casó con Oscar Chopin y se trasladó a Luisiana. Vivieron primero en Nueva Orleans, durante la inestable etapa de la Reconstrucción, y después en Cloutierville, una comunidad rural culturalmente heterogénea. Allí convivió con criollos, acadianos, afroamericanos y descendientes de distintos grupos europeos. Esa diversidad lingüística y social se convirtió en una de las características más reconocibles de sus relatos, en los que las jerarquías de clase, raza y género determinan las posibilidades de vida de los personajes.\n\nEntre 1871 y 1879 tuvo seis hijos. Cuando Oscar murió en 1882, Chopin quedó viuda con treinta y dos años y asumió responsabilidades familiares y económicas poco habituales para una mujer de su posición. Regresó a San Luis y, después de la muerte de su madre en 1885, un médico y amigo de la familia la animó a escribir. Comenzó su carrera literaria relativamente tarde, pero durante la década de 1890 publicó cerca de un centenar de relatos en revistas como Vogue, The Atlantic Monthly y The Century.\n\nLa influyeron especialmente Guy de Maupassant y Gustave Flaubert. De la literatura francesa tomó una economía narrativa, una mirada irónica y una forma de observar a los personajes sin dictar al lector un juicio moral. Chopin no fue activista sufragista ni reformadora política, pero su ficción examinó con una libertad extraordinaria qué ocurría cuando los deseos individuales de una mujer entraban en conflicto con el matrimonio, la maternidad y los papeles sociales construidos para ella.",
+      "bio_long": null,
+      "themes": [
+        "La autonomía femenina",
+        "El deseo",
+        "La sexualidad",
+        "El matrimonio",
+        "La maternidad",
+        "La identidad",
+        "La libertad individual",
+        "La soledad",
+        "El despertar de la conciencia",
+        "Las convenciones sociales",
+        "La desigualdad entre hombres y mujeres",
+        "Las relaciones de clase y raza",
+        "La tensión entre vida interior y apariencia pública",
+        "El cuerpo",
+        "La naturaleza",
+        "Las consecuencias de vivir fuera de las normas establecidas"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Kate Chopin International Society / KateChopin.org, biografía y documentación histórica de la autora.",
+        "Library of Congress, America Reads: Kate Chopin, The Awakening (1899).",
+        "Encyclopedia.com, estudios sobre el realismo, el regionalismo y las influencias literarias de Chopin.",
+        "Wikimedia Commons, retrato fotográfico de Kate Chopin de finales de la década de 1890."
+      ],
+      "portrait": {
+        "path": "public/images/authors/kate-chopin.webp",
+        "alt": "Retrato fotográfico de Kate Chopin",
+        "caption": "Kate Chopin, hacia finales de la década de 1890",
+        "credit": "Fotógrafo no identificado; Wikimedia Commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kate_Chopin_portrait_T-P.jpg",
+        "rights": "Dominio público en Estados Unidos",
+        "object_position": "50% 32%"
+      }
     }
   ],
   "works": [
@@ -1689,6 +1736,49 @@
         "Traducción propia del inglés para Páramo Literario."
       ],
       "fragment_count": 26
+    },
+    {
+      "work_id": "work-el-despertar",
+      "title": "El despertar",
+      "display_title": "El despertar",
+      "original_title": "The Awakening",
+      "author_id": "author-kate-chopin",
+      "publication_year": 1899,
+      "genre": "Novela psicológica y social; realismo, naturalismo y regionalismo, con rasgos que anticipan la narrativa modernista.",
+      "language": null,
+      "summary_short": "Edna Pontellier es una mujer casada y madre de dos hijos que pasa el verano con su familia en Grand Isle, una zona de vacaciones de la costa de Luisiana frecuentada por la comunidad criolla acomodada de Nueva Orleans. Allí comienza a experimentar una transformación interior: descubre deseos, emociones y capacidades que había mantenido subordinados a su papel de esposa y madre.\n\nSu relación con Robert Lebrun, el descubrimiento de su propia sensualidad, su acercamiento al arte y una creciente necesidad de independencia hacen que empiece a cuestionar las obligaciones que hasta entonces había aceptado como naturales. De regreso a Nueva Orleans, Edna intenta construir una existencia propia, pero descubre hasta qué punto su libertad entra en conflicto con el matrimonio, la maternidad y las estructuras sociales que la rodean.",
+      "summary_long": null,
+      "context_notes": "The Awakening fue publicada en Chicago y Nueva York por Herbert S. Stone & Company en 1899. Está ambientada en la Luisiana de finales del siglo XIX, principalmente entre Grand Isle y Nueva Orleans, dentro de una sociedad criolla acomodada cuyas costumbres matrimoniales, familiares y sociales proporcionan el marco contra el que se desarrolla la rebelión de Edna.\n\nLa posición económica de Edna le proporciona una comodidad de la que muchas mujeres carecían, pero no la libra de las expectativas asociadas a su sexo. Chopin la contrapone a Adèle Ratignolle, que encarna el ideal de dedicación maternal, y a Mademoiselle Reisz, una artista independiente que vive fuera del modelo matrimonial convencional. La novela plantea así algo especialmente incómodo para su época: una mujer con bienestar económico puede seguir sintiéndose privada de una existencia propia.\n\nLa sociedad de Luisiana representada en la obra sigue atravesada por jerarquías raciales y de clase apenas unas décadas después de la esclavitud. Personajes afroamericanos y trabajadores aparecen en el entorno doméstico de familias blancas privilegiadas, y la comodidad de estas depende de relaciones profundamente desiguales.\n\nLa novela resultó provocadora por tratar abiertamente el deseo sexual femenino, el adulterio, la insatisfacción matrimonial y la maternidad sin idealización. Recibió críticas muy duras y Chopin encontró después mayores dificultades para publicar parte de su obra. Su valoración cambió durante el siglo XX: desde su recuperación crítica en las décadas de 1950 y 1960, El despertar ocupa un lugar central en los estudios sobre literatura escrita por mujeres. También se ha destacado la modernidad de su representación de la conciencia, precursora de procedimientos asociados posteriormente a la narrativa modernista.",
+      "themes": [
+        "La autonomía femenina",
+        "El despertar sexual y emocional",
+        "La identidad",
+        "El matrimonio",
+        "La maternidad",
+        "El deseo",
+        "El adulterio",
+        "La independencia económica",
+        "La creación artística",
+        "El cuerpo",
+        "La soledad",
+        "La presión social",
+        "La tensión entre individuo y comunidad",
+        "El mar",
+        "La libertad",
+        "La muerte"
+      ],
+      "tone_notes": "Íntimo, sensual, introspectivo y progresivamente melancólico. Chopin evita convertir la historia de Edna en un manifiesto explícito: observa su transformación con una prosa contenida, irónica y sensorial. El mar, la música, el calor, el cuerpo y el paisaje acompañan sus cambios internos. La aparente luminosidad del comienzo adquiere una dimensión cada vez más solitaria y trágica, pero la narración conserva hasta el final una ambigüedad esencial sobre Edna y el significado de sus decisiones.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Kate Chopin, The Awakening, primera edición de Herbert S. Stone & Company, Chicago y Nueva York, 1899.",
+        "Project Gutenberg, eBook 160, texto inglés de The Awakening.",
+        "Wikisource, transcripción de la primera edición estadounidense de 1899.",
+        "Library of Congress, America Reads, documentación sobre publicación y recepción crítica.",
+        "Kate Chopin International Society / KateChopin.org, documentación histórica y estudios de la novela.",
+        "Traducción propia del inglés para Páramo Literario."
+      ],
+      "fragment_count": 10
     }
   ]
 }
