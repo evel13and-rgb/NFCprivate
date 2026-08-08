@@ -285,5 +285,16 @@
     ],
     "status": "draft",
     "notes": "Nombre y atribución comprobados en la primera edición de The Awakening (1899)."
+  },
+  {
+    "id": "author-bruno-schulz",
+    "canonical_name": "Bruno Schulz",
+    "slug": "bruno-schulz",
+    "sort_name": "Bruno Schulz",
+    "inferred_from": [
+      "Las tiendas de color canela, Bruno Schulz"
+    ],
+    "status": "draft",
+    "notes": "Nombre y atribución comprobados en la primera edición polaca de Sklepy cynamonowe (1934)."
   }
 ]

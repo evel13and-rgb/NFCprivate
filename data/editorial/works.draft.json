@@ -250,5 +250,14 @@
     "legacy_work": "El despertar, Kate Chopin",
     "status": "draft",
     "notes": "Título, autoría y publicación comprobados en la primera edición de The Awakening (1899)."
+  },
+  {
+    "id": "work-las-tiendas-de-color-canela",
+    "title": "Las tiendas de color canela",
+    "slug": "las-tiendas-de-color-canela",
+    "author_id": "author-bruno-schulz",
+    "legacy_work": "Las tiendas de color canela, Bruno Schulz",
+    "status": "draft",
+    "notes": "Título, autoría y publicación comprobados en la primera edición polaca de Sklepy cynamonowe (1934)."
   }
 ]

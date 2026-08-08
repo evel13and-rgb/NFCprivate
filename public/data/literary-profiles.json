@@ -926,6 +926,58 @@
         "rights": "Dominio público en Estados Unidos",
         "object_position": "50% 32%"
       }
+    },
+    {
+      "author_id": "author-bruno-schulz",
+      "display_name": "Bruno Schulz",
+      "birth_year": 1892,
+      "death_year": 1942,
+      "country": "Polonia —nació en Drohóbych, entonces parte del Imperio austrohúngaro y hoy perteneciente a Ucrania—",
+      "language": "Polaco",
+      "period": "Primera mitad del siglo XX, especialmente el periodo de entreguerras. Su vida atravesó la desaparición del Imperio austrohúngaro, la creación de la Segunda República Polaca, la ocupación soviética de 1939 y la ocupación nazi iniciada en 1941.",
+      "movement": "Modernismo polaco de entreguerras; prosa poética y mitopoética, con afinidades con el expresionismo, el surrealismo y la literatura fantástica. Su obra ocupa una posición singular dentro de la vanguardia centroeuropea.",
+      "bio_short": "Bruno Schulz fue escritor, dibujante, grabador y profesor de arte. Nació en Drohóbych, una pequeña ciudad de Galitzia que se convirtió en el centro casi absoluto de su vida y de su imaginación literaria. Procedía de una familia judía de lengua polaca perteneciente a la pequeña burguesía comercial; su padre, Jakub, regentaba una tienda de tejidos en la plaza principal. Esa tienda, la figura paterna y las calles de la ciudad reaparecerían transformadas continuamente en sus relatos.\n\nEstudió arquitectura en Leópolis, aunque no completó la carrera, y desarrolló paralelamente una intensa actividad artística. Desde 1924 trabajó como profesor de dibujo y trabajos manuales en escuelas de Drohóbych. La docencia le proporcionaba cierta estabilidad económica, pero le dejaba poco tiempo para escribir. Su producción literaria fue muy breve: fundamentalmente dos colecciones, Las tiendas de color canela y El sanatorio bajo la clepsidra, además de algunos relatos, ensayos y cartas.\n\nDrohóbych era una ciudad social y culturalmente compleja, habitada por comunidades judías, polacas y ucranianas. Había crecido durante el siglo XIX gracias a los yacimientos petrolíferos de la región, pero aquella expansión empezó después a perder fuerza. Schulz convirtió la convivencia entre el viejo mundo comercial de su infancia y una modernidad más barata, vulgar y estandarizada en una de las tensiones centrales de su obra.\n\nPerteneció a una generación extraordinaria de la literatura polaca de entreguerras en la que también destacaron Witold Gombrowicz, Stanisław Ignacy Witkiewicz y Zofia Nałkowska. Esta última desempeñó un papel decisivo en su llegada al mundo editorial al apoyar la publicación de Sklepy cynamonowe. Schulz fue además uno de los primeros lectores entusiastas de Ferdydurke, de Gombrowicz, cuya primera edición ilustró.\n\nSu literatura parte de la realidad más cercana —la casa familiar, una tienda, una calle, una noche de verano— para someterla a una metamorfosis continua. Los objetos adquieren vida, el tiempo se deforma, los animales y los seres humanos intercambian propiedades y una figura cotidiana puede convertirse en profeta, demiurgo o criatura fantástica. La descripción suele importar más que la acción y el lenguaje no se limita a representar el mundo: parece producirlo.\n\nTras la invasión soviética de Polonia en 1939, Drohóbych quedó bajo control de la URSS. En 1941 fue ocupada por la Alemania nazi y Schulz, como el resto de la población judía, fue obligado a vivir en el gueto. El 19 de noviembre de 1942 fue asesinado a tiros en una calle de Drohóbych por un miembro de la Gestapo. Buena parte de sus manuscritos y dibujos desapareció durante la guerra, incluido probablemente El Mesías, la novela en la que llevaba años trabajando.",
+      "bio_long": null,
+      "themes": [
+        "La infancia y la memoria",
+        "El padre",
+        "La familia",
+        "El tiempo",
+        "La metamorfosis",
+        "La imaginación",
+        "El mito",
+        "La creación artística",
+        "La materia",
+        "El deseo",
+        "El erotismo",
+        "La culpa",
+        "La ciudad",
+        "El comercio",
+        "La decadencia del mundo tradicional",
+        "La aparición de la modernidad",
+        "La naturaleza",
+        "El sueño",
+        "La identidad",
+        "La imposibilidad de recuperar completamente el pasado"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Culture.pl / Instituto Adam Mickiewicz, biografía y estudios sobre Bruno Schulz.",
+        "Culture.pl, estudio de Sklepy cynamonowe y documentación histórica sobre Drohóbych.",
+        "Polona, Biblioteca Nacional de Polonia, materiales sobre Schulz y sus primeras ediciones.",
+        "Wolne Lektury y Wikiźródła, texto polaco de la obra y primera edición de 1934.",
+        "Wikimedia Commons, retrato fotográfico de Bruno Schulz anterior a 1942."
+      ],
+      "portrait": {
+        "path": "public/images/authors/bruno-schulz.webp",
+        "alt": "Retrato fotográfico de Bruno Schulz",
+        "caption": "Bruno Schulz, antes de 1942",
+        "credit": "Fotógrafo no identificado; Wikimedia Commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bruno_Schulz,_portrait.jpg",
+        "rights": "Dominio público; obra anónima publicada hace más de setenta años",
+        "object_position": "50% 30%"
+      }
     }
   ],
   "works": [
@@ -1779,6 +1831,51 @@
         "Traducción propia del inglés para Páramo Literario."
       ],
       "fragment_count": 10
+    },
+    {
+      "work_id": "work-las-tiendas-de-color-canela",
+      "title": "Las tiendas de color canela",
+      "display_title": "Las tiendas de color canela",
+      "original_title": "Sklepy cynamonowe",
+      "author_id": "author-bruno-schulz",
+      "publication_year": 1934,
+      "genre": "Colección de relatos interconectados; prosa poética, fantástica y autobiográfica de carácter mitopoético. Por la continuidad de personajes, espacios y motivos, el conjunto posee también una estructura próxima a la novela fragmentaria.",
+      "language": null,
+      "summary_short": "Un narrador llamado Józef reconstruye episodios de su infancia en una pequeña ciudad de Galitzia inspirada directamente en Drohóbych. A su alrededor aparecen la casa familiar, las calles, la tienda de tejidos, la criada Adela y, sobre todo, su padre Jakub, comerciante excéntrico que progresivamente abandona las reglas de la realidad cotidiana para convertirse en inventor, profeta, criador de aves, pensador de la materia y figura casi mitológica.\n\nNo existe una trama única en sentido convencional. Los relatos reproducen recuerdos, estaciones, paseos, noches, enfermedades, comercios y escenas domésticas que la imaginación del narrador transforma continuamente. Una calle puede convertirse en un territorio de degradación moral; una tienda nocturna, en un espacio casi mágico; un padre enfermo, en demiurgo; y un verano puede prolongarse mediante meses que parecen no pertenecer al calendario.",
+      "summary_long": null,
+      "context_notes": "Sklepy cynamonowe fue el primer libro de Schulz. Muchos de sus textos surgieron inicialmente dentro de las cartas que intercambió a comienzos de la década de 1930 con la escritora y artista Debora Vogel. Zofia Nałkowska quedó impresionada por el manuscrito y ayudó decisivamente a que fuese aceptado por la editorial Rój. El volumen fue preparado y publicado a finales de 1933, aunque los ejemplares llevan fecha de 1934.\n\nEl mundo del libro procede directamente del Drohóbych de la infancia de Schulz. La ciudad había crecido durante el siglo XIX gracias a la industria petrolera cercana, pero a comienzos del XX empezó a perder parte de aquella prosperidad. En los relatos conviven por ello dos mundos: el comercio tradicional representado por el padre y su tienda, y una nueva modernidad comercial caracterizada por escaparates, publicidad, imitaciones, productos baratos y aspiraciones cosmopolitas.\n\nEsta oposición adquiere especial importancia en «La calle de los Cocodrilos», inspirada en una calle real de Drohóbych. Schulz convierte la nueva zona comercial en un mundo de apariencias, mercancías y simulacros: una modernidad seductora pero carente de la densidad casi sagrada que el narrador atribuye al universo de la infancia y al antiguo negocio del padre.\n\nSchulz escribe dentro del modernismo centroeuropeo, pero su procedimiento es profundamente personal: intenta devolver a las palabras una capacidad casi mitológica de creación. La realidad no es estable. La materia puede adoptar nuevas formas, el tiempo producir meses adicionales y las personas convertirse simbólicamente en animales u objetos. La frontera entre recuerdo, sueño y acontecimiento desaparece.\n\nEl libro es profundamente autobiográfico sin ser una autobiografía convencional. Józef funciona como una proyección del propio Schulz; Jakub reproduce muchos rasgos de su padre real; la tienda, las calles y numerosos personajes proceden de su infancia. Sin embargo, recordar significa para Schulz mitologizar: no reconstruye cómo sucedieron exactamente las cosas, sino cómo podían sentirse cuando todavía eran capaces de parecer infinitas.\n\nLa colección contiene quince piezas en su configuración habitual. La continuidad de Józef, el padre, Adela, la casa y la ciudad convierte los relatos en partes de un mismo universo narrativo.",
+      "themes": [
+        "La infancia y su mitificación",
+        "La memoria",
+        "El padre",
+        "La decadencia familiar",
+        "La creación y el demiurgo",
+        "La metamorfosis",
+        "La materia",
+        "El tiempo irregular",
+        "El sueño",
+        "El deseo",
+        "La sensualidad",
+        "La naturaleza",
+        "La ciudad",
+        "El comercio",
+        "La modernidad",
+        "La degradación de lo auténtico",
+        "La pérdida",
+        "La imaginación como forma de conocimiento"
+      ],
+      "tone_notes": "Onírico, exuberante, sensual, barroco, grotesco y melancólico. La prosa está saturada de metáforas y transformaciones: colores, olores, calor, animales, plantas, tejidos y objetos invaden continuamente la narración. Puede pasar en pocas líneas de la exaltación lírica al humor, de lo maravilloso a lo repulsivo y de una escena doméstica a una visión casi cósmica. Bajo esa vitalidad permanece una sensación constante de decadencia: el mundo que el narrador convierte en mito es precisamente un mundo que está desapareciendo.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Bruno Schulz, Sklepy cynamonowe, primera edición de Towarzystwo Wydawnicze RÓJ, Varsovia, 1934.",
+        "Wikiźródła, reproducción y transcripción de la primera edición polaca de 1934.",
+        "Wolne Lektury, texto polaco de Sklepy cynamonowe.",
+        "Culture.pl / Instituto Adam Mickiewicz, estudio crítico y documentación sobre publicación, estructura y contexto.",
+        "Polona, Biblioteca Nacional de Polonia, materiales históricos y bibliográficos sobre Schulz.",
+        "Traducción propia del polaco para Páramo Literario."
+      ],
+      "fragment_count": 16
     }
   ]
 }

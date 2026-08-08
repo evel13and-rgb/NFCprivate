@@ -1,5 +1,5 @@
 import { createQuoteManager } from './quoteLogic.js';
-import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=3';
+import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=4';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
@@ -41,7 +41,7 @@ async function fetchPublicProfiles(relativePath) {
 
 async function loadPublicProfiles() {
   try {
-    const profiles = await fetchPublicProfiles('./public/data/literary-profiles.json?v=2');
+    const profiles = await fetchPublicProfiles('./public/data/literary-profiles.json?v=3');
     const authorProfiles = Array.isArray(profiles?.authors) ? profiles.authors : [];
     const workProfiles = Array.isArray(profiles?.works) ? profiles.works : [];
 
@@ -65,7 +65,7 @@ const publicProfilesReady = loadPublicProfiles();
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 let activeQuotes = EMERGENCY_QUOTES;
 let quoteManager = createQuoteManager(activeQuotes, storage);
-const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=3');
+const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=4');
 
 let currentQuote = null;
 let quoteElementRef = null;

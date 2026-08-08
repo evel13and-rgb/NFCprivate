@@ -904,5 +904,56 @@
     ],
     "profile_status": "draft",
     "verification_status": "partially_verified"
+  },
+  {
+    "author_id": "author-bruno-schulz",
+    "name": "Bruno Schulz",
+    "portrait": {
+      "path": "public/images/authors/bruno-schulz.webp",
+      "alt": "Retrato fotográfico de Bruno Schulz",
+      "caption": "Bruno Schulz, antes de 1942",
+      "credit": "Fotógrafo no identificado; Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bruno_Schulz,_portrait.jpg",
+      "rights": "Dominio público; obra anónima publicada hace más de setenta años",
+      "object_position": "50% 30%"
+    },
+    "birth_year": 1892,
+    "death_year": 1942,
+    "country": "Polonia —nació en Drohóbych, entonces parte del Imperio austrohúngaro y hoy perteneciente a Ucrania—",
+    "language": "Polaco",
+    "period": "Primera mitad del siglo XX, especialmente el periodo de entreguerras. Su vida atravesó la desaparición del Imperio austrohúngaro, la creación de la Segunda República Polaca, la ocupación soviética de 1939 y la ocupación nazi iniciada en 1941.",
+    "movement": "Modernismo polaco de entreguerras; prosa poética y mitopoética, con afinidades con el expresionismo, el surrealismo y la literatura fantástica. Su obra ocupa una posición singular dentro de la vanguardia centroeuropea.",
+    "short_biography": "Bruno Schulz fue escritor, dibujante, grabador y profesor de arte. Nació en Drohóbych, una pequeña ciudad de Galitzia que se convirtió en el centro casi absoluto de su vida y de su imaginación literaria. Procedía de una familia judía de lengua polaca perteneciente a la pequeña burguesía comercial; su padre, Jakub, regentaba una tienda de tejidos en la plaza principal. Esa tienda, la figura paterna y las calles de la ciudad reaparecerían transformadas continuamente en sus relatos.\n\nEstudió arquitectura en Leópolis, aunque no completó la carrera, y desarrolló paralelamente una intensa actividad artística. Desde 1924 trabajó como profesor de dibujo y trabajos manuales en escuelas de Drohóbych. La docencia le proporcionaba cierta estabilidad económica, pero le dejaba poco tiempo para escribir. Su producción literaria fue muy breve: fundamentalmente dos colecciones, Las tiendas de color canela y El sanatorio bajo la clepsidra, además de algunos relatos, ensayos y cartas.\n\nDrohóbych era una ciudad social y culturalmente compleja, habitada por comunidades judías, polacas y ucranianas. Había crecido durante el siglo XIX gracias a los yacimientos petrolíferos de la región, pero aquella expansión empezó después a perder fuerza. Schulz convirtió la convivencia entre el viejo mundo comercial de su infancia y una modernidad más barata, vulgar y estandarizada en una de las tensiones centrales de su obra.\n\nPerteneció a una generación extraordinaria de la literatura polaca de entreguerras en la que también destacaron Witold Gombrowicz, Stanisław Ignacy Witkiewicz y Zofia Nałkowska. Esta última desempeñó un papel decisivo en su llegada al mundo editorial al apoyar la publicación de Sklepy cynamonowe. Schulz fue además uno de los primeros lectores entusiastas de Ferdydurke, de Gombrowicz, cuya primera edición ilustró.\n\nSu literatura parte de la realidad más cercana —la casa familiar, una tienda, una calle, una noche de verano— para someterla a una metamorfosis continua. Los objetos adquieren vida, el tiempo se deforma, los animales y los seres humanos intercambian propiedades y una figura cotidiana puede convertirse en profeta, demiurgo o criatura fantástica. La descripción suele importar más que la acción y el lenguaje no se limita a representar el mundo: parece producirlo.\n\nTras la invasión soviética de Polonia en 1939, Drohóbych quedó bajo control de la URSS. En 1941 fue ocupada por la Alemania nazi y Schulz, como el resto de la población judía, fue obligado a vivir en el gueto. El 19 de noviembre de 1942 fue asesinado a tiros en una calle de Drohóbych por un miembro de la Gestapo. Buena parte de sus manuscritos y dibujos desapareció durante la guerra, incluido probablemente El Mesías, la novela en la que llevaba años trabajando.",
+    "themes": [
+      "La infancia y la memoria",
+      "El padre",
+      "La familia",
+      "El tiempo",
+      "La metamorfosis",
+      "La imaginación",
+      "El mito",
+      "La creación artística",
+      "La materia",
+      "El deseo",
+      "El erotismo",
+      "La culpa",
+      "La ciudad",
+      "El comercio",
+      "La decadencia del mundo tradicional",
+      "La aparición de la modernidad",
+      "La naturaleza",
+      "El sueño",
+      "La identidad",
+      "La imposibilidad de recuperar completamente el pasado"
+    ],
+    "sources": [
+      "Culture.pl / Instituto Adam Mickiewicz, biografía y estudios sobre Bruno Schulz.",
+      "Culture.pl, estudio de Sklepy cynamonowe y documentación histórica sobre Drohóbych.",
+      "Polona, Biblioteca Nacional de Polonia, materiales sobre Schulz y sus primeras ediciones.",
+      "Wolne Lektury y Wikiźródła, texto polaco de la obra y primera edición de 1934.",
+      "Wikimedia Commons, retrato fotográfico de Bruno Schulz anterior a 1942."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

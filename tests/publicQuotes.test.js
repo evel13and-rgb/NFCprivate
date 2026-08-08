@@ -77,12 +77,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 598 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 614 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 598);
-  assert.equal(quotes.length, 598);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 598);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 598);
+  const quotes = validatePublicQuotesDocument(document, 614);
+  assert.equal(quotes.length, 614);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 614);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 614);
   for (const fallbackQuote of EMERGENCY_QUOTES) {
     assert.deepEqual(fallbackQuote, quotes.find(quote => quote.id === fallbackQuote.id));
   }
@@ -99,7 +99,7 @@ test('build-public-quotes genera un runtime equivalente desde la capa editorial'
   });
   assert.equal(result.status, 0, result.stderr);
   const generated = JSON.parse(await readFile(path.join(temporaryRoot, 'public/data/quotes.json'), 'utf8'));
-  const checked = validatePublicQuotesDocument(generated, 598);
+  const checked = validatePublicQuotesDocument(generated, 614);
   assert.equal(checked[0].id, `quote-${checked[0].legacy_index}`);
 });
 
@@ -107,5 +107,5 @@ test('script.js ya no contiene el catálogo completo ni colecciones literarias',
   const source = await readFile(new URL('../script.js', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);
   assert.doesNotMatch(source, /const\s+QUOTES\s*=\s*\[/);
-  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=3'\)/);
+  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=4'\)/);
 });

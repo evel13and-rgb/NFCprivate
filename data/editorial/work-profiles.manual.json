@@ -758,5 +758,46 @@
     ],
     "profile_status": "draft",
     "verification_status": "partially_verified"
+  },
+  {
+    "work_id": "work-las-tiendas-de-color-canela",
+    "author_id": "author-bruno-schulz",
+    "title": "Las tiendas de color canela",
+    "original_title": "Sklepy cynamonowe",
+    "publication_year": 1934,
+    "genre": "Colección de relatos interconectados; prosa poética, fantástica y autobiográfica de carácter mitopoético. Por la continuidad de personajes, espacios y motivos, el conjunto posee también una estructura próxima a la novela fragmentaria.",
+    "short_summary": "Un narrador llamado Józef reconstruye episodios de su infancia en una pequeña ciudad de Galitzia inspirada directamente en Drohóbych. A su alrededor aparecen la casa familiar, las calles, la tienda de tejidos, la criada Adela y, sobre todo, su padre Jakub, comerciante excéntrico que progresivamente abandona las reglas de la realidad cotidiana para convertirse en inventor, profeta, criador de aves, pensador de la materia y figura casi mitológica.\n\nNo existe una trama única en sentido convencional. Los relatos reproducen recuerdos, estaciones, paseos, noches, enfermedades, comercios y escenas domésticas que la imaginación del narrador transforma continuamente. Una calle puede convertirse en un territorio de degradación moral; una tienda nocturna, en un espacio casi mágico; un padre enfermo, en demiurgo; y un verano puede prolongarse mediante meses que parecen no pertenecer al calendario.",
+    "context": "Sklepy cynamonowe fue el primer libro de Schulz. Muchos de sus textos surgieron inicialmente dentro de las cartas que intercambió a comienzos de la década de 1930 con la escritora y artista Debora Vogel. Zofia Nałkowska quedó impresionada por el manuscrito y ayudó decisivamente a que fuese aceptado por la editorial Rój. El volumen fue preparado y publicado a finales de 1933, aunque los ejemplares llevan fecha de 1934.\n\nEl mundo del libro procede directamente del Drohóbych de la infancia de Schulz. La ciudad había crecido durante el siglo XIX gracias a la industria petrolera cercana, pero a comienzos del XX empezó a perder parte de aquella prosperidad. En los relatos conviven por ello dos mundos: el comercio tradicional representado por el padre y su tienda, y una nueva modernidad comercial caracterizada por escaparates, publicidad, imitaciones, productos baratos y aspiraciones cosmopolitas.\n\nEsta oposición adquiere especial importancia en «La calle de los Cocodrilos», inspirada en una calle real de Drohóbych. Schulz convierte la nueva zona comercial en un mundo de apariencias, mercancías y simulacros: una modernidad seductora pero carente de la densidad casi sagrada que el narrador atribuye al universo de la infancia y al antiguo negocio del padre.\n\nSchulz escribe dentro del modernismo centroeuropeo, pero su procedimiento es profundamente personal: intenta devolver a las palabras una capacidad casi mitológica de creación. La realidad no es estable. La materia puede adoptar nuevas formas, el tiempo producir meses adicionales y las personas convertirse simbólicamente en animales u objetos. La frontera entre recuerdo, sueño y acontecimiento desaparece.\n\nEl libro es profundamente autobiográfico sin ser una autobiografía convencional. Józef funciona como una proyección del propio Schulz; Jakub reproduce muchos rasgos de su padre real; la tienda, las calles y numerosos personajes proceden de su infancia. Sin embargo, recordar significa para Schulz mitologizar: no reconstruye cómo sucedieron exactamente las cosas, sino cómo podían sentirse cuando todavía eran capaces de parecer infinitas.\n\nLa colección contiene quince piezas en su configuración habitual. La continuidad de Józef, el padre, Adela, la casa y la ciudad convierte los relatos en partes de un mismo universo narrativo.",
+    "themes": [
+      "La infancia y su mitificación",
+      "La memoria",
+      "El padre",
+      "La decadencia familiar",
+      "La creación y el demiurgo",
+      "La metamorfosis",
+      "La materia",
+      "El tiempo irregular",
+      "El sueño",
+      "El deseo",
+      "La sensualidad",
+      "La naturaleza",
+      "La ciudad",
+      "El comercio",
+      "La modernidad",
+      "La degradación de lo auténtico",
+      "La pérdida",
+      "La imaginación como forma de conocimiento"
+    ],
+    "tone": "Onírico, exuberante, sensual, barroco, grotesco y melancólico. La prosa está saturada de metáforas y transformaciones: colores, olores, calor, animales, plantas, tejidos y objetos invaden continuamente la narración. Puede pasar en pocas líneas de la exaltación lírica al humor, de lo maravilloso a lo repulsivo y de una escena doméstica a una visión casi cósmica. Bajo esa vitalidad permanece una sensación constante de decadencia: el mundo que el narrador convierte en mito es precisamente un mundo que está desapareciendo.",
+    "sources": [
+      "Bruno Schulz, Sklepy cynamonowe, primera edición de Towarzystwo Wydawnicze RÓJ, Varsovia, 1934.",
+      "Wikiźródła, reproducción y transcripción de la primera edición polaca de 1934.",
+      "Wolne Lektury, texto polaco de Sklepy cynamonowe.",
+      "Culture.pl / Instituto Adam Mickiewicz, estudio crítico y documentación sobre publicación, estructura y contexto.",
+      "Polona, Biblioteca Nacional de Polonia, materiales históricos y bibliográficos sobre Schulz.",
+      "Traducción propia del polaco para Páramo Literario."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const EXPECTED_QUOTE_COUNT = 598;
+const EXPECTED_QUOTE_COUNT = 614;
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const editorialDirectory = path.join(projectRoot, 'data', 'editorial');

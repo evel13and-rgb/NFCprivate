@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-08T11:59:59.618Z",
-  "quote_count": 598,
+  "generated_at": "2026-08-08T17:23:12.563Z",
+  "quote_count": 614,
   "quotes": [
     {
       "id": "quote-2",
@@ -7178,6 +7178,198 @@
       "type": "prose",
       "authorId": "author-kate-chopin",
       "workId": "work-el-despertar"
+    },
+    {
+      "id": "quote-600",
+      "legacy_index": 600,
+      "t": "Un enorme girasol, erguido sobre un tallo poderoso y enfermo de elefantiasis, esperaba, en el luto amarillo de sus últimos y tristes días de vida, doblándose bajo el exceso de su monstruosa corpulencia.\n\nPero las ingenuas campanillas suburbanas y las florecillas sencillas, como de percal, permanecían indefensas en sus almidonadas camisitas rosas y blancas, incapaces de comprender la gran tragedia del girasol.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "la gran tragedia del girasol",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-601",
+      "legacy_index": 601,
+      "t": "Y, como aprovechando su sueño, hablaba el silencio: un silencio amarillo, chillón, maligno; monologaba, discutía, pronunciaba en voz alta y groseramente su monólogo maniático.\n\nEl tiempo de Maryśka —el tiempo aprisionado en su alma— salió de ella, terriblemente real, y anduvo suelto por la habitación, ruidoso, atronador, infernal, creciendo en el chillón silencio de la mañana desde el ruidoso molino-reloj, como harina mala, harina suelta, harina estúpida de locos.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "el tiempo aprisionado en su alma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-602",
+      "legacy_index": 602,
+      "t": "En aquel viejo olor familiar se contenía, en una síntesis extrañamente sencilla, la vida de aquellas personas: el alambique de la raza, la especie de sangre y el secreto de su destino, encerrado imperceptiblemente en el transcurrir cotidiano de su propio tiempo separado.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "el secreto de su destino",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-603",
+      "legacy_index": 603,
+      "t": "Agazapado bajo grandes almohadas, erizado salvajemente de mechones de pelo gris, hablaba consigo mismo en voz baja, enteramente sumergido en complicados asuntos interiores.\n\nParecía que su personalidad se hubiera descompuesto en numerosos yos enfrentados y divergentes, pues discutía consigo mismo en voz alta, negociaba con empeño y pasión, persuadía y suplicaba; otras veces parecía presidir una asamblea de numerosos interesados a quienes trataba de reconciliar con todo el ardor y la elocuencia de que era capaz.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "numerosos yos enfrentados y divergentes",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-604",
+      "legacy_index": 604,
+      "t": "Entonces todos advertimos que mi padre empezaba a empequeñecer de un día para otro, como una nuez que se seca dentro de su cáscara.\n\nAquel menguar no iba acompañado, sin embargo, de una pérdida de fuerzas. Al contrario: su salud, su humor y su movilidad parecían mejorar.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "como una nuez que se seca dentro de su cáscara",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-605",
+      "legacy_index": 605,
+      "t": "Solo hoy comprendo el heroísmo solitario con que aquel hombre declaró, él solo, la guerra al elemento ilimitado del tedio que entumecía la ciudad.\n\nPrivado de cualquier apoyo, sin reconocimiento por nuestra parte, aquel hombre extraordinario defendía la causa perdida de la poesía.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "la causa perdida de la poesía",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-606",
+      "legacy_index": 606,
+      "t": "Proscrito voluntario, se retiró a una habitación vacía al fondo del corredor y se atrincheró allí con la soledad.\n\nNos olvidamos de él.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "se atrincheró allí con la soledad",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-607",
+      "legacy_index": 607,
+      "t": "—Si, olvidando el respeto debido al Creador, quisiera entretenerme criticando la creación, gritaría: ¡menos contenido, más forma! ¡Ah, cuánto aliviaría al mundo esa disminución de contenido! Más modestia en los propósitos, mayor contención en las pretensiones, señores demiurgos, ¡y el mundo sería más perfecto!",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "¡menos contenido, más forma!",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-608",
+      "legacy_index": 608,
+      "t": "Eran seres amorfos, carentes de estructura interna: productos de la tendencia imitativa de la materia, que, dotada de memoria, repite por costumbre las formas que una vez adoptó.\n\nLa escala morfológica a la que está sometida la materia es, en general, limitada, y cierto repertorio de formas se repite una y otra vez en los distintos pisos de la existencia.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "la materia, que, dotada de memoria, repite",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-609",
+      "legacy_index": 609,
+      "t": "Existen ambientes especialmente propicios: viejas viviendas impregnadas por las emanaciones de muchas vidas y muchos acontecimientos; atmósferas gastadas, ricas en los ingredientes específicos de los sueños humanos; ruinas abundantes en el humus de los recuerdos, las nostalgias y el tedio estéril.\n\nEn semejante suelo, aquella pseudovegetación germinaba rápida y superficialmente, parasitaba con exuberancia y fugacidad y producía generaciones de corta vida que florecían súbita y espléndidamente para apagarse y marchitarse poco después.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "el humus de los recuerdos",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-610",
+      "legacy_index": 610,
+      "t": "Era sumamente interesante poseer una porción tan pequeña de vida, una partícula del misterio eterno, bajo una forma tan divertida y nueva, que despertaba una curiosidad infinita y un secreto respeto por su extrañeza, por aquella inesperada transposición del mismo hilo de vida que había también en nosotros a una forma distinta de la nuestra, animal.\n\n¡Los animales! Objeto de una curiosidad insaciable, ejemplificaciones del enigma de la vida, como creados para mostrarle al hombre al hombre, descomponiendo su riqueza y su complejidad en miles de posibilidades caleidoscópicas, cada una llevada hasta algún límite paradójico, hasta alguna exuberancia llena de carácter.\n\nLibre del entramado de intereses egoístas que enturbian las relaciones entre los hombres, el corazón se abría lleno de simpatía hacia las extrañas emanaciones de la vida eterna, lleno de una curiosidad amorosa y colaboradora, que era una voz de autoconocimiento disfrazada.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "una voz de autoconocimiento disfrazada",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-611",
+      "legacy_index": 611,
+      "t": "Aquella vivienda vacía y abandonada no lo reconocía; los muebles y las paredes lo seguían con una crítica silenciosa.\n\nAl entrar en su silencio, se sentía como un intruso en aquel reino submarino y sumergido, en el que fluía un tiempo distinto, separado.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "un intruso en aquel reino submarino",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-612",
+      "legacy_index": 612,
+      "t": "Es una imprudencia imperdonable enviar en una noche así a un muchacho con una misión importante y urgente, porque bajo aquella media luz las calles se multiplican, se enredan y se intercambian unas con otras.\n\nEn las profundidades de la ciudad se abren, por así decirlo, calles dobles, calles sosias, calles mentirosas y engañosas.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "calles mentirosas y engañosas",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-613",
+      "legacy_index": 613,
+      "t": "La noche no era fría en absoluto; al contrario, estaba veteada por corrientes de un calor extraño, por soplos de una falsa primavera.\n\nLa nieve se había encogido formando corderitos blancos, un vellón inocente y dulce que olía a violetas. En corderitos semejantes se había disuelto también el cielo, y en él la luna se duplicaba y triplicaba, exhibiendo en aquella multiplicación todas sus fases y posiciones.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "soplos de una falsa primavera",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-614",
+      "legacy_index": 614,
+      "t": "En una noche así es imposible recorrer Podwale, ni ninguna otra de las oscuras calles que son el reverso, por así decirlo el forro, de las cuatro líneas de la plaza, sin recordar que a aquella hora tardía todavía permanecen abiertas a veces algunas de esas tiendas peculiares y tan seductoras que olvidamos durante los días ordinarios. Las llamo tiendas de color canela por los oscuros revestimientos de madera de ese color que cubren sus interiores.\n\nAquellos comercios verdaderamente nobles, abiertos hasta entrada la noche, habían sido siempre objeto de mis sueños ardientes.\n\nDébilmente iluminados, oscuros y solemnes, sus interiores olían profundamente a pinturas, lacre e incienso, al aroma de países lejanos y materias raras.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "objeto de mis sueños ardientes",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
+    },
+    {
+      "id": "quote-615",
+      "legacy_index": 615,
+      "t": "Todo el mundo sabe que, en la sucesión de los años corrientes y normales, un tiempo vuelto extraño pare a veces, de su propio seno, años distintos: años extraños, años degenerados a los que, como un sexto dedo pequeño de la mano, les crece en alguna parte un decimotercer mes falso.\n\nLo llamamos falso porque rara vez alcanza un desarrollo completo. Como los hijos concebidos tarde, se queda rezagado en su crecimiento: un mes jorobado, un brote medio marchito, más supuesto que real.",
+      "a": "Bruno Schulz",
+      "obra": "Las tiendas de color canela, Bruno Schulz",
+      "highlight": "un decimotercer mes falso",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-bruno-schulz",
+      "workId": "work-las-tiendas-de-color-canela"
     }
   ]
 }
