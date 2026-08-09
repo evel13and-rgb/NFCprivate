@@ -1887,6 +1887,56 @@
         "Traducción propia del polaco para Páramo Literario."
       ],
       "fragment_count": 16
+    },
+    {
+      "work_id": "work-el-idiota",
+      "title": "El idiota",
+      "display_title": "El idiota",
+      "original_title": "Идиот —Idiot—",
+      "author_id": "author-fiodor-dostoievski",
+      "publication_year": 1868,
+      "genre": "Novela psicológica, filosófica y social; realismo ruso con una fuerte dimensión religiosa y existencial.",
+      "language": null,
+      "summary_short": "El príncipe Lev Nikoláievich Myshkin regresa a Rusia después de pasar varios años en Suiza recibiendo tratamiento por su epilepsia. Es un hombre extraordinariamente compasivo, sincero y ajeno a muchas de las convenciones sociales, hasta el punto de que quienes lo rodean suelen interpretar su bondad como ingenuidad o falta de inteligencia.\n\nAl introducirse en la sociedad de San Petersburgo queda atrapado en una red de ambiciones, dinero, orgullo, deseo y rivalidades. En el centro se encuentra Nastasia Filíppovna, una mujer marcada por el abuso y por la vergüenza que la sociedad ha proyectado sobre ella. Myshkin siente hacia ella amor y compasión, mientras Rogozhin la desea de manera posesiva y destructiva.\n\nDostoievski enfrenta así a un personaje de bondad casi radical con un mundo incapaz de comprenderla y explora qué ocurre cuando la compasión entra en contacto con el deseo, la humillación, la violencia y las heridas psicológicas.",
+      "summary_long": null,
+      "context_notes": "Dostoievski escribió El idiota entre 1867 y 1869, durante una etapa de dificultades económicas, problemas de salud y pérdidas familiares. La novela apareció en una Rusia que acababa de abolir la servidumbre y atravesaba intensos debates sobre religión, materialismo, libertad y transformación social.\n\nEl escritor quiso representar a un ser humano moralmente «bello» mediante el príncipe Myshkin. Algunos elementos tienen además una raíz autobiográfica: Dostoievski padecía epilepsia y había sobrevivido en 1849 a un simulacro de ejecución, experiencias que reaparecen transformadas en las reflexiones de la novela sobre la enfermedad, la muerte y el valor de la vida.",
+      "themes": [
+        "La bondad y sus límites",
+        "La compasión",
+        "La inocencia",
+        "El sufrimiento",
+        "La enfermedad",
+        "La muerte",
+        "La fe y la duda",
+        "El amor",
+        "El deseo",
+        "La obsesión",
+        "La violencia",
+        "La culpa",
+        "La humillación",
+        "El abuso",
+        "La vergüenza",
+        "La autodestrucción",
+        "El dinero",
+        "La desigualdad social",
+        "La identidad",
+        "La locura",
+        "La belleza",
+        "La libertad",
+        "La dificultad de salvar a otra persona"
+      ],
+      "tone_notes": "Intenso, psicológico, trágico y profundamente humano, con momentos de ironía, absurdo y humor social. Dostoievski alterna escenas de gran agitación —discusiones, confesiones, escándalos y arrebatos emocionales— con momentos íntimos sobre la muerte, la enfermedad y el sufrimiento.\n\nLos personajes pueden pasar rápidamente del amor al odio, de la burla a la confesión o de la ternura a la violencia. Bajo esa inestabilidad permanece una pregunta moral constante: qué ocurre con una persona que intenta responder mediante la compasión a un mundo cuyas heridas quizá la compasión por sí sola no pueda reparar.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Fiódor Dostoievski, Идиот, edición académica de las Obras reunidas en quince tomos, tomo 6, Nauka, Leningrado, 1989, reproducida por la Biblioteca Virtual Rusa.",
+        "Project Gutenberg, The Idiot, texto y datos de publicación.",
+        "Oxford World’s Classics, edición crítica de The Idiot.",
+        "Cambridge University Press, estudios sobre Dostoievski, la epilepsia y su contexto.",
+        "Documentación histórica sobre las reformas sociales de la Rusia de Alejandro II.",
+        "Traducción propia del ruso para Páramo Literario."
+      ],
+      "fragment_count": 26
     }
   ]
 }

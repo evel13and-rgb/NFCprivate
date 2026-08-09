@@ -11,7 +11,7 @@ publica `public-catalog.preview.json`. Para regenerar el runtime público:
 node scripts/build-public-quotes.mjs
 ```
 
-El generador exige 614 registros, cruza la extracción con el catálogo normalizado,
+El generador exige 640 registros, cruza la extracción con el catálogo normalizado,
 comprueba campos obligatorios e impide IDs o índices heredados duplicados. Después de
 regenerarlo deben ejecutarse `npm test` y las validaciones habituales del despliegue.
 

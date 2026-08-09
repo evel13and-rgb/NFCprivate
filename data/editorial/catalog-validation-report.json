@@ -1,16 +1,16 @@
 {
   "valid": true,
-  "validated_at": "2026-08-08T17:23:22.056Z",
+  "validated_at": "2026-08-09T11:51:36.850Z",
   "summary": {
-    "expected_quotes": 614,
-    "intermediate_quotes": 614,
-    "normalized_quotes": 614,
+    "expected_quotes": 640,
+    "intermediate_quotes": 640,
+    "normalized_quotes": 640,
     "authors": 27,
-    "works": 29,
-    "sources": 29,
+    "works": 30,
+    "sources": 30,
     "editorial_decisions": 0,
     "poems": 26,
-    "quotes_with_line_breaks": 437,
+    "quotes_with_line_breaks": 458,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {

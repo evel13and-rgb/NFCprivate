@@ -1,5 +1,5 @@
 export const PUBLIC_QUOTES_SCHEMA_VERSION = 1;
-export const EXPECTED_PUBLIC_QUOTE_COUNT = 614;
+export const EXPECTED_PUBLIC_QUOTE_COUNT = 640;
 
 // Último recurso para que un fallo de red o de validación nunca deje la portada sin frase.
 // El catálogo runtime completo vive exclusivamente en public/data/quotes.json.

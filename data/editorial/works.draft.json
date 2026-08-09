@@ -259,5 +259,14 @@
     "legacy_work": "Las tiendas de color canela, Bruno Schulz",
     "status": "draft",
     "notes": "Título, autoría y publicación comprobados en la primera edición polaca de Sklepy cynamonowe (1934)."
+  },
+  {
+    "id": "work-el-idiota",
+    "title": "El idiota",
+    "slug": "el-idiota",
+    "author_id": "author-fiodor-dostoievski",
+    "legacy_work": "El idiota, Fiódor Dostoievski",
+    "status": "draft",
+    "notes": "Título y autoría comprobados en la edición académica rusa de Nauka (1989); publicación original por entregas en Russkiy Vestnik entre 1868 y 1869."
   }
 ]
