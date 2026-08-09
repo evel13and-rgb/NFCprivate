@@ -41,7 +41,7 @@ async function fetchPublicProfiles(relativePath) {
 
 async function loadPublicProfiles() {
   try {
-    const profiles = await fetchPublicProfiles('./public/data/literary-profiles.json?v=3');
+    const profiles = await fetchPublicProfiles('./public/data/literary-profiles.json?v=4');
     const authorProfiles = Array.isArray(profiles?.authors) ? profiles.authors : [];
     const workProfiles = Array.isArray(profiles?.works) ? profiles.works : [];
 
