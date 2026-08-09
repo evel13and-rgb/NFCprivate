@@ -18,7 +18,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=28" />
+  <link rel="stylesheet" href="style.css?v=29" />
 </head>
 <body class="app-loading" data-mode="day">
   <div
@@ -50,33 +50,39 @@
       aria-live="polite"
     >
       <div id="quote-card">
-        <h1 id="quote-card-title">Páramo Literario</h1>
-        <div class="quote-rule quote-rule--top" aria-hidden="true"><span></span></div>
-        <p class="quote-highlight" id="quote-highlight" hidden></p>
-        <blockquote class="quote-text" id="quote">…</blockquote>
-        <div class="quote-rule quote-rule--short" aria-hidden="true"><span></span></div>
-        <div class="author" id="author" aria-live="polite">
-          <div class="author-line">
-            <span class="meta-prefix" aria-hidden="true">—</span>
+        <div class="quote-card__header">
+          <h1 id="quote-card-title">Páramo Literario</h1>
+          <div class="quote-rule quote-rule--top" aria-hidden="true"><span></span></div>
+          <p class="quote-highlight" id="quote-highlight" hidden></p>
+        </div>
+        <div class="quote-card__body">
+          <blockquote class="quote-text" id="quote">…</blockquote>
+        </div>
+        <div class="quote-card__footer">
+          <div class="quote-rule quote-rule--short" aria-hidden="true"><span></span></div>
+          <div class="author" id="author" aria-live="polite">
+            <div class="author-line">
+              <span class="meta-prefix" aria-hidden="true">—</span>
+              <button
+                type="button"
+                class="meta-link literary-info-link meta-author"
+                id="author-name"
+                data-author-id=""
+                aria-haspopup="dialog"
+                aria-controls="author-modal"
+              ></button>
+            </div>
             <button
               type="button"
-              class="meta-link literary-info-link meta-author"
-              id="author-name"
-              data-author-id=""
+              class="meta-link literary-info-link meta-work"
+              id="author-work"
+              data-work-id=""
               aria-haspopup="dialog"
-              aria-controls="author-modal"
+              aria-controls="work-modal"
             ></button>
           </div>
-          <button
-            type="button"
-            class="meta-link literary-info-link meta-work"
-            id="author-work"
-            data-work-id=""
-            aria-haspopup="dialog"
-            aria-controls="work-modal"
-          ></button>
+          <div class="watermark" aria-hidden="true">paramoliterario.com</div>
         </div>
-        <div class="watermark" aria-hidden="true">paramoliterario.com</div>
       </div>
       <p class="tiny" id="share-feedback" hidden aria-live="polite"></p>
       <p class="tiny" id="quote-message" hidden aria-live="polite"></p>

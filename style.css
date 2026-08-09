@@ -887,6 +887,11 @@ h1 {
   transition: background 0.9s ease, border-color 0.9s ease, box-shadow 0.9s ease;
 }
 
+#quote-card:has(> .quote-card__body > .quote-text--very-long) {
+  max-height: 80vh;
+  max-height: min(80dvh, calc(100dvh - 7rem));
+}
+
 #quote-card::before {
   content: '';
   position: absolute;
@@ -939,6 +944,41 @@ h1 {
 #quote-card > * {
   position: relative;
   z-index: 2;
+}
+
+.quote-card__header,
+.quote-card__footer {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.quote-card__body {
+  width: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: rgba(200, 162, 90, 0.32) transparent;
+  scrollbar-width: thin;
+}
+
+.quote-card__body::-webkit-scrollbar {
+  width: 0.32rem;
+}
+
+.quote-card__body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.quote-card__body::-webkit-scrollbar-thumb {
+  background: rgba(200, 162, 90, 0.3);
+  border-radius: 999px;
 }
 
 body[data-weather='light-rain'] #quote-card::before,
@@ -1077,15 +1117,17 @@ blockquote {
   line-height: 1.12;
 }
 
-.quote-highlight:not([hidden]) + .quote-text--poem.quote-text--medium,
-.quote-highlight:not([hidden]) + .quote-text--poem.quote-text--long,
-.quote-highlight:not([hidden]) + .quote-text--poem.quote-text--very-long {
+.quote-card__header:has(.quote-highlight:not([hidden]))
+  + .quote-card__body
+  > .quote-text--poem:is(.quote-text--medium, .quote-text--long, .quote-text--very-long) {
   margin-top: -0.25rem;
 }
 
-.quote-text--poem.quote-text--medium + .quote-rule--short,
-.quote-text--poem.quote-text--long + .quote-rule--short,
-.quote-text--poem.quote-text--very-long + .quote-rule--short {
+.quote-card__body:has(
+    > .quote-text--poem:is(.quote-text--medium, .quote-text--long, .quote-text--very-long)
+  )
+  + .quote-card__footer
+  > .quote-rule--short {
   margin-top: 0.9rem;
   margin-bottom: 0.55rem;
 }
@@ -2486,6 +2528,12 @@ body.night-fall .modal__close:focus-visible {
     padding: 0.85rem 0.9rem 0;
   }
 
+  #quote-card:has(> .quote-card__body > .quote-text--very-long) {
+    --quote-card-vertical-reserve: calc(8.75rem + env(safe-area-inset-bottom));
+    max-height: 84vh;
+    max-height: min(84dvh, calc(100dvh - var(--quote-card-vertical-reserve)));
+  }
+
   h1 {
     margin-bottom: 0.45rem;
     max-width: 100%;
@@ -2550,9 +2598,11 @@ body.night-fall .modal__close:focus-visible {
     line-height: 1.12;
   }
 
-  .quote-text--poem.quote-text--medium + .quote-rule--short,
-  .quote-text--poem.quote-text--long + .quote-rule--short,
-  .quote-text--poem.quote-text--very-long + .quote-rule--short {
+  .quote-card__body:has(
+      > .quote-text--poem:is(.quote-text--medium, .quote-text--long, .quote-text--very-long)
+    )
+    + .quote-card__footer
+    > .quote-rule--short {
     margin-top: 0.55rem;
     margin-bottom: 0.25rem;
   }
