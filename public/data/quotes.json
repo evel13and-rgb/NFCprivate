@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T18:55:38.177Z",
+  "generated_at": "2026-08-10T19:08:18.811Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -150,7 +150,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "I delighted in investigating the facts relative to the actual world; she busied herself in following the aërial creations of the poets. The world was to me a secret, which I desired to discover; to her it was a vacancy, which she sought to people with imaginations of her own.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-14",
@@ -203,7 +208,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "I had worked hard for nearly two years, for the sole purpose of infusing life into an inanimate body. For this I had deprived myself of rest and health. I had desired it with an ardour that far exceeded moderation; but now that I had finished, the beauty of the dream vanished, and breathless horror and disgust filled my heart.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-18",
@@ -215,7 +225,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "Nothing is more painful to the human mind, than, after the feelings have been worked up by a quick succession of events, the dead calmness of inaction and certainty which follows, and deprives the soul both of hope and fear. Justine died; she rested; and I was alive. The blood flowed freely in my veins, but a weight of despair and remorse pressed on my heart, which nothing could remove.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-19",
@@ -275,7 +290,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "And what was I? Of my creation and creator I was absolutely ignorant; but I knew that I possessed no money, no friends, no kind of property. I was, besides, endowed with a figure hideously deformed and loathsome; I was not even of the same nature as man.\n\nWhen I looked around, I saw and heard of none like me. Was I then a monster, a blot upon the earth, from which all men fled, and whom all men disowned?",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-24",
@@ -371,7 +391,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "Shall each man,” cried he, “find a wife for his bosom, and each beast have his mate, and I be alone? I had feelings of affection, and they were requited by detestation and scorn. Man, you may hate; but beware! Your hours will pass in dread and misery, and soon the bolt will fall which must ravish from you your happiness for ever. Are you to be happy, while I grovel in the intensity of my wretchedness? You can blast my other passions; but revenge remains—revenge, henceforth dearer than light or food!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-32",
@@ -383,7 +408,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "I may die; but first you, my tyrant and tormentor, shall curse the sun that gazes on your misery. Beware; for I am fearless, and therefore powerful. I will watch with the wiliness of a snake, that I may sting with its venom. Man, you shall repent of the injuries you inflict.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-33",
@@ -436,7 +466,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "Every conversation of the cottagers now opened new wonders to me. While I listened to the instructions which Felix bestowed upon the Arabian, the strange system of human society was explained to me. I heard of the division of property, of immense wealth and squalid poverty; of rank, descent, and noble blood.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-37",
