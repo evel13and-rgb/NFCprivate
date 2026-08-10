@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T12:12:16.941Z",
+  "generated_at": "2026-08-10T18:55:38.177Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -143,7 +143,7 @@
     {
       "id": "quote-13",
       "legacy_index": 13,
-      "t": "Yo me deleitaba investigando los hechos del mundo real; ella se ocupaba de seguir las creaciones aéreas de los poetas. El mundo era para mí un secreto que deseaba descubrir; para ella, un espacio vacío que trataba de poblar con imaginaciones propias.",
+      "t": "Yo me deleitaba investigando los hechos del mundo real; ella se ocupaba de seguir las creaciones etéreas de los poetas. El mundo era para mí un secreto que deseaba descubrir; para ella, un espacio vacío que trataba de poblar con imaginaciones propias.",
       "a": "Víctor Frankenstein",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "El mundo era para mí un secreto",
@@ -196,7 +196,7 @@
     {
       "id": "quote-17",
       "legacy_index": 17,
-      "t": "Había trabajado duramente durante casi dos años con el único propósito de infundir vida en un cuerpo inanimado. Para conseguirlo me había privado del descanso y de la salud. Lo había deseado con un ardor que excedía con mucho toda moderación; pero, ahora que había terminado, la belleza del sueño se desvaneció y un horror y una repugnancia sin aliento llenaron mi corazón.",
+      "t": "Había trabajado duramente durante casi dos años con el único propósito de infundir vida en un cuerpo inanimado. Para conseguirlo me había privado del descanso y de la salud. Lo había deseado con un ardor que excedía con mucho toda moderación; pero, ahora que había terminado, la belleza del sueño se desvaneció y un horror y una repugnancia que me dejaron sin aliento llenaron mi corazón.",
       "a": "Víctor Frankenstein",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "la belleza del sueño se desvaneció",
@@ -208,7 +208,7 @@
     {
       "id": "quote-18",
       "legacy_index": 18,
-      "t": "Nada es más doloroso para la mente humana que, después de que los sentimientos hayan sido agitados por una rápida sucesión de acontecimientos, la calma muerta de la inacción y la certeza que sigue, y que priva al alma tanto de la esperanza como del miedo.\n\nJustine había muerto; descansaba; y yo seguía vivo. La sangre fluía libremente por mis venas, pero sobre mi corazón pesaba una carga de desesperación y remordimiento que nada podía apartar.",
+      "t": "Nada es más doloroso para la mente humana que, después de que los sentimientos hayan sido agitados por una rápida sucesión de acontecimientos, la calma muerta de la inacción y de la certidumbre que sobreviene, y que priva al alma tanto de la esperanza como del miedo.\n\nJustine había muerto; descansaba; y yo seguía vivo. La sangre fluía libremente por mis venas, pero sobre mi corazón pesaba una carga de desesperación y remordimiento que nada podía apartar.",
       "a": "Víctor Frankenstein",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "la calma muerta de la inacción y la certeza",
@@ -268,7 +268,7 @@
     {
       "id": "quote-23",
       "legacy_index": 23,
-      "t": "—¿Y qué era yo? Ignoraba por completo quién me había creado y cómo había nacido; pero sabía que no poseía dinero, amigos ni propiedad de ninguna clase. Además, estaba dotado de una figura horriblemente deforme y repulsiva; ni siquiera pertenecía a la misma naturaleza que el hombre.\n\nCuando miraba a mi alrededor, no veía ni oía hablar de nadie semejante a mí. ¿Era entonces un monstruo, una mancha sobre la tierra de la que todos los hombres huían y a la que todos repudiaban?",
+      "t": "—¿Y qué era yo? Ignoraba por completo quién me había creado y cómo había nacido; pero sabía que no poseía dinero, amigos ni propiedad de ninguna clase. Además, estaba dotado de una figura horriblemente deforme y repulsiva; ni siquiera era de la misma naturaleza que el hombre.\n\nCuando miraba a mi alrededor, no veía ni oía hablar de nadie semejante a mí. ¿Era entonces un monstruo, una mancha sobre la tierra de la que todos los hombres huían y a la que todos repudiaban?",
       "a": "La Criatura",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "¿Y qué era yo?",
@@ -364,7 +364,7 @@
     {
       "id": "quote-31",
       "legacy_index": 31,
-      "t": "—¿Ha de encontrar cada hombre una esposa junto a su pecho, y cada animal una compañera, mientras yo permanezco solo? Tuve sentimientos de afecto y me respondieron con odio y desprecio.\n\nTú puedes odiarme, pero ¡ten cuidado! Tus horas transcurrirán entre el miedo y la desgracia, y pronto caerá el rayo que te arrebatará para siempre la felicidad. ¿Has de ser feliz mientras yo me arrastro en la intensidad de mi desdicha?\n\nPuedes destruir mis otras pasiones, pero la venganza permanece: una venganza que desde ahora me será más querida que la luz o el alimento.",
+      "t": "—¿Ha de encontrar cada hombre una esposa a quien estrechar contra su pecho, y cada animal una compañera, mientras yo permanezco solo? Tuve sentimientos de afecto y me respondieron con odio y desprecio.\n\nTú puedes odiarme, pero ¡ten cuidado! Tus horas transcurrirán entre el miedo y la desgracia, y pronto caerá el rayo que te arrebatará para siempre la felicidad. ¿Has de ser feliz mientras yo me arrastro en lo más hondo de mi desdicha?\n\nPuedes destruir mis otras pasiones, pero la venganza permanece: una venganza que desde ahora me será más querida que la luz o el alimento.",
       "a": "La Criatura",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "mientras yo permanezco solo",
@@ -376,7 +376,7 @@
     {
       "id": "quote-32",
       "legacy_index": 32,
-      "t": "—Puedo morir; pero antes tú, mi tirano y verdugo, maldecirás el sol que ilumine tu desgracia. Ten cuidado, porque no tengo miedo y, por tanto, soy poderoso. Vigilaré con la astucia de una serpiente para poder clavarte su veneno.\n\nHombre, te arrepentirás de los daños que me has causado.",
+      "t": "—Puedo morir; pero antes tú, mi tirano y verdugo, maldecirás el sol que ilumine tu desgracia. Ten cuidado, porque no tengo miedo y, por tanto, soy poderoso. Vigilaré con la astucia de una serpiente para poder herirte con su veneno.\n\nHombre, te arrepentirás de los daños que me has causado.",
       "a": "La Criatura",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "no tengo miedo y, por tanto, soy poderoso",
@@ -388,7 +388,7 @@
     {
       "id": "quote-33",
       "legacy_index": 33,
-      "t": "—Esclavo, antes razoné contigo, pero has demostrado ser indigno de mi condescendencia. Recuerda que tengo poder: tú te crees miserable, pero puedo hacerte tan desdichado que la luz del día te resulte odiosa.\n\nTú eres mi creador, pero yo soy tu amo. Obedece.",
+      "t": "—Esclavo, ya razoné contigo antes, pero has demostrado ser indigno de mi condescendencia. Recuerda que tengo poder: tú te crees miserable, pero puedo hacerte tan desdichado que la luz del día te resulte odiosa.\n\nTú eres mi creador, pero yo soy tu amo. Obedece.",
       "a": "La Criatura",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "Tú eres mi creador, pero yo soy tu amo",
@@ -429,7 +429,7 @@
     {
       "id": "quote-36",
       "legacy_index": 36,
-      "t": "Cada conversación de los habitantes de la cabaña abría ante mí nuevas maravillas. Mientras escuchaba las lecciones que Felix daba a la joven árabe, se me explicó el extraño sistema de la sociedad humana.\n\nOí hablar de la división de la propiedad, de riquezas inmensas y pobreza miserable; de rango, linaje y sangre noble.",
+      "t": "Cada conversación de los habitantes de la cabaña abría ante mí nuevas maravillas. Mientras escuchaba las lecciones que Felix daba a la joven árabe, se me fue revelando el extraño sistema de la sociedad humana.\n\nOí hablar de la división de la propiedad, de riquezas inmensas y pobreza miserable; de rango, linaje y sangre noble.",
       "a": "La Criatura",
       "obra": "Frankenstein o el moderno Prometeo, Mary Shelley",
       "highlight": "el extraño sistema de la sociedad humana",
