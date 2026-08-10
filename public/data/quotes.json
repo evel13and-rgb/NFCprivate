@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T19:35:19.888Z",
+  "generated_at": "2026-08-10T19:46:45.768Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -3147,7 +3147,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Harry,” said Basil Hallward, looking him straight in the face, “every portrait that is painted with feeling is a portrait of the artist, not of the sitter. The sitter is merely the accident, the occasion. It is not he who is revealed by the painter; it is rather the painter who, on the coloured canvas, reveals himself. The reason I will not exhibit this picture is that I am afraid that I have shown in it the secret of my own soul.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-260",
@@ -3159,7 +3164,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "As he was turning the handle of the door, his eye fell upon the portrait Basil Hallward had painted of him. He started back as if in surprise. Then he went on into his own room, looking somewhat puzzled. After he had taken the buttonhole out of his coat, he seemed to hesitate. Finally he came back, went over to the picture, and examined it. In the dim arrested light that struggled through the cream-coloured silk blinds, the face appeared to him to be a little changed. The expression looked different. One would have said that there was a touch of cruelty in the mouth. It was certainly strange.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-261",
@@ -3171,7 +3181,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "His unreal and selfish love would yield to some higher influence, would be transformed into some nobler passion, and the portrait that Basil Hallward had painted of him would be a guide to him through life, would be to him what holiness is to some, and conscience to others, and the fear of God to us all. There were opiates for remorse, drugs that could lull the moral sense to sleep. But here was a visible symbol of the degradation of sin. Here was an ever-present sign of the ruin men brought upon their souls.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-262",
@@ -3183,7 +3198,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Often, on returning home from one of those mysterious and prolonged absences that gave rise to such strange conjecture among those who were his friends, or thought that they were so, he himself would creep upstairs to the locked room, open the door with the key that never left him now, and stand, with a mirror, in front of the portrait that Basil Hallward had painted of him, looking now at the evil and ageing face on the canvas, and now at the fair young face that laughed back at him from the polished glass.\n\nThe very sharpness of the contrast used to quicken his sense of pleasure. He grew more and more enamoured of his own beauty, more and more interested in the corruption of his own soul. He would examine with minute care, and sometimes with a monstrous and terrible delight, the hideous lines that seared the wrinkling forehead, or crawled around the heavy sensual mouth, wondering sometimes which were the more horrible, the signs of sin or the signs of age.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-263",
@@ -3195,7 +3215,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "It is the face of my soul.\n\nChrist! what a thing I must have worshipped! It has the eyes of a devil.\n\nEach of us has Heaven and Hell in him, Basil,” cried Dorian, with a wild gesture of despair.\n\nHallward turned again to the portrait, and gazed at it. […] The surface seemed to be quite undisturbed, and as he had left it. It was from within, apparently, that the foulness and horror had come. Through some strange quickening of inner life the leprosies of sin were slowly eating the thing away. The rotting of a corpse in a watery grave was not so fearful.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-264",
@@ -3224,7 +3249,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "But this murder—was it to dog him all his life? Was he always to be burdened by his past? Was he really to confess? Never. There was only one bit of evidence left against him. The picture itself—that was evidence. He would destroy it. Why had he kept it so long? Once it had given him pleasure to watch it changing and growing old. Of late he had felt no such pleasure. It had kept him awake at night. When he had been away, he had been filled with terror lest other eyes should look upon it. It had brought melancholy across his passions. Its mere memory had marred many moments of joy. It had been like conscience to him. Yes, it had been conscience. He would destroy it.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-266",
@@ -3236,7 +3266,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "There is no such thing as a good influence, Mr. Gray. All influence is immoral—immoral from the scientific point of view.\n\nWhy?\n\nBecause to influence a person is to give him one's own soul. He does not think his natural thoughts, or burn with his natural passions. His virtues are not real to him. His sins, if there are such things as sins, are borrowed. He becomes an echo of someone else's music, an actor of a part that has not been written for him. The aim of life is self-development. To realise one's nature perfectly—that is what each of us is here for.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-267",
@@ -3265,7 +3300,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "How sad it is!” murmured Dorian Gray, with his eyes still fixed upon his own portrait. “How sad it is! I shall grow old, and horrible, and dreadful. But this picture will remain always young. It will never be older than this particular day of June.... If it were only the other way! If it were I who was to be always young, and the picture that was to grow old! For that—for that—I would give everything! Yes, there is nothing in the whole world I would not give! I would give my soul for that!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-269",
@@ -3277,7 +3317,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Dorian, Dorian,” she cried, “before I knew you, acting was the one reality of my life. It was only in the theatre that I lived. I thought that it was all true. I was Rosalind one night, and Portia the other. The joy of Beatrice was my joy, and the sorrows of Cordelia were mine also. I believed in everything. The common people who acted with me seemed to me to be godlike. The painted scenes were my world. I knew nothing but shadows, and I thought them real.\n\nYou came—oh, my beautiful love!—and you freed my soul from prison. You taught me what reality really is. […] You had brought me something higher, something of which all art is but a reflection. You had made me understand what love really is. […] I have grown sick of shadows.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-270",
@@ -3306,7 +3351,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "But position and wealth are not everything. Mind you, I don't believe these rumours at all. At least, I can't believe them when I see you. Sin is a thing that writes itself across a man's face. It cannot be concealed. People talk sometimes of secret vices. There are no such things. If a wretched man has a vice, it shows itself in the lines of his mouth, the droop of his eyelids, the moulding of his hands even.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-272",
@@ -3318,7 +3368,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "One has a right to judge of a man by the effect he has over his friends. Yours seem to lose all sense of honour, of goodness, of purity. You have filled them with a madness for pleasure. They have gone down into the depths. You led them there. Yes: you led them there, and yet you can smile, as you are smiling now.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-273",
@@ -3330,7 +3385,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Good God, Dorian, what a lesson! what an awful lesson! […] Pray, Dorian, pray,” he murmured. “What is it that one was taught to say in one's boyhood? ‘Lead us not into temptation. Forgive us our sins. Wash away our iniquities.’ Let us say that together. The prayer of your pride has been answered. The prayer of your repentance will be answered also. I worshipped you too much. I am punished for it. You worshipped yourself too much. We are both punished.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-274",
@@ -3342,7 +3402,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "There was a horrible fascination in them all. He saw them at night, and they troubled his imagination in the day. […] Dorian Gray had been poisoned by a book. There were moments when he looked on evil simply as a mode through which he could realise his conception of the beautiful.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-275",
@@ -3388,7 +3453,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Ah! in what a monstrous moment of pride and passion he had prayed that the portrait should bear the burden of his days, and he keep the unsullied splendour of eternal youth! All his failure had been due to that. Better for him that each sin of his life had brought its sure, swift penalty along with it. There was purification in punishment. Not “Forgive us our sins,” but “Smite us for our iniquities” should be the prayer of a man to a most just God.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-278",
@@ -3400,7 +3470,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Then he loathed his own beauty, and, flinging the mirror on the floor, crushed it into silver splinters beneath his heel. It was his beauty that had ruined him, his beauty and the youth that he had prayed for. But for those two things, his life might have been free from stain. His beauty had been to him but a mask, his youth but a mockery. What was youth at best? A green, an unripe time, a time of shallow moods and sickly thoughts. […] Youth had spoiled him.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-279",
@@ -3412,7 +3487,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Nor, indeed, was it the death of Basil Hallward that weighed most upon his mind. It was the living death of his own soul that troubled him. Basil had painted the portrait that had marred his life. He could not forgive him that. […] The murder had been simply the madness of a moment. As for Alan Campbell, his suicide had been his own act. He had chosen to do it. It was nothing to him.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-280",

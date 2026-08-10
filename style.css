@@ -887,7 +887,8 @@ h1 {
   transition: background 0.9s ease, border-color 0.9s ease, box-shadow 0.9s ease;
 }
 
-#quote-card:has(> .quote-card__body > .quote-text--very-long) {
+#quote-card:has(> .quote-card__body > :is(.quote-text--long, .quote-text--very-long)) {
+  /* Los fragmentos largos usan scroll interno para no invadir los controles flotantes. */
   max-height: 80vh;
   max-height: min(80dvh, calc(100dvh - 7rem));
 }
@@ -2582,7 +2583,7 @@ body.night-fall .modal__close:focus-visible {
     padding: 0.85rem 0.9rem 0;
   }
 
-  #quote-card:has(> .quote-card__body > .quote-text--very-long) {
+  #quote-card:has(> .quote-card__body > :is(.quote-text--long, .quote-text--very-long)) {
     --quote-card-vertical-reserve: calc(8.75rem + env(safe-area-inset-bottom));
     max-height: 84vh;
     max-height: min(84dvh, calc(100dvh - var(--quote-card-vertical-reserve)));
