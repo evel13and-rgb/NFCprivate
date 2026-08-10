@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-09T11:51:36.030Z",
+  "generated_at": "2026-08-10T12:12:16.941Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -121,7 +121,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "nothing contributes so much to tranquillize the mind as a steady purpose,—a point on which the soul may fix its intellectual eye.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-12",
@@ -157,7 +162,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge, and how much happier that man is who believes his native town to be the world, than he who aspires to become greater than his nature will allow.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-15",
@@ -385,7 +395,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-mary-shelley",
-      "workId": "work-frankenstein-o-el-moderno-prometeo"
+      "workId": "work-frankenstein-o-el-moderno-prometeo",
+      "original": {
+        "text": "Slave, I before reasoned with you, but you have proved yourself unworthy of my condescension. Remember that I have power; you believe yourself miserable, but I can make you so wretched that the light of day will be hateful to you.\n\nYou are my creator, but I am your master;—obey!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-34",

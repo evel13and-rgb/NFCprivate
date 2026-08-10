@@ -123,11 +123,19 @@ const languageNames = new Map([
 for (const [position, item] of originalItems.entries()) {
   const label = `originals.manual.json.items[${position}]`;
   if (!item || typeof item !== 'object' || Array.isArray(item)) fail(`${label} no es un objeto`);
+  const allowedFields = new Set([
+    'quote_id', 'original_text', 'original_lang', 'label', 'status', 'source_note',
+  ]);
+  const unexpectedFields = Object.keys(item).filter(field => !allowedFields.has(field));
+  if (unexpectedFields.length) fail(`${label} contiene campos desconocidos: ${unexpectedFields.join(', ')}`);
   for (const field of ['quote_id', 'original_text', 'original_lang', 'status']) {
     if (typeof item[field] !== 'string' || !item[field].trim()) fail(`${label}.${field} está ausente o vacío`);
   }
   if (item.label !== undefined && (typeof item.label !== 'string' || !item.label.trim())) {
     fail(`${label}.label debe ser una cadena no vacía si se incluye`);
+  }
+  if (item.source_note !== undefined && (typeof item.source_note !== 'string' || !item.source_note.trim())) {
+    fail(`${label}.source_note debe ser una cadena no vacía si se incluye`);
   }
   if (item.status !== 'reviewed') fail(`${label}.status debe ser reviewed para su publicación`);
   if (!quoteIds.has(item.quote_id)) fail(`${label}.quote_id no existe en el catálogo: ${item.quote_id}`);

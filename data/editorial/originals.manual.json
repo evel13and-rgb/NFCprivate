@@ -1,4 +1,29 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "quote_id": "quote-11",
+      "original_text": "nothing contributes so much to tranquillize the mind as a steady purpose,—a point on which the soul may fix its intellectual eye.",
+      "original_lang": "en",
+      "label": "Original inglés",
+      "status": "reviewed",
+      "source_note": "Mary Shelley, Frankenstein; or, The Modern Prometheus, first edition, 1818, Volume I, Letter I."
+    },
+    {
+      "quote_id": "quote-14",
+      "original_text": "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge, and how much happier that man is who believes his native town to be the world, than he who aspires to become greater than his nature will allow.",
+      "original_lang": "en",
+      "label": "Original inglés",
+      "status": "reviewed",
+      "source_note": "Mary Shelley, Frankenstein; or, The Modern Prometheus, first edition, 1818, Volume I, Chapter III."
+    },
+    {
+      "quote_id": "quote-33",
+      "original_text": "Slave, I before reasoned with you, but you have proved yourself unworthy of my condescension. Remember that I have power; you believe yourself miserable, but I can make you so wretched that the light of day will be hateful to you.\n\nYou are my creator, but I am your master;—obey!",
+      "original_lang": "en",
+      "label": "Original inglés",
+      "status": "reviewed",
+      "source_note": "Mary Shelley, Frankenstein; or, The Modern Prometheus, first edition, 1818, Volume III."
+    }
+  ]
 }

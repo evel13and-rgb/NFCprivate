@@ -18,7 +18,8 @@
           "original_text": { "type": "string", "minLength": 1 },
           "original_lang": { "type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$" },
           "label": { "type": "string", "minLength": 1 },
-          "status": { "const": "reviewed" }
+          "status": { "const": "reviewed" },
+          "source_note": { "type": "string", "minLength": 1 }
         }
       }
     }
