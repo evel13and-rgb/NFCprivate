@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paramoliterario.com/schemas/originals.schema.json",
+  "title": "Originales manuales de fragmentos",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "items"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["quote_id", "original_text", "original_lang", "status"],
+        "properties": {
+          "quote_id": { "type": "string", "pattern": "^quote-[0-9]+$", "minLength": 1 },
+          "original_text": { "type": "string", "minLength": 1 },
+          "original_lang": { "type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$" },
+          "label": { "type": "string", "minLength": 1 },
+          "status": { "const": "reviewed" }
+        }
+      }
+    }
+  }
+}

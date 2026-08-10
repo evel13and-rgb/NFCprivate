@@ -1,4 +1,5 @@
 import { createQuoteManager } from './quoteLogic.js';
+import { createQuoteOriginalController } from './quoteOriginal.js';
 import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=5';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
@@ -70,6 +71,7 @@ const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=5');
 let currentQuote = null;
 let quoteElementRef = null;
 let quoteHighlightRef = null;
+let quoteOriginalController = null;
 let quoteCardRef = null;
 let shareButtonRef = null;
 let listenVoiceButtonRef = null;
@@ -1742,6 +1744,7 @@ function renderQuote(quote) {
   }
   currentQuote = quote;
   stopQuoteVoice();
+  quoteOriginalController?.render(currentQuote);
   if (quoteElementRef) {
     const isPoem = currentQuote.type === 'poem';
     const quoteLengthClass = getQuoteLengthClass(currentQuote.t);
@@ -1830,6 +1833,12 @@ async function initApp() {
   const { quote, message } = determineQuoteForDisplay();
   quoteElementRef = document.getElementById('quote');
   quoteHighlightRef = document.getElementById('quote-highlight');
+  quoteOriginalController = createQuoteOriginalController({
+    button: document.getElementById('quote-original-toggle'),
+    panel: document.getElementById('quote-original'),
+    label: document.getElementById('quote-original-label'),
+    text: document.getElementById('quote-original-text'),
+  });
   sceneBackgroundController = createSceneBackgroundController();
   initDaylightMotes();
   initGlobalWeatherState();

@@ -18,7 +18,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=29" />
+  <link rel="stylesheet" href="style.css?v=30" />
 </head>
 <body class="app-loading" data-mode="day">
   <div
@@ -53,10 +53,22 @@
         <div class="quote-card__header">
           <h1 id="quote-card-title">Páramo Literario</h1>
           <div class="quote-rule quote-rule--top" aria-hidden="true"><span></span></div>
+          <button
+            type="button"
+            class="quote-original-toggle"
+            id="quote-original-toggle"
+            aria-expanded="false"
+            aria-controls="quote-original"
+            hidden
+          >Original</button>
           <p class="quote-highlight" id="quote-highlight" hidden></p>
         </div>
         <div class="quote-card__body">
           <blockquote class="quote-text" id="quote">…</blockquote>
+          <section class="quote-original" id="quote-original" hidden>
+            <p class="quote-original__label" id="quote-original-label"></p>
+            <blockquote class="quote-original__text" id="quote-original-text"></blockquote>
+          </section>
         </div>
         <div class="quote-card__footer">
           <div class="quote-rule quote-rule--short" aria-hidden="true"><span></span></div>
@@ -178,6 +190,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=31"></script>
+  <script type="module" src="script.js?v=32"></script>
 </body>
 </html>

@@ -14,6 +14,16 @@ async function loadArray(filename) {
   return value;
 }
 
+async function loadOriginals() {
+  const filename = 'originals.manual.json';
+  const value = JSON.parse(await readFile(path.join(editorialDirectory, filename), 'utf8'));
+  if (!value || typeof value !== 'object' || Array.isArray(value)) fail(`${filename} debe contener un objeto`);
+  if (value.schema_version !== 1 || !Array.isArray(value.items)) {
+    fail(`${filename} no cumple la estructura de schema_version 1`);
+  }
+  return value.items;
+}
+
 function fail(message) {
   throw new Error(`No se pudo generar public/data/quotes.json: ${message}`);
 }
@@ -49,7 +59,7 @@ function validatePublicDocument(document, sourceCount) {
   const ids = new Set();
   const legacyIndexes = new Set();
   const allowedFields = new Set([
-    'id', 'legacy_index', 't', 'a', 'obra', 'highlight', 'lang', 'type', 'authorId', 'workId',
+    'id', 'legacy_index', 't', 'a', 'obra', 'highlight', 'lang', 'type', 'authorId', 'workId', 'original',
   ]);
   for (const [position, quote] of document.quotes.entries()) {
     const unexpected = Object.keys(quote).filter(field => !allowedFields.has(field));
@@ -62,6 +72,20 @@ function validatePublicDocument(document, sourceCount) {
     if (!(quote.highlight === null || (typeof quote.highlight === 'string' && quote.highlight.length))) {
       fail(`quotes[${position}].highlight debe ser una cadena no vacía o null`);
     }
+    if (quote.original !== undefined) {
+      const originalFields = Object.keys(quote.original ?? {});
+      const expectedOriginalFields = ['text', 'lang', 'label'];
+      if (!quote.original || typeof quote.original !== 'object' || Array.isArray(quote.original)
+        || originalFields.length !== expectedOriginalFields.length
+        || expectedOriginalFields.some(field => !originalFields.includes(field))) {
+        fail(`quotes[${position}].original tiene una estructura pública inválida`);
+      }
+      for (const field of expectedOriginalFields) {
+        if (typeof quote.original[field] !== 'string' || !quote.original[field].trim()) {
+          fail(`quotes[${position}].original.${field} está ausente o vacío`);
+        }
+      }
+    }
     if (ids.has(quote.id)) fail(`id duplicado: ${quote.id}`);
     if (legacyIndexes.has(quote.legacy_index)) fail(`legacy_index duplicado: ${quote.legacy_index}`);
     ids.add(quote.id);
@@ -69,9 +93,10 @@ function validatePublicDocument(document, sourceCount) {
   }
 }
 
-const [intermediateQuotes, normalizedQuotes] = await Promise.all([
+const [intermediateQuotes, normalizedQuotes, originalItems] = await Promise.all([
   loadArray('quotes.intermediate.json'),
   loadArray('quotes.normalized.draft.json'),
+  loadOriginals(),
 ]);
 
 if (intermediateQuotes.length !== EXPECTED_QUOTE_COUNT) {
@@ -88,6 +113,33 @@ for (const [position, quote] of normalizedQuotes.entries()) {
   normalizedByLegacyIndex.set(quote.legacy_index, quote);
 }
 
+const quoteIds = new Set(intermediateQuotes.map(quote => `quote-${quote.legacy_index}`));
+const originalsByQuoteId = new Map();
+const languageNames = new Map([
+  ['en', 'inglés'], ['fr', 'francés'], ['de', 'alemán'], ['it', 'italiano'],
+  ['pl', 'polaco'], ['pt', 'portugués'], ['ru', 'ruso'],
+]);
+
+for (const [position, item] of originalItems.entries()) {
+  const label = `originals.manual.json.items[${position}]`;
+  if (!item || typeof item !== 'object' || Array.isArray(item)) fail(`${label} no es un objeto`);
+  for (const field of ['quote_id', 'original_text', 'original_lang', 'status']) {
+    if (typeof item[field] !== 'string' || !item[field].trim()) fail(`${label}.${field} está ausente o vacío`);
+  }
+  if (item.label !== undefined && (typeof item.label !== 'string' || !item.label.trim())) {
+    fail(`${label}.label debe ser una cadena no vacía si se incluye`);
+  }
+  if (item.status !== 'reviewed') fail(`${label}.status debe ser reviewed para su publicación`);
+  if (!quoteIds.has(item.quote_id)) fail(`${label}.quote_id no existe en el catálogo: ${item.quote_id}`);
+  if (originalsByQuoteId.has(item.quote_id)) fail(`quote_id original duplicado: ${item.quote_id}`);
+  const languageName = languageNames.get(item.original_lang.trim().toLowerCase());
+  originalsByQuoteId.set(item.quote_id, {
+    text: item.original_text.trim(),
+    lang: item.original_lang.trim(),
+    label: item.label?.trim() || (languageName ? `Original ${languageName}` : `Original (${item.original_lang.trim()})`),
+  });
+}
+
 const quotes = intermediateQuotes.map((source, position) => {
   validateSourceRecord(source, position);
   const normalized = normalizedByLegacyIndex.get(source.legacy_index);
@@ -95,8 +147,9 @@ const quotes = intermediateQuotes.map((source, position) => {
   for (const field of ['text', 'highlight', 'language', 'type']) {
     if (normalized[field] !== source[field]) fail(`legacy_index ${source.legacy_index}: ${field} difiere entre extracción y normalización`);
   }
-  return {
-    id: `quote-${source.legacy_index}`,
+  const id = `quote-${source.legacy_index}`;
+  const quote = {
+    id,
     legacy_index: source.legacy_index,
     t: source.text,
     a: source.legacy_attribution,
@@ -107,6 +160,9 @@ const quotes = intermediateQuotes.map((source, position) => {
     authorId: normalized.author_id ?? null,
     workId: normalized.work_id ?? null,
   };
+  const original = originalsByQuoteId.get(id);
+  if (original) quote.original = original;
+  return quote;
 });
 
 let generatedAt = new Date().toISOString();

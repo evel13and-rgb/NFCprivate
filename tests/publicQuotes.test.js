@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, readFile, cp } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, writeFile, cp } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -35,6 +35,18 @@ test('valida y carga quotes.json correctamente', async () => {
   assert.equal(result.source, 'public-json');
   assert.equal(result.error, null);
   assert.deepEqual(result.quotes, sampleQuotes);
+});
+
+test('original es opcional y solo admite sus tres campos públicos', () => {
+  assert.doesNotThrow(() => validatePublicQuotesDocument(documentFor(), sampleQuotes.length));
+  const withOriginal = structuredClone(sampleQuotes);
+  withOriginal[0].original = { text: 'Test fixture text', lang: 'en', label: 'Original inglés' };
+  assert.doesNotThrow(() => validatePublicQuotesDocument(documentFor(withOriginal), withOriginal.length));
+  withOriginal[0].original.status = 'reviewed';
+  assert.throws(
+    () => validatePublicQuotesDocument(documentFor(withOriginal), withOriginal.length),
+    /campos no públicos/,
+  );
 });
 
 test('usa el fallback indicado si falla el fetch o la validación', async () => {
@@ -83,9 +95,66 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
   assert.equal(quotes.length, 640);
   assert.equal(new Set(quotes.map(quote => quote.id)).size, 640);
   assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 640);
+  assert.equal(quotes.filter(quote => quote.original !== undefined).length, 0);
   for (const fallbackQuote of EMERGENCY_QUOTES) {
     assert.deepEqual(fallbackQuote, quotes.find(quote => quote.id === fallbackQuote.id));
   }
+});
+
+test('build-public-quotes cruza originales revisados sin publicar campos editoriales', async () => {
+  const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-public-original-test-'));
+  await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
+  await cp(new URL('../scripts/build-public-quotes.mjs', import.meta.url), path.join(temporaryRoot, 'scripts/build-public-quotes.mjs'));
+  await cp(new URL('../data/editorial', import.meta.url), path.join(temporaryRoot, 'data/editorial'), { recursive: true });
+  await writeFile(
+    path.join(temporaryRoot, 'data/editorial/originals.manual.json'),
+    `${JSON.stringify({
+      schema_version: 1,
+      items: [{
+        quote_id: 'quote-2',
+        original_text: 'Test fixture original.',
+        original_lang: 'en',
+        status: 'reviewed',
+      }],
+    })}\n`,
+  );
+  const result = spawnSync(process.execPath, ['scripts/build-public-quotes.mjs'], {
+    cwd: temporaryRoot,
+    encoding: 'utf8',
+  });
+  assert.equal(result.status, 0, result.stderr);
+  const generated = JSON.parse(await readFile(path.join(temporaryRoot, 'public/data/quotes.json'), 'utf8'));
+  assert.deepEqual(generated.quotes.find(quote => quote.id === 'quote-2').original, {
+    text: 'Test fixture original.',
+    lang: 'en',
+    label: 'Original inglés',
+  });
+  assert.doesNotMatch(JSON.stringify(generated), /original_text|original_lang|reviewed/);
+});
+
+test('build-public-quotes rechaza un quote_id original inexistente', async () => {
+  const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
+  await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
+  await cp(new URL('../scripts/build-public-quotes.mjs', import.meta.url), path.join(temporaryRoot, 'scripts/build-public-quotes.mjs'));
+  await cp(new URL('../data/editorial', import.meta.url), path.join(temporaryRoot, 'data/editorial'), { recursive: true });
+  await writeFile(
+    path.join(temporaryRoot, 'data/editorial/originals.manual.json'),
+    `${JSON.stringify({
+      schema_version: 1,
+      items: [{
+        quote_id: 'quote-999999',
+        original_text: 'Test fixture original.',
+        original_lang: 'en',
+        status: 'reviewed',
+      }],
+    })}\n`,
+  );
+  const result = spawnSync(process.execPath, ['scripts/build-public-quotes.mjs'], {
+    cwd: temporaryRoot,
+    encoding: 'utf8',
+  });
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /quote_id no existe en el catálogo/);
 });
 
 test('build-public-quotes genera un runtime equivalente desde la capa editorial', async () => {

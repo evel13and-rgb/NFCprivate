@@ -66,6 +66,22 @@ export function validatePublicQuotesDocument(document, expectedCount) {
     if (!(quote.highlight === null || typeof quote.highlight === 'string')) {
       throw new Error(`quotes.json: quotes[${position}].highlight es inválido`);
     }
+    if (quote.original !== undefined) {
+      const original = quote.original;
+      const allowedOriginalFields = new Set(['text', 'lang', 'label']);
+      if (!original || typeof original !== 'object' || Array.isArray(original)) {
+        throw new Error(`quotes.json: quotes[${position}].original es inválido`);
+      }
+      const unexpectedFields = Object.keys(original).filter(field => !allowedOriginalFields.has(field));
+      if (unexpectedFields.length) {
+        throw new Error(`quotes.json: quotes[${position}].original contiene campos no públicos`);
+      }
+      for (const field of allowedOriginalFields) {
+        if (typeof original[field] !== 'string' || !original[field].trim()) {
+          throw new Error(`quotes.json: quotes[${position}].original.${field} es inválido`);
+        }
+      }
+    }
     if (!Number.isInteger(quote.legacy_index) || quote.legacy_index < 0) {
       throw new Error(`quotes.json: quotes[${position}].legacy_index es inválido`);
     }
