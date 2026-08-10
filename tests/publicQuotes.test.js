@@ -99,6 +99,7 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-11', 'quote-13', 'quote-14', 'quote-17', 'quote-18',
     'quote-23', 'quote-31', 'quote-32', 'quote-33', 'quote-36',
+    'quote-264', 'quote-267', 'quote-270', 'quote-275', 'quote-276',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T19:08:18.811Z",
+  "generated_at": "2026-08-10T19:35:19.888Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -3176,7 +3176,7 @@
     {
       "id": "quote-262",
       "legacy_index": 262,
-      "t": "A menudo, al regresar de una de aquellas misteriosas y prolongadas ausencias que despertaban conjeturas tan extrañas entre quienes eran sus amigos, o creían serlo, subía sigilosamente hasta la habitación cerrada, abría la puerta con la llave que ya nunca se separaba de él y, sosteniendo un espejo, se colocaba frente al retrato que Basil Hallward había pintado: miraba unas veces el rostro maligno y envejecido del lienzo, y otras el rostro joven y hermoso que le devolvía la risa desde el cristal pulido.\n\nLa intensidad misma del contraste agudizaba su placer. Se enamoraba cada vez más de su propia belleza y se interesaba cada vez más por la corrupción de su propia alma. Examinaba con minucioso cuidado —y a veces con un deleite monstruoso y terrible— las líneas horribles que abrasaban la frente arrugada o reptaban alrededor de la boca pesada y sensual, preguntándose en ocasiones qué era más espantoso: las señales del pecado o las señales de la edad.",
+      "t": "A menudo, al regresar de una de aquellas misteriosas y prolongadas ausencias que despertaban conjeturas tan extrañas entre quienes eran sus amigos, o creían serlo, subía sigilosamente hasta la habitación cerrada, abría la puerta con la llave que ya nunca se separaba de él y, sosteniendo un espejo, se colocaba frente al retrato que Basil Hallward había pintado: miraba unas veces el rostro maligno y envejecido del lienzo, y otras el rostro joven y hermoso que le sonreía desde el cristal pulido.\n\nLa intensidad misma del contraste agudizaba su placer. Se enamoraba cada vez más de su propia belleza y se interesaba cada vez más por la corrupción de su propia alma. Examinaba con minucioso cuidado —y a veces con un deleite monstruoso y terrible— las líneas horribles que abrasaban la frente arrugada o reptaban alrededor de la boca pesada y sensual, preguntándose en ocasiones qué era más espantoso: las señales del pecado o las señales de la edad.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "La corrupción de su propia alma.",
@@ -3207,12 +3207,17 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Don't, Harry. The soul is a terrible reality. It can be bought, and sold, and bartered away. It can be poisoned, or made perfect. There is a soul in each one of us. I know it.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-265",
       "legacy_index": 265,
-      "t": "Pero aquel asesinato, ¿había de perseguirlo durante toda su vida? ¿Estaría siempre cargando con su pasado? ¿Debía realmente confesar? Nunca. Solo quedaba una prueba contra él. El propio cuadro: esa era la prueba. Lo destruiría. ¿Por qué lo había conservado durante tanto tiempo? En otro tiempo le había proporcionado placer contemplarlo mientras cambiaba y envejecía. Últimamente ya no sentía ese placer. Lo había mantenido despierto por las noches. Cuando estaba lejos, el terror de que otros ojos pudieran contemplarlo no lo abandonaba.\n\nHabía extendido la melancolía sobre sus pasiones. Su mero recuerdo había estropeado muchos momentos de alegría. Había sido como una conciencia para él. Sí, había sido su conciencia. La destruiría.",
+      "t": "Pero aquel asesinato, ¿había de perseguirlo durante toda su vida? ¿Estaría siempre cargando con su pasado? ¿Debía realmente confesar? Nunca. Solo quedaba una prueba contra él. El propio cuadro: esa era la prueba. Lo destruiría. ¿Por qué lo había conservado durante tanto tiempo? En otro tiempo le había proporcionado placer contemplarlo mientras cambiaba y envejecía. Últimamente ya no sentía ese placer. Lo había mantenido despierto por las noches. Cuando estaba lejos, el terror de que otros ojos pudieran contemplarlo no lo abandonaba.\n\nHabía teñido de melancolía sus pasiones. Su mero recuerdo había estropeado muchos momentos de alegría. Había sido como una conciencia para él. Sí, había sido su conciencia. La destruiría.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Había sido su conciencia.",
@@ -3224,7 +3229,7 @@
     {
       "id": "quote-266",
       "legacy_index": 266,
-      "t": "—No existe tal cosa como una buena influencia, señor Gray. Toda influencia es inmoral, inmoral desde el punto de vista científico.\n\n—¿Por qué?\n\n—Porque influir en una persona es darle la propia alma. Ya no piensa sus pensamientos naturales ni arde con sus pasiones naturales. Sus virtudes no son realmente suyas. Sus pecados, si es que existen los pecados, son prestados. Se convierte en eco de la música de otro, en actor de un papel que no fue escrito para él. El propósito de la vida es el desarrollo de uno mismo: realizar perfectamente la propia naturaleza. Para eso estamos aquí.",
+      "t": "—No existe tal cosa como una buena influencia, señor Gray. Toda influencia es inmoral, inmoral desde el punto de vista científico.\n\n—¿Por qué?\n\n—Porque influir en una persona es darle la propia alma. Ya no piensa por sí mismo ni arde con sus propias pasiones. Sus virtudes no son realmente suyas. Sus pecados, si es que existen los pecados, son prestados. Se convierte en eco de la música de otro, en actor de un papel que no fue escrito para él. El propósito de la vida es el desarrollo de uno mismo: realizar perfectamente la propia naturaleza. Para eso estamos aquí.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Influir es darle a otro la propia alma.",
@@ -3243,7 +3248,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "Yes,” continued Lord Henry, “that is one of the great secrets of life—to cure the soul by means of the senses, and the senses by means of the soul. You are a wonderful creation. You know more than you think you know, just as you know less than you want to know.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-268",
@@ -3279,7 +3289,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "He covered page after page with wild words of sorrow, and wilder words of pain. There is a luxury in self-reproach. When we blame ourselves we feel that no one else has a right to blame us. It is the confession, not the priest, that gives us absolution. When Dorian had finished the letter, he felt that he had been forgiven.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-271",
@@ -3332,26 +3347,36 @@
     {
       "id": "quote-275",
       "legacy_index": 275,
-      "t": "La tragedia de la vejez no consiste en ser viejo, sino en seguir siendo joven. A veces me asombra mi propia sinceridad. ¡Ah, Dorian, qué feliz eres! Qué vida tan exquisita has tenido. Has bebido profundamente de todo. Has aplastado las uvas contra el paladar. Nada se te ha ocultado. Y todo ello no ha sido para ti más que el sonido de la música. No te ha marcado. Sigues siendo el mismo.",
+      "t": "La tragedia de la vejez no consiste en ser viejo, sino en seguir siendo joven. A veces me asombra mi propia sinceridad. ¡Ah, Dorian, qué feliz eres! Qué vida tan exquisita has tenido. Has bebido profundamente de todo. Has aplastado las uvas contra el paladar. Nada se te ha ocultado. Y todo ello no ha sido para ti más que el sonido de la música. No te ha estropeado. Sigues siendo el mismo.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "La tragedia de la vejez.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "The tragedy of old age is not that one is old, but that one is young. I am amazed sometimes at my own sincerity. Ah, Dorian, how happy you are! What an exquisite life you have had! You have drunk deeply of everything. You have crushed the grapes against your palate. Nothing has been hidden from you. And it has all been to you no more than the sound of music. It has not marred you. You are still the same.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-276",
       "legacy_index": 276,
-      "t": "Me alegra que nunca hayas hecho nada: que nunca hayas esculpido una estatua, pintado un cuadro ni producido nada fuera de ti mismo. La vida ha sido tu arte. Te has puesto a ti mismo en música. Tus días son tus sonetos.",
+      "t": "Me alegra que nunca hayas hecho nada: que nunca hayas esculpido una estatua, pintado un cuadro ni producido nada fuera de ti mismo. La vida ha sido tu arte. Has hecho música de ti mismo. Tus días son tus sonetos.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "La vida ha sido tu arte.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-oscar-wilde",
-      "workId": "work-el-retrato-de-dorian-gray"
+      "workId": "work-el-retrato-de-dorian-gray",
+      "original": {
+        "text": "I am so glad that you have never done anything, never carved a statue, or painted a picture, or produced anything outside of yourself! Life has been your art. You have set yourself to music. Your days are your sonnets.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-277",
