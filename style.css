@@ -959,9 +959,30 @@ h1 {
   position: relative;
 }
 
-.quote-original-toggle {
+.quote-original-controls {
   align-self: flex-end;
   margin: -0.2rem 0 0.55rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quote-original-controls:has(.quote-original-toggle[hidden]) {
+  display: none;
+}
+
+.quote-original-label {
+  color: rgba(200, 162, 90, 0.64);
+  font: 500 0.66rem/1.2 Inter, sans-serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.quote-original-label[hidden] {
+  display: none;
+}
+
+.quote-original-toggle {
   padding: 0.25rem 0.55rem;
   border: 1px solid rgba(200, 162, 90, 0.3);
   border-radius: 999px;
@@ -974,7 +995,7 @@ h1 {
 }
 
 .quote-original-toggle:hover,
-.quote-original-toggle[aria-expanded='true'] {
+.quote-original-toggle[aria-pressed='true'] {
   border-color: rgba(200, 162, 90, 0.52);
   color: var(--title);
 }
@@ -984,8 +1005,7 @@ h1 {
   outline-offset: 3px;
 }
 
-.quote-original-toggle[hidden],
-.quote-original[hidden] {
+.quote-original-toggle[hidden] {
   display: none;
 }
 
@@ -1013,31 +1033,6 @@ h1 {
 .quote-card__body::-webkit-scrollbar-thumb {
   background: rgba(200, 162, 90, 0.3);
   border-radius: 999px;
-}
-
-.quote-original {
-  width: min(100%, 64ch);
-  margin: clamp(1rem, 2.5vh, 1.6rem) auto 0;
-  padding-top: clamp(0.8rem, 2vh, 1.2rem);
-  border-top: 1px solid rgba(200, 162, 90, 0.24);
-}
-
-.quote-original__label {
-  margin: 0 0 0.55rem;
-  color: rgba(200, 162, 90, 0.72);
-  font: 500 0.72rem/1.3 Inter, sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-blockquote.quote-original__text {
-  max-width: 100%;
-  margin: 0;
-  color: rgba(246, 234, 199, 0.72);
-  font-size: clamp(1rem, 2.3vw, 1.2rem);
-  line-height: 1.45;
-  text-align: left;
-  white-space: pre-wrap;
 }
 
 body[data-weather='light-rain'] #quote-card::before,

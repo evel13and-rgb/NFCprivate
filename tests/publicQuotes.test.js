@@ -182,4 +182,16 @@ test('script.js ya no contiene el catálogo completo ni colecciones literarias',
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);
   assert.doesNotMatch(source, /const\s+QUOTES\s*=\s*\[/);
   assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=5'\)/);
+  const shareSnapshotSource = source.slice(
+    source.indexOf('function getQuoteCardSnapshot()'),
+    source.indexOf('function getSnapshotShareText'),
+  );
+  const voiceSource = source.slice(
+    source.indexOf('function getQuoteVoiceText()'),
+    source.indexOf('function updateListenVoiceButton'),
+  );
+  assert.match(shareSnapshotSource, /currentQuote\?\.t/);
+  assert.doesNotMatch(shareSnapshotSource, /original/);
+  assert.match(voiceSource, /currentQuote\?\.t/);
+  assert.doesNotMatch(voiceSource, /original/);
 });

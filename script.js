@@ -1738,27 +1738,27 @@ function initQuoteActionButtons() {
   }
 }
 
+function renderQuoteTextVersion({ text, lang }) {
+  if (!quoteElementRef || !currentQuote) return;
+  const isPoem = currentQuote.type === 'poem';
+  const quoteLengthClass = getQuoteLengthClass(text);
+  quoteElementRef.classList.toggle('quote-text--poem', isPoem);
+  quoteElementRef.classList.toggle('quote-text--prose', !isPoem);
+  quoteElementRef.classList.remove(...QUOTE_LENGTH_CLASSES);
+  quoteElementRef.classList.add(quoteLengthClass);
+  setQuoteTextContent(text, { includeQuotes: true });
+  if (lang) quoteElementRef.setAttribute('lang', lang);
+  else quoteElementRef.removeAttribute('lang');
+}
+
 function renderQuote(quote) {
   if (!quote) {
     return;
   }
   currentQuote = quote;
   stopQuoteVoice();
-  quoteOriginalController?.render(currentQuote);
-  if (quoteElementRef) {
-    const isPoem = currentQuote.type === 'poem';
-    const quoteLengthClass = getQuoteLengthClass(currentQuote.t);
-    quoteElementRef.classList.toggle('quote-text--poem', isPoem);
-    quoteElementRef.classList.toggle('quote-text--prose', !isPoem);
-    quoteElementRef.classList.remove(...QUOTE_LENGTH_CLASSES);
-    quoteElementRef.classList.add(quoteLengthClass);
-    setQuoteTextContent(currentQuote.t ?? '', { includeQuotes: true });
-    if (currentQuote.lang) {
-      quoteElementRef.setAttribute('lang', currentQuote.lang);
-    } else {
-      quoteElementRef.removeAttribute('lang');
-    }
-  }
+  if (quoteOriginalController) quoteOriginalController.render(currentQuote);
+  else renderQuoteTextVersion({ text: currentQuote.t ?? '', lang: currentQuote.lang ?? '' });
 
   if (quoteHighlightRef) {
     const highlight = typeof currentQuote.highlight === 'string'
@@ -1835,9 +1835,8 @@ async function initApp() {
   quoteHighlightRef = document.getElementById('quote-highlight');
   quoteOriginalController = createQuoteOriginalController({
     button: document.getElementById('quote-original-toggle'),
-    panel: document.getElementById('quote-original'),
     label: document.getElementById('quote-original-label'),
-    text: document.getElementById('quote-original-text'),
+    onViewChange: renderQuoteTextVersion,
   });
   sceneBackgroundController = createSceneBackgroundController();
   initDaylightMotes();

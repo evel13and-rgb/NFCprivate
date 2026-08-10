@@ -6,31 +6,40 @@ export function normalizeQuoteOriginal(original) {
   return text && lang && label ? { text, lang, label } : null;
 }
 
-export function createQuoteOriginalController({ button, panel, label, text }) {
+export function createQuoteOriginalController({ button, label, onViewChange }) {
+  let activeQuote = null;
   let activeOriginal = null;
+  let activeView = 'translation';
 
-  function setExpanded(expanded) {
-    const shouldExpand = Boolean(activeOriginal && expanded);
-    button?.setAttribute('aria-expanded', String(shouldExpand));
-    if (panel) panel.hidden = !shouldExpand;
-    return shouldExpand;
+  function setView(view) {
+    activeView = view === 'original' && activeOriginal ? 'original' : 'translation';
+    const showingOriginal = activeView === 'original';
+    if (button) {
+      button.hidden = !activeOriginal;
+      button.textContent = showingOriginal ? 'Traducción' : 'Original';
+      button.setAttribute('aria-pressed', String(showingOriginal));
+      button.setAttribute('aria-label', showingOriginal ? 'Ver traducción' : 'Ver texto original');
+    }
+    if (label) {
+      label.hidden = !showingOriginal;
+      label.textContent = showingOriginal ? activeOriginal.label : '';
+    }
+    const visibleVersion = showingOriginal
+      ? { text: activeOriginal.text, lang: activeOriginal.lang, view: activeView }
+      : { text: activeQuote?.t ?? '', lang: activeQuote?.lang ?? '', view: activeView };
+    onViewChange?.(visibleVersion);
+    return activeView;
   }
 
   function render(quote) {
+    activeQuote = quote && typeof quote === 'object' ? quote : null;
     activeOriginal = normalizeQuoteOriginal(quote?.original);
-    setExpanded(false);
-    if (button) button.hidden = !activeOriginal;
-    if (label) label.textContent = activeOriginal?.label ?? '';
-    if (text) {
-      text.textContent = activeOriginal?.text ?? '';
-      if (activeOriginal) text.setAttribute('lang', activeOriginal.lang);
-      else text.removeAttribute('lang');
-    }
+    return setView('translation');
   }
 
   function toggle() {
-    if (!activeOriginal) return false;
-    return setExpanded(button?.getAttribute('aria-expanded') !== 'true');
+    if (!activeOriginal) return activeView;
+    return setView(activeView === 'translation' ? 'original' : 'translation');
   }
 
   button?.addEventListener('click', toggle);

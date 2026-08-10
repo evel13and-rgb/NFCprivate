@@ -17,50 +17,59 @@ function createElement() {
 }
 
 function createController() {
+  const views = [];
   const elements = {
     button: createElement(),
-    panel: createElement(),
     label: createElement(),
-    text: createElement(),
+    onViewChange(view) { views.push(view); },
   };
-  return { elements, controller: createQuoteOriginalController(elements) };
+  return { elements, views, controller: createQuoteOriginalController(elements) };
 }
 
 const original = { text: 'Test fixture original.', lang: 'en', label: 'Original inglés' };
+const translation = { id: 'quote-test', t: 'Texto traducido.', lang: 'es', original };
 
-test('una frase sin original oculta botón y bloque', () => {
-  const { elements, controller } = createController();
-  controller.render({ id: 'quote-test' });
+test('una frase sin original oculta el botón y muestra solo la traducción', () => {
+  const { elements, views, controller } = createController();
+  controller.render({ id: 'quote-test', t: 'Solo traducción.', lang: 'es' });
   assert.equal(elements.button.hidden, true);
-  assert.equal(elements.panel.hidden, true);
-  assert.equal(elements.button.getAttribute('aria-expanded'), 'false');
+  assert.equal(elements.button.textContent, 'Original');
+  assert.equal(elements.button.getAttribute('aria-pressed'), 'false');
+  assert.deepEqual(views.at(-1), { text: 'Solo traducción.', lang: 'es', view: 'translation' });
 });
 
-test('una frase con original muestra el botón y alterna aria-expanded', () => {
-  const { elements, controller } = createController();
-  controller.render({ id: 'quote-test', original });
+test('una frase con original conmuta el único texto entre original y traducción', () => {
+  const { elements, views, controller } = createController();
+  controller.render(translation);
   assert.equal(elements.button.hidden, false);
-  assert.equal(elements.panel.hidden, true);
+  assert.equal(elements.button.textContent, 'Original');
+  assert.equal(elements.button.getAttribute('aria-label'), 'Ver texto original');
+  assert.deepEqual(views.at(-1), { text: translation.t, lang: 'es', view: 'translation' });
   elements.button.click();
-  assert.equal(elements.button.getAttribute('aria-expanded'), 'true');
-  assert.equal(elements.panel.hidden, false);
-  assert.equal(elements.text.textContent, original.text);
-  assert.equal(elements.text.getAttribute('lang'), 'en');
+  assert.equal(elements.button.getAttribute('aria-pressed'), 'true');
+  assert.equal(elements.button.textContent, 'Traducción');
+  assert.equal(elements.button.getAttribute('aria-label'), 'Ver traducción');
+  assert.equal(elements.label.hidden, false);
+  assert.equal(elements.label.textContent, 'Original inglés');
+  assert.deepEqual(views.at(-1), { text: original.text, lang: 'en', view: 'original' });
   elements.button.click();
-  assert.equal(elements.button.getAttribute('aria-expanded'), 'false');
-  assert.equal(elements.panel.hidden, true);
+  assert.equal(elements.button.getAttribute('aria-pressed'), 'false');
+  assert.equal(elements.button.textContent, 'Original');
+  assert.equal(elements.label.hidden, true);
+  assert.deepEqual(views.at(-1), { text: translation.t, lang: 'es', view: 'translation' });
+  assert.equal(views.every(view => typeof view.text === 'string'), true);
 });
 
-test('cambiar de frase cierra y limpia el original anterior', () => {
-  const { elements, controller } = createController();
-  controller.render({ id: 'quote-one', original });
+test('cambiar de frase restablece siempre la traducción', () => {
+  const { elements, views, controller } = createController();
+  controller.render({ ...translation, id: 'quote-one' });
   controller.toggle();
-  controller.render({ id: 'quote-two' });
-  assert.equal(elements.button.getAttribute('aria-expanded'), 'false');
+  controller.render({ id: 'quote-two', t: 'Nueva traducción.', lang: 'es' });
+  assert.equal(elements.button.getAttribute('aria-pressed'), 'false');
   assert.equal(elements.button.hidden, true);
-  assert.equal(elements.panel.hidden, true);
-  assert.equal(elements.text.textContent, '');
-  assert.equal(elements.text.getAttribute('lang'), null);
+  assert.equal(elements.button.textContent, 'Original');
+  assert.equal(elements.label.hidden, true);
+  assert.deepEqual(views.at(-1), { text: 'Nueva traducción.', lang: 'es', view: 'translation' });
 });
 
 test('rechaza originales vacíos o incompletos', () => {
