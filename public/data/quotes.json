@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T09:40:17.457Z",
+  "generated_at": "2026-08-12T10:47:15.528Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -2451,7 +2451,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "All I could do was to offer you an opinion upon one minor point—a woman must have money and a room of her own if she is to write fiction; and that, as you will see, leaves the great problem of the true nature of woman and the true nature of fiction unsolved.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-202",
@@ -2463,7 +2468,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "At any rate, when a subject is highly controversial—and any question about sex is that—one cannot hope to tell the truth. One can only show how one came to hold whatever opinion one does hold. One can only give one's audience the chance of drawing their own conclusions as they observe the limitations, the prejudices, the idiosyncrasies of the speaker. Fiction here is likely to contain more truth than fact.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-203",
@@ -2475,7 +2485,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Lies will flow from my lips, but there may perhaps be some truth mixed up with them; it is for you to seek out this truth and to decide whether any part of it is worth keeping. If not, you will of course throw the whole of it into the waste-paper basket and forget all about it.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-204",
@@ -2487,7 +2502,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Thought—to call it by a prouder name than it deserved—had let its line down into the stream. It swayed, minute after minute, hither and thither among the reflections and the weeds, letting the water lift it and sink it,",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-205",
@@ -2499,7 +2519,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Alas, laid on the grass how small, how insignificant this thought of mine looked; the sort of fish that a good fisherman puts back into the water so that it may grow fatter and be one day worth cooking and eating.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-206",
@@ -2511,7 +2536,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "It was the time between the lights when colours undergo their intensification and purples and golds burn in window-panes like the beat of an excitable heart; when for some reason the beauty of the world revealed and yet soon to perish (here I pushed into the garden, for, unwisely, the door was left open and no beadles seemed about), the beauty of the world which is so soon to perish, has two edges, one of laughter, one of anguish, cutting the heart asunder.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-207",
@@ -2523,7 +2553,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "One cannot think well, love well, sleep well, if one has not dined well. The lamp in the spine does not light on beef and prunes.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-208",
@@ -2535,7 +2570,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "So I went back to my inn, and as I walked through the dark streets I pondered this and that, as one does at the end of the day's work. I pondered why it was that Mrs. Seton had no money to leave us; and what effect poverty has on the mind; and what effect wealth has on the mind; and I thought of the queer old gentlemen I had seen that morning with tufts of fur upon their shoulders; and I remembered how if one whistled one of them ran; and I thought of the organ booming in the chapel and of the shut doors of the library; and I thought how unpleasant it is to be locked out; and I thought how it is worse perhaps to be locked in;",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-209",
@@ -2547,7 +2587,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "it was time to roll up the crumpled skin of the day, with its arguments and its impressions and its anger and its laughter, and cast it into the hedge. A thousand stars were flashing across the blue wastes of the sky.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-210",
@@ -2559,7 +2604,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Have you any notion how many books are written about women in the course of one year? Have you any notion how many are written by men? Are you aware that you are, perhaps, the most discussed animal in the universe?",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-211",
@@ -2571,7 +2621,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "It was distressing, it was bewildering, it was humiliating. Truth had run through my fingers. Every drop had escaped.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-212",
@@ -2583,7 +2638,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Drawing pictures was an idle way of finishing an unprofitable morning's work. Yet it is in our idleness, in our dreams, that the submerged truth sometimes comes to the top.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-213",
@@ -2595,7 +2655,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Women have served all these centuries as looking-glasses possessing the magic and delicious power of reflecting the figure of man at twice its natural size.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-214",
@@ -2607,7 +2672,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Imaginatively she is of the highest importance; practically she is completely insignificant. She pervades poetry from cover to cover; she is all but absent from history. She dominates the lives of kings and conquerors in fiction; in fact she was the slave of any boy whose parents forced a ring upon her finger.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-215",
@@ -2619,7 +2689,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Let me imagine, since facts are so hard to come by, what would have happened had Shakespeare had a wonderfully gifted sister, called Judith, let us say.\n\n[…]\n\nMeanwhile his extraordinarily gifted sister, let us suppose, remained at home. She was as adventurous, as imaginative, as agog to see the world as he was. But she was not sent to school. She had no chance of learning grammar and logic, let alone of reading Horace and Virgil. She picked up a book now and then, one of her brother's perhaps, and read a few pages. But then her parents came in and told her to mend the stockings or mind the stew and not moon about with books and papers. They would have spoken sharply but kindly, for they were substantial people who knew the conditions of life for a woman and loved their daughter—indeed, more likely than not she was the apple of her father's eye. Perhaps she scribbled some pages up in an apple loft on the sly, but was careful to hide them or set fire to them. Soon, however, before she was out of her teens, she was to be betrothed to the son of a neighbouring wool-stapler. She cried out that marriage was hateful to her, and for that she was severely beaten by her father. Then he ceased to scold her. He begged her instead not to hurt him, not to shame him in this matter of her marriage. He would give her a chain of beads or a fine petticoat, he said; and there were tears in his eyes. How could she disobey him? How could she break his heart? The force of her own gift alone drove her to it. She made up a small parcel of her belongings, let herself down by a rope one summer's night and took the road to London. She was not seventeen. The birds that sang in the hedge were not more musical than she was. She had the quickest fancy, a gift like her brother's, for the tune of words. Like him, she had a taste for the theatre. She stood at the stage door; she wanted to act, she said. Men laughed in her face. The manager—a fat, loose-lipped man—guffawed. He bellowed something about poodles dancing and women acting—no woman, he said, could possibly be an actress. He hinted—you can imagine what. She could get no training in her craft. Could she even seek her dinner in a tavern or roam the streets at midnight? Yet her genius was for fiction and lusted to feed abundantly upon the lives of men and women and the study of their ways.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-216",
@@ -2631,7 +2706,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "who shall measure the heat and violence of the poet's heart when caught and tangled in a woman's body?",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-217",
@@ -2643,7 +2723,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "When, however, one reads of a witch being ducked, of a woman possessed by devils, of a wise woman selling herbs, or even of a very remarkable man who had a mother, then I think we are on the track of a lost novelist, a suppressed poet, of some mute and inglorious Jane Austen, some Emily Brontë who dashed her brains out on the moor or mopped and mowed about the highways crazed with the torture that her gift had put her to. Indeed, I would venture to guess that Anon, who wrote so many poems without signing them, was often a woman. It was a woman Edward Fitzgerald , I think, suggested who made the ballads and the folk-songs, crooning them to her children, beguiling her spinning with them, or the length of the winter's night.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-218",
@@ -2655,7 +2740,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "to write a work of genius is almost always a feat of prodigious difficulty. Everything is against the likelihood that it will come from the writer's mind whole and entire. Generally material circumstances are against it. Dogs will bark; people will interrupt; money must be made; health will break down. Further, accentuating all these difficulties and making them harder to bear is the world's notorious indifference. It does not ask people to write poems and novels and histories; it does not need them. It does not care whether Flaubert finds the right word or whether Carlyle scrupulously verifies this or that fact. Naturally, it will not pay for what it does not want. And so the writer, Keats, Flaubert, Carlyle, suffers, especially in the creative years of youth, every form of distraction and discouragement. A curse, a cry of agony, rises from those books of analysis and confession. \"Mighty poets in their misery dead\"—that is the burden of their song. If anything comes through in spite of all this, it is a miracle, and probably no book is born entire and uncrippled as it was conceived.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-219",
@@ -2667,7 +2757,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Oh, but they can't buy literature too. Literature is open to everybody. I refuse to allow you, Beadle though you are, to turn me off the grass. Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-220",
@@ -2679,7 +2774,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "For we think back through our mothers if we are women. It is useless to go to the great men writers for help, however much one may go to them for pleasure.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-221",
@@ -2691,7 +2791,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "For masterpieces are not single and solitary births; they are the outcome of many years of thinking in common, of thinking by the body of the people, so that the experience of the mass is behind the single voice.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-222",
@@ -2703,19 +2808,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Here was a woman about the year 1800 writing without hate, without bitterness, without fear, without protest, without preaching. That was how Shakespeare wrote, I thought, looking at Antony and Cleopatra ; and when people compare Shakespeare and Jane Austen, they may mean that the minds of both had consumed all impediments; and for that reason we do not know Jane Austen and we do not know Shakespeare, and for that reason Jane Austen pervades every word that she wrote, and so does Shakespeare.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-223",
       "legacy_index": 223,
-      "t": "La naturaleza, de manera muy extraña, parece habernos proporcionado una luz interior mediante la cual juzgamos la integridad del novelista.\n\nQuizá haya trazado con tinta invisible, sobre las paredes de la mente, un presentimiento que los grandes artistas confirman.",
+      "t": "La naturaleza, de manera muy extraña, parece habernos proporcionado una luz interior mediante la cual juzgamos la integridad del novelista.\n\nQuizá, en uno de sus estados de ánimo más irracionales, haya trazado con tinta invisible, sobre las paredes de la mente, un presentimiento que los grandes artistas confirman.",
       "a": "Virginia Woolf",
       "obra": "Una habitación propia, Virginia Woolf",
       "highlight": "con tinta invisible, sobre las paredes de la mente",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "Nature seems, very oddly, to have provided us with an inner light by which to judge of the novelist's integrity or disintegrity. Or perhaps it is rather that Nature, in her most irrational mood, has traced in invisible ink on the walls of the mind a premonition which these great artists confirm;",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-224",
@@ -2727,7 +2842,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "For books continue each other, in spite of our habit of judging them separately. And I must also consider her—this unknown woman—as the descendant of all those other women whose circumstances I have been glancing at",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-225",
@@ -2739,7 +2859,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "All these infinitely obscure lives remain to be recorded, I said, addressing Mary Carmichael as if she were present; and went on in thought through the streets of London feeling in imagination the pressure of dumbness, the accumulation of unrecorded life, whether from the women at the street corners with their arms akimbo, and the rings embedded in their fat swollen fingers, talking with a gesticulation like the swing of Shakespeare's words; or from the violet-sellers and match-sellers and old crones stationed under doorways; or from drifting girls whose faces, like waves in sun and cloud, signal the coming of men and women and the flickering lights of shop windows.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-226",
@@ -2751,7 +2876,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "the androgynous mind is resonant and porous; that it transmits emotion without impediment; that it is naturally creative, incandescent and undivided.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-227",
@@ -2763,7 +2893,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "when one takes a sentence of Mr. B into the mind it falls plump to the ground—dead; but when one takes a sentence of Coleridge into the mind, it explodes and gives birth to all kinds of other ideas, and that is the only sort of writing of which one can say that it has the secret of perpetual life.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-228",
@@ -2775,7 +2910,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "So long as you write what you wish to write, that is all that matters; and whether it matters for ages or only for hours, nobody can say.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-229",
@@ -2787,7 +2927,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "What is meant by \"reality\"? It would seem to be something very erratic, very undependable—now to be found in a dusty road, now in a scrap of newspaper in the street, now a daffodil in the sun. It lights up a group in a room and stamps some casual saying. It overwhelms one walking home beneath the stars and makes the silent world more real than the world of speech—",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-230",
@@ -2799,7 +2944,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "For the reading of these books seems to perform a curious couching operation on the senses; one sees more intensely afterwards; the world seems bared of its covering and given an intenser life.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-231",
@@ -2811,7 +2961,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "When I rummage in my own mind I find no noble sentiments about being companions and equals and influencing the world to higher ends. I find myself saying briefly and prosaically that it is much more important to be oneself than anything else.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-232",
@@ -2823,7 +2978,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "this poet who never wrote a word and was buried at the cross-roads still lives. She lives in you and in me, and in many other women who are not here to-night, for they are washing up the dishes and putting the children to bed. But she lives; for great poets do not die; they are continuing presences;",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-233",
@@ -2835,7 +2995,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-una-habitacion-propia"
+      "workId": "work-una-habitacion-propia",
+      "original": {
+        "text": "if we have the habit of freedom and the courage to write exactly what we think; if we escape a little from the common sitting-room and see human beings not always in their relation to each other but in relation to reality; and the sky, too, and the trees or whatever it may be in themselves; if we look past Milton's bogey, for no human being should shut out the view; if we face the fact, for it is a fact, that there is no arm to cling to, but that we go alone and that our relation is to the world of reality and not only to the world of men and women, then the opportunity will come and the dead poet who was Shakespeare’s sister will put on the body which she has so often laid down.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-234",
@@ -3504,7 +3669,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Так что, услыхав о смерти Ивана Ильича, первая мысль каждого из господ, собравшихся в кабинете, была и о том, какое значение может иметь эта смерть на перемещения или повышения самих членов или их знакомых.\n\n[…]\n\n“Каково, умер; а я вот нет”, – подумал или почувствовал каждый.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-281",
@@ -3516,19 +3686,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Прошедшая история жизни Ивана Ильича была самая простая и обыкновенная и самая ужасная.\n\n[…]\n\nИван Ильич умер сорока пяти лет, членом Судебной палаты.\n\n[…]\n\nОн был середина между ними – умный, живой, приятный и приличный человек.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-282",
       "legacy_index": 282,
-      "t": "La conciencia de su poder, la importancia de su entrada en el tribunal, el éxito ante superiores e inferiores y, sobre todo, la maestría con que llevaba los asuntos: todo aquello lo alegraba.\n\nJunto con las conversaciones, las comidas y las partidas de cartas, llenaba su vida. Y así continuaba discurriendo como él consideraba que debía discurrir: agradable y decorosamente.",
+      "t": "La conciencia de su poder, de la posibilidad de arruinar a cualquier persona a la que quisiera arruinar, la importancia de su entrada en el tribunal, el éxito ante superiores e inferiores y, sobre todo, la maestría con que llevaba los asuntos: todo aquello lo alegraba.\n\nJunto con las conversaciones, las comidas y las partidas de cartas, llenaba su vida. Y así continuaba discurriendo como él consideraba que debía discurrir: agradable y decorosamente.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "agradable y decorosamente",
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Сознание своей власти, возможности погубить всякого человека, которого он захочет погубить, важность, даже внешняя, при его входе в суд и встречах с подчиненными, успех свой перед высшими и подчиненными и, главное, мастерство свое ведения дел, которое он чувствовал, – все это радовало его и вместе с беседами с товарищами, обедами и вистом наполняло его жизнь. Так что вообще жизнь Ивана Ильича продолжала идти так, как он считал, что она должна была идти: приятно и прилично.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-283",
@@ -3540,7 +3720,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Как он в суде делал вид над подсудимыми, так точно над ним знаменитый доктор делал тоже вид.\n\n[…]\n\nДля Ивана Ильича был важен только один вопрос: опасно ли его положение или нет? Но доктор игнорировал этот неуместный вопрос. С точки зрения доктора, вопрос этот был праздный и не подлежал обсуждению; существовало только взвешиванье вероятностей – блуждающей почки, хронического катара и болезней слепой кишки. Не было вопроса о жизни Ивана Ильича, а был спор между блуждающей почкой и слепой кишкой.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-284",
@@ -3552,7 +3737,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "“Слепая кишка? Почка, – сказал он себе. – Не в слепой кишке, не в почке дело, а в жизни и… смерти. Да, жизнь была и вот уходит, уходит, и я не могу удержать ее. Да. Зачем обманывать себя? Разве не очевидно всем, кроме меня, что я умираю, и вопрос только в числе недель, дней – сейчас, может быть.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-285",
@@ -3564,7 +3754,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "В глубине души Иван Ильич знал, что он умирает, но он не только не привык к этому, но просто не понимал, никак не мог понять этого.\n\n[…]\n\nТот пример силлогизма, которому он учился в логике Кизеветера : Кай – человек, люди смертны, потому Кай смертен, казался ему во всю его жизнь правильным только по отношению к Каю, но никак не к нему.\n\n[…]\n\nИ Кай точно смертен, и ему правильно умирать, но мне, Ване, Ивану Ильичу, со всеми моими чувствами, мыслями, – мне это другое дело. И не может быть, чтобы мне следовало умирать. Это было бы слишком ужасно.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-286",
@@ -3576,7 +3771,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Как это сделалось на третьем месяце болезни Ивана Ильича, нельзя было сказать, потому что это делалось шаг за шагом, незаметно, но сделалось то, что и жена, и дочь, и сын его, и прислуга, и знакомые, и доктора, и, главное, он сам – знали, что весь интерес в нем для других состоит только в том, скоро ли, наконец, он опростает место, освободит живых от стеснения, производимого его присутствием, и сам освободится от своих страданий.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-287",
@@ -3588,7 +3788,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Один Герасим не лгал, по всему видно было, что он один понимал, в чем дело, и не считал нужным скрывать этого, и просто жалел исчахшего, слабого барина. Он даже раз прямо сказал, когда Иван Ильич отсылал его: – Все умирать будем. Отчего же не потрудиться?",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-288",
@@ -3600,7 +3805,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Главное мучение Ивана Ильича была ложь, – та, всеми почему-то признанная ложь, что он только болен, а не умирает, и что ему надо только быть спокойным и лечиться, и тогда что-то выйдет очень хорошее. Он же знал, что, что бы ни делали, ничего не выйдет, кроме еще более мучительных страданий и смерти. И его мучила эта ложь, мучило то, что не хотели признаться в том, что все знали и он знал, а хотели лгать над ним по случаю ужасного его положения и хотели и заставляли его самого принимать участие в этой лжи.\n\n[…]\n\nИ – странно – он много раз, когда они над ним проделывали свои штуки, был на волоске от того, чтобы закричать им: перестаньте врать, и вы знаете и я знаю, что я умираю, так перестаньте, по крайней мере, врать.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-289",
@@ -3612,7 +3822,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Ивану Ильичу в иные минуты, после долгих страданий, больше всего хотелось, как ему ни совестно бы было признаться в этом, – хотелось того, чтоб его, как дитя больное, пожалел бы кто-нибудь. Ему хотелось, чтоб его приласкали, поцеловали, поплакали бы над ним, как ласкают и утешают детей. Он знал, что он важный член, что у него седеющая борода и что потому это невозможно; но ему все-таки хотелось этого.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-290",
@@ -3624,7 +3839,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Ему казалось, что его с болью суют куда-то в узкий черный мешок и глубокий, и все дальше просовывают, и не могут просунуть. И это ужасное для него дело совершается с страданием. И он и боится, и хочет провалиться туда, и борется, и помогает.\n\n[…]\n\nОн плакал о беспомощности своей, о своем ужасном одиночестве, о жестокости людей, о жестокости Бога, об отсутствии Бога.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-291",
@@ -3636,7 +3856,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "И чем дальше от детства, чем ближе к настоящему, тем ничтожнее и сомнительнее были радости. Начиналось это с Правоведения. Там было еще кое-что истинно хорошее: там было веселье, там была дружба, там были надежды. Но в высших классах уже были реже эти хорошие минуты. Потом, во время первой службы у губернатора, опять появились хорошие минуты: это были воспоминания о любви к женщине. Потом все это смещалось, и еще меньше стало хорошего. Далее еще меньше хорошего, и что дальше, то меньше. Женитьба… так нечаянно, и разочарование, и запах изо рта жены, и чувственность, притворство! И эта мертвая служба, эти заботы о деньгах, итак год, и два, и десять, и двадцать – и все то же. И что дальше, то мертвое. Точно равномерно я шел под гору, воображая, что иду на гору. Так и было. В общественном мнении я шел на гору, и ровно настолько из-под меня уходила жизнь… И вот готово, умирай!",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-292",
@@ -3648,19 +3873,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "“Может быть, я жил не так, как должно?” – приходило ему вдруг в голову. “Но как же не так, когда я делал все как следует?” – говорил он себе и тотчас же отгонял от себя это единственное разрешение всей загадки жизни и смерти, как что-то совершенно невозможное.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-293",
       "legacy_index": 293,
-      "t": "Sus sufrimientos físicos eran terribles, pero aún más terribles eran sus sufrimientos morales, y en ellos residía su verdadero tormento.\n\n«¿Y si, en realidad, toda mi vida consciente no hubiera sido lo que debía?»\n\nPensó que aquello que antes le había parecido completamente imposible —que no hubiese vivido como debía— podía ser cierto. Sus leves intentos de resistirse a lo que las personas de posición más elevada consideraban bueno quizá habían sido lo verdadero; y todo lo demás podía haber sido falso.\n\nSu trabajo, la organización de su vida, su familia, sus intereses sociales y profesionales: todo podía haber sido falso.\n\nTrató de defenderlo, pero de pronto comprendió toda la debilidad de aquello que defendía. No había nada que defender.",
+      "t": "El médico decía que sus sufrimientos físicos eran terribles, y era cierto; pero aún más terribles eran sus sufrimientos morales, y en ellos residía su verdadero tormento.\n\n«¿Y si, en realidad, toda mi vida consciente no hubiera sido lo que debía?»\n\nPensó que aquello que antes le había parecido completamente imposible —que no hubiese vivido como debía— podía ser cierto. Sus leves intentos de resistirse a lo que las personas de posición más elevada consideraban bueno quizá habían sido lo verdadero; y todo lo demás podía haber sido falso.\n\nSu trabajo, la organización de su vida, su familia, sus intereses sociales y profesionales: todo podía haber sido falso.\n\nTrató de defenderlo, pero de pronto comprendió toda la debilidad de aquello que defendía. No había nada que defender.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "No había nada que defender",
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Доктор оговорил, что страдания его физические ужасны, и это была правда; но ужаснее его физических страданий были его нравственные страдания, и в этом было главное его мучение.\n\nНравственные страдания его состояли в том, что в эту ночь, глядя на сонное, добродушное скуластое лицо Герасима, ему вдруг пришло в голову: а что, как и в самом деле вся моя жизнь, сознательная жизнь, была «не то».\n\nЕму пришло в голову, что то, что ему представлялось прежде совершенной невозможностью, то, что он прожил свою жизнь не так, как должно было, что это могло быть правда. Ему пришло в голову, что те его чуть заметные поползновения борьбы против того, что наивысше поставленными людьми считалось хорошим, поползновения чуть заметные, которые он тотчас же отгонял от себя, — что они-то и могли быть настоящие, а остальное все могло быть не то.\n\nИ его служба, и его устройства жизни, и его семья, и эти интересы общества и службы — все это могло быть не то. Он попытался защитить пред собой все это. И вдруг почувствовал всю слабость того, что он защищает. И защищать нечего было.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-294",
@@ -3672,7 +3907,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "Он чувствовал, что мученье его и в том, что он всовывается в эту черную дыру, и еще больше в том, что он не может пролезть в нее. Пролезть же ему мешает признанье того, что жизнь его была хорошая. Это-то оправдание своей жизни цепляло и не пускало его вперед и больше всего мучало его.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-295",
@@ -3684,7 +3924,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "там, в конце дыры, засветилось что-то. – Да, все было не то, – сказал он себе, – но это ничего. Можно, можно сделать “то”.\n\n[…]\n\nВ это самое время гимназистик тихонько прокрался к отцу и подошел к его постели. Умирающий все кричал отчаянно и кидал руками. Рука его попала на голову гимназистика. Гимназистик схватил ее, прижал к губам и заплакал. В это самое время Иван Ильич провалился, увидал свет, и ему открылось, что жизнь его была не то, что надо, но что это можно еще поправить. Он спросил себя: что же “то”, и затих, прислушиваясь. Тут он почувствовал, что руку его целует кто-то. Он открыл глаза и взглянул на сына. Ему стало жалко его. Жена подошла к нему. Он взглянул на нее. Она с открытым ртом и с неотертыми слезами на носу и щеке, с отчаянным выражением смотрела на него. Ему жалко стало ее.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-296",
@@ -3696,7 +3941,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "“Как хорошо и как просто, – подумал он. – А боль? – спросил он себя, – Ее куда? Ну-ка, где ты, боль?” Он стал прислушиваться. “Да, вот она. Ну что ж, пускай боль”. “А смерть? Где она?” Он искал своего прежнего привычного страха смерти и не находил его. Где она? Какая смерть? Страха никакого не было, потому что и смерти не было. Вместо смерти был свет. – Так вот что! – вдруг вслух проговорил он. – Какая радость!",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-297",
@@ -3708,7 +3958,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
-      "workId": "work-la-muerte-de-ivan-ilich"
+      "workId": "work-la-muerte-de-ivan-ilich",
+      "original": {
+        "text": "– Кончено! – сказал кто-то над ним. Он услыхал эти слова и повторил их в своей душе. “Кончена смерть, – сказал он себе. – Ее нет больше”. Он втянул в себя воздух, остановился на половине вздоха, потянулся и умер.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-298",
@@ -3720,7 +3975,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Я человек больной... Я злой человек. Непривлекательный я человек. Я думаю, что у меня болит печень. Впрочем, я ни шиша не смыслю в моей болезни и не знаю наверно, что у меня болит. Я не лечусь и никогда не лечился, хотя медицину и докторов уважаю. К тому же я еще и суеверен до крайности; ну, хоть настолько, чтоб уважать медицину. (Я достаточно образован, чтоб не быть суеверным, но я суеверен). Нет-с, я не хочу лечиться со злости. Вот вы этого, наверно, не изволите понимать. Ну-с, а я понимаю.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-299",
@@ -3732,7 +3992,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Я не только злым, но далее и ничем не сумел сделаться: ни злым, ни добрым, ни подлецом, ни честным, ни героем, ни насекомым. Теперь же доживаю в своем углу, дразня себя злобным и ни к чему не служащим утешением, что умный человек и не может серьезно чем-нибудь сделаться, а делается чем-нибудь только дурак.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-300",
@@ -3744,7 +4009,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Мне теперь хочется рассказать вам, господа, желается иль не желается вам это слышать, почему я даже и насекомым не сумел сделаться. Скажу вам торжественно, что я много раз хотел сделаться насекомым. Но даже и этого не удостоился. Клянусь вам, господа, что слишком сознавать — это болезнь, настоящая, полная болезнь. Для человеческого обихода слишком было бы достаточно обыкновенного человеческого сознания, то есть в половину, в четверть меньше той порции, которая достается на долю развитого человека нашего несчастного девятнадцатого столетия.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-301",
@@ -3756,7 +4026,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Скажите мне вот что: отчего так бывало, что, как нарочно, в те самые, да, в те же самые минуты, в которые я наиболее способен был сознавать все тонкости «всего прекрасного и высокого», как говорили у нас когда-то, мне случалось уже не сознавать, а делать такие неприглядные деянья, такие, которые... ну да, одним словом, которые хоть и все, пожалуй, делают, но которые, как нарочно, приходились у меня именно тогда, когда я наиболее сознавал, что их совсем бы не надо делать? Чем больше я сознавал о добре и о всем этом «прекрасном и высоком», тем глубже я и опускался в мою тину и тем способнее был совершенно завязнуть в ней.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-302",
@@ -3768,7 +4043,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "до того доходил, что ощущал какое-то тайное, ненормальное, подленькое наслажденьице возвращаться, бывало, в иную гадчайшую петербургскую ночь к себе в угол и усиленно сознавать, что вот и сегодня сделал опять гадость, что сделанного опять-таки никак не воротишь, и внутренно, тайно, грызть, грызть себя за это зубами, пилить и сосать себя до того, что горечь обращалась наконец в какую-то позорную, проклятую сладость и наконец — в решительное, серьезное наслаждение! Да, в наслаждение, в наслаждение! Я стою на том.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-303",
@@ -3780,19 +4060,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Да осыпьте его всеми земными благами, утопите в счастье совсем с головой, так, чтобы только пузырьки вскакивали на поверхности счастья, как на воде; дайте ему такое экономическое довольство, чтоб ему совсем уж ничего больше не оставалось делать, кроме как спать, кушать пряники и хлопотать о непрекращении всемирной истории,— так он вам и тут, человек-то, и тут, из одной неблагодарности, из одного пасквиля мерзость сделает. Рискнет даже пряниками и нарочно пожелает самого пагубного вздора, самой неэкономической бессмыслицы.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-304",
       "legacy_index": 304,
-      "t": "Precisamente sus sueños fantásticos, su estupidez más vulgar, querrá conservarlos para sí, únicamente para confirmarse —como si eso fuera tan terriblemente necesario— que los hombres siguen siendo hombres y no teclas de piano sobre las que tocan con sus propias manos las leyes de la naturaleza.\n\nY aunque resultara realmente una tecla de piano, aunque se lo demostraran mediante las ciencias naturales y las matemáticas, ni entonces entraría en razón: haría adrede alguna cosa contraria, únicamente por ingratitud, propiamente para salirse con la suya.",
+      "t": "Precisamente sus sueños fantásticos, su estupidez más vulgar, querrá conservarlos para sí, únicamente para confirmarse —como si eso fuera tan terriblemente necesario— que los hombres siguen siendo hombres y no teclas de piano sobre las que tocan con sus propias manos las leyes de la naturaleza, pero que amenazan con tocar hasta tal extremo que ya no será posible querer nada fuera del calendario.\n\nY aunque resultara realmente una tecla de piano, aunque se lo demostraran mediante las ciencias naturales y las matemáticas, ni entonces entraría en razón: haría adrede alguna cosa contraria, únicamente por ingratitud, propiamente para salirse con la suya.",
       "a": "Fiódor Dostoievski",
       "obra": "Memorias del subsuelo, Fiódor Dostoievski",
       "highlight": "Los hombres siguen siendo hombres y no teclas de piano.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Именно свои фантастические мечты, свою пошлейшую глупость пожелает удержать за собой единственно для того, чтоб самому себе подтвердить (точно это так уж очень необходимо), что люди всё еще люди, а не фортепьянные клавиши, на которых хоть и играют сами законы природы собственноручно, но грозят до того доиграться, что уж мимо календаря и захотеть ничего нельзя будет. Да ведь мало того: даже в том случае, если он действительно бы оказался фортепьянной клавишей, если б это доказать ему даже естественными науками и математически, так и тут не образумится, а нарочно напротив что-нибудь сделает, единственно из одной неблагодарности; собственно чтоб настоять на своем.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-305",
@@ -3804,7 +4094,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "И, кто знает (поручиться нельзя), может быть, что и вся-то цель на земле, к которой человечество стремится, только и заключается в одной этой беспрерывности процесса достижения, иначе сказать — в самой жизни, а не собственно в цели, которая, разумеется, должна быть не иное что, как дважды два четыре, то есть формула, а ведь дважды два четыре есть уже не жизнь, господа, а начало смерти. По крайней мере человек всегда как-то боялся этого дважды два четыре, а я и теперь боюсь.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-306",
@@ -3816,7 +4111,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "И почему вы так твердо, так торжественно уверены, что только одно нормальное и положительное,— одним словом, только одно благоденствие человеку выгодно? Не ошибается ли разум-то в выгодах? Ведь, может быть, человек любит не одно благоденствие? Может быть, он ровно настолько же любит страдание? Может быть, страдание-то ему ровно настолько же и выгодно, как благоденствие?\n\n[…]\n\nЯ ведь тут собственно не за страдание стою, да и не за благоденствие. Стою я... за свой каприз и за то, чтоб он был мне гарантирован, когда понадобится.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-307",
@@ -3828,7 +4128,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Вот видите ли: если вместо дворца будет курятник и пойдет дождь, я, может быть, и влезу в курятник, чтоб не замочиться, но все-таки курятника не приму за дворец из благодарности, что он меня от дождя сохранил. Вы смеетесь, вы даже говорите, что в этом случае курятник и хоромы — всё равно. Да,— отвечаю я,— если б надо было жить только для того, чтоб не замочиться.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-308",
@@ -3840,7 +4145,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Уничтожьте мои желания, сотрите мои идеалы, покажите мне что-нибудь лучше, и я за вами пойду. Вы, пожалуй, скажете, что не стоит и связываться; но в таком случае ведь и я вам могу тем же ответить. Мы рассуждаем серьезно; а не хотите меня удостоить вашим вниманием, так ведь кланяться не буду. У меня есть подполье.\n\nА покамест я еще живу и желаю,— да отсохни у меня рука, коль я хоть один кирпичик на такой капитальный дом принесу!",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-309",
@@ -3852,7 +4162,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "В то время мне было всего двадцать четыре года. Жизнь моя была уж и тогда угрюмая, беспорядочная и до одичалости одинокая. Я ни с кем не водился и даже избегал говорить и всё более и более забивался в свой угол. В должности, в канцелярии, я даже старался не глядеть ни на кого, и я очень хорошо замечал, что сослуживцы мои не только считали меня чудаком, но — всё казалось мне и это — будто бы смотрели на меня с каким-то омерзением.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-310",
@@ -3864,7 +4179,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Теперь мне совершенно ясно, что я сам вследствие неограниченного моего тщеславия, а стало быть, и требовательности к самому себе, глядел на себя весьма часто с бешеным недовольством, доходившим до омерзения, а оттого, мысленно, и приписывал мой взгляд каждому. Я, например, ненавидел свое лицо, находил, что оно гнусно, и даже подозревал, что в нем есть какое-то подлое выражение.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-311",
@@ -3876,7 +4196,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Я презрительно улыбался и ходил по другую сторону комнаты, прямо против дивана, вдоль стены, от стола до печки и обратно. Всеми силами я хотел показать, что могу и без них обойтись; а между тем нарочно стучал сапогами, становясь на каблуки.\n\nЯ имел терпенье проходить так, прямо перед ними, с восьми до одиннадцати часов, всё по одному и тому же месту, от стола до печки и от печки обратно к столу.\n\nБессовестнее и добровольнее унижать себя самому было уж невозможно, и я вполне, вполне понимал это и все-таки продолжал ходить от стола до печки и обратно.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-312",
@@ -3888,7 +4213,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Теперь же мне вдруг ярко представилась нелепая, отвратительная, как паук, идея разврата, который без любви, грубо и бесстыже, начинает прямо с того, чем настоящая любовь венчается. Мы долго смотрели так друг на друга, но глаз своих она перед моими не опускала и взгляду своего не меняла, так что мне стало наконец отчего-то жутко.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-313",
@@ -3900,7 +4230,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "— Э, полно, Лиза, какая уж тут книга, когда мне самому гадко вчуже. Да и не вчуже. У меня всё это теперь в душе проснулось... Неужели, неужели тебе самой не гадко здесь? Нет, видно, много значит привычка! Черт знает, что привычка может из человека сделать. Да неужели ж ты серьезно думаешь, что никогда не состареешься, вечно хороша будешь и что тебя здесь веки вечные держать будут?",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-314",
@@ -3912,7 +4247,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Последний мужик наймется в работники — все-таки не всего себя закабалит, да и знает, что ему срок есть. А где твой срок? Подумай только: что ты здесь отдаешь? что кабалишь? Душу, душу, в которой ты невластна, кабалишь вместе с телом! Любовь свою на поругание всякому пьянице отдаешь! Любовь! — да ведь это всё, да ведь это алмаз, девичье сокровище, любовь-то! Ведь чтоб заслужить эту любовь, иной готов душу положить, на смерть пойти.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-315",
@@ -3924,7 +4264,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Что-то не умирало во мне внутри, в глубине сердца и совести, не хотело умереть и сказывалось жгучей тоской.\n\n[…]\n\n«Придет! непременно придет! — восклицал я, бегая по комнате,— не сегодня, так завтра придет, а уж отыщет! […]»\n\n[…]\n\nНо тут, при этой мысли, во мне подымалась такая злоба, что, кажется, я бы так и раздавил эту «проклятую» Лизу, если б она возле меня вдруг случилась, оскорбил бы ее, оплевал бы, выгнал бы, ударил бы!",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-316",
@@ -3936,7 +4281,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Прошел, однако ж, день, другой, третий — она не приходила, и я начинал успокоиваться. Особенно ободрялся и разгуливался я после девяти часов, даже начинал иногда мечтать и довольно сладко: «Я, например, спасаю Лизу, именно тем, что она ко мне ходит, а я ей говорю... Я ее развиваю, образовываю. Я, наконец, замечаю, что она меня любит, страстно любит. Я прикидываюсь, что не понимаю (не знаю, впрочем, для чего прикидываюсь; так, для красы, вероятно)».",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-317",
@@ -3948,7 +4298,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Она тотчас же и послушно уселась, смотря на меня во все глаза и, очевидно, чего-то сейчас от меня ожидая. Эта-то наивность ожидания и привела меня в бешенство, но я сдержал себя. Тут-то бы и стараться ничего не замечать, как будто всё по-обыкновенному, а она... И я смутно почувствовал, что она дорого мне за всё это заплатит.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-318",
@@ -3960,7 +4315,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "— Лиза, ты презираешь меня? — сказал я, смотря на нее в упор, дрожа от нетерпения узнать, что она думает. Она сконфузилась и не сумела ничего ответить. — Пей чай! — проговорил я злобно. Я злился на себя, но, разумеется, достаться должно было ей. Страшная злоба против нее закипела вдруг в моем сердце; так бы и убил ее, кажется. Чтоб отмстить ей, я поклялся мысленно не говорить с ней во всё время ни одного слова. «Она же всему причиною»,— думал я.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-319",
@@ -3972,7 +4332,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "я и полюбить уж не мог, потому что, повторяю, любить у меня — значило тиранствовать и нравственно превосходствовать. Я всю жизнь не мог даже представить себе иной любви и до того дошел, что иногда теперь думаю, что любовь-то и заключается в добровольно дарованном от любимого предмета праве над ним тиранствовать. Я и в мечтах своих подпольных иначе и не представлял себе любви, как борьбою, начинал ее всегда с ненависти и кончал нравственным покорением, а потом уж и представить себе не мог, что делать с покоренным предметом.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-320",
@@ -3984,7 +4349,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Мне только невыносимо тяжело было, что она здесь. Я хотел, чтоб она исчезла. «Спокойствия» я желал, остаться один в подполье желал. «Живая жизнь» с непривычки придавила меня до того, что даже дышать стало трудно.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-321",
@@ -3996,7 +4366,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "мы все отвыкли от жизни, все хромаем, всякий более или менее. Даже до того отвыкли, что чувствуем подчас к настоящей «живой жизни» какое-то омерзение, а потому и терпеть не можем, когда нам напоминают про нее. Ведь мы до того дошли, что настоящую «живую жизнь» чуть не считаем за труд, почти что за службу, и все мы про себя согласны, что по книжке лучше.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-322",
@@ -4008,7 +4383,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-memorias-del-subsuelo"
+      "workId": "work-memorias-del-subsuelo",
+      "original": {
+        "text": "Оставьте нас одних, без книжки, и мы тотчас запутаемся, потеряемся,— не будем знать, куда примкнуть, чего придержаться; что любить и что ненавидеть, что уважать и что презирать? Мы даже и человеками-то быть тяготимся,— человеками с настоящим, собственным телом и кровью; стыдимся этого, за позор считаем и норовим быть какими-то небывалыми общечеловеками. Мы мертворожденные, да и рождаемся-то давно уж не от живых отцов, и это нам всё более и более нравится. Во вкус входим. Скоро выдумаем рождаться как-нибудь от идеи.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-323",
