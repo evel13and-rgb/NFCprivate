@@ -104,6 +104,12 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-269', 'quote-270', 'quote-271', 'quote-272', 'quote-273',
     'quote-274', 'quote-275', 'quote-276', 'quote-277', 'quote-278',
     'quote-279',
+    'quote-616', 'quote-617', 'quote-618', 'quote-619', 'quote-620',
+    'quote-621', 'quote-622', 'quote-623', 'quote-624', 'quote-625',
+    'quote-626', 'quote-627', 'quote-628', 'quote-629', 'quote-630',
+    'quote-631', 'quote-632', 'quote-633', 'quote-634', 'quote-635',
+    'quote-636', 'quote-637', 'quote-638', 'quote-639', 'quote-640',
+    'quote-641',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()

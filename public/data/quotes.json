@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T19:46:45.768Z",
+  "generated_at": "2026-08-12T09:40:17.457Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -7536,7 +7536,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Убивать за убийство несоразмерно большее наказание, чем самое преступление. Убийство по приговору несоразмерно ужаснее, чем убийство разбойничье. Тот, кого убивают разбойники, режут ночью, в лесу, или как-нибудь, непременно еще надеется, что спасется, до самого последнего мгновения. Примеры бывали, что уж горло перерезано, а он еще надеется, или бежит, или просит. А тут всю эту последнюю надежду, с которою умирать в десять раз легче, отнимают наверно; тут приговор, и в том, что наверно не избегнешь, вся ужасная-то мука и сидит, и сильнее этой муки нет на свете.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-617",
@@ -7548,7 +7553,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Выходило, что остается жить минут пять, не больше. Он говорил, что эти пять минут казались ему бесконечным сроком, огромным богатством; ему казалось, что в эти пять минут он проживет столько жизней, что еще сейчас нечего и думать о последнем мгновении, так что он еще распоряжения разные сделал: рассчитал время, чтобы проститься с товарищами, на это положил минуты две, потом две минуты еще положил, чтобы подумать в последний раз про себя, а потом, чтобы в последний раз кругом поглядеть. Он очень хорошо помнил, что сделал именно эти три распоряжения и именно так рассчитал.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-618",
@@ -7560,7 +7570,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Невдалеке была церковь, и вершина собора с позолоченною крышей сверкала на ярком солнце. Он помнил, что ужасно упорно смотрел на эту крышу и на лучи, от нее сверкавшие; оторваться не мог от лучей; ему казалось, что эти лучи его новая природа, что он чрез три минуты как-нибудь сольется с ними... Неизвестность и отвращение от этого нового, которое будет и сейчас наступит, были ужасны; но он говорит, что ничего не было для него в это время тяжеле, как беспрерывная мысль: «Что, если бы не умирать! Что, если бы воротить жизнь, — какая бесконечность! И всё это было бы мое! Я бы тогда каждую минуту в целый век обратил, ничего бы не потерял, каждую бы минуту счетом отсчитывал, уж ничего бы даром не истратил!». Он говорил, что эта мысль у него наконец в такую злобу переродилась, что ему уж хотелось, чтобы его поскорей застрелили.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-619",
@@ -7572,19 +7587,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Мне кажется, он, наверно, думал дорогой: «Еще долго, еще жить три улицы остается; вот эту проеду, потом еще та останется, потом еще та, где булочник направо... еще когда-то доедем до булочника!». Кругом народ, крик, шум, десять тысяч лиц, десять тысяч глаз, — все это надо перенести, а главное, мысль: «Вот их десять тысяч, а их никого не казнят, а меня-то казнят!».",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-620",
       "legacy_index": 620,
-      "t": "Al contrario, la cabeza vive y trabaja terriblemente; debe de hacerlo con fuerza, con fuerza, con fuerza, como una máquina en marcha. Imagino que los distintos pensamientos golpean así, todos inacabados y quizá también ridículos, pensamientos ajenos: «Ese está mirando: tiene una verruga en la frente; uno de los botones inferiores del verdugo está oxidado…».\n\nY, entretanto, lo sabes todo y lo recuerdas todo; hay un punto que no se puede olvidar de ningún modo, y tampoco puedes desmayarte, y todo anda y gira alrededor de él, alrededor de ese punto.",
+      "t": "Al contrario, la cabeza vive y trabaja terriblemente; debe de hacerlo con fuerza, con fuerza, con fuerza, como una máquina en marcha. Imagino que los distintos pensamientos golpean así, todos inacabados y quizá también ridículos, pensamientos ajenos al asunto: «Ese está mirando: tiene una verruga en la frente; uno de los botones inferiores del verdugo está oxidado…».\n\nY, entretanto, lo sabes todo y lo recuerdas todo; hay un punto que no se puede olvidar de ningún modo, y tampoco puedes desmayarte, y todo anda y gira alrededor de él, alrededor de ese punto.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "como una máquina en marcha",
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Напротив, голова ужасно живет и работает, должно быть, сильно, сильно, сильно, как машина в ходу; я воображаю, так и стучат разные мысли, всё неконченные, и может быть, и смешные, посторонние такие мысли: «Вот этот глядит — у него бородавка на лбу, вот у палача одна нижняя пуговица заржавела»... а между тем всё знаешь и всё помнишь; одна такая точка есть, которой никак нельзя забыть, и в обморок упасть нельзя, и всё около нее, около этой точки, ходит и вертится.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-621",
@@ -7596,7 +7621,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Потом мне каждый день становился дорог, и чем дальше, тем дороже, так что я стал это замечать. Ложился спать я очень довольный, а вставал еще счастливее.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-622",
@@ -7608,7 +7638,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "У нас там водопад был, небольшой, высоко с горы падал и такою тонкою ниткой, почти перпендикулярно, — белый, шумливый, пенистый; падал высоко, а казалось, довольно низко, был в полверсте, а казалось, что до него пятьдесят шагов. Я по ночам любил слушать его шум; вот в эти минуты доходил иногда до большого беспокойства. Тоже иногда в полдень, когда зайдешь куда-нибудь в горы, станешь один посредине горы, кругом сосны, старые, большие, смолистые; вверху на скале старый замок средневековый, развалины; наша деревенька далеко внизу, чуть видна; солнце яркое, небо голубое, тишина страшная. Вот тут-то, бывало, и зовет всё куда-то, и мне всё казалось, что если пойти всё прямо, идти долго-долго и зайти вот за эту линию, за ту самую, где небо с землей встречается, то там вся и разгадка, и тотчас же новую жизнь увидишь, в тысячу раз сильней и шумней, чем у нас; такой большой город мне всё мечтался, как Неаполь, в нем все дворцы, шум, гром, жизнь... Да мало ли что мечталось!",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-623",
@@ -7620,7 +7655,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Ребенку можно всё говорить, — всё; меня всегда поражала мысль, как плохо знают большие детей, отцы и матери даже своих детей. От детей ничего не надо утаивать под предлогом, что они маленькие и что им рано знать. Какая грустная и несчастная мысль! И как хорошо сами дети подмечают, что отцы считают их слишком маленькими и ничего не понимающими, тогда как они всё понимают.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-624",
@@ -7632,7 +7672,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Через детей душа лечится...",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-625",
@@ -7644,7 +7689,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Молчалива была ужасно. Раз, прежде еще, она за работой вдруг запела, и я помню, что все удивились и стали смеяться: «Мари запела! Как? Мари запела!» — и она ужасно законфузилась и уж навек потом замолчала.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-626",
@@ -7656,7 +7706,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Однажды две девочки достали кушанья и снесли к ней, отдали, пришли и мне сказали. Они говорили, что Мари расплакалась и что они теперь ее очень любят. Скоро и все стали любить ее, а вместе с тем и меня вдруг стали любить.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-627",
@@ -7668,7 +7723,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Детям запретили даже и встречаться с нею, но они бегали потихоньку к ней в стадо, довольно далеко, почти в полверсте от деревни; они носили ей гостинцев, а иные просто прибегали для того, чтоб обнять ее, поцеловать, сказать: «Je vous aime, Marie!» — и потом стремглав бежать назад. Мари чуть с ума не сошла от такого внезапного счастия; ей это даже и не грезилось; она стыдилась и радовалась…",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-628",
@@ -7680,7 +7740,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Главное в том, что уже переменилась вся моя жизнь. Я там много оставил, слишком много. Всё исчезло. Я сидел в вагоне и думал: «Теперь я к людям иду; я, может быть, ничего не знаю, но наступила новая жизнь». Я положил исполнить свое дело честно и твердо. С людьми мне будет, может быть, скучно и тяжело. На первый случай я положил быть со всеми вежливым и откровенным; больше от меня ведь никто не потребует. Может быть, и здесь меня сочтут за ребенка, — так пусть! Меня тоже за идиота считают все почему-то, я действительно был так болен когда-то, что тогда и похож был на идиота; но какой же я идиот теперь, когда я сам понимаю, что меня считают за идиота? Я вхожу и думаю: «Вот меня считают за идиота, а я все-таки умный, а они и не догадываются...».",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-629",
@@ -7692,7 +7757,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Потому сердце главное, а остальное вздор. Ум тоже нужен, конечно... может быть, ум-то и самое главное. Не усмехайся, Аглая, я себе не противоречу: дура с сердцем и без ума такая же несчастная дура, как и дура с умом без сердца. Старая истина.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-630",
@@ -7704,19 +7774,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "— Как это ты мне так уступаешь, не понимаю? Аль уж совсем ее разлюбил? Прежде ты все-таки был в тоске; я ведь видел. Так для чего же ты сломя-то голову сюда теперь прискакал? Из жалости? (И лицо его искривилось в злую насмешку). Хе-хе!\n\n— Ты думаешь, что я тебя обманываю? — спросил князь.\n\n— Нет, я тебе верю, да только ничего тут не понимаю. Вернее всего то, что жалость твоя, пожалуй, еще пуще моей любви!",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-631",
       "legacy_index": 631,
-      "t": "En su estado epiléptico había un grado, casi inmediatamente anterior al ataque, en que de pronto, en medio de la tristeza, de la oscuridad espiritual, de la opresión, por momentos parecía inflamarse su cerebro y, con un impulso extraordinario, se tensaban de golpe todas sus fuerzas vitales.\n\nLa sensación de vida, la conciencia de sí mismo, casi se multiplicaban por diez en aquellos instantes, que duraban como un relámpago.\n\nLa mente y el corazón se iluminaban con una luz extraordinaria; todas sus inquietudes, todas sus dudas, todas sus angustias parecían apaciguarse de golpe y resolverse en una especie de serenidad suprema, llena de una alegría clara, armoniosa y de esperanza, llena de razón y de causa última.",
+      "t": "En su estado epiléptico había un grado, casi inmediatamente anterior al ataque —siempre que el ataque lo sorprendiera despierto—, en que de pronto, en medio de la tristeza, de la oscuridad espiritual, de la opresión, por momentos parecía inflamarse su cerebro y, con un impulso extraordinario, se tensaban de golpe todas sus fuerzas vitales.\n\nLa sensación de vida, la conciencia de sí mismo, casi se multiplicaban por diez en aquellos instantes, que duraban como un relámpago.\n\nLa mente y el corazón se iluminaban con una luz extraordinaria; todas sus inquietudes, todas sus dudas, todas sus angustias parecían apaciguarse de golpe y resolverse en una especie de serenidad suprema, llena de una alegría clara, armoniosa y de esperanza, llena de razón y de causa última.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "una especie de serenidad suprema",
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Он задумался, между прочим, о том, что в эпилептическом состоянии его была одна степень почти пред самым припадком (если только припадок приходил наяву), когда вдруг, среди грусти, душевного мрака, давления, мгновениями как бы воспламенялся его мозг и с необыкновенным порывом напрягались разом все жизненные силы его. Ощущение жизни, самосознания почти удесятерялось в эти мгновения, продолжавшиеся как молния. Ум, сердце озарялись необыкновенным светом; все волнения, все сомнения его, все беспокойства как бы умиротворялись разом, разрешались в какое-то высшее спокойствие, полное ясной, гармоничной радости и надежды, полное разума и окончательной причины.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-632",
@@ -7728,7 +7808,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Мгновения эти были именно одним только необыкновенным усилением самосознания, — если бы надо было выразить это состояние одним словом, — самосознания и в то же время самоощущения в высшей степени непосредственного. Если в ту секунду, то есть в самый последний сознательный момент пред припадком, ему случалось успевать ясно и сознательно сказать себе: «Да, за этот момент можно отдать всю жизнь!», — то, конечно, этот момент сам по себе и стоил всей жизни.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-633",
@@ -7740,7 +7825,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "«В этот момент, — как говорил он однажды Рогожину, в Москве, во время их тамошних сходок, — в этот момент мне как-то становится понятно необычайное слово о том, что времени больше не будет. Вероятно, — прибавил он, улыбаясь, — это та же самая секунда, в которую не успел пролиться опрокинувшийся кувшин с водой эпилептикa Магомета, успевшего, однако, в ту самую секунду обозреть все жилища Аллаховы».",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-634",
@@ -7752,7 +7842,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Сострадание есть главнейший и, может быть, единственный закон бытия всего человечества.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-635",
@@ -7764,7 +7859,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Правда, князь, что вы раз говорили, что мир спасет «красота»? Господа, — закричал он громко всем, — князь утверждает, что мир спасет красота! А я утверждаю, что у него оттого такие игривые мысли, что он теперь влюблен. Господа, князь влюблен; давеча, только что он вошел, я в этом убедился. Не краснейте, князь, мне вас жалко станет. Какая красота спасет мир! Мне это Коля пересказал...",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-636",
@@ -7776,7 +7876,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Всё это было натурально, люди и созданы, чтобы друг друга мучить.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-637",
@@ -7788,7 +7893,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "— Кто посягает на единичную „милостыню“, — начал я, — тот посягает на природу человека и презирает его личное достоинство. Но организация „общественной милостыни“ и вопрос о личной свободе — два вопроса различные и взаимно себя не исключающие. Единичное добро останется всегда, потому что оно есть потребность личности, живая потребность прямого влияния одной личности на другую.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-638",
@@ -7800,7 +7910,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Бросая ваше семя, бросая вашу „милостыню“, ваше доброе дело в какой бы то ни было форме, вы отдаете часть вашей личности и принимаете в себя часть другой; вы взаимно приобщаетесь один к другому; еще несколько внимания, и вы вознаграждаетесь уже знанием, самыми неожиданными открытиями. Вы непременно станете смотреть наконец на ваше дело как на науку; она захватит в себя всю вашу жизнь и может наполнить всю жизнь. С другой стороны, все ваши мысли, все брошенные вами семена, может быть уже забытые вами, воплотятся и вырастут; получивший от вас передаст другому.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-639",
@@ -7812,7 +7927,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Дом его поразил меня; похож на кладбище, а ему, кажется, нравится, что, впрочем, понятно: такая полная, непосредственная жизнь, которою он живет, слишком полна сама по себе, чтобы нуждаться в обстановке.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-640",
@@ -7824,7 +7944,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Но странно, когда смотришь на этот труп измученного человека, то рождается один особенный и любопытный вопрос: если такой точно труп (а он непременно должен был быть точно такой) видели все ученики его, его главные будущие апостолы, видели женщины, ходившие за ним и стоявшие у креста, все веровавшие в него и обожавшие его, то каким образом могли они поверить, смотря на такой труп, что этот мученик воскреснет? Тут невольно приходит понятие, что если так ужасна смерть и так сильны законы природы, то как же одолеть их? Как одолеть их, когда не победил их теперь даже тот, который побеждал и природу при жизни своей, которому она подчинялась, которой воскликнул: „Талифа куми“, — и девица встала, „Лазарь, гряди вон“, — и вышел умерший? Природа мерещится при взгляде на эту картину в виде какого-то огромного, неумолимого и немого зверя или, вернее, гораздо вернее сказать, хоть и странно, — в виде какой-нибудь громадной машины новейшего устройства, которая бессмысленно захватила, раздробила и поглотила в себя, глухо и бесчувственно, великое и бесценное существо — такое существо, которое одно стоило всей природы и всех законов ее, всей земли, которая и создавалась-то, может быть, единственно для одного только появления этого существа!",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     },
     {
       "id": "quote-641",
@@ -7836,7 +7961,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-fiodor-dostoievski",
-      "workId": "work-el-idiota"
+      "workId": "work-el-idiota",
+      "original": {
+        "text": "Но я отказалась от мира; вам смешно это слышать от меня, встречая меня в кружевах и бриллиантах, с пьяницами и негодяями? Не смотрите на это, я уже почти не существую и знаю это; бог знает, что вместо меня живет во мне. Я читаю это каждый день в двух ужасных глазах, которые постоянно на меня смотрят, даже и тогда, когда их нет предо мной.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
     }
   ]
 }
