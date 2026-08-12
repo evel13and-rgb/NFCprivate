@@ -69,6 +69,7 @@ let quoteManager = createQuoteManager(activeQuotes, storage);
 const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=5');
 
 let currentQuote = null;
+let currentQuoteTextVersion = null;
 let quoteElementRef = null;
 let quoteHighlightRef = null;
 let quoteOriginalController = null;
@@ -1102,7 +1103,7 @@ function getShareImageTheme() {
 }
 
 function getQuoteCardSnapshot() {
-  const quoteText = (currentQuote?.t ?? '').trim();
+  const quoteText = (currentQuoteTextVersion?.text ?? currentQuote?.t ?? '').trim();
   const author = getVisibleElementText('author-name');
   const workTitle = getVisibleElementText('author-work');
   const title = getVisibleElementText('quote-card-title') || 'Páramo Literario';
@@ -1740,6 +1741,10 @@ function initQuoteActionButtons() {
 
 function renderQuoteTextVersion({ text, lang }) {
   if (!quoteElementRef || !currentQuote) return;
+  currentQuoteTextVersion = {
+    text: typeof text === 'string' ? text : '',
+    lang: typeof lang === 'string' ? lang : '',
+  };
   const isPoem = currentQuote.type === 'poem';
   const quoteLengthClass = getQuoteLengthClass(text);
   quoteElementRef.classList.toggle('quote-text--poem', isPoem);
@@ -1749,6 +1754,8 @@ function renderQuoteTextVersion({ text, lang }) {
   setQuoteTextContent(text, { includeQuotes: true });
   if (lang) quoteElementRef.setAttribute('lang', lang);
   else quoteElementRef.removeAttribute('lang');
+  quoteImageCache = null;
+  hideShareImageFallback();
 }
 
 function renderQuote(quote) {
@@ -1756,6 +1763,7 @@ function renderQuote(quote) {
     return;
   }
   currentQuote = quote;
+  currentQuoteTextVersion = null;
   stopQuoteVoice();
   if (quoteOriginalController) quoteOriginalController.render(currentQuote);
   else renderQuoteTextVersion({ text: currentQuote.t ?? '', lang: currentQuote.lang ?? '' });
