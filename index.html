@@ -18,7 +18,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=34" />
+  <link rel="stylesheet" href="style.css?v=35" />
 </head>
 <body class="app-loading" data-mode="day">
   <div
@@ -44,7 +44,7 @@
     </div>
   </div>
   <div class="quote-original-controls">
-    <span class="quote-original-label" id="quote-original-label" hidden></span>
+    <span class="quote-original-label sr-only" id="quote-original-label" hidden></span>
     <button
       type="button"
       class="quote-original-toggle"
@@ -53,7 +53,10 @@
       aria-label="Ver texto original"
       aria-controls="quote"
       hidden
-    >Original</button>
+    >
+      <span class="quote-original-toggle__option quote-original-toggle__option--translation" data-quote-view="translation" aria-hidden="true">T</span>
+      <span class="quote-original-toggle__option quote-original-toggle__option--original" data-quote-view="original" aria-hidden="true">O</span>
+    </button>
   </div>
   <main class="wrap">
     <section
@@ -190,6 +193,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=37"></script>
+  <script type="module" src="script.js?v=38"></script>
 </body>
 </html>

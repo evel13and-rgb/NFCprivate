@@ -3,7 +3,7 @@ import {
   createQuoteOriginalController,
   formatQuotedText,
   getQuoteBoundaryDecoration,
-} from './quoteOriginal.js?v=2';
+} from './quoteOriginal.js?v=3';
 import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=5';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';

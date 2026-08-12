@@ -33,7 +33,9 @@ export function createQuoteOriginalController({ button, label, onViewChange }) {
     const showingOriginal = activeView === 'original';
     if (button) {
       button.hidden = !activeOriginal;
-      button.textContent = showingOriginal ? 'Traducción' : 'Original';
+      if (!button.querySelector?.('[data-quote-view]')) {
+        button.textContent = showingOriginal ? 'Traducción' : 'Original';
+      }
       button.setAttribute('aria-pressed', String(showingOriginal));
       button.setAttribute('aria-label', showingOriginal ? 'Ver traducción' : 'Ver texto original');
     }
