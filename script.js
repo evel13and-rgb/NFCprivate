@@ -1,5 +1,6 @@
 import { createQuoteManager } from './quoteLogic.js';
 import { createQuoteOriginalController } from './quoteOriginal.js';
+import { formatQuotedText, getQuoteBoundaryDecoration } from './quoteText.js';
 import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=5';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
@@ -470,11 +471,12 @@ function setQuoteTextContent(text, { includeQuotes = true } = {}) {
     detachNightHandlers();
     detachDayHandlers();
   }
+  const content = typeof text === 'string' ? text : '';
+  const quoteDecoration = getQuoteBoundaryDecoration(content);
   const fragment = document.createDocumentFragment();
-  if (includeQuotes) {
+  if (includeQuotes && quoteDecoration.addOpening) {
     fragment.appendChild(createWordSpan('“', 'word--quote-open'));
   }
-  const content = typeof text === 'string' ? text : '';
   applyQuoteLengthSizing(content);
   const tokens = content.split(/(\s+)/);
   for (const token of tokens) {
@@ -485,7 +487,7 @@ function setQuoteTextContent(text, { includeQuotes = true } = {}) {
       fragment.appendChild(createWordSpan(token));
     }
   }
-  if (includeQuotes) {
+  if (includeQuotes && quoteDecoration.addClosing) {
     fragment.appendChild(createWordSpan('”', 'word--quote-close'));
   }
   quoteElementRef.replaceChildren(fragment);
@@ -1156,7 +1158,8 @@ function getSnapshotShareText(snapshot) {
   const quoteText = (snapshot?.quoteText ?? '').trim();
   const details = [snapshot?.author, snapshot?.workTitle].filter(Boolean).join(' · ');
   if (!quoteText) return snapshot?.title || 'Páramo Literario';
-  return details ? `“${quoteText}”\n— ${details}` : `“${quoteText}”`;
+  const formattedQuote = formatQuotedText(quoteText);
+  return details ? `${formattedQuote}\n— ${details}` : formattedQuote;
 }
 
 function getQuoteVoiceText() {
@@ -1381,7 +1384,7 @@ function createQuoteImageCanvas(snapshot) {
   }
 
   ctx.font = `500 ${quoteFontSize}px "Playfair Display", Georgia, serif`;
-  const quoteLines = wrapCanvasText(ctx, `“${snapshot.quoteText}”`, maxTextWidth);
+  const quoteLines = wrapCanvasText(ctx, formatQuotedText(snapshot.quoteText), maxTextWidth);
   const quoteBlockHeight = quoteLines.reduce((height, line) => {
     return height + (line ? lineHeight : Math.round(lineHeight * 0.55));
   }, 0);
