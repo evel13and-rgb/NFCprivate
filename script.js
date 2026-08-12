@@ -1,6 +1,9 @@
 import { createQuoteManager } from './quoteLogic.js';
-import { createQuoteOriginalController } from './quoteOriginal.js';
-import { formatQuotedText, getQuoteBoundaryDecoration } from './quoteText.js';
+import {
+  createQuoteOriginalController,
+  formatQuotedText,
+  getQuoteBoundaryDecoration,
+} from './quoteOriginal.js?v=2';
 import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=5';
 import { initFireflyAura } from './fireflies.js';
 import { getTimeOfDay, isNightTime } from './dayNight.js';

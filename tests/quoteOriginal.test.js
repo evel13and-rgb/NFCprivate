@@ -1,6 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createQuoteOriginalController, normalizeQuoteOriginal } from '../quoteOriginal.js';
+import {
+  createQuoteOriginalController,
+  formatQuotedText,
+  getQuoteBoundaryDecoration,
+  normalizeQuoteOriginal,
+} from '../quoteOriginal.js';
 
 function createElement() {
   const attributes = new Map();
@@ -76,4 +81,26 @@ test('rechaza originales vacíos o incompletos', () => {
   assert.equal(normalizeQuoteOriginal({ text: '', lang: 'en', label: 'Original inglés' }), null);
   assert.equal(normalizeQuoteOriginal({ text: 'Text', lang: '', label: 'Original' }), null);
   assert.equal(normalizeQuoteOriginal(null), null);
+});
+
+test('añade comillas decorativas a un fragmento sin comillas exteriores', () => {
+  assert.equal(formatQuotedText('Texto traducido.'), '“Texto traducido.”');
+  assert.deepEqual(getQuoteBoundaryDecoration('Texto traducido.'), {
+    addOpening: true,
+    addClosing: true,
+  });
+});
+
+test('no duplica las comillas tipográficas que ya delimitan un original', () => {
+  const quotedOriginal = '“If I can’t stay here, there is no use in my loving Green Gables.”';
+  assert.equal(formatQuotedText(quotedOriginal), quotedOriginal);
+  assert.deepEqual(getQuoteBoundaryDecoration(quotedOriginal), {
+    addOpening: false,
+    addClosing: false,
+  });
+});
+
+test('completa solo el extremo que no está delimitado', () => {
+  assert.equal(formatQuotedText('“Un diálogo sin cierre'), '“Un diálogo sin cierre”');
+  assert.equal(formatQuotedText('Un diálogo con cierre”'), '“Un diálogo con cierre”');
 });
