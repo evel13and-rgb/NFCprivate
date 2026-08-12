@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T11:38:08.400Z",
+  "generated_at": "2026-08-12T12:30:34.413Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -2144,38 +2144,53 @@
     {
       "id": "quote-176",
       "legacy_index": 176,
-      "t": "Estaba describiendo, como todos los jóvenes poetas describen siempre, la naturaleza, y para igualar con precisión el matiz del verde miró —y en esto mostró más audacia que la mayoría— la cosa misma, que resultó ser un laurel que crecía bajo la ventana. Después de eso, por supuesto, no pudo escribir más. El verde en la naturaleza es una cosa; el verde en la literatura, otra. La naturaleza y las letras parecen tener una antipatía natural: si se las junta, se hacen pedazos la una a la otra.",
+      "t": "Estaba describiendo, como no dejan nunca de hacer los jóvenes poetas, la naturaleza y, para reproducir con exactitud el matiz de verde, miró —y en esto mostró más audacia que la mayoría— la cosa misma, que resultó ser un laurel que crecía bajo la ventana. Después de aquello, naturalmente, no pudo escribir más. Una cosa es el verde en la naturaleza y otra el verde en la literatura. La naturaleza y las letras parecen profesarse una antipatía natural: júntense y se harán pedazos.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "La naturaleza y las letras parecen tener una antipatía natural.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "He was describing, as all young poets are for ever describing, nature, and in order to match the shade of green precisely he looked (and here he showed more audacity than most) at the thing itself, which happened to be a laurel bush growing beneath the window. After that, of course, he could write no more. Green in nature is one thing, green in literature another. Nature and letters seem to have a natural antipathy; bring them together and they tear each other to pieces.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-177",
       "legacy_index": 177,
-      "t": "Le gustaba, bajo toda aquella transitoriedad del verano, sentir bajo él la espina dorsal de la tierra; pues eso creía que era la dura raíz del roble. O, como una imagen seguía a otra, era el lomo de un gran caballo que cabalgaba; o la cubierta de un barco que se bamboleaba: era cualquier cosa, en realidad, con tal de que fuese dura, porque sentía la necesidad de algo a lo que pudiera sujetar su corazón flotante; el corazón que tiraba de su costado; el corazón que parecía llenarse de ráfagas especiadas y amorosas cada atardecer, a esa hora en que salía a caminar.",
+      "t": "Le gustaba, bajo toda aquella fugacidad del verano, sentir la espina dorsal de la tierra; pues eso creía que era la dura raíz del roble. O, como una imagen seguía a otra, era el lomo de un gran caballo que cabalgaba; o la cubierta de un barco que se balanceaba: cualquier cosa, en realidad, con tal de que fuese dura, porque sentía la necesidad de algo a lo que amarrar su corazón flotante; el corazón que le tiraba del costado; el corazón que parecía llenarse de ráfagas especiadas y amorosas cada atardecer, a la hora en que salía a caminar.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Sentir bajo él la espina dorsal de la tierra.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "He loved, beneath all this summer transiency, to feel the earth's spine beneath him; for such he took the hard root of the oak tree to be; or, for image followed image, it was the back of a great horse that he was riding; or the deck of a tumbling ship—it was anything indeed, so long as it was hard, for he felt the need of something which he could attach his floating heart to; the heart that tugged at his side; the heart that seemed filled with spiced and amorous gales every evening about this time when he walked out.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-178",
       "legacy_index": 178,
-      "t": "Acababa, en efecto, de juntar los pies hacia las seis de la tarde del siete de enero, al final de una cuadrilla o minueto semejante, cuando vio salir del pabellón de la Embajada Moscovita una figura que, fuera de muchacho o de mujer —pues la túnica suelta y los pantalones de la moda rusa servían para disfrazar el sexo—, lo llenó de la más alta curiosidad. La persona, cualquiera que fuese su nombre o sexo, era de estatura mediana, muy esbelta, y vestía enteramente de terciopelo color ostra, guarnecido con una piel verdosa desconocida. Pero esos detalles quedaban oscurecidos por la extraordinaria seducción que emanaba de toda su persona.",
+      "t": "Acababa, en efecto, de juntar los pies hacia las seis de la tarde del siete de enero, al término de una cuadrilla o un minueto semejantes, cuando vio salir del pabellón de la Embajada Moscovita una figura que, fuese de muchacho o de mujer —pues la túnica holgada y los pantalones a la moda rusa ocultaban el sexo—, despertó en él la más viva curiosidad. La persona, cualesquiera que fuesen su nombre o su sexo, era de estatura mediana, de figura muy esbelta, y vestía enteramente de terciopelo color ostra, ribeteado con una desconocida piel verdosa. Pero todos esos detalles quedaban eclipsados por la extraordinaria seducción que emanaba de su persona entera.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Una figura que, fuera de muchacho o de mujer, lo llenó de la más alta curiosidad.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "He had indeed just brought his feet together about six in the evening of the seventh of January at the finish of some such quadrille or minuet when he beheld, coming from the pavilion of the Muscovite Embassy, a figure, which, whether boy's or woman's, for the loose tunic and trousers of the Russian fashion served to disguise the sex, filled him with the highest curiosity. The person, whatever the name or sex, was about middle height, very slenderly fashioned, and dressed entirely in oyster-coloured velvet, trimmed with some unfamiliar greenish-coloured fur. But these details were obscured by the extraordinary seductiveness which issued from the whole person.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-179",
@@ -2187,7 +2202,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Images, metaphors of the most extreme and extravagant twined and twisted in his mind. He called her a melon, a pineapple, an olive tree, an emerald, and a fox in the snow all in the space of three seconds; he did not know whether he had heard her, tasted her, seen her, or all three together.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-180",
@@ -2199,79 +2219,114 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "For in all she said, however open she seemed and voluptuous, there was something hidden; in all she did, however daring, there was something concealed. So the green flame seems hidden in the emerald, or the sun prisoned in a hill. The clearness was only outward; within was a wandering flame. It came; it went; she never shone with the steady beam of an Englishwoman—here, however, remembering the Lady Margaret and her petticoats, Orlando ran wild in his transports and swept her over the ice, faster, faster, vowing that he would chase the flame, dive for the gem, and so on and so on, the words coming on the pants of his breath with the passion of a poet whose poetry is half pressed out of him by pain.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-181",
       "legacy_index": 181,
-      "t": "Pero la sexta campanada se desvaneció, y llegó la séptima, y luego la octava, y a su mente aprensiva le parecieron notas que primero anunciaban y después proclamaban muerte y desastre. Cuando sonó la duodécima, supo que su destino estaba sellado. Era inútil que la parte racional de él razonara: ella podía llegar tarde; podía haber sido detenida; podía haberse perdido. El corazón apasionado y sensible de Orlando sabía la verdad.",
+      "t": "Pero la sexta campanada se perdió en el aire, y llegó la séptima, y luego la octava, y a su mente angustiada le parecieron notas que primero anunciaban y después proclamaban la muerte y el desastre. Cuando sonó la duodécima, supo que su suerte estaba sellada. De nada servía que su parte racional razonara: ella podía haberse retrasado; podían haberla detenido; podía haberse extraviado. El corazón apasionado y sensible de Orlando sabía la verdad.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "El corazón apasionado y sensible de Orlando sabía la verdad.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "But the sixth stroke echoed away, and the seventh came and the eighth, and to his apprehensive mind they seemed notes first heralding and then proclaiming death and disaster. When the twelfth struck he knew that his doom was sealed. It was useless for the rational part of him to reason; she might be late; she might be prevented; she might have missed her way. The passionate and feeling heart of Orlando knew the truth.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-182",
       "legacy_index": 182,
-      "t": "Donde durante tres meses y más había habido hielo sólido, de tal espesor que parecía permanente como la piedra, y toda una ciudad alegre se había alzado sobre su pavimento, ahora corría una carrera de aguas amarillas y turbulentas. El río había ganado su libertad durante la noche. Era como si una fuente sulfurosa —opinión a la que se inclinaban muchos filósofos— hubiese brotado de las regiones volcánicas subterráneas y hecho estallar el hielo con tal vehemencia que dispersó furiosamente sus enormes y macizos fragmentos. Bastaba mirar el agua para sentirse mareado. Todo era tumulto y confusión. El río estaba sembrado de icebergs.",
+      "t": "Donde durante tres meses y más había habido hielo sólido, tan grueso que parecía perdurable como la piedra, y toda una ciudad jubilosa se había alzado sobre su pavimento, corría ahora una corriente impetuosa de aguas amarillas y turbulentas. El río había recobrado su libertad durante la noche. Era como si un manantial sulfuroso —opinión a la que se inclinaban muchos filósofos— hubiese brotado de las regiones volcánicas subterráneas y reventado el hielo con tal violencia que barrió furiosamente sus enormes y numerosos fragmentos, separándolos. Bastaba mirar el agua para sentir vértigo. Todo era tumulto y confusión. El río estaba sembrado de icebergs.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "El río había ganado su libertad durante la noche.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Where, for three months and more, there had been solid ice of such thickness that it seemed permanent as stone, and a whole gay city had stood on its pavement was now a race of turbulent yellow waters. The river had gained its freedom in the night. It was as if a sulphur spring (to which view many philosophers inclined) had risen from the volcanic regions beneath and burst the ice asunder with such vehemence that it swept the huge and many fragments furiously apart. The mere look of the water was enough to turn one giddy. All was riot and confusion. The river was strewn with icebergs.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-183",
       "legacy_index": 183,
-      "t": "El gusto por los libros le vino temprano. De niño, a veces un paje lo encontraba a medianoche todavía leyendo. Le quitaron la vela, y él crió luciérnagas para que le sirvieran a ese propósito. Le quitaron las luciérnagas, y casi incendió la casa con yesca.",
+      "t": "La afición a los libros le vino temprano. De niño, algún paje lo encontraba todavía leyendo a medianoche. Le quitaron la vela, y él crió luciérnagas para leer a su luz. Le quitaron las luciérnagas, y estuvo a punto de incendiar la casa con un pedernal.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "El gusto por los libros le vino temprano.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "The taste for books was an early one. As a child he was sometimes found at midnight by a page still reading. They took his taper away, and he bred glow-worms to serve his purpose. They took the glow-worms away, and he almost burnt the house down with a tinder.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-184",
       "legacy_index": 184,
-      "t": "Un caballero apuesto como él, decían, no necesitaba libros. Que dejara los libros, decían, a los tullidos y a los moribundos. Pero algo peor estaba por venir. Pues una vez que el mal de leer se apodera del organismo, lo debilita y lo convierte en presa fácil de ese otro azote que habita en el tintero y supura en la pluma. El miserable se pone a escribir.",
+      "t": "Un caballero tan distinguido como él, decían, no necesitaba libros. Que dejara los libros, decían, para los paralíticos y los moribundos. Pero aún faltaba lo peor. Pues, una vez que el mal de la lectura se apodera del organismo, lo debilita hasta convertirlo en presa fácil de ese otro azote que mora en el tintero y se encona en la pluma. El desdichado da en escribir.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Una vez que el mal de leer se apodera del organismo, lo deja expuesto al azote de escribir.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "A fine gentleman like that, they said, had no need of books. Let him leave books, they said, to the palsied or the dying. But worse was to come. For once the disease of reading has laid hold upon the system it weakens it so that it falls an easy prey to that other scourge which dwells in the ink pot and festers in the quill. The wretch takes to writing.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-185",
       "legacy_index": 185,
-      "t": "La memoria es costurera, y caprichosa además. La memoria pasa la aguja hacia dentro y hacia fuera, arriba y abajo, de aquí para allá. No sabemos qué viene después, ni qué sigue a continuación. Así, el movimiento más ordinario del mundo, como sentarse a una mesa y acercarse el tintero, puede agitar mil fragmentos extraños y desconectados, ahora brillantes, ahora apagados, colgando, bamboleándose, hundiéndose y ostentándose, como la ropa interior de una familia de catorce miembros tendida en una cuerda durante un vendaval. En lugar de ser una pieza única, franca, directa, robusta, de la que ningún hombre tenga que avergonzarse, nuestros actos más comunes están rodeados de un aleteo y un parpadeo de alas, de una subida y bajada de luces.",
+      "t": "La memoria es la costurera, y una costurera caprichosa. La memoria mete y saca la aguja, arriba y abajo, de acá para allá. No sabemos qué viene luego ni qué vendrá después. Así, el movimiento más ordinario del mundo —sentarse a una mesa y acercarse el tintero, por ejemplo— puede agitar mil fragmentos insólitos y inconexos, ora brillantes, ora apagados, que cuelgan, se mecen, se hunden y se pavonean como la ropa interior de una familia de catorce personas tendida en pleno vendaval. En vez de ser una labor de una sola pieza, franca, directa y recia, de la que ningún hombre tenga por qué avergonzarse, nuestros actos más corrientes están cercados por un aleteo y centelleo de alas, por un subir y bajar de luces.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "La memoria es costurera, y caprichosa además.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Memory is the seamstress, and a capricious one at that. Memory runs her needle in and out, up and down, hither and thither. We know not what comes next, or what follows after. Thus, the most ordinary movement in the world, such as sitting down at a table and pulling the inkstand towards one, may agitate a thousand odd, disconnected fragments, now bright, now dim, hanging and bobbing and dipping and flaunting, like the underlinen of a family of fourteen on a line in a gale of wind. Instead of being a single, downright, bluff piece of work of which no man need feel ashamed, our commonest deeds are set about with a fluttering and flickering of wings, a rising and falling of lights.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-186",
       "legacy_index": 186,
-      "t": "El sonido de las trompetas se extinguió y Orlando quedó de pie, completamente desnudo. Ningún ser humano, desde que empezó el mundo, ha parecido jamás más arrebatador. Su forma reunía en una sola la fuerza de un hombre y la gracia de una mujer. Mientras permanecía allí, las trompetas de plata prolongaron su nota, como si les costara abandonar la hermosa visión que su toque había convocado; y Castidad, Pureza y Modestia, inspiradas sin duda por la Curiosidad, se asomaron a la puerta y arrojaron una prenda semejante a una toalla sobre la figura desnuda, que por desgracia quedó varios centímetros corta. Orlando se miró de arriba abajo en un largo espejo sin mostrar señal alguna de turbación y fue, presumiblemente, a tomar su baño. Podemos aprovechar esta pausa en la narración para hacer ciertas afirmaciones. Orlando se había convertido en mujer; no hay manera de negarlo.",
+      "t": "El sonido de las trompetas se extinguió y Orlando quedó allí, completamente desnudo. Ningún ser humano, desde que el mundo empezó, había presentado jamás una visión más cautivadora. Su figura reunía la fuerza de un hombre y la gracia de una mujer. Mientras permanecía allí, las trompetas de plata prolongaron su nota, como si se resistieran a abandonar la hermosa visión que su toque había convocado; y Castidad, Pureza y Modestia, inspiradas sin duda por la Curiosidad, se asomaron a la puerta y arrojaron sobre la figura desnuda una prenda parecida a una toalla que, por desgracia, no alcanzó a cubrirla por varios centímetros. Orlando se contempló de arriba abajo en un espejo de cuerpo entero sin dar señal alguna de desconcierto y fue, presumiblemente, a bañarse. Podemos aprovechar esta pausa en la narración para hacer ciertas afirmaciones. Orlando se había convertido en mujer: no hay manera de negarlo.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Orlando se miró de arriba abajo en un largo espejo sin mostrar señal alguna de turbación.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "The sound of the trumpets died away and Orlando stood stark naked. No human being, since the world began, has ever looked more ravishing. His form combined in one the strength of a man and a woman's grace. As he stood there, the silver trumpets prolonged their note, as if reluctant to leave the lovely sight which their blast had called forth; and Chastity, Purity, and Modesty, inspired, no doubt, by Curiosity, peeped in at the door and threw a garment like a towel at the naked form which, unfortunately, fell short by several inches. Orlando looked himself up and down in a long looking-glass, without showing any signs of discomposure, and went, presumably, to his bath. We may take advantage of this pause in the narrative to make certain statements.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-187",
@@ -2283,55 +2338,80 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Orlando had become a woman—there is no denying it. But in every other respect, Orlando remained precisely as he had been. The change of sex, though it altered their future, did nothing whatever to alter their identity.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-188",
       "legacy_index": 188,
-      "t": "El placer de no tener documentos que sellar ni firmar, ni rúbricas que trazar, ni visitas que pagar, era suficiente. Los gitanos seguían la hierba; cuando quedaba rasurada, se trasladaban de nuevo. Ella se lavaba en los arroyos, si es que se lavaba; no le presentaban cajas rojas, azules o verdes; no había una llave, ni mucho menos una llave de oro, en todo el campamento; en cuanto a “hacer visitas”, la palabra era desconocida.",
+      "t": "Bastaba el placer de no tener documentos que sellar ni firmar, ni rúbricas que trazar, ni visitas de cumplido que hacer. Los gitanos seguían la hierba; cuando quedaba apurada por el ganado, alzaban de nuevo el campamento. Ella se lavaba en los arroyos, si es que se lavaba; nadie le presentaba cajas rojas, azules ni verdes; no había una sola llave, y mucho menos una llave de oro, en todo el campamento; en cuanto a «visitar», la palabra era desconocida.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "El placer de no tener documentos que sellar ni firmar era suficiente.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "The pleasure of having no documents to seal, or sign, no flourishes to make, no calls to pay was enough. The gipsies followed the grass; when it was grazed down, on they moved again. She washed in streams if she washed at all; no boxes, red, blue, or green were presented to her; there was not a key, let alone a golden key in the whole camp; as for 'visiting,' the word was unknown.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-189",
       "legacy_index": 189,
-      "t": "Se estaba volviendo un poco más modesta, como suelen serlo las mujeres, respecto a su inteligencia, y un poco más vanidosa, como suelen serlo las mujeres, respecto a su persona. Ciertas susceptibilidades se estaban afirmando y otras disminuían. El cambio de ropa, dirán algunos filósofos, tuvo mucho que ver con ello. Fruslerías vanas como parecen, las ropas tienen, dicen, funciones más importantes que la de mantenernos calientes. Cambian nuestra visión del mundo y la visión que el mundo tiene de nosotros.",
+      "t": "Se estaba volviendo un poco más modesta, como suelen serlo las mujeres, acerca de su inteligencia, y un poco más vanidosa, como suelen serlo las mujeres, acerca de su persona. Ciertas susceptibilidades empezaban a afirmarse mientras otras menguaban. El cambio de ropa, dirán algunos filósofos, tuvo mucho que ver con ello. Por frívolas naderías que parezcan, las prendas desempeñan, según dicen, funciones más importantes que la de mantenernos calientes. Cambian nuestra visión del mundo y la visión que el mundo tiene de nosotros.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "La ropa cambia nuestra visión del mundo y la visión que el mundo tiene de nosotros.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "She was becoming a little more modest, as women are, of her brains, and a little more vain, as women are, of her person. Certain susceptibilities were asserting themselves, and others were diminishing. The change of clothes had, some philosophers will say, much to do with it. Vain trifles as they seem, clothes have, they say, more important offices than merely to keep us warm. They change our view of the world and the world's view of us.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-190",
       "legacy_index": 190,
-      "t": "Orlando hizo una reverencia; accedió; halagó los humores del buen hombre como no lo habría hecho si sus pulcros calzones hubieran sido faldas de mujer y su chaqueta trenzada un corpiño de satén femenino. Así, hay mucho que sostiene la opinión de que es la ropa la que nos lleva a nosotros, y no nosotros a ella; podemos hacer que tome el molde del brazo o del pecho, pero ella moldea nuestros corazones, nuestros cerebros y nuestras lenguas a su gusto.",
+      "t": "Orlando hizo una reverencia; accedió; siguió la corriente al buen hombre como no lo habría hecho si los pulcros calzones de él hubiesen sido faldas de mujer y su chaqueta galoneada, un corpiño femenino de satén. Así pues, hay mucho que respalda la opinión de que es la ropa la que nos viste, y no nosotros quienes la vestimos; podemos hacer que se amolde al brazo o al pecho, pero ella moldea a su gusto nuestros corazones, nuestros cerebros y nuestras lenguas.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Es la ropa la que nos lleva a nosotros, y no nosotros a ella.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Orlando curtseyed; she complied; she flat tered the good man's humours as she would not have done had his neat breeches been a woman's skirts, and his braided coat a woman's satin bodice. Thus, there is much to support the view that it is clothes that wear us and not we them; we may make them take the mould of arm or breast, but they mould our hearts, our brains, our tongues to their liking.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-191",
       "legacy_index": 191,
-      "t": "Aunque los sexos sean distintos, se entremezclan. En todo ser humano se produce una vacilación de un sexo al otro, y a menudo solo la ropa conserva la apariencia masculina o femenina, mientras que por debajo el sexo es exactamente lo contrario de lo que parece por encima. Todo el mundo ha tenido experiencia de las complicaciones y confusiones que de ello resultan; pero aquí dejamos la cuestión general y observamos solo el extraño efecto que tuvo en el caso particular de Orlando.",
+      "t": "Por distintos que sean los sexos, se entremezclan. En todo ser humano se da una oscilación de uno a otro, y a menudo solo la ropa conserva la apariencia masculina o femenina, mientras que por debajo el sexo es justo el contrario del que se muestra por fuera. Todo el mundo conoce por experiencia las complicaciones y confusiones que de ello resultan; pero aquí dejamos la cuestión general y atendemos únicamente al curioso efecto que tuvo en el caso particular de Orlando.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Aunque los sexos sean distintos, se entremezclan.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Different though the sexes are, they intermix. In every human being a vacillation from one sex to the other takes place, and often it is only the clothes that keep the male or female likeness, while underneath the sex is the very opposite of what it is above. Of the complications and confusions which thus result every one has had experience; but here we leave the general question and note only the odd effect it had in the particular case of Orlando herself.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-192",
@@ -2343,31 +2423,46 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "The poet's then in the highest office of all, she continued. His words reach where others fall short. A silly song of Shakespeare's has done more for the poor and the wicked than all the preachers and philanthropists in the world.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-193",
       "legacy_index": 193,
-      "t": "Ningún tiempo, ninguna devoción, puede ser demasiado grande, por tanto, si logra que el vehículo de nuestro mensaje distorsione menos. Debemos moldear nuestras palabras hasta que sean la envoltura más fina de nuestros pensamientos. Los pensamientos son divinos, etc.",
+      "t": "Ningún tiempo, ninguna entrega puede ser excesiva, por tanto, si consigue que el vehículo de nuestro mensaje lo deforme menos. Debemos modelar nuestras palabras hasta convertirlas en el tegumento más fino de nuestros pensamientos. Los pensamientos son divinos, etcétera.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Debemos moldear nuestras palabras hasta que sean la envoltura más fina de nuestros pensamientos.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "No time, no devotion, can be too great, therefore, which makes the vehicle of our message less distorting. We must shape our words till they are the thinnest integument for our thoughts. Thoughts are divine.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-194",
       "legacy_index": 194,
-      "t": "“Escribiré”, había dicho ella, “lo que disfruto escribiendo”; y así había emborronado veintiséis volúmenes. Sin embargo, pese a todos sus viajes y aventuras, y sus pensamientos profundos, y sus vueltas hacia un lado y hacia otro, todavía estaba en proceso de fabricación. Lo que el futuro pudiera traer, solo el Cielo lo sabía. El cambio era incesante, y quizá el cambio no cesaría nunca.",
+      "t": "«Escribiré», se había dicho, «lo que disfruto escribiendo»; y así había garabateado veintiséis volúmenes. Sin embargo, pese a todos sus viajes y aventuras, a sus hondas cavilaciones y a sus vueltas de acá para allá, todavía estaba en proceso de fabricación. Solo el Cielo sabía lo que podía traer el futuro. El cambio era incesante, y quizá nunca cesaría.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Escribiré lo que disfruto escribiendo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "\"I will write,\" she had said, \"what I enjoy writing\"; and so had scratched out twenty-six volumes. Yet still for all her travels and adventures and profound thinkings and turnings this way and that, she was only in process of fabrication. What the future might bring, Heaven only knew. Change was incessant, and change perhaps would never cease.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-195",
@@ -2379,31 +2474,46 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "At one and the same time therefore, society is everything and society is nothing. Society is the most powerful concoction in the world and society has no existence whatsoever.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-196",
       "legacy_index": 196,
-      "t": "La humedad penetró dentro. Los hombres sintieron el frío en el corazón; la humedad en la mente. En un esfuerzo desesperado por acurrucar sus sentimientos en alguna clase de calor, se probó un subterfugio tras otro. Amor, nacimiento y muerte fueron envueltos en una variedad de frases elegantes.",
+      "t": "La humedad caló hacia dentro. Los hombres sintieron el frío en el corazón; la humedad en la mente. En un esfuerzo desesperado por acurrucar sus sentimientos al abrigo de alguna forma de calor, probaron un subterfugio tras otro. El amor, el nacimiento y la muerte fueron fajados en toda una variedad de frases elegantes.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "Los hombres sentían el frío en el corazón; la humedad en la mente.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "The damp struck within. Men felt the chill in their hearts; the damp in their minds. In a desperate effort to snuggle their feelings into some sort of warmth one subterfuge was tried after another. Love, birth, and death were all swaddled in a variety of fine phrases.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-197",
       "legacy_index": 197,
-      "t": "La verdadera duración de una vida, diga lo que diga el *Dictionary of National Biography*, siempre es materia de disputa. Porque es un asunto difícil, esto de llevar la cuenta del tiempo; nada lo desordena más deprisa que el contacto con cualquiera de las artes; y puede que fuera su amor por la poesía el culpable de que Orlando perdiera la lista de la compra y volviera a casa sin las sardinas, las sales de baño ni las botas.",
+      "t": "La verdadera duración de la vida de una persona, diga lo que diga el *Dictionary of National Biography*, siempre es materia de disputa. Porque es difícil este asunto de llevar la cuenta del tiempo; nada la trastorna más deprisa que el contacto con cualquiera de las artes; y puede que la afición de Orlando a la poesía tuviera la culpa de que perdiese la lista de la compra y emprendiera el regreso sin las sardinas, las sales de baño ni las botas.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "La verdadera duración de una vida siempre es materia de disputa.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "The true length of a person's life, whatever the Dictionary of National Biog raphy may say, is always a matter of dispute. Indeed it is a difficult business—this time-keeping; nothing more quickly disorders it than contact with any of the arts; and it may have been her love of poetry that was to blame for making Orlando lose her shopping list and start home without the sardines, the bath salts, or the boots.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-198",
@@ -2415,19 +2525,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Then she called hesitatingly, as if the person she wanted might not be there, \"Orlando?\" For if there are (at a venture) seventy-six different times all ticking in the mind at once, how many different people are there not—Heaven help us—all having lodgment at one time or another in the human spirit? Some say two thousand and fifty-two. So that it is the most usual thing in the world for a person to say, directly they are alone, Orlando? (if that is one's name) meaning by that, Come, come! I'm sick to death of this particular self. I want another.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-199",
       "legacy_index": 199,
-      "t": "Quizá; pero lo que parecía cierto —pues estamos ahora en la región del “quizá” y del “parece”— era que el yo que más necesitaba se mantenía apartado, ya que, a juzgar por lo que decía, estaba cambiando de yos tan deprisa como conducía: había uno nuevo en cada esquina. Eso ocurre cuando, por alguna razón inexplicable, el yo consciente, que es el que está más arriba y tiene el poder de desear, quiere no ser más que un solo yo. Esto es lo que algunas personas llaman el yo verdadero, y está, dicen, compuesto por todos los yos que tenemos dentro la posibilidad de ser; dirigido y encerrado por el yo Capitán, el yo Llave, que los amalgama y los controla a todos.",
+      "t": "Quizá; pero lo que parecía cierto —pues estamos ahora en la región del «quizá» y del «parece»— era que el yo que más necesitaba se mantenía apartado, porque, a juzgar por lo que decía, cambiaba de yos tan deprisa como conducía: había uno nuevo en cada esquina. Así ocurre cuando, por alguna razón inexplicable, el yo consciente, que ocupa el lugar más alto y tiene la facultad de desear, desea no ser más que un solo yo. Es lo que algunos llaman el yo verdadero y está compuesto, según dicen, por todos los yos que llevamos dentro la posibilidad de ser; gobernado y puesto bajo llave por el yo Capitán, el yo Llave, que los amalgama y controla a todos.",
       "a": "Virginia Woolf",
       "obra": "Orlando, Virginia Woolf",
       "highlight": "El yo verdadero está compuesto por todos los yos que podemos llegar a ser.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Perhaps; but what appeared certain (for we are now in the region of 'perhaps' and 'appears') was that the one she needed most kept aloof, for she was, to hear her talk, changing her selves as quickly as she drove—there was a new one at every corner—as happens when, for some unaccountable reason, the conscious self, which is the uppermost, and has the power to desire, wishes to be nothing but one self. This is what some people call the true self, and it is, they say, compact of all the selves we have it in us to be; commanded and locked up by the Captain self, the Key self, which amalgamates and controls them all.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-200",
@@ -2439,7 +2559,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-virginia-woolf",
-      "workId": "work-orlando"
+      "workId": "work-orlando",
+      "original": {
+        "text": "Always it flies fast out to sea and always I fling after it words like nets (here she flung her hand out) which shrivel as I've seen nets shrivel drawn on deck with only sea-weed in them. And sometimes there's an inch of silver—six words—in the bottom of the net. But never the great fish who lives in the coral groves.\" Here she bent her head, pondering deeply.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-201",
@@ -7904,7 +8029,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Ogromny słonecznik, wydźwignięty na potężnej łodydze i chory na elephantiasis, czekał w żółtej żałobie ostatnich, smutnych dni żywota, uginając się pod przerostem potwornej korpulencji.\n\nAle naiwne przedmiejskie dzwonki i perkalikowe, niewybredne kwiatuszki stały bezradne w swych nakrochmalonych, różowych i białych koszulkach, bez zrozumienia dla wielkiej tragedii słonecznika.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-601",
@@ -7916,7 +8046,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "I jakby korzystając z jej snu, gadała cisza, żółta, jaskrawa, zła cisza, monologowała, kłóciła się, wygadywała głośno i ordynarnie swój maniacki monolog.\n\nCzas Maryśki — czas więziony w jej duszy, wystąpił z niej straszliwie rzeczywisty i szedł samopas przez izbę, hałaśliwy, huczący, piekielny, rosnący w jaskrawym milczeniu poranka z głośnego młyna-zegara, jak zła mąka, sypka mąka, głupia mąka wariatów.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-602",
@@ -7928,7 +8063,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "W tej zaufanej starej woni mieściło się w dziwnie prostej syntezie życie tych ludzi, alembik rasy, gatunek krwi i sekret ich losu, zawarty niedostrzegalnie w codziennym mijaniu ich własnego odrębnego czasu.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-603",
@@ -7940,7 +8080,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Przykucnięty pod wielkimi poduszkami, dziko nastroszony kępami siwych włosów, rozmawiał z sobą półgłosem, pogrążony cały w jakieś zawiłe wewnętrzne afery.\n\nZdawać się mogło, że osobowość jego rozpadła się na wiele pokłóconych i rozbieżnych jaźni, gdyż kłócił się z sobą głośno, pertraktował usilnie i namiętnie, przekonywał i prosił, to znowu zdawał się przewodniczyć zgromadzeniu wielu interesantów, których usiłował z całym nakładem żarliwości i swady pogodzić.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-604",
@@ -7952,7 +8097,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Zauważyliśmy wówczas wszyscy, że ojciec zaczął z dnia na dzień maleć jak orzech, który zsycha się wewnątrz łupiny.\n\nZanikowi temu nie towarzyszył bynajmniej upadek sił. Przeciwnie, stan jego zdrowia, humor, ruchliwość zdawały się poprawiać.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-605",
@@ -7964,7 +8114,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Dziś dopiero rozumiem samotne bohaterstwo, z jakim sam jeden wydał on wojnę bezbrzeżnemu żywiołowi nudy, drętwiącej miasto.\n\nPozbawiony wszelkiego poparcia, bez uznania z naszej strony, bronił ten mąż przedziwny straconej sprawy poezji.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-606",
@@ -7976,7 +8131,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Dobrowolny banita, usunął się do pustego pokoju na końcu sieni i oszańcował się tam samotnością.\n\nZapomnieliśmy o nim.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-607",
@@ -7988,7 +8148,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "— Gdybym, odrzucając respekt przed Stwórcą, chciał się zabawić w krytykę stworzenia, wołałbym: — mniej treści, więcej formy! Ach, jak by ulżył światu ten ubytek treści. Więcej skromności w zamierzeniach, więcej wstrzemięźliwości w pretensjach — panowie demiurdzy — a świat byłby doskonalszy!",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-608",
@@ -8000,19 +8165,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Były to w istocie istoty amorfne, bez wewnętrznej struktury, płody imitatywnej tendencji materii, która, obdarzona pamięcią, powtarza z przyzwyczajenia raz przyjęte kształty.\n\nSkala morfologii, której podlega materia, jest w ogóle ograniczona i pewien zasób form powtarza się wciąż na różnych kondygnacjach bytu.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-609",
       "legacy_index": 609,
-      "t": "Existen ambientes especialmente propicios: viejas viviendas impregnadas por las emanaciones de muchas vidas y muchos acontecimientos; atmósferas gastadas, ricas en los ingredientes específicos de los sueños humanos; ruinas abundantes en el humus de los recuerdos, las nostalgias y el tedio estéril.\n\nEn semejante suelo, aquella pseudovegetación germinaba rápida y superficialmente, parasitaba con exuberancia y fugacidad y producía generaciones de corta vida que florecían súbita y espléndidamente para apagarse y marchitarse poco después.",
+      "t": "Esos ambientes son viejas viviendas impregnadas por las emanaciones de muchas vidas y muchos acontecimientos; atmósferas gastadas, ricas en los ingredientes específicos de los sueños humanos; ruinas abundantes en el humus de los recuerdos, las nostalgias y el tedio estéril.\n\nEn semejante suelo, aquella pseudovegetación germinaba rápida y superficialmente, parasitaba con exuberancia y fugacidad y producía generaciones de corta vida que florecían súbita y espléndidamente para apagarse y marchitarse poco después.",
       "a": "Bruno Schulz",
       "obra": "Las tiendas de color canela, Bruno Schulz",
       "highlight": "el humus de los recuerdos",
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Środowiskami tymi są stare mieszkania, przesycone emanacjami wielu żywotów i zdarzeń — zużyte atmosfery, bogate w specyficzne ingrediencje marzeń ludzkich — rumowiska, obfitujące w humus wspomnień, tęsknot, jałowej nudy.\n\nNa takiej glebie owa pseudowegetacja kiełkowała szybko i powierzchownie, pasożytowała obficie i efemerycznie, pędziła krótkotrwałe generacje, które rozkwitały raptownie i świetnie, ażeby wnet zgasnąć i zwiędnąć.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-610",
@@ -8024,7 +8199,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Było to nad wyraz interesujące mieć na własność taką odrobinkę życia, taką cząsteczkę wieczystej tajemnicy, w postaci tak zabawnej i nowej, budzącej nieskończoną ciekawość i respekt sekretny swą obcością, niespodzianą transpozycją tego samego wątku życia, który i w nas był, na formę od naszej odmienną, zwierzęcą.\n\nZwierzęta! Cel nienasyconej ciekawości, egzemplifikacje zagadki życia, jakby stworzone po to, by człowiekowi pokazać człowieka, rozkładając jego bogactwo i komplikację na tysiąc kalejdoskopowych możliwości, każdą doprowadzoną do jakiegoś paradoksalnego krańca, do jakiejś wybujałości pełnej charakteru.\n\nNie obciążone splotem egotycznych interesów, mącących stosunki międzyludzkie, otwierało się serce pełne sympatii dla obcych emanacji wiecznego życia, pełne miłosnej, współpracującej ciekawości, która była zamaskowanym głosem samopoznania.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-611",
@@ -8036,7 +8216,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "To mieszkanie, puste i zapuszczone, nie uznawało go, te meble i ściany śledziły za nim z milczącą krytyką.\n\nCzuł się, wchodząc w ich ciszę, jak intruz w tym podwodnym, zatopionym królestwie, w którym płynął inny, odrębny czas.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-612",
@@ -8048,7 +8233,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Jest lekkomyślnością nie do darowania wysłać w taką noc młodego chłopca z misją ważną i pilną, albowiem w jej półświetle zwielokrotniają się, plączą i wymieniają jedne z drugimi ulice.\n\nOtwierają się w głębi miasta, żeby tak rzec, ulice podwójne, ulice sobowtóry, ulice kłamliwe i zwodne.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-613",
@@ -8060,7 +8250,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Noc nie była wcale zimna, przeciwnie — pożyłkowana strugami dziwnego ciepła, tchnieniami jakiejś fałszywej wiosny.\n\nŚnieg skurczył się w baranki białe, w niewinne i słodkie runo, które pachniało fiołkami. W takie same baranki rozpuściło się niebo, w którym księżyc dwoił się i troił, demonstrując w tym zwielokrotnieniu wszystkie swoje fazy i pozycje.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-614",
@@ -8072,7 +8267,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "W taką noc niepodobna iść Podwalem ani żadną inną z ciemnych ulic, które są odwrotną stroną, niejako podszewką czterech linii rynku, i nie przypomnieć sobie, że o tej późnej porze bywają czasem jeszcze otwarte niektóre z owych osobliwych a tyle nęcących sklepów, o których zapomina się w dnie zwyczajne. Nazywam je sklepami cynamonowymi dla ciemnych boazerii tej barwy, którymi są wyłożone.\n\nTe prawdziwie szlachetne handle, w późną noc otwarte, były zawsze przedmiotem moich gorących marzeń.\n\nSłabo oświetlone, ciemne i uroczyste ich wnętrza pachniały głębokim zapachem farb, laku, kadzidła, aromatem dalekich krajów i rzadkich materiałów.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-615",
@@ -8084,7 +8284,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-bruno-schulz",
-      "workId": "work-las-tiendas-de-color-canela"
+      "workId": "work-las-tiendas-de-color-canela",
+      "original": {
+        "text": "Każdy wie, że w szeregu zwykłych, normalnych lat rodzi niekiedy zdziwaczały czas ze swego łona lata inne, lata osobliwe, lata wyrodne, którym — jak szósty, mały palec u ręki — wyrasta kędyś trzynasty, fałszywy miesiąc.\n\nMówimy fałszywy, gdyż rzadko dochodzi on do pełnego rozwoju. Jak dzieci późno spłodzone, pozostaje on w tyle ze wzrostem, miesiąc garbusek, odrośl w połowie uwiędła, raczej domyślna niż rzeczywista.",
+        "lang": "pl",
+        "label": "Original polaco"
+      }
     },
     {
       "id": "quote-616",
