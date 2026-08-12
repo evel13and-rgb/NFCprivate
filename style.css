@@ -2598,6 +2598,7 @@ body.night-fall .modal__close:focus-visible {
     min-height: 100dvh;
     padding-inline: 18px;
     padding-block: clamp(0.75rem, 2.8dvh, 1.35rem);
+    padding-top: calc(3.45rem + env(safe-area-inset-top));
     align-items: center;
   }
 

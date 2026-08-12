@@ -660,6 +660,33 @@ function getQuoteMetadata(quote) {
   return { author, workTitle };
 }
 
+function getVisibleWorkTitle(quote, view = 'translation') {
+  const { workTitle } = getQuoteMetadata(quote);
+  if (view !== 'original') return workTitle;
+  const workId = quote?.workId || `work-${slugify(workTitle || '')}`;
+  const originalTitle = getCatalogEntry('work', workId)?.original_title;
+  return typeof originalTitle === 'string' && originalTitle.trim()
+    ? originalTitle.trim()
+    : workTitle;
+}
+
+function updateVisibleWorkTitle(view = 'translation') {
+  if (!currentQuote) return;
+  const authorWork = document.getElementById('author-work');
+  const authorContainer = document.getElementById('author');
+  const { author } = getQuoteMetadata(currentQuote);
+  const workTitle = getVisibleWorkTitle(currentQuote, view);
+  if (authorWork) {
+    authorWork.textContent = workTitle;
+    const workLabel = `Ver ficha de obra: ${workTitle}`;
+    authorWork.setAttribute('aria-label', workLabel);
+    authorWork.setAttribute('title', workLabel);
+  }
+  if (authorContainer) {
+    authorContainer.setAttribute('data-full-text', [author, workTitle].filter(Boolean).join(' · '));
+  }
+}
+
 function getCatalogEntry(type, id) {
   if (!id) return null;
   const catalog = type === 'author' ? AUTHORS_INFO : WORKS_INFO;
@@ -1739,11 +1766,12 @@ function initQuoteActionButtons() {
   }
 }
 
-function renderQuoteTextVersion({ text, lang }) {
+function renderQuoteTextVersion({ text, lang, view = 'translation' }) {
   if (!quoteElementRef || !currentQuote) return;
   currentQuoteTextVersion = {
     text: typeof text === 'string' ? text : '',
     lang: typeof lang === 'string' ? lang : '',
+    view,
   };
   const isPoem = currentQuote.type === 'poem';
   const quoteLengthClass = getQuoteLengthClass(text);
@@ -1754,6 +1782,7 @@ function renderQuoteTextVersion({ text, lang }) {
   setQuoteTextContent(text, { includeQuotes: true });
   if (lang) quoteElementRef.setAttribute('lang', lang);
   else quoteElementRef.removeAttribute('lang');
+  updateVisibleWorkTitle(view);
   quoteImageCache = null;
   hideShareImageFallback();
 }
@@ -1832,6 +1861,7 @@ function renderQuote(quote) {
 }
 
 async function initApp() {
+  await publicProfilesReady;
   const publicQuotes = await publicQuotesReady;
   activeQuotes = publicQuotes.quotes;
   quoteManager = createQuoteManager(activeQuotes, storage);
