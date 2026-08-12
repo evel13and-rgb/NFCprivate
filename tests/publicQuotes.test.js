@@ -120,6 +120,14 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-308', 'quote-309', 'quote-310', 'quote-311', 'quote-312',
     'quote-313', 'quote-314', 'quote-315', 'quote-316', 'quote-317',
     'quote-318', 'quote-319', 'quote-320', 'quote-321', 'quote-322',
+    'quote-526', 'quote-527', 'quote-528', 'quote-529', 'quote-530',
+    'quote-531', 'quote-532', 'quote-533', 'quote-534', 'quote-535',
+    'quote-536', 'quote-537', 'quote-538', 'quote-539', 'quote-540',
+    'quote-541', 'quote-542', 'quote-543', 'quote-544', 'quote-545',
+    'quote-546', 'quote-547', 'quote-548', 'quote-549', 'quote-550',
+    'quote-551', 'quote-552', 'quote-553', 'quote-554', 'quote-555',
+    'quote-556', 'quote-557', 'quote-558', 'quote-559', 'quote-560',
+    'quote-561',
     'quote-616', 'quote-617', 'quote-618', 'quote-619', 'quote-620',
     'quote-621', 'quote-622', 'quote-623', 'quote-624', 'quote-625',
     'quote-626', 'quote-627', 'quote-628', 'quote-629', 'quote-630',
@@ -132,7 +140,8 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
   )), true);
   assert.doesNotMatch(JSON.stringify(quotesWithOriginal), /source_note|original_text|original_lang|reviewed/);
   for (const fallbackQuote of EMERGENCY_QUOTES) {
-    assert.deepEqual(fallbackQuote, quotes.find(quote => quote.id === fallbackQuote.id));
+    const { original, ...publicQuoteWithoutOriginal } = quotes.find(quote => quote.id === fallbackQuote.id);
+    assert.deepEqual(fallbackQuote, publicQuoteWithoutOriginal);
   }
 });
 
