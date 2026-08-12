@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T14:16:41.435Z",
+  "generated_at": "2026-08-12T16:39:32.315Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -4119,7 +4119,7 @@
       "authorId": "author-fiodor-dostoievski",
       "workId": "work-memorias-del-subsuelo",
       "original": {
-        "text": "Я не только злым, но далее и ничем не сумел сделаться: ни злым, ни добрым, ни подлецом, ни честным, ни героем, ни насекомым. Теперь же доживаю в своем углу, дразня себя злобным и ни к чему не служащим утешением, что умный человек и не может серьезно чем-нибудь сделаться, а делается чем-нибудь только дурак.",
+        "text": "Я не только злым, но даже и ничем не сумел сделаться: ни злым, ни добрым, ни подлецом, ни честным, ни героем, ни насекомым. Теперь же доживаю в своем углу, дразня себя злобным и ни к чему не служащим утешением, что умный человек и не может серьезно чем-нибудь сделаться, а делается чем-нибудь только дурак.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4229,7 +4229,7 @@
     {
       "id": "quote-306",
       "legacy_index": 306,
-      "t": "¿Y por qué están ustedes tan firme, tan solemnemente convencidos de que solo lo normal y positivo —en una palabra, solo el bienestar— resulta ventajoso para el hombre? ¿No se equivocará la razón acerca de las ventajas? Quizá el hombre no ame únicamente el bienestar. Quizá ame exactamente en la misma medida el sufrimiento. Quizá el sufrimiento le resulte tan ventajoso como el bienestar.\n\nYo no defiendo propiamente el sufrimiento, ni tampoco el bienestar. Defiendo… mi capricho y que se me garantice cuando me haga falta.",
+      "t": "¿Y por qué están ustedes tan firmemente, tan solemnemente convencidos de que solo lo normal y positivo —en una palabra, solo el bienestar— resulta ventajoso para el hombre? ¿No se equivocará la razón acerca de las ventajas? Quizá el hombre no ame únicamente el bienestar. Quizá ame exactamente en la misma medida el sufrimiento. Quizá el sufrimiento le resulte tan ventajoso como el bienestar.\n\n[…]\n\nYo no defiendo propiamente el sufrimiento, ni tampoco el bienestar. Defiendo… mi capricho y que se me garantice cuando me haga falta.",
       "a": "Fiódor Dostoievski",
       "obra": "Memorias del subsuelo, Fiódor Dostoievski",
       "highlight": "Defiendo… mi capricho.",
@@ -4382,7 +4382,7 @@
     {
       "id": "quote-315",
       "legacy_index": 315,
-      "t": "Algo no moría dentro de mí, en lo profundo del corazón y de la conciencia; no quería morir y se manifestaba mediante una angustia abrasadora.\n\n«¡Vendrá! ¡Vendrá sin falta! —exclamaba, corriendo por la habitación—. Si no hoy, vendrá mañana; ¡acabará encontrándome!»\n\nPero, ante ese pensamiento, se alzaba en mí tal maldad que, me parece, habría aplastado allí mismo a aquella «maldita» Liza si hubiera aparecido de repente a mi lado; la habría insultado, escupido, echado, golpeado.",
+      "t": "Algo no moría dentro de mí, en lo profundo del corazón y de la conciencia; no quería morir y se manifestaba mediante una angustia abrasadora.\n\n[…]\n\n«¡Vendrá! ¡Vendrá sin falta! —exclamaba, corriendo por la habitación—. Si no hoy, vendrá mañana; ¡acabará encontrándome! […]»\n\n[…]\n\nPero, ante ese pensamiento, se alzaba en mí tal maldad que, me parece, habría aplastado allí mismo a aquella «maldita» Liza si hubiera aparecido de repente a mi lado; la habría insultado, escupido, echado, golpeado.",
       "a": "Fiódor Dostoievski",
       "obra": "Memorias del subsuelo, Fiódor Dostoievski",
       "highlight": "Algo no moría dentro de mí.",
@@ -4450,7 +4450,7 @@
     {
       "id": "quote-319",
       "legacy_index": 319,
-      "t": "Yo ya no podía amar porque, repito, amar significaba para mí tiranizar y mantener una superioridad moral. Durante toda mi vida no pude siquiera imaginarme otro amor; y he llegado hasta el punto de pensar algunas veces, ahora, que el amor consiste precisamente en el derecho a tiranizar concedido voluntariamente por el ser amado.\n\nTampoco en mis sueños del subsuelo imaginaba el amor de otra forma que como una lucha: siempre lo empezaba por el odio y lo terminaba mediante el sometimiento moral; y después ya no podía imaginar qué hacer con el ser sometido.",
+      "t": "Yo ya no podía amar porque, repito, amar significaba para mí tiranizar y mantener una superioridad moral. Durante toda mi vida no pude siquiera imaginarme otro amor; y he llegado hasta el punto de pensar algunas veces, ahora, que el amor consiste precisamente en el derecho a tiranizar concedido voluntariamente por el objeto amado.\n\nTampoco en mis sueños del subsuelo imaginaba el amor de otra forma que como una lucha: siempre lo empezaba por el odio y lo terminaba mediante el sometimiento moral; y después ya no podía imaginar qué hacer con el objeto sometido.",
       "a": "Fiódor Dostoievski",
       "obra": "Memorias del subsuelo, Fiódor Dostoievski",
       "highlight": "Amar significaba para mí tiranizar.",
