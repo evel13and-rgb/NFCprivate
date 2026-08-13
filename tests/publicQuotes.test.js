@@ -97,6 +97,8 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
   assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 640);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
+    'quote-4', 'quote-5', 'quote-6', 'quote-7', 'quote-8',
+    'quote-9', 'quote-10',
     'quote-11', 'quote-12', 'quote-13', 'quote-14', 'quote-15',
     'quote-16', 'quote-17', 'quote-18', 'quote-19', 'quote-20',
     'quote-21', 'quote-22', 'quote-23', 'quote-24', 'quote-25',

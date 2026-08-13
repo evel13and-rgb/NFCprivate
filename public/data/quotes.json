@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-13T04:10:25.296Z",
+  "generated_at": "2026-08-13T22:30:28.866Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -30,86 +30,121 @@
     {
       "id": "quote-4",
       "legacy_index": 4,
-      "t": "Amigos lectores que leéis este libro,\ndespojaos de toda prevención.\nY al leerlo no os escandalicéis:\nno contiene mal ni infección.\nCierto es que aquí poca perfección\naprenderéis, salvo en materia de risa.\nOtro argumento no puede elegir mi corazón,\nviendo el duelo que os mina y consume:\nmejor es escribir de risa que de lágrimas,\nporque la risa es lo propio del hombre.",
+      "t": "Amigos lectores que este libro leéis,\ndespojaos de toda prevención,\ny al leerlo no os escandalicéis:\nno contiene mal ni infección.\nCierto es que aquí poca perfección\naprenderéis, salvo en materia de risa.\nOtro argumento no puede mi corazón elegir,\nviendo el duelo que os mina y consume:\nmejor es de risa que de lágrimas escribir,\npues lo propio del hombre es reír.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "Mejor es escribir de risa que de lágrimas.",
+      "highlight": "mejor es de risa que de lágrimas escribir",
       "lang": "es",
-      "type": "prose",
+      "type": "poem",
       "authorId": "author-francois-rabelais",
-      "workId": "work-gargantua"
+      "workId": "work-gargantua",
+      "original": {
+        "text": "Amis lecteurs qui ce liure liſez,\nDeſpouillez vous de toute affection,\nEt le liſant ne vous ſcandaliſez :\nIl ne contien mal ne infection.\nVray eſt qu’icy peu de perfection\nVous apprendrez, ſi non en cas de rire :\nAultre argument ne peut mon cueur elire,\nVoyant le dueil, qui vous mine & conſomme.\nMieulx eſt de ris que de larmes eſcripre,\nPource que rire eſt le propre de l’homme.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-5",
       "legacy_index": 5,
-      "t": "No conviene estimar con tanta ligereza las obras humanas. Porque vosotros mismos decís que el hábito no hace al monje; y tal va vestido con hábito monacal que por dentro nada tiene de monje. Por eso hay que abrir el libro y pesar cuidadosamente lo que en él se desarrolla. Entonces conoceréis que la droga contenida dentro es de un valor muy distinto del que prometía la caja.",
+      "t": "Pero no conviene juzgar las obras humanas con semejante ligereza. Pues vosotros mismos decís que el hábito no hace al monje: y tal va vestido con hábito monacal que por dentro nada tiene de monje; y tal lleva capa española cuyo ánimo en nada cuadra con España.\n\nPor eso hay que abrir el libro y sopesar cuidadosamente lo que en él se expone. Entonces conoceréis que la droga que contiene es de muy otro valor que el prometido por la caja; es decir, que las materias aquí tratadas no son tan frívolas como daba a entender el título.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "El hábito no hace al monje.",
+      "highlight": "el hábito no hace al monje",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
-      "workId": "work-gargantua"
+      "workId": "work-gargantua",
+      "original": {
+        "text": "Mais par telle legiereté ne conuient eſtimer les œuures des humains. Car vous meſmes dictes, que l’habit ne faict poinct le moine : & tel eſt veſtu d’habit monachal, qui au dedans n’eſt rien moins que moyne : & tel eſt veſtu de cappe heſpanole, qui en ſon couraige nullement affiert à Heſpane.\n\nC’eſt pourquoy fault ouurir le liure, & ſoigneuſement peſer ce que y eſt deduict. Lors congnoiſtrez que la drogue dedans contenue eſt bien d’aultre valeur, que ne promettoit la boite. C’eſt à dire que les matieres icy traictees ne ſont tant folaſtres, comme le tiltre au deſſus pretendoit.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-6",
       "legacy_index": 6,
-      "t": "No hay que quedarse ahí, como ante el canto de las sirenas, sino interpretar en sentido más alto lo que acaso creíais dicho por simple alegría de corazón. ¿Habéis visto alguna vez a un perro encontrando un hueso con tuétano? Es, como dice Platón, la bestia más filósofa del mundo: con qué devoción lo acecha, con qué cuidado lo guarda, con qué fervor lo sostiene, con qué prudencia lo abre, con qué afecto lo rompe y con qué diligencia lo chupa.",
+      "t": "Y aun suponiendo que, en sentido literal, encontréis materias bastante jocosas y muy acordes con el título, no debéis quedaros ahí, como ante el canto de las sirenas, sino interpretar en más alto sentido lo que acaso creíais dicho por mera alegría de corazón.\n\n¿Habéis descorchado botellas alguna vez? ¡Pardiez! Recordad el continente que entonces teníais. Pero ¿habéis visto alguna vez a un perro que encuentra un hueso con tuétano? Es, como dice Platón en el libro segundo de la República, la bestia más filósofa del mundo. Si lo habéis visto, habréis podido notar con qué devoción lo acecha, con qué cuidado lo guarda, con qué fervor lo sostiene, con qué prudencia lo enceta, con qué afecto lo quiebra y con qué diligencia lo chupa.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "La bestia más filósofa del mundo.",
+      "highlight": "la bestia más filósofa del mundo",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
-      "workId": "work-gargantua"
+      "workId": "work-gargantua",
+      "original": {
+        "text": "Et poſé le cas, qu’au ſens literal vous trouuez matieres aſſez ioyeuſes & bien correſpondentes au nom, toutesfois pas demourer là ne fault, comme au chant des Sirenes : ains à plus hault ſens interpreter ce que par aduenture cuidiez dict en gayeté de cueur.\n\nCrochetaſtes vous oncques bouteilles ? Caiſgne. Reduiſez à memoire la contenence qu’auiez. Mais veiſtes vous onques chien rencontrant quelque os medulare ? C’eſt, comme dict Platon lib. ij. de rep., la beſte du monde plus philoſophe. Si veu l’auez : vous auez peu noter de quelle deuotion il le guette : de quel ſoing il le guarde : de quel ferueur il le tient, de quelle prudence il l’entomme : de quelle affection il le briſe : & de quelle diligence il le ſugce.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-7",
       "legacy_index": 7,
-      "t": "A ejemplo de ese perro, os conviene ser sabios para olfatear, sentir y estimar estos hermosos libros de alta sustancia, ligeros en la apariencia y audaces al encuentro. Después, mediante lectura curiosa y meditación frecuente, romped el hueso y chupad la sustantífica médula.",
+      "t": "A ejemplo de ese perro, os conviene ser sabios para olfatear, sentir y estimar estos hermosos libros de alta enjundia, ligeros en la persecución y audaces en el encuentro. Después, mediante atenta lectura y frecuente meditación, romped el hueso y chupad la sustantífica médula.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "Romped el hueso y chupad la sustantífica médula.",
+      "highlight": "romped el hueso y chupad la sustantífica médula",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
-      "workId": "work-gargantua"
+      "workId": "work-gargantua",
+      "original": {
+        "text": "A l’exemple d’icelluy vous conuient eſtre ſaiges pour fleurer, ſentir, & eſtimer ces beaulx liures de haulte greſſe, legiers au prochaz, & hardiz à la rencontre. Puis, par curieuſe leçon & meditation frequente, rompre l’os, et ſugcer la ſubſtantificque mouelle.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-8",
       "legacy_index": 8,
-      "t": "Toda su vida se ordenaba no por leyes, estatutos o reglas, sino según su voluntad y libre albedrío. Se levantaban de la cama cuando les parecía bien; bebían, comían, trabajaban y dormían cuando les venía el deseo. Nadie los despertaba, nadie los obligaba a beber, ni a comer, ni a hacer ninguna otra cosa. Así lo había establecido Gargantúa. En su regla no había más que esta cláusula: HAZ LO QUE QUIERAS.",
+      "t": "Toda su vida se regía no por leyes, estatutos ni reglas, sino según su querer y libre albedrío. Se levantaban del lecho cuando bien les parecía; bebían, comían, trabajaban y dormían cuando les venía en gana. Nadie los despertaba, nadie los forzaba a beber, ni a comer, ni a hacer ninguna otra cosa. Así lo había establecido Gargantúa. En su regla no había sino esta cláusula: HAZ LO QUE QUIERAS.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "Haz lo que quieras.",
+      "highlight": "HAZ LO QUE QUIERAS",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
-      "workId": "work-gargantua"
+      "workId": "work-gargantua",
+      "original": {
+        "text": "Toute leur vie eſtoit employee non par loix, ſtatuz ou reigles, mais ſelon leur vouloir & franc arbitre. Se leuoient du lict quand bon leur ſembloit : beuuoient, mangeoient, trauailloient, dormoient quand le deſir leur venoit. Nul ne les eſueilloit, nul ne les parforceoit ny à boyre, ny à manger, ny à faire choſe aultre quelconques. Ainſi l’auoit eſtably Gargantua. En leur reigle n’eſtoit que ceſte clauſe. Fay ce que vouldras.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-9",
       "legacy_index": 9,
-      "t": "Porque las gentes libres, bien nacidas, bien instruidas y que tratan en compañías honestas tienen por naturaleza un instinto y aguijón que siempre las empuja hacia actos virtuosos y las aparta del vicio; a eso lo llamaban honor.",
+      "t": "Porque las gentes libres, bien nacidas, bien instruidas y que frecuentan honradas compañías tienen por naturaleza un instinto y aguijón que siempre las impulsa a hechos virtuosos y las aparta del vicio; al cual llamaban honor.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "A eso lo llamaban honor.",
+      "highlight": "al cual llamaban honor",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
-      "workId": "work-gargantua"
+      "workId": "work-gargantua",
+      "original": {
+        "text": "Par ce que gens liberes, bien nez, bien inſtruictz, conuerſans en compaignies honneſtes, ont par nature vn inſtinct, & aguillon, qui touſiours les poulſe à faictz vertueux & retire de vice, lequel ilz nommoient honneur.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-10",
       "legacy_index": 10,
-      "t": "Cuando son oprimidos y esclavizados por vil sujeción y coacción, desvían la noble inclinación por la que tendían libremente a las virtudes, para deponer y quebrantar ese yugo de servidumbre; porque siempre emprendemos las cosas prohibidas y codiciamos lo que se nos niega.",
+      "t": "Esas mismas gentes, cuando están oprimidas y esclavizadas por vil sujeción y coacción, desvían la noble inclinación por la que tendían libremente a las virtudes para sacudirse y quebrantar ese yugo de servidumbre; pues siempre emprendemos las cosas prohibidas y codiciamos lo que se nos niega.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "Codiciamos lo que se nos niega.",
+      "highlight": "codiciamos lo que se nos niega",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
-      "workId": "work-gargantua"
+      "workId": "work-gargantua",
+      "original": {
+        "text": "Iceulx quand par vile ſubiection & contraincte ſont deprimez & aſſeruiz, detournent la noble affection, par laquelle à vertuz franchement tendoient, à depoſer & enfraindre ce ioug de ſeruitude. Car nous entreprenons touſiours choſes defendues & conuoitons ce que nous eſt denié.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-11",

@@ -26,86 +26,86 @@
   {
     "legacy_index": 4,
     "source_collection": "RABELAIS_QUOTES",
-    "text": "Amigos lectores que leéis este libro,\ndespojaos de toda prevención.\nY al leerlo no os escandalicéis:\nno contiene mal ni infección.\nCierto es que aquí poca perfección\naprenderéis, salvo en materia de risa.\nOtro argumento no puede elegir mi corazón,\nviendo el duelo que os mina y consume:\nmejor es escribir de risa que de lágrimas,\nporque la risa es lo propio del hombre.",
+    "text": "Amigos lectores que este libro leéis,\ndespojaos de toda prevención,\ny al leerlo no os escandalicéis:\nno contiene mal ni infección.\nCierto es que aquí poca perfección\naprenderéis, salvo en materia de risa.\nOtro argumento no puede mi corazón elegir,\nviendo el duelo que os mina y consume:\nmejor es de risa que de lágrimas escribir,\npues lo propio del hombre es reír.",
     "legacy_attribution": "François Rabelais",
     "legacy_work": "Gargantúa, François Rabelais",
     "language": "es",
-    "highlight": "Mejor es escribir de risa que de lágrimas.",
-    "type": "prose",
+    "highlight": "mejor es de risa que de lágrimas escribir",
+    "type": "poem",
     "has_line_breaks": true,
-    "text_hash": "ad83b6e0761a142c526acc7f119a7b4de26900a4ae7d3dcc843cd0283de082a7"
+    "text_hash": "a5f925f2d0fa86ef98580ce87090ca2ed03de8f3cef33a8dd2043b789c279b4e"
   },
   {
     "legacy_index": 5,
     "source_collection": "RABELAIS_QUOTES",
-    "text": "No conviene estimar con tanta ligereza las obras humanas. Porque vosotros mismos decís que el hábito no hace al monje; y tal va vestido con hábito monacal que por dentro nada tiene de monje. Por eso hay que abrir el libro y pesar cuidadosamente lo que en él se desarrolla. Entonces conoceréis que la droga contenida dentro es de un valor muy distinto del que prometía la caja.",
+    "text": "Pero no conviene juzgar las obras humanas con semejante ligereza. Pues vosotros mismos decís que el hábito no hace al monje: y tal va vestido con hábito monacal que por dentro nada tiene de monje; y tal lleva capa española cuyo ánimo en nada cuadra con España.\n\nPor eso hay que abrir el libro y sopesar cuidadosamente lo que en él se expone. Entonces conoceréis que la droga que contiene es de muy otro valor que el prometido por la caja; es decir, que las materias aquí tratadas no son tan frívolas como daba a entender el título.",
     "legacy_attribution": "François Rabelais",
     "legacy_work": "Gargantúa, François Rabelais",
     "language": "es",
-    "highlight": "El hábito no hace al monje.",
+    "highlight": "el hábito no hace al monje",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "445fe3dabe3fa9eaa6ed2c4cd1e34103404ef5347ba485aaafc0e1584a71793a"
+    "text_hash": "2668a929090371dd6a464c82598f734c5cbf6b6aff871062999e3f05455685fa"
   },
   {
     "legacy_index": 6,
     "source_collection": "RABELAIS_QUOTES",
-    "text": "No hay que quedarse ahí, como ante el canto de las sirenas, sino interpretar en sentido más alto lo que acaso creíais dicho por simple alegría de corazón. ¿Habéis visto alguna vez a un perro encontrando un hueso con tuétano? Es, como dice Platón, la bestia más filósofa del mundo: con qué devoción lo acecha, con qué cuidado lo guarda, con qué fervor lo sostiene, con qué prudencia lo abre, con qué afecto lo rompe y con qué diligencia lo chupa.",
+    "text": "Y aun suponiendo que, en sentido literal, encontréis materias bastante jocosas y muy acordes con el título, no debéis quedaros ahí, como ante el canto de las sirenas, sino interpretar en más alto sentido lo que acaso creíais dicho por mera alegría de corazón.\n\n¿Habéis descorchado botellas alguna vez? ¡Pardiez! Recordad el continente que entonces teníais. Pero ¿habéis visto alguna vez a un perro que encuentra un hueso con tuétano? Es, como dice Platón en el libro segundo de la República, la bestia más filósofa del mundo. Si lo habéis visto, habréis podido notar con qué devoción lo acecha, con qué cuidado lo guarda, con qué fervor lo sostiene, con qué prudencia lo enceta, con qué afecto lo quiebra y con qué diligencia lo chupa.",
     "legacy_attribution": "François Rabelais",
     "legacy_work": "Gargantúa, François Rabelais",
     "language": "es",
-    "highlight": "La bestia más filósofa del mundo.",
+    "highlight": "la bestia más filósofa del mundo",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "f2f095849d334cdfdb84d17a6f4af659cd98ffdd449bfbadf6c549a0550bc3bc"
+    "text_hash": "5f495480f1a48a9c00c86030c9fc7eba65fe15d72517caaf2ef5f4c04d7dbeb8"
   },
   {
     "legacy_index": 7,
     "source_collection": "RABELAIS_QUOTES",
-    "text": "A ejemplo de ese perro, os conviene ser sabios para olfatear, sentir y estimar estos hermosos libros de alta sustancia, ligeros en la apariencia y audaces al encuentro. Después, mediante lectura curiosa y meditación frecuente, romped el hueso y chupad la sustantífica médula.",
+    "text": "A ejemplo de ese perro, os conviene ser sabios para olfatear, sentir y estimar estos hermosos libros de alta enjundia, ligeros en la persecución y audaces en el encuentro. Después, mediante atenta lectura y frecuente meditación, romped el hueso y chupad la sustantífica médula.",
     "legacy_attribution": "François Rabelais",
     "legacy_work": "Gargantúa, François Rabelais",
     "language": "es",
-    "highlight": "Romped el hueso y chupad la sustantífica médula.",
+    "highlight": "romped el hueso y chupad la sustantífica médula",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "670b2665160a1cca6fd6a71fccbd349673e0c6c59368362458188d89da6489f4"
+    "text_hash": "8f793832eb367fcf4cd4dbf87da70e914214c91ee7a3e00493ef65e4fb02cadd"
   },
   {
     "legacy_index": 8,
     "source_collection": "RABELAIS_QUOTES",
-    "text": "Toda su vida se ordenaba no por leyes, estatutos o reglas, sino según su voluntad y libre albedrío. Se levantaban de la cama cuando les parecía bien; bebían, comían, trabajaban y dormían cuando les venía el deseo. Nadie los despertaba, nadie los obligaba a beber, ni a comer, ni a hacer ninguna otra cosa. Así lo había establecido Gargantúa. En su regla no había más que esta cláusula: HAZ LO QUE QUIERAS.",
+    "text": "Toda su vida se regía no por leyes, estatutos ni reglas, sino según su querer y libre albedrío. Se levantaban del lecho cuando bien les parecía; bebían, comían, trabajaban y dormían cuando les venía en gana. Nadie los despertaba, nadie los forzaba a beber, ni a comer, ni a hacer ninguna otra cosa. Así lo había establecido Gargantúa. En su regla no había sino esta cláusula: HAZ LO QUE QUIERAS.",
     "legacy_attribution": "François Rabelais",
     "legacy_work": "Gargantúa, François Rabelais",
     "language": "es",
-    "highlight": "Haz lo que quieras.",
+    "highlight": "HAZ LO QUE QUIERAS",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "7fcd3db57dfaa022cd8541067811dbba1fe5eb5d2854b605e0085d889609491b"
+    "text_hash": "8f3a0a000a2676a9253d207359eee17508a8724b409b7552e77ee264b0d6e56a"
   },
   {
     "legacy_index": 9,
     "source_collection": "RABELAIS_QUOTES",
-    "text": "Porque las gentes libres, bien nacidas, bien instruidas y que tratan en compañías honestas tienen por naturaleza un instinto y aguijón que siempre las empuja hacia actos virtuosos y las aparta del vicio; a eso lo llamaban honor.",
+    "text": "Porque las gentes libres, bien nacidas, bien instruidas y que frecuentan honradas compañías tienen por naturaleza un instinto y aguijón que siempre las impulsa a hechos virtuosos y las aparta del vicio; al cual llamaban honor.",
     "legacy_attribution": "François Rabelais",
     "legacy_work": "Gargantúa, François Rabelais",
     "language": "es",
-    "highlight": "A eso lo llamaban honor.",
+    "highlight": "al cual llamaban honor",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "4faea8687ed4634a3c94671dfac7c5bf24297fce6e312245820cef698758f79d"
+    "text_hash": "6abdd10ba72129b699806d110934b87779649edb6b92050c26711a9629dd6c91"
   },
   {
     "legacy_index": 10,
     "source_collection": "RABELAIS_QUOTES",
-    "text": "Cuando son oprimidos y esclavizados por vil sujeción y coacción, desvían la noble inclinación por la que tendían libremente a las virtudes, para deponer y quebrantar ese yugo de servidumbre; porque siempre emprendemos las cosas prohibidas y codiciamos lo que se nos niega.",
+    "text": "Esas mismas gentes, cuando están oprimidas y esclavizadas por vil sujeción y coacción, desvían la noble inclinación por la que tendían libremente a las virtudes para sacudirse y quebrantar ese yugo de servidumbre; pues siempre emprendemos las cosas prohibidas y codiciamos lo que se nos niega.",
     "legacy_attribution": "François Rabelais",
     "legacy_work": "Gargantúa, François Rabelais",
     "language": "es",
-    "highlight": "Codiciamos lo que se nos niega.",
+    "highlight": "codiciamos lo que se nos niega",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "4871554a426377d036081f71d634526d83f9bfcd12a42791484ff91f7399495a"
+    "text_hash": "9f693f4c79689e91db0fb293f1772929761594bb53d8743d461d854a5598d0a4"
   },
   {
     "legacy_index": 11,
