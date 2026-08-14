@@ -109,12 +109,15 @@ const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
 const RAIN_WEATHER_STATES = new Set(['light-rain', 'heavy-rain', 'night-rain']);
 const CONSTRAINED_ATMOSPHERE_QUERY = '(max-width: 768px), (pointer: coarse)';
 
-export function resolveFireflyRuntimeMode({ constrained = false, reduceMotion = false } = {}) {
+export function resolveFireflyRuntimeMode({ constrained = false, reduceMotion = false, rainy = false } = {}) {
+  const constrainedDevice = Boolean(constrained);
+  const rainyScene = Boolean(rainy);
+  const usesLightweightMode = constrainedDevice || rainyScene;
   return {
-    constrained: Boolean(constrained),
+    constrained: usesLightweightMode,
     reduceMotion: Boolean(reduceMotion),
-    animate: !reduceMotion,
-    frameIntervalMs: constrained ? CONSTRAINED_FRAME_INTERVAL_MS : 0,
+    animate: !reduceMotion && (!rainyScene || constrainedDevice),
+    frameIntervalMs: usesLightweightMode ? CONSTRAINED_FRAME_INTERVAL_MS : 0,
   };
 }
 
@@ -132,8 +135,8 @@ function getLayerCountBounds(runtimeMode, layerConfig, compactViewport = runtime
   };
 }
 
-export function getFireflyCountBounds({ constrained = false, reduceMotion = false } = {}) {
-  const runtimeMode = resolveFireflyRuntimeMode({ constrained, reduceMotion });
+export function getFireflyCountBounds({ constrained = false, reduceMotion = false, rainy = false } = {}) {
+  const runtimeMode = resolveFireflyRuntimeMode({ constrained, reduceMotion, rainy });
   return FIREFLY_LAYERS.reduce((total, layerConfig) => {
     const bounds = getLayerCountBounds(runtimeMode, layerConfig);
     return {
@@ -154,14 +157,11 @@ export function shouldShowFirefliesForState({
   }
 
   const isNight = timeOfDay === 'night';
-  const isRain =
-    RAIN_WEATHER_STATES.has(weather)
-    || visualScene === 'night-rain';
   const excludesFireflies =
     visualScene === 'dawn'
     || visualScene === 'rainbow-after-rain';
 
-  return isNight && !isRain && !excludesFireflies;
+  return isNight && !excludesFireflies;
 }
 
 function shouldShowFireflies() {
@@ -170,6 +170,17 @@ function shouldShowFireflies() {
     timeOfDay: document.body?.dataset.timeOfDay,
     weather: document.body?.dataset.weather,
     visualScene: document.body?.dataset.visualScene,
+  });
+}
+
+function getCurrentFireflyRuntimeMode() {
+  const weather = document.body?.dataset.weather;
+  const visualScene = document.body?.dataset.visualScene;
+  const rainyScene = RAIN_WEATHER_STATES.has(weather) || visualScene === 'night-rain';
+  return resolveFireflyRuntimeMode({
+    constrained: constrainedAtmosphereMedia?.matches ?? false,
+    reduceMotion: reduceMotionMedia?.matches ?? false,
+    rainy: rainyScene,
   });
 }
 
@@ -376,10 +387,7 @@ function createFirefliesLayer(layerConfig, runtimeMode) {
 function createFirefliesLayers() {
   updateViewportSize();
   activeFireflies = [];
-  activeRuntimeMode = resolveFireflyRuntimeMode({
-    constrained: constrainedAtmosphereMedia?.matches ?? false,
-    reduceMotion: reduceMotionMedia?.matches ?? false,
-  });
+  activeRuntimeMode = getCurrentFireflyRuntimeMode();
   const layers = FIREFLY_LAYERS.map((layerConfig) => createFirefliesLayer(layerConfig, activeRuntimeMode));
 
   let nightClassAdded = false;
@@ -436,6 +444,17 @@ function handleReduceMotionChange() {
 }
 
 function handleWeatherStateChange() {
+  const nextRuntimeMode = getCurrentFireflyRuntimeMode();
+  if (
+    cleanupCurrentLayer
+    && activeRuntimeMode
+    && (
+      nextRuntimeMode.constrained !== activeRuntimeMode.constrained
+      || nextRuntimeMode.reduceMotion !== activeRuntimeMode.reduceMotion
+    )
+  ) {
+    cleanupCurrentLayer();
+  }
   evaluateNightState();
 }
 

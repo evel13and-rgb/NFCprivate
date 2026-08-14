@@ -5,7 +5,7 @@ import {
   getQuoteBoundaryDecoration,
 } from './quoteOriginal.js?v=3';
 import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=5';
-import { initFireflyAura } from './fireflies.js?v=2';
+import { initFireflyAura } from './fireflies.js?v=3';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
 import {
