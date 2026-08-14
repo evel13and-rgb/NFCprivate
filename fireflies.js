@@ -116,7 +116,7 @@ export function resolveFireflyRuntimeMode({ constrained = false, reduceMotion = 
   return {
     constrained: usesLightweightMode,
     reduceMotion: Boolean(reduceMotion),
-    animate: !reduceMotion && (!rainyScene || constrainedDevice),
+    animate: !reduceMotion && !rainyScene,
     frameIntervalMs: usesLightweightMode ? CONSTRAINED_FRAME_INTERVAL_MS : 0,
   };
 }
@@ -451,6 +451,7 @@ function handleWeatherStateChange() {
     && (
       nextRuntimeMode.constrained !== activeRuntimeMode.constrained
       || nextRuntimeMode.reduceMotion !== activeRuntimeMode.reduceMotion
+      || nextRuntimeMode.animate !== activeRuntimeMode.animate
     )
   ) {
     cleanupCurrentLayer();

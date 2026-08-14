@@ -31,7 +31,7 @@ test('oculta las luciérnagas fuera de la noche o cuando la página queda en seg
   }), false);
 });
 
-test('el modo ligero conserva movimiento limitado en móvil y una imagen estática con movimiento reducido', () => {
+test('el modo ligero conserva movimiento limitado en móvil salvo cuando llueve', () => {
   const desktop = resolveFireflyRuntimeMode();
   const mobile = resolveFireflyRuntimeMode({ constrained: true });
   const rainy = resolveFireflyRuntimeMode({ rainy: true });
@@ -49,7 +49,7 @@ test('el modo ligero conserva movimiento limitado en móvil y una imagen estáti
   assert.equal(rainy.constrained, true);
   assert.equal(rainy.animate, false);
   assert.equal(rainy.frameIntervalMs, mobile.frameIntervalMs);
-  assert.equal(rainyMobile.animate, true);
+  assert.equal(rainyMobile.animate, false);
   assert.equal(reduced.animate, false);
   assert.equal(reduced.frameIntervalMs, mobile.frameIntervalMs);
 });
@@ -58,5 +58,6 @@ test('la densidad móvil conserva el protagonismo nocturno sin igualar el coste 
   assert.deepEqual(getFireflyCountBounds({ constrained: true }), { min: 19, max: 28 });
   assert.deepEqual(getFireflyCountBounds({ constrained: true, reduceMotion: true }), { min: 12, max: 18 });
   assert.deepEqual(getFireflyCountBounds({ rainy: true }), { min: 19, max: 28 });
+  assert.deepEqual(getFireflyCountBounds({ constrained: true, rainy: true }), { min: 19, max: 28 });
   assert.deepEqual(getFireflyCountBounds(), { min: 54, max: 83 });
 });
