@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-13T22:30:28.866Z",
+  "generated_at": "2026-08-13T23:00:51.463Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -1240,194 +1240,274 @@
     {
       "id": "quote-79",
       "legacy_index": 79,
-      "t": "A la tercera llamada apareció Bartleby.\n\n—Tome —le dije—, quiero que me ayude a revisar esta copia.\n\nBartleby permaneció inmóvil un instante, como si no hubiera oído. Después, con una voz singularmente suave y firme, respondió:\n\n—Preferiría no hacerlo.",
+      "t": "En esta misma postura me hallaba sentado cuando lo llamé y le expliqué rápidamente qué deseaba que hiciese: que cotejara conmigo un breve documento. Imaginad mi sorpresa, más aún, mi consternación, cuando, sin moverse de su retiro, Bartleby respondió con una voz singularmente suave y firme:\n\n—Preferiría no hacerlo.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
       "highlight": "Preferiría no hacerlo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "In this very attitude did I sit when I called to him, rapidly stating what it was I wanted him to do—namely, to examine a small paper with me. Imagine my surprise, nay, my consternation, when without moving from his privacy, Bartleby in a singularly mild, firm voice, replied, “I would prefer not to.”",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-80",
       "legacy_index": 80,
-      "t": "Me quedé sentado, por un momento, en perfecto silencio. La respuesta era tan extraña, tan inesperada, dicha además sin la menor insolencia, que no supe si enfadarme o dudar de mis propios oídos.\n\n—¿Preferiría no hacerlo? —repetí.\n\n—Preferiría no hacerlo —contestó Bartleby.",
+      "t": "Permanecí sentado un rato en perfecto silencio, tratando de recobrar mis aturdidas facultades. Enseguida se me ocurrió que mis oídos me habían engañado o que Bartleby había entendido del todo mal lo que yo quería decir. Repetí mi petición en el tono más claro que pude adoptar. Pero, en otro no menos claro, volvió la respuesta de antes:\n\n—Preferiría no hacerlo.\n\n—Preferiría no hacerlo —repetí, poniéndome en pie, preso de gran agitación, y cruzando la habitación de una zancada—. ¿Qué quiere decir? ¿Se ha vuelto loco? Quiero que me ayude a cotejar esta hoja; tómela —y se la tendí.\n\n—Preferiría no hacerlo —dijo él.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
       "highlight": "Preferiría no hacerlo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "I sat awhile in perfect silence, rallying my stunned faculties. Immediately it occurred to me that my ears had deceived me, or Bartleby had entirely misunderstood my meaning. I repeated my request in the clearest tone I could assume. But in quite as clear a one came the previous reply, “I would prefer not to.”\n\n“Prefer not to,” echoed I, rising in high excitement, and crossing the room with a stride. “What do you mean? Are you moon-struck? I want you to help me compare this sheet here—take it,” and I thrust it towards him.\n\n“I would prefer not to,” said he.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-81",
       "legacy_index": 81,
-      "t": "Si hubiera habido en su actitud algo de ira, de impaciencia o de desafío, lo habría despedido al instante. Pero no había nada de eso.\n\nBartleby estaba de pie, pálido, pulcro, respetuoso, abandonado.\n\nSu misma mansedumbre me desarmaba.",
+      "t": "Con cualquier otro hombre me habría dejado arrastrar de inmediato por una pasión terrible, habría desdeñado toda palabra ulterior y lo habría expulsado ignominiosamente de mi presencia. Pero había algo en Bartleby que no solo me desarmaba de un modo extraño, sino que, de manera maravillosa, me conmovía y desconcertaba. Comencé a razonar con él.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Su misma mansedumbre me desarmaba.",
+      "highlight": "había algo en Bartleby que no solo me desarmaba de un modo extraño",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "With any other man I should have flown outright into a dreadful passion, scorned all further words, and thrust him ignominiously from my presence. But there was something about Bartleby that not only strangely disarmed me, but in a wonderful manner touched and disconcerted me. I began to reason with him.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-82",
       "legacy_index": 82,
-      "t": "Coloqué su mesa cerca de una pequeña ventana lateral. Desde allí no se veía el cielo ni la calle, sino únicamente un muro oscuro, alto, inmóvil.\n\nAllí trabajaba Bartleby.\n\nPrimero por la mañana, todo el día, y el último por la noche: era un centinela perpetuo en su rincón.",
+      "t": "Mientras tanto, Bartleby permanecía sentado en su ermita, ajeno a todo salvo a su peculiar ocupación.\n\nPasaron algunos días, durante los cuales el escribiente estuvo ocupado en otro trabajo extenso. Su reciente y notable conducta me llevó a observar de cerca sus hábitos. Advertí que nunca iba a almorzar; en realidad, que nunca iba a ninguna parte. Hasta entonces, por conocimiento propio, jamás había sabido que saliese de mi oficina. Era un centinela perpetuo en su rincón.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
       "highlight": "Era un centinela perpetuo en su rincón.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "Meanwhile Bartleby sat in his hermitage, oblivious to every thing but his own peculiar business there.\n\nSome days passed, the scrivener being employed upon another lengthy work. His late remarkable conduct led me to regard his ways narrowly. I observed that he never went to dinner; indeed that he never went any where. As yet I had never of my personal knowledge known him to be outside of my office. He was a perpetual sentry in the corner.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-83",
       "legacy_index": 83,
-      "t": "A veces, cuando yo levantaba la vista, lo encontraba de pie junto a la ventana, sin escribir, sin leer, sin moverse.\n\nNo miraba nada vivo.\n\nSe había abandonado a una de sus profundas ensoñaciones frente al muro muerto.",
+      "t": "Me esforcé de inmediato por ocuparme y, al mismo tiempo, por consolar mi abatimiento. Traté de imaginar que, a lo largo de la mañana, a la hora que pudiera resultarle grata, Bartleby saldría por su propia voluntad de la ermita y emprendería con decisión el camino de la puerta. Pero no. Llegaron las doce y media; Turkey empezó a encenderse de rostro, a volcar el tintero y a mostrarse en general turbulento; Nippers se apaciguó hasta quedar tranquilo y cortés; Ginger Nut mordisqueó su manzana del mediodía; y Bartleby permaneció de pie junto a la ventana, sumido en una de sus más profundas ensoñaciones ante el muro muerto. ¿Se creerá? ¿Debo confesarlo? Aquella tarde abandoné la oficina sin dirigirle una sola palabra más.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Se había abandonado a una de sus profundas ensoñaciones frente al muro muerto.",
+      "highlight": "una de sus más profundas ensoñaciones ante el muro muerto",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "I endeavored also immediately to occupy myself, and at the same time to comfort my despondency. I tried to fancy that in the course of the morning, at such time as might prove agreeable to him, Bartleby, of his own free accord, would emerge from his hermitage, and take up some decided line of march in the direction of the door. But no. Half-past twelve o’clock came; Turkey began to glow in the face, overturn his inkstand, and become generally obstreperous; Nippers abated down into quietude and courtesy; Ginger Nut munched his noon apple; and Bartleby remained standing at his window in one of his profoundest dead-wall reveries. Will it be credited? Ought I to acknowledge it? That afternoon I left the office without saying one further word to him.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-84",
       "legacy_index": 84,
-      "t": "Pasaron los días. Bartleby ya no copiaba. Ya no revisaba. Ya no obedecía ninguna petición.\n\n—¿Por qué no escribe? —le pregunté.\n\nNo hubo violencia en su respuesta, ni tristeza visible, ni justificación.\n\n—He decidido no escribir más.",
+      "t": "Al día siguiente advertí que Bartleby no hacía otra cosa que permanecer de pie junto a su ventana, sumido en su ensoñación ante el muro muerto. Cuando le pregunté por qué no escribía, dijo que había decidido no escribir más.\n\n—¡Cómo! ¿Y ahora qué? —exclamé—. ¿No escribir más?\n\n—No más.\n\n—¿Y cuál es la razón?\n\n—¿No ve usted mismo la razón? —respondió con indiferencia.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "He decidido no escribir más.",
+      "highlight": "había decidido no escribir más",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "The next day I noticed that Bartleby did nothing but stand at his window in his dead-wall revery. Upon asking him why he did not write, he said that he had decided upon doing no more writing.\n\n“Why, how now? what next?” exclaimed I, “do no more writing?”\n\n“No more.”\n\n“And what is the reason?”\n\n“Do you not see the reason for yourself,” he indifferently replied.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-85",
       "legacy_index": 85,
-      "t": "—Bartleby —le dije—, ¿quiere decirme algo de usted? ¿De dónde viene? ¿Quién es? ¿Qué le ha traído aquí?\n\nÉl se retiró un poco más hacia su rincón, como si la pregunta lo hubiera tocado físicamente.\n\n—Por ahora preferiría no dar ninguna respuesta.",
+      "t": "—Bartleby —dije, llamándolo suavemente desde detrás del biombo.\n\nNinguna respuesta.\n\n—Bartleby —dije en un tono aún más suave—, venga aquí; no voy a pedirle que haga nada que preferiría no hacer: solo deseo hablar con usted.\n\nEntonces se deslizó silenciosamente hasta quedar a la vista.\n\n—¿Quiere decirme, Bartleby, dónde nació?\n\n—Preferiría no hacerlo.\n\n—¿Quiere contarme algo acerca de usted?\n\n—Preferiría no hacerlo.\n\n—Pero ¿qué objeción razonable puede tener a hablar conmigo? Le profeso simpatía.\n\nNo me miró mientras yo hablaba, sino que mantuvo la vista fija en mi busto de Cicerón, que, tal como yo estaba sentado, quedaba directamente detrás de mí, unos quince centímetros por encima de mi cabeza.\n\n—¿Cuál es su respuesta, Bartleby? —dije después de aguardar largo rato, durante el cual su semblante permaneció inmóvil, salvo por el más leve temblor imaginable en su boca blanca y consumida.\n\n—Por ahora prefiero no dar ninguna respuesta —dijo, y se retiró a su ermita.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Por ahora preferiría no dar ninguna respuesta.",
+      "highlight": "Por ahora prefiero no dar ninguna respuesta",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "“Bartleby,” said I, gently calling to him behind his screen.\n\nNo reply.\n\n“Bartleby,” said I, in a still gentler tone, “come here; I am not going to ask you to do any thing you would prefer not to do—I simply wish to speak to you.”\n\nUpon this he noiselessly slid into view.\n\n“Will you tell me, Bartleby, where you were born?”\n\n“I would prefer not to.”\n\n“Will you tell me any thing about yourself?”\n\n“I would prefer not to.”\n\n“But what reasonable objection can you have to speak to me? I feel friendly towards you.”\n\nHe did not look at me while I spoke, but kept his glance fixed upon my bust of Cicero, which as I then sat, was directly behind me, some six inches above my head.\n\n“What is your answer, Bartleby?” said I, after waiting a considerable time for a reply, during which his countenance remained immovable, only there was the faintest conceivable tremor of the white attenuated mouth.\n\n“At present I prefer to give no answer,” he said, and retired into his hermitage.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-86",
       "legacy_index": 86,
-      "t": "Había intentado razonar con él, intimidarlo, compadecerlo, liberarme de él. Nada servía. Seguía allí, sereno, inmóvil, irreductible.\n\nEntonces me pregunté, no sin cierto horror:\n\n¿Qué debo hacer con este hombre, o más bien con este fantasma?",
+      "t": "¿Qué haré? —me dije entonces, abotonándome el abrigo hasta el último botón—. ¿Qué haré? ¿Qué debo hacer? ¿Qué dice la conciencia que debo hacer con este hombre, o mejor, con este fantasma? Librarme de él, debo; marcharse, se marchará. Pero ¿cómo? No vas a echarlo a empellones, a ese pobre mortal pálido y pasivo; no vas a arrojar por la puerta a una criatura tan indefensa. ¿Te deshonrarás con semejante crueldad? No, no lo haré; no puedo hacerlo. Antes lo dejaría vivir y morir aquí, y luego tapiaría sus restos en el muro. ¿Qué harás entonces? Por mucho que lo engatuses, no se moverá. Deja los sobornos bajo tu propio pisapapeles, encima de la mesa; en suma, está muy claro que prefiere aferrarse a ti.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "¿Qué debo hacer con este hombre, o más bien con este fantasma?",
+      "highlight": "¿Qué dice la conciencia que debo hacer con este hombre, o mejor, con este fantasma?",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "What shall I do? I now said to myself, buttoning up my coat to the last button. What shall I do? what ought I to do? what does conscience say I should do with this man, or rather ghost. Rid myself of him, I must; go, he shall. But how? You will not thrust him, the poor, pale, passive mortal,—you will not thrust such a helpless creature out of your door? you will not dishonor yourself by such cruelty? No, I will not, I cannot do that. Rather would I let him live and die here, and then mason up his remains in the wall. What then will you do? For all your coaxing, he will not budge. Bribes he leaves under your own paperweight on your table; in short, it is quite plain that he prefers to cling to you.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-87",
       "legacy_index": 87,
-      "t": "Al acercarnos todos a su espacio, Bartleby pareció ofendido, no con violencia, sino con una especie de dignidad herida.\n\nNos miró como si hubiéramos invadido una habitación interior.\n\n—Preferiría que me dejaran solo aquí.",
+      "t": "—Con el debido respeto, señor, ¿qué palabra? —preguntó Turkey, introduciéndose respetuosamente en el estrecho espacio tras el biombo y haciendo con ello que yo chocara contra el escribiente—. ¿Qué palabra, señor?\n\n—Preferiría que me dejaran solo aquí —dijo Bartleby, como ofendido de que invadieran en tropel su intimidad.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Preferiría que me dejaran solo aquí.",
+      "highlight": "Preferiría que me dejaran solo aquí",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "“With submission, what word, sir,” asked Turkey, respectfully crowding himself into the contracted space behind the screen, and by so doing, making me jostle the scrivener. “What word, sir?”\n\n“I would prefer to be left alone here,” said Bartleby, as if offended at being mobbed in his privacy.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-88",
       "legacy_index": 88,
-      "t": "Le propuse otros trabajos, otros destinos, alguna salida posible. Un empleo en una tienda. Un puesto de mensajero. Cualquier ocupación que lo sacara de aquel rincón.\n\nBartleby no se alteró.\n\n—No me gustaría nada de eso. No soy exigente, pero me gusta estar quieto.",
+      "t": "—¿Qué le parecería, entonces, ir a Europa como acompañante, para entretener con su conversación a algún joven caballero?\n\n—En absoluto. No me parece que haya nada definido en eso. Me gusta permanecer en un sitio. Pero no soy exigente.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "No soy exigente, pero me gusta estar quieto.",
+      "highlight": "Me gusta permanecer en un sitio. Pero no soy exigente.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "“How then would going as a companion to Europe, to entertain some young gentleman with your conversation,—how would that suit you?”\n\n“Not at all. It does not strike me that there is any thing definite about that. I like to be stationary. But I am not particular.”",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-89",
       "legacy_index": 89,
-      "t": "—¿Quiere volver a copiar para alguien?\n\n—No. Preferiría no hacer ningún cambio.\n\n—¿Quiere viajar?\n\n—No.\n\n—¿Quiere ir a otra oficina?\n\nBartleby permaneció igual, como si cualquier forma de movimiento fuera una violencia.\n\n—Preferiría no hacer ningún cambio.",
+      "t": "—Bartleby —dije con el tono más amable que pude adoptar en circunstancias tan agitadas—, ¿quiere venir ahora a casa conmigo —no a mi oficina, sino a mi domicilio— y quedarse allí hasta que, con calma, podamos acordar alguna solución conveniente para usted? Vamos, salgamos ahora mismo.\n\n—No; por ahora preferiría no hacer ningún cambio.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Preferiría no hacer ningún cambio.",
+      "highlight": "No; por ahora preferiría no hacer ningún cambio.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "“Bartleby,” said I, in the kindest tone I could assume under such exciting circumstances, “will you go home with me now—not to my office, but my dwelling—and remain there till we can conclude upon some convenient arrangement for you at our leisure? Come, let us start now, right away.”\n\n“No: at present I would prefer not to make any change at all.”",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-90",
       "legacy_index": 90,
-      "t": "Lo encontré en el patio, rodeado de muros altos. No parecía más preso allí que en mi oficina. Quizá, pensé, siempre había vivido entre muros.\n\n—Bartleby —le dije—, ¿me reconoce?\n\nÉl volvió lentamente la cabeza.\n\n—Sé dónde estoy.",
+      "t": "Al no pesar sobre él ninguna acusación infamante, y siendo enteramente sereno e inofensivo en todos sus actos, le habían permitido vagar libremente por la prisión y, en especial, por el patio cercado y cubierto de césped. Allí lo encontré, completamente solo en el más silencioso de los patios, con el rostro vuelto hacia un alto muro, mientras a su alrededor creí ver, asomadas por las estrechas rendijas de las ventanas de la cárcel, las miradas de asesinos y ladrones.\n\n—¡Bartleby!\n\n—Lo conozco —dijo sin volverse—, y no tengo nada que decirle.\n\n—No fui yo quien lo trajo aquí, Bartleby —dije, hondamente dolido por la sospecha que sus palabras implicaban—. Y para usted este no debería ser un lugar tan vil. Estar aquí no lo deshonra. Y vea: no es un lugar tan triste como podría pensarse. Mire, allí está el cielo y aquí la hierba.\n\n—Sé dónde estoy —respondió, pero no dijo nada más, y lo dejé.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Sé dónde estoy.",
+      "highlight": "Sé dónde estoy",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "Being under no disgraceful charge, and quite serene and harmless in all his ways, they had permitted him freely to wander about the prison, and especially in the inclosed grass-platted yard thereof. And so I found him there, standing all alone in the quietest of the yards, his face towards a high wall, while all around, from the narrow slits of the jail windows, I thought I saw peering out upon him the eyes of murderers and thieves.\n\n“Bartleby!”\n\n“I know you,” he said, without looking round,—“and I want nothing to say to you.”\n\n“It was not I that brought you here, Bartleby,” said I, keenly pained at his implied suspicion. “And to you, this should not be so vile a place. Nothing reproachful attaches to you by being here. And see, it is not so sad a place as one might think. Look, there is the sky, and here is the grass.”\n\n“I know where I am,” he replied, but would say nothing more, and so I left him.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-91",
       "legacy_index": 91,
-      "t": "El encargado le ofreció comida. Bartleby no la tomó. Tampoco hizo gesto alguno de desprecio; simplemente se apartó de ella, como si el alimento perteneciera a otro orden del mundo.\n\n—Hoy preferiría no cenar. No estoy acostumbrado a las cenas.",
+      "t": "—Servidor de usted, señor, servidor de usted —dijo el proveedor de comida, haciendo una profunda reverencia tras su delantal—. Espero que se encuentre a gusto aquí, señor; terrenos espaciosos, aposentos frescos, señor; espero que permanezca con nosotros algún tiempo; procuraremos hacerle agradable la estancia. ¿Tendremos la señora Cutlets y yo el placer de su compañía para cenar, señor, en el aposento privado de la señora Cutlets?\n\n—Hoy preferiría no cenar —dijo Bartleby, volviéndose—. Me sentaría mal; no estoy acostumbrado a las cenas.\n\nDicho esto, avanzó lentamente al otro extremo del recinto y tomó posición frente al muro muerto.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Hoy preferiría no cenar. No estoy acostumbrado a las cenas.",
+      "highlight": "Hoy preferiría no cenar",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "“Your sarvant, sir, your sarvant,” said the grub-man, making a low salutation behind his apron. “Hope you find it pleasant here, sir;—spacious grounds—cool apartments, sir—hope you’ll stay with us some time—try to make it agreeable. May Mrs. Cutlets and I have the pleasure of your company to dinner, sir, in Mrs. Cutlets’ private room?”\n\n“I prefer not to dine to-day,” said Bartleby, turning away. “It would disagree with me; I am unused to dinners.” So saying he slowly moved to the other side of the inclosure, and took up a position fronting the dead-wall.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-92",
       "legacy_index": 92,
-      "t": "Me acerqué después y lo vi tendido junto al muro, extrañamente quieto. Lo llamé. No respondió.\n\nEntonces comprendí que Bartleby dormía de una manera definitiva.\n\nDormía con reyes y consejeros.",
+      "t": "Extrañamente encogido al pie del muro, con las rodillas recogidas, tendido de costado y la cabeza contra las frías piedras, vi al consumido Bartleby. Pero nada se movía. Me detuve; luego me acerqué, me incliné sobre él y vi que sus apagados ojos estaban abiertos; por lo demás, parecía dormir profundamente. Algo me impulsó a tocarlo. Le tomé la mano, y un estremecimiento de hormigueo me subió por el brazo y me descendió por la espalda hasta los pies.\n\nEl rostro redondo del proveedor de comida asomó entonces frente a mí.\n\n—Su cena está lista. ¿Tampoco cenará hoy? ¿O vive sin cenar?\n\n—Vive sin cenar —dije, y le cerré los ojos.\n\n—¡Eh! Está dormido, ¿verdad?\n\n—Con reyes y consejeros —murmuré.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Dormía con reyes y consejeros.",
+      "highlight": "Con reyes y consejeros",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "Strangely huddled at the base of the wall, his knees drawn up, and lying on his side, his head touching the cold stones, I saw the wasted Bartleby. But nothing stirred. I paused; then went close up to him; stooped over, and saw that his dim eyes were open; otherwise he seemed profoundly sleeping. Something prompted me to touch him. I felt his hand, when a tingling shiver ran up my arm and down my spine to my feet.\n\nThe round face of the grub-man peered upon me now. “His dinner is ready. Won’t he dine to-day, either? Or does he live without dining?”\n\n“Lives without dining,” said I, and closed his eyes.\n\n“Eh!—He’s asleep, aint he?”\n\n“With kings and counselors,” murmured I.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-93",
       "legacy_index": 93,
-      "t": "Mucho después oí un rumor sobre él. Decían que había trabajado en la oficina de cartas muertas, cartas que nunca llegan a nadie, cartas enviadas a personas desaparecidas, mudadas, enterradas.\n\nPensé entonces en Bartleby.\n\nCartas muertas: ¿no suenan como hombres muertos?",
+      "t": "El rumor era este: que Bartleby había sido empleado subalterno en la Oficina de Cartas Muertas de Washington, de donde lo habían destituido de repente a causa de un cambio de administración. Cuando pienso en ese rumor, no encuentro palabras suficientes para expresar las emociones que me embargan. ¡Cartas muertas! ¿No suenan a hombres muertos? Imaginad a un hombre inclinado por naturaleza y desventura a una pálida desesperanza: ¿puede haber ocupación más propicia para exacerbarla que manejar sin cesar esas cartas muertas y clasificarlas para las llamas? Pues cada año las queman a carretadas.",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
-      "highlight": "Cartas muertas: ¿no suenan como hombres muertos?",
+      "highlight": "¡Cartas muertas! ¿No suenan a hombres muertos?",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "The report was this: that Bartleby had been a subordinate clerk in the Dead Letter Office at Washington, from which he had been suddenly removed by a change in the administration. When I think over this rumor, I cannot adequately express the emotions which seize me. Dead letters! does it not sound like dead men? Conceive a man by nature and misfortune prone to a pallid hopelessness, can any business seem more fitted to heighten it than that of continually handling these dead letters, and assorting them for the flames? For by the cart-load they are annually burned.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-94",
       "legacy_index": 94,
-      "t": "A veces esas cartas llevaban dinero, perdón, esperanza, noticias de vida. Pero llegaban tarde. Sus destinatarios ya no estaban.\n\nEnviadas con amor, con auxilio, con promesas, corrían hacia la nada.\n\n¡Ah, Bartleby! ¡Ah, humanidad!",
+      "t": "A veces, de entre el papel plegado, el pálido empleado extrae un anillo: el dedo al que estaba destinado quizá se deshace en la tumba; un billete de banco enviado con la caridad más presurosa: aquel a quien habría socorrido ya ni come ni siente hambre; perdón para quienes murieron desesperados; esperanza para quienes murieron sin esperanza; buenas nuevas para quienes murieron asfixiados por calamidades sin remedio. Portadoras de recados de vida, estas cartas corren hacia la muerte.\n\n¡Ah, Bartleby! ¡Ah, humanidad!",
       "a": "Herman Melville",
       "obra": "Bartleby, el escribiente, Herman Melville",
       "highlight": "¡Ah, Bartleby! ¡Ah, humanidad!",
       "lang": "es",
       "type": "prose",
       "authorId": "author-herman-melville",
-      "workId": "work-bartleby-el-escribiente"
+      "workId": "work-bartleby-el-escribiente",
+      "original": {
+        "text": "Sometimes from out the folded paper the pale clerk takes a ring:—the finger it was meant for, perhaps, moulders in the grave; a bank-note sent in swiftest charity:—he whom it would relieve, nor eats nor hungers any more; pardon for those who died despairing; hope for those who died unhoping; good tidings for those who died stifled by unrelieved calamities. On errands of life, these letters speed to death.\n\nAh Bartleby! Ah humanity!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-95",
