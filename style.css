@@ -721,10 +721,9 @@ body:not([data-weather='heavy-rain'])[data-visual-scene='night-rain'] {
   }
 }
 
-/* En móvil/táctil se eliminan motas, luciérnagas y bruma animada para mantener fluido el scroll. */
+/* En móvil/táctil se eliminan las motas diurnas y la bruma más costosa. */
 @media (max-width: 768px), (pointer: coarse) {
-  .day-motes-layer,
-  .fireflies-layer {
+  .day-motes-layer {
     display: none !important;
   }
 
@@ -1938,16 +1937,30 @@ body[data-mode='day'] .mycelium-layer {
   filter: blur(var(--firefly-blur, 0.16px)) saturate(1.22) drop-shadow(0 0 10px rgba(255, 217, 108, 0.28));
 }
 
+.fireflies-layer[data-constrained='true'] .firefly {
+  box-shadow:
+    0 0 16px 5px rgba(255, 220, 93, 0.42),
+    0 0 34px 11px rgba(255, 202, 82, 0.18);
+  filter: none;
+}
+
+.fireflies-front[data-constrained='true'] {
+  --fireflies-layer-opacity: 0.92;
+}
+
+.fireflies-front[data-constrained='true'] .firefly {
+  filter: none;
+}
+
 .fireflies-layer[data-reduce-motion='true'] {
-  --fireflies-layer-opacity: 0.68;
+  --fireflies-layer-opacity: 0.82;
+  opacity: var(--fireflies-layer-opacity);
+  animation: none;
 }
 
 .fireflies-layer[data-reduce-motion='true'] .firefly {
-  animation-name: firefly-flicker;
-  animation-duration: 7.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: var(--flicker-delay, 0s);
+  opacity: var(--firefly-base-opacity, 0.68);
+  animation: none;
 }
 
 @keyframes firefly-flicker {

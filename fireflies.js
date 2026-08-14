@@ -4,12 +4,12 @@ const FIREFLY_LAYERS = Object.freeze([
     className: 'fireflies-layer fireflies-back',
     minCount: 46,
     maxCount: 70,
-    compactMinCount: 22,
-    compactMaxCount: 32,
+    compactMinCount: 14,
+    compactMaxCount: 20,
     reducedMinCount: 12,
     reducedMaxCount: 18,
-    reducedCompactMinCount: 6,
-    reducedCompactMaxCount: 10,
+    reducedCompactMinCount: 9,
+    reducedCompactMaxCount: 13,
     sizeScale: 1,
     opacityScale: 1.08,
     glowScale: 1.12,
@@ -22,12 +22,12 @@ const FIREFLY_LAYERS = Object.freeze([
     className: 'fireflies-layer fireflies-front',
     minCount: 8,
     maxCount: 13,
-    compactMinCount: 4,
-    compactMaxCount: 7,
+    compactMinCount: 5,
+    compactMaxCount: 8,
     reducedMinCount: 3,
     reducedMaxCount: 5,
-    reducedCompactMinCount: 2,
-    reducedCompactMaxCount: 3,
+    reducedCompactMinCount: 3,
+    reducedCompactMaxCount: 5,
     sizeScale: 1.18,
     opacityScale: 1.22,
     glowScale: 1.42,
@@ -40,8 +40,9 @@ const MIN_FLICKER = 2.4;
 const MAX_FLICKER = 5.8;
 const MIN_SPEED = 5;
 const MAX_SPEED = 14;
-const REDUCED_MOTION_SPEED_FACTOR = 0.015;
 const SCREEN_EDGE_BUFFER = 180;
+const CONSTRAINED_EDGE_BUFFER = 48;
+const CONSTRAINED_FRAME_INTERVAL_MS = 1000 / 24;
 const FIREFLY_PROFILES = Object.freeze([
   {
     weight: 0.58,
@@ -102,20 +103,55 @@ let lastAnimationTime = 0;
 let viewportWidth = 0;
 let viewportHeight = 0;
 let constrainedAtmosphereMedia;
+let activeRuntimeMode = null;
 
 const WEATHER_CHANGE_EVENT = 'paramo:weather-change';
 const RAIN_WEATHER_STATES = new Set(['light-rain', 'heavy-rain', 'night-rain']);
-const CONSTRAINED_ATMOSPHERE_QUERY = '(max-width: 768px), (pointer: coarse), (prefers-reduced-motion: reduce)';
+const CONSTRAINED_ATMOSPHERE_QUERY = '(max-width: 768px), (pointer: coarse)';
 
-function shouldShowFireflies() {
-  // Evita decenas de sombras y escrituras por frame en móviles y con movimiento reducido.
-  if (constrainedAtmosphereMedia?.matches || document.hidden) {
-    return false;
+export function resolveFireflyRuntimeMode({ constrained = false, reduceMotion = false } = {}) {
+  return {
+    constrained: Boolean(constrained),
+    reduceMotion: Boolean(reduceMotion),
+    animate: !reduceMotion,
+    frameIntervalMs: constrained ? CONSTRAINED_FRAME_INTERVAL_MS : 0,
+  };
+}
+
+function getLayerCountBounds(runtimeMode, layerConfig, compactViewport = runtimeMode.constrained) {
+  if (runtimeMode.reduceMotion) {
+    return {
+      min: compactViewport ? layerConfig.reducedCompactMinCount : layerConfig.reducedMinCount,
+      max: compactViewport ? layerConfig.reducedCompactMaxCount : layerConfig.reducedMaxCount,
+    };
   }
 
-  const timeOfDay = document.body?.dataset.timeOfDay;
-  const weather = document.body?.dataset.weather;
-  const visualScene = document.body?.dataset.visualScene;
+  return {
+    min: compactViewport ? layerConfig.compactMinCount : layerConfig.minCount,
+    max: compactViewport ? layerConfig.compactMaxCount : layerConfig.maxCount,
+  };
+}
+
+export function getFireflyCountBounds({ constrained = false, reduceMotion = false } = {}) {
+  const runtimeMode = resolveFireflyRuntimeMode({ constrained, reduceMotion });
+  return FIREFLY_LAYERS.reduce((total, layerConfig) => {
+    const bounds = getLayerCountBounds(runtimeMode, layerConfig);
+    return {
+      min: total.min + bounds.min,
+      max: total.max + bounds.max,
+    };
+  }, { min: 0, max: 0 });
+}
+
+export function shouldShowFirefliesForState({
+  documentHidden = false,
+  timeOfDay,
+  weather,
+  visualScene,
+} = {}) {
+  if (documentHidden) {
+    return false;
+  }
 
   const isNight = timeOfDay === 'night';
   const isRain =
@@ -128,6 +164,15 @@ function shouldShowFireflies() {
   return isNight && !isRain && !excludesFireflies;
 }
 
+function shouldShowFireflies() {
+  return shouldShowFirefliesForState({
+    documentHidden: document.hidden,
+    timeOfDay: document.body?.dataset.timeOfDay,
+    weather: document.body?.dataset.weather,
+    visualScene: document.body?.dataset.visualScene,
+  });
+}
+
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
@@ -136,16 +181,9 @@ function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function pickCount(reduceMotion, layerConfig) {
-  const compactViewport = viewportWidth <= 600;
-  if (reduceMotion) {
-    const min = compactViewport ? layerConfig.reducedCompactMinCount : layerConfig.reducedMinCount;
-    const max = compactViewport ? layerConfig.reducedCompactMaxCount : layerConfig.reducedMaxCount;
-    return Math.floor(randomBetween(min, max + 1));
-  }
-
-  const min = compactViewport ? layerConfig.compactMinCount : layerConfig.minCount;
-  const max = compactViewport ? layerConfig.compactMaxCount : layerConfig.maxCount;
+function pickCount(runtimeMode, layerConfig) {
+  const compactViewport = runtimeMode.constrained || viewportWidth <= 600;
+  const { min, max } = getLayerCountBounds(runtimeMode, layerConfig, compactViewport);
   return Math.floor(randomBetween(min, max + 1));
 }
 
@@ -174,17 +212,26 @@ function updateViewportSize() {
   viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
 }
 
-function createFireflyState(element, reduceMotion, profile, layerConfig) {
+function createFireflyState(element, runtimeMode, profile, layerConfig) {
   const angle = randomBetween(0, Math.PI * 2);
-  const speed = randomBetween(MIN_SPEED, MAX_SPEED) * profile.speedScale * layerConfig.motionScale;
-  const reducedScale = reduceMotion ? 0.08 : 1;
+  const constrainedMotionScale = runtimeMode.constrained ? 0.58 : 1;
+  const speed = randomBetween(MIN_SPEED, MAX_SPEED)
+    * profile.speedScale
+    * layerConfig.motionScale
+    * constrainedMotionScale;
+  const reducedScale = runtimeMode.reduceMotion ? 0.08 : 1;
   const swayScale = layerConfig.swayScale * reducedScale;
+  const edgeBuffer = runtimeMode.reduceMotion
+    ? 0
+    : runtimeMode.constrained
+      ? CONSTRAINED_EDGE_BUFFER
+      : SCREEN_EDGE_BUFFER;
 
   return {
     element,
     layer: layerConfig.key,
-    x: randomBetween(-SCREEN_EDGE_BUFFER, viewportWidth + SCREEN_EDGE_BUFFER),
-    y: randomBetween(-SCREEN_EDGE_BUFFER, viewportHeight + SCREEN_EDGE_BUFFER),
+    x: randomBetween(-edgeBuffer, viewportWidth + edgeBuffer),
+    y: randomBetween(-edgeBuffer, viewportHeight + edgeBuffer),
     vx: Math.cos(angle) * speed,
     vy: Math.sin(angle) * speed * 0.72,
     phase: randomBetween(0, Math.PI * 2),
@@ -196,14 +243,15 @@ function createFireflyState(element, reduceMotion, profile, layerConfig) {
     wanderAmplitude: randomBetween(6, 22) * swayScale,
     wanderSpeed: randomBetween(0.07, 0.18),
     scale: randomBetween(0.86, 1.18),
+    edgeBuffer,
   };
 }
 
 function wrapFireflyPosition(firefly) {
-  const minX = -SCREEN_EDGE_BUFFER;
-  const maxX = viewportWidth + SCREEN_EDGE_BUFFER;
-  const minY = -SCREEN_EDGE_BUFFER;
-  const maxY = viewportHeight + SCREEN_EDGE_BUFFER;
+  const minX = -firefly.edgeBuffer;
+  const maxX = viewportWidth + firefly.edgeBuffer;
+  const minY = -firefly.edgeBuffer;
+  const maxY = viewportHeight + firefly.edgeBuffer;
 
   if (firefly.x < minX) {
     firefly.x = maxX;
@@ -226,25 +274,34 @@ function renderFirefly(firefly, timestamp) {
   const organicY =
     Math.cos(seconds * firefly.floatSpeed + firefly.phase) * firefly.floatAmplitude
     + Math.cos(seconds * firefly.wanderSpeed * 1.35 + firefly.secondaryPhase) * firefly.wanderAmplitude;
-  const x = clamp(firefly.x + organicX, -SCREEN_EDGE_BUFFER, viewportWidth + SCREEN_EDGE_BUFFER);
-  const y = clamp(firefly.y + organicY, -SCREEN_EDGE_BUFFER, viewportHeight + SCREEN_EDGE_BUFFER);
+  const x = clamp(firefly.x + organicX, -firefly.edgeBuffer, viewportWidth + firefly.edgeBuffer);
+  const y = clamp(firefly.y + organicY, -firefly.edgeBuffer, viewportHeight + firefly.edgeBuffer);
 
   firefly.element.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${firefly.scale.toFixed(2)})`;
 }
 
 function animateFireflies(timestamp) {
+  if (!activeRuntimeMode?.animate) {
+    animationFrameId = null;
+    return;
+  }
+
   if (!lastAnimationTime) {
     lastAnimationTime = timestamp;
   }
 
-  const deltaSeconds = Math.min((timestamp - lastAnimationTime) / 1000, 0.08);
-  const reduceMotion = reduceMotionMedia?.matches ?? false;
-  const speedFactor = reduceMotion ? REDUCED_MOTION_SPEED_FACTOR : 1;
+  const elapsedMs = timestamp - lastAnimationTime;
+  if (activeRuntimeMode.frameIntervalMs > 0 && elapsedMs < activeRuntimeMode.frameIntervalMs) {
+    animationFrameId = window.requestAnimationFrame(animateFireflies);
+    return;
+  }
+
+  const deltaSeconds = Math.min(elapsedMs / 1000, 0.08);
   lastAnimationTime = timestamp;
 
   activeFireflies.forEach((firefly) => {
-    firefly.x += firefly.vx * deltaSeconds * speedFactor;
-    firefly.y += firefly.vy * deltaSeconds * speedFactor;
+    firefly.x += firefly.vx * deltaSeconds;
+    firefly.y += firefly.vy * deltaSeconds;
     wrapFireflyPosition(firefly);
     renderFirefly(firefly, timestamp);
   });
@@ -253,7 +310,7 @@ function animateFireflies(timestamp) {
 }
 
 function startFireflyAnimation() {
-  if (animationFrameId !== null) {
+  if (animationFrameId !== null || !activeRuntimeMode?.animate) {
     return;
   }
 
@@ -269,8 +326,8 @@ function stopFireflyAnimation() {
   lastAnimationTime = 0;
 }
 
-function createLayerFireflies(layer, layerConfig, reduceMotion) {
-  const total = pickCount(reduceMotion, layerConfig);
+function createLayerFireflies(layer, layerConfig, runtimeMode) {
+  const total = pickCount(runtimeMode, layerConfig);
 
   for (let i = 0; i < total; i += 1) {
     const profile = pickFireflyProfile(layerConfig);
@@ -295,29 +352,35 @@ function createLayerFireflies(layer, layerConfig, reduceMotion) {
     firefly.style.setProperty('--flicker-duration', `${flickerDuration.toFixed(2)}s`);
     firefly.style.setProperty('--flicker-delay', `${(-Math.random() * flickerDuration).toFixed(2)}s`);
 
-    activeFireflies.push(createFireflyState(firefly, reduceMotion, profile, layerConfig));
+    activeFireflies.push(createFireflyState(firefly, runtimeMode, profile, layerConfig));
     layer.appendChild(firefly);
   }
 }
 
-function createFirefliesLayer(layerConfig, reduceMotion) {
+function createFirefliesLayer(layerConfig, runtimeMode) {
   const layer = document.createElement('div');
   layer.className = layerConfig.className;
   layer.dataset.layer = layerConfig.key;
   layer.setAttribute('aria-hidden', 'true');
-  if (reduceMotion) {
+  if (runtimeMode.constrained) {
+    layer.dataset.constrained = 'true';
+  }
+  if (runtimeMode.reduceMotion) {
     layer.dataset.reduceMotion = 'true';
   }
 
-  createLayerFireflies(layer, layerConfig, reduceMotion);
+  createLayerFireflies(layer, layerConfig, runtimeMode);
   return layer;
 }
 
 function createFirefliesLayers() {
   updateViewportSize();
   activeFireflies = [];
-  const reduceMotion = reduceMotionMedia?.matches ?? false;
-  const layers = FIREFLY_LAYERS.map((layerConfig) => createFirefliesLayer(layerConfig, reduceMotion));
+  activeRuntimeMode = resolveFireflyRuntimeMode({
+    constrained: constrainedAtmosphereMedia?.matches ?? false,
+    reduceMotion: reduceMotionMedia?.matches ?? false,
+  });
+  const layers = FIREFLY_LAYERS.map((layerConfig) => createFirefliesLayer(layerConfig, activeRuntimeMode));
 
   let nightClassAdded = false;
 
@@ -340,6 +403,7 @@ function createFirefliesLayers() {
       }
     });
     activeFireflies = [];
+    activeRuntimeMode = null;
     if (nightClassAdded) {
       document.body.classList.remove('night-fall');
     }
@@ -375,6 +439,13 @@ function handleWeatherStateChange() {
   evaluateNightState();
 }
 
+function handleAtmosphereConstraintChange() {
+  if (cleanupCurrentLayer) {
+    cleanupCurrentLayer();
+  }
+  evaluateNightState();
+}
+
 function handleVisibilityChange() {
   evaluateNightState();
 }
@@ -399,7 +470,7 @@ export function initFireflyAura() {
 
   if (!listenersBound) {
     reduceMotionMedia.addEventListener('change', handleReduceMotionChange);
-    constrainedAtmosphereMedia.addEventListener('change', handleWeatherStateChange);
+    constrainedAtmosphereMedia.addEventListener('change', handleAtmosphereConstraintChange);
     document.addEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
     document.addEventListener('visibilitychange', handleVisibilityChange);
     window.addEventListener('resize', handleResize);
@@ -419,7 +490,7 @@ export function teardownFireflyAura() {
     reduceMotionMedia.removeEventListener('change', handleReduceMotionChange);
   }
   if (constrainedAtmosphereMedia) {
-    constrainedAtmosphereMedia.removeEventListener('change', handleWeatherStateChange);
+    constrainedAtmosphereMedia.removeEventListener('change', handleAtmosphereConstraintChange);
   }
   window.removeEventListener('resize', handleResize);
   document.removeEventListener(WEATHER_CHANGE_EVENT, handleWeatherStateChange);
