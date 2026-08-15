@@ -296,6 +296,39 @@ test('Bartleby conserva intensidad, repeticiones e idiolectos tras la segunda au
   assert.match(quotes.get('quote-94').original.text, /Ah Bartleby! Ah humanity!$/);
 });
 
+test('El jardín secreto conserva lógica, voz y repeticiones tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const gardenQuotes = document.quotes.filter(quote => quote.workId === 'work-el-jardin-secreto');
+
+  assert.equal(gardenQuotes.length, 23);
+  assert.match(quotes.get('quote-96').t, /Me encanta\. No tiene nada de pelado/);
+  assert.match(quotes.get('quote-97').t, /la señorita Mary Siempre al Contrario/);
+  assert.match(quotes.get('quote-99').t, /A mi aya no le caía bien/);
+  assert.match(quotes.get('quote-100').t, /^Mary se acercó/);
+  assert.match(quotes.get('quote-100').t, /Si no había nadie más vivo/);
+  assert.equal(quotes.get('quote-102').t.match(/completamente/g)?.length, 2);
+  assert.doesNotMatch(quotes.get('quote-103').t, /siempre le había parecido/);
+  assert.match(quotes.get('quote-104').t, /disfrutaría para siempre\.$/);
+  assert.match(quotes.get('quote-108').t, /jamás en toda su vida/);
+  assert.doesNotMatch(quotes.get('quote-109').t, /preguntó él/);
+  assert.match(quotes.get('quote-109').t, /—Como si de pronto lo hubiera asaltado una idea—/);
+  assert.match(quotes.get('quote-109').t, /voz temblorosa/);
+  assert.match(quotes.get('quote-109').t, /¡Tierra!/);
+  assert.match(quotes.get('quote-110').t, /dijo él/);
+  assert.match(quotes.get('quote-110').t, /Cuando veas/);
+  assert.match(quotes.get('quote-112').t, /dice que cree/);
+  assert.match(quotes.get('quote-112').t, /a un tipo que estuviera/);
+  assert.match(quotes.get('quote-113').t, /traerlo aquí fuera/);
+  assert.match(quotes.get('quote-113').t, /mire y escuche y aspire el aire, y que quede/);
+  assert.match(quotes.get('quote-115').t, /se llevaran un Huevo o lo dañaran/);
+  assert.match(quotes.get('quote-116').t, /nada más que meros pensamientos/);
+  assert.equal(quotes.get('quote-116').highlight, 'meros pensamientos');
+  assert.match(quotes.get('quote-117').t, /como una riada/);
+  assert.match(quotes.get('quote-109').original.text, /^Is there anything/);
+  assert.doesNotMatch(quotes.get('quote-109').original.text, /^"/);
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
