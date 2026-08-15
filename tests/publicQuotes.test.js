@@ -268,6 +268,34 @@ test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda 
   assert.match(quotes.get('quote-64').t, /arrastrando los pies/);
 });
 
+test('Bartleby conserva intensidad, repeticiones e idiolectos tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const bartlebyQuotes = document.quotes.filter(quote => quote.workId === 'work-bartleby-el-escribiente');
+
+  assert.equal(bartlebyQuotes.length, 16);
+  assert.match(quotes.get('quote-79').original.text, /^In this very attitude/);
+  assert.match(quotes.get('quote-80').t, /se la tendí bruscamente/);
+  assert.match(quotes.get('quote-81').t, /habría estallado de inmediato en una cólera terrible/);
+  assert.match(quotes.get('quote-83').t, /^También me esforcé/);
+  assert.match(quotes.get('quote-84').t, /¡Pero bueno! ¿Qué es esto\? ¿Y ahora qué\?/);
+  assert.match(quotes.get('quote-85').t, /mientras él estaba tras su biombo/);
+  assert.match(quotes.get('quote-85').t, /Le tengo simpatía/);
+  assert.match(quotes.get('quote-86').t, /echarlo a empellones.*echar a empellones/);
+  assert.match(quotes.get('quote-86').t, /Los sobornos los deja/);
+  assert.match(quotes.get('quote-87').t, /apretujándose respetuosamente/);
+  assert.equal(quotes.get('quote-88').t.match(/qué le parecería/gi)?.length, 2);
+  assert.match(quotes.get('quote-90').t, /los ojos de asesinos y ladrones/);
+  assert.match(quotes.get('quote-90').t, /no le acarrea reproche alguno/);
+  assert.match(quotes.get('quote-90').t, /no quiso decir nada más/);
+  assert.match(quotes.get('quote-91').t, /^—Su servior, señor, su servior/);
+  assert.match(quotes.get('quote-92').t, /Le toqué la mano/);
+  assert.match(quotes.get('quote-92').t, /se asomó entonces para mirarme/);
+  assert.match(quotes.get('quote-93').t, /puede alguna ocupación parecer más propicia para acrecentarla/);
+  assert.match(quotes.get('quote-94').t, /quizá se pudre en la tumba/);
+  assert.match(quotes.get('quote-94').original.text, /Ah Bartleby! Ah humanity!$/);
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
