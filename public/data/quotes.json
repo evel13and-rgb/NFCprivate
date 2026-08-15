@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-14T23:16:35.452Z",
+  "generated_at": "2026-08-15T11:37:30.605Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -5033,314 +5033,444 @@
     {
       "id": "quote-323",
       "legacy_index": 323,
-      "t": "¡Qué día admirable! He pasado toda la mañana tendido sobre la hierba, delante de mi casa, bajo el enorme plátano que la cubre, la protege y la sombrea por entero.\n\nAmo este país y amo vivir en él porque aquí tengo mis raíces, esas raíces profundas y delicadas que atan a un hombre a la tierra donde nacieron y murieron sus antepasados; que lo atan a lo que se piensa y a lo que se come, a los usos como a los alimentos, a las expresiones del lugar, a las entonaciones de los campesinos, a los olores del suelo, de los pueblos y del aire mismo.",
+      "t": "¡Qué día admirable! He pasado toda la mañana tendido sobre la hierba, delante de mi casa, bajo el enorme plátano que la cubre, la cobija y la sombrea por entero.\n\nAmo este país y amo vivir en él porque aquí tengo mis raíces, esas raíces profundas y delicadas que atan a un hombre a la tierra donde nacieron y murieron sus antepasados; que lo atan a lo que se piensa y a lo que se come, a las costumbres tanto como a los alimentos, a las expresiones locales, a las entonaciones de los campesinos, a los olores de la tierra, de los pueblos y del aire mismo.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Aquí tengo mis raíces.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Quelle journée admirable ! J’ai passé toute la matinée étendu sur l’herbe, devant ma maison, sous l’énorme platane qui la couvre, l’abrite et l’ombrage tout entière.\n\nJ’aime ce pays, et j’aime y vivre parce que j’y ai mes racines, ces profondes et délicates racines, qui attachent un homme à la terre où sont nés et morts ses aïeux, qui l’attachent à ce qu’on pense et à ce qu’on mange, aux usages comme aux nourritures, aux locutions locales, aux intonations des paysans, aux odeurs du sol, des villages et de l’air lui-même.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-324",
       "legacy_index": 324,
-      "t": "¿De dónde vienen esas influencias misteriosas que transforman nuestra felicidad en desaliento y nuestra confianza en angustia? Se diría que el aire, el aire invisible, está lleno de Potencias desconocidas cuyas misteriosas cercanías padecemos.\n\nDespierto lleno de alegría, con deseos de cantar en la garganta. ¿Por qué? Bajo junto al agua; y de pronto, después de un breve paseo, regreso desolado, como si alguna desgracia me esperara en casa.",
+      "t": "¿De dónde vienen esas influencias misteriosas que mudan nuestra felicidad en desaliento y nuestra confianza en angustia? Se diría que el aire, el aire invisible, está lleno de Potencias incognoscibles, cuyas misteriosas cercanías padecemos.\n\nDespierto lleno de alegría, con ganas de cantar en la garganta. —¿Por qué?— Bajo junto al agua; y de pronto, después de un breve paseo, regreso desolado, como si alguna desgracia me aguardara en casa. —¿Por qué?—",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
-      "highlight": "El aire invisible está lleno de Potencias desconocidas.",
+      "highlight": "El aire invisible está lleno de Potencias incognoscibles.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "D’où viennent ces influences mystérieuses qui changent en découragement notre bonheur et notre confiance en détresse. On dirait que l’air, l’air invisible est plein d’inconnaissables Puissances, dont nous subissons les voisinages mystérieux.\n\nJe m’éveille plein de gaîté, avec des envies de chanter dans la gorge. — Pourquoi ? — Je descends le long de l’eau ; et soudain, après une courte promenade, je rentre désolé, comme si quelque malheur m’attendait chez moi. — Pourquoi ? —",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-325",
       "legacy_index": 325,
-      "t": "¡Qué profundo es este misterio de lo Invisible! No podemos sondearlo con nuestros miserables sentidos, con nuestros ojos, que no saben percibir ni lo demasiado pequeño ni lo demasiado grande, ni lo demasiado cercano ni lo demasiado lejano, ni los habitantes de una estrella ni los habitantes de una gota de agua…\n\n¡Ah! Si tuviéramos otros órganos que realizaran para nosotros otros milagros, ¡cuántas cosas descubriríamos todavía a nuestro alrededor!",
+      "t": "¡Qué profundo es este misterio de lo Invisible! No podemos sondearlo con nuestros miserables sentidos, con nuestros ojos, que no saben percibir ni lo demasiado pequeño ni lo demasiado grande, ni lo demasiado cercano ni lo demasiado lejano, ni los habitantes de una estrella ni los habitantes de una gota de agua…\n\n¡Ah! Si tuviéramos otros órganos que obraran en favor nuestro otros milagros, ¡cuántas cosas podríamos descubrir aún a nuestro alrededor!",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "¡Qué profundo es este misterio de lo Invisible!",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Comme il est profond, ce mystère de l’Invisible ! Nous ne le pouvons sonder avec nos sens misérables, avec nos yeux qui ne savent apercevoir ni le trop petit, ni le trop grand, ni le trop près, ni le trop loin, ni les habitants d’une étoile, ni les habitants d’une goutte d’eau…\n\nAh ! si nous avions d’autres organes qui accompliraient en notre faveur d’autres miracles, que de choses nous pourrions découvrir encore autour de nous !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-326",
       "legacy_index": 326,
-      "t": "Apenas entro, doy dos vueltas a la llave y echo los cerrojos; tengo miedo… ¿de qué?… Hasta ahora no temía nada… abro los armarios, miro debajo de la cama; escucho… escucho… ¿qué?…\n\nDespués me acuesto y espero el sueño como se esperaría al verdugo. Lo espero con el espanto de su llegada; y mi corazón late, y mis piernas tiemblan; y todo mi cuerpo se estremece en el calor de las sábanas.",
+      "t": "Apenas entro, doy dos vueltas a la llave y echo los cerrojos; tengo miedo… ¿de qué?… Hasta ahora no temía nada… Abro los armarios, miro debajo de la cama; escucho… escucho… ¿qué?… ¿Es extraño que un simple malestar, un trastorno de la circulación quizá, la irritación de una fibra nerviosa, un poco de congestión, una diminuta perturbación en el funcionamiento tan imperfecto y tan delicado de nuestra máquina viva, pueda convertir al más alegre de los hombres en un melancólico, y al más valiente en un cobarde?\n\nDespués me acuesto y espero el sueño como se esperaría al verdugo. Lo espero con el espanto de su llegada; y mi corazón late, y mis piernas tiemblan; y todo mi cuerpo se estremece en el calor de las sábanas, hasta el instante en que caigo de pronto en el reposo como se caería, para ahogarse en él, en un abismo de agua estancada. Ya no siento venir, como antes, ese sueño pérfido, escondido a mi lado, que me acecha, que va a aferrarme por la cabeza, cerrarme los ojos, aniquilarme.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Espero el sueño como se esperaría al verdugo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "À peine entré, je donne deux tours de clef, et je pousse les verrous ; j’ai peur… de quoi ?… Je ne redoutais rien jusqu’ici… j’ouvre mes armoires, je regarde sous mon lit ; j’écoute… j’écoute… quoi ?… Est-ce étrange qu’un simple malaise, un trouble de la circulation peut-être, l’irritation d’un filet nerveux, un peu de congestion, une toute petite perturbation dans le fonctionnement si imparfait et si délicat de notre machine vivante, puisse faire un mélancolique du plus joyeux des hommes, et un poltron du plus brave ?\n\nPuis, je me couche, et j’attends le sommeil comme on attendrait le bourreau. Je l’attends avec l’épouvante de sa venue ; et mon cœur bat, et mes jambes frémissent ; et tout mon corps tressaille dans la chaleur des draps, jusqu’au moment où je tombe tout à coup dans le repos, comme on tomberait pour s’y noyer, dans un gouffre d’eau stagnante. Je ne le sens pas venir, comme autrefois, ce sommeil perfide, caché près de moi, qui me guette, qui va me saisir par la tête, me fermer les yeux, m’anéantir.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-327",
       "legacy_index": 327,
-      "t": "Duermo —mucho tiempo— dos o tres horas; después un sueño —no— una pesadilla me oprime. Siento perfectamente que estoy acostado y que duermo… lo siento y lo sé… y siento también que alguien se acerca a mí, me mira, me toca, sube a mi cama, se arrodilla sobre mi pecho, me toma el cuello entre las manos y aprieta… aprieta… con todas sus fuerzas para estrangularme.\n\nYo me debato, atado por esa impotencia atroz que nos paraliza en los sueños; quiero gritar —no puedo—; quiero moverme —no puedo—.",
+      "t": "Duermo —mucho tiempo—, dos o tres horas; después un sueño —no—, una pesadilla me oprime. Siento muy bien que estoy acostado y que duermo… lo siento y lo sé… y siento también que alguien se acerca a mí, me mira, me palpa, sube a mi cama, se arrodilla sobre mi pecho, me toma el cuello entre las manos y aprieta… aprieta… con todas sus fuerzas para estrangularme.\n\nYo me debato, atado por esa impotencia atroz que nos paraliza en los sueños; quiero gritar —no puedo—; quiero moverme —no puedo—; intento, con esfuerzos espantosos, jadeando, volverme, rechazar a ese ser que me aplasta y me ahoga —¡no puedo!",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Quiero gritar —no puedo—.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Je dors — longtemps — deux ou trois heures — puis un rêve — non — un cauchemar m’étreint. Je sens bien que je suis couché et que je dors,… je le sens et je le sais… et je sens aussi que quelqu’un s’approche de moi, me regarde, me palpe, monte sur mon lit, s’agenouille sur ma poitrine, me prend le cou entre ses mains et serre… serre… de toute sa force pour m’étrangler.\n\nMoi, je me débats, lié par cette impuissance atroce, qui nous paralyse dans les songes ; je veux crier, — je ne peux pas ; — je veux remuer, — je ne peux pas ; — j’essaye, avec des efforts affreux, en haletant, de me tourner, de rejeter cet être qui m’écrase et qui m’étouffe, — je ne peux pas !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-328",
       "legacy_index": 328,
-      "t": "Aceleré el paso, inquieto por estar solo en aquel bosque, asustado sin razón, estúpidamente, por la profunda soledad. De pronto me pareció que me seguían, que caminaban sobre mis talones, muy cerca, hasta tocarme.\n\nMe volví bruscamente. Estaba solo. No vi detrás de mí más que la avenida recta y ancha, vacía, alta, terriblemente vacía; y al otro lado se extendía también hasta perderse de vista, idéntica, espantosa.",
+      "t": "Apresuré el paso, inquieto por estar solo en aquel bosque, asustado sin razón, estúpidamente, por la profunda soledad. De pronto me pareció que me seguían, que alguien caminaba pegado a mis talones, muy cerca, hasta tocarme.\n\nMe volví bruscamente. Estaba solo. No vi detrás de mí más que la avenida recta y ancha, vacía, alta, terriblemente vacía; y hacia el otro lado se extendía también hasta perderse de vista, idéntica, espantosa.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Asustado por la profunda soledad.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Je hâtai le pas, inquiet d’être seul dans ce bois, apeuré sans raison, stupidement, par la profonde solitude. Tout à coup, il me sembla que j’étais suivi, qu’on marchait sur mes talons, tout près, à me toucher.\n\nJe me retournai brusquement. J’étais seul. Je ne vis derrière moi que la droite et large allée, vide, haute, redoutablement vide ; et de l’autre côté elle s’étendait aussi à perte de vue, toute pareille, effrayante.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-329",
       "legacy_index": 329,
-      "t": "—Si existieran sobre la tierra otros seres distintos de nosotros, ¿cómo no los conoceríamos desde hace mucho tiempo? ¿Cómo no los habría visto usted? ¿Cómo no los habría visto yo?\n\nÉl respondió:\n\n—¿Acaso vemos la cienmilésima parte de lo que existe? Mire el viento, que derriba hombres, abate edificios, arranca árboles, levanta el mar en montañas de agua, mata, silba, gime, ruge… ¿lo ha visto usted?, ¿puede verlo? Existe, sin embargo.",
+      "t": "Repliqué:\n\n—Si existieran sobre la tierra otros seres distintos de nosotros, ¿cómo no los conoceríamos desde hace mucho tiempo? ¿Cómo no los habría visto usted? ¿Cómo no los habría visto yo?\n\nÉl respondió:\n\n—¿Acaso vemos la cienmilésima parte de lo que existe? Mire: he ahí el viento, que es la mayor fuerza de la naturaleza, que derriba a los hombres, abate los edificios, arranca de raíz los árboles, alza el mar en montañas de agua, destruye los acantilados y arroja contra los escollos los grandes navíos; el viento que mata, que silba, que gime, que muge… ¿Lo ha visto usted?, ¿puede verlo? Y, sin embargo, existe.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "¿Puede verlo? Existe, sin embargo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Je repris : « S’il existait sur la terre d’autres êtres que nous, comment ne les connaîtrions-nous point depuis longtemps : comment ne les auriez-vous pas vus, vous ? comment ne les aurais-je pas vus, moi ? »\n\nIl répondit : « Est-ce que nous voyons la cent-millième partie de ce qui existe ? Tenez, voici le vent, qui est la plus grande force de la nature, qui renverse les hommes, abat les édifices, déracine les arbres, soulève la mer en montagnes d’eau, détruit les falaises, et jette aux brisants les grands navires, le vent qui tue, qui siffle, qui gémit, qui mugit, — l’avez-vous vu, et pouvez-vous le voir ? Il existe, pourtant. »",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-330",
       "legacy_index": 330,
-      "t": "Esta noche he sentido a alguien agazapado sobre mí, que, con la boca sobre la mía, bebía mi vida entre mis labios. Sí, la extraía de mi garganta como lo habría hecho una sanguijuela.\n\nDespués se levantó, saciado, y yo desperté tan magullado, quebrantado, aniquilado, que ya no podía moverme.",
+      "t": "Esta noche he sentido a alguien agazapado sobre mí, que, con la boca sobre la mía, bebía mi vida entre mis labios. Sí, la sorbía de mi garganta como lo habría hecho una sanguijuela.\n\nDespués se levantó, saciado, y yo desperté tan maltrecho, quebrantado, aniquilado, que ya no podía moverme.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Bebía mi vida entre mis labios.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Cette nuit, j’ai senti quelqu’un accroupi sur moi, et qui, sa bouche sur la mienne, buvait ma vie entre mes lèvres. Oui, il la puisait dans ma gorge, comme aurait fait une sangsue.\n\nPuis il s’est levé, repu, et moi je me suis réveillé, tellement meurtri, brisé, anéanti, que je ne pouvais plus remuer.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-331",
       "legacy_index": 331,
-      "t": "¿Habían bebido aquella agua? ¿Quién? ¿Yo? ¿Yo, sin duda? No podía haber sido más que yo. Entonces era sonámbulo; vivía, sin saberlo, esa doble vida misteriosa que hace dudar de si existen dos seres en nosotros, o de si un ser extraño, incognoscible e invisible anima por momentos, cuando nuestra alma está adormecida, nuestro cuerpo cautivo, que obedece a ese otro como a nosotros mismos, más que a nosotros mismos.",
+      "t": "¿Así que alguien había bebido aquella agua? ¿Quién? ¿Yo? ¿Yo, sin duda? ¿No podía haber sido más que yo? Entonces era sonámbulo; vivía, sin saberlo, esa doble vida misteriosa que hace dudar de si hay dos seres en nosotros, o de si un ser extraño, incognoscible e invisible anima por momentos, cuando nuestra alma está adormecida, nuestro cuerpo cautivo, que obedece a ese otro como a nosotros mismos, más que a nosotros mismos.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Vivía, sin saberlo, esa doble vida misteriosa.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "On avait donc bu cette eau ? Qui ? Moi ? moi, sans doute ? Ce ne pouvait être que moi ? Alors, j’étais somnambule, je vivais, sans le savoir, de cette double vie mystérieuse qui fait douter s’il y a deux êtres en nous, ou si un être étranger, inconnaissable et invisible, anime, par moments, quand notre âme est engourdie, notre corps captif qui obéit à cet autre, comme à nous-mêmes, plus qu’à nous-mêmes.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-332",
       "legacy_index": 332,
-      "t": "Me vuelvo loco. Han vuelto a beber toda mi jarra esta noche; o, más bien, ¡la he bebido yo!\n\nPero ¿soy yo? ¿Soy yo? ¿Quién sería? ¿Quién? ¡Oh, Dios mío! ¿Me vuelvo loco? ¿Quién me salvará?",
+      "t": "Me vuelvo loco. Alguien ha vuelto a beberse toda mi jarra esta noche; o, mejor dicho, ¡me la he bebido yo!\n\nPero ¿soy yo? ¿Soy yo? ¿Quién sería? ¿Quién? ¡Oh, Dios mío! ¿Me vuelvo loco? ¿Quién me salvará?",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Pero ¿soy yo? ¿Soy yo?",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Je deviens fou. On a encore bu toute ma carafe cette nuit ; — ou plutôt, je l’ai bue !\n\nMais, est-ce moi ? Est-ce moi ? Qui serait-ce ? Qui ? Oh ! mon Dieu ! Je deviens fou ? Qui me sauvera ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-333",
       "legacy_index": 333,
-      "t": "La soledad es peligrosa para las inteligencias que trabajan. Necesitamos a nuestro alrededor hombres que piensen y que hablen. Cuando permanecemos solos durante mucho tiempo, poblamos el vacío de fantasmas.\n\n¡Qué débil es nuestra cabeza, cómo se asusta y cómo se extravía rápidamente en cuanto un pequeño hecho incomprensible nos golpea!",
+      "t": "Ciertamente, la soledad es peligrosa para las inteligencias que trabajan. Nos hacen falta, a nuestro alrededor, hombres que piensen y que hablen. Cuando permanecemos solos durante mucho tiempo, poblamos el vacío de fantasmas.\n\nRegresé al hotel muy alegre, por los bulevares. Al rozarme con la multitud, pensaba no sin ironía en mis terrores, en mis suposiciones de la semana anterior, pues había creído, sí, había creído que un ser invisible habitaba bajo mi techo. ¡Qué débil es nuestra cabeza, cómo se asusta y cómo se extravía rápidamente en cuanto nos golpea un pequeño hecho incomprensible!",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Poblamos el vacío de fantasmas.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Certes, la solitude est dangereuse pour les intelligences qui travaillent. Il nous faut, autour de nous, des hommes qui pensent et qui parlent. Quand nous sommes seuls longtemps, nous peuplons le vide de fantômes.\n\nJe suis rentré à l’hôtel très gai, par les boulevards. Au coudoiement de la foule, je songeais, non sans ironie, à mes terreurs, à mes suppositions de l’autre semaine, car j’ai cru, oui, j’ai cru qu’un être invisible habitait sous mon toit. Comme notre tête est faible et s’effare, et s’égare vite, dès qu’un petit fait incompréhensible nous frappe !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-334",
       "legacy_index": 334,
-      "t": "Muchas personas a quienes he contado esta aventura se han burlado de mí. Ya no sé qué pensar.\n\nEl sabio dice: ¿quizá?",
+      "t": "Muchas personas a quienes he contado esta aventura se han burlado de mí. Ya no sé qué pensar.\n\nEl sabio dice: «¿Quizá?»",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
-      "highlight": "El sabio dice: ¿quizá?",
+      "highlight": "El sabio dice: «¿Quizá?»",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Beaucoup de personnes à qui j’ai raconté cette aventure se sont moquées de moi. Je ne sais plus que penser.\n\nLe sage dit : Peut-être ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-335",
       "legacy_index": 335,
-      "t": "Esta vez no estoy loco. He visto… he visto… ¡he visto!… Ya no puedo dudar… ¡he visto!… Todavía tengo frío hasta en las uñas… todavía tengo miedo hasta en la médula… ¡he visto!…",
+      "t": "Esta vez no estoy loco. He visto… he visto… ¡he visto!… Ya no puedo dudar… ¡he visto!… Todavía tengo frío hasta en las uñas… todavía tengo miedo hasta la médula… ¡he visto!…",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "He visto… he visto… ¡he visto!",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Cette fois, je ne suis pas fou. J’ai vu… j’ai vu… j’ai vu !… Je ne puis plus douter… j’ai vu !… J’ai encore froid jusque dans les ongles… j’ai encore peur jusque dans les moelles… j’ai vu !…",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-336",
       "legacy_index": 336,
-      "t": "Vi, vi claramente, muy cerca de mí, el tallo de una de aquellas rosas inclinarse, como si una mano invisible lo hubiera torcido; después quebrarse, como si aquella mano la hubiese cortado.\n\nLuego la flor se elevó, siguiendo la curva que habría descrito un brazo al llevarla hacia una boca, y permaneció suspendida en el aire transparente, sola, inmóvil, espantosa mancha roja a tres pasos de mis ojos.",
+      "t": "Mientras me detenía a contemplar un «Géant des Batailles» que lucía tres flores magníficas, vi, vi claramente, muy cerca de mí, el tallo de una de aquellas rosas doblarse como si una mano invisible lo hubiera torcido; luego quebrarse como si aquella mano la hubiese arrancado.\n\nDespués la flor se elevó, siguiendo la curva que habría descrito un brazo al llevarla hacia una boca, y quedó suspendida en el aire transparente, completamente sola, inmóvil, espantosa mancha roja a tres pasos de mis ojos.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Suspendida en el aire transparente, sola, inmóvil.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Comme je m’arrêtais à regarder un géant des batailles, qui portait trois fleurs magnifiques, je vis, je vis distinctement, tout près de moi, la tige d’une de ces roses se plier, comme si une main invisible l’eût tordue, puis se casser comme si cette main l’eût cueillie !\n\nPuis la fleur s’éleva, suivant la courbe qu’aurait décrite un bras en la portant vers une bouche, et elle resta suspendue dans l’air transparent, toute seule, immobile, effrayante tache rouge à trois pas de mes yeux.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-337",
       "legacy_index": 337,
-      "t": "Me creería loco, completamente loco, si no fuese consciente, si no conociera perfectamente mi estado, si no lo sondeara analizándolo con absoluta lucidez.\n\nNo sería, pues, en definitiva, más que un alucinado que razona. Un trastorno desconocido se habría producido en mi cerebro; y ese trastorno habría abierto en mi espíritu, en el orden y la lógica de mis ideas, una grieta profunda.",
+      "t": "Me creería loco, completamente loco, si no tuviera conciencia, si no conociera perfectamente mi estado, si no lo sondeara analizándolo con absoluta lucidez.\n\nNo sería, pues, en suma, más que un alucinado que razona. Se habría producido en mi cerebro un trastorno desconocido, uno de esos trastornos que hoy intentan observar y precisar los fisiólogos; y ese trastorno habría causado en mi espíritu, en el orden y la lógica de mis ideas, una grieta profunda.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Un alucinado que razona.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Certes, je me croirais fou, absolument fou, si je n’étais conscient, si je ne connaissais parfaitement mon état, si je ne le sondais en l’analysant avec une complète lucidité.\n\nJe ne serais donc, en somme, qu’un halluciné raisonnant. Un trouble inconnu se serait produit dans mon cerveau, un de ces troubles qu’essayent de noter et de préciser aujourd’hui les physiologistes ; et ce trouble aurait déterminé dans mon esprit, dans l’ordre et la logique de mes idées, une crevasse profonde.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-338",
       "legacy_index": 338,
-      "t": "He visto locos; he conocido algunos que permanecían inteligentes, lúcidos, clarividentes incluso en todas las cosas de la vida, salvo en un punto.\n\nHablaban de todo con claridad, con flexibilidad, con profundidad, y de pronto su pensamiento, al tocar el escollo de su locura, se desgarraba en pedazos, se dispersaba y se hundía en ese océano espantoso y furioso, lleno de olas saltarinas, de nieblas y de borrascas, al que llaman «la demencia».",
+      "t": "He visto locos; he conocido a algunos que permanecían inteligentes, lúcidos, incluso clarividentes en todas las cosas de la vida, salvo en un punto.\n\nHablaban de todo con claridad, con flexibilidad, con profundidad, y de pronto su pensamiento, al tocar el escollo de su locura, se hacía pedazos contra él, se dispersaba y se hundía en ese océano espantoso y furioso, lleno de olas saltarinas, de nieblas y de borrascas, al que llaman «la demencia».",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "El océano espantoso y furioso de la demencia.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "J’ai vu des fous ; j’en ai connu qui restaient intelligents, lucides, clairvoyants même sur toutes les choses de la vie, sauf sur un point.\n\nIls parlaient de tout avec clarté, avec souplesse, avec profondeur, et soudain leur pensée touchant l’écueil de leur folie, s’y déchirait en pièces, s’éparpillait et sombrait dans cet océan effrayant et furieux, plein de vagues bondissantes, de brouillards, de bourrasques, qu’on nomme « la démence ».",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-339",
       "legacy_index": 339,
-      "t": "Ya no tengo fuerza alguna, ningún valor, ningún dominio sobre mí, ni siquiera poder para poner en movimiento mi voluntad.\n\nYa no puedo querer; pero alguien quiere por mí; y yo obedezco.",
+      "t": "Ya no tengo fuerza alguna, ningún valor, ningún dominio sobre mí, ningún poder siquiera para poner en movimiento mi voluntad.\n\nYa no puedo querer; pero alguien quiere por mí; y yo obedezco.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Alguien quiere por mí; y yo obedezco.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Je n’ai plus aucune force, aucun courage, aucune domination sur moi, aucun pouvoir même de mettre en mouvement ma volonté.\n\nJe ne peux plus vouloir ; mais quelqu’un veut pour moi ; et j’obéis.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-340",
       "legacy_index": 340,
-      "t": "¡Estoy perdido! ¡Alguien posee mi alma y la gobierna! Alguien ordena todos mis actos, todos mis movimientos, todos mis pensamientos.\n\nYa no soy nada dentro de mí, nada más que un espectador esclavo y aterrorizado de todas las cosas que realizo. Deseo salir. No puedo. Él no quiere; y permanezco, enloquecido, temblando, en el sillón donde me mantiene sentado.",
+      "t": "¡Estoy perdido! ¡Alguien posee mi alma y la gobierna! Alguien ordena todos mis actos, todos mis movimientos, todos mis pensamientos.\n\nYa no soy nada dentro de mí, no soy sino un espectador esclavo y aterrorizado de todas las cosas que realizo. Deseo salir. No puedo. Él no quiere; y permanezco, enloquecido, temblando, en el sillón donde me mantiene sentado.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Ya no soy nada dentro de mí.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Je suis perdu ! Quelqu’un possède mon âme et la gouverne ! quelqu’un ordonne tous mes actes, tous mes mouvements, toutes mes pensées.\n\nJe ne suis plus rien en moi, rien qu’un spectateur esclave et terrifié de toutes les choses que j’accomplis. Je désire sortir. Je ne peux pas. Il ne veut pas ; et je reste, éperdu, tremblant, dans le fauteuil où il me tient assis.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-341",
       "legacy_index": 341,
-      "t": "Después, de pronto, es preciso, es preciso, es preciso que vaya al fondo de mi jardín a recoger fresas y a comerlas. Y voy. Recojo fresas y me las como.\n\n¡Oh, Dios mío! ¡Dios mío! ¡Dios mío! ¿Existe Dios? Si existe, libéreme, sálveme, socórrame. ¡Perdón! ¡Piedad! ¡Gracia! ¡Sálveme! ¡Oh, qué sufrimiento! ¡Qué tortura! ¡Qué horror!",
+      "t": "Después, de pronto, es preciso, es preciso, es preciso que vaya al fondo de mi jardín a recoger fresas y a comerlas. Y voy. Recojo fresas y me las como.\n\n¡Oh, Dios mío! ¡Dios mío! ¡Dios mío! ¿Hay un Dios? Si lo hay, ¡líbrame, sálvame, socórreme! ¡Perdón! ¡Piedad! ¡Clemencia! ¡Sálvame! ¡Oh, qué sufrimiento! ¡Qué tortura! ¡Qué horror!",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Es preciso, es preciso, es preciso.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Puis, tout d’un coup, il faut, il faut, il faut que j’aille au fond de mon jardin cueillir des fraises et les manger. Et j’y vais. Je cueille des fraises et je les mange !\n\nOh ! mon Dieu ! Mon Dieu ! Mon Dieu ! Est-il un Dieu ? S’il en est un, délivrez-moi, sauvez-moi ! secourez-moi ! Pardon ! Pitié ! Grâce ! Sauvez-moi ! Oh ! quelle souffrance ! quelle torture ! quelle horreur !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-342",
       "legacy_index": 342,
-      "t": "Sufría una voluntad extraña introducida en ella, como otra alma, como otra alma parásita y dominadora. ¿Va a acabarse el mundo?\n\nPero quien me gobierna, ¿quién es, ese invisible? ¿Ese incognoscible, ese merodeador de una raza sobrenatural?",
+      "t": "Sin duda, así era como mi pobre prima estaba poseída y dominada cuando vino a pedirme prestados cinco mil francos. Sufría una voluntad extraña que había entrado en ella, como otra alma, como otra alma parásita y dominadora. ¿Va a acabarse el mundo?\n\nPero ese que me gobierna, ¿quién es, ese invisible? ¿Ese incognoscible, ese merodeador de una raza sobrenatural?",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Como otra alma parásita y dominadora.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Certes, voilà comment était possédée et dominée ma pauvre cousine, quand elle est venue m’emprunter cinq mille francs. Elle subissait un vouloir étranger entré en elle, comme une autre âme, comme une autre âme parasite et dominatrice. Est-ce que le monde va finir ?\n\nMais celui qui me gouverne, quel est-il, cet invisible ? cet inconnaissable, ce rôdeur d’une race surnaturelle ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-343",
       "legacy_index": 343,
-      "t": "Pude escapar hoy durante dos horas, como un prisionero que encuentra abierta, por casualidad, la puerta de su calabozo. Sentí de pronto que era libre y que él estaba lejos.\n\nPero, al volver a subir al coche, quise decir: «¡A la estación!», y grité —no dije, grité— con una voz tan fuerte que los transeúntes se volvieron: «¡A casa!», y caí, enloquecido de angustia, sobre el asiento de mi carruaje.\n\nMe había encontrado y recuperado.",
+      "t": "Hoy he podido escapar durante dos horas, como un prisionero que encuentra abierta por azar la puerta de su calabozo. He sentido de pronto que era libre y que él estaba lejos. He ordenado que engancharan el coche enseguida y he llegado a Ruan. ¡Oh, qué alegría poder decirle a un hombre que obedece: «¡A Ruan!»!\n\nHe hecho detener el coche ante la biblioteca y he pedido que me prestaran el gran tratado del doctor Hermann Herestauss sobre los habitantes desconocidos del mundo antiguo y moderno.\n\nDespués, cuando iba a subir de nuevo a mi coche, he querido decir: «¡A la estación!», y he gritado —no lo he dicho, he gritado— con una voz tan fuerte que los transeúntes se han vuelto: «¡A casa!», y he caído, enloquecido de angustia, sobre el asiento. Él me había encontrado de nuevo y vuelto a apresar.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
-      "highlight": "Me había encontrado y recuperado.",
+      "highlight": "Él me había encontrado y vuelto a apresar.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "J’ai pu m’échapper aujourd’hui pendant deux heures, comme un prisonnier qui trouve ouverte, par hasard, la porte de son cachot. J’ai senti que j’étais libre tout à coup et qu’il était loin. J’ai ordonné d’atteler bien vite et j’ai gagné Rouen. Oh ! quelle joie de pouvoir dire à un homme qui obéit : « Allez à Rouen ! »\n\nJe me suis fait arrêter devant la bibliothèque et j’ai prié qu’on me prêtât le grand traité du docteur Hermann Herestauss sur les habitants inconnus du monde antique et moderne.\n\nPuis, au moment de remonter dans mon coupé, j’ai voulu dire : « À la gare ! » et j’ai crié, — je n’ai pas dit, j’ai crié — d’une voix si forte que les passants se sont retournés : « À la maison », et je suis tombé, affolé d’angoisse, sur le coussin de ma voiture. Il m’avait retrouvé et repris.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-344",
       "legacy_index": 344,
-      "t": "Se diría que el hombre, desde que piensa, ha presentido y temido a un ser nuevo, más fuerte que él, su sucesor en este mundo; y que, sintiéndolo cercano y no pudiendo prever la naturaleza de ese amo, ha creado, dentro de su terror, todo el pueblo fantástico de los seres ocultos, vagos fantasmas nacidos del miedo.\n\nSomos tan débiles, tan desarmados, tan ignorantes, tan pequeños, nosotros, sobre este grano de barro que gira diluido en una gota de agua.",
+      "t": "Se diría que el hombre, desde que piensa, ha presentido y temido a un ser nuevo, más fuerte que él, su sucesor en este mundo; y que, al sentirlo cerca y no poder prever la naturaleza de ese amo, ha creado, en medio de su terror, todo el pueblo fantástico de los seres ocultos, vagos fantasmas nacidos del miedo.\n\nDespués de leer hasta la una de la madrugada, fui a sentarme junto a la ventana abierta para refrescar mi frente y mi pensamiento en el viento sereno de la oscuridad.\n\n¡Qué agradable, qué templada estaba la noche! ¡Cómo habría amado antaño una noche así!\n\nNo había luna. Las estrellas tenían, en el fondo del cielo negro, centelleos temblorosos. ¿Quién habita esos mundos? ¿Qué formas, qué seres vivos, qué animales, qué plantas hay allá? Quienes piensan en esos universos lejanos, ¿qué saben más que nosotros? ¿Qué pueden hacer más que nosotros? ¿Qué ven que nosotros no conocemos? Uno de ellos, un día u otro, atravesando el espacio, ¿no aparecerá en nuestra tierra para conquistarla, como antaño los normandos atravesaban el mar para someter a pueblos más débiles?\n\nSomos tan débiles, tan indefensos, tan ignorantes, tan pequeños, nosotros, sobre este grano de barro que gira diluido en una gota de agua.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Vagos fantasmas nacidos del miedo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "On dirait que l’homme, depuis qu’il pense, a pressenti et redouté un être nouveau, plus fort que lui, son successeur en ce monde, et que, le sentant proche et ne pouvant prévoir la nature de ce maître, il a créé, dans sa terreur, tout le peuple fantastique des êtres occultes, fantômes vagues nés de la peur.\n\nDonc, ayant lu jusqu’à une heure du matin, j’ai été m’asseoir ensuite auprès de ma fenêtre ouverte pour rafraîchir mon front et ma pensée au vent calme de l’obscurité.\n\nIl faisait bon, il faisait tiède ! Comme j’aurais aimé cette nuit-là autrefois !\n\nPas de lune. Les étoiles avaient au fond du ciel noir des scintillements frémissants. Qui habite ces mondes ? Quelles formes, quels vivants, quels animaux, quelles plantes sont là-bas ? Ceux qui pensent dans ces univers lointains, que savent-ils plus que nous ? Que peuvent-ils plus que nous ? Que voient-ils que nous ne connaissons point ? Un d’eux, un jour ou l’autre, traversant l’espace, n’apparaîtra-t-il pas sur notre terre pour la conquérir, comme les Normands jadis traversaient la mer pour asservir des peuples plus faibles ?\n\nNous sommes si infirmes, si désarmés, si ignorants, si petits, nous autres, sur ce grain de boue qui tourne délayé dans une goutte d’eau.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-345",
       "legacy_index": 345,
-      "t": "De pronto me pareció que una página del libro que había quedado abierto sobre mi mesa acababa de volverse sola. Ninguna ráfaga de aire había entrado por la ventana. Me sorprendí y esperé.\n\nAl cabo de unos cuatro minutos vi, vi, sí, vi con mis propios ojos otra página levantarse y caer sobre la anterior, como si un dedo la hojeara. Mi sillón estaba vacío, parecía vacío; pero comprendí que él estaba allí, él, sentado en mi lugar, y que leía.",
+      "t": "Ahora bien, después de dormir unos cuarenta minutos, abrí los ojos sin hacer un movimiento, despertado por no sé qué emoción confusa y extraña. Al principio no vi nada; luego, de pronto, me pareció que una página del libro que había quedado abierto sobre mi mesa acababa de volverse sola. Ningún soplo de aire había entrado por la ventana. Me sorprendí y esperé.\n\nAl cabo de unos cuatro minutos vi, vi, sí, vi con mis propios ojos otra página levantarse y caer sobre la anterior, como si un dedo la hojeara. Mi sillón estaba vacío, parecía vacío; pero comprendí que él estaba allí, él, sentado en mi lugar, y que leía.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Mi sillón estaba vacío, parecía vacío.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Or, ayant dormi environ quarante minutes, je rouvris les yeux sans faire un mouvement, réveillé par je ne sais quelle émotion confuse et bizarre. Je ne vis rien d’abord, puis, tout à coup, il me sembla qu’une page du livre resté ouvert sur ma table venait de tourner toute seule. Aucun souffle d’air n’était entré par ma fenêtre. Je fus surpris et j’attendis.\n\nAu bout de quatre minutes environ, je vis, je vis, oui, je vis de mes yeux une autre page se soulever et se rabattre sur la précédente, comme si un doigt l’eût feuilletée. Mon fauteuil était vide, semblait vide ; mais je compris qu’il était là, lui, assis à ma place, et qu’il lisait.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-346",
       "legacy_index": 346,
-      "t": "De un salto furioso, de un salto de bestia rebelada que va a destripar a su domador, atravesé la habitación para agarrarlo, para estrecharlo, para matarlo…\n\nPero mi asiento, antes de que pudiera alcanzarlo, se volcó como si alguien hubiese huido delante de mí; mi mesa osciló, mi lámpara cayó y se apagó, y mi ventana se cerró como si un malhechor sorprendido se hubiera lanzado a la noche.\n\nPor tanto, había huido; había tenido miedo, ¡miedo de mí, él!",
+      "t": "De un salto furioso, de un salto de bestia rebelada que va a destripar a su domador, crucé la habitación para atraparlo, para aferrarlo, para matarlo…\n\nPero mi sillón, antes de que pudiera alcanzarlo, volcó como si alguien hubiese huido delante de mí; mi mesa osciló, mi lámpara cayó y se apagó, y mi ventana se cerró como si un malhechor sorprendido se hubiera lanzado a la noche agarrando con ambas manos las hojas.\n\nAsí que había escapado; había tenido miedo, ¡miedo de mí, él!",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Había tenido miedo, ¡miedo de mí, él!",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "D’un bond furieux, d’un bond de bête révoltée, qui va éventrer son dompteur, je traversai ma chambre pour le saisir, pour l’étreindre, pour le tuer !…\n\nMais mon siège, avant que je l’eusse atteint, se renversa comme si on eût fui devant moi… ma table oscilla, ma lampe tomba et s’éteignit, et ma fenêtre se ferma comme si un malfaiteur surpris se fût élancé dans la nuit, en prenant à pleines mains les battants.\n\nDonc, il s’était sauvé ; il avait eu peur, peur de moi, lui !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-347",
       "legacy_index": 347,
-      "t": "Me incorporé con las manos extendidas, volviéndome tan deprisa que estuve a punto de caer. ¿Y bien?… Se veía como a plena luz, ¡y yo no me vi en el espejo!… Estaba vacío, claro, profundo, lleno de luz. Mi imagen no estaba dentro… ¡y yo estaba delante!\n\nNo me atrevía a avanzar, no me atrevía a hacer un movimiento, aunque sentía perfectamente que él estaba allí, él, cuyo cuerpo imperceptible había devorado mi reflejo.",
+      "t": "Me puse en pie con las manos tendidas, volviéndome tan deprisa que estuve a punto de caer. ¿Y bien?… Había tanta claridad como en pleno día, ¡y yo no me vi en el espejo!… Estaba vacío, claro, profundo, lleno de luz. Mi imagen no estaba dentro… ¡y yo estaba delante!\n\nVeía el gran cristal límpido de arriba abajo. Y lo miraba con los ojos enloquecidos; y ya no me atrevía a avanzar, ya no me atrevía a hacer un movimiento, aunque sentía perfectamente que él estaba allí y que volvería a escapárseme, él, cuyo cuerpo imperceptible había devorado mi reflejo.",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
       "highlight": "Su cuerpo imperceptible había devorado mi reflejo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Je me dressai, les mains tendues, en me tournant si vite que je faillis tomber. Eh ! bien ?… on y voyait comme en plein jour, et je ne me vis pas dans ma glace !… Elle était vide, claire, profonde, pleine de lumière ! Mon image n’était pas dedans… et j’étais en face, moi !\n\nJe voyais le grand verre limpide du haut en bas. Et je regardais cela avec des yeux affolés ; et je n’osais plus avancer, je n’osais plus faire un mouvement, sentant bien pourtant qu’il était là, mais qu’il m’échapperait encore, lui dont le corps imperceptible avait dévoré mon reflet.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-348",
       "legacy_index": 348,
-      "t": "La casa ya no era más que una hoguera horrible y magnífica, una hoguera monstruosa que iluminaba toda la tierra, una hoguera en la que ardían hombres y en la que también ardía Él, Él, mi prisionero, el Ser nuevo, el nuevo amo, ¡el Horla!\n\n¿Muerto? Quizá… ¿Su cuerpo? ¿Aquel cuerpo atravesado por la luz no sería indestructible por los medios que matan los nuestros?",
+      "t": "La casa ya no era más que una hoguera horrible y magnífica, una hoguera monstruosa que iluminaba toda la tierra, una hoguera en la que ardían hombres y en la que también ardía Él, Él, mi prisionero, el Ser nuevo, el nuevo amo, ¡el Horla!\n\nDe pronto, el tejado entero se hundió entre las paredes y un volcán de llamas brotó hasta el cielo. Por todas las ventanas abiertas sobre el horno veía la cuba de fuego, y pensaba que él estaba allí, en aquel horno, muerto…\n\n—¿Muerto? ¿Quizá?… ¿Su cuerpo? ¿Su cuerpo, que la luz atravesaba, no sería indestructible por los medios que matan los nuestros?",
       "a": "Guy de Maupassant",
       "obra": "El Horla, Guy de Maupassant",
-      "highlight": "El Ser nuevo, el nuevo amo, el Horla.",
+      "highlight": "El Ser nuevo, el nuevo amo, ¡el Horla!",
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "La maison, maintenant, n’était plus qu’un bûcher horrible et magnifique, un bûcher monstrueux, éclairant toute la terre, un bûcher où brûlaient des hommes, et où il brûlait aussi, Lui, Lui, mon prisonnier, l’Être nouveau, le nouveau maître, le Horla !\n\nSoudain le toit tout entier s’engloutit entre les murs, et un volcan de flammes jaillit jusqu’au ciel. Par toutes les fenêtres ouvertes sur la fournaise, je voyais la cuve de feu, et je pensais qu’il était là, dans ce four, mort…\n\n— Mort ? Peut-être ?… Son corps ? son corps que le jour traversait n’était-il pas indestructible par les moyens qui tuent les nôtres ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-349",
@@ -5352,7 +5482,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-guy-de-maupassant",
-      "workId": "work-el-horla"
+      "workId": "work-el-horla",
+      "original": {
+        "text": "Non… non… sans aucun doute, sans aucun doute… il n’est pas mort…\n\nAlors… alors… il va donc falloir que je me tue, moi !…",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-350",
@@ -9386,7 +9521,7 @@
       "authorId": "author-fiodor-dostoievski",
       "workId": "work-el-idiota",
       "original": {
-        "text": "Но странно, когда смотришь на этот труп измученного человека, то рождается один особенный и любопытный вопрос: если такой точно труп (а он непременно должен был быть точно такой) видели все ученики его, его главные будущие апостолы, видели женщины, ходившие за ним и стоявшие у креста, все веровавшие в него и обожавшие его, то каким образом могли они поверить, смотря на такой труп, что этот мученик воскреснет? Тут невольно приходит понятие, что если так ужасна смерть и так сильны законы природы, то как же одолеть их? Как одолеть их, когда не победил их теперь даже тот, который побеждал и природу при жизни своей, которому она подчинялась, которой воскликнул: „Талифа куми“, — и девица встала, „Лазарь, гряди вон“, — и вышел умерший? Природа мерещится при взгляде на эту картину в виде какого-то огромного, неумолимого и немого зверя или, вернее, гораздо вернее сказать, хоть и странно, — в виде какой-нибудь громадной машины новейшего устройства, которая бессмысленно захватила, раздробила и поглотила в себя, глухо и бесчувственно, великое и бесценное существо — такое существо, которое одно стоило всей природы и всех законов ее, всей земли, которая и создавалась-то, может быть, единственно для одного только появления этого существа!",
+        "text": "Но странно, когда смотришь на этот труп измученного человека, то рождается один особенный и любопытный вопрос: если такой точно труп (а он непременно должен был быть точно такой) видели все ученики его, его главные будущие апостолы, видели женщины, ходившие за ним и стоявшие у креста, все веровавшие в него и обожавшие его, то каким образом могли они поверить, смотря на такой труп, что этот мученик воскреснет? Тут невольно приходит понятие, что если так ужасна смерть и так сильны законы природы, то как же одолеть их? Как одолеть их, когда ��е победил их теперь даже тот, который побеждал и природу при жизни своей, которому она подчинялась, которой воскликнул: „Талифа куми“, — и девица встала, „Лазарь, гряди вон“, — и вышел умерший? Природа мерещится при взгляде на эту картину в виде какого-то огромного, неумолимого и немого зверя или, вернее, гораздо вернее сказать, хоть и странно, — в виде какой-нибудь громадной машины новейшего устройства, которая бессмысленно захватила, раздробила и поглотила в себя, глухо и бесчувственно, великое и бесценное существо — такое существо, которое одно стоило всей природы и всех законов ее, всей земли, которая и создавалась-то, может быть, единственно для одного только появления этого существа!",
         "lang": "ru",
         "label": "Original ruso"
       }
