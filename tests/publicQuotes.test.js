@@ -222,6 +222,25 @@ test('build-public-quotes cruza originales revisados sin publicar campos editori
   assert.doesNotMatch(JSON.stringify(generated), /original_text|original_lang|reviewed/);
 });
 
+test('El idiota conserva los límites y omisiones restaurados por la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+
+  assert.match(quotes.get('quote-621').t, /más querido aún, tanto que empecé a notarlo/);
+  assert.match(quotes.get('quote-621').original.text, /^потом /);
+  assert.match(quotes.get('quote-626').t, /la llevaron hasta ella, se la dieron y vinieron/);
+  assert.match(quotes.get('quote-627').t, /y que siempre lo harían\.$/);
+  assert.match(quotes.get('quote-627').original.text, /и всегда так будут\.$/);
+  assert.match(quotes.get('quote-630').t, /mueca maliciosa\)\. ¡Je, je!/);
+  assert.match(quotes.get('quote-631').t, /^Pensó, entre otras cosas, que/);
+  assert.match(quotes.get('quote-636').original.text, /^всё это было натурально/);
+  assert.match(quotes.get('quote-637').t, /—empecé yo—/);
+  assert.match(quotes.get('quote-640').t, /lo vieron todos sus discípulos.*lo vieron las mujeres/);
+  assert.match(quotes.get('quote-640').original.text, /когда не победил/);
+  assert.match(quotes.get('quote-640').original.text, /которой воскликнул/);
+  assert.doesNotMatch(quotes.get('quote-640').original.text, /�/);
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });

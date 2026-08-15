@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-15T11:37:30.605Z",
+  "generated_at": "2026-08-15T12:30:38.760Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -9189,7 +9189,7 @@
     {
       "id": "quote-621",
       "legacy_index": 621,
-      "t": "Luego cada día se me hacía más querido, y cuanto más pasaba el tiempo, más querido aún, hasta que empecé a notarlo. Me acostaba muy satisfecho y me levantaba todavía más feliz.",
+      "t": "Luego cada día se me hacía más querido, y cuanto más pasaba el tiempo, más querido aún, tanto que empecé a notarlo. Me acostaba muy satisfecho y me levantaba todavía más feliz.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "cada día se me hacía más querido",
@@ -9198,7 +9198,7 @@
       "authorId": "author-fiodor-dostoievski",
       "workId": "work-el-idiota",
       "original": {
-        "text": "Потом мне каждый день становился дорог, и чем дальше, тем дороже, так что я стал это замечать. Ложился спать я очень довольный, а вставал еще счастливее.",
+        "text": "потом мне каждый день становился дорог, и чем дальше, тем дороже, так что я стал это замечать. Ложился спать я очень довольный, а вставал еще счастливее.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -9274,7 +9274,7 @@
     {
       "id": "quote-626",
       "legacy_index": 626,
-      "t": "Una vez dos niñas consiguieron comida y se la llevaron; después vinieron a contármelo. Decían que Marie se había echado a llorar y que ahora la querían mucho.\n\nPronto todos empezaron a quererla, y al mismo tiempo, de pronto, empezaron a quererme también a mí.",
+      "t": "Una vez dos niñas consiguieron comida, la llevaron hasta ella, se la dieron y vinieron a contármelo. Decían que Marie se había echado a llorar y que ahora la querían mucho.\n\nPronto todos empezaron a quererla, y al mismo tiempo, de pronto, empezaron a quererme también a mí.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "Pronto todos empezaron a quererla",
@@ -9291,7 +9291,7 @@
     {
       "id": "quote-627",
       "legacy_index": 627,
-      "t": "A los niños les prohibieron incluso encontrarse con ella, pero ellos corrían a escondidas hasta donde estaba con el rebaño, bastante lejos, casi a media versta del pueblo; le llevaban regalos, y algunos simplemente corrían hasta ella para abrazarla, besarla, decirle: «Je vous aime, Marie!», y después volver corriendo a toda velocidad.\n\nMarie estuvo a punto de volverse loca de una felicidad tan repentina; ni siquiera había soñado con algo así; se avergonzaba y se alegraba.",
+      "t": "A los niños les prohibieron incluso encontrarse con ella, pero ellos corrían a escondidas hasta donde estaba con el rebaño, bastante lejos, casi a media versta del pueblo; le llevaban regalos, y algunos simplemente corrían hasta ella para abrazarla, besarla, decirle: «Je vous aime, Marie!», y después volver corriendo a toda velocidad.\n\nMarie estuvo a punto de volverse loca de una felicidad tan repentina; ni siquiera había soñado con algo así; se avergonzaba y se alegraba, pero, sobre todo, los niños —especialmente las niñas— querían correr hasta ella para decirle que yo la quería y que les hablaba mucho de ella. Le contaron que había sido yo quien se lo había contado todo y que ahora la querían y se compadecían de ella, y que siempre lo harían.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "una felicidad tan repentina",
@@ -9300,7 +9300,7 @@
       "authorId": "author-fiodor-dostoievski",
       "workId": "work-el-idiota",
       "original": {
-        "text": "Детям запретили даже и встречаться с нею, но они бегали потихоньку к ней в стадо, довольно далеко, почти в полверсте от деревни; они носили ей гостинцев, а иные просто прибегали для того, чтоб обнять ее, поцеловать, сказать: «Je vous aime, Marie!» — и потом стремглав бежать назад. Мари чуть с ума не сошла от такого внезапного счастия; ей это даже и не грезилось; она стыдилась и радовалась…",
+        "text": "Детям запретили даже и встречаться с нею, но они бегали потихоньку к ней в стадо, довольно далеко, почти в полверсте от деревни; они носили ей гостинцев, а иные просто прибегали для того, чтоб обнять ее, поцеловать, сказать: «Je vous aime, Marie!» — и потом стремглав бежать назад. Мари чуть с ума не сошла от такого внезапного счастия; ей это даже и не грезилось; она стыдилась и радовалась, а главное, детям хотелось, особенно девочкам, бегать к ней, чтобы передавать ей, что я ее люблю и очень много о ней им говорю. Они ей рассказали, что это я им всё пересказал и что они теперь ее любят и жалеют, и всегда так будут.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -9342,7 +9342,7 @@
     {
       "id": "quote-630",
       "legacy_index": 630,
-      "t": "—¿Cómo es que me la cedes así? No lo entiendo. ¿Es que ya has dejado de quererla por completo? Antes, al menos, estabas angustiado; yo lo veía. Entonces ¿para qué has venido ahora aquí a toda prisa? ¿Por compasión?\n\n—¿Crees que te engaño? —preguntó el príncipe.\n\n—No, te creo, solo que aquí no entiendo nada. Lo más probable es que tu compasión sea todavía más fuerte que mi amor.",
+      "t": "—¿Cómo es que me la cedes así? No lo entiendo. ¿Es que ya has dejado de quererla por completo? Antes, al menos, estabas angustiado; yo lo veía. Entonces ¿para qué has venido ahora aquí a toda prisa? ¿Por compasión? (Y el rostro se le torció en una mueca maliciosa). ¡Je, je!\n\n—¿Crees que te engaño? —preguntó el príncipe.\n\n—No, te creo, solo que aquí no entiendo nada. ¡Lo más probable es que tu compasión sea todavía más fuerte que mi amor!",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "tu compasión sea todavía más fuerte que mi amor",
@@ -9359,7 +9359,7 @@
     {
       "id": "quote-631",
       "legacy_index": 631,
-      "t": "En su estado epiléptico había un grado, casi inmediatamente anterior al ataque —siempre que el ataque lo sorprendiera despierto—, en que de pronto, en medio de la tristeza, de la oscuridad espiritual, de la opresión, por momentos parecía inflamarse su cerebro y, con un impulso extraordinario, se tensaban de golpe todas sus fuerzas vitales.\n\nLa sensación de vida, la conciencia de sí mismo, casi se multiplicaban por diez en aquellos instantes, que duraban como un relámpago.\n\nLa mente y el corazón se iluminaban con una luz extraordinaria; todas sus inquietudes, todas sus dudas, todas sus angustias parecían apaciguarse de golpe y resolverse en una especie de serenidad suprema, llena de una alegría clara, armoniosa y de esperanza, llena de razón y de causa última.",
+      "t": "Pensó, entre otras cosas, que en su estado epiléptico había un grado, casi inmediatamente anterior al ataque —siempre que el ataque lo sorprendiera despierto—, en que de pronto, en medio de la tristeza, de la oscuridad espiritual, de la opresión, por momentos parecía inflamarse su cerebro y, con un impulso extraordinario, se tensaban de golpe todas sus fuerzas vitales.\n\nLa sensación de vida, la conciencia de sí mismo, casi se multiplicaban por diez en aquellos instantes, que duraban como un relámpago.\n\nLa mente y el corazón se iluminaban con una luz extraordinaria; todas sus inquietudes, todas sus dudas, todas sus angustias parecían apaciguarse de golpe y resolverse en una especie de serenidad suprema, llena de una alegría clara, armoniosa y de esperanza, llena de razón y de causa última.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "una especie de serenidad suprema",
@@ -9453,7 +9453,7 @@
       "authorId": "author-fiodor-dostoievski",
       "workId": "work-el-idiota",
       "original": {
-        "text": "Всё это было натурально, люди и созданы, чтобы друг друга мучить.",
+        "text": "всё это было натурально, люди и созданы, чтобы друг друга мучить.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -9461,7 +9461,7 @@
     {
       "id": "quote-637",
       "legacy_index": 637,
-      "t": "—Quien atenta contra la «limosna» individual atenta contra la naturaleza humana y desprecia su dignidad personal. Pero la organización de la «limosna pública» y la cuestión de la libertad personal son dos cuestiones distintas que no se excluyen mutuamente.\n\nEl bien individual permanecerá siempre, porque es una necesidad de la persona, una necesidad viva de la influencia directa de una persona sobre otra.",
+      "t": "—Quien atenta contra la «limosna» individual —empecé yo— atenta contra la naturaleza humana y desprecia su dignidad personal. Pero la organización de la «limosna pública» y la cuestión de la libertad personal son dos cuestiones distintas que no se excluyen mutuamente.\n\nEl bien individual permanecerá siempre, porque es una necesidad de la persona, una necesidad viva de la influencia directa de una persona sobre otra.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "una necesidad viva de la influencia directa de una persona sobre otra",
@@ -9512,7 +9512,7 @@
     {
       "id": "quote-640",
       "legacy_index": 640,
-      "t": "Pero es extraño: cuando se mira ese cadáver de un hombre atormentado, nace una pregunta particular y curiosa: si exactamente un cadáver así —y necesariamente tuvo que ser exactamente así— vieron todos sus discípulos, sus principales futuros apóstoles, las mujeres que lo habían seguido y permanecían junto a la cruz, todos los que creían en él y lo adoraban, ¿cómo pudieron creer, mirando semejante cadáver, que aquel mártir resucitaría?\n\nSurge involuntariamente la idea de que, si la muerte es tan terrible y las leyes de la naturaleza son tan poderosas, ¿cómo vencerlas? ¿Cómo vencerlas cuando ni siquiera las venció ahora aquel que durante su vida vencía incluso a la naturaleza, a quien ella obedecía, aquel que exclamó: «Talitha cumi», y la muchacha se levantó; «Lázaro, sal fuera», y salió el muerto?\n\nAl mirar ese cuadro, la naturaleza se aparece bajo la forma de una enorme bestia, implacable y muda o —más exactamente, mucho más exactamente, por extraño que sea decirlo— bajo la forma de una gigantesca máquina de la más moderna construcción que, sin sentido, apresó, trituró y devoró en sí, sorda e insensible, a un ser grande e inestimable: un ser que por sí solo valía toda la naturaleza y todas sus leyes, toda la tierra, que quizá fue creada únicamente para la aparición de ese ser.",
+      "t": "Pero es extraño: cuando se mira ese cadáver de un hombre atormentado, nace una pregunta particular y curiosa: si un cadáver exactamente así —y necesariamente tuvo que ser exactamente así— lo vieron todos sus discípulos, sus principales futuros apóstoles, lo vieron las mujeres que lo habían seguido y permanecían junto a la cruz, todos los que creían en él y lo adoraban, ¿cómo pudieron creer, mirando semejante cadáver, que aquel mártir resucitaría?\n\nSurge involuntariamente la idea de que, si la muerte es tan terrible y las leyes de la naturaleza son tan poderosas, ¿cómo vencerlas? ¿Cómo vencerlas cuando ni siquiera las venció ahora aquel que durante su vida vencía incluso a la naturaleza, a quien ella obedecía, aquel que exclamó: «Talitha cumi», y la muchacha se levantó; «Lázaro, sal fuera», y salió el muerto?\n\nAl mirar ese cuadro, la naturaleza se aparece bajo la forma de una enorme bestia, implacable y muda o —más exactamente, mucho más exactamente, por extraño que sea decirlo— bajo la forma de una gigantesca máquina de la más moderna construcción que, sin sentido, apresó, trituró y devoró en sí, sorda e insensible, a un ser grande e inestimable: un ser que por sí solo valía toda la naturaleza y todas sus leyes, toda la tierra, que quizá fue creada únicamente para la aparición de ese ser.",
       "a": "Fiódor Dostoievski",
       "obra": "El idiota, Fiódor Dostoievski",
       "highlight": "una gigantesca máquina",
@@ -9521,7 +9521,7 @@
       "authorId": "author-fiodor-dostoievski",
       "workId": "work-el-idiota",
       "original": {
-        "text": "Но странно, когда смотришь на этот труп измученного человека, то рождается один особенный и любопытный вопрос: если такой точно труп (а он непременно должен был быть точно такой) видели все ученики его, его главные будущие апостолы, видели женщины, ходившие за ним и стоявшие у креста, все веровавшие в него и обожавшие его, то каким образом могли они поверить, смотря на такой труп, что этот мученик воскреснет? Тут невольно приходит понятие, что если так ужасна смерть и так сильны законы природы, то как же одолеть их? Как одолеть их, когда ��е победил их теперь даже тот, который побеждал и природу при жизни своей, которому она подчинялась, которой воскликнул: „Талифа куми“, — и девица встала, „Лазарь, гряди вон“, — и вышел умерший? Природа мерещится при взгляде на эту картину в виде какого-то огромного, неумолимого и немого зверя или, вернее, гораздо вернее сказать, хоть и странно, — в виде какой-нибудь громадной машины новейшего устройства, которая бессмысленно захватила, раздробила и поглотила в себя, глухо и бесчувственно, великое и бесценное существо — такое существо, которое одно стоило всей природы и всех законов ее, всей земли, которая и создавалась-то, может быть, единственно для одного только появления этого существа!",
+        "text": "Но странно, когда смотришь на этот труп измученного человека, то рождается один особенный и любопытный вопрос: если такой точно труп (а он непременно должен был быть точно такой) видели все ученики его, его главные будущие апостолы, видели женщины, ходившие за ним и стоявшие у креста, все веровавшие в него и обожавшие его, то каким образом могли они поверить, смотря на такой труп, что этот мученик воскреснет? Тут невольно приходит понятие, что если так ужасна смерть и так сильны законы природы, то как же одолеть их? Как одолеть их, когда не победил их теперь даже тот, который побеждал и природу при жизни своей, которому она подчинялась, которой воскликнул: „Талифа куми“, — и девица встала, „Лазарь, гряди вон“, — и вышел умерший? Природа мерещится при взгляде на эту картину в виде какого-то огромного, неумолимого и немого зверя или, вернее, гораздо вернее сказать, хоть и странно, — в виде какой-нибудь громадной машины новейшего устройства, которая бессмысленно захватила, раздробила и поглотила в себя, глухо и бесчувственно, великое и бесценное существо — такое существо, которое одно стоило всей природы и всех законов ее, всей земли, которая и создавалась-то, может быть, единственно для одного только появления этого существа!",
         "lang": "ru",
         "label": "Original ruso"
       }
