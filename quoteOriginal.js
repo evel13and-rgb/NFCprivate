@@ -1,8 +1,12 @@
 const OPENING_QUOTE_CHARACTERS = new Set(['"', '“', '«', '„', '‟', '‹', '‘']);
 const CLOSING_QUOTE_CHARACTERS = new Set(['"', '”', '»', '‟', '›', '’']);
+const CONTINUATION_QUOTE_CHARACTERS = new Set(['»', '›']);
 
 export function getQuoteBoundaryDecoration(text) {
   const content = typeof text === 'string' ? text.trim() : '';
+  if (CONTINUATION_QUOTE_CHARACTERS.has(content.at(0))) {
+    return { addOpening: false, addClosing: false };
+  }
   return {
     addOpening: !OPENING_QUOTE_CHARACTERS.has(content.at(0)),
     addClosing: !CLOSING_QUOTE_CHARACTERS.has(content.at(-1)),
@@ -31,13 +35,19 @@ export function createQuoteOriginalController({ button, label, onViewChange }) {
   function setView(view) {
     activeView = view === 'original' && activeOriginal ? 'original' : 'translation';
     const showingOriginal = activeView === 'original';
+    const sameLanguage = activeOriginal
+      && typeof activeQuote?.lang === 'string'
+      && activeQuote.lang.trim().toLowerCase() === activeOriginal.lang.trim().toLowerCase();
+    const returnViewName = sameLanguage ? 'actualización' : 'traducción';
     if (button) {
       button.hidden = !activeOriginal;
       if (!button.querySelector?.('[data-quote-view]')) {
-        button.textContent = showingOriginal ? 'Traducción' : 'Original';
+        button.textContent = showingOriginal
+          ? returnViewName[0].toUpperCase() + returnViewName.slice(1)
+          : 'Original';
       }
       button.setAttribute('aria-pressed', String(showingOriginal));
-      button.setAttribute('aria-label', showingOriginal ? 'Ver traducción' : 'Ver texto original');
+      button.setAttribute('aria-label', showingOriginal ? `Ver ${returnViewName}` : 'Ver texto original');
     }
     if (label) {
       label.hidden = !showingOriginal;

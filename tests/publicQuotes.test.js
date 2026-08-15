@@ -120,6 +120,16 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-105', 'quote-106', 'quote-107', 'quote-108', 'quote-109',
     'quote-110', 'quote-111', 'quote-112', 'quote-113', 'quote-114',
     'quote-115', 'quote-116', 'quote-117',
+    'quote-118', 'quote-119', 'quote-120', 'quote-121', 'quote-122',
+    'quote-123', 'quote-124', 'quote-125', 'quote-126', 'quote-127',
+    'quote-128', 'quote-129', 'quote-130', 'quote-131', 'quote-132',
+    'quote-133', 'quote-134', 'quote-135', 'quote-136', 'quote-137',
+    'quote-138', 'quote-139', 'quote-140', 'quote-141', 'quote-142',
+    'quote-143', 'quote-144', 'quote-145',
+    'quote-146', 'quote-147', 'quote-148', 'quote-149', 'quote-150',
+    'quote-151', 'quote-152', 'quote-153', 'quote-154', 'quote-155',
+    'quote-156', 'quote-157', 'quote-158', 'quote-159', 'quote-160',
+    'quote-161', 'quote-162', 'quote-163', 'quote-164', 'quote-165',
     'quote-176', 'quote-177', 'quote-178', 'quote-179', 'quote-180',
     'quote-181', 'quote-182', 'quote-183', 'quote-184', 'quote-185',
     'quote-186', 'quote-187', 'quote-188', 'quote-189', 'quote-190',
@@ -327,6 +337,86 @@ test('El jardín secreto conserva lógica, voz y repeticiones tras la segunda au
   assert.match(quotes.get('quote-117').t, /como una riada/);
   assert.match(quotes.get('quote-109').original.text, /^Is there anything/);
   assert.doesNotMatch(quotes.get('quote-109').original.text, /^"/);
+});
+
+test('Las cerezas del cementerio publica el original cotejado y su actualización lingüística', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const cerezasQuotes = document.quotes.filter(quote => quote.workId === 'work-las-cerezas-del-cementerio');
+
+  assert.equal(cerezasQuotes.length, 28);
+  assert.ok(cerezasQuotes.every(quote => quote.original?.lang === 'es'));
+  assert.ok(cerezasQuotes.every(quote => quote.original?.label === 'Original español'));
+  assert.doesNotMatch(quotes.get('quote-118').t, /\n/);
+  assert.match(quotes.get('quote-119').t, /^\.\.\.Ya tarde/);
+  assert.match(quotes.get('quote-119').original.text, /hicieron los tres un apartado grupo/);
+  assert.match(quotes.get('quote-119').t, /los tres formaron un grupo aparte/);
+  assert.match(quotes.get('quote-119').t, /reciente\.\.\.$/);
+  assert.match(quotes.get('quote-123').original.text, /Me parecía nave sagrada/);
+  assert.match(quotes.get('quote-123').t, /Me parecía una nave sagrada/);
+  assert.match(quotes.get('quote-123').t, /nave sagrada \[…] Pues ahora/);
+  assert.match(quotes.get('quote-123').t, /de las aguas\.\.\.$/);
+  assert.match(quotes.get('quote-128').t, /fragante de primavera, \[…\]/);
+  assert.match(quotes.get('quote-128').original.text, /delantal de randas/);
+  assert.match(quotes.get('quote-128').t, /delantal de encajes/);
+  assert.match(quotes.get('quote-130').t, /su quimera\.\.\.$/);
+  assert.match(quotes.get('quote-131').t, /de los árboles\.\.\.$/);
+  assert.match(quotes.get('quote-132').original.text, /mujeres placenteras/);
+  assert.match(quotes.get('quote-132').t, /mujeres risueñas/);
+  assert.match(quotes.get('quote-132').t, /sobre el vientre!$/);
+  assert.match(quotes.get('quote-135').t, /espejo de agua de la cisterna\.$/);
+  assert.match(quotes.get('quote-136').t, /\n\n—¡Qué altos/);
+  assert.match(quotes.get('quote-137').t, /blancura nupcial\.\n\nEntonces/);
+  assert.match(quotes.get('quote-139').t, /^\.\.\.Después/);
+  assert.match(quotes.get('quote-139').t, /entre nieblas y luna\.\.\.$/);
+  assert.match(quotes.get('quote-141').t, /apetito satisfecho\. \[…] Pesadez/);
+  assert.match(quotes.get('quote-144').original.text, /Es mi compaña/);
+  assert.match(quotes.get('quote-144').t, /Es mi compañera/);
+  assert.match(quotes.get('quote-143').t, /pensaba y prometía curtirle a él!$/);
+  assert.equal(quotes.get('quote-145').t.match(/\n\n/g)?.length, 1);
+  assert.equal(cerezasQuotes.reduce((count, quote) => count + (quote.t.match(/\[…\]/g)?.length || 0), 0), 3);
+  assert.equal(cerezasQuotes.reduce((count, quote) => count + (quote.original.text.match(/\[…\]/g)?.length || 0), 0), 3);
+  for (const quote of cerezasQuotes) {
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('Niebla conserva la primera edición y publica una actualización lingüística mínima', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const nieblaQuotes = document.quotes.filter(quote => quote.workId === 'work-niebla');
+
+  assert.equal(nieblaQuotes.length, 20);
+  assert.ok(nieblaQuotes.every(quote => quote.original?.lang === 'es'));
+  assert.ok(nieblaQuotes.every(quote => quote.original?.label === 'Original español'));
+  assert.match(quotes.get('quote-146').original.text, /quedóse.*lento orvallo.*sobrecejo/);
+  assert.match(quotes.get('quote-146').t, /se quedó.*lenta lluvia menuda.*entrecejo/);
+  assert.doesNotMatch(quotes.get('quote-147').original.text, /»$/);
+  assert.match(quotes.get('quote-148').original.text, /Esperaré á/);
+  assert.match(quotes.get('quote-148').original.text, /se fué/);
+  assert.match(quotes.get('quote-148').t, /una joven gallarda/);
+  assert.match(quotes.get('quote-151').original.text, /^Se levantó de la mecedora, fué al gabinete/);
+  assert.match(quotes.get('quote-153').original.text, /éste mata a aquél/);
+  assert.match(quotes.get('quote-153').t, /este mata a aquel/);
+  assert.match(quotes.get('quote-157').original.text, /^»¿De dónde/);
+  assert.match(quotes.get('quote-158').original.text, /antojándoseme/);
+  assert.match(quotes.get('quote-158').t, /se me antojaba/);
+  assert.match(quotes.get('quote-160').t, /¡Amo, ergo sum!$/);
+  assert.match(quotes.get('quote-162').t, /se rozan y se frotan/);
+  assert.match(quotes.get('quote-165').t, /Solo se aprende.*de nuevo\.\.\.$/);
+  assert.equal(nieblaQuotes.reduce((count, quote) => count + (quote.t.match(/\[…\]/g)?.length || 0), 0), 4);
+  assert.equal(nieblaQuotes.reduce((count, quote) => count + (quote.original.text.match(/\[…\]/g)?.length || 0), 0), 4);
+  for (const quote of nieblaQuotes) {
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
 });
 
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {

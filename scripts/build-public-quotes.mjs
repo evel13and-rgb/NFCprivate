@@ -117,7 +117,7 @@ const quoteIds = new Set(intermediateQuotes.map(quote => `quote-${quote.legacy_i
 const originalsByQuoteId = new Map();
 const languageNames = new Map([
   ['en', 'inglés'], ['fr', 'francés'], ['de', 'alemán'], ['it', 'italiano'],
-  ['pl', 'polaco'], ['pt', 'portugués'], ['ru', 'ruso'],
+  ['pl', 'polaco'], ['pt', 'portugués'], ['ru', 'ruso'], ['es', 'español'],
 ]);
 
 for (const [position, item] of originalItems.entries()) {

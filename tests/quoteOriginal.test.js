@@ -65,6 +65,25 @@ test('una frase con original conmuta el único texto entre original y traducció
   assert.equal(views.every(view => typeof view.text === 'string'), true);
 });
 
+test('una obra española identifica la versión de regreso como actualización', () => {
+  const { elements, views, controller } = createController();
+  const historicalOriginal = {
+    text: 'Sentose Félix.',
+    lang: 'es',
+    label: 'Original español',
+  };
+  controller.render({
+    id: 'quote-spanish',
+    t: 'Félix se sentó.',
+    lang: 'es',
+    original: historicalOriginal,
+  });
+  elements.button.click();
+  assert.equal(elements.button.textContent, 'Actualización');
+  assert.equal(elements.button.getAttribute('aria-label'), 'Ver actualización');
+  assert.deepEqual(views.at(-1), { text: historicalOriginal.text, lang: 'es', view: 'original' });
+});
+
 test('cambiar de frase restablece siempre la traducción', () => {
   const { elements, views, controller } = createController();
   controller.render({ ...translation, id: 'quote-one' });
@@ -103,4 +122,13 @@ test('no duplica las comillas tipográficas que ya delimitan un original', () =>
 test('completa solo el extremo que no está delimitado', () => {
   assert.equal(formatQuotedText('“Un diálogo sin cierre'), '“Un diálogo sin cierre”');
   assert.equal(formatQuotedText('Un diálogo con cierre”'), '“Un diálogo con cierre”');
+});
+
+test('no duplica ni cierra artificialmente una marca de continuación de párrafo', () => {
+  const continuation = '»¿De dónde ha brotado Eugenia? ¿qué soy yo?';
+  assert.equal(formatQuotedText(continuation), continuation);
+  assert.deepEqual(getQuoteBoundaryDecoration(continuation), {
+    addOpening: false,
+    addClosing: false,
+  });
 });
