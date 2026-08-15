@@ -241,6 +241,33 @@ test('El idiota conserva los límites y omisiones restaurados por la segunda aud
   assert.doesNotMatch(quotes.get('quote-640').original.text, /�/);
 });
 
+test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const anneQuotes = document.quotes.filter(quote => quote.workId === 'work-ana-de-las-tejas-verdes');
+
+  assert.equal(anneQuotes.length, 29);
+  assert.match(quotes.get('quote-37').t, /respondió aquel diligente funcionario/);
+  assert.match(quotes.get('quote-37').original.text, /she said\.$/);
+  assert.match(quotes.get('quote-40').t, /un dolor raro y curioso, y sin embargo era un dolor agradable/);
+  assert.match(quotes.get('quote-42').t, /No-o-o, no es exactamente mi nombre/);
+  assert.match(quotes.get('quote-42').t, /balbuceó de mala gana la dueña de aquel nombre/);
+  assert.match(quotes.get('quote-47').t, /se encaminó hacia la ventana abierta\.$/);
+  assert.match(quotes.get('quote-49').t, /dijo Marilla con un suspiro/);
+  assert.match(quotes.get('quote-52').t, /sin arredrarse/);
+  assert.match(quotes.get('quote-57').t, /mi muchacha, mi muchacha, de quien estoy orgulloso/);
+  assert.match(quotes.get('quote-58').t, /^Porque pagamos un precio/);
+  assert.match(quotes.get('quote-60').t, /Quiero decírtelo ahora que puedo/);
+  assert.match(quotes.get('quote-61').t, /jardín de la rectoría/);
+  assert.match(quotes.get('quote-61').t, /cerrar nuestros corazones/);
+  assert.equal(quotes.get('quote-62').t.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-62').original.text.match(/\[…\]/g)?.length, 1);
+  assert.doesNotMatch(quotes.get('quote-62').t, /\n/);
+  assert.match(quotes.get('quote-63').t, /Marilla estaba fuera ordeñando/);
+  assert.match(quotes.get('quote-64').t, /^Él se alejó/);
+  assert.match(quotes.get('quote-64').t, /arrastrando los pies/);
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });

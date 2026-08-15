@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-15T12:30:38.760Z",
+  "generated_at": "2026-08-15T13:36:15.786Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -591,16 +591,16 @@
     {
       "id": "quote-37",
       "legacy_index": 37,
-      "t": "—El tren de las cinco y media llegó y se marchó hace media hora —respondió el jefe de estación—. Pero dejaron aquí a una pasajera para usted: una niña. Está sentada ahí fuera, sobre las tablas. Le pedí que entrara en la sala de espera de señoras, pero me informó muy seriamente de que prefería quedarse fuera. Dijo que había más espacio para la imaginación.",
+      "t": "—El tren de las cinco y media llegó y se marchó hace media hora —respondió aquel diligente funcionario—. Pero dejaron aquí a una pasajera para usted: una niña. Está sentada ahí fuera, sobre las tablas. Le pedí que entrara en la sala de espera de señoras, pero me informó con toda seriedad de que prefería quedarse fuera. «Había más espacio para la imaginación», dijo.",
       "a": "Jefe de estación",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "había más espacio para la imaginación",
+      "highlight": "Había más espacio para la imaginación",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“The five-thirty train has been in and gone half an hour ago,” answered that brisk official. “But there was a passenger dropped off for you--a little girl. She’s sitting out there on the shingles. I asked her to go into the ladies’ waiting room, but she informed me gravely that she preferred to stay outside. ‘There was more scope for imagination,’ she said.”",
+        "text": "“The five-thirty train has been in and gone half an hour ago,” answered that brisk official. “But there was a passenger dropped off for you--a little girl. She’s sitting out there on the shingles. I asked her to go into the ladies’ waiting room, but she informed me gravely that she preferred to stay outside. ‘There was more scope for imagination,’ she said.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -617,7 +617,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“I’ve always heard that Prince Edward Island was the prettiest place in the world, and I used to imagine I was living here, but I never really expected I would. It’s delightful when your imaginations come true, isn’t it?”",
+        "text": "I’ve always heard that Prince Edward Island was the prettiest place in the world, and I used to imagine I was living here, but I never really expected I would. It’s delightful when your imaginations come true, isn’t it?",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -625,16 +625,16 @@
     {
       "id": "quote-39",
       "legacy_index": 39,
-      "t": "—¿No es espléndido pensar en todas las cosas que quedan por descubrir? Me alegra estar viva: el mundo es muy interesante. No sería ni la mitad de interesante si lo supiéramos todo, ¿verdad? Entonces no habría espacio para la imaginación.",
+      "t": "—¿No es espléndido pensar en todas las cosas que quedan por descubrir? Solo de pensarlo me alegra estar viva: es un mundo tan interesante. No sería ni la mitad de interesante si lo supiéramos todo acerca de todo, ¿verdad? Entonces no habría espacio para la imaginación, ¿verdad?",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "Me alegra estar viva: el mundo es muy interesante",
+      "highlight": "me alegra estar viva: es un mundo tan interesante",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“Isn’t it splendid to think of all the things there are to find out about? It just makes me feel glad to be alive--it’s such an interesting world. It wouldn’t be half so interesting if we knew all about everything, would it? There’d be no scope for imagination then, would there?”",
+        "text": "Isn’t it splendid to think of all the things there are to find out about? It just makes me feel glad to be alive--it’s such an interesting world. It wouldn’t be half so interesting if we knew all about everything, would it? There’d be no scope for imagination then, would there?",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -642,16 +642,16 @@
     {
       "id": "quote-40",
       "legacy_index": 40,
-      "t": "—Es la primera cosa que he visto que la imaginación no podría mejorar. Me ha llenado aquí —se puso una mano sobre el pecho—; me ha producido un dolor extraño y agradable. ¿Ha sentido alguna vez un dolor así, señor Cuthbert?\n\n—Bueno, no recuerdo haberlo sentido.\n\n—Yo lo siento muchas veces, cuando veo algo de una belleza majestuosa. Pero no deberían llamar Avenida a ese lugar tan bello. Un nombre así no significa nada. Deberían llamarlo… déjeme pensar… el Camino Blanco del Deleite.",
+      "t": "—Es la primera cosa que he visto que la imaginación no podría mejorar. Me ha llenado aquí —se puso una mano sobre el pecho—; me ha producido un dolor raro y curioso, y sin embargo era un dolor agradable. ¿Ha sentido alguna vez un dolor así, señor Cuthbert?\n\n—Bueno, pues no recuerdo haberlo sentido.\n\n—Yo lo siento muchas veces: siempre que veo algo de una belleza majestuosa. Pero no deberían llamar Avenida a ese lugar tan bello. Un nombre así no significa nada. Deberían llamarlo… déjeme pensar… el Camino Blanco del Deleite.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "un dolor extraño y agradable",
+      "highlight": "un dolor raro y curioso",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“It’s the first thing I ever saw that couldn’t be improved upon by imagination. It just satisfied me here”--she put one hand on her breast--“it made a queer funny ache and yet it was a pleasant ache. Did you ever have an ache like that, Mr. Cuthbert?”\n\n“Well now, I just can’t recollect that I ever had.”\n\n“I have it lots of times--whenever I see anything royally beautiful. But they shouldn’t call that lovely place the Avenue. There is no meaning in a name like that. They should call it--let me see--the White Way of Delight.”",
+        "text": "It’s the first thing I ever saw that couldn’t be improved upon by imagination. It just satisfied me here”--she put one hand on her breast--“it made a queer funny ache and yet it was a pleasant ache. Did you ever have an ache like that, Mr. Cuthbert?”\n\n“Well now, I just can’t recollect that I ever had.”\n\n“I have it lots of times--whenever I see anything royally beautiful. But they shouldn’t call that lovely place the Avenue. There is no meaning in a name like that. They should call it--let me see--the White Way of Delight.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -659,7 +659,7 @@
     {
       "id": "quote-41",
       "legacy_index": 41,
-      "t": "—Nunca he tenido un hogar verdadero, desde que puedo recordar. Solo pensar que voy a llegar a un hogar de verdad vuelve a producirme ese dolor agradable.",
+      "t": "—Nunca he tenido un hogar verdadero desde que tengo memoria. Solo pensar que voy a llegar a un hogar de veras, de verdad, vuelve a producirme ese dolor agradable.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "Nunca he tenido un hogar verdadero",
@@ -668,7 +668,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“I’ve never had a real home since I can remember. It gives me that pleasant ache again just to think of coming to a really truly home.”",
+        "text": "I’ve never had a real home since I can remember. It gives me that pleasant ache again just to think of coming to a really truly home.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -676,7 +676,7 @@
     {
       "id": "quote-42",
       "legacy_index": 42,
-      "t": "—¿Quiere llamarme Cordelia, por favor? —dijo la niña con ansiedad.\n\n—¿Llamarte Cordelia? ¿Ese es tu nombre?\n\n—No exactamente, pero me encantaría que me llamaran Cordelia. Es un nombre perfectamente elegante.\n\n—¿Y cómo te llamas realmente?\n\n—Anne Shirley —confesó con desgana—. Pero, por favor, llámeme Cordelia. No puede importarle mucho cómo me llame si solo voy a estar aquí poco tiempo. Anne es un nombre tan poco romántico…",
+      "t": "—¿Quiere llamarme Cordelia, por favor? —dijo con ansiedad.\n\n—¿Llamarte Cordelia? ¿Ese es tu nombre?\n\n—No-o-o, no es exactamente mi nombre, pero me encantaría que me llamaran Cordelia. Es un nombre perfectamente elegante.\n\n—No sé qué diantres quieres decir. Si Cordelia no es tu nombre, ¿cuál es?\n\n—Anne Shirley —balbuceó de mala gana la dueña de aquel nombre—, pero, oh, por favor, llámeme Cordelia. No puede importarle mucho cómo me llame si solo voy a estar aquí poco tiempo, ¿verdad? Y Anne es un nombre tan poco romántico.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "me encantaría que me llamaran Cordelia",
@@ -693,7 +693,7 @@
     {
       "id": "quote-43",
       "legacy_index": 43,
-      "t": "—No puedo comer. Estoy en las profundidades de la desesperación. ¿Puede usted comer cuando está en las profundidades de la desesperación?\n\n—Nunca he estado en las profundidades de la desesperación, así que no puedo responderte —dijo Marilla.\n\n—¿Nunca? Bueno, ¿ha intentado alguna vez imaginar que estaba en ellas?\n\n—No.\n\n—Entonces no creo que pueda comprender cómo es. Es una sensación muy incómoda. Cuando intentas comer, se te forma un nudo en la garganta y no puedes tragar nada, ni siquiera un caramelo de chocolate.",
+      "t": "—No puedo comer. Estoy en las profundidades de la desesperación. ¿Puede usted comer cuando está en las profundidades de la desesperación?\n\n—Nunca he estado en las profundidades de la desesperación, así que no puedo decirlo —respondió Marilla.\n\n—¿Nunca? Bueno, ¿ha intentado alguna vez imaginar que estaba en las profundidades de la desesperación?\n\n—No.\n\n—Entonces no creo que pueda comprender cómo es. Es de veras una sensación muy incómoda. Cuando intentas comer, se te sube un nudo a la garganta y no puedes tragar nada, ni siquiera aunque fuera un caramelo de chocolate.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "Estoy en las profundidades de la desesperación",
@@ -702,7 +702,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“I can’t. I’m in the depths of despair. Can you eat when you are in the depths of despair?”\n\n“I’ve never been in the depths of despair, so I can’t say,” responded Marilla.\n\n“Weren’t you? Well, did you ever try to imagine you were in the depths of despair?”\n\n“No, I didn’t.”\n\n“Then I don’t think you can understand what it’s like. It’s a very uncomfortable feeling indeed. When you try to eat a lump comes right up in your throat and you can’t swallow anything, not even if it was a chocolate caramel.”",
+        "text": "“I can’t. I’m in the depths of despair. Can you eat when you are in the depths of despair?”\n\n“I’ve never been in the depths of despair, so I can’t say,” responded Marilla.\n\n“Weren’t you? Well, did you ever try to imagine you were in the depths of despair?”\n\n“No, I didn’t.”\n\n“Then I don’t think you can understand what it’s like. It’s a very uncomfortable feeling indeed. When you try to eat a lump comes right up in your throat and you can’t swallow anything, not even if it was a chocolate caramel.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -710,7 +710,7 @@
     {
       "id": "quote-44",
       "legacy_index": 44,
-      "t": "—Si no puedo quedarme aquí, no sirve de nada que ame las Tejas Verdes. Si salgo y conozco todos esos árboles y flores, el huerto y el arroyo, no podré evitar amarlos. Ya es bastante difícil, así que no quiero hacerlo aún más difícil. Tengo tantas ganas de salir… Todo parece llamarme: «Anne, Anne, ven con nosotros. Anne, Anne, queremos una compañera de juegos»; pero será mejor que no. No sirve de nada amar las cosas si después tienen que arrancarte de ellas, ¿verdad? Y es tan difícil impedirse amar las cosas…",
+      "t": "—Si no puedo quedarme aquí, no sirve de nada que ame las Tejas Verdes. Si salgo ahí fuera y conozco todos esos árboles y flores y el huerto y el arroyo, no podré evitar amarlo. Ya es bastante difícil, así que no lo haré aún más difícil. Tengo tantas ganas de salir… Todo parece llamarme: «Anne, Anne, ven con nosotros. Anne, Anne, queremos una compañera de juegos»; pero es mejor que no. No sirve de nada amar las cosas si después tienen que arrancarte de ellas, ¿verdad? Y es tan difícil impedirse amar las cosas, ¿verdad?",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "No sirve de nada amar las cosas si después tienen que arrancarte de ellas",
@@ -719,7 +719,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“If I can’t stay here there is no use in my loving Green Gables. And if I go out there and get acquainted with all those trees and flowers and the orchard and the brook I’ll not be able to help loving it. It’s hard enough now, so I won’t make it any harder. I want to go out so much--everything seems to be calling to me, ‘Anne, Anne, come out to us. Anne, Anne, we want a playmate’--but it’s better not. There is no use in loving things if you have to be torn from them, is there? And it’s so hard to keep from loving things, isn’t it?”",
+        "text": "“If I can’t stay here there is no use in my loving Green Gables. And if I go out there and get acquainted with all those trees and flowers and the orchard and the brook I’ll not be able to help loving it. It’s hard enough now, so I won’t make it any harder. I want to go out so much--everything seems to be calling to me, ‘Anne, Anne, come out to us. Anne, Anne, we want a playmate’--but it’s better not. There is no use in loving things if you have to be torn from them, is there? And it’s so hard to keep from loving things, isn’t it?",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -727,7 +727,7 @@
     {
       "id": "quote-45",
       "legacy_index": 45,
-      "t": "—¿Por qué tiene que arrodillarse la gente para rezar? Si de verdad quisiera rezar, le diré lo que haría. Saldría completamente sola a un campo enorme o me internaría en lo más profundo del bosque, y miraría hacia el cielo, arriba, arriba, arriba, hacia ese cielo azul tan hermoso que parece no terminar nunca. Y entonces simplemente sentiría una oración.",
+      "t": "—¿Por qué tiene que arrodillarse la gente para rezar? Si de verdad quisiera rezar, le diré lo que haría. Saldría completamente sola a un campo enorme o me internaría en un bosque profundo, profundo, y miraría hacia el cielo, arriba, arriba, arriba, hacia ese cielo azul tan hermoso que parece no tener fin en su azul. Y entonces simplemente sentiría una oración.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "simplemente sentiría una oración",
@@ -736,7 +736,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“Why must people kneel down to pray? If I really wanted to pray I’ll tell you what I’d do. I’d go out into a great big field all alone or into the deep, deep woods, and I’d look up into the sky--up--up--up--into that lovely blue sky that looks as if there was no end to its blueness. And then I’d just feel a prayer.”",
+        "text": "“Why must people kneel down to pray? If I really wanted to pray I’ll tell you what I’d do. I’d go out into a great big field all alone or into the deep, deep woods, and I’d look up into the sky--up--up--up--into that lovely blue sky that looks as if there was no end to its blueness. And then I’d just feel a prayer.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -744,10 +744,10 @@
     {
       "id": "quote-46",
       "legacy_index": 46,
-      "t": "—Creo que Matthew es encantador —dijo Anne en tono de reproche—. Es muy comprensivo. No le importó que hablara tanto; parecía gustarle. Sentí que era un espíritu afín desde el mismo instante en que lo vi.\n\n—Los dos sois lo bastante raros para ser espíritus afines —replicó Marilla.",
+      "t": "—Creo que es encantador —dijo Anne en tono de reproche—. Es sumamente comprensivo. No le importó que hablara tanto; parecía gustarle. Sentí que era un espíritu afín desde el mismo instante en que lo vi.\n\n—Los dos sois bastante raros, si eso es lo que entiendes por espíritus afines —dijo Marilla con un resoplido.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "Supe que era un espíritu afín",
+      "highlight": "Sentí que era un espíritu afín",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
@@ -761,7 +761,7 @@
     {
       "id": "quote-47",
       "legacy_index": 47,
-      "t": "—Solo eres Anne de las Tejas Verdes —se dijo con seriedad—. Siempre que intento imaginar que soy lady Cordelia, te veo tal como estás ahora. Pero es un millón de veces mejor ser Anne de las Tejas Verdes que Anne de ninguna parte en particular, ¿verdad?\n\nSe inclinó hacia el espejo y besó afectuosamente su propio reflejo.",
+      "t": "—Solo eres Anne de las Tejas Verdes —se dijo con seriedad—. Siempre que intento imaginar que soy lady Cordelia, te veo tal como estás ahora. Pero es un millón de veces mejor ser Anne de las Tejas Verdes que Anne de ninguna parte en particular, ¿verdad?\n\nSe inclinó hacia delante, besó afectuosamente su reflejo y se encaminó hacia la ventana abierta.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "es un millón de veces mejor ser Anne de las Tejas Verdes",
@@ -778,10 +778,10 @@
     {
       "id": "quote-48",
       "legacy_index": 48,
-      "t": "—Marilla —preguntó poco después—, ¿cree que alguna vez tendré una amiga del alma en Avonlea?\n\n—¿Una amiga de qué clase?\n\n—Una amiga del alma: una amiga íntima, un verdadero espíritu afín a quien pueda confiarle lo más profundo de mi alma. He soñado toda mi vida con conocerla. Nunca pensé que ocurriría de verdad, pero tantos de mis sueños más hermosos se han cumplido de repente que quizá este también pueda cumplirse. ¿Cree que es posible?",
+      "t": "—Marilla —preguntó al poco rato con insistencia—, ¿cree que alguna vez tendré una amiga del alma en Avonlea?\n\n—¿U-una amiga de qué clase?\n\n—Una amiga del alma —una amiga íntima, ya sabe—, un verdadero espíritu afín a quien pueda confiarle lo más profundo de mi alma. He soñado toda mi vida con conocerla. Nunca supuse realmente que llegaría a conocerla, pero tantos de mis sueños más hermosos se han cumplido de repente que quizá este también pueda cumplirse. ¿Cree que es posible?",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "¿Una amiga de qué clase?",
+      "highlight": "¿U-una amiga de qué clase?",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
@@ -795,10 +795,10 @@
     {
       "id": "quote-49",
       "legacy_index": 49,
-      "t": "—Pones demasiadas esperanzas en las cosas, Anne —dijo Marilla—. Me temo que la vida te guarda muchas decepciones.\n\n—Oh, Marilla, esperar las cosas es la mitad del placer. Puede que al final no las consigas, pero nadie puede impedirte disfrutar esperándolas. La señora Lynde dice: «Bienaventurados quienes no esperan nada, porque no serán decepcionados». Pero yo creo que sería peor no esperar nada que sufrir una decepción.",
+      "t": "—Pones demasiado el corazón en las cosas, Anne —dijo Marilla con un suspiro—. Me temo que la vida te guarda muchas decepciones.\n\n—Oh, Marilla, esperar las cosas es la mitad del placer —exclamó Anne—. Puede que no consigas las cosas mismas; pero nada puede impedirte divertirte esperándolas. La señora Lynde dice: «Bienaventurados quienes no esperan nada, porque no se verán decepcionados». Pero yo creo que sería peor no esperar nada que verse decepcionada.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "sería peor no esperar nada que sufrir una decepción",
+      "highlight": "sería peor no esperar nada que verse decepcionada",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
@@ -812,16 +812,16 @@
     {
       "id": "quote-50",
       "legacy_index": 50,
-      "t": "—Me alegra tanto vivir en un mundo donde existen los octubres. Sería terrible que pasáramos directamente de septiembre a noviembre, ¿verdad? Mire estas ramas de arce. ¿No le producen un estremecimiento? Varios estremecimientos.",
+      "t": "—Me alegra tanto vivir en un mundo donde existen los octubres. Sería terrible que pasáramos directamente de septiembre a noviembre, ¿verdad? Mire estas ramas de arce. ¿No le producen un estremecimiento… varios estremecimientos?",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "¿No le producen un estremecimiento?",
+      "highlight": "un estremecimiento… varios estremecimientos",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“I’m so glad I live in a world where there are Octobers. It would be terrible if we just skipped from September to November, wouldn’t it? Look at these maple branches. Don’t they give you a thrill--several thrills?”",
+        "text": "“I’m so glad I live in a world where there are Octobers. It would be terrible if we just skipped from September to November, wouldn’t it? Look at these maple branches. Don’t they give you a thrill--several thrills?",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -829,16 +829,16 @@
     {
       "id": "quote-51",
       "legacy_index": 51,
-      "t": "—Los dormitorios se hicieron para dormir —dijo Marilla.\n\n—Oh, también se hicieron para soñar. Y una puede soñar mucho mejor en una habitación donde hay cosas bonitas.",
+      "t": "—Los dormitorios se hicieron para dormir.\n\n—Oh, y también para soñar, Marilla. Y una puede soñar mucho mejor en una habitación donde hay cosas bonitas.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "también se hicieron para soñar",
+      "highlight": "también para soñar",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“Bedrooms were made to sleep in.”\n\n“Oh, and dream in too, Marilla. And you know one can dream so much better in a room where there are pretty things.”",
+        "text": "Bedrooms were made to sleep in.”\n\n“Oh, and dream in too, Marilla. And you know one can dream so much better in a room where there are pretty things.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -846,7 +846,7 @@
     {
       "id": "quote-52",
       "legacy_index": 52,
-      "t": "—¿Cómo se atreve a llamarme flaca y fea? ¿Cómo se atreve a decir que tengo pecas y el pelo rojo? ¡Es usted una mujer grosera, maleducada y sin sentimientos!\n\n—¡Anne! —exclamó Marilla consternada.\n\nPero Anne continuó enfrentándose a la señora Rachel con la cabeza levantada, los ojos llameantes, los puños cerrados y una indignación apasionada que parecía emanar de ella como una atmósfera.",
+      "t": "—¿Cómo se atreve a llamarme flaca y fea? ¿Cómo se atreve a decir que tengo pecas y el pelo rojo? ¡Es usted una mujer grosera, maleducada y sin sentimientos!\n\n—¡Anne! —exclamó Marilla consternada.\n\nPero Anne continuó encarando a la señora Rachel sin arredrarse, con la cabeza levantada, los ojos llameantes, los puños cerrados y una indignación apasionada que emanaba de ella como una atmósfera.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "¡Es usted una mujer grosera, maleducada y sin sentimientos!",
@@ -880,7 +880,7 @@
     {
       "id": "quote-54",
       "legacy_index": 54,
-      "t": "—Marilla, ¿no es agradable pensar que mañana será un día nuevo, sin errores todavía?\n\n—Te aseguro que cometerás bastantes —respondió Marilla—. Nunca he conocido a nadie con tanta facilidad para equivocarse.",
+      "t": "—Marilla, ¿no es agradable pensar que mañana será un día nuevo, sin errores todavía?\n\n—Te aseguro que cometerás bastantes —dijo Marilla—. Nunca he visto a nadie que te iguale para cometer errores, Anne.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "mañana será un día nuevo, sin errores todavía",
@@ -897,7 +897,7 @@
     {
       "id": "quote-55",
       "legacy_index": 55,
-      "t": "—Pero ¿no ha advertido algo alentador en mí, Marilla? Nunca cometo dos veces el mismo error.\n\n—No sé qué ventaja tiene eso si estás siempre cometiendo errores nuevos.\n\n—¿No lo comprende? Debe de existir un límite para la cantidad de errores que puede cometer una persona. Cuando llegue al final, habré terminado con ellos. Es un pensamiento muy consolador.",
+      "t": "—Pero ¿no ha advertido algo alentador en mí, Marilla? Nunca cometo dos veces el mismo error.\n\n—No sé qué ventaja tiene eso si estás siempre cometiendo errores nuevos.\n\n—Oh, ¿no lo comprende, Marilla? Debe de existir un límite para los errores que puede cometer una persona, y cuando llegue al final de todos, entonces habré acabado con ellos. Es un pensamiento muy consolador.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "Nunca cometo dos veces el mismo error",
@@ -914,7 +914,7 @@
     {
       "id": "quote-56",
       "legacy_index": 56,
-      "t": "—Me resulta muchísimo más fácil ser buena cuando mi ropa está a la moda. Al menos, a mí me resulta más fácil. Supongo que a las personas naturalmente buenas no les afectará tanto.",
+      "t": "—Es muchísimo más fácil ser buena si tu ropa está a la moda. Al menos, para mí es más fácil. Supongo que eso no supone tanta diferencia para las personas buenas por naturaleza.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "muchísimo más fácil",
@@ -923,7 +923,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“It is ever so much easier to be good if your clothes are fashionable. At least, it is easier for me. I suppose it doesn’t make such a difference to naturally good people.”",
+        "text": "It is ever so much easier to be good if your clothes are fashionable. At least, it is easier for me. I suppose it doesn’t make such a difference to naturally good people.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -931,7 +931,7 @@
     {
       "id": "quote-57",
       "legacy_index": 57,
-      "t": "—Si yo hubiera sido el muchacho que esperabais —dijo Anne—, ahora podría ayudarle mucho y ahorrarle un centenar de trabajos. Solo por eso casi desearía haberlo sido.\n\n—Bueno, yo te prefiero a una docena de muchachos, Anne —dijo Matthew, acariciándole la mano—. Recuérdalo: a una docena de muchachos. Y supongo que no ha sido un muchacho quien ha ganado la beca Avery, ¿verdad? Ha sido una muchacha: mi muchacha, de quien estoy orgulloso.",
+      "t": "—Si yo hubiera sido el muchacho que esperabais —dijo Anne con melancolía—, ahora podría ayudarle mucho y aliviarle de cien maneras. Solo por eso casi desearía haberlo sido.\n\n—Bueno, pues yo te prefiero a una docena de muchachos, Anne —dijo Matthew, acariciándole la mano—. No lo olvides: antes que a una docena de muchachos. Bueno, pues supongo que no fue un muchacho quien ganó la beca Avery, ¿verdad? Fue una muchacha: mi muchacha, mi muchacha, de quien estoy orgulloso.",
       "a": "Matthew Cuthbert",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "yo te prefiero a una docena de muchachos",
@@ -948,10 +948,10 @@
     {
       "id": "quote-58",
       "legacy_index": 58,
-      "t": "Pagamos un precio por todo lo que obtenemos o tomamos en este mundo; y, aunque merece la pena poseer ambiciones, no se consiguen por poco: exigen trabajo y renuncia, ansiedad y desaliento.",
+      "t": "Porque pagamos un precio por todo lo que obtenemos o tomamos en este mundo; y, aunque merece mucho la pena tener ambiciones, no se alcanzan a bajo precio, sino que cobran su tributo de trabajo y renuncia, ansiedad y desaliento.",
       "a": "Narrador",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "Pagamos un precio por todo lo que obtenemos",
+      "highlight": "pagamos un precio por todo lo que obtenemos",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
@@ -965,7 +965,7 @@
     {
       "id": "quote-59",
       "legacy_index": 59,
-      "t": "—He hecho todo cuanto podía y empiezo a comprender qué significa la «alegría de la lucha». Después de intentarlo y vencer, lo mejor es intentarlo y fracasar.",
+      "t": "—He hecho todo cuanto podía y empiezo a comprender qué significa la «alegría de la lucha». Lo mejor, después de intentarlo y vencer, es intentarlo y fracasar.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "alegría de la lucha",
@@ -974,7 +974,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“I’ve done my best and I begin to understand what is meant by the ‘joy of the strife.’ Next to trying and winning, the best thing is trying and failing.”",
+        "text": "I’ve done my best and I begin to understand what is meant by the ‘joy of the strife.’ Next to trying and winning, the best thing is trying and failing.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -982,10 +982,10 @@
     {
       "id": "quote-60",
       "legacy_index": 60,
-      "t": "—Nos tenemos la una a la otra, Anne. No sé qué haría si no estuvieras aquí, si nunca hubieras venido. Sé que quizá he sido estricta y dura contigo, pero no debes pensar que no te quería tanto como Matthew. Nunca me ha resultado fácil decir lo que llevo dentro del corazón, pero ahora quiero hacerlo. Te quiero como si fueras mi propia carne y sangre, y has sido mi alegría y mi consuelo desde que llegaste a las Tejas Verdes.",
+      "t": "—Nos tenemos la una a la otra, Anne. No sé qué haría si no estuvieras aquí, si nunca hubieras venido. Oh, Anne, sé que quizá he sido un tanto estricta y dura contigo, pero, a pesar de todo, no debes pensar que no te quería tanto como Matthew. Quiero decírtelo ahora que puedo. Nunca me ha resultado fácil decir las cosas que llevo en el corazón, pero en momentos como este es más fácil. Te quiero tanto como si fueras mi propia carne y sangre, y has sido mi alegría y mi consuelo desde que llegaste a las Tejas Verdes.",
       "a": "Marilla Cuthbert",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "Te quiero como si fueras mi propia carne y sangre",
+      "highlight": "Te quiero tanto como si fueras mi propia carne y sangre",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
@@ -999,16 +999,16 @@
     {
       "id": "quote-61",
       "legacy_index": 61,
-      "t": "—Me parece una deslealtad hacia Matthew encontrar placer en las cosas ahora que él ya no está. Lo echo de menos constantemente y, sin embargo, el mundo y la vida continúan pareciéndome hermosos e interesantes. Hoy Diana dijo algo gracioso y me descubrí riendo. Cuando ocurrió, pensé que nunca volvería a reír. Y, de algún modo, siento que no debería hacerlo.\n\n—Cuando Matthew estaba aquí, le gustaba oírte reír y saber que disfrutabas de las cosas agradables que te rodeaban —dijo la señora Allan—. Ahora solo está lejos, y le sigue gustando saberlo. Estoy segura de que no debemos cerrar el corazón a las influencias curativas que nos ofrece la naturaleza.",
+      "t": "—Me parece, de algún modo, una deslealtad hacia Matthew encontrar placer en estas cosas ahora que él se ha ido —le dijo con melancolía a la señora Allan una tarde, cuando estaban juntas en el jardín de la rectoría—. Lo echo tanto de menos —todo el tiempo— y, sin embargo, señora Allan, a pesar de todo, el mundo y la vida me parecen muy hermosos e interesantes. Hoy Diana dijo algo gracioso y me descubrí riendo. Cuando ocurrió, pensé que nunca podría volver a reír. Y, de algún modo, parece que no debería hacerlo.\n\n—Cuando Matthew estaba aquí, le gustaba oírte reír y le gustaba saber que encontrabas placer en las cosas agradables que te rodeaban —dijo con dulzura la señora Allan—. Ahora solo está ausente; y le gusta saberlo igualmente. Estoy segura de que no debemos cerrar nuestros corazones a las influencias curativas que nos ofrece la naturaleza.",
       "a": "Señora Allan",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "No debemos cerrar el corazón a las influencias curativas",
+      "highlight": "cerrar nuestros corazones a las influencias curativas",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“It seems like disloyalty to Matthew, somehow, to find pleasure in these things now that he has gone,” she said wistfully to Mrs. Allan one evening when they were together in the manse garden. “I miss him so much--all the time--and yet, Mrs. Allan, the world and life seem very beautiful and interesting to me for all. Today Diana said something funny and I found myself laughing. I thought when it happened I could never laugh again. And it somehow seems as if I oughtn’t to.”\n\n“When Matthew was here he liked to hear you laugh and he liked to know that you found pleasure in the pleasant things around you,” said Mrs. Allan gently. “He is just away now; and he likes to know it just the same. I am sure we should not shut our hearts against the healing influences that nature offers us.”",
+        "text": "“It seems like disloyalty to Matthew, somehow, to find pleasure in these things now that he has gone,” she said wistfully to Mrs. Allan one evening when they were together in the manse garden. “I miss him so much--all the time--and yet, Mrs. Allan, the world and life seem very beautiful and interesting to me for all. Today Diana said something funny and I found myself laughing. I thought when it happened I could never laugh again. And it somehow seems as if I oughtn’t to.”\n\n“When Matthew was here he liked to hear you laugh and he liked to know that you found pleasure in the pleasant things around you,” said Mrs. Allan gently. “He is just away now; and he likes to know it just the same. I am sure we should not shut our hearts against the healing influences that nature offers us.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -1016,7 +1016,7 @@
     {
       "id": "quote-62",
       "legacy_index": 62,
-      "t": "—Marilla intenta enseñarme a cocinar, pero te aseguro, Diana, que es un trabajo cuesta arriba. Hay tan poco espacio para la imaginación en la cocina. Solo tienes que seguir las reglas. La última vez que hice un pastel olvidé ponerle la harina. Estaba imaginando la historia más hermosa sobre nosotras dos, Diana. […]\n\nLas lágrimas me corrían por las mejillas mientras mezclaba el pastel. Pero olvidé la harina y fue un fracaso desolador. La harina es tan esencial para los pasteles, ya sabes.",
+      "t": "—Ella intenta enseñarme a cocinar, pero te aseguro, Diana, que es un trabajo cuesta arriba. Hay tan poco espacio para la imaginación en la cocina. Solo tienes que seguir las reglas. La última vez que hice un pastel olvidé ponerle la harina. Estaba pensando en la historia más hermosa sobre nosotras dos, Diana. […] Las lágrimas llovían por mis mejillas mientras mezclaba el pastel. Pero olvidé la harina y fue un fracaso desolador. La harina es tan esencial para los pasteles, ya sabes.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "olvidé ponerle la harina",
@@ -1025,7 +1025,7 @@
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“She is trying to teach me to cook but I assure you, Diana, it is uphill work. There’s so little scope for imagination in cookery. You just have to go by rules. The last time I made a cake I forgot to put the flour in. I was thinking the loveliest story about you and me, Diana. […] The tears just rained down over my cheeks while I mixed the cake. But I forgot the flour and the cake was a dismal failure. Flour is so essential to cakes, you know.”",
+        "text": "She is trying to teach me to cook but I assure you, Diana, it is uphill work. There’s so little scope for imagination in cookery. You just have to go by rules. The last time I made a cake I forgot to put the flour in. I was thinking the loveliest story about you and me, Diana. […] The tears just rained down over my cheeks while I mixed the cake. But I forgot the flour and the cake was a dismal failure. Flour is so essential to cakes, you know.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -1033,16 +1033,16 @@
     {
       "id": "quote-63",
       "legacy_index": 63,
-      "t": "—Quería cubrirla, de verdad, Diana; pero, cuando llevé la salsa a la despensa, estaba imaginando que era una monja —por supuesto, soy protestante, pero imaginaba que era católica— que tomaba el velo para enterrar un corazón roto en la soledad del claustro, y olvidé por completo cubrirla.\n\nA la mañana siguiente recordé la salsa y corrí a la despensa. ¡Imagina mi horror al encontrar un ratón ahogado en ella! Lo saqué con una cuchara, lo arrojé al patio y luego lavé la cuchara en tres aguas. Pensaba preguntarle a Marilla si debía darles la salsa a los cerdos; pero, cuando volvió, estaba imaginando que era un hada de la escarcha que recorría el bosque volviendo los árboles rojos y amarillos, así que volví a olvidarme de la salsa y Marilla me mandó a recoger manzanas.",
+      "t": "—Tenía toda la intención de cubrirla, Diana, pero cuando la llevé dentro estaba imaginando que era una monja —por supuesto, soy protestante, pero imaginaba que era católica— que tomaba el velo para enterrar un corazón roto en la reclusión del claustro; y olvidé por completo cubrir la salsa del pudín. Me acordé a la mañana siguiente y corrí a la despensa. Diana, ¡imagina, si puedes, mi horror extremo al encontrar un ratón ahogado en aquella salsa del pudín! Saqué el ratón con una cuchara y lo arrojé al patio, y luego lavé la cuchara en tres aguas. Marilla estaba fuera ordeñando y yo tenía toda la intención de preguntarle, cuando entrara, si debía darles la salsa a los cerdos; pero cuando entró, yo estaba imaginando que era un hada de la escarcha que recorría el bosque volviendo los árboles rojos o amarillos, según quisieran, así que no volví a pensar en la salsa del pudín y Marilla me mandó a recoger manzanas.",
       "a": "Anne Shirley",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "volví a olvidarme de la salsa",
+      "highlight": "no volví a pensar en la salsa del pudín",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
       "workId": "work-ana-de-las-tejas-verdes",
       "original": {
-        "text": "“I meant to cover it just as much as could be, Diana, but when I carried it in I was imagining I was a nun--of course I’m a Protestant but I imagined I was a Catholic--taking the veil to bury a broken heart in cloistered seclusion; and I forgot all about covering the pudding sauce. I thought of it next morning and ran to the pantry. Diana, fancy if you can my extreme horror at finding a mouse drowned in that pudding sauce! I lifted the mouse out with a spoon and threw it out in the yard and then I washed the spoon in three waters. Marilla was out milking and I fully intended to ask her when she came in if I’d give the sauce to the pigs; but when she did come in I was imagining that I was a frost fairy going through the woods turning the trees red and yellow, whichever they wanted to be, so I never thought about the pudding sauce again and Marilla sent me out to pick apples.”",
+        "text": "I meant to cover it just as much as could be, Diana, but when I carried it in I was imagining I was a nun--of course I’m a Protestant but I imagined I was a Catholic--taking the veil to bury a broken heart in cloistered seclusion; and I forgot all about covering the pudding sauce. I thought of it next morning and ran to the pantry. Diana, fancy if you can my extreme horror at finding a mouse drowned in that pudding sauce! I lifted the mouse out with a spoon and threw it out in the yard and then I washed the spoon in three waters. Marilla was out milking and I fully intended to ask her when she came in if I’d give the sauce to the pigs; but when she did come in I was imagining that I was a frost fairy going through the woods turning the trees red and yellow, whichever they wanted to be, so I never thought about the pudding sauce again and Marilla sent me out to pick apples.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -1050,10 +1050,10 @@
     {
       "id": "quote-64",
       "legacy_index": 64,
-      "t": "El jefe de estación se alejó con aire despreocupado, apremiado por el hambre, y el desdichado Matthew quedó obligado a hacer algo que para él era más difícil que enfrentarse a un león en su guarida: acercarse a una niña —una niña desconocida, una niña huérfana— y preguntarle por qué no era un muchacho. Matthew gimió en su interior mientras se volvía y avanzaba lentamente por el andén hacia ella.",
+      "t": "Él se alejó con paso alegre, pues tenía hambre, y el desdichado Matthew se quedó ante una tarea que para él era más difícil que plantarle cara a un león en su guarida: acercarse a una niña —una niña desconocida, una niña huérfana— y exigirle que dijera por qué no era un muchacho. Matthew gimió en su interior mientras se volvía y avanzaba suavemente por el andén, arrastrando los pies, hacia ella.",
       "a": "Narrador",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
-      "highlight": "más difícil que enfrentarse a un león en su guarida",
+      "highlight": "más difícil que plantarle cara a un león en su guarida",
       "lang": "es",
       "type": "prose",
       "authorId": "author-lucy-maud-montgomery",
@@ -1067,7 +1067,7 @@
     {
       "id": "quote-65",
       "legacy_index": 65,
-      "t": "Matthew disfrutaba del trayecto a su manera, excepto cuando se cruzaba con mujeres y tenía que saludarlas, pues en la isla del Príncipe Eduardo se suponía que uno debía saludar a todo el que encontrara por el camino, lo conociera o no.\n\nMatthew temía a todas las mujeres salvo a Marilla y a la señora Rachel; tenía la incómoda sensación de que aquellas misteriosas criaturas se reían de él en secreto.",
+      "t": "Matthew disfrutaba del trayecto a su manera, excepto cuando se cruzaba con mujeres y tenía que saludarlas, pues en la isla del Príncipe Eduardo se supone que uno debe saludar a todos y cada uno de los que encuentra por el camino, los conozca o no.\n\nMatthew temía a todas las mujeres salvo a Marilla y a la señora Rachel; tenía la incómoda sensación de que aquellas misteriosas criaturas se reían de él en secreto.",
       "a": "Narrador",
       "obra": "Ana de las Tejas Verdes, Lucy Maud Montgomery",
       "highlight": "Matthew temía a todas las mujeres",
