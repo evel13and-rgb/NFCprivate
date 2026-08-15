@@ -845,5 +845,18 @@
     ],
     "profile_status": "draft",
     "verification_status": "partially_verified"
+  },
+  {
+    "work_id": "work-papa-goriot",
+    "author_id": "author-honore-de-balzac",
+    "title": "Papá Goriot",
+    "original_title": "Le Père Goriot",
+    "publication_year": 1835,
+    "sources": [
+      "Honoré de Balzac, Le Père Goriot, edición de A. Houssiaux incluida en Œuvres complètes de H. de Balzac, tomo IX, 1855.",
+      "Wikisource, transcripción francesa cotejada con el facsímil de la edición Houssiaux."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-13T23:00:51.463Z",
+  "generated_at": "2026-08-14T23:16:35.452Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -3741,146 +3741,206 @@
     {
       "id": "quote-247",
       "legacy_index": 247,
-      "t": "Así os sucederá a vosotros, los que tenéis este libro en vuestras manos, que hundiéndoos en un blando sillón diréis: tal vez va a divertirme, y después de haber leído las ocultas desgracias del padre Goriot, comeréis con apetito, atribuyendo al autor vuestra insensibilidad, tratándole de exagerado y acusándole de poeta. ¡Ah! Bien lo sabéis. Este drama no es una ficción ni una novela, all is true: es tan verdadero que cada uno podrá reconocerlo en los elementos de su casa, tal vez en su propio corazón.",
+      "t": "Así haréis vosotros, los que sostenéis este libro con una mano blanca, los que os hundís en un mullido sillón diciéndoos: «Tal vez esto me divierta». Después de haber leído las secretas desventuras del padre Goriot, cenaréis con apetito, achacando vuestra insensibilidad al autor, tachándolo de exagerado y acusándolo de poeta. ¡Ah! Sabedlo: este drama no es una ficción ni una novela. All is true: es tan verdadero que cada cual puede reconocer sus elementos en su propia casa, acaso en su propio corazón.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "Comeréis con apetito.",
+      "highlight": "Cenaréis con apetito.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Ainsi ferez-vous, vous qui tenez ce livre d’une main blanche, vous qui vous enfoncez dans un moelleux fauteuil en vous disant : Peut-être ceci va-t-il m’amuser. Après avoir lu les secrètes infortunes du père Goriot, vous dînerez avec appétit en mettant votre insensibilité sur le compte de l’auteur, en le taxant d’exagération, en l’accusant de poésie. Ah ! sachez-le : ce drame n’est ni une fiction, ni un roman. All is true, il est si véritable, que chacun peut en reconnaître les éléments chez soi, dans son cœur peut-être.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-248",
       "legacy_index": 248,
-      "t": "Allí el empedrado está seco, los arroyos no tienen barro ni agua, y la yerba crece a lo largo de las paredes. El hombre más indiferente se encuentra en ellas mortificado, los concurrentes tristes, el ruido de un carruaje es un acontecimiento, las casas son melancólicas, y las paredes remedan a una prisión. Allí no se encuentran más que huéspedes ordinarios, o de institutos, la miseria, el fastidio, la vejez moribunda, la alegre juventud encerrada y reducida a trabajar. Ningún cuartel de París es más horrible ni más desconocido.",
+      "t": "Allí, el empedrado está seco, los arroyos no tienen barro ni agua, la hierba crece a lo largo de los muros. El hombre más despreocupado se entristece allí al igual que todos los transeúntes; el ruido de un carruaje se convierte en un acontecimiento, las casas son lúgubres, los muros huelen a cárcel. Un parisino extraviado no vería allí sino pensiones burguesas o internados, miseria o tedio, vejez que muere, alegre juventud obligada a trabajar. Ningún barrio de París es más horrible ni, digámoslo, más desconocido.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "La vejez moribunda, la alegre juventud encerrada.",
+      "highlight": "Vejez que muere, alegre juventud obligada a trabajar.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Là, les pavés sont secs, les ruisseaux n’ont ni boue ni eau, l’herbe croît le long des murs. L’homme le plus insouciant s’y attriste comme tous les passants, le bruit d’une voiture y devient un événement, les maisons y sont mornes, les murailles y sentent la prison. Un Parisien égaré ne verrait là que des pensions bourgeoises ou des Institutions, de la misère ou de l’ennui, de la vieillesse qui meurt, de la joyeuse jeunesse contrainte à travailler. Nul quartier de Paris n’est plus horrible, ni, disons-le, plus inconnu.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-249",
       "legacy_index": 249,
-      "t": "A fin de la primera semana del mes de diciembre recibió Rastignac dos cartas, una de su madre y otra de su hermana mayor, que le hicieron palpitar a la vez de alegría y de terror, porque aquellos frágiles papeles contenían un decreto de vida o de muerte para sus esperanzas. Sentía cierta desesperación recordando el apuro de sus parientes, pues conocía bien la predilección que le tenían, para no temer que hubiese aspirado su última gota de sangre.",
+      "t": "Al término de aquella primera semana de diciembre, Rastignac recibió dos cartas: una de su madre y otra de su hermana mayor. Aquellas letras tan conocidas lo hicieron palpitar de alegría y temblar de terror a un tiempo. Los dos frágiles papeles contenían una sentencia de vida o muerte para sus esperanzas. Si sentía cierto temor al recordar la penuria de sus padres, conocía demasiado bien la predilección que le profesaban para no temer haberles sorbido hasta las últimas gotas de sangre.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "Un decreto de vida o de muerte.",
+      "highlight": "Una sentencia de vida o muerte.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Vers la fin de cette première semaine du mois de décembre, Rastignac reçut deux lettres, l’une de sa mère, l’autre de sa sœur aînée. Ces écritures si connues le firent à la fois palpiter d’aise et trembler de terreur. Ces deux frêles papiers contenaient un arrêt de vie ou de mort sur ses espérances. S’il concevait quelque terreur en se rappelant la détresse de ses parents, il avait trop bien éprouvé leur prédilection pour ne pas craindre d’avoir aspiré leurs dernières gouttes de sang.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-250",
       "legacy_index": 250,
-      "t": "La virtud, querido estudiante, no se divide: o es virtud o no lo es; es verdad que se nos habla de hacer penitencia de nuestras culpas, lo que es un lindo sistema; pero seducir a una mujer para subir en la escala social, arrojar la cizaña en una familia, y en fin todas las infamias que se cometen al lado de una chimenea, llevando por objeto el placer o el interés personal, ¿creéis que sean actos de fe, esperanza y caridad?",
+      "t": "La virtud, querido estudiante, no se divide: es o no es. Nos hablan de hacer penitencia por nuestras faltas. ¡Bonito sistema aquel en virtud del cual uno se libra de un crimen mediante un acto de contrición! Seducir a una mujer para encaramarse a tal peldaño de la escala social, sembrar la discordia entre los hijos de una familia, en fin, todas las infamias que se practican al abrigo de una chimenea o de cualquier otro modo, con fines de placer o interés personal, ¿creéis que son actos de fe, esperanza y caridad?",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
       "highlight": "La virtud no se divide.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "La vertu, mon cher étudiant, ne se scinde pas : elle est ou n’est pas. On nous parle de faire pénitence de nos fautes. Encore un joli système que celui en vertu duquel on est quitte d’un crime avec un acte de contrition ! Séduire une femme pour arriver à vous poser sur tel bâton de l’échelle sociale, jeter la zizanie entre les enfants d’une famille, enfin toutes les infamies qui se pratiquent sous le manteau d’une cheminée ou autrement dans un but de plaisir ou d’intérêt personnel, croyez-vous que ce soient des actes de foi, d’espérance et de charité ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-251",
       "legacy_index": 251,
-      "t": "Creéis que hay alguna cosa estable en este mundo? Despreciad pues a los hombres y ved las mallas del código por donde se pueda pasar, pues las grandes fortunas hechas sin causa aparente, es un crimen que se olvida, porque se comete con primor.",
+      "t": "¡Creéis que hay algo firme en ese mundo! Despreciad, pues, a los hombres y ved las mallas por las que uno puede colarse a través de la red del Código. El secreto de las grandes fortunas sin causa aparente es un crimen olvidado, porque fue cometido limpiamente.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "Un crimen que se olvida.",
+      "highlight": "Un crimen olvidado.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Vous croyez à quelque chose de fixe dans ce monde-là ! Méprisez donc les hommes, et voyez les mailles par où l’on peut passer à travers le réseau du Code. Le secret des grandes fortunes sans cause apparente est un crime oublié, parce qu’il a été proprement fait.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-252",
       "legacy_index": 252,
-      "t": "Ser fiel a la virtud, es un martirio sublime. ¡Bah! todos creen en la virtud; pero ¿quién es virtuoso? Los pueblos idolatran la libertad; pero ¿dónde existe un pueblo libre? Mi juventud aún conserva la pureza de un cielo sin nubes; y querer ser grande o rico ¿no es resolverse a mentir, humillarse, arrastrarse, volverse a levantar, adular y disimular?",
+      "t": "—Ser fiel a la virtud: ¡sublime martirio! ¡Bah! Todo el mundo cree en la virtud; pero ¿quién es virtuoso? Los pueblos tienen la libertad por ídolo; pero ¿dónde hay sobre la tierra un pueblo libre? Mi juventud aún es azul como un cielo sin nubes: querer ser grande o rico ¿no es resolverse a mentir, doblegarse, arrastrarse, volver a erguirse, adular, disimular?",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
       "highlight": "Querer ser grande o rico.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "— Être fidèle à la vertu, martyre sublime ! Bah ! tout le monde croit à la vertu ; mais qui est vertueux ? Les peuples ont la liberté pour idole ; mais où est sur la terre un peuple libre ? Ma jeunesse est encore bleue comme un ciel sans nuage : vouloir être grand ou riche, n’est-ce pas se résoudre à mentir, plier, ramper, se redresser, flatter, dissimuler ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-253",
       "legacy_index": 253,
-      "t": "Amo los caballos que las conducen, y quisiera ser el perrito que llevan en sus faldas: yo vivo de los placeres de ellas. Cada uno tiene su manera de amar, y la mía no haciendo mal a nadie ¿por qué el mundo se ha de ocupar de mí? Quiero ser feliz a mi modo. ¿Infrinjo las leyes por ir a verlas a tiempo que salen de sus casas para ir al baile? Y en efecto, querido caballero ¿qué soy yo sino un mal cadáver, cuya alma se encuentra donde están sus hijas?",
+      "t": "¿No son mi sangre? Amo hasta los caballos que tiran de sus coches, y querría ser el perrito que llevan en el regazo. Vivo de sus placeres. Cada cual tiene su manera de amar; la mía, sin embargo, no hace daño a nadie: ¿por qué se ocupa el mundo de mí? Soy feliz a mi manera. ¿Va contra la ley que vaya a ver a mis hijas por la noche, cuando salen de sus casas para ir al baile? ¡Qué pena si llego demasiado tarde y me dicen: «La señora ha salido»! Una noche esperé hasta las tres de la mañana para ver a Nasie, a quien no había visto en dos días. ¡Casi reventé de alegría! Os lo ruego: no habléis de mí sino para decir lo buenas que son mis hijas. Quieren colmarme de toda clase de regalos; yo se lo impido, les digo: «¡Guardad vuestro dinero! ¿Qué queréis que haga con él? No necesito nada». En efecto, querido señor, ¿qué soy yo? Un pobre cadáver cuya alma está dondequiera que estén mis hijas.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "Yo vivo de los placeres de ellas.",
+      "highlight": "Vivo de sus placeres.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "N’est-ce pas mon sang ? J’aime les chevaux qui les traînent, et je voudrais être le petit chien qu’elles ont sur leurs genoux. Je vis de leurs plaisirs. Chacun a sa façon d’aimer, la mienne ne fait pourtant de mal à personne, pourquoi le monde s’occupe-t-il de moi ? Je suis heureux à ma manière. Est-ce contre les lois que j’aille voir mes filles, le soir, au moment où elles sortent de leurs maisons pour se rendre au bal ? Quel chagrin pour moi si j’arrive trop tard, et qu’on me dise : Madame est sortie. Un soir j’ai attendu jusqu’à trois heures du matin pour voir Nasie, que je n’avais pas vue depuis deux jours. J’ai manqué crever d’aise ! Je vous en prie, ne parlez de moi que pour dire combien mes filles sont bonnes. Elles veulent me combler de toutes sortes de cadeaux ; je les en empêche, je leur dis : Gardez donc votre argent ! Que voulez-vous que j’en fasse ? Il ne me faut rien. En effet, mon cher monsieur, que suis-je ? un méchant cadavre dont l’âme est partout où sont mes filles.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-254",
       "legacy_index": 254,
-      "t": "—No vivirá dos días, tal vez dos horas, dijo el estudiante de medicina, y sin embargo no debemos cesar de combatir la enfermedad. Va a ser necesario suministrarle medicinas costosas, y yo no tengo un ochavo. He registrado sus bolsillos, sus armarios, y nada se encuentra: le he preguntado en un momento que parecía estar en su juicio, y me ha respondido que no tenía cantidad alguna. ¿Tú puedes disponer de algo?",
+      "t": "—Al pobre hombre no le quedan dos días, quizá ni seis horas de vida —dijo el estudiante de medicina—, y, sin embargo, no podemos dejar de combatir el mal. Habrá que proporcionarle cuidados costosos. Nosotros haremos de enfermeros; pero yo no tengo ni un céntimo. Le he vuelto del revés los bolsillos, he registrado los armarios: cero en el cociente. Lo interrogué en un momento en que tenía la cabeza clara y me dijo que no poseía ni un ochavo. ¿Y tú qué tienes?",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "No vivirá dos días.",
+      "highlight": "No le quedan dos días.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "— Le bonhomme n’a pas deux jours, n’a peut-être pas six heures à vivre, dit l’élève en médecine, et cependant nous ne pouvons pas cesser de combattre le mal. Il va falloir lui donner des soins coûteux. Nous serons bien ses garde-malades ; mais je n’ai pas le sou, moi. J’ai retourné ses poches, fouillé ses armoires : zéro au quotient. Je l’ai questionné dans un moment où il avait sa tête, il m’a dit ne pas avoir un liard à lui. Qu’as-tu, toi ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-255",
       "legacy_index": 255,
-      "t": "Esta fue toda la oración fúnebre de un ser que a los ojos de Eugenio, representaba toda la paternidad. Los quince huéspedes se pusieron a hablar como de costumbre, y cuando Eugenio y Bianchon acabaron de comer, el ruido de los tenedores y cucharas, las risas, las diversas expresiones de aquellas figuras glotonas e indiferentes, su insensibilidad, todo les horrorizaba.",
+      "t": "Esta fue toda la oración fúnebre de un ser que, para Eugenio, representaba toda la paternidad. Los quince huéspedes se pusieron a charlar como de costumbre. Cuando Eugenio y Bianchon hubieron comido, el ruido de los tenedores y las cucharas, las risas de la conversación, las diversas expresiones de aquellos rostros glotones e indiferentes, su despreocupación: todo los heló de horror.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
       "highlight": "Toda la oración fúnebre.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Ce fut toute l’oraison funèbre d’un être qui, pour Eugène, représentait toute la paternité. Les quinze pensionnaires se mirent à causer comme à l’ordinaire. Lorsque Eugène et Bianchon eurent mangé, le bruit des fourchettes et des cuillers, les rires de la conversation, les diverses expressions de ces figures gloutonnes et indifférentes, leur insouciance, tout les glaça d’horreur.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-256",
       "legacy_index": 256,
-      "t": "Rastignac y Cristóbal fueron los únicos que acompañaron el carro que conducía al pobre hombre a San Esteban del Monte, iglesia poco distante de la calle Neuve-Sainte-Geneviève. Luego que llegaron se depositó el cuerpo en una capillita pobre y oscura, donde buscó vanamente el estudiante a las dos hijas del padre Goriot o a sus maridos. No asistió nadie más que él y Cristóbal, que se creía obligado a ello, por la propina que le había hecho ganar el difunto.",
+      "t": "Rastignac y Cristóbal fueron los únicos que, junto con dos empleados de pompas fúnebres, acompañaron el carro que llevaba al pobre hombre a San Esteban del Monte, iglesia poco distante de la calle Neuve-Sainte-Geneviève. Una vez allí, el cuerpo fue depositado en una capilla pequeña, baja y sombría, en torno a la cual el estudiante buscó en vano a las dos hijas del padre Goriot o a sus maridos. Estaba solo con Cristóbal, que se creía obligado a rendir los últimos honores a un hombre que le había hecho ganar algunas buenas propinas.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "Buscó vanamente a las dos hijas.",
+      "highlight": "Buscó en vano a las dos hijas.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Rastignac et Christophe accompagnèrent seuls, avec deux croque-morts, le char qui menait le pauvre homme à Saint-Étienne-du-Mont, église peu distante de la rue Neuve-Sainte-Geneviève. Arrivé là, le corps fut présenté à une petite chapelle basse et sombre, autour de laquelle l’étudiant chercha vainement les deux filles du père Goriot ou leurs maris. Il fut seul avec Christophe, qui se croyait obligé de rendre les derniers devoirs à un homme qui lui avait fait gagner quelques bons pourboires.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-257",
       "legacy_index": 257,
-      "t": "Los dos sacerdotes, el sacristán y el monacillo llegaron e hicieron lo que podían hacer por setenta francos, en una época en que la religión no es bastante rica para dar gratis sus oraciones. El clero cantó un salmo, el Libera y el De profundis, concluyéndose el oficio en veinte minutos.",
+      "t": "Los dos sacerdotes, el monaguillo y el sacristán llegaron y dieron todo lo que podía obtenerse por setenta francos, en una época en que la religión no es lo bastante rica para rezar gratis. Los clérigos cantaron un salmo, el Libera y el De profundis. El oficio duró veinte minutos.",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "La religión no es bastante rica.",
+      "highlight": "La religión no es lo bastante rica.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Les deux prêtres, l’enfant de chœur et le bedeau vinrent et donnèrent tout ce qu’on peut avoir pour soixante-dix francs dans une époque où la religion n’est pas assez riche pour prier gratis. Les gens du clergé chantèrent un psaume, le Libera, le De profundis. Le service dura vingt minutes.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-258",
       "legacy_index": 258,
-      "t": "Cruzó los brazos y contempló las nubes. Cristóbal se marchó dejando solo a Rastignac, el cual dando algunos pasos hacia lo alto del cementerio, vio a París tortuosamente extendido a lo largo de las dos orillas del Sena, donde empezaban a brillar las luces. Sus ojos se detuvieron casi con ansia entre la columna de la plaza de Vendôme y la cúpula de los Inválidos, donde habitaba aquel hermoso mundo en que había querido penetrar; y echando sobre aquella susurrante colmena una mirada, que parecía castrarla con anticipación, pronunció esta palabra suprema.\n\n—Ahora todo para los dos!",
+      "t": "Se cruzó de brazos y contempló las nubes. Cristóbal se marchó. Rastignac, solo ya, dio unos pasos hacia la parte alta del cementerio y vio París tendido tortuosamente a lo largo de las dos orillas del Sena, donde comenzaban a brillar las luces. Sus ojos se clavaron casi con avidez en el espacio comprendido entre la columna de la plaza Vendôme y la cúpula de los Inválidos, allí donde vivía aquel hermoso mundo en el que había querido penetrar. Lanzó sobre aquella colmena zumbante una mirada que parecía sorber de antemano su miel y pronunció estas grandiosas palabras: —¡Ahora, tú y yo!",
       "a": "Honoré de Balzac",
       "obra": "Papá Goriot, Honoré de Balzac",
-      "highlight": "Ahora todo para los dos.",
+      "highlight": "¡Ahora, tú y yo!",
       "lang": "es",
       "type": "prose",
       "authorId": "author-honore-de-balzac",
-      "workId": "work-papa-goriot"
+      "workId": "work-papa-goriot",
+      "original": {
+        "text": "Il se croisa les bras et contempla les nuages. Christophe le quitta. Rastignac, resté seul, fit quelques pas vers le haut du cimetière et vit Paris tortueusement couché le long des deux rives de la Seine, où commençaient à briller les lumières. Ses yeux s’attachèrent presque avidement entre la colonne de la place Vendôme et le dôme des Invalides, là où vivait ce beau monde dans lequel il avait voulu pénétrer. Il lança sur cette ruche bourdonnante un regard qui semblait par avance en pomper le miel, et dit ces mots grandioses : — À nous deux maintenant !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
     },
     {
       "id": "quote-259",

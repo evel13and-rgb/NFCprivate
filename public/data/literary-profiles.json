@@ -2019,6 +2019,28 @@
         "Traducción propia del ruso para Páramo Literario."
       ],
       "fragment_count": 26
+    },
+    {
+      "work_id": "work-papa-goriot",
+      "title": "Papá Goriot",
+      "display_title": "Papá Goriot",
+      "original_title": "Le Père Goriot",
+      "author_id": "author-honore-de-balzac",
+      "publication_year": 1835,
+      "genre": null,
+      "language": null,
+      "summary_short": null,
+      "summary_long": null,
+      "context_notes": null,
+      "themes": [],
+      "tone_notes": null,
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Honoré de Balzac, Le Père Goriot, edición de A. Houssiaux incluida en Œuvres complètes de H. de Balzac, tomo IX, 1855.",
+        "Wikisource, transcripción francesa cotejada con el facsímil de la edición Houssiaux."
+      ],
+      "fragment_count": 12
     }
   ]
 }
