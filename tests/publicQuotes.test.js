@@ -130,6 +130,8 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-151', 'quote-152', 'quote-153', 'quote-154', 'quote-155',
     'quote-156', 'quote-157', 'quote-158', 'quote-159', 'quote-160',
     'quote-161', 'quote-162', 'quote-163', 'quote-164', 'quote-165',
+    'quote-166', 'quote-167', 'quote-168', 'quote-169', 'quote-170',
+    'quote-171', 'quote-172', 'quote-173', 'quote-174', 'quote-175',
     'quote-176', 'quote-177', 'quote-178', 'quote-179', 'quote-180',
     'quote-181', 'quote-182', 'quote-183', 'quote-184', 'quote-185',
     'quote-186', 'quote-187', 'quote-188', 'quote-189', 'quote-190',
@@ -411,6 +413,37 @@ test('Niebla conserva la primera edición y publica una actualización lingüís
   assert.equal(nieblaQuotes.reduce((count, quote) => count + (quote.t.match(/\[…\]/g)?.length || 0), 0), 4);
   assert.equal(nieblaQuotes.reduce((count, quote) => count + (quote.original.text.match(/\[…\]/g)?.length || 0), 0), 4);
   for (const quote of nieblaQuotes) {
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('Cañas y barro conserva la primera edición y publica una actualización lingüística mínima', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const canasQuotes = document.quotes.filter(quote => quote.workId === 'work-canas-y-barro');
+
+  assert.equal(canasQuotes.length, 10);
+  assert.ok(canasQuotes.every(quote => quote.original?.lang === 'es'));
+  assert.ok(canasQuotes.every(quote => quote.original?.label === 'Original español'));
+  assert.match(quotes.get('quote-166').original.text, /semejante á.*\n\nEn el agua muerta/);
+  assert.match(quotes.get('quote-166').original.text, /barca-correo; un gran ataúd/);
+  assert.match(quotes.get('quote-166').t, /semejante a.*\n\nEn el agua muerta/);
+  assert.match(quotes.get('quote-170').original.text, /vedijas de blanca lana/);
+  assert.match(quotes.get('quote-170').t, /mechones de lana blanca/);
+  assert.doesNotMatch(quotes.get('quote-170').original.text, /\n\n/);
+  assert.match(quotes.get('quote-171').original.text, /^La barca deslizábase á/);
+  assert.match(quotes.get('quote-171').t, /^La barca se deslizaba a/);
+  assert.match(quotes.get('quote-173').original.text, /casa de expósitos/);
+  assert.match(quotes.get('quote-173').t, /hospicio de niños abandonados/);
+  assert.match(quotes.get('quote-174').original.text, /no la atendía gran cosa/);
+  assert.match(quotes.get('quote-174').t, /no le hacía mucho caso/);
+  assert.equal(quotes.get('quote-175').original.text.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-175').t.match(/\[…\]/g)?.length, 1);
+  for (const quote of canasQuotes) {
     assert.equal(
       quote.t.match(/\[…\]/g)?.length || 0,
       quote.original.text.match(/\[…\]/g)?.length || 0,

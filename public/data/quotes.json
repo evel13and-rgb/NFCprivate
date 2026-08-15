@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-15T15:37:56.421Z",
+  "generated_at": "2026-08-15T16:13:47.672Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -2719,26 +2719,36 @@
     {
       "id": "quote-166",
       "legacy_index": 166,
-      "t": "Afluían las mujeres al canal, semejante á una calle de Venecia, con las márgenes cubiertas de barracas y viveros donde los pescadores guardaban las anguilas. En el agua muerta, de una brillantez de estaño, permanecía inmóvil la barca-correo: un gran ataúd cargado de personas y paquetes, con la borda casi á flor de agua.",
+      "t": "Afluían las mujeres al canal, semejante a una calle de Venecia, con las márgenes cubiertas de barracas y viveros donde los pescadores guardaban las anguilas.\n\nEn el agua muerta de una brillantez de estaño permanecía inmóvil la barca-correo; un gran ataúd cargado de personas y paquetes, con la borda casi a flor de agua.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
-      "highlight": "En el agua muerta, de una brillantez de estaño, permanecía inmóvil la barca-correo.",
+      "highlight": "En el agua muerta de una brillantez de estaño permanecía inmóvil la barca-correo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Afluían las mujeres al canal, semejante á una calle de Venecia, con las márgenes cubiertas de barracas y viveros donde los pescadores guardaban las anguilas.\n\nEn el agua muerta de una brillantez de estaño permanecía inmóvil la barca-correo; un gran ataúd cargado de personas y paquetes, con la borda casi á flor de agua.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-167",
       "legacy_index": 167,
-      "t": "Entró á empujones, sin que la masa egoísta le abriera paso, y no encontrando sitio se deslizó entre las piernas de los pasajeros, tendiéndose en el fondo, con el rostro pegado á las alpargatas sucias y los zapatos llenos de barro, en un ambiente nauseabundo. La gente parecía acostumbrada á estas escenas. Aquella embarcación servía para todo; era el vehículo de la comida, del hospital y del cementerio.",
+      "t": "Entró a empujones, sin que la masa egoísta le abriera paso, y no encontrando sitio se deslizó entre las piernas de los pasajeros, tendiéndose en el fondo, con el rostro pegado a las alpargatas sucias y los zapatos llenos de barro, en un ambiente nauseabundo. La gente parecía acostumbrada a estas escenas. Aquella embarcación servía para todo; era el vehículo de la comida, del hospital y del cementerio.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
       "highlight": "Aquella embarcación servía para todo; era el vehículo de la comida, del hospital y del cementerio.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Entró á empujones, sin que la masa egoísta le abriera paso, y no encontrando sitio se deslizó entre las piernas de los pasajeros, tendiéndose en el fondo, con el rostro pegado á las alpargatas sucias y los zapatos llenos de barro, en un ambiente nauseabundo. La gente parecía acostumbrada á estas escenas. Aquella embarcación servía para todo; era el vehículo de la comida, del hospital y del cementerio.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-168",
@@ -2750,91 +2760,131 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Los altos ribazos ocultaban la red de canales, las anchas _carreras_ por donde navegaban los barcos de vela cargados de arroz. Sus cascos permanecían invisibles y las grandes velas triangulares se deslizaban sobre el verde de los campos, en el silencio de la tarde, como fantasmas que caminasen en tierra firme.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-169",
       "legacy_index": 169,
-      "t": "Era el _lluent_, la verdadera Albufera, el lago libre, con sus bosquecillos de cañas esparcidos á grandes distancias, donde se refugiaban las aves del lago, tan perseguidas por los cazadores de la ciudad.",
+      "t": "Era el _lluent_, la verdadera Albufera, el lago libre, con sus bosquecillos de cañas esparcidos a grandes distancias, donde se refugiaban las aves del lago, tan perseguidas por los cazadores de la ciudad.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
       "highlight": "Era el _lluent_, la verdadera Albufera, el lago libre.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Era el _lluent_, la verdadera Albufera, el lago libre, con sus bosquecillos de cañas esparcidos á grandes distancias, donde se refugiaban las aves del lago, tan perseguidas por los cazadores de la ciudad.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-170",
       "legacy_index": 170,
-      "t": "Ya estaban en la verdadera Albufera, en el inmenso _lluent_, azul y terso como un espejo veneciano, que retrataba invertidos los barcos y las lejanas orillas con el contorno ligeramente serpenteado.\n\nLas nubes parecían rodar por el fondo del lago como vedijas de blanca lana; en la playa de la Dehesa unos cazadores seguidos de perros duplicaban su imagen en el agua, andando cabeza abajo.",
+      "t": "Ya estaban en la verdadera Albufera, en el inmenso _lluent_ azul y terso como un espejo veneciano que retrataba invertidos los barcos y las lejanas orillas, con el contorno ligeramente serpenteado. Las nubes parecían rodar por el fondo del lago como mechones de lana blanca; en la playa de la Dehesa unos cazadores seguidos de perros duplicaban su imagen en el agua, andando cabeza abajo.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
-      "highlight": "Las nubes parecían rodar por el fondo del lago como vedijas de blanca lana.",
+      "highlight": "Las nubes parecían rodar por el fondo del lago como mechones de lana blanca.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Ya estaban en la verdadera Albufera, en el inmenso _lluent_ azul y terso como un espejo veneciano que retrataba invertidos los barcos y las lejanas orillas, con el contorno ligeramente serpenteado. Las nubes parecían rodar por el fondo del lago como vedijas de blanca lana; en la playa de la Dehesa unos cazadores seguidos de perros duplicaban su imagen en el agua, andando cabeza abajo.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-171",
       "legacy_index": 171,
-      "t": "La barca deslizábase á lo largo de la Dehesa y pasaban rápidamente ante ella las colinas areniscas, con las chozas de los guardas en su cumbre; las espesas cortinas de matorrales; los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados.",
+      "t": "La barca se deslizaba a lo largo de la Dehesa, y pasaban rápidamente ante ella las colinas areniscas, con las chozas de los guardas en su cumbre; las espesas cortinas de matorrales; los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
       "highlight": "Los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "La barca deslizábase á lo largo de la Dehesa, y pasaban rápidamente ante ella las colinas areniscas, con las chozas de los guardas en su cumbre; las espesas cortinas de matorrales; los grupos de pinos retorcidos, de formas terroríficas, como manojos de miembros torturados.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-172",
       "legacy_index": 172,
-      "t": "Era milagroso que no apareciera su cadáver en el fondo de un canal después de tantos viajes á pie, por el lago, en plena embriaguez, siguiendo las lindes de los arrozales, estrechas como un filo de hacha, atravesando los portillos de las acequias con agua al pecho y pasando por lugares de barro movedizo donde nadie osaba aventurarse como no fuese en barca. La Albufera era su casa.",
+      "t": "Era milagroso que no apareciera su cadáver en el fondo de un canal después de tantos viajes a pie, por el lago, en plena embriaguez, siguiendo las lindes de los arrozales, estrechas como un filo de hacha, atravesando los portillos de las acequias con agua al pecho y pasando por lugares de barro movedizo donde nadie osaba aventurarse si no era en barca. La Albufera era su casa.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
       "highlight": "La Albufera era su casa.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Era milagroso que no apareciera su cadáver en el fondo de un canal después de tantos viajes á pie, por el lago, en plena embriaguez, siguiendo las lindes de los arrozales, estrechas como un filo de hacha, atravesando los portillos de las acequias con agua al pecho y pasando por lugares de barro movedizo donde nadie osaba aventurarse como no fuese en barca. La Albufera era su casa.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-173",
       "legacy_index": 173,
-      "t": "Y los dos hicieron un viaje á la ciudad, trayendo de allá una niña de seis años, una bestezuela tímida, arisca y fea, que sacaron de la casa de expósitos. Se llamaba Visanteta; pero todos, para que no olvidase su origen, con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_.",
+      "t": "Y los dos hicieron un viaje a la ciudad, trayendo de allá una niña de seis años, una bestezuela tímida, arisca y fea que sacaron del hospicio de niños abandonados. Se llamaba Visanteta; pero todos, para que no olvidase su origen, con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
       "highlight": "Con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Y los dos hicieron un viaje á la ciudad, trayendo de allá una niña de seis años, una bestezuela tímida, arisca y fea que sacaron de la casa de expósitos. Se llamaba Visanteta; pero todos, para que no olvidase su origen, con esa crueldad inconsciente de la incultura popular, la llamaron la _Borda_.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-174",
       "legacy_index": 174,
-      "t": "Y tranquilo por la posesión de Neleta, que crecía en la miseria como una flor rara, contrastando su hermosura con la pobreza física de las otras hijas del Palmar, no la atendía gran cosa, y la trataba con la misma confianza que si ya fuesen esposos.",
+      "t": "Y tranquilo por la posesión de Neleta, que crecía en la miseria como una flor rara, contrastando su hermosura con la pobreza física de las otras hijas del Palmar, no le hacía mucho caso, y la trataba con la misma confianza que si ya fuesen esposos.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
       "highlight": "Neleta, que crecía en la miseria como una flor rara.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Y tranquilo por la posesión de Neleta, que crecía en la miseria como una flor rara, contrastando su hermosura con la pobreza física de las otras hijas del Palmar, no la atendía gran cosa, y la trataba con la misma confianza que si ya fuesen esposos.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-175",
       "legacy_index": 175,
-      "t": "Los dos barquitos entraron en un callejón de agua entre los altos carrizos. La anea crecía á manojos entre los _senills_; las cañas se confundían con los juncos, y las plantas trepadoras, con sus campanillas blancas y azules, se enredaban en esta selva acuática formando guirnaldas.\n\nEn el callejón, el agua mostraba en su fondo extrañas vegetaciones que subían hasta la superficie, no sabiéndose en ciertos momentos si navegaban los barquitos ó se arrastraban sobre campos verdosos cubiertos por un débil cristal.",
+      "t": "Los dos barquitos entraron en un callejón de agua entre los altos carrizos. La anea crecía a manojos entre los _senills_; las cañas se confundían con los juncos, y las plantas trepadoras, con sus campanillas blancas y azules, se enredaban en esta selva acuática formando guirnaldas. […] En el callejón, el agua mostraba en su fondo extrañas vegetaciones que subían hasta la superficie, sin saberse en ciertos momentos si navegaban los barquitos o se arrastraban sobre campos verdosos cubiertos por un débil cristal.",
       "a": "Vicente Blasco Ibáñez",
       "obra": "Cañas y barro, Vicente Blasco Ibáñez",
       "highlight": "Esta selva acuática formando guirnaldas.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-vicente-blasco-ibanez",
-      "workId": "work-canas-y-barro"
+      "workId": "work-canas-y-barro",
+      "original": {
+        "text": "Los dos barquitos entraron en un callejón de agua entre los altos carrizos. La anea crecía á manojos entre los _senills_; las cañas se confundían con los juncos, y las plantas trepadoras con sus campanillas blancas y azules, se enredaban en esta selva acuática formando guirnaldas. […] En el callejón, el agua mostraba en su fondo extrañas vegetaciones que subían hasta la superficie, no sabiéndose en ciertos momentos si navegaban los barquitos ó se arrastraban sobre campos verdosos cubiertos por un débil cristal.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-176",

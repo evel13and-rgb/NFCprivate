@@ -1266,6 +1266,10 @@ body.night-fall .watermark {
   font-style: normal;
 }
 
+.word--emphasis {
+  font-style: italic;
+}
+
 .word--fall {
   transition: transform var(--word-fall-duration, 0.65s) cubic-bezier(0.24, 0.82, 0.34, 1);
   transform: translate3d(0, var(--word-fall-translate, 240px), 0)

@@ -265,6 +265,37 @@ function createWordSpan(content, extraClass = '') {
   return span;
 }
 
+function stripInlineEmphasisMarkers(text) {
+  const content = typeof text === 'string' ? text : '';
+  return content.replace(/_([^_\n]+)_/g, '$1');
+}
+
+function getWordTokenPresentation(token) {
+  const match = typeof token === 'string'
+    ? token.match(/^_([^_]+)_([,.;:!?…]*)$/)
+    : null;
+  if (!match) return { text: token, emphasized: false };
+  return { text: `${match[1]}${match[2]}`, emphasized: true };
+}
+
+function setInlineEmphasisContent(element, text) {
+  if (!element) return;
+  const content = typeof text === 'string' ? text : '';
+  const fragment = document.createDocumentFragment();
+  const pattern = /_([^_\n]+)_/g;
+  let cursor = 0;
+  let match;
+  while ((match = pattern.exec(content)) !== null) {
+    if (match.index > cursor) fragment.appendChild(document.createTextNode(content.slice(cursor, match.index)));
+    const emphasis = document.createElement('em');
+    emphasis.textContent = match[1];
+    fragment.appendChild(emphasis);
+    cursor = pattern.lastIndex;
+  }
+  if (cursor < content.length) fragment.appendChild(document.createTextNode(content.slice(cursor)));
+  element.replaceChildren(fragment);
+}
+
 function clampNumber(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
@@ -487,7 +518,11 @@ function setQuoteTextContent(text, { includeQuotes = true } = {}) {
     if (/^\s+$/.test(token)) {
       fragment.appendChild(document.createTextNode(token));
     } else {
-      fragment.appendChild(createWordSpan(token));
+      const presentation = getWordTokenPresentation(token);
+      fragment.appendChild(createWordSpan(
+        presentation.text,
+        presentation.emphasized ? 'word--emphasis' : '',
+      ));
     }
   }
   if (includeQuotes && quoteDecoration.addClosing) {
@@ -1135,7 +1170,9 @@ function getShareImageTheme() {
 }
 
 function getQuoteCardSnapshot() {
-  const quoteText = (currentQuoteTextVersion?.text ?? currentQuote?.t ?? '').trim();
+  const quoteText = stripInlineEmphasisMarkers(
+    (currentQuoteTextVersion?.text ?? currentQuote?.t ?? '').trim(),
+  );
   const author = getVisibleElementText('author-name');
   const workTitle = getVisibleElementText('author-work');
   const title = getVisibleElementText('quote-card-title') || 'Páramo Literario';
@@ -1166,7 +1203,9 @@ function getSnapshotShareText(snapshot) {
 }
 
 function getQuoteVoiceText() {
-  const quoteText = (currentQuote?.t ?? '').trim();
+  const quoteText = stripInlineEmphasisMarkers(
+    (currentQuoteTextVersion?.text ?? currentQuote?.t ?? '').trim(),
+  );
   const { author, workTitle } = getQuoteMetadata(currentQuote);
   const details = [author, workTitle].filter(Boolean).join(', ');
   return [quoteText, details].filter(Boolean).join('. ');
@@ -1807,7 +1846,7 @@ function renderQuote(quote) {
     const highlight = typeof currentQuote.highlight === 'string'
       ? currentQuote.highlight.trim()
       : '';
-    quoteHighlightRef.textContent = highlight;
+    setInlineEmphasisContent(quoteHighlightRef, highlight);
     quoteHighlightRef.hidden = !highlight;
   }
 
