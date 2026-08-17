@@ -452,6 +452,35 @@ test('Cañas y barro conserva la primera edición y publica una actualización l
   }
 });
 
+test('Orlando conserva límites, imágenes y repeticiones tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const orlandoQuotes = document.quotes.filter(quote => quote.workId === 'work-orlando');
+
+  assert.equal(orlandoQuotes.length, 25);
+  assert.ok(orlandoQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(orlandoQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-177').t, /sentir bajo él la espina dorsal de la tierra/);
+  assert.match(quotes.get('quote-180').t, /se zambulliría en busca de la gema/);
+  assert.match(quotes.get('quote-183').t, /incendiar la casa con yesca/);
+  assert.match(quotes.get('quote-186').t, /hacer ciertas afirmaciones\.$/);
+  assert.doesNotMatch(quotes.get('quote-186').t, /Orlando se había convertido en mujer/);
+  assert.match(quotes.get('quote-187').t, /^Orlando se había convertido en mujer/);
+  assert.match(quotes.get('quote-190').original.text, /she flattered the good man's humours/);
+  assert.match(quotes.get('quote-190').t, /la ropa la que nos lleva a nosotros, y no nosotros a ella/);
+  assert.match(quotes.get('quote-191').t, /caso particular de la propia Orlando/);
+  assert.match(quotes.get('quote-193').t, /Los pensamientos son divinos\.$/);
+  assert.doesNotMatch(quotes.get('quote-193').t, /etcétera/);
+  assert.equal(quotes.get('quote-194').t.match(/el cambio/gi)?.length, 2);
+  assert.equal(quotes.get('quote-195').t.match(/la sociedad/gi)?.length, 4);
+  assert.match(quotes.get('quote-197').original.text, /Dictionary of National Biography/);
+  assert.match(quotes.get('quote-197').t, /En efecto, es difícil este asunto/);
+  assert.match(quotes.get('quote-198').t, /que una persona diga, en cuanto se queda sola/);
+  for (const quote of orlandoQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+  }
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
@@ -509,4 +538,5 @@ test('script.js ya no contiene el catálogo completo ni colecciones literarias',
   assert.doesNotMatch(shareSnapshotSource, /original/);
   assert.match(voiceSource, /currentQuote\?\.t/);
   assert.doesNotMatch(voiceSource, /original/);
+  assert.match(source, /const emphasisPattern = \/_\(\[\^_\\n\]\+\)_\(\[,\.;:!\?…\]\*\)\/g/);
 });

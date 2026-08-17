@@ -512,19 +512,22 @@ function setQuoteTextContent(text, { includeQuotes = true } = {}) {
     fragment.appendChild(createWordSpan('“', 'word--quote-open'));
   }
   applyQuoteLengthSizing(content);
-  const tokens = content.split(/(\s+)/);
-  for (const token of tokens) {
-    if (!token) continue;
-    if (/^\s+$/.test(token)) {
-      fragment.appendChild(document.createTextNode(token));
-    } else {
-      const presentation = getWordTokenPresentation(token);
-      fragment.appendChild(createWordSpan(
-        presentation.text,
-        presentation.emphasized ? 'word--emphasis' : '',
-      ));
+  const appendTokens = (value, emphasized = false) => {
+    for (const token of value.split(/(\s+)/)) {
+      if (!token) continue;
+      if (/^\s+$/.test(token)) fragment.appendChild(document.createTextNode(token));
+      else fragment.appendChild(createWordSpan(token, emphasized ? 'word--emphasis' : ''));
     }
+  };
+  const emphasisPattern = /_([^_\n]+)_([,.;:!?…]*)/g;
+  let cursor = 0;
+  let match;
+  while ((match = emphasisPattern.exec(content)) !== null) {
+    appendTokens(content.slice(cursor, match.index));
+    appendTokens(`${match[1]}${match[2]}`, true);
+    cursor = emphasisPattern.lastIndex;
   }
+  appendTokens(content.slice(cursor));
   if (includeQuotes && quoteDecoration.addClosing) {
     fragment.appendChild(createWordSpan('”', 'word--quote-close'));
   }
