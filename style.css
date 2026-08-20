@@ -519,6 +519,17 @@ body[data-visual-scene='rainbow-after-rain'] {
   --weather-particles-size: 190px 170px, 240px 210px, 100% 100%;
 }
 
+body[data-time-of-day='sunset'][data-visual-scene='rainbow-after-rain'] {
+  /* Conserva el arcoíris y lo integra en la luz cálida de la hora local. */
+  --paramo-base-veil:
+    linear-gradient(180deg, rgba(104, 43, 17, 0.14), rgba(70, 27, 14, 0.2) 54%, rgba(10, 6, 4, 0.3));
+  --weather-tone:
+    radial-gradient(circle at 62% 18%, rgba(255, 194, 104, 0.2), transparent 30%),
+    linear-gradient(180deg, rgba(194, 77, 38, 0.24), rgba(104, 44, 27, 0.17) 54%, rgba(20, 10, 7, 0.24)),
+    radial-gradient(circle at 50% 58%, transparent 0 42%, rgba(20, 7, 4, 0.34) 84%);
+  --weather-tone-opacity: 0.88;
+}
+
 body[data-time-of-day='sunset'][data-weather='clear'],
 body[data-time-of-day='sunset'][data-weather='sunny'] {
   --weather-tone:

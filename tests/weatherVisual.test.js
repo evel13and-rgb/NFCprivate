@@ -50,7 +50,17 @@ test('combina clima del servidor con hora local del visitante', () => {
     'rainbow-after-rain',
   );
   assert.equal(resolveVisualWeatherState({ weather: 'rainbow' }, 'night').visualScene, 'night');
+  assert.equal(resolveVisualWeatherState({ weather: 'rainbow' }, 'sunset').visualScene, 'rainbow-after-rain');
   assert.equal(resolveVisualWeatherState({ weather: 'light-rain' }, 'sunset').visualScene, 'sunset-rain');
+});
+
+test('el arcoíris al atardecer conserva la escena y recibe una tonalidad cálida', () => {
+  const styles = readFileSync(new URL('../style.css', import.meta.url), 'utf8');
+  assert.match(
+    styles,
+    /body\[data-time-of-day='sunset'\]\[data-visual-scene='rainbow-after-rain'\]/,
+  );
+  assert.match(styles, /rgba\(194, 77, 38, 0\.24\)/);
 });
 
 test('el cliente no solicita geolocalización del visitante', () => {
