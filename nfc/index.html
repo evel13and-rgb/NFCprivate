@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#121212" />
+  <title>Tu frase · Páramo Literario</title>
+  <style>
+    html, body { width: 100%; min-height: 100%; margin: 0; background: #121212; }
+  </style>
+  <script>
+    (() => {
+      let encounterId = '';
+      try {
+        encounterId = crypto.randomUUID();
+      } catch {
+        encounterId = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+      }
+      const target = new URL('/', window.location.origin);
+      target.searchParams.set('origen', 'nfc');
+      target.searchParams.set('encuentro', encounterId);
+      window.location.replace(target.href);
+    })();
+  </script>
+</head>
+<body></body>
+</html>

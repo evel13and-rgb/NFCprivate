@@ -16,6 +16,7 @@ import {
   supportsDaylightMotes,
 } from './weatherVisual.js';
 import { createSceneBackgroundController } from './sceneBackground.js?v=1';
+import { buildPinnedNfcUrl, readNfcRequest } from './nfcExperience.js?v=1';
 const QUOTE_INTERVAL_HOURS = 0.5;
 const QUOTE_INTERVAL_MS = QUOTE_INTERVAL_HOURS * 60 * 60 * 1000;
 const QUOTE_STATE_KEY = 'paramo-literario-last-quote-state';
@@ -224,10 +225,14 @@ function waitForInitialPaint() {
 
 function getAppLoaderTiming() {
   const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  const nfcExperience = document.documentElement.classList.contains('nfc-experience');
   const returningVisit = document.documentElement.classList.contains('app-loader-returning');
 
   if (reducedMotion) {
     return { maximum: 50, removal: 140 };
+  }
+  if (nfcExperience) {
+    return { maximum: 900, minimum: 720, removal: 420 };
   }
   if (returningVisit) {
     return { maximum: 100, removal: 220 };
@@ -249,13 +254,29 @@ async function revealAppWhenReady() {
   const timing = getAppLoaderTiming();
   const safetyTimeout = waitForLoaderDelay(timing.maximum);
 
-  await Promise.race([waitForInitialPaint(), safetyTimeout]);
+  const ready = Promise.race([waitForInitialPaint(), safetyTimeout]);
+  if (timing.minimum) {
+    await Promise.all([ready, waitForLoaderDelay(timing.minimum)]);
+  } else {
+    await ready;
+  }
   try {
     sessionStorage.setItem('paramo-loader-seen', '1');
   } catch {
     // La transición funciona igualmente si el almacenamiento está desactivado.
   }
   dismissAppLoader(timing.removal);
+}
+
+function scheduleNfcControlsReveal() {
+  if (!document.documentElement.classList.contains('nfc-experience')) return;
+  const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  window.setTimeout(() => {
+    document.body?.classList.add('nfc-controls-ready');
+  }, reducedMotion ? 0 : 1450);
+  window.setTimeout(() => {
+    document.body?.classList.add('nfc-original-ready');
+  }, reducedMotion ? 0 : 2450);
 }
 
 function createWordSpan(content, extraClass = '') {
@@ -620,7 +641,34 @@ function pickNewQuote() {
   return nextQuote;
 }
 
+function findQuoteByStableId(stableQuoteId) {
+  if (!stableQuoteId) return null;
+  const quoteIndex = activeQuotes.findIndex(quote => quote?.id === stableQuoteId);
+  return toQuoteWithIndex(quoteIndex);
+}
+
+function pinNfcQuoteInAddress(quote, encounterId) {
+  if (!quote?.id || typeof window === 'undefined' || !window.history?.replaceState) return;
+  const pinnedUrl = buildPinnedNfcUrl(window.location.href, quote.id, encounterId);
+  window.history.replaceState({ nfc: true, quoteId: quote.id }, '', pinnedUrl);
+}
+
 function determineQuoteForDisplay() {
+  const nfcRequest = readNfcRequest(window.location.search);
+  if (nfcRequest.isNfc) {
+    document.documentElement.classList.add('nfc-experience');
+    document.body?.classList.add('nfc-experience');
+
+    const pinnedQuote = findQuoteByStableId(nfcRequest.quoteId);
+    if (pinnedQuote) {
+      return { quote: pinnedQuote, isNfc: true };
+    }
+
+    const newQuote = pickNewQuote();
+    pinNfcQuoteInAddress(newQuote, nfcRequest.encounterId);
+    return { quote: newQuote, isNfc: true, isNewNfcEncounter: true };
+  }
+
   const navigationType = getNavigationType();
   const storedState = readQuoteState();
   const now = Date.now();
@@ -1943,5 +1991,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   await initApp();
   initFireflyAura();
   scheduleDayNightModeUpdates();
-  revealAppWhenReady();
+  await revealAppWhenReady();
+  scheduleNfcControlsReveal();
 });

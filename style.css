@@ -146,6 +146,33 @@
   transition: opacity 240ms ease;
 }
 
+.app-loader__nfc-copy {
+  display: none;
+}
+
+html.nfc-experience .app-loader__panel {
+  grid-template-rows: auto auto;
+  align-content: center;
+  gap: 1rem;
+}
+
+html.nfc-experience .app-loader__mark {
+  font-size: clamp(3.2rem, 12vw, 5.5rem);
+  animation-duration: 1.8s;
+}
+
+html.nfc-experience .app-loader__nfc-copy {
+  position: relative;
+  z-index: 1;
+  display: block;
+  color: rgba(224, 202, 157, 0.84);
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: clamp(1rem, 4.2vw, 1.24rem);
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.38);
+  animation: nfc-loader-copy-arrival 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 .app-loader.is-leaving {
   opacity: 0;
   visibility: hidden;
@@ -162,6 +189,12 @@
   opacity: 0;
 }
 
+.app-loader.is-leaving .app-loader__nfc-copy {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 180ms ease, transform 260ms ease;
+}
+
 html.app-loader-returning .app-loader {
   --loader-open-duration: 220ms;
   --loader-fade-duration: 220ms;
@@ -171,6 +204,11 @@ html.app-loader-returning .app-loader {
 body.app-loading main.wrap {
   opacity: 0.92;
   transform: translateY(6px) scale(0.985);
+}
+
+html.nfc-experience body.app-loading main.wrap {
+  opacity: 0;
+  transform: translateY(14px) scale(0.965);
 }
 
 main.wrap {
@@ -184,6 +222,81 @@ main.wrap {
 @keyframes loader-mark-breathe {
   from { opacity: 0.72; }
   to { opacity: 0.9; }
+}
+
+@keyframes nfc-loader-copy-arrival {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    letter-spacing: 0.1em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.04em;
+  }
+}
+
+html.nfc-experience body:not(.app-loading) #quote-card {
+  animation: nfc-card-arrival 880ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+html.nfc-experience body:not(.app-loading) .quote-card__header {
+  animation: nfc-content-arrival 560ms 100ms ease-out both;
+}
+
+html.nfc-experience body:not(.app-loading) .quote-card__body {
+  animation: nfc-content-arrival 680ms 280ms ease-out both;
+}
+
+html.nfc-experience body:not(.app-loading) .quote-card__footer {
+  animation: nfc-content-arrival 620ms 520ms ease-out both;
+}
+
+html.nfc-experience .floating-action,
+html.nfc-experience .quote-original-controls {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+
+html.nfc-experience body.nfc-controls-ready .floating-action,
+html.nfc-experience body.nfc-original-ready .quote-original-controls {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+html.nfc-experience .quote-original-controls {
+  transition: opacity 420ms ease, visibility 0s linear 420ms;
+}
+
+html.nfc-experience body.nfc-original-ready .quote-original-controls {
+  transition-delay: 0s;
+}
+
+@keyframes nfc-card-arrival {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.965);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes nfc-content-arrival {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 body {
@@ -279,6 +392,17 @@ body {
     animation: none;
     opacity: 0.86;
     transition-duration: 140ms;
+  }
+
+  html.nfc-experience .app-loader__nfc-copy,
+  html.nfc-experience body:not(.app-loading) #quote-card,
+  html.nfc-experience body:not(.app-loading) .quote-card__header,
+  html.nfc-experience body:not(.app-loading) .quote-card__body,
+  html.nfc-experience body:not(.app-loading) .quote-card__footer {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
   }
 
   .scene-background__layer {
@@ -2627,15 +2751,13 @@ body.night-fall .modal__close:focus-visible {
     gap: 0.6rem;
   }
 
-  #quote-card {
+  #quote-card,
+  #quote-card:has(> .quote-card__body > :is(.quote-text--long, .quote-text--very-long)) {
     width: 100%;
     padding: 0.85rem 0.9rem 0;
-  }
-
-  #quote-card:has(> .quote-card__body > :is(.quote-text--long, .quote-text--very-long)) {
-    --quote-card-vertical-reserve: calc(8.75rem + env(safe-area-inset-bottom));
-    max-height: 84vh;
-    max-height: min(84dvh, calc(100dvh - var(--quote-card-vertical-reserve)));
+    /* Mantiene la tarjeta por encima de los controles flotantes, incluido su halo. */
+    max-height: calc(100vh - 11.5rem - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 11.5rem - env(safe-area-inset-bottom));
   }
 
   h1 {

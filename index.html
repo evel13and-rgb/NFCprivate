@@ -7,7 +7,11 @@
   <meta name="description" content="Cada vez que abras esta página te mostrará una frase literaria aleatoria." />
   <script>
     try {
-      if (sessionStorage.getItem('paramo-loader-seen')) {
+      const params = new URLSearchParams(window.location.search);
+      const isNfcExperience = params.get('origen') === 'nfc' || params.get('modo') === 'nfc';
+      if (isNfcExperience) {
+        document.documentElement.classList.add('nfc-experience');
+      } else if (sessionStorage.getItem('paramo-loader-seen')) {
         document.documentElement.classList.add('app-loader-returning');
       }
     } catch {}
@@ -18,7 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=37" />
+  <link rel="stylesheet" href="style.css?v=42" />
 </head>
 <body class="app-loading" data-mode="day">
   <div
@@ -41,6 +45,7 @@
   <div class="app-loader" id="app-loader" aria-hidden="true">
     <div class="app-loader__panel">
       <span class="app-loader__mark">¿</span>
+      <span class="app-loader__nfc-copy">La frase te encontró</span>
     </div>
   </div>
   <div class="quote-original-controls">
@@ -193,6 +198,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=43"></script>
+  <script type="module" src="script.js?v=44"></script>
 </body>
 </html>
