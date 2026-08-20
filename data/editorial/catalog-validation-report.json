@@ -1,16 +1,16 @@
 {
   "valid": true,
-  "validated_at": "2026-08-09T11:51:36.850Z",
+  "validated_at": "2026-08-20T05:03:08.351Z",
   "summary": {
     "expected_quotes": 640,
     "intermediate_quotes": 640,
     "normalized_quotes": 640,
     "authors": 27,
-    "works": 30,
-    "sources": 30,
+    "works": 29,
+    "sources": 29,
     "editorial_decisions": 0,
-    "poems": 26,
-    "quotes_with_line_breaks": 458,
+    "poems": 27,
+    "quotes_with_line_breaks": 424,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
@@ -21,81 +21,53 @@
     "editorial_sources": {
       "valid": true,
       "message": ""
+    },
+    "editorial_identifiers": {
+      "valid": true,
+      "message": ""
     }
   },
   "blocking_errors": [],
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "22 fuente(s) conservan derechos sin revisar.",
+      "message": "9 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
-        "source-fragmentos",
         "source-cumbres-borrascosas",
-        "source-gargantua",
         "source-la-vida-es-sueno",
-        "source-bartleby-el-escribiente",
-        "source-las-cerezas-del-cementerio",
-        "source-niebla",
-        "source-canas-y-barro",
-        "source-orlando",
         "source-el-rayo-que-no-cesa",
-        "source-papa-goriot",
         "source-el-retrato-de-dorian-gray",
-        "source-la-muerte-de-ivan-ilich",
-        "source-memorias-del-subsuelo",
-        "source-el-horla",
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
-        "source-precioso-veneno",
-        "source-una-habitacion-propia",
-        "source-la-metamorfosis"
+        "source-precioso-veneno"
       ]
     },
     {
       "code": "source_verification_pending",
-      "message": "22 fuente(s) esperan verificación bibliográfica.",
+      "message": "9 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
-        "source-fragmentos",
         "source-cumbres-borrascosas",
-        "source-gargantua",
         "source-la-vida-es-sueno",
-        "source-bartleby-el-escribiente",
-        "source-las-cerezas-del-cementerio",
-        "source-niebla",
-        "source-canas-y-barro",
-        "source-orlando",
         "source-el-rayo-que-no-cesa",
-        "source-papa-goriot",
         "source-el-retrato-de-dorian-gray",
-        "source-la-muerte-de-ivan-ilich",
-        "source-memorias-del-subsuelo",
-        "source-el-horla",
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
-        "source-precioso-veneno",
-        "source-una-habitacion-propia",
-        "source-la-metamorfosis"
+        "source-precioso-veneno"
       ]
     }
   ],
   "pending_issues": [
     {
-      "code": "documented_work_without_author",
-      "work_id": "work-fragmentos",
-      "legacy_work": "fragmentos",
-      "message": "La obra no tiene autor inferido y figura como ambigua en normalization-report.json."
-    },
-    {
       "code": "rights_review_pending",
-      "count": 22
+      "count": 9
     },
     {
       "code": "source_verification_pending",
-      "count": 22
+      "count": 9
     }
   ],
   "reviewed_files": [
@@ -106,6 +78,7 @@
     "data/editorial/migration-report.json",
     "data/editorial/normalization-report.json",
     "data/editorial/editorial-decisions.json",
-    "data/editorial/sources.draft.json"
+    "data/editorial/sources.draft.json",
+    "data/editorial/stable-identifiers.json"
   ]
 }

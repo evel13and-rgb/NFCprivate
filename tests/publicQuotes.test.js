@@ -521,6 +521,48 @@ test('build-public-quotes genera un runtime equivalente desde la capa editorial'
   assert.equal(checked[0].id, `quote-${checked[0].legacy_index}`);
 });
 
+test('build-public-quotes aplica correcciones y exclusiones editoriales aceptadas', async () => {
+  const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-public-decisions-test-'));
+  await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
+  await cp(new URL('../scripts/build-public-quotes.mjs', import.meta.url), path.join(temporaryRoot, 'scripts/build-public-quotes.mjs'));
+  await cp(new URL('../data/editorial', import.meta.url), path.join(temporaryRoot, 'data/editorial'), { recursive: true });
+  const decisionBase = {
+    old_value: null,
+    reason: 'Decisión de prueba aceptada.',
+    reviewer: 'test',
+    reviewed_at: '2026-08-20T00:00:00Z',
+    status: 'accepted',
+  };
+  await writeFile(
+    path.join(temporaryRoot, 'data/editorial/editorial-decisions.json'),
+    `${JSON.stringify({ decisions: [
+      {
+        ...decisionBase,
+        legacy_index: 2,
+        decision_type: 'exclude_quote',
+        field: 'excluded',
+        new_value: true,
+      },
+      {
+        ...decisionBase,
+        legacy_index: 3,
+        decision_type: 'highlight_correction',
+        field: 'highlight',
+        new_value: 'destacado revisado',
+      },
+    ] })}\n`,
+  );
+  const result = spawnSync(process.execPath, ['scripts/build-public-quotes.mjs'], {
+    cwd: temporaryRoot,
+    encoding: 'utf8',
+  });
+  assert.equal(result.status, 0, result.stderr);
+  const generated = JSON.parse(await readFile(path.join(temporaryRoot, 'public/data/quotes.json'), 'utf8'));
+  assert.equal(generated.quote_count, 639);
+  assert.equal(generated.quotes.some(quote => quote.id === 'quote-2'), false);
+  assert.equal(generated.quotes.find(quote => quote.id === 'quote-3').highlight, 'destacado revisado');
+});
+
 test('script.js ya no contiene el catálogo completo ni colecciones literarias', async () => {
   const source = await readFile(new URL('../script.js', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);

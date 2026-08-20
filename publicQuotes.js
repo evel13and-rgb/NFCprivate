@@ -1,5 +1,4 @@
 export const PUBLIC_QUOTES_SCHEMA_VERSION = 1;
-export const EXPECTED_PUBLIC_QUOTE_COUNT = 640;
 
 // Último recurso para que un fallo de red o de validación nunca deje la portada sin frase.
 // El catálogo runtime completo vive exclusivamente en public/data/quotes.json.
@@ -98,7 +97,7 @@ export async function loadPublicQuotes(
   relativePath,
   fallbackQuotes = EMERGENCY_QUOTES,
   fetchImpl = globalThis.fetch,
-  expectedCount = EXPECTED_PUBLIC_QUOTE_COUNT,
+  expectedCount,
 ) {
   try {
     if (typeof fetchImpl !== 'function') throw new Error('fetch no está disponible');

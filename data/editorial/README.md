@@ -15,6 +15,20 @@ contiene el catálogo completo. El runtime que consume la web se genera en
 de la migración original desde `script.js`; no debe usarse para regenerar la fuente
 editorial actual.
 
+## Identificadores estables
+
+`stable-identifiers.json` fija los IDs de autores y obras. Una corrección futura de
+nombre, ortografía o título no debe cambiar un ID ya publicado. Antes de normalizar
+una entidad nueva hay que asignarle deliberadamente un ID en ese registro; el
+normalizador falla si intenta crear autores u obras sin registrar. Los slugs de los
+borradores se derivan del ID estable, no del nombre visible actual.
+
+Para comprobar que el registro y los borradores siguen alineados:
+
+```sh
+node scripts/validate-editorial-identifiers.mjs
+```
+
 ## Qué no se edita a mano
 
 No se deben corregir directamente los archivos de extracción, los borradores normalizados ni los informes generados. Una nueva ejecución de los scripts podría sobrescribir esos cambios y, además, se perdería la diferencia entre lo inferido automáticamente y lo decidido por una persona.
@@ -41,6 +55,11 @@ Durante la fase piloto estas colecciones pueden estar incompletas: no es necesar
 node scripts/validate-editorial-profiles.mjs
 ```
 
+Durante esta fase, `draft`, `reviewed` y `ready` son estados publicables; `empty` y
+`hidden` quedan fuera de `public/data/literary-profiles.json`. Esta regla conserva
+las fichas ya visibles mientras se completa su revisión. En el futuro CMS, el estado
+del flujo editorial y la visibilidad pública deberán modelarse por separado.
+
 ## Validación global del catálogo
 
 Para revisar en un único paso la extracción, la normalización, las decisiones manuales y las fuentes y derechos, ejecuta:
@@ -52,6 +71,9 @@ npm run validate:editorial
 El comando genera `catalog-validation-report.json`. Un **error bloqueante** indica una incoherencia estructural o una pérdida de integridad —por ejemplo, una referencia inexistente, un texto vacío o una alteración del texto extraído— y hace que el comando termine con error. Una **advertencia editorial** identifica información válida para trabajar pero todavía pendiente de revisión humana, como derechos sin comprobar o posibles textos duplicados; por sí sola no invalida el catálogo.
 
 Los archivos de `data/editorial/` son artefactos internos de extracción, revisión y control. No forman parte de los datos que se publican en la web y no deben exponerse mediante el proceso de publicación.
+
+La clasificación campo por campo entre datos canónicos, privados y públicos se
+documenta en `docs/contrato-datos-editoriales.md`.
 
 ## Vista previa del futuro catálogo público
 

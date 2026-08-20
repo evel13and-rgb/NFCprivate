@@ -171,7 +171,8 @@
     "slug": "fiodor-dostoievski",
     "sort_name": "Fiódor Dostoievski",
     "inferred_from": [
-      "Memorias del subsuelo, Fiódor Dostoievski"
+      "Memorias del subsuelo, Fiódor Dostoievski",
+      "El idiota, Fiódor Dostoievski"
     ],
     "status": "draft",
     "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
@@ -284,7 +285,7 @@
       "El despertar, Kate Chopin"
     ],
     "status": "draft",
-    "notes": "Nombre y atribución comprobados en la primera edición de The Awakening (1899)."
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   },
   {
     "id": "author-bruno-schulz",
@@ -295,6 +296,6 @@
       "Las tiendas de color canela, Bruno Schulz"
     ],
     "status": "draft",
-    "notes": "Nombre y atribución comprobados en la primera edición polaca de Sklepy cynamonowe (1934)."
+    "notes": "Nombre inferido desde legacy_work; sort_name pendiente de revisión editorial."
   }
 ]

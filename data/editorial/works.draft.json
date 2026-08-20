@@ -1,14 +1,5 @@
 [
   {
-    "id": "work-fragmentos",
-    "title": "fragmentos",
-    "slug": "fragmentos",
-    "author_id": null,
-    "legacy_work": "fragmentos",
-    "status": "draft",
-    "notes": "Revisión pendiente: legacy_work sin coma final clara para separar autor."
-  },
-  {
     "id": "work-cumbres-borrascosas",
     "title": "Cumbres borrascosas",
     "slug": "cumbres-borrascosas",
@@ -249,7 +240,7 @@
     "author_id": "author-kate-chopin",
     "legacy_work": "El despertar, Kate Chopin",
     "status": "draft",
-    "notes": "Título, autoría y publicación comprobados en la primera edición de The Awakening (1899)."
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   },
   {
     "id": "work-las-tiendas-de-color-canela",
@@ -258,7 +249,7 @@
     "author_id": "author-bruno-schulz",
     "legacy_work": "Las tiendas de color canela, Bruno Schulz",
     "status": "draft",
-    "notes": "Título, autoría y publicación comprobados en la primera edición polaca de Sklepy cynamonowe (1934)."
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   },
   {
     "id": "work-el-idiota",
@@ -267,6 +258,6 @@
     "author_id": "author-fiodor-dostoievski",
     "legacy_work": "El idiota, Fiódor Dostoievski",
     "status": "draft",
-    "notes": "Título y autoría comprobados en la edición académica rusa de Nauka (1989); publicación original por entregas en Russkiy Vestnik entre 1868 y 1869."
+    "notes": "Título y autor inferidos separando legacy_work por la última coma."
   }
 ]

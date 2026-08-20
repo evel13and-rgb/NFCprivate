@@ -20,6 +20,7 @@ const reviewedFiles = [
   'data/editorial/normalization-report.json',
   'data/editorial/editorial-decisions.json',
   'data/editorial/sources.draft.json',
+  'data/editorial/stable-identifiers.json',
 ];
 const blockingErrors = [];
 const editorialWarnings = [];
@@ -85,6 +86,7 @@ const [intermediateQuotes, authors, works, normalizedQuotes, migrationReport,
 
 runExistingValidator('editorial_decisions', 'scripts/validate-editorial-decisions.mjs');
 runExistingValidator('editorial_sources', 'scripts/validate-editorial-sources.mjs');
+runExistingValidator('editorial_identifiers', 'scripts/validate-editorial-identifiers.mjs');
 
 for (const [name, value] of [
   ['quotes.intermediate.json', intermediateQuotes],
@@ -121,10 +123,10 @@ if (migrationReport?.total_quotes !== HISTORICAL_MIGRATION_QUOTE_COUNT) {
     `migration-report.json: total_quotes debe ser ${HISTORICAL_MIGRATION_QUOTE_COUNT} y es ${migrationReport?.total_quotes}`,
   );
 }
-if (normalizationReport?.total_quotes_processed !== HISTORICAL_MIGRATION_QUOTE_COUNT) {
+if (normalizationReport?.total_quotes_processed !== EXPECTED_ACTIVE_QUOTE_COUNT) {
   blockingErrors.push(
-    'normalization-report.json: total_quotes_processed debe conservar el total histórico '
-    + `${HISTORICAL_MIGRATION_QUOTE_COUNT} y es ${normalizationReport?.total_quotes_processed}`,
+    'normalization-report.json: total_quotes_processed debe coincidir con el catálogo activo '
+    + `${EXPECTED_ACTIVE_QUOTE_COUNT} y es ${normalizationReport?.total_quotes_processed}`,
   );
 }
 

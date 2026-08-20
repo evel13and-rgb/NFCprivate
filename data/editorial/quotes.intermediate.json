@@ -44,7 +44,7 @@
     "language": "es",
     "highlight": "el hábito no hace al monje",
     "type": "prose",
-    "has_line_breaks": false,
+    "has_line_breaks": true,
     "text_hash": "2668a929090371dd6a464c82598f734c5cbf6b6aff871062999e3f05455685fa"
   },
   {
@@ -56,7 +56,7 @@
     "language": "es",
     "highlight": "la bestia más filósofa del mundo",
     "type": "prose",
-    "has_line_breaks": false,
+    "has_line_breaks": true,
     "text_hash": "5f495480f1a48a9c00c86030c9fc7eba65fe15d72517caaf2ef5f4c04d7dbeb8"
   },
   {
@@ -3129,7 +3129,7 @@
     "highlight": "La corrupción de su propia alma.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "81664061a1d98fa53c4ed3fe23980b07b87d94e4de54f595ffa5820e9236843b"
+    "text_hash": "da3c4b97afa5b7154433893b986576cb45301d64f1a3108f93b4fe32afd422a7"
   },
   {
     "legacy_index": 263,
@@ -3165,7 +3165,7 @@
     "highlight": "Había sido su conciencia.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "ec6fe1dfb0101e5066e64a62cac8d7e92fb6a79a5d6ffcc244cdfaf68e341d19"
+    "text_hash": "f4e344ae509d6b9020b52c8d74d627c8f2396cd1b6545fe8542c723aa4e07c37"
   },
   {
     "legacy_index": 266,
@@ -3177,7 +3177,7 @@
     "highlight": "Influir es darle a otro la propia alma.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "a643d108c5b71fe39759371332f855fe01ef2a2614f9a0062f9cd2384043180f"
+    "text_hash": "71d9150bcee9a5cb2553b13c139e6254af5a4ed2733d4bb577adada1530ab3e3"
   },
   {
     "legacy_index": 267,
@@ -3285,7 +3285,7 @@
     "highlight": "La tragedia de la vejez.",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "136b4ce623ce36c9142b6ffb03cbbd9ce96bad53e16730f85b83dd70294a5209"
+    "text_hash": "96ab60ec9e2f4c54052b405b33b7df8c6bccbccba0b3db184722393e46cec55c"
   },
   {
     "legacy_index": 276,
@@ -3297,7 +3297,7 @@
     "highlight": "La vida ha sido tu arte.",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "302ef3dd555172cd550cfd64607a74c5fa8bdc06dbbacd4eef99dafeb73e4e18"
+    "text_hash": "8d5aae594ab234894343b1ec4f34a0a9c69066716aa6ac9939a71ffdca349e56"
   },
   {
     "legacy_index": 277,
@@ -5913,7 +5913,7 @@
     "highlight": "transformado en una monstruosa alimaña.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "3ff2da64c33587ef49ae0fcc0da92f0b4d1ae1d5e19df5aab791784cf326af36"
+    "text_hash": "d411a10b76d93018f957db8ff9c7bb5696cdf3f8e936f334e5fd140e34a69ec0"
   },
   {
     "legacy_index": 495,
@@ -5949,7 +5949,7 @@
     "highlight": "Entonces daré el gran corte.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "7234a1a00d4b4fc4a23ae11348e8018b36d725b82ae014275aca3d3ca3347956"
+    "text_hash": "0a159b679011e2fb5bdc1bba2b43ba0b0b081719dc86b35fdd3ef6180d185fd3"
   },
   {
     "legacy_index": 498,
@@ -6057,7 +6057,7 @@
     "highlight": "Entonces, por fin, quedó todo en silencio.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "31f2d1409b30d0438fdd5dd87079965a5ce8a36d38158bf5d28012f1642b9283"
+    "text_hash": "b35be594353791064f2af6b25361cf4262f50de72d6163a71b2fe8172ffea556"
   },
   {
     "legacy_index": 507,
@@ -6201,7 +6201,7 @@
     "highlight": "Esto es vida.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "f4ce129238ad10bb47e7883d6277200550bc4af3fa7bc9f3319f2c1ebd28be74"
+    "text_hash": "44d9012f1c8813afa08290a2acf9cf9707cc648963d04f34b14dd0d745b23d4e"
   },
   {
     "legacy_index": 519,
@@ -6273,7 +6273,7 @@
     "highlight": "ahora podemos dar gracias a Dios.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "e2ab8218d15a05ef850c9ecdee1a4add64a73289256e9af0f36189d82f7e1bb4"
+    "text_hash": "7a080e6b98e91dcc0f346479ca0820cac39f57b252288937abd19d7fd94defc2"
   },
   {
     "legacy_index": 525,
@@ -6285,7 +6285,7 @@
     "highlight": "el cálido sol.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "2b9d52366f5ddb913f985bab61100261b22103cb41c7b1443a5dd2024901e94a"
+    "text_hash": "f4a5cde0992ea8ebf1b1a8437d396a6f4524e58aebcd1d121fe641476b9034a0"
   },
   {
     "legacy_index": 526,

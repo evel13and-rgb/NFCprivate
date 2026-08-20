@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isPublishableProfile } from './editorial-profile-policy.mjs';
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
@@ -143,7 +144,7 @@ const [manualAuthors, manualWorks, normalizedQuotes] = await Promise.all([
 const fragmentCounts = countFragmentsByWork(normalizedQuotes);
 
 const publicDocument = {
-  authors: manualAuthors.map(profile => ({
+  authors: manualAuthors.filter(isPublishableProfile).map(profile => ({
     author_id: profile.author_id,
     display_name: nullable(profile.display_name ?? profile.name),
     birth_year: nullable(profile.birth_year),
@@ -160,7 +161,7 @@ const publicDocument = {
     information_sources: publicInformationSources(profile),
     portrait: nullable(profile.portrait),
   })),
-  works: manualWorks.map(profile => ({
+  works: manualWorks.filter(isPublishableProfile).map(profile => ({
     work_id: profile.work_id,
     title: nullable(profile.title),
     display_title: nullable(profile.display_title ?? profile.title),

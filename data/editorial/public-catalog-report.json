@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T11:51:36.226Z",
+  "generated_at": "2026-08-19T10:02:45.199Z",
   "preview": true,
   "publication_status": "internal_preview",
   "total_quotes_exported": 640,
@@ -84,43 +84,20 @@
     "quote-78"
   ],
   "works_without_verified_source": [
-    "work-fragmentos",
     "work-cumbres-borrascosas",
-    "work-gargantua",
     "work-la-vida-es-sueno",
-    "work-bartleby-el-escribiente",
-    "work-las-cerezas-del-cementerio",
-    "work-niebla",
-    "work-canas-y-barro",
-    "work-orlando",
-    "work-una-habitacion-propia",
     "work-el-rayo-que-no-cesa",
-    "work-papa-goriot",
     "work-el-retrato-de-dorian-gray",
-    "work-la-muerte-de-ivan-ilich",
-    "work-memorias-del-subsuelo",
-    "work-el-horla",
     "work-la-sala-numero-seis",
     "work-la-bestia-en-la-jungla",
     "work-el-papel-pintado-de-amarillo",
     "work-vera",
-    "work-precioso-veneno",
-    "work-la-metamorfosis"
+    "work-precioso-veneno"
   ],
   "unverified_rights": [
     {
-      "source_id": "source-fragmentos",
-      "work_id": "work-fragmentos",
-      "rights_status": "unchecked"
-    },
-    {
       "source_id": "source-cumbres-borrascosas",
       "work_id": "work-cumbres-borrascosas",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-gargantua",
-      "work_id": "work-gargantua",
       "rights_status": "unchecked"
     },
     {
@@ -129,58 +106,13 @@
       "rights_status": "unchecked"
     },
     {
-      "source_id": "source-bartleby-el-escribiente",
-      "work_id": "work-bartleby-el-escribiente",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-las-cerezas-del-cementerio",
-      "work_id": "work-las-cerezas-del-cementerio",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-niebla",
-      "work_id": "work-niebla",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-canas-y-barro",
-      "work_id": "work-canas-y-barro",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-orlando",
-      "work_id": "work-orlando",
-      "rights_status": "unchecked"
-    },
-    {
       "source_id": "source-el-rayo-que-no-cesa",
       "work_id": "work-el-rayo-que-no-cesa",
       "rights_status": "unchecked"
     },
     {
-      "source_id": "source-papa-goriot",
-      "work_id": "work-papa-goriot",
-      "rights_status": "unchecked"
-    },
-    {
       "source_id": "source-el-retrato-de-dorian-gray",
       "work_id": "work-el-retrato-de-dorian-gray",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-la-muerte-de-ivan-ilich",
-      "work_id": "work-la-muerte-de-ivan-ilich",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-memorias-del-subsuelo",
-      "work_id": "work-memorias-del-subsuelo",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-el-horla",
-      "work_id": "work-el-horla",
       "rights_status": "unchecked"
     },
     {
@@ -206,16 +138,6 @@
     {
       "source_id": "source-precioso-veneno",
       "work_id": "work-precioso-veneno",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-una-habitacion-propia",
-      "work_id": "work-una-habitacion-propia",
-      "rights_status": "unchecked"
-    },
-    {
-      "source_id": "source-la-metamorfosis",
-      "work_id": "work-la-metamorfosis",
       "rights_status": "unchecked"
     }
   ],

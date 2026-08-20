@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const EXPECTED_QUOTE_COUNT = 640;
+const EXPECTED_SOURCE_QUOTE_COUNT = 640;
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const editorialDirectory = path.join(projectRoot, 'data', 'editorial');
@@ -22,6 +22,15 @@ async function loadOriginals() {
     fail(`${filename} no cumple la estructura de schema_version 1`);
   }
   return value.items;
+}
+
+async function loadDecisions() {
+  const filename = 'editorial-decisions.json';
+  const value = JSON.parse(await readFile(path.join(editorialDirectory, filename), 'utf8'));
+  if (!value || typeof value !== 'object' || !Array.isArray(value.decisions)) {
+    fail(`${filename} no contiene un array decisions`);
+  }
+  return value.decisions;
 }
 
 function fail(message) {
@@ -45,15 +54,12 @@ function validateSourceRecord(record, position) {
   }
 }
 
-function validatePublicDocument(document, sourceCount) {
+function validatePublicDocument(document, expectedPublishedCount) {
   if (document.schema_version !== 1 || !Array.isArray(document.quotes)) {
     fail('el documento público no cumple la estructura de schema_version 1');
   }
-  if (document.quote_count !== EXPECTED_QUOTE_COUNT || document.quotes.length !== EXPECTED_QUOTE_COUNT) {
-    fail(`se esperaban ${EXPECTED_QUOTE_COUNT} frases y se generaron ${document.quotes.length}`);
-  }
-  if (document.quote_count !== sourceCount) {
-    fail(`quote_count (${document.quote_count}) no coincide con el catálogo editorial (${sourceCount})`);
+  if (document.quote_count !== expectedPublishedCount || document.quotes.length !== expectedPublishedCount) {
+    fail(`se esperaban ${expectedPublishedCount} frases publicables y se generaron ${document.quotes.length}`);
   }
 
   const ids = new Set();
@@ -93,14 +99,15 @@ function validatePublicDocument(document, sourceCount) {
   }
 }
 
-const [intermediateQuotes, normalizedQuotes, originalItems] = await Promise.all([
+const [intermediateQuotes, normalizedQuotes, originalItems, editorialDecisions] = await Promise.all([
   loadArray('quotes.intermediate.json'),
   loadArray('quotes.normalized.draft.json'),
   loadOriginals(),
+  loadDecisions(),
 ]);
 
-if (intermediateQuotes.length !== EXPECTED_QUOTE_COUNT) {
-  fail(`quotes.intermediate.json contiene ${intermediateQuotes.length} frases; se esperaban ${EXPECTED_QUOTE_COUNT}`);
+if (intermediateQuotes.length !== EXPECTED_SOURCE_QUOTE_COUNT) {
+  fail(`quotes.intermediate.json contiene ${intermediateQuotes.length} frases; se esperaban ${EXPECTED_SOURCE_QUOTE_COUNT}`);
 }
 if (normalizedQuotes.length !== intermediateQuotes.length) {
   fail(`el catálogo normalizado contiene ${normalizedQuotes.length} frases y la extracción ${intermediateQuotes.length}`);
@@ -111,6 +118,14 @@ for (const [position, quote] of normalizedQuotes.entries()) {
   if (!Number.isInteger(quote?.legacy_index)) fail(`quotes.normalized.draft.json[${position}] no tiene legacy_index válido`);
   if (normalizedByLegacyIndex.has(quote.legacy_index)) fail(`legacy_index normalizado duplicado: ${quote.legacy_index}`);
   normalizedByLegacyIndex.set(quote.legacy_index, quote);
+}
+
+const acceptedDecisionsByIndex = new Map();
+for (const decision of editorialDecisions) {
+  if (decision?.status !== 'accepted' || !Number.isInteger(decision.legacy_index)) continue;
+  const decisions = acceptedDecisionsByIndex.get(decision.legacy_index) ?? [];
+  decisions.push(decision);
+  acceptedDecisionsByIndex.set(decision.legacy_index, decisions);
 }
 
 const quoteIds = new Set(intermediateQuotes.map(quote => `quote-${quote.legacy_index}`));
@@ -148,6 +163,7 @@ for (const [position, item] of originalItems.entries()) {
   });
 }
 
+const excludedLegacyIndexes = new Set();
 const quotes = intermediateQuotes.map((source, position) => {
   validateSourceRecord(source, position);
   const normalized = normalizedByLegacyIndex.get(source.legacy_index);
@@ -155,23 +171,34 @@ const quotes = intermediateQuotes.map((source, position) => {
   for (const field of ['text', 'highlight', 'language', 'type']) {
     if (normalized[field] !== source[field]) fail(`legacy_index ${source.legacy_index}: ${field} difiere entre extracción y normalización`);
   }
+  const decisions = acceptedDecisionsByIndex.get(source.legacy_index) ?? [];
+  if (decisions.some(decision => decision.decision_type === 'exclude_quote' && decision.new_value === true)) {
+    excludedLegacyIndexes.add(source.legacy_index);
+    return null;
+  }
+  const resolved = { ...normalized };
+  for (const decision of decisions) {
+    if (['highlight', 'speaker_name', 'attribution_type', 'author_id', 'work_id'].includes(decision.field)) {
+      resolved[decision.field] = decision.new_value;
+    }
+  }
   const id = `quote-${source.legacy_index}`;
   const quote = {
     id,
     legacy_index: source.legacy_index,
     t: source.text,
-    a: source.legacy_attribution,
+    a: resolved.speaker_name ?? source.legacy_attribution,
     obra: source.legacy_work,
-    highlight: source.highlight,
+    highlight: resolved.highlight,
     lang: source.language,
     type: source.type,
-    authorId: normalized.author_id ?? null,
-    workId: normalized.work_id ?? null,
+    authorId: resolved.author_id ?? null,
+    workId: resolved.work_id ?? null,
   };
   const original = originalsByQuoteId.get(id);
   if (original) quote.original = original;
   return quote;
-});
+}).filter(Boolean);
 
 let generatedAt = new Date().toISOString();
 try {
@@ -191,7 +218,7 @@ const document = {
   quotes,
 };
 
-validatePublicDocument(document, intermediateQuotes.length);
+validatePublicDocument(document, intermediateQuotes.length - excludedLegacyIndexes.size);
 await mkdir(path.dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(document, null, 2)}\n`, 'utf8');
 console.log(`Runtime público de frases generado: ${quotes.length} frases.`);

@@ -7,6 +7,7 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const editorialDirectory = path.join(projectRoot, 'data', 'editorial');
 const inputPath = path.join(editorialDirectory, 'quotes.intermediate.json');
+const identifiersPath = path.join(editorialDirectory, 'stable-identifiers.json');
 const outputPaths = {
   authors: path.join(editorialDirectory, 'authors.draft.json'),
   works: path.join(editorialDirectory, 'works.draft.json'),
@@ -14,13 +15,14 @@ const outputPaths = {
   report: path.join(editorialDirectory, 'normalization-report.json'),
 };
 
-function slugify(value) {
-  return value
-    .normalize('NFKD')
-    .replace(/\p{Mark}/gu, '')
-    .toLocaleLowerCase('es')
-    .replace(/[^\p{Letter}\p{Number}]+/gu, '-')
-    .replace(/^-+|-+$/g, '');
+function requireStableId(registry, collection, identity) {
+  const id = registry?.[collection]?.[identity];
+  if (typeof id !== 'string' || !id.trim()) {
+    throw new Error(
+      `Falta un ID estable para ${collection}.${identity}; regístralo en stable-identifiers.json`,
+    );
+  }
+  return id;
 }
 
 function parseLegacyWork(legacyWork) {
@@ -71,7 +73,7 @@ function classifyAttribution(legacyAttribution, authorName) {
   return { type: 'ambiguous', speakerName: attribution };
 }
 
-function assertIntermediateQuote(quote, position) {
+function assertIntermediateQuote(quote, position, seenLegacyIndexes, previousLegacyIndex) {
   const requiredKeys = [
     'legacy_index',
     'source_collection',
@@ -87,19 +89,41 @@ function assertIntermediateQuote(quote, position) {
   for (const key of requiredKeys) {
     if (!Object.hasOwn(quote, key)) throw new Error(`La frase ${position} no contiene ${key}`);
   }
-  if (quote.legacy_index !== position) {
-    throw new Error(`Orden inesperado: posición ${position}, legacy_index ${quote.legacy_index}`);
+  if (!Number.isInteger(quote.legacy_index) || quote.legacy_index < 0) {
+    throw new Error(`legacy_index inválido en la posición ${position}: ${quote.legacy_index}`);
   }
+  if (seenLegacyIndexes.has(quote.legacy_index)) {
+    throw new Error(`legacy_index duplicado: ${quote.legacy_index}`);
+  }
+  if (previousLegacyIndex !== null && quote.legacy_index <= previousLegacyIndex) {
+    throw new Error(
+      `Orden inesperado: legacy_index ${quote.legacy_index} después de ${previousLegacyIndex}`,
+    );
+  }
+  seenLegacyIndexes.add(quote.legacy_index);
   const computedHash = createHash('sha256').update(quote.text, 'utf8').digest('hex');
-  if (computedHash !== quote.text_hash) throw new Error(`text_hash inválido en legacy_index ${position}`);
+  if (computedHash !== quote.text_hash) {
+    throw new Error(`text_hash inválido en legacy_index ${quote.legacy_index}`);
+  }
   if (quote.has_line_breaks !== quote.text.includes('\n')) {
-    throw new Error(`has_line_breaks incoherente en legacy_index ${position}`);
+    throw new Error(`has_line_breaks incoherente en legacy_index ${quote.legacy_index}`);
   }
 }
 
-const intermediateQuotes = JSON.parse(await readFile(inputPath, 'utf8'));
+const [intermediateQuotes, stableIdentifiers] = await Promise.all([
+  readFile(inputPath, 'utf8').then(JSON.parse),
+  readFile(identifiersPath, 'utf8').then(JSON.parse),
+]);
 if (!Array.isArray(intermediateQuotes)) throw new Error('quotes.intermediate.json debe contener un array');
-intermediateQuotes.forEach(assertIntermediateQuote);
+if (stableIdentifiers?.schema_version !== 1) {
+  throw new Error('stable-identifiers.json no cumple schema_version 1');
+}
+const seenLegacyIndexes = new Set();
+let previousLegacyIndex = null;
+for (const [position, quote] of intermediateQuotes.entries()) {
+  assertIntermediateQuote(quote, position, seenLegacyIndexes, previousLegacyIndex);
+  previousLegacyIndex = quote.legacy_index;
+}
 
 const parsedByLegacyWork = new Map();
 for (const quote of intermediateQuotes) {
@@ -112,12 +136,13 @@ const authorNames = [...new Set(
   [...parsedByLegacyWork.values()].map(parsed => parsed.authorName).filter(Boolean),
 )];
 const authors = authorNames.map(canonicalName => {
-  const slug = slugify(canonicalName);
+  const id = requireStableId(stableIdentifiers, 'authors', canonicalName);
+  const slug = id.replace(/^author-/, '');
   const inferredFrom = [...parsedByLegacyWork.entries()]
     .filter(([, parsed]) => parsed.authorName === canonicalName)
     .map(([legacyWork]) => legacyWork);
   return {
-    id: `author-${slug}`,
+    id,
     canonical_name: canonicalName,
     slug,
     sort_name: canonicalName,
@@ -130,9 +155,10 @@ const authorByName = new Map(authors.map(author => [author.canonical_name, autho
 
 const works = [...parsedByLegacyWork.entries()].map(([legacyWork, parsed]) => {
   const title = parsed.title ?? 'Obra sin identificar';
-  const slug = slugify(title);
+  const id = requireStableId(stableIdentifiers, 'works', legacyWork);
+  const slug = id.replace(/^work-/, '');
   return {
-    id: `work-${slug}`,
+    id,
     title,
     slug,
     author_id: parsed.authorName ? authorByName.get(parsed.authorName)?.id ?? null : null,
