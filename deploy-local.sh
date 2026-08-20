@@ -84,6 +84,7 @@ rsync_args() {
     --exclude='/docs/'
     --exclude='/scripts/'
     --exclude='/data/editorial/'
+    --exclude='/ops/'
     --exclude='/deploy-local.sh'
     --exclude='*.log'
     --exclude='*.tmp'

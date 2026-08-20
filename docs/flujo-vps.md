@@ -55,7 +55,32 @@ Estado:    /var/lib/paramo-literario/weather-state.json
 Override:  /etc/paramoliterario/weather-override.json
 ```
 
-PM2 ya no gestiona aplicaciones. El backend no debe volver a iniciarse simultáneamente con PM2 porque ambos intentarían ocupar el puerto 3030.
+PM2 ya no gestiona aplicaciones y `pm2-root.service` está inactivo y
+deshabilitado. Se conserva únicamente su copia de seguridad para un rollback
+excepcional. El backend no debe volver a iniciarse simultáneamente con PM2 porque
+ambos intentarían ocupar el puerto 3030.
+
+## Piloto editorial Directus/PostgreSQL
+
+El piloto está gestionado mediante Docker Compose desde:
+
+```text
+ops/directus/compose.yaml
+```
+
+Directus escucha únicamente en `127.0.0.1:8055`; PostgreSQL no publica ningún
+puerto. Los secretos están fuera del repositorio en
+`/etc/paramoliterario/directus/` y los datos persistentes no forman parte del
+despliegue web.
+
+Este piloto no participa en las visitas públicas ni sustituye los JSON actuales.
+Su operación se documenta en `ops/directus/README.md` y nunca debe integrarse en
+`deploy-local.sh`.
+
+El administrador inicial es `paramorliterario@gmail.com`. Su contraseña temporal
+no está en Git; permanece en un archivo `0600` dentro de
+`/etc/paramoliterario/directus/` hasta que se complete el primer cambio de
+contraseña.
 
 Comprobaciones habituales:
 
@@ -126,4 +151,5 @@ Después hay que comprobar ambos endpoints y confirmar que solo un proceso escuc
 - No sobrescribir el override de `/etc` durante una publicación.
 - No ejecutar simultáneamente el backend mediante systemd y PM2.
 - No recargar Nginx ni cambiar propietarios como parte del despliegue.
-- No instalar Directus o PostgreSQL como parte de este flujo.
+- No gestionar, actualizar o publicar Directus/PostgreSQL mediante
+  `deploy-local.sh`; se administran exclusivamente desde su Compose aislado.

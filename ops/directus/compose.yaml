@@ -1,0 +1,78 @@
+name: paramo-editorial-pilot
+
+services:
+  database:
+    image: postgres:16.14-bookworm@sha256:64154d0babcb1741988719e703419af0382b19953706149f9872fbd0f438efa8
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: paramo_editorial
+      POSTGRES_USER: directus
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
+    secrets:
+      - postgres_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready --host=localhost --username=directus --dbname=paramo_editorial"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    mem_limit: 640m
+    cpus: 1.0
+    pids_limit: 128
+    networks:
+      - editorial
+
+  directus:
+    image: directus/directus:12.3.0@sha256:568861dc03396477d0829897936731d861a3aa8ca68516a1422d68b4d3752621
+    restart: unless-stopped
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8055:8055"
+    environment:
+      SECRET_FILE: /run/secrets/directus_secret
+      DB_CLIENT: pg
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_DATABASE: paramo_editorial
+      DB_USER: directus
+      DB_PASSWORD_FILE: /run/secrets/postgres_password
+      PUBLIC_URL: http://127.0.0.1:8055
+      WEBSOCKETS_ENABLED: "false"
+      CORS_ENABLED: "false"
+      RATE_LIMITER_ENABLED: "true"
+      RATE_LIMITER_STORE: memory
+    secrets:
+      - postgres_password
+      - directus_secret
+    volumes:
+      - /var/lib/paramo-directus/uploads:/directus/uploads
+      - /var/lib/paramo-directus/extensions:/directus/extensions
+    healthcheck:
+      test: ["CMD-SHELL", "wget --spider -q http://127.0.0.1:8055/server/ping || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    mem_limit: 1024m
+    cpus: 1.5
+    pids_limit: 256
+    networks:
+      - editorial
+
+secrets:
+  postgres_password:
+    file: /etc/paramoliterario/directus/postgres_password
+  directus_secret:
+    file: /etc/paramoliterario/directus/directus_secret
+
+networks:
+  editorial:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    name: paramo-directus-postgres
