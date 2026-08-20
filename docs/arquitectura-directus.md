@@ -4,8 +4,9 @@
 
 Este documento describe la arquitectura objetivo y el estado del piloto. Desde
 el 20 de agosto de 2026 existe un Directus/PostgreSQL local y aislado con 18
-colecciones editoriales vacías, 231 campos y 46 relaciones. Todavía no se ha
-importado contenido y la web actual no ha cambiado su fuente de datos.
+colecciones editoriales, 231 campos y 46 relaciones. La importación base ya
+incorporó 27 autores, 29 obras, 29 fuentes, 29 autorías y 29 relaciones
+obra–fuente. La web actual no ha cambiado su fuente de datos.
 
 La decisión principal es explícita:
 
@@ -351,10 +352,12 @@ producción.
 - Queda definir y probar roles y permisos mínimos.
 - Mantener los JSON actuales como fuente canónica y la web sin cambios.
 
-### Fase 2: importación reproducible
+### Fase 2: importación reproducible (en curso)
 
-- Importar autores, obras, frases, originales, perfiles, fuentes y decisiones.
-- Conservar todos los IDs y `legacy_index`.
+- Autores, obras, fichas y fuentes estructuradas ya están importados como
+  borradores ocultos mediante una transacción reproducible.
+- Queda importar frases, originales, temas, fuentes de las fichas y decisiones.
+- Conservar todos los IDs y `legacy_index` en las fases restantes.
 - Comparar cantidades, hashes y relaciones con los archivos actuales.
 - Repetir la importación desde cero hasta que sea determinista.
 
@@ -445,12 +448,24 @@ Con los contenedores recién inicializados y sin contenido editorial:
 - Directus y PostgreSQL: saludables.
 - Directus: accesible solo mediante `127.0.0.1:8055`.
 - PostgreSQL: sin puerto publicado en el host.
-- Base: 33 tablas internas de Directus más 18 colecciones editoriales vacías.
-- Modelo registrado: 231 campos y 46 relaciones, con instantánea declarativa.
+- Base inicial: 33 tablas internas de Directus, todavía sin colecciones
+  editoriales.
 - Administrador inicial creado y acceso autenticado verificado.
 
 Esta medición es solo una línea base en reposo. Debe repetirse durante
 importaciones, uso del panel, generación de JSON y copias de seguridad.
+
+### Medición después de la primera carga
+
+- Modelo registrado: 18 colecciones, 231 campos y 46 relaciones.
+- Datos: 27 autores, 29 obras, 29 fuentes y 58 relaciones base, todas ocultas o
+  internas; frases y originales todavía pendientes.
+- Directus: aproximadamente 285 MiB de RAM.
+- PostgreSQL: aproximadamente 73 MiB de RAM.
+- Base completa: 11 MB; tablas editoriales: aproximadamente 920 KiB.
+- RAM disponible del VPS: 2,3 GiB.
+- Swap usada: aproximadamente 103 MiB.
+- Disco: 25 %; aproximadamente 88 GB disponibles.
 
 ## Versiones de referencia para el piloto
 

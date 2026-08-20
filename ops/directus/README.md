@@ -4,10 +4,10 @@ Esta carpeta define el piloto reproducible que se inicializó el 20 de agosto de
 2026. Docker está instalado y los contenedores de Directus/PostgreSQL están
 activos, saludables y limitados a la red prevista.
 
-El piloto contiene el modelo editorial vacío: 18 colecciones, 231 campos y 46
-relaciones registradas en Directus. El administrador inicial
-`paramorliterario@gmail.com` está creado y verificado. Todavía no se ha importado
-ningún dato editorial.
+El piloto contiene 18 colecciones, 231 campos y 46 relaciones registradas en
+Directus. La primera importación base incorporó 27 autores, 29 obras, 29 fuentes y
+sus relaciones; frases, originales, temas y audio siguen pendientes. El
+administrador inicial `paramorliterario@gmail.com` está creado y verificado.
 
 ## Decisiones del piloto
 
@@ -108,6 +108,20 @@ docker compose -f ops/directus/compose.yaml exec -T database \
 La migración crea únicamente el modelo vacío. Debe aplicarse una sola vez sobre
 una instalación de Directus sin esas tablas. La importación de autores, obras,
 frases, originales y fuentes es un proceso posterior y separado.
+
+La importación inicial de autores, obras y fuentes se prepara sin conectar con la
+base de datos:
+
+```sh
+node scripts/prepare-directus-base-import.mjs --dry-run
+node scripts/prepare-directus-base-import.mjs --json
+node scripts/prepare-directus-base-import.mjs --sql
+```
+
+El modo predeterminado solo muestra el resumen. `--sql` emite por la salida
+estándar una transacción revisable que se niega a trabajar si las tablas de
+destino ya contienen datos. La incorporación al piloto se realizó después de
+comparar las huellas del plan y crear una copia completa de PostgreSQL.
 
 Después se registran los metadatos que convierten las tablas en un panel
 utilizable. El configurador se niega a trabajar contra una URL que no sea local,
