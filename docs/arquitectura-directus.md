@@ -2,10 +2,10 @@
 
 ## Estado y alcance
 
-Este documento describe la arquitectura objetivo. Desde el 20 de agosto de 2026
-existe un piloto local y aislado de Directus/PostgreSQL, pero todavía no contiene
-colecciones editoriales ni datos importados. La web actual no ha cambiado su
-fuente de datos.
+Este documento describe la arquitectura objetivo y el estado del piloto. Desde
+el 20 de agosto de 2026 existe un Directus/PostgreSQL local y aislado con 18
+colecciones editoriales vacías, 231 campos y 46 relaciones. Todavía no se ha
+importado contenido y la web actual no ha cambiado su fuente de datos.
 
 La decisión principal es explícita:
 
@@ -344,10 +344,11 @@ producción.
 - Preparar un entorno de prueba separado de producción.
 - Cerrar el modelo, los permisos y el contrato de exportación.
 
-### Fase 1: PostgreSQL y Directus aislados
+### Fase 1: PostgreSQL y Directus aislados (en curso)
 
-- Instalar únicamente en el entorno de prueba.
-- Crear colecciones, relaciones, roles y permisos.
+- Directus y PostgreSQL ya están instalados en el piloto aislado.
+- Las colecciones y relaciones ya están creadas y versionadas.
+- Queda definir y probar roles y permisos mínimos.
 - Mantener los JSON actuales como fuente canónica y la web sin cambios.
 
 ### Fase 2: importación reproducible
@@ -444,7 +445,8 @@ Con los contenedores recién inicializados y sin contenido editorial:
 - Directus y PostgreSQL: saludables.
 - Directus: accesible solo mediante `127.0.0.1:8055`.
 - PostgreSQL: sin puerto publicado en el host.
-- Base: 33 tablas internas de Directus y ninguna colección editorial todavía.
+- Base: 33 tablas internas de Directus más 18 colecciones editoriales vacías.
+- Modelo registrado: 231 campos y 46 relaciones, con instantánea declarativa.
 - Administrador inicial creado y acceso autenticado verificado.
 
 Esta medición es solo una línea base en reposo. Debe repetirse durante
@@ -485,7 +487,7 @@ editorial oficial hay que:
 
 La configuración nunca intentará desactivar o eludir los controles de licencia.
 
-## Decisiones pendientes antes de implementar
+## Decisiones pendientes antes de importar o publicar
 
 - Elegir si Directus y PostgreSQL convivirán con la web o usarán otro VPS.
 - Definir roles: administración, edición, revisión, derechos y publicación.
@@ -496,5 +498,5 @@ La configuración nunca intentará desactivar o eludir los controles de licencia
 - Diseñar el mecanismo de publicación atómica y reversión.
 - Medir el VPS actual antes de fijar recursos y límites de los servicios.
 
-Hasta completar estas decisiones, esta arquitectura debe permanecer como
-documentación técnica y no como infraestructura instalada.
+Hasta completar estas decisiones, el piloto seguirá aislado y los JSON actuales
+continuarán siendo la fuente canónica de producción.

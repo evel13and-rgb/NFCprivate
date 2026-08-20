@@ -4,9 +4,10 @@ Esta carpeta define el piloto reproducible que se inicializó el 20 de agosto de
 2026. Docker está instalado y los contenedores de Directus/PostgreSQL están
 activos, saludables y limitados a la red prevista.
 
-El piloto contiene únicamente las tablas internas de Directus. El administrador
-inicial `paramorliterario@gmail.com` está creado y verificado. Todavía no se ha
-creado el modelo editorial ni se han importado datos.
+El piloto contiene el modelo editorial vacío: 18 colecciones, 231 campos y 46
+relaciones registradas en Directus. El administrador inicial
+`paramorliterario@gmail.com` está creado y verificado. Todavía no se ha importado
+ningún dato editorial.
 
 ## Decisiones del piloto
 
@@ -55,6 +56,10 @@ Se completaron estas operaciones:
 5. Validar `compose.yaml` antes de arrancar servicios.
 6. Descargar las imágenes y fijar sus digests exactos.
 7. Arrancar el piloto y medir recursos antes de crear el modelo editorial.
+8. Crear el modelo editorial vacío y guardar copias de seguridad antes de cada
+   cambio estructural.
+9. Registrar en Directus los metadatos de colecciones, campos y relaciones, y
+   generar una instantánea declarativa sin secretos.
 
 El administrador inicial se creó mediante la CLI interna de Directus. Su contraseña
 temporal está en
@@ -83,6 +88,57 @@ docker compose -f ops/directus/compose.yaml up -d
 docker compose -f ops/directus/compose.yaml ps
 docker compose -f ops/directus/compose.yaml logs --tail=100
 ```
+
+## Esquema editorial
+
+La primera migración versionada está en:
+
+```text
+ops/directus/migrations/001_editorial_schema.sql
+```
+
+Se aplica desde la raíz del repositorio y se detiene ante el primer error:
+
+```sh
+docker compose -f ops/directus/compose.yaml exec -T database \
+  psql --set ON_ERROR_STOP=1 --username directus --dbname paramo_editorial \
+  < ops/directus/migrations/001_editorial_schema.sql
+```
+
+La migración crea únicamente el modelo vacío. Debe aplicarse una sola vez sobre
+una instalación de Directus sin esas tablas. La importación de autores, obras,
+frases, originales y fuentes es un proceso posterior y separado.
+
+Después se registran los metadatos que convierten las tablas en un panel
+utilizable. El configurador se niega a trabajar contra una URL que no sea local,
+lee la contraseña desde el archivo protegido del host y no imprime credenciales:
+
+```sh
+node scripts/configure-directus-editorial-metadata.mjs --dry-run
+node scripts/configure-directus-editorial-metadata.mjs
+```
+
+Las opciones `--skip-relations` y `--only-relations` permiten separar las dos
+partes durante una recuperación. El proceso es repetible: las relaciones ya
+registradas se detectan y no se duplican.
+
+La instantánea revisada del modelo está en:
+
+```text
+ops/directus/schema/editorial-schema.yaml
+```
+
+Se regenera dentro del contenedor para que la versión de la CLI coincida con la
+versión de Directus:
+
+```sh
+docker compose -f ops/directus/compose.yaml exec -T directus \
+  node cli.js schema snapshot /tmp/editorial-schema.yaml --yes --format yaml
+```
+
+Antes de sustituir la copia del repositorio hay que revisar cantidades y buscar
+credenciales o secretos. La instantánea esperada contiene 18 colecciones, 231
+campos y 46 relaciones.
 
 Detener el piloto no borra sus volúmenes:
 
