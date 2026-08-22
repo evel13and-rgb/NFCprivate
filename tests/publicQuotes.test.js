@@ -542,6 +542,37 @@ test('La metamorfosis conserva omisiones, repeticiones y límites tras la segund
   }
 });
 
+test('Orgullo y prejuicio conserva énfasis, lógica y límites tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const austenQuotes = document.quotes.filter(quote => quote.workId === 'work-orgullo-y-prejuicio');
+
+  assert.equal(austenQuotes.length, 36);
+  assert.ok(austenQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(austenQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-528').original.text, /tempt _me_/);
+  assert.match(quotes.get('quote-528').t, /tentarme _a mí_/);
+  assert.match(quotes.get('quote-532').t, /ambos conozcan de antemano sus respectivos caracteres/);
+  assert.match(quotes.get('quote-538').t, /señor Collins/);
+  assert.doesNotMatch(quotes.get('quote-538').t, /…/);
+  assert.match(quotes.get('quote-544').t, /¿No era eso cierta excusa para mi descortesía/);
+  assert.doesNotMatch(quotes.get('quote-549').t, /las personas airadas no siempre son prudentes/);
+  assert.equal(quotes.get('quote-549').highlight, 'una de las mujeres más hermosas de cuantas conozco');
+  assert.doesNotMatch(quotes.get('quote-550').t, /\n/);
+  assert.match(quotes.get('quote-553').t, /sin tener en cuenta a _usted_/);
+  assert.match(quotes.get('quote-556').t, /Acudí a usted sin dudar/);
+  assert.match(quotes.get('quote-557').t, /solo en la medida en que recordarlo le proporcione placer/);
+  assert.match(quotes.get('quote-559').t, /en casos como estos/);
+  for (const quote of austenQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/_[^_]+_/g)?.length || 0,
+      quote.original.text.match(/_[^_]+_/g)?.length || 0,
+      `${quote.id} debe conservar sus énfasis tipográficos`,
+    );
+  }
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-22T18:43:48.262Z",
+  "generated_at": "2026-08-22T20:03:03.381Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -8063,7 +8063,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+        "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.\n\nHowever little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8080,7 +8080,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "You have no compassion on my poor nerves. You mistake me, my dear. I have a high respect for your nerves. They are my old friends. I have heard you mention them with consideration these twenty years at least.",
+        "text": "You have no compassion on my poor nerves.”\n\n“You mistake me, my dear. I have a high respect for your nerves. They are my old friends. I have heard you mention them with consideration these twenty years at least.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8088,7 +8088,7 @@
     {
       "id": "quote-528",
       "legacy_index": 528,
-      "t": "—¿A cuál te refieres? —Y, volviéndose, miró un instante a Elizabeth hasta que, al encontrarse con sus ojos, apartó los suyos y dijo fríamente—: Es pasable, pero no lo bastante hermosa para tentarme; y ahora mismo no estoy de humor para dar importancia a jóvenes a quienes otros hombres desairan.",
+      "t": "—¿A cuál te refieres?\n\nY, volviéndose, miró un instante a Elizabeth hasta que, al encontrarse con sus ojos, apartó los suyos y dijo fríamente:\n\n—Es pasable, pero no lo bastante hermosa para tentarme _a mí_; y ahora mismo no estoy de humor para dar importancia a jóvenes a quienes otros hombres desairan.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "no lo bastante hermosa para tentarme",
@@ -8097,7 +8097,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "Which do you mean? and turning round, he looked for a moment at Elizabeth, till, catching her eye, he withdrew his own, and coldly said, She is tolerable: but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men.",
+        "text": "“Which do you mean?” and turning round, he looked for a moment at Elizabeth, till, catching her eye, he withdrew his own, and coldly said, “She is tolerable: but not handsome enough to tempt _me_; and I am in no humour at present to give consequence to young ladies who are slighted by other men.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8105,7 +8105,7 @@
     {
       "id": "quote-529",
       "legacy_index": 529,
-      "t": "—Su conjetura es completamente equivocada, se lo aseguro. Mi mente estaba ocupada de una manera mucho más agradable. Estaba meditando sobre el enorme placer que puede proporcionar un par de ojos hermosos en el rostro de una mujer bonita.",
+      "t": "—Su conjetura es completamente equivocada, se lo aseguro. Mi mente estaba ocupada de una manera más agradable. Estaba meditando sobre el enorme placer que puede proporcionar un par de ojos hermosos en el rostro de una mujer bonita.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "un par de ojos hermosos",
@@ -8114,7 +8114,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "Your conjecture is totally wrong, I assure you. My mind was more agreeably engaged. I have been meditating on the very great pleasure which a pair of fine eyes in the face of a pretty woman can bestow.",
+        "text": "“Your conjecture is totally wrong, I assure you. My mind was more agreeably engaged. I have been meditating on the very great pleasure which a pair of fine eyes in the face of a pretty woman can bestow.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8131,7 +8131,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "Vanity and pride are different things, though the words are often used synonymously. A person may be proud without being vain. Pride relates more to our opinion of ourselves; vanity to what we would have others think of us.",
+        "text": "Vanity and pride are different things, though the words are often used synonymously. A person may be proud without being vain. Pride relates more to our opinion of ourselves; vanity to what we would have others think of us.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8139,16 +8139,16 @@
     {
       "id": "quote-531",
       "legacy_index": 531,
-      "t": "—Su orgullo —dijo la señorita Lucas— no me ofende tanto como suele hacerlo el orgullo, porque en su caso tiene una excusa. No puede sorprender que un joven tan distinguido, con familia, fortuna, todo a su favor, tenga una opinión elevada de sí mismo. Si se me permite expresarlo así, tiene derecho a ser orgulloso.\n\n—Eso es muy cierto —respondió Elizabeth—, y podría perdonarle fácilmente su orgullo si no hubiera mortificado el mío.",
+      "t": "—Su orgullo —dijo la señorita Lucas— no _me_ ofende tanto como suele hacerlo el orgullo, porque en su caso tiene una excusa. No puede sorprender que un joven tan distinguido, con familia, fortuna, todo a su favor, tenga una opinión elevada de sí mismo. Si se me permite expresarlo así, tiene _derecho_ a ser orgulloso.\n\n—Eso es muy cierto —respondió Elizabeth—, y podría perdonarle fácilmente _su_ orgullo si no hubiera mortificado _el mío_.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "si no hubiera mortificado el mío",
+      "highlight": "si no hubiera mortificado _el mío_",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "His pride, said Miss Lucas, does not offend me so much as pride often does, because there is an excuse for it. One cannot wonder that so very fine a young man, with family, fortune, everything in his favour, should think highly of himself. If I may so express it, he has a right to be proud. That is very true, replied Elizabeth, and I could easily forgive his pride, if he had not mortified mine.",
+        "text": "“His pride,” said Miss Lucas, “does not offend _me_ so much as pride often does, because there is an excuse for it. One cannot wonder that so very fine a young man, with family, fortune, everything in his favour, should think highly of himself. If I may so express it, he has a _right_ to be proud.”\n\n“That is very true,” replied Elizabeth, “and I could easily forgive _his_ pride, if he had not mortified _mine_.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8156,7 +8156,7 @@
     {
       "id": "quote-532",
       "legacy_index": 532,
-      "t": "—La felicidad en el matrimonio es enteramente cuestión de azar. Aunque las disposiciones de ambos sean perfectamente conocidas o muy semejantes de antemano, eso no aumenta en lo más mínimo su felicidad.",
+      "t": "—La felicidad en el matrimonio es enteramente cuestión de azar. Por bien que ambos conozcan de antemano sus respectivos caracteres, o por semejantes que estos sean, eso no aumenta en lo más mínimo su felicidad.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "cuestión de azar",
@@ -8173,7 +8173,7 @@
     {
       "id": "quote-533",
       "legacy_index": 533,
-      "t": "—Todos podemos empezar con facilidad: una ligera inclinación es bastante natural; pero son muy pocos los que tienen corazón suficiente para enamorarse de verdad sin estímulo. En nueve casos de cada diez, a una mujer le conviene mostrar más afecto del que siente. Sin duda Bingley siente inclinación por tu hermana; pero quizá nunca pase de eso si ella no lo ayuda a avanzar.",
+      "t": "—Todos podemos _empezar_ con facilidad: una ligera inclinación es bastante natural; pero son muy pocos los que tienen corazón suficiente para enamorarse de verdad sin estímulo. En nueve casos de cada diez, a una mujer le conviene mostrar _más_ afecto del que siente. Sin duda Bingley siente inclinación por tu hermana; pero quizá nunca pase de eso si ella no lo ayuda a avanzar.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "enamorarse de verdad sin estímulo",
@@ -8182,7 +8182,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "We can all begin freely--a slight preference is natural enough; but there are very few of us who have heart enough to be really in love without encouragement. In nine cases out of ten, a woman had better show more affection than she feels. Bingley likes your sister undoubtedly; but he may never do more than like her, if she does not help him on.",
+        "text": "We can all _begin_ freely--a slight preference is natural enough; but there are very few of us who have heart enough to be really in love without encouragement. In nine cases out of ten, a woman had better show _more_ affection than she feels. Bingley likes your sister undoubtedly; but he may never do more than like her, if she does not help him on.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8199,7 +8199,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "Nothing is more deceitful, said Darcy, than the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast.",
+        "text": "“Nothing is more deceitful,” said Darcy, “than the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8207,7 +8207,7 @@
     {
       "id": "quote-535",
       "legacy_index": 535,
-      "t": "—Creo que en toda disposición existe una tendencia hacia algún mal particular, un defecto natural que ni siquiera la mejor educación puede vencer.",
+      "t": "—Creo que en todo carácter existe una tendencia hacia algún mal particular, un defecto natural que ni siquiera la mejor educación puede vencer.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "un defecto natural",
@@ -8216,7 +8216,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome.",
+        "text": "“There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8224,7 +8224,7 @@
     {
       "id": "quote-536",
       "legacy_index": 536,
-      "t": "—Una vez perdida mi buena opinión, se pierde para siempre.\n\n—Ese sí es un defecto —exclamó Elizabeth—. El resentimiento implacable es una sombra en el carácter. Pero ha escogido bien su falta. En verdad no puedo reírme de ella. Está usted a salvo de mí.\n\n—Creo que en todo carácter existe una tendencia hacia algún mal particular, un defecto natural que ni siquiera la mejor educación puede vencer.\n\n—Y el defecto de usted es la propensión a odiar a todo el mundo.\n\n—Y el de usted —replicó él, sonriendo— es empeñarse deliberadamente en malinterpretarlos.",
+      "t": "—Una vez perdida mi buena opinión, se pierde para siempre.\n\n—_Ese_ sí es un defecto —exclamó Elizabeth—. El resentimiento implacable _es_ una sombra en el carácter. Pero ha escogido bien su falta. En verdad no puedo _reírme_ de ella. Está usted a salvo de mí.\n\n—Creo que en todo carácter existe una tendencia hacia algún mal particular, un defecto natural que ni siquiera la mejor educación puede vencer.\n\n—Y el defecto _de usted_ es la propensión a odiar a todo el mundo.\n\n—Y el de usted —replicó él, sonriendo— es empeñarse deliberadamente en malinterpretarlos.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "empeñarse deliberadamente en malinterpretarlos",
@@ -8233,7 +8233,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "My good opinion once lost is lost for ever. That is a failing, indeed! cried Elizabeth. Implacable resentment is a shade in a character. But you have chosen your fault well. I really cannot laugh at it. You are safe from me. There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome. And your defect is a propensity to hate everybody. And yours, he replied, with a smile, is wilfully to misunderstand them.",
+        "text": "My good opinion once lost is lost for ever.”\n\n“_That_ is a failing, indeed!” cried Elizabeth. “Implacable resentment _is_ a shade in a character. But you have chosen your fault well. I really cannot _laugh_ at it. You are safe from me.”\n\n“There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome.”\n\n“And _your_ defect is a propensity to hate everybody.”\n\n“And yours,” he replied, with a smile, “is wilfully to misunderstand them.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8241,7 +8241,7 @@
     {
       "id": "quote-537",
       "legacy_index": 537,
-      "t": "—Espero no ridiculizar jamás lo sabio o lo bueno. Las necedades y los disparates, los caprichos y las inconsecuencias sí me divierten, lo confieso, y me río de ellos siempre que puedo.",
+      "t": "—Espero no ridiculizar jamás lo sabio o lo bueno. Las necedades y los disparates, los caprichos y las inconsecuencias _sí_ me divierten, lo confieso, y me río de ellos siempre que puedo.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "Las necedades y los disparates",
@@ -8250,7 +8250,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I hope I never ridicule what is wise or good. Follies and nonsense, whims and inconsistencies, do divert me, I own, and I laugh at them whenever I can.",
+        "text": "I hope I never ridicule what is wise or good. Follies and nonsense, whims and inconsistencies, _do_ divert me, I own, and I laugh at them whenever I can.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8258,16 +8258,16 @@
     {
       "id": "quote-538",
       "legacy_index": 538,
-      "t": "—Una alternativa desdichada se presenta ante ti, Elizabeth. Desde hoy tendrás que ser una extraña para uno de tus padres. Tu madre no volverá a verte si no te casas con él… si te casas con él, yo no volveré a verte.",
+      "t": "—Una alternativa desdichada se presenta ante ti, Elizabeth. Desde hoy tendrás que ser una extraña para uno de tus padres. Tu madre no volverá a verte si _no_ te casas con el señor Collins, y yo no volveré a verte si _te casas_.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "si no te casas con él… si te casas con él",
+      "highlight": "yo no volveré a verte si _te casas_",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "An unhappy alternative is before you, Elizabeth. From this day you must be a stranger to one of your parents. Your mother will never see you again if you do not marry Mr. Collins, and I will never see you again if you do.",
+        "text": "“An unhappy alternative is before you, Elizabeth. From this day you must be a stranger to one of your parents. Your mother will never see you again if you do _not_ marry Mr. Collins, and I will never see you again if you _do_.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8284,7 +8284,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I am not romantic, you know. I never was. I ask only a comfortable home; and, considering Mr. Collins’s character, connections, and situation in life, I am convinced that my chance of happiness with him is as fair as most people can boast on entering the marriage state.",
+        "text": "I am not romantic, you know. I never was. I ask only a comfortable home; and, considering Mr. Collins’s character, connections, and situation in life, I am convinced that my chance of happiness with him is as fair as most people can boast on entering the marriage state.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8326,16 +8326,16 @@
     {
       "id": "quote-542",
       "legacy_index": 542,
-      "t": "—Hay en mí una obstinación que jamás soporta ser asustada por voluntad ajena. Mi valor se eleva con cada intento de intimidarme.",
+      "t": "—Hay en mí una obstinación incapaz de soportar que los demás me asusten cuando les plazca. Mi valor siempre crece con cada intento de intimidarme.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "Mi valor se eleva con cada intento de intimidarme",
+      "highlight": "Mi valor siempre crece con cada intento de intimidarme",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "There is a stubbornness about me that never can bear to be frightened at the will of others. My courage always rises with every attempt to intimidate me.",
+        "text": "There is a stubbornness about me that never can bear to be frightened at the will of others. My courage always rises with every attempt to intimidate me.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8343,7 +8343,7 @@
     {
       "id": "quote-543",
       "legacy_index": 543,
-      "t": "Tras varios minutos de silencio, se acercó a ella visiblemente agitado y comenzó:\n\n—En vano he luchado. No sirve de nada. Mis sentimientos no pueden ser reprimidos. Debe permitirme decirle con cuánto ardor la admiro y la amo.\n\nEl asombro de Elizabeth estaba más allá de toda expresión. Lo miró fijamente, se sonrojó, dudó y guardó silencio. Él tomó aquello por suficiente estímulo, y de inmediato siguió la confesión de todo cuanto sentía y había sentido por ella desde hacía mucho tiempo. Habló bien; pero había sentimientos, además de los del corazón, que exponer, y no fue más elocuente al hablar de ternura que de orgullo. Se extendió con calor sobre la inferioridad de ella —sobre la degradación que suponía— y sobre los obstáculos familiares que el juicio había opuesto siempre a la inclinación: un calor que parecía debido a la importancia que estaba hiriendo, pero muy poco apropiado para favorecer su pretensión.",
+      "t": "Tras varios minutos de silencio, se acercó a ella visiblemente agitado y comenzó:\n\n—En vano he luchado. No sirve de nada. Mis sentimientos no pueden ser reprimidos. Debe permitirme decirle con cuánto ardor la admiro y la amo.\n\nEl asombro de Elizabeth estaba más allá de toda expresión. Lo miró fijamente, se sonrojó, dudó y guardó silencio. Él tomó aquello por suficiente estímulo, y de inmediato siguió la confesión de todo cuanto sentía y había sentido por ella desde hacía mucho tiempo. Habló bien; pero había sentimientos, además de los del corazón, que exponer, y no fue más elocuente al hablar de ternura que de orgullo. Se extendió con calor sobre la inferioridad de ella —sobre la degradación que suponía— y sobre los obstáculos familiares que el juicio había opuesto siempre a la inclinación: un calor que parecía debido a la dignidad que estaba hiriendo, pero muy poco apropiado para favorecer su pretensión.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "no fue más elocuente al hablar de ternura que de orgullo",
@@ -8352,7 +8352,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "After a silence of several minutes, he came towards her in an agitated manner, and thus began:-- In vain have I struggled. It will not do. My feelings will not be repressed. You must allow me to tell you how ardently I admire and love you. Elizabeth’s astonishment was beyond expression. She stared, coloured, doubted, and was silent. This he considered sufficient encouragement, and the avowal of all that he felt and had long felt for her immediately followed. He spoke well; but there were feelings besides those of the heart to be detailed, and he was not more eloquent on the subject of tenderness than of pride. His sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit.",
+        "text": "After a silence of several minutes, he came towards her in an agitated manner, and thus began:--\n\n“In vain have I struggled. It will not do. My feelings will not be repressed. You must allow me to tell you how ardently I admire and love you.”\n\nElizabeth’s astonishment was beyond expression. She stared, coloured, doubted, and was silent. This he considered sufficient encouragement, and the avowal of all that he felt and had long felt for her immediately followed. He spoke well; but there were feelings besides those of the heart to be detailed, and he was not more eloquent on the subject of tenderness than of pride. His sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8360,7 +8360,7 @@
     {
       "id": "quote-544",
       "legacy_index": 544,
-      "t": "—También podría preguntarle por qué, con un propósito tan evidente de ofenderme e insultarme, eligió decirme que le gustaba contra su voluntad, contra su razón e incluso contra su carácter.",
+      "t": "—También podría preguntarle por qué, con un propósito tan evidente de ofenderme e insultarme, eligió decirme que le gustaba contra su voluntad, contra su razón e incluso contra su carácter. ¿No era eso cierta excusa para mi descortesía, si es que _fui_ descortés?",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "contra su voluntad, contra su razón e incluso contra su carácter",
@@ -8369,7 +8369,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I might as well inquire, replied she, why, with so evident a design of offending and insulting me, you chose to tell me that you liked me against your will, against your reason, and even against your character? Was not this some excuse for incivility, if I was uncivil?",
+        "text": "“I might as well inquire,” replied she, “why, with so evident a design of offending and insulting me, you chose to tell me that you liked me against your will, against your reason, and even against your character? Was not this some excuse for incivility, if I _was_ uncivil?",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8386,7 +8386,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I had not known you a month before I felt that you were the last man in the world whom I could ever be prevailed on to marry.",
+        "text": "I had not known you a month before I felt that you were the last man in the world whom I could ever be prevailed on to marry.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8445,16 +8445,16 @@
     {
       "id": "quote-549",
       "legacy_index": 549,
-      "t": "—Recuerdo que, cuando la conocimos en Hertfordshire, todos nos asombramos mucho al descubrir que se la tenía por una belleza; y recuerdo particularmente que una noche, después de que cenaran en Netherfield, usted dijo: «¿Ella, una belleza? Antes llamaría ingeniosa a su madre». Pero después pareció mejorar ante sus ojos, y creo que durante algún tiempo llegó a considerarla bastante bonita.\n\nConvencida como estaba la señorita Bingley de que Darcy admiraba a Elizabeth, aquel no era el mejor modo de recomendarse a sí misma; pero las personas airadas no siempre son prudentes. Al verlo por fin algo irritado, obtuvo todo el éxito que esperaba.\n\n—Sí —respondió Darcy, que ya no pudo contenerse—, pero eso fue únicamente cuando la conocí; porque hace ya muchos meses que la considero una de las mujeres más hermosas de cuantas conozco.",
+      "t": "—Recuerdo que, cuando la conocimos en Hertfordshire, todos nos asombramos mucho al descubrir que se la tenía por una belleza; y recuerdo particularmente que una noche, después de que cenaran en Netherfield, usted dijo: «¿_Ella_, una belleza? Antes llamaría ingeniosa a su madre». Pero después pareció mejorar ante sus ojos, y creo que durante algún tiempo llegó a considerarla bastante bonita.\n\n—Sí —respondió Darcy, que ya no pudo contenerse—, pero _eso_ fue únicamente cuando la conocí; porque hace ya muchos meses que la considero una de las mujeres más hermosas de cuantas conozco.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "las personas airadas no siempre son prudentes",
+      "highlight": "una de las mujeres más hermosas de cuantas conozco",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I remember, when we first knew her in Hertfordshire, how amazed we all were to find that she was a reputed beauty; and I particularly recollect your saying one night, after they had been dining at Netherfield, ‘She a beauty! I should as soon call her mother a wit.’ But afterwards she seemed to improve on you, and I believe you thought her rather pretty at one time. Yes, replied Darcy, who could contain himself no longer, but that was only when I first knew her; for it is many months since I have considered her as one of the handsomest women of my acquaintance.",
+        "text": "“I remember, when we first knew her in Hertfordshire, how amazed we all were to find that she was a reputed beauty; and I particularly recollect your saying one night, after they had been dining at Netherfield, ‘_She_ a beauty! I should as soon call her mother a wit.’ But afterwards she seemed to improve on you, and I believe you thought her rather pretty at one time.”\n\n“Yes,” replied Darcy, who could contain himself no longer, “but _that_ was only when I first knew her; for it is many months since I have considered her as one of the handsomest women of my acquaintance.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8462,7 +8462,7 @@
     {
       "id": "quote-550",
       "legacy_index": 550,
-      "t": "Darcy no respondió. Parecía apenas oírla y caminaba de un lado a otro de la habitación, sumido en una seria meditación, con el ceño contraído y el aire sombrío. Elizabeth no tardó en advertirlo y lo comprendió al instante. Su poder se desvanecía; todo debía desvanecerse ante semejante prueba de debilidad familiar, ante semejante certeza de la más profunda deshonra. No podía sorprenderse ni condenarlo; pero la convicción de que él se había dominado no le daba consuelo ni mitigaba su aflicción.\n\nAl contrario, aquello estaba calculado precisamente para hacerle comprender sus propios deseos; y nunca había sentido con tanta sinceridad que podría haberlo amado como ahora, cuando todo amor debía ser vano.",
+      "t": "Darcy no respondió. Parecía apenas oírla y caminaba de un lado a otro de la habitación, sumido en una seria meditación, con el ceño contraído y el aire sombrío. Elizabeth no tardó en advertirlo y lo comprendió al instante. Su poder se desvanecía; todo _debía_ desvanecerse ante semejante prueba de debilidad familiar, ante semejante certeza de la más profunda deshonra. No podía sorprenderse ni condenarlo; pero la convicción de que él se había dominado no le daba consuelo ni mitigaba su aflicción. Al contrario, aquello estaba calculado precisamente para hacerle comprender sus propios deseos; y nunca había sentido con tanta sinceridad que podría haberlo amado como ahora, cuando todo amor debía ser vano.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "cuando todo amor debía ser vano",
@@ -8471,7 +8471,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "Darcy made no answer. He seemed scarcely to hear her, and was walking up and down the room in earnest meditation; his brow contracted, his air gloomy. Elizabeth soon observed, and instantly understood it. Her power was sinking; everything must sink under such a proof of family weakness, such an assurance of the deepest disgrace. She could neither wonder nor condemn; but the belief of his self-conquest brought nothing consolatory to her bosom, afforded no palliation of her distress. It was, on the contrary, exactly calculated to make her understand her own wishes; and never had she so honestly felt that she could have loved him, as now, when all love must be vain.",
+        "text": "Darcy made no answer. He seemed scarcely to hear her, and was walking up and down the room in earnest meditation; his brow contracted, his air gloomy. Elizabeth soon observed, and instantly understood it. Her power was sinking; everything _must_ sink under such a proof of family weakness, such an assurance of the deepest disgrace. She could neither wonder nor condemn; but the belief of his self-conquest brought nothing consolatory to her bosom, afforded no palliation of her distress. It was, on the contrary, exactly calculated to make her understand her own wishes; and never had she so honestly felt that she could have loved him, as now, when all love must be vain.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8488,7 +8488,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "In marrying your nephew, I should not consider myself as quitting that sphere. He is a gentleman; I am a gentleman’s daughter; so far we are equal.",
+        "text": "“In marrying your nephew, I should not consider myself as quitting that sphere. He is a gentleman; I am a gentleman’s daughter; so far we are equal.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8496,16 +8496,16 @@
     {
       "id": "quote-552",
       "legacy_index": 552,
-      "t": "—Sean cuales sean mis parientes —dijo Elizabeth—, si su sobrino no pone reparos, nada tienen que ver con usted.",
+      "t": "—Sean cuales sean mis parientes —dijo Elizabeth—, si su sobrino no pone reparos, nada tienen que ver con _usted_.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "nada tienen que ver con usted",
+      "highlight": "nada tienen que ver con _usted_",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "Whatever my connections may be, said Elizabeth, if your nephew does not object to them, they can be nothing to you.",
+        "text": "“Whatever my connections may be,” said Elizabeth, “if your nephew does not object to them, they can be nothing to _you_.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8513,7 +8513,7 @@
     {
       "id": "quote-553",
       "legacy_index": 553,
-      "t": "—Solo estoy resuelta a actuar de la manera que, en mi propia opinión, constituya mi felicidad, sin referencia a usted ni a ninguna persona tan enteramente ajena a mí.",
+      "t": "—Solo estoy resuelta a actuar de la manera que, en mi propia opinión, constituya mi felicidad, sin tener en cuenta a _usted_ ni a ninguna persona tan enteramente ajena a mí.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "constituya mi felicidad",
@@ -8522,7 +8522,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I am only resolved to act in that manner, which will, in my own opinion, constitute my happiness, without reference to you, or to any person so wholly unconnected with me.",
+        "text": "I am only resolved to act in that manner, which will, in my own opinion, constitute my happiness, without reference to _you_, or to any person so wholly unconnected with me.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8530,16 +8530,16 @@
     {
       "id": "quote-554",
       "legacy_index": 554,
-      "t": "—Si insiste en darme las gracias —respondió él—, désmelas únicamente por usted. No intentaré negar que el deseo de hacerla feliz pudo añadir fuerza a los demás motivos que me impulsaron. Pero su familia no me debe nada. Por mucho que los respete, creo que pensé únicamente en usted.",
+      "t": "—Si _insiste_ en darme las gracias —respondió él—, désmelas únicamente por usted. No intentaré negar que el deseo de hacerla feliz pudo añadir fuerza a los demás motivos que me impulsaron. Pero su _familia_ no me debe nada. Por mucho que los respete, creo que pensé únicamente en _usted_.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "creo que pensé únicamente en usted",
+      "highlight": "creo que pensé únicamente en _usted_",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "If you will thank me, he replied, let it be for yourself alone. That the wish of giving happiness to you might add force to the other inducements which led me on, I shall not attempt to deny. But your family owe me nothing. Much as I respect them, I believe I thought only of you.",
+        "text": "“If you _will_ thank me,” he replied, “let it be for yourself alone. That the wish of giving happiness to you might add force to the other inducements which led me on, I shall not attempt to deny. But your _family_ owe me nothing. Much as I respect them, I believe I thought only of _you_.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8547,16 +8547,16 @@
     {
       "id": "quote-555",
       "legacy_index": 555,
-      "t": "—Si sus sentimientos siguen siendo los mismos que el pasado abril, dígamelo de inmediato. Mis afectos y mis deseos no han cambiado; pero una sola palabra suya me hará guardar silencio sobre este asunto para siempre.",
+      "t": "—Si sus sentimientos siguen siendo los mismos que el pasado abril, dígamelo de inmediato. _Mis_ afectos y mis deseos no han cambiado; pero una sola palabra suya me hará guardar silencio sobre este asunto para siempre.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "Mis afectos y mis deseos no han cambiado",
+      "highlight": "_Mis_ afectos y mis deseos no han cambiado",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "If your feelings are still what they were last April, tell me so at once. My affections and wishes are unchanged; but one word from you will silence me on this subject for ever.",
+        "text": "If your feelings are still what they were last April, tell me so at once. _My_ affections and wishes are unchanged; but one word from you will silence me on this subject for ever.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8564,7 +8564,7 @@
     {
       "id": "quote-556",
       "legacy_index": 556,
-      "t": "—Usted me dio una lección, dura al principio, pero sumamente provechosa. Por usted fui debidamente humillado. Llegué a su lado sin dudar de cómo sería recibido. Usted me mostró cuán insuficientes eran todas mis pretensiones para agradar a una mujer digna de ser agradada.",
+      "t": "—Usted me dio una lección, dura al principio, pero sumamente provechosa. Por usted fui debidamente humillado. Acudí a usted sin dudar de cómo sería recibido. Usted me mostró cuán insuficientes eran todas mis pretensiones para agradar a una mujer digna de ser agradada.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "Por usted fui debidamente humillado",
@@ -8573,7 +8573,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "You taught me a lesson, hard indeed at first, but most advantageous. By you, I was properly humbled. I came to you without a doubt of my reception. You showed me how insufficient were all my pretensions to please a woman worthy of being pleased.",
+        "text": "You taught me a lesson, hard indeed at first, but most advantageous. By you, I was properly humbled. I came to you without a doubt of my reception. You showed me how insufficient were all my pretensions to please a woman worthy of being pleased.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8581,16 +8581,16 @@
     {
       "id": "quote-557",
       "legacy_index": 557,
-      "t": "—Debe aprender un poco de mi filosofía. Piense solo en el pasado cuando su recuerdo le proporcione placer.",
+      "t": "—Debe aprender un poco de mi filosofía. Piense en el pasado solo en la medida en que recordarlo le proporcione placer.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "Piense solo en el pasado cuando su recuerdo le proporcione placer",
+      "highlight": "Piense en el pasado solo en la medida en que recordarlo le proporcione placer",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "You must learn some of my philosophy. Think only of the past as its remembrance gives you pleasure.",
+        "text": "You must learn some of my philosophy. Think only of the past as its remembrance gives you pleasure.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8598,16 +8598,16 @@
     {
       "id": "quote-558",
       "legacy_index": 558,
-      "t": "—No puedo fijar la hora, ni el lugar, ni la mirada, ni las palabras que pusieron los cimientos. Fue hace demasiado tiempo. Ya estaba en medio antes de saber que había empezado.",
+      "t": "—No puedo fijar la hora, ni el lugar, ni la mirada, ni las palabras que pusieron los cimientos. Fue hace demasiado tiempo. Ya estaba en medio antes de saber que _había_ empezado.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
-      "highlight": "Ya estaba en medio antes de saber que había empezado",
+      "highlight": "Ya estaba en medio antes de saber que _había_ empezado",
       "lang": "es",
       "type": "prose",
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I cannot fix on the hour, or the spot, or the look, or the words, which laid the foundation. It is too long ago. I was in the middle before I knew that I had begun.",
+        "text": "“I cannot fix on the hour, or the spot, or the look, or the words, which laid the foundation. It is too long ago. I was in the middle before I knew that I _had_ begun.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8615,7 +8615,7 @@
     {
       "id": "quote-559",
       "legacy_index": 559,
-      "t": "—Quizá no siempre lo amé tanto como ahora. Pero, en casos como este, una buena memoria es imperdonable. Esta es la última vez que yo misma lo recordaré.",
+      "t": "—Quizá no siempre lo amé tanto como ahora; pero, en casos como estos, una buena memoria es imperdonable. Esta es la última vez que yo misma lo recordaré.",
       "a": "Jane Austen",
       "obra": "Orgullo y prejuicio, Jane Austen",
       "highlight": "una buena memoria es imperdonable",
@@ -8624,7 +8624,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "Perhaps I did not always love him so well as I do now; but in such cases as these a good memory is unpardonable. This is the last time I shall ever remember it myself.",
+        "text": "Perhaps I did not always love him so well as I do now; but in such cases as these a good memory is unpardonable. This is the last time I shall ever remember it myself.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -8641,7 +8641,7 @@
       "authorId": "author-jane-austen",
       "workId": "work-orgullo-y-prejuicio",
       "original": {
-        "text": "I do, I do like him, she replied, with tears in her eyes; I love him. Indeed he has no improper pride. He is perfectly amiable. You do not know what he really is; then pray do not pain me by speaking of him in such terms.",
+        "text": "“I do, I do like him,” she replied, with tears in her eyes; “I love him. Indeed he has no improper pride. He is perfectly amiable. You do not know what he really is; then pray do not pain me by speaking of him in such terms.”",
         "lang": "en",
         "label": "Original inglés"
       }
