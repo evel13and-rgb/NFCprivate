@@ -481,6 +481,37 @@ test('Orlando conserva límites, imágenes y repeticiones tras la segunda audito
   }
 });
 
+test('Una habitación propia conserva límites, referentes y recortes tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const roomQuotes = document.quotes.filter(quote => quote.workId === 'work-una-habitacion-propia');
+
+  assert.equal(roomQuotes.length, 33);
+  assert.ok(roomQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(roomQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-202').t, /limitaciones, los prejuicios y las idiosincrasias/);
+  assert.match(quotes.get('quote-208').t, /si una silbaba, uno de ellos acudía corriendo/);
+  assert.equal(quotes.get('quote-215').original.text.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-215').t.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-218').original.text.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-218').t.match(/\[…\]/g)?.length, 1);
+  assert.match(quotes.get('quote-219').t, /usted, bedel como es, me eche del césped/);
+  assert.ok(quotes.get('quote-220').t.indexOf('nuestras madres') < quotes.get('quote-220').t.indexOf('grandes escritores'));
+  assert.match(quotes.get('quote-222').t, /no conocemos a Jane Austen ni conocemos a Shakespeare/);
+  assert.match(quotes.get('quote-227').t, /señor B/);
+  assert.match(quotes.get('quote-227').t, /Coleridge/);
+  assert.match(quotes.get('quote-229').t, /Ilumina a un grupo en una habitación/);
+  assert.match(quotes.get('quote-233').t, /no solo con el mundo de los hombres y las mujeres/);
+  for (const quote of roomQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
