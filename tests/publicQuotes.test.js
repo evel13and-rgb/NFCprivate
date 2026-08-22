@@ -512,6 +512,36 @@ test('Una habitación propia conserva límites, referentes y recortes tras la se
   }
 });
 
+test('La metamorfosis conserva omisiones, repeticiones y límites tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const kafkaQuotes = document.quotes.filter(quote => quote.workId === 'work-la-metamorfosis');
+
+  assert.equal(kafkaQuotes.length, 32);
+  assert.ok(kafkaQuotes.every(quote => quote.original?.lang === 'de'));
+  assert.ok(kafkaQuotes.every(quote => quote.original?.label === 'Original alemán'));
+  assert.match(quotes.get('quote-499').t, /llamó una voz; era su madre/);
+  assert.match(quotes.get('quote-503').t, /¿Queréis, queréis dejarme marchar\?/);
+  assert.match(quotes.get('quote-504').t, /velar por mis padres y mi hermana/);
+  assert.match(quotes.get('quote-506').t, /cerrada de un golpe con el bastón/);
+  assert.match(quotes.get('quote-508').t, /al parecer, las otras habían sido abiertas/);
+  assert.match(quotes.get('quote-515').t, /cuya posición exacta desconocía/);
+  assert.match(quotes.get('quote-518').t, /por debajo de las axilas/);
+  assert.match(quotes.get('quote-519').t, /los tres tenían barbas pobladas/);
+  assert.equal(quotes.get('quote-520').original.text.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-520').t.match(/\[…\]/g)?.length, 1);
+  assert.match(quotes.get('quote-520').t, /el padre y la madre, cada uno desde su lado/);
+  assert.match(quotes.get('quote-522').t, /honrar su recuerdo/);
+  for (const quote of kafkaQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
