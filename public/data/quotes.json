@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-22T20:46:04.847Z",
+  "generated_at": "2026-08-22T21:54:04.013Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -9142,14 +9142,19 @@
     {
       "id": "quote-590",
       "legacy_index": 590,
-      "t": "—¡Qué locura bañarse a semejante hora, con este calor! —exclamó el señor Pontellier. Él mismo se había dado un chapuzón al amanecer. Por eso la mañana se le había hecho larga.\n\n—Te has quemado hasta quedar irreconocible —añadió, mirando a su esposa como se mira una valiosa propiedad personal que ha sufrido algún daño.\n\nElla levantó las manos, unas manos fuertes y bien formadas, y las examinó críticamente, subiéndose las mangas por encima de las muñecas. Al mirarlas recordó sus anillos, que había entregado a su marido antes de marcharse a la playa. Sin decir nada, extendió la mano hacia él; y él, comprendiendo, sacó los anillos del bolsillo del chaleco y los dejó caer en su palma abierta. Ella se los puso en los dedos.",
+      "t": "—¡Qué locura bañarse a semejante hora, con este calor! —exclamó el señor Pontellier. Él mismo se había dado un chapuzón al amanecer. Por eso la mañana se le había hecho larga.\n\n—Te has quemado hasta quedar irreconocible —añadió, mirando a su esposa como se mira una valiosa propiedad personal que ha sufrido algún daño. Ella levantó las manos, unas manos fuertes y bien formadas, y las examinó críticamente, subiéndose las mangas de batista por encima de las muñecas. Al mirarlas recordó sus anillos, que había entregado a su marido antes de marcharse a la playa. Sin decir nada, extendió la mano hacia él; y él, comprendiendo, sacó los anillos del bolsillo del chaleco y los dejó caer en su palma abierta. Ella se los puso en los dedos.",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
       "highlight": "una valiosa propiedad personal",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "\"What folly! to bathe at such an hour in such heat!\" exclaimed Mr. Pontellier. He himself had taken a plunge at daylight. That was why the morning seemed long to him.\n\n\"You are burnt beyond recognition,\" he added, looking at his wife as one looks at a valuable piece of personal property which has suffered some damage. She held up her hands, strong, shapely hands, and surveyed them critically, drawing up her lawn sleeves above the wrists. Looking at them reminded her of her rings, which she had given to her husband before leaving for the beach. She silently reached out to him, and he, understanding, took the rings from his vest pocket and dropped them into her open palm. She slipped them upon her fingers;",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-591",
@@ -9161,103 +9166,148 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "In short, Mrs. Pontellier was not a mother-woman. The mother-women seemed to prevail that summer at Grand Isle. It was easy to know them, fluttering about with extended, protecting wings when any harm, real or imaginary, threatened their precious brood. They were women who idolized their children, worshiped their husbands, and esteemed it a holy privilege to efface themselves as individuals and grow wings as ministering angels.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-592",
       "legacy_index": 592,
-      "t": "La voz del mar es seductora; nunca cesa de susurrar, clamar, murmurar, invitar al alma a vagar durante un tiempo por abismos de soledad, a perderse en laberintos de contemplación interior.\n\nLa voz del mar habla al alma. El contacto del mar es sensual y envuelve el cuerpo en su abrazo suave y estrecho.",
+      "t": "La voz del mar es seductora; nunca cesa de susurrar, clamar, murmurar, invitar al alma a vagar durante un tiempo por abismos de soledad; a perderse en laberintos de contemplación interior.\n\nLa voz del mar habla al alma. El contacto del mar es sensual y envuelve el cuerpo en su abrazo suave y estrecho.",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
       "highlight": "La voz del mar habla al alma",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "The voice of the sea is seductive; never ceasing, whispering, clamoring, murmuring, inviting the soul to wander for a spell in abysses of solitude; to lose itself in mazes of inward contemplation.\n\nThe voice of the sea speaks to the soul. The touch of the sea is sensuous, enfolding the body in its soft, close embrace.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-593",
       "legacy_index": 593,
-      "t": "La señora Pontellier no era una mujer dada a las confidencias; hasta entonces, aquello había sido contrario a su naturaleza. Ya de niña había vivido su pequeña vida enteramente dentro de sí misma. Desde muy temprano había comprendido de manera instintiva la vida doble: la existencia exterior que se conforma y la vida interior que pregunta.",
+      "t": "La señora Pontellier no era una mujer dada a las confidencias; hasta entonces, aquello había sido contrario a su naturaleza. Ya de niña había vivido su pequeña vida enteramente dentro de sí misma. Desde muy temprano había comprendido de manera instintiva la vida doble: la existencia exterior que se conforma, la vida interior que cuestiona.",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
-      "highlight": "la existencia exterior que se conforma y la vida interior que pregunta",
+      "highlight": "la existencia exterior que se conforma, la vida interior que cuestiona",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "Mrs. Pontellier was not a woman given to confidences, a characteristic hitherto contrary to her nature. Even as a child she had lived her own small life all within herself. At a very early period she had apprehended instinctively the dual life—that outward existence which conforms, the inward life which questions.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-594",
       "legacy_index": 594,
-      "t": "¿Quién puede decir qué metales emplean los dioses para forjar la sutil unión que llamamos afinidad y que igualmente podríamos llamar amor?",
+      "t": "¿Quién puede decir qué metales emplean los dioses para forjar la sutil unión que llamamos afinidad y que bien podríamos llamar amor?",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
       "highlight": "la sutil unión que llamamos afinidad",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "Who can tell what metals the gods use in forging the subtle bond which we call sympathy, which we might as well call love.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-595",
       "legacy_index": 595,
-      "t": "—Renunciaría a lo que no es esencial; daría mi dinero, daría mi vida por mis hijos, pero no renunciaría a mí misma. No puedo explicarlo con mayor claridad; apenas estoy empezando a comprenderlo, apenas está revelándoseme.",
+      "t": "—Renunciaría a lo que no es esencial; daría mi dinero, daría mi vida por mis hijos; pero no renunciaría a mí misma. No puedo explicarlo con mayor claridad; es solo algo que empiezo a comprender, que se me está revelando.",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
       "highlight": "pero no renunciaría a mí misma",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "\"I would give up the unessential; I would give my money, I would give my life for my children; but I wouldn't give myself. I can't make it more clear; it's only something which I am beginning to comprehend, which is revealing itself to me.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-596",
       "legacy_index": 596,
-      "t": "—Para ser artista hace falta mucho; hay que poseer numerosos dones —dones absolutos— que no se adquieren mediante el propio esfuerzo. Y, además, para triunfar, el artista debe poseer un alma valerosa.\n\n—¿Qué quiere decir con un alma valerosa?\n\n—Valerosa, ma foi. Un alma brava. El alma que se atreve y desafía.",
+      "t": "—Para ser artista hace falta mucho; hay que poseer numerosos dones —dones absolutos— que no se adquieren mediante el propio esfuerzo. Y, además, para triunfar, el artista debe poseer un alma valerosa.\n\n—¿Qué quiere decir con un alma valerosa?\n\n—Valerosa, _ma foi!_ Un alma brava. El alma que se atreve y desafía.",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
       "highlight": "El alma que se atreve y desafía",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "To be an artist includes much; one must possess many gifts—absolute gifts—which have not been acquired by one's own effort. And, moreover, to succeed, the artist must possess the courageous soul.\"\n\n\"What do you mean by the courageous soul?\"\n\n\"Courageous, _ma foi!_ The brave soul. The soul that dares and defies.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-597",
       "legacy_index": 597,
-      "t": "—Los años pasados parecen sueños… Si una pudiera seguir durmiendo y soñando… Pero despertar y descubrir… En fin, quizá sea mejor despertar después de todo, aunque se sufra, que continuar toda la vida engañada por las ilusiones.",
+      "t": "—Sí —dijo ella—. Los años pasados parecen sueños… si una pudiera seguir durmiendo y soñando… pero despertar y descubrir… ¡Oh! ¡En fin! Quizá sea mejor despertar después de todo, aunque se sufra, que continuar toda la vida engañada por las ilusiones.",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
-      "highlight": "quizá sea mejor despertar después de todo",
+      "highlight": "Quizá sea mejor despertar después de todo",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "\"Yes,\" she said. \"The years that are gone seem like dreams—if one might go on sleeping and dreaming—but to wake up and find—oh! well! perhaps it is better to wake up after all, even to suffer, rather than to remain a dupe to illusions all one's life.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-598",
       "legacy_index": 598,
-      "t": "«Te amo. Adiós, porque te amo».",
+      "t": "«Te amo. Adiós… porque te amo».",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
-      "highlight": "Adiós, porque te amo",
+      "highlight": "Adiós… porque te amo",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "\"I love you. Good-by—because I love you.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-599",
       "legacy_index": 599,
-      "t": "¡Qué extraño y terrible parecía estar desnuda bajo el cielo! ¡Qué delicioso! Se sentía como una criatura recién nacida que abriera los ojos en un mundo conocido que nunca antes había contemplado.",
+      "t": "¡Qué extraño y terrible resultaba estar de pie, desnuda bajo el cielo! ¡Qué delicioso! Se sentía como una criatura recién nacida que abriera los ojos en un mundo familiar que nunca había conocido.",
       "a": "Kate Chopin",
       "obra": "El despertar, Kate Chopin",
       "highlight": "una criatura recién nacida",
       "lang": "es",
       "type": "prose",
       "authorId": "author-kate-chopin",
-      "workId": "work-el-despertar"
+      "workId": "work-el-despertar",
+      "original": {
+        "text": "How strange and awful it seemed to stand naked under the sky! how delicious! She felt like some new-born creature, opening its eyes in a familiar world that it had never known.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-600",

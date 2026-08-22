@@ -188,6 +188,8 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-577', 'quote-578', 'quote-579', 'quote-580', 'quote-581',
     'quote-582', 'quote-583', 'quote-584', 'quote-585', 'quote-586',
     'quote-587', 'quote-588', 'quote-589',
+    'quote-590', 'quote-591', 'quote-592', 'quote-593', 'quote-594',
+    'quote-595', 'quote-596', 'quote-597', 'quote-598', 'quote-599',
     'quote-600', 'quote-601', 'quote-602', 'quote-603', 'quote-604',
     'quote-605', 'quote-606', 'quote-607', 'quote-608', 'quote-609',
     'quote-610', 'quote-611', 'quote-612', 'quote-613', 'quote-614',
@@ -613,6 +615,41 @@ test('La edad de la inocencia conserva referentes, intervenciones y énfasis tra
   assert.match(quotes.get('quote-589').t, /Sus ojos permanecieron fijos, sin ver/);
   assert.match(quotes.get('quote-589').t, /sentaros a observaros y adivinar lo que ocurría bajo la superficie/);
   for (const quote of whartonQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/_[^_]+_/g)?.length || 0,
+      quote.original.text.match(/_[^_]+_/g)?.length || 0,
+      'Cada fragmento debe conservar sus énfasis tipográficos',
+    );
+  }
+});
+
+test('El despertar conserva la primera edición, las interrupciones y la paradoja final', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const chopinQuotes = document.quotes.filter(quote => quote.workId === 'work-el-despertar');
+
+  assert.equal(chopinQuotes.length, 10);
+  assert.ok(chopinQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(chopinQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-590').original.text, /drawing up her lawn sleeves/);
+  assert.doesNotMatch(quotes.get('quote-590').original.text, /fawn sleeves/);
+  assert.match(quotes.get('quote-590').t, /mangas de batista/);
+  assert.equal(quotes.get('quote-590').t.split('\n\n').length, 2);
+  assert.match(quotes.get('quote-592').t, /abismos de soledad; a perderse/);
+  assert.match(quotes.get('quote-593').t, /la existencia exterior que se conforma, la vida interior que cuestiona/);
+  assert.match(quotes.get('quote-594').t, /que bien podríamos llamar amor/);
+  assert.match(quotes.get('quote-595').t, /es solo algo que empiezo a comprender, que se me está revelando/);
+  assert.match(quotes.get('quote-596').original.text, /_ma foi!_/);
+  assert.match(quotes.get('quote-596').t, /_ma foi!_/);
+  assert.match(quotes.get('quote-597').original.text, /^"Yes," she said\./);
+  assert.match(quotes.get('quote-597').t, /^—Sí —dijo ella—\./);
+  assert.match(quotes.get('quote-597').t, /¡Oh! ¡En fin! Quizá/);
+  assert.match(quotes.get('quote-598').original.text, /Good-by—because I love you/);
+  assert.match(quotes.get('quote-598').t, /Adiós… porque te amo/);
+  assert.match(quotes.get('quote-599').t, /resultaba estar de pie, desnuda bajo el cielo/);
+  assert.match(quotes.get('quote-599').t, /un mundo familiar que nunca había conocido/);
+  for (const quote of chopinQuotes) {
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     assert.equal(
       quote.t.match(/_[^_]+_/g)?.length || 0,
