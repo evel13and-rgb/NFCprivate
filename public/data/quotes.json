@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-22T20:03:03.381Z",
+  "generated_at": "2026-08-22T20:46:04.847Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -8673,7 +8673,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "If he had probed to the bottom of his vanity (as he sometimes nearly did) he would have found there the wish that his wife should be as worldly-wise and as eager to please as the married lady whose charms had held his fancy through two mildly agitated years; without, of course, any hint of the frailty which had so nearly marred that unhappy being's life, and had disarranged his own plans for a whole winter.\n\nHow this miracle of fire and ice was to be created, and to sustain itself in a harsh world, he had never taken the time to think out;",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-563",
@@ -8685,7 +8690,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "In matters intellectual and artistic Newland Archer felt himself distinctly the superior of these chosen specimens of old New York gentility; he had probably read more, thought more, and even seen a good deal more of the world, than any other man of the number. Singly they betrayed their inferiority; but grouped together they represented \"New York,\" and the habit of masculine solidarity made him accept their doctrine on all the issues called moral. He instinctively felt that in this respect it would be troublesome--and also rather bad form--to strike out for himself.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-564",
@@ -8697,7 +8707,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "Mrs. Archer, who was fond of coining her social philosophy into axioms, had once said: \"We all have our pet common people--\" and though the phrase was a daring one, its truth was secretly admitted in many an exclusive bosom. But the Beauforts were not exactly common; some people said they were even worse. Mrs. Beaufort belonged indeed to one of America's most honoured families; she had been the lovely Regina Dallas (of the South Carolina branch), a penniless beauty introduced to New York society by her cousin, the imprudent Medora Manson, who was always doing the wrong thing from the right motive.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-565",
@@ -8709,7 +8724,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "Nothing about his betrothed pleased him more than her resolute determination to carry to its utmost limit that ritual of ignoring the \"unpleasant\" in which they had both been brought up.\n\n\"She knows as well as I do,\" he reflected, \"the real reason of her cousin's staying away; but I shall never let her see by the least sign that I am conscious of there being a shadow of a shade on poor Ellen Olenska's reputation.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-566",
@@ -8721,7 +8741,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"Why shouldn't she be conspicuous if she chooses? Why should she slink about as if it were she who had disgraced herself? She's 'poor Ellen' certainly, because she had the bad luck to make a wretched marriage; but I don't see that that's a reason for hiding her head as if she were the culprit.\"\n\n\"That, I suppose,\" said Mr. Jackson, speculatively, \"is the line the Mingotts mean to take.\"\n\nThe young man reddened. \"I didn't have to wait for their cue, if that's what you mean, sir. Madame Olenska has had an unhappy life: that doesn't make her an outcast.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-567",
@@ -8733,7 +8758,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"Living together? Well, why not? Who had the right to make her life over if she hadn't? I'm sick of the hypocrisy that would bury alive a woman of her age if her husband prefers to live with harlots.\"\n\nHe stopped and turned away angrily to light his cigar. \"Women ought to be free--as free as we are,\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-568",
@@ -8745,7 +8775,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "What could he and she really know of each other, since it was his duty, as a \"decent\" fellow, to conceal his past from her, and hers, as a marriageable girl, to have no past to conceal?",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-569",
@@ -8757,31 +8792,46 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "In reality they all lived in a kind of hieroglyphic world, where the real thing was never said or done or even thought, but only represented by a set of arbitrary signs;",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-570",
       "legacy_index": 570,
-      "t": "La condesa Olenska era la única mujer joven de la cena; sin embargo, cuando Archer recorrió con la mirada los rostros tersos y rellenos de las damas mayores, entre sus collares de diamantes y sus altísimas plumas de avestruz, le parecieron curiosamente inmaduros comparados con el de ella. Le asustaba pensar en todo lo que había hecho falta para formar aquellos ojos.",
+      "t": "La condesa Olenska era la única mujer joven de la cena; sin embargo, cuando Archer recorrió con la mirada los rostros tersos y rollizos de las damas mayores, entre sus collares de diamantes y sus altísimas plumas de avestruz, le parecieron curiosamente inmaduros comparados con el de ella. Le asustaba pensar en todo lo que había hecho falta para formar aquellos ojos.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "formar aquellos ojos",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "The Countess Olenska was the only young woman at the dinner; yet, as Archer scanned the smooth plump elderly faces between their diamond necklaces and towering ostrich feathers, they struck him as curiously immature compared with hers. It frightened him to think what must have gone to the making of her eyes.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-571",
       "legacy_index": 571,
-      "t": "Ella negó con la cabeza y suspiró.\n\n—Oh, lo sé, lo sé. Pero con la condición de no oír nada desagradable. ¿Aquí nadie quiere conocer la verdad, señor Archer? La verdadera soledad es vivir entre toda esta gente amable que solo le pide a una que finja.\n\nSe llevó las manos al rostro, y él vio sus delgados hombros sacudidos por un sollozo.\n\n—¡Madame Olenska! Oh, no, Ellen —exclamó, levantándose y acercándose a ella.\n\nLe bajó una de las manos, la apretó y la frotó como si fuera la de una niña mientras murmuraba palabras tranquilizadoras; pero enseguida ella se soltó y lo miró con las pestañas húmedas.\n\n—¿Aquí tampoco llora nadie? Supongo que en el cielo no hace falta.",
+      "t": "Ella negó con la cabeza y suspiró.\n\n—Oh, lo sé, lo sé. Pero con la condición de que no tengan que oír nada desagradable. La tía Welland lo expresó con esas mismas palabras cuando lo intenté... ¿Aquí nadie quiere conocer la verdad, señor Archer? La verdadera soledad es vivir entre toda esta gente amable que solo le pide a una que finja.\n\nSe llevó las manos al rostro, y él vio sus delgados hombros sacudidos por un sollozo.\n\n—¡Madame Olenska! Oh, no, Ellen —exclamó, levantándose e inclinándose sobre ella.\n\nLe bajó una de las manos, la apretó y la frotó como si fuera la de una niña mientras murmuraba palabras tranquilizadoras; pero enseguida ella se soltó y lo miró con las pestañas húmedas.\n\n—¿Aquí tampoco llora nadie? Supongo que en el cielo no hace falta —dijo riendo, mientras se arreglaba las trenzas sueltas y se inclinaba sobre la tetera.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "La verdadera soledad",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "She shook her head and sighed. \"Oh, I know--I know! But on condition that they don't hear anything unpleasant. Aunt Welland put it in those very words when I tried.... Does no one want to know the truth here, Mr. Archer? The real loneliness is living among all these kind people who only ask one to pretend!\" She lifted her hands to her face, and he saw her thin shoulders shaken by a sob.\n\n\"Madame Olenska!--Oh, don't, Ellen,\" he cried, starting up and bending over her. He drew down one of her hands, clasping and chafing it like a child's while he murmured reassuring words; but in a moment she freed herself, and looked up at him with wet lashes.\n\n\"Does no one cry here, either? I suppose there's no need to, in heaven,\" she said, straightening her loosened braids with a laugh, and bending over the tea-kettle.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-572",
@@ -8793,19 +8843,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"Yes: I want to cast off all my old life, to become just like everybody else here.\"\n\nArcher reddened. \"You'll never be like everybody else,\" he said.\n\nShe raised her straight eyebrows a little. \"Ah, don't say that. If you knew how I hate to be different!\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-573",
       "legacy_index": 573,
-      "t": "—Todo esto es estúpido, estrecho e injusto; pero no se puede rehacer la sociedad.\n\n—No —asintió ella.\n\nSu tono fue tan débil y desolado que él sintió un súbito remordimiento.\n\n—El individuo, en esos casos, casi siempre es sacrificado a lo que se supone que es el interés colectivo.",
+      "t": "—Todo esto es estúpido, estrecho e injusto; pero no se puede rehacer la sociedad.\n\n—No —asintió ella.\n\nSu tono fue tan débil y desolado que él sintió un súbito remordimiento por la dureza de sus propios pensamientos.\n\n—El individuo, en esos casos, casi siempre es sacrificado a lo que se supone que es el interés colectivo.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "El individuo, en esos casos, casi siempre es sacrificado",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "It's all stupid and narrow and unjust--but one can't make over society.\"\n\n\"No,\" she acquiesced; and her tone was so faint and desolate that he felt a sudden remorse for his own hard thoughts.\n\n\"The individual, in such cases, is nearly always sacrificed to what is supposed to be the collective interest:",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-574",
@@ -8817,31 +8877,46 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"I will tell you--but where, where, where? One can't be alone for a minute in that great seminary of a house, with all the doors wide open, and always a servant bringing tea, or a log for the fire, or the newspaper! Is there nowhere in an American house where one may be by one's self? You're so shy, and yet you're so public. I always feel as if I were in the convent again--or on the stage, before a dreadfully polite audience that never applauds.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-575",
       "legacy_index": 575,
-      "t": "—May cree que mi impaciencia es una mala señal. Cree que significa que no confío en seguir queriéndola. En suma, piensa que deseo casarme con ella inmediatamente para escapar de alguien a quien quiero más.\n\nMadame Olenska lo examinó con curiosidad.\n\n—Pero, si piensa eso, ¿por qué no tiene ella también prisa?\n\n—Porque no es así; es mucho más noble. Insiste aún más en un compromiso largo, para darme tiempo...\n\n—¿Tiempo para que renuncies a la otra mujer?\n\n—Si quiero hacerlo.\n\nMadame Olenska se inclinó hacia el fuego y lo contempló con mirada fija. Por la calle silenciosa Archer oyó acercarse el trote de sus caballos.\n\n—Eso sí que es noble —dijo ella, con una leve fractura en la voz.\n\n—Sí. Pero es ridículo.",
+      "t": "—May cree que mi impaciencia es una mala señal.\n\n—¡Santo cielo! ¿Una mala señal?\n\n—Cree que significa que no confío en seguir queriéndola. En suma, piensa que deseo casarme con ella inmediatamente para escapar de alguien a quien quiero más.\n\nMadame Olenska lo examinó con curiosidad.\n\n—Pero, si piensa eso, ¿por qué no tiene ella también prisa?\n\n—Porque no es así; es mucho más noble. Insiste aún más en un compromiso largo, para darme tiempo...\n\n—¿Tiempo para que renuncies a ella por la otra mujer?\n\n—Si quiero hacerlo.\n\nMadame Olenska se inclinó hacia el fuego y lo contempló con mirada fija. Por la calle silenciosa Archer oyó acercarse el trote de sus caballos.\n\n—Eso _sí_ que es noble —dijo ella, con una leve fractura en la voz.\n\n—Sí. Pero es ridículo.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
-      "highlight": "¿Tiempo para que renuncies a la otra mujer?",
+      "highlight": "¿Tiempo para que renuncies a ella por la otra mujer?",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "She thinks my impatience a bad sign.\"\n\n\"Merciful heavens--a bad sign?\"\n\n\"She thinks it means that I can't trust myself to go on caring for her. She thinks, in short, I want to marry her at once to get away from some one that I--care for more.\"\n\nMadame Olenska examined this curiously. \"But if she thinks that--why isn't she in a hurry too?\"\n\n\"Because she's not like that: she's so much nobler. She insists all the more on the long engagement, to give me time--\"\n\n\"Time to give her up for the other woman?\"\n\n\"If I want to.\"\n\nMadame Olenska leaned toward the fire and gazed into it with fixed eyes. Down the quiet street Archer heard the approaching trot of her horses.\n\n\"That _is_ noble,\" she said, with a slight break in her voice.\n\n\"Yes. But it's ridiculous.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-576",
       "legacy_index": 576,
-      "t": "—La gente muy buena no me convencía; sentía que nunca había sido tentada. Pero tú sabías, comprendías; habías sentido al mundo exterior tirar de uno con todas sus manos de oro y, aun así, odiabas lo que exige; odiabas la felicidad comprada con deslealtad, crueldad e indiferencia. Eso era algo que yo nunca había conocido, y es mejor que todo lo que he conocido.",
+      "t": "—La gente muy buena no me convencía; sentía que aquella gente nunca había sido tentada. Pero tú sabías, comprendías; habías sentido al mundo exterior tirar de uno con todas sus manos de oro y, aun así, odiabas las cosas que le exige a uno; odiabas la felicidad comprada con deslealtad, crueldad e indiferencia. Eso era algo que yo nunca había conocido, y es mejor que todo lo que he conocido.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "la felicidad comprada con deslealtad, crueldad e indiferencia",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "The very good people didn't convince me; I felt they'd never been tempted. But you knew; you understood; you had felt the world outside tugging at one with all its golden hands--and yet you hated the things it asks of one; you hated happiness bought by disloyalty and cruelty and indifference. That was what I'd never known before--and it's better than anything I've known.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-577",
@@ -8853,55 +8928,80 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "She bent over him, laying her hands on his shoulders, and looking at him with eyes so deep that he remained motionless under her gaze.\n\n\"Ah, don't let us undo what you've done!\" she cried. \"I can't go back now to that other way of thinking. I can't love you unless I give you up.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-578",
       "legacy_index": 578,
-      "t": "Ella sonrió un poco bajo las pestañas húmedas.\n\n—Ya no estaré sola. Estaba sola; tenía miedo. Pero el vacío y la oscuridad han desaparecido. Cuando ahora regreso a mí misma, soy como una niña que entra de noche en una habitación donde siempre hay una luz.",
+      "t": "Ella sonrió un poco bajo las pestañas húmedas.\n\n—Ya no estaré sola. _Estaba_ sola; _tenía_ miedo. Pero el vacío y la oscuridad han desaparecido. Cuando ahora regreso a mí misma, soy como una niña que entra de noche en una habitación donde siempre hay una luz.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "una habitación donde siempre hay una luz",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "She smiled a little under her wet lashes. \"I shan't be lonely now. I _was_ lonely; I _was_ afraid. But the emptiness and the darkness are gone; when I turn back into myself now I'm like a child going at night into a room where there's always a light.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-579",
       "legacy_index": 579,
-      "t": "—Después de todo —continuó May—, me pregunto si no sería más feliz con su marido.\n\nÉl se echó a reír.\n\n—¡Sancta simplicitas! —exclamó; y, al ver que ella lo miraba con el ceño fruncido, añadió—: No creo haberte oído decir nunca algo cruel.\n\n—¿Cruel?\n\n—Se supone que contemplar las contorsiones de los condenados es uno de los pasatiempos favoritos de los ángeles; pero creo que ni siquiera ellos piensan que la gente sea más feliz en el infierno.",
+      "t": "—Después de todo —continuó May—, me pregunto si no sería más feliz con su marido.\n\nÉl se echó a reír.\n\n—¡_Sancta simplicitas!_ —exclamó; y, al ver que ella lo miraba con el ceño fruncido, añadió—: No creo haberte oído decir nunca algo cruel.\n\n—¿Cruel?\n\n—Se supone que contemplar las contorsiones de los condenados es uno de los pasatiempos favoritos de los ángeles; pero creo que ni siquiera ellos piensan que la gente sea más feliz en el infierno.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "más feliz en el infierno",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"After all, I wonder if she wouldn't be happier with her husband.\"\n\nHe burst into a laugh. \"_Sancta simplicitas!_\" he exclaimed; and as she turned a puzzled frown on him he added: \"I don't think I ever heard you say a cruel thing before.\"\n\n\"Cruel?\"\n\n\"Well--watching the contortions of the damned is supposed to be a favourite sport of the angels; but I believe even they don't think people happier in hell.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-580",
       "legacy_index": 580,
-      "t": "—Fuiste tú quien me hizo comprender que, bajo el tedio, hay cosas tan finas, sensibles y delicadas que hasta las personas que más me importaban en mi otra vida parecen baratas en comparación. No sé cómo explicarlo, pero es como si nunca hubiera comprendido con cuánto de duro, mezquino y bajo pueden pagarse los placeres más exquisitos.",
+      "t": "—Al menos —continuó ella—, fuiste tú quien me hizo comprender que, bajo el tedio, hay cosas tan finas, sensibles y delicadas que hasta las personas que más me importaban en mi otra vida parecen vulgares en comparación. No sé cómo explicarme. —Frunció el ceño, preocupada—. Pero es como si nunca hubiera comprendido con cuánta dureza, mezquindad y bajeza pueden pagarse los placeres más exquisitos.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "los placeres más exquisitos",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"At least,\" she continued, \"it was you who made me understand that under the dullness there are things so fine and sensitive and delicate that even those I most cared for in my other life look cheap in comparison. I don't know how to explain myself\"--she drew together her troubled brows--\"but it seems as if I'd never before understood with how much that is hard and shabby and base the most exquisite pleasures may be paid.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-581",
       "legacy_index": 581,
-      "t": "—Me diste mi primera visión de una vida real y, en el mismo momento, me pediste que continuara con una falsa. Está más allá de lo que un ser humano puede soportar.\n\n—No digas eso, cuando yo lo estoy soportando —estalló ella, con los ojos llenos de lágrimas.",
+      "t": "—¿De qué sirve? Me diste mi primera visión de una vida real y, en el mismo momento, me pediste que continuara con una falsa. Es más de lo que un ser humano puede soportar; eso es todo.\n\n—No digas eso, cuando yo lo estoy soportando —estalló ella, con los ojos llenos de lágrimas.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "Me diste mi primera visión de una vida real",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"What's the use? You gave me my first glimpse of a real life, and at the same moment you asked me to go on with a sham one. It's beyond human enduring--that's all.\"\n\n\"Oh, don't say that; when I'm enduring it!\" she burst out, her eyes filling.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-582",
@@ -8913,55 +9013,80 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "He had known the love that is fed on caresses and feeds them; but this passion that was closer than his bones was not to be superficially satisfied. His one terror was to do anything which might efface the sound and impression of her words; his one thought, that he should never again feel quite alone.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-583",
       "legacy_index": 583,
-      "t": "—¿Sabes? Apenas te recordaba.\n\n—¿Apenas me recordabas?\n\n—Quiero decir... ¿cómo explicarlo? Siempre es así. Cada vez vuelves a sucederme por completo.\n\n—Sí, lo sé. Lo sé.\n\n—¿También yo te sucedo así?\n\nElla asintió, mirando por la ventanilla.",
+      "t": "—¿Sabes? Apenas te recordaba.\n\n—¿Apenas me recordabas?\n\n—Quiero decir... ¿cómo explicarlo? Yo... siempre es así. _Cada vez vuelves a sucederme por completo._\n\n—Sí, lo sé. Lo sé.\n\n—¿Te sucede... te sucedo yo también: a ti? —insistió.\n\nElla asintió, mirando por la ventanilla.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
-      "highlight": "Cada vez vuelves a sucederme por completo",
+      "highlight": "_Cada vez vuelves a sucederme por completo._",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"Do you know--I hardly remembered you?\"\n\n\"Hardly remembered me?\"\n\n\"I mean: how shall I explain? I--it's always so. _Each time you happen to me all over again._\"\n\n\"Oh, yes: I know! I know!\"\n\n\"Does it--do I too: to you?\" he insisted.\n\nShe nodded, looking out of the window.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-584",
       "legacy_index": 584,
-      "t": "—Quiero escapar contigo a un mundo donde no existan palabras así, categorías así; donde seamos simplemente dos seres humanos que se aman, que son toda la vida el uno para el otro, y nada más en la tierra importe.\n\nElla dejó escapar un profundo suspiro que terminó en otra risa.\n\n—Oh, querido mío, ¿dónde está ese país? ¿Has estado alguna vez allí? Conozco a tantos que han intentado encontrarlo... y todos se bajaron por error en estaciones secundarias: Boulogne, Pisa o Montecarlo. No era en absoluto distinto del viejo mundo que habían abandonado; solo un poco más pequeño, más sombrío y más promiscuo.",
+      "t": "—Quiero... quiero escapar de algún modo contigo a un mundo donde no existan palabras así, categorías así; donde seamos simplemente dos seres humanos que se aman, que son toda la vida el uno para el otro, y nada más en la tierra importe.\n\nElla dejó escapar un profundo suspiro que terminó en otra risa.\n\n—Oh, querido mío, ¿dónde está ese país? ¿Has estado alguna vez allí? —preguntó; y, como él permaneció hosco y mudo, continuó—: Conozco a tantos que han intentado encontrarlo... y todos se bajaron por error en estaciones secundarias: Boulogne, Pisa o Montecarlo. No era en absoluto distinto del viejo mundo que habían abandonado; solo un poco más pequeño, más deslucido y más promiscuo.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "¿dónde está ese país?",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"I want--I want somehow to get away with you into a world where words like that--categories like that--won't exist. Where we shall be simply two human beings who love each other, who are the whole of life to each other; and nothing else on earth will matter.\"\n\nShe drew a deep sigh that ended in another laugh. \"Oh, my dear--where is that country? Have you ever been there?\" she asked; and as he remained sullenly dumb she went on: \"I know so many who've tried to find it; and, believe me, they all got out by mistake at wayside stations: at places like Boulogne, or Pisa, or Monte Carlo--and it wasn't at all different from the old world they'd left, but only rather smaller and dingier and more promiscuous.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-585",
       "legacy_index": 585,
-      "t": "—Entonces, ¿cuál es exactamente tu plan para nosotros?\n\n—¿Para nosotros? Pero no existe un «nosotros» en ese sentido. Solo estamos cerca si permanecemos lejos. Entonces podemos ser nosotros mismos. De otro modo, solo somos Newland Archer, el marido de la prima de Ellen Olenska, y Ellen Olenska, la prima de la esposa de Newland Archer, intentando ser felices a espaldas de quienes confían en ellos.\n\n—Yo ya he estado más allá de eso.\n\n—No, no has estado. Nunca has estado más allá. Yo sí, y sé qué aspecto tiene.",
+      "t": "—Entonces, ¿cuál es exactamente tu plan para nosotros? —preguntó.\n\n—¿Para _nosotros_? Pero no existe un _nosotros_ en ese sentido. Solo estamos cerca si permanecemos lejos. Entonces podemos ser nosotros mismos. De otro modo, solo somos Newland Archer, el marido de la prima de Ellen Olenska, y Ellen Olenska, la prima de la esposa de Newland Archer, intentando ser felices a espaldas de quienes confían en ellos.\n\n—Ah, yo estoy más allá de eso —gimió.\n\n—¡No, no lo estás! Nunca has estado más allá. Y yo sí —dijo ella, con voz extraña—, y sé cómo es aquello.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "Solo estamos cerca si permanecemos lejos",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"Then what, exactly, is your plan for us?\" he asked.\n\n\"For _us_? But there's no _us_ in that sense! We're near each other only if we stay far from each other. Then we can be ourselves. Otherwise we're only Newland Archer, the husband of Ellen Olenska's cousin, and Ellen Olenska, the cousin of Newland Archer's wife, trying to be happy behind the backs of the people who trust them.\"\n\n\"Ah, I'm beyond that,\" he groaned.\n\n\"No, you're not! You've never been beyond. And I have,\" she said, in a strange voice, \"and I know what it looks like there.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-586",
       "legacy_index": 586,
-      "t": "—¿Qué ocurre? —preguntó May.\n\n—La habitación está sofocante. Quiero un poco de aire.\n\nArcher apartó las cortinas, abrió la ventana y se inclinó hacia la noche helada. El mero hecho de no mirar a May, sentada junto a su mesa, bajo su lámpara; el hecho de ver otras casas, tejados y chimeneas, de sentir otras vidas fuera de la suya, otras ciudades más allá de Nueva York y todo un mundo más allá de su mundo, le despejó la mente y le facilitó respirar.\n\nDespués de que llevara unos minutos inclinado hacia la oscuridad, la oyó decir:\n\n—¡Newland! Cierra la ventana. Vas a matarte de frío.\n\nÉl bajó la hoja y se volvió.\n\n—¿Matarme? —repitió; y tuvo ganas de añadir—: Pero si ya estoy muerto. Llevo meses y meses muerto.",
+      "t": "—¿Qué ocurre?\n\n—La habitación está sofocante. Quiero un poco de aire.\n\nÉl había insistido en que las cortinas de la biblioteca corrieran de un lado a otro sobre una barra, para poder cerrarlas por la noche, en vez de permanecer clavadas a una cornisa dorada e inmóviles, recogidas sobre capas de encaje, como las del salón; las apartó, levantó la hoja de la ventana y se inclinó hacia la noche helada. El mero hecho de no mirar a May, sentada junto a su mesa, bajo su lámpara; el hecho de ver otras casas, tejados y chimeneas, de sentir otras vidas fuera de la suya, otras ciudades más allá de Nueva York y todo un mundo más allá de su mundo, le despejó la mente y le facilitó respirar.\n\nDespués de que llevara unos minutos inclinado hacia la oscuridad, la oyó decir:\n\n—¡Newland! Cierra la ventana. Vas a matarte de frío.\n\nÉl bajó la hoja y se volvió.\n\n—¡Matarme! —repitió; y tuvo ganas de añadir—: Pero si la muerte ya me ha alcanzado. _Estoy_ muerto. Llevo meses y meses muerto.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "Llevo meses y meses muerto",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "\"What's the matter?\"\n\n\"The room is stifling: I want a little air.\"\n\nHe had insisted that the library curtains should draw backward and forward on a rod, so that they might be closed in the evening, instead of remaining nailed to a gilt cornice, and immovably looped up over layers of lace, as in the drawing-room; and he pulled them back and pushed up the sash, leaning out into the icy night. The mere fact of not looking at May, seated beside his table, under his lamp, the fact of seeing other houses, roofs, chimneys, of getting the sense of other lives outside his own, other cities beyond New York, and a whole world beyond his world, cleared his brain and made it easier to breathe.\n\nAfter he had leaned out into the darkness for a few minutes he heard her say: \"Newland! Do shut the window. You'll catch your death.\"\n\nHe pulled the sash down and turned back. \"Catch my death!\" he echoed; and he felt like adding: \"But I've caught it already. I _am_ dead--I've been dead for months and months.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-587",
@@ -8973,31 +9098,46 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "It was the old New York way of taking life \"without effusion of blood\": the way of people who dreaded scandal more than disease, who placed decency above courage, and who considered that nothing was more ill-bred than \"scenes,\" except the behaviour of those who gave rise to them.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-588",
       "legacy_index": 588,
-      "t": "Sus días estaban llenos, y los llenaba decorosamente. Suponía que eso era cuanto un hombre debía pedir.\n\nSabía que se había perdido algo: la flor de la vida. Pero ahora la consideraba algo tan inalcanzable e improbable que lamentarse habría sido como desesperarse por no haber obtenido el primer premio de una lotería. En su lotería había cien millones de billetes y un solo premio; las probabilidades habían estado demasiado decididamente en su contra. Cuando pensaba en Ellen Olenska, lo hacía abstracta y serenamente, como se piensa en una amada imaginaria de un libro o de un cuadro: ella se había convertido en la visión compuesta de todo cuanto se había perdido.",
+      "t": "Sus días estaban llenos, y los llenaba decorosamente. Suponía que eso era cuanto un hombre debía pedir.\n\nSabía que se había perdido algo: la flor de la vida. Pero ahora la consideraba algo tan inalcanzable e improbable que lamentarse habría sido como desesperarse por no haber obtenido el primer premio de una lotería. En _su_ lotería había cien millones de billetes y un solo premio; las probabilidades habían estado demasiado decididamente en su contra. Cuando pensaba en Ellen Olenska, lo hacía abstracta y serenamente, como se piensa en una amada imaginaria de un libro o de un cuadro: ella se había convertido en la visión compuesta de todo cuanto se había perdido.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "la flor de la vida",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "His days were full, and they were filled decently. He supposed it was all a man ought to ask.\n\nSomething he knew he had missed: the flower of life. But he thought of it now as a thing so unattainable and improbable that to have repined would have been like despairing because one had not drawn the first prize in a lottery. There were a hundred million tickets in _his_ lottery, and there was only one prize; the chances had been too decidedly against him. When he thought of Ellen Olenska it was abstractly, serenely, as one might think of some imaginary beloved in a book or a picture: she had become the composite vision of all that he had missed.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-589",
       "legacy_index": 589,
-      "t": "—Mamá dijo que sabía que con nosotros estarías a salvo, y que siempre lo estaríamos, porque una vez, cuando ella te lo pidió, renunciaste a lo que más deseabas.\n\nArcher recibió aquella extraña revelación en silencio.\n\n—Ella nunca me lo pidió —dijo al fin en voz baja.\n\n—No. Lo había olvidado. Nunca os pedisteis nada, ¿verdad? Y nunca os dijisteis nada. Os limitabais a observaros y a adivinar lo que ocurría debajo. Un asilo de sordomudos, en realidad.",
+      "t": "—Mamá dijo que sabía que con nosotros estarías a salvo, y que siempre lo estaríamos, porque una vez, cuando ella te lo pidió, renunciaste a lo que más deseabas.\n\nArcher recibió aquella extraña comunicación en silencio. Sus ojos permanecieron fijos, sin ver, en la abarrotada plaza soleada bajo la ventana. Al fin dijo en voz baja:\n\n—Ella nunca me lo pidió.\n\n—No. Lo había olvidado. Nunca os pedisteis nada, ¿verdad? Y nunca os dijisteis nada. No hacíais más que sentaros a observaros y adivinar lo que ocurría bajo la superficie. Un asilo de sordomudos, en realidad.",
       "a": "Edith Wharton",
       "obra": "La edad de la inocencia, Edith Wharton",
       "highlight": "Nunca os pedisteis nada",
       "lang": "es",
       "type": "prose",
       "authorId": "author-edith-wharton",
-      "workId": "work-la-edad-de-la-inocencia"
+      "workId": "work-la-edad-de-la-inocencia",
+      "original": {
+        "text": "She said she knew we were safe with you, and always would be, because once, when she asked you to, you'd given up the thing you most wanted.\"\n\nArcher received this strange communication in silence. His eyes remained unseeingly fixed on the thronged sunlit square below the window. At length he said in a low voice: \"She never asked me.\"\n\n\"No. I forgot. You never did ask each other anything, did you? And you never told each other anything. You just sat and watched each other, and guessed at what was going on underneath. A deaf-and-dumb asylum, in fact!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-590",

@@ -182,6 +182,12 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-551', 'quote-552', 'quote-553', 'quote-554', 'quote-555',
     'quote-556', 'quote-557', 'quote-558', 'quote-559', 'quote-560',
     'quote-561',
+    'quote-562', 'quote-563', 'quote-564', 'quote-565', 'quote-566',
+    'quote-567', 'quote-568', 'quote-569', 'quote-570', 'quote-571',
+    'quote-572', 'quote-573', 'quote-574', 'quote-575', 'quote-576',
+    'quote-577', 'quote-578', 'quote-579', 'quote-580', 'quote-581',
+    'quote-582', 'quote-583', 'quote-584', 'quote-585', 'quote-586',
+    'quote-587', 'quote-588', 'quote-589',
     'quote-600', 'quote-601', 'quote-602', 'quote-603', 'quote-604',
     'quote-605', 'quote-606', 'quote-607', 'quote-608', 'quote-609',
     'quote-610', 'quote-611', 'quote-612', 'quote-613', 'quote-614',
@@ -569,6 +575,49 @@ test('Orgullo y prejuicio conserva énfasis, lógica y límites tras la segunda 
       quote.t.match(/_[^_]+_/g)?.length || 0,
       quote.original.text.match(/_[^_]+_/g)?.length || 0,
       `${quote.id} debe conservar sus énfasis tipográficos`,
+    );
+  }
+});
+
+test('La edad de la inocencia conserva referentes, intervenciones y énfasis tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const whartonQuotes = document.quotes.filter(quote => quote.workId === 'work-la-edad-de-la-inocencia');
+
+  assert.equal(whartonQuotes.length, 28);
+  assert.ok(whartonQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(whartonQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-571').original.text, /Aunt Welland put it in those very words/);
+  assert.match(quotes.get('quote-571').t, /La tía Welland lo expresó con esas mismas palabras/);
+  assert.match(quotes.get('quote-571').t, /condición de que no tengan que oír nada desagradable/);
+  assert.match(quotes.get('quote-573').t, /por la dureza de sus propios pensamientos/);
+  assert.match(quotes.get('quote-575').t, /¡Santo cielo! ¿Una mala señal\?/);
+  assert.match(quotes.get('quote-575').t, /renuncies a ella por la otra mujer/);
+  assert.doesNotMatch(quotes.get('quote-575').t, /renuncies a la otra mujer/);
+  assert.match(quotes.get('quote-576').t, /aquella gente nunca había sido tentada/);
+  assert.match(quotes.get('quote-580').t, /^—Al menos —continuó ella—/);
+  assert.match(quotes.get('quote-580').t, /Frunció el ceño, preocupada/);
+  assert.doesNotMatch(quotes.get('quote-580').t, /parecen baratas/);
+  assert.match(quotes.get('quote-581').t, /^—¿De qué sirve\?/);
+  assert.match(quotes.get('quote-581').t, /eso es todo/);
+  assert.match(quotes.get('quote-583').t, /_Cada vez vuelves a sucederme por completo\._/);
+  assert.match(quotes.get('quote-583').t, /¿Te sucede\.\.\. te sucedo yo también: a ti\? —insistió/);
+  assert.match(quotes.get('quote-584').t, /^—Quiero\.\.\. quiero escapar de algún modo/);
+  assert.match(quotes.get('quote-584').t, /como él permaneció hosco y mudo/);
+  assert.match(quotes.get('quote-585').t, /yo estoy más allá de eso —gimió/);
+  assert.doesNotMatch(quotes.get('quote-585').t, /ya he estado más allá/);
+  assert.match(quotes.get('quote-586').original.text, /library curtains should draw backward and forward/);
+  assert.match(quotes.get('quote-586').t, /cortinas de la biblioteca corrieran de un lado a otro/);
+  assert.doesNotMatch(quotes.get('quote-586').t, /preguntó May/);
+  assert.match(quotes.get('quote-586').t, /la muerte ya me ha alcanzado\. _Estoy_ muerto/);
+  assert.match(quotes.get('quote-589').t, /Sus ojos permanecieron fijos, sin ver/);
+  assert.match(quotes.get('quote-589').t, /sentaros a observaros y adivinar lo que ocurría bajo la superficie/);
+  for (const quote of whartonQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/_[^_]+_/g)?.length || 0,
+      quote.original.text.match(/_[^_]+_/g)?.length || 0,
+      'Cada fragmento debe conservar sus énfasis tipográficos',
     );
   }
 });
