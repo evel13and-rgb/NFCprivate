@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T10:04:20.493Z",
+  "generated_at": "2026-08-23T10:44:52.735Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -57,7 +57,7 @@
     {
       "id": "quote-5",
       "legacy_index": 5,
-      "t": "Pero no conviene juzgar las obras humanas con semejante ligereza. Pues vosotros mismos decís que el hábito no hace al monje: y tal va vestido con hábito monacal que por dentro nada tiene de monje; y tal lleva capa española cuyo ánimo en nada cuadra con España.\n\nPor eso hay que abrir el libro y sopesar cuidadosamente lo que en él se expone. Entonces conoceréis que la droga que contiene es de muy otro valor que el prometido por la caja; es decir, que las materias aquí tratadas no son tan frívolas como daba a entender el título.",
+      "t": "Pero no conviene juzgar las obras humanas con semejante ligereza. Pues vosotros mismos decís que el hábito no hace al monje: y tal va vestido con hábito monacal que por dentro nada tiene de monje; y tal lleva capa española cuyo ánimo en nada cuadra con España. Por eso hay que abrir el libro y sopesar cuidadosamente lo que en él se expone. Entonces conoceréis que la droga que contiene es de muy otro valor que el prometido por la caja; es decir, que las materias aquí tratadas no son tan frívolas como daba a entender el título.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
       "highlight": "el hábito no hace al monje",
@@ -66,7 +66,7 @@
       "authorId": "author-francois-rabelais",
       "workId": "work-gargantua",
       "original": {
-        "text": "Mais par telle legiereté ne conuient eſtimer les œuures des humains. Car vous meſmes dictes, que l’habit ne faict poinct le moine : & tel eſt veſtu d’habit monachal, qui au dedans n’eſt rien moins que moyne : & tel eſt veſtu de cappe heſpanole, qui en ſon couraige nullement affiert à Heſpane.\n\nC’eſt pourquoy fault ouurir le liure, & ſoigneuſement peſer ce que y eſt deduict. Lors congnoiſtrez que la drogue dedans contenue eſt bien d’aultre valeur, que ne promettoit la boite. C’eſt à dire que les matieres icy traictees ne ſont tant folaſtres, comme le tiltre au deſſus pretendoit.",
+        "text": "Mais par telle legiereté ne conuient eſtimer les œuures des humains. Car vous meſmes dictes, que l’habit ne faict poinct le moine : & tel eſt veſtu d’habit monachal, qui au dedans n’eſt rien moins que moyne : & tel eſt veſtu de cappe heſpanole, qui en ſon couraige nullement affiert à Heſpane. C’eſt pourquoy fault ouurir le liure, & ſoigneuſement peſer ce que y eſt deduict. Lors congnoiſtrez que la drogue dedans contenue eſt bien d’aultre valeur, que ne promettoit la boite. C’eſt à dire que les matieres icy traictees ne ſont tant folaſtres, comme le tiltre au deſſus pretendoit.",
         "lang": "fr",
         "label": "Original francés"
       }
@@ -91,10 +91,10 @@
     {
       "id": "quote-7",
       "legacy_index": 7,
-      "t": "A ejemplo de ese perro, os conviene ser sabios para olfatear, sentir y estimar estos hermosos libros de alta enjundia, ligeros en la persecución y audaces en el encuentro. Después, mediante atenta lectura y frecuente meditación, romped el hueso y chupad la sustantífica médula.",
+      "t": "A ejemplo de ese perro, os conviene ser sabios para olfatear, sentir y estimar estos hermosos libros de alta enjundia, y ser ligeros en la persecución y audaces en el encuentro. Después, mediante atenta lectura y frecuente meditación, os conviene romper el hueso y chupar la sustantífica médula.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "romped el hueso y chupad la sustantífica médula",
+      "highlight": "romper el hueso y chupar la sustantífica médula",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
@@ -108,10 +108,10 @@
     {
       "id": "quote-8",
       "legacy_index": 8,
-      "t": "Toda su vida se regía no por leyes, estatutos ni reglas, sino según su querer y libre albedrío. Se levantaban del lecho cuando bien les parecía; bebían, comían, trabajaban y dormían cuando les venía en gana. Nadie los despertaba, nadie los forzaba a beber, ni a comer, ni a hacer ninguna otra cosa. Así lo había establecido Gargantúa. En su regla no había sino esta cláusula: HAZ LO QUE QUIERAS.",
+      "t": "Toda su vida se regía no por leyes, estatutos ni reglas, sino según su querer y libre albedrío. Se levantaban del lecho cuando bien les parecía; bebían, comían, trabajaban y dormían cuando les venía en gana. Nadie los despertaba, nadie los forzaba a beber, ni a comer, ni a hacer ninguna otra cosa. Así lo había establecido Gargantúa. En su regla no había sino esta cláusula: Haz lo que quieras.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "HAZ LO QUE QUIERAS",
+      "highlight": "Haz lo que quieras",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",
@@ -125,10 +125,10 @@
     {
       "id": "quote-9",
       "legacy_index": 9,
-      "t": "Porque las gentes libres, bien nacidas, bien instruidas y que frecuentan honradas compañías tienen por naturaleza un instinto y aguijón que siempre las impulsa a hechos virtuosos y las aparta del vicio; al cual llamaban honor.",
+      "t": "Porque las gentes libres, bien nacidas, bien instruidas y que frecuentan honradas compañías tienen por naturaleza un instinto y aguijón que siempre las impulsa a hechos virtuosos y las aparta del vicio; llamaban honor a ese instinto y aguijón.",
       "a": "François Rabelais",
       "obra": "Gargantúa, François Rabelais",
-      "highlight": "al cual llamaban honor",
+      "highlight": "llamaban honor a ese instinto y aguijón",
       "lang": "es",
       "type": "prose",
       "authorId": "author-francois-rabelais",

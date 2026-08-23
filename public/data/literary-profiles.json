@@ -2062,6 +2062,28 @@
         "Emily Brontë, Wuthering Heights, volumen I, primera edición de Thomas Cautley Newby, 1847, reproducida y validada sobre el facsímil en Wikisource."
       ],
       "fragment_count": 2
+    },
+    {
+      "work_id": "work-gargantua",
+      "title": "Gargantúa",
+      "display_title": "Gargantúa",
+      "original_title": "Gargantua",
+      "author_id": "author-francois-rabelais",
+      "publication_year": 1534,
+      "genre": null,
+      "language": null,
+      "summary_short": null,
+      "summary_long": null,
+      "context_notes": null,
+      "themes": [],
+      "tone_notes": null,
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "François Rabelais, Gargantua, texto establecido por Charles Marty-Laveaux en Les Œuvres de François Rabelais, tomo I, Alphonse Lemerre, 1868, reproducido y cotejado con el facsímil en Wikisource.",
+        "Bibliothèque nationale de France, ficha de la obra Gargantua, publicada a finales de 1534 o comienzos de 1535."
+      ],
+      "fragment_count": 7
     }
   ]
 }

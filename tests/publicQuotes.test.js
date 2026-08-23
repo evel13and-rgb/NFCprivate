@@ -239,6 +239,34 @@ test('Cumbres borrascosas publica la primera edición y marca sus recortes inter
   }
 });
 
+test('Gargantúa conserva la voz de los lectores, el antecedente del honor y la tipografía del facsímil', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const rabelaisQuotes = document.quotes.filter(quote => quote.workId === 'work-gargantua');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-gargantua');
+
+  assert.equal(rabelaisQuotes.length, 7);
+  assert.ok(rabelaisQuotes.every(quote => quote.original?.lang === 'fr'));
+  assert.ok(rabelaisQuotes.every(quote => quote.original?.label === 'Original francés'));
+  assert.match(quotes.get('quote-4').original.text, /^Amis lecteurs qui ce liure liſez/);
+  assert.doesNotMatch(quotes.get('quote-5').t, /\n/);
+  assert.doesNotMatch(quotes.get('quote-5').original.text, /\n/);
+  assert.match(quotes.get('quote-6').original.text, /Crochetaſtes vous oncques bouteilles \? Caiſgne\./);
+  assert.match(quotes.get('quote-7').t, /y ser ligeros en la persecución y audaces en el encuentro/);
+  assert.match(quotes.get('quote-7').t, /os conviene romper el hueso y chupar la sustantífica médula/);
+  assert.doesNotMatch(quotes.get('quote-7').t, /romped el hueso|chupad la/);
+  assert.match(quotes.get('quote-8').t, /Haz lo que quieras\.$/);
+  assert.doesNotMatch(quotes.get('quote-8').t, /HAZ LO QUE QUIERAS/);
+  assert.match(quotes.get('quote-8').original.text, /Fay ce que vouldras\.$/);
+  assert.match(quotes.get('quote-9').t, /llamaban honor a ese instinto y aguijón/);
+  assert.match(quotes.get('quote-10').t, /codiciamos lo que se nos niega\.$/);
+  assert.equal(workProfile?.original_title, 'Gargantua');
+  for (const quote of rabelaisQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+  }
+});
+
 test('build-public-quotes cruza originales revisados sin publicar campos editoriales', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-public-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
