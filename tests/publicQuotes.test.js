@@ -267,6 +267,36 @@ test('Gargantúa conserva la voz de los lectores, el antecedente del honor y la 
   }
 });
 
+test('Frankenstein restaura la continuidad de 1818 y la voz de la criatura', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const shelleyQuotes = document.quotes.filter(quote => quote.workId === 'work-frankenstein-o-el-moderno-prometeo');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-frankenstein-o-el-moderno-prometeo');
+
+  assert.equal(shelleyQuotes.length, 26);
+  assert.ok(shelleyQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(shelleyQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.ok(shelleyQuotes.every(quote => !quote.t.includes('\n')));
+  assert.ok(shelleyQuotes.every(quote => !quote.original.text.includes('\n')));
+  assert.match(quotes.get('quote-18').t, /Justine murió; descansaba; y yo seguía vivo/);
+  assert.doesNotMatch(quotes.get('quote-18').t, /Justine había muerto/);
+  assert.match(quotes.get('quote-23').t, /cómo había sido creado y quién era mi creador/);
+  assert.match(quotes.get('quote-23').t, /monstruo —una mancha sobre la tierra— del que todos los hombres huían y al que todos repudiaban/);
+  assert.match(quotes.get('quote-26').t, /mi figura reflejada en el agua/);
+  assert.match(quotes.get('quote-30').t, /me convertiré en algo cuya existencia/);
+  assert.match(quotes.get('quote-31').t, /¡Hombre, puedes odiar, pero ten cuidado!/);
+  assert.doesNotMatch(quotes.get('quote-31').t, /puedes odiarme/);
+  assert.match(quotes.get('quote-32').t, /para picarte con su veneno/);
+  assert.match(quotes.get('quote-33').t, /¡Obedece!$/);
+  assert.match(quotes.get('quote-36').t, /lecciones que Felix daba a la árabe/);
+  assert.doesNotMatch(quotes.get('quote-36').t, /joven árabe/);
+  assert.equal(workProfile?.original_title, 'Frankenstein; or, The Modern Prometheus');
+  for (const quote of shelleyQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+  }
+});
+
 test('build-public-quotes cruza originales revisados sin publicar campos editoriales', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-public-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });

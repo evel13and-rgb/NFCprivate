@@ -1,6 +1,6 @@
 {
   "valid": true,
-  "validated_at": "2026-08-20T05:03:08.351Z",
+  "validated_at": "2026-08-23T11:50:30.468Z",
   "summary": {
     "expected_quotes": 640,
     "intermediate_quotes": 640,
@@ -10,7 +10,7 @@
     "sources": 29,
     "editorial_decisions": 0,
     "poems": 27,
-    "quotes_with_line_breaks": 424,
+    "quotes_with_line_breaks": 395,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
@@ -31,9 +31,8 @@
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "9 fuente(s) conservan derechos sin revisar.",
+      "message": "8 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
-        "source-cumbres-borrascosas",
         "source-la-vida-es-sueno",
         "source-el-rayo-que-no-cesa",
         "source-el-retrato-de-dorian-gray",
@@ -46,9 +45,8 @@
     },
     {
       "code": "source_verification_pending",
-      "message": "9 fuente(s) esperan verificación bibliográfica.",
+      "message": "8 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
-        "source-cumbres-borrascosas",
         "source-la-vida-es-sueno",
         "source-el-rayo-que-no-cesa",
         "source-el-retrato-de-dorian-gray",
@@ -63,11 +61,11 @@
   "pending_issues": [
     {
       "code": "rights_review_pending",
-      "count": 9
+      "count": 8
     },
     {
       "code": "source_verification_pending",
-      "count": 9
+      "count": 8
     }
   ],
   "reviewed_files": [
