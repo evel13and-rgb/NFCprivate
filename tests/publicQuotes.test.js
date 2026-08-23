@@ -659,6 +659,47 @@ test('El despertar conserva la primera edición, las interrupciones y la paradoj
   }
 });
 
+test('Las tiendas de color canela conserva la primera edición y el hambre de autoconocimiento', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const schulzQuotes = document.quotes.filter(quote => quote.workId === 'work-las-tiendas-de-color-canela');
+
+  assert.equal(schulzQuotes.length, 16);
+  assert.ok(schulzQuotes.every(quote => quote.original?.lang === 'pl'));
+  assert.ok(schulzQuotes.every(quote => quote.original?.label === 'Original polaco'));
+  assert.match(quotes.get('quote-600').original.text, /chory na elefantiasis/);
+  assert.match(quotes.get('quote-600').original.text, /tragedji słonecznika/);
+  assert.match(quotes.get('quote-600').t, /sin comprender la gran tragedia del girasol/);
+  assert.doesNotMatch(quotes.get('quote-600').t, /incapaces de comprender/);
+  assert.match(quotes.get('quote-601').original.text, /manjacki monolog/);
+  assert.match(quotes.get('quote-601').original.text, /jaskrawem.*warjatów/);
+  assert.doesNotMatch(quotes.get('quote-603').original.text, /\n/);
+  assert.doesNotMatch(quotes.get('quote-603').t, /\n/);
+  assert.match(quotes.get('quote-605').t, /con que él solo declaró la guerra/);
+  assert.doesNotMatch(quotes.get('quote-605').t, /aquel hombre declaró, él solo/);
+  assert.match(quotes.get('quote-607').original.text, /^Gdybym/);
+  assert.match(quotes.get('quote-607').original.text, /Ach, jakby ulżył/);
+  assert.match(quotes.get('quote-607').t, /^Si, dejando de lado el respeto al Creador/);
+  assert.match(quotes.get('quote-607').t, /¡Más modestia.*más contención.*—señores demiurgos—/);
+  assert.match(quotes.get('quote-608').original.text, /materji.*morfologji.*materja.*wogóle/);
+  assert.match(quotes.get('quote-608').t, /^En realidad eran seres amorfos/);
+  assert.doesNotMatch(quotes.get('quote-608').t, /\n/);
+  assert.match(quotes.get('quote-610').original.text, /głodem samopoznania/);
+  assert.doesNotMatch(quotes.get('quote-610').original.text, /głosem samopoznania/);
+  assert.match(quotes.get('quote-610').t, /mil posibilidades caleidoscópicas/);
+  assert.match(quotes.get('quote-610').t, /un hambre de autoconocimiento disfrazada/);
+  assert.equal(quotes.get('quote-610').highlight, 'un hambre de autoconocimiento disfrazada');
+  assert.doesNotMatch(quotes.get('quote-612').original.text, /\n/);
+  assert.doesNotMatch(quotes.get('quote-612').t, /\n/);
+  assert.match(quotes.get('quote-613').original.text, /fjołkami.*w którem.*w tem/);
+  assert.doesNotMatch(quotes.get('quote-613').t, /\n/);
+  assert.match(quotes.get('quote-614').original.text, /cynamonowemi.*boazeryj.*materjałów/s);
+  assert.match(quotes.get('quote-615').original.text, /którym, jak szósty mały palec u ręki,/);
+  for (const quote of schulzQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+  }
+});
+
 test('build-public-quotes rechaza un quote_id original inexistente', async () => {
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'paramo-invalid-original-test-'));
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
