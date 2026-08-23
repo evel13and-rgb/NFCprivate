@@ -6,7 +6,7 @@ export const EMERGENCY_QUOTES = Object.freeze([
   Object.freeze({
     id: 'quote-77',
     legacy_index: 77,
-    t: 'Venció el amor, venció el honor.',
+    t: 'Rosaura está sin honor;\nmás a un príncipe le toca\nel dar honor que quitarle.',
     a: 'Segismundo — Jornada Tercera',
     obra: 'La vida es sueño, Pedro Calderón de la Barca',
     highlight: null,
@@ -18,7 +18,7 @@ export const EMERGENCY_QUOTES = Object.freeze([
   Object.freeze({
     id: 'quote-78',
     legacy_index: 78,
-    t: 'Que cuando el valor se humilla,\nse engrandece más.',
+    t: 'La fortuna no se vence\ncon injusticia y venganza,\nporque antes se incita más.\nY así, quien vencer aguarda\na su fortuna ha de ser\ncon prudencia y con templanza.',
     a: 'Segismundo — Jornada Tercera',
     obra: 'La vida es sueño, Pedro Calderón de la Barca',
     highlight: null,

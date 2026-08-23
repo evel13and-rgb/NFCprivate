@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T11:50:07.412Z",
+  "generated_at": "2026-08-23T12:43:02.048Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -1094,98 +1094,138 @@
     {
       "id": "quote-66",
       "legacy_index": 66,
-      "t": "¿Qué es la vida? Un frenesí.\n¿Qué es la vida? Una ilusión,\nuna sombra, una ficción;\ny el mayor bien es pequeño;\nque toda la vida es sueño,\ny los sueños, sueños son.",
+      "t": "¿Qué es la vida? Un frenesí.\n¿Qué es la vida? Una ilusión,\nuna sombra, una ficción,\ny el mayor bien es pequeño;\nque toda la vida es sueño,\ny los sueños, sueños son.",
       "a": "Segismundo — Jornada Segunda",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Que es la vida? un freneſi,\nque es la vida? una iluſion,\nuna ſombra, una ficcion,\ny el mayor bien es pequeño;\nque toda la vida es ſueño,\ny los ſueños, ſueños ſon.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-67",
       "legacy_index": 67,
-      "t": "Yo sueño que estoy aquí\ndestas prisiones cargado,\ny soñé que en otro estado\nmás lisonjero me vi.",
+      "t": "Yo sueño que estoy aquí\nde estas prisiones cargado,\ny soñé que en otro estado\nmás lisonjero me vi.",
       "a": "Segismundo — Jornada Segunda",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Yo ſueño, que eſtoy aqui\ndeſtas priſiones cargado,\ny ſoñé, que en otro eſtado\nmas liſongero me vi.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-68",
       "legacy_index": 68,
-      "t": "Sueña el rey que es rey, y vive\ncon este engaño mandando,\ndisponiendo y gobernando;\ny este aplauso, que recibe\nprestado, en el viento escribe,\ny en cenizas le convierte\nla muerte, ¡desdicha fuerte!\n¿Que hay quien intente reinar,\nviendo que ha de despertar\nen el sueño de la muerte?",
+      "t": "Sueña el rey que es rey, y vive\ncon este engaño mandando,\ndisponiendo y gobernando;\ny este aplauso que recibe\nprestado, en el viento escribe,\ny en cenizas le convierte\nla muerte (¡desdicha fuerte!);\n¡que hay quien intente reinar,\nviendo que ha de despertar\nen el sueño de la muerte!",
       "a": "Segismundo — Jornada Segunda",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Sueña el Rey, que es Rey, y vive\ncon eſte engaño mandando,\ndiſponiendo, y governando,\ny eſte aplauſo que recibe\npreſtado, en el viento eſcribe,\ny en cenizas le convierte\nla muerte (deſdicha fuerte!)\nque ay quien intente Reinar\nviendo que ha de deſpertar\nen el ſueño de la muerte.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-69",
       "legacy_index": 69,
-      "t": "Sueña el rico en su riqueza,\nque más cuidados le ofrece;\nsueña el pobre que padece\nsu miseria y su pobreza;\nsueña el que a medrar empieza,\nsueña el que afana y pretende,\nsueña el que agravia y ofende;\ny en el mundo, en conclusión,\ntodos sueñan lo que son,\naunque ninguno lo entiende.",
+      "t": "Sueña el rico en su riqueza\nque más cuidados le ofrece;\nsueña el pobre que padece\nsu miseria y su pobreza;\nsueña el que a medrar empieza,\nsueña el que afana y pretende,\nsueña el que agravia y ofende;\ny en el mundo, en conclusión,\ntodos sueñan lo que son,\naunque ninguno lo entiende.",
       "a": "Segismundo — Jornada Segunda",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Sueña el rico, en ſu riqueza,\nque mas cuidados le ofrece,\nſueña el pobre que padece\nſu miſeria y ſu pobreça,\nſueña el que a medrar empieça,\nſueña el que afana y pretende,\nſueña el que agravia y ofende;\ny en el mundo en concluſion,\ntodos ſueñan lo que ſon,\naunque ninguno lo entiende.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-70",
       "legacy_index": 70,
-      "t": "¡Ay mísero de mí, y ay infelice!\nApurar, cielos, pretendo,\nya que me tratáis así,\nqué delito cometí\ncontra vosotros naciendo;\naunque si nací, ya entiendo\nqué delito he cometido;\nbastante causa ha tenido\nvuestra justicia y rigor,\npues el delito mayor\ndel hombre es haber nacido.",
+      "t": "¡Ay mísero de mí! ¡Y ay infelice!\nApurar, cielos, pretendo\nya que me tratáis así,\nqué delito cometí\ncontra vosotros naciendo;\naunque si nací, ya entiendo\nqué delito he cometido.\nBastante causa ha tenido\nvuestra justicia y rigor;\npues el delito mayor\ndel hombre es haber nacido.",
       "a": "Segismundo — Jornada Primera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Ay miſero de mi, y ay infelize!\napurar (cielos) pretendo,\nyà que me tratais aſsi,\nque delito cometi\ncontra voſotros naciendo,\naunque ſi naci, yà entiendo\nque delito he cometido:\nbaſtante cauſa ha tenido\nvueſtra juſticia y rigor,\npues el delito mayor\ndel hombre es aver nacido.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-71",
       "legacy_index": 71,
-      "t": "Nace el ave, y con las galas\nque le dan belleza suma,\napenas es flor de pluma,\no ramillete con alas,\ncuando las etéreas salas\ncorta con velocidad,\nnegándose a la piedad\ndel nido que deja en calma;\n¿y teniendo yo más alma,\ntengo menos libertad?",
+      "t": "Nace el ave, y con las galas\nque le dan belleza suma,\napenas es flor de pluma,\no ramillete con alas\ncuando las etéreas salas\ncorta con velocidad,\nnegándose a la piedad\ndel nido que deja en calma:\n¿y teniendo yo más alma,\ntengo menos libertad?",
       "a": "Segismundo — Jornada Primera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Nace el ave, y con las galas\nque le dan belleza ſuma,\napenas es flor de pluma,\nò ramillete con ſalas,\nquando las etereas alas\ncorta con velocidad,\nnegandoſe à la piedad\ndel nido que dexa en calma,\ny teniendo yo mas alma\ntengo menos libertad.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-72",
       "legacy_index": 72,
-      "t": "Nace el bruto, y con la piel\nque dibujan manchas bellas,\napenas signo es de estrellas,\ngracias al docto pincel,\ncuando, atrevido y cruel,\nla humana necesidad\nle enseña a tener crueldad,\nmonstruo de su laberinto;\n¿y yo, con mejor instinto,\ntengo menos libertad?",
+      "t": "Nace el bruto, y con la piel\nque dibujan manchas bellas,\napenas signo es de estrellas,\ngracias al docto pincel,\ncuando, atrevido y cruel,\nla humana necesidad\nle enseña a tener crueldad,\nmonstruo de su laberinto:\n¿y yo con mejor distinto\ntengo menos libertad?",
       "a": "Segismundo — Jornada Primera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Nace el bruto, y con la piel\nque dibujan manchas bellas,\napenas ſigno es de eſtrellas\n(gracias al docto pincel)\nquando atrevido y cruel,\nla humana neceſsidad\nle enſeña à tener crueldad,\nmonſtruo de ſu laberinto,\ny yo con mejor diſtinto\ntengo menos libertad.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-73",
       "legacy_index": 73,
-      "t": "Obrar bien es lo que importa;\nsi fuere verdad, por serlo;\nsi no, por ganar amigos\npara cuando despertemos.",
+      "t": "Mas, sea verdad o sueño,\nobrar bien es lo que importa.\nSi fuere verdad, por serlo;\nsi no, por ganar amigos\npara cuando despertemos.",
       "a": "Segismundo — Jornada Tercera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Mas ſea verdad, ò ſueño,\nobrar bien es lo que importa,\nſi fuere verdad por ſerlo,\nſino por ganar amigos\npara quando deſpertemos.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-74",
@@ -1197,55 +1237,80 @@
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Que eſtoy ſoñado, y que quiero\nobrar bien, pues no ſe pierde\nobrar bien, aun entre ſueños.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-75",
       "legacy_index": 75,
-      "t": "A reinar, fortuna, vamos;\nno me despiertes si duermo,\ny si es verdad, no me duermas.",
+      "t": "A reinar, fortuna, vamos;\nno me despiertes, si duermo,\ny si es verdad, no me duermas.",
       "a": "Segismundo — Jornada Tercera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "A Reinar fortuna vamos,\nno me deſpiertes ſi duermo,\ny ſi es verdad, no me duermas.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-76",
       "legacy_index": 76,
-      "t": "Mal, Polonia, recibes\na un extranjero, pues con sangre escribes\nsu entrada en tus arenas.",
+      "t": "Mal, Polonia, recibes\na un extranjero, pues con sangre escribes\nsu entrada en tus arenas;\ny apenas llega, cuando llega a penas.\nBien mi suerte lo dice;\nmas ¿dónde halló piedad un infelice?",
       "a": "Rosaura — Jornada Primera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Mal Polonia recibes\nà un eſtrangero, pues con ſangre eſcribes\nſu entrada en ſus arenas,\ny a penas llega, quando llega apenas;\nbien mi ſuerte lo dize:\nmas donde hallò piedad un infelize?",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-77",
       "legacy_index": 77,
-      "t": "Venció el amor, venció el honor.",
+      "t": "Rosaura está sin honor;\nmás a un príncipe le toca\nel dar honor que quitarle.",
       "a": "Segismundo — Jornada Tercera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "Roſaura eſtà ſin honor,\nmas à un Principe le toca\nel dar honor, que quitarle.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-78",
       "legacy_index": 78,
-      "t": "Que cuando el valor se humilla,\nse engrandece más.",
+      "t": "La fortuna no se vence\ncon injusticia y venganza,\nporque antes se incita más.\nY así, quien vencer aguarda\na su fortuna ha de ser\ncon prudencia y con templanza.",
       "a": "Segismundo — Jornada Tercera",
       "obra": "La vida es sueño, Pedro Calderón de la Barca",
       "highlight": null,
       "lang": "es",
       "type": "poem",
       "authorId": "author-pedro-calderon-de-la-barca",
-      "workId": "work-la-vida-es-sueno"
+      "workId": "work-la-vida-es-sueno",
+      "original": {
+        "text": "la fortuna no ſe vence\ncon injuſticia y vengança,\nporque antes ſe incita mas,\ny aſsi quien vencer aguarda\nà ſu fortuna, ha de ſer\ncon prudencia y con templança;",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-79",

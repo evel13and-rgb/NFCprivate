@@ -112,6 +112,9 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-52', 'quote-53', 'quote-54', 'quote-55', 'quote-56',
     'quote-57', 'quote-58', 'quote-59', 'quote-60', 'quote-61',
     'quote-62', 'quote-63', 'quote-64', 'quote-65',
+    'quote-66', 'quote-67', 'quote-68', 'quote-69', 'quote-70',
+    'quote-71', 'quote-72', 'quote-73', 'quote-74', 'quote-75',
+    'quote-76', 'quote-77', 'quote-78',
     'quote-79', 'quote-80', 'quote-81', 'quote-82', 'quote-83',
     'quote-84', 'quote-85', 'quote-86', 'quote-87', 'quote-88',
     'quote-89', 'quote-90', 'quote-91', 'quote-92', 'quote-93',
@@ -293,6 +296,35 @@ test('Frankenstein restaura la continuidad de 1818 y la voz de la criatura', asy
   assert.doesNotMatch(quotes.get('quote-36').t, /joven árabe/);
   assert.equal(workProfile?.original_title, 'Frankenstein; or, The Modern Prometheus');
   for (const quote of shelleyQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+  }
+});
+
+test('La vida es sueño distingue el impreso de 1636 de la actualización y elimina dos apócrifos', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const calderonQuotes = document.quotes.filter(quote => quote.workId === 'work-la-vida-es-sueno');
+
+  assert.equal(calderonQuotes.length, 13);
+  assert.ok(calderonQuotes.every(quote => quote.original?.lang === 'es'));
+  assert.ok(calderonQuotes.every(quote => quote.original?.label === 'Original español'));
+  assert.match(quotes.get('quote-66').original.text, /freneſi/);
+  assert.match(quotes.get('quote-66').t, /una sombra, una ficción,\ny el mayor bien/);
+  assert.match(quotes.get('quote-67').t, /de estas prisiones cargado/);
+  assert.match(quotes.get('quote-68').t, /la muerte \(¡desdicha fuerte!\);\n¡que hay quien intente reinar/);
+  assert.match(quotes.get('quote-71').original.text, /ramillete con ſalas,\nquando las etereas alas/);
+  assert.match(quotes.get('quote-71').t, /ramillete con alas\ncuando las etéreas salas/);
+  assert.match(quotes.get('quote-72').t, /con mejor distinto/);
+  assert.doesNotMatch(quotes.get('quote-72').t, /con mejor instinto/);
+  assert.match(quotes.get('quote-73').t, /^Mas, sea verdad o sueño/);
+  assert.match(quotes.get('quote-74').original.text, /^Que eſtoy ſoñado/);
+  assert.match(quotes.get('quote-74').t, /^Que estoy soñando/);
+  assert.match(quotes.get('quote-76').t, /y apenas llega, cuando llega a penas[.]\nBien mi suerte lo dice/);
+  assert.doesNotMatch(quotes.get('quote-77').t, /Venció el amor/);
+  assert.match(quotes.get('quote-77').t, /^Rosaura está sin honor/);
+  assert.doesNotMatch(quotes.get('quote-78').t, /el valor se humilla/);
+  assert.match(quotes.get('quote-78').t, /^La fortuna no se vence/);
+  for (const quote of calderonQuotes) {
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
   }
 });
