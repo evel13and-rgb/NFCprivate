@@ -97,6 +97,7 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
   assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 640);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
+    'quote-2', 'quote-3',
     'quote-4', 'quote-5', 'quote-6', 'quote-7', 'quote-8',
     'quote-9', 'quote-10',
     'quote-11', 'quote-12', 'quote-13', 'quote-14', 'quote-15',
@@ -208,6 +209,33 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
   for (const fallbackQuote of EMERGENCY_QUOTES) {
     const { original, ...publicQuoteWithoutOriginal } = quotes.find(quote => quote.id === fallbackQuote.id);
     assert.deepEqual(fallbackQuote, publicQuoteWithoutOriginal);
+  }
+});
+
+test('Cumbres borrascosas publica la primera edición y marca sus recortes internos', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const bronteQuotes = document.quotes.filter(quote => quote.workId === 'work-cumbres-borrascosas');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-cumbres-borrascosas');
+
+  assert.equal(bronteQuotes.length, 2);
+  assert.ok(bronteQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(bronteQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-2').original.text, /^I've dreamt in my life dreams/);
+  assert.equal(quotes.get('quote-2').original.text.match(/\[…\]/g)?.length, 2);
+  assert.equal(quotes.get('quote-2').t.match(/\[…\]/g)?.length, 2);
+  assert.match(quotes.get('quote-2').original.text, /Linton's is as different as a moonbeam from lightning/);
+  assert.match(quotes.get('quote-2').t, /la de Linton es tan diferente/);
+  assert.match(quotes.get('quote-2').t, /como tampoco yo soy siempre un placer para mí misma/);
+  assert.doesNotMatch(quotes.get('quote-2').t, /Si me caso con Linton|cómo puedo vivir sin mi alma/);
+  assert.match(quotes.get('quote-3').original.text, /Universe would turn to a mighty stranger/);
+  assert.match(quotes.get('quote-3').t, /Universo se convertiría en un inmenso desconocido/);
+  assert.match(quotes.get('quote-3').t, /no parecería formar parte de él/);
+  assert.doesNotMatch(quotes.get('quote-3').t, /extraño y terrible/);
+  assert.equal(workProfile?.original_title, 'Wuthering Heights');
+  for (const quote of bronteQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
   }
 });
 

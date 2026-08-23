@@ -858,5 +858,17 @@
     ],
     "profile_status": "draft",
     "verification_status": "partially_verified"
+  },
+  {
+    "work_id": "work-cumbres-borrascosas",
+    "author_id": "author-emily-bronte",
+    "title": "Cumbres borrascosas",
+    "original_title": "Wuthering Heights",
+    "publication_year": 1847,
+    "sources": [
+      "Emily Brontë, Wuthering Heights, volumen I, primera edición de Thomas Cautley Newby, 1847, reproducida y validada sobre el facsímil en Wikisource."
+    ],
+    "profile_status": "draft",
+    "verification_status": "partially_verified"
   }
 ]

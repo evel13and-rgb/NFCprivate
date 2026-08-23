@@ -2041,6 +2041,27 @@
         "Wikisource, transcripción francesa cotejada con el facsímil de la edición Houssiaux."
       ],
       "fragment_count": 12
+    },
+    {
+      "work_id": "work-cumbres-borrascosas",
+      "title": "Cumbres borrascosas",
+      "display_title": "Cumbres borrascosas",
+      "original_title": "Wuthering Heights",
+      "author_id": "author-emily-bronte",
+      "publication_year": 1847,
+      "genre": null,
+      "language": null,
+      "summary_short": null,
+      "summary_long": null,
+      "context_notes": null,
+      "themes": [],
+      "tone_notes": null,
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Emily Brontë, Wuthering Heights, volumen I, primera edición de Thomas Cautley Newby, 1847, reproducida y validada sobre el facsímil en Wikisource."
+      ],
+      "fragment_count": 2
     }
   ]
 }

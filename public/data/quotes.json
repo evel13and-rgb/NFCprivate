@@ -1,31 +1,41 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T08:59:54.988Z",
+  "generated_at": "2026-08-23T10:04:20.493Z",
   "quote_count": 640,
   "quotes": [
     {
       "id": "quote-2",
       "legacy_index": 2,
-      "t": "He soñado en mi vida sueños que han permanecido conmigo para siempre y han cambiado mis ideas. Han pasado a través de mí como el vino a través del agua, y han alterado el color de mi mente. Si me caso con Linton, podría ser muy feliz: él es tan apacible y tan diferente de Heathcliff. Pero ¿cómo puedo vivir sin mi alma? Sea lo que sea de lo que estén hechas nuestras almas, la suya y la mía son lo mismo, y Linton es tan diferente de mí como un rayo de luna de un relámpago, o el hielo del fuego. Mi amor por Linton es como el follaje del bosque: el tiempo lo cambiará, lo sé bien, como el invierno cambia los árboles. Mi amor por Heathcliff se parece a las rocas eternas que hay debajo: no es una fuente de placer visible, pero es necesario. Nelly, yo soy Heathcliff. Él está siempre, siempre en mi mente: no como un placer, sino como mi propio ser. Así que no hables de separarnos; eso es imposible.",
+      "t": "He soñado en mi vida sueños que han permanecido conmigo para siempre y han cambiado mis ideas; han calado en mí de parte a parte, como el vino en el agua, y han alterado el color de mi mente.\n\n[…]\n\nSea de lo que estén hechas nuestras almas, la suya y la mía son lo mismo, y la de Linton es tan diferente como un rayo de luna de un relámpago, o la escarcha del fuego.\n\n[…]\n\nMi amor por Linton es como el follaje del bosque. El tiempo lo cambiará, lo sé bien, como el invierno cambia los árboles; mi amor por Heathcliff se parece a las rocas eternas que hay debajo: una fuente de poco placer visible, pero necesaria. Nelly, yo soy Heathcliff. Él está siempre, siempre en mi mente: no como un placer, como tampoco yo soy siempre un placer para mí misma, sino como mi propio ser. Así que no vuelvas a hablar de separarnos: es imposible; y…",
       "a": "Catherine Earnshaw",
       "obra": "Cumbres borrascosas, Emily Brontë",
       "highlight": null,
       "lang": "es",
       "type": "prose",
       "authorId": "author-emily-bronte",
-      "workId": "work-cumbres-borrascosas"
+      "workId": "work-cumbres-borrascosas",
+      "original": {
+        "text": "I've dreamt in my life dreams that have stayed with me ever after, and changed my ideas; they've gone through and through me, like wine through water, and altered the colour of my mind.\n\n[…]\n\nWhatever our souls are made of, his and mine are the same, and Linton's is as different as a moonbeam from lightning, or frost from fire.\n\n[…]\n\nMy love for Linton is like the foliage in the woods. Time will change it, I'm well aware, as winter changes the trees—my love for Heathcliff resembles the eternal rocks beneath—a source of little visible delight, but necessary. Nelly, I am Heathcliff—he's always, always in my mind—not as a pleasure, any more than I am always a pleasure to myself—but, as my own being—so, don't talk of our separation again—it is impracticable; and—",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-3",
       "legacy_index": 3,
-      "t": "Si todo pereciera y él permaneciera, yo seguiría existiendo; y si todo permaneciera y él fuese aniquilado, el universo se convertiría en algo extraño y terrible: yo no sería parte de él.",
+      "t": "Si todo lo demás pereciera y él permaneciera, yo seguiría existiendo; y si todo lo demás permaneciera y él fuera aniquilado, el Universo se convertiría en un inmenso desconocido. Yo no parecería formar parte de él.",
       "a": "Catherine Earnshaw",
       "obra": "Cumbres borrascosas, Emily Brontë",
       "highlight": null,
       "lang": "es",
       "type": "prose",
       "authorId": "author-emily-bronte",
-      "workId": "work-cumbres-borrascosas"
+      "workId": "work-cumbres-borrascosas",
+      "original": {
+        "text": "If all else perished, and he remained, I should still continue to be; and, if all else remained, and he were annihilated, the Universe would turn to a mighty stranger. I should not seem a part of it.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-4",
