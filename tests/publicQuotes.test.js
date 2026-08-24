@@ -199,6 +199,12 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-453', 'quote-454', 'quote-455', 'quote-456', 'quote-457',
     'quote-458', 'quote-459', 'quote-460', 'quote-461', 'quote-462',
     'quote-463', 'quote-464',
+    'quote-465', 'quote-466', 'quote-467', 'quote-468', 'quote-469',
+    'quote-470', 'quote-471', 'quote-472', 'quote-473', 'quote-474',
+    'quote-475', 'quote-476', 'quote-477', 'quote-478', 'quote-479',
+    'quote-480', 'quote-481', 'quote-482', 'quote-483', 'quote-484',
+    'quote-485', 'quote-486', 'quote-487', 'quote-488', 'quote-489',
+    'quote-490', 'quote-491', 'quote-492', 'quote-493',
     'quote-494', 'quote-495', 'quote-496', 'quote-497', 'quote-498',
     'quote-499', 'quote-500', 'quote-501', 'quote-502', 'quote-503',
     'quote-504', 'quote-505', 'quote-506', 'quote-507', 'quote-508',
@@ -1077,6 +1083,64 @@ test('Vera conserva la primera edición, la secuencia narrativa y la coerción d
     7,
   );
   for (const quote of veraQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    const expected = expectedParagraphs.get(quote.legacy_index);
+    assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos españoles`);
+    assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+    assert.equal(
+      quote.t.match(/_[^_]+_/g)?.length || 0,
+      quote.original.text.match(/_[^_]+_/g)?.length || 0,
+      `${quote.id} debe conservar los énfasis tipográficos`,
+    );
+  }
+});
+
+test('Precioso veneno conserva la edición de Cape, la voz de Prue y el sentido del afecto', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const preciousQuotes = document.quotes.filter(quote => quote.workId === 'work-precioso-veneno');
+  const expectedParagraphs = new Map([
+    [465, 3], [466, 1], [467, 1], [468, 1], [469, 1], [470, 1], [471, 2],
+    [472, 4], [473, 5], [474, 2], [475, 1], [476, 1], [477, 1], [478, 3],
+    [479, 1], [480, 1], [481, 7], [482, 1], [483, 1], [484, 1], [485, 2],
+    [486, 3], [487, 1], [488, 1], [489, 1], [490, 1], [491, 3], [492, 1],
+    [493, 1],
+  ]);
+
+  assert.equal(preciousQuotes.length, 29);
+  assert.ok(preciousQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(preciousQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-465').original.text, /^Kester says that all tales/);
+  assert.match(quotes.get('quote-472').original.text, /_writing-maisters_/);
+  assert.match(quotes.get('quote-472').t, /mitos, pinzones y _escribanos_/);
+  assert.match(quotes.get('quote-481').original.text, /any meaning in that word/);
+  assert.match(quotes.get('quote-481').original.text, /without haste, yet as if/);
+  assert.match(quotes.get('quote-481').original.text, /_His banner over me was love\._/);
+  assert.equal(quotes.get('quote-481').t.match(/\[…\]/g)?.length, 2);
+  assert.match(quotes.get('quote-485').t, /los lirios y sus ángeles/);
+  assert.doesNotMatch(quotes.get('quote-485').t, /azucenas/);
+  assert.match(quotes.get('quote-487').t, /pocos te conocen sin quererte/);
+  assert.doesNotMatch(quotes.get('quote-487').t, /pocas te conocen y no te quieren/);
+  assert.match(quotes.get('quote-488').t, /Claro que _era_ oro/);
+  assert.match(quotes.get('quote-491').original.text, /_Conquer_/);
+  assert.match(quotes.get('quote-491').t, /_Conquistar_/);
+  assert.match(quotes.get('quote-492').t, /ninguna mujer que se respetara/);
+  assert.match(quotes.get('quote-492').t, /¿Qué podía aquejarme\?/);
+  assert.match(quotes.get('quote-493').original.text, /wrostling match/);
+  assert.equal(
+    preciousQuotes.reduce((count, quote) => count + (quote.original.text.match(/\[…\]/g)?.length || 0), 0),
+    9,
+  );
+  assert.equal(
+    preciousQuotes.reduce((count, quote) => count + (quote.original.text.match(/_[^_]+_/g)?.length || 0), 0),
+    4,
+  );
+  for (const quote of preciousQuotes) {
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     const expected = expectedParagraphs.get(quote.legacy_index);
     assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos españoles`);

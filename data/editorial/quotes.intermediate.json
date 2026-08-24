@@ -5558,14 +5558,14 @@
   {
     "legacy_index": 465,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Kester dice que todas las historias, historias verdaderas o invenciones, empiezan mucho antes de los días del niño; sí, incluso antes del pequeño recién nacido en su cuna de juncos. Tal vez tú nunca durmieras en una cuna de juncos, pero en Sarn todos lo hicimos.\n\nEran cunas limpias, blandas y verdes, donde el niño podía sentirse tan bien acomodado como una pequeña oruga —«mariposa pintada que aún ha de ser», las llama Kester— dormida en su capullo. Kester es muy particular con estas cosas. Nunca dirá «oruga». Dirá:\n\n—Hay muchas futuras mariposas entre nuestras coles, Prue.\n\nNo dirá:\n\n—Es invierno.\n\nDirá:\n\n—El verano duerme.\n\nY no hay capullo tan pequeño ni de color tan triste que Kester no llame el comienzo de la floración.",
+    "text": "Kester dice que todas las historias, historias verdaderas o invenciones, se remontan más atrás que los días del niño; sí, incluso más atrás que el pequeño recién nacido en su cuna de juncos. Tal vez tú nunca durmieras en una cuna de juncos, pero en Sarn todos lo hicimos.\n\n[…]\n\ny hacían una bonita cuna limpia, blanda y verde, donde el niño podía sentirse tan bien acomodado como una pequeña oruga —Kester las llama «futuras mariposas pintadas»— dormida en su capullo. Kester es muy particular con estas cosas. Nunca dirá «orugas». Dirá: «Hay muchas futuras mariposas entre nuestras coles, Prue». No dirá: «Es invierno». Dirá: «El verano duerme». Y no hay capullo tan pequeño ni de color tan triste que Kester no lo llame el comienzo de la floración.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "El verano duerme.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "1c0219f5fb5a24c016fb6a2ba32a62fd240079889ad9071540fc82d292bf04b2"
+    "text_hash": "296ad7d8cef85883a472a48dfad8a22461cba1c13e44926cb7a5488218b7f188"
   },
   {
     "legacy_index": 466,
@@ -5582,326 +5582,326 @@
   {
     "legacy_index": 467,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Solo en nuestro robledal había siempre un aspecto de final de año, porque las hojas nuevas eran muy pardas. De modo que siempre había un soplo de octubre en nuestro mayo.\n\nPero era agradable sentarse en los prados y mirar hacia las colinas lejanas. Los alerces se alzaban como agujas en su verde vivo, y el oro de las prímulas parecía metérsele a una en el corazón, y hasta el lago de Sarn no era más que una niebla azul dentro de una niebla amarilla de copas de abedul.\n\nHabía tal sueño sobre el lugar que, si pasaba una abeja silvestre —no digamos ya un abejorro—, sobresaltaba como un grito.",
+    "text": "Solo en nuestro robledal había siempre un aspecto de final de año, porque las hojas nuevas eran muy pardas. De modo que siempre había un soplo de octubre en nuestro mayo. Pero era agradable sentarse en los prados y mirar hacia las colinas lejanas. Los alerces se alzaban como agujas en su verde vivo, y el oro de las prímulas parecía metérsele a una en el corazón, y hasta el lago de Sarn no era más que una niebla azul dentro de una niebla amarilla de copas de abedul. Había tal sueño sobre el lugar que, si pasaba una abeja silvestre —no digamos ya un abejorro—, te sobresaltaba como un grito.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "un soplo de octubre en nuestro mayo.",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "e5aa3025a280cc8400713759ed3120a4032ba53013e0d5ef73d1a1f523062b77"
+    "has_line_breaks": false,
+    "text_hash": "5f5e1079df2e98f73789b9a9b020dec77a785e155678c8a255f647bd6fff09ad"
   },
   {
     "legacy_index": 468,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Fue en Plash, en casa de los Beguildy, mitad casa de piedra y mitad cueva, donde recibí mi enseñanza de libros. Tal vez te parezca extraño que una mujer de mi humilde condición sea capaz de escribir y deletrear y poner todas estas cosas en un libro.\n\nY lo cierto es que, cuando yo era muchacha, ni siquiera muchas grandes damas sabían escribir mucho más que una carta de amor. Algunas apenas podían poner «esto es membrillo y manzana» en sus jaleas, y otras pasaban trabajos para firmar en el registro matrimonial.\n\nMuchas vinieron a mí, una y otra vez, para que les escribiera sus cartas de amor; y es una tarea vieja y amarga escribir las cartas de amor de otras mujeres desde el propio corazón ardiente.",
+    "text": "Fue en Plash, en casa de los Beguildy, mitad casa de piedra y mitad cueva, donde recibí mi instrucción libresca. Tal vez te parezca extraño que una mujer de mi humilde condición sea capaz de escribir y deletrear y poner todas estas cosas en un libro. Y lo cierto es que, cuando yo era muchacha, ni siquiera muchas grandes damas sabían escribir mucho más que una carta de amor. Algunas apenas podían poner «esto es membrillo y manzana» en sus jaleas, y otras pasaban trabajos para firmar en el registro matrimonial. Muchas vinieron a mí, una y otra vez, para que les escribiera sus cartas de amor; y es una tarea vieja y amarga escribir las cartas de amor de otras mujeres desde el propio corazón ardiente.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "desde el propio corazón ardiente.",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "5a6a9c88f565fb7d52eaf8823405deb106979931c6c9cadb3406272245952bc1"
+    "has_line_breaks": false,
+    "text_hash": "0df9d85fc66783b07f909aa9afa16b63b36d6c8fb00146b6b13a1722bdbfc43b"
   },
   {
     "legacy_index": 469,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Una vez le pregunté a Beguildy dónde estaba el futuro, puesto que podía verlo con tanta claridad.\n\n—Está junto al pasado, niña, detrás del Tiempo —respondió.\n\nNunca se podía ganar una discusión con el señor Beguildy. Pero cuando le conté a Kester lo que había dicho, Kester no quiso admitirlo. Dijo que el pasado y el futuro eran dos lanzaderas en manos del Señor, tejiendo la Eternidad. Él mismo era tejedor, lo cual quizá le hizo pensarlo así.\n\nPero creo que no podemos saber qué son el pasado y el futuro. Somos tan pequeños y desvalidos sobre la tierra, que es como una cuna verde de juncos donde yace la humanidad, mirando las estrellas sin saber qué son.",
+    "text": "Una vez le pregunté a Beguildy dónde estaba el futuro, puesto que podía verlo con tanta claridad. «Está junto al pasado, niña, detrás del Tiempo», respondió. Nunca se podía ganar una discusión con el señor Beguildy. Pero cuando le conté a Kester lo que había dicho, Kester no quiso admitirlo. Dijo que el pasado y el futuro eran dos lanzaderas en manos del Señor, tejiendo la Eternidad. Él mismo era tejedor, lo cual quizá le hizo pensarlo así. Pero creo que no podemos saber qué son el pasado y el futuro. Somos tan pequeños y desvalidos sobre la tierra, que es como una cuna verde de juncos donde yace la humanidad, mirando las estrellas sin saber qué son.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "dos lanzaderas en manos del Señor",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "05c2157c9fa5c200fde28f68afd17c524f3d4774d30191825744905160d4ac60"
+    "has_line_breaks": false,
+    "text_hash": "c6abdb7799007f0c7e47a27b2dc4e9538b50b753f38a09eb283aa600f55d8c2e"
   },
   {
     "legacy_index": 470,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Eran como una lluvia tranquila después de la sequía. Solo que empecé a preguntarme cómo volveríamos en la resurrección. ¿Volveríamos claros o borrosos, como en el agua?\n\n¿Volvería Padre en el arrebato de cólera en que murió, o como un niño pequeño corriendo hacia la abuela con un ramillete de prímulas? ¿Sonreiría Madre con la misma sonrisa, o habría encontrado una luz en el pasadizo oscuro?\n\n¿Seguiría yo encerrada en un cuerpo que no deseaba, o nos permitirían tejer cuerpos a nuestro gusto con las hilazas de nuestras almas?",
+    "text": "Eran como una lluvia tranquila después de la sequía. Solo que empecé a preguntarme cómo volveríamos en la resurrección. ¿Volveríamos claros o borrosos, como en el agua? ¿Volvería Padre en el arrebato de cólera en que murió, o como un niño pequeño corriendo hacia la abuela con un ramillete de prímulas? ¿Sonreiría Madre con la misma sonrisa, o habría encontrado una luz en el pasadizo oscuro? ¿Seguiría yo encerrada en un cuerpo que no deseaba, o nos permitirían tejer cuerpos a nuestro gusto con las hilazas de nuestras almas?",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "tejer cuerpos a nuestro gusto",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "c36746cf1861c4565d7ed6cc6c92540425595b5f1ea86153d861867c10204aab"
+    "has_line_breaks": false,
+    "text_hash": "c0522eb78c8a5ce09f53e8e883e0ccc64c34dcc2c5244f5b74fed5829fb8eb0c"
   },
   {
     "legacy_index": 471,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "—Y en la muerte no me importará —dije—. Porque, si obro bien y voy al cielo, me harán enteramente nueva y seré tan hermosa como una azucena sobre el lago. Y si obro mal y voy al infierno, venderé mi alma mil veces, pero compraré un rostro hermoso y me alegraré de tenerlo aunque esté condenada.\n\nY corrí al desván y lloré durante mucho tiempo.",
+    "text": "—Y en la muerte no me importará —dije—. Porque, si obro bien y voy al cielo, me harán enteramente nueva y seré tan hermosa como un lirio de agua en el lago. Y si obro mal y voy al infierno, venderé mi alma mil veces, pero compraré un rostro hermoso y me alegraré de tenerlo aunque esté condenada.\n\nY corrí al desván y lloré durante mucho tiempo.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "compraré un rostro hermoso",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "9286d19d46fda58a1f4ef5c88d9e7057396cf08ff8405b11f6d289099e463ee5"
+    "text_hash": "d1f0427ff65801e36ffc1e4bb35089d3c021f9cba417831648c8113ae07458fa"
   },
   {
     "legacy_index": 472,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "La quietud y la soledad del lugar acabaron por consolarme. Abrí el postigo que daba al huerto, alrededor del cual habían guiado un gran peral, y saqué el tejido de mi bolsa.\n\nSentada allí, mirando los árboles verdes, con el olor de nuestro heno llegando fresco en la brisa, mezclado con el de las rosas silvestres y la reina de los prados de la cuneta, escuché cantar a los mirlos cerca y lejos.\n\nCuando estaban muy lejos apenas se los podía separar de los demás pájaros, pues había un verdadero encantamiento de ellos: zorzales, mosquiteros, pardillos de siete colores, pinzones y escribanos. Era un tejido de muchos hilos, con un hilo maestro de oro puro, y resultaba muy consolador escucharlo.\n\nPensé que quizá el amor fuera así: muchos hilos de colores y un hilo maestro de oro puro.",
+    "text": "La quietud y la soledad del lugar acabaron por consolarme. Abrí el postigo que daba al huerto, alrededor del cual habían guiado un gran peral, y saqué la labor de punto de mi bolsa.\n\n[…]\n\nSentada allí, mirando los árboles verdes, con el olor de nuestro heno llegando fresco en la brisa, mezclado con el de las rosas silvestres y la reina de los prados de la cuneta del huerto, escuché cantar a los mirlos cerca y lejos. Cuando estaban muy lejos apenas se podía desenredar su canto del de todos los demás pájaros, pues había un auténtico encantamiento de aves: zorzales, mosquiteros, pardillos de siete colores, mitos, pinzones y _escribanos_. Era un tejido de muchos hilos, con un hilo maestro de oro claro, y resultaba muy consolador escucharlo.\n\nPensé que quizá el amor fuera así: muchos hilos de colores y un hilo maestro de oro puro.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "Pensé que quizá el amor fuera así",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "961028516831da71744b2fad27137fb682242ced4c506fa3f1eca22ea241757a"
+    "text_hash": "95950829234ac041dc405b681615feae0be001ed6244ef4f22bc64fa8a29ac4c"
   },
   {
     "legacy_index": 473,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "El desván estaba muy cerca del techo de paja, y había muchos nidos bajo los aleros y un gorjeo continuo de golondrinas. Entre sus vigas había un nido de abejas silvestres; se las oía producir un murmullo blando y soñoliento y, por la mañana y al anochecer, se las veía ir en fila al lago a buscar agua.\n\nEstando todo tan quieto, con las hermosas sombras de los manzanos poblando el huerto vacío, vino a mí —no puedo decir de dónde— una dulzura poderosísima que nunca había sentido.\n\nNo era religiosa, como la bondad de un versículo escuchado durante un sermón. Estaba más allá de eso. Era como si una criatura hecha enteramente de luz hubiera llegado de pronto desde muy lejos y se hubiese acurrucado en mi pecho.\n\nSobre todas las cosas apareció una belleza amable, como si un aire diferente reposara sobre ellas.",
+    "text": "El desván estaba justo bajo la techumbre de paja, y había muchos nidos bajo los aleros y un gorjeo continuo de golondrinas.\n\n[…]\n\nEntre sus vigas había un nido de abejas silvestres; se las oía producir un murmullo blando y soñoliento y, por la mañana y al anochecer, se las veía ir en fila al lago a buscar agua. Estando todo tan quieto, con las hermosas sombras de los manzanos poblando el huerto vacío,\n\n[…]\n\nvino a mí —no puedo decir de dónde— una dulzura poderosísima que nunca había sentido. No era religiosa, como la bondad de un versículo escuchado durante un sermón. Estaba más allá de eso. Era como si una criatura hecha enteramente de luz hubiera llegado de pronto desde muy lejos y se hubiese acurrucado en mi pecho. Todas las cosas adquirieron un aspecto hermoso y encantador, como si sobre ellas reposara un aire diferente.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "una criatura hecha enteramente de luz",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "7d9c718db6eacbe7fad93da4c50549ed164423a7b185b91ff83729fc8cbc1c34"
+    "text_hash": "6302f34575d4f263ea8cfba76c26cddc063a81ee8a67c9287f006b92fca38a76"
   },
   {
     "legacy_index": 474,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Me puse a pensar que toda aquella dicha del desván me había llegado por estar maldita. Si no hubiese tenido el labio partido, que me ahuyentaba hacia mi propia alma solitaria, aquello nunca habría venido a mí.\n\nLas manzanas se habrían amontonado en vano para contemplar un prodigio, porque yo nunca habría conocido la gloria que llegaba desde el otro lado del silencio.\n\nMientras lo pensaba, surgió de ninguna parte aquella cosa hermosa y se acomodó en mi corazón como una semilla del núcleo mismo del amor.",
+    "text": "Me puse a pensar que toda aquella dicha del desván me había llegado por estar maldita. Si no hubiese tenido el labio partido, que me ahuyentaba hacia mi propia alma solitaria, aquello nunca habría venido a mí. Las manzanas se habrían amontonado en vano para contemplar un prodigio, porque yo nunca habría conocido la gloria que llegaba desde el otro lado del silencio.\n\nMientras lo pensaba, surgió de ninguna parte aquella cosa hermosa y se acomodó en mi corazón como una semilla del núcleo mismo del amor.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "el otro lado del silencio.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "a4d992e1d5ed0cbfb488dcf2e8b5c7cba12f294dfc8a18b476fb89894b266ddd"
+    "text_hash": "3cca00df0500f99fae6dd78f5c73cdfd3318e962f6330f37aba3ccabb1838783"
   },
   {
     "legacy_index": 475,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Al contar esta historia hago poco caso del tiempo. Porque cuando el corazón sufre, ¿qué es el tiempo? Nada.\n\n¿Escucha la voz del vigilante contando las horas que se apresuran el novio que ha pasado tanta hambre de su amor? ¿Le importa al que muere al amanecer hacia qué hora apunta el reloj cuando sale el sol, un sol que ya no sale para él?\n\nY cuando nosotros, pobres criaturas, nos levantamos contra todo el poder de las cosas que existen, luchando por abrirnos camino hacia nuestra paz —o hacia lo que creemos que es nuestra paz—, cuando quedamos aturdidos como un animal acosado en el ruedo, olvidamos el tiempo.",
+    "text": "Al contar esta historia hago poco caso del tiempo. Porque cuando el corazón sufre, ¿qué es el tiempo? Nada. ¿Escucha la voz del vigilante contando las horas que se apresuran el novio que ha pasado tanta hambre de su amor? ¿Le importa al que muere al amanecer hacia qué hora apunta el reloj cuando sale el sol, un sol que ya no sale para él? Y cuando nosotros, pobres criaturas, nos levantamos contra todo el poder de las cosas que existen, luchando por abrirnos camino hacia nuestra paz —o hacia lo que creemos que es nuestra paz—, cuando quedamos aturdidos como un animal acosado en el ruedo, olvidamos el tiempo.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "¿qué es el tiempo?",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "6dd1e2a759c596f7c849900da44eff76f077c0638cd46e9df499a9771df0fb09"
+    "has_line_breaks": false,
+    "text_hash": "571e2a9a4ad8a792ecf69f05f50870e844f2a992b538e47698d5fd5366d6cb99"
   },
   {
     "legacy_index": 476,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Abajo, en el granero oscuro, cantó el gallo, fino y dulce, y pensé que no sonaba como un ave terrenal; aunque quizá fuese porque yo estaba en el desván, donde las cosas siempre eran nuevas.\n\nTal vez te parezca extraño que una mujer como yo pensara tales cosas, pues siempre trabajé con las manos en tareas pobres y ásperas, mientras que una esperaría esos pensamientos de grandes damas sentadas ante sus tapices.\n\nPero estaba tan sola y tenía tanto tiempo para pensar, y con aquello y el saber de los libros que iba adquiriendo, toda clase de pensamientos crecieron en mi mente como juncos floridos y nomeolvides que brotan en un terreno pobre y pantanoso donde, de otro modo, no habría nada.",
+    "text": "Abajo, en el granero oscuro, cantó el gallo, fino y dulce, y pensé que no sonaba como un ave terrenal; aunque quizá fuese porque yo estaba en el desván, donde las cosas siempre eran nuevas. Tal vez te parezca extraño que una mujer como yo pensara tales cosas, pues siempre trabajé con las manos en tareas pobres y ásperas, mientras que una esperaría esos pensamientos de grandes damas sentadas ante sus tapices. Pero estaba tan sola y tenía tanto tiempo para pensar, y con aquello y el saber de los libros que iba adquiriendo, toda clase de pensamientos crecieron en mi mente como juncos floridos y nomeolvides que brotan en un terreno pobre y pantanoso donde, de otro modo, no habría nada.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "como juncos floridos y nomeolvides que brotan en un terreno pobre",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "a1251f8f9226edfea1af63bacc16a1f16c1f35e63c5f2b379125965e40c3ccfb"
+    "has_line_breaks": false,
+    "text_hash": "6bec403bc5444d848a4065aeb8373951b945926d9d4c3c7a1c22c5cbd650666d"
   },
   {
     "legacy_index": 477,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Entonces volvía en mí y solo veía las altas nubes, que no se habían movido; los altos setos con reina de los prados debajo; los bosques, las colinas y el dulce aire azul, con alondras suspendidas como si los de arriba las hubieran dejado caer de unos hilos.\n\nTemblaban tanto con su canto alegre que amenazaban con romperlos. No les importaba en absoluto quién ganaba el premio ni cuál cantaba mejor o más alto, mientras todas cantaran, mientras a ninguna le faltara un nido, el buche lleno, un trago de rocío y espacio donde cantar.",
+    "text": "Entonces volvía en mí y solo veía las altas nubes, que no se habían movido; los altos setos con reina de los prados debajo; los bosques, las colinas y el dulce aire azul, con alondras suspendidas como si los de arriba las hubieran dejado caer de unos hilos, temblando tanto con su canto alegre que amenazaban con romperlos. No les importaba en absoluto quién ganaba el premio ni cuál cantaba mejor o más alto, mientras todas cantaran, mientras a ninguna le faltara un nido, el buche lleno, un trago de rocío y espacio donde cantar.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "espacio donde cantar.",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "0014b501c914ff3edff9e39024c2ff4958384af6bab2c5fb6a84cc8437b7f12b"
+    "has_line_breaks": false,
+    "text_hash": "342c07a889998255e8af4f63fc7c76b698c32cf56bf988befd22af11b463873e"
   },
   {
     "legacy_index": 478,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "¿Cómo era su aspecto? ¿Qué apariencia tenía? ¿Era hermoso? Es difícil decirlo. En el amor no hay rostros, ni apariencia exterior, ni recuento de facciones.\n\nCuando una no es más que una polilla en la llama de sus ojos, ¿puede decir cuál es su estatura o si es moreno o rubio?\n\n¿Sabremos, cuando lleguemos a la presencia de quien nos creó, qué apariencia exterior tiene su majestad? No. Solo nuestros corazones temblarán en la luz.",
+    "text": "¿Cómo era su aspecto? ¿Qué apariencia tenía? ¿Era hermoso? Es difícil decirlo. En el amor no hay rostros, ni apariencia exterior, ni recuento de facciones. Cuando una no es más que una polilla en la candela de su ojo, ¿puede decir cuál es su estatura o si es moreno o rubio?\n\n[…]\n\n¿Sabremos, cuando lleguemos a la presencia de quien nos creó, qué apariencia exterior tiene su majestad? No. Solo nuestros corazones temblarán en la luz.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "nuestros corazones temblarán en la luz.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "cf6c62a82ef5f53a40f1c7112d7148f5c94d9cc82b6b9e22b654cda49dab67b7"
+    "text_hash": "ebb44cd55f213d65a89aee0f63eefa4bd6a9b2e05dc6128fea894c42a9a5b07f"
   },
   {
     "legacy_index": 479,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Muchas veces es más fácil morir por amor que hacer el ridículo por amor.\n\nEso pensé mientras me izaban hasta la habitación oscura dentro de una nube de humo que me hacía jadear, con las manos extendidas para no golpearme contra los lados de la trampilla, sin saber si reírme de la necedad de todo aquello o llorar por la tristeza de aquella representación que tanto se burlaba de mí.\n\nPorque allí estaba yo, fingiendo ser la mujer más hermosa que jamás había existido y, además, una diosa, cuando en realidad estaba maldita, como ya sabes.",
+    "text": "Muchas veces es más fácil morir por amor que hacer el ridículo por amor. Eso pensé mientras me izaban hasta la habitación oscura dentro de una nube de humo que me hacía jadear, con las manos extendidas para no golpearme contra los lados de la trampilla, sin saber si reírme de la necedad de todo aquello o llorar por la tristeza de aquella representación que tanto se burlaba de mí. Porque allí estaba yo, fingiendo ser la mujer más hermosa que jamás había existido y, además, una diosa, cuando en realidad estaba maldita, como ya sabes.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "hacer el ridículo por amor.",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "6bd009cbcb888e3a4ffc2551d6a047b5a8437bb28e02bf0a4114f7d94c80fa20"
+    "has_line_breaks": false,
+    "text_hash": "b19ce3014d22d72e07e43d58b8a2d35242e1170f04feccd33188a0afc5d35c2e"
   },
   {
     "legacy_index": 480,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Me cubrí el rostro con la muselina y miré de soslayo a través de ella hacia aquel prodigio.\n\nPorque para mí era entonces, y fue siempre, un prodigio; no por su aspecto ni por nada que hiciera, sino por el poder silencioso de lo que era, el poder reunido dentro de él, tremendo como una gran montaña sobre el cielo, que una no podía medir ni nombrar, sino únicamente sentir.",
+    "text": "Me cubrí el rostro con la muselina y miré de soslayo a través de ella hacia aquel prodigio. Porque para mí era entonces, y fue siempre, un prodigio; no por su aspecto ni por nada que hiciera, sino por el poder silencioso de lo que era, el poder reunido dentro de él, tremendo como una gran montaña sobre el cielo, que una no podía medir ni nombrar, sino únicamente sentir.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "el poder silencioso de lo que era",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "fbe1b57f889e16bc9948e79968a6af37abf3d600a70b7f6d6f659b9e5d97f6b3"
+    "has_line_breaks": false,
+    "text_hash": "efd5a26ab8826316dc691826353a8ec75c529c991dc366e124142c0db0117a68"
   },
   {
     "legacy_index": 481,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Aquello, sin embargo, no pertenecía al día, sino a algo que estaba más allá. No quise preguntarme qué era. Porque, cuando el trepador azul llega a su propio árbol, no pregunta quién lo plantó ni qué nombre le dan los hombres. El árbol lo es todo para el trepador, y aquello lo era todo para mí.\n\nMás tarde, cuando ya había aprendido a leer el Libro, leí:\n\n—Su bandera sobre mí fue amor.\n\nDe pronto, por el camino quieto, entre las sombras y la niebla de mis propias pestañas, vi venir a alguien. Era un hombre. Y, si existe en esa palabra algún significado en el que yo no haya pensado, que quienes lean lo pongan en ella. Que pongan la fuerza y el poder, la bondad y la paciencia, la severidad y la majestuosa rectitud de todos los hombres buenos dentro de esa palabra, y que él la lleve. Porque era él mismo: Kester Woodseaves, el maestro.\n\nVenía sin prisa, como quien tiene algún gran asunto que atender.\n\n¿Qué hice yo, que sabía que su sonrisa era mi verano? Pues me levanté con tanta prisa que volqué los narcisos.",
+    "text": "Aquello, sin embargo, no pertenecía al día, sino a algo que estaba más allá. No quise preguntarme qué era. Porque, cuando el trepador azul llega a su propio árbol, no pregunta quién lo plantó ni qué nombre le dan los hombres. El árbol lo es todo para el trepador, y aquello lo era todo para mí. Más tarde, cuando ya dominaba la lectura del libro, leí:\n\n_Su bandera sobre mí fue amor._\n\n[…]\n\nDe pronto, por el camino quieto, entre las sombras y la niebla de mis propias pestañas, vi venir a alguien. Era un hombre. Y, si existe en esa palabra algún significado en el que yo no haya pensado, que quienes lean lo pongan en ella. Que pongan la fuerza y el poder, la bondad y la paciencia, la severidad y la majestuosa rectitud de todos los hombres buenos dentro de esa palabra, y que él la lleve. Porque era él mismo: Kester Woodseaves, el maestro.\n\nVenía sin prisa, pero como quien tuviera que atender algún gran asunto.\n\n[…]\n\n¿Qué hice yo, que sabía que su sonrisa era mi verano? Pues me levanté con tanta prisa que volqué los narcisos.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "su sonrisa era mi verano",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "2b55da2c3944531ecc72237e835c891d8b495c490fc76a5294cbd567d786b80a"
+    "text_hash": "6dcdd645debb9b0a8db67207dfaada38ae5b8dd90fb6df0d76be3633683db454"
   },
   {
     "legacy_index": 482,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Siempre tuvo una voz fuera de lo común. Era como si, cuando hablaba, el sonido de su voz hiciera nuevo el mundo, sin importarle el mundo anterior.\n\nEra como un espino ancho y florido en un día sofocante de principios de junio. Una podía sentarse debajo y descansar.\n\nY era como el fuego quieto del hogar en una noche de invierno, cuando Edric el Salvaje anda por el bosque, las cortinas están cerradas, las velas despabiladas, todo asegurado y el dueño de la casa ha regresado al hogar.",
+    "text": "Siempre tuvo una voz fuera de lo común. Era como si, cuando hablaba, el sonido de su voz hiciera nuevo el mundo, sin importarle el mundo anterior. Era como un espino ancho y florido en un día sofocante de principios de junio. Una podía sentarse debajo y descansar. Y era como el fuego quieto del hogar en una noche de invierno, cuando Edric el Salvaje anda por el bosque, las cortinas están cerradas, las velas apagadas, todo asegurado y el dueño de la casa ha regresado al hogar.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "hiciera nuevo el mundo",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "e8a3f43dba75e2aa34355a4947db1d64025399347b3db26255c1e430d7a534fa"
+    "has_line_breaks": false,
+    "text_hash": "e84e497bae8af665a37ed3f8577b51905bf3f875da930117f418c1775a6745a7"
   },
   {
     "legacy_index": 483,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Y cuando miré atrás me pareció —aunque me dije que debía de ser imaginación— que aquellos ojos, tan vivos y brillantes, descansaban sobre mí, me sonreían, me acogían como amiga y me suplicaban.\n\nEran como los ojos de un hombre cuando contempla largamente a su querida compañera, que le ha entregado su paz a cambio de la suya, su alma para que la guarde y su cuerpo para su alegría.",
+    "text": "Y cuando miré atrás me pareció —aunque me dije que debía de ser imaginación— que aquellos ojos, tan vivos y brillantes, descansaban sobre mí, me sonreían, me acogían como amiga y me suplicaban. Eran como los ojos de un hombre cuando contempla largamente a su querida compañera, que le ha entregado su paz a cambio de la suya, su alma para que la guarde y su cuerpo para su alegría.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "le ha entregado su paz",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "37a0eff92816fb4a531b079bc86ed1d176dd0505f5470de718e770b49f277fe6"
+    "has_line_breaks": false,
+    "text_hash": "8378a6944207181e5b32fd0cef47b133a2bbef3f5c37011fdf84cf2cd4f0ce44"
   },
   {
     "legacy_index": 484,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Me convenían aquella quietud y aquella melancolía, porque yo también estaba triste y callada. El hombre al que amaba estaba herido y no podía llegar hasta él.\n\nOlvidaba que la señora Callard, con seis hijos, sabía muy bien cómo cuidar de seres desvalidos, porque los enamorados creen que nadie puede bendecir ni socorrer a su amor salvo ellos mismos. Y quizá haya algo de verdad en eso, quizá más que algo.\n\nSeguimos y seguimos por un territorio que no era montañoso ni llano, en una noche que no era oscura ni luminosa, sintiéndonos ni alegres ni apenados. Pensé que parecíamos personas destinadas a algún lugar más allá del mundo que no era ni el infierno ni el cielo.",
+    "text": "Me convenían aquella quietud y aquella melancolía, porque yo también estaba triste y callada. El hombre al que amaba estaba herido y no podía llegar hasta él. Allí yacía, débil como un niño, y solo la señora Callard lo cuidaba. Olvidaba que ella, con seis hijos, sabía muy bien cómo cuidar de seres desvalidos, porque los enamorados creen que nadie puede bendecir ni socorrer a su amor salvo ellos mismos. Y quizá haya algo de verdad en eso, quizá más que algo. Seguimos y seguimos por un territorio que no era montañoso ni llano, en una noche que no era oscura ni luminosa, sintiéndonos ni alegres ni apenados. Pensé que parecíamos personas destinadas a algún lugar más allá del mundo que no era ni el infierno ni el cielo.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "algún lugar más allá del mundo",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "886296eb23525188ca55a5acb482a236f7efab4fdca562aa7aa4bbe7fa971bb0"
+    "has_line_breaks": false,
+    "text_hash": "be01ee4c17b4b285ec3a171b2cf24e20d81e692f67d488134e888236a7d45f8c"
   },
   {
     "legacy_index": 485,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "El lago estaba rodeado tres veces, como si tres veces hubieran pronunciado un hechizo sobre él.\n\nPrimero estaba el círculo de robles y alerces, sauces, alisos y hayas, solemnes y fuertes, para mantener fuera al mundo. Después estaba el círculo de juncos, que suspiraban débilmente, frágiles y dispersos, pero bastantes, con sus largas sombras temblorosas, para mantener dentro los hechizos.\n\nLuego estaba el círculo de azucenas, tendidas allí como si Jesús, caminando sobre el agua, las hubiese colocado con sus manos frescas antes de volverse hacia la multitud y decir:\n\n—Mirad las azucenas.\n\nY como si ellas no fueran suficientes para sacudirte el alma, debajo de cada azucena —blanca y verde o de oro pálido— estaba su sombra luminosa, como si fuese su ángel.\n\nDurante el largo día imperturbable, las azucenas y sus ángeles se miraban unas a otros y estaban contentos.",
+    "text": "El lago estaba rodeado tres veces, como si tres veces hubieran pronunciado un hechizo sobre él. Primero estaba el círculo de robles y alerces, sauces, alisos y hayas, solemnes y fuertes, para mantener fuera al mundo. Después estaba el círculo de juncos, que suspiraban débilmente, frágiles y dispersos, pero bastantes, con sus largas sombras temblorosas, para mantener dentro los hechizos.\n\nLuego estaba el círculo de lirios de agua, tendidos allí como si Jesús, caminando sobre el agua, los hubiese colocado con sus manos frescas antes de volverse hacia la multitud y decir: «Mirad los lirios». Y como si no bastaran para sacudirte el alma, debajo de cada lirio —blanco y verde o de oro pálido— estaba su sombra luminosa, como si fuese su ángel. Durante el largo día imperturbable, los lirios y sus ángeles se miraban unos a otros y estaban contentos.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
-    "highlight": "las azucenas y sus ángeles",
+    "highlight": "los lirios y sus ángeles",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "9e82289743a84002571f97146e06ad7f67f85e9c14fd0fc14d3ddf55cbb6bf9c"
+    "text_hash": "f04a918f203665fdaf730faa847160cb4bd95062c63c605282afe1738ec8f628"
   },
   {
     "legacy_index": 486,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "En un junco alto, junto a la orilla, encontré una libélula que apenas empezaba a salir de su cuerpo, y me incliné muy cerca, conteniendo casi la respiración, para contemplar el milagro.\n\nLa vieja piel se abrió y consiguió sacar la cabeza. Entonces empezó la lucha, el trabajo de quedar libre: primero las patas, luego los hombros y las alas blandas y arrugadas. Parecía una criatura poseída; unas veces sufría convulsiones y otras quedaba rígida como un cadáver.\n\nPoco antes del final permaneció inmóvil durante mucho tiempo, como si se preguntara si se atrevía a quedar completamente libre en un mundo enteramente nuevo. Después dio un gran impulso, un tirón como de estallido, y salió.\n\nSubió un poco más por el junco, soñolienta y agotada como un niño después de un largo día de feria, y se quedó adormecida mientras empezaban a crecerle las alas.\n\n—Bueno —le dije, entre una pequeña risa y algo muy parecido a un sollozo—, lo has conseguido. Te ha costado algo, pero has conseguido quedar libre.",
+    "text": "En un junco alto, junto a la orilla, encontré una libélula que apenas empezaba a salir de su cuerpo, y me incliné muy cerca, conteniendo casi la respiración, para contemplar el milagro.\n\n[…]\n\nAl poco, la vieja piel se abrió y consiguió sacar la cabeza. Entonces empezó la lucha, el trabajo de quedar libre: primero las patas, luego los hombros y las alas blandas y arrugadas. Parecía una criatura poseída; unas veces sufría convulsiones y otras quedaba rígida como un cadáver. Poco antes del final permaneció inmóvil durante mucho tiempo, como si se preguntara si se atrevía a quedar completamente libre en un mundo enteramente nuevo. Después dio un gran impulso, un tirón como de estallido, y salió. Subió un poco más por el junco, soñolienta y agotada como un niño después de un largo día de feria, y se quedó adormecida mientras empezaban a crecerle las alas. «Bueno —le dije, entre una pequeña risa y algo muy parecido a un sollozo—, bueno, lo has conseguido. Te ha costado algo, pero has conseguido quedar libre».",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "has conseguido quedar libre.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "c9d75955db30ccee8f698415d2a4bc63670a08fbc1d7167ec01a141504c97033"
+    "text_hash": "91c8ec742e3a51ace5905f7955a2aa6574fa954bfa066c33c5f2ae3d062e586e"
   },
   {
     "legacy_index": 487,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "—Bueno —dijo—, hay dos o tres personas que te conocen, Prue. Y pocas te conocen y no te quieren. Supongo que he ido espigando un poco en sus corazones. Y creo que no hay mucho de ti que yo no conozca, Prue.",
+    "text": "—Bueno —dijo—, hay dos o tres personas que te conocen, Prue. Y pocos te conocen sin quererte. Supongo que he ido espigando un poco en sus corazones. Y creo que no hay mucho de ti que yo no conozca, Prue.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
-    "highlight": "pocas te conocen y no te quieren.",
+    "highlight": "pocos te conocen sin quererte.",
     "type": "prose",
     "has_line_breaks": false,
-    "text_hash": "e89a4a699f079aff65169ed27655263baab0f3fcc6247e485d09fec56307ff36"
+    "text_hash": "fa47691b6429ab978918855c85f451a6b3fc9416d86c48f59bf9dfecd34c8a01"
   },
   {
     "legacy_index": 488,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "¡Qué día fue aquel! ¿Oro? Claro que era oro. Espigué y espigué, y cada brazada parecía un tesoro precioso y celestial.\n\nCasi todos los campos estaban limpios y desnudos cuando tomamos el té bajo la sombra del seto, porque no refrescó al alargarse las sombras. Era uno de esos días de mediados de septiembre en que todo el calor reunido durante el verano parece gastarse y derrocharse por amor al grano dorado.",
+    "text": "¡Qué día fue aquel! ¿Oro? Claro que _era_ oro. Espigué y espigué, y cada brazada parecía un tesoro precioso y celestial. Casi todos los campos estaban limpios y desnudos cuando tomamos el té bajo la sombra del seto, porque no refrescó al alargarse las sombras. Era uno de esos días de mediados de septiembre en que todo el calor reunido durante el verano parece gastarse y derrocharse por amor al grano dorado.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "por amor al grano dorado.",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "b3cf31ac86ed4660a0d7d1c4e71d11bc013ba8836c25acbdf408dd45310792ff"
+    "has_line_breaks": false,
+    "text_hash": "84dedfb9fcce2a90f2d17180d8829fca6fce5215aa229c30e437a383c7e47806"
   },
   {
     "legacy_index": 489,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "La mañana llegó fresca y dulce, y los grajos salieron en torrente por el cielo ventoso hacia nuestros rastrojos, dejando caer aquí y allá sus graznidos soñolientos y satisfechos.\n\nDe camino al ordeño me detuve junto a las parvas para dar gracias por el cereal.\n\n¿Por qué pensé entonces en aquellas palabras: «el precioso veneno»? ¿Por qué pensé en aquello que los hombres recogen con la cosecha y atesoran, aunque sea como hierba de fuego dentro de un almiar?\n\n¿Por qué se agitó un frío presagio de horror en mi corazón, donde todo era alegre y cálido, como una helada repentina que cae sobre el jardín una tarde de otoño, cuando las dalias están en lo más alto de su orgullo —color de vino y oro claro, cada pétalo en su sitio, floreciendo por encima del muro con las abejas alrededor—, de modo que por la mañana todo aparece entristecido por el invierno?",
+    "text": "La mañana llegó fresca y dulce, y los grajos salieron en torrente por el cielo ventoso hacia nuestros rastrojos, dejando caer aquí y allá sus graznidos soñolientos y satisfechos. De camino al ordeño me detuve junto a las parvas para dar gracias por el cereal. ¿Por qué pensé entonces en aquellas palabras: «el precioso veneno»? ¿Por qué pensé en aquello que los hombres recogen con la cosecha y atesoran, aunque sea como hierba de fuego dentro de un almiar? ¿Por qué se agitó un frío presagio de horror en mi corazón, donde todo era alegre y cálido, como una helada repentina que cae sobre el jardín una tarde de otoño, cuando las dalias están en lo más alto de su orgullo —color de vino y oro claro, cada pétalo en su sitio, floreciendo por encima del muro con las abejas alrededor—, de modo que por la mañana todo aparece entristecido por el invierno?",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "el precioso veneno",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "f8c8e205d699e5c1e507179208dd2ec1d2351db241ef03dc98ff6e45c7bc688b"
+    "has_line_breaks": false,
+    "text_hash": "25b5e0241ad78107dfb2459e8c780831c1515c65dcebc5d1cabd7a8c20886686"
   },
   {
     "legacy_index": 490,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Todos aquellos pensamientos, confusos y aturdidos, vinieron a mí mientras me aferraba a la verja con el viento abrasador en la cara, demasiado paralizada para moverme.\n\nHay desgracias que hacen que una se levante de un salto y corra para salvarse; pero hay otras demasiado terribles para eso, porque no dejan nada que hacer.\n\nEntonces una quietud cae sobre el alma, como la quietud del conejo cuando la comadreja lo contempla con ardor y él sabe que ya no queda nada que hacer.",
+    "text": "Todos aquellos pensamientos, confusos y aturdidos, vinieron a mí mientras me aferraba a la verja con el viento abrasador en la cara, demasiado paralizada para moverme. Hay desgracias que hacen que una se levante de un salto y corra para salvarse; pero hay otras demasiado terribles para eso, porque no dejan nada que hacer. Entonces una quietud cae sobre el alma, como la quietud del conejo cuando la comadreja lo mira con avidez y él sabe que ya no queda nada que hacer.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "una quietud cae sobre el alma",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "b1c9dff0c44ed369b2ba78c469dbb4b7af3fb012c45dc380ac9d225c8e22b8ce"
+    "has_line_breaks": false,
+    "text_hash": "b74b5bbc4ec85b84814e27c548a7c3d8b9fa9106fc39a97c418724e8bfe0d802"
   },
   {
     "legacy_index": 491,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Omitieron la parte de los terrones a la cabeza y a los pies, porque el agua era su sepultura.\n\n¡Ah! Toda aquella gran extensión de agua no era demasiado para formar la tumba de un hombre tan fuerte. La niebla de una milla que reposaba sobre el lugar no era un sudario demasiado grandioso.\n\nPorque, aunque se equivocó, hizo el mal y dañó a otros con su fuerza, nunca obró con mezquindad, ni entregó un trabajo mal hecho, ni mintió. No podía ceder, del mismo modo que el granito no puede deshacerse como la arenisca.\n\nY ahora había jugado su última partida de Conquistar, y aquello con lo que jugó no fue una de las grandes caracolas rosadas y blancas, sino su propia vida.",
+    "text": "Omitieron la parte de los terrones a la cabeza y a los pies, porque el agua era su sepultura. ¡Ah! Toda aquella gran extensión de agua no era demasiado para formar la tumba de un hombre tan fuerte. La niebla de una milla que reposaba sobre el lugar no era un sudario demasiado grandioso. Porque, aunque se equivocó, hizo el mal y dañó a otros con su fuerza, nunca obró con mezquindad, ni entregó un trabajo mal hecho, ni mintió.\n\n[…]\n\nNo podía ceder, del mismo modo que el granito no puede desmenuzarse como la arenisca. Y ahora había jugado su última partida de _Conquistar_, y aquello con lo que jugó no fue una de las grandes caracolas rosadas y blancas, sino su propia vida.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "el agua era su sepultura.",
     "type": "prose",
     "has_line_breaks": true,
-    "text_hash": "2e70536a9456f39e50ea26e1da866a465ba58aa5943e7630ffa9f95871be86cd"
+    "text_hash": "77da491a6abc2a9ee4dd066c9a322118139ecf7f0addb20aede9bc13f19145e0"
   },
   {
     "legacy_index": 492,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Allí, mirándome desde su caballo con una mirada tan detenida y tan ardiente de vida que, si no hubiese estado segura de lo contrario, habría pensado que me amaba, estaba nada menos que Kester Woodseaves.\n\nParecía un poco mayor, y su rostro estaba aún más limpiamente trazado que antes, como si el alma hubiera estado ocupada cincelándolo. En cuanto a sus ojos, toda la luz del cielo estaba en ellos, además de un toque muy agradable del viejo Adán.\n\nMe recorrieron de la cabeza a los pies, y descansé.\n\n¡Ah! Atada al taburete de inmersión, en un estado tan lamentable que ninguna mujer respetable elegiría que la viera hombre alguno —y mucho menos el hombre al que amaba—, descansé.\n\nYa nada me importaba. Nada me preocupaba. Kester estaba allí. Kester había tomado las cosas en sus manos. ¿Qué podía sucederme?\n\nTal era mi fe que, aunque hubiera trescientas personas, más o menos, contra mí y solo Kester a mi favor, sabía que estaba a salvo. Podría haberme vuelto de lado y dormido en aquel viejo taburete como si fuese una cama de plumas, tan tranquila estaba mi mente.",
+    "text": "Allí, mirándome desde su caballo con una mirada tan detenida y tan ardiente de vida que, si no hubiese estado segura de lo contrario, habría pensado que me amaba, estaba nada menos que Kester Woodseaves. Parecía un poco mayor, y su rostro estaba aún más limpiamente trazado que antes, como si el alma hubiera estado ocupada cincelándolo. En cuanto a sus ojos, toda la luz del cielo estaba en ellos, además de un toque muy agradable del viejo Adán. Me recorrieron de la cabeza a los pies, y descansé. ¡Ah! Atada al taburete de inmersión, en un estado tan lamentable que ninguna mujer que se respetara elegiría que la viera hombre alguno —y mucho menos el hombre al que amaba—, descansé. Ya nada me importaba. Nada me preocupaba. Kester estaba allí. Kester había tomado las cosas en sus manos. ¿Qué podía aquejarme? Tal era mi fe que, aunque hubiera trescientas personas, más o menos, contra mí y solo Kester a mi favor, sabía que estaba a salvo. Podría haberme vuelto de lado y dormido en aquel viejo taburete como si fuese una cama de plumas, tan tranquila estaba mi mente.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "Kester estaba allí.",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "4b20749346c91baf431338eeec71cc9b43ff78ae662f149375dd367839fcb55e"
+    "has_line_breaks": false,
+    "text_hash": "696aaaa0100e89a434d2e53e1dcd51b6cf3bb66a16c3ae33bf229735d01ddfb8"
   },
   {
     "legacy_index": 493,
     "source_collection": "PRECIOSO_VENENO_QUOTES",
-    "text": "Se inclinó. Puso los brazos a mi alrededor. Me alzó hasta la silla. Fue exactamente como en el sueño que había tenido.\n\nY, como en el sueño, Felena levantó la mirada suplicante y él no reparó en ella, y el ruido de la gente fue apagándose: las risas, las maldiciones de Huglet y Grimble, las palmadas de los niños Callard y la voz aguda del abuelo Callard contando un combate de lucha ocurrido casi un siglo antes.\n\nTodo descendió, todo se desvaneció en el aire quieto. Solo quedó el viento de la tarde levantando las ramas, como un amante que levanta el largo cabello de su amada.",
+    "text": "Se inclinó. Puso los brazos a mi alrededor. Me alzó hasta la silla. Fue exactamente como en el sueño que había tenido. Y, como en el sueño, Felena levantó la mirada suplicante y él no reparó en ella, y el ruido de la gente se apagó: las risas, las maldiciones de Huglet y Grimble, las palmadas de los niños Callard y la voz aguda del abuelo Callard contando un combate de lucha ocurrido casi un siglo antes. Todo se apagó, todo se desvaneció en el aire quieto. Solo quedó el viento de la tarde levantando las ramas, como un amante que levanta el largo cabello de su amada.",
     "legacy_attribution": "Mary Webb",
     "legacy_work": "Precioso veneno, Mary Webb",
     "language": "es",
     "highlight": "el viento de la tarde levantando las ramas",
     "type": "prose",
-    "has_line_breaks": true,
-    "text_hash": "28f2eee83667dd417432a1f269938ad0f03aadaab1efa5a997289a1688cd93b1"
+    "has_line_breaks": false,
+    "text_hash": "582f56314040e7d72167203831bf29b11dee23450f9ee68be2fdae2899df47d7"
   },
   {
     "legacy_index": 494,
