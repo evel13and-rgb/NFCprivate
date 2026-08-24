@@ -1,6 +1,6 @@
 {
   "valid": true,
-  "validated_at": "2026-08-24T13:44:43.710Z",
+  "validated_at": "2026-08-24T14:10:44.510Z",
   "summary": {
     "expected_quotes": 640,
     "intermediate_quotes": 640,
@@ -31,18 +31,16 @@
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "3 fuente(s) conservan derechos sin revisar.",
+      "message": "2 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
-        "source-el-papel-pintado-de-amarillo",
         "source-vera",
         "source-precioso-veneno"
       ]
     },
     {
       "code": "source_verification_pending",
-      "message": "3 fuente(s) esperan verificación bibliográfica.",
+      "message": "2 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
-        "source-el-papel-pintado-de-amarillo",
         "source-vera",
         "source-precioso-veneno"
       ]
@@ -51,11 +49,11 @@
   "pending_issues": [
     {
       "code": "rights_review_pending",
-      "count": 3
+      "count": 2
     },
     {
       "code": "source_verification_pending",
-      "count": 3
+      "count": 2
     }
   ],
   "reviewed_files": [

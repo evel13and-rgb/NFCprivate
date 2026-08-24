@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-24T13:31:57.968Z",
+  "generated_at": "2026-08-24T14:08:12.918Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -6847,19 +6847,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "It is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer.\n\nA colonial mansion, a hereditary estate, I would say a haunted house, and reach the height of romantic felicity—but that would be asking too much of fate!\n\nStill I will proudly declare that there is something queer about it.\n\nElse, why should it be let so cheaply? And why have stood so long untenanted?\n\nJohn laughs at me, of course, but one expects that in marriage.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-405",
       "legacy_index": 405,
-      "t": "John es práctico hasta el extremo. No tiene paciencia con la fe, siente un horror intenso por la superstición y se burla abiertamente de cualquier cosa que no pueda sentirse y verse y reducirse a cifras.\n\nJohn es médico, y quizá —no se lo diría a un alma viviente, por supuesto, pero este es papel muerto y supone un gran alivio para mi mente— quizá esa sea una de las razones por las que no mejoro más deprisa.\n\nVerán: ¡él no cree que esté enferma!",
+      "t": "John es práctico hasta el extremo. No tiene paciencia con la fe, siente un horror intenso por la superstición y se burla abiertamente de cualquier cosa que no pueda sentirse y verse y reducirse a cifras.\n\nJohn es médico, y _quizá_ —no se lo diría a un alma viviente, por supuesto, pero este es papel muerto y supone un gran alivio para mi mente— _quizá_ esa sea una de las razones por las que no mejoro más deprisa.\n\nVerán: ¡él no cree que esté enferma!",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "este es papel muerto y supone un gran alivio para mi mente",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "John is practical in the extreme. He has no patience with faith, an intense horror of superstition, and he scoffs openly at any talk of things not to be felt and seen and put down in figures.\n\nJohn is a physician, and _perhaps_—(I would not say it to a living soul, of course, but this is dead paper and a great relief to my mind—) _perhaps_ that is one reason I do not get well faster.\n\nYou see he does not believe I am sick!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-406",
@@ -6871,67 +6881,97 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "And what can one do?\n\nIf a physician of high standing, and one’s own husband, assures friends and relatives that there is really nothing the matter with one but temporary nervous depression—a slight hysterical tendency—what is one to do?\n\nMy brother is also a physician, and also of high standing, and he says the same thing.\n\nSo I take phosphates or phosphites—whichever it is, and tonics, and journeys, and air, and exercise, and am absolutely forbidden to “work” until I am well again.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-407",
       "legacy_index": 407,
-      "t": "Personalmente, no estoy de acuerdo con sus ideas.\n\nPersonalmente, creo que un trabajo que me agradara, con estímulo y cambio, me haría bien.\n\nPero ¿qué puede hacer una?\n\nEscribí durante un tiempo a pesar de ellos; pero me agota bastante tener que hacerlo con tanto disimulo o, de lo contrario, encontrar una fuerte oposición.",
+      "t": "Personalmente, no estoy de acuerdo con sus ideas.\n\nPersonalmente, creo que un trabajo que me agradara, con estímulo y cambio, me haría bien.\n\nPero ¿qué puede hacer una?\n\nEscribí durante un tiempo a pesar de ellos; pero _sí_ me agota bastante tener que hacerlo con tanto disimulo o, de lo contrario, encontrar una fuerte oposición.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "Personalmente, no estoy de acuerdo con sus ideas.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "Personally, I disagree with their ideas.\n\nPersonally, I believe that congenial work, with excitement and change, would do me good.\n\nBut what is one to do?\n\nI did write for a while in spite of them; but it _does_ exhaust me a good deal—having to be so sly about it, or else meet with heavy opposition.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-408",
       "legacy_index": 408,
-      "t": "A veces imagino que, en mi estado, si tuviera menos oposición y más compañía y estímulo… Pero John dice que lo peor que puedo hacer es pensar en mi estado, y confieso que siempre me hace sentir mal.\n\nAsí que lo dejaré y hablaré de la casa.\n\nA veces me enfado con John sin ninguna razón. Estoy segura de que antes no era tan sensible. Creo que se debe a este estado nervioso.\n\nPero John dice que, si me siento así, descuidaré el debido dominio de mí misma; de modo que me esfuerzo por controlarme —delante de él, al menos—, y eso me cansa muchísimo.",
+      "t": "A veces imagino que, en mi estado, si tuviera menos oposición y más compañía y estímulo… Pero John dice que lo peor que puedo hacer es pensar en mi estado, y confieso que siempre me hace sentir mal.\n\nAsí que lo dejaré y hablaré de la casa.\n\n[…]\n\nA veces me enfado con John sin ninguna razón. Estoy segura de que antes no era tan sensible. Creo que se debe a este estado nervioso.\n\nPero John dice que, si me siento así, descuidaré el debido dominio de mí misma; de modo que me esfuerzo por controlarme —delante de él, al menos—, y eso me cansa muchísimo.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "me esfuerzo por controlarme —delante de él, al menos—",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I sometimes fancy that in my condition if I had less opposition and more society and stimulus—but John says the very worst thing I can do is to think about my condition, and I confess it always makes me feel bad.\n\nSo I will let it alone and talk about the house.\n\n[…]\n\nI get unreasonably angry with John sometimes. I’m sure I never used to be so sensitive. I think it is due to this nervous condition.\n\nBut John says if I feel so, I shall neglect proper self-control; so I take pains to control myself—before him, at least, and that makes me very tired.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-409",
       "legacy_index": 409,
-      "t": "Es una habitación grande y ventilada, casi todo el piso, con ventanas que miran en todas direcciones y aire y sol en abundancia. Primero debió de ser cuarto de niños, y después sala de juegos y gimnasio, supongo; porque las ventanas tienen barrotes para los niños pequeños y hay anillas y cosas en las paredes.\n\nLa pintura y el papel parecen haber sido utilizados por una escuela de muchachos. El papel está arrancado en grandes trozos alrededor de la cabecera de mi cama, hasta donde alcanza mi mano, y también abajo, al otro lado de la habitación.\n\nNunca vi un papel peor en mi vida.",
+      "t": "Es una habitación grande y ventilada, casi todo el piso, con ventanas que miran en todas direcciones y aire y sol en abundancia. Primero debió de ser cuarto de niños, y después sala de juegos y gimnasio, supongo; porque las ventanas tienen barrotes para los niños pequeños y hay anillas y cosas en las paredes.\n\nLa pintura y el papel parecen haber sido utilizados por una escuela de muchachos. El papel está arrancado en grandes trozos alrededor de la cabecera de mi cama, hasta donde alcanza mi mano, y también abajo, al otro lado de la habitación. Nunca vi un papel peor en mi vida.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "hay anillas y cosas en las paredes.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "It is a big, airy room, the whole floor nearly, with windows that look all ways, and air and sunshine galore. It was nursery first and then playroom and gymnasium, I should judge; for the windows are barred for little children, and there are rings and things in the walls.\n\nThe paint and paper look as if a boys’ school had used it. It is stripped off—the paper—in great patches all around the head of my bed, about as far as I can reach, and in a great place on the other side of the room low down. I never saw a worse paper in my life.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-410",
       "legacy_index": 410,
-      "t": "Uno de esos dibujos desparramados y extravagantes que cometen todos los pecados artísticos.\n\nEs lo bastante apagado para confundir al ojo cuando intenta seguirlo, lo bastante marcado para irritar constantemente y provocar su estudio; y, cuando se siguen durante un trecho sus curvas cojas e inciertas, de pronto se suicidan: se precipitan en ángulos escandalosos, se destruyen en contradicciones nunca oídas.",
+      "t": "Uno de esos dibujos desparramados y extravagantes que cometen todos los pecados artísticos.\n\nEs lo bastante apagado para confundir al ojo cuando intenta seguirlo, lo bastante marcado para irritar constantemente y provocar su estudio; y, cuando se siguen durante un trecho sus curvas cojas e inciertas, de pronto se suicidan: se precipitan en ángulos escandalosos, se destruyen en contradicciones inauditas.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "cometen todos los pecados artísticos.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "One of those sprawling flamboyant patterns committing every artistic sin.\n\nIt is dull enough to confuse the eye in following, pronounced enough to constantly irritate and provoke study, and when you follow the lame uncertain curves for a little distance they suddenly commit suicide—plunge off at outrageous angles, destroy themselves in unheard of contradictions.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-411",
       "legacy_index": 411,
-      "t": "Cuando se siguen durante un trecho sus curvas cojas e inciertas, de pronto se suicidan: se precipitan en ángulos escandalosos, se destruyen en contradicciones nunca oídas.\n\nEl color es repelente, casi repugnante: un amarillo humeante, impuro, extrañamente desteñido por la luz del sol que gira lentamente.",
+      "t": "Cuando se siguen durante un trecho sus curvas cojas e inciertas, de pronto se suicidan: se precipitan en ángulos escandalosos, se destruyen en contradicciones inauditas.\n\nEl color es repelente, casi repugnante: un amarillo humeante, impuro, extrañamente desteñido por la luz del sol que gira lentamente.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "de pronto se suicidan",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "It is dull enough to confuse the eye in following, pronounced enough to constantly irritate and provoke study, and when you follow the lame uncertain curves for a little distance they suddenly commit suicide—plunge off at outrageous angles, destroy themselves in unheard of contradictions.\n\nThe color is repellant, almost revolting; a smouldering unclean yellow, strangely faded by the slow-turning sunlight.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-412",
@@ -6943,103 +6983,148 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "The color is repellant, almost revolting; a smouldering unclean yellow, strangely faded by the slow-turning sunlight.\n\nIt is a dull yet lurid orange in some places, a sickly sulphur tint in others.\n\nNo wonder the children hated it! I should hate it myself if I had to live in this room long.\n\nThere comes John, and I must put this away,—he hates to have me write a word.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-413",
       "legacy_index": 413,
-      "t": "Estos trastornos nerviosos son terriblemente deprimentes.\n\nJohn no sabe cuánto sufro realmente. Sabe que no existe ninguna razón para que sufra, y eso lo satisface.\n\nPor supuesto, solo son los nervios. ¡Me pesa tanto no cumplir con mi deber de ninguna manera!\n\nQuería ser una ayuda tan grande para John, un verdadero descanso y consuelo; y aquí estoy, convertida ya, comparativamente, en una carga.",
+      "t": "Estos trastornos nerviosos son terriblemente deprimentes.\n\nJohn no sabe cuánto sufro realmente. Sabe que no existe ninguna _razón_ para que sufra, y eso lo satisface.\n\nPor supuesto, solo son los nervios. ¡Me pesa tanto no cumplir con mi deber de ninguna manera!\n\nQuería ser una ayuda tan grande para John, un verdadero descanso y consuelo; y aquí estoy, convertida ya, comparativamente, en una carga.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
-      "highlight": "Sabe que no existe ninguna razón para que sufra, y eso lo satisface.",
+      "highlight": "Sabe que no existe ninguna _razón_ para que sufra, y eso lo satisface.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "But these nervous troubles are dreadfully depressing.\n\nJohn does not know how much I really suffer. He knows there is no _reason_ to suffer, and that satisfies him.\n\nOf course it is only nervousness. It does weigh on me so not to do my duty in any way!\n\nI meant to be such a help to John, such a real rest and comfort, and here I am a comparative burden already!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-414",
       "legacy_index": 414,
-      "t": "Quería ser una ayuda tan grande para John, un verdadero descanso y consuelo; y aquí estoy, convertida ya, comparativamente, en una carga.\n\nNadie creería el esfuerzo que supone hacer lo poco que puedo: vestirme y recibir gente y disponer las cosas.\n\nEs una suerte que Mary se ocupe tan bien del bebé. ¡Un bebé tan querido!\n\nY, sin embargo, no puedo estar con él; me pone muy nerviosa.",
+      "t": "Quería ser una ayuda tan grande para John, un verdadero descanso y consuelo; y aquí estoy, convertida ya, comparativamente, en una carga.\n\nNadie creería el esfuerzo que supone hacer lo poco que puedo: vestirme y recibir gente y disponer las cosas.\n\nEs una suerte que Mary se ocupe tan bien del bebé. ¡Un bebé tan querido!\n\nY, sin embargo, _no puedo_ estar con él; me pone muy nerviosa.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "aquí estoy, convertida ya, comparativamente, en una carga.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I meant to be such a help to John, such a real rest and comfort, and here I am a comparative burden already!\n\nNobody would believe what an effort it is to do what little I am able—to dress and entertain, and order things.\n\nIt is fortunate Mary is so good with the baby. Such a dear baby!\n\nAnd yet I _cannot_ be with him, it makes me so nervous.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-415",
       "legacy_index": 415,
-      "t": "Siempre imagino que veo personas caminando por esos numerosos senderos y emparrados, pero John me ha advertido que no me entregue en absoluto a la imaginación.\n\nDice que, con mi poder imaginativo y mi costumbre de inventar historias, una debilidad nerviosa como la mía conduce con toda seguridad a toda clase de fantasías excitadas, y que debo emplear mi voluntad y mi buen juicio para contener esa tendencia.\n\nAsí que lo intento.\n\nA veces pienso que, si estuviera lo bastante bien para escribir un poco, aliviaría la presión de las ideas y me permitiría descansar.",
+      "t": "Siempre _imagino_ que veo personas caminando por esos numerosos senderos y emparrados, pero John me ha advertido que no me entregue en absoluto a la imaginación. Dice que, con mi poder imaginativo y mi costumbre de inventar historias, una debilidad nerviosa como la mía conduce _con toda seguridad_ a toda clase de fantasías excitadas, y que debo emplear mi voluntad y mi buen juicio para contener esa tendencia. Así que lo intento.\n\nA veces pienso que, si estuviera lo bastante bien para _escribir_ un poco, aliviaría la presión de las ideas y me permitiría descansar.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "mi poder imaginativo y mi costumbre de inventar historias",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I always _fancy_ I see people walking in these numerous paths and arbors, but John has cautioned me not to give way to fancy in the least. He says that with my imaginative power and habit of story-making, a nervous weakness like mine is _sure_ to lead to all manner of excited fancies, and that I ought to use my will and good sense to check the tendency. So I try.\n\nI think sometimes that if I were only well enough to _write_ a little it would relieve the press of ideas and rest me.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-416",
       "legacy_index": 416,
-      "t": "Hay un punto que se repite donde el dibujo se ladea flácidamente como un cuello roto y dos ojos bulbosos lo miran a uno cabeza abajo.\n\nMe enfurecen positivamente su impertinencia y su eternidad. Arriba y abajo y hacia los lados se arrastran, y aquellos ojos absurdos, que no parpadean, están en todas partes.\n\nHay un lugar donde dos paños no coinciden, y los ojos suben y bajan por toda la juntura, uno un poco más alto que el otro.",
+      "t": "Hay un punto que se repite donde el dibujo se ladea flácidamente como un cuello roto y dos ojos bulbosos lo miran a uno cabeza abajo.\n\nMe enfurecen positivamente su impertinencia y su eternidad. Arriba y abajo y hacia los lados se arrastran, y aquellos ojos absurdos, que no parpadean, están en todas partes. Hay un lugar donde dos paños no coinciden, y los ojos suben y bajan por toda la juntura, uno un poco más alto que el otro.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "como un cuello roto",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "There is a recurrent spot where the pattern lolls like a broken neck and two bulbous eyes stare at you upside down.\n\nI get positively angry with the impertinence of it and the everlastingness. Up and down and sideways they crawl, and those absurd, unblinking eyes are everywhere. There is one place where two breaths didn’t match, and the eyes go all up and down the line, one a little higher than the other.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-417",
       "legacy_index": 417,
-      "t": "Nunca vi antes tanta expresión en una cosa inanimada, ¡y todos sabemos cuánta expresión tienen!\n\nDe niña solía permanecer despierta y encontraba más diversión y terror en paredes desnudas y muebles corrientes que la mayoría de los niños en una tienda de juguetes.\n\nRecuerdo el guiño bondadoso que tenían los tiradores de nuestra vieja y gran cómoda, y había una silla que siempre parecía una amiga fuerte.\n\nSentía que, si alguna de las otras cosas parecía demasiado feroz, siempre podía saltar sobre aquella silla y estar a salvo.",
+      "t": "Nunca vi antes tanta expresión en una cosa inanimada, ¡y todos sabemos cuánta expresión tienen! De niña solía permanecer despierta y encontraba más diversión y terror en paredes desnudas y muebles corrientes que la mayoría de los niños en una tienda de juguetes.\n\nRecuerdo el guiño bondadoso que tenían los tiradores de nuestra vieja y gran cómoda, y había una silla que siempre parecía una amiga fuerte.\n\nSentía que, si alguna de las otras cosas parecía demasiado feroz, siempre podía saltar sobre aquella silla y estar a salvo.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "Nunca vi antes tanta expresión en una cosa inanimada",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I never saw so much expression in an inanimate thing before, and we all know how much expression they have! I used to lie awake as a child and get more entertainment and terror out of blank walls and plain furniture than most children could find in a toy-store.\n\nI remember what a kindly wink the knobs of our big, old bureau used to have, and there was one chair that always seemed like a strong friend.\n\nI used to feel that if any of the other things looked too fierce I could always hop into that chair and be safe.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-418",
       "legacy_index": 418,
-      "t": "Este papel pintado tiene una especie de subdibujo de otro tono, particularmente irritante, porque solo puede verse bajo ciertas luces, y ni siquiera entonces con claridad.\n\nPero en los lugares donde no está desteñido, y cuando el sol cae justamente de cierta manera, puedo ver una figura extraña, provocadora, sin forma, que parece enfurruñarse detrás de ese dibujo exterior, absurdo y llamativo.\n\n¡Ahí está la hermana en la escalera!",
+      "t": "Este papel pintado tiene una especie de subdibujo de otro tono, particularmente irritante, porque solo puede verse bajo ciertas luces, y ni siquiera entonces con claridad.\n\nPero en los lugares donde no está desteñido, y cuando el sol cae justamente de cierta manera, puedo ver una figura extraña, provocadora, sin forma, que parece merodear detrás de ese dibujo exterior, absurdo y llamativo.\n\n¡Ahí está la hermana en la escalera!",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "una figura extraña, provocadora, sin forma",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "This wallpaper has a kind of sub-pattern in a different shade, a particularly irritating one, for you can only see it in certain lights, and not clearly then.\n\nBut in the places where it isn’t faded and where the sun is just so—I can see a strange, provoking, formless sort of figure, that seems to skulk about behind that silly and conspicuous front design.\n\nThere’s sister on the stairs!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-419",
       "legacy_index": 419,
-      "t": "Mirado de una manera, cada paño permanece aislado: las curvas hinchadas y los adornos —una especie de «románico degenerado» con delirium tremens— suben y bajan bamboleándose en columnas aisladas de fatuidad.\n\nPero, por otra parte, se conectan diagonalmente, y los contornos desparramados se alejan en grandes ondas oblicuas de horror óptico, como un montón de algas que se revolcaran en plena persecución.",
+      "t": "Mirado de una manera, cada paño permanece aislado: las curvas hinchadas y los adornos —una especie de «románico degenerado» con _delirium tremens_— suben y bajan bamboleándose en columnas aisladas de fatuidad.\n\nPero, por otra parte, se conectan diagonalmente, y los contornos desparramados se alejan en grandes ondas oblicuas de horror óptico, como un montón de algas que se revolcaran en plena persecución.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
-      "highlight": "«románico degenerado» con delirium tremens",
+      "highlight": "«románico degenerado» con _delirium tremens_",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "Looked at in one way each breadth stands alone, the bloated curves and flourishes—a kind of “debased Romanesque” with _delirium tremens_—go waddling up and down in isolated columns of fatuity.\n\nBut, on the other hand, they connect diagonally, and the sprawling outlines run off in great slanting waves of optic horror, like a lot of wallowing sea-weeds in full chase.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-420",
       "legacy_index": 420,
-      "t": "No sé por qué escribo esto.\n\nNo quiero.\n\nNo me siento capaz.\n\nY sé que John lo consideraría absurdo. Pero tengo que decir de alguna manera lo que siento y pienso: ¡supone un alivio tan grande!\n\nPero el esfuerzo está empezando a ser mayor que el alivio.",
+      "t": "No sé por qué escribo esto.\n\nNo quiero.\n\nNo me siento capaz.\n\nY sé que John lo consideraría absurdo. Pero _tengo_ que decir de alguna manera lo que siento y pienso: ¡supone un alivio tan grande!\n\nPero el esfuerzo está empezando a ser mayor que el alivio.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "el esfuerzo está empezando a ser mayor que el alivio.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I don’t know why I should write this.\n\nI don’t want to.\n\nI don’t feel able.\n\nAnd I know John would think it absurd. But I _must_ say what I feel and think in some way—it is such a relief!\n\nBut the effort is getting to be greater than the relief.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-421",
@@ -7051,7 +7136,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "There are things in that paper that nobody knows but me, or ever will.\n\nBehind that outside pattern the dim shapes get clearer every day.\n\nIt is always the same shape, only very numerous.\n\nAnd it is like a woman stooping down and creeping about behind that pattern. I don’t like it a bit. I wonder—I begin to think—I wish John would take me away from here!\n\nIt is so hard to talk with John about my case, because he is so wise, and because he loves me so.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-422",
@@ -7063,19 +7153,29 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "It was moonlight. The moon shines in all around just as the sun does.\n\nI hate to see it sometimes, it creeps so slowly, and always comes in by one window or another.\n\nJohn was asleep and I hated to waken him, so I kept still and watched the moonlight on that undulating wallpaper till I felt creepy.\n\nThe faint figure behind seemed to shake the pattern, just as if she wanted to get out.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-423",
       "legacy_index": 423,
-      "t": "En un dibujo como este, a la luz del día, hay una falta de secuencia, un desafío a la ley, que constituye una irritación constante para una mente normal.\n\nEl color es bastante horrible, bastante inconstante y bastante exasperante, pero el dibujo es una tortura.\n\nUno cree haberlo dominado, pero, justo cuando avanza bien siguiéndolo, da una voltereta hacia atrás y ahí queda una. Le da una bofetada, la derriba y la pisotea.\n\nEs como un mal sueño.",
+      "t": "En un dibujo como este, a la luz del día, hay una falta de secuencia, un desafío a la ley, que constituye una irritación constante para una mente normal.\n\nEl color es bastante horrible, bastante inconstante y bastante exasperante, pero el dibujo es una tortura.\n\nUno cree haberlo dominado, pero, justo cuando avanza bien siguiéndolo, da una voltereta hacia atrás y ahí queda una. Le da una bofetada, la derriba y la pisotea. Es como un mal sueño.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "el dibujo es una tortura.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "On a pattern like this, by daylight, there is a lack of sequence, a defiance of law, that is a constant irritant to a normal mind.\n\nThe color is hideous enough, and unreliable enough, and infuriating enough, but the pattern is torturing.\n\nYou think you have mastered it, but just as you get well underway in following, it turns a back-somersault and there you are. It slaps you in the face, knocks you down, and tramples upon you. It is like a bad dream.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-424",
@@ -7087,7 +7187,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "By moonlight—the moon shines in all night when there is a moon—I wouldn’t know it was the same paper.\n\nAt night in any kind of light, in twilight, candlelight, lamplight, and worst of all by moonlight, it becomes bars! The outside pattern I mean, and the woman behind it is as plain as can be.\n\nI didn’t realize for a long time what the thing was that showed behind, that dim sub-pattern, but now I am quite sure it is a woman.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-425",
@@ -7099,55 +7204,80 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "By daylight she is subdued, quiet. I fancy it is the pattern that keeps her so still. It is so puzzling. It keeps me quiet by the hour.\n\nI lie down ever so much now. John says it is good for me, and to sleep all I can.\n\nIndeed, he started the habit by making me lie down for an hour after each meal.\n\nIt is a very bad habit I am convinced, for you see I don’t sleep.\n\nAnd that cultivates deceit, for I don’t tell them I’m awake—O no!\n\nThe fact is, I am getting a little afraid of John.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-426",
       "legacy_index": 426,
-      "t": "¿No sonaba aquello inocente? Pero sé que estaba estudiando el dibujo, y estoy decidida a que nadie lo descubra salvo yo.\n\nLa vida es mucho más emocionante ahora que antes. Verán, tengo algo más que esperar, algo que aguardar, algo que vigilar. Realmente como mejor y estoy más tranquila que antes.\n\n¡John está encantado de verme mejorar! Se rio un poco el otro día y dijo que parecía estar prosperando a pesar de mi papel pintado.\n\nLo desvié con una risa. No tenía intención de decirle que era gracias al papel pintado.",
+      "t": "¿No sonaba aquello inocente? Pero sé que estaba estudiando el dibujo, y estoy decidida a que nadie lo descubra salvo yo.\n\nLa vida es mucho más emocionante ahora que antes. Verán, tengo algo más que esperar, algo que aguardar, algo que vigilar. Realmente como mejor y estoy más tranquila que antes.\n\n¡John está encantado de verme mejorar! Se rio un poco el otro día y dijo que parecía estar prosperando a pesar de mi papel pintado.\n\nLo desvié con una risa. No tenía intención de decirle que era _por_ el papel pintado.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "La vida es mucho más emocionante ahora que antes.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "Did not that sound innocent? But I know she was studying that pattern, and I am determined that nobody shall find it out but myself!\n\nLife is very much more exciting now than it used to be. You see I have something more to expect, to look forward to, to watch. I really do eat better, and am more quiet than I was.\n\nJohn is so pleased to see me improve! He laughed a little the other day, and said I seemed to be flourishing in spite of my wall-paper.\n\nI turned it off with a laugh. I had no intention of telling him it was _because_ of the wall-paper.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-427",
       "legacy_index": 427,
-      "t": "¡Es el amarillo más extraño, ese papel! Me hace pensar en todas las cosas amarillas que he visto en mi vida: no en las hermosas, como los ranúnculos, sino en cosas amarillas viejas, inmundas, malas.\n\nPero hay algo más en ese papel: ¡el olor!\n\nSe arrastra por toda la casa.\n\nLo encuentro flotando en el comedor, acechando en el salón, escondido en el vestíbulo, aguardándome en las escaleras.\n\nSe mete en mi pelo.\n\nLa única cosa a la que puedo comparar ese olor es al color del papel.\n\nUn olor amarillo.",
+      "t": "¡Es el amarillo más extraño, ese papel! Me hace pensar en todas las cosas amarillas que he visto en mi vida: no en las hermosas, como los ranúnculos, sino en cosas amarillas viejas, inmundas, malas.\n\nPero hay algo más en ese papel: ¡el olor!\n\n[…]\n\nSe arrastra por toda la casa.\n\nLo encuentro flotando en el comedor, acechando en el salón, escondido en el vestíbulo, aguardándome en las escaleras.\n\nSe mete en mi pelo.\n\n[…]\n\nLa única cosa a la que puedo comparar ese olor es al _color_ del papel. Un olor amarillo.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "Un olor amarillo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "It is the strangest yellow, that wall-paper! It makes me think of all the yellow things I ever saw—not beautiful ones like buttercups, but old foul, bad yellow things.\n\nBut there is something else about that paper—the smell!\n\n[…]\n\nIt creeps all over the house.\n\nI find it hovering in the dining-room, skulking in the parlor, hiding in the hall, lying in wait for me on the stairs.\n\nIt gets into my hair.\n\n[…]\n\nThe only thing I can think of that it is like is the _color_ of the paper! A yellow smell.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-428",
       "legacy_index": 428,
-      "t": "Hay una marca muy curiosa en esta pared, abajo, cerca del zócalo. Una franja que da la vuelta a la habitación. Pasa por detrás de todos los muebles salvo la cama: un manchón largo, recto y uniforme, como si lo hubieran frotado una y otra vez.\n\nMe pregunto cómo se hizo y quién lo hizo y para qué lo hizo.\n\nVuelta y vuelta y vuelta; vuelta y vuelta y vuelta: ¡me marea!",
+      "t": "Hay una marca muy curiosa en esta pared, abajo, cerca del zócalo. Una franja que da la vuelta a la habitación. Pasa por detrás de todos los muebles salvo la cama: un _manchón_ largo, recto y uniforme, como si lo hubieran frotado una y otra vez.\n\nMe pregunto cómo se hizo y quién lo hizo y para qué lo hizo. Vuelta y vuelta y vuelta; vuelta y vuelta y vuelta: ¡me marea!",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "Vuelta y vuelta y vuelta",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "There is a very funny mark on this wall, low down, near the mopboard. A streak that runs round the room. It goes behind every piece of furniture, except the bed, a long, straight, even _smooch_, as if it had been rubbed over and over.\n\nI wonder how it was done and who did it, and what they did it for. Round and round and round—round and round and round—it makes me dizzy!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-429",
       "legacy_index": 429,
-      "t": "Por fin he descubierto algo.\n\nDe tanto vigilar por la noche, cuando cambia de aquella manera, finalmente lo he averiguado.\n\nEl dibujo exterior se mueve; ¡y no es extraño! La mujer de detrás lo sacude.\n\nA veces creo que hay muchísimas mujeres detrás, y a veces solo una, y se arrastra deprisa, y su manera de arrastrarse sacude todo el dibujo.\n\nEn los lugares muy iluminados permanece quieta, y en los muy sombríos agarra los barrotes y los sacude con fuerza.",
+      "t": "Por fin he descubierto algo.\n\nDe tanto vigilar por la noche, cuando cambia de aquella manera, finalmente lo he averiguado.\n\nEl dibujo exterior _sí_ se mueve; ¡y no es extraño! La mujer de detrás lo sacude.\n\nA veces creo que hay muchísimas mujeres detrás, y a veces solo una, y se arrastra deprisa, y su manera de arrastrarse sacude todo el dibujo.\n\nEn los lugares muy iluminados permanece quieta, y en los muy sombríos agarra los barrotes y los sacude con fuerza.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "La mujer de detrás lo sacude.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I really have discovered something at last.\n\nThrough watching so much at night, when it changes so, I have finally found out.\n\nThe front pattern _does_ move—and no wonder! The woman behind shakes it!\n\nSometimes I think there are a great many women behind, and sometimes only one, and she crawls around fast, and her crawling shakes it all over.\n\nThen in the very bright spots she keeps still, and in the very shady spots she just takes hold of the bars and shakes them hard.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-430",
@@ -7159,31 +7289,46 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "And she is all the time trying to climb through. But nobody could climb through that pattern—it strangles so; I think that is why it has so many heads.\n\nThey get through, and then the pattern strangles them off and turns them upside down, and makes their eyes white!\n\nIf those heads were covered or taken off it would not be half so bad.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-431",
       "legacy_index": 431,
-      "t": "¡Creo que esa mujer sale durante el día!\n\nY les diré por qué —en privado—: ¡la he visto!\n\n¡Puedo verla desde cada una de mis ventanas!\n\nEs la misma mujer, lo sé, porque siempre se arrastra, y la mayoría de las mujeres no se arrastran a plena luz del día.\n\nLa veo en aquel largo sendero sombreado, arrastrándose arriba y abajo. La veo en los oscuros emparrados, arrastrándose por todo el jardín.\n\nNo la culpo en absoluto. ¡Debe de ser muy humillante que la sorprendan arrastrándose a plena luz del día!",
+      "t": "¡Creo que esa mujer sale durante el día!\n\nY les diré por qué —en privado—: ¡la he visto!\n\n¡Puedo verla desde cada una de mis ventanas!\n\nEs la misma mujer, lo sé, porque siempre se arrastra, y la mayoría de las mujeres no se arrastran a plena luz del día.\n\nLa veo en aquel largo sendero sombreado, arrastrándose arriba y abajo. La veo en los oscuros emparrados, arrastrándose por todo el jardín.\n\n[…]\n\nNo la culpo en absoluto. ¡Debe de ser muy humillante que la sorprendan arrastrándose a plena luz del día!",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "la mayoría de las mujeres no se arrastran a plena luz del día.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I think that woman gets out in the daytime!\n\nAnd I’ll tell you why—privately—I’ve seen her!\n\nI can see her out of every one of my windows!\n\nIt is the same woman, I know, for she is always creeping, and most women do not creep by daylight.\n\nI see her on that long shaded lane, creeping up and down. I see her in those dark grape arbors, creeping all around the garden.\n\n[…]\n\nI don’t blame her a bit. It must be very humiliating to be caught creeping by daylight!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-432",
       "legacy_index": 432,
-      "t": "Siempre cierro la puerta con llave cuando me arrastro durante el día. No puedo hacerlo por la noche, porque sé que John sospecharía algo inmediatamente.\n\nY John está ahora tan extraño que no quiero irritarlo. ¡Ojalá ocupara otra habitación! Además, no quiero que nadie saque a esa mujer por la noche salvo yo.\n\nA menudo me pregunto si podría verla desde todas las ventanas a la vez.\n\nPero, por muy deprisa que gire, solo puedo mirar por una cada vez.\n\nY, aunque siempre la veo, ¡quizá pueda arrastrarse más deprisa de lo que yo puedo girar!",
+      "t": "Siempre cierro la puerta con llave cuando me arrastro durante el día. No puedo hacerlo por la noche, porque sé que John sospecharía algo inmediatamente.\n\nY John está ahora tan extraño que no quiero irritarlo. ¡Ojalá ocupara otra habitación! Además, no quiero que nadie saque a esa mujer por la noche salvo yo.\n\nA menudo me pregunto si podría verla desde todas las ventanas a la vez.\n\nPero, por muy deprisa que gire, solo puedo mirar por una cada vez.\n\nY, aunque siempre la veo, ¡_quizá_ pueda arrastrarse más deprisa de lo que yo puedo girar!",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "Siempre cierro la puerta con llave cuando me arrastro durante el día.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I always lock the door when I creep by daylight. I can’t do it at night, for I know John would suspect something at once.\n\nAnd John is so queer now, that I don’t want to irritate him. I wish he would take another room! Besides, I don’t want anybody to get that woman out at night but myself.\n\nI often wonder if I could see her out of all the windows at once.\n\nBut, turn as fast as I can, I can only see out of one at one time.\n\nAnd though I always see her, she _may_ be able to creep faster than I can turn!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-433",
@@ -7195,7 +7340,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "If only that top pattern could be gotten off from the under one! I mean to try it, little by little.\n\nI have found out another funny thing, but I shan’t tell it this time! It does not do to trust people too much.\n\nThere are only two more days to get this paper off, and I believe John is beginning to notice. I don’t like the look in his eyes.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-434",
@@ -7207,31 +7357,46 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "Hurrah! This is the last day, but it is enough. John to stay in town over night, and won’t be out until this evening.\n\nJennie wanted to sleep with me—the sly thing! but I told her I should undoubtedly rest better for a night all alone.\n\nThat was clever, for really I wasn’t alone a bit! As soon as it was moonlight and that poor thing began to crawl and shake the pattern, I got up and ran to help her.\n\nI pulled and she shook, I shook and she pulled, and before morning we had peeled off yards of that paper.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-435",
       "legacy_index": 435,
-      "t": "Jennie miró la pared con asombro, pero le dije alegremente que lo había hecho por puro despecho contra aquella cosa malvada.\n\nSe rio y dijo que a ella tampoco le importaría hacerlo, pero que yo no debía cansarme.\n\n¡Cómo se traicionó entonces!\n\nPero yo estoy aquí, y nadie toca este papel salvo yo: ¡nadie vivo!\n\nIntentó sacarme de la habitación; ¡era demasiado evidente! Pero le dije que ahora estaba tan tranquila, vacía y limpia que creía que volvería a acostarme y dormiría cuanto pudiera.",
+      "t": "Jennie miró la pared con asombro, pero le dije alegremente que lo había hecho por puro despecho contra aquella cosa malvada.\n\nSe rio y dijo que a ella tampoco le importaría hacerlo, pero que yo no debía cansarme.\n\n¡Cómo se traicionó entonces!\n\nPero yo estoy aquí, y nadie toca este papel salvo yo: ¡nadie _vivo_!\n\nIntentó sacarme de la habitación; ¡era demasiado evidente! Pero le dije que ahora estaba tan tranquila, vacía y limpia que creía que volvería a acostarme y dormiría cuanto pudiera.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
-      "highlight": "nadie toca este papel salvo yo: ¡nadie vivo!",
+      "highlight": "nadie toca este papel salvo yo: ¡nadie _vivo_!",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "Jennie looked at the wall in amazement, but I told her merrily that I did it out of pure spite at the vicious thing.\n\nShe laughed and said she wouldn’t mind doing it herself, but I must not get tired.\n\nHow she betrayed herself that time!\n\nBut I am here, and no person touches this paper but me,—not _alive_!\n\nShe tried to get me out of the room—it was too patent! But I said it was so quiet and empty and clean now that I believed I would lie down again and sleep all I could; and not to wake me even for dinner—I would call when I woke.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-436",
       "legacy_index": 436,
-      "t": "Ni siquiera me gusta mirar por las ventanas: hay tantas de esas mujeres que se arrastran, y se arrastran tan deprisa.\n\nMe pregunto si salieron todas de ese papel pintado, como yo.\n\nPero ahora estoy firmemente atada con mi cuerda bien escondida: ¡no conseguirán sacarme ahí fuera, al camino!\n\nSupongo que tendré que volver detrás del dibujo cuando llegue la noche, ¡y eso es difícil!\n\nEs tan agradable estar fuera, en esta gran habitación, y arrastrarme cuanto me plazca.",
+      "t": "Ni siquiera me gusta _mirar_ por las ventanas: hay tantas de esas mujeres que se arrastran, y se arrastran tan deprisa.\n\nMe pregunto si salieron todas de ese papel pintado, como yo.\n\nPero ahora estoy firmemente atada con mi cuerda bien escondida: ¡no conseguirán sacarme ahí fuera, al camino!\n\nSupongo que tendré que volver detrás del dibujo cuando llegue la noche, ¡y eso es difícil!\n\nEs tan agradable estar fuera, en esta gran habitación, y arrastrarme cuanto me plazca.",
       "a": "Charlotte Perkins Gilman",
       "obra": "El papel pintado de amarillo, Charlotte Perkins Gilman",
       "highlight": "Me pregunto si salieron todas de ese papel pintado, como yo.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I don’t like to _look_ out of the windows even—there are so many of those creeping women, and they creep so fast.\n\nI wonder if they all come out of that wall-paper as I did?\n\nBut I am securely fastened now by my well-hidden rope—you don’t get me out in the road there!\n\nI suppose I shall have to get back behind the pattern when it comes night, and that is hard!\n\nIt is so pleasant to be out in this great room and creep around as I please!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-437",
@@ -7243,7 +7408,12 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-charlotte-perkins-gilman",
-      "workId": "work-el-papel-pintado-de-amarillo"
+      "workId": "work-el-papel-pintado-de-amarillo",
+      "original": {
+        "text": "I kept on creeping just the same, but I looked at him over my shoulder.\n\n“I’ve got out at last,” said I, “in spite of you and Jane? And I’ve pulled off most of the paper, so you can’t put me back!”\n\nNow why should that man have fainted? But he did, and right across my path by the wall, so that I had to creep over him every time!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-438",

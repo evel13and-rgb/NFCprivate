@@ -186,6 +186,13 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-393', 'quote-394', 'quote-395', 'quote-396', 'quote-397',
     'quote-398', 'quote-399', 'quote-400', 'quote-401', 'quote-402',
     'quote-403',
+    'quote-404', 'quote-405', 'quote-406', 'quote-407', 'quote-408',
+    'quote-409', 'quote-410', 'quote-411', 'quote-412', 'quote-413',
+    'quote-414', 'quote-415', 'quote-416', 'quote-417', 'quote-418',
+    'quote-419', 'quote-420', 'quote-421', 'quote-422', 'quote-423',
+    'quote-424', 'quote-425', 'quote-426', 'quote-427', 'quote-428',
+    'quote-429', 'quote-430', 'quote-431', 'quote-432', 'quote-433',
+    'quote-434', 'quote-435', 'quote-436', 'quote-437',
     'quote-494', 'quote-495', 'quote-496', 'quote-497', 'quote-498',
     'quote-499', 'quote-500', 'quote-501', 'quote-502', 'quote-503',
     'quote-504', 'quote-505', 'quote-506', 'quote-507', 'quote-508',
@@ -969,6 +976,60 @@ test('La bestia en la jungla conserva la primera edición, los recortes y la amb
       quote.t.match(/\[…\]/g)?.length || 0,
       quote.original.text.match(/\[…\]/g)?.length || 0,
       `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('El papel pintado de amarillo conserva la primera publicación, sus cursivas y sus recortes', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const wallpaperQuotes = document.quotes.filter(
+    quote => quote.workId === 'work-el-papel-pintado-de-amarillo',
+  );
+  const expectedParagraphs = new Map([
+    [404, 5], [405, 3], [406, 4], [407, 4], [408, 5], [409, 2], [410, 2],
+    [411, 2], [412, 4], [413, 4], [414, 4], [415, 2], [416, 2], [417, 3],
+    [418, 3], [419, 2], [420, 5], [421, 5], [422, 4], [423, 3], [424, 3],
+    [425, 6], [426, 4], [427, 8], [428, 2], [429, 5], [430, 3], [431, 7],
+    [432, 5], [433, 3], [434, 4], [435, 5], [436, 5], [437, 3],
+  ]);
+
+  assert.equal(wallpaperQuotes.length, 34);
+  assert.ok(wallpaperQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(wallpaperQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-404').original.text, /^It is very seldom/);
+  assert.match(quotes.get('quote-404').t, /^Es muy raro/);
+  assert.match(quotes.get('quote-416').original.text, /two breaths didn’t match/);
+  assert.match(quotes.get('quote-418').original.text, /seems to skulk about behind/);
+  assert.match(quotes.get('quote-418').t, /parece merodear detrás/);
+  assert.match(quotes.get('quote-410').t, /contradicciones inauditas/);
+  assert.equal(quotes.get('quote-427').original.text.match(/\[…\]/g)?.length, 2);
+  assert.equal(quotes.get('quote-427').t.match(/\[…\]/g)?.length, 2);
+  assert.match(quotes.get('quote-428').original.text, /every piece of furniture/);
+  assert.match(quotes.get('quote-429').original.text, /pattern _does_ move/);
+  assert.match(quotes.get('quote-429').t, /dibujo exterior _sí_ se mueve/);
+  assert.match(quotes.get('quote-434').original.text, /John to stay in town over night/);
+  assert.match(quotes.get('quote-437').original.text, /in spite of you and Jane\?/);
+  assert.match(quotes.get('quote-437').original.text, /creep over him every time!$/);
+  assert.match(quotes.get('quote-437').t, /arrastrarme por encima de él cada vez\.$/);
+  assert.equal(
+    wallpaperQuotes.reduce((count, quote) => count + (quote.original.text.match(/\[…\]/g)?.length || 0), 0),
+    4,
+  );
+  for (const quote of wallpaperQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    const expected = expectedParagraphs.get(quote.legacy_index);
+    assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos españoles`);
+    assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+    assert.equal(
+      quote.t.match(/_[^_]+_/g)?.length || 0,
+      quote.original.text.match(/_[^_]+_/g)?.length || 0,
+      `${quote.id} debe conservar los énfasis tipográficos`,
     );
   }
 });
