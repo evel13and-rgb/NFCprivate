@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-24T09:48:31.580Z",
+  "generated_at": "2026-08-24T10:25:02.067Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -4732,7 +4732,7 @@
     {
       "id": "quote-280",
       "legacy_index": 280,
-      "t": "Al enterarse de la muerte de Iván Ilich, el primer pensamiento de cada uno fue qué consecuencias tendría aquella muerte para los traslados o ascensos propios y de sus conocidos.\n\n«Mira, él ha muerto; yo, en cambio, sigo aquí», pensó o sintió cada uno.",
+      "t": "Al enterarse de la muerte de Iván Ilich, el primer pensamiento de cada uno de los señores reunidos en el despacho fue qué consecuencias tendría aquella muerte para los traslados o ascensos de ellos mismos o de sus conocidos.\n\n[…]\n\n«Mira, él ha muerto; yo, en cambio, sigo aquí», pensó o sintió cada uno.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "yo, en cambio, sigo aquí",
@@ -4741,7 +4741,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Так что, услыхав о смерти Ивана Ильича, первая мысль каждого из господ, собравшихся в кабинете, была и о том, какое значение может иметь эта смерть на перемещения или повышения самих членов или их знакомых.\n\n[…]\n\n“Каково, умер; а я вот нет”, – подумал или почувствовал каждый.",
+        "text": "Так что, услыхав о смерти Ивана Ильича, первая мысль каждого из господ, собравшихся в кабинете, была о том, какое значение может иметь эта смерть на перемещения или повышения самих членов или их знакомых.\n\n[…]\n\n«Каково, умер; а я вот нет», подумал или почувствовал каждый.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4749,7 +4749,7 @@
     {
       "id": "quote-281",
       "legacy_index": 281,
-      "t": "La historia pasada de la vida de Iván Ilich había sido la más sencilla, la más corriente y la más terrible.\n\nMurió a los cuarenta y cinco años, siendo miembro de la Audiencia. Había sido un hombre inteligente, vivo, agradable y decoroso.",
+      "t": "La historia pasada de la vida de Iván Ilich había sido la más sencilla, la más corriente y la más terrible.\n\n[…]\n\nMurió a los cuarenta y cinco años, siendo miembro de la Audiencia.\n\n[…]\n\nEra el término medio entre ellos: un hombre inteligente, vivo, agradable y decoroso.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "la más sencilla, la más corriente y la más terrible",
@@ -4758,7 +4758,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Прошедшая история жизни Ивана Ильича была самая простая и обыкновенная и самая ужасная.\n\n[…]\n\nИван Ильич умер сорока пяти лет, членом Судебной палаты.\n\n[…]\n\nОн был середина между ними – умный, живой, приятный и приличный человек.",
+        "text": "Прошедшая история жизни Ивана Ильича была самая простая и обыкновенная и самая ужасная.\n\n[…]\n\nИван Ильич умер 45-ти лет, членом Судебной палаты.\n\n[…]\n\nОн был середина между ними — умный, живой, приятный и приличный человек.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4766,7 +4766,7 @@
     {
       "id": "quote-282",
       "legacy_index": 282,
-      "t": "La conciencia de su poder, de la posibilidad de arruinar a cualquier persona a la que quisiera arruinar, la importancia de su entrada en el tribunal, el éxito ante superiores e inferiores y, sobre todo, la maestría con que llevaba los asuntos: todo aquello lo alegraba.\n\nJunto con las conversaciones, las comidas y las partidas de cartas, llenaba su vida. Y así continuaba discurriendo como él consideraba que debía discurrir: agradable y decorosamente.",
+      "t": "La conciencia de su poder, de la posibilidad de arruinar a cualquier persona a la que quisiera arruinar, la importancia, incluso exterior, de su entrada en el tribunal y de sus encuentros con los subordinados, su éxito ante superiores y subordinados y, sobre todo, la maestría que sentía tener al llevar los asuntos: todo aquello lo alegraba y, junto con las conversaciones con sus colegas, las comidas y el whist, llenaba su vida. Así, en general, la vida de Iván Ilich continuaba discurriendo como él consideraba que debía discurrir: agradable y decorosamente.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "agradable y decorosamente",
@@ -4775,7 +4775,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Сознание своей власти, возможности погубить всякого человека, которого он захочет погубить, важность, даже внешняя, при его входе в суд и встречах с подчиненными, успех свой перед высшими и подчиненными и, главное, мастерство свое ведения дел, которое он чувствовал, – все это радовало его и вместе с беседами с товарищами, обедами и вистом наполняло его жизнь. Так что вообще жизнь Ивана Ильича продолжала идти так, как он считал, что она должна была идти: приятно и прилично.",
+        "text": "Сознание своей власти, возможности погубить всякого человека, которого он захочет погубить, важность, даже внешняя, при его входе в суд и встречах с подчиненными, успех свой перед высшими и подчиненными и, главное, мастерство свое ведения дел, которое он чувствовал, — всё это радовало его и вместе с беседами с товарищами, обедами и вистом наполняло его жизнь. Так что вообще жизнь Ивана Ильича продолжала итти так, как он считал, что она должна была итти: приятно и прилично.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4783,16 +4783,16 @@
     {
       "id": "quote-283",
       "legacy_index": 283,
-      "t": "Así como él fingía solemnidad ante los acusados, el célebre médico fingía ahora solemnidad ante él.\n\nPara Iván Ilich solo había una pregunta importante: ¿era peligrosa su situación? Pero el médico ignoraba aquella pregunta inoportuna. Desde su punto de vista, no se trataba de la vida de Iván Ilich, sino de decidir entre un riñón flotante y una afección del intestino ciego.",
+      "t": "Así como él fingía solemnidad ante los acusados, el célebre médico fingía ahora solemnidad ante él.\n\n[…]\n\nPara Iván Ilich solo había una pregunta importante: ¿era peligrosa o no su situación? Pero el médico ignoraba aquella pregunta inoportuna. Desde el punto de vista del médico, la pregunta era ociosa y no estaba sujeta a discusión; solo cabía sopesar las probabilidades de un riñón flotante, un catarro crónico o una enfermedad del intestino ciego. No se trataba de la vida de Iván Ilich, sino de una disputa entre el riñón flotante y el intestino ciego.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
-      "highlight": "no se trataba de la vida de Iván Ilich",
+      "highlight": "No se trataba de la vida de Iván Ilich",
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Как он в суде делал вид над подсудимыми, так точно над ним знаменитый доктор делал тоже вид.\n\n[…]\n\nДля Ивана Ильича был важен только один вопрос: опасно ли его положение или нет? Но доктор игнорировал этот неуместный вопрос. С точки зрения доктора, вопрос этот был праздный и не подлежал обсуждению; существовало только взвешиванье вероятностей – блуждающей почки, хронического катара и болезней слепой кишки. Не было вопроса о жизни Ивана Ильича, а был спор между блуждающей почкой и слепой кишкой.",
+        "text": "Как он в суде делал вид над подсудимыми, так точно над ним знаменитый доктор делал тоже вид.\n\n[…]\n\nДля Ивана Ильича был важен только один вопрос: опасно ли его положение, или нет? Но доктор игнорировал этот неуместный вопрос. С точки зрения доктора вопрос этот был праздный и не подлежал обсуждению; существовало только взвешиванье вероятностей — блуждающей почки, хронического катара и болезни слепой кишки. Не было вопроса о жизни Ивана Ильича, а был спор между блуждающей почкой и слепой кишкой.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4800,7 +4800,7 @@
     {
       "id": "quote-284",
       "legacy_index": 284,
-      "t": "«¿El intestino ciego? ¿El riñón? No se trata del intestino ni del riñón, sino de la vida y de la muerte. Sí, la vida estaba aquí y ahora se va, se va, y yo no puedo retenerla.\n\n¿Acaso no es evidente para todos, salvo para mí, que estoy muriendo y que la única cuestión es cuántas semanas o días faltan, quizá solo este instante?»",
+      "t": "«¡El intestino ciego! ¡El riñón! —se dijo—. No se trata del intestino ciego ni del riñón, sino de la vida y… de la muerte. Sí, la vida estaba aquí y ahora se va, se va, y no puedo retenerla. Sí. ¿Para qué engañarme? ¿Acaso no es evidente para todos, salvo para mí, que estoy muriendo y que la única cuestión es el número de semanas, de días… quizá ahora mismo.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "la vida estaba aquí y ahora se va",
@@ -4809,7 +4809,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "“Слепая кишка? Почка, – сказал он себе. – Не в слепой кишке, не в почке дело, а в жизни и… смерти. Да, жизнь была и вот уходит, уходит, и я не могу удержать ее. Да. Зачем обманывать себя? Разве не очевидно всем, кроме меня, что я умираю, и вопрос только в числе недель, дней – сейчас, может быть.",
+        "text": "«Слепая кишка! Почка», — сказал он себе. — «Не в слепой кишке, не в почке дело, а в жизни и... смерти. Да, жизнь была и вот уходит, уходит, и я не могу удержать ее. Да. Зачем обманывать себя? Разве не очевидно всем, кроме меня, что я умираю, и вопрос только в числе недель, дней — сейчас, может быть.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4817,16 +4817,16 @@
     {
       "id": "quote-285",
       "legacy_index": 285,
-      "t": "En el fondo de su alma, Iván Ilich sabía que estaba muriendo; pero no solo no se había acostumbrado a ello, sino que no lo comprendía, no podía comprenderlo de ningún modo.\n\nEl ejemplo de silogismo que había estudiado en lógica —Cayo es un hombre, los hombres son mortales, por tanto Cayo es mortal— le había parecido correcto durante toda su vida únicamente con relación a Cayo, pero nunca con relación a él mismo.\n\n[…]\n\nCayo era mortal y estaba bien que muriera; pero él, Vania, Iván Ilich, con todos sus sentimientos y pensamientos, era otra cosa. No podía ser que él tuviera que morir. Sería demasiado terrible.",
+      "t": "En el fondo de su alma, Iván Ilich sabía que estaba muriendo; pero no solo no se había acostumbrado a ello, sino que sencillamente no lo comprendía, no podía comprenderlo de ningún modo.\n\nEl ejemplo de silogismo que había estudiado en la lógica de Kiesewetter —Cayo es un hombre, los hombres son mortales, por tanto Cayo es mortal— le había parecido correcto durante toda su vida únicamente con relación a Cayo, pero nunca con relación a él mismo.\n\n[…]\n\nY Cayo sí es mortal, y está bien que muera; pero para mí, Vania, Iván Ilich, con todos mis sentimientos y pensamientos, esto es otra cosa. No puede ser que yo deba morir. Sería demasiado terrible.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
-      "highlight": "él, Vania, Iván Ilich, con todos sus sentimientos y pensamientos, era otra cosa",
+      "highlight": "para mí, Vania, Iván Ilich, con todos mis sentimientos y pensamientos, esto es otra cosa",
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "В глубине души Иван Ильич знал, что он умирает, но он не только не привык к этому, но просто не понимал, никак не мог понять этого.\n\n[…]\n\nТот пример силлогизма, которому он учился в логике Кизеветера : Кай – человек, люди смертны, потому Кай смертен, казался ему во всю его жизнь правильным только по отношению к Каю, но никак не к нему.\n\n[…]\n\nИ Кай точно смертен, и ему правильно умирать, но мне, Ване, Ивану Ильичу, со всеми моими чувствами, мыслями, – мне это другое дело. И не может быть, чтобы мне следовало умирать. Это было бы слишком ужасно.",
+        "text": "В глубине души Иван Ильич знал, что он умирает, но он не только не привык к этому, но просто не понимал, никак не мог понять этого.\n\nТот пример силлогизма, которому он учился в логике Кизеветера: Кай — человек, люди смертны, потому Кай смертен, казался ему во всю его жизнь правильным только по отношению к Каю, но никак не к нему.\n\n[…]\n\nИ Кай точно смертен, и ему правильно умирать, но мне, Ване, Ивану Ильичу, со всеми моими чувствами, мыслями, — мне это другое дело. И не может быть, чтобы мне следовало умирать. Это было бы слишком ужасно.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4834,7 +4834,7 @@
     {
       "id": "quote-286",
       "legacy_index": 286,
-      "t": "Al tercer mes de la enfermedad, su mujer, su hija, su hijo, los criados, los conocidos, los médicos y, sobre todo, él mismo sabían que todo el interés que despertaba en los demás se reducía a una sola cuestión:\n\ncuándo dejaría por fin vacante su puesto, libraría a los vivos de la molestia que su presencia les causaba y se libraría él mismo de sus sufrimientos.",
+      "t": "No podía decirse cómo había sucedido aquello en el tercer mes de la enfermedad de Iván Ilich, porque había ocurrido paso a paso, imperceptiblemente; pero el hecho era que su mujer, su hija, su hijo, los criados, los conocidos, los médicos y, sobre todo, él mismo sabían que todo el interés que despertaba en los demás se reducía únicamente a saber cuándo dejaría por fin vacante su puesto, libraría a los vivos de la molestia que su presencia les causaba y se libraría él mismo de sus sufrimientos.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "cuándo dejaría por fin vacante su puesto",
@@ -4843,7 +4843,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Как это сделалось на третьем месяце болезни Ивана Ильича, нельзя было сказать, потому что это делалось шаг за шагом, незаметно, но сделалось то, что и жена, и дочь, и сын его, и прислуга, и знакомые, и доктора, и, главное, он сам – знали, что весь интерес в нем для других состоит только в том, скоро ли, наконец, он опростает место, освободит живых от стеснения, производимого его присутствием, и сам освободится от своих страданий.",
+        "text": "Как это сделалось на 3-м месяце болезни Ивана Ильича, нельзя было сказать, потому что это делалось шаг за шагом, незаметно, но сделалось то, что и жена, и дочь, и сын его, и прислуга, и знакомые, и доктора, и, главное, он сам — знали, что весь интерес в нем для других состоит только в том, скоро ли, наконец, он опростает место, освободит живых от стеснения, производимого его присутствием, и сам освободится от своих страданий.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4851,7 +4851,7 @@
     {
       "id": "quote-287",
       "legacy_index": 287,
-      "t": "Solo Guerásim no mentía. Era evidente que comprendía lo que sucedía y que no consideraba necesario ocultarlo; simplemente sentía compasión por su señor debilitado y consumido.\n\nUna vez, cuando Iván Ilich quiso despedirlo, le dijo:\n\n—Todos moriremos. ¿Por qué no habría de ayudarte?",
+      "t": "Solo Guerásim no mentía. Era evidente que era el único que comprendía lo que sucedía y que no consideraba necesario ocultarlo; simplemente sentía compasión por su señor debilitado y consumido. Incluso una vez se lo dijo directamente, cuando Iván Ilich quiso despedirlo:\n\n—Todos moriremos. ¿Por qué no habría de ayudarte?",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "Todos moriremos. ¿Por qué no habría de ayudarte?",
@@ -4860,7 +4860,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Один Герасим не лгал, по всему видно было, что он один понимал, в чем дело, и не считал нужным скрывать этого, и просто жалел исчахшего, слабого барина. Он даже раз прямо сказал, когда Иван Ильич отсылал его: – Все умирать будем. Отчего же не потрудиться?",
+        "text": "Один Герасим не лгал, по всему видно было, что он один понимал, в чем дело, и не считал нужным скрывать этого, и просто жалел исчахшего слабого барина. Он даже раз прямо сказал, когда Иван Ильич отсылал его:\n\n— Все умирать будем. Отчего же не потрудиться?",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4868,7 +4868,7 @@
     {
       "id": "quote-288",
       "legacy_index": 288,
-      "t": "El principal tormento de Iván Ilich era la mentira: aquella mentira, aceptada por todos, según la cual él solo estaba enfermo, pero no se estaba muriendo.\n\nLo atormentaba que no quisieran reconocer aquello que todos sabían y que él sabía; que quisieran mentirle acerca de su terrible situación y lo obligaran a participar en la mentira.\n\nMuchas veces estuvo a punto de gritarles: «¡Dejad de mentir! Vosotros sabéis, y yo sé, que estoy muriendo».",
+      "t": "El principal tormento de Iván Ilich era la mentira: aquella mentira, aceptada por todos por alguna razón, según la cual él solo estaba enfermo, pero no se estaba muriendo, y solo tenía que mantenerse tranquilo y tratarse para que entonces saliera algo muy bueno. Pero él sabía que, hicieran lo que hicieran, no resultaría nada salvo sufrimientos aún más atroces y la muerte. Lo atormentaba aquella mentira; lo atormentaba que no quisieran reconocer lo que todos sabían y él sabía, sino que quisieran mentirle a causa de su terrible situación y quisieran que él mismo participara en esa mentira y lo obligaran a ello.\n\n[…]\n\nY, cosa extraña, muchas veces, cuando le hacían sus trucos, estuvo a punto de gritarles: «¡Dejad de mentir! Vosotros sabéis, y yo sé, que estoy muriendo; así que dejad, al menos, de mentir».",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "Vosotros sabéis, y yo sé, que estoy muriendo",
@@ -4877,7 +4877,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Главное мучение Ивана Ильича была ложь, – та, всеми почему-то признанная ложь, что он только болен, а не умирает, и что ему надо только быть спокойным и лечиться, и тогда что-то выйдет очень хорошее. Он же знал, что, что бы ни делали, ничего не выйдет, кроме еще более мучительных страданий и смерти. И его мучила эта ложь, мучило то, что не хотели признаться в том, что все знали и он знал, а хотели лгать над ним по случаю ужасного его положения и хотели и заставляли его самого принимать участие в этой лжи.\n\n[…]\n\nИ – странно – он много раз, когда они над ним проделывали свои штуки, был на волоске от того, чтобы закричать им: перестаньте врать, и вы знаете и я знаю, что я умираю, так перестаньте, по крайней мере, врать.",
+        "text": "Главное мучение Ивана Ильича была ложь, — та, всеми почему-то признанная ложь, что он только болен, а не умирает, и что ему надо только быть спокойным и лечиться, и тогда что-то выйдет очень хорошее. Он же знал, что, что бы ни делали, ничего не выйдет, кроме еще более мучительных страданий и смерти. И его мучила эта ложь, мучило то, что не хотели признаться в том, что все знали и он знал, а хотели лгать над ним по случаю ужасного его положения и хотели и заставляли его самого принимать участие в этой лжи.\n\n[…]\n\nИ — странно — он много раз, когда они над ним проделывали свои штуки, был на волоске от того, чтобы закричать им: перестаньте врать, и вы знаете и я знаю, что я умираю, так перестаньте, по крайней мере, врать.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4885,7 +4885,7 @@
     {
       "id": "quote-289",
       "legacy_index": 289,
-      "t": "En algunos momentos, después de largos sufrimientos, lo que más deseaba, por vergonzoso que le pareciera reconocerlo, era que alguien sintiera lástima de él como se siente lástima de un niño enfermo. Quería que lo acariciaran, que lo besaran, que lloraran por él, como se acaricia y consuela a los niños.\n\nSabía que era un hombre importante, que su barba empezaba a encanecer y que, por tanto, aquello era imposible; pero aun así lo deseaba.",
+      "t": "En algunos momentos, después de largos sufrimientos, lo que más deseaba, por vergonzoso que le pareciera reconocerlo, era que alguien sintiera lástima de él como se siente lástima de un niño enfermo. Quería que lo acariciaran, que lo besaran, que lloraran por él, como se acaricia y consuela a los niños. Sabía que era un miembro importante, que su barba empezaba a encanecer y que, por tanto, aquello era imposible; pero aun así lo deseaba.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "Quería que lo acariciaran, que lo besaran, que lloraran por él",
@@ -4894,7 +4894,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Ивану Ильичу в иные минуты, после долгих страданий, больше всего хотелось, как ему ни совестно бы было признаться в этом, – хотелось того, чтоб его, как дитя больное, пожалел бы кто-нибудь. Ему хотелось, чтоб его приласкали, поцеловали, поплакали бы над ним, как ласкают и утешают детей. Он знал, что он важный член, что у него седеющая борода и что потому это невозможно; но ему все-таки хотелось этого.",
+        "text": "Ивану Ильичу в иные минуты, после долгих страданий, больше всего хотелось, как ему ни совестно бы было признаться в этом, — хотелось того, чтоб его, как дитя больное, пожалел бы кто-нибудь. Ему хотелось, чтоб его приласкали, поцеловали, поплакали бы над ним, как ласкают и утешают детей. Он знал, что он важный член, что у него седеющая борода, и что потому это невозможно; но ему всё-таки хотелось этого.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4902,7 +4902,7 @@
     {
       "id": "quote-290",
       "legacy_index": 290,
-      "t": "Le parecía que lo introducían con sufrimiento en un saco negro, estrecho y profundo; que lo empujaban cada vez más hacia el fondo, pero no conseguían hacerlo pasar.\n\nTenía miedo y, al mismo tiempo, quería caer dentro; se resistía y ayudaba a que lo empujaran.\n\nDespués lloró como un niño: por su impotencia, por su terrible soledad, por la crueldad de los hombres, por la crueldad de Dios, por la ausencia de Dios.",
+      "t": "Le parecía que lo introducían con dolor en un saco negro, estrecho y profundo; que lo empujaban cada vez más hacia el fondo, pero no conseguían hacerlo pasar. Y aquello, terrible para él, se llevaba a cabo con sufrimiento. Tenía miedo y, al mismo tiempo, quería caer dentro; se resistía y ayudaba a que lo empujaran.\n\n[…]\n\nLloró por su impotencia, por su terrible soledad, por la crueldad de los hombres, por la crueldad de Dios, por la ausencia de Dios.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "lo empujaban cada vez más hacia el fondo",
@@ -4911,7 +4911,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Ему казалось, что его с болью суют куда-то в узкий черный мешок и глубокий, и все дальше просовывают, и не могут просунуть. И это ужасное для него дело совершается с страданием. И он и боится, и хочет провалиться туда, и борется, и помогает.\n\n[…]\n\nОн плакал о беспомощности своей, о своем ужасном одиночестве, о жестокости людей, о жестокости Бога, об отсутствии Бога.",
+        "text": "Ему казалось, что его с болью суют куда-то в узкий черный мешок и глубокий, и всё дальше просовывают и не могут просунуть. И это ужасное для него дело совершается с страданием. И он и боится, и хочет провалиться туда, и борется, и помогает.\n\n[…]\n\nОн плакал о беспомощности своей, о своем ужасном одиночестве, о жестокости людей, о жестокости Бога, об отсутствии Бога.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4919,7 +4919,7 @@
     {
       "id": "quote-291",
       "legacy_index": 291,
-      "t": "Cuanto más se alejaba de la infancia y más se acercaba al presente, más insignificantes y dudosas eran sus alegrías.\n\nEl matrimonio, la decepción, la sensualidad, la falsedad; después aquel servicio muerto, las preocupaciones por el dinero: siempre lo mismo. Cuanto más avanzaba, más muerto estaba todo.\n\nEra como si hubiese descendido uniformemente por una pendiente mientras imaginaba que ascendía.",
+      "t": "Cuanto más se alejaba de la infancia y más se acercaba al presente, más insignificantes y dudosas eran sus alegrías.\n\n[…]\n\nEl matrimonio… tan inesperado, y la decepción, y el olor de la boca de su mujer, y la sensualidad, ¡la falsedad! Y aquel servicio muerto, y aquellas preocupaciones por el dinero, y así un año, y dos, y diez, y veinte: siempre lo mismo. Y cuanto más avanzaba, más muerto estaba todo. Era como si descendiera uniformemente por una pendiente mientras imaginaba que ascendía.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "mientras imaginaba que ascendía",
@@ -4928,7 +4928,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "И чем дальше от детства, чем ближе к настоящему, тем ничтожнее и сомнительнее были радости. Начиналось это с Правоведения. Там было еще кое-что истинно хорошее: там было веселье, там была дружба, там были надежды. Но в высших классах уже были реже эти хорошие минуты. Потом, во время первой службы у губернатора, опять появились хорошие минуты: это были воспоминания о любви к женщине. Потом все это смещалось, и еще меньше стало хорошего. Далее еще меньше хорошего, и что дальше, то меньше. Женитьба… так нечаянно, и разочарование, и запах изо рта жены, и чувственность, притворство! И эта мертвая служба, эти заботы о деньгах, итак год, и два, и десять, и двадцать – и все то же. И что дальше, то мертвое. Точно равномерно я шел под гору, воображая, что иду на гору. Так и было. В общественном мнении я шел на гору, и ровно настолько из-под меня уходила жизнь… И вот готово, умирай!",
+        "text": "И чем дальше от детства, чем ближе к настоящему, тем ничтожнее и сомнительнее были радости.\n\n[…]\n\nЖенитьба... так нечаянно и разочарование, и запах изо рта жены, и чувственность, притворство! И эта мертвая служба, и эти заботы о деньгах, и так год, и два, и десять, и двадцать — и всё то же. И что дальше, то мертвее. Точно равномерно я шел под гору, воображая, что иду на гору.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4936,7 +4936,7 @@
     {
       "id": "quote-292",
       "legacy_index": 292,
-      "t": "«Tal vez no he vivido como debía», se le ocurrió de pronto.\n\n«¿Pero cómo iba a haber vivido mal, si siempre hice todo como correspondía?», se respondió, y enseguida apartó de sí aquella solución única del enigma de la vida y de la muerte como si fuera algo completamente imposible.",
+      "t": "«Tal vez no he vivido como debía», se le ocurrió de pronto. «¿Pero cómo iba a haber vivido mal, si siempre hice todo como correspondía?», se respondió, y enseguida apartó de sí aquella solución única del enigma de la vida y de la muerte como si fuera algo completamente imposible.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "Tal vez no he vivido como debía",
@@ -4945,7 +4945,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "“Может быть, я жил не так, как должно?” – приходило ему вдруг в голову. “Но как же не так, когда я делал все как следует?” – говорил он себе и тотчас же отгонял от себя это единственное разрешение всей загадки жизни и смерти, как что-то совершенно невозможное.",
+        "text": "«Может быть, я жил не так как должно?» приходило ему вдруг в голову. «Но как же не так, когда я делал всё, как следует?» говорил он себе и тотчас же отгонял от себя это единственное разрешение всей загадки жизни и смерти как что-то совершенно невозможное.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4953,7 +4953,7 @@
     {
       "id": "quote-293",
       "legacy_index": 293,
-      "t": "El médico decía que sus sufrimientos físicos eran terribles, y era cierto; pero aún más terribles eran sus sufrimientos morales, y en ellos residía su verdadero tormento.\n\n«¿Y si, en realidad, toda mi vida consciente no hubiera sido lo que debía?»\n\nPensó que aquello que antes le había parecido completamente imposible —que no hubiese vivido como debía— podía ser cierto. Sus leves intentos de resistirse a lo que las personas de posición más elevada consideraban bueno quizá habían sido lo verdadero; y todo lo demás podía haber sido falso.\n\nSu trabajo, la organización de su vida, su familia, sus intereses sociales y profesionales: todo podía haber sido falso.\n\nTrató de defenderlo, pero de pronto comprendió toda la debilidad de aquello que defendía. No había nada que defender.",
+      "t": "El médico decía que sus sufrimientos físicos eran terribles, y era cierto; pero aún más terribles eran sus sufrimientos morales, y en ellos residía su verdadero tormento.\n\nSus sufrimientos morales consistían en que aquella noche, mientras miraba el rostro soñoliento, bondadoso y de pómulos salientes de Guerásim, se le ocurrió de pronto: «¿Y si, en realidad, toda mi vida, mi vida consciente, no hubiera sido lo que debía?»\n\nSe le ocurrió que aquello que antes le había parecido completamente imposible —que no hubiese vivido como debía— podía ser cierto. Se le ocurrió que sus leves intentos de resistirse a lo que las personas de posición más elevada consideraban bueno, intentos apenas perceptibles que enseguida apartaba de sí, quizá habían sido lo verdadero, mientras que todo lo demás podía haber sido falso. Su trabajo, la organización de su vida, su familia, sus intereses sociales y profesionales: todo podía haber sido falso. Trató de defender ante sí mismo todo aquello, pero de pronto sintió toda la debilidad de lo que defendía. No había nada que defender.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "No había nada que defender",
@@ -4962,7 +4962,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Доктор оговорил, что страдания его физические ужасны, и это была правда; но ужаснее его физических страданий были его нравственные страдания, и в этом было главное его мучение.\n\nНравственные страдания его состояли в том, что в эту ночь, глядя на сонное, добродушное скуластое лицо Герасима, ему вдруг пришло в голову: а что, как и в самом деле вся моя жизнь, сознательная жизнь, была «не то».\n\nЕму пришло в голову, что то, что ему представлялось прежде совершенной невозможностью, то, что он прожил свою жизнь не так, как должно было, что это могло быть правда. Ему пришло в голову, что те его чуть заметные поползновения борьбы против того, что наивысше поставленными людьми считалось хорошим, поползновения чуть заметные, которые он тотчас же отгонял от себя, — что они-то и могли быть настоящие, а остальное все могло быть не то.\n\nИ его служба, и его устройства жизни, и его семья, и эти интересы общества и службы — все это могло быть не то. Он попытался защитить пред собой все это. И вдруг почувствовал всю слабость того, что он защищает. И защищать нечего было.",
+        "text": "Доктор говорил, что страдания его физические ужасны, и это была правда; но ужаснее его физических страданий были его нравственные страдания, и в этом было главное его мучение.\n\nНравственные страдания его состояли в том, что в эту ночь, глядя на сонное, добродушное, скуластое лицо Герасима, ему вдруг пришло в голову: а что как и в самом деле вся моя жизнь сознательная жизнь, была «не то».\n\nЕму пришло в голову, что то, что ему представлялось прежде совершенной невозможностью, то, что он прожил свою жизнь не так, как должно было, что это могло быть правда. Ему пришло в голову, что те его чуть заметные поползновения борьбы против того, что наивысше поставленными людьми считалось хорошим, поползновения чуть заметные, которые он тотчас же отгонял от себя, — что они-то и могли быть настоящие, а остальное всё могло быть не то. И его служба, и его устройства жизни, и его семья, и эти интересы общества и службы, — всё это могло быть не то. Он попытался защитить пред собой всё это. И вдруг почувствовал всю слабость того, что он защищает. И защищать нечего было.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4970,7 +4970,7 @@
     {
       "id": "quote-294",
       "legacy_index": 294,
-      "t": "Su tormento consistía en que lo introducían en aquel agujero negro y, todavía más, en que no conseguía atravesarlo.\n\nLo que le impedía atravesarlo era reconocer que su vida había sido buena. Aquella justificación de su vida lo sujetaba, no lo dejaba avanzar y lo atormentaba más que ninguna otra cosa.",
+      "t": "Su tormento consistía en que lo introducían en aquel agujero negro y, todavía más, en que no conseguía atravesarlo. Lo que le impedía atravesarlo era reconocer que su vida había sido buena. Aquella justificación de su vida lo sujetaba, no lo dejaba avanzar y lo atormentaba más que ninguna otra cosa.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "Aquella justificación de su vida lo sujetaba",
@@ -4979,7 +4979,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "Он чувствовал, что мученье его и в том, что он всовывается в эту черную дыру, и еще больше в том, что он не может пролезть в нее. Пролезть же ему мешает признанье того, что жизнь его была хорошая. Это-то оправдание своей жизни цепляло и не пускало его вперед и больше всего мучало его.",
+        "text": "Он чувствовал, что мученье его и в том, что он всовывается в эту черную дыру, и еще больше в том, что он не может пролезть в нее. Пролезть же ему мешает признанье того, что жизнь его была хорошая. Это-то оправдание своей жизни цепляло и не пускало его вперед и больше всего мучило его.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -4987,16 +4987,16 @@
     {
       "id": "quote-295",
       "legacy_index": 295,
-      "t": "Al final del agujero empezó a brillar algo.\n\n—Sí, todo había sido falso —se dijo—, pero no importa. Todavía es posible hacer lo correcto.\n\nEn aquel momento su hijo se acercó a la cama. La mano del moribundo cayó sobre su cabeza. El muchacho la tomó, la apretó contra los labios y se echó a llorar.\n\nIván Ilich vio la luz y sintió compasión por su hijo y por su mujer.",
+      "t": "Al final del agujero empezó a brillar algo.\n\n[…]\n\n—Sí, todo había sido falso —se dijo—, pero no importa. Es posible, es posible hacer lo correcto.\n\n[…]\n\nEn aquel mismo momento, su hijo, el colegial, se deslizó silenciosamente hasta su padre y se acercó a la cama. El moribundo seguía gritando desesperadamente y agitando los brazos. Su mano cayó sobre la cabeza del muchacho. El muchacho la tomó, la apretó contra los labios y se echó a llorar.\n\nEn aquel mismo momento, Iván Ilich se hundió, vio la luz y se le reveló que su vida no había sido como debía, pero que aún podía corregirla. Se preguntó qué era «eso» y calló, escuchando. Entonces sintió que alguien le besaba la mano. Abrió los ojos y miró a su hijo. Sintió compasión por él. Su mujer se acercó. La miró. Ella lo contemplaba con la boca abierta, con lágrimas sin secar en la nariz y la mejilla y con una expresión desesperada. Sintió compasión por ella.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
-      "highlight": "Todavía es posible hacer lo correcto",
+      "highlight": "Es posible, es posible hacer lo correcto",
       "lang": "es",
       "type": "prose",
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "там, в конце дыры, засветилось что-то. – Да, все было не то, – сказал он себе, – но это ничего. Можно, можно сделать “то”.\n\n[…]\n\nВ это самое время гимназистик тихонько прокрался к отцу и подошел к его постели. Умирающий все кричал отчаянно и кидал руками. Рука его попала на голову гимназистика. Гимназистик схватил ее, прижал к губам и заплакал. В это самое время Иван Ильич провалился, увидал свет, и ему открылось, что жизнь его была не то, что надо, но что это можно еще поправить. Он спросил себя: что же “то”, и затих, прислушиваясь. Тут он почувствовал, что руку его целует кто-то. Он открыл глаза и взглянул на сына. Ему стало жалко его. Жена подошла к нему. Он взглянул на нее. Она с открытым ртом и с неотертыми слезами на носу и щеке, с отчаянным выражением смотрела на него. Ему жалко стало ее.",
+        "text": "там, в конце дыры, засветилось что-то.\n\n[…]\n\n«Да, всё было не то, — сказал он себе, — но это ничего. Можно, можно сделать «то».\n\n[…]\n\nВ это самое время гимназистик тихонько прокрался к отцу и подошел к его постели. Умирающий всё кричал отчаянно и кидал руками. Рука его попала на голову гимназистика. Гимназистик схватил ее, прижал к губам и заплакал.\n\nВ это самое время Иван Ильич провалился, увидал свет, и ему открылось, что жизнь его была не то, что надо, но что это можно еще поправить. Он спросил себя: что же «то», и затих, прислушиваясь. Тут он почувствовал, что руку его целует кто-то. Он открыл глаза и взглянул на сына. Ему стало жалко его. Жена подошла к нему. Он взглянул на нее. Она с открытым ртом и с неотертыми слезами на носу и щеке, с отчаянным выражением смотрела на него. Ему жалко стало ее.",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -5004,7 +5004,7 @@
     {
       "id": "quote-296",
       "legacy_index": 296,
-      "t": "«Qué bien y qué sencillo», pensó.\n\n«¿Y el dolor? ¿Dónde está? Vamos, dolor, ¿dónde estás?»\n\nPrestó atención.\n\n«Sí, ahí está. Bueno, que esté».\n\n«¿Y la muerte? ¿Dónde está?»\n\nBuscó su antiguo y habitual miedo a la muerte y no lo encontró. ¿Dónde estaba? ¿Qué muerte? No había miedo alguno porque tampoco había muerte.\n\nEn lugar de la muerte estaba la luz.\n\n—¡Así que era esto! —dijo de pronto en voz alta—. ¡Qué alegría!",
+      "t": "«Qué bien y qué sencillo —pensó—. ¿Y el dolor? —se preguntó—. ¿Dónde ponerlo? Vamos, dolor, ¿dónde estás?»\n\nSe puso a escuchar.\n\n«Sí, ahí está. Bueno, que esté».\n\n«¿Y la muerte? ¿Dónde está?»\n\nBuscó su antiguo y habitual miedo a la muerte y no lo encontró. ¿Dónde estaba? ¿Qué muerte? No había miedo alguno porque tampoco había muerte.\n\nEn lugar de la muerte estaba la luz.\n\n—¡Así que era esto! —dijo de pronto en voz alta—. ¡Qué alegría!",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "En lugar de la muerte estaba la luz",
@@ -5013,7 +5013,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "“Как хорошо и как просто, – подумал он. – А боль? – спросил он себя, – Ее куда? Ну-ка, где ты, боль?” Он стал прислушиваться. “Да, вот она. Ну что ж, пускай боль”. “А смерть? Где она?” Он искал своего прежнего привычного страха смерти и не находил его. Где она? Какая смерть? Страха никакого не было, потому что и смерти не было. Вместо смерти был свет. – Так вот что! – вдруг вслух проговорил он. – Какая радость!",
+        "text": "«Как хорошо и как просто, — подумал он. — А боль? — спросил он себя. — Ее куда? Ну-ка, где ты, боль?»\n\nОн стал прислушиваться.\n\n«Да, вот она. Ну что ж, пускай боль».\n\n«А смерть? Где она?»\n\nОн искал своего прежнего привычного страха смерти и не находил его. Где она? Какая смерть? Страха никакого не было, потому что и смерти не было.\n\nВместо смерти был свет.\n\n— Так вот что! — вдруг вслух проговорил он. — Какая радость!",
         "lang": "ru",
         "label": "Original ruso"
       }
@@ -5021,7 +5021,7 @@
     {
       "id": "quote-297",
       "legacy_index": 297,
-      "t": "—Se acabó —dijo alguien sobre él.\n\nIván Ilich oyó aquellas palabras y las repitió dentro de su alma:\n\n«La muerte ha terminado. Ya no existe».\n\nAspiró aire, se detuvo en mitad del suspiro, se estiró y murió.",
+      "t": "—Se acabó —dijo alguien sobre él.\n\nIván Ilich oyó aquellas palabras y las repitió dentro de su alma: «La muerte ha terminado. Ya no existe».\n\nAspiró aire, se detuvo en mitad del suspiro, se estiró y murió.",
       "a": "León Tolstói",
       "obra": "La muerte de Iván Ilich, León Tolstói",
       "highlight": "La muerte ha terminado. Ya no existe",
@@ -5030,7 +5030,7 @@
       "authorId": "author-leon-tolstoi",
       "workId": "work-la-muerte-de-ivan-ilich",
       "original": {
-        "text": "– Кончено! – сказал кто-то над ним. Он услыхал эти слова и повторил их в своей душе. “Кончена смерть, – сказал он себе. – Ее нет больше”. Он втянул в себя воздух, остановился на половине вздоха, потянулся и умер.",
+        "text": "— Кончено! — сказал кто-то над ним.\n\nОн услыхал эти слова и повторил их в своей душе. «Кончена смерть, — сказал он себе. — Ее нет больше».\n\nОн втянул в себя воздух, остановился на половине вздоха, потянулся и умер.",
         "lang": "ru",
         "label": "Original ruso"
       }

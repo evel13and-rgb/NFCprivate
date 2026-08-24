@@ -727,6 +727,57 @@ test('El retrato de Dorian Gray recupera la edición de 1891 y marca todos sus r
   }
 });
 
+test('La muerte de Iván Ilich recupera el tomo 26 y alinea sus recortes y voces', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const tolstoiQuotes = document.quotes.filter(quote => quote.workId === 'work-la-muerte-de-ivan-ilich');
+
+  assert.equal(tolstoiQuotes.length, 18);
+  assert.ok(tolstoiQuotes.every(quote => quote.original?.lang === 'ru'));
+  assert.ok(tolstoiQuotes.every(quote => quote.original?.label === 'Original ruso'));
+  assert.match(quotes.get('quote-280').original.text, /была о том/);
+  assert.match(quotes.get('quote-280').t, /cada uno de los señores reunidos en el despacho/);
+  assert.equal(quotes.get('quote-281').t.match(/\[…\]/g)?.length, 2);
+  assert.match(quotes.get('quote-281').t, /Era el término medio entre ellos/);
+  assert.equal(quotes.get('quote-282').original.text.match(/итти/g)?.length, 2);
+  assert.match(quotes.get('quote-282').t, /importancia, incluso exterior/);
+  assert.match(quotes.get('quote-282').t, /las comidas y el whist/);
+  assert.match(quotes.get('quote-283').t, /un catarro crónico/);
+  assert.match(quotes.get('quote-284').t, /¿Para qué engañarme\?/);
+  assert.match(quotes.get('quote-285').t, /para mí, Vania, Iván Ilich, con todos mis sentimientos y pensamientos/);
+  assert.doesNotMatch(quotes.get('quote-285').t, /pero él, Vania/);
+  assert.match(quotes.get('quote-286').original.text, /^Как это сделалось на 3-м месяце/);
+  assert.match(quotes.get('quote-286').t, /^No podía decirse cómo había sucedido aquello/);
+  assert.match(quotes.get('quote-287').t, /era el único que comprendía/);
+  assert.match(quotes.get('quote-288').t, /solo tenía que mantenerse tranquilo y tratarse/);
+  assert.match(quotes.get('quote-288').t, /así que dejad, al menos, de mentir/);
+  assert.match(quotes.get('quote-289').t, /era un miembro importante/);
+  assert.match(quotes.get('quote-290').t, /se llevaba a cabo con sufrimiento/);
+  assert.match(quotes.get('quote-291').original.text, /то мертвее/);
+  assert.match(quotes.get('quote-291').t, /y así un año, y dos, y diez, y veinte/);
+  assert.match(quotes.get('quote-293').original.text, /^Доктор говорил/);
+  assert.doesNotMatch(quotes.get('quote-293').original.text, /оговорил/);
+  assert.match(quotes.get('quote-293').t, /rostro soñoliento, bondadoso y de pómulos salientes de Guerásim/);
+  assert.match(quotes.get('quote-295').t, /Es posible, es posible hacer lo correcto/);
+  assert.match(quotes.get('quote-295').t, /El moribundo seguía gritando desesperadamente y agitando los brazos/);
+  assert.match(quotes.get('quote-295').t, /Sintió compasión por ella[.]$/);
+  assert.match(quotes.get('quote-296').t, /¿Dónde ponerlo\?/);
+  assert.match(quotes.get('quote-297').t, /La muerte ha terminado[.] Ya no existe/);
+  for (const quote of tolstoiQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.split('\n\n').length,
+      quote.original.text.split('\n\n').length,
+      `${quote.id} debe conservar la estructura de párrafos`,
+    );
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
 test('La metamorfosis conserva omisiones, repeticiones y límites tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));

@@ -1,6 +1,6 @@
 {
   "valid": true,
-  "validated_at": "2026-08-24T10:02:27.403Z",
+  "validated_at": "2026-08-24T10:34:06.618Z",
   "summary": {
     "expected_quotes": 640,
     "intermediate_quotes": 640,
@@ -10,7 +10,7 @@
     "sources": 29,
     "editorial_decisions": 0,
     "poems": 27,
-    "quotes_with_line_breaks": 393,
+    "quotes_with_line_breaks": 387,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
