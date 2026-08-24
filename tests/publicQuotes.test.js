@@ -179,6 +179,13 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-360', 'quote-361', 'quote-362', 'quote-363', 'quote-364',
     'quote-365', 'quote-366', 'quote-367', 'quote-368', 'quote-369',
     'quote-370', 'quote-371', 'quote-372',
+    'quote-373', 'quote-374', 'quote-375', 'quote-376', 'quote-377',
+    'quote-378', 'quote-379', 'quote-380', 'quote-381', 'quote-382',
+    'quote-383', 'quote-384', 'quote-385', 'quote-386', 'quote-387',
+    'quote-388', 'quote-389', 'quote-390', 'quote-391', 'quote-392',
+    'quote-393', 'quote-394', 'quote-395', 'quote-396', 'quote-397',
+    'quote-398', 'quote-399', 'quote-400', 'quote-401', 'quote-402',
+    'quote-403',
     'quote-494', 'quote-495', 'quote-496', 'quote-497', 'quote-498',
     'quote-499', 'quote-500', 'quote-501', 'quote-502', 'quote-503',
     'quote-504', 'quote-505', 'quote-506', 'quote-507', 'quote-508',
@@ -908,6 +915,55 @@ test('La sala número seis conserva el texto académico, los párrafos y la voz 
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     const expected = expectedParagraphs.get(quote.legacy_index);
     assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos rusos`);
+    assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('La bestia en la jungla conserva la primera edición, los recortes y la ambigüedad de James', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const beastQuotes = document.quotes.filter(quote => quote.workId === 'work-la-bestia-en-la-jungla');
+  const expectedParagraphs = new Map([
+    [373, 1], [374, 1], [375, 1], [376, 3], [377, 3], [378, 5], [379, 4],
+    [380, 1], [381, 1], [382, 1], [383, 1], [384, 1], [385, 1], [386, 1],
+    [387, 2], [388, 1], [389, 3], [390, 2], [391, 3], [392, 1], [393, 4],
+    [394, 3], [395, 2], [396, 4], [397, 2], [398, 2], [399, 2], [400, 1],
+    [401, 1], [402, 1], [403, 1],
+  ]);
+
+  assert.equal(beastQuotes.length, 31);
+  assert.ok(beastQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(beastQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-373').original.text, /^It led, in short/);
+  assert.match(quotes.get('quote-373').t, /^Aquello lo condujo, en suma/);
+  assert.match(quotes.get('quote-377').t, /porque _ha estado_ enamorada/);
+  assert.equal(quotes.get('quote-378').original.text.match(/\[…\]/g)?.length, 2);
+  assert.equal(quotes.get('quote-378').t.match(/\[…\]/g)?.length, 2);
+  assert.match(quotes.get('quote-378').t, /_la_ cosa\. _La_ cosa/);
+  assert.match(quotes.get('quote-383').t, /una bestia agazapada en la jungla/);
+  assert.match(quotes.get('quote-384').t, /_como_ conversa un jorobado/);
+  assert.match(quotes.get('quote-385').t, /una versión falsa de sí misma/);
+  assert.match(quotes.get('quote-385').t, /Bajo _sus_ formas/);
+  assert.match(quotes.get('quote-390').t, /^\—Usted me ayuda a pasar/);
+  assert.match(quotes.get('quote-390').t, /si _lo soy_/);
+  assert.match(quotes.get('quote-391').t, /que no lo hubieran «engañado»/);
+  assert.match(quotes.get('quote-392').t, /aunque no exento de una ligera caída y una complejidad de tenues pliegues/);
+  assert.match(quotes.get('quote-393').t, /Marcher reflexionó/);
+  assert.match(quotes.get('quote-394').original.text, /The door's open," said May Bartram/);
+  assert.match(quotes.get('quote-396').t, /la extrañeza _dentro de_ la extrañeza/);
+  assert.match(quotes.get('quote-398').t, /la cosa que yo estaba destinado a sentir/);
+  assert.match(quotes.get('quote-400').t, /si habría acechado aquí o allá\.$/);
+  assert.match(quotes.get('quote-401').t, /la utilidad que ella tenía para él/);
+  assert.match(quotes.get('quote-402').t, /_esto_ era el conocimiento/);
+  for (const quote of beastQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    const expected = expectedParagraphs.get(quote.legacy_index);
+    assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos de la traducción`);
     assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
     assert.equal(
       quote.t.match(/\[…\]/g)?.length || 0,

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-24T12:02:10.597Z",
+  "generated_at": "2026-08-24T13:31:57.968Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -6313,14 +6313,19 @@
     {
       "id": "quote-373",
       "legacy_index": 373,
-      "t": "Su rostro, un recordatorio, aunque no exactamente un recuerdo, había empezado simplemente por turbarlo de una manera bastante agradable. Lo afectaba como la continuación de algo cuyo comienzo había perdido. Lo reconocía, y por el momento casi lo acogía, como una continuación, pero no sabía qué continuaba.",
+      "t": "Aquello lo condujo, en suma, durante aquella tarde de octubre, a un encuentro más cercano con May Bartram, cuyo rostro, un recordatorio, aunque no exactamente un recuerdo, mientras estaban sentados muy separados en una mesa muy larga, había empezado simplemente por turbarlo de una manera bastante agradable. Lo afectaba como la continuación de algo cuyo comienzo había perdido. Lo reconocía y, por el momento, casi lo acogía como una continuación, pero no sabía qué continuaba, lo que constituía un interés, o una diversión, tanto mayor cuanto que también era consciente de algún modo —aunque sin una señal directa por parte de ella— de que la propia joven no había perdido el hilo.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "la continuación de algo cuyo comienzo había perdido.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "It led, in short, in the course of the October afternoon, to his closer meeting with May Bartram, whose face, a reminder, yet not quite a remembrance, as they sat, much separated, at a very long table, had begun merely by troubling him rather pleasantly. It affected him as the sequel of something of which he had lost the beginning. He knew it, and for the time quite welcomed it, as a continuation, but didn't know what it continued, which was an interest, or an amusement, the greater as he was also somehow aware—yet without a direct sign from her—that the young woman herself had not lost the thread.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-374",
@@ -6332,355 +6337,505 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "You said you had had from your earliest time, as the deepest thing within you, the sense of being kept for something rare and strange, possibly prodigious and terrible, that was sooner or later to happen to you, that you had in your bones the foreboding and the conviction of, and that would perhaps overwhelm you.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-375",
       "legacy_index": 375,
-      "t": "—Bueno, digamos que esperarlo: tener que encontrarlo, afrontarlo, verlo irrumpir de pronto en mi vida; posiblemente destruyendo toda conciencia ulterior, posiblemente aniquilándome; posiblemente, por otra parte, alterándolo únicamente todo, golpeando la raíz de todo mi mundo y dejándome entregado a las consecuencias, adopten estas la forma que adopten.",
+      "t": "—Bueno, digamos que esperarlo: tener que encontrarlo, afrontarlo, verlo irrumpir de pronto en mi vida; posiblemente destruyendo toda conciencia ulterior, posiblemente aniquilándome; posiblemente, por otra parte, limitándose a alterarlo todo, golpeando la raíz de todo mi mundo y dejándome entregado a las consecuencias, adopten estas la forma que adopten.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "verlo irrumpir de pronto en mi vida",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"Well, say to wait for—to have to meet, to face, to see suddenly break out in my life; possibly destroying all further consciousness, possibly annihilating me; possibly, on the other hand, only altering everything, striking at the root of all my world and leaving me to the consequences, however they shape themselves.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-376",
       "legacy_index": 376,
-      "t": "—¿No será lo que describe simplemente la expectativa —o, en cualquier caso, esa sensación de peligro tan familiar para tantas personas— de caer enamorado?\n\nJohn Marcher pensó.\n\n—¿Me preguntó eso antes?\n\n—No; entonces no me tomaba tantas libertades. Pero es lo que ahora se me ocurre.",
+      "t": "—¿No será lo que describe simplemente la expectativa —o, en cualquier caso, esa sensación de peligro tan familiar para tantas personas— de enamorarse?\n\nJohn Marcher reflexionó. —¿Me preguntó eso antes?\n\n—No; entonces no me tomaba tantas libertades. Pero es lo que ahora se me ocurre.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "esa sensación de peligro tan familiar para tantas personas",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"Isn't what you describe perhaps but the expectation—or, at any rate, the sense of danger, familiar to so many people—of falling in love?\"\n\nJohn Marcher thought. \"Did you ask me that before?\"\n\n\"No—I wasn't so free-and-easy then. But it's what strikes me now.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-377",
       "legacy_index": 377,
-      "t": "—Quiere decir que ha estado enamorado —y, como él se limitó a mirarla en silencio—: ha estado enamorado, y no ha significado semejante cataclismo, ¿no ha resultado ser el gran acontecimiento?\n\n—Aquí me tiene, como ve. No ha sido arrollador.\n\n—Entonces no ha sido amor —dijo May Bartram.",
+      "t": "—¿Quiere decir que es porque _ha estado_ enamorada? —y, como él se limitó a mirarla en silencio—: Ha estado enamorada y no ha significado semejante cataclismo; ¿no ha resultado ser el gran acontecimiento?\n\n—Aquí me tiene, como ve. No ha sido arrollador.\n\n—Entonces no ha sido amor —dijo May Bartram.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "Entonces no ha sido amor",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"Do you mean because you've _been_ in love?\" And then as he but looked at her in silence: \"You've been in love, and it hasn't meant such a cataclysm, hasn't proved the great affair?\"\n\n\"Here I am, you see. It hasn't been overwhelming.\"\n\n\"Then it hasn't been love,\" said May Bartram.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-378",
       "legacy_index": 378,
-      "t": "—No es cuestión de lo que yo «quiera»: Dios sabe que no quiero nada. Solo es cuestión de la aprensión que me persigue, con la que vivo día tras día.\n\n—¿Es la sensación de una violencia que se aproxima?\n\n—No pienso que, cuando llegue, haya de ser necesariamente violenta. Solo pienso que será natural y, sobre todo, inconfundible. Pienso en ella simplemente como la cosa. La cosa parecerá natural por sí misma.",
+      "t": "—No es cuestión de lo que yo «quiera»: Dios sabe que no quiero nada. Solo es cuestión de la aprensión que me persigue, con la que vivo día tras día.\n\n[…]\n\n—¿Es la sensación de una violencia que se aproxima?\n\n[…]\n\n—No pienso que, cuando llegue, haya de ser necesariamente violenta. Solo pienso que será natural y, sobre todo, inconfundible. Pienso en ella simplemente como _la_ cosa. _La_ cosa parecerá natural por sí misma.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "la aprensión que me persigue",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"It isn't a question of what I 'want'—God knows I don't want anything. It's only a question of the apprehension that haunts me—that I live with day by day.\"\n\n[…]\n\n\"Is it a sense of coming violence?\"\n\n[…]\n\n\"I don't think of it as—when it does come—necessarily violent. I only think of it as natural and as of course, above all, unmistakable. I think of it simply as _the_ thing. _The_ thing will of itself appear natural.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-379",
       "legacy_index": 379,
-      "t": "—Entonces, ¿yo estaré presente?\n\n—Pero si ya está presente, puesto que lo sabe.\n\n—Comprendo. Pero quiero decir cuando llegue la catástrofe.\n\nAnte esto, por un minuto, la ligereza de ambos cedió a la gravedad; fue como si la larga mirada que intercambiaron los mantuviera unidos.\n\n—Dependerá únicamente de usted: de que quiera vigilar conmigo.",
+      "t": "—Entonces, ¿he de estar presente?\n\n—Pero si ya está presente, puesto que lo sabe.\n\n—Comprendo. —Le dio vueltas—. Pero me refiero a la catástrofe.\n\nAnte esto, por un minuto, la ligereza de ambos cedió a la gravedad; fue como si la larga mirada que intercambiaron los mantuviera unidos. «Dependerá únicamente de usted: de que quiera vigilar conmigo».",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "de que quiera vigilar conmigo.",
+      "highlight": "de que quiera vigilar conmigo",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"Oh then, I'm to be present?\"\n\n\"Why, you _are_ present—since you know.\"\n\n\"I see.\" She turned it over. \"But I mean at the catastrophe.\"\n\nAt this, for a minute, their lightness gave way to their gravity; it was as if the long look they exchanged held them together. \"It will only depend on yourself—if you'll watch with me.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-380",
       "legacy_index": 380,
-      "t": "Había pensado durante tanto tiempo en sí mismo como abominablemente solo, y he aquí que no estaba solo en absoluto. Al parecer, no lo había estado durante una hora: desde aquellos momentos en la embarcación de Sorrento.\n\nHabía sido ella, según le pareció ver al mirarla, quien había estado sola; ella, a quien había dejado así el ingrato hecho de que él faltara a su fidelidad.",
+      "t": "Durante tanto tiempo se había considerado abominablemente solo y he aquí que no estaba solo en absoluto. Al parecer, no lo había estado durante una hora: desde aquellos momentos en la embarcación de Sorrento. Había sido _ella_, según le pareció ver al mirarla, quien había estado sola; ella, a quien había dejado así el ingrato hecho de que él faltara a su fidelidad.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "no estaba solo en absoluto.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "He had thought of himself so long as abominably alone, and, lo, he wasn't alone a bit. He hadn't been, it appeared, for an hour—since those moments on the Sorrento boat. It was _she_ who had been, he seemed to see as he looked at her—she who had been made so by the graceless fact of his lapse of fidelity.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-381",
       "legacy_index": 381,
-      "t": "Estaban literalmente a flote juntos; para nuestro caballero esto era patente, tan patente como que la causa afortunada de ello era precisamente el tesoro enterrado del conocimiento de ella. Con sus propias manos había desenterrado aquel pequeño depósito, había sacado a la luz —es decir, había puesto al alcance de la tenue claridad constituida por sus discreciones y reservas— el objeto valioso cuyo escondite, después de haberlo enterrado él mismo, había olvidado durante tanto tiempo y de una manera tan extraña.",
+      "t": "Estaban literalmente a flote juntos; para nuestro caballero esto era patente, tan patente como que la causa afortunada de ello era precisamente el tesoro enterrado de lo que ella sabía. Con sus propias manos había desenterrado aquel pequeño depósito, había sacado a la luz —es decir, había puesto al alcance de la tenue claridad constituida por sus discreciones y reservas— el objeto valioso cuyo escondite, después de haberlo enterrado él mismo, había olvidado durante tanto tiempo y de una manera tan extraña.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "el tesoro enterrado del conocimiento de ella.",
+      "highlight": "el tesoro enterrado de lo que ella sabía.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "They were literally afloat together; for our gentleman this was marked, quite as marked as that the fortunate cause of it was just the buried treasure of her knowledge. He had with his own hands dug up this little hoard, brought to light—that is to within reach of the dim day constituted by their discretions and privacies—the object of value the hiding-place of which he had, after putting it into the ground himself, so strangely, so long forgotten.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-382",
       "legacy_index": 382,
-      "t": "Mientras nadie lo supo, se había considerado la persona más desinteresada del mundo: llevaba su carga concentrada, su perpetua espera, con toda tranquilidad; callaba sobre ella, no dejaba que los demás vislumbraran ni la carga ni su efecto sobre su vida, no les pedía consideración alguna y concedía, por su parte, todas las que le pedían.",
+      "t": "Mientras nadie lo sabía, se había considerado la persona más desinteresada del mundo: llevaba su carga concentrada, su perpetua espera, con toda tranquilidad; callaba sobre ella, no dejaba que los demás vislumbraran ni la carga ni su efecto sobre su vida, no les pedía consideración alguna y concedía, por su parte, todas las que le pedían.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "su carga concentrada, su perpetua espera",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "He had thought himself, so long as nobody knew, the most disinterested person in the world, carrying his concentrated burden, his perpetual suspense, ever so quietly, holding his tongue about it, giving others no glimpse of it nor of its effect upon his life, asking of them no allowance and only making on his side all those that were asked.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-383",
       "legacy_index": 383,
-      "t": "Algo lo aguardaba, entre las vueltas y revueltas de los meses y los años, como una Bestia agazapada en la Jungla. Poco importaba que la Bestia agazapada estuviese destinada a matarlo o a ser muerta. El punto preciso era el salto inevitable de la criatura; y la lección precisa de aquello era que un hombre de sentimientos no hacía que una dama lo acompañase a una cacería de tigres.\n\nTal era la imagen bajo la cual había acabado por representarse su vida.",
+      "t": "Algo u otra cosa lo aguardaba, entre las vueltas y revueltas de los meses y los años, como una bestia agazapada en la jungla. Poco importaba que la bestia agazapada estuviese destinada a matarlo o a ser muerta. El punto preciso era el salto inevitable de la criatura; y la lección precisa de aquello era que un hombre de sentimientos no hacía que una dama lo acompañase a una cacería de tigres. Tal era la imagen bajo la cual había acabado por representarse su vida.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "como una Bestia agazapada en la Jungla.",
+      "highlight": "como una bestia agazapada en la jungla.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "Something or other lay in wait for him, amid the twists and the turns of the months and the years, like a crouching beast in the jungle. It signified little whether the crouching beast were destined to slay him or to be slain. The definite point was the inevitable spring of the creature; and the definite lesson from that was that a man of feeling didn't cause himself to be accompanied by a lady on a tiger-hunt. Such was the image under which he had ended by figuring his life.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-384",
       "legacy_index": 384,
-      "t": "Semejante particularidad en la perspectiva de uno era realmente como una joroba en la espalda. La diferencia que introducía en cada minuto del día existía con total independencia de que se hablara de ella. Se conversaba, desde luego, como conversa un jorobado, pues siempre quedaba, aunque no hubiera otra cosa, el rostro del jorobado.",
+      "t": "Semejante particularidad en la perspectiva de uno era realmente como una joroba en la espalda. La diferencia que introducía en cada minuto del día existía con total independencia de que se hablara de ella. Se conversaba, desde luego, _como_ conversa un jorobado, pues siempre quedaba, aunque no hubiera otra cosa, el rostro del jorobado.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "como una joroba en la espalda.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "Such a feature in one's outlook was really like a hump on one's back. The difference it made every minute of the day existed quite independently of discussion. One discussed, of course, _like_ a hunchback, for there was always, if nothing else, the hunchback face.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-385",
       "legacy_index": 385,
-      "t": "Mientras envejecían juntos, ella vigilaba con él, y permitió que aquella asociación diera forma y color a su propia existencia. También bajo las formas de ella había aprendido a instalarse el desprendimiento, y su conducta se había convertido, en el sentido social, en una falsa relación de sí misma.\n\nSolo había una relación de ella que habría sido verdadera durante todo aquel tiempo, y no podía ofrecérsela directamente a nadie, menos que a nadie a John Marcher.",
+      "t": "Mientras envejecían juntos, ella vigilaba con él, y permitió que aquella asociación diera forma y color a su propia existencia. Bajo _sus_ formas también había aprendido a instalarse el desapego, y la conducta se había convertido para ella, en sentido social, en una versión falsa de sí misma. Solo había una versión de ella que habría sido verdadera durante todo aquel tiempo y que no podía ofrecer directamente a nadie, y menos que a nadie a John Marcher.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "una falsa relación de sí misma.",
+      "highlight": "una versión falsa de sí misma.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "So, while they grew older together, she did watch with him, and so she let this association give shape and colour to her own existence. Beneath _her_ forms as well detachment had learned to sit, and behaviour had become for her, in a social sense, a false account of herself. There was but one account of her that would have been true all the while, and that she could give directly, to nobody, least of all to John Marcher.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-386",
       "legacy_index": 386,
-      "t": "—Nuestro hábito lo salva a usted, por lo menos, ¿no lo ve?, porque a los ojos del vulgo acaba haciéndolo indistinguible de los demás hombres. ¿Cuál es la señal más inveterada de los hombres en general? Pues la capacidad de pasar un tiempo interminable con mujeres aburridas: pasarlo, no diré sin aburrirse, sino sin importarles que ellas lo sean, sin que eso los lance en otra dirección; que viene a ser lo mismo. Yo soy su mujer aburrida, una parte del pan nuestro de cada día que pide usted en la iglesia. Eso cubre sus huellas mejor que ninguna otra cosa.",
+      "t": "—Nuestro hábito lo salva a usted, por lo menos, ¿no lo ve?, porque a los ojos del vulgo acaba haciéndolo indistinguible de los demás hombres. ¿Cuál es la señal más inveterada de los hombres en general? Pues la capacidad de pasar un tiempo interminable con mujeres aburridas: pasarlo, no diré sin aburrirse, sino sin que les importe que ellas lo sean, sin que eso los lance en otra dirección; que viene a ser lo mismo. Yo soy su mujer aburrida, una parte del pan nuestro de cada día que pide usted en la iglesia. Eso cubre sus huellas mejor que ninguna otra cosa.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "Yo soy su mujer aburrida",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"Our habit saves you, at least, don't you see? because it makes you, after all, for the vulgar, indistinguishable from other men. What's the most inveterate mark of men in general? Why, the capacity to spend endless time with dull women—to spend it, I won't say without being bored, but without minding that they are, without being driven off at a tangent by it; which comes to the same thing. I'm your dull woman, a part of the daily bread for which you pray at church. That covers your tracks more than anything.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-387",
       "legacy_index": 387,
-      "t": "—A veces me pregunto si es del todo justo. Justo, quiero decir, haberla implicado tanto y —puesto que puede decirse— haberla interesado. Casi siento como si en realidad no hubiera tenido tiempo para hacer ninguna otra cosa.\n\n—¿Ninguna otra cosa que interesarme? ¡Ah!, ¿qué otra cosa desea nunca uno ser? Si he estado «vigilando» con usted, como acordamos hace mucho tiempo que haría, vigilar es ya, por sí mismo, una absorción.",
+      "t": "—A veces me pregunto si es del todo justo. Justo, quiero decir, haberla implicado tanto y —puesto que puede decirse— haberla interesado. Casi siento como si en realidad no hubiera tenido tiempo para hacer ninguna otra cosa.\n\n—¿Ninguna otra cosa que interesarme? —preguntó ella—. ¡Ah! ¿Qué otra cosa puede uno desear ser? Si he estado «vigilando» con usted, como acordamos hace mucho tiempo que haría, vigilar siempre es, por sí mismo, una absorción.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "vigilar es ya, por sí mismo, una absorción.",
+      "highlight": "vigilar siempre es, por sí mismo, una absorción.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "I sometimes ask myself if it's quite fair. Fair I mean to have so involved and—since one may say it—interested you. I almost feel as if you hadn't really had time to do anything else.\"\n\n\"Anything else but be interested?\" she asked. \"Ah, what else does one ever want to be? If I've been 'watching' with you, as we long ago agreed that I was to do, watching is always in itself an absorption.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-388",
       "legacy_index": 388,
-      "t": "—Lo que veo, según consigo entenderlo, es que ha logrado algo casi sin precedentes en materia de acostumbrarse al peligro. De vivir con él durante tanto tiempo y tan íntimamente, ha perdido la sensación de su presencia; sabe que está ahí, pero permanece indiferente, e incluso ha dejado, como hacía antes, de necesitar silbar en la oscuridad. Teniendo en cuenta qué peligro es —concluyó May Bartram—, debo decir que no creo que su actitud pudiera ser superada fácilmente.",
+      "t": "—Lo que veo, según consigo entenderlo, es que ha logrado algo casi sin precedentes en materia de acostumbrarse al peligro. Al vivir con él durante tanto tiempo y tan íntimamente, ha perdido la sensación de su presencia; sabe que está ahí, pero permanece indiferente, e incluso ha dejado de tener que silbar en la oscuridad, como antaño. Teniendo en cuenta de qué peligro se trata —concluyó May Bartram—, debo decir que no creo que su actitud pudiera ser superada fácilmente.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "ha perdido la sensación de su presencia",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"What I see is, as I make it out, that you've achieved something almost unprecedented in the way of getting used to danger. Living with it so long and so closely, you've lost your sense of it; you know it's there, but you're indifferent, and you cease even, as of old, to have to whistle in the dark. Considering what the danger is,\" May Bartram wound up, \"I'm bound to say that I don't think your attitude could well be surpassed.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-389",
       "legacy_index": 389,
-      "t": "—Usted sabe algo que yo no sé.\n\nEntonces su voz, para ser la de un hombre valeroso, tembló un poco.\n\n—Sabe lo que va a suceder.\n\nEl silencio de ella, unido al rostro que mostraba, era casi una confesión: lo hizo estar seguro.\n\n—Lo sabe, y tiene miedo de decírmelo. Es tan malo que teme que llegue a descubrirlo.\n\n—Nunca llegará a descubrirlo.",
+      "t": "—Usted sabe algo que yo no sé. —Entonces su voz, para ser la de un hombre valeroso, tembló un poco—. Sabe lo que va a suceder. —El silencio de ella, unido al rostro que mostraba, era casi una confesión: lo hizo estar seguro—. Lo sabe, y tiene miedo de decírmelo. Es tan malo que teme que llegue a descubrirlo.\n\n[…]\n\n—Nunca llegará a descubrirlo.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "Usted sabe algo que yo no sé.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"You know something I don't.\" Then his voice, for that of a man of courage, trembled a little. \"You know what's to happen.\" Her silence, with the face she showed, was almost a confession—it made him sure. \"You know, and you're afraid to tell me. It's so bad that you're afraid I'll find out.\"\n\n[…]\n\n\"You'll never find out.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-390",
       "legacy_index": 390,
-      "t": "—La ayuda a hacerme pasar por un hombre como los demás. De modo que, si lo soy, tal como la entiendo, usted no queda comprometida. ¿Es eso?\n\nElla hizo otra de sus pausas, pero habló con bastante claridad:\n\n—Eso es. Es todo cuanto me importa: ayudarlo a pasar por un hombre como los demás.",
+      "t": "—Usted me ayuda a pasar por un hombre como los demás. De modo que, si _lo soy_, tal como la entiendo, usted no queda comprometida. ¿Es eso?\n\nElla hizo otra de sus pausas, pero habló con bastante claridad: —Eso es. Es todo cuanto me importa: ayudarlo a pasar por un hombre como los demás.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "ayudarlo a pasar por un hombre como los demás.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "You help me to pass for a man like another. So if I _am_, as I understand you, you're not compromised. Is that it?\"\n\nShe had another hesitation, but she spoke clearly enough. \"That's it. It's all that concerns me—to help you to pass for a man like another.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-391",
       "legacy_index": 391,
-      "t": "No habría sido un fracaso quedar arruinado, deshonrado, expuesto a la picota, ahorcado; el fracaso era no ser nada. Y así, en el valle oscuro hacia el cual su senda había dado aquel giro imprevisto, tanteaba y se preguntaba no poco.\n\nYa no le quedaba más que un deseo: no descubrir que lo habían engañado.",
+      "t": "No habría sido un fracaso quedar arruinado, deshonrado, expuesto a la picota, ahorcado; el fracaso era no ser nada. Y así, en el valle oscuro hacia el cual su senda había dado aquel giro imprevisto, tanteaba y se preguntaba no poco.\n\n[…]\n\nSolo le quedaba un deseo: que no lo hubieran «engañado».",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "el fracaso era no ser nada.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "It wouldn't have been failure to be bankrupt, dishonoured, pilloried, hanged; it was failure not to be anything. And so, in the dark valley into which his path had taken its unlooked-for twist, he wondered not a little as he groped.\n\n[…]\n\nHe had but one desire left—that he shouldn't have been \"sold.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-392",
       "legacy_index": 392,
-      "t": "Casi tan blanca como la cera, con las marcas y signos del rostro tan numerosos y finos como si una aguja los hubiera grabado, envuelta en suaves paños blancos realzados por una bufanda verde desvaída, sobre cuyo tono delicado los años habían obrado un refinamiento ulterior, era la imagen de una esfinge serena y exquisita, pero impenetrable, cuya cabeza —o, en realidad, toda cuya persona— podía haber sido espolvoreada de plata.\n\nEra una esfinge; sin embargo, con sus pétalos blancos y sus frondas verdes, también podía ser un lirio, solo que un lirio artificial, maravillosamente imitado y conservado siempre, sin polvo ni mancha, bajo una transparente campana de cristal.",
+      "t": "Casi tan blanca como la cera, con las marcas y signos de su rostro tan numerosos y finos como si los hubiera grabado una aguja, envuelta en suaves paños blancos realzados por una bufanda verde desvaída, cuyo tono delicado había sido consagrado por los años, era la imagen de una esfinge serena, exquisita, pero impenetrable, cuya cabeza —o, en realidad, toda cuya persona— podría haber sido espolvoreada de plata. Era una esfinge; sin embargo, con sus pétalos blancos y sus frondas verdes, también podía ser un lirio, solo que un lirio artificial, maravillosamente imitado y conservado siempre, sin polvo ni mancha, aunque no exento de una ligera caída y una complejidad de tenues pliegues, bajo una transparente campana de cristal.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "una esfinge serena y exquisita, pero impenetrable",
+      "highlight": "una esfinge serena, exquisita, pero impenetrable",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "Almost as white as wax, with the marks and signs in her face as numerous and as fine as if they had been etched by a needle, with soft white draperies relieved by a faded green scarf, the delicate tone of which had been consecrated by the years, she was the picture of a serene, exquisite, but impenetrable sphinx, whose head, or indeed all whose person, might have been powdered with silver. She was a sphinx, yet with her white petals and green fronds she might have been a lily too—only an artificial lily, wonderfully imitated and constantly kept, without dust or stain, though not exempt from a slight droop and a complexity of faint creases, under some clear glass bell.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-393",
       "legacy_index": 393,
-      "t": "—Sería lo peor —se permitió decir finalmente—. Quiero decir la cosa que nunca he dicho.\n\nEsto lo hizo callar por un momento.\n\n—¿Más monstruosa que todas las monstruosidades que hemos nombrado?\n\n—Más monstruosa. ¿No es eso lo que expresa suficientemente al llamarla la peor?\n\n—Sin duda, si quiere decir, como yo, algo que incluya toda la pérdida y toda la vergüenza concebibles.",
+      "t": "—_Sería_ lo peor —se permitió decir finalmente—. Quiero decir la cosa que nunca he dicho.\n\nEsto lo hizo callar por un momento. —¿Más monstruosa que todas las monstruosidades que hemos nombrado?\n\n—Más monstruosa. ¿No es eso lo que expresa suficientemente al llamarla la peor?\n\nMarcher reflexionó. —Sin duda, si quiere decir, como yo, algo que incluya toda la pérdida y toda la vergüenza concebibles.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "la cosa que nunca he dicho.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"It _would_ be the worst,\" she finally let herself say. \"I mean the thing that I've never said.\"\n\nIt hushed him a moment. \"More monstrous than all the monstrosities we've named?\"\n\n\"More monstrous. Isn't that what you sufficiently express,\" she asked, \"in calling it the worst?\"\n\nMarcher thought. \"Assuredly—if you mean, as I do, something that includes all the loss and all the shame that are thinkable.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-394",
       "legacy_index": 394,
-      "t": "—La puerta no está cerrada. La puerta está abierta —dijo May Bartram.\n\n—¿Entonces todavía ha de venir algo?\n\nElla volvió a esperar, siempre con sus ojos fríos y dulces puestos en él.\n\n—Nunca es demasiado tarde.\n\nCon su paso deslizante había reducido la distancia entre ambos, y durante un minuto permaneció más cerca de él, junto a él, como si todavía estuviera cargada de lo no dicho.",
+      "t": "—La puerta no está cerrada. La puerta está abierta —dijo May Bartram.\n\n—¿Entonces ha de venir algo?\n\nElla volvió a esperar, siempre con sus ojos fríos y dulces puestos en él. «Nunca es demasiado tarde». Con su paso deslizante redujo la distancia entre ambos, y durante un minuto permaneció más cerca de él, junto a él, como si todavía estuviera cargada de lo no dicho.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "Nunca es demasiado tarde.",
+      "highlight": "Nunca es demasiado tarde",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "The door isn't shut. The door's open,\" said May Bartram.\n\n\"Then something's to come?\"\n\nShe waited once again, always with her cold, sweet eyes on him. \"It's never too late.\" She had, with her gliding step, diminished the distance between them, and she stood nearer to him, close to him, a minute, as if still full of the unspoken.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-395",
       "legacy_index": 395,
-      "t": "—¿Qué ha sucedido entonces?\n\nCon ayuda de su acompañante, ella volvía a estar en pie; y él, sintiendo que se le imponía la retirada, había encontrado sin saber cómo su sombrero y sus guantes y alcanzado la puerta. Sin embargo, esperó la respuesta.\n\n—Lo que tenía que suceder —dijo ella.",
+      "t": "—¿Qué ha sucedido entonces?\n\nCon ayuda de su acompañante, ella volvía a estar en pie; y él, sintiendo que se le imponía la retirada, había encontrado, aturdido, su sombrero y sus guantes y había alcanzado la puerta. Sin embargo, esperó la respuesta. «Lo que _tenía_ que suceder», dijo ella.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "Lo que tenía que suceder",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"What then has happened?\"\n\nShe was once more, with her companion's help, on her feet, and, feeling withdrawal imposed on him, he had found, blankly, his hat and gloves and had reached the door. Yet he waited for her answer. \"What _was_ to,\" she said.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-396",
       "legacy_index": 396,
-      "t": "—Pero, si no he tenido conciencia de ello y no me ha tocado…\n\n—¡Ah, que no haya tenido conciencia de ello! —y pareció vacilar un instante ante la manera de abordar aquello—. Que no haya tenido conciencia es la extrañeza dentro de la extrañeza. Es la maravilla de la maravilla.\n\nHablaba con una dulzura casi de niña enferma, pero ahora, al fin, al término de todo, con la perfecta rectitud de una sibila.\n\n—Lo ha tocado —prosiguió—. Ha cumplido su función. Lo ha hecho enteramente suyo.",
+      "t": "—Pero, si no he tenido conciencia de ello y no me ha tocado…\n\n—¡Ah, que no haya tenido conciencia de ello! —y pareció vacilar un instante ante la manera de abordar aquello—. Que no haya tenido conciencia es la extrañeza _dentro de_ la extrañeza. Es la maravilla _de_ la maravilla. Hablaba con una dulzura casi de niña enferma, pero ahora, al fin, al término de todo, con la perfecta franqueza de una sibila.\n\n[…]\n\n—Lo _ha_ tocado —prosiguió—. Ha cumplido su función. Lo ha hecho enteramente suyo.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "la extrañeza dentro de la extrañeza.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"But if I haven't been aware of it, and it hasn't touched me———?\"\n\n\"Ah, your not being aware of it,\" and she seemed to hesitate an instant to deal with this—\"your not being aware of it is the strangeness _in_ the strangeness. It's the wonder _of_ the wonder.\" She spoke as with the softness almost of a sick child, yet now at last, at the end of all, with the perfect straightness of a sybil.\n\n[…]\n\n\"It _has_ touched you,\" she went on. \"It has done its office. It has made you all its own.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-397",
       "legacy_index": 397,
-      "t": "—¿Tan absolutamente sin que yo lo supiera?\n\n—Tan absolutamente sin que lo supiera.\n\nLa mano de él, mientras se inclinaba hacia ella, descansaba sobre el brazo de la silla, y ella, aún con aquella débil sonrisa, puso encima la suya.\n\n—Es suficiente que yo lo sepa.",
+      "t": "—¿Tan absolutamente sin que yo lo supiera?\n\n«Tan absolutamente sin que lo supiera». La mano de él, mientras se inclinaba hacia ella, descansaba sobre el brazo de la silla, y ella, aún con aquella débil sonrisa, puso encima la suya. «Es suficiente que _yo_ lo sepa».",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "Es suficiente que yo lo sepa.",
+      "highlight": "Es suficiente que yo lo sepa",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"So utterly without my knowing it?\"\n\n\"So utterly without your knowing it.\" His hand, as he leaned to her, was on the arm of her chair, and, dimly smiling always now, she placed her own on it. \"It's enough if _I_ know it.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-398",
       "legacy_index": 398,
-      "t": "—Nada, para mí, ha pasado; nada pasará hasta que yo mismo pase, lo cual ruego a mis estrellas que suceda lo antes posible. Pero digamos —añadió— que, como usted sostiene, me he comido el pastel hasta la última miga: ¿cómo puede la cosa que nunca he sentido en absoluto ser la cosa que estaba señalado para sentir?\n\nElla le respondió quizá de manera menos directa, pero sin turbarse:\n\n—Da usted por supuestos sus «sentimientos». Estaba destinado a sufrir su destino. No necesariamente a conocerlo.",
+      "t": "—_Nada_, para mí, ha pasado; nada _pasará_ hasta que yo mismo pase, lo cual ruego a mis estrellas que suceda lo antes posible. Pero digamos —añadió— que, como usted sostiene, me he comido el pastel hasta la última miga: ¿cómo puede la cosa que nunca he sentido en absoluto ser la cosa que yo estaba destinado a sentir?\n\nElla le respondió quizá de manera menos directa, pero sin turbarse: —Da usted por supuestos sus «sentimientos». Estaba destinado a sufrir su destino. No necesariamente a conocerlo.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "Estaba destinado a sufrir su destino.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "_Nothing_, for me, is past; nothing _will_ pass until I pass myself, which I pray my stars may be as soon as possible. Say, however,\" he added, \"that I've eaten my cake, as you contend, to the last crumb—how can the thing I've never felt at all be the thing I was marked out to feel?\"\n\nShe met him, perhaps, less directly, but she met him unperturbed. \"You take your 'feelings' for granted. You were to suffer your fate. That was not necessarily to know it.\"",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-399",
       "legacy_index": 399,
-      "t": "—¿Es de eso, entonces, de lo que está muriendo?\n\nElla se limitó a observarlo, al principio gravemente, como para ver dónde se encontraba él ahora; y quizá vio algo, o temió algo, que movió su compasión.\n\n—Viviría todavía para usted, si pudiera.\n\nCerró los ojos por un momento, como si, retirada dentro de sí misma, lo intentara por última vez.\n\n—¡Pero no puedo! —dijo, alzándolos de nuevo para despedirse de él.",
+      "t": "—¿Es de eso, entonces, de lo que está muriendo?\n\nElla se limitó a observarlo, al principio gravemente, como para ver dónde se encontraba él ahora; y quizá vio algo, o temió algo, que movió su compasión. «Viviría todavía para usted, si pudiera». Cerró los ojos por un momento, como si, retirada dentro de sí misma, lo intentara por última vez. «¡Pero no puedo!», dijo, alzándolos de nuevo para despedirse de él.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "Viviría todavía para usted, si pudiera.",
+      "highlight": "Viviría todavía para usted, si pudiera",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "\"Is it of that, then, you're dying?\"\n\nShe but watched him, gravely at first, as if to see, with this, where he was, and she might have seen something, or feared something, that moved her sympathy. \"I would live for you still—if I could.\" Her eyes closed for a little, as if, withdrawn into herself, she were, for a last time, trying. \"But I can't!\" she said as she raised them again to take leave of him.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-400",
       "legacy_index": 400,
-      "t": "Marcher avanzaba por la hierba abatida, donde ninguna vida se movía, donde ningún aliento sonaba, donde ningún ojo maligno parecía brillar desde una posible guarida, casi como si buscase vagamente a la Bestia, y aún más como si la echara dolorosamente de menos.\n\nCaminaba por una existencia que se había vuelto extrañamente más espaciosa.",
+      "t": "En realidad, todo acabó en que el pobre Marcher se abría paso por la hierba pisoteada, donde ninguna vida se movía, donde ningún aliento sonaba, donde ningún ojo maligno parecía brillar desde una posible guarida, casi como si buscase vagamente a la Bestia, y aún más como si la echara de menos. Deambulaba por una existencia que se había vuelto extrañamente más espaciosa y, deteniéndose a intervalos en lugares donde la maleza de la vida le parecía más densa, se preguntaba con anhelo, se interrogaba en secreto y con dolor, si habría acechado aquí o allá.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
-      "highlight": "como si la echara dolorosamente de menos.",
+      "highlight": "como si la echara de menos.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "What it presently came to in truth was that poor Marcher waded through his beaten grass, where no life stirred, where no breath sounded, where no evil eye seemed to gleam from a possible lair, very much as if vaguely looking for the Beast, and still more as if missing it. He walked about in an existence that had grown strangely more spacious, and, stopping fitfully in places where the undergrowth of life struck him as closer, asked himself yearningly, wondered secretly and sorely, if it would have lurked here or there.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-401",
       "legacy_index": 401,
-      "t": "La salida habría sido amarla; entonces, entonces habría vivido. Ella había vivido —¿quién podía decir ahora con qué pasión?—, puesto que lo había amado por él mismo; mientras que él nunca había pensado en ella —¡ah, con qué enormidad resplandecía esto ante él!— sino en el frío de su egoísmo y a la luz de la utilidad de ella.",
+      "t": "La salida habría sido amarla; entonces, _entonces_ habría vivido. _Ella_ había vivido —¿quién podía decir ahora con qué pasión?—, puesto que lo había amado por él mismo; mientras que él nunca había pensado en ella —¡ah, con qué enormidad resplandecía esto ante él!— sino en el frío de su egoísmo y a la luz de la utilidad que ella tenía para él.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "La salida habría sido amarla",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "The escape would have been to love her; then, _then_ he would have lived. _She_ had lived—who could say now with what passion?—since she had loved him for himself; whereas he had never thought of her (ah, how it hugely glared at him!) but in the chill of his egotism and the light of her use.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-402",
       "legacy_index": 402,
-      "t": "Este horror del despertar: esto era el conocimiento, un conocimiento bajo cuyo aliento hasta las lágrimas de sus ojos parecían helarse. A pesar de ellas, trató de fijarlo y retenerlo; lo mantuvo ante sí para poder sentir el dolor.\n\nEso, por lo menos, tardío y amargo, tenía algo del sabor de la vida.",
+      "t": "Este horror del despertar: _esto_ era el conocimiento, un conocimiento bajo cuyo aliento hasta las lágrimas de sus ojos parecían helarse. A través de ellas, no obstante, trató de fijarlo y retenerlo; lo mantuvo ante sí para poder sentir el dolor. Eso, por lo menos, tardío y amargo, tenía algo del sabor de la vida.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "tenía algo del sabor de la vida.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "This horror of waking—_this_ was knowledge, knowledge under the breath of which the very tears in his eyes seemed to freeze. Through them, none the less, he tried to fix it and hold it; he kept it there before him so that he might feel the pain. That at least, belated and bitter, had something of the taste of life.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-403",
       "legacy_index": 403,
-      "t": "Vio la Jungla de su vida y vio a la Bestia agazapada; entonces, mientras miraba, percibió que, como por una agitación del aire, se alzaba, enorme y horrible, para el salto que acabaría con él.\n\nSus ojos se oscurecieron: estaba cerca; e, instintivamente, volviéndose en su alucinación para evitarla, se arrojó de bruces sobre la tumba.",
+      "t": "Vio la Jungla de su vida y vio a la Bestia agazapada; entonces, mientras miraba, percibió que, como por una agitación del aire, se alzaba, enorme y horrible, para el salto que acabaría con él. Sus ojos se oscurecieron: estaba cerca; e, instintivamente, volviéndose en su alucinación para evitarla, se arrojó de bruces sobre la tumba.",
       "a": "Henry James",
       "obra": "La bestia en la jungla, Henry James",
       "highlight": "el salto que acabaría con él.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-henry-james",
-      "workId": "work-la-bestia-en-la-jungla"
+      "workId": "work-la-bestia-en-la-jungla",
+      "original": {
+        "text": "He saw the Jungle of his life and saw the lurking Beast; then, while he looked, perceived it, as by a stir of the air, rise, huge and hideous, for the leap that was to settle him. His eyes darkened—it was close; and, instinctively turning, in his hallucination, to avoid it, he flung himself, on his face, on the tomb.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-404",

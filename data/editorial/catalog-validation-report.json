@@ -1,6 +1,6 @@
 {
   "valid": true,
-  "validated_at": "2026-08-24T12:23:28.819Z",
+  "validated_at": "2026-08-24T13:44:43.710Z",
   "summary": {
     "expected_quotes": 640,
     "intermediate_quotes": 640,
@@ -10,7 +10,7 @@
     "sources": 29,
     "editorial_decisions": 0,
     "poems": 27,
-    "quotes_with_line_breaks": 339,
+    "quotes_with_line_breaks": 332,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
@@ -31,9 +31,8 @@
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "4 fuente(s) conservan derechos sin revisar.",
+      "message": "3 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
-        "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
         "source-precioso-veneno"
@@ -41,9 +40,8 @@
     },
     {
       "code": "source_verification_pending",
-      "message": "4 fuente(s) esperan verificación bibliográfica.",
+      "message": "3 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
-        "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
         "source-precioso-veneno"
@@ -53,11 +51,11 @@
   "pending_issues": [
     {
       "code": "rights_review_pending",
-      "count": 4
+      "count": 3
     },
     {
       "code": "source_verification_pending",
-      "count": 4
+      "count": 3
     }
   ],
   "reviewed_files": [
