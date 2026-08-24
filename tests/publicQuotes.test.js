@@ -148,6 +148,9 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-221', 'quote-222', 'quote-223', 'quote-224', 'quote-225',
     'quote-226', 'quote-227', 'quote-228', 'quote-229', 'quote-230',
     'quote-231', 'quote-232', 'quote-233',
+    'quote-234', 'quote-235', 'quote-236', 'quote-237', 'quote-238',
+    'quote-239', 'quote-240', 'quote-241', 'quote-242', 'quote-243',
+    'quote-244', 'quote-245', 'quote-246',
     'quote-247', 'quote-248', 'quote-249', 'quote-250', 'quote-251',
     'quote-252', 'quote-253', 'quote-254', 'quote-255', 'quote-256',
     'quote-257', 'quote-258',
@@ -629,6 +632,92 @@ test('Una habitación propia conserva límites, referentes y recortes tras la se
   assert.match(quotes.get('quote-229').t, /Ilumina a un grupo en una habitación/);
   assert.match(quotes.get('quote-233').t, /no solo con el mundo de los hombres y las mujeres/);
   for (const quote of roomQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('El rayo que no cesa distingue el impreso de 1936 de la actualización mínima', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const hernandezQuotes = document.quotes.filter(quote => quote.workId === 'work-el-rayo-que-no-cesa');
+
+  assert.equal(hernandezQuotes.length, 13);
+  assert.ok(hernandezQuotes.every(quote => quote.original?.lang === 'es'));
+  assert.ok(hernandezQuotes.every(quote => quote.original?.label === 'Original español'));
+  assert.match(quotes.get('quote-234').original.text, /rayos destructores[.]$/);
+  assert.match(quotes.get('quote-234').t, /rayos destructores[.]$/);
+  assert.match(quotes.get('quote-235').original.text, /Sal de mi corazón del que/);
+  assert.match(quotes.get('quote-235').t, /Sal de mi corazón, del que/);
+  assert.match(quotes.get('quote-236').original.text, /tan[.]pura/);
+  assert.match(quotes.get('quote-236').t, /tan pura/);
+  assert.match(quotes.get('quote-239').t, /^Una querencia tengo por tu acento,/);
+  assert.match(quotes.get('quote-240').original.text, /ver y oir[\s\S]+has dé oirme/);
+  assert.match(quotes.get('quote-240').t, /ver y oír[\s\S]+has de oírme/);
+  assert.match(quotes.get('quote-241').original.text, /Besarte fué besar/);
+  assert.match(quotes.get('quote-241').t, /Besarte fue besar/);
+  assert.doesNotMatch(quotes.get('quote-241').t, /fue'/);
+  assert.match(quotes.get('quote-242').original.text, /lacteada-y breve vía/);
+  assert.match(quotes.get('quote-242').t, /lacteada y breve vía/);
+  assert.match(quotes.get('quote-245').original.text, /sedienta de catástrofes y hambrienta[.]$/);
+  assert.match(quotes.get('quote-245').t, /sedienta de catástrofes y hambrienta[.]$/);
+  assert.match(quotes.get('quote-244').t, /^Yo quiero ser llorando el hortelano/);
+  assert.match(quotes.get('quote-244').t, /siento más tu muerte que mi vida[.]$/);
+  assert.match(quotes.get('quote-245').t, /^Ando sobre rastrojos de difuntos/);
+  assert.match(quotes.get('quote-246').t, /^Quiero escarbar la tierra con los dientes/);
+  assert.match(quotes.get('quote-246').original.text, /y tu sangre se irán a cada lado\ndisputando tu novia y las abejas[.]$/);
+  assert.match(quotes.get('quote-246').t, /y tu sangre se irán a cada lado\ndisputando tu novia y las abejas[.]$/);
+  for (const quote of hernandezQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.split('\n').length,
+      quote.original.text.split('\n').length,
+      `${quote.id} debe conservar la disposición estrófica`,
+    );
+  }
+});
+
+test('El retrato de Dorian Gray recupera la edición de 1891 y marca todos sus recortes', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const wildeQuotes = document.quotes.filter(quote => quote.workId === 'work-el-retrato-de-dorian-gray');
+
+  assert.equal(wildeQuotes.length, 21);
+  assert.ok(wildeQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(wildeQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-259').original.text, /^“Harry,”/);
+  assert.match(quotes.get('quote-259').t, /sobre el lienzo coloreado/);
+  assert.equal(quotes.get('quote-261').t.match(/allí estaba/gi)?.length, 2);
+  assert.match(quotes.get('quote-262').original.text, /evil and aging face/);
+  assert.doesNotMatch(quotes.get('quote-262').t, /\n/);
+  assert.match(quotes.get('quote-264').t, /^—No sigas, Harry/);
+  assert.doesNotMatch(quotes.get('quote-265').t, /\n/);
+  assert.match(quotes.get('quote-266').original.text, /some one else's music/);
+  assert.match(quotes.get('quote-266').original.text, /To realize one's nature/);
+  assert.match(quotes.get('quote-266').t, /pensamientos naturales ni arde con sus pasiones naturales/);
+  assert.match(quotes.get('quote-266').t, /Sus virtudes no son reales para él/);
+  assert.match(quotes.get('quote-267').t, /^—Sí —continuó lord Henry—/);
+  assert.equal(quotes.get('quote-268').t.match(/¡Qué triste es!/g)?.length, 2);
+  assert.match(quotes.get('quote-268').t, /¡A cambio de eso —de eso— lo daría todo!/);
+  assert.match(quotes.get('quote-268').original.text, /day of June[.] [.] [.] [.] If/);
+  assert.equal(quotes.get('quote-269').t.match(/\[…\]/g)?.length, 2);
+  assert.match(quotes.get('quote-269').t, /La gente corriente que actuaba conmigo me parecía divina/);
+  assert.doesNotMatch(quotes.get('quote-269').t, /\n/);
+  assert.match(quotes.get('quote-271').t, /^Pero la posición y la riqueza/);
+  assert.match(quotes.get('quote-271').t, /no creo en absoluto esos rumores/);
+  assert.match(quotes.get('quote-273').t, /\[…\] Reza, Dorian, reza —murmuró—/);
+  assert.match(quotes.get('quote-274').original.text, /could realize his conception/);
+  assert.match(quotes.get('quote-277').t, /un Dios justísimo/);
+  assert.match(quotes.get('quote-278').t, /estados de ánimo superficiales/);
+  assert.match(quotes.get('quote-278').t, /pensamientos enfermizos[.] \[…\] La juventud/);
+  assert.match(quotes.get('quote-279').t, /no podía perdonárselo[.] \[…\] El asesinato/);
+  assert.match(quotes.get('quote-275').original.text, /same[.]”$/);
+  assert.match(quotes.get('quote-276').original.text, /sonnets[.]”$/);
+  for (const quote of wildeQuotes) {
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     assert.equal(
       quote.t.match(/\[…\]/g)?.length || 0,

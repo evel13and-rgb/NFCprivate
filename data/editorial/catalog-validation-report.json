@@ -1,6 +1,6 @@
 {
   "valid": true,
-  "validated_at": "2026-08-23T12:48:23.587Z",
+  "validated_at": "2026-08-24T10:02:27.403Z",
   "summary": {
     "expected_quotes": 640,
     "intermediate_quotes": 640,
@@ -10,7 +10,7 @@
     "sources": 29,
     "editorial_decisions": 0,
     "poems": 27,
-    "quotes_with_line_breaks": 396,
+    "quotes_with_line_breaks": 393,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
@@ -31,10 +31,8 @@
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "7 fuente(s) conservan derechos sin revisar.",
+      "message": "5 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
-        "source-el-rayo-que-no-cesa",
-        "source-el-retrato-de-dorian-gray",
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
@@ -44,10 +42,8 @@
     },
     {
       "code": "source_verification_pending",
-      "message": "7 fuente(s) esperan verificación bibliográfica.",
+      "message": "5 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
-        "source-el-rayo-que-no-cesa",
-        "source-el-retrato-de-dorian-gray",
         "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
@@ -59,11 +55,11 @@
   "pending_issues": [
     {
       "code": "rights_review_pending",
-      "count": 7
+      "count": 5
     },
     {
       "code": "source_verification_pending",
-      "count": 7
+      "count": 5
     }
   ],
   "reviewed_files": [

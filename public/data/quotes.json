@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T12:43:02.048Z",
+  "generated_at": "2026-08-24T09:48:31.580Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -3950,38 +3950,53 @@
     {
       "id": "quote-234",
       "legacy_index": 234,
-      "t": "¿No cesará este rayo que me habita\nel corazón de exasperadas fieras\ny de fraguas coléricas y herreras\ndonde el metal más fresco se marchita?\n\n¿No cesará esta terca estalactita\nde cultivar sus duras cabelleras\ncomo espadas y rígidas hogueras\nhacia mi corazón que muge y grita?\n\nEste rayo ni cesa ni se agota:\nde mí mismo tomó su procedencia\ny ejercita en mí mismo sus furores.\n\nEsta obstinada piedra de mí brota\ny sobre mí dirige la insistencia\nde sus lluviosos rayos destructores",
+      "t": "¿No cesará este rayo que me habita\nel corazón de exasperadas fieras\ny de fraguas coléricas y herreras\ndonde el metal más fresco se marchita?\n\n¿No cesará esta terca estalactita\nde cultivar sus duras cabelleras\ncomo espadas y rígidas hogueras\nhacia mi corazón que muge y grita?\n\nEste rayo ni cesa ni se agota:\nde mí mismo tomó su procedencia\ny ejercita en mí mismo sus furores.\n\nEsta obstinada piedra de mí brota\ny sobre mí dirige la insistencia\nde sus lluviosos rayos destructores.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "Este rayo ni cesa ni se agota.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "¿No cesará este rayo que me habita\nel corazón de exasperadas fieras\ny de fraguas coléricas y herreras\ndonde el metal más fresco se marchita?\n\n¿No cesará esta terca estalactita\nde cultivar sus duras cabelleras\ncomo espadas y rígidas hogueras\nhacia mi corazón que muge y grita?\n\nEste rayo ni cesa ni se agota:\nde mí mismo tomó su procedencia\ny ejercita en mí mismo sus furores.\n\nEsta obstinada piedra de mí brota\ny sobre mí dirige la insistencia\nde sus lluviosos rayos destructores.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-235",
       "legacy_index": 235,
-      "t": "Guiando un tribunal de tiburones,\ncomo con dos guadañas eclipsadas,\ncon dos cejas tiznadas y cortadas\nde tiznar y cortar los corazones,\n\nen el mío has entrado, y en él pones\nuna red de raíces irritadas,\nque avariciosamente acaparadas\ntiene en su territorio sus pasiones.\n\nSal de mi corazón del que me has hecho\nun girasol sumiso y amarillo\nal dictamen solar que tu ojo envía:\n\nun terrón para siempre insatisfecho,\nun pez embotellado y un martillo\nharto de golpear en la herrería.",
+      "t": "Guiando un tribunal de tiburones,\ncomo con dos guadañas eclipsadas,\ncon dos cejas tiznadas y cortadas\nde tiznar y cortar los corazones,\n\nen el mío has entrado, y en él pones\nuna red de raíces irritadas,\nque avariciosamente acaparadas\ntiene en su territorio sus pasiones.\n\nSal de mi corazón, del que me has hecho\nun girasol sumiso y amarillo\nal dictamen solar que tu ojo envía:\n\nun terrón para siempre insatisfecho,\nun pez embotellado y un martillo\nharto de golpear en la herrería.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "Un girasol sumiso y amarillo.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Guiando un tribunal de tiburones,\ncomo con dos guadañas eclipsadas,\ncon dos cejas tiznadas y cortadas\nde tiznar y cortar los corazones,\n\nen el mío has entrado, y en él pones\nuna red de raíces irritadas,\nque avariciosamente acaparadas\ntiene en su territorio sus pasiones.\n\nSal de mi corazón del que me has hecho\nun girasol sumiso y amarillo\nal dictamen solar que tu ojo envía:\n\nun terrón para siempre insatisfecho,\nun pez embotellado y un martillo\nharto de golpear en la herrería.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-236",
       "legacy_index": 236,
-      "t": "Me tiraste un limón, y tan amargo,\ncon una mano cálida, y tan.pura,\nque no menoscabó su arquitectura\ny probé su amargura sin embargo.\n\nCon el golpe amarillo, de un letargo\ndulce pasó a una ansiosa calentura\nmi sangre, que sintió la mordedura\nde una punta de seno duro y largo.\n\nPero al mirarte y verte la sonrisa\nque te produjo el limonado hecho,\na mi voraz malicia tan ajena,\n\nse me durmió la sangre en la camisa,\ny se volvió el poroso y áureo pecho\nuna picuda y deslumbrante pena.",
+      "t": "Me tiraste un limón, y tan amargo,\ncon una mano cálida, y tan pura,\nque no menoscabó su arquitectura\ny probé su amargura sin embargo.\n\nCon el golpe amarillo, de un letargo\ndulce pasó a una ansiosa calentura\nmi sangre, que sintió la mordedura\nde una punta de seno duro y largo.\n\nPero al mirarte y verte la sonrisa\nque te produjo el limonado hecho,\na mi voraz malicia tan ajena,\n\nse me durmió la sangre en la camisa,\ny se volvió el poroso y áureo pecho\nuna picuda y deslumbrante pena.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "Se me durmió la sangre.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Me tiraste un limón, y tan amargo,\ncon una mano cálida, y tan.pura,\nque no menoscabó su arquitectura\ny probé su amargura sin embargo.\n\nCon el golpe amarillo, de un letargo\ndulce pasó a una ansiosa calentura\nmi sangre, que sintió la mordedura\nde una punta de seno duro y largo.\n\nPero al mirarte y verte la sonrisa\nque te produjo el limonado hecho,\na mi voraz malicia tan ajena,\n\nse me durmió la sangre en la camisa,\ny se volvió el poroso y áureo pecho\nuna picuda y deslumbrante pena.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-237",
@@ -3993,7 +4008,12 @@
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Umbrío por la pena, casi bruno,\nporque la pena tizna cuando estalla,\ndonde yo no me hallo no se halla\nhombre más apenado que ninguno.\n\nSobre la pena duermo solo y uno,\npena es mi paz y pena mi batalla,\nperro que ni me deja ni se calla,\nsiempre a su dueño fiel, pero importuno.\n\nCardos y penas llevo por corona,\ncardos y penas siembran sus leopardos\ny no me dejan bueno hueso alguno.\n\nNo podrá con la pena mi persona\nrodeada de penas y de cardos:\n¡cuánto penar para morirse uno!",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-238",
@@ -4005,55 +4025,80 @@
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Tengo estos huesos hechos a las penas\ny a las cavilaciones estas sienes:\npena que vas, cavilación que vienes\ncomo el mar de la playa a las arenas.\n\nComo el mar de la playa a las arenas,\nvoy en este naufragio de vaivenes\npor una noche oscura de sartenes\nredondas, pobres, tristes y morenas.\n\nNadie me salvará de este naufragio\nsi no es tu amor, la tabla que procuro,\nsi no es tu voz, el norte que pretendo.\n\nEludiendo por eso el mal presagio\nde que ni en ti siquiera habré seguro,\nvoy entre pena y pena sonriendo.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-239",
       "legacy_index": 239,
-      "t": "Una querencia tengo por tu acento\nuna apetencia por tu compañía\ny una dolencia de melancolía\npor la ausencia del aire de tu viento.\n\nPaciencia necesita mi tormento,\nurgencia de tu garza galanía,\ntu clemencia solar mi helado día,\ntu asistencia la herida en que lo cuento.\n\n¡Ay querencia, dolencia y apetencia!:\ntus sustanciales besos, mi sustento,\nme faltan y me muero sobre mayo.\n\nQuiero que vengas, flor desde tu ausencia,\na serenar la sien del pensamiento\nque desahoga en mí su eterno rayo.",
+      "t": "Una querencia tengo por tu acento,\nuna apetencia por tu compañía\ny una dolencia de melancolía\npor la ausencia del aire de tu viento.\n\nPaciencia necesita mi tormento,\nurgencia de tu garza galanía,\ntu clemencia solar mi helado día,\ntu asistencia la herida en que lo cuento.\n\n¡Ay querencia, dolencia y apetencia!:\ntus sustanciales besos, mi sustento,\nme faltan y me muero sobre mayo.\n\nQuiero que vengas, flor desde tu ausencia,\na serenar la sien del pensamiento\nque desahoga en mí su eterno rayo.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "Me muero sobre mayo.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Una querencia tengo por tu acento,\nuna apetencia por tu compañía\ny una dolencia de melancolía\npor la ausencia del aire de tu viento.\n\nPaciencia necesita mi tormento,\nurgencia de tu garza galanía,\ntu clemencia solar mi helado día,\ntu asistencia la herida en que lo cuento.\n\n¡Ay querencia, dolencia y apetencia!:\ntus sustanciales besos, mi sustento,\nme faltan y me muero sobre mayo.\n\nQuiero que vengas, flor desde tu ausencia,\na serenar la sien del pensamiento\nque desahoga en mí su eterno rayo.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-240",
       "legacy_index": 240,
-      "t": "Yo sé que ver y oír a un triste enfada\ncuando se viene y va de la alegría\ncomo un mar meridiano a una bahía,\na una región esquiva y desolada.\n\nLo que he sufrido y nada todo es nada\npara lo que me queda todavía\nque sufrir el rigor de esta agonía\nde andar de este cuchillo a aquella espada.\n\nMe callaré, me apartaré si puedo\ncon mi constante pena instante, plena,\na donde ni has dé oírme ni he de verte.\n\nMe voy, me voy, me voy, pero me quedo,\npero me voy, desierto y sin arena:\nadiós, amor, adiós hasta la muerte.",
+      "t": "Yo sé que ver y oír a un triste enfada\ncuando se viene y va de la alegría\ncomo un mar meridiano a una bahía,\na una región esquiva y desolada.\n\nLo que he sufrido y nada todo es nada\npara lo que me queda todavía\nque sufrir el rigor de esta agonía\nde andar de este cuchillo a aquella espada.\n\nMe callaré, me apartaré si puedo\ncon mi constante pena instante, plena,\na donde ni has de oírme ni he de verte.\n\nMe voy, me voy, me voy, pero me quedo,\npero me voy, desierto y sin arena:\nadiós, amor, adiós hasta la muerte.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "Me voy, pero me quedo.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Yo sé que ver y oir a un triste enfada\ncuando se viene y va de la alegría\ncomo un mar meridiano a una bahía,\na una región esquiva y desolada.\n\nLo que he sufrido y nada todo es nada\npara lo que me queda todavía\nque sufrir el rigor de esta agonía\nde andar de este cuchillo a aquella espada.\n\nMe callaré, me apartaré si puedo\ncon mi constante pena instante, plena,\na donde ni has dé oirme ni he de verte.\n\nMe voy, me voy, me voy, pero me quedo,\npero me voy, desierto y sin arena:\nadiós, amor, adiós hasta la muerte.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-241",
       "legacy_index": 241,
-      "t": "No me conformo, no: me desespero\ncomo si fuera un huracán de lava\nen el presidio de una almendra esclava\no en el penal colgante de un jilguero.\n\nBesarte fue' besar un avispero\nque me clava al tormento y me desclava\ny cava un hoyo fúnebre y lo cava\ndentro del corazón donde me muero.\n\nNo me conformo, no: ya es tanto y tanto\nidolatrar la imagen de tu beso\ny perseguir el curso de tu aroma.\n\nUn enterrado vivo por el llanto,\nuna revolución dentro de un hueso,\nun rayo soy sujeto a una redoma.",
+      "t": "No me conformo, no: me desespero\ncomo si fuera un huracán de lava\nen el presidio de una almendra esclava\no en el penal colgante de un jilguero.\n\nBesarte fue besar un avispero\nque me clava al tormento y me desclava\ny cava un hoyo fúnebre y lo cava\ndentro del corazón donde me muero.\n\nNo me conformo, no: ya es tanto y tanto\nidolatrar la imagen de tu beso\ny perseguir el curso de tu aroma.\n\nUn enterrado vivo por el llanto,\nuna revolución dentro de un hueso,\nun rayo soy sujeto a una redoma.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "Un enterrado vivo por el llanto.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "No me conformo, no: me desespero\ncomo si fuera un huracán de lava\nen el presidio de una almendra esclava\no en el penal colgante de un jilguero.\n\nBesarte fué besar un avispero\nque me clava al tormento y me desclava\ny cava un hoyo fúnebre y lo cava\ndentro del corazón donde me muero.\n\nNo me conformo, no: ya es tanto y tanto\nidolatrar la imagen de tu beso\ny perseguir el curso de tu aroma.\n\nUn enterrado vivo por el llanto,\nuna revolución dentro de un hueso,\nun rayo soy sujeto a una redoma.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-242",
       "legacy_index": 242,
-      "t": "¿Recuerdas aquel cuello, haces memoria\ndel privilegio aquel, de aquel aquello\nque era, almenadamente blanco y bello,\nuna almena de nata giratoria?\n\nRecuerdo y no recuerdo aquella historia\nde marfil expirado en un cabello,\ndonde aprendió a ceñir el cisne cuello\ny a vocear la nieve transitoria.\n\nRecuerdo y no recuerdo aquel cogollo\nde estrangulable hielo femenino\ncomo una lacteada-y breve vía.\n\nY recuerdo aquel beso sin apoyo\nque quedó entre mi boca y el camino\nde aquel cuello, aquel beso y aquel día.",
+      "t": "¿Recuerdas aquel cuello, haces memoria\ndel privilegio aquel, de aquel aquello\nque era, almenadamente blanco y bello,\nuna almena de nata giratoria?\n\nRecuerdo y no recuerdo aquella historia\nde marfil expirado en un cabello,\ndonde aprendió a ceñir el cisne cuello\ny a vocear la nieve transitoria.\n\nRecuerdo y no recuerdo aquel cogollo\nde estrangulable hielo femenino\ncomo una lacteada y breve vía.\n\nY recuerdo aquel beso sin apoyo\nque quedó entre mi boca y el camino\nde aquel cuello, aquel beso y aquel día.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "Recuerdo y no recuerdo.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "¿Recuerdas aquel cuello, haces memoria\ndel privilegio aquel, de aquel aquello\nque era, almenadamente blanco y bello,\nuna almena de nata giratoria?\n\nRecuerdo y no recuerdo aquella historia\nde marfil expirado en un cabello,\ndonde aprendió a ceñir el cisne cuello\ny a vocear la nieve transitoria.\n\nRecuerdo y no recuerdo aquel cogollo\nde estrangulable hielo femenino\ncomo una lacteada-y breve vía.\n\nY recuerdo aquel beso sin apoyo\nque quedó entre mi boca y el camino\nde aquel cuello, aquel beso y aquel día.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-243",
@@ -4065,7 +4110,12 @@
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Como el toro he nacido para el luto\ny el dolor, como el toro estoy marcado\npor un hierro infernal en el costado\ny por varón en la ingle con un fruto.\n\nComo el toro lo encuentra diminuto\ntodo mi corazón desmesurado,\ny del rostro del beso enamorado,\ncomo el toro a tu amor se lo disputo.\n\nComo el toro me crezco en el castigo,\nla lengua en corazón tengo bañada\ny llevo al cuello un vendaval sonoro.\n\nComo el toro te sigo y te persigo,\ny dejas mi deseo en una espada,\ncomo el toro burlado, como el toro.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-244",
@@ -4077,19 +4127,29 @@
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Yo quiero ser llorando el hortelano\nde la tierra que ocupas y estercolas,\ncompañero del alma, tan temprano.\n\nAlimentando lluvias, caracolas\ny órganos mi dolor sin instrumento,\na las desalentadas amapolas\n\ndaré tu corazón por alimento.\nTanto dolor se agrupa en mi costado,\nque por doler me duele hasta el aliento.\n\nUn manotazo duro, un golpe helado,\nun hachazo invisible y homicida,\nun empujón brutal te ha derribado.\n\nNo hay extensión más grande que mi herida,\nlloro mi desventura y sus conjuntos\ny siento más tu muerte que mi vida.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-245",
       "legacy_index": 245,
-      "t": "Ando sobre rastrojos de difuntos,\ny sin calor de nadie y sin consuelo\nvoy de mi corazón a mis asuntos.\n\nTemprano levantó la muerte el vuelo,\ntemprano madrugó la madrugada,\ntemprano estás rodando por el suelo.\n\nNo perdono a la muerte enamorada,\nno perdono a la vida desatenta,\nno perdono a la tierra ni a la nada.\n\nEn mis manos levanto una tormenta\nde piedras, rayos y hachas estridentes\nsedienta de catástrofes y hambrienta",
+      "t": "Ando sobre rastrojos de difuntos,\ny sin calor de nadie y sin consuelo\nvoy de mi corazón a mis asuntos.\n\nTemprano levantó la muerte el vuelo,\ntemprano madrugó la madrugada,\ntemprano estás rodando por el suelo.\n\nNo perdono a la muerte enamorada,\nno perdono a la vida desatenta,\nno perdono a la tierra ni a la nada.\n\nEn mis manos levanto una tormenta\nde piedras, rayos y hachas estridentes\nsedienta de catástrofes y hambrienta.",
       "a": "Miguel Hernández",
       "obra": "El rayo que no cesa, Miguel Hernández",
       "highlight": "No perdono a la muerte.",
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Ando sobre rastrojos de difuntos,\ny sin calor de nadie y sin consuelo\nvoy de mi corazón a mis asuntos.\n\nTemprano levantó la muerte el vuelo,\ntemprano madrugó la madrugada,\ntemprano estás rodando por el suelo.\n\nNo perdono a la muerte enamorada,\nno perdono a la vida desatenta,\nno perdono a la tierra ni a la nada.\n\nEn mis manos levanto una tormenta\nde piedras, rayos y hachas estridentes\nsedienta de catástrofes y hambrienta.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-246",
@@ -4101,7 +4161,12 @@
       "lang": "es",
       "type": "poem",
       "authorId": "author-miguel-hernandez",
-      "workId": "work-el-rayo-que-no-cesa"
+      "workId": "work-el-rayo-que-no-cesa",
+      "original": {
+        "text": "Quiero escarbar la tierra con los dientes,\nquiero apartar la tierra parte a parte\na dentelladas secas y calientes.\n\nQuiero minar la tierra hasta encontrarte\ny besarte la noble calavera\ny desamordazarte y regresarte.\n\nVolverás a mi huerto y a mi higuera:\npor los altos andamios de las flores\npajareará tu alma colmenera\n\nde angelicales ceras y labores.\nVolverás al arrullo de las rejas\nde los enamorados labradores.\n\nAlegrarás la sombra de mis cejas,\ny tu sangre se irán a cada lado\ndisputando tu novia y las abejas.",
+        "lang": "es",
+        "label": "Original español"
+      }
     },
     {
       "id": "quote-247",
@@ -4310,7 +4375,7 @@
     {
       "id": "quote-259",
       "legacy_index": 259,
-      "t": "—Harry —dijo Basil Hallward, mirándolo directamente a la cara—, todo retrato pintado con sentimiento es un retrato del artista, no del modelo. El modelo no es más que el accidente, la ocasión. No es él quien queda revelado por el pintor; es, más bien, el pintor quien se revela a sí mismo sobre el lienzo. La razón por la que no expondré este cuadro es que temo haber mostrado en él el secreto de mi propia alma.",
+      "t": "—Harry —dijo Basil Hallward, mirándolo directamente a la cara—, todo retrato pintado con sentimiento es un retrato del artista, no del modelo. El modelo no es más que el accidente, la ocasión. No es él quien queda revelado por el pintor; es, más bien, el pintor quien se revela a sí mismo sobre el lienzo coloreado. La razón por la que no expondré este cuadro es que temo haber mostrado en él el secreto de mi propia alma.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "El secreto de mi propia alma.",
@@ -4319,7 +4384,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "Harry,” said Basil Hallward, looking him straight in the face, “every portrait that is painted with feeling is a portrait of the artist, not of the sitter. The sitter is merely the accident, the occasion. It is not he who is revealed by the painter; it is rather the painter who, on the coloured canvas, reveals himself. The reason I will not exhibit this picture is that I am afraid that I have shown in it the secret of my own soul.",
+        "text": "“Harry,” said Basil Hallward, looking him straight in the face, “every portrait that is painted with feeling is a portrait of the artist, not of the sitter. The sitter is merely the accident, the occasion. It is not he who is revealed by the painter; it is rather the painter who, on the coloured canvas, reveals himself. The reason I will not exhibit this picture is that I am afraid that I have shown in it the secret of my own soul.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4344,7 +4409,7 @@
     {
       "id": "quote-261",
       "legacy_index": 261,
-      "t": "Su amor irreal y egoísta cedería ante alguna influencia más elevada, se transformaría en una pasión más noble, y el retrato que Basil Hallward había pintado de él sería su guía a lo largo de la vida: sería para él lo que la santidad es para algunos, la conciencia para otros y el temor de Dios para todos. Había opiáceos para el remordimiento, drogas capaces de adormecer el sentido moral. Pero allí tenía un símbolo visible de la degradación del pecado; una señal siempre presente de la ruina que los hombres causan en sus propias almas.",
+      "t": "Su amor irreal y egoísta cedería ante alguna influencia más elevada, se transformaría en una pasión más noble, y el retrato que Basil Hallward había pintado de él sería su guía a lo largo de la vida: sería para él lo que la santidad es para algunos, la conciencia para otros y el temor de Dios para todos. Había opiáceos para el remordimiento, drogas capaces de adormecer el sentido moral. Pero allí estaba un símbolo visible de la degradación del pecado. Allí estaba una señal siempre presente de la ruina que los hombres causan en sus propias almas.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "La ruina que los hombres causan en sus propias almas.",
@@ -4361,7 +4426,7 @@
     {
       "id": "quote-262",
       "legacy_index": 262,
-      "t": "A menudo, al regresar de una de aquellas misteriosas y prolongadas ausencias que despertaban conjeturas tan extrañas entre quienes eran sus amigos, o creían serlo, subía sigilosamente hasta la habitación cerrada, abría la puerta con la llave que ya nunca se separaba de él y, sosteniendo un espejo, se colocaba frente al retrato que Basil Hallward había pintado: miraba unas veces el rostro maligno y envejecido del lienzo, y otras el rostro joven y hermoso que le sonreía desde el cristal pulido.\n\nLa intensidad misma del contraste agudizaba su placer. Se enamoraba cada vez más de su propia belleza y se interesaba cada vez más por la corrupción de su propia alma. Examinaba con minucioso cuidado —y a veces con un deleite monstruoso y terrible— las líneas horribles que abrasaban la frente arrugada o reptaban alrededor de la boca pesada y sensual, preguntándose en ocasiones qué era más espantoso: las señales del pecado o las señales de la edad.",
+      "t": "A menudo, al regresar de una de aquellas misteriosas y prolongadas ausencias que despertaban conjeturas tan extrañas entre quienes eran sus amigos, o creían serlo, subía sigilosamente hasta la habitación cerrada, abría la puerta con la llave que ya nunca se separaba de él y, sosteniendo un espejo, se colocaba frente al retrato que Basil Hallward había pintado: miraba unas veces el rostro maligno y envejecido del lienzo, y otras el rostro joven y hermoso que le sonreía desde el cristal pulido. La intensidad misma del contraste agudizaba su placer. Se enamoraba cada vez más de su propia belleza y se interesaba cada vez más por la corrupción de su propia alma. Examinaba con minucioso cuidado —y a veces con un deleite monstruoso y terrible— las líneas horribles que abrasaban la frente arrugada o reptaban alrededor de la boca pesada y sensual, preguntándose en ocasiones qué era más espantoso: las señales del pecado o las señales de la edad.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "La corrupción de su propia alma.",
@@ -4370,7 +4435,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "Often, on returning home from one of those mysterious and prolonged absences that gave rise to such strange conjecture among those who were his friends, or thought that they were so, he himself would creep upstairs to the locked room, open the door with the key that never left him now, and stand, with a mirror, in front of the portrait that Basil Hallward had painted of him, looking now at the evil and ageing face on the canvas, and now at the fair young face that laughed back at him from the polished glass.\n\nThe very sharpness of the contrast used to quicken his sense of pleasure. He grew more and more enamoured of his own beauty, more and more interested in the corruption of his own soul. He would examine with minute care, and sometimes with a monstrous and terrible delight, the hideous lines that seared the wrinkling forehead, or crawled around the heavy sensual mouth, wondering sometimes which were the more horrible, the signs of sin or the signs of age.",
+        "text": "Often, on returning home from one of those mysterious and prolonged absences that gave rise to such strange conjecture among those who were his friends, or thought that they were so, he himself would creep upstairs to the locked room, open the door with the key that never left him now, and stand, with a mirror, in front of the portrait that Basil Hallward had painted of him, looking now at the evil and aging face on the canvas, and now at the fair young face that laughed back at him from the polished glass. The very sharpness of the contrast used to quicken his sense of pleasure. He grew more and more enamoured of his own beauty, more and more interested in the corruption of his own soul. He would examine with minute care, and sometimes with a monstrous and terrible delight, the hideous lines that seared the wrinkling forehead or crawled around the heavy sensual mouth, wondering sometimes which were the more horrible, the signs of sin or the signs of age.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4378,7 +4443,7 @@
     {
       "id": "quote-263",
       "legacy_index": 263,
-      "t": "—Es el rostro de mi alma.\n\n—¡Cristo! ¡Qué cosa debo de haber adorado! Tiene los ojos de un demonio.\n\n—Cada uno de nosotros lleva dentro el cielo y el infierno, Basil —exclamó Dorian, con un gesto desesperado y violento.\n\nHallward se volvió de nuevo hacia el retrato y lo contempló. La superficie parecía completamente intacta, tal como él la había dejado. Al parecer, la inmundicia y el horror habían surgido desde dentro. Por alguna extraña intensificación de su vida interior, las lepras del pecado estaban devorándolo lentamente. Ni la descomposición de un cadáver en una tumba bajo el agua habría sido tan espantosa.",
+      "t": "—Es el rostro de mi alma.\n\n—¡Cristo! ¡Qué cosa debo de haber adorado! Tiene los ojos de un demonio.\n\n—Cada uno de nosotros lleva dentro el cielo y el infierno, Basil —exclamó Dorian, con un gesto desesperado y violento.\n\nHallward se volvió de nuevo hacia el retrato y lo contempló. […] La superficie parecía completamente intacta, tal como él la había dejado. Al parecer, la inmundicia y el horror habían surgido desde dentro. Por alguna extraña intensificación de su vida interior, las lepras del pecado estaban devorándolo lentamente. Ni la descomposición de un cadáver en una tumba bajo el agua habría sido tan espantosa.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "El cielo y el infierno.",
@@ -4387,7 +4452,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "It is the face of my soul.\n\nChrist! what a thing I must have worshipped! It has the eyes of a devil.\n\nEach of us has Heaven and Hell in him, Basil,” cried Dorian, with a wild gesture of despair.\n\nHallward turned again to the portrait, and gazed at it. […] The surface seemed to be quite undisturbed, and as he had left it. It was from within, apparently, that the foulness and horror had come. Through some strange quickening of inner life the leprosies of sin were slowly eating the thing away. The rotting of a corpse in a watery grave was not so fearful.",
+        "text": "“It is the face of my soul.”\n\n“Christ! what a thing I must have worshipped! It has the eyes of a devil.”\n\n“Each of us has Heaven and Hell in him, Basil,” cried Dorian, with a wild gesture of despair.\n\nHallward turned again to the portrait, and gazed at it. […] The surface seemed to be quite undisturbed, and as he had left it. It was from within, apparently, that the foulness and horror had come. Through some strange quickening of inner life the leprosies of sin were slowly eating the thing away. The rotting of a corpse in a watery grave was not so fearful.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4395,7 +4460,7 @@
     {
       "id": "quote-264",
       "legacy_index": 264,
-      "t": "—No, Harry. El alma es una realidad terrible. Puede comprarse, venderse y entregarse a cambio de otra cosa. Puede ser envenenada o perfeccionada. Hay un alma en cada uno de nosotros. Yo lo sé.",
+      "t": "—No sigas, Harry. El alma es una realidad terrible. Puede comprarse, venderse y entregarse a cambio de otra cosa. Puede ser envenenada o perfeccionada. Hay un alma en cada uno de nosotros. Yo lo sé.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "El alma es una realidad terrible.",
@@ -4404,7 +4469,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "Don't, Harry. The soul is a terrible reality. It can be bought, and sold, and bartered away. It can be poisoned, or made perfect. There is a soul in each one of us. I know it.",
+        "text": "“Don't, Harry. The soul is a terrible reality. It can be bought, and sold, and bartered away. It can be poisoned, or made perfect. There is a soul in each one of us. I know it.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4412,7 +4477,7 @@
     {
       "id": "quote-265",
       "legacy_index": 265,
-      "t": "Pero aquel asesinato, ¿había de perseguirlo durante toda su vida? ¿Estaría siempre cargando con su pasado? ¿Debía realmente confesar? Nunca. Solo quedaba una prueba contra él. El propio cuadro: esa era la prueba. Lo destruiría. ¿Por qué lo había conservado durante tanto tiempo? En otro tiempo le había proporcionado placer contemplarlo mientras cambiaba y envejecía. Últimamente ya no sentía ese placer. Lo había mantenido despierto por las noches. Cuando estaba lejos, el terror de que otros ojos pudieran contemplarlo no lo abandonaba.\n\nHabía teñido de melancolía sus pasiones. Su mero recuerdo había estropeado muchos momentos de alegría. Había sido como una conciencia para él. Sí, había sido su conciencia. La destruiría.",
+      "t": "Pero aquel asesinato, ¿había de perseguirlo durante toda su vida? ¿Estaría siempre cargando con su pasado? ¿Debía realmente confesar? Nunca. Solo quedaba una prueba contra él. El propio cuadro: esa era la prueba. Lo destruiría. ¿Por qué lo había conservado durante tanto tiempo? En otro tiempo le había proporcionado placer contemplarlo mientras cambiaba y envejecía. Últimamente ya no sentía ese placer. Lo había mantenido despierto por las noches. Cuando estaba lejos, el terror de que otros ojos pudieran contemplarlo no lo abandonaba. Había teñido de melancolía sus pasiones. Su mero recuerdo había estropeado muchos momentos de alegría. Había sido como una conciencia para él. Sí, había sido su conciencia. La destruiría.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Había sido su conciencia.",
@@ -4429,7 +4494,7 @@
     {
       "id": "quote-266",
       "legacy_index": 266,
-      "t": "—No existe tal cosa como una buena influencia, señor Gray. Toda influencia es inmoral, inmoral desde el punto de vista científico.\n\n—¿Por qué?\n\n—Porque influir en una persona es darle la propia alma. Ya no piensa por sí mismo ni arde con sus propias pasiones. Sus virtudes no son realmente suyas. Sus pecados, si es que existen los pecados, son prestados. Se convierte en eco de la música de otro, en actor de un papel que no fue escrito para él. El propósito de la vida es el desarrollo de uno mismo: realizar perfectamente la propia naturaleza. Para eso estamos aquí.",
+      "t": "—No existe tal cosa como una buena influencia, señor Gray. Toda influencia es inmoral, inmoral desde el punto de vista científico.\n\n—¿Por qué?\n\n—Porque influir en una persona es darle la propia alma. No piensa sus pensamientos naturales ni arde con sus pasiones naturales. Sus virtudes no son reales para él. Sus pecados, si es que existen los pecados, son prestados. Se convierte en eco de la música de otro, en actor de un papel que no fue escrito para él. El propósito de la vida es el desarrollo de uno mismo: realizar perfectamente la propia naturaleza. Para eso estamos aquí.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Influir es darle a otro la propia alma.",
@@ -4438,7 +4503,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "There is no such thing as a good influence, Mr. Gray. All influence is immoral—immoral from the scientific point of view.\n\nWhy?\n\nBecause to influence a person is to give him one's own soul. He does not think his natural thoughts, or burn with his natural passions. His virtues are not real to him. His sins, if there are such things as sins, are borrowed. He becomes an echo of someone else's music, an actor of a part that has not been written for him. The aim of life is self-development. To realise one's nature perfectly—that is what each of us is here for.",
+        "text": "“There is no such thing as a good influence, Mr. Gray. All influence is immoral—immoral from the scientific point of view.”\n\n“Why?”\n\n“Because to influence a person is to give him one's own soul. He does not think his natural thoughts, or burn with his natural passions. His virtues are not real to him. His sins, if there are such things as sins, are borrowed. He becomes an echo of some one else's music, an actor of a part that has not been written for him. The aim of life is self-development. To realize one's nature perfectly—that is what each of us is here for.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4446,7 +4511,7 @@
     {
       "id": "quote-267",
       "legacy_index": 267,
-      "t": "—Ese es uno de los grandes secretos de la vida: curar el alma mediante los sentidos, y los sentidos mediante el alma. Eres una creación maravillosa. Sabes más de lo que crees saber, del mismo modo que sabes menos de lo que deseas saber.",
+      "t": "—Sí —continuó lord Henry—, ese es uno de los grandes secretos de la vida: curar el alma mediante los sentidos, y los sentidos mediante el alma. Eres una creación maravillosa. Sabes más de lo que crees saber, del mismo modo que sabes menos de lo que deseas saber.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Curar el alma mediante los sentidos.",
@@ -4455,7 +4520,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "Yes,” continued Lord Henry, “that is one of the great secrets of life—to cure the soul by means of the senses, and the senses by means of the soul. You are a wonderful creation. You know more than you think you know, just as you know less than you want to know.",
+        "text": "“Yes,” continued Lord Henry, “that is one of the great secrets of life—to cure the soul by means of the senses, and the senses by means of the soul. You are a wonderful creation. You know more than you think you know, just as you know less than you want to know.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4463,7 +4528,7 @@
     {
       "id": "quote-268",
       "legacy_index": 268,
-      "t": "—¡Qué triste es! —murmuró Dorian Gray, con los ojos todavía fijos en su retrato—. Yo envejeceré y me volveré horrible y espantoso. Pero este cuadro permanecerá siempre joven. Nunca tendrá más edad que la de este preciso día de junio. Si pudiera suceder al contrario; si fuera yo quien permaneciese siempre joven y el cuadro quien envejeciera… Por eso lo daría todo. Sí, no hay nada en el mundo entero que no entregaría. ¡Daría mi alma por ello!",
+      "t": "—¡Qué triste es! —murmuró Dorian Gray, con los ojos todavía fijos en su retrato—. ¡Qué triste es! Yo envejeceré y me volveré horrible y espantoso. Pero este cuadro permanecerá siempre joven. Nunca tendrá más edad que la de este preciso día de junio… ¡Si fuera al contrario! ¡Si fuera yo quien permaneciese siempre joven y el cuadro quien envejeciera! ¡A cambio de eso —de eso— lo daría todo! Sí, no hay nada en el mundo entero que no entregaría. ¡Daría mi alma por ello!",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Daría mi alma por ello.",
@@ -4472,7 +4537,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "How sad it is!” murmured Dorian Gray, with his eyes still fixed upon his own portrait. “How sad it is! I shall grow old, and horrible, and dreadful. But this picture will remain always young. It will never be older than this particular day of June.... If it were only the other way! If it were I who was to be always young, and the picture that was to grow old! For that—for that—I would give everything! Yes, there is nothing in the whole world I would not give! I would give my soul for that!",
+        "text": "“How sad it is!” murmured Dorian Gray, with his eyes still fixed upon his own portrait. “How sad it is! I shall grow old, and horrible, and dreadful. But this picture will remain always young. It will never be older than this particular day of June. . . . If it were only the other way! If it were I who was to be always young, and the picture that was to grow old! For that—for that—I would give everything! Yes, there is nothing in the whole world I would not give! I would give my soul for that!”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4480,7 +4545,7 @@
     {
       "id": "quote-269",
       "legacy_index": 269,
-      "t": "—Antes de conocerte, la interpretación era la única realidad de mi vida. Solo vivía en el teatro. Pensaba que todo aquello era verdadero. Una noche era Rosalinda y, a la siguiente, Porcia. La alegría de Beatriz era mi alegría, y las penas de Cordelia también eran mías. Creía en todo. Los actores vulgares que trabajaban conmigo me parecían seres divinos. Los decorados pintados eran mi mundo. No conocía más que sombras, y creía que eran reales.\n\nTú llegaste —¡oh, mi hermoso amor!— y liberaste mi alma de su prisión. Me enseñaste qué es verdaderamente la realidad. Me trajiste algo más elevado, algo de lo que todo arte no es sino un reflejo. Me hiciste comprender qué es realmente el amor. Estoy harta de sombras.",
+      "t": "—Antes de conocerte, la interpretación era la única realidad de mi vida. Solo vivía en el teatro. Pensaba que todo aquello era verdadero. Una noche era Rosalinda y, a la siguiente, Porcia. La alegría de Beatriz era mi alegría, y las penas de Cordelia también eran mías. Creía en todo. La gente corriente que actuaba conmigo me parecía divina. Los decorados pintados eran mi mundo. No conocía más que sombras, y creía que eran reales. Tú llegaste —¡oh, mi hermoso amor!— y liberaste mi alma de su prisión. Me enseñaste qué es verdaderamente la realidad. […] Me trajiste algo más elevado, algo de lo que todo arte no es sino un reflejo. Me hiciste comprender qué es realmente el amor. […] Estoy harta de sombras.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "No conocía más que sombras.",
@@ -4489,7 +4554,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "Dorian, Dorian,” she cried, “before I knew you, acting was the one reality of my life. It was only in the theatre that I lived. I thought that it was all true. I was Rosalind one night, and Portia the other. The joy of Beatrice was my joy, and the sorrows of Cordelia were mine also. I believed in everything. The common people who acted with me seemed to me to be godlike. The painted scenes were my world. I knew nothing but shadows, and I thought them real.\n\nYou came—oh, my beautiful love!—and you freed my soul from prison. You taught me what reality really is. […] You had brought me something higher, something of which all art is but a reflection. You had made me understand what love really is. […] I have grown sick of shadows.",
+        "text": "“Dorian, Dorian,” she cried, “before I knew you, acting was the one reality of my life. It was only in the theatre that I lived. I thought that it was all true. I was Rosalind one night, and Portia the other. The joy of Beatrice was my joy, and the sorrows of Cordelia were mine also. I believed in everything. The common people who acted with me seemed to me to be godlike. The painted scenes were my world. I knew nothing but shadows, and I thought them real. You came—oh, my beautiful love!—and you freed my soul from prison. You taught me what reality really is. […] You had brought me something higher, something of which all art is but a reflection. You had made me understand what love really is. […] I have grown sick of shadows.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4514,7 +4579,7 @@
     {
       "id": "quote-271",
       "legacy_index": 271,
-      "t": "La posición y la riqueza no lo son todo. Ten presente que no creo esos rumores. Al menos, no puedo creerlos cuando te miro. El pecado es algo que se escribe en el rostro de un hombre. No puede ocultarse. A veces la gente habla de vicios secretos. No existen tales cosas. Si un desgraciado tiene un vicio, este se manifiesta en las líneas de su boca, en la caída de sus párpados, incluso en la forma de sus manos.",
+      "t": "Pero la posición y la riqueza no lo son todo. Ten presente que no creo en absoluto esos rumores. Al menos, no puedo creerlos cuando te miro. El pecado es algo que se escribe en el rostro de un hombre. No puede ocultarse. A veces la gente habla de vicios secretos. No existen tales cosas. Si un desgraciado tiene un vicio, este se manifiesta en las líneas de su boca, en la caída de sus párpados, incluso en la forma de sus manos.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "El pecado se escribe en el rostro.",
@@ -4548,7 +4613,7 @@
     {
       "id": "quote-273",
       "legacy_index": 273,
-      "t": "—¡Dios mío, Dorian, qué lección! ¡Qué espantosa lección! Reza, Dorian, reza. ¿Qué nos enseñaron a decir cuando éramos niños? “No nos dejes caer en la tentación. Perdona nuestros pecados. Límpianos de nuestras iniquidades.” Digámoslo juntos. La oración de tu orgullo ha sido escuchada. También será escuchada la oración de tu arrepentimiento. Yo te adoré demasiado, y por ello soy castigado. Tú te adoraste demasiado. Los dos somos castigados.",
+      "t": "—¡Dios mío, Dorian, qué lección! ¡Qué espantosa lección! […] Reza, Dorian, reza —murmuró—. ¿Qué nos enseñaron a decir cuando éramos niños? “No nos dejes caer en la tentación. Perdona nuestros pecados. Límpianos de nuestras iniquidades.” Digámoslo juntos. La oración de tu orgullo ha sido escuchada. También será escuchada la oración de tu arrepentimiento. Yo te adoré demasiado, y por ello soy castigado. Tú te adoraste demasiado. Los dos somos castigados.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Tú te adoraste demasiado.",
@@ -4557,7 +4622,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "Good God, Dorian, what a lesson! what an awful lesson! […] Pray, Dorian, pray,” he murmured. “What is it that one was taught to say in one's boyhood? ‘Lead us not into temptation. Forgive us our sins. Wash away our iniquities.’ Let us say that together. The prayer of your pride has been answered. The prayer of your repentance will be answered also. I worshipped you too much. I am punished for it. You worshipped yourself too much. We are both punished.",
+        "text": "“Good God, Dorian, what a lesson! what an awful lesson!” […] “Pray, Dorian, pray,” he murmured. “What is it that one was taught to say in one's boyhood? ‘Lead us not into temptation. Forgive us our sins. Wash away our iniquities.’ Let us say that together. The prayer of your pride has been answered. The prayer of your repentance will be answered also. I worshipped you too much. I am punished for it. You worshipped yourself too much. We are both punished.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4565,7 +4630,7 @@
     {
       "id": "quote-274",
       "legacy_index": 274,
-      "t": "Había en todos ellos una fascinación horrible. Los veía por la noche, y durante el día perturbaban su imaginación. Dorian Gray había sido envenenado por un libro. Había momentos en los que contemplaba el mal únicamente como un medio mediante el cual podía realizar su concepción de la belleza.",
+      "t": "Había en todos ellos una fascinación horrible. Los veía por la noche, y durante el día perturbaban su imaginación. […] Dorian Gray había sido envenenado por un libro. Había momentos en los que contemplaba el mal únicamente como un medio mediante el cual podía realizar su concepción de la belleza.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "El mal como forma de realizar la belleza.",
@@ -4574,7 +4639,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "There was a horrible fascination in them all. He saw them at night, and they troubled his imagination in the day. […] Dorian Gray had been poisoned by a book. There were moments when he looked on evil simply as a mode through which he could realise his conception of the beautiful.",
+        "text": "There was a horrible fascination in them all. He saw them at night, and they troubled his imagination in the day. […] Dorian Gray had been poisoned by a book. There were moments when he looked on evil simply as a mode through which he could realize his conception of the beautiful.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4591,7 +4656,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "The tragedy of old age is not that one is old, but that one is young. I am amazed sometimes at my own sincerity. Ah, Dorian, how happy you are! What an exquisite life you have had! You have drunk deeply of everything. You have crushed the grapes against your palate. Nothing has been hidden from you. And it has all been to you no more than the sound of music. It has not marred you. You are still the same.",
+        "text": "The tragedy of old age is not that one is old, but that one is young. I am amazed sometimes at my own sincerity. Ah, Dorian, how happy you are! What an exquisite life you have had! You have drunk deeply of everything. You have crushed the grapes against your palate. Nothing has been hidden from you. And it has all been to you no more than the sound of music. It has not marred you. You are still the same.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4608,7 +4673,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "I am so glad that you have never done anything, never carved a statue, or painted a picture, or produced anything outside of yourself! Life has been your art. You have set yourself to music. Your days are your sonnets.",
+        "text": "I am so glad that you have never done anything, never carved a statue, or painted a picture, or produced anything outside of yourself! Life has been your art. You have set yourself to music. Your days are your sonnets.”",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4616,7 +4681,7 @@
     {
       "id": "quote-277",
       "legacy_index": 277,
-      "t": "¡En qué monstruoso momento de orgullo y pasión había rogado que el retrato soportara el peso de sus días, mientras él conservaba intacto el esplendor de la juventud eterna! Todo su fracaso había nacido de aquello. Habría sido mejor que cada pecado de su vida hubiese llevado consigo su castigo seguro e inmediato. Había purificación en el castigo. La oración del hombre a un Dios justo no debería ser “perdona nuestros pecados”, sino “castíganos por nuestras iniquidades”.",
+      "t": "¡En qué monstruoso momento de orgullo y pasión había rogado que el retrato soportara el peso de sus días, mientras él conservaba intacto el esplendor de la juventud eterna! Todo su fracaso había nacido de aquello. Habría sido mejor que cada pecado de su vida hubiese llevado consigo su castigo seguro e inmediato. Había purificación en el castigo. La oración del hombre a un Dios justísimo no debería ser “perdona nuestros pecados”, sino “castíganos por nuestras iniquidades”.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Había purificación en el castigo.",
@@ -4633,7 +4698,7 @@
     {
       "id": "quote-278",
       "legacy_index": 278,
-      "t": "Entonces aborreció su propia belleza y, arrojando el espejo al suelo, lo aplastó bajo el talón hasta convertirlo en astillas de plata. Habían sido su belleza y la juventud que había suplicado conservar las que lo habían destruido. Sin esas dos cosas, su vida quizá habría quedado libre de toda mancha. Su belleza no había sido para él más que una máscara; su juventud, una burla. ¿Qué era la juventud, en el mejor de los casos? Un tiempo verde e inmaduro, una época de emociones superficiales y pensamientos enfermizos. La juventud lo había echado a perder.",
+      "t": "Entonces aborreció su propia belleza y, arrojando el espejo al suelo, lo aplastó bajo el talón hasta convertirlo en astillas de plata. Habían sido su belleza y la juventud que había suplicado conservar las que lo habían destruido. Sin esas dos cosas, su vida quizá habría quedado libre de toda mancha. Su belleza no había sido para él más que una máscara; su juventud, una burla. ¿Qué era la juventud, en el mejor de los casos? Un tiempo verde e inmaduro, una época de estados de ánimo superficiales y pensamientos enfermizos. […] La juventud lo había echado a perder.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "Su belleza no había sido más que una máscara.",
@@ -4642,7 +4707,7 @@
       "authorId": "author-oscar-wilde",
       "workId": "work-el-retrato-de-dorian-gray",
       "original": {
-        "text": "Then he loathed his own beauty, and, flinging the mirror on the floor, crushed it into silver splinters beneath his heel. It was his beauty that had ruined him, his beauty and the youth that he had prayed for. But for those two things, his life might have been free from stain. His beauty had been to him but a mask, his youth but a mockery. What was youth at best? A green, an unripe time, a time of shallow moods and sickly thoughts. […] Youth had spoiled him.",
+        "text": "Then he loathed his own beauty, and flinging the mirror on the floor crushed it into silver splinters beneath his heel. It was his beauty that had ruined him, his beauty and the youth that he had prayed for. But for those two things, his life might have been free from stain. His beauty had been to him but a mask, his youth but a mockery. What was youth at best? A green, an unripe time, a time of shallow moods, and sickly thoughts. […] Youth had spoiled him.",
         "lang": "en",
         "label": "Original inglés"
       }
@@ -4650,7 +4715,7 @@
     {
       "id": "quote-279",
       "legacy_index": 279,
-      "t": "No era realmente la muerte de Basil Hallward lo que más pesaba sobre su mente. Lo atormentaba la muerte viva de su propia alma. Basil había pintado el retrato que había arruinado su vida, y no podía perdonárselo. El asesinato había sido simplemente la locura de un instante. En cuanto a Alan Campbell, su suicidio había sido decisión suya. Él había elegido hacerlo. Para Dorian, aquello no significaba nada.",
+      "t": "No era realmente la muerte de Basil Hallward lo que más pesaba sobre su mente. Lo atormentaba la muerte viva de su propia alma. Basil había pintado el retrato que había arruinado su vida, y no podía perdonárselo. […] El asesinato había sido simplemente la locura de un instante. En cuanto a Alan Campbell, su suicidio había sido decisión suya. Él había elegido hacerlo. Para Dorian, aquello no significaba nada.",
       "a": "Oscar Wilde",
       "obra": "El retrato de Dorian Gray, Oscar Wilde",
       "highlight": "La muerte viva de su propia alma.",
