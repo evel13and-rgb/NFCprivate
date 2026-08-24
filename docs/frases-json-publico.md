@@ -45,3 +45,15 @@ publicación. Para el catálogo ya publicado, el cambio de estado se prepara y s
 aplica de forma separada con `approve-directus-current-catalog.mjs`. La operación
 solo puede aprobar la instantánea que siga coincidiendo exactamente con el JSON
 vigente y exige confirmar su SHA-256; nunca sustituye el archivo público.
+
+El paso siguiente genera en `/tmp` un candidato compuesto exclusivamente por
+registros publicables:
+
+```sh
+node scripts/prepare-directus-quotes-publication.mjs
+```
+
+Con `--record` se conserva en `publication_runs` el commit, los recuentos, los
+hashes y el resultado de la validación. Incluso una ejecución validada continúa
+siendo una vista previa: la sustitución del JSON y el despliegue son acciones
+posteriores, separadas y explícitas.

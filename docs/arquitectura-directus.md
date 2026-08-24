@@ -345,28 +345,37 @@ producción.
 - Preparar un entorno de prueba separado de producción.
 - Cerrar el modelo, los permisos y el contrato de exportación.
 
-### Fase 1: PostgreSQL y Directus aislados (en curso)
+### Fase 1: PostgreSQL y Directus aislados (completada para el piloto)
 
 - Directus y PostgreSQL ya están instalados en el piloto aislado.
 - Las colecciones y relaciones ya están creadas y versionadas.
-- Queda definir y probar roles y permisos mínimos.
-- Mantener los JSON actuales como fuente canónica y la web sin cambios.
+- El espacio editorial privado, sus vistas y los permisos públicos cerrados ya
+  están comprobados; los roles separados se crearán cuando exista una segunda
+  cuenta humana.
+- Los JSON actuales continúan siendo el runtime canónico y la web sigue sin
+  consultar Directus.
 
-### Fase 2: importación reproducible (en curso)
+### Fase 2: importación reproducible (completada para el catálogo actual)
 
-- Autores, obras, fichas y fuentes estructuradas ya están importados como
-  borradores ocultos mediante una transacción reproducible.
-- Queda importar frases, originales, temas, fuentes de las fichas y decisiones.
-- Conservar todos los IDs y `legacy_index` en las fases restantes.
-- Comparar cantidades, hashes y relaciones con los archivos actuales.
-- Repetir la importación desde cero hasta que sea determinista.
+- Autores, obras, fuentes, hablantes, 640 frases y 640 originales están importados
+  mediante procesos reproducibles.
+- Los IDs, `legacy_index`, textos, hashes y relaciones coinciden con los archivos
+  editoriales y con el JSON público vigente.
+- Las frases y originales del catálogo actual constan como aprobados, públicos y
+  verificados, con revisor y fecha registrados.
+- Las copias anteriores y posteriores a la importación y aprobación permiten
+  recuperar cada hito.
 
-### Fase 3: exportación paralela
+### Fase 3: exportación paralela (en curso)
 
-- Generar JSON desde PostgreSQL sin publicarlo.
-- Compararlo campo por campo con los JSON vigentes.
-- Probar decisiones aceptadas, exclusiones, originales y perfiles.
-- Validar que ningún campo privado se exporta.
+- La vista previa generada desde Directus coincide byte por byte con el JSON
+  vigente y no contiene campos privados.
+- El candidato de publicación selecciona únicamente registros publicables, se
+  genera bajo `/tmp` y puede registrar recuentos, hashes y resultado en
+  `publication_runs`.
+- Queda probar deliberadamente altas, bajas, exclusiones y modificaciones antes
+  de habilitar la sustitución atómica del JSON público.
+- La publicación real permanece separada y desactivada.
 
 ### Fase 4: panel como fuente editorial
 

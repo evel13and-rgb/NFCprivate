@@ -181,6 +181,21 @@ públicos los registros que ya forman parte del JSON vigente, y registra quién 
 cuándo los revisó. No escribe ni publica archivos estáticos. El hash explícito
 impide aprobar por accidente una versión distinta de la revisada.
 
+El candidato publicable se genera después, siempre bajo `/tmp`. La primera orden
+es una simulación; la segunda registra el intento y su resultado en
+`publication_runs`. Para registrar una ejecución, Git debe estar limpio:
+
+```sh
+node scripts/prepare-directus-quotes-publication.mjs
+node scripts/prepare-directus-quotes-publication.mjs --record
+```
+
+Solo entran frases e originales aprobados, públicos, verificados y con revisión
+registrada. También se vuelven a validar fuentes, derechos, relaciones y hashes.
+Si el candidato difiere del JSON vigente, se detiene; `--allow-content-changes`
+solo se utilizará tras revisar deliberadamente altas, bajas o modificaciones. La
+ejecución validada no sustituye el JSON público ni despliega la web.
+
 La instantánea revisada del modelo está en:
 
 ```text
