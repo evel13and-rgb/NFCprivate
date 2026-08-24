@@ -136,6 +136,20 @@ Las opciones `--skip-relations` y `--only-relations` permiten separar las dos
 partes durante una recuperación. El proceso es repetible: las relaciones ya
 registradas se detectan y no se duplican.
 
+El espacio de trabajo privado se configura después de importar el catálogo. El
+script crea vistas personales para frases, originales, fuentes, hablantes y
+audio, además de marcadores para cada etapa de revisión. No modifica contenido,
+no crea permisos públicos y es repetible:
+
+```sh
+node scripts/configure-directus-editorial-workspace.mjs --dry-run
+node scripts/configure-directus-editorial-workspace.mjs
+```
+
+Mientras solo exista una persona administradora no se crea un rol editorial
+adicional. Los roles y permisos separados se incorporarán cuando haya una
+segunda cuenta humana con responsabilidades distintas.
+
 La instantánea revisada del modelo está en:
 
 ```text
