@@ -39,3 +39,9 @@ El resultado se guarda por defecto en
 `/tmp/paramo-directus-quotes-preview.json`. El exportador rechaza cualquier
 destino fuera de `/tmp` y termina con error si el documento generado desde
 Directus no coincide byte por byte con `public/data/quotes.json`.
+
+La verificación de texto y fuentes no equivale por sí sola a autorización de
+publicación. Para el catálogo ya publicado, el cambio de estado se prepara y se
+aplica de forma separada con `approve-directus-current-catalog.mjs`. La operación
+solo puede aprobar la instantánea que siga coincidiendo exactamente con el JSON
+vigente y exige confirmar su SHA-256; nunca sustituye el archivo público.

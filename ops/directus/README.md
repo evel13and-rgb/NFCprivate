@@ -164,6 +164,23 @@ node scripts/export-directus-quotes-preview.mjs \
 Este paso es exclusivamente una vista previa. La publicación desde Directus
 requerirá un comando diferente, una copia previa y una aprobación explícita.
 
+Una vez cotejado todo el catálogo, su estado editorial puede alinearse con lo que
+ya está publicado. La orden sin argumentos solo muestra el plan. Antes de aplicar
+comprueba que Directus coincide byte por byte con el JSON público, que las fuentes
+y derechos están validados y que la API anónima continúa cerrada:
+
+```sh
+node scripts/approve-directus-current-catalog.mjs
+node scripts/approve-directus-current-catalog.mjs \
+  --apply \
+  --confirm-public-sha=<sha256-del-json-publico>
+```
+
+La aplicación requiere una copia PostgreSQL previa. Marca como aprobados y
+públicos los registros que ya forman parte del JSON vigente, y registra quién y
+cuándo los revisó. No escribe ni publica archivos estáticos. El hash explícito
+impide aprobar por accidente una versión distinta de la revisada.
+
 La instantánea revisada del modelo está en:
 
 ```text
