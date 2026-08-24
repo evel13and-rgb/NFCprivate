@@ -196,6 +196,17 @@ Si el candidato difiere del JSON vigente, se detiene; `--allow-content-changes`
 solo se utilizará tras revisar deliberadamente altas, bajas o modificaciones. La
 ejecución validada no sustituye el JSON público ni despliega la web.
 
+Antes de habilitar cambios reales se prueban en memoria los caminos de alta,
+modificación de traducción u original, exclusión y baja. El control adicional
+confirma que un borrador nuevo no altera el candidato y que cualquier cambio
+publicable exige autorización explícita:
+
+```sh
+node scripts/simulate-directus-publication-changes.mjs
+```
+
+El informe se guarda en `/tmp`, sin conexión a Directus ni PostgreSQL.
+
 La instantánea revisada del modelo está en:
 
 ```text

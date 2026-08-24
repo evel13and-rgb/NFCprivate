@@ -57,3 +57,9 @@ Con `--record` se conserva en `publication_runs` el commit, los recuentos, los
 hashes y el resultado de la validación. Incluso una ejecución validada continúa
 siendo una vista previa: la sustitución del JSON y el despliegue son acciones
 posteriores, separadas y explícitas.
+
+Los comportamientos ante altas, modificaciones, exclusiones y bajas se ensayan
+sin cambiar datos reales mediante `simulate-directus-publication-changes.mjs`.
+Una alta en borrador debe quedar fuera sin alterar el candidato; cualquier cambio
+ya aprobado debe aparecer en la comparación y quedar bloqueado hasta recibir
+`--allow-content-changes` en una ejecución deliberada de vista previa.

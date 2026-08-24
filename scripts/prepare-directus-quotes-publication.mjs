@@ -143,6 +143,16 @@ function summarizeIssues(issues) {
   };
 }
 
+function contentChangeDecision(comparison, allowContentChanges = false) {
+  const hasChanges = !comparison.exact;
+  return {
+    has_changes: hasChanges,
+    requires_explicit_authorization: hasChanges,
+    explicit_authorization: allowContentChanges,
+    allowed: !hasChanges || allowContentChanges,
+  };
+}
+
 async function gitState() {
   const [{ stdout: commitOutput }, { stdout: statusOutput }] = await Promise.all([
     execFileAsync('git', ['rev-parse', 'HEAD'], { cwd: projectRoot }),
@@ -283,7 +293,8 @@ async function main() {
       generatedAt: currentPublicDocument.generated_at,
     });
     const comparison = comparisonReport(provisionalDocument, currentPublicDocument);
-    if (!comparison.exact && !options.allowContentChanges) {
+    const contentChange = contentChangeDecision(comparison, options.allowContentChanges);
+    if (!contentChange.allowed) {
       throw new Error('El candidato difiere del JSON vigente; use --allow-content-changes tras revisar las diferencias');
     }
     const generatedAt = comparison.exact
@@ -339,6 +350,7 @@ async function main() {
       git_dirty: repository.dirty,
       entity_counts: entityCounts,
       comparison,
+      content_change: contentChange,
       byte_exact: byteExact,
       candidate_sha256: candidateSha,
       public_sha256: currentPublicSha,
@@ -382,6 +394,7 @@ if (isMain) {
 }
 
 export {
+  contentChangeDecision,
   ensureCandidateOutputPath,
   parseArguments,
   selectPublicationRecords,

@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
+  contentChangeDecision,
   ensureCandidateOutputPath,
   parseArguments,
   selectPublicationRecords,
@@ -80,4 +81,16 @@ test('la simulación es el modo predeterminado y la salida queda en /tmp', () =>
     () => ensureCandidateOutputPath('/srv/paramoliterario/source/public/data/quotes.json'),
     /solo puede escribirse directamente en \/tmp/u,
   );
+});
+
+test('cualquier diferencia exige autorización explícita', () => {
+  const comparison = {
+    exact: false,
+    missing_from_preview: [],
+    new_in_preview: ['quote-new'],
+    changed: [],
+  };
+  assert.equal(contentChangeDecision(comparison, false).allowed, false);
+  assert.equal(contentChangeDecision(comparison, true).allowed, true);
+  assert.equal(contentChangeDecision({ ...comparison, exact: true }, false).allowed, true);
 });
