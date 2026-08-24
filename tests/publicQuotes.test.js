@@ -174,6 +174,11 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-338', 'quote-339', 'quote-340', 'quote-341', 'quote-342',
     'quote-343', 'quote-344', 'quote-345', 'quote-346', 'quote-347',
     'quote-348', 'quote-349',
+    'quote-350', 'quote-351', 'quote-352', 'quote-353', 'quote-354',
+    'quote-355', 'quote-356', 'quote-357', 'quote-358', 'quote-359',
+    'quote-360', 'quote-361', 'quote-362', 'quote-363', 'quote-364',
+    'quote-365', 'quote-366', 'quote-367', 'quote-368', 'quote-369',
+    'quote-370', 'quote-371', 'quote-372',
     'quote-494', 'quote-495', 'quote-496', 'quote-497', 'quote-498',
     'quote-499', 'quote-500', 'quote-501', 'quote-502', 'quote-503',
     'quote-504', 'quote-505', 'quote-506', 'quote-507', 'quote-508',
@@ -860,6 +865,49 @@ test('El Horla conserva los párrafos del impreso, su respiración febril y todo
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     const expected = expectedParagraphs.get(quote.legacy_index);
     assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos franceses`);
+    assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('La sala número seis conserva el texto académico, los párrafos y la voz polémica', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const wardQuotes = document.quotes.filter(quote => quote.workId === 'work-la-sala-numero-seis');
+  const expectedParagraphs = new Map([
+    [350, 1], [351, 1], [352, 1], [353, 1], [354, 1], [355, 1], [356, 2],
+    [357, 1], [358, 1], [359, 1], [360, 1], [361, 2], [362, 2], [363, 3],
+    [364, 1], [365, 1], [366, 1], [367, 1], [368, 1], [369, 3], [370, 1],
+    [371, 1], [372, 1],
+  ]);
+
+  assert.equal(wardQuotes.length, 23);
+  assert.ok(wardQuotes.every(quote => quote.original?.lang === 'ru'));
+  assert.ok(wardQuotes.every(quote => quote.original?.label === 'Original ruso'));
+  assert.match(quotes.get('quote-351').original.text, /что _их_ надо бить/);
+  assert.match(quotes.get('quote-351').t, /que _a ellos_ hay que pegarles/);
+  assert.match(quotes.get('quote-354').t, /todos sus derechos civiles/);
+  assert.match(quotes.get('quote-355').t, /no bastaba con su sola voluntad/);
+  assert.equal(quotes.get('quote-356').original.text.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-356').t.match(/\[…\]/g)?.length, 1);
+  assert.match(quotes.get('quote-361').t, /son moralmente inconmensurablemente inferiores/);
+  assert.match(quotes.get('quote-361').t, /toda su chusma hospitalaria/);
+  assert.match(quotes.get('quote-363').t, /se enfadó de pronto/);
+  assert.match(quotes.get('quote-363').t, /—preguntó Iván Dmítrich—/);
+  assert.match(quotes.get('quote-363').t, /Dígame, vamos,/);
+  assert.match(quotes.get('quote-366').t, /aquella copa se apartara de él/);
+  assert.match(quotes.get('quote-368').t, /volvió a enfadarse/);
+  assert.match(quotes.get('quote-369').t, /fábrica de calcinación de huesos/);
+  assert.match(quotes.get('quote-370').t, /nobles impulsos/);
+  assert.match(quotes.get('quote-371').t, /la hubiera hecho girar/);
+  for (const quote of wardQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    const expected = expectedParagraphs.get(quote.legacy_index);
+    assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos rusos`);
     assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
     assert.equal(
       quote.t.match(/\[…\]/g)?.length || 0,

@@ -1,6 +1,6 @@
 {
   "valid": true,
-  "validated_at": "2026-08-24T11:35:04.107Z",
+  "validated_at": "2026-08-24T12:23:28.819Z",
   "summary": {
     "expected_quotes": 640,
     "intermediate_quotes": 640,
@@ -10,7 +10,7 @@
     "sources": 29,
     "editorial_decisions": 0,
     "poems": 27,
-    "quotes_with_line_breaks": 354,
+    "quotes_with_line_breaks": 339,
     "duplicate_text_hash_groups": 0
   },
   "integrated_checks": {
@@ -31,9 +31,8 @@
   "editorial_warnings": [
     {
       "code": "unchecked_rights",
-      "message": "5 fuente(s) conservan derechos sin revisar.",
+      "message": "4 fuente(s) conservan derechos sin revisar.",
       "source_ids": [
-        "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
@@ -42,9 +41,8 @@
     },
     {
       "code": "source_verification_pending",
-      "message": "5 fuente(s) esperan verificación bibliográfica.",
+      "message": "4 fuente(s) esperan verificación bibliográfica.",
       "source_ids": [
-        "source-la-sala-numero-seis",
         "source-la-bestia-en-la-jungla",
         "source-el-papel-pintado-de-amarillo",
         "source-vera",
@@ -55,11 +53,11 @@
   "pending_issues": [
     {
       "code": "rights_review_pending",
-      "count": 5
+      "count": 4
     },
     {
       "code": "source_verification_pending",
-      "count": 5
+      "count": 4
     }
   ],
   "reviewed_files": [
