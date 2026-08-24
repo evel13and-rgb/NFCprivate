@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-24T14:08:12.918Z",
+  "generated_at": "2026-08-24T15:26:01.299Z",
   "quote_count": 640,
   "quotes": [
     {
@@ -7418,38 +7418,53 @@
     {
       "id": "quote-438",
       "legacy_index": 438,
-      "t": "Lucy miraba fijamente el mar, pensando en aquellas cosas, examinando la situación como algo curioso, pero sin relación con ella, contemplándola con una especie de comprensión fría. Su mente estaba completamente clara. Cada detalle de lo ocurrido se encontraba nítidamente ante ella.\n\nLo sabía todo y no sentía nada; como Dios, se dijo; sí, exactamente como Dios.",
+      "t": "Lucy miraba fijamente el mar, pensando en aquellas cosas, examinando la situación como algo curioso, pero sin relación con ella, contemplándola con una especie de comprensión fría. Su mente estaba completamente clara. Cada detalle de lo ocurrido se encontraba nítidamente ante ella. Lo sabía todo y no sentía nada; como Dios, se dijo; sí, exactamente como Dios.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Lo sabía todo y no sentía nada",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Lucy stared at the sea, thinking these things, examining the situation as a curious one but unconnected with herself, looking at it with a kind of cold comprehension. Her mind was quite clear. Every detail of what had happened was sharply before her. She knew everything, and she felt nothing,—like God, she said to herself; yes, exactly like God.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-439",
       "legacy_index": 439,
-      "t": "Lo que le había sucedido a aquel hombre —se llamaba Wemyss— era que la opinión pública lo obligaba a retirarse y permanecer inactivo precisamente cuando más necesitaba compañía y distracción. Tenía que marcharse solo, tenía que apartarse durante una semana, como mínimo, de su vida habitual, porque la opinión pública había decidido que debía permanecer un tiempo a solas con su pena.\n\n¡A solas con la pena, de todas las cosas espantosas con las que un hombre podía quedarse a solas! Condenar a un hombre a aquello era un ultraje, pensaba; la forma más cruel de reclusión en solitario.",
+      "t": "Lo que le había sucedido a aquel hombre —se llamaba Wemyss— era que la opinión pública lo obligaba a retirarse y permanecer inactivo precisamente cuando más necesitaba compañía y distracción. Tenía que marcharse solo, tenía que apartarse durante una semana, como mínimo, de su vida habitual, de su casa junto al río, donde acababa de empezar sus vacaciones de verano, de su casa de Londres, donde al menos tenía sus clubes, porque la opinión pública estaba decidida a que permaneciera un tiempo a solas con su pena. ¡A solas con la pena, de todas las cosas espantosas con las que un hombre podía quedarse a solas! Condenar a un hombre a aquello era un ultraje, pensaba; la forma más cruel de reclusión en solitario.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "A solas con la pena",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "For what had happened to this man—his name was Wemyss—was that public opinion was forcing him into retirement and inactivity at the very time when he most needed company and distraction. He had to go away by himself, he had to withdraw for at the very least a week from his ordinary life, from his house on the river where he had just begun his summer holiday, from his house in London where at least there were his clubs, because of this determination on the part of public opinion that he should for a space be alone with his sorrow. Alone with sorrow,—of all ghastly things for a man to be alone with! It was an outrage, he felt, to condemn a man to that; it was the cruellest form of solitary confinement.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-440",
       "legacy_index": 440,
-      "t": "Ella pendía de sus palabras, con los ojos fijos en su rostro, los labios entreabiertos, el cuerpo entero convertido en una agonía de compasión. La vida: qué terrible era, y qué insospechada. Una seguía y seguía, sin imaginar nunca el súbito día espantoso en que caerían las cubiertas y se vería que, después de todo, era la muerte; que había sido la muerte durante todo aquel tiempo, la muerte fingiendo, la muerte esperando.\n\nSu padre, tan lleno de amor, intereses y proyectos: ido, acabado, barrido como si no importara más que algún insecto que una pisa sin verlo mientras camina.",
+      "t": "Ella pendía de sus palabras, con los ojos fijos en su rostro, los labios entreabiertos, el cuerpo entero convertido en una agonía de compasión. La vida: qué terrible era, y qué insospechada. Una seguía y seguía, sin imaginar nunca el súbito día espantoso en que se retirarían las cubiertas y se vería que, después de todo, era la muerte; que había sido la muerte durante todo aquel tiempo, la muerte fingiendo, la muerte esperando. Su padre, tan lleno de amor, intereses y proyectos: ido, acabado, barrido como si no importara más que algún insecto al que una pisa sin verlo mientras camina; y la esposa de aquel hombre, muerta en un instante, muerta de forma mucho más cruel, tan horriblemente…",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "la muerte fingiendo, la muerte esperando.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "She hung on his words, her eyes on his face, her lips parted, her whole body an agony of sympathy. Life—how terrible it was, and how unsuspected. One went on and on, never dreaming of the sudden dreadful day when the coverings were going to be dropped and one would see it was death after all, that it had been death all the time, death pretending, death waiting. Her father, so full of love and interests and plans,—gone, finished, brushed away as if he no more mattered than some insect one unseeingly treads on as one walks; and this man’s wife, dead in an instant, dead so far more cruelly, so horribly…",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-441",
@@ -7461,43 +7476,63 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "‘How could it be? She was my wife, without a care in the world, everything done for her, no troubles, nothing on her mind, nothing wrong with her health. We had been married fifteen years, and I was devoted to her—devoted to her.’",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-442",
       "legacy_index": 442,
-      "t": "Que le estuvieran haciendo el amor, que estuviera prometida —como insistía Wemyss— antes de que hubiera transcurrido una semana desde la muerte de su padre no podía calificarse, pensaba ella, de nada peor que una posible, y como máximo, falta de pertinencia.\n\nPero Wemyss encontraba irritante que su compromiso tuviera que mantenerse en secreto. Lucy, completamente abrumada, primero por sus lágrimas y después por su alegría, ya no podía juzgar nada. Ya no sabía si hacerse el amor en medio de la muerte era algo terrible o si era, como decía Wemyss, la natural y gloriosa afirmación de la vida.",
+      "t": "A Wemyss le irritaba que su compromiso —[…]—; le irritaba que tuviera que mantenerse en secreto.\n\n[…]\n\nY Lucy, completamente abrumada, primero por sus lágrimas y después por su alegría, ya no podía juzgar nada. Ya no sabía si estar haciéndose la corte en medio de la muerte era algo terrible o si era, como decía Wemyss, la natural y gloriosa autoafirmación de la vida.\n\n[…]\n\nQue la estuvieran cortejando, que estuviera prometida —como insistía Wemyss— antes de que hubiera transcurrido una semana desde la muerte de su padre no podía calificarse, pensaba ella, de nada peor que una posible, y como máximo, falta de pertinencia.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "la natural y gloriosa afirmación de la vida.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "It irked him that their engagement—[…]—it irked him that it had to be a secret.\n\n[…]\n\nAnd Lucy, quite overwhelmed, first by his tears and then by his joy, no longer could judge anything. She no longer knew whether it were very awful to be love-making in the middle of death, or whether it were, as Wemyss said, the natural glorious self-assertiveness of life.\n\n[…]\n\nThat she should be being made love to, be engaged, as Wemyss insisted, within a week of her father’s death, could not, she thought, be called anything worse than possibly and at the outside an irrelevance.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-443",
       "legacy_index": 443,
-      "t": "Lucy ya no sabía nada, excepto que él y ella, náufragos, se habían salvado mutuamente y que, por el momento, no se le exigía nada: ningún esfuerzo, absolutamente nada, salvo permanecer pasiva con la cabeza apoyada en su pecho mientras él la llamaba su bebé y besaba suave, maravillosamente, sus ojos cerrados.\n\nNo podía pensar; no necesitaba pensar. Oh, estaba cansada, y aquello era descanso.",
+      "t": "Lucy ya no sabía nada, excepto que él y ella, náufragos, se habían salvado mutuamente y que, por el momento, no se le exigía nada: ningún esfuerzo, absolutamente nada, salvo permanecer pasiva con la cabeza apoyada en su pecho mientras él la llamaba su bebé y besaba con suavidad, maravillosamente, sus ojos cerrados. No podía pensar; no necesitaba pensar; oh, estaba cansada, y aquello era descanso.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "No podía pensar; no necesitaba pensar.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "She knew nothing any more except that he and she, shipwrecked, had saved each other, and that for the moment nothing was required of her, no exertion, nothing at all, except to sit passive with her head on his breast, while he called her his baby and softly, wonderfully, kissed her closed eyes. She couldn’t think; she needn’t think; oh, she was tired—and this was rest.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-444",
       "legacy_index": 444,
-      "t": "Mientras tanto, la señorita Entwhistle pasaba una tarde laboriosa en la sala de periódicos del Museo Británico. Estaba leyendo en The Times la información sobre el accidente y la investigación judicial de Wemyss. Lucy no había mencionado aquella sugerencia de suicidio. Quizá él no se lo hubiera contado.\n\nSuicidio. Bueno, no había pruebas. Se había dictado un veredicto abierto. Lo había sugerido una sirvienta, quizá una sirvienta resentida.\n\nLa señorita Entwhistle volvió a casa lentamente, deteniéndose ante los escaparates, mirando sombreros y blusas que no veía, intentando pensar. Suicidio. Qué desolado sonaba en aquella hermosa tarde. Una renuncia semejante. Una derrota semejante.",
+      "t": "Mientras tanto, la señorita Entwhistle pasaba una tarde laboriosa en la sala de periódicos del Museo Británico. Estaba leyendo en _The Times_ la información sobre el accidente y la investigación judicial de Wemyss; y, si la había perturbado lo que Lucy le contó por la mañana, aún la perturbó más lo que leyó por la tarde. Lucy no había mencionado aquella sugerencia de suicidio. Quizá él no se lo hubiera contado. Suicidio. Bueno, no había pruebas. Se había dictado un veredicto abierto. Lo había sugerido una sirvienta, quizá una sirvienta resentida.\n\n[…]\n\nLa señorita Entwhistle volvió a casa lentamente, deteniéndose ante los escaparates, mirando sombreros y blusas que no veía, alargando al máximo el paseo, intentando pensar. Suicidio. Qué desolado sonaba en aquella hermosa tarde. Una renuncia semejante. Una derrota semejante.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Suicidio. Qué desolado sonaba",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Meanwhile Miss Entwhistle was spending a diligent afternoon in the newspaper room of the British Museum. She was reading _The Times_ report of the Wemyss accident and inquest; and if she had been upset by what Lucy told her in the morning she was even more upset by what she read in the afternoon. Lucy hadn’t mentioned that suggestion of suicide. Perhaps he hadn’t told her. Suicide. Well, there had been no evidence. There was an open verdict. It had been a suggestion made by a servant, perhaps a servant with a grudge.\n\n[…]\n\nMiss Entwhistle walked home slowly, loitering at shop windows, staring at hats and blouses that she never saw, spinning out her walk to its utmost, trying to think. Suicide. How desolate it sounded on that beautiful afternoon. Such a giving up. Such a defeat.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-445",
@@ -7509,55 +7544,80 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "She had an old friend living in Chesham Street, a widow full of that ripe wisdom that sometimes comes at the end to those who have survived marriage; and to her, when the autumn brought her back to London, Miss Entwhistle went occasionally in search of comfort.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-446",
       "legacy_index": 446,
-      "t": "El compromiso Wemyss-Entwhistle avanzó por las etapas ordinarias de todos los compromisos: secreto completo, secreto parcial, semipublicidad e, inmediatamente después, publicidad total, con su inevitable acompañamiento de estrépito. El estrépito, siempre más o menos audible para los protagonistas, fue en este caso de desaprobación unánime.\n\nLos amigos del padre de Lucy protestaron uno por uno. La atmósfera de Eaton Terrace se convulsionó; y Lucy, que como siempre corría a esconderse de todo lo perturbador en los brazos de Wemyss, solo quedó más convencida que nunca de que allí solo había paz.",
+      "t": "El compromiso Wemyss-Entwhistle avanzó por las etapas ordinarias de todos los compromisos: secreto completo, secreto parcial, semipublicidad e, inmediatamente después, publicidad total, con su inevitable acompañamiento de estrépito. El estrépito, siempre más o menos audible para los protagonistas, fue en este caso de desaprobación unánime. Todos los amigos del padre de Lucy protestaron, sin excepción. La atmósfera de Eaton Terrace se convulsionó; y Lucy, que como siempre corría a esconderse de todo lo perturbador en los brazos de Wemyss, solo quedó más convencida que nunca de que allí solo había paz.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "allí solo había paz.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "The Wemyss-Entwhistle engagement proceeded on its way of development through the ordinary stages of all engagements: secrecy complete, secrecy partial, semi-publicity, and immediately after that entire publicity, with its inevitable accompanying uproar. The uproar, always more or less audible to the protagonists, of either approval or disapproval, was in this case one of unanimous disapproval. Lucy’s father’s friends protested to a man. The atmosphere at Eaton Terrace was convulsed; and Lucy, running as she always did to hide from everything upsetting into Wemyss’s arms, was only made more certain than ever that there alone was peace.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-447",
       "legacy_index": 447,
-      "t": "Lucy también estaba indignada, pero su indignación procedía de que los amigos de su padre, siempre buenos, amables, inteligentes y razonables, se mostraran unánimemente hostiles a que se casara con Everard sin conocer de él más que la historia del accidente.\n\n¡Y luego la manera en que todos hablaban! Argumentos, razonamientos y sutilezas interminables; tan inteligentes, tan imposibles de refutar y, sin embargo, tan equivocados. Todos aquellos numerosos puntos de vista… Pero solo había un punto de vista sobre una cosa, decía Everard, y era el correcto.\n\nAh, pero una mujer no quería aquello; no quería aquel pensar, examinar, diseccionar y considerar sin fin. Una mujer —hasta sus pensamientos aparecían ahora vestidos con las palabras de Wemyss— solo quería a su hombre.",
+      "t": "Lucy también estaba indignada, pero su indignación procedía de que los amigos de su padre, siempre buenos, amables, inteligentes y razonables, se mostraran unánimemente hostiles a que se casara con Everard sin conocer de él más que la historia del accidente. La facilidad para ser injustos, la disposición inmediata a creer lo peor en lugar de lo mejor, la asombraban y escandalizaban. ¡Y luego la manera en que todos hablaban! Argumentos, razonamientos y sutilezas interminables; tan inteligentes, tan imposibles de refutar y, sin embargo, tan equivocados. Todos aquellos numerosos puntos de vista… Pero solo había un punto de vista sobre una cosa, decía Everard, y era el correcto. Ah, pero una mujer no quería aquello; no quería aquel pensar, examinar, diseccionar y considerar sin fin. Una mujer —hasta sus pensamientos aparecían ahora vestidos con las palabras de Wemyss— solo quería a su hombre.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "solo quería a su hombre.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "She, too, was indignant, but her indignation was because her father’s friends, who had been ever since she could remember always good and kind, besides perfectly intelligent and reasonable, should with one accord, and without knowing anything about Everard except that story of the accident, be hostile to her marrying him. The ready unfairness, the willingness immediately to believe the worst instead of the best, astonished and shocked her. And then the way they all talked! Everlasting arguments and reasoning and hair-splitting; so clever, so impossible to stand up against, and yet so surely, she was certain, if only she had been clever too and able to prove things, wrong. All their multitudinous points of view,—why, there was only one point of view about a thing, Everard said, and that was the right one. Ah, but what a woman wanted wasn’t this; she didn’t want this endless thinking and examining and dissecting and considering. A woman—her very thoughts were now dressed in Wemyss’s words—only wanted her man.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-448",
       "legacy_index": 448,
-      "t": "Wemyss, que primero hacía sus planes y después hablaba de ellos, ni siquiera había mencionado a Lucy la Navidad. Era costumbre suya decidir qué deseaba hacer, disponer todos los detalles y, cuando todo estaba preparado, informar a quienes iban a participar.\n\nNo se le había ocurrido que pudiera haber dificultades con la cuestión de la Navidad. Naturalmente, había dado por sentado que la pasaría con su pequeña, y puesto que él siempre la pasaba en Los Sauces, ella también la pasaría allí.",
+      "t": "Wemyss, que primero hacía sus planes y después hablaba de ellos, ni siquiera había mencionado a Lucy la Navidad. Era costumbre suya decidir qué deseaba hacer, disponer todos los detalles y, cuando todo estaba preparado, informar a quienes iban a participar. No se le había ocurrido que pudiera haber dificultades con la cuestión de la Navidad. Naturalmente, había dado por sentado que la pasaría con su pequeña, y puesto que él siempre la pasaba en Los Sauces, ella también la pasaría allí.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "primero hacía sus planes y después hablaba de ellos",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Wemyss, who made his plans first and talked about them afterwards, hadn’t mentioned Christmas even to Lucy. It was his habit to settle what he wished to do, arrange all the details, and then, when everything was ready, inform those who were to take part. It hadn’t occurred to him that over the Christmas question there would be trouble. He had naturally taken it for granted that he would spend Christmas with his little girl, and of course as he always spent it at The Willows she would spend it there too.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-449",
       "legacy_index": 449,
-      "t": "—Esto es morboso —dijo cuando, en respuesta a sus preguntas, ella por fin le explicó que no podía ir por la terrible muerte de la pobre Vera allí.\n\nY le explicó, sosteniéndola entre sus brazos, lo absurdo que era ser morbosa y que su pequeña, que iba a casarse con un hombre sano y sensato que, Dios sabía, había tenido que luchar bastante para seguir siéndolo —ella se apretó más contra él— y, sin embargo, lo había conseguido, también tenía que ser sana y sensata.\n\nDe otro modo, si no podía hacer esto o aquello porque le recordaba algo triste, y no podía ir aquí o allá porque alguien había muerto, temía que acabara haciéndolos muy infelices tanto a él como a sí misma.",
+      "t": "—Esto es morboso —dijo cuando, en respuesta a sus preguntas, ella por fin le explicó que no podía ir por la terrible muerte de la pobre Vera allí. Y le explicó, sosteniéndola entre sus brazos, lo absurdo que era ser morbosa y que su pequeña, que iba a casarse con un hombre sano y sensato que, Dios sabía, había tenido que luchar bastante para seguir siéndolo —ella se apretó más contra él— y, sin embargo, lo había conseguido, también tenía que ser sana y sensata. De otro modo, si no podía hacer esto o aquello porque le recordaba algo triste, y no podía ir aquí o allá porque alguien había muerto, temía que acabara haciéndolos muy infelices tanto a él como a sí misma.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "—Esto es morboso",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "‘This is morbid,’ he said, when in answer to his questioning she at last told him it was poor Vera’s dreadful death there that made her feel she couldn’t go; and he explained, holding her in his arms, how foolish it was to be morbid, and how his little girl, who was marrying a healthy, sensible man who, God knew, had had to fight hard enough to keep so—she pressed closer—and yet had succeeded, must be healthily sensible too. Otherwise, if she couldn’t do this and couldn’t do that because it reminded her of something sad, and couldn’t go here and couldn’t go there because of somebody’s having died, he was afraid she would make both herself and him very unhappy.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-450",
@@ -7569,43 +7629,63 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Having completed his preparations, and fixed his wedding day for the first Saturday in March, Wemyss thought it time he told Lucy; so he did, though not without a slight fear at the end that she might make difficulties.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-451",
       "legacy_index": 451,
-      "t": "El matrimonio, descubrió Lucy, era diferente de lo que había supuesto; Everard era diferente; todo era diferente. Para empezar, siempre tenía sueño. Para continuar, nunca estaba sola.\n\nNo había comprendido hasta qué punto nunca estaría sola o, si lo estaba, nunca tendría la certeza, de un minuto al siguiente, de continuar estándolo. Siempre había habido en su vida intervalos durante los cuales se recuperaba en soledad de cualquier tensión; ahora no había ninguno. Siempre había habido lugares a los que podía retirarse y descansar tranquilamente, a salvo de interrupciones; ahora no había ninguno.",
+      "t": "El matrimonio, descubrió Lucy, era diferente de lo que había supuesto; Everard era diferente; todo era diferente. Para empezar, siempre tenía sueño. Para continuar, nunca estaba sola. No había comprendido hasta qué punto nunca estaría sola o, si lo estaba, nunca tendría la certeza, de un minuto al siguiente, de continuar estándolo. Siempre había habido en su vida intervalos durante los cuales se recuperaba en soledad de cualquier tensión; ahora no había ninguno. Siempre había habido lugares a los que podía retirarse y descansar tranquilamente, a salvo de interrupciones; ahora no había ninguno.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "El matrimonio, descubrió Lucy, era diferente",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Marriage, Lucy found, was different from what she had supposed; Everard was different; everything was different. For one thing she was always sleepy. For another she was never alone. She hadn’t realised how completely she would never be alone, or, if alone, not sure for one minute to the other of going on being alone. Always in her life there had been intervals during which she recuperated in solitude from any strain; now there were none. Always there had been places she could go to and rest in quietly, safe from interruption; now there were none.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-452",
       "legacy_index": 452,
-      "t": "Sí, era un bebé, un bebé querido y lleno de vitalidad, pero un bebé ahora visto muy de cerca y que no paraba nunca. No se podía meterlo en una cuna, darle un biberón, decirle: «Ya está», y después sentarse tranquilamente a coser un poco; no se tenían domingos libres; nunca se estaba, ni de día ni de noche, un solo instante fuera de servicio.\n\nLucy no podía contar el número de veces al día que tenía que responder a la pregunta:\n\n—¿Quién es mi mujercita, toda mía?",
+      "t": "Sí, era un bebé, un bebé querido y lleno de vitalidad, pero un bebé ahora visto muy de cerca y que no paraba nunca. Una no podía meterlo en una cuna, darle un biberón, decirle: «Ya está», y después sentarse tranquilamente a coser un poco; una no tenía domingos libres; nunca estaba, ni de día ni de noche, un solo instante fuera de servicio. Lucy no podía contar el número de veces al día que tenía que responder a la pregunta: «¿Quién es mi mujercita, toda mía?»",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "nunca se estaba, ni de día ni de noche, un solo instante fuera de servicio.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Yes, he was a baby, a dear, high-spirited baby, but a baby now at very close quarters and one that went on all the time. You couldn’t put him in a cot and give him a bottle and say, ‘There now,’ and then sit down quietly to a little sewing; you didn’t have Sundays out; you were never, day or night, an instant off duty. Lucy couldn’t count the number of times a day she had to answer the question, ‘Who’s my own little wife?’",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-453",
       "legacy_index": 453,
-      "t": "Al principio respondía con un éxtasis risueño, corriendo hacia sus brazos abiertos; pero muy pronto apareció aquel sueño fatal que permaneció con ella durante toda la luna de miel, y algunas veces se sentía realmente demasiado cansada para introducir en su voz el éxtasis que pronto comprendió que se esperaba de ella.\n\nSi había una sombra de vacilación antes de responder, la más mínima demora porque sus pensamientos se hubieran extraviado momentáneamente, Wemyss se disgustaba y ella tenía que pasar bastante tiempo tranquilizándolo con los susurros y las caricias más tiernos.\n\nSus pensamientos no debían extraviarse, había descubierto; sus pensamientos debían ser de él, igual que todo lo demás de ella.",
+      "t": "Al principio respondía con un éxtasis risueño, corriendo hacia sus brazos abiertos; pero muy pronto apareció aquella somnolencia fatal, que la acompañó durante toda la luna de miel, y algunas veces se sentía realmente demasiado cansada para introducir en su voz el éxtasis que pronto comprendió que se esperaba de ella. Lo amaba, era realmente su mujercita, toda suya, pero contestar de manera satisfactoria y constante a esa pregunta y a otras semejantes suponía un gran esfuerzo. Si había una sombra de vacilación antes de responder, la más mínima demora porque sus pensamientos se hubieran extraviado momentáneamente, Wemyss se disgustaba y ella tenía que pasar bastante tiempo tranquilizándolo con los susurros y las caricias más tiernos. Sus pensamientos no debían extraviarse, había descubierto; sus pensamientos debían ser de él, igual que todo lo demás de ella.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "sus pensamientos debían ser de él",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "At first she answered it with laughing ecstasy, running into his outstretched arms, but very soon that fatal sleepiness set in and remained with her for the whole of her honeymoon, and she really felt too tired sometimes to get the ecstasy she quickly got to know was expected of her into her voice. She loved him, she was indeed his own little wife, but constantly to answer this and questions like it satisfactorily was a great exertion. Yet if there was a shadow of hesitation before she answered, a hair’s-breadth of delay owing to her thoughts having momentarily wandered, Wemyss was upset, and she had to spend quite a long time reassuring him with the fondest whispers and caresses. Her thoughts mustn’t wander, she had discovered; her thoughts were to be his as well as all the rest of her.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-454",
@@ -7617,127 +7697,182 @@
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Early in their engagement Wemyss had expounded his theory to Lucy that there should be the most perfect frankness between lovers, while as for husband and wife there oughtn’t to be a corner anywhere about either of them, mind, body, or soul, which couldn’t be revealed to the other one.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-455",
       "legacy_index": 455,
-      "t": "Lucy tenía una opinión tan elevada de aquello que no encontraba palabras con las que expresar su admiración y, en su lugar, se puso a besarlo. Qué felicidad ideal, quedar apartada para siempre del miedo a la soledad mediante el sencillo procedimiento de ser dos; y quién podía ser tan feliz como ella, que había encontrado exactamente a la persona adecuada para aquella duplicación, una persona con la que podía coincidir y entenderse tan perfectamente.\n\nSu mente era un cáliz lleno únicamente de amor, y el amor era tan claro y luminoso que ni siquiera en el fondo, cuando lo agitaba para mirar, había rastro alguno de sedimento.",
+      "t": "Lucy tenía una opinión tan elevada de aquello que no encontraba palabras con las que expresar su admiración y, en su lugar, se puso a besarlo. Qué felicidad ideal, quedar apartada para siempre del miedo a la soledad mediante el sencillo procedimiento de ser dos; y quién podía ser tan feliz como ella, que había encontrado exactamente a la persona adecuada para aquella duplicación, una persona con la que podía coincidir y entenderse tan perfectamente. Le daba cierta lástima no tener entonces mismo en la mente ningún pensamiento del que se avergonzara para contárselo, pero no había duda ni el menor rastro de algo un poco malo, ni siquiera una sospecha indigna. Su mente era un cáliz lleno únicamente de amor, y el amor era tan claro y luminoso que ni siquiera en el fondo, cuando lo agitaba para mirar, había rastro alguno de sedimento.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Su mente era un cáliz lleno únicamente de amor",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Lucy thought so highly of it that she had no words with which to express her admiration, and fell to kissing him instead. What ideal happiness, to be for ever removed from the fear of loneliness by the simple expedient of being doubled; and who so happy as herself to have found the exactly right person for this doubling, one she could so perfectly agree with and understand? She felt quite sorry she had nothing in her mind in the way of thoughts she was ashamed of to tell him then and there, but there wasn’t a doubt, there wasn’t a shred of anything a little wrong, not even an unworthy suspicion. Her mind was a chalice filled only with love, and so clear and bright was the love that even at the bottom, when she stirred it up to look, there wasn’t a trace of sediment.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-456",
       "legacy_index": 456,
-      "t": "Sí, se había vuelto sumamente abyecta, reflexionaba, despierta durante la noche, considerando su comportamiento a lo largo del día. El amor la había vuelto así. El amor volvía abyecta a una, porque estaba lleno del miedo a herir al ser amado.\n\nLa afirmación de las Escrituras de que el amor perfecto expulsa el miedo solo demostraba, puesto que su amor por Everard era sin duda perfecto, lo poco que las Escrituras sabían realmente de aquello de lo que hablaban.",
+      "t": "Sí, se había vuelto sumamente abyecta, reflexionaba, despierta durante la noche, considerando su comportamiento a lo largo del día. El amor la había vuelto así. El amor volvía abyecta a una, porque estaba lleno del miedo a herir al ser amado. La afirmación de las Escrituras de que el amor perfecto expulsa el miedo solo demostraba, puesto que su amor por Everard era sin duda perfecto, lo poco que las Escrituras sabían realmente de aquello de lo que hablaban.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "El amor volvía abyecta a una",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Yes, she was extremely abject, she reflected, lying awake at night considering her behaviour during the day. Love had made her so. Love did make one abject, for it was full of fear of hurting the beloved. The assertion of the Scriptures that perfect love casteth out fear only showed, seeing that her love for Everard was certainly perfect, how little the Scriptures really knew what they were talking about.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-457",
       "legacy_index": 457,
-      "t": "Así que aquella era Vera. Por supuesto. Había sabido, aunque nunca hubiera construido una imagen suya en la mente —había evitado cuidadosamente hacerlo—, que sería así.\n\nAquella Vera era sin duda inteligente. No se podían tener aquellos ojos y ser necia. Y la expresión de su boca: ¿de qué había estado intentando no reírse aquel día?\n\nQuizá se reía, pensó Lucy, porque, de otro modo, habría llorado; solo que eso habría sido una tontería, y ella no podía haber sido tonta: no con aquellos ojos, no con aquellas cejas rectas y finas.",
+      "t": "Así que aquella era Vera. Por supuesto. Había sabido, aunque nunca hubiera construido una imagen suya en la mente —había evitado cuidadosamente hacerlo—, que sería así.\n\n[…]\n\nAquella Vera era sin duda inteligente. No se podían tener aquellos ojos y ser necia. Y la expresión de su boca: ¿de qué había estado intentando no reírse aquel día?\n\n[…]\n\nQuizá se reía, pensó Lucy, porque, de otro modo, habría llorado; solo que eso habría sido una tontería, y ella no podía haber sido tonta: no con aquellos ojos, no con aquellas cejas rectas y finas.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Quizá se reía, pensó Lucy, porque, de otro modo, habría llorado",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "So this was Vera. Of course. She had known, though she had never constructed any image of her in her mind, had carefully avoided doing it, that she would be like that.\n\n[…]\n\nThis Vera was certainly intelligent. You couldn’t have eyes like that and be a fool. And the expression of her mouth,—what had she been trying not to laugh at that day?\n\n[…]\n\nPerhaps she laughed, thought Lucy, because else she might have cried; only that would have been silly, and she couldn’t have been silly,—not with those eyes, not with those straight, fine eyebrows.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-458",
       "legacy_index": 458,
-      "t": "Tenía miedo de él, y tenía miedo de sí misma en relación con él. Parecía encontrarse fuera de todo cuanto ella conocía por experiencia. Parecía no ser —al menos no lo había sido aquel día— generoso. No parecía haber ningún punto por el que pudiera alcanzárselo.\n\n¿Cómo era él realmente? ¿Cuánto tiempo tardaría en conocerlo realmente? ¿Años?\n\nY ella misma sabía ahora que no podía soportar las escenas. Ninguna escena. No podía soportarlas mientras sucedían ni podía soportar el agotamiento de la larga reconciliación posterior.",
+      "t": "Tenía miedo de él, y tenía miedo de sí misma en relación con él. Parecía encontrarse fuera de todo cuanto ella conocía por experiencia. Parecía no ser —al menos no lo había sido aquel día— generoso. No parecía haber ningún punto por el que pudiera alcanzarlo. ¿Cómo era él _realmente_? ¿Cuánto tiempo tardaría en conocerlo realmente? ¿Años? Y ella misma —ahora lo sabía, ahora que había trabado conocimiento con ellas— no podía soportar en absoluto las escenas. Ninguna escena. Ni cuando la implicaban a ella ni cuando ocurrían en su presencia entre otras personas. No podía soportarlas mientras sucedían ni podía soportar el agotamiento de la larga reconciliación posterior.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Tenía miedo de él, y tenía miedo de sí misma en relación con él.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "She was afraid of him, and she was afraid of herself in relation to him. He seemed outside anything of which she had experience. He appeared not to be—he anyhow had not been that day—generous. There seemed no way, at any point, by which one could reach him. What was he _really_ like? How long was it going to take her really to know him? Years? And she herself,—she now knew, now that she had made their acquaintance, that she couldn’t at all bear scenes. Any scenes. Either with herself, or in her presence with other people. She couldn’t bear them while they were going on, and she couldn’t bear the exhaustion of the long drawn-out making up at the end.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-459",
       "legacy_index": 459,
-      "t": "Él le había apartado la blusa y le estaba besando el hombro y preguntándole de quién era enteramente aquella esposa.\n\nPero ¿de qué servían las caricias si inmediatamente antes o después había ira, o si la ira las interrumpía? Tenía miedo de él. Ella no estaba en aquellos besos.\n\nQuizá llevara mucho tiempo sintiendo miedo de él sin saberlo. ¿Qué había sido aquella abyección durante la luna de miel, aquel deseo angustiado de agradar, de evitar ofender, sino miedo? Era amor con miedo; miedo de recibir daño, de no poder creer de todo corazón, de no poder —esto era lo peor— sentirse orgullosa del ser amado.",
+      "t": "Él le había apartado la blusa y le estaba besando el hombro y preguntándole de quién era ella la esposa, toda suya. Pero ¿de qué servían las caricias si inmediatamente antes o después había ira, o si la ira las interrumpía? Tenía miedo de él. Ella no estaba en aquellos besos. Quizá llevara mucho tiempo sintiendo miedo de él sin saberlo. ¿Qué había sido aquella abyección durante la luna de miel, aquel deseo angustiado de agradar, de evitar ofender, sino miedo? Era amor con miedo; miedo de recibir daño, de no poder creer de todo corazón, de no poder —esto era lo peor— sentirse orgullosa del ser amado.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Era amor con miedo",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "He had pulled her blouse back, and was kissing her shoulder and asking her whose very own wife she was. But what was the good of love-making if it was immediately preceded or followed or interrupted by anger? She was afraid of him. She wasn’t in this kissing at all. Perhaps she had been afraid of him unconsciously for a long while. What was that abjectness on the honeymoon, that anxious desire to please, to avoid offending, but fear? It was love afraid; afraid of getting hurt, of not going to be able to believe whole-heartedly, of not going to be able—this was the worst—to be proud of its beloved.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-460",
       "legacy_index": 460,
-      "t": "Atravesó el vestíbulo corriendo, convertida toda ella en una confusión de penitencia angustiada, deseo y amor, y cuando llegó a la puerta y giró el picaporte estaba cerrada con llave.\n\nLa había dejado fuera, con la puerta cerrada.\n\nSu mano resbaló lentamente del picaporte. Permaneció completamente inmóvil. ¿Cómo podía…? Y ahora sabía que él había echado el cerrojo de la puerta principal sabiendo que ella seguía fuera, bajo la lluvia. ¿Cómo podía?\n\n¿Quién era aquel hombre, despiadado, cruel? No Everard. No su amante. ¿Dónde estaba él, su amante y marido?",
+      "t": "Atravesó el vestíbulo corriendo, convertida toda ella en una confusión de penitencia angustiada, deseo y amor, y cuando llegó a la puerta y giró el picaporte estaba cerrada con llave.\n\nLa había dejado fuera, con la puerta cerrada.\n\nSu mano resbaló lentamente del picaporte. Permaneció completamente inmóvil. ¿Cómo _podía_…? Y ahora sabía que él había echado el cerrojo de la puerta principal sabiendo que ella seguía fuera, bajo la lluvia. ¿Cómo _podía_? Su cuerpo permanecía inmóvil mientras miraba la puerta cerrada, pero su mente era una confusión vertiginosa de preguntas. ¿Por qué? ¿Por qué? Aquello no podía ser Everard. ¿Quién era aquel hombre, despiadado, cruel? No Everard. No su amante. ¿Dónde estaba él, su amante y marido?",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "La había dejado fuera, con la puerta cerrada.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Across the hall ran Lucy, the whole of her one welter of anxious penitence and longing and love, and when she got to the door and turned the handle it was locked.\n\nHe had locked her out.\n\nHer hand slid slowly off the knob. She stood quite still. How _could_ he… And she knew now that he had bolted the front door knowing she was out in the rain. How _could_ he? Her body was motionless as she stood staring at the locked door, but her brain was a rushing confusion of questions. Why? Why? This couldn’t be Everard. Who was this man—pitiless, cruel? Not Everard. Not her lover. Where was he, her lover and husband?",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-461",
       "legacy_index": 461,
-      "t": "Se apartó el pelo mojado de los ojos mientras subía las escaleras. Seguía metiéndosele en ellos y haciéndola tropezar. Vera la ayudaría. Vera nunca había sido vencida. Vera había pasado quince años sin ser vencida antes de… antes de sufrir aquel accidente.\n\nDebía de haber habido montones de días exactamente iguales a aquel, con el viento gritando, Vera arriba en su habitación y Everard abajo en la suya —quizá encerrado—, y, sin embargo, Vera había resistido y no habían conseguido arrancarle el espíritu.\n\nOh, si Vera no estuviera muerta. ¡Si Vera, Vera, no estuviera muerta!",
+      "t": "Apartó de un tirón el pelo mojado de sus ojos mientras subía las escaleras. Seguía metiéndosele en ellos y haciéndola tropezar. Vera la ayudaría. Vera nunca había sido vencida. Vera había pasado quince años sin ser vencida antes de… antes de sufrir aquel accidente. Debía de haber habido montones de días exactamente iguales a aquel, con el viento gritando, Vera arriba en su habitación y Everard abajo en la suya —quizá encerrado—, y, sin embargo, Vera había resistido y no habían conseguido arrancarle el espíritu. Durante años y años, jadeaba Lucy —hasta sus pensamientos llegaban en jadeos—, Vera había vivido allí arriba invierno tras invierno, años, años, años, y seguiría allí ahora si no hubiera… Oh, si Vera no estuviera muerta. ¡Si _tan solo, tan solo_ Vera no estuviera muerta!",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Vera nunca había sido vencida.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "She jerked her wet hair out of her eyes as she climbed the stairs. It kept on getting into them and making her stumble. Vera would help her. Vera never was beaten. Vera had had fifteen years of not being beaten before she—before she had that accident. And there must have been heaps of days just like this one, with the wind screaming and Vera up in her room and Everard down in his—locked in, perhaps—and yet Vera had managed, and her spirit wasn’t beaten out. For years and years, panted Lucy—her very thoughts came in gasps—Vera lived up here winter after winter, years, years, years, and would have been here now if she hadn’t—oh, if only Vera weren’t dead! If _only, only_ Vera weren’t dead!",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-462",
       "legacy_index": 462,
-      "t": "Lucy permaneció completamente quieta, envuelta en la colcha de Vera. Obedientemente no se movió, sino que miró directamente al fuego, sentada tan cerca que el resto de la habitación quedó excluido.\n\nNo veía la ventana ni la triste lluvia deslizándose por ella. No veía más que el fuego, que ardía alegremente.\n\nQué amable era Lizzie. Qué consoladora era la bondad. Era algo que comprendía, algo normal, natural, y estar junto a ella la hacía sentirse también normal y natural.",
+      "t": "Lucy permaneció completamente quieta, envuelta en la colcha de Vera. Obedientemente no se movió, sino que miró directamente al fuego, sentada tan cerca que el resto de la habitación quedó excluido. No veía la ventana ni la triste lluvia deslizándose por ella. No veía más que el fuego, que ardía alegremente. Qué amable era Lizzie. Qué consoladora era la bondad. Era algo que comprendía, algo normal, natural, y estar junto a ella la hacía sentirse también normal y natural.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Qué consoladora era la bondad.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "Lucy sat quite still, rolled up in Vera’s coverlet. Obediently she didn’t move, but stared straight into the fire, sitting so close up to it that the rest of the room was shut out. She couldn’t see the window, or the dismal rain streaming down it. She saw nothing but the fire, blazing cheerfully. How kind Lizzie was. How comforting kindness was. It was a thing she understood, a normal, natural thing, and it made her feel normal and natural just to be with it.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-463",
       "legacy_index": 463,
-      "t": "La verdad era que, para cuando la señorita Entwhistle entró en la biblioteca, estaba muy enfadada. Hasta el gusano más cortés, se dijo, el gusano más conciliador y sensato, plenamente consciente de que la sabiduría aconseja paciencia, acaba revolviéndose contra el marido de su sobrina si lo pisan con demasiada fuerza.\n\nLa manera en que Wemyss le había ordenado que no subiera a ver a Lucy… Lo que más la enfurecía era conocer la debilidad de su posición: se encontraba en su casa sin haber sido invitada.",
+      "t": "La verdad era que, para cuando la señorita Entwhistle entró en la biblioteca, estaba muy enfadada. Hasta el gusano más cortés, se dijo, el gusano más conciliador y sensato, plenamente consciente de que la sabiduría aconseja paciencia, acaba revolviéndose contra el marido de su sobrina si lo pisan con demasiada fuerza. La manera en que Wemyss le había ordenado que no subiera a ver a Lucy… Lo que más la enfurecía era conocer la debilidad de su posición: se encontraba en su casa sin haber sido invitada.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "Hasta el gusano más cortés, se dijo, el gusano más conciliador y sensato, plenamente consciente de que la sabiduría aconseja paciencia, acaba revolviéndose",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "The fact is that by the time Miss Entwhistle got into the library she was very angry. Even the politest worm, she said to herself, the most conciliatory, sensible worm, fully conscious that wisdom points to patience, will nevertheless turn on its niece’s husband if trodden on too heavily. The way Wemyss had ordered her not to go up to Lucy… Particularly enraging to Miss Entwhistle was the knowledge of her weak position, uninvited in his house.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-464",
       "legacy_index": 464,
-      "t": "Qué alivio, qué alivio extraordinario, haberse librado de ella; y no solo por aquella vez, sino para siempre. Además, era la única pariente de Lucy, de modo que ya no quedaban más que pudieran acudir e intentar interponerse entre marido y mujer.\n\nWemyss dio cuerda a su reloj ante los últimos resplandores del fuego y volvió a sentirse de excelente humor. Más que de excelente humor: renovado y vigorizado, como si hubiera tomado un baño frío y recibido una vigorosa fricción.\n\nAhora, a la cama y con su pequeño Amor. Qué cosas tan sencillas necesitaba un hombre: solo su mujer y la paz.",
+      "t": "Qué alivio, qué alivio extraordinario, haberse librado de ella; y no solo por aquella vez, sino para siempre. Además, era la única pariente de Lucy, de modo que ya no quedaban más que pudieran acudir e intentar interponerse entre marido y mujer.\n\n[…]\n\nWemyss dio cuerda a su reloj ante los últimos resplandores del fuego y volvió a sentirse de excelente humor. Más que de excelente humor: renovado y vigorizado, como si hubiera tomado un baño frío y recibido una vigorosa fricción. Ahora, a la cama y con su pequeño Amor. Qué cosas tan sencillas necesitaba un hombre: solo su mujer y la paz.",
       "a": "Elizabeth von Arnim",
       "obra": "Vera, Elizabeth von Arnim",
       "highlight": "solo su mujer y la paz.",
       "lang": "es",
       "type": "prose",
       "authorId": "author-elizabeth-von-arnim",
-      "workId": "work-vera"
+      "workId": "work-vera",
+      "original": {
+        "text": "What a relief, what an extraordinary relief, to have got rid of her; and not just for this once, but for good. Also she was Lucy’s only relation, so there were no more of them to come and try to interfere between man and wife.\n\n[…]\n\nHe wound up his watch, standing before the last glimmerings of the fire, and felt quite good-humoured again. More than good-humoured,—refreshed and exhilarated, as though he had had a cold bath and a thorough rub-down. Now for bed and his little Love. What simple things a man wanted,—only his woman and peace.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
     },
     {
       "id": "quote-465",

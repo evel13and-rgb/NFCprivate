@@ -193,6 +193,12 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-424', 'quote-425', 'quote-426', 'quote-427', 'quote-428',
     'quote-429', 'quote-430', 'quote-431', 'quote-432', 'quote-433',
     'quote-434', 'quote-435', 'quote-436', 'quote-437',
+    'quote-438', 'quote-439', 'quote-440', 'quote-441', 'quote-442',
+    'quote-443', 'quote-444', 'quote-445', 'quote-446', 'quote-447',
+    'quote-448', 'quote-449', 'quote-450', 'quote-451', 'quote-452',
+    'quote-453', 'quote-454', 'quote-455', 'quote-456', 'quote-457',
+    'quote-458', 'quote-459', 'quote-460', 'quote-461', 'quote-462',
+    'quote-463', 'quote-464',
     'quote-494', 'quote-495', 'quote-496', 'quote-497', 'quote-498',
     'quote-499', 'quote-500', 'quote-501', 'quote-502', 'quote-503',
     'quote-504', 'quote-505', 'quote-506', 'quote-507', 'quote-508',
@@ -1017,6 +1023,60 @@ test('El papel pintado de amarillo conserva la primera publicación, sus cursiva
     4,
   );
   for (const quote of wallpaperQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    const expected = expectedParagraphs.get(quote.legacy_index);
+    assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos españoles`);
+    assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+    assert.equal(
+      quote.t.match(/_[^_]+_/g)?.length || 0,
+      quote.original.text.match(/_[^_]+_/g)?.length || 0,
+      `${quote.id} debe conservar los énfasis tipográficos`,
+    );
+  }
+});
+
+test('Vera conserva la primera edición, la secuencia narrativa y la coerción de Wemyss', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const veraQuotes = document.quotes.filter(quote => quote.workId === 'work-vera');
+  const expectedParagraphs = new Map([
+    [438, 1], [439, 1], [440, 1], [441, 1], [442, 5], [443, 1], [444, 3],
+    [445, 1], [446, 1], [447, 1], [448, 1], [449, 1], [450, 1], [451, 1],
+    [452, 1], [453, 1], [454, 1], [455, 1], [456, 1], [457, 5], [458, 1],
+    [459, 1], [460, 3], [461, 1], [462, 1], [463, 1], [464, 3],
+  ]);
+
+  assert.equal(veraQuotes.length, 27);
+  assert.ok(veraQuotes.every(quote => quote.original?.lang === 'en'));
+  assert.ok(veraQuotes.every(quote => quote.original?.label === 'Original inglés'));
+  assert.match(quotes.get('quote-438').original.text, /^Lucy stared at the sea/);
+  assert.match(quotes.get('quote-440').original.text, /this man’s wife, dead in an instant/);
+  assert.match(quotes.get('quote-440').t, /la esposa de aquel hombre, muerta en un instante/);
+  assert.equal(quotes.get('quote-442').original.text.match(/\[…\]/g)?.length, 3);
+  assert.equal(quotes.get('quote-442').t.match(/\[…\]/g)?.length, 3);
+  assert.ok(quotes.get('quote-442').t.indexOf('le irritaba') < quotes.get('quote-442').t.indexOf('completamente abrumada'));
+  assert.ok(quotes.get('quote-442').t.indexOf('completamente abrumada') < quotes.get('quote-442').t.indexOf('la estuvieran cortejando'));
+  assert.match(quotes.get('quote-442').t, /natural y gloriosa autoafirmación de la vida/);
+  assert.match(quotes.get('quote-444').original.text, /_The Times_/);
+  assert.match(quotes.get('quote-444').t, /_The Times_/);
+  assert.match(quotes.get('quote-446').t, /Todos los amigos del padre de Lucy protestaron, sin excepción/);
+  assert.match(quotes.get('quote-452').original.text, /‘Who’s my own little wife\?’$/);
+  assert.match(quotes.get('quote-453').t, /aquella somnolencia fatal/);
+  assert.match(quotes.get('quote-458').original.text, /What was he _really_ like\?/);
+  assert.match(quotes.get('quote-458').t, /¿Cómo era él _realmente_\?/);
+  assert.match(quotes.get('quote-460').t, /¿Cómo _podía_…\?/);
+  assert.match(quotes.get('quote-461').original.text, /If _only, only_ Vera weren’t dead!$/);
+  assert.match(quotes.get('quote-461').t, /Si _tan solo, tan solo_ Vera no estuviera muerta!$/);
+  assert.equal(
+    veraQuotes.reduce((count, quote) => count + (quote.original.text.match(/\[…\]/g)?.length || 0), 0),
+    7,
+  );
+  for (const quote of veraQuotes) {
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     const expected = expectedParagraphs.get(quote.legacy_index);
     assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos españoles`);
