@@ -150,6 +150,20 @@ Mientras solo exista una persona administradora no se crea un rol editorial
 adicional. Los roles y permisos separados se incorporarán cuando haya una
 segunda cuenta humana con responsabilidades distintas.
 
+La equivalencia entre la base privada y el contrato público se comprueba sin
+sobrescribir el runtime de producción. El exportador solo admite destinos bajo
+`/tmp`, valida fuentes, derechos, relaciones, hashes y campos públicos, y falla
+si el resultado no coincide byte por byte con el JSON versionado:
+
+```sh
+node scripts/export-directus-quotes-preview.mjs
+node scripts/export-directus-quotes-preview.mjs \
+  --output=/tmp/paramo-directus-quotes-preview.json
+```
+
+Este paso es exclusivamente una vista previa. La publicación desde Directus
+requerirá un comando diferente, una copia previa y una aprobación explícita.
+
 La instantánea revisada del modelo está en:
 
 ```text

@@ -27,3 +27,15 @@ Para añadir frases en el futuro, hay que incorporarlas mediante el flujo de rev
 de `data/editorial/`, conservar IDs e índices estables, validar el catálogo y volver a
 generar `public/data/quotes.json`. No deben añadirse colecciones literarias a
 `script.js` ni al fallback de emergencia.
+
+Durante la migración a Directus puede generarse una vista previa equivalente sin
+modificar el runtime público:
+
+```sh
+node scripts/export-directus-quotes-preview.mjs
+```
+
+El resultado se guarda por defecto en
+`/tmp/paramo-directus-quotes-preview.json`. El exportador rechaza cualquier
+destino fuera de `/tmp` y termina con error si el documento generado desde
+Directus no coincide byte por byte con `public/data/quotes.json`.
