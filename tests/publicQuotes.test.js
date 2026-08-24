@@ -778,6 +778,60 @@ test('La muerte de Iván Ilich recupera el tomo 26 y alinea sus recortes y voces
   }
 });
 
+test('Memorias del subsuelo conserva la voz, completa sus límites y señala todos los recortes', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const undergroundQuotes = document.quotes.filter(quote => quote.workId === 'work-memorias-del-subsuelo');
+
+  assert.equal(undergroundQuotes.length, 25);
+  assert.ok(undergroundQuotes.every(quote => quote.original?.lang === 'ru'));
+  assert.ok(undergroundQuotes.every(quote => quote.original?.label === 'Original ruso'));
+  assert.match(quotes.get('quote-298').t, /Por lo demás, no entiendo ni pizca/);
+  assert.match(quotes.get('quote-299').original.text, /но даже и ничем/);
+  assert.doesNotMatch(quotes.get('quote-299').original.text, /но далее и ничем/);
+  assert.match(quotes.get('quote-299').t, /hacerme malo, sino que ni siquiera supe hacerme nada: ni malo ni bueno/);
+  assert.match(quotes.get('quote-300').original.text, /самом отвлеченном и умышленном городе/);
+  assert.match(quotes.get('quote-300').t, /nuestro desgraciado siglo XIX/);
+  assert.match(quotes.get('quote-300').t, /la ciudad más abstracta y premeditada/);
+  assert.match(quotes.get('quote-301').t, /como se decía antaño entre nosotros/);
+  assert.match(quotes.get('quote-301').t, /bueno, sí, en una palabra/);
+  assert.match(quotes.get('quote-302').t, /cobrar viva conciencia/);
+  assert.match(quotes.get('quote-302').t, /un placer indudable, serio/);
+  assert.match(quotes.get('quote-303').original.text, /свой пагубный фантастический элемент[.]$/);
+  assert.match(quotes.get('quote-303').t, /su pernicioso elemento fantástico[.]$/);
+  assert.match(quotes.get('quote-305').t, /yo aún le tengo miedo[.]$/);
+  assert.match(quotes.get('quote-310').original.text, /приписывал мой взгляд каждому[.]$/);
+  assert.doesNotMatch(quotes.get('quote-310').original.text, /подлое выражение/);
+  assert.match(quotes.get('quote-311').original.text, /Но всё было напрасно[.] Они-то и не обращали внимания[.]/);
+  assert.match(quotes.get('quote-311').t, /Pero todo era inútil[.] Ellos ni siquiera prestaban atención[.]/);
+  assert.equal(quotes.get('quote-311').t.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-311').original.text.match(/\[…\]/g)?.length, 1);
+  assert.match(quotes.get('quote-313').t, /Y no desde fuera:/);
+  assert.match(quotes.get('quote-315').t, /se alzaba en mí tal rabia/);
+  assert.equal(quotes.get('quote-315').t.match(/\[…\]/g)?.length, 3);
+  assert.equal(quotes.get('quote-315').original.text.match(/\[…\]/g)?.length, 3);
+  assert.match(quotes.get('quote-316').t, /\[…\]»$/);
+  assert.match(quotes.get('quote-316').original.text, /\[…\]»$/);
+  assert.equal(quotes.get('quote-317').t.split('\n\n').length, 2);
+  assert.equal(quotes.get('quote-318').t.split('\n\n').length, 3);
+  assert.match(quotes.get('quote-322').t, /a qué unirnos, a qué atenernos/);
+  assert.match(quotes.get('quote-322').t, /^Déjennos solos, sin un libro/);
+  assert.match(quotes.get('quote-322').t, /hombres universales nunca vistos/);
+  for (const quote of undergroundQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.split('\n\n').length,
+      quote.original.text.split('\n\n').length,
+      `${quote.id} debe conservar la estructura de párrafos`,
+    );
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
 test('La metamorfosis conserva omisiones, repeticiones y límites tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
