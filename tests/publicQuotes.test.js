@@ -832,6 +832,43 @@ test('Memorias del subsuelo conserva la voz, completa sus límites y señala tod
   }
 });
 
+test('El Horla conserva los párrafos del impreso, su respiración febril y todos los recortes', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const horlaQuotes = document.quotes.filter(quote => quote.workId === 'work-el-horla');
+  const expectedParagraphs = new Map([
+    [323, 1], [324, 1], [325, 2], [326, 1], [327, 2], [328, 2], [329, 2],
+    [330, 1], [331, 1], [332, 2], [333, 2], [334, 1], [335, 1], [336, 1],
+    [337, 1], [338, 1], [339, 1], [340, 1], [341, 1], [342, 2], [343, 3],
+    [344, 5], [345, 1], [346, 2], [347, 1], [348, 3], [349, 1],
+  ]);
+
+  assert.equal(horlaQuotes.length, 27);
+  assert.ok(horlaQuotes.every(quote => quote.original?.lang === 'fr'));
+  assert.ok(horlaQuotes.every(quote => quote.original?.label === 'Original francés'));
+  assert.equal(quotes.get('quote-325').t.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-325').original.text.match(/\[…\]/g)?.length, 1);
+  assert.match(quotes.get('quote-329').t, /^Repliqué: «/);
+  assert.match(quotes.get('quote-329').t, /\n\nÉl respondió: «/);
+  assert.match(quotes.get('quote-337').t, /^Sin duda, me creería loco/);
+  assert.match(quotes.get('quote-344').t, /Así pues, después de leer hasta la una/);
+  assert.match(quotes.get('quote-345').t, /una página .* acababa de pasar por sí sola/);
+  assert.match(quotes.get('quote-346').t, /^¡De un salto furioso/);
+  assert.match(quotes.get('quote-346').t, /para matarlo!… Pero mi sillón/);
+  assert.match(quotes.get('quote-347').t, /¡Estaba vacío, claro, profundo, lleno de luz!/);
+  for (const quote of horlaQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    const expected = expectedParagraphs.get(quote.legacy_index);
+    assert.equal(quote.t.split('\n\n').length, expected, `${quote.id} conserva los párrafos franceses`);
+    assert.equal(quote.original.text.split('\n\n').length, expected, `${quote.id} conserva los párrafos del impreso`);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
 test('La metamorfosis conserva omisiones, repeticiones y límites tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
