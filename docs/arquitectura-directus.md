@@ -342,7 +342,10 @@ producción.
 
 - Medir durante varios días RAM, CPU, disco, swap y procesos actuales del VPS.
 - La copia diaria de PostgreSQL, su retención y una restauración semanal aislada
-  están automatizadas; queda añadir una copia cifrada fuera del VPS.
+  están automatizadas.
+- La automatización cifrada externa con `restic`, su retención y su prueba de
+  restauración están versionadas y probadas localmente; falta crear el bucket
+  externo, custodiar la contraseña fuera del VPS y activar los temporizadores.
 - Preparar un entorno de prueba separado de producción.
 - Cerrar el modelo, los permisos y el contrato de exportación.
 

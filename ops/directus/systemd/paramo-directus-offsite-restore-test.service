@@ -1,0 +1,35 @@
+[Unit]
+Description=Prueba de restauración de la copia editorial externa
+Wants=network-online.target
+After=network-online.target paramo-directus-offsite-backup.service
+ConditionPathExists=/etc/paramoliterario/directus/restic.env
+ConditionPathExists=/etc/paramoliterario/directus/restic_password
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/srv/paramoliterario/source
+ExecStart=/srv/paramoliterario/source/ops/directus/offsite-backup.sh --restore-test
+UMask=0077
+Nice=19
+IOSchedulingClass=idle
+TimeoutStartSec=45min
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+LockPersonality=true
+RestrictSUIDSGID=true
+CacheDirectory=paramo-restic
+CacheDirectoryMode=0700
+ReadWritePaths=/run/lock
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=512M
+CPUQuota=40%
+
+[Install]
+WantedBy=multi-user.target

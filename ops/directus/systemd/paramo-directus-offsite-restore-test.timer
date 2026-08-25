@@ -1,0 +1,11 @@
+[Unit]
+Description=Prueba semanal de la copia editorial externa
+
+[Timer]
+OnCalendar=Sun *-*-* 05:30:00 UTC
+RandomizedDelaySec=20min
+Persistent=true
+Unit=paramo-directus-offsite-restore-test.service
+
+[Install]
+WantedBy=timers.target

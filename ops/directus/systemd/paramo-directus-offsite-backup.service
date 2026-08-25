@@ -1,0 +1,35 @@
+[Unit]
+Description=Copia cifrada externa de PostgreSQL editorial
+Wants=network-online.target
+After=network-online.target paramo-directus-backup.service
+ConditionPathExists=/etc/paramoliterario/directus/restic.env
+ConditionPathExists=/etc/paramoliterario/directus/restic_password
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/srv/paramoliterario/source
+ExecStart=/srv/paramoliterario/source/ops/directus/offsite-backup.sh --apply
+UMask=0077
+Nice=15
+IOSchedulingClass=idle
+TimeoutStartSec=30min
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+LockPersonality=true
+RestrictSUIDSGID=true
+CacheDirectory=paramo-restic
+CacheDirectoryMode=0700
+ReadWritePaths=/run/lock
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=512M
+CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target

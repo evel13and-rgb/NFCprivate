@@ -320,9 +320,51 @@ ops/directus/test-database-restore.sh --latest
 
 Los temporizadores versionados están en `ops/directus/systemd/`: copia diaria a
 las 03:35 UTC y restauración semanal los domingos a las 04:30 UTC, ambas con un
-retraso aleatorio pequeño. Esta política cubre fallos locales y restaurabilidad;
-todavía hace falta una copia cifrada fuera del VPS para cubrir la pérdida total
-del servidor.
+retraso aleatorio pequeño. Esta política cubre fallos locales y restaurabilidad.
+
+### Copia cifrada fuera del VPS
+
+La segunda capa usa `restic` 0.16.4 o posterior: cifra y autentica el contenido
+antes de enviarlo y puede trabajar con cualquier almacenamiento compatible con
+S3. Para separar el riesgo del alojamiento de la web, la opción recomendada para
+el piloto es un bucket privado de Backblaze B2 en una cuenta propia. El script
+incluye todas las copias locales —automáticas y manuales— y exige que la última
+copia automática tenga manifiesto, SHA-256 válido y menos de 36 horas de
+antigüedad:
+
+```sh
+ops/directus/offsite-backup.sh --dry-run
+ops/directus/offsite-backup.sh --init
+ops/directus/offsite-backup.sh --apply
+ops/directus/offsite-backup.sh --restore-test
+```
+
+La retención externa conserva 30 copias diarias, 12 semanales y 12 mensuales.
+La prueba semanal ejecuta `restic check`, restaura el último snapshot en un
+directorio temporal y vuelve a validar el manifiesto y el SHA-256. La contraseña
+del repositorio nunca se envía al proveedor, pero perderla haría irrecuperables
+las copias: debe guardarse también fuera del VPS, en el gestor de contraseñas del
+proyecto.
+
+La plantilla sin credenciales está en `ops/directus/restic.env.example`. La
+configuración real se guardará exclusivamente en:
+
+- `/etc/paramoliterario/directus/restic.env`, propiedad de `root`, modo `0600`.
+- `/etc/paramoliterario/directus/restic_password`, propiedad de `root`, modo
+  `0600`.
+
+La clave S3 debe estar restringida al bucket privado de las copias y solo a las
+operaciones de listado, lectura, escritura y borrado que necesita la retención.
+No se guardarán el secreto S3, la contraseña de restic ni el nombre real del
+bucket en Git o en los logs. Antes de activar la automatización se inicializará
+el repositorio, se hará un envío real y se completará una restauración real.
+
+Los temporizadores preparados —todavía sin instalar ni activar mientras falten
+el bucket y sus credenciales— enviarán la copia cada día a las 04:10 UTC y
+probarán la restauración los domingos a las 05:30 UTC. Sus servicios tienen
+límites de CPU y 512 MB de RAM. Una vez activada, esta capa cubrirá la pérdida
+completa del VPS; los futuros archivos de audio requerirán además una política
+externa específica para `uploads`.
 
 ## Publicación
 
