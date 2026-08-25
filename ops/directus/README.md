@@ -233,6 +233,22 @@ node scripts/restore-directus-quotes-backup.mjs --backup=<ruta>
 Después de preparar o restaurar un artefacto hay que revisar y versionar el diff
 antes de considerar el despliegue web.
 
+Tras versionar y ejecutar manualmente `deploy-local.sh --publish`, la ejecución de
+producción todavía permanece `validated`. El finalizador comprueba que el mismo
+hash está en Git, en `/var/www/paramo-literario/public/data/quotes.json` y en la
+respuesta HTTPS real:
+
+```sh
+node scripts/finalize-directus-quotes-deployment.mjs \
+  --run=<uuid-producción>
+```
+
+Solo con `--finalize`, el UUID repetido, el hash desplegado y
+`--confirm-action=FINALIZE_QUOTES` actualiza el estado a `published`. No ejecuta
+el despliegue, no modifica archivos y no toca Nginx. Si cualquier copia difiere,
+la ejecución queda `validated` para permitir investigar o restaurar sin registrar
+un falso éxito.
+
 La instantánea revisada del modelo está en:
 
 ```text

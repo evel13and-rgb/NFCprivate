@@ -70,3 +70,10 @@ bloqueo optimista, exige cuatro confirmaciones independientes, crea una copia
 privada y sustituye el artefacto con una operación atómica. Preparar el archivo no
 equivale a desplegarlo: el diff debe revisarse, probarse y versionarse antes de que
 `deploy-local.sh` copie el repositorio a la raíz servida por Nginx.
+
+Después del despliegue,
+`finalize-directus-quotes-deployment.mjs` compara el artefacto versionado, la copia
+en `/var/www` y la respuesta HTTPS. `publication_runs.status` solo pasa a
+`published` cuando los tres hashes coinciden y se proporcionan las confirmaciones
+explícitas. Un fallo de red o una discrepancia no altera archivos ni convierte una
+preparación en publicación exitosa.

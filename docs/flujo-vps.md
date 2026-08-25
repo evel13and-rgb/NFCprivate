@@ -37,6 +37,20 @@ Solo después de revisar la simulación se publica manualmente:
 
 La copia real requiere escribir exactamente `PUBLICAR`. El script no recarga Nginx, no cambia propietarios y no hace commits ni pushes.
 
+Cuando el despliegue incluye un candidato generado desde Directus, existe además
+un `publication_run` de producción en estado `validated`. Después de publicar se
+comprueba primero sin escribir:
+
+```bash
+node scripts/finalize-directus-quotes-deployment.mjs \
+  --run=<uuid-producción>
+```
+
+El comando coteja el JSON versionado, la copia bajo `/var/www` y la respuesta
+HTTPS. Solo una segunda ejecución con `--finalize` y sus confirmaciones explícitas
+marca el intento como `published`. Este seguimiento no forma parte de
+`deploy-local.sh` y no modifica Nginx ni los archivos desplegados.
+
 ## Backend del clima
 
 El backend está gestionado por systemd:

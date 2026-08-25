@@ -377,8 +377,10 @@ producción.
   ya se prueban en memoria y exigen autorización cuando afectan al candidato.
 - La preparación atómica con copia y reversión está implementada y probada, pero
   no se ha aplicado porque el candidato actual es idéntico al JSON vigente.
-- Queda integrar la confirmación posterior al despliegue antes de marcar una
-  ejecución como `published`; la publicación real permanece separada.
+- La confirmación posterior comprueba Git, la copia desplegada y la respuesta
+  HTTPS antes de marcar una ejecución como `published`.
+- El circuito está implementado, pero la publicación real permanece separada y
+  no se ejecutará hasta que exista un cambio editorial deliberado.
 
 ### Fase 4: panel como fuente editorial
 
