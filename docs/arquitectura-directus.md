@@ -341,7 +341,8 @@ producción.
 ### Fase 0: preparación y capacidad
 
 - Medir durante varios días RAM, CPU, disco, swap y procesos actuales del VPS.
-- Definir copias de seguridad y restauración antes de instalar servicios.
+- La copia diaria de PostgreSQL, su retención y una restauración semanal aislada
+  están automatizadas; queda añadir una copia cifrada fuera del VPS.
 - Preparar un entorno de prueba separado de producción.
 - Cerrar el modelo, los permisos y el contrato de exportación.
 

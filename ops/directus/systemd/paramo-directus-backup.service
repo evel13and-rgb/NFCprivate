@@ -1,0 +1,24 @@
+[Unit]
+Description=Copia diaria de PostgreSQL editorial de Páramo Literario
+Requires=docker.service
+After=docker.service
+ConditionPathExists=/srv/paramoliterario/source/ops/directus/compose.yaml
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/srv/paramoliterario/source
+ExecStart=/srv/paramoliterario/source/ops/directus/backup-database.sh --apply
+UMask=0077
+Nice=10
+IOSchedulingClass=idle
+TimeoutStartSec=15min
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/paramo-directus/backups /run/lock
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

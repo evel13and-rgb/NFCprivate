@@ -300,6 +300,30 @@ cambio de infraestructura.
 - Prueba real de restauración en un entorno vacío.
 - Snapshot del VPS antes de actualizar las imágenes.
 
+La copia local automática usa el formato personalizado de PostgreSQL, genera un
+manifiesto con hashes y recuentos y conserva las 14 ejecuciones automáticas más
+recientes. La retención solo reconoce nombres `daily-paramo-editorial-*.dump` y
+no elimina las copias manuales históricas:
+
+```sh
+ops/directus/backup-database.sh --dry-run
+ops/directus/backup-database.sh --apply
+```
+
+Cada semana, la última copia se restaura dentro de un PostgreSQL efímero con
+`--network none` y almacenamiento `tmpfs`. Los recuentos restaurados deben
+coincidir exactamente con el manifiesto:
+
+```sh
+ops/directus/test-database-restore.sh --latest
+```
+
+Los temporizadores versionados están en `ops/directus/systemd/`: copia diaria a
+las 03:35 UTC y restauración semanal los domingos a las 04:30 UTC, ambas con un
+retraso aleatorio pequeño. Esta política cubre fallos locales y restaurabilidad;
+todavía hace falta una copia cifrada fuera del VPS para cubrir la pérdida total
+del servidor.
+
 ## Publicación
 
 El panel no publicará directamente. Un exportador externo leerá PostgreSQL,

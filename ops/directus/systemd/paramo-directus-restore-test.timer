@@ -1,0 +1,12 @@
+[Unit]
+Description=Temporizador de prueba semanal de restauración editorial
+
+[Timer]
+OnCalendar=Sun *-*-* 04:30:00 UTC
+RandomizedDelaySec=20min
+Persistent=true
+AccuracySec=1min
+Unit=paramo-directus-restore-test.service
+
+[Install]
+WantedBy=timers.target

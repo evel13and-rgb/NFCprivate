@@ -1,0 +1,24 @@
+[Unit]
+Description=Prueba semanal de restauración de PostgreSQL editorial
+Requires=docker.service
+After=docker.service paramo-directus-backup.service
+ConditionPathExists=/srv/paramoliterario/source/ops/directus/compose.yaml
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/srv/paramoliterario/source
+ExecStart=/srv/paramoliterario/source/ops/directus/test-database-restore.sh --latest
+UMask=0077
+Nice=15
+IOSchedulingClass=idle
+TimeoutStartSec=20min
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/run/docker.sock
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target
