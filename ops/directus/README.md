@@ -207,6 +207,32 @@ node scripts/simulate-directus-publication-changes.mjs
 
 El informe se guarda en `/tmp`, sin conexión a Directus ni PostgreSQL.
 
+La preparación atómica del artefacto es otra acción independiente. Sin `--stage`
+solo valida el `publication_run`, el candidato y ambos hashes:
+
+```sh
+node scripts/stage-directus-quotes-publication.mjs \
+  --run=<uuid-validado>
+```
+
+La escritura real exige `--stage`, repetir el UUID, confirmar los hashes y escribir
+`--confirm-action=STAGE_QUOTES`. Si hay diferencias también exige
+`--allow-content-changes`. Antes de sustituir el JSON crea una copia con permisos
+privados en `/var/lib/paramo-directus/publication-backups` y usa `rename` atómico;
+si falla la comprobación posterior, restaura automáticamente la versión previa.
+Este paso solo prepara el repositorio y deja un `publication_run` de producción
+validado: todavía no ejecuta `deploy-local.sh` ni marca la publicación como
+desplegada.
+
+La reversión también dispone de simulación y confirmaciones separadas:
+
+```sh
+node scripts/restore-directus-quotes-backup.mjs --backup=<ruta>
+```
+
+Después de preparar o restaurar un artefacto hay que revisar y versionar el diff
+antes de considerar el despliegue web.
+
 La instantánea revisada del modelo está en:
 
 ```text

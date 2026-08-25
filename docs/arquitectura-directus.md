@@ -373,9 +373,12 @@ producción.
 - El candidato de publicación selecciona únicamente registros publicables, se
   genera bajo `/tmp` y puede registrar recuentos, hashes y resultado en
   `publication_runs`.
-- Queda probar deliberadamente altas, bajas, exclusiones y modificaciones antes
-  de habilitar la sustitución atómica del JSON público.
-- La publicación real permanece separada y desactivada.
+- Altas, borradores, modificaciones de traducción u original, exclusiones y bajas
+  ya se prueban en memoria y exigen autorización cuando afectan al candidato.
+- La preparación atómica con copia y reversión está implementada y probada, pero
+  no se ha aplicado porque el candidato actual es idéntico al JSON vigente.
+- Queda integrar la confirmación posterior al despliegue antes de marcar una
+  ejecución como `published`; la publicación real permanece separada.
 
 ### Fase 4: panel como fuente editorial
 

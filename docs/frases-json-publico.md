@@ -63,3 +63,10 @@ sin cambiar datos reales mediante `simulate-directus-publication-changes.mjs`.
 Una alta en borrador debe quedar fuera sin alterar el candidato; cualquier cambio
 ya aprobado debe aparecer en la comparación y quedar bloqueado hasta recibir
 `--allow-content-changes` en una ejecución deliberada de vista previa.
+
+Un candidato validado se prepara mediante
+`stage-directus-quotes-publication.mjs`. El proceso usa el hash vigente como
+bloqueo optimista, exige cuatro confirmaciones independientes, crea una copia
+privada y sustituye el artefacto con una operación atómica. Preparar el archivo no
+equivale a desplegarlo: el diff debe revisarse, probarse y versionarse antes de que
+`deploy-local.sh` copie el repositorio a la raíz servida por Nginx.
