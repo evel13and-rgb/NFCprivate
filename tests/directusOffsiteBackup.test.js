@@ -3,6 +3,10 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
 const scriptPath = new URL('../ops/directus/offsite-backup.sh', import.meta.url);
+const configureScriptPath = new URL(
+  '../ops/directus/configure-offsite-backup.sh',
+  import.meta.url,
+);
 const examplePath = new URL('../ops/directus/restic.env.example', import.meta.url);
 const backupServicePath = new URL(
   '../ops/directus/systemd/paramo-directus-offsite-backup.service',
@@ -58,6 +62,17 @@ test('el ejemplo no contiene credenciales y limita su configuración a archivos 
   assert.doesNotMatch(example, /[A-Za-z0-9]{40}/u);
   assert.match(script, /pertenecer a root y tener modo 0600/u);
   assert.doesNotMatch(script, /AWS_SECRET_ACCESS_KEY[^\n]*printf/u);
+});
+
+test('el configurador exige una terminal, oculta secretos y rechaza sobrescrituras', async () => {
+  const script = await readFile(configureScriptPath, 'utf8');
+  assert.match(script, /\[\[ -t 0 && -t 1 \]\]/u);
+  assert.match(script, /read -r -s -p 'Application Key:/u);
+  assert.match(script, /read -r -s -p 'Contraseña de restic/u);
+  assert.match(script, /se rechaza sobrescribir credenciales/u);
+  assert.match(script, /install -o root -g root -m 0600/u);
+  assert.match(script, /credentials_echoed/u);
+  assert.doesNotMatch(script, /set -x/u);
 });
 
 test('systemd programa envío diario y restauración semanal con límites de recursos', async () => {

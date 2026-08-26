@@ -353,6 +353,19 @@ configuración real se guardará exclusivamente en:
 - `/etc/paramoliterario/directus/restic_password`, propiedad de `root`, modo
   `0600`.
 
+Para evitar que las credenciales aparezcan en el historial de órdenes o en el
+chat, se introducirán desde una terminal interactiva. El asistente oculta ambos
+secretos, valida el endpoint y se niega a sobrescribir una configuración ya
+existente:
+
+```sh
+sudo ops/directus/configure-offsite-backup.sh --apply
+```
+
+Antes de ejecutarlo hay que crear y guardar en el gestor de contraseñas una
+contraseña nueva de restic de al menos 32 caracteres. No es la contraseña de la
+cuenta Backblaze ni la Application Key.
+
 La clave S3 debe estar restringida al bucket privado de las copias y solo a las
 operaciones de listado, lectura, escritura y borrado que necesita la retención.
 No se guardarán el secreto S3, la contraseña de restic ni el nombre real del
