@@ -2058,10 +2058,10 @@ body[data-mode='day'] .mycelium-layer {
   border-radius: 58% 42% 54% 46%;
   background: radial-gradient(
     ellipse at 43% 38%,
-    rgba(255, 255, 224, 1) 0 10%,
-    rgba(255, 242, 158, 0.96) 18%,
-    rgba(252, 218, 96, var(--firefly-core-alpha, 0.48)) 42%,
-    rgba(248, 187, 70, 0.12) 66%,
+    rgba(255, 238, 151, 0.68) 0%,
+    rgba(255, 225, 117, 0.46) 24%,
+    rgba(252, 207, 88, 0.24) 48%,
+    rgba(248, 187, 70, 0.08) 72%,
     rgba(248, 187, 70, 0) 100%
   );
   box-shadow: 0 0 3px rgba(255, 237, 150, 0.52);
@@ -2092,30 +2092,30 @@ body[data-mode='day'] .mycelium-layer {
 }
 
 .firefly::before {
-  width: calc(var(--firefly-wide-glow, 46px) * 2.15);
-  height: calc(var(--firefly-wide-glow, 46px) * 1.8);
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255, 223, 112, var(--firefly-halo-alpha, 0.24)) 0%,
-    rgba(255, 210, 90, 0.13) 18%,
-    rgba(248, 187, 70, 0.055) 42%,
-    rgba(248, 187, 70, 0.016) 63%,
-    rgba(248, 187, 70, 0) 82%
-  );
-  filter: blur(2.6px);
-}
-
-.firefly::after {
-  width: calc(var(--firefly-tight-glow, 19px) * 1.75);
-  height: calc(var(--firefly-tight-glow, 19px) * 1.5);
+  width: calc(var(--firefly-tight-glow, 19px) * 1.15);
+  height: var(--firefly-tight-glow, 19px);
   background: radial-gradient(
     ellipse at 48% 45%,
     rgba(255, 238, 151, var(--firefly-glow-alpha, 0.42)) 0%,
-    rgba(255, 220, 93, 0.19) 28%,
-    rgba(255, 202, 82, 0.065) 56%,
+    rgba(255, 220, 93, 0.13) 28%,
+    rgba(255, 202, 82, 0.04) 56%,
     rgba(255, 202, 82, 0) 84%
   );
   filter: blur(1.15px);
+}
+
+.firefly::after {
+  width: calc(var(--firefly-wide-glow, 46px) * 1.35);
+  height: calc(var(--firefly-wide-glow, 46px) * 1.1);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 223, 112, var(--firefly-halo-alpha, 0.24)) 0%,
+    rgba(255, 210, 90, 0.08) 18%,
+    rgba(248, 187, 70, 0.032) 42%,
+    rgba(248, 187, 70, 0.01) 63%,
+    rgba(248, 187, 70, 0) 82%
+  );
+  filter: blur(2.6px);
 }
 
 .fireflies-front .firefly {
@@ -2126,8 +2126,12 @@ body[data-mode='day'] .mycelium-layer {
   filter: saturate(1.04);
 }
 
+.fireflies-layer[data-constrained='true'] .firefly::after {
+  display: none;
+}
+
 .fireflies-front[data-constrained='true'] {
-  --fireflies-layer-opacity: 0.92;
+  --fireflies-layer-opacity: 0.78;
 }
 
 .fireflies-front[data-constrained='true'] .firefly {
@@ -2154,40 +2158,40 @@ body[data-mode='day'] .mycelium-layer {
 
 @keyframes firefly-flicker {
   0% {
-    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.28);
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.22);
   }
   18% {
-    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.42);
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.33);
   }
   43% {
-    opacity: calc(var(--firefly-base-opacity, 0.75) * 1.04);
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.82);
   }
   58% {
-    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.76);
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.6);
   }
   76% {
-    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.34);
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.27);
   }
   100% {
-    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.62);
+    opacity: calc(var(--firefly-base-opacity, 0.75) * 0.49);
   }
 }
 
 @keyframes firefly-halo-pulse {
   0%, 20% {
-    opacity: 0.32;
+    opacity: 0.22;
     transform: translate(-50%, -50%) scale(0.66);
   }
   45% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.06);
+    opacity: 0.68;
+    transform: translate(-50%, -50%) scale(1.03);
   }
   72% {
-    opacity: 0.46;
+    opacity: 0.32;
     transform: translate(-50%, -50%) scale(0.78);
   }
   100% {
-    opacity: 0.72;
+    opacity: 0.49;
     transform: translate(-50%, -50%) scale(0.94);
   }
 }
@@ -2971,7 +2975,7 @@ body.night-fall .modal__close:focus-visible {
     box-shadow: 0 0 2px rgba(255, 237, 150, 0.46);
   }
 
-  .fireflies-front {
-    --fireflies-layer-opacity: 0.76;
+  .fireflies-front[data-constrained='true'] {
+    --fireflies-layer-opacity: 0.78;
   }
 }
