@@ -5,9 +5,10 @@ Esta carpeta define el piloto reproducible que se inicializó el 20 de agosto de
 activos, saludables y limitados a la red prevista.
 
 El piloto contiene 18 colecciones, 231 campos y 46 relaciones registradas en
-Directus. La primera importación base incorporó 27 autores, 29 obras, 29 fuentes y
-sus relaciones; frases, originales, temas y audio siguen pendientes. El
-administrador inicial `paramorliterario@gmail.com` está creado y verificado.
+Directus. El catálogo actual incorpora 27 autores, 29 obras, 29 fuentes, 14
+hablantes, 640 frases y 640 originales con sus relaciones. Los temas y el audio
+siguen pendientes. El administrador inicial `paramorliterario@gmail.com` está
+creado y verificado.
 
 ## Decisiones del piloto
 
@@ -372,12 +373,13 @@ No se guardarán el secreto S3, la contraseña de restic ni el nombre real del
 bucket en Git o en los logs. Antes de activar la automatización se inicializará
 el repositorio, se hará un envío real y se completará una restauración real.
 
-Los temporizadores preparados —todavía sin instalar ni activar mientras falten
-el bucket y sus credenciales— enviarán la copia cada día a las 04:10 UTC y
-probarán la restauración los domingos a las 05:30 UTC. Sus servicios tienen
-límites de CPU y 512 MB de RAM. Una vez activada, esta capa cubrirá la pérdida
-completa del VPS; los futuros archivos de audio requerirán además una política
-externa específica para `uploads`.
+Los temporizadores están instalados y activos: envían la copia cada día a las
+04:10 UTC y prueban la restauración los domingos a las 05:30 UTC, con los retrasos
+aleatorios definidos por systemd. Sus servicios tienen límites de CPU y 512 MB de
+RAM. El primer envío y una restauración completa con verificación SHA-256 se
+completaron el 30 de agosto de 2026. Esta capa cubre la pérdida completa del VPS;
+los futuros archivos de audio requerirán además una política externa específica
+para `uploads`.
 
 ## Publicación
 

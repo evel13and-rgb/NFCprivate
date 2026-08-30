@@ -344,8 +344,9 @@ producción.
 - La copia diaria de PostgreSQL, su retención y una restauración semanal aislada
   están automatizadas.
 - La automatización cifrada externa con `restic`, su retención y su prueba de
-  restauración están versionadas y probadas localmente; falta crear el bucket
-  externo, custodiar la contraseña fuera del VPS y activar los temporizadores.
+  restauración están activas sobre un bucket privado de Backblaze B2. El primer
+  envío y una restauración completa con verificación SHA-256 se completaron el 30
+  de agosto de 2026; la contraseña debe seguir custodiada también fuera del VPS.
 - Preparar un entorno de prueba separado de producción.
 - Cerrar el modelo, los permisos y el contrato de exportación.
 
@@ -370,7 +371,7 @@ producción.
 - Las copias anteriores y posteriores a la importación y aprobación permiten
   recuperar cada hito.
 
-### Fase 3: exportación paralela (en curso)
+### Fase 3: exportación paralela (preparada; en espera de cambios editoriales)
 
 - La vista previa generada desde Directus coincide byte por byte con el JSON
   vigente y no contiene campos privados.
@@ -383,8 +384,9 @@ producción.
   no se ha aplicado porque el candidato actual es idéntico al JSON vigente.
 - La confirmación posterior comprueba Git, la copia desplegada y la respuesta
   HTTPS antes de marcar una ejecución como `published`.
-- El circuito está implementado, pero la publicación real permanece separada y
-  no se ejecutará hasta que exista un cambio editorial deliberado.
+- El circuito está implementado y validado. Queda en espera hasta incorporar
+  nuevas obras o aprobar otro cambio editorial deliberado; no se registrará una
+  publicación ficticia cuando el candidato sea idéntico al JSON vigente.
 
 ### Fase 4: panel como fuente editorial
 
