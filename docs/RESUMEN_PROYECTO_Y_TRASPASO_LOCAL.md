@@ -64,13 +64,15 @@ funcionando aunque Directus esté detenido.
 - Los borradores editoriales versionados contienen 27 autores, 29 obras y 29
   fuentes; no todo borrador está destinado todavía a publicación.
 - Hay 23 retratos de autores y 12 fondos atmosféricos en PNG/WebP.
-- Existen 24 archivos de pruebas automatizadas con `node:test`.
-- El piloto Directus/PostgreSQL tiene documentadas 18 colecciones, 231 campos y
+- Existen 25 archivos de pruebas automatizadas con `node:test`.
+- El piloto Directus/PostgreSQL tiene documentadas 18 colecciones, 242 campos y
   46 relaciones.
 - Directus contiene 27 autores, 29 obras, 29 fuentes, 14 hablantes, 640 frases y
-  640 originales; los temas y el audio siguen pendientes.
+  640 originales, además de 364 temas; el audio sigue pendiente.
 - La fase de exportación paralela está validada y queda en espera hasta incorporar
   nuevas obras o aprobar otro cambio editorial deliberado.
+- PostgreSQL es la fuente editorial principal; los JSON públicos siguen siendo
+  artefactos estáticos y no se editan manualmente.
 - Las copias cifradas externas en Backblaze B2 y su prueba semanal de restauración
   están activas.
 - La fuente de verdad del código está en Git, rama `main`.
@@ -162,7 +164,7 @@ source/
 │   ├── weather-state.json         Ruta local/legacy protegida en despliegue
 │   └── weather-override.json      Ruta local/legacy protegida en despliegue
 │
-├── data/editorial/                Fuente editorial interna; nunca se publica
+├── data/editorial/                Línea base histórica; nunca se publica
 │   ├── README.md                  Reglas de edición y generación
 │   ├── stable-identifiers.json    IDs públicos que no deben cambiar
 │   ├── quotes.intermediate.json   Extracción automática histórica
@@ -187,6 +189,7 @@ source/
 │   ├── prepare-directus-*.mjs
 │   ├── configure-directus-*.mjs
 │   ├── export-directus-quotes-preview.mjs
+│   ├── export-directus-profiles-preview.mjs
 │   ├── approve-directus-current-catalog.mjs
 │   ├── prepare-directus-quotes-publication.mjs
 │   ├── stage-directus-quotes-publication.mjs
@@ -282,8 +285,7 @@ No deben copiarse valores de producción a un servicio externo de IA.
 
 Hay tres niveles de información:
 
-1. **Interno canónico:** borradores, originales, perfiles y decisiones
-   versionadas bajo `data/editorial/`.
+1. **Interno canónico:** colecciones privadas de Directus/PostgreSQL.
 2. **Privado editorial:** notas, derechos, revisión, fuentes de trabajo y
    auditoría en archivos internos o Directus/PostgreSQL.
 3. **Público:** campos expresamente exportados a los dos JSON bajo `public/data/`.
@@ -292,8 +294,8 @@ Los identificadores como `quote-123`, `author-mary-shelley` o
 `work-frankenstein-o-el-moderno-prometeo` son contratos estables. Corregir un
 nombre o título no debe cambiar su ID.
 
-No se deben editar manualmente los artefactos generados cuando existe un archivo
-canónico y un generador. Antes de cambiar datos hay que consultar
+No se deben editar manualmente los artefactos generados ni la línea base histórica
+de `data/editorial/`. Antes de cambiar datos en Directus hay que consultar
 `data/editorial/README.md` y `docs/contrato-datos-editoriales.md`.
 
 ## 9. Directus y PostgreSQL

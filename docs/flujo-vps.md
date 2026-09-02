@@ -87,9 +87,10 @@ puerto. Los secretos están fuera del repositorio en
 `/etc/paramoliterario/directus/` y los datos persistentes no forman parte del
 despliegue web.
 
-Este piloto no participa en las visitas públicas ni sustituye los JSON actuales.
-Su operación se documenta en `ops/directus/README.md` y nunca debe integrarse en
-`deploy-local.sh`.
+Directus/PostgreSQL es la fuente editorial principal, pero no participa en las
+visitas públicas: la web sigue leyendo JSON estático. Su operación y exportación
+se documentan en `ops/directus/README.md`; el panel nunca debe integrarse como
+dependencia en tiempo real de `deploy-local.sh`.
 
 El administrador inicial es `paramorliterario@gmail.com`. Su contraseña temporal
 no está en Git; permanece en un archivo `0600` dentro de

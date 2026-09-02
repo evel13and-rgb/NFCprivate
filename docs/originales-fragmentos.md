@@ -1,6 +1,10 @@
 # Originales de fragmentos
 
-El campo `original` permite mostrar, de forma opcional, el pasaje en la lengua en que fue publicado. La carga editorial se hace en `data/editorial/originals.manual.json`; nunca se edita directamente `public/data/quotes.json`.
+El campo `original` permite mostrar, de forma opcional, el pasaje en la lengua en
+que fue publicado. La carga editorial se hace en la colección privada
+`quote_originals` de Directus; nunca se edita directamente
+`public/data/quotes.json`. `data/editorial/originals.manual.json` conserva solo la
+línea base histórica de la migración.
 
 Cada entrada manual tiene esta forma:
 
@@ -22,7 +26,7 @@ Antes de añadir un pasaje:
 2. Cotejar el original con una edición fiable ya documentada editorialmente.
 3. Comprobar que el pasaje se alinea exactamente con la traducción española: mismo fragmento, sin ampliar ni recortar su sentido.
 4. Preservar párrafos y saltos de línea del original.
-5. Ejecutar `node scripts/build-public-quotes.mjs` y `npm test`.
+5. Generar la vista previa de Directus bajo `/tmp` y ejecutar `npm test`.
 
 No se deben inventar, reconstruir, aproximar ni traducir de vuelta originales. Una referencia bibliográfica a una obra no basta para añadir un pasaje: el texto concreto debe estar cotejado. La incorporación se hará por obra o por tandas pequeñas con revisión, no mediante una carga masiva sin control editorial.
 

@@ -4,10 +4,10 @@ Esta carpeta define el piloto reproducible que se inicializó el 20 de agosto de
 2026. Docker está instalado y los contenedores de Directus/PostgreSQL están
 activos, saludables y limitados a la red prevista.
 
-El piloto contiene 18 colecciones, 231 campos y 46 relaciones registradas en
+El piloto contiene 18 colecciones, 242 campos y 46 relaciones registradas en
 Directus. El catálogo actual incorpora 27 autores, 29 obras, 29 fuentes, 14
-hablantes, 640 frases y 640 originales con sus relaciones. Los temas y el audio
-siguen pendientes. El administrador inicial `paramorliterario@gmail.com` está
+hablantes, 364 temas, 640 frases y 640 originales con sus relaciones. El audio
+sigue pendiente. El administrador inicial `paramorliterario@gmail.com` está
 creado y verificado.
 
 ## Decisiones del piloto
@@ -250,6 +250,48 @@ el despliegue, no modifica archivos y no toca Nginx. Si cualquier copia difiere,
 la ejecución queda `validated` para permitir investigar o restaurar sin registrar
 un falso éxito.
 
+## Fase 4: autoridad editorial
+
+PostgreSQL es la fuente editorial principal. `data/editorial/` conserva la línea
+base histórica de la migración y sus validadores, pero no admite nuevas ediciones.
+Los generadores históricos solo escriben vistas de diagnóstico bajo `/tmp` cuando
+se invocan expresamente con `--legacy-preview`; no pueden sustituir los JSON
+públicos.
+
+La ampliación versionada del modelo está en:
+
+```text
+ops/directus/migrations/002_phase4_profile_authority.sql
+```
+
+El corte de perfiles se prepara sin conectar con PostgreSQL. Su SQL comprueba el
+estado previo, es transaccional y puede repetirse sobre el resultado ya aplicado:
+
+```sh
+node scripts/prepare-directus-phase4-profile-cutover.mjs --dry-run
+node scripts/prepare-directus-phase4-profile-cutover.mjs --sql
+ops/directus/test-phase4-profile-cutover.sh
+```
+
+La última orden restaura la copia automática más reciente en un PostgreSQL
+efímero, sin red y sobre `tmpfs`; aplica allí la migración si la copia aún no la
+contiene y valida 23 autores públicos, 28 obras públicas, 364 temas y sus
+relaciones sin tocar la base activa.
+
+Los dos contratos públicos actuales se comprueban desde Directus sin escribir en
+el repositorio:
+
+```sh
+node scripts/export-directus-quotes-preview.mjs
+node scripts/export-directus-profiles-preview.mjs
+```
+
+Ambos exportadores escriben únicamente bajo `/tmp`, aplican listas cerradas de
+campos públicos y exigen coincidencia byte por byte durante el corte. Las fichas
+permanecen congeladas hasta incorporar una preparación atómica equivalente a la
+de las frases; no se editará `literary-profiles.json` manualmente para adelantar
+ese trabajo.
+
 La instantánea revisada del modelo está en:
 
 ```text
@@ -265,7 +307,7 @@ docker compose -f ops/directus/compose.yaml exec -T directus \
 ```
 
 Antes de sustituir la copia del repositorio hay que revisar cantidades y buscar
-credenciales o secretos. La instantánea esperada contiene 18 colecciones, 231
+credenciales o secretos. La instantánea esperada contiene 18 colecciones, 242
 campos y 46 relaciones.
 
 Detener el piloto no borra sus volúmenes:

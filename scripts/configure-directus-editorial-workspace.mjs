@@ -30,6 +30,20 @@ const editorialCollections = new Set([
 ]);
 
 const collectionLayouts = {
+  authors: {
+    fields: [
+      'display_name', 'workflow_status', 'verification_status', 'visibility',
+      'short_biography', 'portrait_path', 'date_updated',
+    ],
+    sort: ['sort', 'display_name'],
+  },
+  works: {
+    fields: [
+      'display_title', 'primary_author_id', 'workflow_status', 'verification_status',
+      'visibility', 'short_summary', 'date_updated',
+    ],
+    sort: ['sort', 'display_title'],
+  },
   quotes: {
     fields: [
       'id', 'legacy_index', 'text', 'work_id', 'speaker_display_name',
@@ -89,6 +103,16 @@ function preset(collection, bookmark, options = {}) {
 
 const workspacePresetDefinitions = [
   ...Object.keys(collectionLayouts).map((collection) => preset(collection, null)),
+  preset('authors', 'Autores · Públicos', {
+    icon: 'person',
+    color: '#047857',
+    filter: { visibility: { _eq: 'public' } },
+  }),
+  preset('works', 'Obras · Públicas', {
+    icon: 'menu_book',
+    color: '#047857',
+    filter: { visibility: { _eq: 'public' } },
+  }),
   preset('quotes', 'Frases · Borradores', {
     icon: 'edit_note',
     color: '#6B7280',

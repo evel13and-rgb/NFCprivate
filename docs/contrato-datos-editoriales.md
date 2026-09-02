@@ -2,7 +2,8 @@
 
 Este documento separa tres niveles:
 
-- **Interno canónico:** fuente de trabajo versionada; no se sirve directamente.
+- **Interno canónico:** colecciones privadas de Directus/PostgreSQL; no se sirven
+  directamente.
 - **Privado editorial:** auditoría, derechos o notas de trabajo; nunca se exporta.
 - **Público:** contrato generado que puede consumir el frontend.
 
@@ -27,7 +28,7 @@ Este documento separa tres niveles:
 
 ## Originales
 
-`originals.manual.json` es interno. Solo se exportan:
+La colección `quote_originals` es interna. Solo se exportan:
 
 | Interno | Público |
 | --- | --- |
@@ -40,13 +41,15 @@ puede publicarse.
 
 ## Autores y obras
 
-`authors.draft.json`, `works.draft.json` y `stable-identifiers.json` son internos.
-Los IDs son públicos y permanentes; `legacy_work`, `inferred_from`, `status`,
-`notes` y los detalles de inferencia no se exportan.
+Las colecciones `authors` y `works` son internas. Los IDs son públicos y
+permanentes; `legacy_work`, los estados editoriales, las notas y los detalles de
+auditoría no se exportan. Los archivos homónimos bajo `data/editorial/` son la
+línea base histórica congelada.
 
-Las fichas manuales se transforman en `public/data/literary-profiles.json`.
-Se publican los campos biográficos, bibliográficos, temáticos y de retrato que
-enumera `build-public-literary-profiles.mjs`. Son privados:
+Las fichas aprobadas y visibles se exportan desde Directus a
+`public/data/literary-profiles.json`. Se publican únicamente los campos
+biográficos, bibliográficos, temáticos y de retrato enumerados por
+`export-directus-profiles-preview.mjs`. Son privados:
 
 - `profile_status` y `verification_status`.
 - `source_notes`, `rights_notes`, `updated_at` y `editorial_notes`.
@@ -57,9 +60,9 @@ en `information_sources`; no debe colocarse en ellas una nota privada.
 
 ## Fuentes, derechos y decisiones
 
-`sources.draft.json` y `editorial-decisions.json` son privados en su totalidad. No
-se publican ediciones de trabajo, estados jurídicos, notas de derechos, personas
-revisoras, fechas de revisión ni razones internas.
+Las colecciones `sources` y `editorial_decisions` son privadas en su totalidad.
+No se publican ediciones de trabajo, estados jurídicos, notas de derechos,
+personas revisoras, fechas de revisión ni razones internas.
 
 Las decisiones aceptadas pueden modificar el artefacto público durante su
 generación, pero el registro de la decisión no se incorpora al artefacto.

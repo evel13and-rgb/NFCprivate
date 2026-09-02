@@ -1,12 +1,12 @@
-# Arquitectura futura de la base editorial con Directus y PostgreSQL
+# Arquitectura de la base editorial con Directus y PostgreSQL
 
 ## Estado y alcance
 
-Este documento describe la arquitectura objetivo y el estado del piloto. Desde
-el 20 de agosto de 2026 existe un Directus/PostgreSQL local y aislado con 18
-colecciones editoriales, 231 campos y 46 relaciones. La importación base ya
-incorporó 27 autores, 29 obras, 29 fuentes, 29 autorías y 29 relaciones
-obra–fuente. La web actual no ha cambiado su fuente de datos.
+Este documento describe la arquitectura y el estado del sistema editorial. El
+Directus/PostgreSQL privado contiene 18 colecciones editoriales, 242 campos y 46
+relaciones. La fase 4 está activa: PostgreSQL es la fuente editorial principal y
+los JSON públicos continúan siendo artefactos estáticos versionados, no bases de
+edición.
 
 La decisión principal es explícita:
 
@@ -388,12 +388,16 @@ producción.
   nuevas obras o aprobar otro cambio editorial deliberado; no se registrará una
   publicación ficticia cuando el candidato sea idéntico al JSON vigente.
 
-### Fase 4: panel como fuente editorial
+### Fase 4: panel como fuente editorial (activa)
 
-- Congelar la edición manual de los JSON canónicos.
-- Declarar PostgreSQL como fuente editorial principal.
-- Mantener exportación, validación y publicación como procesos separados.
-- Conservar durante un periodo una vía documentada de reversión.
+- La edición manual de los JSON y de los archivos históricos está bloqueada.
+- PostgreSQL es la fuente editorial principal para autores, obras, frases,
+  originales, hablantes, temas y fuentes.
+- Los dos contratos públicos actuales se reproducen byte por byte desde Directus.
+- Exportación, validación, preparación, despliegue y confirmación permanecen como
+  procesos separados; una edición en el panel nunca publica por sí sola.
+- Las copias PostgreSQL, los artefactos previos y la reversión atómica conservan
+  una vía documentada de recuperación.
 
 ### Fase 5: audio y crecimiento
 
@@ -477,7 +481,7 @@ importaciones, uso del panel, generación de JSON y copias de seguridad.
 
 ### Medición después de la primera carga
 
-- Modelo registrado: 18 colecciones, 231 campos y 46 relaciones.
+- Modelo registrado inicialmente: 18 colecciones, 231 campos y 46 relaciones.
 - Datos: 27 autores, 29 obras, 29 fuentes y 58 relaciones base, todas ocultas o
   internas; frases y originales todavía pendientes.
 - Directus: aproximadamente 285 MiB de RAM.
@@ -522,16 +526,13 @@ editorial oficial hay que:
 
 La configuración nunca intentará desactivar o eludir los controles de licencia.
 
-## Decisiones pendientes antes de importar o publicar
+## Decisiones de crecimiento pendientes
 
-- Elegir si Directus y PostgreSQL convivirán con la web o usarán otro VPS.
 - Definir roles: administración, edición, revisión, derechos y publicación.
 - Establecer la política exacta que convierte una advertencia de derechos en un
   bloqueo.
-- Decidir el sistema de copias y practicar una restauración completa.
 - Definir dónde se almacenarán retratos y audio.
-- Diseñar el mecanismo de publicación atómica y reversión.
-- Medir el VPS actual antes de fijar recursos y límites de los servicios.
+- Continuar midiendo recursos antes de ampliar el volumen o los usuarios.
 
-Hasta completar estas decisiones, el piloto seguirá aislado y los JSON actuales
-continuarán siendo la fuente canónica de producción.
+Estas decisiones no alteran la autoridad ya activada: PostgreSQL sigue siendo la
+fuente editorial y los JSON públicos siguen siendo artefactos generados.

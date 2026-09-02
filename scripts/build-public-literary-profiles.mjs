@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isPublishableProfile } from './editorial-profile-policy.mjs';
@@ -6,7 +7,36 @@ import { isPublishableProfile } from './editorial-profile-policy.mjs';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const editorialDirectory = path.join(projectRoot, 'data', 'editorial');
-const outputPath = path.join(projectRoot, 'public', 'data', 'literary-profiles.json');
+
+function parseArguments(argv) {
+  let legacyPreview = false;
+  let outputPath = '/tmp/paramo-legacy-literary-profiles-preview.json';
+  for (const argument of argv) {
+    if (argument === '--legacy-preview') legacyPreview = true;
+    else if (argument.startsWith('--output=')) outputPath = argument.slice('--output='.length);
+    else if (argument === '--help') return { help: true, legacyPreview, outputPath };
+    else throw new Error(`Argumento no reconocido: ${argument}`);
+  }
+  return { help: false, legacyPreview, outputPath };
+}
+
+const options = parseArguments(process.argv.slice(2));
+if (options.help) {
+  process.stdout.write('Uso: node scripts/build-public-literary-profiles.mjs --legacy-preview [--output=/tmp/archivo.json]\n');
+  process.stdout.write('La fase 4 prohíbe que este generador histórico escriba el runtime público.\n');
+  process.exit(0);
+}
+if (!options.legacyPreview) {
+  throw new Error(
+    'Fase 4 activa: las fichas manuales son un archivo histórico de solo lectura. '
+      + 'Use Directus/PostgreSQL o --legacy-preview con un destino bajo /tmp.',
+  );
+}
+const outputPath = path.resolve(options.outputPath);
+const temporaryRoot = path.resolve(os.tmpdir());
+if (outputPath !== temporaryRoot && !outputPath.startsWith(`${temporaryRoot}${path.sep}`)) {
+  throw new Error(`--legacy-preview solo puede escribir dentro de ${temporaryRoot}`);
+}
 
 const authorFields = [
   'author_id',
@@ -187,7 +217,7 @@ await mkdir(path.dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(publicDocument, null, 2)}\n`, 'utf8');
 
 console.log(
-  `Perfiles literarios públicos generados: ${publicDocument.authors.length} autor(es), `
+  `Vista previa histórica de perfiles generada: ${publicDocument.authors.length} autor(es), `
   + `${publicDocument.works.length} obra(s).`,
 );
-console.log(path.relative(projectRoot, outputPath));
+console.log(outputPath);

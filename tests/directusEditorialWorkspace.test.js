@@ -8,7 +8,7 @@ import {
 } from '../scripts/configure-directus-editorial-workspace.mjs';
 
 test('el espacio editorial define vistas principales y marcadores únicos', () => {
-  assert.equal(workspacePresetDefinitions.length, 14);
+  assert.equal(workspacePresetDefinitions.length, 18);
   assert.deepEqual(validatePresetDefinitions(workspacePresetDefinitions), []);
 
   const defaults = workspacePresetDefinitions.filter((preset) => preset.bookmark === null);

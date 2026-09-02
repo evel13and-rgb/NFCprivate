@@ -4,32 +4,31 @@
 contrato compatible con el frontend (`t`, `a`, `obra`, `highlight`, `lang` y `type`),
 además de `id`, `legacy_index`, `authorId` y `workId`.
 
-La fuente canónica interna está en `data/editorial/`. No se sirve esa carpeta ni se
-publica `public-catalog.preview.json`. Para regenerar el runtime público:
+La fuente editorial principal es Directus/PostgreSQL. `data/editorial/` conserva
+la línea base histórica de la migración y no se sirve. Para generar un candidato
+publicable bajo `/tmp`:
 
 ```sh
-node scripts/build-public-quotes.mjs
+node scripts/prepare-directus-quotes-publication.mjs
 ```
 
-El generador exige 640 registros en la fuente editorial, cruza la extracción con el
-catálogo normalizado, aplica las decisiones aceptadas —incluidas las exclusiones—,
-comprueba campos obligatorios e impide IDs o índices heredados duplicados. El
-frontend valida el recuento declarado por el propio artefacto, sin fijarlo a 640,
-para admitir bajas editoriales deliberadas. Después de
-regenerarlo deben ejecutarse `npm test` y las validaciones habituales del despliegue.
+El exportador selecciona registros aprobados, visibles y verificados; valida
+fuentes, derechos, relaciones, hashes, IDs e índices heredados. El frontend valida
+el recuento declarado por el propio artefacto, sin fijarlo a 640, para admitir
+altas o bajas editoriales deliberadas.
 
 `script.js` contiene solo la lógica de la aplicación; ya no incluye el catálogo
 completo. Si el JSON no se puede descargar o validar, `publicQuotes.js` ofrece tres
 frases de emergencia con el mismo contrato. Ese fallback no es una segunda fuente
 editorial y solo evita que la portada quede vacía.
 
-Para añadir frases en el futuro, hay que incorporarlas mediante el flujo de revisión
-de `data/editorial/`, conservar IDs e índices estables, validar el catálogo y volver a
-generar `public/data/quotes.json`. No deben añadirse colecciones literarias a
-`script.js` ni al fallback de emergencia.
+Para añadir frases se usa el flujo de revisión de Directus, conservando IDs e
+índices estables. Después se registra el candidato, se prepara de forma atómica,
+se revisa y versiona el diff, se despliega y se finaliza el `publication_run`. No
+deben añadirse colecciones literarias a `script.js`, al fallback de emergencia ni
+a los JSON históricos.
 
-Durante la migración a Directus puede generarse una vista previa equivalente sin
-modificar el runtime público:
+La equivalencia puede comprobarse sin modificar el runtime público:
 
 ```sh
 node scripts/export-directus-quotes-preview.mjs

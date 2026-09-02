@@ -380,7 +380,11 @@ test('build-public-quotes cruza originales revisados sin publicar campos editori
       }],
     })}\n`,
   );
-  const result = spawnSync(process.execPath, ['scripts/build-public-quotes.mjs'], {
+  const result = spawnSync(process.execPath, [
+    'scripts/build-public-quotes.mjs',
+    '--legacy-preview',
+    `--output=${path.join(temporaryRoot, 'public/data/quotes.json')}`,
+  ], {
     cwd: temporaryRoot,
     encoding: 'utf8',
   });
@@ -1355,7 +1359,11 @@ test('build-public-quotes rechaza un quote_id original inexistente', async () =>
       }],
     })}\n`,
   );
-  const result = spawnSync(process.execPath, ['scripts/build-public-quotes.mjs'], {
+  const result = spawnSync(process.execPath, [
+    'scripts/build-public-quotes.mjs',
+    '--legacy-preview',
+    `--output=${path.join(temporaryRoot, 'public/data/quotes.json')}`,
+  ], {
     cwd: temporaryRoot,
     encoding: 'utf8',
   });
@@ -1368,7 +1376,11 @@ test('build-public-quotes genera un runtime equivalente desde la capa editorial'
   await mkdir(path.join(temporaryRoot, 'scripts'), { recursive: true });
   await cp(new URL('../scripts/build-public-quotes.mjs', import.meta.url), path.join(temporaryRoot, 'scripts/build-public-quotes.mjs'));
   await cp(new URL('../data/editorial', import.meta.url), path.join(temporaryRoot, 'data/editorial'), { recursive: true });
-  const result = spawnSync(process.execPath, ['scripts/build-public-quotes.mjs'], {
+  const result = spawnSync(process.execPath, [
+    'scripts/build-public-quotes.mjs',
+    '--legacy-preview',
+    `--output=${path.join(temporaryRoot, 'public/data/quotes.json')}`,
+  ], {
     cwd: temporaryRoot,
     encoding: 'utf8',
   });
@@ -1409,7 +1421,11 @@ test('build-public-quotes aplica correcciones y exclusiones editoriales aceptada
       },
     ] })}\n`,
   );
-  const result = spawnSync(process.execPath, ['scripts/build-public-quotes.mjs'], {
+  const result = spawnSync(process.execPath, [
+    'scripts/build-public-quotes.mjs',
+    '--legacy-preview',
+    `--output=${path.join(temporaryRoot, 'public/data/quotes.json')}`,
+  ], {
     cwd: temporaryRoot,
     encoding: 'utf8',
   });

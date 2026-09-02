@@ -15,15 +15,15 @@ const reportPath = path.join(outputDirectory, 'migration-report.json');
 const source = await readFile(sourcePath, 'utf8');
 
 // Script legacy: se conserva para documentar y reproducir la migración inicial.
-// La fuente canónica actual es data/editorial/ y el runtime se genera con
-// scripts/build-public-quotes.mjs; script.js ya no contiene el catálogo.
+// Desde la fase 4, data/editorial/ es una línea base histórica y
+// Directus/PostgreSQL es la fuente editorial principal.
 
 function extractQuoteOrder(code) {
   const match = code.match(/const QUOTES = \[([\s\S]*?)\n\];/);
   if (!match) {
     throw new Error(
       'Extractor legacy: script.js ya no contiene QUOTES. '
-      + 'Use data/editorial/ como fuente canónica y scripts/build-public-quotes.mjs para el runtime público.',
+      + 'Use Directus/PostgreSQL para editar y el circuito de publicación validado para el runtime público.',
     );
   }
 

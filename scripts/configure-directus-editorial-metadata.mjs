@@ -98,6 +98,11 @@ const multilineFields = new Set([
   'error_message',
   'portrait_caption',
   'portrait_credit',
+  'public_biography_long',
+  'public_tone_notes',
+  'public_why_in_paramo',
+  'public_summary_long',
+  'public_fragment_notes',
 ]);
 
 const jsonFields = new Set([
@@ -109,6 +114,7 @@ const jsonFields = new Set([
   'artifact_hashes',
   'warnings',
   'errors',
+  'public_information_sources',
 ]);
 
 const readonlyFields = new Set([

@@ -7,9 +7,20 @@ Esta carpeta mantiene separadas tres capas de trabajo:
 - `migration-report.json`, `normalization-report.json` y `editorial-review.md` son informes generados para revisar esos procesos.
 - `editorial-decisions.json` es el registro manual de decisiones humanas. Su estructura está documentada en `editorial-decisions.schema.json`.
 
-Esta carpeta es la fuente interna y canónica del catálogo de frases. `script.js` ya no
-contiene el catálogo completo. El runtime que consume la web se genera en
-`public/data/quotes.json` mediante `node scripts/build-public-quotes.mjs`.
+Desde la activación de la fase 4, esta carpeta conserva la línea base histórica de
+la migración y sus controles reproducibles, pero ya no es la fuente editable del
+catálogo. Directus/PostgreSQL es la fuente editorial principal para autores,
+obras, frases, originales, hablantes, temas y fuentes. Los dos JSON bajo
+`public/data/` siguen siendo artefactos estáticos versionados.
+
+Los generadores históricos se niegan a sobrescribir esos artefactos. Solo pueden
+producir una copia de diagnóstico bajo `/tmp` mediante `--legacy-preview`, por
+ejemplo:
+
+```sh
+node scripts/build-public-quotes.mjs --legacy-preview
+node scripts/build-public-literary-profiles.mjs --legacy-preview
+```
 
 `scripts/extract-editorial-quotes.mjs` se conserva únicamente como herramienta legacy
 de la migración original desde `script.js`; no debe usarse para regenerar la fuente
@@ -35,7 +46,11 @@ No se deben corregir directamente los archivos de extracción, los borradores no
 
 ## Cómo registrar una decisión
 
-Añade un objeto a `decisions` en `editorial-decisions.json` con todos los campos definidos por el esquema. Usa el `legacy_index` de la cita afectada; para una decisión que no corresponda a una cita concreta, usa `null`. Documenta el valor anterior, el nuevo valor, la razón, la persona revisora, la fecha ISO 8601 y el estado editorial.
+Las decisiones nuevas se registran en la colección privada
+`editorial_decisions` de Directus. Deben conservar el registro afectado, el valor
+anterior, el nuevo valor, la razón, la persona revisora, la fecha y el estado
+editorial. `editorial-decisions.json` queda congelado como antecedente de la
+migración.
 
 Los elementos de `_examples` son únicamente ejemplos y no representan decisiones activas. Para comprobar el registro sin modificar ningún borrador, ejecuta:
 
@@ -47,7 +62,9 @@ Las decisiones se mantienen aparte para conservar trazabilidad, permitir revisi�
 
 ## Fichas literarias manuales
 
-`author-profiles.manual.json` y `work-profiles.manual.json` contienen información literaria revisable añadida manualmente, separada de los borradores automáticos. Sus campos y estados se documentan en `profiles.schema.json`.
+`author-profiles.manual.json` y `work-profiles.manual.json` conservan la línea base
+que se importó en Directus. Ya no deben editarse. Las fichas nuevas y sus cambios
+se trabajan en las colecciones `authors`, `works` y `themes` del panel privado.
 
 Durante la fase piloto estas colecciones pueden estar incompletas: no es necesario que cada autor u obra tenga ya una ficha. Se rellenarán progresivamente y la falta de fichas se informa como advertencia no bloqueante. Para validar las fichas existentes, sus identificadores y la cobertura actual, ejecuta:
 
@@ -62,13 +79,15 @@ del flujo editorial y la visibilidad pública deberán modelarse por separado.
 
 ## Validación global del catálogo
 
-Para revisar en un único paso la extracción, la normalización, las decisiones manuales y las fuentes y derechos, ejecuta:
+Para comprobar que la línea base histórica sigue íntegra, ejecuta:
 
 ```sh
 npm run validate:editorial
 ```
 
-El comando genera `catalog-validation-report.json`. Un **error bloqueante** indica una incoherencia estructural o una pérdida de integridad —por ejemplo, una referencia inexistente, un texto vacío o una alteración del texto extraído— y hace que el comando termine con error. Una **advertencia editorial** identifica información válida para trabajar pero todavía pendiente de revisión humana, como derechos sin comprobar o posibles textos duplicados; por sí sola no invalida el catálogo.
+El comando genera `catalog-validation-report.json`. No consulta ni modifica
+PostgreSQL. Un **error bloqueante** indica que el archivo histórico ha perdido
+integridad; no convierte esos archivos de nuevo en fuente editable.
 
 Los archivos de `data/editorial/` son artefactos internos de extracción, revisión y control. No forman parte de los datos que se publican en la web y no deben exponerse mediante el proceso de publicación.
 
@@ -77,7 +96,8 @@ documenta en `docs/contrato-datos-editoriales.md`.
 
 ## Vista previa del futuro catálogo público
 
-`public-catalog.preview.json` es una transformación interna y reproducible de los borradores editoriales, con una estructura cercana a la que podrá consumir la web en el futuro. Se genera con:
+`public-catalog.preview.json` es una transformación histórica y reproducible de
+los antiguos borradores. Se genera únicamente para diagnóstico con:
 
 ```sh
 node scripts/build-public-catalog-preview.mjs
@@ -85,4 +105,6 @@ node scripts/build-public-catalog-preview.mjs
 
 Su estructura se documenta en `public-catalog.schema.json` y las incidencias de cada generación quedan en `public-catalog-report.json`. El generador excluye notas editoriales y campos privados, y marca explícitamente el resultado como `internal_preview`.
 
-Esta vista previa **no está publicada**, no debe conectarse todavía al frontend ni consumirse en producción. Las fuentes y los derechos siguen pendientes de verificación. Cuando termine la revisión editorial y jurídica, esta estructura servirá como base del futuro JSON público versionado.
+Esta vista previa **no está publicada** y no debe conectarse al frontend. La
+exportación vigente de fichas desde PostgreSQL se comprueba con
+`scripts/export-directus-profiles-preview.mjs` y siempre se escribe bajo `/tmp`.

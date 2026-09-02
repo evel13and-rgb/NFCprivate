@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -6,7 +7,36 @@ const EXPECTED_SOURCE_QUOTE_COUNT = 640;
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const editorialDirectory = path.join(projectRoot, 'data', 'editorial');
-const outputPath = path.join(projectRoot, 'public', 'data', 'quotes.json');
+
+function parseArguments(argv) {
+  let legacyPreview = false;
+  let outputPath = '/tmp/paramo-legacy-quotes-preview.json';
+  for (const argument of argv) {
+    if (argument === '--legacy-preview') legacyPreview = true;
+    else if (argument.startsWith('--output=')) outputPath = argument.slice('--output='.length);
+    else if (argument === '--help') return { help: true, legacyPreview, outputPath };
+    else throw new Error(`Argumento no reconocido: ${argument}`);
+  }
+  return { help: false, legacyPreview, outputPath };
+}
+
+const options = parseArguments(process.argv.slice(2));
+if (options.help) {
+  process.stdout.write('Uso: node scripts/build-public-quotes.mjs --legacy-preview [--output=/tmp/archivo.json]\n');
+  process.stdout.write('La fase 4 prohíbe que este generador histórico escriba el runtime público.\n');
+  process.exit(0);
+}
+if (!options.legacyPreview) {
+  throw new Error(
+    'Fase 4 activa: data/editorial es un archivo histórico de solo lectura. '
+      + 'Use Directus/PostgreSQL o --legacy-preview con un destino bajo /tmp.',
+  );
+}
+const outputPath = path.resolve(options.outputPath);
+const temporaryRoot = path.resolve(os.tmpdir());
+if (outputPath !== temporaryRoot && !outputPath.startsWith(`${temporaryRoot}${path.sep}`)) {
+  throw new Error(`--legacy-preview solo puede escribir dentro de ${temporaryRoot}`);
+}
 
 async function loadArray(filename) {
   const value = JSON.parse(await readFile(path.join(editorialDirectory, filename), 'utf8'));
@@ -34,7 +64,7 @@ async function loadDecisions() {
 }
 
 function fail(message) {
-  throw new Error(`No se pudo generar public/data/quotes.json: ${message}`);
+  throw new Error(`No se pudo generar la vista previa histórica: ${message}`);
 }
 
 function validateSourceRecord(record, position) {
@@ -221,5 +251,5 @@ const document = {
 validatePublicDocument(document, intermediateQuotes.length - excludedLegacyIndexes.size);
 await mkdir(path.dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(document, null, 2)}\n`, 'utf8');
-console.log(`Runtime público de frases generado: ${quotes.length} frases.`);
-console.log(path.relative(projectRoot, outputPath));
+console.log(`Vista previa histórica generada: ${quotes.length} frases.`);
+console.log(outputPath);
