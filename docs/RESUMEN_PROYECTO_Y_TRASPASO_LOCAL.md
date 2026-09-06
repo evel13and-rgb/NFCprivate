@@ -1,6 +1,6 @@
 # Páramo Literario: resumen integral y guía de traspaso a local
 
-- **Estado del documento:** versionado el 30 de agosto de 2026; traspaso local
+- **Estado del documento:** revisado el 6 de septiembre de 2026; traspaso local
   aparcado hasta nueva decisión.
 - **Repositorio de trabajo en la VPS:** `/srv/paramoliterario/source`.
 - **Rama principal:** `main`.
@@ -64,7 +64,7 @@ funcionando aunque Directus esté detenido.
 - Los borradores editoriales versionados contienen 27 autores, 29 obras y 29
   fuentes; no todo borrador está destinado todavía a publicación.
 - Hay 23 retratos de autores y 12 fondos atmosféricos en PNG/WebP.
-- Existen 25 archivos de pruebas automatizadas con `node:test`.
+- Existen 26 archivos de pruebas automatizadas con `node:test`.
 - El piloto Directus/PostgreSQL tiene documentadas 18 colecciones, 242 campos y
   46 relaciones.
 - Directus contiene 27 autores, 29 obras, 29 fuentes, 14 hablantes, 640 frases y
@@ -73,6 +73,8 @@ funcionando aunque Directus esté detenido.
   nuevas obras o aprobar otro cambio editorial deliberado.
 - PostgreSQL es la fuente editorial principal; los JSON públicos siguen siendo
   artefactos estáticos y no se editan manualmente.
+- Los circuitos de frases y fichas registran hashes, exigen autorización para
+  cambios y permiten sustitución atómica, reversión y confirmación del despliegue.
 - Las copias cifradas externas en Backblaze B2 y su prueba semanal de restauración
   están activas.
 - La fuente de verdad del código está en Git, rama `main`.
@@ -195,6 +197,10 @@ source/
 │   ├── stage-directus-quotes-publication.mjs
 │   ├── finalize-directus-quotes-deployment.mjs
 │   ├── restore-directus-quotes-backup.mjs
+│   ├── prepare-directus-profiles-publication.mjs
+│   ├── stage-directus-profiles-publication.mjs
+│   ├── finalize-directus-profiles-deployment.mjs
+│   ├── restore-directus-profiles-backup.mjs
 │   ├── simulate-directus-publication-changes.mjs
 │   ├── set-weather-override.mjs
 │   └── lib/                        Escritura atómica, hashes y verificación

@@ -44,12 +44,15 @@ comprueba primero sin escribir:
 ```bash
 node scripts/finalize-directus-quotes-deployment.mjs \
   --run=<uuid-producción>
+
+node scripts/finalize-directus-profiles-deployment.mjs \
+  --run=<uuid-producción>
 ```
 
-El comando coteja el JSON versionado, la copia bajo `/var/www` y la respuesta
-HTTPS. Solo una segunda ejecución con `--finalize` y sus confirmaciones explícitas
-marca el intento como `published`. Este seguimiento no forma parte de
-`deploy-local.sh` y no modifica Nginx ni los archivos desplegados.
+Cada comando coteja su JSON versionado, la copia bajo `/var/www` y la respuesta
+HTTPS. Solo una segunda ejecución con `--finalize` y las confirmaciones explícitas
+correspondientes marca el intento como `published`. Este seguimiento no forma
+parte de `deploy-local.sh` y no modifica Nginx ni los archivos desplegados.
 
 ## Backend del clima
 

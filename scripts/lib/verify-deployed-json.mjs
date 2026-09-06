@@ -6,7 +6,9 @@ function sha256(value) {
 }
 
 async function verifyDeployedJson({
+  countDocument,
   deployedPath,
+  expectedEntityCounts,
   expectedQuoteCount,
   expectedSha,
   fetchImpl = fetch,
@@ -36,10 +38,17 @@ async function verifyDeployedJson({
     deployed_sha256: sha256(deployedText),
     served_sha256: sha256(servedText),
   };
+  const expectedCounts = expectedEntityCounts || { quotes: expectedQuoteCount };
+  const collectCounts = countDocument || ((document) => ({ quotes: document.quotes.length }));
+  const entityCounts = {};
   for (const [label, document] of Object.entries(documents)) {
     validateDocument(document);
-    if (document.quotes.length !== expectedQuoteCount) {
-      throw new Error(`${label}: se esperaban ${expectedQuoteCount} frases y hay ${document.quotes.length}`);
+    const actualCounts = collectCounts(document);
+    entityCounts[label] = actualCounts;
+    for (const [entity, expected] of Object.entries(expectedCounts)) {
+      if (actualCounts[entity] !== expected) {
+        throw new Error(`${label}: se esperaban ${expected} ${entity} y hay ${actualCounts[entity]}`);
+      }
     }
     const hash = hashes[`${label}_sha256`];
     if (hash !== expectedSha) {
@@ -48,7 +57,9 @@ async function verifyDeployedJson({
   }
   return {
     content_type: servedResponse.headers.get('content-type'),
-    expected_quote_count: expectedQuoteCount,
+    ...(expectedQuoteCount === undefined ? {} : { expected_quote_count: expectedQuoteCount }),
+    expected_entity_counts: expectedCounts,
+    entity_counts: entityCounts,
     expected_sha256: expectedSha,
     ...hashes,
   };

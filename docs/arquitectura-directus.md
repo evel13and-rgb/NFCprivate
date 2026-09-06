@@ -394,6 +394,10 @@ producción.
 - PostgreSQL es la fuente editorial principal para autores, obras, frases,
   originales, hablantes, temas y fuentes.
 - Los dos contratos públicos actuales se reproducen byte por byte desde Directus.
+- Tanto `quotes.json` como `literary-profiles.json` disponen de generación bajo
+  `/tmp`, auditoría en `publication_runs`, autorización de cambios, sustitución
+  atómica, copia reversible y confirmación posterior contra Git, `/var/www` y
+  HTTPS.
 - Exportación, validación, preparación, despliegue y confirmación permanecen como
   procesos separados; una edición en el panel nunca publica por sí sola.
 - Las copias PostgreSQL, los artefactos previos y la reversión atómica conservan

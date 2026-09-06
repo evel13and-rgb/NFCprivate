@@ -287,10 +287,91 @@ node scripts/export-directus-profiles-preview.mjs
 ```
 
 Ambos exportadores escriben únicamente bajo `/tmp`, aplican listas cerradas de
-campos públicos y exigen coincidencia byte por byte durante el corte. Las fichas
-permanecen congeladas hasta incorporar una preparación atómica equivalente a la
-de las frases; no se editará `literary-profiles.json` manualmente para adelantar
-ese trabajo.
+campos públicos y exigen coincidencia byte por byte durante el corte.
+
+### Publicación de fichas
+
+El circuito de `literary-profiles.json` está separado en las mismas barreras que el
+de frases. La preparación predeterminada solo genera el candidato bajo `/tmp` y
+no registra ni publica nada:
+
+```sh
+node scripts/prepare-directus-profiles-publication.mjs
+```
+
+Si Directus contiene cambios, primero se genera una copia revisable sin registrar
+el intento:
+
+```sh
+node scripts/prepare-directus-profiles-publication.mjs --allow-content-changes
+diff -u public/data/literary-profiles.json \
+  /tmp/paramo-directus-profiles-publication-candidate.json
+```
+
+Tras revisar el diff, se repite con `--record --allow-content-changes`. Git debe
+estar limpio. El resultado incluye el UUID del `publication_run`, los recuentos y
+los hashes que habrá que confirmar en las etapas posteriores:
+
+```sh
+node scripts/prepare-directus-profiles-publication.mjs \
+  --record \
+  --allow-content-changes
+```
+
+Las referencias históricas aceptadas —obras cuya persona autora no tiene ficha y
+frases cuya obra no tiene ficha— se muestran como advertencias. Un borrador no
+entra en el candidato; las frases que determinan `fragment_count` deben estar
+aprobadas, públicas, verificadas y revisadas. En la línea base actual hay 640
+frases elegibles y 630 asociadas a las 28 fichas de obra; las otras 10 pertenecen
+a *Cañas y barro*, cuya ficha todavía no forma parte del contrato público.
+
+El staging primero se simula con el UUID de vista previa:
+
+```sh
+node scripts/stage-directus-profiles-publication.mjs \
+  --run=<uuid-validado>
+```
+
+La sustitución real exige `--stage`, `--allow-content-changes`, repetir el UUID y
+confirmar los dos hashes junto con `--confirm-action=STAGE_PROFILES`. Crea una
+copia privada bajo `/var/lib/paramo-directus/publication-backups`, sustituye el
+archivo mediante `rename` atómico y registra otro `publication_run` de producción
+en estado `validated`. No despliega la web:
+
+```sh
+node scripts/stage-directus-profiles-publication.mjs \
+  --run=<uuid-validado> \
+  --stage \
+  --allow-content-changes \
+  --confirm-run=<uuid-validado> \
+  --confirm-candidate-sha=<sha-candidato> \
+  --confirm-current-public-sha=<sha-vigente> \
+  --confirm-action=STAGE_PROFILES
+```
+
+La reversión tiene simulación propia. La escritura exige además `--restore`, los
+dos hashes y `--confirm-action=RESTORE_PROFILES`:
+
+```sh
+node scripts/restore-directus-profiles-backup.mjs --backup=<ruta>
+```
+
+Después de revisar el cambio, hay que versionarlo y desplegarlo mediante
+`deploy-local.sh --publish`. El finalizador coteja el hash y los recuentos de
+autores y obras en Git, `/var/www` y la respuesta HTTPS:
+
+```sh
+node scripts/finalize-directus-profiles-deployment.mjs \
+  --run=<uuid-producción>
+```
+
+Solo una segunda ejecución con `--finalize`, el UUID y hash repetidos y
+`--confirm-action=FINALIZE_PROFILES` marca el intento como `published`.
+
+Cuando una obra nueva modifica ambos contratos, se completa primero el circuito
+de frases hasta dejar `quotes.json` versionado; después se prepara y versiona el
+circuito de fichas. Se puede realizar un único despliegue al final y confirmar los
+dos `publication_runs` por separado. No se edita ninguno de los JSON a mano.
 
 La instantánea revisada del modelo está en:
 

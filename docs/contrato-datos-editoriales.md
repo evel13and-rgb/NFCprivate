@@ -58,6 +58,12 @@ biográficos, bibliográficos, temáticos y de retrato enumerados por
 Las referencias bibliográficas preparadas expresamente como `sources` se convierten
 en `information_sources`; no debe colocarse en ellas una nota privada.
 
+El artefacto solo puede cambiar mediante el circuito de
+`prepare-directus-profiles-publication.mjs`: candidato temporal, registro de
+hashes, autorización explícita, sustitución atómica con copia, revisión Git,
+despliegue separado y confirmación posterior. Editar el JSON manualmente está
+prohibido.
+
 ## Fuentes, derechos y decisiones
 
 Las colecciones `sources` y `editorial_decisions` son privadas en su totalidad.
