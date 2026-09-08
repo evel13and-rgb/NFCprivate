@@ -2979,3 +2979,20 @@ body.night-fall .modal__close:focus-visible {
     --fireflies-layer-opacity: 0.78;
   }
 }
+
+/* Pausa temporal de la lluvia; se conserva el clima y su iluminación ambiental. */
+body.rain-effects-paused[data-weather='light-rain'],
+body.rain-effects-paused[data-weather='heavy-rain'] {
+  --weather-particles: none;
+  --weather-particles-opacity: 0;
+  --weather-particles-animation: none;
+  --weather-particles-filter: none;
+}
+
+body.rain-effects-paused[data-weather='light-rain'] #quote-card::before,
+body.rain-effects-paused[data-weather='light-rain'] #quote-card::after,
+body.rain-effects-paused[data-weather='heavy-rain'] #quote-card::before,
+body.rain-effects-paused[data-weather='heavy-rain'] #quote-card::after {
+  opacity: 0;
+  animation: none;
+}
