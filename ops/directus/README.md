@@ -221,6 +221,8 @@ La escritura real exige `--stage`, repetir el UUID, confirmar los hashes y escri
 `--allow-content-changes`. Antes de sustituir el JSON crea una copia con permisos
 privados en `/var/lib/paramo-directus/publication-backups` y usa `rename` atómico;
 si falla la comprobación posterior, restaura automáticamente la versión previa.
+El artefacto público conserva sus permisos de lectura aunque la umask del proceso
+sea restrictiva; la copia privada permanece en modo `0600`.
 Este paso solo prepara el repositorio y deja un `publication_run` de producción
 validado: todavía no ejecuta `deploy-local.sh` ni marca la publicación como
 desplegada.

@@ -17,6 +17,9 @@ async function writeDurableExclusive(filePath, value, mode) {
   const handle = await open(filePath, 'wx', mode);
   try {
     await handle.writeFile(value, 'utf8');
+    // open() aplica la umask del proceso. Reponer el modo explícitamente evita
+    // que un artefacto público 0644 termine como 0600 tras el rename atómico.
+    await handle.chmod(mode);
     await handle.sync();
   } finally {
     await handle.close();

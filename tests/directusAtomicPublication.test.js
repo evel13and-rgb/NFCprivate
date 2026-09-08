@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, readFile, writeFile } from 'node:fs/promises';
+import { chmod, mkdtemp, readFile, stat, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
@@ -18,6 +18,7 @@ test('sustituye y permite revertir un artefacto en un entorno aislado', async ()
   const candidate = '{"version":"candidata"}\n';
   await writeFile(targetPath, previous, 'utf8');
   await writeFile(candidatePath, candidate, 'utf8');
+  await chmod(targetPath, 0o644);
 
   const publication = await atomicReplaceArtifact({
     backupDirectory,
@@ -29,6 +30,8 @@ test('sustituye y permite revertir un artefacto en un entorno aislado', async ()
   });
   assert.equal(await readFile(targetPath, 'utf8'), candidate);
   assert.equal(await readFile(publication.backup_path, 'utf8'), previous);
+  assert.equal((await stat(targetPath)).mode & 0o777, 0o644);
+  assert.equal((await stat(publication.backup_path)).mode & 0o777, 0o600);
 
   const rollback = await atomicReplaceArtifact({
     backupDirectory,
@@ -40,6 +43,7 @@ test('sustituye y permite revertir un artefacto en un entorno aislado', async ()
   });
   assert.equal(rollback.changed, true);
   assert.equal(await readFile(targetPath, 'utf8'), previous);
+  assert.equal((await stat(targetPath)).mode & 0o777, 0o644);
 });
 
 test('rechaza carreras si el hash vigente no es el esperado', async () => {
