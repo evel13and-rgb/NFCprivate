@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-24T17:21:19.797Z",
-  "quote_count": 640,
+  "generated_at": "2026-09-08T03:16:40.355Z",
+  "quote_count": 655,
   "quotes": [
     {
       "id": "quote-2",
@@ -10879,6 +10879,261 @@
       "workId": "work-el-idiota",
       "original": {
         "text": "Но я отказалась от мира; вам смешно это слышать от меня, встречая меня в кружевах и бриллиантах, с пьяницами и негодяями? Не смотрите на это, я уже почти не существую и знаю это; бог знает, что вместо меня живет во мне. Я читаю это каждый день в двух ужасных глазах, которые постоянно на меня смотрят, даже и тогда, когда их нет предо мной.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-642",
+      "legacy_index": 642,
+      "t": "Resulta ridículo decirlo, pero hasta los diecisiete años había vivido entre aquellas personas siendo para ellas más extraña que para gente a la que nunca había visto; ni una sola vez había pensado que aquellas personas amaban, deseaban y se afligían igual que yo.\n\nNuestro jardín, nuestros bosquecillos, nuestros campos, que conocía desde hacía tanto tiempo, de pronto se volvieron nuevos y hermosos para mí. No en vano él decía que en la vida solo existe una felicidad indudable: vivir para otro. Entonces me parecía extraño, no lo comprendía; pero aquella convicción, sin pasar por el pensamiento, empezaba ya a llegarme al corazón.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "solo existe una felicidad indudable: vivir para otro",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Смешно сказать, а до семнадцати лет я прожила между этими людьми более чужая для них, чем для людей, которых никогда не видала; ни разу не подумала, что эти люди так же любят, желают и сожалеют, как и я. Наш сад, наши рощи, наши поля, которые я так давно знала, вдруг сделались новыми и прекрасными для меня. Недаром он говорил, что в жизни есть только одно несомненное счастье — жить для другого. Мне тогда это странно казалось, я не понимала этого; но это убеждение, помимо мысли, уже приходило мне в сердце.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-643",
+      "legacy_index": 643,
+      "t": "Él me abrió toda una vida de alegrías en el presente, sin cambiar nada de mi vida, sin añadir a cada impresión nada salvo su propia presencia.\n\nTodo aquello que desde mi infancia había permanecido silencioso a mi alrededor solo necesitaba que él llegara para que todo aquello empezara a hablar y, a porfía, pidiera entrar en mi alma, llenándola de felicidad.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "toda una vida de alegrías en el presente",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Он открыл мне целую жизнь радостей в настоящем, не изменив ничего в моей жизни, ничего не прибавив, кроме себя, к каждому впечатлению. Все то же с детства безмолвно было вокруг меня, а стоило ему только прийти, чтобы все то же заговорило и наперерыв запросилось в душу, наполняя ее счастием.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-644",
+      "legacy_index": 644,
+      "t": "Pero después de aquella velada —¿recuerdas cuando caminamos de noche por el jardín?— tuve miedo: mi felicidad presente me pareció demasiado grande e imposible.\n\n¿Qué habría ocurrido si me hubiera permitido esperar y mi esperanza hubiera sido vana?",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "mi felicidad presente me pareció demasiado grande e imposible",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Но после этого вечера,— помните, когда мы ночью ходили по саду,— я испугался, мое теперешнее счастье показалось мне слишком велико и невозможно. Ну, что бы было, ежели бы я позволил себе надеяться, и напрасно?",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-645",
+      "legacy_index": 645,
+      "t": "—Una vida tranquila y apartada en nuestro rincón del campo, con la posibilidad de hacer el bien a personas a quienes resulta tan fácil hacérselo y que no están acostumbradas a él; después, el trabajo —un trabajo que parezca útil—; después el descanso, la naturaleza, un libro, música, el amor a una persona cercana: esa es mi felicidad, más allá de la cual nunca he soñado. Y, además de todo eso, una amiga como tú, una familia quizá, y todo cuanto un hombre puede desear.\n\n—Sí —dije yo.\n\n—Para mí, que ya he vivido mi juventud, sí; pero para ti no —continuó él—. Tú todavía no has vivido; quizá quieras buscar la felicidad en otra cosa y quizá la encuentres en otra cosa. Ahora te parece que esta es la felicidad porque me amas.\n\n—No, yo siempre he deseado y amado precisamente esta vida familiar tranquila —dije—. Y tú no haces más que decir lo mismo que yo pensaba.\n\nÉl sonrió.\n\n—Eso solo te lo parece, amiga mía. Para ti esto es poco. Tienes belleza y juventud —repitió pensativo.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "Tú todavía no has vivido",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Тихая, уединенная жизнь в нашей деревенской глуши, с возможностью делать добро людям, которым так легко делать добро, к которому они не привыкли; потом труд,— труд, который, кажется, что приносит пользу; потом отдых, природа, книга, музыка, любовь к близкому человеку, — вот мое счастье, выше которого я не мечтал. А тут, сверх всего этого, такой друг, как вы, семья, может быть, и все, что только может желать человек.\n\n— Да,— сказала я.\n\n— Для меня, который прожил молодость,— да, но не для вас,— продолжал он. — Вы еще не жили, вы еще в другом, может быть, захотите искать счастья и, может быть, в другом найдете его. Вам кажется теперь, что это счастье, оттого что вы меня любите.\n\n— Нет, я всегда только желала и любила эту тихую семейную жизнь,— сказала я. — И вы только говорите то самое, что я думала.\n\nОн улыбнулся.\n\n— Это только вам кажется, мой друг. А вам мало этого. У вас красота и молодость,— повторил он задумчиво.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-646",
+      "legacy_index": 646,
+      "t": "Los días, las semanas, dos meses de vida retirada en el campo pasaron inadvertidos, según nos parecía entonces; y, sin embargo, los sentimientos, emociones y felicidad de aquellos dos meses habrían bastado para toda una vida.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "habrían bastado para toda una vida",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Дни, недели, два месяца уединенной деревенской жизни прошли незаметно, как казалось тогда; а между тем на целую жизнь достало бы чувств, волнений и счастия этих двух месяцев.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-647",
+      "legacy_index": 647,
+      "t": "Lo amaba no menos que antes y, no menos que antes, era feliz con su amor; pero mi amor se había detenido y ya no crecía, y, además del amor, un sentimiento nuevo e inquieto empezaba a deslizarse en mi alma.\n\nYa no me bastaba amarlo después de haber conocido la felicidad de enamorarme de él. Quería movimiento, no el curso tranquilo de la vida. Quería emociones, peligros y el sacrificio de mí misma por el sentimiento.\n\nHabía en mí un exceso de fuerza que no encontraba lugar en nuestra vida tranquila.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "Quería movimiento, no el curso tranquilo de la vida",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Я любила его не меньше, чем прежде, и не меньше, чем прежде, была счастлива его любовью; но любовь моя остановилась и не росла больше, а кроме любви, какое-то новое беспокойное чувство начинало закрадываться в мою душу. Мне мало было любить после того, как я испытала счастье полюбить его. Мне хотелось движения, а не спокойного течения жизни. Мне хотелось волнений, опасностей и самопожертвования для чувства. Во мне был избыток силы, не находивший места в нашей тихой жизни.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-648",
+      "legacy_index": 648,
+      "t": "No era eso lo que necesitaba; necesitaba lucha. Necesitaba que el sentimiento nos guiara en la vida y no que la vida guiara al sentimiento.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "que el sentimiento nos guiara en la vida",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Мне не того нужно было, мне нужна была борьба; мне нужно было, чтобы чувство руководило нами в жизни, а не жизнь руководила чувством.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-649",
+      "legacy_index": 649,
+      "t": "En el baile me parecía, aún más que antes, que yo era el centro alrededor del cual todo se movía; que solo para mí estaba iluminado aquel gran salón, sonaba la música y se había reunido aquella multitud que me admiraba.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "yo era el centro alrededor del cual todo se movía",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "На бале еще больше, чем прежде, мне казалось, что я центр, около которого все движется, что для меня только освещена эта большая зала, играет музыка и собралась эта толпа людей, восхищающихся мною.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-650",
+      "legacy_index": 650,
+      "t": "Pero, a pesar de eso, la atención de tanta gente en sociedad me producía placer, halagaba mi amor propio, me hacía pensar que había cierto mérito en mi amor por mi marido y me volvía, en mi trato con él, más segura de mí misma y, en cierto modo, más negligente.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "halagaba mi amor propio",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Но, несмотря на то, внимание многих людей в свете доставляло мне удовольствие, льстило самолюбию, заставляло думать, что есть некоторая заслуга в моей любви к мужу, и делало мое обращение с ним самоувереннее и как будто небрежнее.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-651",
+      "legacy_index": 651,
+      "t": "Dejó incluso de incomodarnos que cada uno tuviera su propio mundo, separado y extraño para el otro.\n\nNos acostumbramos a esa idea.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "su propio mundo, separado y extraño para el otro",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Нас даже перестало смущать то, что у каждого есть свой отдельный, чуждый для другого мир. Мы привыкли к этой мысли.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-652",
+      "legacy_index": 652,
+      "t": "Cuando nos quedábamos solos, cosa que ocurría pocas veces, no experimentaba junto a él ni alegría, ni emoción, ni turbación; era como quedarme sola conmigo misma.\n\n[…]\n\nEn una palabra, era mi marido y nada más.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "era mi marido y nada más",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Когда мы оставались одни, что случалось редко, я не испытывала с ним ни радости, ни волнения, ни замешательства, как будто я сама с собой оставалась.\n\n[…]\n\nОдним словом, это был мой муж и больше ничего.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-653",
+      "legacy_index": 653,
+      "t": "Se había cumplido todo aquello que apenas me había atrevido a esperar. Los sueños confusos, fundidos unos con otros, se habían convertido en realidad; y la realidad se había convertido en una vida pesada, difícil y sin alegría.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "la realidad se había convertido en una vida pesada",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "Сбылось все то, чего я едва смела надеяться. Неясные, сливающиеся мечты стали действительностию; а действительность стала тяжелою, трудною и безрадостною жизнию.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-654",
+      "legacy_index": 654,
+      "t": "Y tan lejanos e imposibles me parecen mis antiguos arrebatos religiosos, mi antiguo amor por él, aquella antigua plenitud de la vida.\n\nAhora ya no comprendería aquello que antes me parecía tan claro y justo: que la felicidad consiste en vivir para otro.\n\n¿Para qué para otro, cuando ni siquiera se desea vivir para una misma?",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "¿Para qué para otro, cuando ni siquiera se desea vivir para una misma?",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "И так далеки и невозможны мне кажутся прежние религиозные восторги и прежняя любовь к нему, прежняя полнота жизни. Я не поняла бы теперь того, что прежде мне казалось так ясно и справедливо: счастие жить для другого. Зачем для другого? когда и для себя жить не хочется?",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-655",
+      "legacy_index": 655,
+      "t": "—La culpa es del tiempo y de nosotros mismos. Cada edad tiene su amor... —Calló—. ¿Y decirte toda la verdad? Si ya quieres franqueza. Así como aquel año, cuando acababa de conocerte, pasaba las noches sin dormir pensando en ti y construía yo mismo mi amor, y ese amor crecía y crecía en mi corazón, del mismo modo, en Petersburgo y en el extranjero, pasé noches terribles sin dormir y fui quebrando, destruyendo ese amor que me atormentaba.\n\nNo lo destruí; destruí únicamente aquello que me atormentaba, me tranquilicé y todavía te amo, pero con otro amor.",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "Cada edad tiene su amor",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "— То в этом виновато время и мы сами. В каждой поре есть своя любовь... — Он помолчал. — И сказать тебе всю правду? ежели уже ты хочешь откровенности. Как в тот год, когда я только узнал тебя, я ночи проводил без сна, думая о тебе, и делал сам свою любовь, и любовь эта росла и росла в моем сердце, так точно и в Петербурге и за границей я не спал ужасные ночи и разламывал, разрушал эту любовь, которая мучила меня.\n\nЯ не разрушил ее, а разрушил только то, что мучило меня, успокоился и все-таки люблю, но другою любовью.",
+        "lang": "ru",
+        "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-656",
+      "legacy_index": 656,
+      "t": "—No, mentía cuando decía que no lamento el pasado; no, lo lamento, lloro aquel amor pasado que ya no existe ni puede volver a existir.\n\n¿Quién tiene la culpa? No lo sé.\n\nHa quedado el amor, pero no aquel; ha quedado su lugar, pero ese amor se ha consumido por entero en el dolor; ya no tiene fuerza ni savia. Han quedado los recuerdos y la gratitud, pero...",
+      "a": "León Tolstói",
+      "obra": "Felicidad conyugal, León Tolstói",
+      "highlight": "ha quedado su lugar",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-leon-tolstoi",
+      "workId": "work-felicidad-conyugal",
+      "original": {
+        "text": "— Нет, я неправду говорил, что не жалею прошлого; нет, я жалею, я плачу о той прошедшей любви, которой уж нет и не может быть больше. Кто виноват в этом? не знаю. Осталась любовь, но не та, осталось ее место, но она вся выболела, нет уж в ней силы и сочности, остались воспоминания и благодарность, но...",
         "lang": "ru",
         "label": "Original ruso"
       }

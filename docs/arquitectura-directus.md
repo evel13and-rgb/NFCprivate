@@ -362,10 +362,13 @@ producción.
 
 ### Fase 2: importación reproducible (completada para el catálogo actual)
 
-- Autores, obras, fuentes, hablantes, 640 frases y 640 originales están importados
-  mediante procesos reproducibles.
-- Los IDs, `legacy_index`, textos, hashes y relaciones coinciden con los archivos
-  editoriales y con el JSON público vigente.
+- La línea base de autores, obras, fuentes, hablantes, 640 frases y 640 originales
+  se importó mediante procesos reproducibles. Las 15 altas posteriores de
+  *Felicidad conyugal* quedaron incorporadas y trazadas en Directus, hasta un total
+  de 655 frases y 655 originales.
+- Los IDs, `legacy_index`, textos, hashes y relaciones del catálogo publicable
+  coinciden con el JSON público vigente; los archivos editoriales históricos
+  conservan la fotografía de la línea base inicial.
 - Las frases y originales del catálogo actual constan como aprobados, públicos y
   verificados, con revisor y fecha registrados.
 - Las copias anteriores y posteriores a la importación y aprobación permiten

@@ -89,12 +89,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 640 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 655 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 640);
-  assert.equal(quotes.length, 640);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 640);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 640);
+  const quotes = validatePublicQuotesDocument(document, 655);
+  assert.equal(quotes.length, 655);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 655);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 655);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -238,6 +238,9 @@ test('public/data/quotes.json cumple el contrato público y contiene 640 frases'
     'quote-631', 'quote-632', 'quote-633', 'quote-634', 'quote-635',
     'quote-636', 'quote-637', 'quote-638', 'quote-639', 'quote-640',
     'quote-641',
+    'quote-642', 'quote-643', 'quote-644', 'quote-645', 'quote-646',
+    'quote-647', 'quote-648', 'quote-649', 'quote-650', 'quote-651',
+    'quote-652', 'quote-653', 'quote-654', 'quote-655', 'quote-656',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -415,6 +418,38 @@ test('El idiota conserva los límites y omisiones restaurados por la segunda aud
   assert.match(quotes.get('quote-640').original.text, /когда не победил/);
   assert.match(quotes.get('quote-640').original.text, /которой воскликнул/);
   assert.doesNotMatch(quotes.get('quote-640').original.text, /�/);
+});
+
+test('Felicidad conyugal publica los quince fragmentos rusos tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const workQuotes = document.quotes.filter(quote => quote.workId === 'work-felicidad-conyugal');
+
+  assert.equal(workQuotes.length, 15);
+  assert.deepEqual(
+    workQuotes.map(quote => quote.id),
+    Array.from({ length: 15 }, (_, index) => `quote-${642 + index}`),
+  );
+  assert.equal(workQuotes.every(quote => (
+    quote.a === 'León Tolstói'
+    && quote.obra === 'Felicidad conyugal, León Tolstói'
+    && quote.t.includes(quote.highlight)
+    && quote.original?.lang === 'ru'
+    && quote.original?.label === 'Original ruso'
+    && quote.original?.text
+  )), true);
+
+  assert.match(quotes.get('quote-642').t, /^Resulta ridículo decirlo, pero/);
+  assert.equal(quotes.get('quote-643').t.match(/todo aquello/gi)?.length, 2);
+  assert.match(quotes.get('quote-643').t, /pidiera entrar en mi alma/);
+  assert.match(quotes.get('quote-644').t, /aquella velada.*de noche/);
+  assert.equal(quotes.get('quote-647').t.match(/no menos que antes/g)?.length, 2);
+  assert.match(quotes.get('quote-647').t, /sacrificio de mí misma/);
+  assert.match(quotes.get('quote-650').t, /^Pero, a pesar de eso/);
+  assert.match(quotes.get('quote-650').t, /me volvía, en mi trato con él, más segura de mí misma/);
+  assert.equal(quotes.get('quote-652').t.match(/\[…\]/g)?.length, 1);
+  assert.equal(quotes.get('quote-652').original.text.match(/\[…\]/g)?.length, 1);
+  assert.match(quotes.get('quote-654').t, /^Y tan lejanos e imposibles me parecen/);
 });
 
 test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda auditoría', async () => {
