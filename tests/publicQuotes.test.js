@@ -422,8 +422,10 @@ test('El idiota conserva los límites y omisiones restaurados por la segunda aud
 
 test('Felicidad conyugal publica los quince fragmentos rusos tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
   const workQuotes = document.quotes.filter(quote => quote.workId === 'work-felicidad-conyugal');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-felicidad-conyugal');
 
   assert.equal(workQuotes.length, 15);
   assert.deepEqual(
@@ -450,6 +452,30 @@ test('Felicidad conyugal publica los quince fragmentos rusos tras la segunda aud
   assert.equal(quotes.get('quote-652').t.match(/\[…\]/g)?.length, 1);
   assert.equal(quotes.get('quote-652').original.text.match(/\[…\]/g)?.length, 1);
   assert.match(quotes.get('quote-654').t, /^Y tan lejanos e imposibles me parecen/);
+  assert.equal(workProfile?.author_id, 'author-leon-tolstoi');
+  assert.equal(workProfile?.original_title, 'Семейное счастие —Seméinoie schástie—');
+  assert.equal(workProfile?.publication_year, 1859);
+  assert.equal(workProfile?.language, 'Ruso');
+  assert.equal(workProfile?.fragment_count, 15);
+  assert.deepEqual(workProfile?.themes, [
+    'El enamoramiento',
+    'El matrimonio',
+    'La diferencia de edad',
+    'La idealización amorosa',
+    'La convivencia',
+    'El deseo de experimentar el mundo',
+    'La vida social',
+    'Los celos',
+    'El orgullo',
+    'La incomunicación',
+    'La maduración',
+    'La desilusión',
+    'La transformación del amor con el paso del tiempo',
+  ]);
+  assert.match(workProfile?.summary_short, /qué queda del amor cuando desaparecen la idealización/);
+  assert.match(workProfile?.context_notes, /Russkiy Vestnik \(El Mensajero Ruso\)/);
+  assert.match(workProfile?.tone_notes, /progresivamente más sobrio, desencantado y reflexivo/);
+  assert.equal(workProfile?.information_sources.length, 3);
 });
 
 test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda auditoría', async () => {

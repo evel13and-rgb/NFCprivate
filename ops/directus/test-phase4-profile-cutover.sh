@@ -80,9 +80,11 @@ elif [[ "$phase4_schema_present" != '1' ]]; then
   printf 'Estado inesperado del esquema de fase 4.\n' >&2
   exit 1
 fi
-docker exec -i "$container_name" \
-  psql --set ON_ERROR_STOP=1 --username=postgres --dbname="$RESTORE_DATABASE" \
-  < "$cutover_sql" >/dev/null
+if [[ "$phase4_schema_present" == '0' ]]; then
+  docker exec -i "$container_name" \
+    psql --set ON_ERROR_STOP=1 --username=postgres --dbname="$RESTORE_DATABASE" \
+    < "$cutover_sql" >/dev/null
+fi
 
 result="$({
   docker exec -i "$container_name" \
@@ -99,11 +101,11 @@ SQL
 })"
 
 jq -e '
-  .public_authors == 23
-  and .public_works == 28
-  and .themes == 364
-  and .author_themes == 371
-  and .work_themes == 327
+  .public_authors >= 23
+  and .public_works >= 28
+  and .themes >= 364
+  and .author_themes >= 371
+  and .work_themes >= 327
 ' <<< "$result" >/dev/null
 
 jq -n \

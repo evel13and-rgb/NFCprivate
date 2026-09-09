@@ -60,7 +60,7 @@ funcionando aunque Directus esté detenido.
 ## 3. Estado actual resumido
 
 - La web pública consume **655 citas** desde `public/data/quotes.json`.
-- El catálogo público de perfiles contiene **23 autores** y **28 obras**.
+- El catálogo público de perfiles contiene **23 autores** y **29 obras**.
 - Los borradores editoriales versionados contienen 27 autores, 29 obras y 29
   fuentes; no todo borrador está destinado todavía a publicación.
 - Hay 23 retratos de autores y 12 fondos atmosféricos en PNG/WebP.
@@ -68,7 +68,7 @@ funcionando aunque Directus esté detenido.
 - El piloto Directus/PostgreSQL tiene documentadas 18 colecciones, 242 campos y
   46 relaciones.
 - Directus contiene 27 autores, 30 obras, 30 fuentes, 14 hablantes, 655 frases y
-  655 originales, además de 364 temas; el audio sigue pendiente.
+  655 originales, además de 372 temas; el audio sigue pendiente.
 - La fase de exportación paralela está validada y queda en espera hasta incorporar
   nuevas obras o aprobar otro cambio editorial deliberado.
 - PostgreSQL es la fuente editorial principal; los JSON públicos siguen siendo

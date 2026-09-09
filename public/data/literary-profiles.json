@@ -2084,6 +2084,43 @@
         "Bibliothèque nationale de France, ficha de la obra Gargantua, publicada a finales de 1534 o comienzos de 1535."
       ],
       "fragment_count": 7
+    },
+    {
+      "work_id": "work-felicidad-conyugal",
+      "title": "Felicidad conyugal",
+      "display_title": "Felicidad conyugal",
+      "original_title": "Семейное счастие —Seméinoie schástie—",
+      "author_id": "author-leon-tolstoi",
+      "publication_year": 1859,
+      "genre": "Novela corta; realismo psicológico y narrativa amorosa y doméstica.",
+      "language": "Ruso",
+      "summary_short": "Masha, una joven de diecisiete años que acaba de perder a su madre, se enamora de Serguéi Mijáilovich, un antiguo amigo de la familia considerablemente mayor que ella. Tras un noviazgo marcado por las dudas sobre la diferencia de edad, ambos se casan y comienzan una vida aparentemente feliz en el campo.\n\nSin embargo, Masha empieza a sentirse limitada por la tranquilidad doméstica y descubre el atractivo de la vida social de San Petersburgo. La relación entre ambos cambia a medida que sus deseos se separan. Tolstói sigue así la transformación del enamoramiento inicial y plantea qué queda del amor cuando desaparecen la idealización y la intensidad de los primeros años.",
+      "summary_long": null,
+      "context_notes": "Tolstói escribió la obra entre 1858 y 1859 y la publicó ese año en dos entregas de la revista Russkiy Vestnik (El Mensajero Ruso). Parte de su inspiración procede de la relación que mantuvo con Valeria Arsénieva, con quien llegó a contemplar seriamente el matrimonio. La narración en primera persona desde la perspectiva de una mujer resulta además poco habitual dentro de su obra.\n\nEs una obra temprana, anterior a Guerra y paz y Anna Karénina, pero ya aparecen preocupaciones que Tolstói desarrollará después: la distancia entre el amor imaginado y la convivencia real, el contraste entre la vida social y doméstica y la búsqueda de una felicidad menos dependiente de la pasión. Curiosamente, el propio Tolstói fue después muy severo con la novela y dejó constancia en su diario de su desagrado al releerla.",
+      "themes": [
+        "El enamoramiento",
+        "El matrimonio",
+        "La diferencia de edad",
+        "La idealización amorosa",
+        "La convivencia",
+        "El deseo de experimentar el mundo",
+        "La vida social",
+        "Los celos",
+        "El orgullo",
+        "La incomunicación",
+        "La maduración",
+        "La desilusión",
+        "La transformación del amor con el paso del tiempo"
+      ],
+      "tone_notes": "Íntimo, lírico y delicadamente psicológico en su primera parte; progresivamente más sobrio, desencantado y reflexivo conforme avanza el matrimonio. Tolstói observa con especial precisión cómo sentimientos que parecen absolutos pueden modificarse casi imperceptiblemente con la convivencia, el orgullo y el paso del tiempo.",
+      "fragment_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "León Tolstói, Семейное счастие, texto ruso y comentarios críticos de la Biblioteca Virtual Rusa (RVB).",
+        "Tolstoy.ru, cronología y edición de las obras completas.",
+        "Russkiy Vestnik, números 7 y 8 de 1859, primera publicación."
+      ],
+      "fragment_count": 15
     }
   ]
 }

@@ -6,7 +6,7 @@ activos, saludables y limitados a la red prevista.
 
 El piloto contiene 18 colecciones, 242 campos y 46 relaciones registradas en
 Directus. El catálogo actual incorpora 27 autores, 30 obras, 30 fuentes, 14
-hablantes, 364 temas, 655 frases y 655 originales con sus relaciones. El audio
+hablantes, 372 temas, 655 frases y 655 originales con sus relaciones. El audio
 sigue pendiente. El administrador inicial `paramorliterario@gmail.com` está
 creado y verificado.
 
@@ -277,8 +277,9 @@ ops/directus/test-phase4-profile-cutover.sh
 
 La última orden restaura la copia automática más reciente en un PostgreSQL
 efímero, sin red y sobre `tmpfs`; aplica allí la migración si la copia aún no la
-contiene y valida 23 autores públicos, 28 obras públicas, 364 temas y sus
-relaciones sin tocar la base activa.
+contiene y valida como mínimo la línea base de 23 autores públicos, 28 obras
+públicas, 364 temas y sus relaciones sin tocar la base activa. Las ampliaciones
+editoriales posteriores también deben superar esa restauración.
 
 Los dos contratos públicos actuales se comprueban desde Directus sin escribir en
 el repositorio:
@@ -323,9 +324,9 @@ node scripts/prepare-directus-profiles-publication.mjs \
 Las referencias históricas aceptadas —obras cuya persona autora no tiene ficha y
 frases cuya obra no tiene ficha— se muestran como advertencias. Un borrador no
 entra en el candidato; las frases que determinan `fragment_count` deben estar
-aprobadas, públicas, verificadas y revisadas. Hay 655 frases elegibles y 630
-asociadas a las 28 fichas de obra; las otras 25 pertenecen a *Cañas y barro* y
-*Felicidad conyugal*, cuyas fichas todavía no forman parte del contrato público.
+aprobadas, públicas, verificadas y revisadas. Hay 655 frases elegibles y 645
+asociadas a las 29 fichas de obra; las otras 10 pertenecen a *Cañas y barro*,
+cuya ficha todavía no forma parte del contrato público.
 
 El staging primero se simula con el UUID de vista previa:
 
