@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T03:16:40.355Z",
-  "quote_count": 655,
+  "generated_at": "2026-09-10T17:57:59.902Z",
+  "quote_count": 679,
   "quotes": [
     {
       "id": "quote-2",
@@ -11136,6 +11136,414 @@
         "text": "— Нет, я неправду говорил, что не жалею прошлого; нет, я жалею, я плачу о той прошедшей любви, которой уж нет и не может быть больше. Кто виноват в этом? не знаю. Осталась любовь, но не та, осталось ее место, но она вся выболела, нет уж в ней силы и сочности, остались воспоминания и благодарность, но...",
         "lang": "ru",
         "label": "Original ruso"
+      }
+    },
+    {
+      "id": "quote-657",
+      "legacy_index": 657,
+      "t": "El cielo estaba despejado —extraordinariamente despejado— y el centelleo de todas las estrellas parecía no ser sino los latidos de un solo cuerpo, acompasados por un pulso común.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "los latidos de un solo cuerpo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "The sky was clear—remarkably clear—and the twinkling of all the stars seemed to be but throbs of one body, timed by a common pulse.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-658",
+      "legacy_index": 658,
+      "t": "La poesía del movimiento es una expresión muy usada, y para disfrutar de la forma épica de ese placer es necesario permanecer sobre una colina a altas horas de la noche y, tras ensanchar primero la conciencia con la sensación de estar separado de la masa de la humanidad civilizada, que yace horizontal e indiferente a todo aquello, contemplar larga y tranquilamente tu majestuoso avance a través de las estrellas.\n\nDespués de semejante reconocimiento nocturno entre aquellos cúmulos astrales, desde lo alto, por encima de los lugares habituales del pensamiento y la visión, algunos hombres pueden sentirse elevados de pronto a una capacidad para la eternidad.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "tu majestuoso avance a través de las estrellas",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "The poetry of motion is a phrase much in use, and to enjoy the epic form of that gratification it is necessary to stand on a hill at a small hour of the night, and, first enlarging the consciousness with a sense of difference from the mass of civilized mankind, who are horizontal and disregardful of all such proceedings at this time, long and quietly watch your stately progress through the stars.\n\nAfter such a nocturnal reconnoitre among these astral clusters, aloft from the customary haunts of thought and vision, some men may feel raised to a capability for eternity at once.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-659",
+      "legacy_index": 659,
+      "t": "Por fin se llevó el objeto al regazo y desató el papel que lo envolvía; apareció un pequeño espejo basculante, en el que se contempló atentamente. Después entreabrió los labios y sonrió.\n\n[…]\n\nSe sonrojó ante sí misma y, al ver sonrojarse su reflejo, se sonrojó aún más.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "Se sonrojó ante sí misma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "At length she drew the article into her lap, and untied the paper covering; a small swing looking-glass was disclosed, in which she proceeded to survey herself attentively. Then she parted her lips and smiled.\n\n[…]\n\nShe blushed at herself, and seeing her reflection blush, blushed the more.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-660",
+      "legacy_index": 660,
+      "t": "El amor es una fuerza posible dentro de una debilidad real. El matrimonio transforma una distracción en un apoyo, cuyo poder debería ser —y felizmente a menudo lo es— directamente proporcional al grado de necedad que sustituye.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "El amor es una fuerza posible dentro de una debilidad real",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Love is a possible strength in an actual weakness. Marriage transforms a distraction into a support, the power of which should be, and happily often is, in direct proportion to the degree of imbecility it supplants.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-661",
+      "legacy_index": 661,
+      "t": "—Lo único que quería decirte era esto […] que todavía nadie me tiene por novia, en vez de tener una docena, como dijo mi tía. Odio que se me considere propiedad de los hombres de esa manera, aunque quizá algún día alguien llegue a tenerme.",
+      "a": "Bathsheba Everdene",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "Odio que se me considere propiedad de los hombres",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "What I meant to tell you was only this […] that nobody has got me yet as a sweetheart, instead of my having a dozen, as my aunt said; I hate to be thought men’s property in that way, though possibly I shall be had some day.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-662",
+      "legacy_index": 662,
+      "t": "—Bueno, lo que quiero decir es que no me importaría ser la novia en una boda, si pudiera serlo sin tener marido. Pero como una mujer no puede lucirse así por sí sola, no me casaré; al menos, todavía no.",
+      "a": "Bathsheba Everdene",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "ser la novia en una boda, si pudiera serlo sin tener marido",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Well, what I mean is that I shouldn’t mind being a bride at a wedding, if I could be one without having a husband. But since a woman can’t show off in that way by herself, I shan’t marry—at least yet.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-663",
+      "legacy_index": 663,
+      "t": "—Nunca —dijo el señor Oak con tanta seriedad que parecía, por la sola fuerza de sus palabras, atravesar directamente el arbusto y llegar hasta sus brazos—. Haré una cosa en esta vida, una cosa segura: amarte, anhelarte y seguir deseándote hasta que muera.",
+      "a": "Gabriel Oak",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "seguir deseándote hasta que muera",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Never,” said Mr. Oak, so earnestly that he seemed to be coming, by the force of his words, straight through the bush and into her arms. “I shall do one thing in this life—one thing certain—that is, love you, and long for you, and keep wanting you till I die.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-664",
+      "legacy_index": 664,
+      "t": "Puede haberse observado que no existe un camino regular para salir del amor como existe para entrar en él. Algunos consideran el matrimonio un atajo para salir, pero se sabe que ha fracasado.\n\nLa separación […] aunque eficaz con ciertos temperamentos, tiende en otros a idealizar al objeto ausente, sobre todo en aquellos cuyo afecto, por tranquilo y regular que sea, fluye profundo y prolongado.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "no existe un camino regular para salir del amor",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "It may have been observed that there is no regular path for getting out of love as there is for getting in. Some people look upon marriage as a short cut that way, but it has been known to fail. Separation […] though effectual with people of certain humours, is apt to idealize the removed object with others—notably those whose affection, placid and regular as it may be, flows deep and long.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-665",
+      "legacy_index": 665,
+      "t": "—Lo primero es que el administrador ha sido despedido por ladrón, y he decidido no tener administrador alguno, sino ocuparme de todo con mi propia cabeza y mis propias manos.\n\nLos hombres respiraron un aliento audible de asombro.",
+      "a": "Bathsheba Everdene",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "con mi propia cabeza y mis propias manos",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "The first is that the bailiff is dismissed for thieving, and that I have formed a resolution to have no bailiff at all, but to manage everything with my own head and hands.\n\nThe men breathed an audible breath of amazement.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-666",
+      "legacy_index": 666,
+      "t": "Hasta tal punto las ideas humanas sobre la probabilidad no son sino la sensación de que un precedente volverá a repetirse, que a menudo no se detienen a pensar si el hecho de que algo haya sucedido una vez no es, en muchos casos, precisamente la circunstancia que hace improbable su repetición.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "un precedente volverá a repetirse",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "So greatly are people’s ideas of probability a mere sense that precedent will repeat itself, that they often do not stop to think whether the fact of an event having once occurred is not in many cases the very circumstance which makes its repetition unlikely.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-667",
+      "legacy_index": 667,
+      "t": "Decidió no volver a interrumpir, ni con una mirada ni con un gesto, el curso estable de la vida de aquel hombre.\n\nPero rara vez se toma la decisión de evitar un mal hasta que este ha avanzado tanto que evitarlo resulta imposible.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "evitarlo resulta imposible",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "She resolved never again, by look or by sign, to interrupt the steady flow of this man’s life. But a resolution to avoid an evil is seldom framed till the evil is so far advanced as to make avoidance impossible.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-668",
+      "legacy_index": 668,
+      "t": "Las grandes ayudas para la idealización en el amor estaban allí presentes: observarla ocasionalmente desde la distancia y la ausencia de trato social con ella; familiaridad visual, extrañeza verbal.\n\nLos pequeños elementos humanos permanecían ocultos; las mezquindades que intervienen tan ampliamente en toda vida y acción terrenales quedaban disimuladas por la circunstancia fortuita de que el amante y la amada no se visitaran, y apenas llegaba a despertar en Boldwood la idea de que las lamentables realidades domésticas formaran parte de su vida, o de que ella, como todos los demás, tuviera momentos vulgares, en los que verla lo menos claramente posible equivalía a recordarla del modo más hermoso.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "familiaridad visual, extrañeza verbal",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "The great aids to idealization in love were present here: occasional observation of her from a distance, and the absence of social intercourse with her—visual familiarity, oral strangeness.\n\nThe smaller human elements were kept out of sight; the pettinesses that enter so largely into all earthly living and doing were disguised by the accident of lover and loved-one not being on visiting terms, and there was hardly awakened a thought in Boldwood that sorry household realities appertained to her, or that she, like all others, had moments of commonplace, when to be least plainly seen was to be most prettily remembered.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-669",
+      "legacy_index": 669,
+      "t": "Parece que los hombres toman esposa porque la posesión no es posible sin matrimonio, y que las mujeres aceptan marido porque el matrimonio no es posible sin posesión; con objetivos completamente distintos, el método es el mismo para ambos.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "con objetivos completamente distintos, el método es el mismo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "It appears that men take wives because possession is not possible without marriage, and that women accept husbands because marriage is not possible without possession; with totally differing aims the method is the same on both sides.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-670",
+      "legacy_index": 670,
+      "t": "La de Bathsheba era una naturaleza impulsiva bajo una apariencia deliberativa. Isabel en la mente y María Estuardo en el espíritu, realizaba a menudo acciones de la mayor temeridad con maneras de extrema discreción.\n\nMuchos de sus pensamientos eran silogismos perfectos; por desgracia, nunca pasaban de pensamientos. Solo unos pocos eran suposiciones irracionales; pero, desgraciadamente, eran los que con mayor frecuencia se convertían en actos.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "eran los que con mayor frecuencia se convertían en actos",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Bathsheba’s was an impulsive nature under a deliberative aspect. An Elizabeth in brain and a Mary Stuart in spirit, she often performed actions of the greatest temerity with a manner of extreme discretion. Many of her thoughts were perfect syllogisms; unluckily they always remained thoughts. Only a few were irrational assumptions; but, unfortunately, they were the ones which most frequently grew into deeds.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-671",
+      "legacy_index": 671,
+      "t": "La paz y la guerra se besan en sus horas de preparación: hoces, guadañas, tijeras y podaderas se mezclan con espadas, bayonetas y lanzas en su necesidad común de punta y filo.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "La paz y la guerra se besan",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Peace and war kiss each other at their hours of preparation, sickles, scythes, shears, and pruning-hooks, mingling with swords, bayonets, and lances, in their common necessity for point and edge.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-672",
+      "legacy_index": 672,
+      "t": "—Puede pensar que un hombre es tonto por querer una simple palabra, solo un «buenos días». Quizá lo sea; no lo sé. Pero usted nunca ha sido un hombre mirando a una mujer, siendo esa mujer usted misma.",
+      "a": "Sargento Troy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "siendo esa mujer usted misma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "You may think a man foolish to want a mere word—just a good morning. Perhaps he is—I don’t know. But you have never been a man looking upon a woman, and that woman yourself.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-673",
+      "legacy_index": 673,
+      "t": "Bathsheba amaba a Troy del modo en que solo aman las mujeres autosuficientes cuando abandonan su autosuficiencia.\n\nCuando una mujer fuerte arroja temerariamente su fuerza, queda peor que una mujer débil que nunca tuvo fuerza alguna que arrojar. Una de las causas de su incapacidad es la novedad de la situación. Nunca ha tenido práctica en sacar el mejor partido de semejante estado.\n\nLa debilidad es doblemente débil cuando es nueva.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "La debilidad es doblemente débil cuando es nueva",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Bathsheba loved Troy in the way that only self-reliant women love when they abandon their self-reliance. When a strong woman recklessly throws away her strength she is worse than a weak woman who has never had any strength to throw away. One source of her inadequacy is the novelty of the occasion. She has never had practice in making the best of such a condition. Weakness is doubly weak by being new.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-674",
+      "legacy_index": 674,
+      "t": "Si sus pensamientos más extremos en aquella dirección se hubieran expresado con claridad —y ella misma nunca llegó a formularlos así—, se habrían reducido únicamente a esto: que sentía que sus impulsos eran guías más agradables que su prudencia.\n\nSu amor era entero como el de un niño y, aunque cálido como el verano, era fresco como la primavera.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "sus impulsos eran guías más agradables que su prudencia",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Had her utmost thoughts in this direction been distinctly worded (and by herself they never were) they would only have amounted to such a matter as that she felt her impulses to be pleasanter guides than her discretion. Her love was entire as a child’s, and though warm as summer it was fresh as spring.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-675",
+      "legacy_index": 675,
+      "t": "Y los defectos de Troy yacían muy abajo, fuera del alcance de la mirada de una mujer, mientras que sus adornos estaban en la misma superficie; contrastaba así con el poco agraciado Oak, cuyos defectos eran patentes hasta para el más ciego y sus virtudes eran como metales en una mina.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "sus virtudes eran como metales en una mina",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "And Troy’s deformities lay deep down from a woman’s vision, whilst his embellishments were upon the very surface; thus contrasting with homely Oak, whose defects were patent to the blindest, and whose virtues were as metals in a mine.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-676",
+      "legacy_index": 676,
+      "t": "La diferencia entre amor y respeto se mostraba claramente en su conducta. Bathsheba había hablado con la mayor libertad a Liddy de su interés por Boldwood, pero sobre Troy solo había conversado con su propio corazón.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "La diferencia entre amor y respeto",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "The difference between love and respect was markedly shown in her conduct. Bathsheba had spoken of her interest in Boldwood with the greatest freedom to Liddy, but she had only communed with her own heart concerning Troy.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-677",
+      "legacy_index": 677,
+      "t": "Es noble, aunque quizá poco prometedor, aquel amor al que ni siquiera el temor de provocar aversión en el pecho de la persona amada logra disuadir de combatir sus errores.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "combatir sus errores",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "That is a noble though perhaps an unpromising love which not even the fear of breeding aversion in the bosom of the one beloved can deter from combating his or her errors.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-678",
+      "legacy_index": 678,
+      "t": "Llegó entonces un tercer relámpago. En las vastas concavidades del firmamento se desarrollaban maniobras de la clase más extraordinaria.\n\nEl relámpago era ahora de color plata y resplandecía en los cielos como un ejército cubierto de armaduras. Los retumbos se convirtieron en estrépito.\n\n[…]\n\nCada seto, arbusto y árbol aparecía tan nítido como en un grabado de líneas.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "como un ejército cubierto de armaduras",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Then there came a third flash. Manœuvres of a most extraordinary kind were going on in the vast firmamental hollows overhead. The lightning now was the colour of silver, and gleamed in the heavens like a mailed army. Rumbles became rattles. […] Every hedge, bush, and tree was distinct as in a line engraving.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-679",
+      "legacy_index": 679,
+      "t": "—No lo sé; al menos, no puedo decírselo. Es difícil para una mujer definir sus sentimientos en un lenguaje creado principalmente por los hombres para expresar los suyos.",
+      "a": "Bathsheba Everdene",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "un lenguaje creado principalmente por los hombres",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "I don’t know—at least, I cannot tell you. It is difficult for a woman to define her feelings in language which is chiefly made by men to express theirs.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-680",
+      "legacy_index": 680,
+      "t": "El suyo era ese afecto sustancial que surge —si es que surge alguna vez— cuando dos personas reunidas comienzan por conocer primero los lados más ásperos del carácter del otro y solo más adelante los mejores; el romance crece en los intersticios de una masa de dura realidad prosaica.",
+      "a": "Thomas Hardy",
+      "obra": "Lejos del mundanal ruido, Thomas Hardy",
+      "highlight": "el romance crece en los intersticios de una masa de dura realidad prosaica",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-thomas-hardy",
+      "workId": "work-lejos-del-mundanal-ruido",
+      "original": {
+        "text": "Theirs was that substantial affection which arises (if any arises at all) when the two who are thrown together begin first by knowing the rougher sides of each other’s character, and not the best till further on, the romance growing up in the interstices of a mass of hard prosaic reality.",
+        "lang": "en",
+        "label": "Original inglés"
       }
     }
   ]

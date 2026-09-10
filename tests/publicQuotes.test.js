@@ -89,12 +89,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 655 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 679 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 655);
-  assert.equal(quotes.length, 655);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 655);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 655);
+  const quotes = validatePublicQuotesDocument(document, 679);
+  assert.equal(quotes.length, 679);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 679);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 679);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -241,6 +241,11 @@ test('public/data/quotes.json cumple el contrato público y contiene 655 frases'
     'quote-642', 'quote-643', 'quote-644', 'quote-645', 'quote-646',
     'quote-647', 'quote-648', 'quote-649', 'quote-650', 'quote-651',
     'quote-652', 'quote-653', 'quote-654', 'quote-655', 'quote-656',
+    'quote-657', 'quote-658', 'quote-659', 'quote-660', 'quote-661',
+    'quote-662', 'quote-663', 'quote-664', 'quote-665', 'quote-666',
+    'quote-667', 'quote-668', 'quote-669', 'quote-670', 'quote-671',
+    'quote-672', 'quote-673', 'quote-674', 'quote-675', 'quote-676',
+    'quote-677', 'quote-678', 'quote-679', 'quote-680',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -476,6 +481,51 @@ test('Felicidad conyugal publica los quince fragmentos rusos tras la segunda aud
   assert.match(workProfile?.context_notes, /Russkiy Vestnik \(El Mensajero Ruso\)/);
   assert.match(workProfile?.tone_notes, /progresivamente más sobrio, desencantado y reflexivo/);
   assert.equal(workProfile?.information_sources.length, 3);
+});
+
+test('Lejos del mundanal ruido publica 24 fragmentos de la primera edición de 1874', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const hardyQuotes = document.quotes.filter(quote => quote.workId === 'work-lejos-del-mundanal-ruido');
+
+  assert.equal(hardyQuotes.length, 24);
+  assert.deepEqual(
+    hardyQuotes.map(quote => quote.id),
+    Array.from({ length: 24 }, (_, index) => `quote-${657 + index}`),
+  );
+  assert.equal(hardyQuotes.every(quote => (
+    quote.obra === 'Lejos del mundanal ruido, Thomas Hardy'
+    && quote.t.includes(quote.highlight)
+    && quote.original?.lang === 'en'
+    && quote.original?.label === 'Original inglés'
+    && quote.original?.text
+  )), true);
+  assert.equal(profiles.works.some(profile => profile.work_id === 'work-lejos-del-mundanal-ruido'), false);
+  assert.equal(profiles.authors.some(profile => profile.author_id === 'author-thomas-hardy'), false);
+
+  assert.equal(quotes.get('quote-658').highlight, 'tu majestuoso avance a través de las estrellas');
+  assert.match(quotes.get('quote-658').t, /desde lo alto, por encima de los lugares habituales/);
+  assert.match(quotes.get('quote-663').original.text, /said Mr\. Oak.*into her arms/s);
+  assert.doesNotMatch(quotes.get('quote-663').original.text, /\[…\]/);
+  assert.equal(quotes.get('quote-663').a, 'Gabriel Oak');
+  assert.match(quotes.get('quote-665').t, /respiraron un aliento audible de asombro/);
+  assert.match(quotes.get('quote-668').original.text, /sorry household realities appertained to her/);
+  assert.match(quotes.get('quote-670').t, /nunca pasaban de pensamientos/);
+  assert.match(quotes.get('quote-670').t, /eran los que con mayor frecuencia se convertían en actos/);
+  assert.equal(quotes.get('quote-672').a, 'Sargento Troy');
+  assert.match(quotes.get('quote-674').t, /ella misma nunca llegó a formularlos así/);
+  assert.match(quotes.get('quote-675').original.text, /^And Troy’s deformities/);
+  assert.match(quotes.get('quote-675').t, /^Y los defectos de Troy/);
+  assert.equal(quotes.get('quote-679').a, 'Bathsheba Everdene');
+  for (const quote of hardyQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
 });
 
 test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda auditoría', async () => {
