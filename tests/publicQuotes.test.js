@@ -488,6 +488,8 @@ test('Lejos del mundanal ruido publica 24 fragmentos de la primera edición de 1
   const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
   const hardyQuotes = document.quotes.filter(quote => quote.workId === 'work-lejos-del-mundanal-ruido');
+  const authorProfile = profiles.authors.find(profile => profile.author_id === 'author-thomas-hardy');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-lejos-del-mundanal-ruido');
 
   assert.equal(hardyQuotes.length, 24);
   assert.deepEqual(
@@ -501,8 +503,58 @@ test('Lejos del mundanal ruido publica 24 fragmentos de la primera edición de 1
     && quote.original?.label === 'Original inglés'
     && quote.original?.text
   )), true);
-  assert.equal(profiles.works.some(profile => profile.work_id === 'work-lejos-del-mundanal-ruido'), false);
-  assert.equal(profiles.authors.some(profile => profile.author_id === 'author-thomas-hardy'), false);
+  assert.equal(authorProfile?.display_name, 'Thomas Hardy');
+  assert.equal(authorProfile?.birth_year, 1840);
+  assert.equal(authorProfile?.death_year, 1928);
+  assert.equal(authorProfile?.portrait?.path, 'public/images/authors/thomas-hardy.webp');
+  assert.equal(authorProfile?.portrait?.rights, 'Dominio público; Public Domain Mark 1.0');
+  assert.match(authorProfile?.bio_short, /Wessex de sus novelas y poemas/);
+  assert.deepEqual(authorProfile?.themes, [
+    'La naturaleza',
+    'El mundo rural',
+    'El trabajo',
+    'El azar',
+    'El destino',
+    'El amor',
+    'El deseo',
+    'El matrimonio',
+    'La pérdida',
+    'La muerte',
+    'El sufrimiento',
+    'Las diferencias sociales',
+    'La relación entre individuo y sociedad',
+    'La tradición',
+    'La modernidad',
+    'La memoria',
+    'La responsabilidad',
+    'La fe y la duda',
+  ]);
+  assert.equal(workProfile?.author_id, 'author-thomas-hardy');
+  assert.equal(workProfile?.original_title, 'Far from the Madding Crowd');
+  assert.equal(workProfile?.publication_year, 1874);
+  assert.equal(workProfile?.language, 'Inglés');
+  assert.equal(workProfile?.fragment_count, 24);
+  assert.deepEqual(workProfile?.themes, [
+    'La independencia femenina',
+    'El amor',
+    'La elección',
+    'El deseo',
+    'La obsesión',
+    'Los celos',
+    'El matrimonio',
+    'La responsabilidad',
+    'El orgullo',
+    'El azar',
+    'La pérdida',
+    'El trabajo',
+    'Las diferencias sociales',
+    'La naturaleza',
+    'El mundo rural',
+    'La maduración emocional',
+  ]);
+  assert.match(workProfile?.context_notes, /The Cornhill Magazine.*Wessex/s);
+  assert.match(workProfile?.tone_notes, /Lírico, rural, irónico y progresivamente trágico/);
+  assert.equal(workProfile?.information_sources.length, 4);
 
   assert.equal(quotes.get('quote-658').highlight, 'tu majestuoso avance a través de las estrellas');
   assert.match(quotes.get('quote-658').t, /desde lo alto, por encima de los lugares habituales/);

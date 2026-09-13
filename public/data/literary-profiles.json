@@ -1071,6 +1071,55 @@
         "rights": "Dominio público; obra anónima publicada hace más de setenta años",
         "object_position": "50% 30%"
       }
+    },
+    {
+      "author_id": "author-thomas-hardy",
+      "display_name": "Thomas Hardy",
+      "birth_year": 1840,
+      "death_year": 1928,
+      "country": "Reino Unido —Inglaterra—",
+      "language": "Inglés",
+      "period": "Segunda mitad del siglo XIX y primeras décadas del XX; su trayectoria enlaza la época victoriana con el comienzo de la modernidad literaria y atraviesa la industrialización rural, la crisis de las certezas religiosas y la Primera Guerra Mundial.",
+      "movement": "Realismo victoriano y naturalismo, con una prosa de fuerte dimensión lírica, psicológica y trágica. Su obra anticipa sensibilidades modernas por su atención al azar, la alienación, la presión social y la inestabilidad de las certezas morales y religiosas.",
+      "bio_short": "Thomas Hardy nació en 1840 en Higher Bockhampton, una pequeña aldea cercana a Dorchester, en el condado de Dorset. Su padre era constructor y músico aficionado; su madre, Jemima, alentó su educación y su curiosidad intelectual. El paisaje de brezales, bosques, granjas y pueblos que conoció durante la infancia dejó una huella decisiva en su imaginación y se transformó después en el Wessex de sus novelas y poemas.\n\nA los dieciséis años comenzó como aprendiz del arquitecto John Hicks en Dorchester. En 1862 se trasladó a Londres, donde trabajó como dibujante especializado en arquitectura eclesiástica y aprovechó la vida cultural de la ciudad, mientras escribía poesía sin encontrar todavía una vía de publicación. Regresó a Dorset en 1867 por motivos de salud y empezó a orientar su carrera hacia la narrativa. Su primera novela no llegó a publicarse, pero Desperate Remedies apareció en 1871, seguida de Under the Greenwood Tree y A Pair of Blue Eyes.\n\nEl gran punto de inflexión llegó con Lejos del mundanal ruido. Leslie Stephen, editor de The Cornhill Magazine, encargó la novela y la publicó por entregas en 1874. Su éxito permitió a Hardy abandonar gradualmente la arquitectura, casarse con Emma Lavinia Gifford y dedicarse profesionalmente a la literatura. En esta obra apareció por primera vez el nombre de Wessex para designar un territorio ficticio basado en el sur y oeste de Inglaterra: un espacio minuciosamente reconocible y, al mismo tiempo, transformado por la memoria, el mito y la invención.\n\nDurante las dos décadas siguientes escribió algunas de las novelas fundamentales de la literatura inglesa, entre ellas El regreso del nativo, El alcalde de Casterbridge, Tess, la de los d’Urberville y Jude el Oscuro. Hardy observó la vida rural sin idealizarla: registró sus trabajos, hablas y costumbres, pero también el avance de la modernidad, las desigualdades de clase, las limitaciones impuestas a las mujeres y la fragilidad de quienes chocan con las convenciones sociales. El azar, los errores de juicio y una naturaleza hermosa pero indiferente adquieren en sus historias una fuerza casi trágica.\n\nTras la recepción polémica de sus últimas novelas dejó de publicar ficción extensa y concentró su actividad en la poesía, que había considerado siempre su verdadera vocación. Desde Wessex Poems, de 1898, hasta sus últimos libros desarrolló una voz directa, irregular y moderna, atenta a la memoria, la guerra, el paso del tiempo y la pérdida. Después de la muerte de Emma en 1912 escribió algunos de sus poemas amorosos más intensos. Murió en 1928 en Max Gate, la casa que él mismo había diseñado cerca de Dorchester. Sus cenizas fueron depositadas en el Rincón de los Poetas de la abadía de Westminster y su corazón fue enterrado en Stinsford, junto a las tumbas familiares.",
+      "bio_long": null,
+      "themes": [
+        "La naturaleza",
+        "El mundo rural",
+        "El trabajo",
+        "El azar",
+        "El destino",
+        "El amor",
+        "El deseo",
+        "El matrimonio",
+        "La pérdida",
+        "La muerte",
+        "El sufrimiento",
+        "Las diferencias sociales",
+        "La relación entre individuo y sociedad",
+        "La tradición",
+        "La modernidad",
+        "La memoria",
+        "La responsabilidad",
+        "La fe y la duda"
+      ],
+      "tone_notes": "Lírico, observador e irónico, con una inclinación creciente hacia lo sombrío y lo trágico. Hardy combina precisión topográfica, atención al habla y al trabajo rural, penetración psicológica y una conciencia persistente de que el azar o una decisión mínima pueden alterar una vida entera.",
+      "why_in_paramo": null,
+      "information_sources": [
+        "Thomas Hardy Society, Life of Thomas Hardy y cronología biográfica.",
+        "Thomas Hardy Society, estudios sobre las novelas de Wessex y Far from the Madding Crowd.",
+        "Poetry Foundation, biografía y panorama de la obra poética de Thomas Hardy.",
+        "National Portrait Gallery y Wikimedia Commons, retrato de Thomas Hardy por W. & D. Downey, 1894."
+      ],
+      "portrait": {
+        "path": "public/images/authors/thomas-hardy.webp",
+        "alt": "Retrato fotográfico de Thomas Hardy sentado",
+        "caption": "Thomas Hardy, 1894",
+        "credit": "W. & D. Downey; National Portrait Gallery, Londres",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Thomas-Hardy.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 30%"
+      }
     }
   ],
   "works": [
@@ -2121,6 +2170,47 @@
         "Russkiy Vestnik, números 7 y 8 de 1859, primera publicación."
       ],
       "fragment_count": 15
+    },
+    {
+      "work_id": "work-lejos-del-mundanal-ruido",
+      "title": "Lejos del mundanal ruido",
+      "display_title": "Lejos del mundanal ruido",
+      "original_title": "Far from the Madding Crowd",
+      "author_id": "author-thomas-hardy",
+      "publication_year": 1874,
+      "genre": "Novela rural, psicológica y sentimental; realismo victoriano con elementos trágicos y pastorales.",
+      "language": "Inglés",
+      "summary_short": "Bathsheba Everdene es una joven independiente que hereda una granja y decide administrarla personalmente. A su alrededor aparecen tres hombres muy distintos: Gabriel Oak, un pastor paciente y constante; William Boldwood, un propietario respetable cuya atracción hacia Bathsheba se convierte en obsesión; y el sargento Francis Troy, seductor, impulsivo y peligroso.\n\nA través de estas relaciones, Hardy construye algo más que una historia amorosa: examina el deseo, la elección, el orgullo y las consecuencias imprevistas de nuestras decisiones. Bathsheba intenta conservar su independencia mientras descubre que los vínculos sentimentales pueden transformar radicalmente una vida.",
+      "summary_long": null,
+      "context_notes": "La novela apareció primero por entregas en The Cornhill Magazine durante 1874 y se publicó como libro ese mismo año. Fue la obra que consolidó la carrera de Hardy y la primera en la que utilizó el nombre de Wessex para el territorio ficticio inspirado en el sur y oeste rural de Inglaterra.\n\nLa historia refleja una sociedad victoriana en transformación, donde las antiguas formas de vida agrícola empezaban a convivir con cambios económicos y sociales más amplios. La posición de Bathsheba resulta especialmente significativa: una mujer joven que dirige por sí misma una explotación agrícola desafía varias de las expectativas de género de su época.",
+      "themes": [
+        "La independencia femenina",
+        "El amor",
+        "La elección",
+        "El deseo",
+        "La obsesión",
+        "Los celos",
+        "El matrimonio",
+        "La responsabilidad",
+        "El orgullo",
+        "El azar",
+        "La pérdida",
+        "El trabajo",
+        "Las diferencias sociales",
+        "La naturaleza",
+        "El mundo rural",
+        "La maduración emocional"
+      ],
+      "tone_notes": "Lírico, rural, irónico y progresivamente trágico. Hardy combina la belleza del paisaje y el humor de la vida campesina con pérdidas, accidentes y pasiones destructivas. La naturaleza acompaña constantemente a los personajes, pero no actúa como refugio idealizado: puede ser fértil y hermosa, pero también indiferente e imprevisible.",
+      "fragment_notes": "Los 24 fragmentos se cotejaron con la primera edición de 1874 reproducida por Project Gutenberg en el eBook #27, usando Wikisource como fuente de control. Se excluyó la revisión de 1895. Doce traducciones se aprobaron sin cambios y doce recibieron correcciones de fidelidad, límites o simetría de recortes.",
+      "why_in_paramo": null,
+      "information_sources": [
+        "Thomas Hardy, Far from the Madding Crowd, primera edición, Smith, Elder & Co., 1874; Project Gutenberg eBook #27.",
+        "Wikisource, Far from the Madding Crowd, edición de 1874, usada como fuente de control textual.",
+        "Thomas Hardy Society, documentación sobre la publicación de la novela y el Wessex literario.",
+        "Cambridge University Press, estudios sobre Bathsheba Everdene, género y sociedad victoriana."
+      ],
+      "fragment_count": 24
     }
   ]
 }
