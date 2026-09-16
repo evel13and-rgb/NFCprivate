@@ -588,8 +588,11 @@ test('Lejos del mundanal ruido publica 24 fragmentos de la primera edición de 1
 
 test('La casa Thüringer publica 26 fragmentos franceses tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
   const istratiQuotes = document.quotes.filter(quote => quote.workId === 'work-la-casa-thuringer');
+  const authorProfile = profiles.authors.find(profile => profile.author_id === 'author-panait-istrati');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-la-casa-thuringer');
 
   assert.equal(istratiQuotes.length, 26);
   assert.deepEqual(
@@ -619,6 +622,46 @@ test('La casa Thüringer publica 26 fragmentos franceses tras la segunda auditor
   assert.match(quotes.get('quote-699').t, /^Pues, en cuanto/);
   assert.match(quotes.get('quote-703').t, /se dividían en ricos y pobres y libraban entre sí/);
   assert.match(quotes.get('quote-705').t, /^Además, conservaban/);
+  assert.equal(authorProfile?.display_name, 'Panaït Istrati');
+  assert.equal(authorProfile?.birth_year, 1884);
+  assert.equal(authorProfile?.death_year, 1935);
+  assert.equal(authorProfile?.country, 'Rumanía');
+  assert.match(authorProfile?.language, /Rumano como lengua materna.*francés/s);
+  assert.match(authorProfile?.bio_short, /Romain Rolland.*Unión Soviética.*Bucarest en 1935/s);
+  assert.deepEqual(authorProfile?.themes, [
+    'La pobreza',
+    'La amistad',
+    'La solidaridad',
+    'El trabajo',
+    'La injusticia social',
+    'La libertad',
+    'La explotación',
+    'El viaje',
+    'La marginalidad',
+    'La dignidad',
+    'El deseo',
+    'El amor',
+    'La violencia política',
+    'La traición a los ideales',
+    'La fraternidad',
+    'El conflicto entre convicciones abstractas y experiencia humana',
+  ]);
+  assert.equal(authorProfile?.portrait?.path, 'public/images/authors/panait-istrati.webp');
+  assert.equal(authorProfile?.portrait?.caption, 'Panait Istrati, 1927');
+  assert.equal(authorProfile?.portrait?.rights, 'Dominio público; Public Domain Mark 1.0');
+  assert.match(authorProfile?.portrait?.source_url, /commons[.]wikimedia[.]org/);
+  const portrait = await readFile(new URL('../public/images/authors/panait-istrati.webp', import.meta.url));
+  assert.ok(portrait.byteLength > 10_000);
+  assert.equal(workProfile?.original_title, 'La Maison Thüringer');
+  assert.equal(workProfile?.publication_year, 1933);
+  assert.equal(workProfile?.language, 'Francés');
+  assert.equal(workProfile?.fragment_count, 26);
+  assert.match(workProfile?.genre, /Vie d’Adrien Zograffi/);
+  assert.match(workProfile?.context_notes, /Brăila.*justicia económica coincide siempre con la justicia moral/s);
+  assert.match(workProfile?.tone_notes, /Vital, apasionado, crítico y profundamente humano/);
+  assert.match(workProfile?.fragment_notes, /Catorce traducciones.*doce.*fragmentos 8 y 14/s);
+  assert.match(workProfile?.why_in_paramo, /más preguntas que respuestas/);
+  assert.equal(workProfile?.information_sources.length, 5);
 
   const cutIds = istratiQuotes
     .filter(quote => quote.t.includes('[…]') || quote.original.text.includes('[…]'))

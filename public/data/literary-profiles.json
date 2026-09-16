@@ -1120,6 +1120,54 @@
         "rights": "Dominio público; Public Domain Mark 1.0",
         "object_position": "50% 30%"
       }
+    },
+    {
+      "author_id": "author-panait-istrati",
+      "display_name": "Panaït Istrati",
+      "birth_year": 1884,
+      "death_year": 1935,
+      "country": "Rumanía",
+      "language": "Rumano como lengua materna; escribió gran parte de su obra literaria en francés y posteriormente adaptó personalmente varios de sus libros al rumano.",
+      "period": "Primer tercio del siglo XX; últimos años del Reino de Rumanía anterior a la Primera Guerra Mundial, periodo de entreguerras y primeras décadas de expansión de los movimientos socialistas y comunistas europeos.",
+      "movement": "Narrativa social y autobiográfica; realismo de raíz popular, con elementos picarescos y de novela de formación. Buena parte de su obra se construye a partir de experiencias propias transformadas en ficción, especialmente mediante su alter ego Adrian Zograffi.",
+      "bio_short": "Panait Istrati nació en Brăila, puerto rumano del Danubio, hijo de una lavandera rumana y de un contrabandista griego al que prácticamente no conoció. Tuvo poca educación formal y comenzó muy joven a ganarse la vida en oficios diversos: aprendiz, vendedor, trabajador portuario y otros empleos manuales. Fue además un lector voraz y desarrolló una existencia itinerante que lo llevó por Rumanía, Egipto, Constantinopla, Italia, Francia y Suiza. Esa experiencia entre trabajadores, emigrantes, pobres y aventureros se convirtió después en la materia esencial de sus relatos.\n\nEntró pronto en contacto con el movimiento socialista rumano y colaboró con prensa obrera. Durante una estancia en Suiza, mientras trataba su tuberculosis, profundizó en el francés y descubrió la obra de Romain Rolland. Tras un intento de suicidio en Niza en 1921, consiguió finalmente establecer contacto con él; Rolland reconoció su talento, lo animó a escribir y contribuyó decisivamente al comienzo de su carrera literaria en Francia. Su narrativa alcanzó rápidamente notoriedad gracias a obras como Kyra Kyralina, Codine y los distintos ciclos protagonizados por Adrian Zograffi.\n\nIstrati fue durante un tiempo simpatizante entusiasta de la Revolución rusa, pero sus viajes por la Unión Soviética modificaron radicalmente su visión. En 1929 publicó un testimonio muy crítico con el régimen soviético y sufrió como consecuencia una fuerte campaña de rechazo entre antiguos aliados políticos. Esa ruptura resulta importante para comprenderlo: Istrati mantuvo una profunda sensibilidad hacia la injusticia social, pero desconfiaba de cualquier ideología cuando exigía sacrificar la libertad, la compasión o la experiencia concreta de las personas.\n\nSu literatura posee por eso una mezcla muy característica de rebeldía, ternura y experiencia vivida. Sus personajes son trabajadores, vagabundos, marginados, comerciantes, mujeres pobres o jóvenes que descubren que la realidad moral es más complicada que cualquier doctrina. Istrati murió de tuberculosis en Bucarest en 1935, después de haber pasado buena parte de su vida desplazándose entre países, lenguas y posiciones políticas.",
+      "bio_long": null,
+      "themes": [
+        "La pobreza",
+        "La amistad",
+        "La solidaridad",
+        "El trabajo",
+        "La injusticia social",
+        "La libertad",
+        "La explotación",
+        "El viaje",
+        "La marginalidad",
+        "La dignidad",
+        "El deseo",
+        "El amor",
+        "La violencia política",
+        "La traición a los ideales",
+        "La fraternidad",
+        "El conflicto entre convicciones abstractas y experiencia humana"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Muzeul Brăilei «Carol I», Casa Memorială Panait Istrati: biografía, cronología y bibliografía del autor.",
+        "Université Côte d’Azur, biblioteca digital Humazur: fondo documental dedicado a Panaït Istrati.",
+        "Enciclopedia Treccani, voz «Istrati, Panait».",
+        "Larousse, Encyclopédie: «Panait Istrati».",
+        "Wikimedia Commons, retrato fotográfico de Panait Istrati publicado en 1927."
+      ],
+      "portrait": {
+        "path": "public/images/authors/panait-istrati.webp",
+        "alt": "Retrato fotográfico de Panait Istrati",
+        "caption": "Panait Istrati, 1927",
+        "credit": "Fotógrafo no identificado; imagen publicada por Mitzpe, Jerusalén; Wikimedia Commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panait_Istrati_2_(cropped).jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 30%"
+      }
     }
   ],
   "works": [
@@ -2211,6 +2259,47 @@
         "Cambridge University Press, estudios sobre Bathsheba Everdene, género y sociedad victoriana."
       ],
       "fragment_count": 24
+    },
+    {
+      "work_id": "work-la-casa-thuringer",
+      "title": "La casa Thüringer",
+      "display_title": "La casa Thüringer",
+      "original_title": "La Maison Thüringer",
+      "author_id": "author-panait-istrati",
+      "publication_year": 1933,
+      "genre": "Novela de formación, social y autobiográfica; primera parte del ciclo Vie d’Adrien Zograffi.",
+      "language": "Francés",
+      "summary_short": "Adrian Zograffi, alter ego literario de Istrati, tiene diecisiete años cuando comienza a trabajar como chico de los recados en la casa de la familia Thüringer, unos armadores acomodados de Brăila. Desde esa posición entra en contacto con un mundo de empresarios, trabajadores portuarios, intereses económicos y desigualdades que hasta entonces conocía solo parcialmente.\n\nSu participación en una huelga de estibadores y su contacto con la corrupción política y la prensa lo obligan a revisar sus primeras certezas sobre ricos, pobres y justicia social. Al mismo tiempo descubre el deseo y distintas formas de amor. La novela sigue así su paso de una visión idealista del mundo hacia una conciencia mucho más incómoda de sus contradicciones.",
+      "summary_long": null,
+      "context_notes": "La novela está ambientada en la Brăila de comienzos del siglo XX, un importante puerto del Danubio donde el comercio y la industrialización estaban transformando las relaciones sociales y laborales. Istrati utiliza ese escenario para mostrar el choque entre una sociedad tradicional y un nuevo mundo dominado por empresas, capital, prensa, huelgas y organización obrera.\n\nLa historia tiene una fuerte base autobiográfica y forma parte del ciclo dedicado a Adrian Zograffi. Istrati había conocido personalmente el trabajo portuario, el movimiento socialista y las luchas obreras. Pero la novela evita una división sencilla entre «buenos pobres» y «malos ricos»: Adrian descubre que una victoria social puede producir nuevas víctimas y comienza a preguntarse si la justicia económica coincide siempre con la justicia moral.",
+      "themes": [
+        "La injusticia social",
+        "El trabajo",
+        "La lucha obrera",
+        "La pobreza",
+        "La solidaridad",
+        "La diferencia de clases",
+        "La corrupción política",
+        "La prensa",
+        "La violencia",
+        "El idealismo",
+        "La formación moral",
+        "El deseo",
+        "El amor",
+        "La amistad",
+        "El conflicto entre justicia social y responsabilidad individual"
+      ],
+      "tone_notes": "Vital, apasionado, crítico y profundamente humano, con humor y ternura incluso cuando aborda explotación, pobreza o violencia. La mirada juvenil de Adrian permite que el mundo aparezca primero lleno de certezas y que esas certezas se vayan complicando a medida que descubre las consecuencias reales de sus actos.",
+      "fragment_notes": "Los 26 fragmentos se cotejaron con el texto francés publicado por entregas en La Revue de Paris en 1932 y conservado en Wikisource. Catorce traducciones se aprobaron sin cambios y doce recibieron correcciones mínimas de fidelidad. Solo los fragmentos 8 y 14 contienen recortes internos, señalados simétricamente en francés y español.",
+      "why_in_paramo": "Istrati no predica desde fuera: Adrian entra en las luchas sociales creyendo comprenderlas y sale de ellas con más preguntas que respuestas. Ese desengaño sin cinismo es característico del autor y convierte la novela en una exploración especialmente humana de la distancia entre los ideales y sus consecuencias.",
+      "information_sources": [
+        "Panait Istrati, La Maison Thüringer, Rieder, París, 1933.",
+        "Panait Istrati, Casa Thüringer, versión rumana del autor, Cartea Românească, 1934.",
+        "Muzeul Brăilei «Carol I», Casa Memorială Panait Istrati: bibliografía del ciclo Vie d’Adrien Zograffi.",
+        "Université Côte d’Azur, biblioteca digital Humazur: fondo Panaït Istrati y documentación sobre La Maison Thüringer.",
+        "Editorial Funambulista, La casa Thüringer, traducción de Ignacio de Llorens, 2025."
+      ],
+      "fragment_count": 26
     }
   ]
 }
