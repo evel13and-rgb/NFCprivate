@@ -5,8 +5,8 @@ Esta carpeta define el piloto reproducible que se inicializó el 20 de agosto de
 activos, saludables y limitados a la red prevista.
 
 El piloto contiene 18 colecciones, 242 campos y 46 relaciones registradas en
-Directus. El catálogo actual incorpora 28 autores, 31 obras, 31 fuentes, 17
-hablantes, 377 temas, 679 frases y 679 originales con sus relaciones. El audio
+Directus. El catálogo actual incorpora 29 autores, 32 obras, 32 fuentes, 17
+hablantes, 377 temas, 705 frases y 705 originales con sus relaciones. El audio
 sigue pendiente. El administrador inicial `paramorliterario@gmail.com` está
 creado y verificado.
 
@@ -324,9 +324,10 @@ node scripts/prepare-directus-profiles-publication.mjs \
 Las referencias históricas aceptadas —obras cuya persona autora no tiene ficha y
 frases cuya obra no tiene ficha— se muestran como advertencias. Un borrador no
 entra en el candidato; las frases que determinan `fragment_count` deben estar
-aprobadas, públicas, verificadas y revisadas. Hay 679 frases elegibles y 669
-asociadas a las 30 fichas de obra; las otras 10 pertenecen a *Cañas y barro*,
-cuya ficha todavía no forma parte del contrato público.
+aprobadas, públicas, verificadas y revisadas. Hay 705 frases elegibles y 669
+asociadas a las 30 fichas de obra; las otras 36 pertenecen a *Cañas y barro*
+(10) y *La casa Thüringer* (26), cuyas fichas todavía no forman parte del
+contrato público.
 
 El staging primero se simula con el UUID de vista previa:
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-10T17:57:59.902Z",
-  "quote_count": 679,
+  "generated_at": "2026-09-16T18:42:34.009Z",
+  "quote_count": 705,
   "quotes": [
     {
       "id": "quote-2",
@@ -11544,6 +11544,448 @@
         "text": "Theirs was that substantial affection which arises (if any arises at all) when the two who are thrown together begin first by knowing the rougher sides of each other’s character, and not the best till further on, the romance growing up in the interstices of a mass of hard prosaic reality.",
         "lang": "en",
         "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-681",
+      "legacy_index": 681,
+      "t": "La miseria reinaba entonces en aquella familia, pero Adrien ya había observado que, entre los alemanes, la miseria podía ser digna. Ni ropas rotas ni sucias, como se veían entre «los nuestros». Y los remiendos, siempre hábiles, casi invisibles.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "la miseria podía ser digna",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "La misère régnait alors, dans cette famille, mais Adrien avait remarqué déjà que, chez les Allemands, la misère pouvait être digne. Point de vêtements déchirés, ni sales, comme on en voyait chez « les nôtres ». Et les raccommodages, toujours savants, presque invisibles.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-682",
+      "legacy_index": 682,
+      "t": "La mujer era humillada, reducida al rango de objeto de placer, esclava del varón.\n\nO bien hacían de ella una enemiga, una tirana.\n\nNo era ni una cosa ni la otra. Para Adrien era una asociada del hombre, su alegre cómplice o compañera.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "No era ni una cosa ni la otra",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "La femme était humiliée, réduite au rang d’objet à plaisir, esclave du mâle.\n\nOu bien on faisait d’elle une ennemie, un tyran.\n\nElle n’était ni l’un ni l’autre. Pour Adrien, elle était une associée de l’homme, sa joyeuse complice ou partenaire.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-683",
+      "legacy_index": 683,
+      "t": "En el fondo, aquellas tres grandes ramas de la existencia apasionada debían de tener un mismo tronco y una misma raíz, se decía. Pues empezaba a sentir que el calor y el grado de goce eran los mismos.\n\nUn amor, al ceder el paso a otro, no disminuía su ser; al contrario, se completaban entre sí, enriqueciéndolo y engrandeciéndolo.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "un mismo tronco y una misma raíz",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Au fond, ces trois grandes branches de l’existence passionnée doivent avoir un même tronc et une même racine, se disait-il. Car il commençait à sentir que la chaleur et le degré de jouissance en étaient les mêmes.\n\nUn amour, cédant le pas à un autre, ne diminuait pas son être ; au contraire, ils se complétaient, l’enrichissant et le grandissant.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-684",
+      "legacy_index": 684,
+      "t": "Para poner orden en todo aquello no hacían falta ni dinero ni un diploma de Artes y Oficios, sino solamente un poco de corazón, un poco de amor, sentido común y habilidad.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "un poco de corazón, un poco de amor",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Pour mettre ordre à tout cela, il ne fallait ni argent, ni un diplôme des Arts et Métiers, mais seulement un peu de cœur, un peu d’amour, du bon sens, de l’adresse.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-685",
+      "legacy_index": 685,
+      "t": "Adrien tenía de todo aquello hasta el punto de enfermar por ello. Todo aquello cuyo triste espectáculo, de orden privado o público, se ofrecía a sus ojos contrariando su pasión por lo bello, el bien y la justicia, lo llevaba a tal estado de sobreexcitación nerviosa que acababa viviendo en una especie de fiebre permanente.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "una especie de fiebre permanente",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Adrien en avait au point d’en être malade. Tout ce dont le triste spectacle, d’ordre privé ou public, s’offrait à ses yeux contrariant sa passion du beau, du bien, de la justice, le mettait dans un état de surexcitation nerveuse telle, qu’il finissait par vivre dans une sorte de fièvre permanente.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-686",
+      "legacy_index": 686,
+      "t": "Adrien creyó que no podría sobrevivir a aquella separación, pero estaba tan lleno de vida que encontró fácilmente alimento para sus sentimientos.\n\nEl solo hecho de existir le parecía un milagro. Vagaba alrededor de sí mismo, bañado por el sol y la luz, descubriéndose cada día más.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "El solo hecho de existir le parecía un milagro",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Adrien crut ne pas pouvoir survivre à cette séparation, mais il était si plein de vie qu’il trouva facilement sa pâture sentimentale.\n\nLe seul fait d’exister lui semblait un miracle. Il rôdait autour de lui-même, baigné par le soleil et la lumière, se découvrant chaque jour davantage.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-687",
+      "legacy_index": 687,
+      "t": "Contemplaba con terror a las multitudes que se precipitaban, felices, hacia oficinas, talleres, fábricas y tiendas, renunciando a todo por un pedazo de pan, un pan que se volvía cada vez más blanco a medida que se renunciaba más a lo mejor de la existencia: al derecho de contemplar la creación, a la felicidad de pensar, de soñar, de instruirse; a la alegría de poder disponer de uno mismo.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "un pan que se volvía cada vez más blanco",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Il considérait avec terreur les foules qui se ruaient, heureuses, vers les bureaux, les ateliers, les fabriques, les magasins, renonçant à tout pour un morceau de pain, — un pain qui devenait toujours plus blanc dans la mesure où l’on renonçait davantage à ce qu’il y a de meilleur dans l’existence : au droit de contempler la création, au bonheur de penser, de rêver, de s’instruire ; à la joie de pouvoir disposer de soi-même.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-688",
+      "legacy_index": 688,
+      "t": "«No soy, en el fondo, más que un gozador a mi manera —se decía—. Solo intento hacer lo que me agrada. […]\n\n¿Y mi prójimo? No hay belleza moral en una vida que permanece indiferente a la suerte de quienes son más desgraciados que uno mismo.»",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "No hay belleza moral en una vida que permanece indiferente",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "« Je ne suis, au fond, qu’un jouisseur à ma manière, se disait-il. Je ne cherche à faire que ce qui m’est agréable. […]\n\nEt mon prochain ? Il n’y a pas de beauté morale dans une vie qui reste indifférente au sort de plus malheureux que soi. »",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-689",
+      "legacy_index": 689,
+      "t": "Recordaba haber leído en alguna parte que «la inteligencia, los dones, la generosidad del corazón son patrimonio de la humanidad».\n\nCuanto más dotado está uno, más obligaciones tiene para con ella.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "más obligaciones tiene para con ella",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Il se souvenait d’avoir lu quelque part que « l’intelligence, les dons, la générosité du cœur sont le patrimoine de l’humanité ».\n\nPlus on est doué, plus on a d’obligations envers celle-ci.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-690",
+      "legacy_index": 690,
+      "t": "«¿Por qué apegarme a esos hombres de negocios? —se decía Adrien—. Honestos o turbios, los grandes negocios siempre se hacen a expensas del hombre pobre.\n\nAhora bien, yo soy y seguiré siendo toda mi vida alguien cuya única fortuna son sus dos brazos. No será con las propinas y los trajes usados con que vuestros amos os colman de vez en cuando como se hará justicia en la tierra.\n\n¡Mi destino es, pues, el de todos los desheredados, y mi lugar está a su lado, me guste o no!»",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "mi lugar está a su lado, me guste o no",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "« Pourquoi m’attacher à ces brasseurs d’affaires ? se disait Adrien. Propres ou louches, les grosses affaires se font toujours aux dépens de l’homme pauvre.\n\nOr, je suis et resterai toute ma vie celui qui n’a d’autre fortune que ses deux bras. Ce n’est pas avec des pourboires et les complets usagés dont vos maîtres vous comblent de temps à autre, que justice se fera sur la terre.\n\nMa destinée est donc celle de tous les déshérités, ma place est à leurs côtés, que cela me plaise ou non ! »",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-691",
+      "legacy_index": 691,
+      "t": "—Simpatías, antipatías: son sentimientos que no tienen nada que hacer en una organización revolucionaria. Allí se es soldado, nada más. Lo que tú quieres es el ideal, y el ideal es enemigo del hombre. Lo aprendí a mis expensas. Corrígete, pues, si quieres combatir en las filas.\n\n¡Y si las filas no te convienen, márchate mientras aún estás a tiempo, o las masas pasarán por encima de ti! Porque, sábelo: ¡el corazón recibe todas las balas!",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "el corazón recibe todas las balas",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "— Sympathies, antipathies, ce sont des sentiments qui n’ont rien à faire dans une organisation révolutionnaire. Là, on est un soldat, pas autre chose. Ce que tu veux, toi, c’est l’idéal, et l’idéal est l’ennemi de l’homme. J’ai appris cela à mes dépens. Corrige-toi donc, si tu veux combattre dans les rangs.\n\nEt si les rangs ne te conviennent pas, file, pendant qu’il est encore temps, ou bien les masses passeront sur toi ! Car, sache-le : le cœur, ça reçoit toutes les balles !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-692",
+      "legacy_index": 692,
+      "t": "Las sentencias glaciales del militante socialista le habían trastornado el alma. Había llegado cargado de ternura, piedad, amor y rebeldía para ofrecer su corazón —es decir, todo cuanto poseía— al movimiento revolucionario, y un camarada experimentado le decía que aquel corazón solo servía para recibir balas desde ambos lados de la barricada.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "su corazón —es decir, todo cuanto poseía—",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Les sentences glaciales du militant socialiste lui avaient bouleversé l’âme. Il venait, lourd de tendresse, de piété, d’amour et de révolte, offrir son cœur, c’est-à-dire tout son avoir, au mouvement révolutionnaire, et un camarade expérimenté lui disait que ce cœur n’était bon qu’à recevoir des balles des deux côtés de la barricade.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-693",
+      "legacy_index": 693,
+      "t": "—Como todo militante socialista —le dijo—, tengo mucho interés en hacer discípulos, y tú podrías ser uno notable, porque tienes buenas cualidades; pero para eso tendrías que dividirte en dos: el hombre de corazón no debe mezclarse en los asuntos del hombre de acción. No comprendí esa verdad al comienzo de mi vida revolucionaria, y sufrí mucho por ello.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "el hombre de corazón no debe mezclarse en los asuntos del hombre de acción",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "— Comme tout militant socialiste, — lui dit-il, — je tiens beaucoup à faire des disciples, et tu pourrais en être un de marque, car tu as de belles qualités, mais, pour cela, il faudrait que tu te dédoubles : l’homme de cœur ne doit pas se mêler des affaires de l’homme d’action. Je n’ai pas compris cette vérité, lors de mes débuts révolutionnaires, et j’en ai bien souffert.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-694",
+      "legacy_index": 694,
+      "t": "Alojé, alimenté y vestí a camaradas que creía amigos y a quienes amé. Un día, algunos desaparecieron tras robarme. Otros fueron a contar a la policía todos mis pensamientos.\n\n[…]\n\nPorque yo cometía el error de creer que el triunfo de la idea estaba ligado a todos aquellos crímenes contra el corazón.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "crímenes contra el corazón",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "J’ai hébergé, nourri et vêtu des camarades que je croyais des amis et que j’ai aimés. Certains d’entre eux ont disparu un jour après m’avoir volé. D’autres sont allés rapporter à la police toutes mes pensées.\n\n[…]\n\nCar j’avais le tort de croire le triomphe de l’idée lié à tous ces crimes contre le cœur.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-695",
+      "legacy_index": 695,
+      "t": "—No hay que mostrarse demasiado afectuoso conmigo. No me interesa. He perdido la costumbre y no sé por qué habría de retomarla. Uno es afectuoso para toda la vida o no lo es.\n\nApenas es posible amar a un hombre y odiar a todos los demás. Y ahora es el odio lo que me alimenta.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "es el odio lo que me alimenta",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "— Il ne faut pas être trop affectueux avec moi. Je n’y tiens pas. Je m’en suis déshabitué et je ne sais pour quelle raison j’en reprendrais l’habitude. On est affectueux pour la vie ou on ne l’est pas.\n\nIl n’est guère possible d’aimer un homme et de haïr tous les autres. Or, maintenant, c’est la haine qui me nourrit.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-696",
+      "legacy_index": 696,
+      "t": "Pero ¿qué podía la frialdad de una ley social contra la ley de su corazón?\n\nA Adrien le era imposible no distinguir el bien del mal, meter a todo el mundo en el mismo saco.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "la ley de su corazón",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Mais que pouvait la froideur d’une loi sociale, contre la loi de son cœur ?\n\nIl était impossible à Adrien de ne pas distinguer le bien du mal, de mettre tout le monde dans le même panier.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-697",
+      "legacy_index": 697,
+      "t": "A Adrien le era imposible no distinguir el bien del mal, meter a todo el mundo en el mismo saco.\n\nHabía visto a Carnavalli y a los Thüringer ayudar a hombres, mantener a viudas cargadas de hijos, repatriar familias. También había visto a señores riquísimos azotar a sus criados y soltar el perro contra los mendigos. ¿Podía aplicarse la misma medida a unos y otros? Estuvieran los hombres a un lado o al otro de la barricada, él los miraba «con el mismo corazón».\n\nEl zapatero le había dicho que ese corazón era precisamente de los que reciben «todas las balas». Pues bien, si no podía ser justiciero, más valía ser víctima que verdugo.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "más valía ser víctima que verdugo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Il était impossible à Adrien de ne pas distinguer le bien du mal, de mettre tout le monde dans le même panier.\n\nIl avait vu Carnavalli et les Thüringer aider des hommes, subvenir à l’entretien de veuves chargées d’enfants, rapatrier des familles. Il avait vu aussi de richissimes seigneurs cravacher leurs domestiques et lâcher leur chien sur les mendiants. Pouvait-on appliquer la même mesure aux uns et aux autres ? Que les hommes fussent d’un côté ou de l’autre de la barricade, il les regardait « avec le même cœur ».\n\nLe cordonnier lui avait dit que ce cœur était précisément de ceux qui reçoivent « toutes les balles ». Eh bien, s’il ne pouvait être justicier, mieux valait être victime que bourreau.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-698",
+      "legacy_index": 698,
+      "t": "Era la bondad de aquellos hombres y algo más: su pasión por Anna, por mucho que intentara defenderse de ella; Anna lo alimentaba con la mejor sustancia de la vida: el sueño.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "la mejor sustancia de la vida: el sueño",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "C’était leur bonté et quelque chose encore : sa passion pour Anna, dont il avait beau se défendre ; elle le nourrissait de la meilleure substance de la vie, le rêve.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-699",
+      "legacy_index": 699,
+      "t": "Pues, en cuanto a esa sed humana de evadirse en el sueño, Anna, guardadas las proporciones, también podía reconocer que su profesor de gimnasia, que conocía bien el equilibrio del cuerpo, ignoraba por completo el del alma, y que para su bella amante no era sino lo que Julie era para Adrien.\n\nPor eso, ante una caricia del corazón, ella se encontraba tan estremecida, tan receptiva como una muchacha.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "una caricia del corazón",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Car, pour ce qui est de la soif humaine de s’évader dans le rêve, Anna, toutes proportions gardées, pouvait aussi avouer que son professeur de gymnastique, qui connaissait bien l’équilibre du corps, ignorait totalement celui de l’âme, et qu’il n’était pour sa belle maîtresse que ce que Julie était pour Adrien.\n\nC’est pourquoi, devant une caresse du cœur, elle se trouvait tout aussi frémissante, tout aussi accueillante qu’une jeune fille.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-700",
+      "legacy_index": 700,
+      "t": "Carne devoradora de mujer o gracia ideal, bondad de los hombres, deseo de justicia, amor a la vida, rebeldía: todo aquello, revuelto, Adrien lo encerraba en su corazón y lo llevaba cada día por aquel puerto en efervescencia.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "Adrien lo encerraba en su corazón",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Chair dévorante de femme ou grâce idéale, bonté des hommes, désir de justice, amour de la vie, révolte, tout cela, pêle-mêle, Adrien l’enfermait dans son cœur et le promenait journellement dans ce port en effervescence.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-701",
+      "legacy_index": 701,
+      "t": "Los jurados se veían obligados a reconocer que el hombre cargado de cadenas que tenían ante sus ojos era él mismo una víctima.\n\nY, sin embargo, ¡qué abominable era aquella víctima!",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "¡qué abominable era aquella víctima!",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Les jurés étaient obligés de reconnaître que l’homme chargé de chaînes qu’ils avaient sous les yeux était lui-même une victime.\n\nEt cependant, qu’elle était abominable, cette victime !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-702",
+      "legacy_index": 702,
+      "t": "«Seguramente sé muy poco de los misterios de la vida —se dijo—. Debe de haber hombres para quienes el orgullo vale más que todos los valores de la existencia. Es muy triste.»",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "sé muy poco de los misterios de la vida",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "« Sûrement, je ne sais que peu de chose des mystères de la vie, se dit-il. Il doit y avoir des hommes, pour lesquels la fierté vaut plus que toutes les valeurs de l’existence. C’est bien triste. »",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-703",
+      "legacy_index": 703,
+      "t": "La fragilidad de los cimientos de toda existencia humana se le apareció como una verdad elemental.\n\n¿Por qué, entonces, los hombres se dividían en ricos y pobres y libraban entre sí una guerra mortal, en lugar de armarse todos contra el enemigo común: la indigencia, la miseria?",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "La fragilidad de los cimientos de toda existencia humana",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "La fragilité des assises de toute existence humaine lui apparut comme une vérité élémentaire.\n\nPourquoi donc les hommes se partageaient-ils en riches et en pauvres et se livraient-ils une guerre mortelle, au lieu de s’armer, tous, contre l’ennemi commun : le dénuement, la misère ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-704",
+      "legacy_index": 704,
+      "t": "Para ellas, la pobreza, incluso la miseria, eran enemigas familiares. Y nadie estaba a salvo de sus golpes.\n\n¿Acaso los cuentos populares no daban testimonio de la existencia de príncipes convertidos en mendigos?\n\nHabía, pues, que hacer como todo el mundo: tomar la vida por lo que era y seguir esperando, porque la desesperación no sirve de nada.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "la desesperación no sirve de nada",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Pour elles, la pauvreté, la détresse même, étaient des ennemies familières. Et nul n’était à l’abri de leurs sévices.\n\nLes contes populaires ne témoignaient-ils pas de l’existence de princes devenus mendiants ?\n\nIl fallait donc faire comme tout le monde, prendre la vie pour ce qu’elle était et toujours espérer, car le désespoir ne sert à rien.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-705",
+      "legacy_index": 705,
+      "t": "Además, conservaban hacia Anna una viva gratitud por la amistad, la bondad y el afecto que les había prodigado.\n\nRecordando el tiempo en que nunca dejaba de ofrecerles una merienda caliente, fueron ellos quienes llevaron a su vez azúcar, té, café e incluso sacos de leña, «para calentar la cocina y charlar un poco más alegremente, como antaño».",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "fueron ellos quienes llevaron a su vez",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Puis, ils gardaient à Anna une vive reconnaissance pour l’amitié, la bonté, l’affection qu’elle leur avait prodiguées.\n\nSe souvenant du temps où elle ne manquait jamais de leur offrir un goûter chaud, ce furent eux qui apportèrent à leur tour du sucre, du thé, du café et même des sacs de bois, « pour chauffer la cuisine et bavarder un peu plus gaiment, comme jadis ».",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-706",
+      "legacy_index": 706,
+      "t": "No. Quería ser libre de sufrir con todos aquellos que, proletarios, burgueses o incluso nobles, eran vencidos por el sufrimiento, por el destino.",
+      "a": "Panaït Istrati",
+      "obra": "La casa Thüringer, Panaït Istrati",
+      "highlight": "libre de sufrir con todos",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-panait-istrati",
+      "workId": "work-la-casa-thuringer",
+      "original": {
+        "text": "Non. Il voulait être libre de souffrir avec tous ceux qui, prolétaires, bourgeois ou même nobles, étaient vaincus par la souffrance, par le destin.",
+        "lang": "fr",
+        "label": "Original francés"
       }
     }
   ]

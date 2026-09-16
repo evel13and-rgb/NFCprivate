@@ -89,12 +89,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 679 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 705 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 679);
-  assert.equal(quotes.length, 679);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 679);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 679);
+  const quotes = validatePublicQuotesDocument(document, 705);
+  assert.equal(quotes.length, 705);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 705);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 705);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -246,6 +246,12 @@ test('public/data/quotes.json cumple el contrato público y contiene 679 frases'
     'quote-667', 'quote-668', 'quote-669', 'quote-670', 'quote-671',
     'quote-672', 'quote-673', 'quote-674', 'quote-675', 'quote-676',
     'quote-677', 'quote-678', 'quote-679', 'quote-680',
+    'quote-681', 'quote-682', 'quote-683', 'quote-684', 'quote-685',
+    'quote-686', 'quote-687', 'quote-688', 'quote-689', 'quote-690',
+    'quote-691', 'quote-692', 'quote-693', 'quote-694', 'quote-695',
+    'quote-696', 'quote-697', 'quote-698', 'quote-699', 'quote-700',
+    'quote-701', 'quote-702', 'quote-703', 'quote-704', 'quote-705',
+    'quote-706',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -571,6 +577,54 @@ test('Lejos del mundanal ruido publica 24 fragmentos de la primera edición de 1
   assert.match(quotes.get('quote-675').t, /^Y los defectos de Troy/);
   assert.equal(quotes.get('quote-679').a, 'Bathsheba Everdene');
   for (const quote of hardyQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('La casa Thüringer publica 26 fragmentos franceses tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const istratiQuotes = document.quotes.filter(quote => quote.workId === 'work-la-casa-thuringer');
+
+  assert.equal(istratiQuotes.length, 26);
+  assert.deepEqual(
+    istratiQuotes.map(quote => quote.id),
+    Array.from({ length: 26 }, (_, index) => `quote-${681 + index}`),
+  );
+  assert.equal(istratiQuotes.every(quote => (
+    quote.a === 'Panaït Istrati'
+    && quote.obra === 'La casa Thüringer, Panaït Istrati'
+    && quote.t.includes(quote.highlight)
+    && quote.original?.lang === 'fr'
+    && quote.original?.label === 'Original francés'
+    && quote.original?.text
+  )), true);
+  assert.match(quotes.get('quote-683').t, /se decía[.] Pues/);
+  assert.match(quotes.get('quote-686').t, /descubriéndose cada día más/);
+  assert.match(quotes.get('quote-687').t, /existencia: al derecho/);
+  assert.doesNotMatch(quotes.get('quote-687').t, /existencia; al derecho/);
+  assert.match(quotes.get('quote-689').t, /^Recordaba haber leído/);
+  assert.match(quotes.get('quote-690').t, /¡Mi destino es, pues/);
+  assert.match(quotes.get('quote-691').t, /\n\n¡Y si las filas no te convienen/);
+  assert.match(quotes.get('quote-694').t, /^Alojé, alimenté y vestí/);
+  assert.match(quotes.get('quote-694').t, /Un día, algunos desaparecieron tras robarme/);
+  assert.doesNotMatch(quotes.get('quote-694').t, /un día después/);
+  assert.match(quotes.get('quote-695').t, /Apenas es posible amar/);
+  assert.match(quotes.get('quote-696').t, /^Pero ¿qué podía/);
+  assert.match(quotes.get('quote-699').t, /^Pues, en cuanto/);
+  assert.match(quotes.get('quote-703').t, /se dividían en ricos y pobres y libraban entre sí/);
+  assert.match(quotes.get('quote-705').t, /^Además, conservaban/);
+
+  const cutIds = istratiQuotes
+    .filter(quote => quote.t.includes('[…]') || quote.original.text.includes('[…]'))
+    .map(quote => quote.id);
+  assert.deepEqual(cutIds, ['quote-688', 'quote-694']);
+  for (const quote of istratiQuotes) {
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     assert.equal(
       quote.t.match(/\[…\]/g)?.length || 0,
