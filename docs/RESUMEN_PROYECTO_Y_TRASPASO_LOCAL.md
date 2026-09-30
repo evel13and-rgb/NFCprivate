@@ -59,7 +59,7 @@ funcionando aunque Directus esté detenido.
 
 ## 3. Estado actual resumido
 
-- La web pública consume **705 citas** desde `public/data/quotes.json`.
+- La web pública consume **728 citas** desde `public/data/quotes.json`.
 - El catálogo público de perfiles contiene **25 autores** y **31 obras**.
 - Los borradores editoriales versionados contienen 27 autores, 29 obras y 29
   fuentes; no todo borrador está destinado todavía a publicación.
@@ -67,8 +67,8 @@ funcionando aunque Directus esté detenido.
 - Existen 26 archivos de pruebas automatizadas con `node:test`.
 - El piloto Directus/PostgreSQL tiene documentadas 18 colecciones, 242 campos y
   46 relaciones.
-- Directus contiene 29 autores, 32 obras, 32 fuentes, 17 hablantes, 705 frases y
-  705 originales, además de 393 temas; el audio sigue pendiente.
+- Directus contiene 30 autores, 33 obras, 33 fuentes, 17 hablantes, 728 frases y
+  728 originales, además de 393 temas; el audio sigue pendiente.
 - La fase de exportación paralela está validada y queda en espera hasta incorporar
   nuevas obras o aprobar otro cambio editorial deliberado.
 - PostgreSQL es la fuente editorial principal; los JSON públicos siguen siendo
@@ -570,7 +570,7 @@ La copia local básica puede considerarse correcta cuando:
 - el commit local coincide con el commit elegido de `main`;
 - `npm test` termina correctamente;
 - la web carga por HTTP local;
-- se pueden leer las 705 citas y los perfiles públicos;
+- se pueden leer las 728 citas y los perfiles públicos;
 - el modo normal y el modo NFC funcionan;
 - el fallo o ausencia del backend del clima degrada de forma segura;
 - no se ha copiado ningún secreto al repositorio;

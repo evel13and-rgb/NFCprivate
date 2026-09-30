@@ -366,7 +366,7 @@ producción.
   se importó mediante procesos reproducibles. Las 15 altas posteriores de
   *Felicidad conyugal*, las 24 de *Lejos del mundanal ruido* y las 26 de *La
   casa Thüringer* quedaron incorporadas y trazadas en Directus, hasta un total
-  de 705 frases y 705 originales.
+  de 728 frases y 728 originales.
 - Los IDs, `legacy_index`, textos, hashes y relaciones del catálogo publicable
   coinciden con el JSON público vigente; los archivos editoriales históricos
   conservan la fotografía de la línea base inicial.

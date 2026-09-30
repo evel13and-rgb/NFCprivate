@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-16T18:42:34.009Z",
-  "quote_count": 705,
+  "generated_at": "2026-09-30T13:36:05.665Z",
+  "quote_count": 728,
   "quotes": [
     {
       "id": "quote-2",
@@ -11986,6 +11986,397 @@
         "text": "Non. Il voulait être libre de souffrir avec tous ceux qui, prolétaires, bourgeois ou même nobles, étaient vaincus par la souffrance, par le destin.",
         "lang": "fr",
         "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-707",
+      "legacy_index": 707,
+      "t": "¿Quién, si yo gritara, me oiría desde las jerarquías\nde los ángeles? Y aun suponiendo que uno de ellos\nme tomara de pronto contra su corazón: yo perecería por su\nexistencia más fuerte. Pues lo bello no es sino el comienzo de lo terrible,\nque todavía apenas soportamos, y lo admiramos tanto\nporque, sereno, desdeña destruirnos.\nTodo ángel es terrible.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "lo bello no es sino el comienzo de lo terrible",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "WER, wenn ich schriee, hörte mich denn aus der Engel\nOrdnungen? und gesetzt selbst, es nähme\neiner mich plötzlich ans Herz: ich verginge von seinem\nstärkeren Dasein. Denn das Schöne ist nichts\nals des Schrecklichen Anfang, den wir noch grade ertragen,\nund wir bewundern es so, weil es gelassen verschmäht,\nuns zu zerstören. Ein jeder Engel ist schrecklich.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-708",
+      "legacy_index": 708,
+      "t": "¿No es hora de que, amando, nos liberemos del amado\ny, temblando, lo resistamos: como la flecha resiste la cuerda\npara, recogida en el salto, ser más que ella misma?\nPorque en ninguna parte hay permanencia.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "Porque en ninguna parte hay permanencia",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Ist es nicht Zeit, daß wir liebend\nuns vom Geliebten befrein und es bebend bestehn:\nwie der Pfeil die Sehne besteht, um gesammelt im Absprung\nmehr zu sein als er selbst. Denn Bleiben ist nirgends.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-709",
+      "legacy_index": 709,
+      "t": "Porque nosotros, allí donde sentimos, nos evaporamos; ay,\nnos exhalamos y desaparecemos; de brasa en brasa\ndesprendemos un olor cada vez más débil. Alguien acaso nos dice:\n«Sí, entras en mi sangre; esta habitación, la primavera,\nse llena de ti...». ¿De qué sirve? No puede retenernos:\ndesaparecemos dentro de él y a su alrededor.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "allí donde sentimos, nos evaporamos",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Denn wir, wo wir fühlen, verflüchtigen; ach wir\natmen uns aus und dahin; von Holzglut zu Holzglut\ngeben wir schwächern Geruch. Da sagt uns wohl einer:\nja, du gehst mir ins Blut, dieses Zimmer, der Frühling\nfüllt sich mit dir… Was hilfts, er kann uns nicht halten,\nwir schwinden in ihm und um ihn.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-710",
+      "legacy_index": 710,
+      "t": "Sé que os tocáis con tanta dicha porque la caricia retiene,\nporque no desaparece el lugar que vosotros, tiernos, cubrís;\nporque debajo percibís la pura duración.\nAsí, a partir del abrazo, casi os prometéis eternidad.\nY, sin embargo, si resistís el espanto de las primeras miradas,\nel anhelo ante la ventana y el primer paseo juntos,\nuna sola vez, por el jardín:\namantes, ¿lo seguís siendo?",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "casi os prometéis eternidad",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Ich weiß,\nihr berührt euch so selig, weil die Liebkosung verhält,\nweil die Stelle nicht schwindet, die ihr, Zärtliche,\nzudeckt; weil ihr darunter das reine\nDauern verspürt. So versprecht ihr euch Ewigkeit fast\nvon der Umarmung. Und doch, wenn ihr der ersten\nBlicke Schrecken besteht und die Sehnsucht am Fenster\nund den ersten gemeinsamen Gang, einmal durch den Garten:\nLiebende, seid ihrs dann noch?",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-711",
+      "legacy_index": 711,
+      "t": "Pero dentro: ¿quién detenía, quién impedía dentro de él\nlas mareas del origen?\nAy, no había cautela alguna en el que dormía; dormido,\npero soñando, pero entre fiebres: ¡cómo se adentraba!\nÉl, el nuevo, el retraído, ¡cómo estaba ya enredado\nen los zarcillos que seguían brotando del acontecer interior,\nentrelazados en dibujos, en un crecimiento estrangulador,\nen formas que cazaban como animales! ¡Cómo se entregaba! Amaba.\nAmaba su interior, la espesura de su interior,\naquella selva primigenia en él, sobre cuyo derrumbe mudo\nse alzaba, verde claro, su corazón.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "aquella selva primigenia en él",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Aber innen: wer wehrte,\nhinderte innen in ihm die Fluten der Herkunft?\nAch, da war keine Vorsicht im Schlafenden; schlafend,\naber träumend, aber in Fiebern: wie er sich einließ.\nEr, der Neue, Scheuende, wie er verstrickt war,\nmit des innern Geschehns weiterschlagenden Ranken\nschon zu Mustern verschlungen, zu würgendem Wachstum, zu tierhaft\njagenden Formen. Wie er sich hingab –. Liebte.\nLiebte sein Inneres, seines Inneren Wildnis,\ndiesen Urwald in ihm, auf dessen stummem Gestürztsein\nlichtgrün sein Herz stand.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-712",
+      "legacy_index": 712,
+      "t": "¿Quién no se sentó angustiado ante el telón de su corazón?\nSe abrió: la escena era la despedida.\nFácil de entender. El jardín conocido,\nque se mecía suavemente; solo entonces llegó el bailarín.\nEse no. Basta. Y aunque aparente tanta ligereza,\nestá disfrazado; se convierte en burgués\ny atraviesa su cocina para entrar en la vivienda.\nNo quiero esas máscaras medio llenas;\nprefiero la marioneta. Ella está llena.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "la escena era la despedida",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Wer saß nicht bang vor seines Herzens Vorhang?\nDer schlug sich auf: die Szenerie war Abschied.\nLeicht zu verstehen. Der bekannte Garten,\nund schwankte leise: dann erst kam der Tänzer.\nNicht der. Genug. Und wenn er auch so leicht tut,\ner ist verkleidet, und er wird ein Bürger\nund geht durch seine Küche in die Wohnung.\nIch will nicht diese halbgefüllten Masken,\nlieber die Puppe. Die ist voll.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-713",
+      "legacy_index": 713,
+      "t": "¿Quién muestra a un niño tal como está? ¿Quién lo coloca\nentre las estrellas y pone en su mano la medida de la distancia?\n¿Quién hace de la muerte del niño un pan gris\nque se endurece, o la deja dentro de la boca redonda\ncomo el corazón de una hermosa manzana?…\nA los asesinos se los comprende fácilmente. Pero esto:\ncontener la muerte, toda la muerte, antes incluso de la vida,\ntan suavemente, y no ser malo,\nes indescriptible.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "contener la muerte, toda la muerte, antes incluso de la vida",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Wer zeigt ein Kind, so wie es steht? Wer stellt\nes ins Gestirn und gibt das Maß des Abstands\nihm in die Hand? Wer macht den Kindertod\naus grauem Brot, das hart wird, – oder läßt\nihn drin im runden Mund so wie den Gröps\nvon einem schönen Apfel?…… Mörder sind\nleicht einzusehen. Aber dies: den Tod,\nden ganzen Tod, noch vor dem Leben so\nsanft zu enthalten und nicht bös zu sein,\nist unbeschreiblich.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-714",
+      "legacy_index": 714,
+      "t": "Ángel: habría un lugar que desconocemos, y allí,\nsobre una alfombra indecible, los amantes que aquí\nnunca llegan a dominar su arte mostrarían las altas\ny audaces figuras del impulso del corazón,\nsus torres de placer, sus escaleras que, desde hace tanto,\ndonde nunca hubo suelo, se apoyan solamente\nunas contra otras, temblando. Y podrían hacerlo\nante los espectadores de alrededor, innumerables muertos silenciosos.\n¿Arrojarían entonces estos sus últimas monedas de felicidad,\nsiempre ahorradas, siempre ocultas, desconocidas para nosotros,\neternamente válidas, ante la pareja que por fin\nsonríe de verdad sobre la alfombra apaciguada?",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "sus últimas monedas de felicidad",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Engel: es wäre ein Platz, den wir nicht wissen, und dorten,\nauf unsäglichem Teppich, zeigten die Liebenden, die’s hier\nbis zum Können nie bringen, ihre kühnen\nhohen Figuren des Herzschwungs,\nihre Türme aus Lust, ihre\nlängst, wo Boden nie war, nur aneinander\nlehnenden Leitern, bebend, – und könntens,\nvor den Zuschauern rings, unzähligen lautlosen Toten:\nWürfen die dann ihre letzten, immer ersparten,\nimmer verborgenen, die wir nicht kennen, ewig\ngültigen Münzen des Glücks vor das endlich\nwahrhaft lächelnde Paar auf gestilltem\nTeppich?",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-715",
+      "legacy_index": 715,
+      "t": "Higuera, desde hace cuánto significa algo para mí\nque casi omitas por completo la floración\ny empujes, sin alabanza, tu puro secreto\nhacia el interior del fruto decidido a tiempo.\n[…]\nNosotros, en cambio, nos demoramos. Ay, nos enorgullece florecer,\ny entramos traicionados en el interior tardío\nde nuestro fruto finito.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "nos enorgullece florecer",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "FEIGENBAUM, seit wie lange schon ists mir bedeutend,\nwie du die Blüte beinah ganz überschlägst\nund hinein in die zeitig entschlossene Frucht,\nungerühmt, drängst dein reines Geheimnis.\n[…]\nWir aber verweilen,\nach, uns rühmt es zu blühn, und ins verspätete Innre\nunserer endlichen Frucht gehn wir verraten hinein.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-716",
+      "legacy_index": 716,
+      "t": "Estar aquí es magnífico. Vosotras lo sabíais, muchachas, también vosotras,\nlas que aparentemente carecíais de todo y os hundisteis, vosotras,\nsupurantes en las peores callejas de las ciudades\no expuestas al desecho. Porque cada una tuvo una hora,\nquizá ni siquiera una hora entera, algo apenas mensurable\ncon las medidas del tiempo entre dos momentos,\nen la que tuvo existencia. Toda. Las venas llenas de existencia.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "Las venas llenas de existencia",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Hiersein ist herrlich. Ihr wußtet es, Mädchen, ihr auch,\ndie ihr scheinbar entbehrtet, versankt –, ihr, in den ärgsten\nGassen der Städte, Schwärende, oder dem Abfall\noffene. Denn eine Stunde war jeder, vielleicht nicht\nganz eine Stunde, ein mit den Maßen der Zeit kaum\nMeßliches zwischen zwei Weilen, da sie ein Dasein\nhatte. Alles. Die Adern voll Dasein.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-717",
+      "legacy_index": 717,
+      "t": "Solo que olvidamos con tanta facilidad aquello que el vecino risueño\nno nos confirma ni nos envidia. Queremos levantarlo hasta hacerlo visible,\ncuando precisamente la felicidad más visible solo se nos da a conocer\ncuando la transformamos por dentro. En ninguna parte, amada, habrá mundo sino dentro.\nNuestra vida transcurre en transformación. Y lo exterior\nse desvanece cada vez más.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "En ninguna parte, amada, habrá mundo sino dentro",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Nur, wir vergessen so leicht, was der lachende Nachbar\nuns nicht bestätigt oder beneidet. Sichtbar\nwollen wirs heben, wo doch das sichtbarste Glück uns\nerst zu erkennen sich gibt, wenn wir es innen verwandeln.\nNirgends, Geliebte, wird Welt sein, als innen. Unser\nLeben geht hin mit Verwandlung. Und immer geringer\nschwindet das Außen.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-718",
+      "legacy_index": 718,
+      "t": "Con todos sus ojos contempla la criatura lo abierto.\nSolo nuestros ojos están como vueltos del revés\ny colocados enteramente alrededor de ella como trampas,\ncercando su libre salida. Lo que existe afuera\nsolo lo conocemos por el rostro del animal; pues ya al niño pequeño\nlo hacemos volverse y lo obligamos a mirar hacia atrás,\nhacia la forma, no hacia lo abierto, que es tan profundo\nen el rostro animal. Libre de muerte.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "Solo nuestros ojos están como vueltos del revés",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "MIT allen Augen sieht die Kreatur\ndas Offene. Nur unsre Augen sind\nwie umgekehrt und ganz um sie gestellt\nals Fallen, rings um ihren freien Ausgang.\nWas draußen ist, wir wissens aus des Tiers\nAntlitz allein; denn schon das frühe Kind\nwenden wir um und zwingens, daß es rückwärts\nGestaltung sehe, nicht das Offne, das\nim Tiergesicht so tief ist. Frei von Tod.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-719",
+      "legacy_index": 719,
+      "t": "Solo nosotros vemos la muerte. El animal libre\ntiene siempre detrás de sí su final y delante de sí a Dios;\ny cuando camina, camina en la eternidad,\ncomo caminan las fuentes. Nosotros nunca, ni un solo día,\ntenemos ante nosotros el espacio puro\nen el que las flores se abren infinitamente.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "tiene siempre detrás de sí su final y delante de sí a Dios",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Ihn sehen wir allein; das freie Tier\nhat seinen Untergang stets hinter sich\nund vor sich Gott, und wenn es geht, so gehts\nin Ewigkeit, so wie die Brunnen gehen.\nWir haben nie, nicht einen einzigen Tag,\nden reinen Raum vor uns, in den die Blumen\nunendlich aufgehn.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-720",
+      "legacy_index": 720,
+      "t": "Siempre vueltos hacia la creación, solo vemos sobre ella\nel reflejo de lo libre, oscurecido por nosotros.\nO que un animal, uno mudo, levante los ojos\ny mire tranquilamente a través de nosotros.\nEso se llama destino: estar enfrente, y nada más que eso, y siempre enfrente.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "estar enfrente, y nada más que eso, y siempre enfrente",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Der Schöpfung immer zugewendet, sehn\nwir nur auf ihr die Spiegelung des Frei’n,\nvon uns verdunkelt. Oder daß ein Tier,\nein stummes, aufschaut, ruhig durch uns durch.\nDieses heißt Schicksal: gegenüber sein\nund nichts als das und immer gegenüber.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-721",
+      "legacy_index": 721,
+      "t": "Y mira la seguridad a medias del pájaro,\nque casi conoce ambas cosas desde su origen.\n[…]\nY qué desconcertado está aquello que tiene que volar\ny procede de un vientre. Como asustado de sí mismo,\ncruza el aire a sacudidas, como cuando una grieta atraviesa una taza.\nAsí desgarra el rastro del murciélago la porcelana de la tarde.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "la porcelana de la tarde",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Und sieh die halbe Sicherheit des Vogels,\nder beinah beides weiß aus seinem Ursprung,\n[…]\nUnd wie bestürzt ist eins, das fliegen muß\nund stammt aus einem Schooß. Wie vor sich selbst\nerschreckt, durchzuckts die Luft, wie wenn ein Sprung\ndurch eine Tasse geht. So reißt die Spur\nder Fledermaus durchs Porzellan des Abends.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-722",
+      "legacy_index": 722,
+      "t": "Y nosotros: espectadores, siempre, en todas partes,\nvueltos hacia todo esto y nunca hacia fuera.\nNos desborda. Lo ordenamos. Se desmorona.\nLo ordenamos de nuevo y nosotros mismos nos desmoronamos.\n¿Quién nos ha dado la vuelta de tal modo que,\nhagamos lo que hagamos, tengamos la actitud\nde alguien que se marcha? Como aquel que, sobre la última colina,\nque le muestra una vez más todo su valle, se vuelve,\nse detiene, se demora:\nasí vivimos y nos despedimos siempre.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "Lo ordenamos de nuevo y nosotros mismos nos desmoronamos",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Und wir: Zuschauer, immer, überall,\ndem allen zugewandt und nie hinaus!\nUns überfüllts. Wir ordnens. Es zerfällt.\nWir ordnens wieder und zerfallen selbst.\nWer hat uns also umgedreht, daß wir,\nwas wir auch tun, in jener Haltung sind\nvon einem, welcher fortgeht? Wie er auf\ndem letzten Hügel, der ihm ganz sein Tal\nnoch einmal zeigt, sich wendet, anhält, weilt –,\nso leben wir und nehmen immer Abschied.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-723",
+      "legacy_index": 723,
+      "t": "Porque estar aquí es mucho, y porque aparentemente\ntodo lo de aquí nos necesita: esto que desaparece,\nque extrañamente nos concierne. A nosotros, los más fugaces.\nUna vez cada cosa, solo una vez. Una vez y nunca más.\nY nosotros también una vez. Nunca de nuevo.\nPero haber sido esta única vez, aunque solo una vez:\nhaber sido terrenales, parece irrevocable.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "haber sido terrenales, parece irrevocable",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Aber weil Hiersein viel ist, und weil uns scheinbar\nalles das Hiesige braucht, dieses Schwindende, das\nseltsam uns angeht. Uns, die Schwindendsten. Einmal\njedes, nur einmal. Einmal und nicht mehr. Und wir auch\neinmal. Nie wieder. Aber dieses\neinmal gewesen zu sein, wenn auch nur einmal:\nirdisch gewesen zu sein, scheint nicht widerrufbar.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-724",
+      "legacy_index": 724,
+      "t": "¿Acaso estamos aquí para decir: casa, puente, fuente,\npuerta, jarra, árbol frutal, ventana;\na lo sumo: columna, torre? Pero decirlas,\ncompréndelo, decirlas de tal modo como las propias cosas\nnunca creyeron íntimamente ser.\n[…]\nAquí es el tiempo de lo decible, aquí está su patria.\nHabla y confiesa.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "Aquí es el tiempo de lo decible, aquí está su patria",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Sind wir vielleicht hier, um zu sagen: Haus,\nBrücke, Brunnen, Tor, Krug, Obstbaum, Fenster, –\nhöchstens: Säule, Turm… aber zu sagen, verstehs,\no zu sagen so, wie selber die Dinge niemals\ninnig meinten zu sein.\n[…]\nHier ist des Säglichen Zeit, hier seine Heimat.\nSprich und bekenn.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-725",
+      "legacy_index": 725,
+      "t": "Más que nunca se derrumban las cosas que pueden vivirse,\npues aquello que las sustituye, desplazándolas,\nes un hacer sin imagen. Un hacer bajo costras\nque se quiebran dócilmente apenas la acción brota\ndel interior y se delimita de otro modo.\nEntre los martillos resiste nuestro corazón,\ncomo la lengua entre los dientes, que, sin embargo,\npese a todo, sigue siendo la que alaba.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "Entre los martillos resiste nuestro corazón",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Mehr als je\nfallen die Dinge dahin, die erlebbaren, denn,\nwas sie verdrängend ersetzt, ist ein Tun ohne Bild.\nTun unter Krusten, die willig zerspringen, sobald\ninnen das Handeln entwächst und sich anders begrenzt.\nZwischen den Hämmern besteht\nunser Herz, wie die Zunge\nzwischen den Zähnen, die doch,\ndennoch die preisende bleibt.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-726",
+      "legacy_index": 726,
+      "t": "Estas cosas que viven de desaparecer comprenden que tú las alabas;\nfugaces, nos confían algo salvador a nosotros, los más fugaces.\nQuieren que las transformemos por entero, en el corazón invisible,\nen —oh, infinitamente— nosotros mismos,\nseamos quienes seamos al final.\nTierra, ¿no es esto lo que quieres: levantarte invisible dentro de nosotros?\n¿No es tu sueño ser invisible alguna vez?\n¡Tierra! ¡Invisible!\n¿Qué, si no transformación, es tu urgente mandato?",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "¿Qué, si no transformación, es tu urgente mandato?",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Und diese, von Hingang\nlebenden Dinge verstehn, daß du sie rühmst; vergänglich,\ntraun sie ein Rettendes uns, den Vergänglichsten, zu.\nWollen, wir sollen sie ganz im unsichtbarn Herzen verwandeln\nin – o unendlich – in uns! wer wir am Ende auch seien.\n\nErde, ist es nicht dies, was du willst: unsichtbar\nin uns erstehn? – Ist es dein Traum nicht,\neinmal unsichtbar zu sein? – Erde! unsichtbar!\nWas, wenn Verwandlung nicht, ist dein drängender Auftrag?",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-727",
+      "legacy_index": 727,
+      "t": "Que algún día, al final de la terrible comprensión,\npueda cantar júbilo y gloria a los ángeles que asienten.\nQue ninguno de los martillos del corazón, golpeados con claridad,\nfalle contra cuerdas blandas, vacilantes o que se desgarran.\n[…]\nNosotros, derrochadores de los dolores.\nCómo los contemplamos de antemano, proyectados en su triste duración,\npreguntándonos si acaso no terminarán. Pero ellos son\nnuestro follaje que perdura en invierno, nuestro oscuro verde del sentido,\nuna de las estaciones del año secreto. No solo tiempo:\nlugar, asentamiento, campamento, suelo, morada.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "Nosotros, derrochadores de los dolores",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "DASS ich dereinst, an dem Ausgang der grimmigen Einsicht,\nJubel und Ruhm aufsinge zustimmenden Engeln.\nDaß von den klargeschlagenen Hämmern des Herzens\nkeiner versage an weichen, zweifelnden oder\nreißenden Saiten.\n[…]\nWir, Vergeuder der Schmerzen.\nWie wir sie absehn voraus, in die traurige Dauer,\nob sie nicht enden vielleicht. Sie aber sind ja\nunser winterwähriges Laub, unser dunkeles Sinngrün,\neine der Zeiten des heimlichen Jahres –, nicht nur\nZeit –, sind Stelle, Siedelung, Lager, Boden, Wohnort.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-728",
+      "legacy_index": 728,
+      "t": "—Fuimos —dice ella— una gran estirpe, una vez, nosotras las Lamentaciones.\nNuestros padres trabajaban las minas allí, en la gran cordillera;\nentre los hombres encuentras a veces un trozo pulido de dolor primigenio\no, procedente de un antiguo volcán, ira petrificada en escoria.\nSí, aquella ira venía de allí. Una vez fuimos ricas.\n\nY conduce al joven suavemente por el amplio paisaje de las lamentaciones:\nle muestra las columnas de los templos o las ruinas\nde aquellos castillos desde donde los príncipes de la lamentación\ngobernaron antaño sabiamente la tierra.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "un trozo pulido de dolor primigenio",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "– Wir waren,\nsagt sie, ein großes Geschlecht, einmal, wir Klagen. Die Väter\ntrieben den Bergbau dort in dem großen Gebirg; bei Menschen\nfindest du manchmal ein Stück geschliffenes Urleid\noder, aus altem Vulkan, schlackig versteinerten Zorn.\nJa, der stammte von dort. Einst waren wir reich. –\n\nUnd sie leitet ihn leicht durch die weite Landschaft der Klagen,\nzeigt ihm die Säulen der Tempel oder die Trümmer\njener Burgen, von wo Klage-Fürsten das Land\neinstens weise beherrscht.",
+        "lang": "de",
+        "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-729",
+      "legacy_index": 729,
+      "t": "Pero si los infinitamente muertos suscitaran para nosotros un símil,\nmira, quizá señalarían los amentos colgantes del avellano vacío,\no hablarían de la lluvia que cae sobre la tierra oscura en primavera. —\n\nY nosotros, que pensamos en una felicidad que asciende,\nsentiríamos esa emoción —que casi nos desconcierta—\ncuando algo feliz cae.",
+      "a": "Rainer Maria Rilke",
+      "obra": "Elegías de Duino, Rainer Maria Rilke",
+      "highlight": "cuando algo feliz cae",
+      "lang": "es",
+      "type": "poem",
+      "authorId": "author-rainer-maria-rilke",
+      "workId": "work-elegias-de-duino",
+      "original": {
+        "text": "Aber erweckten sie uns, die unendlich Toten, ein Gleichnis,\nsiehe, sie zeigten vielleicht auf die Kätzchen der leeren\nHasel, die hängenden, oder\nmeinten den Regen, der fällt auf dunkles Erdreich im Frühjahr. –\n\nUnd wir, die an steigendes Glück\ndenken, empfänden die Rührung,\ndie uns beinah bestürzt,\nwenn ein Glückliches fällt.",
+        "lang": "de",
+        "label": "Original alemán"
       }
     }
   ]

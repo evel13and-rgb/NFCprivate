@@ -89,12 +89,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 705 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 728 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 705);
-  assert.equal(quotes.length, 705);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 705);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 705);
+  const quotes = validatePublicQuotesDocument(document, 728);
+  assert.equal(quotes.length, 728);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 728);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 728);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -252,6 +252,11 @@ test('public/data/quotes.json cumple el contrato público y contiene 705 frases'
     'quote-696', 'quote-697', 'quote-698', 'quote-699', 'quote-700',
     'quote-701', 'quote-702', 'quote-703', 'quote-704', 'quote-705',
     'quote-706',
+    'quote-707', 'quote-708', 'quote-709', 'quote-710', 'quote-711',
+    'quote-712', 'quote-713', 'quote-714', 'quote-715', 'quote-716',
+    'quote-717', 'quote-718', 'quote-719', 'quote-720', 'quote-721',
+    'quote-722', 'quote-723', 'quote-724', 'quote-725', 'quote-726',
+    'quote-727', 'quote-728', 'quote-729',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -668,6 +673,62 @@ test('La casa Thüringer publica 26 fragmentos franceses tras la segunda auditor
     .map(quote => quote.id);
   assert.deepEqual(cutIds, ['quote-688', 'quote-694']);
   for (const quote of istratiQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('Elegías de Duino publica 23 fragmentos alemanes tras la segunda auditoría', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const rilkeQuotes = document.quotes.filter(quote => quote.workId === 'work-elegias-de-duino');
+
+  assert.equal(rilkeQuotes.length, 23);
+  assert.deepEqual(
+    rilkeQuotes.map(quote => quote.id),
+    Array.from({ length: 23 }, (_, index) => `quote-${707 + index}`),
+  );
+  assert.equal(rilkeQuotes.every(quote => (
+    quote.a === 'Rainer Maria Rilke'
+    && quote.obra === 'Elegías de Duino, Rainer Maria Rilke'
+    && quote.type === 'poem'
+    && quote.t.includes(quote.highlight)
+    && quote.t.includes('\n')
+    && quote.original?.lang === 'de'
+    && quote.original?.label === 'Original alemán'
+    && quote.original?.text.includes('\n')
+  )), true);
+
+  assert.match(quotes.get('quote-707').t, /desde las jerarquías/);
+  assert.match(quotes.get('quote-707').original.text, /^WER, wenn ich schriee/);
+  assert.doesNotMatch(quotes.get('quote-708').t, /por fin/);
+  assert.match(quotes.get('quote-708').t, /resiste la cuerda/);
+  assert.match(quotes.get('quote-708').original.text, /Denn Bleiben ist nirgends[.]$/);
+  assert.match(quotes.get('quote-710').t, /^Sé que os tocáis/);
+  assert.doesNotMatch(quotes.get('quote-710').t, /^Amantes/);
+  assert.match(quotes.get('quote-711').t, /pero entre fiebres/);
+  assert.match(quotes.get('quote-713').t, /hermosa manzana\?…/);
+  assert.match(quotes.get('quote-713').original.text, /Apfel\?…… Mörder/);
+  assert.match(quotes.get('quote-715').t, /hacia el interior del fruto/);
+  assert.match(quotes.get('quote-716').t, /os hundisteis/);
+  assert.match(quotes.get('quote-719').t, /camina en la eternidad/);
+  assert.doesNotMatch(quotes.get('quote-719').t, /hacia la eternidad/);
+  assert.match(quotes.get('quote-721').t, /cruza el aire a sacudidas/);
+  assert.match(quotes.get('quote-722').t, /nos ha dado la vuelta/);
+  assert.match(quotes.get('quote-728').t, /^—Fuimos —dice ella—/);
+  assert.match(quotes.get('quote-728').t, /gran cordillera/);
+  assert.match(quotes.get('quote-728').t, /templos o las ruinas/);
+  assert.match(quotes.get('quote-728').t, /gobernaron antaño/);
+
+  const cutIds = rilkeQuotes
+    .filter(quote => quote.t.includes('[…]') || quote.original.text.includes('[…]'))
+    .map(quote => quote.id);
+  assert.deepEqual(cutIds, ['quote-715', 'quote-721', 'quote-724', 'quote-727']);
+  for (const quote of rilkeQuotes) {
     assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
     assert.equal(
       quote.t.match(/\[…\]/g)?.length || 0,
