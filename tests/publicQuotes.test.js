@@ -684,8 +684,11 @@ test('La casa Thüringer publica 26 fragmentos franceses tras la segunda auditor
 
 test('Elegías de Duino publica 23 fragmentos alemanes tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
   const rilkeQuotes = document.quotes.filter(quote => quote.workId === 'work-elegias-de-duino');
+  const authorProfile = profiles.authors.find(profile => profile.author_id === 'author-rainer-maria-rilke');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-elegias-de-duino');
 
   assert.equal(rilkeQuotes.length, 23);
   assert.deepEqual(
@@ -736,6 +739,47 @@ test('Elegías de Duino publica 23 fragmentos alemanes tras la segunda auditorí
       `${quote.id} debe conservar los recortes simétricos`,
     );
   }
+
+  assert.equal(authorProfile?.display_name, 'Rainer Maria Rilke —nacido René Maria Rilke—');
+  assert.equal(authorProfile?.birth_year, 1875);
+  assert.equal(authorProfile?.death_year, 1926);
+  assert.match(authorProfile?.language, /^Alemán[.].*francés/s);
+  assert.match(authorProfile?.bio_short, /Lou Andreas-Salomé.*Auguste Rodin.*castillo de Muzot/s);
+  assert.deepEqual(authorProfile?.themes, [
+    'La soledad',
+    'El amor',
+    'La muerte',
+    'La belleza',
+    'El sufrimiento',
+    'La identidad',
+    'La conciencia',
+    'El tiempo',
+    'La memoria',
+    'La infancia',
+    'La naturaleza',
+    'La espiritualidad',
+    'La transformación',
+    'La creación artística',
+    'Lo visible y lo invisible',
+    'La fragilidad humana',
+    'La aceptación de la existencia',
+  ]);
+  assert.equal(authorProfile?.portrait?.path, 'public/images/authors/rainer-maria-rilke.webp');
+  assert.equal(authorProfile?.portrait?.caption, 'Rainer Maria Rilke, 1901');
+  assert.match(authorProfile?.portrait?.source_url, /commons[.]wikimedia[.]org/);
+  assert.match(authorProfile?.portrait?.rights, /Dominio público/);
+  const portrait = await readFile(new URL('../public/images/authors/rainer-maria-rilke.webp', import.meta.url));
+  assert.ok(portrait.byteLength > 10_000);
+
+  assert.equal(workProfile?.original_title, 'Duineser Elegien');
+  assert.equal(workProfile?.publication_year, 1923);
+  assert.equal(workProfile?.language, 'Alemán');
+  assert.equal(workProfile?.fragment_count, 23);
+  assert.match(workProfile?.genre, /diez elegías/);
+  assert.match(workProfile?.context_notes, /castillo de Duino.*febrero de 1922.*publicaron en 1923/s);
+  assert.match(workProfile?.tone_notes, /Solemne, visionario, elegíaco/);
+  assert.match(workProfile?.fragment_notes, /Trece traducciones.*diez.*Cuatro fragmentos/s);
+  assert.equal(workProfile?.information_sources.length, 5);
 });
 
 test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda auditoría', async () => {

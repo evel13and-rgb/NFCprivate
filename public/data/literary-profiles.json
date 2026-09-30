@@ -1168,6 +1168,54 @@
         "rights": "Dominio público; Public Domain Mark 1.0",
         "object_position": "50% 30%"
       }
+    },
+    {
+      "author_id": "author-rainer-maria-rilke",
+      "display_name": "Rainer Maria Rilke —nacido René Maria Rilke—",
+      "birth_year": 1875,
+      "death_year": 1926,
+      "country": "Imperio austrohúngaro —nació en Praga, actual República Checa—",
+      "language": "Alemán. Durante sus últimos años también escribió poesía en francés.",
+      "period": "Finales del siglo XIX y primer tercio del siglo XX; últimos años del Imperio austrohúngaro, Primera Guerra Mundial y periodo de entreguerras.",
+      "movement": "Modernismo literario de lengua alemana, con influencias del simbolismo y el neorromanticismo. Su poesía evolucionó hacia una expresión profundamente personal, caracterizada por la intensidad lírica, la reflexión existencial y una extraordinaria capacidad para transformar los objetos cotidianos en símbolos.",
+      "bio_short": "Rainer Maria Rilke nació en Praga en 1875, en el seno de una familia de habla alemana. Por voluntad de su padre fue enviado a una academia militar, una experiencia que rechazó y que terminó abandonando por problemas de salud. Continuó su formación en Praga, Múnich y Berlín, donde orientó definitivamente su vida hacia la literatura. Su encuentro con la escritora y pensadora Lou Andreas-Salomé, con quien mantuvo una relación amorosa y después una larga amistad, fue decisivo para su desarrollo intelectual. Junto a ella viajó por Rusia y llegó a conocer a Tolstói, cuya espiritualidad y relación con el mundo campesino le causaron una profunda impresión.\n\nEn 1901 se casó con la escultora Clara Westhoff, con quien tuvo una hija, Ruth. La pareja se separó poco después, y Rilke desarrolló una existencia itinerante entre distintas ciudades europeas, sostenida en parte por encargos literarios y el apoyo de mecenas. Durante su estancia en París trabajó como secretario del escultor Auguste Rodin, de quien aprendió la importancia de la observación rigurosa. También recibió la influencia de Cézanne y de la pintura moderna. Estas experiencias transformaron su poesía: comenzó a tratar los objetos, los animales y las obras de arte como realidades capaces de revelar dimensiones profundas de la existencia.\n\nLa Europa de Rilke atravesó una transformación cultural y política radical, desde el final de los grandes imperios hasta la devastación de la Primera Guerra Mundial. El conflicto interrumpió su trabajo y acentuó su sensación de desarraigo. Su escritura evolucionó desde la sensibilidad religiosa de El libro de las horas hasta una poesía cada vez más exigente, preocupada por la conciencia, la soledad, el amor, la muerte y la capacidad del arte para transformar la experiencia. Para Rilke, la creación requería una entrega extraordinaria, y la soledad no era únicamente una forma de aislamiento, sino también una condición necesaria para la maduración interior.\n\nEn 1921 se instaló en el castillo de Muzot, en Suiza, donde culminó las Elegías de Duino y escribió los Sonetos a Orfeo durante un periodo de extraordinaria intensidad creativa. Su poesía tardía no busca escapar de la fragilidad humana, sino comprenderla y transformarla en una afirmación de la existencia. Rilke murió de leucemia en 1926, con cincuenta y un años. Su legado quedó marcado por una idea singular: la poesía no consiste simplemente en expresar sentimientos, sino en aprender a mirar el mundo hasta descubrir aquello que normalmente permanece invisible.",
+      "bio_long": null,
+      "themes": [
+        "La soledad",
+        "El amor",
+        "La muerte",
+        "La belleza",
+        "El sufrimiento",
+        "La identidad",
+        "La conciencia",
+        "El tiempo",
+        "La memoria",
+        "La infancia",
+        "La naturaleza",
+        "La espiritualidad",
+        "La transformación",
+        "La creación artística",
+        "Lo visible y lo invisible",
+        "La fragilidad humana",
+        "La aceptación de la existencia"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Fondation Rilke, biografía, cronología y archivo del poeta.",
+        "Poetry Foundation, biografía y estudio de la evolución literaria de Rainer Maria Rilke.",
+        "Donald Prater, A Ringing Glass: The Life of Rainer Maria Rilke, Oxford University Press.",
+        "Wikimedia Commons, fotografía de Rainer Maria Rilke y Clara Rilke-Westhoff, 1901."
+      ],
+      "portrait": {
+        "path": "public/images/authors/rainer-maria-rilke.webp",
+        "alt": "Retrato fotográfico de Rainer Maria Rilke de pie",
+        "caption": "Rainer Maria Rilke, 1901",
+        "credit": "Fotógrafo no identificado; recorte de una fotografía junto a Clara Rilke-Westhoff; Wikimedia Commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rainer_Maria_Rilke_und_Clara_Rilke-Westhoff_1901_(cropped).jpg",
+        "rights": "Dominio público; autor anónimo; Public Domain Mark 1.0",
+        "object_position": "50% 24%"
+      }
     }
   ],
   "works": [
@@ -2300,6 +2348,49 @@
         "Editorial Funambulista, La casa Thüringer, traducción de Ignacio de Llorens, 2025."
       ],
       "fragment_count": 26
+    },
+    {
+      "work_id": "work-elegias-de-duino",
+      "title": "Elegías de Duino",
+      "display_title": "Elegías de Duino",
+      "original_title": "Duineser Elegien",
+      "author_id": "author-rainer-maria-rilke",
+      "publication_year": 1923,
+      "genre": "Poemario compuesto por diez elegías; poesía lírica, filosófica y existencial de carácter modernista.",
+      "language": "Alemán",
+      "summary_short": "A través de diez composiciones, Rilke reflexiona sobre la condición humana, la muerte, el amor, la belleza y la dificultad de encontrar un sentido a nuestra existencia. El poeta se dirige a figuras como los ángeles, los amantes, los héroes y los muertos para explorar la distancia entre la vida humana, limitada por el tiempo, y una realidad más amplia que parece escapar a nuestra comprensión.\n\nLos ángeles representan una forma de existencia que supera las limitaciones humanas y cuya perfección resulta tan fascinante como aterradora. Frente a ellos, el ser humano aparece como una criatura frágil, incapaz de permanecer y consciente de que todo cuanto ama está destinado a desaparecer.\n\nSin embargo, las elegías no se limitan a lamentar esa condición. A medida que avanza el ciclo, Rilke explora la posibilidad de transformar la pérdida y la conciencia de la muerte en una afirmación de la vida. La capacidad humana para amar, recordar, nombrar y convertir la experiencia en poesía adquiere así un valor fundamental.",
+      "summary_long": null,
+      "context_notes": "Rilke comenzó las elegías en 1912, durante su estancia en el castillo de Duino, cerca de Trieste, como invitado de la princesa Marie von Thurn und Taxis, a quien dedicaría la obra. Su composición se prolongó durante una década, marcada por las dificultades creativas del poeta y la interrupción que supuso la Primera Guerra Mundial. Finalmente, en febrero de 1922, completó el ciclo durante una intensa etapa de inspiración en el castillo de Muzot, en Suiza. Las diez elegías se publicaron en 1923.\n\nLa obra refleja la crisis espiritual y cultural de una Europa que había experimentado la destrucción de la guerra y el derrumbe de antiguas certezas. Aunque Rilke recurre a imágenes religiosas, sus ángeles no deben interpretarse simplemente como figuras del cristianismo: representan una existencia que trasciende la separación humana entre vida y muerte. El poeta convierte así la elegía tradicional, asociada al lamento, en una reflexión sobre la necesidad de aceptar la fugacidad y transformar la experiencia humana mediante el arte.",
+      "themes": [
+        "La condición humana",
+        "La mortalidad",
+        "La belleza",
+        "El terror",
+        "El amor",
+        "La pérdida",
+        "La soledad",
+        "La conciencia",
+        "El tiempo",
+        "La fugacidad",
+        "La espiritualidad",
+        "La transformación",
+        "La infancia",
+        "La naturaleza",
+        "La relación entre lo visible y lo invisible",
+        "La creación poética",
+        "La afirmación de la existencia"
+      ],
+      "tone_notes": "Solemne, visionario, elegíaco y profundamente introspectivo. Rilke combina la angustia ante la muerte y la fragilidad humana con momentos de exaltación y asombro. Su lenguaje es simbólico, musical y de gran densidad metafórica, con imágenes que oscilan entre lo cotidiano y lo trascendente. Aunque el ciclo comienza desde una sensación de desamparo, avanza hacia una aceptación intensa, no exenta de dolor, de la existencia.",
+      "fragment_notes": "Los 23 fragmentos se cotejaron literalmente con la primera edición alemana de 1923 transcrita en Wikisource. Trece traducciones se aprobaron sin cambios y diez recibieron correcciones mínimas de fidelidad, sintaxis o límites. Cuatro fragmentos contienen recortes internos, señalados simétricamente con […] en alemán y español.",
+      "why_in_paramo": null,
+      "information_sources": [
+        "Rainer Maria Rilke, Duineser Elegien, primera edición, Insel-Verlag, Leipzig, 1923.",
+        "Fondation Rilke, cronología de la composición y publicación de las Elegías de Duino.",
+        "German History in Documents and Images, Rainer Maria Rilke, Duino Elegies: First, Second, and Third (1912).",
+        "University of California Press, Duino Elegies, edición bilingüe y estudio.",
+        "Wikisource en alemán, Duineser Elegien, transcripción cotejada de la primera edición."
+      ],
+      "fragment_count": 23
     }
   ]
 }
