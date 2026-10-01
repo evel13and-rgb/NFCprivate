@@ -782,6 +782,15 @@ test('Elegías de Duino publica 23 fragmentos alemanes tras la segunda auditorí
   assert.equal(workProfile?.information_sources.length, 5);
 });
 
+test('los poemas conservan la versificación con la alineación editorial a la izquierda', async () => {
+  const styles = await readFile(new URL('../style.css', import.meta.url), 'utf8');
+
+  assert.match(
+    styles,
+    /[.]quote-text--poem\s*\{[^}]*text-align:\s*left;[^}]*white-space:\s*pre-line;/s,
+  );
+});
+
 test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
