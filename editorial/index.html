@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Páramo · Mesa editorial</title>
+  <link rel="stylesheet" href="/editorial/panel.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <main id="login-view" class="login-shell" hidden>
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="brand-lockup">
+        <img src="/editorial/logo.svg" width="54" height="54" alt="">
+        <div>
+          <span class="eyebrow">Páramo Literario</span>
+          <strong>Mesa editorial</strong>
+        </div>
+      </div>
+      <div class="login-copy">
+        <p class="kicker">Espacio privado</p>
+        <h1 id="login-title">Tu catálogo,<br>sin ruido alrededor.</h1>
+        <p>Revisa fragmentos, fichas y fuentes desde una interfaz hecha para el trabajo editorial de Páramo.</p>
+      </div>
+      <form id="login-form" class="login-form">
+        <label>
+          <span>Correo</span>
+          <input name="email" type="email" autocomplete="username" required>
+        </label>
+        <label>
+          <span>Contraseña</span>
+          <input name="password" type="password" autocomplete="current-password" required>
+        </label>
+        <label id="otp-field" hidden>
+          <span>Código de verificación</span>
+          <input name="otp" inputmode="numeric" autocomplete="one-time-code">
+        </label>
+        <p id="login-error" class="form-error" role="alert" hidden></p>
+        <button class="button button-primary button-wide" type="submit">
+          <span>Entrar a la mesa</span><span aria-hidden="true">→</span>
+        </button>
+      </form>
+      <p class="login-footnote">La contraseña viaja únicamente al servicio privado de autenticación y no queda guardada en el navegador.</p>
+    </section>
+  </main>
+
+  <div id="app-view" class="app-shell" hidden>
+    <aside class="sidebar">
+      <div class="brand-lockup sidebar-brand">
+        <img src="/editorial/logo.svg" width="46" height="46" alt="">
+        <div>
+          <span class="eyebrow">Páramo Literario</span>
+          <strong>Mesa editorial</strong>
+        </div>
+      </div>
+
+      <nav class="primary-nav" aria-label="Secciones editoriales">
+        <button class="nav-item is-active" type="button" data-view="overview">
+          <span class="nav-icon" aria-hidden="true">⌂</span><span>Resumen</span>
+        </button>
+        <button class="nav-item" type="button" data-view="quotes">
+          <span class="nav-icon" aria-hidden="true">❝</span><span>Fragmentos</span>
+        </button>
+        <button class="nav-item" type="button" data-view="authors">
+          <span class="nav-icon" aria-hidden="true">Aa</span><span>Autores</span>
+        </button>
+        <button class="nav-item" type="button" data-view="works">
+          <span class="nav-icon" aria-hidden="true">▤</span><span>Obras</span>
+        </button>
+        <button class="nav-item" type="button" data-view="sources">
+          <span class="nav-icon" aria-hidden="true">⌘</span><span>Fuentes</span>
+        </button>
+        <button class="nav-item" type="button" data-view="publication_runs">
+          <span class="nav-icon" aria-hidden="true">↥</span><span>Publicaciones</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <span id="user-avatar" class="user-avatar">PL</span>
+          <span class="user-copy"><strong id="user-name">Editorial</strong><small id="user-email"></small></span>
+          <button id="logout-button" class="icon-button" type="button" title="Cerrar sesión" aria-label="Cerrar sesión">↪</button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <button id="menu-button" class="icon-button mobile-only" type="button" aria-label="Abrir navegación">☰</button>
+        <div>
+          <p id="view-kicker" class="kicker">Hoy en Páramo</p>
+          <h1 id="view-title">Resumen editorial</h1>
+        </div>
+        <div class="topbar-actions">
+          <span id="connection-status" class="connection-pill"><i></i> Catálogo privado</span>
+          <button id="refresh-button" class="icon-button" type="button" title="Actualizar" aria-label="Actualizar">↻</button>
+        </div>
+      </header>
+
+      <section id="content" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+  <aside id="editor-drawer" class="editor-drawer" aria-labelledby="drawer-title" aria-hidden="true">
+    <header class="drawer-header">
+      <div>
+        <p id="drawer-kicker" class="kicker">Edición</p>
+        <h2 id="drawer-title">Registro</h2>
+      </div>
+      <button id="drawer-close" class="icon-button" type="button" aria-label="Cerrar">×</button>
+    </header>
+    <form id="editor-form" class="editor-form">
+      <div id="editor-fields" class="editor-fields"></div>
+      <div id="editor-originals" class="originals-section" hidden></div>
+      <p id="editor-error" class="form-error" role="alert" hidden></p>
+      <footer class="drawer-footer">
+        <span id="save-status" class="save-status">Los cambios no se publican automáticamente.</span>
+        <button id="cancel-button" class="button button-secondary" type="button">Cancelar</button>
+        <button id="save-button" class="button button-primary" type="submit">Guardar cambios</button>
+      </footer>
+    </form>
+  </aside>
+
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <script type="module" src="/editorial/panel.js"></script>
+</body>
+</html>

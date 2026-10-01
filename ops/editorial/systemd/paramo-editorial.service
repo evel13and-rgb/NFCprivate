@@ -1,0 +1,45 @@
+[Unit]
+Description=Páramo Literario private editorial panel
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+
+[Service]
+Type=simple
+User=paramoliterario
+Group=paramoliterario
+WorkingDirectory=/var/www/paramo-literario
+Environment=NODE_ENV=production
+Environment=PARAMO_EDITORIAL_HOST=127.0.0.1
+Environment=PARAMO_EDITORIAL_PORT=3040
+Environment=PARAMO_EDITORIAL_SECURE_COOKIE=true
+Environment=DIRECTUS_URL=http://127.0.0.1:8055
+ExecStart=/usr/bin/node server/editorialServer.js
+Restart=on-failure
+RestartSec=5s
+TimeoutStartSec=20s
+TimeoutStopSec=15s
+
+NoNewPrivileges=true
+PrivateDevices=true
+PrivateTmp=true
+ProtectClock=true
+ProtectControlGroups=true
+ProtectHome=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectSystem=strict
+ReadOnlyPaths=/var/www/paramo-literario
+CapabilityBoundingSet=
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictRealtime=true
+RestrictSUIDSGID=true
+SystemCallArchitectures=native
+
+MemoryMax=256M
+TasksMax=96
+
+[Install]
+WantedBy=multi-user.target
