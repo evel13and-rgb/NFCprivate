@@ -2,9 +2,9 @@
 
 Registro de procedencia de los retratos incorporados a las fichas de autor. Las
 descripciones de derechos reproducen de forma resumida la información mostrada
-en la página de cada archivo de Wikimedia Commons en la fecha de consulta.
+por la institución o repositorio de origen en la fecha de consulta.
 
-| Autor | Archivo local | Fuente en Commons | Crédito documentado | Derechos indicados por Commons | Estado |
+| Autor | Archivo local | Fuente documental | Crédito documentado | Derechos indicados por la fuente | Estado |
 | --- | --- | --- | --- | --- | --- |
 | Franz Kafka | `public/images/authors/franz-kafka.webp` | [Franz Kafka, 1923](https://commons.wikimedia.org/wiki/File:Franz_Kafka,_1923.jpg) | Fotógrafo desconocido | Dominio público como obra anónima; Public Domain Mark 1.0 | Añadido |
 | Virginia Woolf | `public/images/authors/virginia-woolf.webp` | [Virginia Woolf in 1902](https://commons.wikimedia.org/wiki/File:George_Charles_Beresford_-_Virginia_Woolf_in_1902.jpg) | George Charles Beresford | Dominio público; Public Domain Mark 1.0 | Añadido |
@@ -22,18 +22,18 @@ en la página de cada archivo de Wikimedia Commons en la fecha de consulta.
 | Herman Melville | `public/images/authors/herman-melville.webp` | [Herman Melville, mayo de 1870](https://commons.wikimedia.org/wiki/File:Herman_Melville_by_Joseph_O_Eaton.jpg) | Joseph Oriel Eaton; Houghton Library, Harvard University | Dominio público en el país de origen y en Estados Unidos; Public Domain Mark 1.0 | Añadido |
 | Frances Hodgson Burnett | `public/images/authors/frances-hodgson-burnett.webp` | [Frances Hodgson Burnett, 1890](https://commons.wikimedia.org/wiki/File:Frances_(Hodgson)_Burnett,_1849-1924_LCCN2002697460.jpg) | Frances Benjamin Johnston; Library of Congress | Dominio público en el país de origen y en Estados Unidos; Public Domain Mark 1.0 | Añadido |
 | Panait Istrati | `public/images/authors/panait-istrati.webp` | [Panait Istrati, 1927](https://commons.wikimedia.org/wiki/File:Panait_Istrati_2_(cropped).jpg) | Fotógrafo no identificado; imagen publicada por Mitzpe, Jerusalén | Dominio público; Public Domain Mark 1.0 | Añadido; el original disponible mide 372 × 497 px y no se amplió |
+| Honoré de Balzac | `public/images/authors/honore-de-balzac.webp` | [Balzac, 1842](https://www.parismuseescollections.paris.fr/fr/maison-de-balzac/oeuvres/balzac-19) | Louis-Auguste Bisson; Paris Musées / Maison de Balzac | CC0 1.0 | Añadido desde el original institucional de 1792 × 2160 px; convertido a WebP de 800 × 965 px |
 | Henry James | — | [Portrait of Henry James, 1913](https://commons.wikimedia.org/wiki/File:Portrait_of_Henry_James_1913.jpg) | John Singer Sargent | Dominio público; Public Domain Mark 1.0 | Omitido: Commons confirmó los derechos, pero el servidor rechazó repetidamente la descarga con HTTP 429 |
 | Mary Webb | — | [Mary Webb](https://commons.wikimedia.org/wiki/File:Mary_webb.jpg) | Autor desconocido | La página declara dominio público en el país de origen, pero advierte que falta una etiqueta que justifique el dominio público en Estados Unidos | Omitido por documentación de derechos incompleta |
 | Pío Baroja | — | [Pío Baroja](https://commons.wikimedia.org/wiki/File:Portrait_of_P%C3%ADo_Baroja.jpg) | No evaluado para incorporación | No evaluado para incorporación | Omitido: no existe ficha manual de autor |
 
 ## Segunda tanda
 
-Antes de evaluar o descargar los archivos candidatos se comprobó la existencia
-de cada autor en `data/editorial/author-profiles.manual.json`. Ninguno de los
-diez autores de esta tanda tiene actualmente ficha manual, por lo que todos se
-omitieron conforme al criterio de no crear fichas nuevas. Al no ser elegibles
-para incorporación, no se atribuyen aquí créditos ni declaraciones de derechos
-sin una verificación destinada a uso efectivo.
+En la revisión inicial de esta tanda se omitieron los autores que todavía no
+contaban con una ficha editorial. Honoré de Balzac se incorporó posteriormente
+desde Directus junto con su ficha pública; su retrato documental figura ya en la
+tabla principal. Para los demás candidatos se mantiene el criterio de no añadir
+un retrato hasta que exista una ficha destinada a publicación.
 
 | Autor | Archivo candidato en Commons | Estado |
 | --- | --- | --- |
@@ -42,11 +42,10 @@ sin una verificación destinada a uso efectivo.
 | Mary Shelley | [Mary Shelley](https://commons.wikimedia.org/wiki/File:Mary_Shelley.jpeg) | Omitido: no existe ficha manual de autor |
 | Lucy Maud Montgomery | [Lucy Maud Montgomery](https://commons.wikimedia.org/wiki/File:Lucy_Maud_Montgomery.jpg) | Omitido: no existe ficha manual de autor |
 | Vicente Blasco Ibáñez | [Vicente Blasco Ibáñez, 1919](https://commons.wikimedia.org/wiki/File:Vicente_Blasco_Ib%C3%A1%C3%B1ez_in_1919.jpg) | Omitido: no existe ficha manual de autor |
-| Honoré de Balzac | [Honoré de Balzac, 1842](https://commons.wikimedia.org/wiki/File:Honor%C3%A9_de_Balzac_(1842)_detail.jpg) | Omitido: no existe ficha manual de autor |
 
 ## Tratamiento de los archivos
 
-Los originales se descargaron desde el enlace de archivo ofrecido por Commons.
+Los originales se descargaron desde el archivo ofrecido por la fuente documental.
 Se convirtieron a WebP con calidad 85, sin metadatos incrustados. Se mantuvo la
 proporción original y se limitó el ancho a 800 px. La interfaz muestra una
 miniatura recortada dentro de un marco fijo mediante `object-fit: cover`; el
