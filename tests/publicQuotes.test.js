@@ -791,6 +791,81 @@ test('los poemas conservan la versificación con la alineación editorial a la i
   );
 });
 
+test('Papá Goriot publica las fichas completas de Balzac y la obra con retrato documental', async () => {
+  const [document, profiles] = await Promise.all([
+    readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8').then(JSON.parse),
+    readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8').then(JSON.parse),
+  ]);
+  const authorProfile = profiles.authors.find(profile => profile.author_id === 'author-honore-de-balzac');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-papa-goriot');
+  const workQuotes = document.quotes.filter(quote => quote.workId === 'work-papa-goriot');
+
+  assert.equal(workQuotes.length, 12);
+  assert.equal(authorProfile?.display_name, 'Honoré de Balzac');
+  assert.equal(authorProfile?.birth_year, 1799);
+  assert.equal(authorProfile?.death_year, 1850);
+  assert.equal(authorProfile?.country, 'Francia');
+  assert.equal(authorProfile?.language, 'Francés');
+  assert.match(authorProfile?.movement, /Realismo francés.*novela moderna/s);
+  assert.match(authorProfile?.bio_short, /Tours.*La Comédie humaine.*Murió en París en 1850/s);
+  assert.deepEqual(authorProfile?.themes, [
+    'El dinero',
+    'La ambición',
+    'El ascenso social',
+    'La familia',
+    'La paternidad',
+    'El poder',
+    'El deseo',
+    'El matrimonio',
+    'La herencia',
+    'Las apariencias',
+    'La corrupción',
+    'La pobreza',
+    'La desigualdad',
+    'La vida urbana',
+    'La burguesía',
+    'La aristocracia',
+    'La tensión entre sentimientos y conveniencia',
+  ]);
+  assert.equal(authorProfile?.portrait?.path, 'public/images/authors/honore-de-balzac.webp');
+  assert.equal(authorProfile?.portrait?.caption, 'Honoré de Balzac, 1842');
+  assert.match(authorProfile?.portrait?.credit, /Louis-Auguste Bisson.*Maison de Balzac/);
+  assert.match(authorProfile?.portrait?.source_url, /parismuseescollections[.]paris[.]fr/);
+  assert.match(authorProfile?.portrait?.rights, /CC0 1[.]0/);
+  const portrait = await readFile(new URL('../public/images/authors/honore-de-balzac.webp', import.meta.url));
+  assert.ok(portrait.byteLength > 50_000);
+  assert.equal(portrait.subarray(0, 4).toString('ascii'), 'RIFF');
+  assert.equal(portrait.subarray(8, 12).toString('ascii'), 'WEBP');
+
+  assert.equal(workProfile?.title, 'Papá Goriot');
+  assert.equal(workProfile?.original_title, 'Le Père Goriot');
+  assert.equal(workProfile?.publication_year, 1835);
+  assert.equal(workProfile?.language, 'Francés');
+  assert.equal(workProfile?.fragment_count, 12);
+  assert.match(workProfile?.genre, /Novela realista y social.*formación/s);
+  assert.match(workProfile?.summary_short, /Eugène de Rastignac.*Vautrin.*anciano Goriot/s);
+  assert.match(workProfile?.context_notes, /La Revue de Paris.*diciembre de 1834.*La Comédie humaine/s);
+  assert.match(workProfile?.tone_notes, /Realista, crítico, irónico.*progresivamente trágico/s);
+  assert.deepEqual(workProfile?.themes, [
+    'La paternidad',
+    'El sacrificio',
+    'La ingratitud filial',
+    'El dinero',
+    'La ambición',
+    'El ascenso social',
+    'La corrupción',
+    'La desigualdad',
+    'La familia',
+    'Las apariencias',
+    'El matrimonio de conveniencia',
+    'La pobreza',
+    'La vejez',
+    'La soledad',
+    'La pérdida de la inocencia',
+  ]);
+  assert.equal(workProfile?.information_sources.length, 4);
+});
+
 test('Ana de las Tejas Verdes conserva voz, límites y recortes tras la segunda auditoría', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));

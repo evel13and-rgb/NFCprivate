@@ -5,8 +5,8 @@ Esta carpeta define el piloto reproducible que se inicializó el 20 de agosto de
 activos, saludables y limitados a la red prevista.
 
 El piloto contiene 18 colecciones, 242 campos y 46 relaciones registradas en
-Directus. El catálogo actual incorpora 29 autores, 32 obras, 32 fuentes, 17
-hablantes, 403 temas, 728 frases y 728 originales con sus relaciones. El audio
+Directus. El catálogo actual incorpora 30 autores, 33 obras, 33 fuentes, 17
+hablantes, 412 temas, 728 frases y 728 originales con sus relaciones. El audio
 sigue pendiente. El administrador inicial `paramorliterario@gmail.com` está
 creado y verificado.
 
