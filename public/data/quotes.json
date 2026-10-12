@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T13:36:05.665Z",
-  "quote_count": 728,
+  "generated_at": "2026-10-12T18:17:11.139Z",
+  "quote_count": 741,
   "quotes": [
     {
       "id": "quote-2",
@@ -12377,6 +12377,227 @@
         "text": "Aber erweckten sie uns, die unendlich Toten, ein Gleichnis,\nsiehe, sie zeigten vielleicht auf die Kätzchen der leeren\nHasel, die hängenden, oder\nmeinten den Regen, der fällt auf dunkles Erdreich im Frühjahr. –\n\nUnd wir, die an steigendes Glück\ndenken, empfänden die Rührung,\ndie uns beinah bestürzt,\nwenn ein Glückliches fällt.",
         "lang": "de",
         "label": "Original alemán"
+      }
+    },
+    {
+      "id": "quote-730",
+      "legacy_index": 730,
+      "t": "¡El amor! Desde hacía dos años la llenaba de la ansiedad creciente de su llegada. Ahora era libre para amar; solo le faltaba encontrarlo, ¡a él!\n\n¿Cómo sería? No lo sabía exactamente y ni siquiera se lo preguntaba. Sería él, eso era todo.\n\nSolo sabía que lo adoraría con toda su alma y que él la querría con todas sus fuerzas. Pasearían en noches como aquella, bajo la ceniza luminosa que caía de las estrellas. Caminarían con las manos enlazadas, apretados uno contra otro, oyendo latir sus corazones, sintiendo el calor de sus hombros, mezclando su amor con la dulce sencillez de las noches de verano, tan unidos que penetrarían fácilmente, por la sola fuerza de su ternura, hasta sus pensamientos más secretos.\n\nY aquello continuaría indefinidamente, en la serenidad de un afecto indescriptible.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "Sería él, eso era todo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "L’amour ! Il l’emplissait depuis deux années de l’anxiété croissante de son approche. Maintenant elle était libre d’aimer ; elle n’avait plus qu’à le rencontrer, lui !\n\nComment serait-il ? Elle ne le savait pas au juste et ne se le demandait même pas. Il serait lui, voilà tout.\n\nElle savait seulement qu’elle l’adorerait de toute son âme et qu’il la chérirait de toute sa force. Ils se promèneraient par les soirs pareils à celui-ci, sous la cendre lumineuse qui tombait des étoiles. Ils iraient, les mains dans les mains, serrés l’un contre l’autre, entendant battre leurs cœurs, sentant la chaleur de leurs épaules, mêlant leur amour à la simplicité suave des nuits d’été, tellement unis qu’ils pénétreraient aisément, par la seule puissance de leur tendresse, jusqu’à leurs plus secrètes pensées.\n\nEt cela continuerait indéfiniment, dans la sérénité d’une affection indescriptible.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-731",
+      "legacy_index": 731,
+      "t": "Y Jeanne se sentía enloquecer de felicidad. Una alegría delirante, una ternura infinita ante el esplendor de las cosas inundaron su corazón desfallecido. ¡Era su sol! ¡Su aurora! ¡El comienzo de su vida! ¡El amanecer de sus esperanzas! Extendió los brazos hacia el espacio resplandeciente, con ganas de abrazar al sol; quería hablar, gritar algo tan divino como aquel nacimiento del día, pero permaneció paralizada en un entusiasmo impotente.\n\nEntonces, apoyando la frente entre las manos, sintió los ojos llenos de lágrimas; y lloró con delicia.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "¡El amanecer de sus esperanzas!",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Et Jeanne se sentait devenir folle de bonheur. Une joie délirante, un attendrissement infini devant la splendeur des choses noya son cœur qui défaillait. C’était son soleil ! son aurore ! le commencement de sa vie ! le lever de ses espérances ! Elle tendit les bras vers l’espace rayonnant, avec une envie d’embrasser le soleil ; elle voulait parler, crier quelque chose de divin comme cette éclosion du jour ; mais elle demeurait paralysée dans un enthousiasme impuissant.\n\nAlors, posant son front dans ses mains, elle sentit ses yeux pleins de larmes ; et elle pleura délicieusement.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-732",
+      "legacy_index": 732,
+      "t": "Era algo así como una sombra o un objeto familiar, un mueble vivo que uno está acostumbrado a ver todos los días pero del que nunca se preocupa.\n\n[…]\n\nNo ocupaba ningún lugar; era uno de esos seres que permanecen desconocidos incluso para sus allegados, como inexplorados, y cuya muerte no deja ni hueco ni vacío en una casa; uno de esos seres que no saben entrar ni en la existencia, ni en las costumbres, ni en el amor de quienes viven junto a ellos.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "cuya muerte no deja ni hueco ni vacío en una casa",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "C’était quelque chose comme une ombre ou un objet familier, un meuble vivant qu’on est accoutumé à voir chaque jour, mais dont on ne s’inquiète jamais.\n\n[…]\n\nElle ne tenait point de place ; c’était un de ces êtres qui demeurent inconnus même à leurs proches, comme inexplorés, et dont la mort ne fait ni trou ni vide dans une maison, un de ces êtres qui ne savent entrer ni dans l’existence, ni dans les habitudes, ni dans l’amour de ceux qui vivent à côté d’eux.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-733",
+      "legacy_index": 733,
+      "t": "Le guardaba rencor a Julien por no comprender aquello, por carecer de esos delicados pudores, de esas delicadezas del instinto; y sentía entre ella y él como un velo, un obstáculo, al darse cuenta por primera vez de que dos personas nunca penetran la una hasta el alma de la otra, hasta el fondo de sus pensamientos; de que caminan una junto a otra, abrazadas a veces, pero no mezcladas, y de que el ser moral de cada uno de nosotros permanece eternamente solo durante la vida.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "permanece eternamente solo durante la vida",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Elle en voulait en son cœur à Julien de ne pas comprendre cela, de n’avoir point ces fines pudeurs, ces délicatesses d’instinct ; et elle sentait entre elle et lui comme un voile, un obstacle, s’apercevant pour la première fois que deux personnes ne se pénètrent jamais jusqu’à l’âme, jusqu’au fond des pensées, qu’elles marchent côte à côte, enlacées parfois, mais non mêlées, et que l’être moral de chacun de nous reste éternellement seul par la vie.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-734",
+      "legacy_index": 734,
+      "t": "También a ella le había parecido encantador; y únicamente por eso se había entregado, se había ligado para toda la vida, había renunciado a cualquier otra esperanza, a todos los proyectos entrevistos, a todo lo desconocido del mañana. Había caído en aquel matrimonio, en aquel agujero sin bordes por los que volver a subir, en aquella miseria, aquella tristeza, aquella desesperación, porque, como Rosalie, ¡le había parecido encantador!",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "a todo lo desconocido del mañana",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Elle aussi l’avait trouvé gentil ; et c’est uniquement pour cela qu’elle s’était donnée, liée pour la vie, qu’elle avait renoncé à toute autre espérance, à tous les projets entrevus, à tout l’inconnu de demain. Elle était tombée dans ce mariage, dans ce trou sans bords pour remonter dans cette misère, dans cette tristesse, dans ce désespoir, parce que, comme Rosalie, elle l’avait trouvé gentil !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-735",
+      "legacy_index": 735,
+      "t": "Aquel pequeño grito doloroso, aquel débil maullido de recién nacido, entró en su alma, en su corazón, en todo su pobre cuerpo agotado; y quiso, con un gesto inconsciente, tender los brazos.\n\nUna oleada de alegría la atravesó, un impulso hacia una felicidad nueva que acababa de nacer. En un segundo se encontró liberada, apaciguada, feliz, feliz como nunca lo había sido. Su corazón y su carne revivían: ¡se sentía madre!\n\n[…]\n\ncomprendió que estaba salvada, protegida contra toda desesperación, que tenía allí algo que amar hasta no saber hacer ya ninguna otra cosa.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "algo que amar hasta no saber hacer ya ninguna otra cosa",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "ce petit cri douloureux, ce miaulement frêle d’enfant nouveau-né lui entra dans l’âme, dans le cœur, dans tout son pauvre corps épuisé ; et elle voulut, d’un geste inconscient, tendre les bras.\n\nCe fut en elle une traversée de joie, un élan vers un bonheur nouveau, qui venait d’éclore. Elle se trouvait, en une seconde, délivrée, apaisée, heureuse, heureuse comme elle ne l’avait jamais été. Son cœur et sa chair se ranimaient, elle se sentait mère !\n\n[…]\n\nelle comprit qu’elle était sauvée, garantie contre tout désespoir, qu’elle tenait là de quoi aimer à ne savoir plus faire autre chose.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-736",
+      "legacy_index": 736,
+      "t": "Los campesinos también la censuraban entre ellos por no haber hecho que Poulet hiciera la primera comunión. Ellos mismos no acudían a los oficios, no se acercaban a los sacramentos o solo los recibían en Pascua, conforme a las prescripciones formales de la Iglesia; pero con los críos era otra cosa. Todos habrían retrocedido ante la audacia de criar a un hijo fuera de aquella ley común, porque la religión es la religión.\n\nJeanne percibió claramente aquella reprobación y se indignó en su interior ante todas aquellas componendas, aquellos arreglos de conciencia, aquel miedo universal a todo, aquella gran cobardía alojada en el fondo de todos los corazones y adornada, cuando se muestra, con tantas máscaras respetables.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "tantas máscaras respetables",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Les paysans aussi la blâmaient entre eux de n’avoir point fait faire à Poulet sa première communion. Ils n’allaient point aux offices, n’approchaient point des sacrements, ou bien ne les recevaient qu’à Pâques selon les prescriptions formelles de l’Église ; mais pour les mioches, c’était autre chose ; et tous auraient reculé devant l’audace d’élever un enfant hors de cette loi commune, parce que la Religion, c’est la Religion.\n\nElle vit bien cette réprobation, et s’indigna en son âme de toutes ces pactisations, de ces arrangements de conscience, de cette universelle peur de tout, de la grande lâcheté gîtée au fond de tous les cœurs, et parée, quand elle se montre, de tant de masques respectables.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-737",
+      "legacy_index": 737,
+      "t": "¡El alma! Empezó a soñar con aquel misterio insondable, entregándose de pronto a unas convicciones poéticas que otras hipótesis no menos vagas derribaban inmediatamente. ¿Dónde estaba ahora el alma de su madre? ¿El alma de aquel cuerpo inmóvil y helado? Muy lejos, quizá. ¿En alguna parte del espacio? Pero ¿dónde? ¿Evaporada como un pájaro invisible escapado de su jaula?",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "como un pájaro invisible escapado de su jaula",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "L’âme ! Elle se mit à rêver sur cet insondable mystère, se jetant brusquement en des convictions poétiques que d’autres hypothèses non moins vagues renversaient immédiatement. Où donc était, maintenant, l’âme de sa mère ? l’âme de ce corps immobile et glacé ? Très loin, peut-être. Quelque part dans l’espace ? Mais où ? Évaporée comme un invisible oiseau échappé de sa cage ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-738",
+      "legacy_index": 738,
+      "t": "Todos sus defectos disminuían, todas sus durezas desaparecían, incluso las infidelidades se atenuaban ahora con la distancia cada vez mayor de la tumba cerrada. Y Jeanne, invadida por una especie de vaga gratitud póstuma hacia aquel hombre que la había sostenido entre sus brazos, perdonaba los sufrimientos pasados para pensar únicamente en los momentos felices.\n\nLuego el tiempo, que seguía avanzando, y los meses, que caían unos sobre otros, fueron empolvando de olvido, como de polvo acumulado, todos sus recuerdos y sus dolores; y se entregó por entero a su hijo.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "empolvando de olvido",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Tous les défauts diminuaient, toutes les duretés disparaissaient, les infidélités elles-mêmes s’atténuaient maintenant dans l’éloignement grandissant du tombeau fermé. Et Jeanne, envahie par une sorte de vague gratitude posthume pour cet homme qui l’avait tenue en ses bras, pardonnait les souffrances passées pour ne songer qu’aux moments heureux.\n\nPuis le temps marchant toujours et les mois tombant sur les mois poudrèrent d’oubli, comme d’une poussière accumulée, toutes ses réminiscences et ses douleurs ; et elle se donna tout entière à son fils.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-739",
+      "legacy_index": 739,
+      "t": "Cuando se quedó sola en el coche, unos pensamientos extraños la asaltaron. Ya no reconocía a su Poulet, a su pequeño Poulet de antes. Por primera vez comprendía que había crecido, que ya no era suyo, que iba a vivir por su cuenta sin ocuparse de los viejos. Le parecía que se había transformado en un solo día.\n\n¡Cómo! ¿Aquel era su hijo, su pobre niño que antes le hacía trasplantar lechugas, aquel muchacho fuerte y barbudo cuya voluntad empezaba a afirmarse?",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "que ya no era suyo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "quand elle fut toute seule dans la voiture, des idées singulières l’assaillirent. Elle ne l’avait plus reconnu son Poulet, son petit Poulet de jadis. Pour la première fois elle s’apercevait qu’il était grand, qu’il n’était plus à elle, qu’il allait vivre de son côté sans s’occuper des vieux. Il lui semblait qu’en un jour il s’était transformé.\n\nQuoi ! c’était son fils, son pauvre petit enfant qui lui faisait autrefois repiquer des salades, ce fort garçon barbu dont la volonté s’affirmait !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-740",
+      "legacy_index": 740,
+      "t": "Le parecía también que algo había cambiado un poco por todas partes a su alrededor. El sol debía de ser algo menos cálido que en su juventud, el cielo un poco menos azul, la hierba un poco menos verde; y las flores, más pálidas y menos olorosas, ya no embriagaban del todo como antes.\n\nSin embargo, ciertos días la penetraba tal bienestar de vivir que volvía a soñar despierta, a esperar, a aguardar; pues ¿puede uno, pese al implacable rigor del destino, dejar de esperar siempre cuando hace buen tiempo?",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "dejar de esperar siempre cuando hace buen tiempo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Il lui semblait aussi que quelque chose était un peu changé partout autour d’elle. Le soleil devait être un peu moins chaud que dans sa jeunesse, le ciel un peu moins bleu, l’herbe un peu moins verte ; et les fleurs, plus pâles et moins odorantes, n’enivraient plus tout à fait autant.\n\nDans certains jours, cependant, un tel bien-être de vie la pénétrait, qu’elle se reprenait à rêvasser, à espérer, à attendre ; car peut-on, malgré la rigueur acharnée du sort, ne pas espérer toujours, quand il fait beau ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-741",
+      "legacy_index": 741,
+      "t": "Y a veces olvidaba por un momento que era vieja, que ya no había nada ante ella salvo algunos años lúgubres y solitarios, que había recorrido todo su camino; y construía, como a los dieciséis años, proyectos dulces para su corazón, componía pequeños pedazos de un futuro encantador.\n\nDespués caía sobre ella la dura sensación de lo real; se levantaba dolorida, como bajo la caída de un peso que le hubiese roto los riñones, y emprendía más lentamente el camino de regreso murmurando:\n\n—¡Oh, vieja loca! ¡Vieja loca!",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "pequeños pedazos de un futuro encantador",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Et parfois encore elle oubliait un moment qu’elle était vieille, qu’il n’y avait plus rien devant elle, hors quelques ans lugubres et solitaires, que toute sa route était parcourue ; et elle bâtissait, comme jadis, à seize ans, des projets doux à son cœur ; elle combinait des bouts d’avenir charmants.\n\nPuis la dure sensation du réel tombait sur elle ; elle se relevait courbaturée comme sous la chute d’un poids qui lui aurait cassé les reins ; et elle reprenait plus lentement le chemin de sa demeure en murmurant : « Oh vieille folle ! vieille folle ! »",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-742",
+      "legacy_index": 742,
+      "t": "De pronto, un tibio calor, un calor de vida que atravesaba sus ropas, alcanzó sus piernas y penetró en su carne: era el calor del pequeño ser que dormía sobre sus rodillas.\n\nEntonces la invadió una emoción infinita. Descubrió de pronto el rostro de la niña, que todavía no había visto: la hija de su hijo. Y cuando la frágil criatura, golpeada por la viva luz, abrió los ojos azules moviendo la boca, Jeanne se puso a besarla furiosamente, alzándola entre sus brazos, cubriéndola de besos.\n\nRosalie, satisfecha y brusca, la detuvo:\n\n—Vamos, vamos, señora Jeanne, basta; va a hacerla llorar.\n\nDespués añadió, respondiendo sin duda a su propio pensamiento:\n\n—La vida, ¿sabe?, nunca es tan buena ni tan mala como uno cree.",
+      "a": "Guy de Maupassant",
+      "obra": "Una vida, Guy de Maupassant",
+      "highlight": "nunca es tan buena ni tan mala como uno cree",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-guy-de-maupassant",
+      "workId": "work-una-vida",
+      "original": {
+        "text": "Et soudain une tiédeur douce, une chaleur de vie traversant ses robes, gagna ses jambes, pénétra sa chair ; c’était la chaleur du petit être qui dormait sur ses genoux.\n\nAlors une émotion infinie l’envahit. Elle découvrit brusquement la figure de l’enfant qu’elle n’avait pas encore vue : la fille de son fils. Et comme la frêle créature, frappée par la lumière vive, ouvrait ses yeux bleus en remuant la bouche, Jeanne se mit à l’embrasser furieusement, la soulevant dans ses bras, la criblant de baisers.\n\nMais Rosalie, contente et bourrue, l’arrêta. « Voyons, voyons, madame Jeanne, finissez ; vous allez la faire crier. »\n\nPuis elle ajouta, répondant sans doute à sa propre pensée : « La vie, voyez-vous, ça n’est jamais si bon ni si mauvais qu’on croit. »",
+        "lang": "fr",
+        "label": "Original francés"
       }
     }
   ]

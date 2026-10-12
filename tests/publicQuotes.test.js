@@ -89,12 +89,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 728 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 741 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 728);
-  assert.equal(quotes.length, 728);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 728);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 728);
+  const quotes = validatePublicQuotesDocument(document, 741);
+  assert.equal(quotes.length, 741);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 741);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 741);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -257,6 +257,9 @@ test('public/data/quotes.json cumple el contrato público y contiene 728 frases'
     'quote-717', 'quote-718', 'quote-719', 'quote-720', 'quote-721',
     'quote-722', 'quote-723', 'quote-724', 'quote-725', 'quote-726',
     'quote-727', 'quote-728', 'quote-729',
+    'quote-730', 'quote-731', 'quote-732', 'quote-733', 'quote-734',
+    'quote-735', 'quote-736', 'quote-737', 'quote-738', 'quote-739',
+    'quote-740', 'quote-741', 'quote-742',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -789,6 +792,52 @@ test('los poemas conservan la versificación con la alineación editorial a la i
     styles,
     /[.]quote-text--poem\s*\{[^}]*text-align:\s*left;[^}]*white-space:\s*pre-line;/s,
   );
+});
+
+test('Una vida publica trece fragmentos franceses con límites y recortes cotejados', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const maupassantQuotes = document.quotes.filter(quote => quote.workId === 'work-una-vida');
+
+  assert.equal(maupassantQuotes.length, 13);
+  assert.deepEqual(
+    maupassantQuotes.map(quote => quote.id),
+    Array.from({ length: 13 }, (_, index) => `quote-${730 + index}`),
+  );
+  assert.equal(maupassantQuotes.every(quote => (
+    quote.a === 'Guy de Maupassant'
+    && quote.obra === 'Una vida, Guy de Maupassant'
+    && quote.type === 'prose'
+    && quote.t.includes(quote.highlight)
+    && quote.original?.lang === 'fr'
+    && quote.original?.label === 'Original francés'
+  )), true);
+
+  assert.equal(quotes.get('quote-730').t.split('\n\n').length, 4);
+  assert.equal(quotes.get('quote-730').original.text.split('\n\n').length, 4);
+  assert.match(quotes.get('quote-735').original.text, /^ce petit cri douloureux/);
+  assert.match(quotes.get('quote-735').original.text, /\n\n\[…]\n\nelle comprit/);
+  assert.match(quotes.get('quote-735').t, /\n\n\[…]\n\ncomprendió/);
+  assert.match(quotes.get('quote-736').t, /Poulet hiciera la primera comunión/);
+  assert.match(quotes.get('quote-736').t, /con los críos era otra cosa/);
+  assert.match(quotes.get('quote-738').t, /sus recuerdos y sus dolores; y se entregó por entero a su hijo[.]$/);
+  assert.match(quotes.get('quote-738').original.text, /ses douleurs ; et elle se donna tout entière à son fils[.]$/);
+  assert.match(quotes.get('quote-739').original.text, /^quand elle fut toute seule dans la voiture/);
+  assert.doesNotMatch(quotes.get('quote-739').original.text, /Elle ne trouva pas un mot/);
+  assert.match(quotes.get('quote-740').t, /cambiado un poco por todas partes a su alrededor/);
+
+  const cutIds = maupassantQuotes
+    .filter(quote => quote.t.includes('[…]') || quote.original.text.includes('[…]'))
+    .map(quote => quote.id);
+  assert.deepEqual(cutIds, ['quote-732', 'quote-735']);
+  for (const quote of maupassantQuotes) {
+    assert.deepEqual(Object.keys(quote.original).sort(), ['label', 'lang', 'text']);
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
 });
 
 test('Papá Goriot publica las fichas completas de Balzac y la obra con retrato documental', async () => {
