@@ -2457,6 +2457,46 @@
         "Wikisource en alemán, Duineser Elegien, transcripción cotejada de la primera edición."
       ],
       "fragment_count": 23
+    },
+    {
+      "work_id": "work-una-vida",
+      "title": "Una vida",
+      "display_title": "Una vida",
+      "original_title": "Une vie (L’Humble Vérité)",
+      "author_id": "author-guy-de-maupassant",
+      "publication_year": 1883,
+      "genre": "Novela realista y naturalista; narrativa psicológica y social.",
+      "language": "Francés",
+      "summary_short": "Jeanne Le Perthuis des Vauds, una joven aristócrata normanda de diecisiete años, abandona el convento llena de expectativas sobre el amor, el matrimonio y la vida adulta. Poco después conoce a Julien de Lamare y se casa con él, convencida de que comienza la felicidad que había imaginado.\n\nLa realidad deshace progresivamente esas ilusiones. El matrimonio, las infidelidades, las pérdidas familiares y las decepciones con su hijo van reduciendo el mundo de Jeanne hasta convertir su historia en el recorrido completo de una existencia marcada por la distancia entre lo que esperaba vivir y lo que finalmente sucede.",
+      "summary_long": null,
+      "context_notes": "Une vie fue la primera novela de Maupassant. Apareció por entregas en Gil Blas en 1883 y se publicó en libro ese mismo año. La obra se sitúa en la Normandía del siglo XIX, un entorno que Maupassant conocía profundamente y que aparece en buena parte de su narrativa.\n\nA través de Jeanne, Maupassant cuestiona la educación sentimental de muchas mujeres de su clase: preparadas para idealizar el matrimonio, pero poco preparadas para afrontar el deseo, la infidelidad, el dinero o la desigualdad dentro de la pareja. La novela rehúye el heroísmo y se concentra en lo que su subtítulo llamaba «la humilde verdad»: una vida corriente sometida al desgaste del tiempo y de las ilusiones.",
+      "themes": [
+        "La pérdida de las ilusiones",
+        "El matrimonio",
+        "La infidelidad",
+        "La condición femenina",
+        "La maternidad",
+        "La familia",
+        "La educación sentimental",
+        "La soledad",
+        "El paso del tiempo",
+        "La frustración",
+        "El dinero",
+        "La religión",
+        "La desigualdad entre hombres y mujeres",
+        "La resignación",
+        "La distancia entre deseo y realidad"
+      ],
+      "tone_notes": "Sobrio, melancólico, íntimo y progresivamente desencantado. Maupassant observa las desgracias de Jeanne sin convertirlas en melodrama: su estilo directo y contenido hace que el deterioro de sus expectativas resulte aún más doloroso. La belleza del paisaje normando contrasta con frecuencia con la dureza de su experiencia.",
+      "fragment_notes": "Los 13 fragmentos se cotejaron con la transcripción validada de la edición Ollendorff de 1901 en Wikisource. Tres se aprobaron sin cambios y diez recibieron correcciones de fidelidad, límites o estructura de párrafos. Los dos recortes internos se comprobaron completos y se señalan simétricamente con […] en francés y español.",
+      "why_in_paramo": null,
+      "information_sources": [
+        "Guy de Maupassant, Une vie (L’Humble Vérité), Victor Havard, París, 1883.",
+        "Guy de Maupassant, Une vie (L’Humble Vérité), Librairie Paul Ollendorff, París, 1901; texto francés validado y facsímil en Wikisource.",
+        "Bibliothèque nationale de France, registro bibliográfico y documentación sobre la publicación por entregas de Une vie en Gil Blas en 1883.",
+        "Larousse, ficha crítica de Une vie (L’Humble Vérité)."
+      ],
+      "fragment_count": 13
     }
   ]
 }

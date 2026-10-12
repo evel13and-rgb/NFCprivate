@@ -795,9 +795,14 @@ test('los poemas conservan la versificación con la alineación editorial a la i
 });
 
 test('Una vida publica trece fragmentos franceses con límites y recortes cotejados', async () => {
-  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const [document, profiles] = await Promise.all([
+    readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8').then(JSON.parse),
+    readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8').then(JSON.parse),
+  ]);
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
   const maupassantQuotes = document.quotes.filter(quote => quote.workId === 'work-una-vida');
+  const maupassantProfiles = profiles.authors.filter(profile => profile.author_id === 'author-guy-de-maupassant');
+  const workProfile = profiles.works.find(profile => profile.work_id === 'work-una-vida');
 
   assert.equal(maupassantQuotes.length, 13);
   assert.deepEqual(
@@ -838,6 +843,35 @@ test('Una vida publica trece fragmentos franceses con límites y recortes coteja
       `${quote.id} debe conservar los recortes simétricos`,
     );
   }
+
+  assert.equal(maupassantProfiles.length, 1);
+  assert.equal(maupassantProfiles[0].portrait?.path, 'public/images/authors/guy-de-maupassant.webp');
+  assert.equal(workProfile?.original_title, 'Une vie (L’Humble Vérité)');
+  assert.equal(workProfile?.publication_year, 1883);
+  assert.equal(workProfile?.language, 'Francés');
+  assert.equal(workProfile?.fragment_count, 13);
+  assert.match(workProfile?.genre, /realista y naturalista/);
+  assert.match(workProfile?.context_notes, /primera novela.*Gil Blas.*Normandía/s);
+  assert.match(workProfile?.tone_notes, /Sobrio, melancólico, íntimo/);
+  assert.match(workProfile?.fragment_notes, /Tres se aprobaron sin cambios.*diez.*dos recortes internos/s);
+  assert.deepEqual(workProfile?.themes, [
+    'La pérdida de las ilusiones',
+    'El matrimonio',
+    'La infidelidad',
+    'La condición femenina',
+    'La maternidad',
+    'La familia',
+    'La educación sentimental',
+    'La soledad',
+    'El paso del tiempo',
+    'La frustración',
+    'El dinero',
+    'La religión',
+    'La desigualdad entre hombres y mujeres',
+    'La resignación',
+    'La distancia entre deseo y realidad',
+  ]);
+  assert.equal(workProfile?.information_sources.length, 4);
 });
 
 test('Papá Goriot publica las fichas completas de Balzac y la obra con retrato documental', async () => {

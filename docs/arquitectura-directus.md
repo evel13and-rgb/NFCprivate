@@ -365,8 +365,9 @@ producción.
 - La línea base de autores, obras, fuentes, hablantes, 640 frases y 640 originales
   se importó mediante procesos reproducibles. Las 15 altas posteriores de
   *Felicidad conyugal*, las 24 de *Lejos del mundanal ruido* y las 26 de *La
-  casa Thüringer* quedaron incorporadas y trazadas en Directus, hasta un total
-  de 728 frases y 728 originales.
+  casa Thüringer*, las 23 de *Elegías de Duino* y las 13 de *Una vida* quedaron
+  incorporadas y trazadas en Directus, hasta un total de 741 frases y 741
+  originales.
 - Los IDs, `legacy_index`, textos, hashes y relaciones del catálogo publicable
   coinciden con el JSON público vigente; los archivos editoriales históricos
   conservan la fotografía de la línea base inicial.
