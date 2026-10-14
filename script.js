@@ -1237,7 +1237,7 @@ function initProjectInfo() {
   };
 
   trigger.addEventListener('click', () => {
-    previousFocus = document.activeElement;
+    previousFocus = trigger;
     resetDialogScroll();
     document.body.classList.add('project-info-open');
     if (typeof dialog.showModal === 'function') {
