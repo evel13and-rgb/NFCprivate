@@ -3057,7 +3057,6 @@ body.night-fall .project-info-trigger {
 }
 
 body.modal-open .project-info-trigger,
-body.project-info-open .project-info-trigger,
 body.project-info-open .floating-action,
 body.project-info-open .quote-original-controls {
   visibility: hidden;
