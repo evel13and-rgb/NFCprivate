@@ -22,7 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=47" />
+  <link rel="stylesheet" href="style.css?v=48" />
 </head>
 <body class="app-loading rain-effects-paused" data-mode="day">
   <div
@@ -63,6 +63,19 @@
       <span class="quote-original-toggle__option quote-original-toggle__option--original" data-quote-view="original" aria-hidden="true">O</span>
     </button>
   </div>
+
+  <button
+    id="project-info-trigger"
+    class="project-info-trigger"
+    type="button"
+    aria-haspopup="dialog"
+    aria-controls="project-info-dialog"
+    aria-label="Conocer Páramo Literario"
+    title="Conocer Páramo Literario"
+  >
+    <span class="project-info-trigger__mark" aria-hidden="true">?</span>
+  </button>
+
   <main class="wrap">
     <section
       class="quote-flow"
@@ -159,6 +172,247 @@
     </svg>
   </button>
 
+  <dialog
+    class="project-info"
+    id="project-info-dialog"
+    aria-labelledby="project-info-title"
+    aria-describedby="project-info-introduction"
+  >
+    <article class="project-info__panel">
+      <button
+        class="project-info__close"
+        type="button"
+        aria-label="Cerrar esta explicación"
+        data-project-info-close
+      >×</button>
+
+      <header class="project-info__header">
+        <p class="project-info__eyebrow">Una puerta para comprender el proyecto</p>
+        <h2 class="project-info__title" id="project-info-title">Páramo Literario</h2>
+        <p class="project-info__lead" id="project-info-introduction">
+          Un lugar para encontrarse con la literatura a través de fragmentos. Puedes quedarte
+          en unas líneas o seguirlas hasta su autor, su obra y su lengua original. El fragmento
+          no sustituye al libro: es una puerta.
+        </p>
+      </header>
+
+      <div class="project-info__body">
+        <section class="project-info__feature" aria-labelledby="project-info-context-title">
+          <div class="project-info__section-heading">
+            <p class="project-info__index" aria-hidden="true">01</p>
+            <div>
+              <h3 id="project-info-context-title">Detrás de cada fragmento</h3>
+              <p>Toca el nombre o el título para asomarte a su ficha.</p>
+            </div>
+          </div>
+
+          <div class="project-info-demo">
+            <div class="project-info-demo__fragment">
+              <p>«Aquí es probable que la ficción contenga más verdad que los hechos.»</p>
+              <div class="project-info-demo__rule" aria-hidden="true"><span></span></div>
+              <button
+                class="project-info-demo__link is-active"
+                type="button"
+                aria-pressed="true"
+                data-project-info-tab="author"
+              >— Virginia Woolf</button>
+              <button
+                class="project-info-demo__link project-info-demo__link--work"
+                type="button"
+                aria-pressed="false"
+                data-project-info-tab="work"
+              >Una habitación propia</button>
+            </div>
+
+            <div class="project-info-demo__previews" aria-live="polite">
+              <article class="project-info-preview project-info-preview--author" data-project-info-panel="author">
+                <img
+                  src="public/images/authors/virginia-woolf.webp"
+                  alt="Retrato de Virginia Woolf"
+                  width="170"
+                  height="213"
+                  loading="lazy"
+                />
+                <div>
+                  <p class="project-info-preview__kind">Ficha de autora</p>
+                  <h4>Virginia Woolf</h4>
+                  <p class="project-info-preview__meta">1882–1941 · Inglaterra · Modernismo</p>
+                  <p>Un retrato y una breve aproximación a su vida, su época y su escritura.</p>
+                </div>
+              </article>
+
+              <article class="project-info-preview project-info-preview--work" data-project-info-panel="work" hidden>
+                <div class="project-info-preview__cover" aria-hidden="true">
+                  <span>Virginia<br />Woolf</span>
+                  <strong>Una habitación propia</strong>
+                  <i></i>
+                </div>
+                <div>
+                  <p class="project-info-preview__kind">Ficha de obra</p>
+                  <h4>Una habitación propia</h4>
+                  <p class="project-info-preview__meta">1929 · Ensayo literario</p>
+                  <p>Una entrada al libro, su contexto y los temas que recorren el fragmento.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <p class="project-info__context-copy">
+            No buscamos explicarlo todo, sino ofrecer la información necesaria para orientarse.
+            Cada obra es hija de su tiempo, y conocer algo de ese tiempo ayuda a comprender mejor
+            las palabras que tenemos delante.
+          </p>
+        </section>
+
+        <div class="project-info__chapters">
+          <details class="project-info-chapter">
+            <summary>
+              <span class="project-info-chapter__number" aria-hidden="true">02</span>
+              <span>Por qué existe</span>
+            </summary>
+            <div class="project-info-chapter__content project-info-chapter__content--story">
+              <p>Páramo Literario nació porque yo quería que existiera.</p>
+              <p>
+                Al principio no pensé en compartirlo. Quería una biblioteca para mis entretiempos:
+                abrirla sin saber qué iba a encontrar, dejarme sorprender por unas líneas, descubrir
+                autores a los que todavía no había llegado y volver también a otros que siempre
+                ofrecen una entrada nueva.
+              </p>
+              <p>
+                La idea tenía, sin embargo, una pequeña trampa: era yo misma quien escogía los
+                fragmentos, uno por uno. ¿Cómo iba a sorprenderme una biblioteca que conocía por dentro?
+              </p>
+              <p>Y, de algún modo, ocurría.</p>
+              <p>
+                El azar me devolvía un pasaje cuando yo ya no lo estaba buscando. Una frase conocida,
+                leída otro día, bajo otra luz o desde otro ánimo, dejaba ver algo distinto. Tal vez
+                ayudaba el tipo de fragmentos que estaba reuniendo: reflexiones abiertas, preguntas y
+                pasajes que no se cierran al terminar el párrafo.
+              </p>
+              <p>
+                Porque un fragmento no se agota cuando lo elegimos. Puede abrirse de nuevo cada vez
+                que volvemos a él.
+              </p>
+              <p>
+                Empecé reuniendo voces y obras menos frecuentadas, nombres que rara vez aparecen en
+                los recorridos más habituales. Con ellas fueron entrando también autores muy conocidos
+                y los grandes clásicos, porque una obra colosal no ofrece una sola lectura ni se agota
+                en el eco de su fama.
+              </p>
+              <p>
+                En Páramo conviven autores y autoras de distintas épocas, países, lenguas y tradiciones.
+                El criterio no es la fama ni la rareza de un nombre, sino que el fragmento conserve la
+                capacidad de abrir una pregunta, despertar una curiosidad o mostrar algo distinto al
+                volver a leerlo.
+              </p>
+              <p>
+                La literatura tiene esa condición extraordinaria: atraviesa culturas, religiones y
+                dogmas, pero no los borra. También los refleja. Nos permite reconocer aquello que
+                compartimos y, al mismo tiempo, acercarnos a formas muy diferentes de comprender el mundo.
+              </p>
+              <p>
+                Pensé que, si ese lugar no existía, podía construirlo para mí. Con el tiempo comprendí
+                que quizá también podía abrirlo a otras personas.
+              </p>
+            </div>
+          </details>
+
+          <details class="project-info-chapter">
+            <summary>
+              <span class="project-info-chapter__number" aria-hidden="true">03</span>
+              <span>Cómo cuidamos los textos</span>
+            </summary>
+            <div class="project-info-chapter__content">
+              <div class="project-info-versions" aria-label="Traducción y original">
+                <span class="is-selected">T</span><span>O</span>
+              </div>
+              <h4>Dos formas de acercarte al fragmento</h4>
+              <p>
+                Con <strong>T</strong> lees la traducción o actualización preparada para Páramo
+                Literario. Con <strong>O</strong> puedes volver al texto original y observar de dónde
+                parte nuestra versión. No hace falta comparar ambos para disfrutar del fragmento: la
+                posibilidad está ahí para quien sienta curiosidad.
+              </p>
+              <p>
+                La gran mayoría de los fragmentos se revisó obra por obra y pasaje por pasaje,
+                cotejando la versión española con el texto original.
+              </p>
+              <p>
+                Buscamos conservar no solo lo que el autor dice, sino también cómo lo dice: el tono,
+                las imágenes, el ritmo, las repeticiones, las ambigüedades y las posibles asperezas
+                del texto. Traducir no consiste aquí en hacerlo todo más bonito o más fácil, sino en
+                permanecer tan cerca del original como permite otra lengua.
+              </p>
+              <p>
+                Cuando existe un recorte, se indica con […]. Cuando la obra fue escrita originalmente
+                en español, conservamos el texto histórico junto a su actualización lingüística.
+              </p>
+            </div>
+          </details>
+
+          <details class="project-info-chapter">
+            <summary>
+              <span class="project-info-chapter__number" aria-hidden="true">04</span>
+              <span>La pulsera y la web</span>
+            </summary>
+            <div class="project-info-chapter__content project-info-chapter__content--nfc">
+              <div class="project-info-nfc" aria-hidden="true">
+                <span class="project-info-nfc__phone"></span>
+                <span class="project-info-nfc__waves"><i></i><i></i><i></i></span>
+              </div>
+              <div>
+                <p>
+                  La pulsera contiene una pequeña etiqueta NFC con un enlace a esta página. Al
+                  acercarla a un teléfono compatible, la web se abre sin necesidad de instalar una
+                  aplicación.
+                </p>
+                <p>
+                  La pulsera no guarda una biblioteca ni genera los fragmentos. Sencillamente abre la
+                  puerta y elige un texto para ese encuentro. Si recargas la página, el fragmento permanece.
+                </p>
+                <p>
+                  También puedes entrar directamente desde un navegador. La pulsera es otra forma de
+                  llegar, no la única.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-info-chapter">
+            <summary>
+              <span class="project-info-chapter__number" aria-hidden="true">05</span>
+              <span>Qué puedes hacer aquí</span>
+            </summary>
+            <div class="project-info-chapter__content">
+              <div class="project-info-actions">
+                <div>
+                  <span class="project-info-actions__icon" aria-hidden="true">◖</span>
+                  <h4>Escuchar</h4>
+                  <p>La voz ofrece otra manera de entrar en el ritmo del pasaje.</p>
+                </div>
+                <div>
+                  <span class="project-info-actions__icon" aria-hidden="true">↗</span>
+                  <h4>Compartir</h4>
+                  <p>Puedes guardar el fragmento como imagen o enviarlo a otra persona.</p>
+                </div>
+                <div>
+                  <span class="project-info-actions__icon" aria-hidden="true">☼</span>
+                  <h4>Volver</h4>
+                  <p>La luz y el clima acompañan la hora; el texto permanece si recargas.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <footer class="project-info__footer">
+          <p>Cuando vuelvas, quizá no encuentres una obra nueva.</p>
+          <p>Quizá una obra conocida te encuentre de otra manera.</p>
+        </footer>
+      </div>
+    </article>
+  </dialog>
+
   <div
     class="modal is-hidden"
     id="author-modal"
@@ -198,6 +452,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=45"></script>
+  <script type="module" src="script.js?v=46"></script>
 </body>
 </html>

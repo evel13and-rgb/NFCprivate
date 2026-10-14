@@ -1200,6 +1200,88 @@ function initMetadataInteractions() {
   }
 }
 
+function initProjectInfo() {
+  const trigger = document.getElementById('project-info-trigger');
+  const dialog = document.getElementById('project-info-dialog');
+  const closeButton = dialog?.querySelector('[data-project-info-close]');
+  const tabButtons = [...(dialog?.querySelectorAll('[data-project-info-tab]') ?? [])];
+  const previewPanels = [...(dialog?.querySelectorAll('[data-project-info-panel]') ?? [])];
+  const chapters = [...(dialog?.querySelectorAll('.project-info-chapter') ?? [])];
+  let previousFocus = null;
+
+  if (!trigger || !dialog) return;
+
+  const resetDialogScroll = () => {
+    const scrollContainer = dialog.querySelector('.project-info__body');
+    if (scrollContainer) scrollContainer.scrollTop = 0;
+  };
+
+  const restorePage = () => {
+    document.body.classList.remove('project-info-open');
+    const focusTarget = previousFocus;
+    previousFocus = null;
+    if (focusTarget && typeof focusTarget.focus === 'function') {
+      window.setTimeout(() => {
+        focusTarget.focus({ preventScroll: true });
+      }, 0);
+    }
+  };
+
+  const closeDialog = () => {
+    if (typeof dialog.close === 'function' && dialog.open) {
+      dialog.close();
+      return;
+    }
+    dialog.removeAttribute('open');
+    restorePage();
+  };
+
+  trigger.addEventListener('click', () => {
+    previousFocus = document.activeElement;
+    resetDialogScroll();
+    document.body.classList.add('project-info-open');
+    if (typeof dialog.showModal === 'function') {
+      dialog.showModal();
+    } else {
+      dialog.setAttribute('open', '');
+    }
+    closeButton?.focus({ preventScroll: true });
+  });
+
+  closeButton?.addEventListener('click', closeDialog);
+  dialog.addEventListener('close', restorePage);
+  dialog.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeDialog();
+  });
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) closeDialog();
+  });
+
+  tabButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const selectedPanel = button.dataset.projectInfoTab;
+      tabButtons.forEach((candidate) => {
+        const isSelected = candidate === button;
+        candidate.classList.toggle('is-active', isSelected);
+        candidate.setAttribute('aria-pressed', String(isSelected));
+      });
+      previewPanels.forEach((panel) => {
+        panel.hidden = panel.dataset.projectInfoPanel !== selectedPanel;
+      });
+    });
+  });
+
+  chapters.forEach((chapter) => {
+    chapter.addEventListener('toggle', () => {
+      if (!chapter.open) return;
+      chapters.forEach((candidate) => {
+        if (candidate !== chapter) candidate.open = false;
+      });
+    });
+  });
+}
+
 function getQuoteIdentifier() {
   if (typeof currentQuote?.idx === 'number') {
     return currentQuote.idx;
@@ -1988,6 +2070,7 @@ async function initApp() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  initProjectInfo();
   await initApp();
   initFireflyAura();
   scheduleDayNightModeUpdates();
