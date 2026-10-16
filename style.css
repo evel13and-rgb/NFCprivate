@@ -3175,6 +3175,7 @@ body.project-info-open {
 .project-info__header {
   position: relative;
   flex: 0 0 auto;
+  margin-inline: calc(-1 * clamp(1.4rem, 7vw, 5.4rem));
   padding: clamp(2.25rem, 5vw, 4rem) clamp(1.4rem, 7vw, 5.4rem) clamp(1.8rem, 4vw, 3rem);
   border-bottom: 1px solid rgba(210, 179, 117, 0.13);
 }
@@ -3227,6 +3228,7 @@ body.project-info-open {
 }
 
 .project-info__body {
+  flex: 1 1 auto;
   min-height: 0;
   padding: 0 clamp(1.4rem, 7vw, 5.4rem) clamp(2.6rem, 6vw, 4.6rem);
   overflow-x: hidden;
@@ -3770,6 +3772,7 @@ body.project-info-open {
   }
 
   .project-info__header {
+    margin-inline: -1.25rem;
     padding: 2.5rem 1.25rem 1.65rem;
   }
 
