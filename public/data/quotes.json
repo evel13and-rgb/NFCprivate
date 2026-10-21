@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T18:49:07.391Z",
+  "generated_at": "2026-10-21T18:52:51.216Z",
   "quote_count": 754,
   "quotes": [
     {
@@ -12679,6 +12679,16 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "context_notes": [
+        {
+          "term": "«Lo wordsworthiano» o «Sublime egotista»",
+          "explanation": "Keats llama así al modo poético que asociaba con William Wordsworth: una voz sostenida por una identidad personal reconocible y estable. Lo contrapone al «poeta camaleónico», capaz de abandonar su propio yo para habitar otras naturalezas. Es una caracterización crítica de Keats, no una definición neutral de toda la poesía de Wordsworth."
+        },
+        {
+          "term": "Iago e Imogen",
+          "explanation": "Son dos personajes de Shakespeare moralmente opuestos: Iago, en Otelo, encarna el engaño y la crueldad; Imogen, en Cimbelino, la fidelidad y la integridad. Keats sostiene que el poeta puede imaginar con igual intensidad a ambos sin que el carácter creado revele necesariamente su propia identidad moral."
+        }
+      ],
       "original": {
         "text": "As to the poetical Character itself (I mean that sort, of which, if I am anything, I am a member; that sort distinguished from the Wordsworthian, or egotistical Sublime; which is a thing per se, and stands alone,) it is not itself—it has no self—It is everything and nothing—It has no character—it enjoys light and shade; it lives in gusto, be it foul or fair, high or low, rich or poor, mean or elevated—It has as much delight in conceiving an Iago as an Imogen.\n\nWhat shocks the virtuous philosopher delights the chameleon poet. It does no harm from its relish of the dark side of things, any more than from its taste for the bright one, because they both end in speculation. A poet is the most unpoetical of anything in existence, because he has no Identity—he is continually in for and filling some other body.",
         "lang": "en",
