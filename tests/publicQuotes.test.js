@@ -2069,6 +2069,42 @@ test('Cartas de John Keats publica trece pares con contexto epistolar y notas ex
   assert.doesNotMatch(quotes.get('quote-753').original.text, /I cannot breathe without you/);
 });
 
+test('John Keats y sus Cartas publican fichas completas con retrato documental', async () => {
+  const profiles = JSON.parse(await readFile(
+    new URL('../public/data/literary-profiles.json', import.meta.url),
+    'utf8',
+  ));
+  const author = profiles.authors.find(profile => profile.author_id === 'author-john-keats');
+  const work = profiles.works.find(profile => profile.work_id === 'work-cartas-de-john-keats');
+
+  assert.equal(author?.display_name, 'John Keats');
+  assert.equal(author?.birth_year, 1795);
+  assert.equal(author?.death_year, 1821);
+  assert.match(author?.movement, /Romanticismo inglés.*intensidad sensorial/s);
+  assert.match(author?.bio_short, /aprendiz de cirujano.*Fanny Brawne.*Roma.*veinticinco años/s);
+  assert.equal(author?.themes.length, 15);
+  assert.equal(author?.portrait?.path, 'public/images/authors/john-keats.webp');
+  assert.equal(author?.portrait?.caption, 'John Keats, hacia 1822');
+  assert.match(author?.portrait?.credit, /William Hilton.*Joseph Severn.*National Portrait Gallery/);
+  assert.match(author?.portrait?.source_url, /commons[.]wikimedia[.]org/);
+  assert.match(author?.portrait?.rights, /Dominio público/);
+  const portrait = await readFile(new URL('../public/images/authors/john-keats.webp', import.meta.url));
+  assert.ok(portrait.byteLength > 70_000);
+  assert.equal(portrait.subarray(0, 4).toString('ascii'), 'RIFF');
+  assert.equal(portrait.subarray(8, 12).toString('ascii'), 'WEBP');
+
+  assert.equal(work?.title, 'Cartas de John Keats');
+  assert.equal(work?.original_title, null);
+  assert.equal(work?.publication_year, null);
+  assert.equal(work?.language, 'Inglés');
+  assert.equal(work?.fragment_count, 13);
+  assert.match(work?.genre, /Correspondencia personal.*prosa epistolar/s);
+  assert.match(work?.summary_short, /hermanos, amigos, editores.*legado/s);
+  assert.match(work?.context_notes, /no fueron concebidas para su publicación.*1848.*Rollins.*1958/s);
+  assert.match(work?.fragment_notes, /trece fragmentos.*destinatario y la fecha/s);
+  assert.equal(work?.themes.length, 15);
+});
+
 test('script.js ya no contiene el catálogo completo ni colecciones literarias', async () => {
   const source = await readFile(new URL('../script.js', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);

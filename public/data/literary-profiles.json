@@ -1264,6 +1264,52 @@
         "rights": "Dominio público; autor anónimo; Public Domain Mark 1.0",
         "object_position": "50% 24%"
       }
+    },
+    {
+      "author_id": "author-john-keats",
+      "display_name": "John Keats",
+      "birth_year": 1795,
+      "death_year": 1821,
+      "country": "Reino Unido —Inglaterra—",
+      "language": "Inglés",
+      "period": "Finales del siglo XVIII y comienzos del XIX; periodo de la Regencia británica y Romanticismo inglés.",
+      "movement": "Romanticismo inglés, tradicionalmente incluido en su segunda generación. Su poesía se caracteriza por la intensidad sensorial, la reflexión sobre la belleza, la imaginación, la mortalidad y la tensión entre experiencia y deseo.",
+      "bio_short": "John Keats nació en Londres en 1795. Perdió a sus padres siendo todavía joven y comenzó su formación profesional como aprendiz de cirujano y boticario. En 1816 obtuvo la certificación que le permitía ejercer, pero decidió abandonar progresivamente la medicina para dedicarse a la poesía. Su formación médica no desapareció por completo de su escritura: el cuerpo, la enfermedad, la percepción sensorial y la fragilidad física tienen una presencia extraordinaria en su obra.\n\nEntró en los círculos literarios londinenses a través del poeta y editor Leigh Hunt y publicó su primer volumen en 1817. Su carrera fue extraordinariamente breve y rápida: entre 1818 y 1820 desarrolló buena parte de las ideas y poemas por los que hoy es conocido. El año 1819 fue especialmente fecundo y produjo obras como La víspera de Santa Inés, La belle dame sans merci y sus grandes odas. Al mismo tiempo sufrió problemas económicos, cuidó a su hermano Tom durante su tuberculosis y comenzó su relación con Fanny Brawne.\n\nLas cartas son fundamentales para comprenderlo. Keats no escribió tratados sistemáticos sobre literatura o sobre su propia concepción del mundo: buena parte de su pensamiento quedó disperso en la correspondencia que mantenía con familiares, amigos y otros escritores. En ella conviven observaciones cotidianas, lecturas, dudas, intuiciones, bromas, preocupaciones personales y reflexiones surgidas al hilo de su propia experiencia. Esa espontaneidad permite seguir de manera excepcional la evolución de su pensamiento y de su sensibilidad durante los pocos años en que desarrolló su obra.\n\nA comienzos de 1820 sufrió una grave hemorragia pulmonar y comprendió que padecía tuberculosis, enfermedad que ya había causado la muerte de su madre y de su hermano Tom. Su relación con Fanny Brawne quedó condicionada por la enfermedad y la precariedad económica. En septiembre de 1820 viajó a Italia acompañado por el pintor Joseph Severn buscando un clima más favorable, pero murió en Roma el 23 de febrero de 1821, con veinticinco años. Su reputación creció enormemente después de su muerte hasta convertirlo en una de las figuras centrales de la poesía romántica inglesa.",
+      "bio_long": null,
+      "themes": [
+        "La belleza",
+        "La imaginación",
+        "La mortalidad",
+        "El deseo",
+        "El amor",
+        "La naturaleza",
+        "El tiempo",
+        "La pérdida",
+        "El sufrimiento",
+        "La experiencia sensorial",
+        "El arte",
+        "La incertidumbre",
+        "La identidad del poeta",
+        "La enfermedad",
+        "La tensión entre permanencia y fugacidad"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Poetry Foundation, biografía y selección crítica de John Keats.",
+        "Harvard University, Houghton Library, Harvard Keats Collection.",
+        "Hyder Edward Rollins (ed.), The Letters of John Keats, 1814–1821, Harvard University Press, 1958.",
+        "Wikimedia Commons y National Portrait Gallery, retrato de John Keats por William Hilton, según Joseph Severn, hacia 1822."
+      ],
+      "portrait": {
+        "path": "public/images/authors/john-keats.webp",
+        "alt": "Retrato pintado de John Keats con la cabeza apoyada en una mano, junto a un libro abierto",
+        "caption": "John Keats, hacia 1822",
+        "credit": "William Hilton, según Joseph Severn; National Portrait Gallery, Londres",
+        "source_url": "https://commons.wikimedia.org/wiki/File:John_Keats_by_William_Hilton_circa_1822.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 48%"
+      }
     }
   ],
   "works": [
@@ -2495,6 +2541,46 @@
         "Guy de Maupassant, Une vie (L’Humble Vérité), Librairie Paul Ollendorff, París, 1901; texto francés validado y facsímil en Wikisource.",
         "Bibliothèque nationale de France, registro bibliográfico y documentación sobre la publicación por entregas de Une vie en Gil Blas en 1883.",
         "Larousse, ficha crítica de Une vie (L’Humble Vérité)."
+      ],
+      "fragment_count": 13
+    },
+    {
+      "work_id": "work-cartas-de-john-keats",
+      "title": "Cartas de John Keats",
+      "display_title": "Cartas de John Keats",
+      "original_title": null,
+      "author_id": "author-john-keats",
+      "publication_year": null,
+      "genre": "Correspondencia personal; prosa epistolar, autobiográfica y de reflexión.",
+      "language": "Inglés",
+      "summary_short": "Las cartas de Keats reúnen conversaciones privadas con sus hermanos, amigos, editores y otras personas de su entorno. No forman una narración continua, pero permiten seguir casi en tiempo real su desarrollo personal e intelectual, sus relaciones, sus lecturas, sus preocupaciones cotidianas y las circunstancias que acompañaron su breve trayectoria como escritor.\n\nEn ellas se conserva una mirada especialmente directa al modo en que Keats observaba, pensaba y experimentaba el mundo. Las cartas reúnen reflexiones, dudas, impresiones cotidianas, comentarios sobre personas y acontecimientos, observaciones sobre literatura y momentos de introspección. Precisamente por esa amplitud y espontaneidad, su correspondencia constituye una parte esencial de su legado y permite acercarse a su pensamiento sin reducirlo a un conjunto concreto de ideas o temas.",
+      "summary_long": null,
+      "context_notes": "Keats escribió estas cartas durante los pocos años en los que se produjo casi toda su evolución poética. Estaban destinadas a personas concretas y no fueron concebidas para su publicación, circunstancia que explica su libertad de tono y la convivencia entre asuntos cotidianos, experiencias personales, comentarios literarios y reflexiones más elaboradas.\n\nLa primera gran recopilación apareció póstumamente en 1848 dentro de Life, Letters, and Literary Remains of John Keats, editada por Richard Monckton Milnes. La edición académica fundamental del siglo XX es The Letters of John Keats, 1814–1821, preparada por Hyder Edward Rollins en 1958. Harvard conserva actualmente una de las principales colecciones de manuscritos y cartas originales de Keats.",
+      "themes": [
+        "La experiencia personal",
+        "Las relaciones humanas",
+        "La creación",
+        "La literatura",
+        "El amor",
+        "La amistad",
+        "La enfermedad",
+        "La muerte",
+        "La vida cotidiana",
+        "Las lecturas",
+        "La identidad",
+        "La incertidumbre",
+        "Las aspiraciones",
+        "Las dificultades materiales",
+        "La evolución intelectual y emocional"
+      ],
+      "tone_notes": "Muy variable: íntimo, espontáneo, humorístico, reflexivo, afectuoso y, en determinados momentos, vulnerable o angustiado. Su correspondencia cambia de registro según el destinatario y las circunstancias, y precisamente esa variedad permite observar distintas facetas de Keats que no siempre aparecen con la misma claridad en su poesía.",
+      "fragment_notes": "La selección reúne trece fragmentos de cartas escritas entre noviembre de 1817 y noviembre de 1820. Cada fragmento identifica en su panel de contexto el destinatario y la fecha; las cartas de datación amplia o integradas en una carta-diario incluyen además la precisión correspondiente.",
+      "why_in_paramo": null,
+      "information_sources": [
+        "John Keats, correspondencia conservada en la Houghton Library de Harvard, Harvard Keats Collection.",
+        "Hyder Edward Rollins (ed.), The Letters of John Keats, 1814–1821, Harvard University Press, 1958.",
+        "Richard Monckton Milnes (ed.), Life, Letters, and Literary Remains of John Keats, 1848.",
+        "Ediciones históricas de la correspondencia de John Keats en dominio público."
       ],
       "fragment_count": 13
     }
