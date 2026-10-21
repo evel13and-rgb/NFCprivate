@@ -72,7 +72,7 @@ const publicProfilesReady = loadPublicProfiles();
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 let activeQuotes = EMERGENCY_QUOTES;
 let quoteManager = createQuoteManager(activeQuotes, storage);
-const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=5');
+const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=6');
 
 let currentQuote = null;
 let currentQuoteTextVersion = null;

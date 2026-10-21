@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-12T18:17:11.139Z",
-  "quote_count": 741,
+  "generated_at": "2026-10-21T18:49:07.391Z",
+  "quote_count": 754,
   "quotes": [
     {
       "id": "quote-2",
@@ -12598,6 +12598,227 @@
         "text": "Et soudain une tiédeur douce, une chaleur de vie traversant ses robes, gagna ses jambes, pénétra sa chair ; c’était la chaleur du petit être qui dormait sur ses genoux.\n\nAlors une émotion infinie l’envahit. Elle découvrit brusquement la figure de l’enfant qu’elle n’avait pas encore vue : la fille de son fils. Et comme la frêle créature, frappée par la lumière vive, ouvrait ses yeux bleus en remuant la bouche, Jeanne se mit à l’embrasser furieusement, la soulevant dans ses bras, la criblant de baisers.\n\nMais Rosalie, contente et bourrue, l’arrêta. « Voyons, voyons, madame Jeanne, finissez ; vous allez la faire crier. »\n\nPuis elle ajouta, répondant sans doute à sa propre pensée : « La vie, voyez-vous, ça n’est jamais si bon ni si mauvais qu’on croit. »",
         "lang": "fr",
         "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-743",
+      "legacy_index": 743,
+      "t": "No tengo certeza de nada salvo de la santidad de los afectos del corazón y de la verdad de la imaginación. Lo que la imaginación aprehende como belleza debe ser verdad, haya existido antes o no, pues tengo de todas nuestras pasiones la misma idea que del amor: en lo sublime, todas crean una belleza esencial.\n\n[…]\n\nLa imaginación puede compararse con el sueño de Adán: despertó y descubrió que era verdad.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "la verdad de la imaginación",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "I am certain of nothing but of the holiness of the Heart's affections and the truth of Imagination - What the imagination seizes as Beauty must be truth - whether it existed before or not - for I have the same idea of all our passions as of love: they are all, in their sublime, creative of essential beauty.\n\n[…]\n\nThe imagination may be compared to Adam's dream, - he awoke and found it truth.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-744",
+      "legacy_index": 744,
+      "t": "Apenas recuerdo haber confiado nunca en felicidad alguna. No la busco si no está en la hora presente; nada me sobresalta más allá del momento.\n\nEl sol poniente siempre me devuelve el equilibrio; o, si un gorrión aparece ante mi ventana, participo de su existencia y picoteo entre la grava.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "participo de su existencia",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "I scarcely remember counting upon any Happiness—I look not for it if it be not in the present hour,—nothing startles me beyond the moment. The Setting Sun will always set me to rights, or if a Sparrow come before my Window, I take part in its existence and pick about the gravel.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-745",
+      "legacy_index": 745,
+      "t": "Varias cosas encajaron en mi mente y de pronto se me ocurrió cuál era la cualidad que contribuía a formar a un hombre de grandes logros, especialmente en literatura, y que Shakespeare poseía en grado tan extraordinario.\n\nMe refiero a la Capacidad Negativa: cuando un hombre es capaz de permanecer en medio de incertidumbres, misterios y dudas sin ningún afán irritable por alcanzar los hechos y la razón.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "permanecer en medio de incertidumbres, misterios y dudas",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "Several things dove-tailed in my mind, and at once it struck me what quality went to form a Man of Achievement, especially in Literature, and which Shakspeare possessed so enormously—I mean Negative Capability, that is, when a man is capable of being in uncertainties, mysteries, doubts, without any irritable reaching after fact and reason.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-746",
+      "legacy_index": 746,
+      "t": "En poesía tengo unos pocos axiomas, y ya verás cuán lejos estoy de su centro.\n\nPrimero: creo que la poesía debería sorprender por un bello exceso, no por singularidad; debería impresionar al lector como si pusiera en palabras sus propios pensamientos más elevados y parecer casi un recuerdo.\n\nSegundo: sus toques de belleza nunca deberían quedarse a medio camino, dejando al lector sin aliento en vez de satisfecho. El surgimiento, el avance y el ocaso de las imágenes deberían llegarle con naturalidad, como el sol: brillar sobre él y ponerse sobriamente, aunque con magnificencia, dejándolo en el lujo del crepúsculo.\n\nPero es más fácil pensar cómo debería ser la poesía que escribirla. Y esto me lleva a otro axioma: si la poesía no surge con tanta naturalidad como las hojas de un árbol, más vale que no surja en absoluto.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "parecer casi un recuerdo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "In poetry I have a few axioms, and you will see how far I am from their centre.\n\n1st. I think poetry should surprise by a fine excess, and not by singularity; It should strike the reader as a wording of his own highest thoughts, and appear almost a remembrance.\n\n2d. Its touches of beauty should never be half-way, thereby making the reader breathless, instead of content. The rise, the progress, the setting of Imagery should, like the sun, come natural to him, shine over him, and set soberly, although in magnificence, leaving him in the luxury of twilight. But it is easier to think what poetry should be, than to write it—And this leads me to\n\nAnother axiom—That if poetry comes not as naturally as the leaves to a tree, it had better not come at all.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-747",
+      "legacy_index": 747,
+      "t": "En cuanto al carácter poético mismo —me refiero a esa clase de la que, si soy algo, formo parte; esa clase distinta de lo wordsworthiano, o Sublime egotista, que es algo en sí y se sostiene por sí solo—, no es él mismo: no tiene un yo. Es todo y nada. No tiene carácter. Disfruta de la luz y de la sombra; se deleita tanto en lo repulsivo como en lo bello, en lo elevado como en lo bajo, en lo rico como en lo pobre, en lo mezquino como en lo noble. Le produce tanto placer concebir a un Iago como a una Imogen.\n\nLo que escandaliza al filósofo virtuoso deleita al poeta camaleónico. Su gusto por el lado oscuro de las cosas no hace más daño que su gusto por el luminoso, porque ambos desembocan en especulación.\n\nUn poeta es lo menos poético de cuanto existe, porque no tiene identidad: está continuamente entrando en otro cuerpo y llenándolo.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "no tiene identidad",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "As to the poetical Character itself (I mean that sort, of which, if I am anything, I am a member; that sort distinguished from the Wordsworthian, or egotistical Sublime; which is a thing per se, and stands alone,) it is not itself—it has no self—It is everything and nothing—It has no character—it enjoys light and shade; it lives in gusto, be it foul or fair, high or low, rich or poor, mean or elevated—It has as much delight in conceiving an Iago as an Imogen.\n\nWhat shocks the virtuous philosopher delights the chameleon poet. It does no harm from its relish of the dark side of things, any more than from its taste for the bright one, because they both end in speculation. A poet is the most unpoetical of anything in existence, because he has no Identity—he is continually in for and filling some other body.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-748",
+      "legacy_index": 748,
+      "t": "Estoy convencido de que escribiría movido únicamente por el anhelo y el cariño que siento por lo bello, aunque los trabajos de cada noche fueran quemados cada mañana y ningún ojo brillara jamás sobre ellos.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "aunque los trabajos de cada noche fueran quemados cada mañana",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "I feel assured I should write from the mere yearning and fondness I have for the beautiful, even if my night’s labours should be burnt every Morning, and no eye ever shine upon them.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-749",
+      "legacy_index": 749,
+      "t": "Cada día siento con mayor intensidad, a medida que mi imaginación cobra fuerza, que no vivo solo en este mundo, sino en mil mundos.\n\nEn cuanto estoy solo, formas de grandeza épica se apostan a mi alrededor y prestan a mi espíritu el mismo servicio que la guardia personal de un rey; entonces «la Tragedia, con manto y cetro, pasa majestuosa».\n\nSegún mi estado de ánimo, estoy con Aquiles gritando en las trincheras o con Teócrito en los valles de Sicilia.\n\nO arrojo todo mi ser en Troilo y, repitiendo aquellos versos —«vago como un alma perdida por las riberas estigias, esperando el paso»—, me disuelvo en el aire con una voluptuosidad tan delicada que me contento con estar solo.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "no vivo solo en este mundo, sino en mil mundos",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "I feel more and more every day, as my imagination strengthens, that I do not live in this world alone but in a thousand worlds—No sooner am I alone than shapes of epic greatness are stationed around me, and serve my Spirit the office which is equivalent to a King’s bodyguard—then “Tragedy with sceptred pall comes sweeping by.” According to my state of mind I am with Achilles shouting in the Trenches, or with Theocritus in the Vales of Sicily.\n\nOr I throw my whole being into Troilus, and repeating those lines, “I wander like a lost Soul upon the stygian Banks staying for waftage,” I melt into the air with a voluptuousness so delicate that I am content to be alone.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-750",
+      "legacy_index": 750,
+      "t": "Llama al mundo, si quieres, «el valle donde se hacen las almas». Entonces descubrirás para qué sirve el mundo.\n\nHablo ahora en los términos más elevados para la naturaleza humana, admitiendo que es inmortal, cosa que daré aquí por supuesta con el propósito de mostrar un pensamiento que se me ha ocurrido.\n\nDigo «hacer almas»: el alma como algo distinto de una inteligencia.\n\nPuede haber millones de inteligencias o chispas de la divinidad, pero no son almas hasta que adquieren identidades, hasta que cada una es personalmente ella misma.\n\n[…]\n\n¿No ves cuán necesario es un mundo de dolores y dificultades para educar una inteligencia y convertirla en alma? Un lugar donde el corazón deba sentir y sufrir de mil maneras distintas.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "convertir una inteligencia en alma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "Call the world if you please “The vale of Soul-making.” Then you will find out the use of the world (I am speaking now in the highest terms for human nature admitting it to be immortal which I will here take for granted for the purpose of showing a thought which has struck me concerning it) I say ‘Soul-making’—Soul as distinguished from an Intelligence.\n\nThere may be intelligences or sparks of the divinity in millions—but they are not Souls till they acquire identities, till each one is personally itself.\n\n[…]\n\nDo you not see how necessary a World of Pains and troubles is to school an Intelligence and make it a soul? A Place where the heart must feel and suffer in a thousand diverse ways.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-751",
+      "legacy_index": 751,
+      "t": "Casi desearía que fuéramos mariposas y viviéramos solo tres días de verano: podría colmar tres días así contigo de más deleite del que cincuenta años corrientes llegarían jamás a contener.\n\n[…]\n\nPero no: he de vivir de la esperanza y el azar.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "tres días así contigo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "I almost wish we were butterflies and liv’d but three summer days—three such days with you I could fill with more delight than fifty common years could ever contain.\n\n[…]\n\nBut no—I must live upon hope and Chance.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-752",
+      "legacy_index": 752,
+      "t": "Tengo dos lujos sobre los que cavilar durante mis paseos: tu belleza y la hora de mi muerte.\n\n¡Ojalá pudiera poseer ambos en el mismo instante!\n\nOdio el mundo: golpea demasiado las alas de mi propia voluntad. Ojalá pudiera tomar de tus labios un dulce veneno que me sacara de él.\n\nNo lo tomaría de ningunos otros labios.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "tu belleza y la hora de mi muerte",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "I have two luxuries to brood over in my walks, your Loveliness and the hour of my death. O that I could have possession of them both in the same minute. I hate the world: it batters too much the wings of my self-will, and would I could take a sweet poison from your lips to send me out of it. From no others would I take it.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-753",
+      "legacy_index": 753,
+      "t": "Mi amor me ha vuelto egoísta. No puedo existir sin ti. Me olvido de todo salvo de volver a verte; mi vida parece detenerse ahí: no veo más allá.\n\nMe has absorbido. En este momento tengo la sensación de estar disolviéndome. Sería exquisitamente desdichado sin la esperanza de verte pronto. Tendría miedo de alejarme demasiado de ti.\n\nMi dulce Fanny, ¿no cambiará nunca tu corazón? Mi amor, ¿cambiará? Mi amor ya no conoce límites… Tu nota acaba de llegar justo aquí. No puedo ser más feliz lejos de ti. Es más rica que un galeón cargado de perlas. No me amenaces ni siquiera en broma.\n\nMe asombraba que los hombres pudieran morir mártires por una religión; me estremecía ante ello. Ya no me estremezco. Podría sufrir martirio por mi religión. El amor es mi religión; podría morir por él. Podría morir por ti.\n\nMi credo es el Amor y tú eres su único artículo de fe.\n\nMe has arrebatado mediante una fuerza a la que no puedo resistirme; y, sin embargo, pude resistir hasta que te vi. Incluso después de verte he intentado muchas veces «razonar contra las razones de mi Amor».",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "tengo la sensación de estar disolviéndome",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "My love has made me selfish. I cannot exist without you—I am forgetful of everything but seeing you again—my Life seems to stop there—I see no further. You have absorb’d me. I have a sensation at the present moment as though I was dissolving—I should be exquisitely miserable without the hope of soon seeing you. I should be afraid to separate myself far from you. My sweet Fanny, will your heart never change? My love, will it? I have no limit now to my love.... Your note came in just here. I cannot be happier away from you—’Tis richer than an Argosy of Pearles. Do not threat me even in jest. I have been astonished that Men could die Martyrs for religion—I have shudder’d at it. I shudder no more—I could be martyr’d for my Religion—Love is my religion—I could die for that. I could die for you. My Creed is Love and you are its only tenet—You have ravish’d me away by a Power I cannot resist; and yet I could resist till I saw you; and even since I have seen you I have endeavoured often “to reason against the reasons of my Love.”",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-754",
+      "legacy_index": 754,
+      "t": "Ahora que he tenido ocasión de pasar noches inquietas y en vela, he descubierto que otros pensamientos se entrometen.\n\n«Si muriera —me dije—, no habría dejado tras de mí ninguna obra inmortal, nada que hiciera que mis amigos se sintieran orgullosos de mi memoria; pero he amado el principio de belleza en todas las cosas y, si hubiera tenido tiempo, habría logrado que me recordaran».\n\nPensamientos como estos apenas acudían a mí cuando estaba sano y cada pulso latía por ti; ahora tú y esta —¿puedo llamarla así?— «última flaqueza de las mentes nobles» os repartís todos mis pensamientos.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "he amado el principio de belleza en todas las cosas",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "Now I have had opportunities of passing nights anxious and awake I have found other thoughts intrude upon me.\n\n“If I should die,” said I to myself, “I have left no immortal work behind me—nothing to make my friends proud of my memory—but I have lov’d the principle of beauty in all things, and if I had had time I would have made myself remember’d.”\n\nThoughts like these came very feebly whilst I was in health and every pulse beat for you—now you divide with this (may I say it?) “last infirmity of noble minds” all my reflection.",
+        "lang": "en",
+        "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-755",
+      "legacy_index": 755,
+      "t": "Es lo que más me cuesta en el mundo: escribir una carta. Mi estómago sigue tan mal que lo siento peor cuando abro cualquier libro, aunque estoy mucho mejor que durante la cuarentena.\n\nAdemás, me asusta enfrentarme a los pros y los contras de cualquier asunto de Inglaterra que me interese.\n\nTengo la sensación habitual de que mi verdadera vida ha pasado y de que llevo una existencia póstuma.\n\nDios sabe cómo habría sido; pero me parece… Sin embargo, no hablaré de ese asunto.",
+      "a": "John Keats",
+      "obra": "Cartas de John Keats, John Keats",
+      "highlight": "llevo una existencia póstuma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-john-keats",
+      "workId": "work-cartas-de-john-keats",
+      "original": {
+        "text": "’Tis the most difficult thing in the world to me to write a letter. My stomach continues so bad, that I feel it worse on opening any book,—yet I am much better than I was in quarantine. Then I am afraid to encounter the pro-ing and con-ing of anything interesting to me in England. I have an habitual feeling of my real life having passed, and that I am leading a posthumous existence. God knows how it would have been—but it appears to me—however, I will not speak of that subject.",
+        "lang": "en",
+        "label": "Original inglés"
       }
     }
   ]

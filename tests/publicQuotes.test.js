@@ -104,12 +104,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 741 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 754 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 741);
-  assert.equal(quotes.length, 741);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 741);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 741);
+  const quotes = validatePublicQuotesDocument(document, 754);
+  assert.equal(quotes.length, 754);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 754);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 754);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -275,6 +275,9 @@ test('public/data/quotes.json cumple el contrato público y contiene 741 frases'
     'quote-730', 'quote-731', 'quote-732', 'quote-733', 'quote-734',
     'quote-735', 'quote-736', 'quote-737', 'quote-738', 'quote-739',
     'quote-740', 'quote-741', 'quote-742',
+    'quote-743', 'quote-744', 'quote-745', 'quote-746', 'quote-747',
+    'quote-748', 'quote-749', 'quote-750', 'quote-751', 'quote-752',
+    'quote-753', 'quote-754', 'quote-755',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -1987,7 +1990,7 @@ test('script.js ya no contiene el catálogo completo ni colecciones literarias',
   const source = await readFile(new URL('../script.js', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);
   assert.doesNotMatch(source, /const\s+QUOTES\s*=\s*\[/);
-  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=5'\)/);
+  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=6'\)/);
   const shareSnapshotSource = source.slice(
     source.indexOf('function getQuoteCardSnapshot()'),
     source.indexOf('function getSnapshotShareText'),
