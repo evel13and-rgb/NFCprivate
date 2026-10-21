@@ -1,5 +1,28 @@
 export const PUBLIC_QUOTES_SCHEMA_VERSION = 1;
 
+function validateContextNotes(notes, position) {
+  if (!Array.isArray(notes) || !notes.length) {
+    throw new Error(`quotes.json: quotes[${position}].context_notes es inválido`);
+  }
+  for (const [notePosition, note] of notes.entries()) {
+    const fields = note && typeof note === 'object' && !Array.isArray(note)
+      ? Object.keys(note)
+      : [];
+    if (fields.length !== 2 || !['term', 'explanation'].every(field => fields.includes(field))) {
+      throw new Error(
+        `quotes.json: quotes[${position}].context_notes[${notePosition}] contiene campos no públicos`,
+      );
+    }
+    for (const field of ['term', 'explanation']) {
+      if (typeof note[field] !== 'string' || !note[field].trim()) {
+        throw new Error(
+          `quotes.json: quotes[${position}].context_notes[${notePosition}].${field} es inválido`,
+        );
+      }
+    }
+  }
+}
+
 // Último recurso para que un fallo de red o de validación nunca deje la portada sin frase.
 // El catálogo runtime completo vive exclusivamente en public/data/quotes.json.
 export const EMERGENCY_QUOTES = Object.freeze([
@@ -65,6 +88,7 @@ export function validatePublicQuotesDocument(document, expectedCount) {
     if (!(quote.highlight === null || typeof quote.highlight === 'string')) {
       throw new Error(`quotes.json: quotes[${position}].highlight es inválido`);
     }
+    if (quote.context_notes !== undefined) validateContextNotes(quote.context_notes, position);
     if (quote.original !== undefined) {
       const original = quote.original;
       const allowedOriginalFields = new Set(['text', 'lang', 'label']);

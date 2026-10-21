@@ -4,7 +4,8 @@ import {
   formatQuotedText,
   getQuoteBoundaryDecoration,
 } from './quoteOriginal.js?v=4';
-import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=5';
+import { createQuoteContextController } from './quoteContext.js?v=1';
+import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=6';
 import { initFireflyAura } from './fireflies.js?v=5';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
@@ -78,6 +79,7 @@ let currentQuoteTextVersion = null;
 let quoteElementRef = null;
 let quoteHighlightRef = null;
 let quoteOriginalController = null;
+let quoteContextController = null;
 let quoteCardRef = null;
 let shareButtonRef = null;
 let listenVoiceButtonRef = null;
@@ -1972,6 +1974,7 @@ function renderQuote(quote) {
   currentQuote = quote;
   currentQuoteTextVersion = null;
   stopQuoteVoice();
+  quoteContextController?.render(currentQuote);
   if (quoteOriginalController) quoteOriginalController.render(currentQuote);
   else renderQuoteTextVersion({ text: currentQuote.t ?? '', lang: currentQuote.lang ?? '' });
 
@@ -2053,6 +2056,12 @@ async function initApp() {
     button: document.getElementById('quote-original-toggle'),
     label: document.getElementById('quote-original-label'),
     onViewChange: renderQuoteTextVersion,
+  });
+  quoteContextController = createQuoteContextController({
+    container: document.getElementById('quote-context'),
+    button: document.getElementById('quote-context-toggle'),
+    panel: document.getElementById('quote-context-panel'),
+    list: document.getElementById('quote-context-list'),
   });
   sceneBackgroundController = createSceneBackgroundController();
   initDaylightMotes();

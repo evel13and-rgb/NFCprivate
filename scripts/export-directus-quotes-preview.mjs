@@ -15,8 +15,25 @@ const publicQuotesPath = path.join(projectRoot, 'public', 'data', 'quotes.json')
 
 const publicQuoteFields = new Set([
   'id', 'legacy_index', 't', 'a', 'obra', 'highlight', 'lang', 'type',
-  'authorId', 'workId', 'original',
+  'authorId', 'workId', 'context_notes', 'original',
 ]);
+
+function normalizeContextNotes(value, label) {
+  if (value === null || value === undefined) return [];
+  if (!Array.isArray(value)) throw new Error(`${label} debe ser una lista`);
+  return value.map((note, position) => {
+    const fields = note && typeof note === 'object' && !Array.isArray(note)
+      ? Object.keys(note)
+      : [];
+    if (fields.length !== 2 || !['term', 'explanation'].every((field) => fields.includes(field))) {
+      throw new Error(`${label}[${position}] no cumple el contrato público`);
+    }
+    const term = typeof note.term === 'string' ? note.term.trim() : '';
+    const explanation = typeof note.explanation === 'string' ? note.explanation.trim() : '';
+    if (!term || !explanation) throw new Error(`${label}[${position}] está incompleta`);
+    return { term, explanation };
+  });
+}
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');
@@ -101,6 +118,10 @@ function validatePublicDocument(document) {
       typeof quote.highlight === 'string' && quote.highlight.length
     ))) {
       throw new Error(`quotes[${position}].highlight no es válido`);
+    }
+    if (quote.context_notes !== undefined) {
+      const notes = normalizeContextNotes(quote.context_notes, `quotes[${position}].context_notes`);
+      if (!notes.length) throw new Error(`quotes[${position}].context_notes está vacío`);
     }
     if (quote.original !== undefined) {
       const originalFields = Object.keys(quote.original);
@@ -210,6 +231,8 @@ function buildPublicDocument({ quotes, originals, generatedAt }) {
         authorId: quote.author_id,
         workId: quote.work_id,
       };
+      const contextNotes = normalizeContextNotes(quote.context_notes, `${quote.id}.context_notes`);
+      if (contextNotes.length) result.context_notes = contextNotes;
       const original = originalsByQuote.get(quote.id);
       if (original) result.original = original;
       return result;
@@ -281,7 +304,7 @@ async function main() {
   accessToken = login.access_token;
 
   const [quotes, originals, sources, quoteSources, originalSources, publicResponse] = await Promise.all([
-    request('/items/quotes?limit=-1&sort=legacy_index&fields=id,legacy_index,text,highlight,language,quote_type,author_id,work_id,speaker_display_name,legacy_attribution,legacy_work,text_hash,publication_excluded,workflow_status,visibility,verification_status'),
+    request('/items/quotes?limit=-1&sort=legacy_index&fields=id,legacy_index,text,highlight,context_notes,language,quote_type,author_id,work_id,speaker_display_name,legacy_attribution,legacy_work,text_hash,publication_excluded,workflow_status,visibility,verification_status'),
     request('/items/quote_originals?limit=-1&fields=id,import_key,quote_id,original_text,language,label,is_primary,workflow_status,visibility,verification_status'),
     request('/items/sources?limit=-1&fields=id,rights_status,verification_status'),
     request('/items/quote_sources?limit=-1&fields=quote_id,source_id,relation_role'),

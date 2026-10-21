@@ -49,6 +49,21 @@ test('original es opcional y solo admite sus tres campos públicos', () => {
   );
 });
 
+test('las notas contextuales son opcionales, públicas y estructuradas', () => {
+  const withContext = structuredClone(sampleQuotes);
+  withContext[0].context_notes = [{
+    term: 'Iago e Imogen',
+    explanation: 'Dos personajes de Shakespeare moralmente opuestos.',
+  }];
+  assert.doesNotThrow(() => validatePublicQuotesDocument(documentFor(withContext), withContext.length));
+
+  withContext[0].context_notes[0].editorial_note = 'Privada';
+  assert.throws(
+    () => validatePublicQuotesDocument(documentFor(withContext), withContext.length),
+    /campos no públicos/,
+  );
+});
+
 test('usa el fallback indicado si falla el fetch o la validación', async () => {
   const networkFailure = await loadPublicQuotes('/public/data/quotes.json', sampleQuotes, async () => {
     throw new Error('sin red');

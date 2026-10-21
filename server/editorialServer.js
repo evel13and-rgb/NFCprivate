@@ -18,12 +18,12 @@ export const collectionDefinitions = Object.freeze({
   quotes: {
     label: 'Fragmentos',
     fields: [
-      'id', 'legacy_index', 'text', 'highlight', 'language', 'quote_type', 'author_id',
+      'id', 'legacy_index', 'text', 'highlight', 'context_notes', 'language', 'quote_type', 'author_id',
       'work_id', 'speaker_display_name', 'attribution_type', 'publication_excluded',
       'workflow_status', 'visibility', 'verification_status', 'reviewed_at', 'date_updated',
     ],
     patchFields: new Set([
-      'text', 'highlight', 'language', 'quote_type', 'author_id', 'work_id',
+      'text', 'highlight', 'context_notes', 'language', 'quote_type', 'author_id', 'work_id',
       'speaker_display_name', 'attribution_type', 'publication_excluded',
       'workflow_status', 'visibility', 'verification_status', 'publish_at',
     ]),
@@ -122,7 +122,7 @@ const enumFields = new Map([
 const integerFields = new Set(['birth_year', 'death_year', 'publication_year']);
 const booleanFields = new Set(['publication_excluded', 'is_primary']);
 const jsonFields = new Set([
-  'public_information_sources', 'bibliographic_identifiers', 'entity_counts',
+  'context_notes', 'public_information_sources', 'bibliographic_identifiers', 'entity_counts',
   'artifact_hashes', 'warnings', 'errors',
 ]);
 const nullableFields = new Set([
@@ -134,7 +134,7 @@ const nullableFields = new Set([
 
 const materialFieldsByCollection = Object.freeze({
   quotes: new Set([
-    'text', 'highlight', 'language', 'quote_type', 'author_id', 'work_id',
+    'text', 'highlight', 'context_notes', 'language', 'quote_type', 'author_id', 'work_id',
     'speaker_display_name', 'attribution_type',
   ]),
   quote_originals: new Set(['original_text', 'language', 'label', 'is_primary']),
@@ -242,6 +242,20 @@ export function normalizePatch(collection, changes, currentUserId = null) {
     if (jsonFields.has(field)) {
       if (field === 'public_information_sources' && !Array.isArray(rawValue)) {
         throw new TypeError(`${field} debe ser una lista`);
+      }
+      if (field === 'context_notes') {
+        if (!Array.isArray(rawValue)) throw new TypeError(`${field} debe ser una lista`);
+        for (const [position, note] of rawValue.entries()) {
+          const keys = note && typeof note === 'object' && !Array.isArray(note)
+            ? Object.keys(note)
+            : [];
+          if (keys.length !== 2 || !['term', 'explanation'].every((key) => keys.includes(key))) {
+            throw new TypeError(`${field}[${position}] no cumple el formato esperado`);
+          }
+          if (!note.term?.trim() || !note.explanation?.trim()) {
+            throw new TypeError(`${field}[${position}] no puede quedar incompleta`);
+          }
+        }
       }
       if (typeof rawValue !== 'object') throw new TypeError(`Valor no válido para ${field}`);
       normalized[field] = rawValue;

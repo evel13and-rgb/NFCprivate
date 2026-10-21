@@ -267,7 +267,7 @@ async function main() {
     }
 
     const [quotes, originals, sources, quoteSources, originalSources] = await Promise.all([
-      request('/items/quotes?limit=-1&sort=legacy_index&fields=id,legacy_index,text,highlight,language,quote_type,author_id,work_id,speaker_display_name,legacy_attribution,legacy_work,text_hash,publication_excluded,workflow_status,visibility,verification_status,reviewer_id,reviewed_at,publish_at'),
+      request('/items/quotes?limit=-1&sort=legacy_index&fields=id,legacy_index,text,highlight,context_notes,language,quote_type,author_id,work_id,speaker_display_name,legacy_attribution,legacy_work,text_hash,publication_excluded,workflow_status,visibility,verification_status,reviewer_id,reviewed_at,publish_at'),
       request('/items/quote_originals?limit=-1&fields=id,import_key,quote_id,original_text,language,label,is_primary,workflow_status,visibility,verification_status,reviewer_id,reviewed_at'),
       request('/items/sources?limit=-1&fields=id,rights_status,verification_status'),
       request('/items/quote_sources?limit=-1&fields=quote_id,source_id,relation_role'),

@@ -18,6 +18,7 @@ function fixtures() {
     legacy_index: 2,
     text: 'Texto público',
     highlight: 'Texto',
+    context_notes: [],
     language: 'es',
     quote_type: 'prose',
     author_id: 'author-ejemplo',
@@ -95,6 +96,30 @@ test('construye exactamente el contrato público sin filtrar campos privados', (
       },
     }],
   });
+});
+
+test('exporta notas contextuales públicas sin campos editoriales', () => {
+  const data = fixtures();
+  data.quotes[0].context_notes = [{
+    term: 'Iago e Imogen',
+    explanation: 'Dos personajes de Shakespeare moralmente opuestos.',
+  }];
+  const document = buildPublicDocument({
+    quotes: data.quotes,
+    originals: data.originals,
+    generatedAt: '2026-08-24T00:00:00.000Z',
+  });
+  assert.deepEqual(document.quotes[0].context_notes, data.quotes[0].context_notes);
+
+  data.quotes[0].context_notes[0].private_note = 'No publicar';
+  assert.throws(
+    () => buildPublicDocument({
+      quotes: data.quotes,
+      originals: data.originals,
+      generatedAt: '2026-08-24T00:00:00.000Z',
+    }),
+    /no cumple el contrato público/u,
+  );
 });
 
 test('comprueba fuentes y derechos para frases y originales', () => {

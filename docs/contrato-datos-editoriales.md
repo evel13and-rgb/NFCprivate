@@ -16,6 +16,7 @@ Este documento separa tres niveles:
 | `legacy_attribution` | Interno | `a`, salvo corrección aceptada de hablante |
 | `legacy_work` | Interno | `obra` |
 | `highlight` | Canónico revisable | `highlight` |
+| `context_notes` | Canónico público | `context_notes`, solo cuando contiene notas estructuradas |
 | `language` | Canónico | `lang` |
 | `type` | Canónico | `type` |
 | `author_id` | Canónico normalizado | `authorId` |
@@ -25,6 +26,11 @@ Este documento separa tres niveles:
 | `source_collection` | Interno técnico | No se expone |
 | `has_line_breaks` | Interno derivado | No se expone; los saltos permanecen en `t` |
 | `text_hash` | Interno de integridad | No se expone |
+
+`context_notes` es una lista opcional de objetos públicos con dos campos:
+`term` identifica la referencia que necesita contexto y `explanation` ofrece una
+explicación breve. No admite HTML ni notas de trabajo. El frontend la presenta
+en un panel desplegable separado del texto literario.
 
 ## Originales
 

@@ -22,7 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=50" />
+  <link rel="stylesheet" href="style.css?v=51" />
 </head>
 <body class="app-loading rain-effects-paused" data-mode="day">
   <div
@@ -113,6 +113,23 @@
               aria-haspopup="dialog"
               aria-controls="work-modal"
             ></button>
+          </div>
+          <div class="quote-context" id="quote-context" hidden>
+            <button
+              type="button"
+              class="quote-context__toggle"
+              id="quote-context-toggle"
+              aria-expanded="false"
+              aria-controls="quote-context-panel"
+              aria-label="Abrir las notas de contexto"
+            >
+              <span>Contexto</span>
+              <span class="quote-context__toggle-mark" aria-hidden="true"></span>
+            </button>
+            <div class="quote-context__panel" id="quote-context-panel" hidden>
+              <p class="quote-context__eyebrow">Para leer el fragmento</p>
+              <dl class="quote-context__list" id="quote-context-list"></dl>
+            </div>
           </div>
           <div class="watermark" aria-hidden="true">paramoliterario.com</div>
         </div>
@@ -447,6 +464,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=47"></script>
+  <script type="module" src="script.js?v=48"></script>
 </body>
 </html>

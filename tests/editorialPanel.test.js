@@ -58,6 +58,18 @@ test('el servidor rechaza campos y estados fuera del contrato del panel', () => 
   );
 });
 
+test('el panel valida la estructura de las notas contextuales públicas', () => {
+  assert.deepEqual(normalizePatch('quotes', {
+    context_notes: [{ term: 'Iago e Imogen', explanation: 'Dos figuras opuestas.' }],
+  }), {
+    context_notes: [{ term: 'Iago e Imogen', explanation: 'Dos figuras opuestas.' }],
+  });
+  assert.throws(
+    () => normalizePatch('quotes', { context_notes: [{ term: 'Iago' }] }),
+    /no cumple el formato esperado/u,
+  );
+});
+
 test('el historial de publicaciones se mantiene de solo lectura', () => {
   assert.equal(collectionDefinitions.publication_runs.patchFields.size, 0);
 });
