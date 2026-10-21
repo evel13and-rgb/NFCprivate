@@ -1798,7 +1798,7 @@ body.night-fall .watermark {
 }
 
 .quote-context__entry--letter {
-  grid-template-columns: minmax(4.8rem, 0.28fr) minmax(0, 1fr);
+  grid-template-columns: 7.2rem minmax(0, 1fr);
   align-items: baseline;
   gap: 0.35rem 0.8rem;
 }
@@ -1807,7 +1807,7 @@ body.night-fall .watermark {
   padding-top: 0.48rem;
 }
 
-.quote-context__entry--letter dt {
+.quote-context__entry.quote-context__entry--letter dt {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.63rem;
   font-weight: 650;
