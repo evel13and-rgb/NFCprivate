@@ -15,7 +15,7 @@ const publicQuotesPath = path.join(projectRoot, 'public', 'data', 'quotes.json')
 
 const publicQuoteFields = new Set([
   'id', 'legacy_index', 't', 'a', 'obra', 'highlight', 'lang', 'type',
-  'authorId', 'workId', 'context_notes', 'original',
+  'authorId', 'workId', 'context_notes', 'letter_context', 'original',
 ]);
 
 function normalizeContextNotes(value, label) {
@@ -33,6 +33,30 @@ function normalizeContextNotes(value, label) {
     if (!term || !explanation) throw new Error(`${label}[${position}] está incompleta`);
     return { term, explanation };
   });
+}
+
+function normalizeLetterContext(value, label) {
+  if (value === null || value === undefined) return null;
+  const requiredFields = ['recipient', 'date'];
+  const allowedFields = new Set([...requiredFields, 'place', 'note']);
+  const fields = value && typeof value === 'object' && !Array.isArray(value)
+    ? Object.keys(value)
+    : [];
+  if (!fields.length || fields.some((field) => !allowedFields.has(field))) {
+    throw new Error(`${label} no cumple el contrato público`);
+  }
+  for (const field of requiredFields) {
+    if (!fields.includes(field)) throw new Error(`${label}.${field} es obligatorio`);
+  }
+  const result = {};
+  for (const field of ['recipient', 'date', 'place', 'note']) {
+    if (!fields.includes(field)) continue;
+    if (typeof value[field] !== 'string' || !value[field].trim()) {
+      throw new Error(`${label}.${field} está vacío`);
+    }
+    result[field] = value[field].trim();
+  }
+  return result;
 }
 
 function sha256(value) {
@@ -122,6 +146,9 @@ function validatePublicDocument(document) {
     if (quote.context_notes !== undefined) {
       const notes = normalizeContextNotes(quote.context_notes, `quotes[${position}].context_notes`);
       if (!notes.length) throw new Error(`quotes[${position}].context_notes está vacío`);
+    }
+    if (quote.letter_context !== undefined) {
+      normalizeLetterContext(quote.letter_context, `quotes[${position}].letter_context`);
     }
     if (quote.original !== undefined) {
       const originalFields = Object.keys(quote.original);
@@ -233,6 +260,8 @@ function buildPublicDocument({ quotes, originals, generatedAt }) {
       };
       const contextNotes = normalizeContextNotes(quote.context_notes, `${quote.id}.context_notes`);
       if (contextNotes.length) result.context_notes = contextNotes;
+      const letterContext = normalizeLetterContext(quote.letter_context, `${quote.id}.letter_context`);
+      if (letterContext) result.letter_context = letterContext;
       const original = originalsByQuote.get(quote.id);
       if (original) result.original = original;
       return result;
@@ -304,7 +333,7 @@ async function main() {
   accessToken = login.access_token;
 
   const [quotes, originals, sources, quoteSources, originalSources, publicResponse] = await Promise.all([
-    request('/items/quotes?limit=-1&sort=legacy_index&fields=id,legacy_index,text,highlight,context_notes,language,quote_type,author_id,work_id,speaker_display_name,legacy_attribution,legacy_work,text_hash,publication_excluded,workflow_status,visibility,verification_status'),
+    request('/items/quotes?limit=-1&sort=legacy_index&fields=id,legacy_index,text,highlight,context_notes,letter_context,language,quote_type,author_id,work_id,speaker_display_name,legacy_attribution,legacy_work,text_hash,publication_excluded,workflow_status,visibility,verification_status'),
     request('/items/quote_originals?limit=-1&fields=id,import_key,quote_id,original_text,language,label,is_primary,workflow_status,visibility,verification_status'),
     request('/items/sources?limit=-1&fields=id,rights_status,verification_status'),
     request('/items/quote_sources?limit=-1&fields=quote_id,source_id,relation_role'),

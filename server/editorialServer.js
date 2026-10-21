@@ -18,12 +18,12 @@ export const collectionDefinitions = Object.freeze({
   quotes: {
     label: 'Fragmentos',
     fields: [
-      'id', 'legacy_index', 'text', 'highlight', 'context_notes', 'language', 'quote_type', 'author_id',
+      'id', 'legacy_index', 'text', 'highlight', 'context_notes', 'letter_context', 'language', 'quote_type', 'author_id',
       'work_id', 'speaker_display_name', 'attribution_type', 'publication_excluded',
       'workflow_status', 'visibility', 'verification_status', 'reviewed_at', 'date_updated',
     ],
     patchFields: new Set([
-      'text', 'highlight', 'context_notes', 'language', 'quote_type', 'author_id', 'work_id',
+      'text', 'highlight', 'context_notes', 'letter_context', 'language', 'quote_type', 'author_id', 'work_id',
       'speaker_display_name', 'attribution_type', 'publication_excluded',
       'workflow_status', 'visibility', 'verification_status', 'publish_at',
     ]),
@@ -122,7 +122,7 @@ const enumFields = new Map([
 const integerFields = new Set(['birth_year', 'death_year', 'publication_year']);
 const booleanFields = new Set(['publication_excluded', 'is_primary']);
 const jsonFields = new Set([
-  'context_notes', 'public_information_sources', 'bibliographic_identifiers', 'entity_counts',
+  'context_notes', 'letter_context', 'public_information_sources', 'bibliographic_identifiers', 'entity_counts',
   'artifact_hashes', 'warnings', 'errors',
 ]);
 const nullableFields = new Set([
@@ -134,7 +134,7 @@ const nullableFields = new Set([
 
 const materialFieldsByCollection = Object.freeze({
   quotes: new Set([
-    'text', 'highlight', 'context_notes', 'language', 'quote_type', 'author_id', 'work_id',
+    'text', 'highlight', 'context_notes', 'letter_context', 'language', 'quote_type', 'author_id', 'work_id',
     'speaker_display_name', 'attribution_type',
   ]),
   quote_originals: new Set(['original_text', 'language', 'label', 'is_primary']),
@@ -254,6 +254,24 @@ export function normalizePatch(collection, changes, currentUserId = null) {
           }
           if (!note.term?.trim() || !note.explanation?.trim()) {
             throw new TypeError(`${field}[${position}] no puede quedar incompleta`);
+          }
+        }
+      }
+      if (field === 'letter_context') {
+        const required = ['recipient', 'date'];
+        const allowed = new Set([...required, 'place', 'note']);
+        const keys = rawValue && typeof rawValue === 'object' && !Array.isArray(rawValue)
+          ? Object.keys(rawValue)
+          : [];
+        if (!keys.length || keys.some((key) => !allowed.has(key))) {
+          throw new TypeError(`${field} no cumple el formato esperado`);
+        }
+        for (const key of required) {
+          if (!keys.includes(key)) throw new TypeError(`${field}.${key} es obligatorio`);
+        }
+        for (const key of keys) {
+          if (typeof rawValue[key] !== 'string' || !rawValue[key].trim()) {
+            throw new TypeError(`${field}.${key} no puede quedar vacío`);
           }
         }
       }

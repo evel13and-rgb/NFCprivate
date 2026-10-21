@@ -23,6 +23,27 @@ function validateContextNotes(notes, position) {
   }
 }
 
+function validateLetterContext(context, position) {
+  const requiredFields = ['recipient', 'date'];
+  const allowedFields = new Set([...requiredFields, 'place', 'note']);
+  const fields = context && typeof context === 'object' && !Array.isArray(context)
+    ? Object.keys(context)
+    : [];
+  if (!fields.length || fields.some(field => !allowedFields.has(field))) {
+    throw new Error(`quotes.json: quotes[${position}].letter_context contiene campos no públicos`);
+  }
+  for (const field of requiredFields) {
+    if (!fields.includes(field)) {
+      throw new Error(`quotes.json: quotes[${position}].letter_context.${field} es obligatorio`);
+    }
+  }
+  for (const field of fields) {
+    if (typeof context[field] !== 'string' || !context[field].trim()) {
+      throw new Error(`quotes.json: quotes[${position}].letter_context.${field} es inválido`);
+    }
+  }
+}
+
 // Último recurso para que un fallo de red o de validación nunca deje la portada sin frase.
 // El catálogo runtime completo vive exclusivamente en public/data/quotes.json.
 export const EMERGENCY_QUOTES = Object.freeze([
@@ -89,6 +110,7 @@ export function validatePublicQuotesDocument(document, expectedCount) {
       throw new Error(`quotes.json: quotes[${position}].highlight es inválido`);
     }
     if (quote.context_notes !== undefined) validateContextNotes(quote.context_notes, position);
+    if (quote.letter_context !== undefined) validateLetterContext(quote.letter_context, position);
     if (quote.original !== undefined) {
       const original = quote.original;
       const allowedOriginalFields = new Set(['text', 'lang', 'label']);

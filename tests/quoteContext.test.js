@@ -3,6 +3,7 @@ import test from 'node:test';
 import {
   createQuoteContextController,
   normalizeQuoteContextNotes,
+  normalizeQuoteLetterContext,
 } from '../quoteContext.js';
 
 function createElementStub() {
@@ -27,6 +28,19 @@ test('normaliza únicamente notas contextuales completas', () => {
   ]), [{ term: 'Iago', explanation: 'Personaje de Shakespeare.' }]);
 });
 
+test('normaliza el contexto epistolar y descarta objetos incompletos', () => {
+  assert.deepEqual(normalizeQuoteLetterContext({
+    recipient: ' Richard Woodhouse ',
+    date: ' 27 de octubre de 1818 ',
+    place: ' Londres ',
+  }), {
+    recipient: 'Richard Woodhouse',
+    date: '27 de octubre de 1818',
+    place: 'Londres',
+  });
+  assert.equal(normalizeQuoteLetterContext({ recipient: 'Fanny Brawne' }), null);
+});
+
 test('el contexto solo aparece cuando existe y se cierra al cambiar de fragmento', () => {
   const container = createElementStub();
   const button = createElementStub();
@@ -47,13 +61,14 @@ test('el contexto solo aparece cuando existe y se cierra al cambiar de fragmento
   });
 
   controller.render({
+    letter_context: { recipient: 'Richard Woodhouse', date: '27 de octubre de 1818' },
     context_notes: [{ term: 'Iago e Imogen', explanation: 'Dos figuras opuestas.' }],
   });
   assert.equal(container.hidden, false);
   assert.equal(panel.hidden, true);
-  assert.equal(count.textContent, '1');
-  assert.equal(button.getAttribute('aria-label'), 'Abrir 1 nota de contexto');
-  assert.equal(list.children.length, 1);
+  assert.equal(count.textContent, '2');
+  assert.equal(button.getAttribute('aria-label'), 'Abrir 2 elementos de contexto');
+  assert.equal(list.children.length, 2);
 
   controller.toggle();
   assert.equal(button.getAttribute('aria-expanded'), 'true');

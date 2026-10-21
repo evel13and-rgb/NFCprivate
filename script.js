@@ -4,8 +4,8 @@ import {
   formatQuotedText,
   getQuoteBoundaryDecoration,
 } from './quoteOriginal.js?v=4';
-import { createQuoteContextController } from './quoteContext.js?v=2';
-import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=6';
+import { createQuoteContextController } from './quoteContext.js?v=3';
+import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=7';
 import { initFireflyAura } from './fireflies.js?v=5';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
 import { initDaylightMotes, setDaylightMotesActive } from './dayMotes.js';
@@ -48,7 +48,7 @@ async function fetchPublicProfiles(relativePath) {
 
 async function loadPublicProfiles() {
   try {
-    const profiles = await fetchPublicProfiles('./public/data/literary-profiles.json?v=5');
+    const profiles = await fetchPublicProfiles('./public/data/literary-profiles.json?v=6');
     const authorProfiles = Array.isArray(profiles?.authors) ? profiles.authors : [];
     const workProfiles = Array.isArray(profiles?.works) ? profiles.works : [];
 
@@ -72,7 +72,7 @@ const publicProfilesReady = loadPublicProfiles();
 const storage = typeof window !== 'undefined' ? window.localStorage : undefined;
 let activeQuotes = EMERGENCY_QUOTES;
 let quoteManager = createQuoteManager(activeQuotes, storage);
-const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=6');
+const publicQuotesReady = loadPublicQuotes('./public/data/quotes.json?v=7');
 
 let currentQuote = null;
 let currentQuoteTextVersion = null;

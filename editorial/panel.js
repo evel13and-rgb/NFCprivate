@@ -113,6 +113,7 @@ const fieldDefinitions = {
     field('text', 'Traducción o actualización', 'textarea', true),
     field('highlight', 'Pasaje destacado', 'textarea', true, true),
     field('context_notes', 'Notas contextuales públicas (JSON)', 'json', true),
+    field('letter_context', 'Contexto epistolar público (JSON)', 'json', true, true),
     field('speaker_display_name', 'Voz o personaje', 'text', false, true),
     field('language', 'Idioma', 'text'),
     field('quote_type', 'Forma', 'select', false, false, [['prose', 'Prosa'], ['poem', 'Verso']]),

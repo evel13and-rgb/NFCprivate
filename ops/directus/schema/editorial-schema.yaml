@@ -5505,47 +5505,6 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
   - collection: quotes
-    field: context_notes
-    type: json
-    meta:
-      collection: quotes
-      conditions: null
-      display: null
-      display_options: null
-      field: context_notes
-      group: null
-      hidden: false
-      interface: input-code
-      note: Notas contextuales públicas con term y explanation.
-      options:
-        language: json
-      readonly: false
-      required: false
-      searchable: true
-      sort: null
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: context_notes
-      table: quotes
-      data_type: jsonb
-      default_value: []
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: false
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: quotes
     field: language
     type: string
     meta:
@@ -6532,6 +6491,90 @@ fields:
       numeric_precision: null
       numeric_scale: null
       is_nullable: false
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: quotes
+    field: context_notes
+    type: json
+    meta:
+      collection: quotes
+      conditions: null
+      display: null
+      display_options: null
+      field: context_notes
+      group: null
+      hidden: false
+      interface: input-code
+      note: 'Notas públicas: lista de objetos con term y explanation.'
+      options:
+        language: json
+      readonly: false
+      required: false
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: context_notes
+      table: quotes
+      data_type: jsonb
+      default_value: []
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: quotes
+    field: letter_context
+    type: json
+    meta:
+      collection: quotes
+      conditions: null
+      display: null
+      display_options: null
+      field: letter_context
+      group: null
+      hidden: false
+      interface: input-code
+      note: >-
+        Contexto epistolar público: recipient y date; place y note son
+        opcionales.
+      options:
+        language: json
+      readonly: false
+      required: false
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: letter_context
+      table: quotes
+      data_type: jsonb
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
       is_unique: false
       is_indexed: false
       is_primary_key: false

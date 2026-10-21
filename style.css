@@ -1758,6 +1758,31 @@ body.night-fall .watermark {
 
 .quote-context__list {
   display: grid;
+  gap: 0.9rem;
+  margin: 0;
+}
+
+.quote-context__section {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.quote-context__section + .quote-context__section {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(200, 162, 90, 0.18);
+}
+
+.quote-context__section-label {
+  margin: 0;
+  color: rgba(181, 151, 96, 0.72);
+  font-size: 0.59rem;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.quote-context__definition-list {
+  display: grid;
   gap: 0.8rem;
   margin: 0;
 }
@@ -1770,6 +1795,24 @@ body.night-fall .watermark {
 .quote-context__entry + .quote-context__entry {
   padding-top: 0.8rem;
   border-top: 1px solid rgba(200, 162, 90, 0.14);
+}
+
+.quote-context__entry--letter {
+  grid-template-columns: minmax(4.8rem, 0.28fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.35rem 0.8rem;
+}
+
+.quote-context__entry--letter + .quote-context__entry--letter {
+  padding-top: 0.48rem;
+}
+
+.quote-context__entry--letter dt {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.63rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .quote-context__entry dt {

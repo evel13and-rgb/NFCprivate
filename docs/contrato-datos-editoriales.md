@@ -17,6 +17,7 @@ Este documento separa tres niveles:
 | `legacy_work` | Interno | `obra` |
 | `highlight` | Canónico revisable | `highlight` |
 | `context_notes` | Canónico público | `context_notes`, solo cuando contiene notas estructuradas |
+| `letter_context` | Canónico público | `letter_context`, solo en fragmentos epistolares |
 | `language` | Canónico | `lang` |
 | `type` | Canónico | `type` |
 | `author_id` | Canónico normalizado | `authorId` |
@@ -31,6 +32,11 @@ Este documento separa tres niveles:
 `term` identifica la referencia que necesita contexto y `explanation` ofrece una
 explicación breve. No admite HTML ni notas de trabajo. El frontend la presenta
 en un panel desplegable separado del texto literario.
+
+`letter_context` es un objeto opcional y específico de correspondencia. Contiene
+`recipient` y `date` como cadenas obligatorias, y puede añadir `place` y `note`.
+No admite HTML ni campos privados. El frontend lo presenta como «Datos de la
+carta» en el mismo panel compacto, antes de las notas explicativas si las hay.
 
 ## Originales
 

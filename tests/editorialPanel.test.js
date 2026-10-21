@@ -70,6 +70,18 @@ test('el panel valida la estructura de las notas contextuales públicas', () => 
   );
 });
 
+test('el panel valida el contexto epistolar público', () => {
+  assert.deepEqual(normalizePatch('quotes', {
+    letter_context: { recipient: 'Richard Woodhouse', date: '27 de octubre de 1818' },
+  }), {
+    letter_context: { recipient: 'Richard Woodhouse', date: '27 de octubre de 1818' },
+  });
+  assert.throws(
+    () => normalizePatch('quotes', { letter_context: { recipient: 'Richard Woodhouse' } }),
+    /date es obligatorio/u,
+  );
+});
+
 test('el historial de publicaciones se mantiene de solo lectura', () => {
   assert.equal(collectionDefinitions.publication_runs.patchFields.size, 0);
 });

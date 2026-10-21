@@ -19,6 +19,7 @@ function fixtures() {
     text: 'Texto público',
     highlight: 'Texto',
     context_notes: [],
+    letter_context: null,
     language: 'es',
     quote_type: 'prose',
     author_id: 'author-ejemplo',
@@ -112,6 +113,31 @@ test('exporta notas contextuales públicas sin campos editoriales', () => {
   assert.deepEqual(document.quotes[0].context_notes, data.quotes[0].context_notes);
 
   data.quotes[0].context_notes[0].private_note = 'No publicar';
+  assert.throws(
+    () => buildPublicDocument({
+      quotes: data.quotes,
+      originals: data.originals,
+      generatedAt: '2026-08-24T00:00:00.000Z',
+    }),
+    /no cumple el contrato público/u,
+  );
+});
+
+test('exporta contexto epistolar público sin campos editoriales', () => {
+  const data = fixtures();
+  data.quotes[0].letter_context = {
+    recipient: 'Benjamin Bailey',
+    date: '22 de noviembre de 1817',
+    place: 'Londres',
+  };
+  const document = buildPublicDocument({
+    quotes: data.quotes,
+    originals: data.originals,
+    generatedAt: '2026-08-24T00:00:00.000Z',
+  });
+  assert.deepEqual(document.quotes[0].letter_context, data.quotes[0].letter_context);
+
+  data.quotes[0].letter_context.private_note = 'No publicar';
   assert.throws(
     () => buildPublicDocument({
       quotes: data.quotes,

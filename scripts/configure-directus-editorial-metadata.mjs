@@ -115,6 +115,8 @@ const jsonFields = new Set([
   'warnings',
   'errors',
   'public_information_sources',
+  'context_notes',
+  'letter_context',
 ]);
 
 const readonlyFields = new Set([
@@ -213,6 +215,10 @@ function fieldMeta(collection, field, relationKeys) {
     meta.note = 'Registrar aquí la situación de derechos antes de publicar.';
   } else if (name === 'text_hash' || name === 'source_text_hash') {
     meta.note = 'Huella calculada para detectar cambios y audio obsoleto.';
+  } else if (name === 'context_notes') {
+    meta.note = 'Notas públicas: lista de objetos con term y explanation.';
+  } else if (name === 'letter_context') {
+    meta.note = 'Contexto epistolar público: recipient y date; place y note son opcionales.';
   } else if (name === 'id' && type !== 'uuid') {
     meta.note = 'Identificador estable; no debe reutilizarse ni cambiar después de publicar.';
   } else if (name === 'file_id') {

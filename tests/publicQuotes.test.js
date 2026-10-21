@@ -64,6 +64,23 @@ test('las notas contextuales son opcionales, públicas y estructuradas', () => {
   );
 });
 
+test('el contexto epistolar es opcional, público y estructurado', () => {
+  const withLetterContext = structuredClone(sampleQuotes);
+  withLetterContext[0].letter_context = {
+    recipient: 'Benjamin Bailey',
+    date: '22 de noviembre de 1817',
+  };
+  assert.doesNotThrow(() => (
+    validatePublicQuotesDocument(documentFor(withLetterContext), withLetterContext.length)
+  ));
+
+  withLetterContext[0].letter_context.private_note = 'No publicar';
+  assert.throws(
+    () => validatePublicQuotesDocument(documentFor(withLetterContext), withLetterContext.length),
+    /campos no públicos/,
+  );
+});
+
 test('usa el fallback indicado si falla el fetch o la validación', async () => {
   const networkFailure = await loadPublicQuotes('/public/data/quotes.json', sampleQuotes, async () => {
     throw new Error('sin red');
@@ -2031,7 +2048,7 @@ test('script.js ya no contiene el catálogo completo ni colecciones literarias',
   const source = await readFile(new URL('../script.js', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);
   assert.doesNotMatch(source, /const\s+QUOTES\s*=\s*\[/);
-  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=6'\)/);
+  assert.match(source, /loadPublicQuotes\('\.\/public\/data\/quotes\.json\?v=7'\)/);
   const shareSnapshotSource = source.slice(
     source.indexOf('function getQuoteCardSnapshot()'),
     source.indexOf('function getSnapshotShareText'),

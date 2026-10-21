@@ -4,9 +4,9 @@ Esta carpeta define el piloto reproducible que se inicializó el 20 de agosto de
 2026. Docker está instalado y los contenedores de Directus/PostgreSQL están
 activos, saludables y limitados a la red prevista.
 
-El piloto contiene 18 colecciones, 242 campos y 46 relaciones registradas en
-Directus. El catálogo actual incorpora 30 autores, 34 obras, 34 fuentes, 17
-hablantes, 418 temas, 741 frases y 741 originales con sus relaciones. El audio
+El piloto contiene 18 colecciones, 244 campos y 46 relaciones registradas en
+Directus. El catálogo actual incorpora 31 autores, 35 obras, 37 fuentes, 17
+hablantes, 430 temas, 754 frases y 754 originales con sus relaciones. El audio
 sigue pendiente. El administrador inicial `paramorliterario@gmail.com` está
 creado y verificado.
 
@@ -391,7 +391,7 @@ docker compose -f ops/directus/compose.yaml exec -T directus \
 ```
 
 Antes de sustituir la copia del repositorio hay que revisar cantidades y buscar
-credenciales o secretos. La instantánea esperada contiene 18 colecciones, 242
+credenciales o secretos. La instantánea esperada contiene 18 colecciones, 244
 campos y 46 relaciones.
 
 Detener el piloto no borra sus volúmenes:
