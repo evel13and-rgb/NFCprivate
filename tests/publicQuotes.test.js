@@ -1986,6 +1986,47 @@ test('build-public-quotes aplica correcciones y exclusiones editoriales aceptada
   assert.equal(generated.quotes.find(quote => quote.id === 'quote-3').highlight, 'destacado revisado');
 });
 
+test('Cartas de John Keats publica trece pares y reserva el contexto explicativo al fragmento 5', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const keatsQuotes = document.quotes.filter(quote => quote.workId === 'work-cartas-de-john-keats');
+
+  assert.deepEqual(
+    keatsQuotes.map(quote => quote.id),
+    Array.from({ length: 13 }, (_, index) => `quote-${743 + index}`),
+  );
+  assert.ok(keatsQuotes.every(quote => (
+    quote.a === 'John Keats'
+    && quote.obra === 'Cartas de John Keats, John Keats'
+    && quote.t.includes(quote.highlight)
+    && quote.original?.lang === 'en'
+    && quote.original?.label === 'Original inglés'
+  )));
+
+  assert.deepEqual(
+    document.quotes.filter(quote => quote.context_notes).map(quote => quote.id),
+    ['quote-747'],
+  );
+  assert.deepEqual(
+    quotes.get('quote-747').context_notes.map(note => note.term),
+    ['«Lo wordsworthiano» o «Sublime egotista»', 'Iago e Imogen'],
+  );
+  assert.match(quotes.get('quote-747').context_notes[0].explanation, /William Wordsworth/);
+  assert.match(quotes.get('quote-747').context_notes[1].explanation, /Otelo.*Cimbelino/);
+
+  for (const quote of keatsQuotes) {
+    assert.equal(
+      quote.t.match(/\[…\]/g)?.length || 0,
+      quote.original.text.match(/\[…\]/g)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+  assert.match(quotes.get('quote-753').t, /«razonar contra las razones de mi Amor»\.$/);
+  assert.match(quotes.get('quote-753').original.text, /“to reason against the reasons of my Love\.”$/);
+  assert.doesNotMatch(quotes.get('quote-753').t, /No puedo respirar sin ti/);
+  assert.doesNotMatch(quotes.get('quote-753').original.text, /I cannot breathe without you/);
+});
+
 test('script.js ya no contiene el catálogo completo ni colecciones literarias', async () => {
   const source = await readFile(new URL('../script.js', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /const\s+[A-Z0-9_]+_QUOTES\s*=\s*\[/);
