@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T18:55:36.740Z",
+  "generated_at": "2026-10-21T21:29:04.314Z",
   "quote_count": 754,
   "quotes": [
     {
@@ -12611,6 +12611,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Benjamin Bailey",
+        "date": "22 de noviembre de 1817"
+      },
       "original": {
         "text": "I am certain of nothing but of the holiness of the Heart's affections and the truth of Imagination - What the imagination seizes as Beauty must be truth - whether it existed before or not - for I have the same idea of all our passions as of love: they are all, in their sublime, creative of essential beauty.\n\n[…]\n\nThe imagination may be compared to Adam's dream, - he awoke and found it truth.",
         "lang": "en",
@@ -12628,6 +12632,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Benjamin Bailey",
+        "date": "22 de noviembre de 1817"
+      },
       "original": {
         "text": "I scarcely remember counting upon any Happiness—I look not for it if it be not in the present hour,—nothing startles me beyond the moment. The Setting Sun will always set me to rights, or if a Sparrow come before my Window, I take part in its existence and pick about the gravel.",
         "lang": "en",
@@ -12645,6 +12653,11 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "George y Thomas Keats",
+        "date": "21–27 de diciembre de 1817",
+        "note": "El pasaje pertenece a la entrada fechada el 27 de diciembre."
+      },
       "original": {
         "text": "Several things dove-tailed in my mind, and at once it struck me what quality went to form a Man of Achievement, especially in Literature, and which Shakspeare possessed so enormously—I mean Negative Capability, that is, when a man is capable of being in uncertainties, mysteries, doubts, without any irritable reaching after fact and reason.",
         "lang": "en",
@@ -12662,6 +12675,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "John Taylor",
+        "date": "27 de febrero de 1818"
+      },
       "original": {
         "text": "In poetry I have a few axioms, and you will see how far I am from their centre.\n\n1st. I think poetry should surprise by a fine excess, and not by singularity; It should strike the reader as a wording of his own highest thoughts, and appear almost a remembrance.\n\n2d. Its touches of beauty should never be half-way, thereby making the reader breathless, instead of content. The rise, the progress, the setting of Imagery should, like the sun, come natural to him, shine over him, and set soberly, although in magnificence, leaving him in the luxury of twilight. But it is easier to think what poetry should be, than to write it—And this leads me to\n\nAnother axiom—That if poetry comes not as naturally as the leaves to a tree, it had better not come at all.",
         "lang": "en",
@@ -12689,6 +12706,10 @@
           "explanation": "Son dos personajes de Shakespeare moralmente opuestos: Iago, en Otelo, encarna el engaño y la crueldad; Imogen, en Cimbelino, la fidelidad y la integridad. Keats sostiene que el poeta puede imaginar con igual intensidad a ambos sin que el carácter creado revele necesariamente su propia identidad moral."
         }
       ],
+      "letter_context": {
+        "recipient": "Richard Woodhouse",
+        "date": "27 de octubre de 1818"
+      },
       "original": {
         "text": "As to the poetical Character itself (I mean that sort, of which, if I am anything, I am a member; that sort distinguished from the Wordsworthian, or egotistical Sublime; which is a thing per se, and stands alone,) it is not itself—it has no self—It is everything and nothing—It has no character—it enjoys light and shade; it lives in gusto, be it foul or fair, high or low, rich or poor, mean or elevated—It has as much delight in conceiving an Iago as an Imogen.\n\nWhat shocks the virtuous philosopher delights the chameleon poet. It does no harm from its relish of the dark side of things, any more than from its taste for the bright one, because they both end in speculation. A poet is the most unpoetical of anything in existence, because he has no Identity—he is continually in for and filling some other body.",
         "lang": "en",
@@ -12706,6 +12727,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Richard Woodhouse",
+        "date": "27 de octubre de 1818"
+      },
       "original": {
         "text": "I feel assured I should write from the mere yearning and fondness I have for the beautiful, even if my night’s labours should be burnt every Morning, and no eye ever shine upon them.",
         "lang": "en",
@@ -12723,6 +12748,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "George y Georgiana Keats",
+        "date": "Hacia el 25 de octubre de 1818"
+      },
       "original": {
         "text": "I feel more and more every day, as my imagination strengthens, that I do not live in this world alone but in a thousand worlds—No sooner am I alone than shapes of epic greatness are stationed around me, and serve my Spirit the office which is equivalent to a King’s bodyguard—then “Tragedy with sceptred pall comes sweeping by.” According to my state of mind I am with Achilles shouting in the Trenches, or with Theocritus in the Vales of Sicily.\n\nOr I throw my whole being into Troilus, and repeating those lines, “I wander like a lost Soul upon the stygian Banks staying for waftage,” I melt into the air with a voluptuousness so delicate that I am content to be alone.",
         "lang": "en",
@@ -12740,6 +12769,11 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "George y Georgiana Keats",
+        "date": "21 de abril de 1819",
+        "note": "El pasaje forma parte de una extensa carta-diario redactada entre febrero y mayo de 1819."
+      },
       "original": {
         "text": "Call the world if you please “The vale of Soul-making.” Then you will find out the use of the world (I am speaking now in the highest terms for human nature admitting it to be immortal which I will here take for granted for the purpose of showing a thought which has struck me concerning it) I say ‘Soul-making’—Soul as distinguished from an Intelligence.\n\nThere may be intelligences or sparks of the divinity in millions—but they are not Souls till they acquire identities, till each one is personally itself.\n\n[…]\n\nDo you not see how necessary a World of Pains and troubles is to school an Intelligence and make it a soul? A Place where the heart must feel and suffer in a thousand diverse ways.",
         "lang": "en",
@@ -12757,6 +12791,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Fanny Brawne",
+        "date": "3 de julio de 1819"
+      },
       "original": {
         "text": "I almost wish we were butterflies and liv’d but three summer days—three such days with you I could fill with more delight than fifty common years could ever contain.\n\n[…]\n\nBut no—I must live upon hope and Chance.",
         "lang": "en",
@@ -12774,6 +12812,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Fanny Brawne",
+        "date": "25 de julio de 1819"
+      },
       "original": {
         "text": "I have two luxuries to brood over in my walks, your Loveliness and the hour of my death. O that I could have possession of them both in the same minute. I hate the world: it batters too much the wings of my self-will, and would I could take a sweet poison from your lips to send me out of it. From no others would I take it.",
         "lang": "en",
@@ -12791,6 +12833,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Fanny Brawne",
+        "date": "13 de octubre de 1819"
+      },
       "original": {
         "text": "My love has made me selfish. I cannot exist without you—I am forgetful of everything but seeing you again—my Life seems to stop there—I see no further. You have absorb’d me. I have a sensation at the present moment as though I was dissolving—I should be exquisitely miserable without the hope of soon seeing you. I should be afraid to separate myself far from you. My sweet Fanny, will your heart never change? My love, will it? I have no limit now to my love.... Your note came in just here. I cannot be happier away from you—’Tis richer than an Argosy of Pearles. Do not threat me even in jest. I have been astonished that Men could die Martyrs for religion—I have shudder’d at it. I shudder no more—I could be martyr’d for my Religion—Love is my religion—I could die for that. I could die for you. My Creed is Love and you are its only tenet—You have ravish’d me away by a Power I cannot resist; and yet I could resist till I saw you; and even since I have seen you I have endeavoured often “to reason against the reasons of my Love.”",
         "lang": "en",
@@ -12808,6 +12854,10 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Fanny Brawne",
+        "date": "Febrero de 1820"
+      },
       "original": {
         "text": "Now I have had opportunities of passing nights anxious and awake I have found other thoughts intrude upon me.\n\n“If I should die,” said I to myself, “I have left no immortal work behind me—nothing to make my friends proud of my memory—but I have lov’d the principle of beauty in all things, and if I had had time I would have made myself remember’d.”\n\nThoughts like these came very feebly whilst I was in health and every pulse beat for you—now you divide with this (may I say it?) “last infirmity of noble minds” all my reflection.",
         "lang": "en",
@@ -12825,6 +12875,11 @@
       "type": "prose",
       "authorId": "author-john-keats",
       "workId": "work-cartas-de-john-keats",
+      "letter_context": {
+        "recipient": "Charles Armitage Brown",
+        "date": "30 de noviembre de 1820",
+        "place": "Roma"
+      },
       "original": {
         "text": "’Tis the most difficult thing in the world to me to write a letter. My stomach continues so bad, that I feel it worse on opening any book,—yet I am much better than I was in quarantine. Then I am afraid to encounter the pro-ing and con-ing of anything interesting to me in England. I have an habitual feeling of my real life having passed, and that I am leading a posthumous existence. God knows how it would have been—but it appears to me—however, I will not speak of that subject.",
         "lang": "en",

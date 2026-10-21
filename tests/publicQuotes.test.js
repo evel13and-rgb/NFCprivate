@@ -2003,7 +2003,7 @@ test('build-public-quotes aplica correcciones y exclusiones editoriales aceptada
   assert.equal(generated.quotes.find(quote => quote.id === 'quote-3').highlight, 'destacado revisado');
 });
 
-test('Cartas de John Keats publica trece pares y reserva el contexto explicativo al fragmento 5', async () => {
+test('Cartas de John Keats publica trece pares con contexto epistolar y notas explicativas separadas', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
   const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
   const keatsQuotes = document.quotes.filter(quote => quote.workId === 'work-cartas-de-john-keats');
@@ -2019,6 +2019,31 @@ test('Cartas de John Keats publica trece pares y reserva el contexto explicativo
     && quote.original?.lang === 'en'
     && quote.original?.label === 'Original inglés'
   )));
+
+  assert.deepEqual(
+    Object.fromEntries(keatsQuotes.map(quote => [quote.id, [
+      quote.letter_context?.recipient,
+      quote.letter_context?.date,
+    ]])),
+    {
+      'quote-743': ['Benjamin Bailey', '22 de noviembre de 1817'],
+      'quote-744': ['Benjamin Bailey', '22 de noviembre de 1817'],
+      'quote-745': ['George y Thomas Keats', '21–27 de diciembre de 1817'],
+      'quote-746': ['John Taylor', '27 de febrero de 1818'],
+      'quote-747': ['Richard Woodhouse', '27 de octubre de 1818'],
+      'quote-748': ['Richard Woodhouse', '27 de octubre de 1818'],
+      'quote-749': ['George y Georgiana Keats', 'Hacia el 25 de octubre de 1818'],
+      'quote-750': ['George y Georgiana Keats', '21 de abril de 1819'],
+      'quote-751': ['Fanny Brawne', '3 de julio de 1819'],
+      'quote-752': ['Fanny Brawne', '25 de julio de 1819'],
+      'quote-753': ['Fanny Brawne', '13 de octubre de 1819'],
+      'quote-754': ['Fanny Brawne', 'Febrero de 1820'],
+      'quote-755': ['Charles Armitage Brown', '30 de noviembre de 1820'],
+    },
+  );
+  assert.match(quotes.get('quote-745').letter_context.note, /entrada fechada el 27 de diciembre/);
+  assert.match(quotes.get('quote-750').letter_context.note, /carta-diario.*febrero y mayo de 1819/);
+  assert.equal(quotes.get('quote-755').letter_context.place, 'Roma');
 
   assert.deepEqual(
     document.quotes.filter(quote => quote.context_notes).map(quote => quote.id),
