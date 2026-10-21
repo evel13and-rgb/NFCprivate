@@ -30,23 +30,38 @@ test('normaliza únicamente notas contextuales completas', () => {
 test('el contexto solo aparece cuando existe y se cierra al cambiar de fragmento', () => {
   const container = createElementStub();
   const button = createElementStub();
+  const closeButton = createElementStub();
+  const count = createElementStub();
   const panel = createElementStub();
   const list = createElementStub();
   list.ownerDocument = {
     createElement() { return createElementStub(); },
   };
-  const controller = createQuoteContextController({ container, button, panel, list });
+  const controller = createQuoteContextController({
+    container,
+    button,
+    closeButton,
+    count,
+    panel,
+    list,
+  });
 
   controller.render({
     context_notes: [{ term: 'Iago e Imogen', explanation: 'Dos figuras opuestas.' }],
   });
   assert.equal(container.hidden, false);
   assert.equal(panel.hidden, true);
+  assert.equal(count.textContent, '1');
+  assert.equal(button.getAttribute('aria-label'), 'Abrir 1 nota de contexto');
   assert.equal(list.children.length, 1);
 
   controller.toggle();
   assert.equal(button.getAttribute('aria-expanded'), 'true');
   assert.equal(panel.hidden, false);
+
+  closeButton.listeners.get('click')();
+  assert.equal(button.getAttribute('aria-expanded'), 'false');
+  assert.equal(panel.hidden, true);
 
   controller.render({});
   assert.equal(container.hidden, true);

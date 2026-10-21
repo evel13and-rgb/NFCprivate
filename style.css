@@ -1617,11 +1617,23 @@ body.night-fall .watermark {
   color: rgba(166, 145, 101, 0.88);
 }
 
+.meta-work-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.meta-work-line .meta-work {
+  max-width: min(calc(100% - 44px), 32rem);
+}
+
 .quote-context {
-  width: min(100%, 36rem);
-  margin: 0.55rem auto 0;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  margin-left: -0.18rem;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: rgba(226, 216, 194, 0.88);
 }
 
 .quote-context[hidden],
@@ -1630,70 +1642,118 @@ body.night-fall .watermark {
 }
 
 .quote-context__toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.55rem;
-  min-height: 2.35rem;
-  padding: 0.4rem 0.75rem;
-  border: 1px solid rgba(200, 162, 90, 0.24);
+  position: relative;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  padding: 0;
+  border: 0;
   border-radius: 999px;
-  background: rgba(200, 162, 90, 0.045);
+  background: transparent;
   color: rgba(196, 163, 101, 0.9);
-  font: 600 0.7rem/1 'Inter', system-ui, sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   cursor: pointer;
-  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(200, 162, 90, 0.1);
+  transition: background-color 180ms ease, color 180ms ease, transform 160ms ease;
 }
 
 .quote-context__toggle:hover,
 .quote-context__toggle[aria-expanded='true'] {
-  border-color: rgba(200, 162, 90, 0.46);
-  background: rgba(200, 162, 90, 0.085);
+  background: rgba(200, 162, 90, 0.08);
   color: var(--title);
 }
 
-.quote-context__toggle:focus-visible {
+.quote-context__toggle:active {
+  transform: translateY(1px);
+}
+
+.quote-context__toggle:focus-visible,
+.quote-context__close:focus-visible {
   outline: 2px solid rgba(232, 218, 188, 0.82);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
-.quote-context__toggle-mark {
-  width: 0.48rem;
-  height: 0.48rem;
-  border-right: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
-  transform: translateY(-0.12rem) rotate(45deg);
-  transition: transform 180ms ease;
+.quote-context__toggle-icon {
+  display: grid;
+  width: 1.08rem;
+  height: 1.08rem;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font: 700 0.69rem/1 Georgia, 'Times New Roman', serif;
 }
 
-.quote-context__toggle[aria-expanded='true'] .quote-context__toggle-mark {
-  transform: translateY(0.12rem) rotate(225deg);
+.quote-context__count {
+  position: absolute;
+  top: 0.18rem;
+  right: 0.08rem;
+  display: grid;
+  min-width: 0.93rem;
+  height: 0.93rem;
+  place-items: center;
+  padding: 0 0.16rem;
+  border-radius: 999px;
+  background: rgba(200, 162, 90, 0.96);
+  color: #17110b;
+  font: 700 0.58rem/1 'Inter', system-ui, sans-serif;
 }
 
 .quote-context__panel {
-  max-height: min(30vh, 15rem);
-  margin-top: 0.65rem;
-  padding: 0.9rem clamp(0.85rem, 2.8vw, 1.15rem);
+  position: absolute;
+  z-index: 6;
+  right: clamp(0.7rem, 3vw, 1.35rem);
+  bottom: clamp(0.75rem, 2.5vw, 1.2rem);
+  left: clamp(0.7rem, 3vw, 1.35rem);
+  max-height: min(42vh, 18rem);
+  padding: 0.9rem clamp(0.85rem, 2.8vw, 1.15rem) 1rem;
   overflow-y: auto;
   overscroll-behavior: contain;
-  border: 1px solid rgba(200, 162, 90, 0.2);
+  border: 1px solid rgba(200, 162, 90, 0.34);
   border-radius: 0.75rem;
-  background: rgba(5, 4, 3, 0.26);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  background: rgba(8, 6, 4, 0.985);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  color: rgba(226, 216, 194, 0.88);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   scrollbar-color: rgba(200, 162, 90, 0.3) transparent;
   scrollbar-width: thin;
   text-align: left;
 }
 
+.quote-context__panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.7rem;
+}
+
 .quote-context__eyebrow {
-  margin: 0 0 0.75rem;
-  color: rgba(181, 151, 96, 0.7);
+  margin: 0;
+  color: rgba(181, 151, 96, 0.78);
   font-size: 0.63rem;
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
+}
+
+.quote-context__close {
+  flex: 0 0 2.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: -0.5rem -0.55rem -0.5rem 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(200, 162, 90, 0.88);
+  font: 400 1.25rem/1 'Inter', system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.quote-context__close:hover {
+  background: rgba(200, 162, 90, 0.08);
+  color: var(--title);
 }
 
 .quote-context__list {
@@ -1730,12 +1790,8 @@ body.night-fall .watermark {
 }
 
 @media (max-width: 600px) {
-  .quote-context {
-    margin-top: 0.42rem;
-  }
-
   .quote-context__panel {
-    max-height: min(31vh, 13.5rem);
+    max-height: min(40vh, 15rem);
     padding: 0.78rem 0.82rem;
   }
 
@@ -1746,7 +1802,7 @@ body.night-fall .watermark {
 
 @media (prefers-reduced-motion: reduce) {
   .quote-context__toggle,
-  .quote-context__toggle-mark {
+  .quote-context__close {
     transition: none;
   }
 }

@@ -4,7 +4,7 @@ import {
   formatQuotedText,
   getQuoteBoundaryDecoration,
 } from './quoteOriginal.js?v=4';
-import { createQuoteContextController } from './quoteContext.js?v=1';
+import { createQuoteContextController } from './quoteContext.js?v=2';
 import { EMERGENCY_QUOTES, findStoredQuoteIndex, loadPublicQuotes } from './publicQuotes.js?v=6';
 import { initFireflyAura } from './fireflies.js?v=5';
 import { getTimeOfDay, isNightTime } from './dayNight.js';
@@ -2060,6 +2060,8 @@ async function initApp() {
   quoteContextController = createQuoteContextController({
     container: document.getElementById('quote-context'),
     button: document.getElementById('quote-context-toggle'),
+    closeButton: document.getElementById('quote-context-close'),
+    count: document.getElementById('quote-context-count'),
     panel: document.getElementById('quote-context-panel'),
     list: document.getElementById('quote-context-list'),
   });

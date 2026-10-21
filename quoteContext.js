@@ -8,16 +8,21 @@ export function normalizeQuoteContextNotes(value) {
   });
 }
 
-export function createQuoteContextController({ container, button, panel, list }) {
+export function createQuoteContextController({ container, button, closeButton, count, panel, list }) {
   let notes = [];
+
+  function getToggleLabel(expanded) {
+    if (expanded) return 'Cerrar las notas de contexto';
+    const suffix = notes.length === 1 ? '1 nota' : `${notes.length} notas`;
+    return `Abrir ${suffix} de contexto`;
+  }
 
   function setExpanded(nextExpanded) {
     const expanded = Boolean(nextExpanded && notes.length);
     if (button) {
       button.setAttribute('aria-expanded', String(expanded));
-      button.setAttribute('aria-label', expanded
-        ? 'Cerrar las notas de contexto'
-        : 'Abrir las notas de contexto');
+      button.setAttribute('aria-label', getToggleLabel(expanded));
+      button.setAttribute('title', getToggleLabel(expanded));
     }
     if (panel) panel.hidden = !expanded;
     return expanded;
@@ -27,6 +32,7 @@ export function createQuoteContextController({ container, button, panel, list })
     notes = normalizeQuoteContextNotes(quote?.context_notes);
     setExpanded(false);
     if (container) container.hidden = notes.length === 0;
+    if (count) count.textContent = notes.length ? String(notes.length) : '';
 
     if (list?.replaceChildren) {
       const documentRef = list.ownerDocument || globalThis.document;
@@ -53,6 +59,7 @@ export function createQuoteContextController({ container, button, panel, list })
   }
 
   button?.addEventListener('click', toggle);
+  closeButton?.addEventListener('click', () => setExpanded(false));
   render(null);
 
   return { render, setExpanded, toggle };

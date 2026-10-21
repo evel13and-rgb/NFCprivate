@@ -22,7 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css?v=51" />
+  <link rel="stylesheet" href="style.css?v=52" />
 </head>
 <body class="app-loading rain-effects-paused" data-mode="day">
   <div
@@ -105,31 +105,43 @@
                 aria-controls="author-modal"
               ></button>
             </div>
-            <button
-              type="button"
-              class="meta-link literary-info-link meta-work"
-              id="author-work"
-              data-work-id=""
-              aria-haspopup="dialog"
-              aria-controls="work-modal"
-            ></button>
-          </div>
-          <div class="quote-context" id="quote-context" hidden>
-            <button
-              type="button"
-              class="quote-context__toggle"
-              id="quote-context-toggle"
-              aria-expanded="false"
-              aria-controls="quote-context-panel"
-              aria-label="Abrir las notas de contexto"
-            >
-              <span>Contexto</span>
-              <span class="quote-context__toggle-mark" aria-hidden="true"></span>
-            </button>
-            <div class="quote-context__panel" id="quote-context-panel" hidden>
-              <p class="quote-context__eyebrow">Para leer el fragmento</p>
-              <dl class="quote-context__list" id="quote-context-list"></dl>
+            <div class="meta-work-line">
+              <button
+                type="button"
+                class="meta-link literary-info-link meta-work"
+                id="author-work"
+                data-work-id=""
+                aria-haspopup="dialog"
+                aria-controls="work-modal"
+              ></button>
+              <div class="quote-context" id="quote-context" hidden>
+                <button
+                  type="button"
+                  class="quote-context__toggle"
+                  id="quote-context-toggle"
+                  aria-expanded="false"
+                  aria-controls="quote-context-panel"
+                  aria-label="Abrir las notas de contexto"
+                  title="Abrir las notas de contexto"
+                >
+                  <span class="quote-context__toggle-icon" aria-hidden="true">i</span>
+                  <span class="quote-context__count" id="quote-context-count" aria-hidden="true"></span>
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="quote-context__panel" id="quote-context-panel" hidden>
+            <div class="quote-context__panel-header">
+              <p class="quote-context__eyebrow">Contexto del fragmento</p>
+              <button
+                type="button"
+                class="quote-context__close"
+                id="quote-context-close"
+                aria-label="Cerrar las notas de contexto"
+                title="Cerrar"
+              ><span aria-hidden="true">×</span></button>
+            </div>
+            <dl class="quote-context__list" id="quote-context-list"></dl>
           </div>
           <div class="watermark" aria-hidden="true">paramoliterario.com</div>
         </div>
@@ -464,6 +476,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="script.js?v=48"></script>
+  <script type="module" src="script.js?v=49"></script>
 </body>
 </html>
