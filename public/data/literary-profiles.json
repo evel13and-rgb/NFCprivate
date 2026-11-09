@@ -1266,6 +1266,54 @@
       }
     },
     {
+      "author_id": "author-fernando-pessoa",
+      "display_name": "Fernando Pessoa",
+      "birth_year": 1888,
+      "death_year": 1935,
+      "country": "Portugal",
+      "language": "Portugués e inglés; escribió también algunos textos en francés.",
+      "period": "Finales del siglo XIX y primer tercio del siglo XX; crisis de la monarquía portuguesa, Primera República, Primera Guerra Mundial, Dictadura Militar y establecimiento del Estado Novo.",
+      "movement": "Modernismo portugués. Figura central de la generación vinculada a la revista Orpheu y creador de una obra caracterizada por la heteronimia, la multiplicidad de identidades literarias, la introspección y la experimentación con distintas formas de conciencia y escritura.",
+      "bio_short": "Fernando António Nogueira Pessoa nació en Lisboa en 1888. Tras la muerte de su padre y el nuevo matrimonio de su madre, pasó buena parte de su infancia y adolescencia en Durban, entonces parte de la colonia británica de Natal y hoy en Sudáfrica, donde recibió una educación británica y adquirió un dominio extraordinario del inglés. Regresó definitivamente a Lisboa en 1905 y comenzó estudios en el Curso Superior de Letras, que abandonó en 1907. Durante gran parte de su vida trabajó como corresponsal comercial, redactando y traduciendo cartas para empresas con negocios internacionales; una existencia aparentemente rutinaria que le permitía reservar buena parte de su energía para escribir.\n\nParticipó activamente en la renovación de la literatura portuguesa de comienzos del siglo XX y estuvo ligado a proyectos como la revista Orpheu, aparecida en 1915. Pero la característica más singular de su obra fue la creación de autores ficticios con personalidad, biografía, estilo y pensamiento propios. Alberto Caeiro, Ricardo Reis y Álvaro de Campos son sus tres heterónimos fundamentales; Pessoa insistía en que no eran simples seudónimos, sino individualidades literarias diferentes de él. Junto a ellos aparece Bernardo Soares, definido por el propio Pessoa como un semiheterónimo, además de decenas de otras figuras autorales creadas a lo largo de su vida.\n\nPessoa escribió poesía, ensayo, crítica, narrativa, teatro, correspondencia, textos políticos y filosóficos, proyectos comerciales e incluso trabajos relacionados con la astrología. Publicó varios pequeños libros y folletos en inglés, pero muy pocos libros en portugués; Mensagem, de 1934, fue el único volumen de poesía en portugués que llegó a publicar como libro. Gran parte de su producción quedó dispersa entre revistas, manuscritos, mecanoscritos y hojas sueltas. Tras su muerte se encontraron más de 25.000 hojas de textos, conservadas actualmente en buena parte en la Biblioteca Nacional de Portugal, y el proceso de descifrar, ordenar y editar ese legado continúa condicionando la forma en que conocemos su obra.\n\nMurió en Lisboa el 30 de noviembre de 1935, con cuarenta y siete años. Su reconocimiento internacional fue fundamentalmente póstumo. La multiplicidad que atraviesa su literatura no funciona únicamente como juego de máscaras: Pessoa utilizó distintas voces para explorar formas incompatibles de mirar el mundo, hasta convertir la identidad, la conciencia y la dificultad de saber quién habla cuando decimos «yo» en algunos de los grandes problemas de su obra.",
+      "bio_long": null,
+      "themes": [
+        "La identidad",
+        "La multiplicidad del yo",
+        "La conciencia",
+        "La existencia",
+        "La percepción",
+        "El sueño",
+        "La realidad",
+        "La soledad",
+        "El tiempo",
+        "La memoria",
+        "La creación literaria",
+        "La incertidumbre",
+        "El deseo",
+        "El tedio",
+        "La ciudad",
+        "La imaginación",
+        "El pensamiento",
+        "La dificultad de coincidir plenamente con uno mismo"
+      ],
+      "tone_notes": null,
+      "why_in_paramo": null,
+      "information_sources": [
+        "Casa Fernando Pessoa, biografía, cronología, archivo y documentación sobre la heteronimia.",
+        "Biblioteca Nacional de Portugal, Espólio Fernando Pessoa.",
+        "Fernando Pessoa, Tábua Bibliográfica, 1928, y carta a Adolfo Casais Monteiro de 13 de enero de 1935."
+      ],
+      "portrait": {
+        "path": "public/images/authors/fernando-pessoa.webp",
+        "alt": "Retrato fotográfico en blanco y negro de Fernando Pessoa con gafas, sombrero y abrigo oscuro",
+        "caption": "Fernando Pessoa, 1914",
+        "credit": "Fotógrafo no identificado; Wikimedia Commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pessoa_chapeu.jpg",
+        "rights": "Dominio público; Public Domain Mark 1.0",
+        "object_position": "50% 38%"
+      }
+    },
+    {
       "author_id": "author-john-keats",
       "display_name": "John Keats",
       "birth_year": 1795,
@@ -2543,6 +2591,51 @@
         "Larousse, ficha crítica de Une vie (L’Humble Vérité)."
       ],
       "fragment_count": 13
+    },
+    {
+      "work_id": "work-libro-del-desasosiego",
+      "title": "Libro del desasosiego",
+      "display_title": "Libro del desasosiego",
+      "original_title": "Livro do Desassossego",
+      "author_id": "author-fernando-pessoa",
+      "publication_year": 1982,
+      "genre": "Prosa fragmentaria; diario íntimo ficticio, reflexión autobiográfica, filosófica y literaria. Obra situada entre el diario, el ensayo, la autobiografía imaginaria y la prosa poética.",
+      "language": "Portugués",
+      "summary_short": "Libro del desasosiego está formado por cientos de fragmentos de extensión y naturaleza muy diferentes. No desarrolla una trama continua: reúne pensamientos, impresiones, escenas cotidianas, observaciones, sueños, recuerdos y divagaciones surgidas de una conciencia que se contempla constantemente a sí misma y al mundo que la rodea.\n\nEn buena parte de la obra esa voz pertenece a Bernardo Soares, ayudante de tenedor de libros que vive y trabaja en la Baixa de Lisboa. La ciudad, el despacho, las calles, las personas anónimas y los acontecimientos más pequeños pueden convertirse en puntos de partida para largas exploraciones interiores. Soares concibe esa escritura como una «autobiografía sin hechos»: importa menos aquello que sucede exteriormente que las transformaciones que la realidad provoca dentro de quien la observa.",
+      "summary_long": null,
+      "context_notes": "Pessoa trabajó intermitentemente en el Libro del desasosiego durante más de veinte años y nunca dejó una versión definitiva ni estableció el orden final de sus fragmentos. El proyecto cambió incluso de autor ficticio: los textos más antiguos, hasta 1915, aparecen vinculados al propio Pessoa; entre 1915 y 1920 el proyecto fue atribuido a Vicente Guedes. Tras una prolongada interrupción, desde 1929 la mayor parte de los nuevos textos pasó a atribuirse a Bernardo Soares, su semiheterónimo y ayudante de tenedor de libros de la Rua dos Douradores.\n\nLa primera edición en forma de libro —la edición princeps— apareció en Lisboa en 1982, en dos volúmenes publicados por Ática. Fue organizada y prologada por Jacinto do Prado Coelho, con recopilación y transcripción de Maria Aliete Galhoz y Teresa Sobral Cunha. Desde entonces se han publicado distintas ediciones que seleccionan, transcriben y ordenan los documentos de maneras diferentes. Por ello no existe un único Libro del desasosiego establecido definitivamente por Pessoa: cada edición supone también una interpretación editorial de un archivo inconcluso.",
+      "themes": [
+        "La identidad",
+        "La conciencia",
+        "La soledad",
+        "El sueño",
+        "La realidad",
+        "El tedio",
+        "El deseo",
+        "La imaginación",
+        "El pensamiento",
+        "La introspección",
+        "El trabajo cotidiano",
+        "La ciudad",
+        "El tiempo",
+        "La memoria",
+        "La percepción",
+        "La literatura",
+        "La existencia",
+        "La imposibilidad de realizarse plenamente",
+        "La distancia entre vivir y observarse viviendo",
+        "La multiplicidad interior"
+      ],
+      "tone_notes": "Introspectivo, melancólico, lúcido, fluctuante y profundamente meditativo. La escritura puede pasar de la observación minúscula de una calle, una oficina o un cambio de luz a una reflexión abstracta sobre la identidad o la existencia. Conviven el desaliento y la ironía, la apatía y el asombro, la precisión analítica y una extraordinaria capacidad lírica. Su carácter fragmentario refuerza esa inestabilidad: no existe una única voz emocional ni una progresión narrativa convencional.",
+      "fragment_notes": "La selección de Páramo Literario reúne 33 fragmentos y sigue como edición portuguesa de referencia Livro do Desassossego, organizada por Richard Zenith, Assírio & Alvim, 10.ª edición, 2012. Cada fragmento identifica en su nota pública el número correspondiente de esa edición. El fragmento 28 adopta deliberadamente una lectura del manuscrito BNP/E3, 4-68r, coincidente con la edición de Jerónimo Pizarro; la diferencia frente a Zenith queda documentada en su nota de variante textual.",
+      "why_in_paramo": null,
+      "information_sources": [
+        "Fernando Pessoa, Livro do Desassossego, edición organizada por Richard Zenith, Lisboa, Assírio & Alvim, 10.ª edición, 2012.",
+        "Arquivo LdoD, representación digital y comparación de las principales ediciones críticas.",
+        "Casa Fernando Pessoa, documentación sobre la génesis, las voces autorales y la construcción editorial del libro.",
+        "Biblioteca Nacional de Portugal, Espólio Fernando Pessoa."
+      ],
+      "fragment_count": 33
     },
     {
       "work_id": "work-cartas-de-john-keats",
