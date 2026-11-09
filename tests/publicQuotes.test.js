@@ -121,12 +121,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 754 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 787 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 754);
-  assert.equal(quotes.length, 754);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 754);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 754);
+  const quotes = validatePublicQuotesDocument(document, 787);
+  assert.equal(quotes.length, 787);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 787);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 787);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -295,6 +295,13 @@ test('public/data/quotes.json cumple el contrato público y contiene 754 frases'
     'quote-743', 'quote-744', 'quote-745', 'quote-746', 'quote-747',
     'quote-748', 'quote-749', 'quote-750', 'quote-751', 'quote-752',
     'quote-753', 'quote-754', 'quote-755',
+    'quote-756', 'quote-757', 'quote-758', 'quote-759', 'quote-760',
+    'quote-761', 'quote-762', 'quote-763', 'quote-764', 'quote-765',
+    'quote-766', 'quote-767', 'quote-768', 'quote-769', 'quote-770',
+    'quote-771', 'quote-772', 'quote-773', 'quote-774', 'quote-775',
+    'quote-776', 'quote-777', 'quote-778', 'quote-779', 'quote-780',
+    'quote-781', 'quote-782', 'quote-783', 'quote-784', 'quote-785',
+    'quote-786', 'quote-787', 'quote-788',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -2046,7 +2053,7 @@ test('Cartas de John Keats publica trece pares con contexto epistolar y notas ex
   assert.equal(quotes.get('quote-755').letter_context.place, 'Roma');
 
   assert.deepEqual(
-    document.quotes.filter(quote => quote.context_notes).map(quote => quote.id),
+    keatsQuotes.filter(quote => quote.context_notes).map(quote => quote.id),
     ['quote-747'],
   );
   assert.deepEqual(
@@ -2103,6 +2110,75 @@ test('John Keats y sus Cartas publican fichas completas con retrato documental',
   assert.match(work?.context_notes, /no fueron concebidas para su publicación.*1848.*Rollins.*1958/s);
   assert.match(work?.fragment_notes, /trece fragmentos.*destinatario y la fecha/s);
   assert.equal(work?.themes.length, 15);
+});
+
+test('Libro del desasosiego publica 33 pares cotejados con su numeración editorial', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = new Map(document.quotes.map(quote => [quote.id, quote]));
+  const pessoaQuotes = document.quotes.filter(quote => quote.workId === 'work-libro-del-desasosiego');
+
+  assert.deepEqual(
+    pessoaQuotes.map(quote => quote.id),
+    Array.from({ length: 33 }, (_, index) => `quote-${756 + index}`),
+  );
+  assert.ok(pessoaQuotes.every(quote => (
+    quote.a === 'Fernando Pessoa'
+    && quote.obra === 'Libro del desasosiego, Fernando Pessoa'
+    && quote.t.includes(quote.highlight)
+    && quote.original?.lang === 'pt'
+    && quote.original?.label === 'Original portugués'
+    && quote.context_notes?.[0]?.term === 'Edición y fragmento'
+    && /Richard Zenith.*2012.*fragmento n.º/u.test(quote.context_notes[0].explanation)
+  )));
+  assert.equal(pessoaQuotes.reduce((total, quote) => total + quote.context_notes.length, 0), 34);
+  assert.deepEqual(quotes.get('quote-783').context_notes.map(note => note.term), [
+    'Edición y fragmento',
+    'Variante textual',
+  ]);
+  assert.match(quotes.get('quote-783').original.text, /que os meus olhos vêem arrulhar/u);
+  assert.match(quotes.get('quote-783').context_notes[1].explanation, /BNP\/E3, 4-68r.*Jerónimo Pizarro/u);
+  assert.doesNotMatch(quotes.get('quote-783').original.text, /que aos meus olhos/u);
+  for (const quote of pessoaQuotes) {
+    assert.equal(
+      quote.t.match(/\[…\]/gu)?.length || 0,
+      quote.original.text.match(/\[…\]/gu)?.length || 0,
+      `${quote.id} debe conservar los recortes simétricos`,
+    );
+  }
+});
+
+test('Fernando Pessoa y Libro del desasosiego publican fichas completas con retrato documental', async () => {
+  const profiles = JSON.parse(await readFile(
+    new URL('../public/data/literary-profiles.json', import.meta.url),
+    'utf8',
+  ));
+  const author = profiles.authors.find(profile => profile.author_id === 'author-fernando-pessoa');
+  const work = profiles.works.find(profile => profile.work_id === 'work-libro-del-desasosiego');
+
+  assert.equal(author?.display_name, 'Fernando Pessoa');
+  assert.equal(author?.birth_year, 1888);
+  assert.equal(author?.death_year, 1935);
+  assert.match(author?.movement, /Modernismo portugués.*Orpheu.*heteronimia/su);
+  assert.match(author?.bio_short, /Durban.*Curso Superior de Letras.*Bernardo Soares.*30 de noviembre de 1935/su);
+  assert.equal(author?.themes.length, 18);
+  assert.equal(author?.portrait?.path, 'public/images/authors/fernando-pessoa.webp');
+  assert.equal(author?.portrait?.caption, 'Fernando Pessoa, 1914');
+  assert.match(author?.portrait?.rights, /Dominio público/u);
+  const portrait = await readFile(new URL('../public/images/authors/fernando-pessoa.webp', import.meta.url));
+  assert.ok(portrait.byteLength > 90_000);
+  assert.equal(portrait.subarray(0, 4).toString('ascii'), 'RIFF');
+  assert.equal(portrait.subarray(8, 12).toString('ascii'), 'WEBP');
+
+  assert.equal(work?.title, 'Libro del desasosiego');
+  assert.equal(work?.original_title, 'Livro do Desassossego');
+  assert.equal(work?.publication_year, 1982);
+  assert.equal(work?.language, 'Portugués');
+  assert.equal(work?.fragment_count, 33);
+  assert.match(work?.genre, /Prosa fragmentaria.*prosa poética/su);
+  assert.match(work?.summary_short, /Bernardo Soares.*autobiografía sin hechos/su);
+  assert.match(work?.context_notes, /Vicente Guedes.*1929.*edición princeps.*1982/su);
+  assert.match(work?.fragment_notes, /Richard Zenith.*10.ª edición.*fragmento 28/su);
+  assert.equal(work?.themes.length, 20);
 });
 
 test('script.js ya no contiene el catálogo completo ni colecciones literarias', async () => {

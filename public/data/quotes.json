@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T21:29:04.314Z",
-  "quote_count": 754,
+  "generated_at": "2026-11-09T22:24:38.496Z",
+  "quote_count": 787,
   "quotes": [
     {
       "id": "quote-2",
@@ -12884,6 +12884,769 @@
         "text": "’Tis the most difficult thing in the world to me to write a letter. My stomach continues so bad, that I feel it worse on opening any book,—yet I am much better than I was in quarantine. Then I am afraid to encounter the pro-ing and con-ing of anything interesting to me in England. I have an habitual feeling of my real life having passed, and that I am leading a posthumous existence. God knows how it would have been—but it appears to me—however, I will not speak of that subject.",
         "lang": "en",
         "label": "Original inglés"
+      }
+    },
+    {
+      "id": "quote-756",
+      "legacy_index": 756,
+      "t": "Considero la vida una posada donde tengo que demorarme hasta que llegue la diligencia del abismo. No sé adónde me llevará, porque no sé nada. Podría considerar esta posada una prisión, porque estoy obligado a aguardar en ella; podría considerarla un lugar de sociables, porque aquí me encuentro con otros. No soy, sin embargo, ni impaciente ni común. Dejo a su ser a quienes se encierran en su habitación, tendidos lánguidos en la cama donde esperan sin dormir; dejo a su hacer a quienes conversan en las salas, desde donde las músicas y las voces llegan cómodas hasta mí. Me siento a la puerta y empapo mis ojos y mis oídos en los colores y sonidos del paisaje, y canto despacio, solo para mí, vagas canciones que compongo mientras espero.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Me siento a la puerta y empapo mis ojos y mis oídos en los colores y sonidos del paisaje",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 1."
+        }
+      ],
+      "original": {
+        "text": "Considero a vida uma estalagem onde tenho que me demorar até que chegue a diligência do abismo. Não sei onde ela me levará, porque não sei nada. Poderia considerar esta estalagem uma prisão, porque estou compelido a aguardar nela; poderia considerá-la um lugar de sociáveis, porque aqui me encontro com outros. Não sou, porém, nem impaciente nem comum. Deixo ao que são os que se fecham no quarto, deitados moles na cama onde esperam sem sono; deixo ao que fazem os que conversam nas salas, de onde as músicas e as vozes chegam cómodas até mim. Sento-me à porta e embebo meus olhos e ouvidos nas cores e nos sons da paisagem, e canto lento, para mim só, vagos cantos que componho enquanto espero.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-757",
+      "legacy_index": 757,
+      "t": "Pedí tan poco a la vida, y ese mismo poco la vida me negó. Una franja de una parte del sol, un campo cercano, un poco de sosiego con un poco de pan, [el] no pesarme demasiado saber que existo, el no exigir nada de los demás ni que ellos me exigieran nada… Esto mismo me fue negado, como quien niega la limosna no por falta de bondad, sino para no tener que desabrocharse el abrigo.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "como quien niega la limosna no por falta de bondad, sino para no tener que desabrocharse el abrigo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 6."
+        }
+      ],
+      "original": {
+        "text": "Pedi tão pouco à vida e esse mesmo pouco a vida me negou. Uma réstia de parte do sol, um campo próximo, um bocado de sossego com um bocado de pão, [o] não me pesar muito o conhecer que existo, o não exigir nada dos outros nem exigirem eles nada de mim.... Isto mesmo me foi negado, como quem nega a esmola não por falta de boa alma, mas para não ter que desabotoar o casaco.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-758",
+      "legacy_index": 758,
+      "t": "El aislamiento me modeló a su imagen y semejanza. La presencia de otra persona —de una sola persona que sea— retrasa inmediatamente mi pensamiento y, mientras que en el hombre normal el contacto con otro es un estímulo para la expresión y para el ingenio, en mí ese contacto es un contraestímulo, si es que esta palabra compuesta resulta viable en el lenguaje. Soy capaz, a solas conmigo mismo, de idear innumerables ocurrencias ingeniosas, respuestas rápidas a lo que nadie ha dicho, fulguraciones de una sociabilidad inteligente con ninguna persona; pero todo eso desaparece cuando estoy delante de otro ser físico, pierdo la inteligencia, dejo de poder hablar y, al cabo de unos cuartos de hora, solo siento sueño. Sí, hablar con gente me da ganas de dormir. Solo mis amigos espectrales e imaginados, solo mis conversaciones desarrolladas en sueños, tienen una verdadera realidad y un relieve justo, y en ellos el espíritu está presente como una imagen en un espejo.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Sí, hablar con gente me da ganas de dormir.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 49."
+        }
+      ],
+      "original": {
+        "text": "O isolamento talhou-me à sua imagem e semelhança. A presença de outra pessoa — de uma só pessoa que seja — atrasa-me imediatamente o pensamento, e, ao passo que no homem normal o contacto com outrem é um estímulo para a expressão e para o dito, em mim esse contacto é um contra-estímulo, se é que esta palavra composta é viável perante a linguagem. Sou capaz, a sós comigo, de idear quantos ditos de espírito, respostas rápidas ao que ninguém disse, fulgurações de uma sociabilidade inteligente com pessoa nenhuma; mas tudo isso se me some se estou perante um outrem físico, perco a inteligência, deixo de poder dizer, e, no fim de uns quartos de hora, sinto apenas sono. Sim, falar com gente dá-me vontade de dormir. Só os meus amigos espectrais e imaginados, só as minhas conversas decorrentes em sonho, têm uma verdadeira realidade e um justo relevo, e neles o espírito é presente como uma imagem num espelho.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-759",
+      "legacy_index": 759,
+      "t": "En mi alma innoble y profunda registro, día a día, las impresiones que forman la sustancia externa de mi conciencia de mí mismo. Las pongo en palabras vagabundas, que me abandonan desde que las escribo y erran, independientes de mí, por laderas y praderas de imágenes, por paseos de conceptos, por senderos estrechos de confusiones. Esto no me sirve de nada, pues nada me sirve de nada. Pero me alivio escribiendo, como quien respira mejor sin que la enfermedad haya pasado.\n\nHay quien, estando distraído, escribe rayas y nombres absurdos en las esquinas encajadas del papel secante. Estas páginas son los garabatos de mi inconsciencia intelectual de mí mismo. Las trazo en un sopor de sentirme, como un gato al sol, y las releo, a veces, con un vago asombro tardío, como el de haberme acordado de algo que siempre había olvidado.\n\nCuando escribo, me visito solemnemente. Tengo habitaciones especiales, recordadas por otro en los intersticios de la figuración, donde me deleito analizando lo que no siento y me examino como a un cuadro en la sombra.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "me alivio escribiendo, como quien respira mejor sin que la enfermedad haya pasado",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 341."
+        }
+      ],
+      "original": {
+        "text": "Na minha alma ignóbil e profunda registo, dia a dia, as impressões que formam a substância externa da minha consciência de mim. Ponho-as em palavras vadias, que me desertam desde que as escrevo, e erram, independentes de mim, por encostas e relvados de imagens, por áleas de conceitos, por azinhagas de confusões. Isto de nada me serve, pois nada me serve de nada. Mas desapoquento-me escrevendo, como quem respira melhor sem que a doença haja passado.\n\nHá quem, estando distraído, escreva riscos e nomes absurdos no mata-borrão de cantos entalados. Estas páginas são os rabiscos da minha inconsciência intelectual de mim. Traço-as numa modorra de me sentir, como um gato ao sol, e releio-as, por vezes, com um vago pasmo tardio, como o de me haver lembrado de uma coisa que sempre esquecera.\n\nQuando escrevo, visito-me solenemente. Tenho salas especiais, recordadas por outrem em interstícios da figuração, onde me deleito analisando o que não sinto, e me examino como a um quadro na sombra.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-760",
+      "legacy_index": 760,
+      "t": "No conozco placer como el de los libros, y leo poco. Los libros son presentaciones a los sueños, y no necesita presentaciones quien, con la facilidad de la vida, entra en conversación con ellos. Nunca pude leer un libro entregándome a él; siempre, a cada paso, el comentario de la inteligencia o de la imaginación me estorbó la secuencia de la propia narración. Al cabo de unos minutos, quien escribía era yo, y lo que estaba escrito no estaba en ninguna parte.\n\nMis lecturas predilectas son la repetición de libros banales que duermen conmigo junto a mi cabecera. Hay dos que no me abandonan nunca: La retórica, del padre Figueiredo, y Reflexiones sobre la lengua portuguesa, del padre Freire. Estos libros los releo siempre con provecho; y, si es cierto que ya los he leído enteros muchas veces, también es cierto que ninguno de ellos lo he leído de forma seguida. Debo a esos libros una disciplina que casi creo imposible en mí: una regla del escribir objetivado, una ley de la razón de que las cosas estén escritas.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Al cabo de unos minutos, quien escribía era yo, y lo que estaba escrito no estaba en ninguna parte.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 417."
+        }
+      ],
+      "original": {
+        "text": "Não conheço prazer como o dos livros, e pouco leio. Os livros são apresentações aos sonhos, e não precisa de apresentações quem, com a facilidade da vida, entre em conversa com eles. Nunca pude ler um livro com entrega a ele; sempre, a cada passo, o comentário da inteligência ou da imaginação me estorvou a sequência da própria narrativa. No fim de minutos, quem escrevia era eu, e o que estava escrito não estava em parte alguma.\n\nAs minhas leituras predilectas são a repetição de livros banais que dormem comigo à minha cabeceira. Há dois que me não deixam nunca — A Retórica do Padre Figueiredo e as Reflexões sobre a Língua Portuguesa, do Padre Freire. Estes livros, releio-os sempre a bem; e, se é certo que já os li todos muitas vezes, também é certo que a nenhum deles li em sequência. Devo a esses livros uma disciplina que quase creio impossível em mim — uma regra do escrever objectivado, uma lei da razão de as coisas estarem escritas.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-761",
+      "legacy_index": 761,
+      "t": "El niño no concede más valor al oro que al vidrio. Y, en verdad, ¿vale más el oro? El niño encuentra oscuramente absurdas las pasiones, las iras, los temores que ve esculpidos en los gestos adultos. ¿Y no son, en verdad, absurdos y vanos todos nuestros temores, y todos nuestros odios, y todos los amores?\n\n¡Oh, divina y absurda intuición infantil! ¡Visión verdadera de las cosas, que revestimos de convenciones en el más desnudo verlas, que empañamos con ideas nuestras en el más directo mirarlas!",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "El niño no concede más valor al oro que al vidrio.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 484."
+        }
+      ],
+      "original": {
+        "text": "A criança não dá mais valor ao ouro do que ao vidro. E na verdade, o ouro vale mais? A criança acha obscuramente absurdos as paixões, as raivas, os receios que vê esculpidos nos gestos adultos. E não são na verdade absurdos e vãos todos os nossos receios, e todos os nossos ódios, e todos os amores?\n\nÓ divina e absurda intuição infantil! Visão verdadeira das coisas, que nós vestimos de convenções no mais nu vê-las, que nós embrumamos de ideias nossas no mais directo olhá-las!",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-762",
+      "legacy_index": 762,
+      "t": "Nunca duermo: vivo y sueño o, mejor dicho, sueño en vida y al dormir, que también es vida. No hay interrupción en mi conciencia: siento lo que me rodea si todavía no duermo, o si no duermo bien; entro enseguida a soñar desde que duermo de verdad. Así, lo que soy es un perpetuo desenrollarse de imágenes, conexas o inconexas, fingiendo siempre ser exteriores, unas colocadas entre los hombres y la luz si estoy despierto, otras colocadas entre los fantasmas y la sin-luz en la que se ve, si estoy durmiendo. Verdaderamente, no sé cómo distinguir una cosa de la otra, ni me atrevo a afirmar si no duermo cuando estoy despierto, si no estoy despertando cuando duermo.\n\nLa vida es un ovillo que alguien enredó. Tiene un sentido si está desenrollada y extendida a lo largo, o bien enrollada. Pero, tal como está, es un problema sin ovillo propio, un enredarse sin dónde.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "La vida es un ovillo que alguien enredó.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 342."
+        }
+      ],
+      "original": {
+        "text": "Nunca durmo: vivo e sonho, ou, antes, sonho em vida e a dormir, que também é vida. Não há interrupção em minha consciência: sinto o que me cerca se não durmo ainda, ou se não durmo bem; entro logo a sonhar desde que deveras durmo. Assim o que sou é um perpétuo desenrolamento de imagens, conexas ou desconexas, fingindo sempre de exteriores, umas postas entre os homens e a luz, se estou desperto, outras postas entre os fantasmas e a sem-luz que se vê, se estou dormindo. Verdadeiramente, não sei como distinguir uma coisa da outra, nem ouso afirmar se não durmo quando estou desperto, se não estou a despertar quando durmo.\n\nA vida é um novelo que alguém emaranhou. Há um sentido nela, se estiver desenrolada e posta ao comprido, ou enrolada bem. Mas, tal como está, é um problema sem novelo próprio, um embrulhar-se sem onde.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-763",
+      "legacy_index": 763,
+      "t": "Nunca llegamos a realizarnos.\n\nSomos dos abismos —un pozo que mira fijamente al cielo.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Somos dos abismos —un pozo que mira fijamente al cielo.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 11."
+        }
+      ],
+      "original": {
+        "text": "Nós nunca nos realizamos.\n\nSomos dois abismos — um poço fitando o céu.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-764",
+      "legacy_index": 764,
+      "t": "Conquisté, palmo a pequeño palmo, el terreno interior que había nacido mío. Reivindiqué, espacio a pequeño espacio, el pantano en el que había quedado nulo. Parí mi ser definitivo, pero me extraje de mí mismo con fórceps.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Conquisté, palmo a pequeño palmo, el terreno interior que había nacido mío.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 15."
+        }
+      ],
+      "original": {
+        "text": "Conquistei, palmo a pequeno palmo, o terreno interior que nascera meu. Reclamei, espaço a pequeno espaço, o pântano em que me quedara nulo. Pari meu ser definitivo, mas tirei-me a ferros de mim mesmo.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-765",
+      "legacy_index": 765,
+      "t": "En varias ocasiones, a lo largo de mi vida oprimida por las circunstancias, me ha sucedido que, cuando quiero liberarme de un conjunto de ellas, me veo súbitamente rodeado de otras de la misma índole, como si hubiera definidamente una enemistad contra mí en la trama incierta de las cosas. Me arranco del cuello una mano que me asfixia. Veo que en la mano con la que arranqué aquella venía prendido un lazo que me cayó al cuello con el gesto de liberación. Aparto con cuidado el lazo, y con mis propias manos casi me estrangulo.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Aparto con cuidado el lazo, y con mis propias manos casi me estrangulo.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 20."
+        }
+      ],
+      "original": {
+        "text": "Várias vezes, no decurso da minha vida opressa por circunstâncias, me tem sucedido, quando quero libertar-me de qualquer grupo delas, ver-me subitamente cercado por outras da mesma ordem, como se houvesse definidamente uma inimizade contra mim na teia incerta das coisas. Arranco do pescoço uma mão que me sufoca. Vejo que na mão, com que a essa arranquei, me veio preso um laço que me caiu no pescoço com o gesto de libertação. Afasto, com cuidado, o laço, e é com as próprias mãos que me quase estrangulo.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-766",
+      "legacy_index": 766,
+      "t": "Haya o no dioses, de ellos somos siervos.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Haya o no dioses, de ellos somos siervos.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 21."
+        }
+      ],
+      "original": {
+        "text": "Haja ou não deuses, deles somos servos.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-767",
+      "legacy_index": 767,
+      "t": "Dar a cada emoción una personalidad, a cada estado del alma un alma.\n\nDoblaron la curva del camino y eran muchas muchachas. Venían cantando por el camino, y el sonido de sus voces era felices [sic]. Ellas, no sé qué serían. Las escuché un rato desde lejos, sin sentimiento propio. Una amargura por ellas se hizo sentir en mi corazón.\n\n¿Por su futuro? ¿Por su inconsciencia? No directamente por ellas —o, ¿quién sabe?, quizá solo por mí.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Dar a cada emoción una personalidad, a cada estado del alma un alma.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 26."
+        }
+      ],
+      "original": {
+        "text": "Dar a cada emoção uma personalidade, a cada estado de alma uma alma.\n\nDobraram a curva do caminho e eram muitas raparigas. Vinham cantando pela estrada, e o som das suas vozes era felizes [sic]. Elas não sei o que seriam. Escutei-as um tempo de longe, sem sentimento próprio. Uma amargura por elas sentiu-me no coração.\n\nPelo futuro delas? Pela inconsciência delas? Não directamente por elas — ou, quem sabe? talvez apenas por mim.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-768",
+      "legacy_index": 768,
+      "t": "Un hálito de música o de sueño, algo que haga casi sentir, algo que haga no pensar.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Un hálito de música o de sueño",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 28."
+        }
+      ],
+      "original": {
+        "text": "Um hálito de música ou de sonho, qualquer coisa que faça quase sentir, qualquer coisa que faça não pensar.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-769",
+      "legacy_index": 769,
+      "t": "… y un profundo y tedioso desdén por todos cuantos trabajan por la humanidad, por todos cuantos luchan por la patria y dan su vida para que la civilización continúe…\n\n… un desdén lleno de tedio hacia ellos, los que ignoran que la única realidad para cada uno es su propia alma, y lo demás —el mundo exterior y los otros— una pesadilla inestética, como un resultado en los sueños de una indigestión de espíritu.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "la única realidad para cada uno es su propia alma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 35."
+        }
+      ],
+      "original": {
+        "text": "...e um profundo e tediento desdém por todos quantos trabalham para a humanidade, por todos quantos se batem pela pátria e dão a sua vida para que a civilização continue...\n\n...um desdém cheio de tédio por eles, os que desconhecem que a única realidade para cada um é a sua própria alma, e o resto — o mundo exterior e os outros — um pesadelo inestético, como um resultado nos sonhos de uma indigestão de espírito.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-770",
+      "legacy_index": 770,
+      "t": "Hay un cansancio de la inteligencia abstracta, y es el más horroroso de los cansancios. No pesa como el cansancio del cuerpo, ni inquieta como el cansancio del conocimiento y de la emoción. Es un peso de la conciencia del mundo, un no poder respirar con el alma.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "un no poder respirar con el alma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 43."
+        }
+      ],
+      "original": {
+        "text": "Há um cansaço da inteligência abstracta, e é o mais horroroso dos cansaços. Não pesa como o cansaço do corpo, nem inquieta como o cansaço do conhecimento e da emoção. É um peso da consciência do mundo, um não poder respirar com a alma.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-771",
+      "legacy_index": 771,
+      "t": "Para comprender, me destruí. Comprender es olvidar amar. No conozco nada a la vez tan falso y tan significativo como aquella afirmación de Leonardo da Vinci según la cual no se puede amar ni odiar una cosa sino después de comprenderla.\n\nLa soledad me desola; la compañía me oprime. La presencia de otra persona desvía mis pensamientos; sueño con su presencia con una distracción especial que toda mi atención analítica no consigue definir.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Para comprender, me destruí. Comprender es olvidar amar.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 48."
+        }
+      ],
+      "original": {
+        "text": "Para compreender, destruí-me. Compreender é esquecer de amar. Nada conheço mais ao mesmo tempo falso e significativo que aquele dito de Leonardo da Vinci de que se não pode amar ou odiar uma coisa senão depois de compreendê-la.\n\nA solidão desola-me; a companhia oprime-me. A presença de outra pessoa descaminha-me os pensamentos; sonho a sua presença com uma distracção especial, que toda a minha atenção analítica não consegue definir.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-772",
+      "legacy_index": 772,
+      "t": "La metafísica siempre me pareció una forma prolongada de la locura latente. Si conociéramos la verdad, la veríamos; todo lo demás es sistema y alrededores. Bástenos, si pensamos, la incomprensibilidad del universo; querer comprenderlo es ser menos que hombres, porque ser hombre es saber que no se comprende.\n\nMe traen la fe como un paquete cerrado en una bandeja ajena. Quieren que lo acepte para que no lo abra. Me traen la ciencia como un cuchillo en un plato, con el que abriré las hojas de un libro de páginas en blanco. Me traen la duda como polvo dentro de una caja; pero ¿para qué me traen la caja si no contiene más que polvo?",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "querer comprenderlo es ser menos que hombres, porque ser hombre es saber que no se comprende",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 87."
+        }
+      ],
+      "original": {
+        "text": "A metafísica pareceu-me sempre uma forma prolongada da loucura latente. Se conhecêssemos a verdade, vê-la-íamos; tudo o mais é sistema e arredores. Baste-nos, se pensarmos, a incompreensibilidade do universo; querer compreendê-lo é ser menos que homens, porque ser homem é saber que se não compreende.\n\nTrazem-me a fé como um embrulho fechado numa salva alheia. Querem que o aceite para que o não abra. Trazem-me a ciência, como uma faca num prato, com que abrirei as folhas de um livro de páginas brancas. Trazem-me a dúvida, como pó dentro de uma caixa; mas para que me trazem a caixa se ela não tem senão pó?",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-773",
+      "legacy_index": 773,
+      "t": "La experiencia directa es el subterfugio, o el escondrijo, de quienes carecen de imaginación. Al leer los riesgos que corrió el cazador de tigres, tengo de esos riesgos cuanto valió la pena tener, salvo el riesgo mismo, que tan poco valió la pena tener, que ya pasó.\n\nLos hombres de acción son los esclavos involuntarios de los hombres de entendimiento. Las cosas solo valen por la interpretación que se hace de ellas. Unos, pues, crean cosas para que otros, transformándolas en significado, las conviertan en vidas. Narrar es crear, pues vivir es solamente ser vivido.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Narrar es crear, pues vivir es solamente ser vivido.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 163."
+        }
+      ],
+      "original": {
+        "text": "A experiência directa é o subterfúgio, ou o esconderijo, daqueles que são desprovidos de imaginação. Lendo os riscos que correu o caçador de tigres tenho quanto de riscos valeu a pena ter, salvo o mesmo risco, que tanto não valeu a pena ter, que passou.\n\nOs homens de acção são os escravos involuntários dos homens de entendimento. As coisas não valem senão na interpretação delas. Uns, pois, criam coisas para que os outros, transmudando-as em significação, as tornem vidas. Narrar é criar, pois viver é apenas ser vivido.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-774",
+      "legacy_index": 774,
+      "t": "A medio camino entre la fe y la crítica está la hospedería de la razón. La razón es la fe en lo que puede comprenderse sin fe; pero sigue siendo una fe, porque comprender implica presuponer que hay algo comprensible.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "La razón es la fe en lo que puede comprenderse sin fe",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 176."
+        }
+      ],
+      "original": {
+        "text": "A meio caminho entre a fé e a crítica está a estalagem da razão. A razão é a fé no que se pode compreender sem fé; mas é uma fé ainda, porque compreender envolve pressupor que há qualquer coisa compreensível.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-775",
+      "legacy_index": 775,
+      "t": "El pensamiento puede tener elevación sin tener elegancia y, en la medida en que carezca de elegancia, perderá su efecto sobre los demás. La fuerza sin destreza es una simple masa.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "La fuerza sin destreza es una simple masa.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 257."
+        }
+      ],
+      "original": {
+        "text": "O pensamento pode ter elevação sem ter elegância, e, na proporção em que não tiver elegância, perderá a acção sobre os outros. A força sem a destreza é uma simples massa.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-776",
+      "legacy_index": 776,
+      "t": "No es el amor, sino lo que lo rodea, lo que vale la pena…\n\nLa represión del amor ilumina sus fenómenos con mucha más claridad que la propia experiencia. Hay virginidades de gran entendimiento. Actuar compensa, pero confunde. Poseer es ser poseído y, por tanto, perderse. Solo la idea alcanza, sin estropearse, el conocimiento de la realidad.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Poseer es ser poseído y, por tanto, perderse.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 271."
+        }
+      ],
+      "original": {
+        "text": "Não o amor, mas os arredores é que vale a pena....\n\nA repressão do amor ilumina os fenómenos dele com muito mais clareza que a mesma experiência. Há virgindades de grande entendimento. Agir compensa mas confunde. Possuir é ser possuído, e portanto perder-se. Só a ideia atinge, sem se estragar, o conhecimento da realidade.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-777",
+      "legacy_index": 777,
+      "t": "El gobierno del mundo comienza en nosotros mismos. No son los sinceros quienes gobiernan el mundo, pero tampoco los insinceros. Son quienes fabrican en sí mismos una sinceridad real por medios artificiales y automáticos; esa sinceridad constituye su fuerza, y es ella la que irradia hacia la sinceridad menos falsa de los demás. Saber engañarse bien es la primera cualidad del estadista. Solo a los poetas y a los filósofos les corresponde la visión práctica del mundo, porque solo a ellos les es dado no tener ilusiones. Ver claro es no actuar.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Saber engañarse bien es la primera cualidad del estadista.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 275."
+        }
+      ],
+      "original": {
+        "text": "O governo do mundo começa em nós mesmos. Não são os sinceros que governam o mundo, mas também não são os insinceros. São os que fabricam em si uma sinceridade real por meios artificiais e automáticos; essa sinceridade constitui a sua força, e é ela que irradia para a sinceridade menos falsa dos outros. Saber iludir-se bem é a primeira qualidade do estadista. Só aos poetas e aos filósofos compete a visão prática do mundo, porque só a esses é dado não ter ilusões. Ver claro é não agir.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-778",
+      "legacy_index": 778,
+      "t": "Los antiguos apenas se veían a sí mismos. Hoy nos vemos en todas las posiciones. De ahí nuestro pavor y nuestro asco por nosotros mismos.\n\nTodo hombre necesita, para poder vivir y amar, idealizarse a sí mismo (y, al final, a aquellos a quienes ame). Por eso nos amamos. Desde el momento en que me visualizo y me comparo con un ideal, no muy alto, todavía bajo, de belleza humana, desisto de la vida real y del amor.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Hoy nos vemos en todas las posiciones. De ahí nuestro pavor y nuestro asco por nosotros mismos.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 288."
+        }
+      ],
+      "original": {
+        "text": "Os antigos mal se viam a si próprios. Hoje vemo-nos em todas as posições. Daí o nosso pavor e o nosso nojo por nós.\n\nTodo homem precisa para poder viver e amar de se idealizar a si próprio (e, no fim, àqueles a quem ame). Amamo-nos por isso. Desde o momento em que me visiono e me comparo a um ideal, não muito alto, ainda baixo, de beleza humana, desisto da vida real e do amor.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-779",
+      "legacy_index": 779,
+      "t": "El placer de elogiarnos a nosotros mismos…",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "El placer de elogiarnos a nosotros mismos…",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 309."
+        }
+      ],
+      "original": {
+        "text": "O prazer de nos elogiarmos a nós próprios...",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-780",
+      "legacy_index": 780,
+      "t": "Me huele a frío, a pena, a que sean imposibles todos los caminos hacia la idea de todos los ideales.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Me huele a frío, a pena, a que sean imposibles todos los caminos",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 309."
+        }
+      ],
+      "original": {
+        "text": "Cheira-me a frio, a mágoa, a serem impossíveis todos os caminhos para a ideia de todos os ideais.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-781",
+      "legacy_index": 781,
+      "t": "Mi alma es una orquesta oculta; no sé qué instrumentos tañen y rechinan, cuerdas y arpas, timbales y tambores, dentro de mí. Solo me conozco como sinfonía.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Solo me conozco como sinfonía.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 310."
+        }
+      ],
+      "original": {
+        "text": "Minha alma é uma orquestra oculta; não sei que instrumentos tangem e rangem, cordas e harpas, timbales e tambores, dentro de mim. Só me conheço como sinfonia.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-782",
+      "legacy_index": 782,
+      "t": "Todo esfuerzo es un crimen porque todo gesto es un sueño muerto.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Todo esfuerzo es un crimen porque todo gesto es un sueño muerto.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 310."
+        }
+      ],
+      "original": {
+        "text": "Todo o esforço é um crime porque todo o gesto é um sonho morto.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-783",
+      "legacy_index": 783,
+      "t": "Tus manos son tórtolas cautivas. Tus labios son tórtolas mudas (que mis ojos ven arrullar).\n\nTodos tus gestos son aves. Eres golondrina al agacharte, cóndor al mirarme, águila en tus éxtasis de orgullosa indiferente. Es toda ella un rechinar de alas, como el de los ☐, la laguna de verte.\n\nTú eres toda alada, toda ☐",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Todos tus gestos son aves.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 310."
+        },
+        {
+          "term": "Variante textual",
+          "explanation": "Páramo adopta aquí la lectura del manuscrito de Pessoa BNP/E3, 4-68r, coincidente con la edición de Jerónimo Pizarro: «que os meus olhos vêem arrulhar». Richard Zenith lee «que aos meus olhos vêem arrulhar» en 2012 y «que aos meus olhos vêm arrulhar» en 1997."
+        }
+      ],
+      "original": {
+        "text": "As tuas mãos são rolas presas. Os teus lábios são rolas mudas (que os meus olhos vêem arrulhar).\n\nTodos os teus gestos são aves. És andorinha no abaixares-te, condor no olhares-me, águia nos teus êxtases de orgulhosa indiferente. É toda ranger de asas, como dos ☐, a lagoa de eu te ver.\n\nTu és toda alada, toda ☐",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-784",
+      "legacy_index": 784,
+      "t": "Llueve, llueve, llueve…\n\nLlueve constantemente, lastimeramente, ☐\n\nMi cuerpo me estremece el alma de frío… No un frío que hay en el espacio, sino un frío que hay en ver la lluvia…",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Mi cuerpo me estremece el alma de frío…",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 310."
+        }
+      ],
+      "original": {
+        "text": "Chove, chove, chove...\n\nChove constantemente, gemedoramente, ☐\n\nMeu corpo treme-me a alma de frio... Não um frio que há no espaço, mas um frio que há em ver a chuva...",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-785",
+      "legacy_index": 785,
+      "t": "Todo placer es un vicio, porque buscar el placer es lo que todos hacen en la vida, y el único vicio negro es hacer lo que hace todo el mundo.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "el único vicio negro es hacer lo que hace todo el mundo.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 310."
+        }
+      ],
+      "original": {
+        "text": "Todo o prazer é um vício, porque buscar o prazer é o que todos fazem na vida, e o único vício negro é fazer o que toda a gente faz.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-786",
+      "legacy_index": 786,
+      "t": "A veces, sin que yo lo espere o deba esperarlo, el sofoco de lo vulgar se me agarra a la garganta y siento la náusea física de la voz y del gesto del llamado semejante. La náusea física directa, sentida directamente en el estómago y en la cabeza, maravilla estúpida de la sensibilidad despierta… Cada individuo que me habla, cada rostro cuyos ojos se fijan en mí, me afecta como un insulto o como una porquería. Reboso horror por todo. Me aturdo de sentirme sentirlos.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Me aturdo de sentirme sentirlos.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 311."
+        }
+      ],
+      "original": {
+        "text": "Às vezes, sem que o espere ou deva esperá-lo, a sufocação do vulgar me toma a garganta e tenho a náusea física da voz e do gesto do chamado semelhante. A náusea física directa, sentida directamente no estômago e na cabeça, maravilha estúpida da sensibilidade desperta... Cada indivíduo que me fala, cada cara cujos olhos me fitam, afecta-me como um insulto ou como uma porcaria. Extravaso horror de tudo. Entonteço de me sentir senti-los.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-787",
+      "legacy_index": 787,
+      "t": "Las cosas soñadas solo tienen el lado de acá… No se les puede ver el otro lado… No se puede dar la vuelta alrededor de ellas… Lo malo de las cosas de la vida es que podemos ir mirándolas por todos lados… Las cosas del sueño solo tienen el lado que vemos… Tienen una sola cara, como nuestras almas.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Las cosas del sueño solo tienen el lado que vemos…",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 346."
+        }
+      ],
+      "original": {
+        "text": "As coisas sonhadas só têm o lado de cá... Não se lhes pode ver o outro lado... Não se pode andar à roda delas... O mal das coisas da vida é que as podemos ir olhando por todos os lados... As coisas de sonho só têm o lado que vemos... Têm uma só face, como as nossas almas.",
+        "lang": "pt",
+        "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-788",
+      "legacy_index": 788,
+      "t": "Me gustaría estar en el campo para poder gustar de estar en la ciudad. Me gusta, sin eso, estar en la ciudad, pero con eso mi gusto sería dos.",
+      "a": "Fernando Pessoa",
+      "obra": "Libro del desasosiego, Fernando Pessoa",
+      "highlight": "Me gustaría estar en el campo para poder gustar de estar en la ciudad.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-fernando-pessoa",
+      "workId": "work-libro-del-desasosiego",
+      "context_notes": [
+        {
+          "term": "Edición y fragmento",
+          "explanation": "Fernando Pessoa, Livro do Desassossego, ed. Richard Zenith, Assírio & Alvim, 2012, fragmento n.º 459."
+        }
+      ],
+      "original": {
+        "text": "Gostaria de estar no campo para poder gostar de estar na cidade. Gosto, sem isso, de estar na cidade, porém com isso o meu gosto seria dois.",
+        "lang": "pt",
+        "label": "Original portugués"
       }
     }
   ]
