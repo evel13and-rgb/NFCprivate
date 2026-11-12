@@ -121,12 +121,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 804 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 805 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 804);
-  assert.equal(quotes.length, 804);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 804);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 804);
+  const quotes = validatePublicQuotesDocument(document, 805);
+  assert.equal(quotes.length, 805);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 805);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 805);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -305,7 +305,7 @@ test('public/data/quotes.json cumple el contrato público y contiene 804 frases'
     'quote-789', 'quote-790', 'quote-791', 'quote-792', 'quote-793',
     'quote-794', 'quote-795', 'quote-796', 'quote-797', 'quote-798',
     'quote-799', 'quote-800', 'quote-801', 'quote-802', 'quote-803',
-    'quote-804', 'quote-805',
+    'quote-804', 'quote-805', 'quote-806',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -339,6 +339,23 @@ test('Lélia publica 17 cortes de la primera versión de 1833 con sus correccion
   assert.match(byId.get('quote-795').t, /bajo aquellos birretes y aquellos turbantes/);
   assert.match(byId.get('quote-796').t, /¿Esperas poder amarme\?/);
   assert.match(byId.get('quote-798').t, /mis ojos ya solo entrevén a través de una nube/);
+});
+
+test('el prefacio de Lélia publica la frase autónoma sobre el derecho a dudar', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quote = document.quotes.find(item => item.id === 'quote-806');
+
+  assert.equal(quote?.a, 'George Sand');
+  assert.equal(quote?.obra, 'Prefacio a Lélia (1839), George Sand');
+  assert.equal(quote?.workId, 'work-prefacio-lelia-1839');
+  assert.equal(quote?.highlight, 'La duda');
+  assert.ok(quote?.t.startsWith('La duda es un derecho sagrado e imprescriptible'));
+  assert.ok(quote?.t.includes(quote.highlight));
+  assert.equal(quote?.original?.text, 'Le doute est un droit sacré, imprescriptible de la conscience humaine qui examine pour rejeter ou adopter sa croyance.');
+  assert.equal(quote?.original?.lang, 'fr');
+  assert.equal(quote?.original?.label, 'Original francés');
+  assert.deepEqual(quote?.context_notes?.map(note => note.term), ['El derecho a dudar']);
+  assert.match(quote?.context_notes?.[0]?.explanation, /prefacio de 1839.*segunda versión de Lélia.*libertad de dudar/s);
 });
 
 test('Cumbres borrascosas publica la primera edición y marca sus recortes internos', async () => {

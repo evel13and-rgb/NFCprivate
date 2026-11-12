@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T13:33:36.249Z",
-  "quote_count": 804,
+  "generated_at": "2026-11-12T15:35:05.187Z",
+  "quote_count": 805,
   "quotes": [
     {
       "id": "quote-2",
@@ -14036,6 +14036,29 @@
       ],
       "original": {
         "text": "Vous avez raison de dire que la poésie a perdu l’esprit de l’homme ; elle a désolé le monde réel, si froid, si pauvre, si déplorable au prix des doux rêves qu’elle enfante. Enivrée de ses folles promesses, bercée de ses douces moqueries, je n’ai jamais pu me résigner à la vie positive. La poésie m’avait créé d’autres facultés, immenses, magnifiques, et que rien sur la terre ne devait assouvir. La réalité a trouvé mon ame trop vaste pour y être contenue un instant.\n\nChaque jour devait marquer la ruine de ma destinée devant mon orgueil, la ruine de mon orgueil désolé devant ses propres triomphes. Ce fut une lutte puissante et une victoire misérable ; car, à force de mépriser tout ce qui est, je conçus le mépris de moi-même, sotte et vaine créature, qui ne savais jouir de rien à force de vouloir jouir splendidement de toutes choses.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-806",
+      "legacy_index": 806,
+      "t": "La duda es un derecho sagrado e imprescriptible de la conciencia humana que examina para rechazar o adoptar su creencia.",
+      "a": "George Sand",
+      "obra": "Prefacio a Lélia (1839), George Sand",
+      "highlight": "La duda",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-prefacio-lelia-1839",
+      "context_notes": [
+        {
+          "term": "El derecho a dudar",
+          "explanation": "George Sand escribió estas palabras en el prefacio de 1839 a la segunda versión de Lélia, después de la polémica provocada por la primera edición. Al volver sobre la novela, ya no entendía el sufrimiento únicamente como un encierro individual: comenzaba a concebirlo también como una experiencia capaz de conducir hacia la conciencia, la solidaridad y la acción. Sin embargo, se negó a borrar retrospectivamente las dudas religiosas y sociales que habían atravesado la obra de 1833. Para Sand, reconocer una nueva creencia no autorizaba a falsificar el camino intelectual que había conducido hasta ella. La duda no aparece así como simple negación de la fe, sino como el derecho de la conciencia a examinar libremente aquello que puede aceptar o rechazar. La madurez consiste en integrar el sufrimiento anterior sin fingir que nunca existió: la fe solo puede ser una conquista si antes ha existido la libertad de dudar."
+        }
+      ],
+      "original": {
+        "text": "Le doute est un droit sacré, imprescriptible de la conscience humaine qui examine pour rejeter ou adopter sa croyance.",
         "lang": "fr",
         "label": "Original francés"
       }
