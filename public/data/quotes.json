@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T22:24:38.496Z",
-  "quote_count": 787,
+  "generated_at": "2026-11-12T13:33:36.249Z",
+  "quote_count": 804,
   "quotes": [
     {
       "id": "quote-2",
@@ -13647,6 +13647,397 @@
         "text": "Gostaria de estar no campo para poder gostar de estar na cidade. Gosto, sem isso, de estar na cidade, porém com isso o meu gosto seria dois.",
         "lang": "pt",
         "label": "Original portugués"
+      }
+    },
+    {
+      "id": "quote-789",
+      "legacy_index": 789,
+      "t": "Aunque hubiera nacido en el extremo opuesto, habría todavía poca diferencia entre tú y yo. Ambos condenados a sufrir, ambos débiles, incompletos, heridos por todos nuestros placeres, siempre inquietos, ávidos de una felicidad sin nombre, siempre fuera de nosotros: ese es nuestro destino común, eso es lo que hace que seamos hermanos y compañeros en esta tierra de exilio y servidumbre.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "ávidos de una felicidad sin nombre, siempre fuera de nosotros",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, primera parte, cap. III."
+        }
+      ],
+      "original": {
+        "text": "Fussé-je née à l’autre extrémité, il y aurait encore peu de différence entre toi et moi. Tous deux condamnés à souffrir, tous deux faibles, incomplets, blessés par toutes nos jouissances, toujours inquiets, avides d’un bonheur sans nom, toujours hors de nous, voilà notre destinée commune, voilà ce qui fait que nous sommes frères et compagnons sur la terre d’exil et de servitude.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-790",
+      "legacy_index": 790,
+      "t": "Por eso no rezo a Dios. ¿Qué le pediría? ¿Que cambiara mi destino? Se reiría de mí. ¿Que me diera fuerzas para luchar contra mis dolores? Las ha puesto en mí; a mí me corresponde servirme de ellas.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "Las ha puesto en mí; a mí me corresponde servirme de ellas.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, primera parte, cap. III."
+        }
+      ],
+      "original": {
+        "text": "C’est pourquoi je ne prie pas Dieu. Que lui demanderais-je ? Qu’il change ma destinée ? Il se rirait de moi. Qu’il me donne la force de lutter contre mes douleurs ? Il l’a mise en moi, c’est à moi de m’en servir.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-791",
+      "legacy_index": 791,
+      "t": "Poeta, no busques en mí esos profundos misterios; mi alma es hermana de la tuya, la entristeces, la asustas al sondearla de ese modo. Tómala por lo que es, por un alma que sufre y espera. Si la interrogas tan severamente, se replegará sobre sí misma y ya no se atreverá a abrirse a ti.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "Si la interrogas tan severamente, se replegará sobre sí misma",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, primera parte, cap. III."
+        }
+      ],
+      "original": {
+        "text": "Poëte, ne cherchez pas en moi ces profonds mystères ; mon ame est sœur de la vôtre, vous la contristez, vous l’effrayez en la sondant ainsi. Prenez-la pour ce qu’elle est, pour une ame qui souffre et qui attend. Si vous l’interrogez si sévèrement, elle se repliera sur elle-même, et n’osera plus s’ouvrir à vous.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-792",
+      "legacy_index": 792,
+      "t": "La vanidad es, después del amor, la más hermosa pasión del hombre, y has de saber, pobre niño, que también es muy rara. La codicia, el grosero orgullo de las distinciones sociales, el desenfreno, todas las inclinaciones viles, incluso la pereza, que para algunos es una pasión estéril pero obstinada: esas son las ambiciones que mueven a la mayoría de los hombres. La vanidad, al menos, es algo grande por sus efectos.\n\nNos obliga a ser buenos por el deseo que tenemos de parecerlo; nos empuja hasta el heroísmo: ¡tan dulce es verse llevado en triunfo, tan poderosas y hábiles son las seducciones de la popularidad! Y la vanidad es algo que nunca se confiesa; las otras pasiones no pueden engañarse a sí mismas. La vanidad puede esconderse detrás de otra palabra, que los incautos aceptan.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "Nos obliga a ser buenos por el deseo que tenemos de parecerlo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, primera parte, cap. X."
+        }
+      ],
+      "original": {
+        "text": "La vanité est, après l’amour, la plus belle passion de l’homme, et sache, pauvre enfant, qu’elle est encore bien rare. La cupidité, le grossier orgueil des distinctions sociales, la débauche, tous les vils penchans, la paresse même, qui est pour quelques-uns une passion stérile mais opiniâtre, voilà les ambitions qui meuvent la plupart des hommes. La vanité, au moins, c’est quelque chose de grand dans ses effets.\n\nElle nous force à être bons, par l’envie que nous avons de le paraître, elle nous pousse jusqu’à l’héroïsme, tant il est doux de se voir porté en triomphe, tant la popularité a de puissantes et adroites séductions ! Et la vanité est quelque chose qui ne s’avoue jamais, les autres passions ne peuvent se donner le change. La vanité peut se cacher derrière un autre mot, que les dupes acceptent.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-793",
+      "legacy_index": 793,
+      "t": "—Otro amigo —dijo el presidiario—, otro dulce recuerdo. Cuando descansaba en la playa, inmóvil como las losas del puerto, a veces aquellas aves viajeras, tomándome por una fría estatua, se acercaban a mí y me contemplaban sin temor: eran los únicos seres que no tenían aversión ni desprecio que mostrarme. No comprendían mi miseria. No me la reprochaban; y cuando hacía un movimiento, alzaban el vuelo.\n\nNo veían que llevaba una cadena al pie, que no podía perseguirlas; no sabían que era un galeote; ¡huían como lo habrían hecho ante un hombre!",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "No comprendían mi miseria. No me la reprochaban",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, primera parte, cap. XIII."
+        }
+      ],
+      "original": {
+        "text": "— Encore un ami, dit le forçat, encore un doux souvenir ! Quand je me reposais sur la grève, immobile comme les dalles du port, parfois ces oiseaux voyageurs, me prenant pour une froide statue, s’approchaient de moi et me contemplaient sans effroi : c’étaient les seuls êtres qui n’eussent ni aversion ni mépris à me témoigner. Ceux-là ne comprenaient pas ma misère. Ils ne me la reprochaient pas ; et, quand je faisais un mouvement, ils prenaient leur volée.\n\nIls ne voyaient pas que j’avais une chaîne au pied, que je ne pouvais les poursuivre ; ils ne savaient pas que j’étais un galérien ; ils s’enfuyaient comme ils eussent fait devant un homme !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-794",
+      "legacy_index": 794,
+      "t": "Y, sin embargo, tu aliento ha abrasado mi cerebro. Apenas tus labios rozaron las puntas de mis cabellos, creí sentir una chispa eléctrica, una conmoción tan terrible que un grito de dolor escapó de mi pecho. ¡Oh! No eres una mujer, Lélia, ¡ya lo veo! Había soñado con el cielo en uno de tus besos, y me has hecho conocer el infierno.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "Había soñado con el cielo en uno de tus besos, y me has hecho conocer el infierno.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, primera parte, cap. XIX."
+        }
+      ],
+      "original": {
+        "text": "Et pourtant, votre haleine a embrasé mon cerveau. À peine vos lèvres ont effleuré l’extrémité de mes cheveux, et j’ai cru sentir une étincelle électrique, une commotion si terrible, qu’un cri de douleur s’est échappé de ma poitrine. Oh ! vous n’êtes pas une femme, Lélia, je le vois bien ! J’avais rêvé le ciel dans un de vos baisers, et vous m’avez fait connaître l’enfer.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-795",
+      "legacy_index": 795,
+      "t": "¿No es muy triste, en efecto, resucitar así los siglos que ya no existen y obligarlos a divertir al siglo presente? Esos trajes de tiempos pasados, que nos representan generaciones extinguidas, ¿no son, en medio de la embriaguez de una fiesta, una lección espantosa que nos recuerda la brevedad de los días del hombre? ¿Dónde están los cerebros apasionados que ardían bajo aquellos birretes y aquellos turbantes? ¿Dónde están los corazones jóvenes y vigorosos que palpitaban bajo aquellos jubones de seda, bajo aquellos corpiños bordados de oro y perlas? ¿Dónde están las mujeres orgullosas y hermosas que se envolvían en esas pesadas telas, que cubrían sus abundantes cabelleras con aquellas joyas góticas? ¡Ay! ¿Dónde están aquellos reyes de un día que brillaron como nosotros? Pasaron sin pensar en las generaciones que los habían precedido, sin pensar en las que debían seguirlos, sin pensar en sí mismos, que se cubrían de oro y perfumes, que se rodeaban de lujo y melodías, mientras aguardaban el frío del ataúd y el olvido de la tumba.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "se rodeaban de lujo y melodías, mientras aguardaban el frío del ataúd y el olvido de la tumba",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, primera parte, cap. XIV."
+        }
+      ],
+      "original": {
+        "text": "N’est-ce pas bien triste, en effet, de ressusciter ainsi les siècles qui ne sont plus, et de les forcer à divertir le siècle présent ? Ces costumes des temps passés, qui nous représentent des générations éteintes, ne sont-ils pas, au milieu de l’ivresse d’une fête, une effrayante leçon pour nous rappeler la briéveté des jours de l’homme ? Où sont les cerveaux passionnés qui brûlaient sous ces barrettes et sous ces turbans ? Où sont les cœurs jeunes et vivaces qui palpitaient sous ces pourpoints de soie, sous ces corsages brodés d’or et de perles ? Où sont les femmes orgueilleuses et belles qui se drapaient dans ces lourdes étoffes, qui couvraient leurs riches chevelures de ces gothiques joyaux ? Hélas ! où sont-ils ces rois d’un jour qui ont brillé comme nous ? Ils ont passé sans songer aux générations qui les avaient précédés, sans songer à celles qui devaient les suivre, sans songer à eux-mêmes qui se couvraient d’or et de parfums, qui s’entouraient de luxe et de mélodies, en attendant le froid du cercueil et l’oubli de la tombe.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-796",
+      "legacy_index": 796,
+      "t": "—Vuelve —le dijo—, vuelve a mi corazón. ¡Te amaba tanto hace un momento, cuando, temeroso e ingenuo, recibías mis besos casi a pesar tuyo! Mira, cuando me dijiste: «¿Esperas poder amarme?», sentí que te adoraba. ¡Eras tan humilde entonces! Sigue así, es así como te amo. Cuando te veo temblar y retroceder ante el amor que te busca, me parece que soy más joven y más ardiente que tú.\n\nEso me enorgullece y me encanta, la vida ya no me desalienta, pues imagino entonces que puedo dártela; pero cuando cobras atrevimiento, cuando me pides más de lo que soy capaz de sentir, pierdo la esperanza, me asusta amar y vivir. Sufro y lamento haberme engañado una vez más.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "cuando me pides más de lo que soy capaz de sentir, pierdo la esperanza",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, segunda parte, cap. XXIV."
+        }
+      ],
+      "original": {
+        "text": "— Reviens, lui dit-elle, reviens sur mon cœur. Je t’aimais tant tout-à-l’heure, alors que, peureux et naïf, tu recevais mes baisers presque malgré toi ! Tiens, lorsque tu m’as dit ce mot : Espères-tu que tu pourras m’aimer ? j’ai senti que je t’adorais. Tu étais si humble alors ! Reste ainsi, c’est ainsi que je t’aime. Quand je te vois trembler et reculer devant l’amour qui te cherche, il me semble que je suis plus jeune et plus ardente que toi.\n\nCela m’énorgueillit et me charme, la vie ne me décourage plus, car je m’imagine alors que je puis te la donner ; mais quand tu t’enhardis, quand tu me demandes plus qu’il n’est en moi de sentir, je perds l’espoir, je m’effraie d’aimer et de vivre. Je souffre et je regrette de m’être abusée une fois de plus.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-797",
+      "legacy_index": 797,
+      "t": "¿Acaso es culpa mía que, en tu imaginación rica y fecunda, hayas atribuido a esas cosas más valor del que tienen? ¿Es culpa mía que tu alma, como la mía, como la de todos los hombres, posea facultades inmensas para el deseo, y que tus sentidos sean limitados para el goce? ¿Soy responsable de la miserable impotencia del amor físico para calmar y curar el ardor punzante y caprichoso de tus sueños?\n\nNo puedo odiarte ni despreciarte por haber experimentado a mis pies el delirio de los sentidos. No dependía de tu alma despojarse de la grosera envoltura en la que Dios la ha desterrado. Y eras demasiado joven, demasiado ignorante para distinguir las verdaderas necesidades de esa alma poética y santa de las aspiraciones engañosas de la materia. Tomaste por una necesidad del corazón lo que no era sino una fiebre del cerebro. Confundiste el placer con la felicidad.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "Confundiste el placer con la felicidad.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo II, cuarta parte, cap. V."
+        }
+      ],
+      "original": {
+        "text": "Maintenant est-ce ma faute si, dans votre imagination riche et féconde, vous aviez attribué à ces choses plus de valeur qu’elles n’en ont ? Est-ce ma faute si votre ame, comme la mienne, comme celle de tous les hommes, possède des facultés immenses pour le désir, et si vos sens sont bornés pour la joie ? Suis-je responsable de l’impuissance misérable de l’amour physique à calmer et à guérir l’ardeur cuisante et fantasque de vos rêves ?\n\nJe ne puis ni vous haïr ni vous mépriser pour avoir subi à mes pieds le délire des sens. Il ne dépendait pas de votre ame de dépouiller le cadre grossier où Dieu l’a exilée. Et vous étiez trop jeune, trop ignorant pour discerner les vrais besoins de cette ame poétique et sainte des aspirations menteuses de la matière. Vous avez pris pour un besoin du cœur ce qui n’était qu’une fièvre du cerveau. Vous avez confondu le plaisir avec le bonheur.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-798",
+      "legacy_index": 798,
+      "t": "¡Maldito seas, Don Juan! Te tomé por la grandeza, y no eres más que la locura. El polvo de tus pasos no vale más que la ceniza barrida por el viento. El camino que seguiste no conduce sino a la desesperación y al vértigo. Hoy que mi sangre se enfría, que mis arterias se ralentizan y se apaciguan, puedo descender de nuevo a mí mismo. Las sonrisas invitadoras y las palabras dulces ya no perturban mi ensueño.\n\nYa no creo, como antes, que los suspiros voluptuosos y los besos ardientes sean la única felicidad y la única sabiduría. En esta hora solemne, cuando el mundo palidece y se desvanece, cuando mis ojos ya solo entrevén a través de una nube los placeres engañosos en los que había confiado, tu sombra, ¡oh, Don Juan!, ya no tiene poder para extraviarme. Puedo mirarte cara a cara sin sonrojarme ni temblar.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "Te tomé por la grandeza, y no eres más que la locura.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo II, quinta parte, cap. XI."
+        }
+      ],
+      "original": {
+        "text": "Maudit sois-tu, don Juan ! je t’ai pris pour la grandeur, et tu n’es que la folie. La poussière de tes pas ne vaut pas plus que la cendre balayée par le vent. Le chemin que tu as suivi ne mène qu’au désespoir et au vertige. Aujourd’hui que mon sang s’attiédit, que mes artères se ralentissent et s’appaisent, je puis redescendre en moi-même. Les sourires invitans et les douces paroles ne troublent plus ma rêverie.\n\nJe ne crois plus, comme autrefois, que les soupirs voluptueux et les baisers brûlans soient le seul bonheur et la seule sagesse. À cette heure solennelle où le monde pâlit et s’efface, où mes yeux n’entrevoient plus qu’à travers un nuage les délices menteurs en qui je m’étais confié, ton ombre, ô don Juan, n’a plus le pouvoir de m’égarer. Je puis te regarder face à face sans rougir et sans trembler.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-799",
+      "legacy_index": 799,
+      "t": "—¿Qué es la audacia? —respondió Lélia—. ¿Y quién carece de ella? ¿Quién ama la vida en los tiempos que corren? Esa despreocupación se llama valor cuando produce algún bien; pero cuando se limita a exponer un destino sin valor, ¿no es simplemente inercia?\n\n—¡La inercia, Sténio! Es el mal de nuestros corazones, es la gran plaga de esta época del mundo. Ya no hay más que virtudes negativas: somos valientes porque ya no somos capaces de tener miedo. ¡Ay, sí! Todo está gastado, incluso las debilidades, incluso los vicios del hombre. Ya no tenemos esa fuerza que hace amar la vida con un amor obstinado y cobarde. Cuando todavía había energía en la tierra, se guerreaba con astucia, con prudencia, con cálculo.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "somos valientes porque ya no somos capaces de tener miedo.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, segunda parte, cap. XXVIII."
+        }
+      ],
+      "original": {
+        "text": "— Qu’est-ce que l’audace ? répondit Lélia, et qui n’en a pas ? Qui est-ce qui aime la vie, au temps où nous sommes ? Cette insouciance-là s’appelle du courage quand elle produit un bien quelconque ; mais quand elle se borne à exposer une destinée sans valeur, n’est-ce pas simplement de l’inertie ?\n\n— L’inertie, Sténio ! c’est le mal de nos cœurs, c’est le grand fléau de cet âge du monde. Il n’y a plus que des vertus négatives, nous sommes braves parce que nous ne sommes plus capables d’avoir peur. Hélas ! oui, tout est usé, même les faiblesses, même les vices de l’homme. Nous n’avons plus la force qui fait qu’on aime la vie d’un amour opiniâtre et poltron. Quand il y avait encore de l’énergie sur la terre, on guerroyait avec ruse, avec prudence, avec calcul.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-800",
+      "legacy_index": 800,
+      "t": "Las propias plantas parecían estremecerse bajo el soplo húmedo de la tarde. Cerraban sus hojas, encogían sus anteras, recogían sus pétalos en el fondo del cáliz. Otras, enamoradas a la hora de la brisa que lleva sus mensajes y sus abrazos, se entreabrían coquetas, palpitantes, cálidas al tacto como pechos humanos. Todas se disponían a dormir o a amar.\n\nSentí que volvía a estar sola. Cuando todo parecía inanimado, podía identificarme con el desierto y formar parte de él como una piedra o un arbusto más. Cuando vi que todo volvía a la vida, que todo se inquietaba por el mañana y manifestaba sentimientos de deseo o de preocupación, me indigné por no tener yo una voluntad, una necesidad, un temor.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "Todas se disponían a dormir o a amar.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, segunda parte, cap. XXIX."
+        }
+      ],
+      "original": {
+        "text": "Les plantes elles-mêmes semblaient frissonner au souffle humide du soir. Elles fermaient leurs feuilles, elles crispaient leurs anthères, elles retiraient leurs pétales au fond de leur calice. D’autres, amoureuses à l’heure de la brise qui se charge de leurs messages et de leurs étreintes, s’entr’ouvraient coquettes, palpitantes, chaudes au toucher comme des poitrines humaines. Toutes s’arrangeaient pour dormir ou pour aimer.\n\nJe me sentis redevenir seule. Quand tout semblait inanimé, je pouvais m’identifier avec le désert et faire partie de lui comme une pierre ou un buisson de plus. Quand je vis que tout reprenait à la vie, que tout s’inquiétait du lendemain et manifestait des sentimens de désir ou de souci, je m’indignai de n’avoir pas à moi une volonté, un besoin, une crainte.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-801",
+      "legacy_index": 801,
+      "t": "Pero para mí la soledad está en todas partes, y es una locura buscarla en el desierto más que en otro lugar. Allí solamente es más tranquila, más silenciosa. ¡Pues bien, eso me mata! Creo haber descubierto lo que todavía me sostiene en esta vida de desencanto y cansancio: es el sufrimiento. El sufrimiento excita, reanima, irrita los nervios; hace sangrar el corazón, abrevia la agonía.\n\nEs la convulsión violenta, terrible, que nos levanta del suelo y nos da fuerzas para erguirnos hacia el cielo, para maldecir y gritar. Morir en letargo no es vivir ni morir: ¡es perder todas las ventajas, es ignorar todas las voluptuosidades de la muerte!",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "para mí la soledad está en todas partes",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, segunda parte, cap. XXX."
+        }
+      ],
+      "original": {
+        "text": "Mais pour moi la solitude est partout, et c’est folie que de la chercher au désert plus qu’ailleurs. Seulement là elle est plus calme, plus silencieuse. Eh bien ! cela me tue ! J’ai découvert, je pense, ce qui me soutient encore dans cette vie de désenchantement et de lassitude : c’est la souffrance. La souffrance excite, ranime, irrite les nerfs ; elle fait saigner le cœur, elle abrège l’agonie.\n\nC’est la convulsion violente, terrible, qui nous relève de terre, et nous donne la force de nous dresser vers le ciel pour maudire et crier. Mourir en léthargie, ce n’est ni vivre ni mourir : c’est perdre tous les avantages, c’est ignorer toutes les voluptés de la mort !",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-802",
+      "legacy_index": 802,
+      "t": "El cuerpo es un poder menos rebelde que el espíritu. Destinado a disfrutar de los bienes materiales, también mediante medios materiales se le puede gobernar. Anda, pobre soñadora, reconcíliate con esa humilde parte de tu ser. No desprecies por más tiempo tu belleza, que todos los hombres adoran y que todavía puede volver a florecer como en los días pasados. No te avergüences de pedirle a la materia las alegrías que la inteligencia te ha negado.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "No te avergüences de pedirle a la materia las alegrías que la inteligencia te ha negado.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo II, cuarta parte, cap. II."
+        }
+      ],
+      "original": {
+        "text": "Le corps est une puissance moins rebelle que l’esprit. Destiné à profiter des biens matériels, c’est aussi par des moyens matériels qu’on peut le gouverner. Va, ma pauvre rêveuse, réconcilie-toi avec cette humble portion de ton être. Ne méprise pas plus long-temps ta beauté que tous les hommes adorent, et qui peut refleurir encore comme aux jours du passé. Ne rougis pas de demander à la matière les joies que t’a refusées l’intelligence.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-803",
+      "legacy_index": 803,
+      "t": "Había, al pie de las terrazas del jardín, un pequeño río que corría bajo la espesa sombra de los tejos y los cedros, y se internaba bajo sus ramas colgantes. Bajo una de aquellas bóvedas misteriosas, una tumba de mármol blanco se reflejaba en el agua, pálida entre los oscuros reflejos de la vegetación.\n\nApenas un soplo furtivo de la brisa estremecía los ángulos puros y temblorosos del mármol reflejado en el agua; una gran correhuela había invadido sus costados y suspendía sus guirnaldas de campanillas azules alrededor de las esculturas, ya ennegrecidas por la lluvia y el abandono. El musgo crecía sobre el pecho y los brazos de las estatuas arrodilladas; los cipreses llorosos, dejando caer lánguidamente sus ramas sobre aquellas frentes lívidas, envolvían ya el monumento confiado a la protección del olvido.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "el monumento confiado a la protección del olvido.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, segunda parte, cap. XXV."
+        }
+      ],
+      "original": {
+        "text": "Il y avait, au bas des terrasses du jardin, une petite rivière qui coulait sous l’épais ombrage des ifs et des cèdres, et s’enfonçait sous leurs rameaux pendans. Sous une de ces voûtes mystérieuses, un tombeau de marbre blanc se mirait dans l’eau, pâle au milieu des sombres reflets de la verdure.\n\nÀ peine un souffle furtif de la brise ébranlait les angles purs et tremblans du marbre réfléchi dans l’onde ; un grand liseron avait envahi ses flancs, et suspendait ses guirlandes de cloches bleues autour des sculptures déjà noircies par la pluie et l’abandon. La mousse croissait sur le sein et sur les bras des statues agenouillées ; les cyprès éplorés, laissant tomber languissamment leurs branches sur ces fronts livides, enveloppaient déjà le monument confié à la protection de l’oubli.",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-804",
+      "legacy_index": 804,
+      "t": "—Por otra parte —prosiguió la cortesana—, ¿qué importa la vergüenza a un alma verdaderamente fuerte? ¿Sabes, Lélia, que ese poder de la opinión ante el cual son tan serviles las almas a las que llaman honradas, sabes que basta con ser débil para someterse a él, que hace falta ser fuerte para resistirlo? ¿Llamas virtud a un cálculo de egoísmo tan fácil de hacer y en el que todo te alienta y te recompensa? ¿Comparas los trabajos, los dolores, los heroísmos de una madre de familia con los de una prostituta? Cuando ambas se enfrentan a la vida, ¿crees que merece más gloria aquella que ha tenido menos dificultades?",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "basta con ser débil para someterse a él, que hace falta ser fuerte para resistirlo",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo I, segunda parte, cap. XXXIII."
+        }
+      ],
+      "original": {
+        "text": "— D’ailleurs, reprit la courtisane, qu’importe la honte à une ame vraiment forte ? Savez-vous, Lélia, que cette puissance de l’opinion devant laquelle les ames qu’on appelle honnêtes sont si serviles, savez-vous qu’il ne s’agit que d’être faible pour s’y soumettre, qu’il faut être fort pour lui résister ? Appelez-vous vertu un calcul d’égoïsme si facile à faire et dans lequel tout vous encourage et vous récompense ? Comparez-vous les travaux, les douleurs, les héroïsmes d’une mère de famille à ceux d’une prostituée ? Quand toutes deux sont aux prises avec la vie, pensez-vous que celle-là mérite plus de gloire, qui a eu le moins de peine ?",
+        "lang": "fr",
+        "label": "Original francés"
+      }
+    },
+    {
+      "id": "quote-805",
+      "legacy_index": 805,
+      "t": "Tienes razón al decir que la poesía ha perdido al espíritu humano; ha desolado el mundo real, tan frío, tan pobre, tan deplorable comparado con los dulces sueños que engendra. Embriagada de sus locas promesas, mecida por sus dulces burlas, nunca he podido resignarme a la vida positiva. La poesía había creado en mí otras facultades, inmensas, magníficas, que nada en la tierra habría de satisfacer. La realidad encontró mi alma demasiado vasta para contenerla siquiera un instante.\n\nCada día debía marcar la ruina de mi destino ante mi orgullo, la ruina de mi orgullo desolado ante sus propios triunfos. Fue una lucha poderosa y una victoria miserable; pues, a fuerza de despreciar todo lo que existe, llegué a despreciarme a mí misma, criatura necia y vana, que no sabía disfrutar de nada por querer disfrutar espléndidamente de todas las cosas.",
+      "a": "George Sand",
+      "obra": "Lélia, George Sand",
+      "highlight": "La realidad encontró mi alma demasiado vasta para contenerla siquiera un instante.",
+      "lang": "es",
+      "type": "prose",
+      "authorId": "author-george-sand",
+      "workId": "work-lelia",
+      "context_notes": [
+        {
+          "term": "Edición y localización",
+          "explanation": "George Sand, Lélia, H. Dupuy et L. Tenré, primera versión de 1833, tomo II, tercera parte, cap. I."
+        }
+      ],
+      "original": {
+        "text": "Vous avez raison de dire que la poésie a perdu l’esprit de l’homme ; elle a désolé le monde réel, si froid, si pauvre, si déplorable au prix des doux rêves qu’elle enfante. Enivrée de ses folles promesses, bercée de ses douces moqueries, je n’ai jamais pu me résigner à la vie positive. La poésie m’avait créé d’autres facultés, immenses, magnifiques, et que rien sur la terre ne devait assouvir. La réalité a trouvé mon ame trop vaste pour y être contenue un instant.\n\nChaque jour devait marquer la ruine de ma destinée devant mon orgueil, la ruine de mon orgueil désolé devant ses propres triomphes. Ce fut une lutte puissante et une victoire misérable ; car, à force de mépriser tout ce qui est, je conçus le mépris de moi-même, sotte et vaine créature, qui ne savais jouir de rien à force de vouloir jouir splendidement de toutes choses.",
+        "lang": "fr",
+        "label": "Original francés"
       }
     }
   ]

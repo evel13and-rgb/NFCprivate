@@ -121,12 +121,12 @@ test('resuelve primero id estable y conserva compatibilidad con legacy_index e �
   assert.equal(findStoredQuoteIndex(sampleQuotes, { stableQuoteId: 'quote-missing', lastQuoteId: 99 }), -1);
 });
 
-test('public/data/quotes.json cumple el contrato público y contiene 787 frases', async () => {
+test('public/data/quotes.json cumple el contrato público y contiene 804 frases', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
-  const quotes = validatePublicQuotesDocument(document, 787);
-  assert.equal(quotes.length, 787);
-  assert.equal(new Set(quotes.map(quote => quote.id)).size, 787);
-  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 787);
+  const quotes = validatePublicQuotesDocument(document, 804);
+  assert.equal(quotes.length, 804);
+  assert.equal(new Set(quotes.map(quote => quote.id)).size, 804);
+  assert.equal(new Set(quotes.map(quote => quote.legacy_index)).size, 804);
   const quotesWithOriginal = quotes.filter(quote => quote.original !== undefined);
   assert.deepEqual(quotesWithOriginal.map(quote => quote.id), [
     'quote-2', 'quote-3',
@@ -302,6 +302,10 @@ test('public/data/quotes.json cumple el contrato público y contiene 787 frases'
     'quote-776', 'quote-777', 'quote-778', 'quote-779', 'quote-780',
     'quote-781', 'quote-782', 'quote-783', 'quote-784', 'quote-785',
     'quote-786', 'quote-787', 'quote-788',
+    'quote-789', 'quote-790', 'quote-791', 'quote-792', 'quote-793',
+    'quote-794', 'quote-795', 'quote-796', 'quote-797', 'quote-798',
+    'quote-799', 'quote-800', 'quote-801', 'quote-802', 'quote-803',
+    'quote-804', 'quote-805',
   ]);
   assert.equal(quotesWithOriginal.every(quote => (
     quote.original.text.trim() && quote.original.lang.trim() && quote.original.label.trim()
@@ -311,6 +315,30 @@ test('public/data/quotes.json cumple el contrato público y contiene 787 frases'
     const { original, ...publicQuoteWithoutOriginal } = quotes.find(quote => quote.id === fallbackQuote.id);
     assert.deepEqual(fallbackQuote, publicQuoteWithoutOriginal);
   }
+});
+
+test('Lélia publica 17 cortes de la primera versión de 1833 con sus correcciones aprobadas', async () => {
+  const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
+  const quotes = document.quotes.filter(quote => quote.workId === 'work-lelia');
+  const byId = new Map(quotes.map(quote => [quote.id, quote]));
+
+  assert.equal(quotes.length, 17);
+  assert.deepEqual(quotes.map(quote => quote.id), Array.from(
+    { length: 17 },
+    (_, position) => `quote-${789 + position}`,
+  ));
+  assert.ok(quotes.every(quote => quote.a === 'George Sand'));
+  assert.ok(quotes.every(quote => quote.obra === 'Lélia, George Sand'));
+  assert.ok(quotes.every(quote => quote.original?.lang === 'fr'));
+  assert.ok(quotes.every(quote => quote.original?.label === 'Original francés'));
+  assert.ok(quotes.every(quote => quote.t.includes(quote.highlight)));
+  assert.ok(quotes.every(quote => (
+    quote.context_notes?.[0]?.explanation.includes('primera versión de 1833')
+  )));
+  assert.match(byId.get('quote-792').t, /nos empuja hasta el heroísmo: ¡tan dulce/);
+  assert.match(byId.get('quote-795').t, /bajo aquellos birretes y aquellos turbantes/);
+  assert.match(byId.get('quote-796').t, /¿Esperas poder amarme\?/);
+  assert.match(byId.get('quote-798').t, /mis ojos ya solo entrevén a través de una nube/);
 });
 
 test('Cumbres borrascosas publica la primera edición y marca sus recortes internos', async () => {
