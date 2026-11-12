@@ -358,6 +358,55 @@ test('el prefacio de Lélia publica la frase autónoma sobre el derecho a dudar'
   assert.match(quote?.context_notes?.[0]?.explanation, /prefacio de 1839.*segunda versión de Lélia.*libertad de dudar/s);
 });
 
+test('George Sand, Lélia y su prefacio publican fichas verificadas con retrato documental', async () => {
+  const profiles = JSON.parse(await readFile(
+    new URL('../public/data/literary-profiles.json', import.meta.url),
+    'utf8',
+  ));
+  const author = profiles.authors.find(profile => profile.author_id === 'author-george-sand');
+  const lelia = profiles.works.find(profile => profile.work_id === 'work-lelia');
+  const preface = profiles.works.find(profile => profile.work_id === 'work-prefacio-lelia-1839');
+
+  assert.match(author?.display_name, /^George Sand.*Amantine Aurore Lucile Dupin.*baronesa Dudevant/u);
+  assert.equal(author?.birth_year, 1804);
+  assert.equal(author?.death_year, 1876);
+  assert.equal(author?.country, 'Francia');
+  assert.equal(author?.language, 'Francés');
+  assert.match(author?.movement, /Romanticismo francés.*dimensión social, política y filosófica/su);
+  assert.match(author?.bio_short, /separación jurídica.*Jules Sand.*Bulletins de la République.*Nohant en 1876/su);
+  assert.equal(author?.themes.length, 16);
+  assert.equal(author?.portrait?.path, 'public/images/authors/george-sand.webp');
+  assert.equal(author?.portrait?.caption, 'George Sand, marzo de 1864');
+  assert.match(author?.portrait?.credit, /Nadar.*Médiathèque du patrimoine.*Wikimedia Commons/su);
+  assert.match(author?.portrait?.source_url, /commons[.]wikimedia[.]org/u);
+  assert.match(author?.portrait?.rights, /Dominio público.*Public Domain Mark 1[.]0/u);
+  const portrait = await readFile(new URL('../public/images/authors/george-sand.webp', import.meta.url));
+  assert.ok(portrait.byteLength > 150_000);
+  assert.equal(portrait.subarray(0, 4).toString('ascii'), 'RIFF');
+  assert.equal(portrait.subarray(8, 12).toString('ascii'), 'WEBP');
+
+  assert.equal(lelia?.title, 'Lélia');
+  assert.equal(lelia?.publication_year, 1833);
+  assert.equal(lelia?.language, 'Francés');
+  assert.equal(lelia?.fragment_count, 17);
+  assert.match(lelia?.genre, /Novela filosófica y psicológica.*tradición gótica/su);
+  assert.match(lelia?.summary_short, /Sténio.*Trenmor.*Magnus.*Pulchérie/su);
+  assert.match(lelia?.context_notes, /Henri Dupuy.*L[.] Tenré.*Félix Bonnaire.*tres volúmenes.*edición crítica de 2024/su);
+  assert.match(lelia?.context_notes, /conciencia humana que examina/u);
+  assert.doesNotMatch(lelia?.context_notes, /conciencia humana, que examina/u);
+  assert.match(lelia?.fragment_notes, /17 fragmentos.*primera edición de 1833.*tomo, la parte y el capítulo/su);
+  assert.equal(lelia?.themes.length, 19);
+
+  assert.equal(preface?.title, 'Prefacio a Lélia (1839)');
+  assert.equal(preface?.original_title, 'Préface de Lélia');
+  assert.equal(preface?.publication_year, 1839);
+  assert.equal(preface?.fragment_count, 1);
+  assert.match(preface?.summary_short, /evolución intelectual sincera.*rechazarla o adoptarla/su);
+  assert.match(preface?.context_notes, /derecho sagrado e imprescriptible.*libertad de examinarla/su);
+  assert.match(preface?.fragment_notes, /página 3.*separada de Lélia \(1833\)/su);
+  assert.equal(preface?.themes.length, 8);
+});
+
 test('Cumbres borrascosas publica la primera edición y marca sus recortes internos', async () => {
   const document = JSON.parse(await readFile(new URL('../public/data/quotes.json', import.meta.url), 'utf8'));
   const profiles = JSON.parse(await readFile(new URL('../public/data/literary-profiles.json', import.meta.url), 'utf8'));
